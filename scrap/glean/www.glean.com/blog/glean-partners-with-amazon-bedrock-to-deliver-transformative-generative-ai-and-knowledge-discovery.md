@@ -1,0 +1,200 @@
+---
+url: "https://www.glean.com/blog/glean-partners-with-amazon-bedrock-to-deliver-transformative-generative-ai-and-knowledge-discovery"
+canonical: "https://www.glean.com/blog/glean-partners-with-amazon-bedrock-to-deliver-transformative-generative-ai-and-knowledge-discovery"
+title: "Glean partners with Amazon Bedrock to deliver transformative generative AI and knowledge discovery"
+description: "Arvind Jain  | Glean partners with Amazon Bedrock to deliver transformative generative AI and knowledge discovery solutions, revolutionizing enterprise search capabilities."
+fetched_at: "2026-09-01T13:26:39.521Z"
+---
+Last updated Nov 19, 2023.
+
+# Glean partners with Amazon Bedrock to deliver transformative generative AI and knowledge discovery
+
+0
+
+minutes read
+
+[![](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a07483653e8ea8ef7c77930_arvind.png)
+
+Arvind Jain
+
+CEO
+
+
+
+](/authors/arvind-jain)
+
+![Glean partners with Amazon Bedrock to deliver transformative generative AI and knowledge discovery](https://cdn.prod.website-files.com/613513981b0efaf850830620/655bdad5960d019a34fd5cdd_AWS%20Blog%20Post.webp)
+
+Listen to article
+
+0:00
+
+0.5x 1x 1.5x 2x
+
+### Table of contents
+
+[
+
+Heading 2
+
+](#)
+
+[
+
+Heading 3
+
+](#)
+
+[
+
+Heading 4
+
+](#)
+
+[
+
+Heading 5
+
+](#)
+
+[
+
+Heading 6
+
+](#)
+
+[
+
+Have questions or want a demo?
+
+We’re here to help! Click the button below and we’ll be in touch.
+
+Get a Demo
+
+
+
+](/get-a-demo)
+
+Share this article:
+
+Listen to article
+
+0:00
+
+0.5x 1x 1.5x 2x
+
+Enterprise search and knowledge discovery are essential for harnessing the vast, often untapped knowledge within your enterprise – the key to unlocking the full potential of your workforce. However, finding or building the right solution can be difficult, especially as businesses scale, encounter SaaS sprawl, and struggle to tie in disparate sources of information together. 
+
+Generative AI has recently emerged as a promising way to index and access that information through conversational means, rather than tedious manual search. However, generalized solutions suffer from frequent hallucinations and security concerns, presenting both serious costs and risks for workplaces looking to integrate generative AI. 
+
+Instead, it takes a robust knowledge discovery solution with a permissions-aware assistant to deliver the precise and personalized answers that enterprise workers expect. That’s why we’re excited to announce that [Glean](https://www.glean.com/), partnering with and utilizing Amazon [Bedrock](https://aws.amazon.com/bedrock/), is now available on [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-mu6dfqwzfcpi6#pdp-usage) – delivering best-in-class, enterprise-ready generative AI solutions to the millions of customers building on AWS. In this blog, we’ll walk through what AWS Marketplace customers can expect from deploying Glean as their knowledge discovery and generative AI solution of choice. 
+
+## Supercharged workflows for AWS customers
+
+Glean's next-generation [enterprise search](https://www.glean.com/product/workplace-search-ai) and [AI assistant](https://www.glean.com/product/assistant) enables you to instantly find the answers you need, across all the apps in your organization. Glean is purpose-built for connecting workers with knowledge within the enterprise – with connectors to 100+ enterprise apps, Glean applies a custom LLM and ML-powered vector embeddings to deliver search that understands your business without needing manual training. 
+
+Every result is instead naturally tuned for relevancy, based upon a custom knowledge graph that links your people, content, and activity. This ensures that the results you receive the first time around are usually what you’re looking for – helping you progress without having to perform countless searches or queries. 
+
+![Product Illustration](https://cdn.prod.website-files.com/613513981b0efaf850830620/672b56e67cc862130e4a40f6_655b62390d6d1786e012e55b_image1.webp)
+
+*Search results are personalized for each user to maximize relevancy*
+
+Glean has also been built from the ground up with security and information governance in mind. Glean’s governance engine learns existing permissions on an object level, for every user, so you can only search for what you have access to. This governance engine maintains permissions on a real-time basis, and meets all stringent enterprise permissioning and security requirements. 
+
+![Product Illustration](https://cdn.prod.website-files.com/613513981b0efaf850830620/672b56e77cc862130e4a4100_655b62a2ed850c29d3fe6b02_image3.png)
+
+*Results follow regularly updated and strict permissioning rules*
+
+This core Glean Search infrastructure also fuel’s Glean’s generative AI – Glean Chat. By using [retrieval augmented generation (RAG)](https://www.glean.com/blog/lessons-and-learnings-from-building-an-enterprise-ready-ai-assistant) and supporting referenceability for all responses, Glean significantly reduces the risk of hallucinations and ensures answers generated by AI are grounded in your company’s knowledge. Workers can generate actionable insights, new content, and precise answers for everyday work without being concerned about the legitimacy and accuracy of the results. 
+
+![Product Illustration](https://cdn.prod.website-files.com/613513981b0efaf850830620/672b56e77cc862130e4a40fd_652ecbdc7eddc77274ab4861_image3.webp)
+
+Glean Search and RAG underpin truly enterprise-ready generative AI
+
+Glean’s powerful suite of AI-powered tools enables workers across the organization to supercharge everyday workflows, such as: 
+
+<ul type='disc'>  
+<li>  
+Copiloting with context for engineers<ul type='disc'>  
+<li>  
+On call this week and running into an issue involving a panic in the code? Glean Chat can help you not only locate the cause of the panic within your codebase by analyzing the stack trace, but also provide suggested fixes for the panic, along with ideal reviewers for the code change once you're finished.  
+</li>  
+</ul>  
+</li>  
+<li>  
+Real-time answers for great support teams<ul type='disc'>  
+<li>  
+Easy Zendesk and Salesforce integrations provide support teams with all the right information at their fingertips, enabling them to engage customers with confidence and speed without having to dig through multiple data sources separately.  
+</li>  
+</ul>  
+</li>  
+<li>  
+Reach markets and prospects quicker than ever for sales and marketing<ul type='disc'>  
+<li>  
+Accelerate time to revenue for sales reps, and time to market for marketers. Generate collateral like emails and blogs, stay updated on deals and campaign progress, and even summarize complex documents with Glean Assistant.  
+</li>  
+</ul>  
+</li>  
+</ul>
+
+Glean is also built to be easily implementable – although fully customizable, Glean requires minimal operational overhead to set up, requiring no third-party engagements or professional services investments. 
+
+{{richtext-banner-component}}
+
+## Anchored on Amazon Bedrock
+
+Glean utilizes [Amazon Bedrock](https://aws.amazon.com/bedrock/), a fully managed service that enables AWS customers to easily build generative AI applications by accessing foundation models through API calls without having to worry about provisioning and maintaining infrastructure. Amazon Bedrock allows you to easily customize models via fine-tuning or native support or RAG, while maintaining privacy and security of your data both in transit and at rest. 
+
+Furthermore, Bedrock aligns with Glean’s continued commitment to responsible AI – enabling users worldwide to leverage the best of artificial intelligence while curbing hallucinations and ensuring strict data security. 
+
+## Get started with enterprise-ready AI today
+
+Glean and Amazon Bedrock provides a simple way to integrate responsible and dependable generative AI into the workplace. Glean's out-of-the-box capabilities can help your teams improve communication and productivity in the digital workplace by ensuring employees have all the right information–at all times, across all applications. 
+
+Looking to get started with [enterprise search](https://www.glean.com/blog/enterprise-ai-search-rag) and generative AI today? Check out Glean in [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-mu6dfqwzfcpi6?sr=0-1&ref_=beagle&applicationId=AWSMPContessa) or get a [demo](https://www.glean.com/get-a-demo) today to learn more.
+
+[
+
+Back to all stories
+
+](/blog)
+
+[
+
+Have questions or want a demo?
+
+We’re here to help! Click the button below and we’ll be in touch.
+
+Get a Demo
+
+
+
+](/get-a-demo)
+
+![The generative AI shift: How CIOs will determine the future of business success](https://cdn.prod.website-files.com/613513981b0efaf850830620/6718a0531597b1ca92ad5352_cios-generative-ai-shift.webp)
+
+## The generative AI shift: How CIOs will determine the future of business success
+
+To determine how generative AI has transformed strategies for CIOs and IT leaders, why priorities have shifted, and how CIOs should adapt to prepare their businesses for success in an increasingly AI-centric environment, we worked with ISG to conduct a survey of CIOs and IT leaders (VP level and above) across companies in the Americas and Europe with 1000+ employees. ‍Download the full report to discover our findings:
+
+[Get The Resource](/resources/guides/cio-generative-ai)
+
+![The generative AI shift: How CIOs will determine the future of business success](https://cdn.prod.website-files.com/613513981b0efaf850830620/6718a0531597b1ca92ad5352_cios-generative-ai-shift.webp)
+
+[Get The Resource](#)
+
+Work AI for all.
+
+[Get a Demo](/get-a-demo)
+
+![CTA Section Background Shape](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/63f71e682d171e4af28f393e_cta-section-bg-shape-2.avif)
+
+## See Enterprise AI in action
+
+[
+
+Get a demo
+
+Get a demo
+
+](/get-a-demo)

@@ -1,0 +1,114 @@
+---
+url: "https://developers.glean.com/libraries/indexing-sdk/push/uploader"
+canonical: "https://developers.glean.com/libraries/indexing-sdk/push/uploader"
+title: "PushUploader | Glean Developer"
+description: "The Glean-facing upload layer - documents, identities, and employees"
+fetched_at: "2026-09-01T13:23:04.942Z"
+---
+On this page
+
+`PushUploader` is the SDK's client for the Glean Indexing API. Connector base classes use it internally, so most connectors never touch it directly. You reach for it when you need to push data outside the `fetch → transform → upload` lifecycle: event-driven updates, one-off backfills, or targeted deletes.
+
+```
+from glean.indexing.push import PushUploaderuploader = PushUploader(datasource="companywiki")uploader.bulk_index_documents(documents)
+```
+
+Credentials come from `GLEAN_SERVER_URL` and `GLEAN_INDEXING_API_TOKEN`, same as everywhere else in the SDK.
+
+## Constructor[​](#constructor "Direct link to Constructor")
+
+| Argument | Default | Purpose |
+| --- | --- | --- |
+| `datasource` | — | Datasource name sent with every call. |
+| `retries` | `None` | Generated-client retry configuration. |
+| `server_url` | `None` | Per-call server URL override. |
+| `timeout_ms` | `None` | Per-call timeout override. |
+| `http_headers` | `None` | Extra HTTP headers. |
+| `observability` | `None` | A `ConnectorObservability` to record upload logs and metrics. |
+| `upload_max_workers` | `5` | Concurrent middle-page uploads. Must be greater than zero. |
+
+## Documents[​](#documents "Direct link to Documents")
+
+### Bulk replace[​](#bulk-replace "Direct link to Bulk replace")
+
+`bulk_index_documents()` replaces the datasource's documents. This is what a full crawl runs, and it is what deletes stale documents.
+
+```
+uploader.bulk_index_documents(    documents,    batch_size=1000,    max_batch_bytes=5 * 1024 * 1024,)
+```
+
+| Argument | Default | Purpose |
+| --- | --- | --- |
+| `upload_id` | generated | Groups batches into one upload session. |
+| `batch_size` | `1000` | Maximum documents per batch. |
+| `max_batch_bytes` | `5 MiB` | Maximum serialized bytes per batch. Set `None` to batch by count only. |
+| `force_restart_upload` | `None` | Discards a previous incomplete session. |
+| `disable_stale_document_deletion_check` | `None` | Forces synchronous stale deletion. |
+
+Batching applies both limits: a batch closes when it hits `batch_size` documents **or** `max_batch_bytes` serialized bytes, whichever comes first. That keeps one unusually large document from pushing a batch past the API's payload limit. An empty input still sends one page marked as both first and last, completing an empty replacement so previously indexed documents are reconciled as stale.
+
+danger
+
+`bulk_index_documents()` is a **replacement**. Documents absent from the call are deleted as stale. Never call it with a partial result set — see [Indexing modes](/libraries/indexing-sdk/concepts/indexing-modes).
+
+### Incremental updates[​](#incremental-updates "Direct link to Incremental updates")
+
+To add or update documents without touching anything else, use the additive `index_documents()`. Incremental connector runs use this method (once per streamed batch), and an empty incremental run makes no document request:
+
+```
+uploader.index_documents(documents)
+```
+
+This is the right call for event-driven connectors reacting to a webhook.
+
+### Deleting[​](#deleting "Direct link to Deleting")
+
+```
+uploader.delete_document(object_type="article", document_id="page_123")
+```
+
+### Pre-supplied batches[​](#pre-supplied-batches "Direct link to Pre-supplied batches")
+
+If you're already producing batches — a streaming connector, or your own chunking — hand them over directly:
+
+```
+uploader.bulk_index_document_batches(batches, batch_count=len(batches))
+```
+
+Pass `batch_count` when you know it. The uploader uses it to mark the final page, which is what triggers stale-document cleanup.
+
+## Identities[​](#identities "Direct link to Identities")
+
+Document ACLs only evaluate if Glean knows about the users and groups they reference. See [Permissions](/libraries/indexing-sdk/permissions).
+
+```
+uploader.bulk_index_users(users=users, batch_size=1000)uploader.bulk_index_groups(groups=groups, batch_size=1000)uploader.bulk_index_memberships(memberships=memberships, batch_size=1000)
+```
+
+Single-item and delete variants exist too: `index_user()`, `index_group()`, `index_membership()`, `delete_user()`, `delete_group()`, `delete_membership()`.
+
+info
+
+Push groups and memberships together. A group with no memberships produces ACLs that can never match anyone. The connector base classes raise `InconsistentDataError` when `get_identities()` returns groups without memberships.
+
+## Employees[​](#employees "Direct link to Employees")
+
+For people data, separate from document ACLs:
+
+```
+uploader.bulk_index_employees(employees=employees, batch_size=1000)
+```
+
+## Parallelism[​](#parallelism "Direct link to Parallelism")
+
+`bulk_index_document_batches()` uploads middle pages concurrently via a thread pool sized by `upload_max_workers` (default 5). The **first and last pages are always sequential** — the first opens the upload session, the last closes it and triggers stale deletion, so neither can race.
+
+```
+uploader = PushUploader(datasource="companywiki", upload_max_workers=10)
+```
+
+Raise it for many small batches over a high-latency link; lower it to `1` to make an upload fully sequential when debugging.
+
+## Parameter naming[​](#parameter-naming "Direct link to Parameter naming")
+
+Document methods take `disable_stale_document_deletion_check`; user, group, and employee bulk methods take `disable_stale_data_deletion_check`. Membership bulk uploads do not expose a stale-deletion option; they accept `force_restart_upload` and optional `group` scoping.

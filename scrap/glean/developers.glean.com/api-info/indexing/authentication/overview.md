@@ -1,0 +1,406 @@
+---
+url: "https://developers.glean.com/api-info/indexing/authentication/overview"
+canonical: "https://developers.glean.com/api-info/indexing/authentication/overview"
+title: "Indexing API Authentication | Glean Developer"
+description: "Complete implementation guide for authenticating with Glean's Indexing API using Glean-issued tokens"
+fetched_at: "2026-09-01T13:22:50.288Z"
+---
+On this page
+
+This guide covers implementing authentication for Glean's **Indexing API**, which powers document indexing, datasource management, and administrative operations. The Indexing API **only supports Glean-issued tokens** - OAuth authentication is not available.
+
+warning
+
+**Critical**: The Indexing API does **NOT support OAuth authentication**. You must use Glean-issued tokens for all Indexing API operations.
+
+### Glean-Issued Tokens (Only Option)
+
+**Manually created through admin console**
+
+-   **Authentication**: Glean tokens only (no OAuth support)
+-   **Permissions**: Global or limited to specific datasource apps
+-   **Access**: Standard Indexing API operations; Custom Metadata uses separately scoped credentials
+-   **Advanced Features**: IP restrictions, token rotation, custom expiry
+-   **Use Cases**: Document indexing, datasource management, bulk operations
+
+* * *
+
+## Authentication Headers Reference[​](#authentication-headers-reference "Direct link to Authentication Headers Reference")
+
+The Indexing API uses a simple authentication header format since it only supports Glean-issued tokens:
+
+```
+Authorization: Bearer <indexing_api_token>
+```
+
+### Header Details[​](#header-details "Direct link to Header Details")
+
+| Header | Required | Description | Example Value |
+| --- | --- | --- | --- |
+| `Authorization` | Always | Bearer token with your Indexing API token | `Bearer glean_XYZ123...` |
+
+note
+
+Unlike the Client API, Indexing API tokens do **not** require additional headers like `X-Glean-Auth-Type` or `X-Glean-ActAs`.
+
+* * *
+
+## Quick Setup Overview[​](#quick-setup-overview "Direct link to Quick Setup Overview")
+
+1
+
+Admin Access Required
+
+**Setup Admins**, **Admins**, and **Super Admins** can create Indexing API tokens (only Super Admins can grant `global` scope). **API Token Creators** can create tokens scoped to themselves only.
+
+2
+
+Navigate to Token Management
+
+Go to [Indexing API Settings](https://app.glean.com/admin/platform/tokenManagement?tab=indexing)
+
+3
+
+Create New Token
+
+Configure token with optional IP restrictions and rotation settings
+
+4
+
+Use Token in Requests
+
+Include `Authorization: Bearer <token>` header in all Indexing API calls
+
+* * *
+
+## Creating Indexing API Tokens[​](#creating-indexing-api-tokens "Direct link to Creating Indexing API Tokens")
+
+### Prerequisites[​](#prerequisites "Direct link to Prerequisites")
+
+-   **Super Admin** or **API Token Creator** access to Glean's admin console
+-   **Datasource configured** in Glean (for document indexing)
+-   **IP ranges identified** (if using IP restrictions)
+
+### Token Creation Process[​](#token-creation-process "Direct link to Token Creation Process")
+
+1
+
+Navigate to Indexing Tokens
+
+Go to [Glean Admin Console](https://app.glean.com/admin/platform/tokenManagement?tab=indexing) → **Platform** → **API Tokens** → **Indexing Tokens** tab
+
+2
+
+Add New Token
+
+Click **"Add API token"** and configure:
+
+![Add new Indexing API token](/img/authentication/add-indexing-api-token.png)![Add new Indexing API token](/img/authentication/add-indexing-api-token-dark.png)
+
+-   **Token Name**: Descriptive name for tracking
+-   **Global Permissions**: Full indexing API access
+-   **App Permissions**: Limit to specific datasources (optional)
+-   **Expires On**: Expiration date (**required**) — the Admin Console validates this field before creating the token
+-   **IP Restrictions**: Optional IP range limitations
+-   **Rotation Settings**: Optional automated rotation
+
+note
+
+An expiration date is **required**. If you leave the **Expires** field empty, the Admin Console blocks token creation with a validation message rather than failing with a server error.
+
+3
+
+Save Token Securely
+
+warning
+
+The token is only displayed once after creation. Save it securely - you cannot retrieve it again.
+
+![Token creation success](/img/authentication/create-token-success.png)![Token creation success](/img/authentication/create-token-success-dark.png)
+
+### Token Properties[​](#token-properties "Direct link to Token Properties")
+
+-   **API Support**: **Indexing API only** (Client API not supported)
+-   **User Context**: Service-level access rather than Client API user impersonation
+-   **Access**: Global or limited to selected datasource apps; [Custom Metadata](/api-info/indexing/custom-metadata/authentication) uses separate global or group-specific scopes
+-   **Expiration**: Required expiry date (validated in the Admin Console at creation time)
+-   **Security**: Support for IP restrictions and rotation
+
+* * *
+
+## Advanced Token Features[​](#advanced-token-features "Direct link to Advanced Token Features")
+
+### IP Address Restrictions[​](#ip-address-restrictions "Direct link to IP Address Restrictions")
+
+Restrict token usage to specific IP ranges for enhanced security:
+
+IP Restrictions Setup
+
+**Configure IP Ranges**
+
+1.  During token creation, specify **Greenlisted IPs**
+2.  Use comma-separated list of CIDR format ranges
+3.  Example: `192.168.1.0/24,10.0.0.0/16`
+
+![IP restrictions configuration](/img/authentication/greenlisted-ips.png)![IP restrictions configuration](/img/authentication/greenlisted-ips-dark.png)
+
+**CIDR Format Examples**
+
+| CIDR Notation | Description | IP Range |
+| --- | --- | --- |
+| `192.168.1.0/24` | Single subnet | 192.168.1.1 - 192.168.1.254 |
+| `10.0.0.0/16` | Large network | 10.0.0.1 - 10.0.255.254 |
+| `203.0.113.5/32` | Single IP | 203.0.113.5 only |
+
+**Benefits**
+
+-   Restrict API access to known infrastructure
+-   Prevent unauthorized usage if token is compromised
+-   Meet compliance requirements for IP-based access control
+
+### Token Rotation[​](#token-rotation "Direct link to Token Rotation")
+
+Enable automatic token rotation for enhanced security:
+
+Token Rotation Setup
+
+**Configure Rotation**
+
+1.  During token creation, set **Rotation Period** (in minutes)
+2.  Use the rotation API endpoint to rotate tokens programmatically
+3.  Minimum rotation period: 1440 minutes (24 hours)
+
+![Token rotation configuration](/img/authentication/rotation-period.png)![Token rotation configuration](/img/authentication/rotation-period-dark.png)
+
+**Using the Rotation API**
+
+The token to rotate is identified by the bearer token in the request, so no request body is required. The current token must be the one being rotated.
+
+```
+curl -X POST https://instance-be.glean.com/api/index/v1/rotatetoken \  -H 'Authorization: Bearer <CURRENT_TOKEN>' \  -H 'Content-Type: application/json'
+```
+
+**Response**
+
+```
+{  "rawSecret": "new-rotated-token-value",  "createdAt": 1735689599,  "rotationPeriodMinutes": 1440}
+```
+
+**Best Practices**
+
+-   Implement rotation in your application logic
+-   Store both old and new tokens during rotation period
+-   Test rotation in development environment first
+
+* * *
+
+## Using Indexing API Tokens[​](#using-indexing-api-tokens "Direct link to Using Indexing API Tokens")
+
+### Authentication Header[​](#authentication-header "Direct link to Authentication Header")
+
+All Indexing API requests require a single authentication header:
+
+```
+Authorization: Bearer <indexing_api_token>
+```
+
+### Example Requests[​](#example-requests "Direct link to Example Requests")
+
+Replace `instance` with your Glean instance name ([how to find](/get-started/authentication#finding-your-server-url)):
+
+-   Index Document
+-   Bulk Index Documents
+-   Get Datasource Config
+-   Add Datasource
+
+```
+curl -X POST https://instance-be.glean.com/api/index/v1/indexdocument \  -H 'Authorization: Bearer <INDEXING_TOKEN>' \  -H 'Content-Type: application/json' \  -d '{    "datasource": "my-datasource",    "document": {      "id": "doc-123",      "title": "Example Document",      "body": {"mimeType": "text/plain", "textContent": "Document content"},      "updatedAt": "2024-01-15T10:30:00Z"    }  }'
+```
+
+```
+curl -X POST https://instance-be.glean.com/api/index/v1/bulkindexdocuments \  -H 'Authorization: Bearer <INDEXING_TOKEN>' \  -H 'Content-Type: application/json' \  -d '{    "datasource": "my-datasource",    "documents": [      {        "id": "doc-1",        "title": "First Document",        "body": {"mimeType": "text/plain", "textContent": "Content 1"}      },      {        "id": "doc-2",         "title": "Second Document",        "body": {"mimeType": "text/plain", "textContent": "Content 2"}      }    ]  }'
+```
+
+```
+curl -X POST https://instance-be.glean.com/api/index/v1/getdatasourceconfig \  -H 'Authorization: Bearer <INDEXING_TOKEN>' \  -H 'Content-Type: application/json' \  -d '{    "datasource": "my-datasource"  }'
+```
+
+```
+curl -X POST https://instance-be.glean.com/api/index/v1/adddatasource \  -H 'Authorization: Bearer <INDEXING_TOKEN>' \  -H 'Content-Type: application/json' \  -d '{    "datasource": {      "name": "My Custom Datasource",      "displayName": "Custom Data Source",      "homeUrl": "https://example.com"    }  }'
+```
+
+* * *
+
+## Testing Your Authentication[​](#testing-your-authentication "Direct link to Testing Your Authentication")
+
+### Quick Verification[​](#quick-verification "Direct link to Quick Verification")
+
+Test your token with a read-only datasource config request:
+
+```
+curl -X POST https://<instance>-be.glean.com/api/index/v1/getdatasourceconfig \  -H 'Authorization: Bearer <YOUR_INDEXING_TOKEN>' \  -H 'Content-Type: application/json' \  -d '{    "datasource": "my-datasource"  }'
+```
+
+### Expected Response[​](#expected-response "Direct link to Expected Response")
+
+Successful authentication returns your datasource's configuration:
+
+```
+{  "name": "my-datasource",  "displayName": "My Datasource",  "urlRegex": "https://internal.example.com/.*"}
+```
+
+### Test Document Indexing[​](#test-document-indexing "Direct link to Test Document Indexing")
+
+Test document indexing with a minimal document:
+
+```
+curl -X POST https://<instance>-be.glean.com/api/index/v1/indexdocument \  -H 'Authorization: Bearer <YOUR_INDEXING_TOKEN>' \  -H 'Content-Type: application/json' \  -d '{    "datasource": "test-datasource",    "document": {      "id": "test-doc-001",      "title": "Test Document",      "body": {        "mimeType": "text/plain",        "textContent": "This is a test document for authentication verification."      },      "updatedAt": "'$(date -u +%Y-%m-%dT%H:%M:%SZ)'"    }  }'
+```
+
+* * *
+
+## Troubleshooting[​](#troubleshooting "Direct link to Troubleshooting")
+
+### Common Authentication Errors[​](#common-authentication-errors "Direct link to Common Authentication Errors")
+
+| Error | Cause | Solution |
+| --- | --- | --- |
+| `401 Unauthorized` | Invalid or expired token | Verify token is correct and not expired |
+| `403 Forbidden - IP not allowed` | Request from non-whitelisted IP | Add your IP to token's allowed IP ranges |
+| `400 Bad Request - Invalid datasource` | Datasource doesn't exist | Create datasource first or verify name |
+| `413 Request Entity Too Large` | Document/request too large | Split into smaller requests or use bulk operations |
+| `429 Too Many Requests` | Rate limit exceeded | Implement exponential backoff retry logic |
+| `500 Internal Server Error` | Glean service issue | Check Glean status page, retry with backoff |
+
+### Debugging Steps[​](#debugging-steps "Direct link to Debugging Steps")
+
+1
+
+Verify token validity
+
+-   Check that token hasn't expired
+-   Ensure token was created for Indexing API (not Client API)
+-   Test with a simple read-only endpoint like datasource config
+
+2
+
+Check IP restrictions
+
+-   Verify your IP is in allowed ranges (if IP restrictions enabled)
+-   Test from different IP if needed
+-   Check CIDR format in token configuration
+
+3
+
+Validate request format
+
+-   Ensure Content-Type header is set correctly
+-   Verify JSON payload is valid
+-   Check required fields are present
+
+4
+
+Test with minimal request
+
+-   Start with datasource config or datasource status endpoints
+-   Use minimal document for indexing tests
+-   Gradually add complexity once basic auth works
+
+### Indexing-Specific Issues[​](#indexing-specific-issues "Direct link to Indexing-Specific Issues")
+
+Document Indexing Troubleshooting
+
+**Common Document Indexing Issues**
+
+| Issue | Cause | Solution |
+| --- | --- | --- |
+| Document not appearing in search | Processing delay | Wait 5-10 minutes, check document status API |
+| Permissions error | User lacks access | Verify document permissions are set correctly |
+| Invalid MIME type | Unsupported file format | Check supported MIME types documentation |
+| Document too large | Size exceeds limits | Split document or compress content |
+
+**Validation Steps**
+
+1.  **Check document status**: Use the document status API to verify indexing completion
+2.  **Verify permissions**: Ensure document permissions allow intended users access
+3.  **Test search**: Search for indexed document using specific terms from content
+4.  **Monitor logs**: Check Glean's admin console for indexing errors
+
+* * *
+
+## Best Practices[​](#best-practices "Direct link to Best Practices")
+
+### Security[​](#security "Direct link to Security")
+
+-   **Store tokens securely** - never commit tokens to version control
+-   **Use IP restrictions** when possible to limit token usage
+-   **Enable token rotation** for long-running applications
+-   **Set an appropriate expiration date** - expiration is required, so choose the shortest window that fits your use case (and plan to rotate or reissue before it lapses)
+-   **Monitor token usage** through the admin console
+-   **Create separate tokens** for different environments (dev/staging/prod)
+
+### Performance[​](#performance "Direct link to Performance")
+
+-   **Use bulk operations** when indexing multiple documents
+-   **Implement retry logic** with exponential backoff
+-   **Monitor rate limits** and adjust request frequency
+-   **Batch requests** efficiently to reduce API calls
+-   **Use appropriate content chunking** for large documents
+
+### Development[​](#development "Direct link to Development")
+
+-   **Test thoroughly** in development environment first
+-   **Use descriptive token names** to track purpose and usage
+-   **Document token configuration** for team members
+-   **Plan for token rotation** in application architecture
+-   **Implement proper error handling** for all API responses
+
+### Operational[​](#operational "Direct link to Operational")
+
+-   **Monitor indexing status** regularly through admin console
+-   **Set up alerts** for indexing failures or errors
+-   **Track document counts** to verify successful indexing
+-   **Regular token audits** to remove unused tokens
+-   **Backup token configurations** for disaster recovery
+
+* * *
+
+## Next Steps[​](#next-steps "Direct link to Next Steps")
+
+[
+
+### Setup Datasource
+
+Configure your first datasource for document indexing
+
+
+
+
+
+
+
+](/api-info/indexing/getting-started/setup-datasource)[
+
+### Index Documents
+
+Learn document indexing best practices
+
+
+
+
+
+
+
+](/api-info/indexing/getting-started/index-documents)[
+
+### Indexing API Reference
+
+Explore all Indexing API endpoints
+
+
+
+
+
+
+
+](/api/indexing-api/documents-overview)

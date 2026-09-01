@@ -1,0 +1,25 @@
+---
+url: "https://docs.glean.com/troubleshooting/error-codes/servicenow/servicenow-1"
+canonical: "https://docs.glean.com/troubleshooting/error-codes/servicenow/servicenow-1"
+title: "SERVICENOW_1"
+description: "SERVICENOW_1 Error Code"
+fetched_at: "2026-09-01T13:30:29.739Z"
+---
+On this page
+
+## Issue[​](#issue "Direct link to Issue")
+
+We are unable to fetch a refresh and/or access token.
+
+## Resolution[​](#resolution "Direct link to Resolution")
+
+-   Verify the `Glean Search OAuth` application has been created and configured correctly.
+    
+-   Confirm that the inputted OAuth Client ID and OAuth Client Secret fields matches the fields of the ServiceNow OAuth application
+    
+-   Additionally, verify that the `gleansearch` user has been created and that that both the userId and password matches was inputted to Glean.
+    
+-   Verify that the inputted domain name or url is correct and excludes any http prefixes.
+    
+
+For additional assistance, please contact Glean Support at [https://support.glean.com](https://support.glean.com)

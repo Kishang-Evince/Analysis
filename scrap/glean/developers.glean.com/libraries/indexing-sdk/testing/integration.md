@@ -1,0 +1,106 @@
+---
+url: "https://developers.glean.com/libraries/indexing-sdk/testing/integration"
+canonical: "https://developers.glean.com/libraries/indexing-sdk/testing/integration"
+title: "Integration testing | Glean Developer"
+description: "Phase 2 - run against the real source API with record and replay, and a mocked Glean client"
+fetched_at: "2026-09-01T13:23:05.094Z"
+---
+On this page
+
+Run this from the CLI
+
+`glean-idx test --phase integration` runs this phase without writing a test file. See the [CLI reference](/libraries/indexing-sdk/cli).
+
+Phase 2 hits your **real source API** while keeping Glean mocked. The first run records every response to NDJSON on disk; later runs replay from those files without touching the network.
+
+That combination is what makes it useful: you validate your data client against responses the source actually produced, then re-run those exact responses forever, offline and deterministically.
+
+```
+from glean.indexing.testing import TestConfig, TestHarnessharness = TestHarness(    connector=my_connector,    config=TestConfig.from_yaml("testing_config.yaml"),    clients={"data_client": real_data_client},)result = harness.run_integration_test()result.assert_documents_posted()
+```
+
+## Registering clients[​](#registering-clients "Direct link to Registering clients")
+
+`clients` maps **connector attribute names** to data client instances:
+
+```
+harness = TestHarness(    connector=my_connector,    clients={        "data_client": articles_client,        "comments_client": comments_client,    },)
+```
+
+Each key must name a real attribute on the connector; a typo raises `AttributeError` rather than silently skipping that client. Clients you don't register are left untouched — they'll hit the real API on every run without being recorded.
+
+## Configuration[​](#configuration "Direct link to Configuration")
+
+`testing_config.yaml` at the connector root, with a top-level `testing:` key:
+
+testing\_config.yaml
+
+```
+testing:  cache_dir: .glean_test_cache/  use_cache: true  refresh_cache: false  run_id_prefix: sdk_test  clients:    data_client:      max_items: 5    comments_client:      max_items: 20  negative_test_identities:    - contractor@example.com    - external-partners
+```
+
+| Key | Default | Purpose |
+| --- | --- | --- |
+| `cache_dir` | `.glean_test_cache/` | Where NDJSON fixtures are written. |
+| `use_cache` | `true` | Replay from cache when a valid fixture exists. |
+| `refresh_cache` | `false` | Force re-recording even on a cache hit. |
+| `run_id_prefix` | `sdk_test` | Prefix for Phase 3 upload run IDs. |
+| `clients.<name>.max_items` | `5` | Limits source consumption to at most N items for that client. `null` disables the cap. This is not an upload or blast-radius limit. |
+| `negative_test_identities` | `[]` | Identities that must not be able to access any transformed document. |
+
+Load it explicitly, or build one in process:
+
+```
+config = TestConfig.from_yaml("testing_config.yaml")config = TestConfig(cache_dir=".glean_test_cache/", use_cache=True)
+```
+
+A missing file raises `FileNotFoundError`; a file without the `testing:` key raises `KeyError` naming the keys it did find.
+
+## Record and replay[​](#record-and-replay "Direct link to Record and replay")
+
+On the first run, each registered client is wrapped in a recording wrapper that forwards to the real API and writes items to NDJSON. On later runs, a replay wrapper serves those items from disk.
+
+To re-record after the source changes, set `config.refresh_cache = True` or delete `cache_dir`.
+
+The cache manifest tracks the SDK version used to record. A fixture recorded by a different version won't be replayed silently.
+
+warning
+
+Recorded fixtures contain **real data from your source**. Review them before committing: they may contain names, email addresses, or internal content. Either scrub them, or add `cache_dir` to `.gitignore` and accept that CI records on first run.
+
+## Keeping fixtures small[​](#keeping-fixtures-small "Direct link to Keeping fixtures small")
+
+`max_items` defaults to 5 per client — deliberately small. The point of Phase 2 is validating response *shape*, not volume, and small fixtures stay reviewable and cheap to commit.
+
+Raise it for a client whose pagination you specifically want to exercise:
+
+```
+clients:  articles_client:    max_items: 250 # spans several pages
+```
+
+The wrapper stops consuming the registered source client after the cap. It does not cap transformed documents at Glean, constrain unregistered clients, or make a full replacement safe. Never treat `max_items` as a blast-radius guarantee.
+
+## Asserting permissions[​](#asserting-permissions "Direct link to Asserting permissions")
+
+Identities in `negative_test_identities` are checked against every transformed document after the run. The assertion fails when a configured identity appears literally in `allowed_users`, `allowed_groups`, or any intersection's `required_groups`. It also fails conservatively when `permissions` is missing, `allow_anonymous_access=True`, or `allow_all_datasource_users_access=True`, because the identity's lack of access cannot be established.
+
+This is the cheapest real permissions test you can run: it uses production-shaped data, needs no Glean instance, and rejects both literal ACL leaks and broad access before either reaches an index.
+
+You can also assert positively:
+
+```
+from glean.indexing.testing import extract_permission_refsresult = harness.run_integration_test()refs = extract_permission_refs(result.documents_posted)assert "engineering" in refs.group_idsassert "contractor@example.com" not in refs.user_ids
+```
+
+## In CI[​](#in-ci "Direct link to In CI")
+
+Commit the fixtures and CI replays them — no source credentials in CI, deterministic runs. If you'd rather not commit real data, run Phase 2 locally only and keep CI on Phase 1.
+
+## What to test here[​](#what-to-test-here "Direct link to What to test here")
+
+-   Pagination actually terminates, and covers every page.
+-   Fields you assumed were always present sometimes aren't.
+-   Rate limiting and retries behave against real response headers.
+-   Permission payloads map correctly from real ACL data.
+
+What Phase 2 still can't tell you is whether Glean accepts and indexes your documents. That's [Phase 3](/libraries/indexing-sdk/testing/end-to-end).

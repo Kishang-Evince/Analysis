@@ -1,0 +1,197 @@
+---
+url: "https://www.glean.com/blog/why-a-unified-document-model-is-essential-for-a-comprehensive-workplace-chatgpt"
+canonical: "https://www.glean.com/blog/why-a-unified-document-model-is-essential-for-a-comprehensive-workplace-chatgpt"
+title: "Why a unified document model is essential for a comprehensive workplace ChatGPT"
+description: "Sumeet Sobti  | Explore why a unified document model is crucial for a comprehensive workplace ChatGPT. Explore how it enhances understanding within the chat interface."
+fetched_at: "2026-09-01T13:26:56.984Z"
+---
+Last updated Oct 31, 2023.
+
+# Why a unified document model is essential for a comprehensive workplace ChatGPT
+
+0
+
+minutes read
+
+[![](https://cdn.prod.website-files.com/613513981b0efaf850830620/61e567d27b811f5c19c3cb5d_24-Sumeet.png)
+
+Sumeet Sobti
+
+Engineering
+
+
+
+](/authors/sumeet-sobti)
+
+![Why a unified document model is essential for a comprehensive workplace ChatGPT](https://cdn.prod.website-files.com/613513981b0efaf850830620/65424ffac507d94ee7a9d4bc_Unified%20document%20model.webp)
+
+Listen to article
+
+0:00
+
+0.5x 1x 1.5x 2x
+
+### Table of contents
+
+[
+
+Heading 2
+
+](#)
+
+[
+
+Heading 3
+
+](#)
+
+[
+
+Heading 4
+
+](#)
+
+[
+
+Heading 5
+
+](#)
+
+[
+
+Heading 6
+
+](#)
+
+[
+
+Have questions or want a demo?
+
+We’re here to help! Click the button below and we’ll be in touch.
+
+Get a Demo
+
+
+
+](/get-a-demo)
+
+Share this article:
+
+Listen to article
+
+0:00
+
+0.5x 1x 1.5x 2x
+
+An essential requirement for uplifting generative AI from a limited knowledge discovery tool into a true workplace assistant is reliable and comprehensive information. Enterprise-ready generative AI for work is only as valuable as the enterprise data that gets connected to it. The more data sources within an enterprise’s corpus that get connected to the AI, the better and more comprehensive the AI-generated answers get. This enables users to trust answers readily without second-guessing whether the AI had access to all the relevant information while generating the answer. 
+
+Accomplishing this requires a robust unified document model. Enterprise information isn’t simply a set of clean, uniform series of texts – it’s a diverse set of data that requires thoughtful schema design in order to process and feed into a model for optimal results. 
+
+In this blog, we’ll be exploring why a unified document model is so essential for a robust, generative AI for work, and what you need to know when considering or building one. 
+
+## Data sources abound
+
+What we refer to as ‘documents’ when we talk about a ‘unified document model’ is in reality a nuanced schema that represents all kinds of data any given company cares about:
+
+-   Collaborative documents like Google Docs
+-   Published wiki resources like Confluence Pages
+-   Question-answer pairs like StackOverflow
+-   Tickets or cases in tools like Jira, Zendesk or Salesforce
+-   Change management and source code like Github
+-   Messaging and conversations like Slack or Teams
+-   Applicant profiles in applicant tracking systems like Greenhouse
+-   Design files in tools like Figma
+-   Emails
+-   People data in tools like BambooHR
+-   Multimedia resources in tools like Docebo or Gong
+-   Calendar events
+
+To deliver a complete search or generative AI experience that provides exactly the information that a user is looking for, this diverse set of data needs to be properly structured and documented – a process involving considerable complexities: 
+
+-   User identities
+-   Permissions and access control
+-   Storage of unstructured text and structured attributes present in the documents
+-   Relationships between users and documents
+-   Understanding the different ways in which users are engaging with content
+-   Crawling and managing updates to all of the above
+-   Understanding the context of how documents are shared within the enterprise
+-   Document understanding
+-   Indexing
+-   Scoring
+-   Presentation choices for the search results page
+-   Data duplication
+-   Document deprecation
+
+To make it even more complicated, each new data source presents a new and unique type of the problem to solve. 
+
+For example, consider the problem of capturing relationships between users and documents. A Google Doc may have a creator, along with multiple editors and commenters. Many other users may be at-mentioned in the body or comments in the document. A Jira ticket may have a creator and an assignee while having some other users CCed on it, participating as commenters, or at-mentioned in the comments. A Github PR may have an author, possibly multiple reviewers and commenters, and several other users at-mentioned in the comments. 
+
+Not every datasource shares all of the roles mentioned – but a ranking model that has to provide a user experience across all such datasources does need to understand all of these kinds of relationships in context of the datasource. It needs to weigh a co-editing relationship on a Google Doc against an at-mentioned relationship on a Jira ticket. This is where a well-designed unified model for capturing user-document relationships starts to matter - it becomes the foundation on which ranking models like those mentioned above get expressed and implemented. 
+
+All these relationships not only need to be captured and remembered by the system, but various parts of the system may want to use these relationships for their benefit in different ways. For example, a ranking model for a search system may want to boost a particular document’s rank if the querying user was recently at-mentioned in it. Or, boost a document in particular if the querying user asked a question on the document in the past, which was recently answered by another user.
+
+{{richtext-banner-component}}
+
+## Commonalities and idiosyncrasies
+
+Documents across these disparate data sources have quite a bit of variety. Consider message threads on Slack vs wiki pages on Confluence vs video recordings on Gong. The ways in which each document is authored or created are different – along with their purposes, content, attributes, and the ways in which users store and search for them. Even within the messaging and commenting paradigm, Slack message threads vary in character compared to comment threads on Google docs, Github PRs, Jira tickets, and email chains.
+
+So, how does one solve the wide variety of problems on the wide variety of data sources? The right design starts by considering what makes these data sources the same, and what makes them different. This is the part of the modeling process, where a significant amount of intuition and judgment comes into play – and getting the model just right pays long-term dividends. This is the critical juncture where innovative design is not only advantageous, but necessary for building a sustainable, scalable, and functional product. 
+
+An ideal approach is to have a document model that treats the common parts of the data sources in a unified way, while also having the flexibility to deal with their idiosyncrasies. This is not just a nice-to-have, but a must for a good search and generative AI system. It enables scalability, and controls not just complexity of software, but also model complexity (in the AI / ML sense), leading to better user experience. 
+
+It also makes it possible to solve the search problem comprehensively and coherently. When users consider a generative AI work assistant, they aren’t looking to solve their information needs one data source at a time. Instead, they need a quick and ready solution that can provide them with the answer regardless of where the data resides. So, it’s important for the system to be able to put all the different data sources on the same footing and perform its learning comprehensively across all data sources. Having an exceptional, unified data model turns out to be instrumental in achieving this. 
+
+## Useful AI requires a unified model
+
+It takes meticulous care to build out a great model capable of supporting a genuinely useful generative AI for the enterprise. You’ll have to consider how to model fields that might be shared across all datasources, while also allowing for graceful extensibility. If the unified model isn’t designed carefully, each additional datasource connection will require a redesign, which cripples your ability to scale to the dozens of datasources that your company knowledge is fragmented into. 
+
+Aside from the core content in a datasource, you’ll also need to understand how to leverage the metadata (labels, structure, associated people) – otherwise, there are gaping holes in the signals necessary to get users what they expect. It’s a time-consuming and expensive process that leaves a lot of room for error and scope creep. 
+
+Looking to learn more? Interested in getting started with truly enterprise-ready generative AI today – not tomorrow? Sign up for a Glean [demo](https://www.glean.com/get-a-demo)!
+
+[
+
+Back to all stories
+
+](/blog)
+
+[
+
+Have questions or want a demo?
+
+We’re here to help! Click the button below and we’ll be in touch.
+
+Get a Demo
+
+
+
+](/get-a-demo)
+
+![Integrating LLMs and GPT into enterprise workflows](https://cdn.prod.website-files.com/613513981b0efaf850830620/65fa99b935ec537dc5712492_642168aafc23be1931c8596e_LLM%2520Whitepaper%2520LinkedIn%2520Ad.jpeg)
+
+## Integrating LLMs and GPT into enterprise workflows
+
+Discover in our white paper how improvements to generative AIs brought them to the forefront of modern workplace transformation – and how best to integrate them into several key areas of enterprise business.
+
+[Get The Resource](/resources/guides/llm-gpt-enterprise)
+
+![Integrating LLMs and GPT into enterprise workflows](https://cdn.prod.website-files.com/613513981b0efaf850830620/65fa99b935ec537dc5712492_642168aafc23be1931c8596e_LLM%2520Whitepaper%2520LinkedIn%2520Ad.jpeg)
+
+[Get The Resource](#)
+
+Work AI for all.
+
+[Get a Demo](/get-a-demo)
+
+![CTA Section Background Shape](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/63f71e682d171e4af28f393e_cta-section-bg-shape-2.avif)
+
+## See Enterprise AI in action
+
+[
+
+Get a demo
+
+Get a demo
+
+](/get-a-demo)

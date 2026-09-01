@@ -1,0 +1,88 @@
+---
+url: "https://developers.glean.com/get-started/authentication"
+canonical: "https://developers.glean.com/get-started/authentication"
+title: "Authentication Overview | Glean Developer"
+description: "Authentication methods and concepts for Glean APIs - Platform, Client, and Indexing"
+fetched_at: "2026-09-01T13:23:01.534Z"
+---
+On this page
+
+Glean's three REST API families use different authentication models. Start by choosing the API family you need, then choose the access model that fits your integration. Follow that API's implementation guide for the exact credential and scope requirements.
+
+## Finding Your Server URL[​](#finding-your-server-url "Direct link to Finding Your Server URL")
+
+All Glean API requests require your organization's **server URL**. That is the complete backend origin, for example `https://acme-be.glean.com`. It is not the hostname you use for the Glean web app, which is often `app.glean.com`.
+
+If automatic discovery is unavailable, ask a Glean admin for the complete **Server instance (QE)** value, including `https://`. Glean admins can copy it from the [About Glean page](https://app.glean.com/admin/about-glean). The **instance name** is only the slug inside a Glean-hosted URL (`acme` in `https://acme-be.glean.com`); most API clients and the API Explorer require the full server URL.
+
+The same API URL is used for each API family:
+
+-   Platform API: `https://instance-name-be.glean.com/api/...`
+-   Client API: `https://instance-name-be.glean.com/rest/api/v1/...`
+-   Indexing API: `https://instance-name-be.glean.com/api/index/v1/...`
+
+## API authentication at a glance[​](#api-authentication-at-a-glance "Direct link to API authentication at a glance")
+
+### Platform API
+
+Supported APIs:Platform API
+
+**Recommended for new integrations**
+
+-   OAuth is preferred for per-user integrations
+-   Glean OAuth Authorization Server (on by default; some IdP OAuth tenants keep it off) or external IdP OAuth
+-   Glean-issued tokens for Indexing, global `X-Glean-ActAs`, or when no OAuth path exists
+-   [Platform authentication guide](/api/platform-api/authentication)
+
+### Client API
+
+Supported APIs:Client API
+
+**For existing and specialized user-facing integrations**
+
+-   OAuth is preferred for per-user integrations
+-   Glean OAuth Authorization Server (on by default; some IdP OAuth tenants keep it off) or external IdP OAuth
+-   Glean-issued tokens for global `X-Glean-ActAs`, or when no OAuth path exists
+-   [Client authentication guide](/api-info/client/authentication/overview)
+
+### Indexing API
+
+Supported APIs:Indexing API
+
+**For content ingestion and management**
+
+-   Glean-issued tokens only
+-   Datasources, documents, people, and permissions
+-   [Indexing authentication guide](/api-info/indexing/authentication/overview)
+
+## Choose an authentication path[​](#choose-an-authentication-path "Direct link to Choose an authentication path")
+
+### Platform API: per-user or admin-managed access[​](#platform-api-per-user-or-admin-managed-access "Direct link to Platform API: per-user or admin-managed access")
+
+For per-user Platform API integrations, prefer OAuth. The Glean OAuth Authorization Server is on by default. Tenants that already used IdP OAuth may have it off. Use an external-IdP OAuth token when your organization already issues those tokens. Use a Glean-issued token for global permissions with `X-Glean-ActAs`, or when no OAuth path exists. See the [Platform API authentication guide](/api/platform-api/authentication).
+
+### Client API: per-user or admin-managed access[​](#client-api-per-user-or-admin-managed-access "Direct link to Client API: per-user or admin-managed access")
+
+For per-user Client API integrations, prefer OAuth. The Glean OAuth Authorization Server is on by default. Tenants that already used IdP OAuth may have it off. Use external-IdP OAuth when your organization already issues the access tokens. Use a Glean-issued token for global permissions with `X-Glean-ActAs`, or when no OAuth path exists. See the [Client API authentication guide](/api-info/client/authentication/overview).
+
+### Indexing API[​](#indexing-api "Direct link to Indexing API")
+
+The Indexing API requires Glean-issued tokens. OAuth is not supported for ordinary Indexing API operations. See the [Indexing API authentication guide](/api-info/indexing/authentication/overview).
+
+## Try a request in your tenant[​](#try-a-request-in-your-tenant "Direct link to Try a request in your tenant")
+
+Use the [Search API Explorer](/api/client-api/search/search) to test Client API authentication against your own Glean tenant. For Platform or Indexing API authentication, use that API's getting-started guide. API Explorer is for interactive tenant testing. It is not production sample code, and it does not replace your application's OAuth flow.
+
+## Shared security practices[​](#shared-security-practices "Direct link to Shared security practices")
+
+-   Store credentials securely and never commit them to source control.
+-   Use environment variables or a secrets manager for application credentials.
+-   Use the least-privileged credential and scopes available for your integration.
+-   Rotate long-lived credentials and plan for expiry before production rollout.
+-   Handle `401`, `403`, and rate-limit responses explicitly.
+
+## Next steps[​](#next-steps "Direct link to Next steps")
+
+1.  Choose the right API from the [Glean API overview](/api).
+2.  Follow the API-specific authentication guide above.
+3.  Try the API's getting-started example before building the complete integration.

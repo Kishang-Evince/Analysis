@@ -1,0 +1,91 @@
+---
+url: "https://developers.glean.com/libraries/indexing-sdk/testing/end-to-end"
+canonical: "https://developers.glean.com/libraries/indexing-sdk/testing/end-to-end"
+title: "End-to-end testing | Glean Developer"
+description: "Phase 3 - run a connector against a real source and a real Glean instance"
+fetched_at: "2026-09-01T13:23:05.157Z"
+---
+On this page
+
+Run this from the CLI
+
+`glean-idx test --phase live --mode full --allow-destructive-live` runs a full live phase without writing a test file. It displays the resolved Glean target for confirmation. See the [CLI reference](/libraries/indexing-sdk/cli).
+
+Phase 3 removes all mocking. The connector fetches from your real source and uploads to whatever `GLEAN_SERVER_URL` points at.
+
+```
+from glean.indexing.models import IndexingModefrom glean.indexing.testing import TestConfig, TestHarnessharness = TestHarness(    connector=my_connector,    config=TestConfig.from_yaml("testing_config.yaml"),    clients={"data_client": real_data_client},)result = harness.run_end_to_end(    mode=IndexingMode.FULL,    confirm=True,    allow_destructive=True,    confirmed_target="https://test-company-be.glean.com",)
+```
+
+danger
+
+**This writes real documents to a real Glean instance.** The harness does not sandbox the datasource: your connector's own datasource name is used as-is, and `run_id_prefix` is logged but does not namespace anything. There is no automatic cleanup.
+
+Programmatic runs refuse to start unless `confirm=True` and `allow_destructive=True`; `confirmed_target` also detects a target change between review and execution. Those acknowledgements do not identify production for you. Point `GLEAN_SERVER_URL` at a dedicated test instance and compare it with the confirmed target.
+
+## Before you run it[​](#before-you-run-it "Direct link to Before you run it")
+
+-   `GLEAN_SERVER_URL` points at a **test** instance, verified by eye, not by memory.
+-   `GLEAN_INDEXING_API_TOKEN` is scoped to the test datasource.
+-   `max_items` is set low in `TestConfig` to limit source consumption.
+-   You know how you'll clean up.
+
+Per-client `max_items` limits are applied in Phase 3 too, but they only stop consuming registered source clients after N items. They do not cap Glean-side writes, constrain unregistered clients, or guarantee a small blast radius. With `mode=IndexingMode.FULL`, a low limit creates a partial replacement and can stale-delete every existing document outside that subset. Use a disposable datasource.
+
+## What it returns[​](#what-it-returns "Direct link to What it returns")
+
+`run_end_to_end()` returns an `IndexingWaitResult`, or `None` if the connector uploaded no documents. Because indexing is asynchronous, an accepted upload is not yet a searchable document — the result reflects the indexing outcome, not just the HTTP response.
+
+```
+result = harness.run_end_to_end(    mode=IndexingMode.FULL,    confirm=True,    allow_destructive=True,    confirmed_target="https://test-company-be.glean.com",)if result is None:    raise AssertionError("connector uploaded nothing")
+```
+
+## Verifying documents landed[​](#verifying-documents-landed "Direct link to Verifying documents landed")
+
+Poll indexing status for specific documents:
+
+```
+from glean.api_client.models import DebugDocumentRequestfrom glean.indexing.testing import poll_documents_statussnapshot = poll_documents_status(    "companywiki",    [DebugDocumentRequest(object_type="article", doc_id="page_123")],)print(snapshot.result)
+```
+
+`check_documents_status()` is the single-shot variant. Or from the shell:
+
+```
+glean-idx document status --datasource companywiki --document article page_123 --poll
+```
+
+See [Status and debugging](/libraries/indexing-sdk/status-and-debugging).
+
+## Verifying permissions[​](#verifying-permissions "Direct link to Verifying permissions")
+
+This is the one check only Phase 3 can make: query Glean as a restricted user and confirm they cannot see documents they shouldn't.
+
+```
+from glean.indexing.push import StatusClientstatus = StatusClient(datasource="companywiki")status.check_document_access(...)
+```
+
+Then search as that user. Search results are the ground truth — an upload that succeeded with a correct-looking ACL can still be wrong if the identity graph is incomplete.
+
+## Cleaning up[​](#cleaning-up "Direct link to Cleaning up")
+
+Nothing is cleaned up for you. Write teardown that deletes what the test created:
+
+```
+from glean.indexing.push import PushUploaderuploader = PushUploader(datasource="companywiki")for doc_id in created_ids:    uploader.delete_document(object_type="article", document_id=doc_id)
+```
+
+The live harness rejects people connectors and datasource connectors that override `get_identities()`, because it cannot automatically reverse identity mutations. Test identity payloads with mocked Glean instead.
+
+info
+
+There is no API to delete a datasource *registration*. Deleting the test documents leaves the empty datasource registered. Re-running the connector repopulates it. To remove the datasource entirely, use the Glean admin console.
+
+## When to run it[​](#when-to-run-it "Direct link to When to run it")
+
+Phase 3 is slow, needs credentials, and mutates real state — so it doesn't belong in a per-commit pipeline. Run it:
+
+-   Before first deploying a new connector.
+-   After changing `transform()` or the permission model.
+-   On a nightly or pre-release schedule against a test instance.
+
+Keep Phases 1 and 2 as the fast feedback loop.

@@ -1,0 +1,95 @@
+---
+url: "https://developers.glean.com/libraries/indexing-sdk/concepts/indexing-modes"
+canonical: "https://developers.glean.com/libraries/indexing-sdk/concepts/indexing-modes"
+title: "Indexing modes | Glean Developer"
+description: "Full versus incremental crawls, stale document deletion, and checkpointing in the Glean Indexing SDK"
+fetched_at: "2026-09-01T13:23:04.444Z"
+---
+On this page
+
+```
+from glean.indexing.models import IndexingModeconnector.index_data(mode=IndexingMode.FULL)connector.index_data(mode=IndexingMode.INCREMENTAL)
+```
+
+|  | `IndexingMode.FULL` | `IndexingMode.INCREMENTAL` |
+| --- | --- | --- |
+| Scope fetched | Everything in scope | Only records changed since `since` |
+| Deletes stale documents | Yes | No |
+| Propagates source deletions | Yes | No |
+| Cost per run | High | Low |
+| Safe to run partially | **Never** | Yes |
+
+## Full crawls[​](#full-crawls "Direct link to Full crawls")
+
+A full crawl is a **complete replacement of the indexed state**. Every document currently in scope is fetched and indexed, and previously indexed documents absent from the run are deleted as stale.
+
+That last part is the important one. Stale-document deletion is what makes deletions at the source propagate to Glean — and it's also what makes a *partial* full crawl dangerous.
+
+danger
+
+Never let a partial or failed fetch finish as a successful full crawl. If your source API returns 12 of 10,000 pages because of a transient error and the connector treats that as complete, Glean deletes the other 9,988 documents as stale. Raise on incomplete fetches rather than returning short.
+
+A failed crawl is recoverable. A successful crawl that deleted 90% of your index is not.
+
+Pagination and streaming bound memory, not scope. A streaming connector still has to cover the entire confirmed scope before the run is allowed to complete.
+
+Use a full crawl for the initial load, after changing `transform()`, and on a periodic cadence to reconcile drift.
+
+## Incremental crawls[​](#incremental-crawls "Direct link to Incremental crawls")
+
+The connector-building skills generate full crawls only
+
+If you are building a connector with the SDK's skills, they will not write incremental logic for you, and that is deliberate — `connector-builder` records incremental crawl as developer-owned follow-up after a full crawl works end to end, and `connector-pull` will not implement it unless you ask. Incremental is harder to validate: it needs a durable checkpoint *and* a reliable source-side deletion signal before it is correct rather than merely faster.
+
+Whether it is available at all depends on the source. A modified-since filter is usually offered per object type, so one endpoint may support it while another in the same API does not, and a connector can end up incremental for some objects and full for the rest.
+
+Everything below is the developer-owned path.
+
+An incremental crawl passes a `since` timestamp down to your data client so you can query only what changed:
+
+```
+class WikiDataClient(BaseDataClient[WikiPage]):    def get_source_data(self, since=None, **kwargs):        if since:            return fetch_pages_modified_after(since)        return fetch_all_pages()
+```
+
+Incremental crawls upload documents additively with `index_documents()`: they add or update records and do **not** delete documents omitted from that run. An empty incremental result is a no-op. Only a full crawl reconciles deletions, which is why most connectors run incrementally on a short cadence and fully on a longer one.
+
+A full crawl always finalizes replacement state, including when the source is empty. A successful empty full crawl sends one complete empty bulk page so all previously indexed documents are reconciled as stale.
+
+### The SDK does not persist checkpoints[​](#the-sdk-does-not-persist-checkpoints "Direct link to The SDK does not persist checkpoints")
+
+This is the part that surprises people. `IndexingMode.INCREMENTAL` calls `_get_last_crawl_timestamp()` on your connector, and the base implementation **returns `None`** — which means `since` is `None` and your data client falls back to a full fetch.
+
+To get real incremental behavior, override it and supply the timestamp from wherever you store it:
+
+```
+class WikiConnector(BaseDatasourceConnector[WikiPage]):    def _get_last_crawl_timestamp(self):        # your storage: file, S3, DynamoDB, database        return read_checkpoint("companywiki")    def index_data(self, mode=IndexingMode.FULL, options=None):        started_at = datetime.now(timezone.utc).isoformat()        super().index_data(mode=mode, options=options)        write_checkpoint("companywiki", started_at)  # only on success
+```
+
+Record the timestamp from *before* the crawl started, and only write it after the run succeeds. Writing the end time risks missing records modified while the crawl was in flight; writing on failure silently skips a window.
+
+## Connector options[​](#connector-options "Direct link to Connector options")
+
+`ConnectorOptions` adjusts upload behavior for a single run.
+
+```
+from glean.indexing.models import ConnectorOptionsconnector.index_data(    mode=IndexingMode.FULL,    options=ConnectorOptions(force_restart=True),)
+```
+
+| Option | Default | Effect |
+| --- | --- | --- |
+| `force_restart` | `False` | Discards any in-progress upload session and starts a new one. Use after a crashed run leaves an upload stuck — not as a default. |
+| `disable_stale_deletion_check` | `False` | Forces synchronous stale-document deletion after the upload completes. |
+| `upload_timeout_ms` | `None` | Per-call timeout for bulk upload requests only. Raise it for large batches. |
+| `upload_max_workers` | `5` | Concurrent middle-page uploads. First and last pages are always sequential. |
+| `document_batch_size_bytes` | `5 MiB` | Maximum serialized bytes per document batch. Set `None` to batch by document count only. |
+
+Datasource and streaming connectors forward `document_batch_size_bytes` to the document batch processor. A connector can override `_resolve_max_batch_bytes()` when the byte cap must be selected dynamically; that connector-level result takes precedence over the option. Direct `PushUploader` calls expose the same limit as `max_batch_bytes`.
+
+## Choosing a schedule[​](#choosing-a-schedule "Direct link to Choosing a schedule")
+
+A common pattern:
+
+-   **Incremental every 15–60 minutes** — keeps search fresh at low cost.
+-   **Full nightly or weekly** — reconciles deletions and repairs drift.
+
+Match the incremental cadence to how precise your source's modified-at filter is. If it has minute granularity, overlap the window slightly rather than risking a gap; re-indexing an unchanged document is a no-op from the reader's point of view.

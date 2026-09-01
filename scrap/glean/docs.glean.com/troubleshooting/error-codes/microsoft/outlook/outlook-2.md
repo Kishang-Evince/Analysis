@@ -1,0 +1,26 @@
+---
+url: "https://docs.glean.com/troubleshooting/error-codes/microsoft/outlook/outlook-2"
+canonical: "https://docs.glean.com/troubleshooting/error-codes/microsoft/outlook/outlook-2"
+title: "OUTLOOK_2"
+description: "OUTLOOK_2 Error Code"
+fetched_at: "2026-09-01T13:30:28.526Z"
+---
+On this page
+
+## Issue:[​](#issue "Direct link to Issue:")
+
+-   We are missing GroupMember.Read.All, User.Read.All, Mails.Read.All and/or Calendars.Read.All permission for the app.
+
+## Resolution:[​](#resolution "Direct link to Resolution:")
+
+-   Please navigate to the Azure portal. Select Azure Active Directory, then navigate to Enterprise applications and find the app you setup for Glean.
+-   Please ensure that you entered the correct Client secret, Application (client) ID, and Directory (tenant) ID in the console.
+-   Please ensure this App has the permissions `User.Read.All`, `GroupMember.Read.All`, `Mails.Read.All`, and `Calendars.Read.All`, and admin consent has been granted.
+
+**To Grant Admin Consent:**
+
+-   Ensure you are signed into Azure as a Global, Application or Cloud Application Administrator.
+-   Use the search box to navigate to Enterprise applications. Select the Glean app you just created from the list of applications.
+-   Click on Permissions under Security. Review the permissions shown, and then click Grant admin consent.
+
+For additional assistance, please contact Glean Support at [https://support.glean.com](https://support.glean.com)

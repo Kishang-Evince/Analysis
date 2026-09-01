@@ -1,0 +1,128 @@
+---
+url: "https://developers.glean.com/guides/agents/direct-api"
+canonical: "https://developers.glean.com/guides/agents/direct-api"
+title: "Direct API Integration | Glean Developer"
+description: "Build custom agents using Glean's REST APIs with our official client libraries"
+fetched_at: "2026-09-01T13:23:01.864Z"
+---
+On this page
+
+Build custom agents using Glean's REST APIs with our official client libraries. This approach gives you full control over the agent logic while leveraging Glean's search and chat capabilities.
+
+The examples below retrieve documents via `glean.search.query()` — the **Platform API**'s data-first retrieval method (`glean.search`, not `glean.client.search`), which is what document retrieval for an agent's own context actually needs: plain results and pagination, no UI-shaped facets. It's **Experimental** as of its 2026-07 launch, so set `X_GLEAN_INCLUDE_EXPERIMENTAL=true` or every retrieval call fails. Chat and summarization below still use the Client API (`glean.client.*`) — that surface isn't changing here.
+
+## When to Use[​](#when-to-use "Direct link to When to Use")
+
+-   Custom business logic requirements
+-   Integration with existing systems
+-   Fine-grained control over agent behavior
+-   Multi-language support needs
+
+## Available Client Libraries[​](#available-client-libraries "Direct link to Available Client Libraries")
+
+[
+
+### Python SDK
+
+```
+pip install glean-api-client
+```
+
+
+
+
+
+
+
+](https://github.com/gleanwork/api-client-python)[
+
+### TypeScript SDK
+
+```
+npm install @gleanwork/api-client
+```
+
+
+
+
+
+
+
+](https://github.com/gleanwork/api-client-typescript)[
+
+### Go SDK
+
+```
+go get github.com/gleanwork/api-client-go
+```
+
+
+
+
+
+
+
+](https://github.com/gleanwork/api-client-go)[
+
+### Java SDK
+
+```
+<dependency>  <groupId>com.glean.api-client</groupId>  <artifactId>glean-api-client</artifactId>  <version>0.x.x</version></dependency>
+```
+
+
+
+
+
+
+
+](https://github.com/gleanwork/api-client-java)
+
+## Key APIs for Agent Building[​](#key-apis-for-agent-building "Direct link to Key APIs for Agent Building")
+
+| API | Purpose | Use Case |
+| --- | --- | --- |
+| **[Agents API](/api/client-api/agents/overview)** | Manage and execute pre-built agents | Use agents created in Agent Builder |
+| **[Chat API](/api/client-api/chat/overview)** | Conversational AI with context | Build chat-based agents |
+| **[Search API](/guides/search/filtering-results)** | Enterprise search capabilities | Retrieve relevant documents |
+| **[Summarization API](/api/client-api/summarize/overview)** | AI-powered content summarization | Process and digest information |
+
+## Example: Python Agent[​](#example-python-agent "Direct link to Example: Python Agent")
+
+-   Basic Agent
+-   Advanced Agent
+
+```
+import osfrom glean.api_client import Glean, modelsclass CustomAgent:    def __init__(self):        self.api_token = os.getenv("GLEAN_API_TOKEN")        self.server_url = os.getenv("GLEAN_SERVER_URL")                if not self.api_token or not self.server_url:            raise ValueError("GLEAN_API_TOKEN and GLEAN_SERVER_URL must be set")        def search_documents(self, query: str, page_size: int = 5):        """Search for relevant documents via the Platform API's data-first        retrieval method (requires X_GLEAN_INCLUDE_EXPERIMENTAL=true)."""        with Glean(api_token=self.api_token, server_url=self.server_url) as glean:            try:                response = glean.search.query(                    query=query,                    page_size=page_size                )                return response.results or []            except Exception as e:                print(f"Search error: {e}")                return []        def chat_with_context(self, query: str, search_results=None) -> str:        """Generate response using chat API"""        with Glean(api_token=self.api_token, server_url=self.server_url) as glean:            try:                # Prepare context from search results. Each result's                # snippets is a plain list[str] on the Platform API -- no                # nested .text/.snippet objects to unwrap.                context = ""                if search_results:                    context = "\n".join([                        f"- {result.title}: {' '.join(result.snippets or [])}"                        for result in search_results[:3]                    ])                                # Prepare the message with context                message_text = query                if context:                    message_text = f"Context:\n{context}\n\nQuestion: {query}"                                response = glean.client.chat.create(                    messages=[                        {                            "fragments": [                                models.ChatMessageFragment(text=message_text)                            ]                        }                    ]                )                                # Extract response text                if response.messages:                    last_message = response.messages[-1]                    if hasattr(last_message, 'fragments') and last_message.fragments:                        for fragment in last_message.fragments:                            if hasattr(fragment, 'text') and fragment.text:                                return fragment.text                                return "No response received"                            except Exception as e:                return f"Chat error: {e}"        def process_query(self, query: str) -> dict:        """Process a query by searching and then chatting"""        # First search for relevant documents        search_results = self.search_documents(query)                # Then use chat to answer based on search results        answer = self.chat_with_context(query, search_results)                return {            "answer": answer,            "sources": search_results[:3],            "total_sources": len(search_results)        }# Usageagent = CustomAgent()result = agent.process_query("What is our vacation policy?")print(f"Answer: {result['answer']}")print(f"Found {result['total_sources']} relevant documents")
+```
+
+```
+import osfrom glean.api_client import Glean, modelsfrom glean.api_client.models import PlatformFilterfrom typing import List, Dict, Optionalclass AdvancedAgent:    def __init__(self):        self.api_token = os.getenv("GLEAN_API_TOKEN")        self.server_url = os.getenv("GLEAN_SERVER_URL")        self.conversation_history = []                if not self.api_token or not self.server_url:            raise ValueError("GLEAN_API_TOKEN and GLEAN_SERVER_URL must be set")        def search_with_filters(self, query: str, filters: Optional[Dict[str, List[str]]] = None, page_size: int = 10) -> List:        """Search with optional filters, via the Platform API's data-first        retrieval method (requires X_GLEAN_INCLUDE_EXPERIMENTAL=true).        `filters` maps a field name to the values to match, e.g.        {"department": ["HR"]} -- each becomes a PlatformFilter (EQUALS by        default; OR'd across multiple values, AND'd across fields)."""        with Glean(api_token=self.api_token, server_url=self.server_url) as glean:            try:                platform_filters = [                    PlatformFilter(field=field, values=values)                    for field, values in (filters or {}).items()                ]                response = glean.search.query(                    query=query,                    page_size=page_size,                    filters=platform_filters or None,                )                return response.results or []                            except Exception as e:                print(f"Search error: {e}")                return []        def chat_with_context(self, query: str, context_docs: Optional[List] = None, save_to_history: bool = True) -> str:        """Chat with document context and conversation history. context_docs        are the Platform API's search results (attribute access, not        dict-style .get() -- title and snippets are direct fields)."""        with Glean(api_token=self.api_token, server_url=self.server_url) as glean:            try:                # Build message with context                message_parts = []                                if context_docs:                    context_text = "\n".join([                        f"- {doc.title}: {' '.join(doc.snippets or [])}"                        for doc in context_docs[:3]                        if doc.snippets                    ])                    if context_text:                        message_parts.append(f"Relevant context:\n{context_text}")                                message_parts.append(f"Question: {query}")                full_message = "\n\n".join(message_parts)                                # Include conversation history if available                messages = []                for hist_msg in self.conversation_history[-4:]:  # Last 4 messages for context                    messages.append(hist_msg)                                # Add current message                current_message = {                    "fragments": [models.ChatMessageFragment(text=full_message)]                }                messages.append(current_message)                                response = glean.client.chat.create(messages=messages)                                # Extract response                answer = "No response received"                if response.messages:                    last_message = response.messages[-1]                    if hasattr(last_message, 'fragments') and last_message.fragments:                        for fragment in last_message.fragments:                            if hasattr(fragment, 'text') and fragment.text:                                answer = fragment.text                                break                                # Save to conversation history                if save_to_history:                    self.conversation_history.append(current_message)                    self.conversation_history.append({                        "fragments": [models.ChatMessageFragment(text=answer)]                    })                                        # Keep only last 10 messages                    if len(self.conversation_history) > 10:                        self.conversation_history = self.conversation_history[-10:]                                return answer                            except Exception as e:                return f"Chat error: {e}"        def summarize_documents(self, documents: List) -> str:        """Summarize a list of documents (the Platform API's search results,        one attribute-access .url per document, not documents[i]["url"])"""        with Glean(api_token=self.api_token, server_url=self.server_url) as glean:            try:                document_specs = [                    {"url": doc.url}                    for doc in documents[:5]  # Limit to 5 docs                    if doc.url                ]                if not document_specs:                    return "No documents to summarize"                response = glean.client.documents.summarize(                    document_specs=document_specs,                    preferred_summary_length=500,                )                if response.summary and response.summary.text:                    return response.summary.text                return "Could not generate summary"                            except Exception as e:                return f"Summarization error: {e}"        def process_complex_query(self, query: str, department: Optional[str] = None, include_summary: bool = False) -> Dict:        """Process query with department filtering and optional summarization"""        filters = {}        if department:            filters["department"] = [department]                # Search for documents        search_results = self.search_with_filters(query, filters)                # Generate answer with context        answer = self.chat_with_context(query, search_results)                result = {            "answer": answer,            "sources": search_results[:5],            "total_sources": len(search_results),            "department_filter": department        }                # Add summary if requested        if include_summary and search_results:            result["summary"] = self.summarize_documents(search_results)                return result        def reset_conversation(self):        """Clear conversation history"""        self.conversation_history = []# Usageagent = AdvancedAgent()# Basic queryresult = agent.process_complex_query(    "What are the remote work guidelines?",     department="HR",    include_summary=True)print(f"Answer: {result['answer']}")print(f"Summary: {result.get('summary', 'No summary available')}")print(f"Found {result['total_sources']} sources")# Follow-up question (uses conversation history)followup = agent.process_complex_query("Are there any exceptions to these guidelines?")print(f"Follow-up answer: {followup['answer']}")
+```
+
+## Best Practices[​](#best-practices "Direct link to Best Practices")
+
+### Error Handling[​](#error-handling "Direct link to Error Handling")
+
+```
+from glean.api_client.errors import GleanErrorimport timedef robust_agent_call(agent, query, max_retries=3):    """Execute agent call with retry logic"""    for attempt in range(max_retries):        try:            return agent.process_query(query)        except GleanError as e:            if hasattr(e, 'status_code') and e.status_code == 429:  # Rate limited                wait_time = 2 ** attempt  # Exponential backoff                print(f"Rate limited, waiting {wait_time} seconds...")                time.sleep(wait_time)            elif attempt == max_retries - 1:                return {"answer": f"Error after {max_retries} attempts: {e}", "sources": [], "total_sources": 0}            else:                print(f"Attempt {attempt + 1} failed: {e}")        except Exception as e:            if attempt == max_retries - 1:                return {"answer": f"Unexpected error: {e}", "sources": [], "total_sources": 0}        return {"answer": "Failed to get response", "sources": [], "total_sources": 0}
+```
+
+### Caching Results[​](#caching-results "Direct link to Caching Results")
+
+```
+import hashlibimport jsonfrom datetime import datetime, timedeltaclass CachedAgent(CustomAgent):    def __init__(self, cache_ttl_minutes=30):        super().__init__()        self._cache = {}        self.cache_ttl = timedelta(minutes=cache_ttl_minutes)        def _cache_key(self, query: str, filters: dict = None) -> str:        """Generate cache key from query and filters"""        cache_data = {"query": query, "filters": filters or {}}        cache_string = json.dumps(cache_data, sort_keys=True)        return hashlib.md5(cache_string.encode()).hexdigest()        def _is_cache_valid(self, timestamp: datetime) -> bool:        """Check if cache entry is still valid"""        return datetime.now() - timestamp < self.cache_ttl        def process_query(self, query: str, filters: dict = None) -> dict:        cache_key = self._cache_key(query, filters)                # Check cache        if cache_key in self._cache:            cached_result, timestamp = self._cache[cache_key]            if self._is_cache_valid(timestamp):                print("Returning cached result")                return cached_result                # Process query        result = super().process_query(query)                # Cache result        self._cache[cache_key] = (result, datetime.now())                return result
+```
+
+### Rate Limiting[​](#rate-limiting "Direct link to Rate Limiting")
+
+```
+import timefrom datetime import datetime, timedeltafrom collections import dequeclass RateLimitedAgent(CustomAgent):    def __init__(self, requests_per_minute: int = 60):        super().__init__()        self.requests_per_minute = requests_per_minute        self.request_times = deque()        def _wait_if_needed(self):        """Implement rate limiting"""        now = datetime.now()                # Remove requests older than 1 minute        while self.request_times and now - self.request_times[0] > timedelta(minutes=1):            self.request_times.popleft()                # Check if we need to wait        if len(self.request_times) >= self.requests_per_minute:            sleep_time = 60 - (now - self.request_times[0]).total_seconds()            if sleep_time > 0:                print(f"Rate limit reached, waiting {sleep_time:.1f} seconds...")                time.sleep(sleep_time)                # Record this request        self.request_times.append(now)        def process_query(self, query: str) -> dict:        self._wait_if_needed()        return super().process_query(query)
+```
+
+## Next Steps[​](#next-steps "Direct link to Next Steps")
+
+-   Explore the [Chat Guide](/guides/chat/overview) for building conversational agents
+-   Check out [Search Examples](/guides/search/filtering-results) for advanced search capabilities
+-   See [Agent Examples](/guides/agents/nvidia-example) for real-world implementations
+-   Review the [API Reference](/api/client-api/agents/overview) for complete API documentation

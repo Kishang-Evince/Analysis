@@ -1,0 +1,28 @@
+---
+url: "https://developers.glean.com/api-info/indexing/documents/activity"
+canonical: "https://developers.glean.com/api-info/indexing/documents/activity"
+title: "Activity | Glean Developer"
+description: "We allow the option of allowing developers to push activity information for documents (VIEW, EDIT etc.) - that will be used for better ranking of documents for search."
+fetched_at: "2026-09-01T13:22:50.988Z"
+---
+On this page
+
+We allow the option of allowing developers to push activity information for documents (VIEW, EDIT etc.) - that will be used for better ranking of documents for search.
+
+## Getting started with the activity endpoint[​](#getting-started-with-the-activity-endpoint "Direct link to Getting started with the activity endpoint")
+
+First note that, the [activity endpoint](/api/client-api/activity/activity) needs to be called with a **client API** bearer token (as opposed to an indexing API bearer token for other endpoints). This is because, we expect activity to be provided server-to-server on a per-user basis (eg. when a user views a document from a custom datasource, you may report this view back to us from your server).
+
+For pushing activity for any user from your organization, we need a *Global* client API token scoped to *ACTIVITY*.
+
+To fetch a scoped client API token, please follow the instructions in the [Authentication page for Client API](/api-info/client/authentication/glean-issued#available-scopes).
+
+### Making your first request[​](#making-your-first-request "Direct link to Making your first request")
+
+Below is a sample activity request for a given user (who needs to be specified in the **X-Glean-ActAs** param).
+
+We record 2 view events: One for [https://example.com/doc1](https://example.com/doc1) and another for [https://example.com/doc2](https://example.com/doc2). We specify the datasource in the params field (so it is correctly matched to the relevant document) and optionally, we also mention the duration of the view if available.
+
+```
+curl -i -X POST \  'https://customer-be.glean.com/rest/api/v1/activity' \  -H 'Authorization: Bearer <token>' \  -H 'Content-Type: application/json' \  -H 'X-Glean-ActAs: user-whose-activity-is-being-reported@example.com' \  -d '{    "events": [      {        "url": "https://example.com/doc1",        "action": "VIEW",        "timestamp": "2023-04-05T04:56:07.000Z",        "params": {            "datasource": "testdatasource"        }      },      {        "url": "https://example.com/doc2",        "action": "VIEW",        "timestamp": "2023-04-04T04:56:07.000Z",        "params": {          "duration": 20,          "referrer": "https://example.com/document",          "datasource": "testdatasource2"        }      }    ]  }'
+```

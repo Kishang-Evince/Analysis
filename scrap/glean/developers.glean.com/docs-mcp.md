@@ -1,0 +1,38 @@
+---
+url: "https://developers.glean.com/docs-mcp"
+canonical: "https://developers.glean.com/docs-mcp"
+title: "Docs MCP Server | Glean Developer"
+description: "Access Glean developer documentation directly from your AI coding assistant"
+fetched_at: "2026-09-01T13:23:00.350Z"
+---
+On this page
+
+Give your AI coding assistant direct access to Glean's public developer documentation. Query API references, explore integration guides, and find code examples without leaving your editor. This server does not connect to your organization's Glean tenant, indexed knowledge, or configured tools.
+
+**Server URL:** `https://developers.glean.com/mcp`
+
+## Available Tools[​](#available-tools "Direct link to Available Tools")
+
+The Docs MCP server provides two tools to your AI assistant:
+
+| Tool | Description |
+| --- | --- |
+| **`docs_search`** | Search across the documentation index with relevance ranking. Returns page titles, URLs, and snippets. |
+| **`docs_fetch`** | Retrieve the full content of any documentation page as markdown. Use URLs from search results or direct page links. |
+
+## Install[​](#install "Direct link to Install")
+
+Ready to connect? [Click here to install](#) using your preferred IDE.
+
+## Usage Examples[​](#usage-examples "Direct link to Usage Examples")
+
+Once connected, your AI assistant can answer questions about Glean's APIs:
+
+-   "What authentication methods does Glean support?"
+-   "How do I create a custom datasource with the Indexing API?"
+-   "Show me the Python SDK usage for the Chat API"
+-   "What are the required fields for indexing a document?"
+
+## Related[​](#related "Direct link to Related")
+
+To connect an AI host to your organization's Glean tenant, indexed knowledge, and enabled tools, use the [Remote MCP Server](/guides/mcp). If a tenant connection fails, see [Remote MCP troubleshooting](/guides/mcp/troubleshooting).

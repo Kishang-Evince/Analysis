@@ -1,0 +1,196 @@
+---
+url: "https://developers.glean.com/libraries/indexing-sdk/deployment/overview"
+canonical: "https://developers.glean.com/libraries/indexing-sdk/deployment/overview"
+title: "Deployment overview | Glean Developer"
+description: "Build and operate a scheduled Glean connector on GKE or EKS with glean-idx deploy"
+fetched_at: "2026-09-01T13:23:04.492Z"
+---
+On this page
+
+A connector is a batch job: it starts, pulls from a source, pushes to Glean, and exits. `glean-idx deploy` generates and operates a Docker image and Terraform for a Kubernetes CronJob on GKE or EKS.
+
+`glean-idx` is the connector-specific interface. It delegates image operations to Docker, infrastructure operations to Terraform, and workload inspection to `kubectl`. You install and authenticate those standard tools, and your platform team continues to own the cloud project or account, cluster, registry, identity foundation, and Kubernetes namespace.
+
+## Before you begin[​](#before-you-begin "Direct link to Before you begin")
+
+Install the cloud extra for the provider you use:
+
+```
+pip install "glean-indexing-sdk[gcp]"  # GKE, Artifact Registry, Secret Manager# orpip install "glean-indexing-sdk[aws]"  # EKS, ECR, Secrets Manager
+```
+
+All deployments require:
+
+-   Docker with a running daemon and Buildx.
+-   Terraform 1.0 or later.
+-   `kubectl`, authenticated to the target cluster. GKE users also need the `gke-gcloud-auth-plugin` executable available on `PATH`.
+-   A connector project with `glean-indexing-sdk` installed.
+-   `GLEAN_SERVER_URL`, `GLEAN_INDEXING_API_TOKEN`, and every source credential your connector reads.
+-   An existing container registry repository and Kubernetes namespace.
+-   Permission to push images, create the generated workload identity and IAM bindings, manage connector secrets, and create Kubernetes resources in the namespace.
+
+The generated Terraform does **not** create a project/account, cluster, registry, Workload Identity/IRSA foundation, or namespace. It reads the namespace before planning, so a missing or inaccessible namespace fails before resources are mutated. Use a dedicated namespace when your organization permits it; never let connector teardown own a shared namespace.
+
+### GCP prerequisites[​](#gcp-prerequisites "Direct link to GCP prerequisites")
+
+GCP requires an existing GKE cluster and Artifact Registry repository. Enable the GKE, Artifact Registry, Secret Manager, IAM, Cloud Logging, and Cloud Monitoring APIs. Enable Workload Identity on the cluster and its node pools.
+
+Set these shell variables to your environment before running the checks: `PROJECT_ID`, `GKE_LOCATION`, `CLUSTER_NAME`, `ARTIFACT_REGISTRY_LOCATION`, `ARTIFACT_REGISTRY_REPOSITORY`, and `NAMESPACE`.
+
+```
+docker infodocker buildx versionterraform versiongcloud --versiongke-gcloud-auth-plugin --versionkubectl version --clientgcloud auth login --update-adcgcloud config set project "$PROJECT_ID"gcloud auth configure-docker "${ARTIFACT_REGISTRY_LOCATION}-docker.pkg.dev"gcloud container clusters get-credentials "$CLUSTER_NAME" \  --location "$GKE_LOCATION" \  --project "$PROJECT_ID"
+```
+
+Confirm that the customer-managed resources exist and that `kubectl` points to the intended cluster:
+
+```
+gcloud container clusters describe "$CLUSTER_NAME" \  --location "$GKE_LOCATION" \  --project "$PROJECT_ID"gcloud artifacts repositories describe "$ARTIFACT_REGISTRY_REPOSITORY" \  --location "$ARTIFACT_REGISTRY_LOCATION" \  --project "$PROJECT_ID"kubectl cluster-infokubectl get namespace "$NAMESPACE" || kubectl create namespace "$NAMESPACE"
+```
+
+`region` in `glean_deployment.yaml` is the GKE **location** accepted by `gcloud ... --location`; it may be a region such as `us-central1` or a zone such as `us-central1-a`.
+
+For a private-only cluster with a GKE DNS control-plane endpoint, set `cluster_endpoint` to its bare `*.gke.goog` hostname—no `https://`, port, path, or trailing slash. The generated Kubernetes provider uses system trust for an explicit DNS endpoint and the cluster CA for the auto-discovered IP endpoint. The machine running Terraform must still have network access to the selected endpoint.
+
+### AWS prerequisites[​](#aws-prerequisites "Direct link to AWS prerequisites")
+
+AWS requires an existing EKS cluster, ECR repository, Kubernetes namespace, and IAM OIDC provider for IRSA. Authenticate the AWS CLI and Docker, then select the cluster explicitly:
+
+```
+aws sts get-caller-identityaws eks update-kubeconfig --name "$CLUSTER_NAME" --region "$AWS_REGION"kubectl cluster-infokubectl get namespace "$NAMESPACE" || kubectl create namespace "$NAMESPACE"aws ecr get-login-password --region "$AWS_REGION" |  docker login --username AWS --password-stdin \  "$ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com"
+```
+
+## Generate and configure the deployment[​](#generate-and-configure-the-deployment "Direct link to Generate and configure the deployment")
+
+Run `init` from the connector project:
+
+```
+glean-idx deploy init --cloud gcp \  --connector-class CompanyWikiConnector \  --connector-factory create_connector
+```
+
+`--connector-name` is a cloud resource slug. It may contain lowercase letters, digits, hyphens, and underscores. It is separate from `CustomDatasourceConfig.name`, which is the Glean datasource identifier and may contain only ASCII letters and digits. For example, deployment slug `company-wiki` can run datasource `companywiki`.
+
+### Generated files[​](#generated-files "Direct link to Generated files")
+
+| File | Purpose |
+| --- | --- |
+| `glean_deployment.yaml` | Authoritative deployment configuration; edit this file before each operation. |
+| `Dockerfile` | Non-root connector image. |
+| `.dockerignore` | Excludes credentials, Terraform state, virtualenvs, tests, caches, coverage, and local build output. |
+| `run.py` | Cloud entrypoint that loads exact declared secrets and calls the connector factory. |
+| `terraform/main.tf` | CronJob, workload identity, exact secret access, logging, and metrics resources. |
+| `terraform/variables.tf` | Apply-time inputs populated from `glean_deployment.yaml`. |
+| `.env.example` | Template for Glean and source credentials. |
+
+Generated Terraform is an artifact, not the configuration interface. Do not hand-edit it. Change `glean_deployment.yaml` instead; `deploy apply` passes every mutable setting at plan time.
+
+### Configuration reference[​](#configuration-reference "Direct link to Configuration reference")
+
+| Key | Default | Notes |
+| --- | --- | --- |
+| `connector_name` | sanitized current directory name | Cloud resource name and secret prefix; not necessarily the Glean datasource name. |
+| `connector_class` / `connector_module` | `MyConnector` / `connector` | Connector import target. |
+| `connector_factory` | unset | Optional zero-argument factory; preferred when construction needs source credentials. |
+| `cloud` | required | `gcp` or `aws`; fixed when `deploy init` generates provider-specific Terraform. |
+| `region` | `us-central1` / `us-east-1` | GCP cluster location or AWS region. |
+| `cluster_name` | placeholder | Existing GKE or EKS cluster. |
+| `namespace` | `default` | Existing, customer-managed Kubernetes namespace. |
+| `image_tag` | `latest` | Image tag used by both `deploy build` and `deploy apply`. Use an immutable release identifier for controlled rollouts. |
+| `cpu` | `500m` | Pod CPU request and limit. |
+| `memory` | `512Mi` | Pod memory request and limit. |
+| `cron_schedule` | `0 2 * * *` | UTC cron expression. |
+| `indexing_mode` | `FULL` | `FULL` or `INCREMENTAL`. |
+| `project_id`, `artifact_registry_repo`, `service_account_name` | provider-specific | GCP project, repository URL, and optional workload service-account name. |
+| `cluster_endpoint` | unset | Optional bare GKE DNS endpoint for a private-only cluster. |
+| `account_id`, `ecr_repo`, `iam_role_name` | provider-specific | AWS account, ECR repository URI, and optional IRSA role name. |
+
+To change cloud providers, rerun `deploy init --cloud ...` into a reviewed output directory; editing `cloud` alone cannot convert the generated provider files.
+
+A full and incremental schedule need separate deployment configurations because a Kubernetes CronJob has one schedule and indexing mode. They may point to the same immutable image. See [Indexing modes](/libraries/indexing-sdk/concepts/indexing-modes).
+
+## Deploy[​](#deploy "Direct link to Deploy")
+
+The canonical sequence is:
+
+1
+
+Validate locally
+
+Run the mock and integration phases before any cloud mutation.
+
+2
+
+Register the datasource
+
+`glean-idx datasource configure` validates the alphanumeric datasource name and submits its object definitions.
+
+3
+
+Build and push
+
+`glean-idx deploy build --push` delegates to Docker Buildx using the configured image tag.
+
+4
+
+Upload exact secrets
+
+`glean-idx deploy secrets upload` writes values to the provider and records only validated key names in `.glean_secret_keys`.
+
+5
+
+Plan and apply
+
+`glean-idx deploy apply` runs Terraform init, displays an exact saved plan, prompts, and applies that same plan.
+
+6
+
+Run and verify
+
+`glean-idx deploy run` creates one Job immediately; status, logs, and document polling verify the result.
+
+```
+glean-idx deploy init --cloud gcp \  --connector-name company-wiki \  --connector-class CompanyWikiConnector \  --connector-module connector \  --connector-factory create_connectorcp .env.example .env# Edit glean_deployment.yaml and fill in .env before continuing.glean-idx datasource configure --connector connector:CompanyWikiConnectorglean-idx deploy build --pushglean-idx deploy secrets uploadglean-idx deploy apply
+```
+
+Build before uploading secrets. `.env` and `.glean_secret_keys` are excluded from the image. `deploy apply` reads the current YAML and current secret manifest; post-`init` edits to schedule, mode, resources, import metadata, namespace, identity names, endpoint, and image tag are reflected in the displayed plan.
+
+If datasource configuration loses its connection after sending the request, the SDK reads the configuration back without issuing a second write. Equivalent state counts as success. Divergent or unreadable state is reported as an ambiguous outcome; inspect it before retrying.
+
+## Run now and verify[​](#run-now-and-verify "Direct link to Run now and verify")
+
+A newly applied CronJob may not be scheduled for hours. Start one Job immediately through the same deployment interface:
+
+```
+glean-idx deploy runglean-idx deploy statusglean-idx deploy logs --followglean-idx document status \  --datasource companywiki \  --document article page_123 \  --poll
+```
+
+`deploy run` delegates to `kubectl create job --from=cronjob/...`, derives the CronJob and namespace from the YAML, and returns the exact Job name. A completed Kubernetes Job proves only that the process exited successfully; document status proves that Glean uploaded and indexed the expected content.
+
+## Secrets[​](#secrets "Direct link to Secrets")
+
+The generated workload can access only the secret names recorded by the latest successful `secrets upload`. GCP receives one secret-level IAM member per key; AWS resolves and grants the exact secret ARNs. The workload cannot enumerate secrets. Missing declared secrets fail startup.
+
+`GLEAN_SERVER_URL` and `GLEAN_INDEXING_API_TOKEN` are always required. Add every source credential read by your factory—for example `WIKI_API_TOKEN`—to `.env` as well. Never commit `.env`, copy it into the image, put secret values in YAML, or pass them as Terraform variables.
+
+## Teardown and retained resources[​](#teardown-and-retained-resources "Direct link to Teardown and retained resources")
+
+Content and cloud infrastructure have separate lifecycles:
+
+```
+glean-idx datasource teardown --datasource companywikiglean-idx deploy destroy
+```
+
+-   `datasource teardown` submits an empty full replacement. It removes indexed documents after asynchronous processing but retains the datasource registration and configuration.
+-   `deploy destroy` removes Terraform-managed workload/IAM resources and, unless `--keep-secrets` is used, exact manifest-owned secrets.
+-   `deploy destroy` does **not** delete the container image, customer-owned namespace, datasource registration, or local generated files. Its text and JSON output list those retained artifacts.
+
+Remove retained resources only when they are dedicated to this connector:
+
+```
+# GCP: delete the configured image/tag or apply your registry lifecycle policy.gcloud artifacts docker images delete "$IMAGE_REFERENCE" --delete-tags# AWS: delete the dedicated tag or apply your ECR lifecycle policy.aws ecr batch-delete-image \  --repository-name "$ECR_REPOSITORY_NAME" \  --image-ids "imageTag=$IMAGE_TAG" \  --region "$AWS_REGION"# Customer-owned namespace: delete only when it contains no shared workloads.kubectl delete namespace "$NAMESPACE"
+```
+
+There is no Indexing API operation to delete a datasource registration. Use the Glean admin surface when complete registration removal is required.
+
+## Running elsewhere[​](#running-elsewhere "Direct link to Running elsewhere")
+
+The Python connector does not require Kubernetes. It can run as a VM cron job, Cloud Run or Lambda job, Airflow task, or scheduled CI workload. It needs Glean credentials **plus every source-specific runtime variable used by the connector**. The portable execution primitive is the connector factory invoked by `glean-idx run`; generated `run.py` files are provider-specific implementations for the GKE/EKS deployment path.

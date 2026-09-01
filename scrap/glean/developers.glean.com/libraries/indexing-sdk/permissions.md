@@ -1,0 +1,118 @@
+---
+url: "https://developers.glean.com/libraries/indexing-sdk/permissions"
+canonical: "https://developers.glean.com/libraries/indexing-sdk/permissions"
+title: "Permissions | Glean Developer"
+description: "Index documents with real ACLs and push the identities that make them evaluate"
+fetched_at: "2026-09-01T13:23:04.715Z"
+---
+On this page
+
+Glean enforces permissions at query time. A document is only returned to a user who is allowed to see it — which means your connector has to tell Glean two things, and both are required.
+
+Source ACLsWho can see what, at the source
+
+Per-document ACLsDocumentPermissionsDefinition
+
+`get_identities()`Users, groups, memberships
+
+Enforced at query timeResults scoped per user
+
+You write thisThe SDK handles thisExternal system
+
+An ACL naming a group Glean has never heard of matches nobody.
+
+danger
+
+Never index sensitive content with an allow-all ACL "for now." Permissions are the boundary between a useful connector and a data leak, and retrofitting them means re-indexing everything. Get them right in the first run.
+
+## Per-document ACLs[​](#per-document-acls "Direct link to Per-document ACLs")
+
+Attach a `DocumentPermissionsDefinition` to each document:
+
+```
+from glean.api_client.models import (    DocumentDefinition,    DocumentPermissionsDefinition,    PermissionsGroupIntersectionDefinition,    UserReferenceDefinition,)def transform(self, data):    return [        DocumentDefinition(            id=article["id"],            title=article["title"],            datasource=self.name,            view_url=article["url"],            permissions=DocumentPermissionsDefinition(                allowed_groups=article["visible_to_groups"],                allowed_users=[                    UserReferenceDefinition(email=email)                    for email in article["visible_to_users"]                ],                allowed_group_intersections=[                    PermissionsGroupIntersectionDefinition(                        required_groups=["engineering", "employees"]                    )                ],            ),        )        for article in data    ]
+```
+
+| Field | Meaning |
+| --- | --- |
+| `allowed_users` | Users who can see the document, by email or datasource user ID. |
+| `allowed_groups` | Group names that can see the document. |
+| `allowed_group_intersections` | A list of `PermissionsGroupIntersectionDefinition(required_groups=[...])` entries. A user must belong to every group within one entry; multiple entries are alternative intersections. |
+
+Map your source's model onto these directly. Don't flatten groups into user lists: group membership changes constantly, and a flattened ACL is stale the moment someone joins a team.
+
+## Datasource identities[​](#datasource-identities "Direct link to Datasource identities")
+
+Implement `get_identities()` to push the identity graph:
+
+```
+from glean.indexing.models import DatasourceIdentityDefinitionsdef get_identities(self) -> DatasourceIdentityDefinitions:    return DatasourceIdentityDefinitions(        users=fetch_users(),        groups=fetch_groups(),        memberships=fetch_memberships(),    )
+```
+
+`BaseDatasourceConnector.index_data()` runs this **before** its content crawl, so identities exist by the time documents referencing them arrive. The sync and async streaming connector implementations do not call `get_identities()`; push their users, groups, and memberships separately before indexing documents, or use a non-streaming datasource connector when you need the built-in identity crawl.
+
+info
+
+If you return `groups`, you must also return `memberships`. The SDK raises `InconsistentDataError` otherwise, because a group with no members produces ACLs that can never match. Returning only `users` is valid when your source has no group concept.
+
+## Email-based references[​](#email-based-references "Direct link to Email-based references")
+
+Setting `is_user_referenced_by_email=True` on the datasource config lets you reference users by email, which is usually simplest when your source and Glean share an identity provider:
+
+```
+configuration = CustomDatasourceConfig(    name="companywiki",    display_name="Company Wiki",    is_user_referenced_by_email=True,)
+```
+
+Without it, references use datasource-specific user IDs, and you must push a user record mapping each ID.
+
+## Verifying enforcement[​](#verifying-enforcement "Direct link to Verifying enforcement")
+
+Counting indexed documents proves nothing about permissions. Test the negative case: a user who should *not* see a document must not see it.
+
+The test harness supports this directly. List identities that must not have access to any transformed document:
+
+testing\_config.yaml
+
+```
+testing:  negative_test_identities:    - contractor@example.com    - external-partners
+```
+
+Phase 2 checks literal references in `allowed_users`, `allowed_groups`, and each intersection's `required_groups`. It also rejects missing `permissions`, `allow_anonymous_access=True`, and `allow_all_datasource_users_access=True`, because any of those prevents the harness from proving a configured identity is denied. See [Integration testing](/libraries/indexing-sdk/testing/integration).
+
+You can also assert in code:
+
+```
+from glean.indexing.testing import assert_negative_identities_absent, extract_permission_refsresult = run_connector(connector)refs = extract_permission_refs(result.documents_posted)assert "engineering" in refs.group_idsassert_negative_identities_absent(result.documents_posted, ["contractor@example.com"])
+```
+
+`extract_permission_refs()` walks `allowed_users`, `allowed_groups`, and `allowed_group_intersections`, returning the deduplicated `user_ids` and `group_ids` your documents actually reference. It's also useful for indexing *only* the identities your crawl needs, rather than the whole directory.
+
+Finally, confirm end to end against a real instance and search as a restricted user. If they can see a document they shouldn't, the ACL or the identity graph is wrong — the search result is the ground truth, not the upload response.
+
+## Related[​](#related "Direct link to Related")
+
+[
+
+### Indexing API permissions
+
+The underlying permissions model and field reference.
+
+
+
+
+
+
+
+](/api-info/indexing/documents/permissions)[
+
+### Testing
+
+Verify ACLs before you ship.
+
+
+
+
+
+
+
+](/libraries/indexing-sdk/testing/overview)

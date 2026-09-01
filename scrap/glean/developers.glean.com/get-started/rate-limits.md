@@ -1,0 +1,61 @@
+---
+url: "https://developers.glean.com/get-started/rate-limits"
+canonical: "https://developers.glean.com/get-started/rate-limits"
+title: "Rate Limits and Retries | Glean Developer"
+description: "To ensure performance and stability, Glean enforces rate limits at the deployment, user, and endpoint levels."
+fetched_at: "2026-09-01T13:23:01.558Z"
+---
+On this page
+
+To ensure performance and stability, Glean enforces rate limits at the deployment, user, and endpoint levels.
+
+### Deployment Rate Limits[​](#deployment-rate-limits "Direct link to Deployment Rate Limits")
+
+Applied across all incoming API traffic:
+
+-   **8,000 requests per minute** across all IP addresses
+-   **100 requests per second** from a single IP address
+
+### User Rate Limit[​](#user-rate-limit "Direct link to User Rate Limit")
+
+-   **30 requests per second** per user-scoped API token
+
+note
+
+Global tokens with an [X-Glean-ActAs](/api-info/client/authentication/glean-issued#authentication-headers) header are counted towards the impersonated users's quota and not the token creator's.
+
+### Endpoint Rate Limits[​](#endpoint-rate-limits "Direct link to Endpoint Rate Limits")
+
+Rate limits for specific endpoints per user-scoped API token are as follows:
+
+| Endpoint | Rate Limit |
+| --- | --- |
+| /agents/runs | 0.5 requests per second |
+
+info
+
+30 qpm is the limit for initiating agent runs. Depending on your deployment size and depending on how long-running and compute intensive the agent is, agent performance may degrade if run at max qpm.
+
+| Endpoint | Rate Limit |
+| --- | --- |
+| /autocomplete | 10 requests per second |
+| /chat | 0.5 requests per second |
+| /feed | 7 requests per second |
+| /indexdocument | 10 requests per second |
+| /indexdocuments | 600 documents per minute |
+| /people | 5 requests per second |
+| /processalldocuments | 1 request every 3 hours per data source |
+| /recommendations | 0.5 requests per second |
+| /search | 5 requests per second |
+| /summarize | 0.5 requests per second |
+| rest of endpoints | 30 requests per second |
+
+Glean uses token bucket rate limiters for user and endpoint-level enforcement. This allows for short bursts of activity while maintaining consistent request throughput over time.
+
+### Handling Rate Limits[​](#handling-rate-limits "Direct link to Handling Rate Limits")
+
+If you send too many requests in a short period, the API will respond with an HTTP 429 "Too Many Requests" error. To handle this gracefully, watch for 429 status codes and implement a retry mechanism with exponential backoff to gradually reduce request volume.
+
+For applications that need to make many requests, consider using a global token with the [X-Glean-ActAs](/api-info/client/authentication/glean-issued#authentication-headers) header to distribute requests across different users' rate limit quotas. Since requests with the ActAs header are counted towards the impersonated user's quota rather than the token creator's, this approach can help avoid hitting rate limits for a single user.
+
+If your application requires higher rate limits, please contact your Glean account team to see if the rate limits can be adjusted.

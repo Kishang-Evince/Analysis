@@ -1,0 +1,40 @@
+---
+url: "https://developers.glean.com/api-info/indexing/custom-metadata/querying"
+canonical: "https://developers.glean.com/api-info/indexing/custom-metadata/querying"
+title: "Querying | Glean Developer"
+description: "Once metadata is attached to documents, it becomes available for search and retrieval through the standard Client API."
+fetched_at: "2026-09-01T13:22:50.492Z"
+---
+On this page
+
+Once metadata is attached to documents, it becomes available for search and retrieval through the standard Client API.
+
+## Faceted search[​](#faceted-search "Direct link to Faceted search")
+
+Each metadata key becomes a search facet of the form `<groupName><keyName>`. For example, given a group `address` with key `country`, this query returns documents tagged with `USA`:
+
+```
+addresscountry:USA
+```
+
+Facets follow standard Glean operator syntax and can be combined with other operators, including those produced by [Custom Properties](/api-info/indexing/datasource/custom-properties).
+
+## Full-text search[​](#full-text-search "Direct link to Full-text search")
+
+When `skipIndexing` is `false` (the default), metadata values participate in full-text search. A document tagged with `status: Approved` matches a free-text query for `Approved`.
+
+Setting `skipIndexing: true` keeps the value retrievable on the document but excludes it from full-text matching — useful for internal-only fields you don't want surfacing through generic queries.
+
+## Fetching metadata via Get Documents[​](#fetching-metadata-via-get-documents "Direct link to Fetching metadata via Get Documents")
+
+Use the Client API [`getDocuments`](/api/client-api/documents/getdocuments) endpoint to fetch all metadata attached to a document:
+
+```
+{  "ids": ["gdrive_abc123"],  "includeFields": ["CUSTOM_METADATA"]}
+```
+
+Custom metadata is returned in `Document.metadata.customData`, alongside any datasource-native metadata fields (such as `author`).
+
+## Co-existence with Custom Properties[​](#co-existence-with-custom-properties "Direct link to Co-existence with Custom Properties")
+
+A document can have both Custom Properties and Custom Metadata simultaneously. They appear alongside each other in faceted search and `getDocuments` responses, with independent lifecycles — re-indexing a document via the Indexing API does not affect its Custom Metadata. See [Custom Properties vs Custom Metadata](/api-info/indexing/custom-metadata/custom-properties-vs-custom-metadata) for a full comparison.

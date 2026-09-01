@@ -1,0 +1,18 @@
+---
+url: "https://docs.glean.com/troubleshooting/error-codes/gdrive/gdrive-6"
+canonical: "https://docs.glean.com/troubleshooting/error-codes/gdrive/gdrive-6"
+title: "GDRIVE-6"
+description: "GDRIVE-6 Error Code"
+fetched_at: "2026-09-01T13:30:15.753Z"
+---
+On this page
+
+## Issue[​](#issue "Direct link to Issue")
+
+We were unable to verify that one or more of the allowed domains you entered in Glean are present in your Google Workspace account.
+
+## Resolution[​](#resolution "Direct link to Resolution")
+
+Please view the list of domains in your Google Workspace account at [https://admin.google.com/ac/domains/manage](https://admin.google.com/ac/domains/manage), and verify that all of the domains you entered are present in this list without misspellings.
+
+If you are still having difficulty please reach out to us: [https://support.glean.com](https://support.glean.com)

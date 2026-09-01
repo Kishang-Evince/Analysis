@@ -1,0 +1,45 @@
+---
+url: "https://developers.glean.com/guides/search/datasource-filters"
+canonical: "https://developers.glean.com/guides/search/datasource-filters"
+title: "Datasource Filters | Glean Developer"
+description: "Apart from the general filters we’ve discussed, some filters are specific to one datasource- for example, Confluence has the author facet, and Slack has the channel facet. There are also custom facets that are defined for custom datasources pushed via api."
+fetched_at: "2026-09-01T13:23:02.809Z"
+---
+On this page
+
+Apart from the general filters we’ve discussed, some filters are specific to one datasource- for example, Confluence has the `author` facet, and Slack has the `channel` facet. There are also custom facets that are defined for custom datasources pushed via api.
+
+To uncover these datasource-specific facets, you can use our Glean UI to filter by the datasource you’re curious about. You will be able to find a list of facets for your search results, and facet values on the sidebar of the Glean UI (see image below).
+
+### Getting possible facets via Search API[​](#getting-possible-facets-via-search-api "Direct link to Getting possible facets via Search API")
+
+If you would like to curl to get the facets, you can use a /search request to get the values that we use to populate the sidebar with a request like this:
+
+```
+{  "query": "test",  "pageSize": 10,  "requestOptions": {    "facetBucketSize": 3000,    "facetFilters": [      {        "fieldName": "app",        "values": [          {            "value": "confluence",            "relationType": "EQUALS"          }        ]      }    ]  }}
+```
+
+This will return a top-level field, [`facetResults`](/api/client-api/search/search#responses). facetResults has the following relevant fields:
+
+1.  [`sourceName`](/api/client-api/search/search#responses) - same as the facet `fieldName` in the `facetFilter`s object
+2.  [`operatorName`](/api/client-api/search/search#responses) - not relevant
+3.  [`buckets`](/api/client-api/search/search#responses) - a list of facet bucket objects corresponding to a facet value
+    1.  The facet bucket object has the following relevant fields:
+        1.  [`count`](/api/client-api/search/search#responses) - the number of search results that would be returned if filtering by the facet value
+        2.  [`value`](/api/client-api/search/search#responses) - the facet value (ie “engineering” for the space facet)
+            1.  [`stringValue`](/api/client-api/search/search#responses) - the string value
+            2.  [`intValue`](/api/client-api/search/search#responses) - the integer value (not common)
+            3.  [`displayLabel`](/api/client-api/search/search#responses) - alternative value used for display in the UI
+            4.  [`iconConfig`](/api/client-api/search/search#responses) - optional image used to represent the facet value, such as a profile picture for people facet values.
+
+```
+{  "sourceName": "space",  "operatorName": "SelectMultiple",  "buckets": [    {      "count": 3,      "value": {        "stringValue": "engineering"      }    }  ]}
+```
+
+To get all of the facets you can use with a particular datasource, you can look at all of the `sourceName`s in the `facetsResult`s returned.
+
+If latency is a concern, and you only want to receive `facetResults`, you can send a request with [`pageSize`](/api/client-api/search/search#request) = 0, and add "FACET\_RESULTS" within the [`responseHints`](/api/client-api/search/search#request) field in [`requestOptions`](/api/client-api/search/search#request) to not retrieve any documents and only retrieve facetResults. See sample request body below, which would gather `facetResults` for all confluence specific facets:
+
+```
+{  "query": "test",  "pageSize": 0,  "requestOptions": {    "facetBucketSize": 3000,    "facetFilters": [      {        "fieldName": "app",        "values": [          {            "value": "confluence",            "relationType": "EQUALS"          }        ]      }    ],    "responseHints": ["FACET_RESULTS"]  }}
+```

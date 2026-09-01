@@ -1,0 +1,48 @@
+---
+url: "https://developers.glean.com/api/platform-api/authentication"
+canonical: "https://developers.glean.com/api/platform-api/authentication"
+title: "Platform API Authentication | Glean Developer"
+description: "Authenticate requests to the Glean Platform API."
+fetched_at: "2026-09-01T13:22:57.696Z"
+---
+On this page
+
+Platform API requests use a bearer credential in the `Authorization` header. Prefer OAuth for per-user integrations. Use a Glean-issued token for global permissions with `X-Glean-ActAs`, or when no OAuth path exists.
+
+## Request header[​](#request-header "Direct link to Request header")
+
+```
+Authorization: Bearer <platform_token>
+```
+
+## Choose an authentication method[​](#choose-an-authentication-method "Direct link to Choose an authentication method")
+
+### Glean OAuth Authorization Server
+
+Use Glean's OAuth Authorization Server for OAuth access tokens and fine-grained Glean scopes. It is on by default. Tenants that already used IdP OAuth may have it off. DCR is subject to tenant policy; use a static client when DCR is disabled, when the tenant policy does not allow the application, or when the application needs scopes DCR does not grant.
+
+### External IdP OAuth
+
+Use OAuth access tokens issued by a configured identity provider such as Google, Microsoft Entra ID, Okta, or OneLogin.
+
+### Glean-issued tokens
+
+Use user-scoped or global bearer tokens created in the Glean Admin Console. Global tokens also require `X-Glean-ActAs`.
+
+## Quick start[​](#quick-start "Direct link to Quick start")
+
+1.  Confirm that your application has access to the Platform API.
+2.  For a per-user integration, obtain an OAuth access token from the Glean OAuth Authorization Server or a configured external IdP. Use a Glean-issued token for global `X-Glean-ActAs`, or when no OAuth path exists.
+3.  Store the credential securely and provide it in the `Authorization` header.
+4.  Try the [Platform API Quickstart](/api/platform-api/getting-started).
+
+note
+
+Platform API and Client API use the same customer-facing authentication methods. Indexing API operations use Glean-issued tokens and do not accept OAuth. Follow the method-specific setup and scope requirements for the endpoint you are calling.
+
+## Related resources[​](#related-resources "Direct link to Related resources")
+
+-   [Platform API overview](/api/platform-api)
+-   [Platform API reference](/api/platform-api/platform-search)
+-   [Common API authentication concepts](/get-started/authentication)
+-   [OAuth setup, static clients, and DCR conditions](/api-info/client/authentication/oauth)

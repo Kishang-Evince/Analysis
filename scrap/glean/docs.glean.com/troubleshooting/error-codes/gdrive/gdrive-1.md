@@ -1,0 +1,20 @@
+---
+url: "https://docs.glean.com/troubleshooting/error-codes/gdrive/gdrive-1"
+canonical: "https://docs.glean.com/troubleshooting/error-codes/gdrive/gdrive-1"
+title: "GDRIVE-1"
+description: "GDRIVE-1 Error Code"
+fetched_at: "2026-09-01T13:30:15.145Z"
+---
+On this page
+
+## Issue[​](#issue "Direct link to Issue")
+
+We are unable to fetch an access token for a required API scope. The error message displayed in the console should display the specific scope we're missing.
+
+## Resolution[​](#resolution "Direct link to Resolution")
+
+-   Head to [https://admin.google.com/u/1/ac/owl/domainwidedelegation](https://admin.google.com/u/1/ac/owl/domainwidedelegation) and ensure the client ID displayed in the error message has been granted the specified API scope
+-   Also verify that the app with the same client ID is 'Trusted' here: [https://admin.google.com/ac/owl/list?tab=configuredApps](https://admin.google.com/ac/owl/list?tab=configuredApps).
+-   For more information on the specified API scope: [https://developers.google.com/drive/api/guides/api-specific-auth](https://developers.google.com/drive/api/guides/api-specific-auth)
+
+If you are still having difficulty please reach out to us: [https://support.glean.com](https://support.glean.com)

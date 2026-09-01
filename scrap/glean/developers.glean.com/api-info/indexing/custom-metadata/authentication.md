@@ -1,0 +1,37 @@
+---
+url: "https://developers.glean.com/api-info/indexing/custom-metadata/authentication"
+canonical: "https://developers.glean.com/api-info/indexing/custom-metadata/authentication"
+title: "Authentication | Glean Developer"
+description: "Custom Metadata requests require a Bearer token in the Authorization header. Tokens are scoped, so metadata-management permissions can be delegated independently of full indexing-token access."
+fetched_at: "2026-09-01T13:22:50.342Z"
+---
+On this page
+
+Custom Metadata requests require a Bearer token in the `Authorization` header. Tokens are **scoped**, so metadata-management permissions can be delegated independently of full indexing-token access.
+
+## Token scopes[​](#token-scopes "Direct link to Token scopes")
+
+When creating a token via the [indexing token creation flow](/api-info/indexing/authentication/overview), set the scope to one of:
+
+-   **Global scope** — `custommetadata:global_scope`. Manages schemas and metadata for **any** group.
+-   **Group-specific scope** — `custommetadata:<group_name>`. Manages the schema and metadata for the named group only.
+
+A group-scoped token can manage metadata for that group across any document in Glean — it is not tied to a particular datasource.
+
+## Choosing a scope[​](#choosing-a-scope "Direct link to Choosing a scope")
+
+| Scenario | Recommended scope |
+| --- | --- |
+| One pipeline managing several metadata groups | `custommetadata:global_scope` |
+| Per-team or per-integration metadata pipelines that should be isolated | `custommetadata:<group_name>` |
+| Third-party or partner integrations | `custommetadata:<group_name>` (least privilege) |
+
+## Using the token[​](#using-the-token "Direct link to Using the token")
+
+Include the token as a Bearer credential on every request:
+
+```
+curl -H 'Authorization: Bearer <token>' \  https://<glean-instance-name>-be.glean.com/rest/api/index/custom-metadata/schema/<groupName>
+```
+
+Requests made with a token whose scope does not cover the target group return `401 Unauthorized`.

@@ -1,0 +1,88 @@
+---
+url: "https://developers.glean.com/libraries/web-sdk/components/chat"
+canonical: "https://developers.glean.com/libraries/web-sdk/components/chat"
+title: "Glean Chat | Glean Developer"
+description: "Implement AI-powered chat functionality that leverages your company's content and user relationships"
+fetched_at: "2026-09-01T13:23:05.290Z"
+---
+On this page
+
+Glean Chat delivers personalized answers grounded in your company's content, people, and activity — with citations back to the source. Responses are automatically tailored to what each signed-in user is allowed to see. A complete list of Glean Chat's capabilities can be found in our [Chat documentation](https://docs.glean.com/user-guide/assistant/glean-chat).
+
+PreviewLive — your instance
+
+portal.sample.internal/assistant
+
+New chat Library AgentsTodayWho owns the payments…Canary alarm follow-up
+
+Who owns the payments service?Share
+
+The payments service is owned by the Payments Platform team.
+
+Priya Natarajan is the tech lead, and Marcus Webb is on call this week — the deploy and rollback runbook lives in the Engineering Wiki.
+
+Ask a follow-up…
+
+Illustrative previewRendered with sample data — in your app, this component renders live against your organization's Glean instance. Try it live →
+
+## Install the SDK[​](#install-the-sdk "Direct link to Install the SDK")
+
+-   npm
+-   Script tag
+
+```
+npm install @gleanwork/web-sdk
+```
+
+Include the JavaScript library in the `<head>` section of your page. Replace `GLEAN_APP_DOMAIN` with your company's Glean web app domain (typically `app.glean.com` or `your-company.glean.com` if you use a custom subdomain).
+
+```
+<script  defer  src="https://{GLEAN_APP_DOMAIN}/embedded-search-latest.min.js"></script>
+```
+
+info
+
+The Glean web app domain differs from your company's Glean backend domain (find yours at [app.glean.com/admin/about-glean](https://app.glean.com/admin/about-glean) under "Server instance (QE)"). The same methods are available on `window.GleanWebSDK` once the `glean:ready` event fires.
+
+## Render chat[​](#render-chat "Direct link to Render chat")
+
+1.  Create a container element with `position: relative`, `display: block`, and a defined `width` and `height`.
+    
+2.  Render Glean Chat into your container:
+    
+
+```
+import { renderChat } from '@gleanwork/web-sdk';renderChat(document.getElementById('chat'), {  backend: 'https://{your}-be.glean.com/',});
+```
+
+For the full surface, see the [renderChat API documentation](/libraries/web-sdk/reference/interfaces/GleanWebSDK#renderchat).
+
+## Options[​](#options "Direct link to Options")
+
+The most commonly used [`ChatOptions`](/libraries/web-sdk/reference/interfaces/ChatOptions):
+
+| Option | Type | Description |
+| --- | --- | --- |
+| `agentId` | `string` | The ID of the [Glean Agent](/guides/agents/overview) to chat with. |
+| `agent` | `'DEFAULT' | 'GPT' | 'FAST' | 'ADVANCED'` | Response engine. `FAST` and `ADVANCED` use the agentic engine; `DEFAULT` and `GPT` are being deprecated in their favor. |
+| `initialMessage` | `string` | A message sent on the user's behalf to start the conversation. |
+| `chatId` | `string` | Opaque ID that restores an existing chat session. |
+| `landingPage` | `'chat' | 'agentLibrary'` | Initial view when the widget loads. Defaults to `'chat'`. |
+| `promptId` | `string` | Opens the widget with a saved Glean prompt. |
+| `customizations` | `ChatCustomizations` | Toggle individual UI features (agent library, prompt library, feedback, chat menu, and more). |
+
+All components also accept the common [`Options`](/libraries/web-sdk/reference/interfaces/Options) — `backend`, `authToken`, `theme`, `themeVariant`, `locale`, and more.
+
+info
+
+To chat with a specific [Glean Agent](/guides/agents/overview), pass its ID via the `agentId` chat option. The older `applicationId` parameter (for AI Applications built with the deprecated AI App Builder) is still accepted for existing apps, but new integrations should use `agentId` — apps were migrated to agents.
+
+## Examples[​](#examples "Direct link to Examples")
+
+### Separate pages for chat and search[​](#separate-pages-for-chat-and-search "Direct link to Separate pages for chat and search")
+
+Dedicated routes for Search and Chat — a Search page with the Glean Search component, a Chat page with the Glean Chat component, and automatic redirection to the Chat page when starting a new conversation. View the complete demo in our [CodeSandbox example](https://codesandbox.io/s/github/askscio/glean-browser-api/tree/main/examples/search-chat-separate-routes).
+
+### Unified page[​](#unified-page "Direct link to Unified page")
+
+Search and Chat combined on a single route, toggled with a `mode` query parameter (`search` or `chat`). View the complete demo in our [CodeSandbox example](https://codesandbox.io/s/github/askscio/glean-browser-api/tree/main/examples/search-chat-unified).

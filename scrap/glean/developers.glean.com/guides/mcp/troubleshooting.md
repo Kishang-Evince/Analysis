@@ -1,0 +1,63 @@
+---
+url: "https://developers.glean.com/guides/mcp/troubleshooting"
+canonical: "https://developers.glean.com/guides/mcp/troubleshooting"
+title: "Troubleshoot Remote MCP connections | Glean Developer"
+description: "Resolve Glean Remote MCP authentication, configuration, and tool-loading problems."
+fetched_at: "2026-09-01T13:23:03.020Z"
+---
+On this page
+
+Use this guide for a tenant's Glean Remote MCP Server. If you only need Glean developer documentation in a coding assistant, use the public [Docs MCP Server](/docs-mcp) instead.
+
+## The Configurator or host is missing[​](#the-configurator-or-host-is-missing "Direct link to The Configurator or host is missing")
+
+Glean enables the OAuth Authorization Server and Remote MCP Server by default for eligible tenants. Administrators can disable MCP or hide the end-user Configurator. If the [MCP Configurator](https://app.glean.com/settings/install?mcpConfigure=true) is missing, ask a Glean administrator to confirm that at least one MCP server is enabled and that the Configurator is visible.
+
+If your host is not listed in the Configurator, use the server URL with the host's own MCP setup instructions. One server URL works across MCP hosts.
+
+Administrators should start with [Set up Glean MCP server](https://docs.glean.com/administration/platform/mcp/enable-mcp-servers). After the check, reopen the Configurator and copy the server URL. Select a host only when it is listed and you want tailored setup instructions.
+
+## DCR or redirect URI is rejected[​](#dcr-or-redirect-uri-is-rejected "Direct link to DCR or redirect URI is rejected")
+
+A tenant sets one of three Dynamic Client Registration (DCR) policies: allow any application, allow only approved applications, or do not allow dynamic registration. Registration fails when the policy restricts it to approved applications and the host's redirect URI matches no allowed pattern, or when DCR is off. For a listed host, copy its configuration from the MCP Configurator. For an unlisted host, follow that host's own MCP and OAuth setup instructions. Do not substitute a redirect URI from a different host.
+
+New and previously unconfigured default-on MCP tenants use the Glean-managed list of approved applications. Tenants with existing MCP or OAuth configuration keep their settings.
+
+Ask the administrator to check the [DCR policy](https://docs.glean.com/administration/oauth/dynamic-client-registration) after a registration or redirect URI failure. When DCR is unavailable or its scopes do not fit a governed application, use a [static OAuth client](https://docs.glean.com/administration/oauth/static-client-registration). See [OAuth authentication](/api-info/client/authentication/oauth) for the DCR versus static model.
+
+## Authentication fails or sign-in loops[​](#authentication-fails-or-sign-in-loops "Direct link to Authentication fails or sign-in loops")
+
+Revoke the grant on the Glean side, then clear it on the host side. In Glean, open **Your settings**, go to **Third party apps and MCP**, select the host, and choose **Revoke**. Then remove the host's stored Glean MCP credentials, reconnect the server, and complete your SSO sign-in again.
+
+Prefer OAuth. Use a Glean-issued API token only when the host cannot complete OAuth. Do not assign API Token Creator in bulk to work around OAuth. See the [Glean OAuth Authorization Server guide](https://docs.glean.com/administration/oauth/authorization-server) and the [authentication overview](/get-started/authentication).
+
+## The server URL points to the wrong server[​](#the-server-url-points-to-the-wrong-server "Direct link to The server URL points to the wrong server")
+
+A server URL identifies a Glean MCP server, not a host, so the same URL works across hosts. If the host uses a URL for a different server, return to the MCP Configurator, choose the intended server, and copy its URL again. Restart the host after you replace the configuration.
+
+For a listed host, follow its tailored setup instructions in the Configurator.
+
+For organization-managed hosts, use the host's managed-configuration guidance from [About Glean MCP Servers](https://docs.glean.com/administration/platform/mcp/about). For device-managed deployment, use the [MDM deployment guide](https://docs.glean.com/administration/platform/mcp/mdm-mcp).
+
+## The server connects but tools are not available[​](#the-server-connects-but-tools-are-not-available "Direct link to The server connects but tools are not available")
+
+Ask an administrator to confirm that the required tools are enabled on that server. Reload or reconnect the host so it refreshes the tool list. You only receive results you can access in Glean.
+
+Hosts choose which tools to call. Test with a direct prompt such as "Search Glean for the engineering onboarding guide." Confirm the host displays the expected Glean server and tool use. See [create MCP servers](https://docs.glean.com/administration/platform/mcp/create-mcp-servers).
+
+## Verification fails[​](#verification-fails "Direct link to Verification fails")
+
+Start a new conversation after connecting. Make an explicit Glean request and confirm it returns content you can access in Glean. If the host does not select a Glean tool, name the action or data source in the prompt. If it selects a tool but the call fails, record the error and follow the matching section above.
+
+## Escalate with useful details[​](#escalate-with-useful-details "Direct link to Escalate with useful details")
+
+When you contact your Glean administrator or support, include:
+
+-   Host name and version, operating system, and whether the connection is individual, organization-managed, or deployed through MDM.
+-   The server name, a sanitized server URL, the time of the failure, and the exact error message.
+-   Whether OAuth sign-in completed, DCR or redirect registration was rejected, and whether the server and tools appeared in the host.
+-   The verification prompt and whether the host selected a Glean tool.
+
+Never include bearer tokens, API tokens, client secrets, or other credentials in a support request.
+
+For administrator-side diagnostics, see [Troubleshoot MCP Connectivity](https://docs.glean.com/administration/platform/mcp/troubleshooting).

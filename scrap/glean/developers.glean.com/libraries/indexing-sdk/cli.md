@@ -1,0 +1,152 @@
+---
+url: "https://developers.glean.com/libraries/indexing-sdk/cli"
+canonical: "https://developers.glean.com/libraries/indexing-sdk/cli"
+title: "CLI | Glean Developer"
+description: "glean-idx, the single command line interface for building and operating Glean connectors"
+fetched_at: "2026-09-01T13:23:04.317Z"
+---
+On this page
+
+The SDK ships one command, `glean-idx`. It covers the whole loop: checking your credentials, validating a plan, running a connector, inspecting what it uploaded, and deploying it on a schedule.
+
+```
+glean-idx doctor                    # are my credentials right?glean-idx validate ./my-connector   # is the plan complete, before writing code?glean-idx test --phase mock         # Glean mocked; connector source clients unchangedglean-idx test --phase integration  # real source, recorded/replayed; Glean mockedglean-idx run --mode incremental    # additive crawl for realglean-idx datasource status --datasource companywikiglean-idx deploy init --cloud gcp   # Docker and Terraform for a CronJob
+```
+
+## Where each command runs[​](#where-each-command-runs "Direct link to Where each command runs")
+
+Commands fall into three groups, and knowing which is which saves the most common confusion. `glean-idx --help` restates it.
+
+**Credentials only.** Most commands need nothing but `GLEAN_SERVER_URL` and `GLEAN_INDEXING_API_TOKEN`. They never import your code, so they run from any directory — including with nothing installed:
+
+```
+uvx --from glean-indexing-sdk glean-idx doctor
+```
+
+**Your connector too.** `run`, `test`, and `datasource configure` import your connector class, so they run from inside the connector project with the SDK installed alongside your code:
+
+```
+uv run glean-idx run
+```
+
+A command in the second group run from the wrong directory tells you exactly that, and lists the directories it searched for `glean_deployment.yaml`.
+
+**Deployment config plus standard tools.** `deploy` commands read `glean_deployment.yaml` and delegate to Docker Buildx, Terraform, the selected provider, or `kubectl`. Install and authenticate those tools first. The SDK owns connector-specific naming, image selection, exact secret manifests, Terraform variables, and workload discovery; it does not create or authenticate your cloud account, cluster, registry, identity foundation, or namespace.
+
+## Commands[​](#commands "Direct link to Commands")
+
+### Before you write code[​](#before-you-write-code "Direct link to Before you write code")
+
+| Command | What it does |
+| --- | --- |
+| `glean-idx doctor` | Checks credentials, and with `--datasource NAME` proves the token actually works by reading that datasource. |
+| `glean-idx validate [DIR]` | Checks a connector's `.glean/` planning artifacts are complete and confirmed. Exits `5` and lists every problem at once. |
+| `glean-idx schema [NAME]` | Prints the JSON Schema for the models `transform()` returns. Run with no name to list them. |
+
+### Running and testing[​](#running-and-testing "Direct link to Running and testing")
+
+| Command | What it does |
+| --- | --- |
+| `glean-idx run [--connector MODULE:CLASS_OR_FACTORY] [--mode full|incremental]` | Fetches, transforms, and uploads. `--mode incremental` overrides the project's `indexing_mode`; `--force-restart` discards a partial replacement upload. |
+| `glean-idx test --phase PHASE [--connector MODULE:CLASS_OR_FACTORY]` | Runs the connector at one fidelity: `mock`, `integration`, `live`, or `all`. |
+
+`--phase` maps onto the [testing phases](/libraries/indexing-sdk/testing/overview):
+
+| Flag | Phase | Source | Glean |
+| --- | --- | --- | --- |
+| `--phase mock` | [Unit](/libraries/indexing-sdk/testing/unit) | the connector's own clients | mocked |
+| `--phase integration` | [Integration](/libraries/indexing-sdk/testing/integration) | real, recorded and replayed | mocked |
+| `--phase live` | [End-to-end](/libraries/indexing-sdk/testing/end-to-end) | real | real |
+
+`--phase all` runs them in order and stops at the first failure. A phase that cannot run is skipped and reported rather than failing the batch. Without Glean credentials, `live` is skipped and the earlier phases still run. If live can run, `--phase all` also requires `--allow-destructive-live`.
+
+`--max-items N` limits source consumption for every discovered data client. It is not a Glean-side document cap and does not guarantee a small blast radius. In particular, using it with a full live crawl intentionally produces a partial replacement, so documents outside that subset can become stale.
+
+Every live phase requires `--allow-destructive-live` and prompts you to confirm the resolved Glean target. For a full live crawl, the flag acknowledges that the run finalizes replacement state and may stale-delete documents it does not produce. Use a disposable datasource; `--yes` only skips the prompt, not the required acknowledgement.
+
+```
+glean-idx test --phase live --mode full --allow-destructive-liveglean-idx test --phase all --allow-destructive-live
+```
+
+### Inspecting what landed[​](#inspecting-what-landed "Direct link to Inspecting what landed")
+
+| Command | What it does |
+| --- | --- |
+| `glean-idx datasource status --datasource NAME` | Uploaded and indexed counts per object type, identity counts, visibility, and the most recent upload and processing runs. |
+| `glean-idx datasource process --datasource NAME` | Requests processing now instead of waiting for the next scheduled run. |
+| `glean-idx datasource configure [--connector MODULE:CLASS_OR_FACTORY]` | Validates and registers the connector's own `configuration`, so the datasource cannot drift from what the connector uploads to. API-facing datasource names may contain only ASCII letters and digits. An ambiguous transport failure is reconciled by reading state back, never by blindly repeating the write. |
+| `glean-idx document status --datasource NAME --document TYPE ID [--poll]` | Whether one or more documents finished indexing. Repeat `--document TYPE ID` to check several. |
+| `glean-idx document access --datasource NAME --object-type TYPE --id ID --user EMAIL` | Whether a given user can see a document. |
+| `glean-idx document events --datasource NAME --object-type TYPE --id ID` | A document's lifecycle events, for when it uploaded but never became searchable. |
+
+`document status` and `document access` are the two worth reaching for first when something is missing from search — see [Status and debugging](/libraries/indexing-sdk/status-and-debugging).
+
+### Removing things[​](#removing-things "Direct link to Removing things")
+
+| Command | What it does |
+| --- | --- |
+| `glean-idx document delete --datasource NAME --document TYPE ID` | Removes one or more documents from the index. Repeat `--document TYPE ID`; prompts unless `--yes`. |
+| `glean-idx datasource teardown --datasource NAME` | Removes every document, keeping the datasource and its configuration. Requires typing the datasource name to confirm. |
+
+warning
+
+`teardown` cannot be undone. It uploads an empty full crawl, so everything currently indexed for that datasource becomes stale and is removed.
+
+### Deploying[​](#deploying "Direct link to Deploying")
+
+`glean-idx deploy` generates and operates a scheduled job in your own cloud:
+
+| Command | What it does |
+| --- | --- |
+| `deploy init` | Generates Docker, Terraform, runtime, and YAML artifacts. |
+| `deploy build [--push]` | Delegates to Docker Buildx using the YAML image tag. The compatibility `--tag` option must match the YAML so build and apply cannot diverge. |
+| `deploy secrets upload` | Uploads exact `.env` values and records only validated key names locally. |
+| `deploy apply` | Runs Terraform init, displays an exact saved plan, prompts, and applies that same plan. |
+| `deploy run` | Delegates to `kubectl` to create one immediate Job from the configured CronJob. |
+| `deploy status` / `deploy logs` | Uses `kubectl` against the currently selected cluster. |
+| `deploy destroy` | Removes Terraform resources and manifest-owned secrets, then reports retained image, namespace, datasource registration, and local files. |
+
+See [Deployment](/libraries/indexing-sdk/deployment/overview) for prerequisites, provider authentication, namespace ownership, and cleanup boundaries.
+
+## Output and exit codes[​](#output-and-exit-codes "Direct link to Output and exit codes")
+
+Every command takes `--output json` and returns a stable envelope, which is what makes the CLI usable from a script or an agent:
+
+```
+glean-idx datasource status --datasource companywiki --output json | jq .data.documents
+```
+
+```
+{  "ok": true,  "data": { "datasource": "companywiki", "documents": { "uploaded": { "article": 42 } } }}
+```
+
+Output defaults to text at a terminal and JSON when redirected, so a piped command is machine-readable without passing anything. In JSON mode the envelope goes to **stdout whether the command succeeded or not** — an `ok: false` result is still the result — so there is one stream to parse. Text-mode errors go to stderr, as does connector logging from `run`.
+
+SDK-owned exit codes are stable. When a deployment subprocess starts and exits nonzero, the CLI preserves that Docker, Terraform, or `kubectl` exit code (from `1` through `255`) and includes the command and captured diagnostics in the error envelope.
+
+| Code | Meaning |
+| --- | --- |
+| `0` | Succeeded. |
+| `1` | Unexpected failure, or the connector itself raised. |
+| `2` | Bad invocation. |
+| `3` | Environment not ready: no credentials, no project, no importable connector. |
+| `4` | Glean rejected the request or was unreachable. |
+| `5` | The command ran and found its subject invalid. |
+
+Failures carry a machine-readable `code`, and where one exists, the command that fixes them:
+
+```
+{  "ok": false,  "error": {    "code": "missing_credentials",    "message": "missing required environment variables: GLEAN_SERVER_URL, GLEAN_INDEXING_API_TOKEN",    "hint": ["export GLEAN_SERVER_URL=...", "export GLEAN_INDEXING_API_TOKEN=..."]  }}
+```
+
+## Unattended use[​](#unattended-use "Direct link to Unattended use")
+
+`--yes` skips every confirmation, which destructive commands otherwise require. `datasource teardown` asks you to type the datasource name rather than pressing `y`, since the effect is unrecoverable and covers the whole datasource.
+
+## Shell completion[​](#shell-completion "Direct link to Shell completion")
+
+```
+glean-idx completion zsh >> ~/.zshrc      # or bash, fish
+```
+
+The script goes to stdout and the install hint to stderr, so redirecting into a startup file captures only what belongs there.

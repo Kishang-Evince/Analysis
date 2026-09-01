@@ -1,0 +1,51 @@
+---
+url: "https://developers.glean.com/api-info/indexing/datasource/test-datasource"
+canonical: "https://developers.glean.com/api-info/indexing/datasource/test-datasource"
+title: "Test Datasource | Glean Developer"
+description: "Before going live with a production datasource you might want to set up a test/staging datasource. You can use a test datasource to experiment with the indexing API, or to stage your changes. This test datasource lives in the production environment but doesn’t affect it. You can do this by ensuring that:"
+fetched_at: "2026-09-01T13:22:50.653Z"
+---
+On this page
+
+Before going live with a production datasource you might want to set up a test/staging datasource. You can use a test datasource to experiment with the indexing API, or to stage your changes. This test datasource lives in the production environment but doesn’t affect it. You can do this by ensuring that:
+
+1.  All ranking signals are turned off from a test datasource. This ensures that the production is not affected by a test datasource.
+2.  The test datasource is only visible to select users so that a developer can check results and permissions easily.
+
+Setting up a test datasource is quite easy, you have to go through almost the same steps as you would go through setting up a normal datasource, but there are some differences. The steps are:
+
+### 1\. Setting `isTestDatasource` to true[​](#1-setting-istestdatasource-to-true "Direct link to 1-setting-istestdatasource-to-true")
+
+When setting up the datasource using [`/adddatasource`](/api/indexing-api/add-or-update-datasource), remember to set the isTestDatasource field to true.
+
+-   curl
+-   Python
+
+```
+curl -X POST https://customer-be.glean.com/api/index/v1/adddatasource \...	"isTestDatasource": true...
+```
+
+```
+from glean.api_client import Gleanimport oswith Glean(    api_token=os.getenv("GLEAN_INDEXING_API_TOKEN", ""),    server_url=os.getenv("GLEAN_SERVER_URL", ""),) as client:    try:        client.indexing.datasources.add(            name="gleantest",            # ... other fields            is_test_datasource=True,        )    except Exception as e:        print(f"Exception when adding datasource: {e}")
+```
+
+Glean turns off ranking signals from a test datasource. For example, Glean uses document references(link to a document) as one of its ranking signals. A document that is referenced more in other documents will be given more importance then a less referenced one. Glean stops all such signals for a test datasource so that it does not pollute production rankings.
+
+### 2\. Using `/betausers` endpoint to give select visibilty to users.[​](#2-using-betausers-endpoint-to-give-select-visibilty-to-users "Direct link to 2-using-betausers-endpoint-to-give-select-visibilty-to-users")
+
+At this stage your test datasource is not affecting the production and it is neither visible to anyone. Now you would like to give selective visibility to it. This can be done using the [`/betausers`](/api/indexing-api/beta-users) endpoint. This endpoint allows you to control the people who can have visibility to the test datasource. An example command would look like:
+
+-   curl
+-   Python
+
+```
+curl -X POST https://customer-be.glean.com/api/index/v1/betausers \-H 'Authorization: Bearer <token>' \-H 'Content-Type : application/json' \-d '{    "datasource": "gleantest",    "emails": [        "user1@example.com",        "user2@example.com"    ]}'
+```
+
+```
+from glean.api_client import Gleanimport oswith Glean(    api_token=os.getenv("GLEAN_INDEXING_API_TOKEN", ""),    server_url=os.getenv("GLEAN_SERVER_URL", ""),) as client:    try:        client.indexing.permissions.authorize_beta_users(            datasource="gleantest",            emails=[                "user1@example.com",                "user2@example.com",            ],        )    except Exception as e:        print(f"Exception when authorizing beta users: {e}")
+```
+
+This command would give visibility of the test datasource to user1 and user2. This would allow you to test your custom datasource among a small number of users.
+
+Note: For a document to be visible to beta users, they must also have appropriate permissions to view it. For more details about setting permissions, follow the [Setting Permissions](/api-info/indexing/documents/permissions) tutorial.

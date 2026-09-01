@@ -1,0 +1,188 @@
+---
+url: "https://developers.glean.com/libraries/indexing-sdk/quickstart"
+canonical: "https://developers.glean.com/libraries/indexing-sdk/quickstart"
+title: "Quickstart | Glean Developer"
+description: "Install the Glean Indexing SDK and index your first document"
+fetched_at: "2026-09-01T13:23:04.915Z"
+---
+On this page
+
+A connector is two classes: a **data client** that fetches records from your source, and a **connector** that turns them into Glean documents. This page builds both and indexes a document you can find in search.
+
+Source systemYour wiki, catalog, database
+
+`get_source_data()`Fetch raw records
+
+`transform()`Map to Glean documents
+
+`PushUploader`Batch, retry, upload
+
+Glean indexSearchable, permission-aware
+
+You write thisThe SDK handles thisExternal system
+
+## Install[​](#install "Direct link to Install")
+
+```
+pip install glean-indexing-sdk
+```
+
+Optional cloud observability plugins:
+
+```
+pip install "glean-indexing-sdk[aws]"   # CloudWatch logs + metricspip install "glean-indexing-sdk[gcp]"   # Cloud Logging + Cloud Monitoring
+```
+
+## Set your credentials[​](#set-your-credentials "Direct link to Set your credentials")
+
+The SDK reads these from the environment. Never hardcode them.
+
+```
+export GLEAN_SERVER_URL="https://your-company-be.glean.com"export GLEAN_INDEXING_API_TOKEN="your-indexing-api-token"export WIKI_BASE_URL="https://wiki.company.com"export WIKI_API_TOKEN="your-source-api-token"
+```
+
+info
+
+`GLEAN_INSTANCE` is still accepted as a deprecated fallback, but new connectors should use `GLEAN_SERVER_URL`. A missing variable raises `MissingEnvironmentVariableError` when the client is constructed, not part-way through an upload.
+
+## Prefer a ready-made dataset?[​](#prefer-a-ready-made-dataset "Direct link to Prefer a ready-made dataset?")
+
+The rest of this page has you write a small data client over invented data, which is the fastest way to see the shape of a connector. If you would rather index something with a real permission model already in it — 29 documents, six groups, a few deliberately restricted files, and one restricted to named users rather than a group — there is a complete runnable example you can copy instead:
+
+```
+npx tiged --mode=git gleanwork/glean-cookbook/examples/sample-catalog sample-catalogcd sample-catalog && cat README.md
+```
+
+It registers as a [test datasource](/api-info/indexing/datasource/test-datasource), so ranking signals are off and nothing is visible until you allow-list yourself — which makes it safe to run against an instance other people search. Come back here for the concepts; that example is just content to point them at.
+
+## Write a data client[​](#write-a-data-client "Direct link to Write a data client")
+
+A data client implements one method, `get_source_data()`. The `since` argument is populated on [incremental crawls](/libraries/indexing-sdk/concepts/indexing-modes).
+
+```
+from typing import Any, Optional, Sequence, TypedDictfrom glean.indexing.connectors import BaseDataClientclass WikiPage(TypedDict):    id: str    title: str    content: str    author: str    updated_at: str    url: strclass WikiDataClient(BaseDataClient[WikiPage]):    def __init__(self, base_url: str, api_token: str):        self.base_url = base_url        self.api_token = api_token    def get_source_data(self, since: Optional[str] = None, **kwargs: Any) -> Sequence[WikiPage]:        # Replace with a real API call against your source.        return [            {                "id": "page_123",                "title": "Engineering Onboarding Guide",                "content": "Welcome to the engineering team...",                "author": "jane.smith@company.com",                "updated_at": "2026-02-01T14:30:00Z",                "url": f"{self.base_url}/pages/123",            }        ]
+```
+
+## Write a connector[​](#write-a-connector "Direct link to Write a connector")
+
+The connector declares its datasource configuration and maps source records to `DocumentDefinition` objects. `CustomDatasourceConfig.name` may contain only ASCII letters and digits; Glean normalizes it internally. This API-facing name is separate from cloud deployment slugs, which may contain hyphens or underscores.
+
+```
+import osfrom datetime import datetimefrom typing import Listfrom glean.indexing.connectors import BaseDatasourceConnectorfrom glean.indexing.models import (    ContentDefinition,    CustomDatasourceConfig,    DocumentDefinition,    UserReferenceDefinition,)class CompanyWikiConnector(BaseDatasourceConnector[WikiPage]):    configuration = CustomDatasourceConfig(        name="companywiki",        display_name="Company Wiki",        url_regex=r"https://wiki\.company\.com/.*",        is_user_referenced_by_email=True,    )    def transform(self, data: Sequence[WikiPage]) -> List[DocumentDefinition]:        return [            DocumentDefinition(                id=page["id"],                title=page["title"],                datasource=self.name,                view_url=page["url"],                body=ContentDefinition(mime_type="text/plain", text_content=page["content"]),                author=UserReferenceDefinition(email=page["author"]),                updated_at=int(                    datetime.fromisoformat(page["updated_at"].replace("Z", "+00:00")).timestamp()                ),            )            for page in data        ]def create_connector() -> CompanyWikiConnector:    """Construct the connector from runtime configuration."""    return CompanyWikiConnector(        name="companywiki",        data_client=WikiDataClient(            base_url=os.environ["WIKI_BASE_URL"],            api_token=os.environ["WIKI_API_TOKEN"],        ),    )
+```
+
+Save the data client, connector, and factory in `connector.py`. The zero-argument `create_connector()` factory gives the CLI and generated deployment entrypoint one construction path without hardcoding credentials.
+
+warning
+
+`created_at` and `updated_at` are **integers** — Unix epoch seconds. Passing an ISO 8601 string is the most common first-connector mistake, and it surfaces later as documents sorting or displaying with the wrong date rather than as an upload error.
+
+## Test it before you push[​](#test-it-before-you-push "Direct link to Test it before you push")
+
+Start with a static data client and a recording Glean mock. This check uses no network and needs no credentials:
+
+```
+from glean.indexing.testing import StaticDataClient, run_connectorresult = run_connector(CompanyWikiConnector("companywiki", StaticDataClient([    {        "id": "page_123",        "title": "Engineering Onboarding Guide",        "content": "Welcome...",        "author": "jane.smith@company.com",        "updated_at": "2026-02-01T14:30:00Z",        "url": "https://wiki.company.com/pages/123",    }])))result.assert_documents_posted(count=1, datasource="companywiki")
+```
+
+Then move through the CLI phases one at a time. Both `mock` and `integration` keep Glean mocked, but they call the connector's real source client; integration also records and replays source responses.
+
+```
+glean-idx test --phase mock --connector connector:create_connector --max-items 5glean-idx test --phase integration --connector connector:create_connector --max-items 5
+```
+
+`max_items` limits how many source items each registered client consumes. It is not a Glean-side upload cap or a blast-radius guarantee.
+
+See [Testing](/libraries/indexing-sdk/testing/overview) for the full three-phase workflow.
+
+## Register and index[​](#register-and-index "Direct link to Register and index")
+
+Register the datasource after the mocked phases pass. You only need to reconfigure it when its configuration changes.
+
+```
+glean-idx datasource configure --connector connector:CompanyWikiConnector
+```
+
+The CLI rejects invalid datasource names before making a request. If the write loses its connection after being sent, the SDK reads the configuration back without retrying the write. Equivalent state is reported as success; an unreadable or different result is reported as an ambiguous outcome that you must inspect before retrying.
+
+For the first live full crawl, use a disposable datasource and verify the target shown by the confirmation prompt. A full live test is a replacement and can stale-delete documents it does not produce, so the explicit acknowledgement is required:
+
+```
+glean-idx test --phase live \  --connector connector:create_connector \  --mode full \  --max-items 5 \  --allow-destructive-live
+```
+
+Do not rely on `--max-items` to make a shared datasource safe: limiting source consumption makes a full replacement partial, which can delete everything not included. After validating against a disposable datasource, run the same factory for the intended complete crawl with `glean-idx run`.
+
+## Verify it landed[​](#verify-it-landed "Direct link to Verify it landed")
+
+Indexing is asynchronous — an accepted upload is not yet a searchable document. Check status from the CLI:
+
+```
+glean-idx document status --datasource companywiki --document article page_123 --poll
+```
+
+Then search Glean for a phrase from the document body. If it isn't there, work through [Status and debugging](/libraries/indexing-sdk/status-and-debugging) rather than re-running blindly.
+
+## Next steps[​](#next-steps "Direct link to Next steps")
+
+[
+
+### Connector types
+
+Streaming and async variants for larger datasets.
+
+
+
+
+
+
+
+](/libraries/indexing-sdk/concepts/connector-types)[
+
+### Permissions
+
+Index documents with real ACLs and verify enforcement.
+
+
+
+
+
+
+
+](/libraries/indexing-sdk/permissions)[
+
+### Pull integrations
+
+HTTP client, pagination, and rate limiting.
+
+
+
+
+
+
+
+](/libraries/indexing-sdk/pull/http-client)[
+
+### Deployment
+
+Run your connector on a schedule.
+
+
+
+
+
+
+
+](/libraries/indexing-sdk/deployment/overview)[
+
+### Sample dataset
+
+A runnable connector over 29 documents with real ACLs.
+
+
+
+
+
+
+
+](https://github.com/gleanwork/glean-cookbook/tree/main/examples/sample-catalog)

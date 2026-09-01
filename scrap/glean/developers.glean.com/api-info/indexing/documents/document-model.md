@@ -1,0 +1,19 @@
+---
+url: "https://developers.glean.com/api-info/indexing/documents/document-model"
+canonical: "https://developers.glean.com/api-info/indexing/documents/document-model"
+title: "Document Model | Glean Developer"
+description: "The following is the basic document model used for indexing a new document to Glean."
+fetched_at: "2026-09-01T13:22:50.963Z"
+---
+The following is the basic document model used for indexing a new document to Glean. There are other fields too which you can use for advanced functionality. You can refer to them in the API reference docs [here](https://developers.glean.com/api/indexing-api/index-document).
+
+| Field | Description |
+| --- | --- |
+| `datasource` | Represents the document datasource |
+| `id` | Unique identifier for the document |
+| `body` | Content which will be used to populate the document body and its mime type |
+| `allowedUsers` | List of users who will be able to view this document |
+| `viewURL` | Document view url |
+| `allowAnonymousAccess` | If set to true, anyone who is signed into Glean can view search results for the document |
+| `allowAllDatasourceUsersAccess` | If set to true, all users of the datasource (as uploaded using the Identity APIs) can view this document |
+| `customProperties` | List of name - value pairs used to populate additional facets |
