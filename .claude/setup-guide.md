@@ -1,8 +1,8 @@
-# `.cursor` — project AI configuration
+# `.claude` — project AI configuration
 
-This folder teaches Cursor agents **how this repo works** before they touch code. It is version-controlled team config: same rules for every developer and every agent session.
+This folder teaches claude agents **how this repo works** before they touch code. It is version-controlled team config: same rules for every developer and every agent session.
 
-Human docs live in `docs/` and `README.md`. `.cursor/` is **machine-oriented policy** — short, actionable, loaded automatically.
+Human docs live in `docs/` and `README.md`. `.claude/` is **machine-oriented policy** — short, actionable, loaded automatically.
 
 ---
 
@@ -16,7 +16,7 @@ LLM agents start each session with generic knowledge. They do not know:
 - When to stop (smallest diff, no unsolicited tests/docs)
 - Domain workflows (sync Qualia order, ADO status patch, API flow diagram format)
 
-Without `.cursor/`, every chat re-discover architecture from scratch. Agents over-build, put files in wrong folders, run dangerous CLI, ignore team conventions.
+Without `.claude/`, every chat re-discover architecture from scratch. Agents over-build, put files in wrong folders, run dangerous CLI, ignore team conventions.
 
 **Goal:** encode repeatable decisions once. Agent reads policy → matches existing patterns → smaller, safer diffs.
 
@@ -25,7 +25,7 @@ Without `.cursor/`, every chat re-discover architecture from scratch. Agents ove
 ## What lives here
 
 ```
-.cursor/
+.claude/
 ├── README.md           ← this file
 ├── rules/              ← always-on or file-scoped constraints (.mdc)
 ├── skills/             ← task workflows the agent reads when relevant (SKILL.md)
@@ -45,9 +45,9 @@ Without `.cursor/`, every chat re-discover architecture from scratch. Agents ove
 
 ---
 
-## Rules (`.cursor/rules/*.mdc`)
+## Rules (`.claude/rules/*.mdc`)
 
-Markdown with YAML frontmatter. Cursor merges matching rules into agent context.
+Markdown with YAML frontmatter. claude merges matching rules into agent context.
 
 ### Frontmatter
 
@@ -96,7 +96,7 @@ This repo examples:
 
 ---
 
-## Skills (`.cursor/skills/<name>/SKILL.md`)
+## Skills (`.claude/skills/<name>/SKILL.md`)
 
 Skills are **procedures** the agent loads when the task matches the skill `description`.
 
@@ -130,10 +130,10 @@ Optional siblings: `reference.md`, `examples.md`, `agent-prompt.md`, small scrip
 
 | Location            | Scope                                   |
 | ------------------- | --------------------------------------- |
-| `~/.cursor/skills/` | All your projects (personal preference) |
-| `.cursor/skills/`   | This repo only — **commit for team**    |
+| `~/.claude/skills/` | All your projects (personal preference) |
+| `.claude/skills/`   | This repo only — **commit for team**    |
 
-Do not write to `~/.cursor/skills-cursor/` — reserved for Cursor built-ins.
+Do not write to `~/.claude/skills-claude/` — reserved for claude built-ins.
 
 ### What belongs in skills
 
@@ -170,7 +170,7 @@ This repo index: [skills/README.md](./skills/README.md).
 - **sessionStart** — inject policy reminder into context
 - **preToolUse** — block or warn before Write/StrReplace (e.g. unsolicited `docs/` or test files)
 
-Hooks complement rules; they cannot replace clear `.mdc` text. Restart Cursor after editing hooks.
+Hooks complement rules; they cannot replace clear `.mdc` text. Restart claude after editing hooks.
 
 ---
 
@@ -206,27 +206,27 @@ Rules still apply (e.g. no migration:run)
 
 ### New rule
 
-1. Create `.cursor/rules/my-rule.mdc` with frontmatter
+1. Create `.claude/rules/my-rule.mdc` with frontmatter
 2. Keep under ~80 lines; one concern per file
 3. Prefer `alwaysApply: false` + globs when scope is narrow
 
 ### New skill
 
-1. Create `.cursor/skills/my-skill/SKILL.md`
+1. Create `.claude/skills/my-skill/SKILL.md`
 2. Write `description` with triggers: paths, verbs, tool names
 3. Link canonical docs; do not fork them
 4. Add row to `skills/README.md`
 
 ### Review cadence
 
-Update `.cursor/` when:
+Update `.claude/` when:
 
 - Architecture doc changes (folder layout, import aliases)
 - Repeated agent mistakes in PR review (new rule or skill step)
 - New forbidden or required CLI behavior
 - New recurring workflow (diagrams, ADO, releases)
 
-Treat `.cursor/` like lint config: **small, enforced, reviewed in PR**.
+Treat `.claude/` like lint config: **small, enforced, reviewed in PR**.
 
 ---
 
@@ -235,7 +235,7 @@ Treat `.cursor/` like lint config: **small, enforced, reviewed in PR**.
 - [ ] `rules/` — safety + stack standards (3–8 files, not 30)
 - [ ] `skills/` — 1 scaffold skill + 1 review/audit skill minimum
 - [ ] `skills/README.md` — index for team
-- [ ] Link from root `README.md` or contributor guide to `.cursor/README.md`
+- [ ] Link from root `README.md` or contributor guide to `.claude/README.md`
 - [ ] No secrets; no duplicate of full architecture bible
 - [ ] Optional hooks only if rules alone fail (e.g. block `docs/` spam)
 
@@ -243,6 +243,6 @@ Treat `.cursor/` like lint config: **small, enforced, reviewed in PR**.
 
 ## Further reading
 
-- Cursor docs: Rules, Skills, Hooks (IDE settings)
+- claude docs: Rules, Skills, Hooks (IDE settings)
 - This repo skills index: [skills/README.md](./skills/README.md)
 - Canonical human docs: `libs/@evince/documents/`, `docs/`

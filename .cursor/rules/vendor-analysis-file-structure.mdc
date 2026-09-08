@@ -1,17 +1,21 @@
 ---
-description: Rule for organizing Tier 3 vendor analysis field logs by section category
-globs: Glean/*.md
+description: Rule for organizing Tier 3 vendor analysis eval logs and test guides — one folder per SOW section, one file per field
+globs: Glean/Combined/**/*.md,test/**/*.md
 alwaysApply: false
 ---
 
 # Vendor Analysis File Structure
 
-When generating or updating evaluation field logs for SOW sections (e.g. `4.9.1`, `4.9.2`, etc.):
+When generating or revising evaluation content for SOW sections (e.g. `4.9.1`, `4.9.2`, etc.):
 
-- **One File Per Section Category:** Every field evaluated under the same SOW category (e.g., `4.9.1 - Functional Capabilities`) **must** be stored in a single combined file (e.g., `Glean/4.9.1 - Functional Capabilities - 2.0.md`).
-- **Sandbox runbooks:** Hands-on test guides live under `test/<Vendor>/` (e.g., `test/Glean/4.9.2 - Admin Test Guide.md`), separate from eval logs in `Glean/`.
-- **Do Not Fragment Fields:** Do not create separate `.md` files per individual field (e.g., separate files for "Features Confirmed" vs "Features Not Confirmed").
-- **Section Structure:**
-  - `## Field 1: [Field Name]`
-  - `## Field 2: [Field Name]`
-  - Include V2 metadata header at the top of the file summarizing overall section status.
+- **Eval logs (researched documents):** `Glean/Combined/4.9.<N> <Section Name>/<Field Name>.md` — one folder per SOW section, one file per field.
+  - Example: `Glean/Combined/4.9.1 Functional Capabilities/Features Confirmed.md`, `Glean/Combined/4.9.1 Functional Capabilities/Features Not Confirmed.md`
+  - No dash between `4.9.<N>` and the section name in the folder; no `Field N` prefix or version suffix (`-2.0`, etc.) in the filename — use git history for versioning.
+  - Each section folder gets an `Overview.md` carrying the shared header (Category, Vendor, Evaluator, Visibility Tier, Evaluation Date, Overall Section Status, tenant test stack, companion runbook link) plus a list linking every field file in the folder.
+  - `Glean/` root (outside `Combined/`) is for raw/loose research inputs only (`Glean/<vendor>/cloude/` sources, sitemaps, source docx exports) — never place a finalized per-field eval doc there.
+- **Test guides:** `test/Glean/4.9.<N> <Section Name>/<Field Name>.md` — same folder-per-section, file-per-field pattern, filenames matching the paired eval-log field names 1:1.
+  - Example: `test/Glean/4.9.1 Functional Capabilities/Features Confirmed.md`, `test/Glean/4.9.1 Functional Capabilities/Features Not Confirmed.md`
+  - Each section folder gets a `Pre-Flight.md` carrying shared setup (purpose, tenant entry, identities, content pack) plus any cross-field reference material (schedule, evidence mapping, cheat sheet, safety rules).
+- **Deep-dive / supplementary research** (e.g. an SDK-level re-verification companion to a field) lives alongside its field file in the same section folder, named `<Field Name> - <Qualifier>.md` (e.g. `Features Confirmed - SDK Deep Dive.md`) rather than as a separate top-level doc.
+- **Cross-linking:** every field file links to its folder's `Overview.md`/`Pre-Flight.md` and to its paired file on the other side (eval ↔ test guide).
+- Sourcing rule (`vendor-analysis-web-sourcing.mdc`) still applies inside every one of these files.

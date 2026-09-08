@@ -1,0 +1,13 @@
+---
+description: Never cite local cache paths as sources in vendor analysis docs — always use live global URLs
+globs: Glean/**/*.md,test/**/*.md
+alwaysApply: false
+---
+
+# Vendor Analysis Web Sourcing
+
+- **Never cite a local/cached file path** (e.g. `scrap/<vendor>/...`) as a "Source" in any eval log, research doc, or test guide. Local caches are a research aid only, not a citation.
+- **Always resolve and cite the real global URL.** Cached pages carry their own `url:`/`canonical:` frontmatter — use that. If absent, reconstruct it or re-fetch live.
+- **Verify from the live web too**, not just the cache. A claim backed only by a stale local snapshot is not fully confirmed — re-check the live page (WebFetch/WebSearch) whenever feasible, especially for anything numeric (counts, versions, certifications) or compliance-related.
+- **Column/field naming:** citation columns in these docs are named `Source` (a URL), never `Local Source`. If a doc still has `Local Source`/`Live Source` split columns, merge into one `Source` column of URLs.
+- **Confidence tags** should describe *when/how* a source was checked (cache-only vs. live-confirmed vs. drifted), never imply the citation itself is local-only.
