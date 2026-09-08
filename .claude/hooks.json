@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": ".cursor/hooks/session-start-anti-overengineering.sh"
+      },
+      {
+        "command": ".cursor/hooks/session-start-caveman-ponytail.sh"
+      }
+    ],
+    "preToolUse": [
+      {
+        "command": ".cursor/hooks/pre-tool-anti-overengineering.sh",
+        "matcher": "Write|StrReplace"
+      }
+    ]
+  }
+}

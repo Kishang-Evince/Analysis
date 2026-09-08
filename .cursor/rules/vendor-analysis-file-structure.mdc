@@ -1,0 +1,17 @@
+---
+description: Rule for organizing Tier 3 vendor analysis field logs by section category
+globs: Glean/*.md
+alwaysApply: false
+---
+
+# Vendor Analysis File Structure
+
+When generating or updating evaluation field logs for SOW sections (e.g. `4.9.1`, `4.9.2`, etc.):
+
+- **One File Per Section Category:** Every field evaluated under the same SOW category (e.g., `4.9.1 - Functional Capabilities`) **must** be stored in a single combined file (e.g., `Glean/4.9.1 - Functional Capabilities - 2.0.md`).
+- **Sandbox runbooks:** Hands-on test guides live under `test/<Vendor>/` (e.g., `test/Glean/4.9.2 - Admin Test Guide.md`), separate from eval logs in `Glean/`.
+- **Do Not Fragment Fields:** Do not create separate `.md` files per individual field (e.g., separate files for "Features Confirmed" vs "Features Not Confirmed").
+- **Section Structure:**
+  - `## Field 1: [Field Name]`
+  - `## Field 2: [Field Name]`
+  - Include V2 metadata header at the top of the file summarizing overall section status.
