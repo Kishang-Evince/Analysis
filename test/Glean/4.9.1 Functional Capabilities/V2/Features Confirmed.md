@@ -1,10 +1,10 @@
 # 4.9.1 Features Confirmed — SDK Deep Dive Admin Test Guide
 
-**Purpose:** Hands-on tenant/API verification for all 65 re-verified features in the companion research doc [Features Confirmed - SDK Deep Dive.md](../../../Glean/Combined/4.9.1%20Functional%20Capabilities/Features%20Confirmed%20-%20SDK%20Deep%20Dive.md). This guide upgrades any `Confirmed-Local-Only`, `Confirmed-Live-Only`, or `Unverifiable` item to fully `Tested` against a live tenant, and re-confirms everything else.
+**Purpose:** Hands-on tenant/API verification for all 65 re-verified features in the companion research doc [V2/Features Confirmed.md](../../../../Glean/Combined/4.9.1%20Functional%20Capabilities/V2/Features%20Confirmed.md). This guide upgrades any `Confirmed-Local-Only`, `Confirmed-Live-Only`, or `Unverifiable` item to fully `Tested` against a live tenant, and re-confirms everything else.
 
 **Tenant entry:** `https://app.glean.com` → Admin Console
-**Companion research doc:** [Features Confirmed - SDK Deep Dive.md](../../../Glean/Combined/4.9.1%20Functional%20Capabilities/Features%20Confirmed%20-%20SDK%20Deep%20Dive.md)
-**Related guide (broader Field 1 sweep):** [Features Confirmed.md](Features%20Confirmed.md) · **Section pre-flight:** [Pre-Flight.md](Pre-Flight.md)
+**Companion research doc:** [V2/Features Confirmed.md](../../../../Glean/Combined/4.9.1%20Functional%20Capabilities/V2/Features%20Confirmed.md)
+**Related guide (broader Field 1 sweep):** [../Features Confirmed.md](../Features%20Confirmed.md) · **Section pre-flight:** [../Pre-Flight.md](../Pre-Flight.md)
 
 **Tenant test stack (in scope):** Notion, Microsoft Teams, Outlook, OneDrive, Gmail, Google Drive, Google Docs, Google Sheets.
 **Out of scope for UI walkthroughs (API/SDK-only checks still apply where noted):** Salesforce, Slack, Jira, Confluence, Snowflake/BigQuery, GitHub.
@@ -133,7 +133,7 @@
 
 ## Result Rollup
 
-After completing all sections, copy the Pass/Fail/Partial/Blocked tally back into [Features Confirmed - SDK Deep Dive.md](../../../Glean/Combined/4.9.1%20Functional%20Capabilities/Features%20Confirmed%20-%20SDK%20Deep%20Dive.md) by upgrading each row's Confidence tag:
+After completing all sections, copy the Pass/Fail/Partial/Blocked tally back into [V2/Features Confirmed.md](../../../../Glean/Combined/4.9.1%20Functional%20Capabilities/V2/Features%20Confirmed.md) by upgrading each row's Confidence tag:
 
 - `Pass` → append `+ Tested (tenant, 2026-XX-XX)` to the existing tag
 - `Fail` → move the item to a new "Regressed on live tenant" note; do not silently delete from the 65-count

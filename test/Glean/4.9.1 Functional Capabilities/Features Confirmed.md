@@ -2,7 +2,7 @@
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Features Confirmed.md](../../../Glean/Combined/4.9.1 Functional Capabilities/Features Confirmed.md)
-**Deep dive:** 65-item SDK/API hands-on checklist → [Features Confirmed - SDK Deep Dive.md](Features%20Confirmed%20-%20SDK%20Deep%20Dive.md)
+**Deep dive (V2):** 65-item SDK/API hands-on checklist → [V2/Features Confirmed.md](V2/Features%20Confirmed.md)
 
 ---
 

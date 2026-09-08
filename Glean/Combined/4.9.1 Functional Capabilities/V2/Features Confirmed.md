@@ -1,7 +1,7 @@
 **Glean Tier 3 Advanced Evaluation**
 **Features Confirmed — Re-Verified (v2)**
 
-*Re-verification of every row in [`features-Confirmed.docx.md`](../../cloude/features-Confirmed.docx.md) against live, global web sources (`www.glean.com`, `docs.glean.com`, `developers.glean.com`, GitHub, PyPI, third-party analyses), cross-checked 2026-09-01 through 2026-09-08. Companion hands-on test guide: [Features Confirmed - SDK Deep Dive.md](../../../test/Glean/4.9.1%20Functional%20Capabilities/Features%20Confirmed%20-%20SDK%20Deep%20Dive.md). Sibling field doc (broader 7-area sandbox sweep): [Features Confirmed.md](Features%20Confirmed.md).*
+*Re-verification of every row in [`features-Confirmed.docx.md`](../../../cloude/features-Confirmed.docx.md) against live, global web sources (`www.glean.com`, `docs.glean.com`, `developers.glean.com`, GitHub, PyPI, third-party analyses), cross-checked 2026-09-01 through 2026-09-08. Companion hands-on test guide: [V2/Features Confirmed.md](../../../../test/Glean/4.9.1%20Functional%20Capabilities/V2/Features%20Confirmed.md). Sibling field doc (broader 7-area sandbox sweep): [../Features Confirmed.md](../Features%20Confirmed.md).*
 
 ## Methodology
 

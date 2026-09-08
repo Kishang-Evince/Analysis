@@ -6,7 +6,7 @@
 **Visibility Tier:** GUARDED *(Can inform advisory matching but not for raw client-facing delivery without prior advisor review)*  
 **Evaluation Date:** September 3, 2026  
 **Overall Section Status:** Fields 1–3 complete (9 Confirmed / 7 Unconfirmed / 4 Undocumented) · Fields 4–8 drafted (Pending Sandbox metrics)  
-**Deep dive:** 65-item SDK/API-level re-verification of this field → [Features Confirmed - SDK Deep Dive.md](Features%20Confirmed%20-%20SDK%20Deep%20Dive.md)  
+**Deep dive (V2):** 65-item SDK/API-level re-verification of this field → [V2/Features Confirmed.md](V2/Features%20Confirmed.md)  
 **Tenant test stack (in scope):** Notion, Microsoft Teams, Outlook, OneDrive, Gmail, Google Drive, Google Docs, Google Sheets.  
 **Out of scope for this eval:** Salesforce, Slack, Jira, Confluence, Snowflake/BigQuery/Databricks, GitHub, etc.  
 **Section overview:** [Overview.md](Overview.md)
