@@ -1,0 +1,48 @@
+**Glean Tier 3 Advanced Evaluation**
+**API Depth & Writeback - Independent Fresh Research (V2)**
+
+*Independent research, sources picked and read fresh this pass, cross-checked 2026-09-09 against `docs.glean.com` and `developers.glean.com`. Field definition: "Scope of data mutations supported (e.g., Read-Only vs. bidirectional CRUD)." Base file at [`../API Depth & Writeback.md`](../API%20Depth%20&%20Writeback.md) left untouched - this is a standalone V2 doc, not an edit of it.*
+
+**Sr No mapping:** rows 1-7 below map 1:1 to the same Sr No in the companion test guide [test/V2/API Depth & Writeback.md](../../../../test/Glean/4.9.4%20Integration%20&%20Technical/V2/API%20Depth%20&%20Writeback.md) - same number, same claim, doc-sourced here / tenant-tested there.
+
+---
+
+## Headline
+
+There are two genuinely separate "writeback" surfaces, and they have different depth. **Into Glean's own index**, the Indexing API supports real CRUD (create/update/delete, plus permission updates). **Into connected third-party systems** (Salesforce, Jira, Confluence, Google Docs), every action pack checked supports Create and Update - but **no Delete operation was found anywhere**. "Bidirectional CRUD," as literally defined in this field, does not appear to be accurate for the third-party writeback layer; "Create + Update, no Delete" is the more precise claim.
+
+## Claims (Sr No 1-7, mapped to test guide)
+
+| Sr No | Claim | Source | Detail |
+|---|---|---|---|
+| 1 | The Indexing API - writeback into Glean's own index, not source systems - supports real CRUD: create/update, delete, and permission updates | [developers.glean.com/api/indexing-api/index-documents](https://developers.glean.com/api/indexing-api/index-documents) (re-confirmed from API Architecture Type field research) | Confirmed endpoints: `indexdocuments` / `bulk-index-documents` (create/update), `delete-document`, `update-document-permissions`. This is Glean's own index being mutated, not a connected third-party system. |
+| 2 | Writeback into *connected third-party systems* happens via "Actions" (tool calls agents/chat can invoke) - and every action pack checked supports Create and Update, but none support Delete | [docs.glean.com/actions/datasource/salesforce](https://docs.glean.com/actions/datasource/salesforce/sf-index) ; [docs.glean.com/actions/datasource/confluence](https://docs.glean.com/actions/datasource/confluence/confluence-index) ; search-corroborated for Jira and Google Docs | Salesforce: create leads/notes, send emails, update opportunities. Confluence: create new pages, update existing pages, update blog posts. Jira: create issues, submit ServiceManagement requests, add comments (no delete). Google Docs: insert text, insert page break, update document style (no delete). **No delete/remove action was found in any of the four action packs checked.** |
+| 3 | A concrete example - the Salesforce "Update Opportunity" action - is genuinely deep (any updatable field, including custom fields, resolved dynamically) but is update-only, not create-or-delete | [docs.glean.com/tools/connector/salesforce/update-salesforce-opportunity](https://docs.glean.com/tools/connector/salesforce/update-salesforce-opportunity) | *"This tool allows Glean agents to update specific fields on any Salesforce Opportunity that the user has access to."* Only Opportunity ID is required; *"at least one additional field must be specified."* Supported fields are *"retrieved dynamically at runtime, including custom fields"* - real schema depth, but scoped to the Update operation only. |
+| 4 | Write actions authenticate and execute as the individual end user's own identity by default, not a shared service account - though a "central" (Glean-managed) auth option also exists per connector | Search-corroborated, [developers.glean.com/guides/actions/authentication](https://developers.glean.com/guides/actions/authentication) area | Salesforce example: *"Users must authenticate for Salesforce actions on first use"* and re-authenticate individually if their token expires - confirms per-user OAuth, not a shared credential. Separately, connectors generally offer a choice between *"central (Glean-managed) and custom (customer-managed)"* authentication, so the exact posture is configurable per connector/tenant, not universally fixed. |
+| 5 | Every connector write action requires human-in-the-loop confirmation by default, and this cannot be silently bypassed - even by an aggressive automation client | Search-corroborated - [docs.glean.com/administration/managing-actions/allowing-in-line-execution-of-write-actions](https://docs.glean.com/administration/managing-actions/allowing-in-line-execution-of-write-actions) ; [docs.glean.com/tools/human-in-the-loop-experience-for-tools](https://docs.glean.com/tools/human-in-the-loop-experience-for-tools) | *"All connector write tools require user confirmation by default... Glean continues to ask for confirmation even when Claude Code runs in auto mode or with permissions bypassed."* Admins can opt specific actions out per the *"inline execution of write tools"* mechanism (already independently confirmed in the Agent Autonomy Level field), but the default and the floor is confirmation-required. |
+| 6 | No documentation found states writeback latency - how long the confirmation panel is expected to sit before timing out, or whether the actual write executes synchronously immediately after approval | [docs.glean.com/tools/human-in-the-loop-experience-for-tools](https://docs.glean.com/tools/human-in-the-loop-experience-for-tools) | Page describes what the confirmation panel *shows* (target app, specific record, description of the planned change) but nothing about timing, timeout behavior, or synchronous-vs-async execution after approval - a direct, checkable gap against this field's own evaluation methodology, which explicitly asks to "document writeback latency." |
+| 7 | The actual action catalog is materially larger than the "12 first-party core" figure established in earlier research - Glean's own marketing now states over 85 actions | [glean.com/blog/85-new-actions-in-agents](https://www.glean.com/blog/85-new-actions-in-agents) | Verbatim: *"over 85 new actions."* No published breakdown of how many are read vs. write. This refines (doesn't contradict) the earlier Features Confirmed V2 finding that "12" was a narrower first-party-core subset, not the full catalog - the full catalog is confirmed materially larger, now with a specific current number. |
+
+## Independent read
+
+- Claims 1-2 are the field's central finding: "writeback" isn't one capability, it's two, at two different depths - full CRUD into Glean's own index, but Create+Update-only (no confirmed Delete) into any connected third-party system checked. A client asking "can Glean delete a Salesforce record for us" should get a specific "no delete action found" answer, not a generic "yes, it's bidirectional" answer.
+- Claim 5 is a genuine strength worth highlighting positively - the confirmation requirement holding even against an "auto mode, permissions bypassed" automation client is a real safety property, not just a UI nicety.
+- Claim 6 is the field's clean, actionable gap: the evaluation methodology explicitly asks for writeback latency data, and no public source provides it - this can only be closed by an actual timed test, tracked in the companion test guide.
+
+## Confidence
+
+**Doc-Verified**, 5 independent first-party sources (one confirming an absence - latency data), validation date 2026-09-09. No sandbox/tenant access used - everything above is publicly readable without login. Tenant/hands-on verification (including an actual timed writeback test and a direct search for any delete action) tracked in the companion test guide.
+
+---
+
+## Summary
+
+| Item | Finding | Sr No |
+|---|---|---|
+| Writeback into Glean's own index (Indexing API) | Real CRUD - create/update, delete, permissions | 1 |
+| Writeback into connected third-party systems (Actions) | Create + Update confirmed across 4 action packs; **no Delete found anywhere** | 2 |
+| Depth example (Salesforce Update Opportunity) | Any field incl. custom fields, but update-only | 3 |
+| Write-action identity | Per-user OAuth by default; central/custom option exists | 4 |
+| Confirmation requirement | Default-on, cannot be silently bypassed even by automation clients | 5 |
+| Writeback latency data | Not published anywhere - genuine gap | 6 |
+| Action catalog size | 85+ (updated from earlier "12 core" finding) | 7 |
