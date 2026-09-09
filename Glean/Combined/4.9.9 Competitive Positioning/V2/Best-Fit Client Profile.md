@@ -1,0 +1,48 @@
+**Glean Tier 3 Advanced Evaluation**
+**Best-Fit Client Profile — Independent Fresh Research (V2)**
+
+*Independent research, sources fetched fresh this pass, checked 2026-09-09 against `glean.com/solutions/industries/healthcare` and `glean.com/blog/ai-in-life-sciences`, cross-referenced against this project's own 4.9.5 and 4.9.8 V2 findings. Field definition: "Ideal enterprise customer size, security posture, and existing software stack." Base file at [`../Best-Fit Client Profile.md`](../Best-Fit%20Client%20Profile.md) left untouched — this is a standalone V2 doc, not an edit of it.*
+
+**Sr No mapping:** rows 1-7 below map 1:1 to the same Sr No in the companion test guide [test/V2/Best-Fit Client Profile.md](../../../../test/Glean/4.9.9%20Competitive%20Positioning/V2/Best-Fit%20Client%20Profile.md) — same number, same claim, doc-sourced here / tenant-tested there.
+
+---
+
+## Headline
+
+This pass surfaces a genuinely significant, healthcare-specific finding: Glean's own life-sciences-targeted blog claims the platform *"maintains a traceable audit trail for every query"* to help meet GxP requirements — a claim that directly contradicts this project's own already-confirmed 4.9.5 Audit Trail Completeness finding, which found the Admin Audit Log explicitly excludes end-user query activity by default, with query-level logging (GCE) a separate, not-on-by-default system. For a Perimeter-Healthcare-type client whose fit hinges specifically on audit-trail completeness, this is a directly relevant, high-stakes discrepancy — not a generic caveat. Separately, neither the healthcare nor life-sciences page names a single actual customer, and Glean's own healthcare page states "HIPAA compliant" as a flat claim that oversimplifies the more nuanced, self-service BAA reality already confirmed elsewhere in this project.
+
+## Claims (Sr No 1-7, mapped to test guide)
+
+| Sr No | Claim | Source | Detail |
+|---|---|---|---|
+| 1 | Glean's healthcare solutions page confirms five specific target use cases relevant to scoring a healthcare prospect's fit | [glean.com/solutions/industries/healthcare](https://www.glean.com/solutions/industries/healthcare) | Confirmed directly: claims processing (*"submit cleaner claims, strengthen appeals, and respond to audits faster"*), member/provider support, staff onboarding (*"from clinical staff to claims teams"*), research acceleration, and compliance management (*"stay ahead of policy changes, prepare for reviews, and find credentialing documentation"*). |
+| 2 | The healthcare page states "HIPAA compliant" as a flat, unqualified claim — a marketing simplification that should be checked against this project's own more nuanced, already-confirmed HIPAA/BAA reality | [glean.com/solutions/industries/healthcare](https://www.glean.com/solutions/industries/healthcare) | Verbatim: *"Connect to all your existing applications, with built-in permissions and HIPAA compliant."* This project's own 4.9.5 HIPAA Readiness & BAAs V2 field found the reality is more specific: a self-service DocuSign BAA with real numeric SLAs (5 business days for breach reporting, 10 for amendment/disclosure accounting) and subcontractor flow-down obligations — a real, substantive offering, but one that requires active BAA execution, not a default, automatic state of "being HIPAA compliant" out of the box. |
+| 3 | Neither the healthcare solutions page nor the life-sciences blog names a single actual customer — a genuine evidentiary gap for exactly the vertical most relevant to scoring Perimeter-Healthcare-type prospects | [glean.com/solutions/industries/healthcare](https://www.glean.com/solutions/industries/healthcare), [glean.com/blog/ai-in-life-sciences](https://www.glean.com/blog/ai-in-life-sciences) | Confirmed directly on both pages: no specific healthcare or life-sciences organization is named anywhere as a customer or case study. This is consistent with, and reinforces, this project's 4.9.8 finding that no healthcare-specific category exists among Glean's own 2026 Partner Awards either — healthcare/life-sciences appears to be a genuinely less-proven vertical for Glean relative to its named enterprise wins (Zillow, Nextdoor, T-Mobile, Reddit) elsewhere in this evaluation. |
+| 4 | Glean's life-sciences blog makes three specific, named regulated-industry readiness claims, explicitly framed as helping meet GxP requirements | [glean.com/blog/ai-in-life-sciences](https://www.glean.com/blog/ai-in-life-sciences) | Confirmed directly, verbatim: the platform *"respects user permissions and role-based access controls," "maintains a traceable audit trail for every query,"* and *"enforces version awareness to ensure source-level accuracy"* — stated to *"help organizations meet GxP requirements without creating operational overhead."* |
+| 5 | **The field's most significant, directly relevant finding**: claim 4's "traceable audit trail for every query" statement directly contradicts this project's own already-confirmed 4.9.5 finding that the Admin Audit Log explicitly excludes end-user query activity by default, with query-level logging (GCE) a separate, not-on-by-default system requiring active configuration | Cross-referenced from this project's 4.9.5 Audit Trail Completeness V2 field, contrasted against claim 4 | This is not a generic marketing-optimism gap — it is a specific, regulated-industry-targeted claim aimed exactly at the audience (GxP/compliance-sensitive buyers like Perimeter Healthcare) who would rely on it most heavily when scoring fit. If a prospect's compliance requirement specifically depends on "every query is audit-logged by default," this claim should be treated as **overstated** relative to the confirmed default configuration, and flagged explicitly in any best-fit scoring exercise rather than taken at face value. |
+| 6 | The life-sciences blog's only research-adjacent citation is a generic "Tufts-led analysis," not a named Glean customer — reinforcing claim 3's evidentiary gap | [glean.com/blog/ai-in-life-sciences](https://www.glean.com/blog/ai-in-life-sciences) | Confirmed directly: the article references *"Tufts-led analysis"* regarding clinical trials as supporting context, but this is third-party research cited for color, not a named Glean deployment or customer proof point. |
+| 7 | This project's own 4.9.8 finding of USDM Life Sciences — a real partner specifically built around GxP validation, regulated knowledge architecture, and audit-defensibility for life-sciences deployments — directly connects to claim 5's gap: a genuinely GxP/audit-sensitive best-fit client may need a partner layer (like USDM) to actually close the gap between Glean's native audit capability and what claim 4's marketing promises | Cross-referenced from this project's 4.9.8 Existing Partner Conflicts V2 field (claim 3) | USDM's own positioning — making Glean *"practical and defensible for life sciences, not just impressive in a demo"* — reads as a direct, if implicit, acknowledgment that the native product alone may not fully close audit/compliance gaps for the most regulation-sensitive buyers. This is a genuinely useful, actionable insight for scoring best-fit: a healthcare/life-sciences prospect with strict audit requirements may be a stronger fit *with* a specialized implementation partner than with Glean's native tooling alone. |
+
+## Independent read
+
+- Claim 5 deserves to be elevated above a routine finding in this field specifically because it is directly, narrowly relevant to what makes a client "best-fit" for regulated industries — this isn't a generic weakness note, it's a specific contradiction between a vertical-targeted marketing claim and this evaluation's own confirmed technical reality, for the exact vertical (healthcare) this evaluation exists to assess.
+- Claim 2's "HIPAA compliant" simplification is a smaller but related pattern: Glean's marketing tends to state compliance postures as flat facts on customer-facing pages, while the actual legal/technical documentation (already read directly in this project's 4.9.5 research) reveals real, specific, more nuanced mechanics. Anyone scoring a healthcare prospect's fit should rely on the 4.9.5 findings, not this page's simplified framing.
+- Claim 7 is the most constructive addition — it doesn't just flag a gap, it points toward a concrete resolution path (partner-assisted implementation) that a best-fit scoring exercise should account for explicitly, especially for a client like Perimeter Healthcare where audit completeness may be a hard requirement rather than a nice-to-have.
+
+## Confidence
+
+**Doc-Verified** for claims 1, 2, 3, 4, 6 (direct fresh fetches, verbatim quotes). **Cross-referenced, high confidence — a direct, specific contradiction** for claim 5. **Cross-referenced** for claim 7. Validation date 2026-09-09. Tenant/hands-on verification (an actual query-audit-log check, an actual BAA execution walkthrough) tracked in the companion test guide.
+
+---
+
+## Summary
+
+| Item | Finding | Sr No |
+|---|---|---|
+| Healthcare use cases | Confirmed: claims, support, onboarding, research, compliance | 1 |
+| "HIPAA compliant" flat claim | Real, but oversimplifies the confirmed BAA/SLA reality | 2 |
+| Named healthcare/life-sciences customers | Confirmed absent on both pages | 3 |
+| GxP-readiness claims (life sciences blog) | Confirmed: permissions, audit trail, version awareness | 4 |
+| "Audit trail for every query" vs. confirmed reality | **Direct, significant contradiction** — flag prominently | 5 |
+| Named life-sciences customer | Confirmed absent — only a generic academic citation | 6 |
+| USDM as a gap-closing partner path | Real, actionable connection to claim 5's gap | 7 |
