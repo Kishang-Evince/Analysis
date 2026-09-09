@@ -2,7 +2,7 @@
 url: "https://www.glean.com/agent-library/deal-loss-insights"
 canonical: "https://www.glean.com/agent-library/deal-loss-insights"
 title: "Deal loss insights agent | Glean AI Agent Library"
-description: "Get clarity on why you’re losing deals — and what to do about it."
+description: "Get clarity on why you’re losing deals - and what to do about it."
 fetched_at: "2026-09-01T13:27:28.007Z"
 ---
 [
@@ -19,7 +19,7 @@ Featured
 
 # Deal loss insights
 
-Get clarity on why you’re losing deals — and what to do about it.
+Get clarity on why you’re losing deals - and what to do about it.
 
 ## Overview
 
@@ -72,7 +72,7 @@ It scans relevant call transcripts, message threads, and other connected sources
 
 ### Step 4: Generate loss summary
 
-The agent summarizes root causes for deal loss — identifying the most likely reasons and any follow-up opportunities.
+The agent summarizes root causes for deal loss - identifying the most likely reasons and any follow-up opportunities.
 
 ### Step 5: Log findings for visibility
 

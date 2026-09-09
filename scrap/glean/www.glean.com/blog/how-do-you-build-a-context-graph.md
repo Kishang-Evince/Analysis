@@ -121,7 +121,7 @@ Current agents have difficulty with end-to-end processes or long-term tasks (tho
 
 When you connect multiple tasks that span different events, you need to bring together information from various sources and from many people who each execute the work a bit differently, with local exceptions and one-off edge cases baked into their process. But systems of record typically only show the current state and rarely capture this execution variability or the full historical context, so relying on that incomplete view can lead to blind spots and suboptimal outcomes.
 
-Instead, having an internal model of your organization’s real processes—a context graph built from actual traces of actions—becomes the best proxy for learning both the structure to follow and the intent behind the work. 
+Instead, having an internal model of your organization’s real processes-a context graph built from actual traces of actions-becomes the best proxy for learning both the structure to follow and the intent behind the work. 
 
 ## From “what” to “how”
 
@@ -137,7 +137,7 @@ The “how” is described by transforming actions into a first-class entity in 
 
 We chose to have Glean model this way in order to attach predictive power to a sequence of activities, so we can suggest what step is likely to happen next without hard-coding a flow. What we end up with is a distribution of likely paths, giving the agent the autonomy to pick the most probable one for the scenario.
 
-Now, layered on top of these process paths are derived insights—a reasoning behind why “Path A” differed from “Path B.” This enables us to encode not just the “how” but also a probable “why,” which can be fed into the agent at runtime. 
+Now, layered on top of these process paths are derived insights-a reasoning behind why “Path A” differed from “Path B.” This enables us to encode not just the “how” but also a probable “why,” which can be fed into the agent at runtime. 
 
 After the agent runs, its actions become new traces for the context graph. Reinforcement learning over these traces then evaluates whether the chosen path was optimal and identifies alternative paths the agent can take in the future.
 
@@ -149,7 +149,7 @@ After the agent runs, its actions become new traces for the context graph. Reinf
 
 Context graphs require a foundation of deep connectors and observability. If we can’t see how work happens, we can’t model it. That means integrating at a document level with the apps where work actually takes place, as well as structured data: CRM and ticketing systems, chat, docs, email, calendars, code, dashboards, and internal apps. 
 
-We understand how each app is really used—for example, Jira comments decay quickly, while the links in a Jira description are usually canonical (ie: docs, designs, etc.). We capture those patterns in a centralized data model, which we then place in our search index. 
+We understand how each app is really used-for example, Jira comments decay quickly, while the links in a Jira description are usually canonical (ie: docs, designs, etc.). We capture those patterns in a centralized data model, which we then place in our search index. 
 
 From there, the hard part is keeping that model healthy over time: chasing down inconsistent APIs, reconciling identities that differ across tools, and continually enforcing content permissions so that every result is both relevant and properly secured.
 
@@ -157,7 +157,7 @@ A couple of years ago, we moved towards capturing not just document data, but al
 
 ### Building a unified knowledge graph
 
-After we crawl and index data, we build a knowledge graph by running a machine learning pipeline to infer higher-level entities like projects, customers, products, teams, and people. We also identify the relationships between them—determining which docs, tickets, calls, and dashboards belong to a given product or account.
+After we crawl and index data, we build a knowledge graph by running a machine learning pipeline to infer higher-level entities like projects, customers, products, teams, and people. We also identify the relationships between them-determining which docs, tickets, calls, and dashboards belong to a given product or account.
 
 We continuously feed in activity signals (views, edits, comments, etc,) to understand how information is actually used and how people collaborate. This is how Glean understands that “ACME Inc” in CRM and “ACME” in support tickets are the same customer. 
 
@@ -179,7 +179,7 @@ To make sense of this, we combine:
 -   Simple signals like shared titles, links between tickets and docs, meeting invites, channel names, and time windows. 
 -   LLMs that look at sequences of events and infer, “this cluster looks like investigating an alert,” or “these actions together look like drafting and socializing a spec.”
 
-The goal is to carve the flow into coherent units of work—tasks and higher-level projects—that the system can reason about.
+The goal is to carve the flow into coherent units of work-tasks and higher-level projects-that the system can reason about.
 
 Now, at this point, we’ve only looked at a single individual at work. And, because we maintain user privacy, this data is only visible to them. But when we start to analyze it in aggregate, we can see themes. 
 
@@ -197,11 +197,11 @@ What we *do not* carry into abstracted traces is raw text (doc bodies, message t
 
 On top of that, we only treat a pattern as viable if it appears across at least *k* distinct users and *n* independent traces, with anything too rare dropped to preserve anonymity.
 
-When we do this, we’re building a probabilistic view of “what tends to happen”, and “in what order,” and “why does this path deviate from other similar paths.” We then use timing to determine the value of the process. If it's taking similar groups of users a lot of time to do a process, it’s most likely a high-value process. That becomes the system’s context graph—the playbooks agents can lean on when they see a similar situation.
+When we do this, we’re building a probabilistic view of “what tends to happen”, and “in what order,” and “why does this path deviate from other similar paths.” We then use timing to determine the value of the process. If it's taking similar groups of users a lot of time to do a process, it’s most likely a high-value process. That becomes the system’s context graph-the playbooks agents can lean on when they see a similar situation.
 
 As we’ve built this graph,  we’ve weighed different ways to store event data for traversal. Pure graph structures are rigid; raw text is flexible but hard to navigate. So we use a hybrid model: take free-form text, break it into smaller chunks, and embed entity IDs. 
 
-An incident, for example, becomes short segments that mark transitions—“investigating” to “mitigating”— by tagging them with IDs like *incident\_id=INC-123, channel\_id=#p1-incidents*, or *action\_type=escalated*. This lets the agent walk the process step by step with clear guideposts, with the tradeoff that it’s not optimized for reasoning across thousands of incidents at once.
+An incident, for example, becomes short segments that mark transitions-“investigating” to “mitigating”- by tagging them with IDs like *incident\_id=INC-123, channel\_id=#p1-incidents*, or *action\_type=escalated*. This lets the agent walk the process step by step with clear guideposts, with the tradeoff that it’s not optimized for reasoning across thousands of incidents at once.
 
 ### Learning from agentic traces 
 
@@ -219,7 +219,7 @@ Offline, we then replay and try out alternative routes. We score the alternative
 
 Over time, the context graph becomes a joint model of human and agent behavior. It doesn’t just describe how work *used* to happen; it reflects how work is unfolding now as humans and agents share more of it.
 
-That’s why the context graph must be owned jointly by the data layer and the orchestration layer. For high-value flows—incident response, sales deals, product development—you need both: a context layer that captures a structured, process-aware model of the enterprise, and an execution layer that can plan, iterate, and generate traces. Separating them creates drift: the graph evolves one way, agent execution evolves another, and you end up with two divergent versions of reality.
+That’s why the context graph must be owned jointly by the data layer and the orchestration layer. For high-value flows-incident response, sales deals, product development-you need both: a context layer that captures a structured, process-aware model of the enterprise, and an execution layer that can plan, iterate, and generate traces. Separating them creates drift: the graph evolves one way, agent execution evolves another, and you end up with two divergent versions of reality.
 
 Keeping the graph and orchestration in one system ensures agents stay grounded in a live, evolving model of how your enterprise actually works.
 
@@ -236,7 +236,7 @@ We took the sequences of events for this work, and we validated with subject-mat
 While these agents become a static representation of the current state, that wasn’t the end game for us. We wanted context graphs. That’s because optimal paths evolve, ownership changes, new tools show up, and more. Our goal with the context graph isn’t just to mint a static set of agents, but to keep feeding agents with fresh process insights from the graph and push more of the logic into that learned layer instead of constantly relying on manual instructions. That’s how we believe you get long-running agents that operate autonomously. And here at Glean, we’re close to making that a reality.  
 ‍
 
-Looking to learn more about context graphs? Check out our previous blog [here](https://www.glean.com/blog/context-data-platform)—or sign up for a free [demo](https://www.glean.com/get-a-demo) of Glean today.
+Looking to learn more about context graphs? Check out our previous blog [here](https://www.glean.com/blog/context-data-platform)-or sign up for a free [demo](https://www.glean.com/get-a-demo) of Glean today.
 
 [
 

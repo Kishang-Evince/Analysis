@@ -241,7 +241,7 @@ Operations departments deal with supply chain management, process optimization, 
 -   **Prompt**: "Summarize the potential risks in our supply chain and provide mitigation strategies."
 -   **Outcome**: AI identifies supply chain vulnerabilities and suggests contingency plans, helping operations teams minimize risks.
 
-Introducing [**Glean's Prompt Library**](https://www.glean.com/prompt-library) — the ultimate solution for organizations looking to harness the power of AI across various departments! With Glean’s prompt library, users can easily access a wide range of AI-driven prompts tailored for marketing, HR, finance, sales, customer service, and operations. Whether you need to create compelling content, streamline employee performance reviews, generate financial reports, or optimize customer support responses, Glean provides ready-to-use prompts that save time and boost productivity.
+Introducing [**Glean's Prompt Library**](https://www.glean.com/prompt-library) - the ultimate solution for organizations looking to harness the power of AI across various departments! With Glean’s prompt library, users can easily access a wide range of AI-driven prompts tailored for marketing, HR, finance, sales, customer service, and operations. Whether you need to create compelling content, streamline employee performance reviews, generate financial reports, or optimize customer support responses, Glean provides ready-to-use prompts that save time and boost productivity.
 
 [
 

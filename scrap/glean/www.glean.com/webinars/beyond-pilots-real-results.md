@@ -33,12 +33,12 @@ fetched_at: "2026-09-01T13:26:58.635Z"
 -   Ruchir Puri, Chief Scientist, IBM Research
 -   Stephen Wunker, Managing Director, New Markets Advisors
 
-Watch an executive summit produced by Glean and co-hosted by The Atlantic CEO Nicholas Thompson on moving from isolated AI experiments to enterprise-scale outcomes. Learn how leaders are building trust, rethinking operating models, and deploying agents and platforms that understand real organizational context — so AI drives measurable business impact, not just demos.
+Watch an executive summit produced by Glean and co-hosted by The Atlantic CEO Nicholas Thompson on moving from isolated AI experiments to enterprise-scale outcomes. Learn how leaders are building trust, rethinking operating models, and deploying agents and platforms that understand real organizational context - so AI drives measurable business impact, not just demos.
 
 **What you’ll learn about:**
 
--   **The Adoption Problem**: Build multi-layered trust and pair top‑down leadership with bottom‑up champions to unlock real usage — beyond the “AI theater.”
--   **From Pilots to Scale**: Pick a handful of high‑value workflows and measure outcomes — not clicks.
+-   **The Adoption Problem**: Build multi-layered trust and pair top‑down leadership with bottom‑up champions to unlock real usage - beyond the “AI theater.”
+-   **From Pilots to Scale**: Pick a handful of high‑value workflows and measure outcomes - not clicks.
 -   **Enterprise Architecture That Works**: Reduce the toggle tax with a horizontal AI platform in the flow of work, bringing context to every interaction across tools.
 -   **Operating Model Shifts**: Move toward flexible, cross‑functional structures, a tighter people-to-IT collaboration, and clear governance/incentives.
 -   **Humans and Agents, Together**: Design for agents that learn, know when to ask for human review, and calibrate handoffs.

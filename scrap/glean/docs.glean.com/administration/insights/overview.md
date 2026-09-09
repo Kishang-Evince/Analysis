@@ -73,7 +73,7 @@ An active user takes information-seeking or information-curation actions with Gl
 -   Engage with Gleanbot in Slack or Microsoft Teams by tagging @Glean, using the "generate" button to answer a question asked by someone else, or sharing a proactive Gleanbot message
 -   Use Glean APIs for user-initiated actions, including Search, Chat, and Summarization API calls
 
-Actions not considered information-seeking — such as viewing the home page or opening a new tab page — aren't counted toward active users.
+Actions not considered information-seeking - such as viewing the home page or opening a new tab page - aren't counted toward active users.
 
 note
 

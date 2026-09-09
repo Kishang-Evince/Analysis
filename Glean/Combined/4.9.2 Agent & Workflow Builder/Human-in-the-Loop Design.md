@@ -36,10 +36,10 @@
 
 ### Verification steps / test case
 
-1. Agent creates Google Doc + drafts Outlook email — confirm web pause at each write.
-2. Run same agent from Teams (if embedded) — document confirmation gap.
-3. Add Wait for user input step mid-Workflow — confirm state survives pause.
-4. Scheduled agent with write — confirm email/Inbox routing when HITL unavailable.
+1. Agent creates Google Doc + drafts Outlook email - confirm web pause at each write.
+2. Run same agent from Teams (if embedded) - document confirmation gap.
+3. Add Wait for user input step mid-Workflow - confirm state survives pause.
+4. Scheduled agent with write - confirm email/Inbox routing when HITL unavailable.
 
 **Risk & Cost Impact:** Risk: Medium (Teams no HITL) | Cost: Native
 

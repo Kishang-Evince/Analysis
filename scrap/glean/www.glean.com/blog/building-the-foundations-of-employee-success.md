@@ -81,7 +81,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Onboarding determines the trajectory of every employee’s journey within a company — a formative period that determines everything from job confidence to employee satisfaction. We wanted to take a deeper look at the process and uncover better ways to empower employees by making the process more seamless and intuitive.
+Onboarding determines the trajectory of every employee’s journey within a company - a formative period that determines everything from job confidence to employee satisfaction. We wanted to take a deeper look at the process and uncover better ways to empower employees by making the process more seamless and intuitive.
 
 A recent survey we conducted in partnership with OnePoll discovered that it takes a year and seven months for the majority of employees to feel like they’re thriving in a new role. The poll surveyed 2,000 knowledge workers throughout the United States on what they thought it meant to thrive in a new position:
 

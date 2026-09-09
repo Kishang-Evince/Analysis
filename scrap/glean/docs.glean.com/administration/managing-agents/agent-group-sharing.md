@@ -58,9 +58,9 @@ After the IdP source is configured and sharing is enabled:
 2.  Open the **People with access** panel.
 3.  Search for the group by name using the group picker.
 4.  Select the group and assign the desired permission level:
-    -   **Viewer** — can use the agent
-    -   **Editor** — can use and edit the agent
-    -   **Owner** — can use, edit, and manage sharing for the agent
+    -   **Viewer** - can use the agent
+    -   **Editor** - can use and edit the agent
+    -   **Owner** - can use, edit, and manage sharing for the agent
 5.  Confirm the selection.
 
 Users who are already members of the selected group will receive the assigned permissions immediately on their next request.

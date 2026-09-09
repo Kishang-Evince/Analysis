@@ -63,9 +63,9 @@ Share this article:
 
 # AI token economics, not seat count, is the metric that determines real enterprise AI value
 
-AI token economics — not seat count — is the metric that determines whether enterprise AI investments deliver real value or just accumulate cost. Tokens measure the actual computational work a model performs: every query, every document retrieved, and every response generated consumes tokens, and that consumption varies dramatically based on task complexity.
+AI token economics - not seat count - is the metric that determines whether enterprise AI investments deliver real value or just accumulate cost. Tokens measure the actual computational work a model performs: every query, every document retrieved, and every response generated consumes tokens, and that consumption varies dramatically based on task complexity.
 
-Most enterprise AI budgets still anchor to per-seat licensing, which tells you how many people have access but nothing about how much work AI is doing or whether that work justifies the spend. Token usage reveals the operational reality — which teams generate the most load, which workflows consume disproportionate resources, and where AI spend produces measurable outcomes versus noise.
+Most enterprise AI budgets still anchor to per-seat licensing, which tells you how many people have access but nothing about how much work AI is doing or whether that work justifies the spend. Token usage reveals the operational reality - which teams generate the most load, which workflows consume disproportionate resources, and where AI spend produces measurable outcomes versus noise.
 
 This article breaks down how IT leaders can shift from counting seats to managing token economics as a core operating metric, covering cost structures, model selection trade-offs, and practical strategies for allocating AI resources to the work that matters most.
 
@@ -73,23 +73,23 @@ This article breaks down how IT leaders can shift from counting seats to managin
 
 Seat count answers a procurement question: how many employees can access the AI tool? Token usage answers an operational one: how much reasoning, retrieval, and generation is the business actually asking models to do?
 
-The distinction matters because two employees with identical seat licenses can generate wildly different costs. A support engineer asking a short, grounded question — "What's the SLA for this customer's contract tier?" — might consume a few hundred tokens. An automated workflow that pulls data from five systems, reasons across conflicting documents, and drafts a detailed compliance report could consume 50,000 or more.
+The distinction matters because two employees with identical seat licenses can generate wildly different costs. A support engineer asking a short, grounded question - "What's the SLA for this customer's contract tier?" - might consume a few hundred tokens. An automated workflow that pulls data from five systems, reasons across conflicting documents, and drafts a detailed compliance report could consume 50,000 or more.
 
 This gap makes token usage a planning metric, not a developer concern. It directly affects model selection (a lightweight model handles simple lookups at a fraction of the cost of a frontier reasoning model), latency (longer contexts mean slower responses), output quality (under-provisioned token budgets truncate answers mid-thought), and long-term scalability. Gartner's 2024 research on AI cost management found that organizations tracking consumption-based metrics reduced their AI infrastructure waste by 25–30% compared to those relying on seat-based budgeting alone.
 
-The goal is not to minimize token usage across the board — that just degrades the AI's usefulness. The goal is to spend tokens where they improve outcomes and cut them where they do not.
+The goal is not to minimize token usage across the board - that just degrades the AI's usefulness. The goal is to spend tokens where they improve outcomes and cut them where they do not.
 
-A unified [work AI platform](https://www.glean.com/product/assistant) like Glean creates the visibility to make that call, because its Enterprise Graph maps which queries hit which data sources and how much retrieval and reasoning each workflow requires. When a large share of your token spend goes to repetitive, low-complexity lookups that a smaller model handles well, you can reallocate resources toward higher-value tasks — deep research, multi-step agent workflows, and cross-system analysis — where heavier token investment produces measurable gains in productivity and accuracy.
+A unified [work AI platform](https://www.glean.com/product/assistant) like Glean creates the visibility to make that call, because its Enterprise Graph maps which queries hit which data sources and how much retrieval and reasoning each workflow requires. When a large share of your token spend goes to repetitive, low-complexity lookups that a smaller model handles well, you can reallocate resources toward higher-value tasks - deep research, multi-step agent workflows, and cross-system analysis - where heavier token investment produces measurable gains in productivity and accuracy.
 
 ## 1\. Shift the unit of measure from seats to tokens
 
 Tokens are the units AI models read and write every time they process a request. Each prompt, each piece of retrieved context, each step of internal reasoning, and each word of the final response consumes tokens. Understanding this unit is the first step toward managing AI spend with any precision.
 
-When IT budgets track only seat licenses, they miss the actual drivers of cost. A single user running a quick policy lookup generates a few hundred tokens, while that same user asking for a cross-departmental budget analysis — pulling data from finance tools, comparing quarterly trends, and producing a written summary — can consume 10x to 50x more.
+When IT budgets track only seat licenses, they miss the actual drivers of cost. A single user running a quick policy lookup generates a few hundred tokens, while that same user asking for a cross-departmental budget analysis - pulling data from finance tools, comparing quarterly trends, and producing a written summary - can consume 10x to 50x more.
 
 Longer prompts, broader context windows, larger outputs, and more complex reasoning paths all increase token intensity. None of those variables show up in a seat-based report.
 
-Token intensity also shifts with the type of work. Simple Q&A stays light, but synthesis tasks — summarizing a 40-page contract, interpreting an internal policy against a specific scenario, drafting a detailed incident response — demand more context and more generation.
+Token intensity also shifts with the type of work. Simple Q&A stays light, but synthesis tasks - summarizing a 40-page contract, interpreting an internal policy against a specific scenario, drafting a detailed incident response - demand more context and more generation.
 
 Multi-step automation pushes intensity further. McKinsey's 2024 analysis of enterprise AI adoption found that organizations moving beyond basic chat into knowledge-intensive workflows saw per-user compute demand increase three to five times within six months.
 
@@ -105,9 +105,9 @@ Different workflows create fundamentally different demand on AI infrastructure, 
 
 The split between interactive and background work matters most. A support specialist asking Glean Search for a customer's contract tier generates a short, fast request.
 
-An automated agent that monitors incoming tickets, classifies severity, pulls relevant documentation, and drafts a suggested response operates in the background with no human prompt — but its token footprint per cycle can be 20x to 100x larger. Both may originate from the same seat license, yet they carry completely different cost structures.
+An automated agent that monitors incoming tickets, classifies severity, pulls relevant documentation, and drafts a suggested response operates in the background with no human prompt - but its token footprint per cycle can be 20x to 100x larger. Both may originate from the same seat license, yet they carry completely different cost structures.
 
-Ranking each workflow by business criticality, frequency, latency tolerance, and context size gives IT leaders a practical framework. High-frequency, low-complexity lookups need speed and efficiency, while infrequent but high-stakes analysis — regulatory reviews, competitive research, incident investigation — justifies deeper reasoning and broader context retrieval.
+Ranking each workflow by business criticality, frequency, latency tolerance, and context size gives IT leaders a practical framework. High-frequency, low-complexity lookups need speed and efficiency, while infrequent but high-stakes analysis - regulatory reviews, competitive research, incident investigation - justifies deeper reasoning and broader context retrieval.
 
 Forrester's 2024 report on AI operational maturity found that organizations segmenting AI demand by workflow type reduced unnecessary compute spend by 35% compared to those applying uniform resource allocation.
 
@@ -115,13 +115,13 @@ Fragmented tool environments make this worse. When employees search across disco
 
 Each retry and each extra paste increases token usage without improving the answer. Glean's Enterprise Graph eliminates this fragmentation by indexing content across 100+ connected applications and surfacing the right information in a single retrieval pass.
 
-Evaluating demand by workflow — not headcount — reveals where AI delivers value and where it generates waste. That signal is what [AI scalability planning](https://www.glean.com/blog) actually requires.
+Evaluating demand by workflow - not headcount - reveals where AI delivers value and where it generates waste. That signal is what [AI scalability planning](https://www.glean.com/blog) actually requires.
 
 ## 3\. Reduce token waste with grounded, permission-aware context
 
 More context is not the same as better context. Pasting an entire policy document, a full Slack thread, or a 30-page PDF into a prompt increases token consumption, but it does not guarantee the model will find the relevant detail. In many cases, excessive context introduces noise that degrades answer quality and drives up cost simultaneously.
 
-The more effective approach is retrieving the most relevant pieces of company knowledge at the moment of need. Instead of expecting users to locate, copy, and paste source material into every request, a well-designed retrieval system identifies the specific paragraphs, records, or data points that apply — and excludes everything else. Glean Assistant does this through its retrieval-augmented generation (RAG) pipeline, which queries the Enterprise Graph to find the highest-relevance content across connected systems before the model generates a response.
+The more effective approach is retrieving the most relevant pieces of company knowledge at the moment of need. Instead of expecting users to locate, copy, and paste source material into every request, a well-designed retrieval system identifies the specific paragraphs, records, or data points that apply - and excludes everything else. Glean Assistant does this through its retrieval-augmented generation (RAG) pipeline, which queries the Enterprise Graph to find the highest-relevance content across connected systems before the model generates a response.
 
 Grounded retrieval also builds trust. When answers cite specific internal documents and users can verify the source, they spend less time re-prompting, cross-checking in other tools, or escalating to a colleague for confirmation.
 
@@ -129,19 +129,19 @@ Gartner's 2025 survey on enterprise AI trust found that employees using AI tools
 
 The governance benefit is equally practical. Enforcing permissions before information reaches the model limits unnecessary exposure of sensitive data. If a user does not have access to a confidential HR document in the source system, that document never enters the prompt context.
 
-Glean enforces existing permissions at the retrieval layer, so access control happens upstream of the model — reducing both data risk and irrelevant context in a single step.
+Glean enforces existing permissions at the retrieval layer, so access control happens upstream of the model - reducing both data risk and irrelevant context in a single step.
 
 Token efficiency improves when context is precise, current, and access-controlled. That is a system design decision, not a prompt-writing habit.
 
 ## 4\. Route each task to the right model, context window, and reasoning budget
 
-Not every AI request needs the most expensive processing path. A quick factual lookup — "What's our parental leave policy?" — does not require the same reasoning depth as analyzing a quarter's worth of sales performance data across three regions. Treating every request identically wastes resources on simple tasks and can under-provision complex ones.
+Not every AI request needs the most expensive processing path. A quick factual lookup - "What's our parental leave policy?" - does not require the same reasoning depth as analyzing a quarter's worth of sales performance data across three regions. Treating every request identically wastes resources on simple tasks and can under-provision complex ones.
 
 Workload tiers make this manageable:
 
--   **Lightweight** — FAQ lookups, short summaries, and status checks run through smaller, faster models with narrow context windows, prioritizing speed and low cost.
--   **Mid-tier** — Drafting an internal memo, summarizing a meeting transcript, or comparing two vendor proposals benefits from broader context retrieval but still has limited reasoning requirements.
--   **High-tier** — Regulatory analysis, multi-source research, and incident root-cause investigation justify larger context windows, deeper retrieval, and extended reasoning budgets.
+-   **Lightweight** - FAQ lookups, short summaries, and status checks run through smaller, faster models with narrow context windows, prioritizing speed and low cost.
+-   **Mid-tier** - Drafting an internal memo, summarizing a meeting transcript, or comparing two vendor proposals benefits from broader context retrieval but still has limited reasoning requirements.
+-   **High-tier** - Regulatory analysis, multi-source research, and incident root-cause investigation justify larger context windows, deeper retrieval, and extended reasoning budgets.
 
 Advanced reasoning is not always an upgrade. Models that perform more internal computation before responding can produce better results on complex, ambiguous problems, but for a straightforward policy question, that extra computation adds latency and cost without changing the answer.
 
@@ -157,39 +157,39 @@ Token budgets should be set at the team, workflow, and environment level before 
 
 Monitoring token usage alone is not enough. Pair it with latency, answer quality, grounding accuracy, and user follow-up behavior.
 
-A low-cost query that produces an incorrect answer still costs the organization — through wasted time, rework, or a bad decision made on faulty information. Glean's analytics surface these signals together, showing not just how many tokens a workflow consumes but whether users accepted the answer, asked follow-up questions, or abandoned the interaction entirely.
+A low-cost query that produces an incorrect answer still costs the organization - through wasted time, rework, or a bad decision made on faulty information. Glean's analytics surface these signals together, showing not just how many tokens a workflow consumes but whether users accepted the answer, asked follow-up questions, or abandoned the interaction entirely.
 
-Practical controls prevent runaway costs before they accumulate. Cap oversized prompts that exceed a defined token threshold, and flag repeated failed queries from the same user or workflow — these often indicate a retrieval or prompt design problem rather than a legitimate need for more tokens.
+Practical controls prevent runaway costs before they accumulate. Cap oversized prompts that exceed a defined token threshold, and flag repeated failed queries from the same user or workflow - these often indicate a retrieval or prompt design problem rather than a legitimate need for more tokens.
 
 Set limits on automated loops so a misconfigured agent does not cycle through thousands of iterations overnight. These guardrails protect the budget without blocking productive work.
 
 Governance belongs upstream of the model. Permission-aware access control, audit trails, and policy-based workflow limits reduce both cost risk and data risk at the same time.
 
-Glean Agents enforce these controls natively — every action an agent takes respects the same permission boundaries as a human user, and every step is logged for audit. McKinsey's 2025 enterprise AI governance report found that organizations with pre-deployment usage controls experienced 60% fewer cost overruns and 45% fewer data-exposure incidents in their first year of scaled AI adoption.
+Glean Agents enforce these controls natively - every action an agent takes respects the same permission boundaries as a human user, and every step is logged for audit. McKinsey's 2025 enterprise AI governance report found that organizations with pre-deployment usage controls experienced 60% fewer cost overruns and 45% fewer data-exposure incidents in their first year of scaled AI adoption.
 
 Observability is a prerequisite for informed AI decisions. Without clear usage data, every call on cost management, model routing, and capacity planning is guesswork.
 
 ## 6\. Scale in phases from answers to action
 
-Start with high-frequency use cases where grounded answers save time immediately. Internal search, policy lookup, onboarding support, and finding trusted information across systems are strong first targets because they affect nearly every employee and produce measurable time savings within weeks. Glean Search handles this tier directly — employees ask a question and receive a cited, permission-aware answer drawn from across 100+ connected applications, replacing the manual process of opening multiple tools, scanning results, and piecing together an answer.
+Start with high-frequency use cases where grounded answers save time immediately. Internal search, policy lookup, onboarding support, and finding trusted information across systems are strong first targets because they affect nearly every employee and produce measurable time savings within weeks. Glean Search handles this tier directly - employees ask a question and receive a cited, permission-aware answer drawn from across 100+ connected applications, replacing the manual process of opening multiple tools, scanning results, and piecing together an answer.
 
-Expand next into synthesis tasks. Drafting, summarization, and content transformation consume more tokens because the model reads larger volumes of context and generates longer outputs — summarizing a 45-minute meeting recording, drafting a quarterly business review from multiple data sources, or transforming a technical document into customer-facing language.
+Expand next into synthesis tasks. Drafting, summarization, and content transformation consume more tokens because the model reads larger volumes of context and generates longer outputs - summarizing a 45-minute meeting recording, drafting a quarterly business review from multiple data sources, or transforming a technical document into customer-facing language.
 
 These workflows produce higher per-task value but also require stronger retrieval and more generation capacity. Glean Assistant supports this tier by pulling relevant context from across connected systems and producing grounded, cited outputs that users can verify and refine.
 
-Move into multi-step automation only after the first two layers are working well. Automated workflows — ticket classification and routing, employee onboarding sequences, recurring compliance checks — create outsized value but introduce background token consumption that does not appear in interactive usage dashboards. Glean Agents orchestrate these tasks through the Agentic Engine, planning and executing multi-step processes with built-in governance and permission enforcement.
+Move into multi-step automation only after the first two layers are working well. Automated workflows - ticket classification and routing, employee onboarding sequences, recurring compliance checks - create outsized value but introduce background token consumption that does not appear in interactive usage dashboards. Glean Agents orchestrate these tasks through the Agentic Engine, planning and executing multi-step processes with built-in governance and permission enforcement.
 
-The maturity point is straightforward: the deeper AI goes into actual work, the less useful seat count becomes as a planning metric. Adoption numbers may look flat while actual compute demand rises sharply. A 2025 Gartner analysis of enterprise AI scaling patterns found that organizations in the automation phase consumed four to seven times more tokens per licensed user than those still in the basic Q&A phase — with no change in seat count.
+The maturity point is straightforward: the deeper AI goes into actual work, the less useful seat count becomes as a planning metric. Adoption numbers may look flat while actual compute demand rises sharply. A 2025 Gartner analysis of enterprise AI scaling patterns found that organizations in the automation phase consumed four to seven times more tokens per licensed user than those still in the basic Q&A phase - with no change in seat count.
 
 Phased rollout ties AI scalability to proven use cases, governance readiness, and measured demand rather than expanding access first and sorting out efficiency later.
 
 ## 7\. Prove value with outcomes that seat count cannot show
 
-Business metrics that reflect real impact tell a different story than adoption dashboards. Time to answer, resolution speed, onboarding ramp time, content reuse rates, cycle time reduction, and completion of repetitive tasks that previously required manual coordination — these outcomes connect AI spend to operational results that executives and boards care about.
+Business metrics that reflect real impact tell a different story than adoption dashboards. Time to answer, resolution speed, onboarding ramp time, content reuse rates, cycle time reduction, and completion of repetitive tasks that previously required manual coordination - these outcomes connect AI spend to operational results that executives and boards care about.
 
 Compare token spend against outcomes by workflow, not just by department. A high-token process may still be highly efficient if it replaces expensive manual effort or improves the quality of a critical decision.
 
-An automated agent that consumes 50,000 tokens per run but deflects 200 support tickets per week at an average handling time of 12 minutes each saves roughly 400 hours of analyst time monthly. Glean Agents make this calculation visible by tracking each automated workflow's token consumption alongside its business output — tickets resolved, documents generated, approvals processed.
+An automated agent that consumes 50,000 tokens per run but deflects 200 support tickets per week at an average handling time of 12 minutes each saves roughly 400 hours of analyst time monthly. Glean Agents make this calculation visible by tracking each automated workflow's token consumption alongside its business output - tickets resolved, documents generated, approvals processed.
 
 Low-value patterns are equally important to identify. Broad access with poor grounding, unclear ownership, or weak routing can create impressive adoption numbers while producing little measurable operational efficiency.
 
@@ -205,7 +205,7 @@ IT leaders who think beyond seat count and start managing in tokens gain a direc
 
 ### What are tokens in the context of AI, and why do they matter?
 
-Tokens are the units AI models use to read input and generate output — every word, punctuation mark, and piece of retrieved context counts toward token consumption. They matter because token usage, not seat count, determines the actual computational cost of AI work and directly affects response quality, speed, and budget.
+Tokens are the units AI models use to read input and generate output - every word, punctuation mark, and piece of retrieved context counts toward token consumption. They matter because token usage, not seat count, determines the actual computational cost of AI work and directly affects response quality, speed, and budget.
 
 ### How can IT leaders optimize AI usage beyond just seat count?
 
@@ -217,13 +217,13 @@ Token costs vary dramatically by task complexity. A simple lookup might consume 
 
 ### How does token management affect AI performance and outcomes?
 
-Precise token management improves both cost efficiency and answer quality. Retrieving only relevant, permission-verified context — rather than flooding the model with excess information — reduces token waste while producing more accurate, trustworthy responses that users act on without additional verification.
+Precise token management improves both cost efficiency and answer quality. Retrieving only relevant, permission-verified context - rather than flooding the model with excess information - reduces token waste while producing more accurate, trustworthy responses that users act on without additional verification.
 
 ### What strategies can IT leaders implement to use tokens effectively?
 
 Start by classifying workflows by complexity and business value, then build tiered routing rules that match each task to the right model and context budget. Set observability and guardrails before scaling, and tie continued investment to measurable outcomes like time saved, deflection rates, and cost per resolved interaction.
 
-Managing AI investments by seat count tells you who has access — tokens tell you where cost, performance, and value actually live. IT leaders who track token consumption by workflow gain the visibility needed to reduce waste, improve answer quality, and justify continued AI investment with measurable outcomes. [Request a demo](https://www.glean.com/get-a-demo) to explore how Glean and AI can transform your workplace.
+Managing AI investments by seat count tells you who has access - tokens tell you where cost, performance, and value actually live. IT leaders who track token consumption by workflow gain the visibility needed to reduce waste, improve answer quality, and justify continued AI investment with measurable outcomes. [Request a demo](https://www.glean.com/get-a-demo) to explore how Glean and AI can transform your workplace.
 
 ‍
 

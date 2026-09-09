@@ -2,7 +2,7 @@
 url: "https://www.glean.com/ai-assistant/content-creation"
 canonical: "https://www.glean.com/ai-assistant/content-creation"
 title: "AI Content Creation for Enterprise | Glean Assistant"
-description: "Go from rough idea to polished deliverable in minutes. Generate decks, docs, and interactive content with Glean Assistant — cited, accurate, and ready to share."
+description: "Go from rough idea to polished deliverable in minutes. Generate decks, docs, and interactive content with Glean Assistant - cited, accurate, and ready to share."
 fetched_at: "2026-09-01T13:25:29.833Z"
 ---
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6a8d6cfbfab41484699f21de_content-creation-bg.webp)
@@ -45,7 +45,7 @@ Whether you’re a seasoned creator or not, Glean helps you create professional,
 
 ## Turn prompts into drafts in a single workspace.
 
-Launch a dedicated workspace — to draft, revise, and finalize your work with all of your enterprise context.
+Launch a dedicated workspace - to draft, revise, and finalize your work with all of your enterprise context.
 
 ![Product screenshot](http://assets.glean.com/marketing/Content%20Creation/Turn%20prompts%20into%20drafts%20in%20a%20single%20workspace.webp)
 

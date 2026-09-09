@@ -18,7 +18,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-Quickly find the notes you’ve taken in OneNote and turn them into organized, prioritized to‑dos in Glean—so you always know what to work on next.
+Quickly find the notes you’ve taken in OneNote and turn them into organized, prioritized to‑dos in Glean-so you always know what to work on next.
 
 ## Work AI that works.
 

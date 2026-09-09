@@ -63,7 +63,7 @@ Share this article:
 
 # How to assess risk-adjusted yield in your investments
 
-To assess risk-adjusted yield, identify your yield source, test whether that source is organic or subsidized, measure the risks that can reduce or erase it, subtract all direct and hidden costs to get a net return, and size your position against the stress case — not the headline APY.
+To assess risk-adjusted yield, identify your yield source, test whether that source is organic or subsidized, measure the risks that can reduce or erase it, subtract all direct and hidden costs to get a net return, and size your position against the stress case - not the headline APY.
 
 In decentralized finance, raw yield numbers are everywhere. Protocols advertise triple-digit APYs, liquidity pools compete on token emissions, and staking dashboards display returns that look compelling in isolation. But a 200% APY on a pool with impermanent loss exposure, smart contract risk, and a depreciating reward token doesn't tell you whether you're building wealth or taking on hidden losses.
 
@@ -71,31 +71,31 @@ Risk-adjusted yield gives you a [framework for comparing opportunities](https://
 
 ## Use a six-step framework to move from headline APY to a defensible position
 
-Start with the yield number, but don't stop there. Token yield — the raw APY or APR displayed by a protocol — is useful for screening opportunities, but it's the starting point of analysis, not the conclusion. Risk-adjusted yield is what drives the actual investment decision, because it factors in the probability and magnitude of loss scenarios alongside the projected return.
+Start with the yield number, but don't stop there. Token yield - the raw APY or APR displayed by a protocol - is useful for screening opportunities, but it's the starting point of analysis, not the conclusion. Risk-adjusted yield is what drives the actual investment decision, because it factors in the probability and magnitude of loss scenarios alongside the projected return.
 
-A practical framework for moving from headline yield to a defensible position size follows six steps: define the yield source (emissions, fees, or real revenue), test whether the yield is sustainable or dilutive, measure what can break it (smart contract exploits, liquidity crunches, token depreciation), convert to a net return after gas costs and slippage, layer in supporting metrics like the Sharpe ratio or Sortino ratio to normalize for volatility, and then size your position accordingly. For example, a lending protocol offering 8% APY from borrower interest payments carries a fundamentally different risk profile than a yield farm offering 80% APY from inflationary token rewards — even though both are "yield." The Sharpe ratio for the lending protocol might sit above 1.5 over a trailing 90-day window, while the farm's ratio drops below 0.5 once you account for the reward token's price decay. [Academic research from McGill University and UNC](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4063228) confirms this pattern: yield farming Sharpe ratios decline significantly after transaction costs and price impact, with the highest-headline-yield farms most likely to deliver negative risk-adjusted returns.
+A practical framework for moving from headline yield to a defensible position size follows six steps: define the yield source (emissions, fees, or real revenue), test whether the yield is sustainable or dilutive, measure what can break it (smart contract exploits, liquidity crunches, token depreciation), convert to a net return after gas costs and slippage, layer in supporting metrics like the Sharpe ratio or Sortino ratio to normalize for volatility, and then size your position accordingly. For example, a lending protocol offering 8% APY from borrower interest payments carries a fundamentally different risk profile than a yield farm offering 80% APY from inflationary token rewards - even though both are "yield." The Sharpe ratio for the lending protocol might sit above 1.5 over a trailing 90-day window, while the farm's ratio drops below 0.5 once you account for the reward token's price decay. [Academic research from McGill University and UNC](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4063228) confirms this pattern: yield farming Sharpe ratios decline significantly after transaction costs and price impact, with the highest-headline-yield farms most likely to deliver negative risk-adjusted returns.
 
-This sequence matters because it prevents the most common mistake in DeFi capital allocation: ranking opportunities by headline APY before understanding what creates and can erase the yield. When you're evaluating dozens of protocols across multiple chains, the research itself becomes a bottleneck — pulling data from dashboards, cross-referencing audit reports, and synthesizing analyst notes scattered across documents and tools. [Glean Search](https://www.glean.com/glean-search) can surface cited, permission-aware answers across your internal research documents, on-chain data reports, and analyst memos in seconds, so you spend time on the decision rather than the data gathering.
+This sequence matters because it prevents the most common mistake in DeFi capital allocation: ranking opportunities by headline APY before understanding what creates and can erase the yield. When you're evaluating dozens of protocols across multiple chains, the research itself becomes a bottleneck - pulling data from dashboards, cross-referencing audit reports, and synthesizing analyst notes scattered across documents and tools. [Glean Search](https://www.glean.com/glean-search) can surface cited, permission-aware answers across your internal research documents, on-chain data reports, and analyst memos in seconds, so you spend time on the decision rather than the data gathering.
 
 ## Define exactly what yield you are being paid for
 
 Before you compare returns, identify the mechanism producing them. A staking reward paid in the protocol's native token operates on different economics than a lending rate paid from borrower interest, which in turn differs from LP fees generated by trading volume. Each source carries its own risk profile, and the distinction determines whether you're earning income, receiving a subsidy, or absorbing dilution.
 
-Write down the yield source in plain language — "I earn trading fees from a USDC/ETH pair on Uniswap v3" is more useful than "80% APY."
+Write down the yield source in plain language - "I earn trading fees from a USDC/ETH pair on Uniswap v3" is more useful than "80% APY."
 
-Pay attention to the asset you're paid in. If yield arrives in the same token you've staked, each distribution increases circulating supply and can push the token's price down — meaning your nominal return outpaces your realized return. If yield comes in a separate, volatile governance token, the gap between advertised APY and what you actually pocket depends on when (and whether) you sell.
+Pay attention to the asset you're paid in. If yield arrives in the same token you've staked, each distribution increases circulating supply and can push the token's price down - meaning your nominal return outpaces your realized return. If yield comes in a separate, volatile governance token, the gap between advertised APY and what you actually pocket depends on when (and whether) you sell.
 
 A Curve pool paying CRV emissions at 40% APY looked different in January 2022, when CRV traded above $4 (CoinGecko historical data), than it did 12 months later below $0.60. The yield source didn't change; the realized value did.
 
-Also note the structure. Fixed-term products like Pendle's tokenized yield lock in a rate at entry, while floating-rate positions shift daily based on utilization or emissions schedules. Some yields depend on continuous new deposits to sustain rewards — a pattern that erodes returns once deposit growth stalls.
+Also note the structure. Fixed-term products like Pendle's tokenized yield lock in a rate at entry, while floating-rate positions shift daily based on utilization or emissions schedules. Some yields depend on continuous new deposits to sustain rewards - a pattern that erodes returns once deposit growth stalls.
 
-When you're cataloging yield sources across multiple protocols and chains, pulling together protocol docs, audit reports, and internal analyst notes into a single view saves hours — a challenge that mirrors broader trends in [AI in financial services](https://www.glean.com/blog/ai-in-financial-services). Glean Assistant lets analysts ask cross-document questions — like "What is the emission schedule for this protocol's reward token?" — and get synthesized, cited answers grounded in company knowledge, so the classification step doesn't become a research bottleneck.
+When you're cataloging yield sources across multiple protocols and chains, pulling together protocol docs, audit reports, and internal analyst notes into a single view saves hours - a challenge that mirrors broader trends in [AI in financial services](https://www.glean.com/blog/ai-in-financial-services). Glean Assistant lets analysts ask cross-document questions - like "What is the emission schedule for this protocol's reward token?" - and get synthesized, cited answers grounded in company knowledge, so the classification step doesn't become a research bottleneck.
 
 ## Separate organic yield from subsidized yield
 
 Ask one question: would this return exist if the protocol turned off all incentive programs tomorrow? The answer splits yield into two categories that behave very differently under stress.
 
-**Organic yield** comes from real economic activity — borrowers paying interest, traders paying swap fees, or protocols sharing revenue with token holders. Aave's lending rates, for instance, rise and fall with borrowing demand, not with a marketing budget.
+**Organic yield** comes from real economic activity - borrowers paying interest, traders paying swap fees, or protocols sharing revenue with token holders. Aave's lending rates, for instance, rise and fall with borrowing demand, not with a marketing budget.
 
 **Subsidized yield** comes from token emissions, points campaigns, retroactive airdrops, or temporary rebates designed to attract liquidity. The return is real today, but it's funded by inflation or treasury drawdowns rather than usage.
 
@@ -103,17 +103,17 @@ To size the gap, break your total return into two lines:
 
 <table style="min-width: 75px;"><colgroup><col style="min-width: 25px;"><col style="min-width: 25px;"><col style="min-width: 25px;"></colgroup><tbody><tr><th colspan="1" rowspan="1"><p>Component</p></th><th colspan="1" rowspan="1"><p>Source</p></th><th colspan="1" rowspan="1"><p>Durability</p></th></tr><tr><td colspan="1" rowspan="1"><p>Base yield</p></td><td colspan="1" rowspan="1"><p>Protocol fees, interest, revenue share</p></td><td colspan="1" rowspan="1"><p>Persists as long as usage holds</p></td></tr><tr><td colspan="1" rowspan="1"><p>Bonus yield</p></td><td colspan="1" rowspan="1"><p>Token emissions, points, referral rebates</p></td><td colspan="1" rowspan="1"><p>Ends when campaign ends or tokens vest</p></td></tr></tbody></table>
 
-Once you've separated the two, check for dilution pressure. Compare the reward token's circulating supply against its fully diluted valuation (FDV). A protocol distributing 5% of total supply per month in farm rewards creates steady sell pressure that compresses the token's price — and your realized return along with it.
+Once you've separated the two, check for dilution pressure. Compare the reward token's circulating supply against its fully diluted valuation (FDV). A protocol distributing 5% of total supply per month in farm rewards creates steady sell pressure that compresses the token's price - and your realized return along with it.
 
-During DeFi summer 2020, several food-themed farms advertised four- and five-digit APYs while their reward tokens lost 90%+ of value within weeks (Messari DeFi research, 2020), leaving depositors worse off than a simple stablecoin position. Tracking emission schedules, unlock timelines, and FDV gaps across your portfolio means synthesizing data from tokenomics docs, governance forums, and on-chain analytics — a form of [AI-powered due diligence](https://www.glean.com/blog/ai-for-private-equity-and-venture-capital) that investment firms increasingly rely on. Glean Search can surface cited, permission-aware answers from those scattered sources so you can spot dilution risk before it hits your P&L.
+During DeFi summer 2020, several food-themed farms advertised four- and five-digit APYs while their reward tokens lost 90%+ of value within weeks (Messari DeFi research, 2020), leaving depositors worse off than a simple stablecoin position. Tracking emission schedules, unlock timelines, and FDV gaps across your portfolio means synthesizing data from tokenomics docs, governance forums, and on-chain analytics - a form of [AI-powered due diligence](https://www.glean.com/blog/ai-for-private-equity-and-venture-capital) that investment firms increasingly rely on. Glean Search can surface cited, permission-aware answers from those scattered sources so you can spot dilution risk before it hits your P&L.
 
 ## Measure the risks that can erase the headline APY
 
-Yield is a projection; risk is what determines whether you collect it. Organizing threats into three layers helps you move from a vague sense of danger to a structured assessment you can act on. A [2025 study of 138 DeFi participants](https://www.mdpi.com/1911-8074/18/1/38) found that data accuracy, real-time monitoring, and compliance features are the top factors in effective risk management — reinforcing that systematic threat assessment beats ad hoc monitoring.
+Yield is a projection; risk is what determines whether you collect it. Organizing threats into three layers helps you move from a vague sense of danger to a structured assessment you can act on. A [2025 study of 138 DeFi participants](https://www.mdpi.com/1911-8074/18/1/38) found that data accuracy, real-time monitoring, and compliance features are the top factors in effective risk management - reinforcing that systematic threat assessment beats ad hoc monitoring.
 
 **Layer one: risks that reduce yield.** These include price volatility in the reward token, impermanent loss on LP positions, and governance votes that redirect emissions away from your pool.
 
-A concentrated liquidity position on Uniswap v3 can generate strong fee income when price stays in range, but a 15% price move outside your tick range drops fee generation to zero while you hold an increasingly one-sided position. The [impermanent loss curve](https://chain.link/article/impermanent-loss-defi) is non-linear: a 1.25x price change costs 0.6%, a 1.5x change costs 2.0%, and a 5x divergence leads to a 25.5% loss. Leverage amplifies every direction — a 3x leveraged yield position triples both the upside and the drawdown speed. [Peer-reviewed research on DeFi lending](https://www.sciencedirect.com/science/article/pii/S0890838925001416) documents how recursive leverage strategies can produce cascading liquidations that exceed the borrower's initial capital commitment.
+A concentrated liquidity position on Uniswap v3 can generate strong fee income when price stays in range, but a 15% price move outside your tick range drops fee generation to zero while you hold an increasingly one-sided position. The [impermanent loss curve](https://chain.link/article/impermanent-loss-defi) is non-linear: a 1.25x price change costs 0.6%, a 1.5x change costs 2.0%, and a 5x divergence leads to a 25.5% loss. Leverage amplifies every direction - a 3x leveraged yield position triples both the upside and the drawdown speed. [Peer-reviewed research on DeFi lending](https://www.sciencedirect.com/science/article/pii/S0890838925001416) documents how recursive leverage strategies can produce cascading liquidations that exceed the borrower's initial capital commitment.
 
 **Layer two: risks that reduce principal.** Smart contract exploits, oracle manipulation, and de-pegging events fall here.
 
@@ -121,31 +121,31 @@ The Euler Finance exploit in March 2023 drained roughly $197 million from the pr
 
 **Layer three: risks that block your exit.** Lockup periods, withdrawal queues, and liquidity crunches prevent you from leaving a deteriorating position.
 
-Treat lockups as a risk factor, not a minor inconvenience — if you can't exit during a drawdown, the drawdown defines your outcome. Ethereum's post-Merge staking queue held withdrawals for weeks during periods of high exit demand (Beaconcha.in validator exit data, April 2023).
+Treat lockups as a risk factor, not a minor inconvenience - if you can't exit during a drawdown, the drawdown defines your outcome. Ethereum's post-Merge staking queue held withdrawals for weeks during periods of high exit demand (Beaconcha.in validator exit data, April 2023).
 
 When you're running this three-layer assessment across a portfolio, centralizing your risk notes, audit summaries, and incident post-mortems in one searchable location matters. The Enterprise Graph in Glean connects information across your organization's documents and tools, so a query like "What smart contract incidents affected protocols in our portfolio this quarter?" pulls from security reports, Slack threads, and analyst memos without requiring you to check each source individually.
 
-A steady 8 to 10% yield with low volatility often outperforms a headline 25% that carries principal-loss risk — but you only see that after measuring what can go wrong.
+A steady 8 to 10% yield with low volatility often outperforms a headline 25% that carries principal-loss risk - but you only see that after measuring what can go wrong.
 
 ## Convert APY into net, comparable return
 
 Headline APY isn't a number you can bank. Converting it into a net, after-cost return gives you a single figure for crypto yield comparison across protocols, chains, and strategies.
 
-Start by clarifying what you're looking at. APR (annual percentage rate) assumes no compounding; APY (annual percentage yield) includes it. A 50% APR compounded daily produces roughly 65% APY — a meaningful difference when you're sizing positions.
+Start by clarifying what you're looking at. APR (annual percentage rate) assumes no compounding; APY (annual percentage yield) includes it. A 50% APR compounded daily produces roughly 65% APY - a meaningful difference when you're sizing positions.
 
 Most DeFi dashboards display APY, but the compounding frequency varies by protocol, and some display APR labeled as APY. Confirm which figure you have before doing any math.
 
 Next, subtract direct costs. Gas fees on Ethereum mainnet for a complex LP entry can run $20-80 depending on network congestion. Bridge fees between chains typically cost $2 to $15 plus slippage.
 
-Protocol-level fees — such as Yearn's 2% management fee and 20% performance fee (Yearn Finance documentation) — reduce your gross return before you see it.
+Protocol-level fees - such as Yearn's 2% management fee and 20% performance fee (Yearn Finance documentation) - reduce your gross return before you see it.
 
 For a $5,000 position earning 12% APY on a Layer 2, gas and bridging costs might consume 0.5-1% of principal on entry and exit, shaving your effective annual return to around 10-11%.
 
 Then subtract economic costs that don't appear on any invoice. Impermanent loss on a volatile pair can quietly erode 5 to 10% of your position over a quarter. Dilution from reward token emissions reduces the purchasing power of yield you haven't sold.
 
-Time costs — the hours spent monitoring, rebalancing, and claiming rewards — have an opportunity cost that's easy to ignore but real.
+Time costs - the hours spent monitoring, rebalancing, and claiming rewards - have an opportunity cost that's easy to ignore but real.
 
-For tokenized yield products like Pendle's principal tokens (PT) and yield tokens (YT), compare the current market price of the YT against the expected yield stream to maturity; a YT trading at a premium to its remaining cash flows signals that the market has already priced in optimistic assumptions. After all deductions, you should have one standardized number that lets you compare a 12% Aave lending rate against a 40% LP farm against a 6% tokenized yield position on honest terms. [AI agents in financial services](https://www.glean.com/blog/ai-agents-financial-services) can automate recurring data pulls — collecting fee snapshots, emission rates, and cost figures from your connected tools on a set schedule — so the conversion step stays current without manual recalculation each week.
+For tokenized yield products like Pendle's principal tokens (PT) and yield tokens (YT), compare the current market price of the YT against the expected yield stream to maturity; a YT trading at a premium to its remaining cash flows signals that the market has already priced in optimistic assumptions. After all deductions, you should have one standardized number that lets you compare a 12% Aave lending rate against a 40% LP farm against a 6% tokenized yield position on honest terms. [AI agents in financial services](https://www.glean.com/blog/ai-agents-financial-services) can automate recurring data pulls - collecting fee snapshots, emission rates, and cost figures from your connected tools on a set schedule - so the conversion step stays current without manual recalculation each week.
 
 ## Check the supporting metrics that give token yield context
 
@@ -153,17 +153,17 @@ A yield number without context is a speedometer without a fuel gauge. Supporting
 
 **Total value locked (TVL)** is the most-cited metric in DeFi, but its signal depends on what's driving it. TVL that grows alongside organic fee revenue suggests genuine demand. TVL that spikes when a protocol launches a points campaign and drops when the campaign ends tells you the liquidity is rented, not earned.
 
-Aave's TVL on Ethereum has remained relatively stable through multiple market cycles (DeFiLlama, 2021-2025) because borrowing demand — the protocol's revenue source — persists independent of incentive programs.
+Aave's TVL on Ethereum has remained relatively stable through multiple market cycles (DeFiLlama, 2021-2025) because borrowing demand - the protocol's revenue source - persists independent of incentive programs.
 
 Compare that pattern against a new protocol whose TVL doubled in two weeks following an airdrop announcement; the deposit base is likely to contract once tokens distribute.
 
-**Utilization rate** — the percentage of deposited assets actively lent or in use — directly affects lending yields. A lending market running at 85% utilization generates meaningfully higher interest than one at 30%, but utilization above 90-95% can trigger liquidity crunches where depositors can't withdraw.
+**Utilization rate** - the percentage of deposited assets actively lent or in use - directly affects lending yields. A lending market running at 85% utilization generates meaningfully higher interest than one at 30%, but utilization above 90-95% can trigger liquidity crunches where depositors can't withdraw.
 
 **Volume-to-TVL ratio** measures how actively capital is being used; a DEX with $500 million in TVL generating $50 million in daily volume is producing fees more efficiently than one with $2 billion in TVL and $80 million in volume. On the supply side, look at the gap between circulating supply and FDV, the vesting schedule for team and investor tokens, and whether the protocol has a buyback or burn mechanism that offsets emissions.
 
 For tokenized yield specifically, distinguish between the principal token (which represents your right to the underlying asset at maturity) and the yield token (which represents the income stream). The spread between the two, combined with time to maturity, tells you whether the market is pricing in growth, contraction, or a liquidity premium.
 
-When you're tracking these metrics across 15 or 20 positions, the data lives in dashboards, spreadsheets, governance forums, and analyst reports scattered across tools — the kind of fragmented landscape that [financial advisory AI](https://www.glean.com/blog/financial-advisors-ai) is designed to unify. Glean Search surfaces cited answers from those sources in one query, so checking the health of a yield source doesn't require toggling between six browser tabs and a shared drive.
+When you're tracking these metrics across 15 or 20 positions, the data lives in dashboards, spreadsheets, governance forums, and analyst reports scattered across tools - the kind of fragmented landscape that [financial advisory AI](https://www.glean.com/blog/financial-advisors-ai) is designed to unify. Glean Search surfaces cited answers from those sources in one query, so checking the health of a yield source doesn't require toggling between six browser tabs and a shared drive.
 
 ## Compare scenarios, size the position, and monitor for change
 
@@ -171,11 +171,11 @@ Analysis without a sizing decision and an exit plan is just research. This final
 
 Build three scenarios for each opportunity: a base case using your net yield estimate from section four, a stress case that assumes the reward token drops 40-50%, utilization falls by a third, and one major risk from your layer-two list materializes, and an upside case where organic adoption grows and yield compresses less than the market expects. Size your position on the stress case, not the base case. If a $10,000 allocation in your stress scenario produces a -5% outcome over 90 days, decide whether that drawdown is acceptable before you enter.
 
-Many DeFi allocators size on the base case and then scramble to reduce exposure during a drawdown — inverting the order solves that pattern.
+Many DeFi allocators size on the base case and then scramble to reduce exposure during a drawdown - inverting the order solves that pattern.
 
 Diversify by risk driver, not just by protocol name. Holding positions in three different lending markets on Ethereum doesn't diversify smart contract risk if all three use the same oracle provider or share a dependency on a single stablecoin. Spread exposure across yield mechanisms (lending, LP fees, staking, tokenized yield), chains, and collateral types so that a single failure doesn't cascade through your portfolio.
 
-Set a monitoring cadence — weekly for active farms, biweekly for stablecoin lending, monthly for staked positions with long lockups — and write your exit rules before you enter. Concrete triggers work better than feelings: "Exit if the reward token drops 30% from entry," "Reduce position by half if TVL falls below $50 million," or "Close if the protocol changes fee distribution without a governance vote."
+Set a monitoring cadence - weekly for active farms, biweekly for stablecoin lending, monthly for staked positions with long lockups - and write your exit rules before you enter. Concrete triggers work better than feelings: "Exit if the reward token drops 30% from entry," "Reduce position by half if TVL falls below $50 million," or "Close if the protocol changes fee distribution without a governance vote."
 
 The final test before committing capital: if yield on this position drops by a third tomorrow, does your investment thesis still hold? If the answer is no, the position is a trade on incentive levels, not a conviction allocation.
 
@@ -185,7 +185,7 @@ When your monitoring cadence generates a growing stack of protocol updates, gove
 
 ### What is token yield and why is it important?
 
-Token yield is the return generated by holding, staking, or deploying a crypto asset within a DeFi protocol — expressed as APR or APY. It matters because it's the starting metric for evaluating any DeFi investment, but taken at face value without adjusting for risk, it can overstate the actual return you receive.
+Token yield is the return generated by holding, staking, or deploying a crypto asset within a DeFi protocol - expressed as APR or APY. It matters because it's the starting metric for evaluating any DeFi investment, but taken at face value without adjusting for risk, it can overstate the actual return you receive.
 
 ### How does APY relate to token yield?
 
@@ -201,9 +201,9 @@ Look at TVL trends (organic vs. incentive-driven), utilization rates for lending
 
 ### How can Glean help with DeFi yield research?
 
-Glean Search surfaces cited, permission-aware answers across protocol docs, audit reports, on-chain analytics, and internal analyst notes — so you can run a query like "What is the emission schedule for this protocol?" and get a synthesized answer grounded in your company's knowledge instead of searching six different tools manually.
+Glean Search surfaces cited, permission-aware answers across protocol docs, audit reports, on-chain analytics, and internal analyst notes - so you can run a query like "What is the emission schedule for this protocol?" and get a synthesized answer grounded in your company's knowledge instead of searching six different tools manually.
 
-Start with one position you already hold and run it through the six steps above — the gap between your assumed return and your net, after-cost yield is usually larger than expected.
+Start with one position you already hold and run it through the six steps above - the gap between your assumed return and your net, after-cost yield is usually larger than expected.
 
 [Request a demo to explore how Glean and AI can transform your workplace.](https://www.glean.com/get-a-demo)
 

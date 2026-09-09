@@ -7,9 +7,9 @@ fetched_at: "2026-09-01T13:23:05.466Z"
 ---
 On this page
 
-Modal Search overlays a complete Glean search experience on your existing page. Attach it to any search input you already have — when the input is clicked, a modal opens with autocomplete, suggestions, and full results.
+Modal Search overlays a complete Glean search experience on your existing page. Attach it to any search input you already have - when the input is clicked, a modal opens with autocomplete, suggestions, and full results.
 
-PreviewLive — your instance
+PreviewLive - your instance
 
 portal.sample.internal
 
@@ -17,7 +17,7 @@ Sample CorpServicesRunbooksOn-call
 
 payments service runbook
 
-CPayments Service — Deploy & Rollback RunbookEngineering Wiki · Updated 2 days ago
+CPayments Service - Deploy & Rollback RunbookEngineering Wiki · Updated 2 days ago
 
 Gpayments-servicegit.internal/payments-service · 1mo ago
 
@@ -29,7 +29,7 @@ type:bug, document, message, etc.
 
 powered by Glean
 
-Illustrative previewRendered with sample data — in your app, this component renders live against your organization's Glean instance. Try it live →
+Illustrative previewRendered with sample data - in your app, this component renders live against your organization's Glean instance. Try it live →
 
 ## Install the SDK[​](#install-the-sdk "Direct link to Install the SDK")
 
@@ -52,7 +52,7 @@ The Glean web app domain differs from your company's Glean backend domain (find 
 
 ## Attach to your search input[​](#attach-to-your-search-input "Direct link to Attach to your search input")
 
-Point the [attach](/libraries/web-sdk/reference/interfaces/GleanWebSDK#attach) method at a focusable element — such as the search input your page already renders — and the SDK handles all user interaction from there:
+Point the [attach](/libraries/web-sdk/reference/interfaces/GleanWebSDK#attach) method at a focusable element - such as the search input your page already renders - and the SDK handles all user interaction from there:
 
 ```
 import { attach } from '@gleanwork/web-sdk';attach(document.getElementById('search-box'), {  backend: 'https://{your}-be.glean.com/',});
@@ -71,7 +71,7 @@ The most commonly used [`ModalSearchOptions`](/libraries/web-sdk/reference/inter
 | `searchBoxCustomizations` | `SearchBoxCustomizations` | Placeholder text, font size, icon, borders, and margins. |
 | `datasourcesFilter` | `string[]` | Restrict results to specific datasources, e.g. `['jira', 'confluence']`. |
 
-All components also accept the common [`Options`](/libraries/web-sdk/reference/interfaces/Options) — `backend`, `authToken`, `theme`, `themeVariant`, `locale`, and more.
+All components also accept the common [`Options`](/libraries/web-sdk/reference/interfaces/Options) - `backend`, `authToken`, `theme`, `themeVariant`, `locale`, and more.
 
 ## Theming[​](#theming "Direct link to Theming")
 

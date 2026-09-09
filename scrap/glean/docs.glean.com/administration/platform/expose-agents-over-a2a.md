@@ -77,7 +77,7 @@ Send a message (`message/send` or `message/stream`) and confirm that the agent r
 
 ## Authentication and permissions[​](#authentication-and-permissions "Direct link to Authentication and permissions")
 
--   Authentication uses an **HTTP bearer token** — the per-agent client API token from the Share dialog. This differs from the [Glean A2A server](/administration/platform/a2a-server), which authenticates external platforms through the Glean OAuth authorization server.
+-   Authentication uses an **HTTP bearer token** - the per-agent client API token from the Share dialog. This differs from the [Glean A2A server](/administration/platform/a2a-server), which authenticates external platforms through the Glean OAuth authorization server.
 -   Requests run with the permissions associated with the token, and the agent only returns content the caller is permitted to access.
 -   Access is evaluated per caller. If the caller isn't permitted to use the agent, or the agent isn't eligible, Glean returns a not-found response so the agent's existence isn't revealed.
 

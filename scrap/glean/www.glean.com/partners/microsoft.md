@@ -9,7 +9,7 @@ fetched_at: "2026-09-01T13:25:30.827Z"
 
 ## **Glean works** **with** **Microsoft**
 
-Glean connects with and understands your full enterprise context across the Microsoft ecosystem and beyond—building an Enterprise Graph and unifying work intelligence.
+Glean connects with and understands your full enterprise context across the Microsoft ecosystem and beyond-building an Enterprise Graph and unifying work intelligence.
 
 ## Glean works on Microsoft
 
@@ -17,7 +17,7 @@ Glean runs as a service in your own Azure Cloud, so you own your own data. To ke
 
 ## **Glean works** **in** **Microsoft**
 
-Glean meets your employees where they are in their AI transformation journey and where they work—whether that be their browser, desktop, mobile app, Microsoft Teams, Microsoft 365, and any internal service.
+Glean meets your employees where they are in their AI transformation journey and where they work-whether that be their browser, desktop, mobile app, Microsoft Teams, Microsoft 365, and any internal service.
 
 ## All the ways enterprises use Glean and Microsoft together
 
@@ -25,7 +25,7 @@ Glean meets your employees where they are in their AI transformation journey and
 
 ### **Use AI on all your Microsoft data**
 
-Glean works across your entire ecosystem of business apps—Microsoft SharePoint, OneDrive, Teams, OneNote, Outlook, Dynamics 365, and Azure DevOps Wikis—plus 100+ connectors, so you’re never limited to a single platform.
+Glean works across your entire ecosystem of business apps-Microsoft SharePoint, OneDrive, Teams, OneNote, Outlook, Dynamics 365, and Azure DevOps Wikis-plus 100+ connectors, so you’re never limited to a single platform.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691b5da979955c363fa24c4e_d8e709a747a5bceee1b8f4a235cc080d_Work%20with%20AI%20in%20Microsoft%20365%2C%20Teams%20and%20GitHub.webp)
 
@@ -37,7 +37,7 @@ Glean embedded integrations are designed to bring AI to where you work. Bring AI
 
 ### **Deploy Glean safely in your own Azure Cloud**
 
-Run Glean in your own Azure Cloud environment—keeping your data safely isolated in a single tenant and leveraging the scaling and security you already trust built into Azure.
+Run Glean in your own Azure Cloud environment-keeping your data safely isolated in a single tenant and leveraging the scaling and security you already trust built into Azure.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691b5da940514c225b4fc816_Put%20the%20latest%20Azure%20OpenAI%20models%20to%20work.webp)
 

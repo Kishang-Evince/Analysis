@@ -109,11 +109,11 @@ Listen to article
 
 Enterprise context is what makes AI relevant and valuable at work; the more context you bring the richer the insights. While context in Glean is permissions enforced, enforcement is only as good as the underlying permissions, and with hundreds of SaaS applications and billions of user-generated content, many enterprises can’t keep up with access controls and need additional help in getting data AI ready. 
 
-We introduced continuous protection and automated hiding of sensitive content in Glean across 100+ data sources at our annual user conference, [Glean:GO](https://www.glean.com/events/glean-go-2025). These features enabled customers to set up custom policies to detect what information is most sensitive for their organization—from employee data to passwords and authentication to top secret projects using 100+ infotypes, regex, and term matching. 
+We introduced continuous protection and automated hiding of sensitive content in Glean across 100+ data sources at our annual user conference, [Glean:GO](https://www.glean.com/events/glean-go-2025). These features enabled customers to set up custom policies to detect what information is most sensitive for their organization-from employee data to passwords and authentication to top secret projects using 100+ infotypes, regex, and term matching. 
 
 Today, we’re excited to expand on this capability with sensitive content models that separate the signal from the noise by pairing traditional infotype classifiers with AI models trained on the full enterprise context, like document content, activities, and permissions. **These sensitive content models help to distinguish benign use cases from true exposure, seeing an 80% accuracy rate on unstructured data.**
 
-While many solutions detect sensitive content on structured data, few solve unstructured data, especially at the scale of coverage Glean provides. Unstructured content has no schema—sensitivity depends on context, not just content. That’s why Glean’s sensitive content models stand out: they interpret the context, leveraging proprietary search and enterprise graphs, around infotypes, regex, and term matches, to help companies automatically protect data at scale. 
+While many solutions detect sensitive content on structured data, few solve unstructured data, especially at the scale of coverage Glean provides. Unstructured content has no schema-sensitivity depends on context, not just content. That’s why Glean’s sensitive content models stand out: they interpret the context, leveraging proprietary search and enterprise graphs, around infotypes, regex, and term matches, to help companies automatically protect data at scale. 
 
 ## The design of sensitive content models
 
@@ -140,7 +140,7 @@ The models also use the enterprise graph, which maps the relationships behind en
 
 ## Put AI to work with confidence using automated data security
 
-Sensitive content models mark a shift—here at Glean, we’re now using AI to secure AI itself. By understanding both document and enterprise context, we can build AI models capable of discerning real, sensitive data from the noise across all unstructured data. Glean protects sensitive content with precision, and puts AI to work safely across the enterprise.
+Sensitive content models mark a shift-here at Glean, we’re now using AI to secure AI itself. By understanding both document and enterprise context, we can build AI models capable of discerning real, sensitive data from the noise across all unstructured data. Glean protects sensitive content with precision, and puts AI to work safely across the enterprise.
 
 Check out our September Drop page for more details on other exciting Glean features that came out this week! 
 

@@ -91,13 +91,13 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Explaining complex topics can be challenging—showing how things work visu  ally is often more effective. That’s because complex topics become instantly clearer when you can *see* them. Whether it's a data visualization showing seasonal patterns, a flowchart explaining your approval process, or a wireframe from the design team, visual content accelerates comprehension in a way that text alone can't match.
+Explaining complex topics can be challenging-showing how things work visu  ally is often more effective. That’s because complex topics become instantly clearer when you can *see* them. Whether it's a data visualization showing seasonal patterns, a flowchart explaining your approval process, or a wireframe from the design team, visual content accelerates comprehension in a way that text alone can't match.
 
-Glean Assistant has always been great at surfacing text—pulling insights from documents, meeting transcripts, Slack conversations, and more. And now, we’re excited to share that Assistant understands the images in your company's connected data sources and proactively surfaces them in responses when relevant. 
+Glean Assistant has always been great at surfacing text-pulling insights from documents, meeting transcripts, Slack conversations, and more. And now, we’re excited to share that Assistant understands the images in your company's connected data sources and proactively surfaces them in responses when relevant. 
 
 ## What this looks like in practice
 
-When you ask about revenue trends, system architecture, product mockups, or org charts, Assistant automatically scans your connected sources—including Google Drive and O365—to find the most relevant images in your documents and presentations, and displays them directly in your conversation.
+When you ask about revenue trends, system architecture, product mockups, or org charts, Assistant automatically scans your connected sources-including Google Drive and O365-to find the most relevant images in your documents and presentations, and displays them directly in your conversation.
 
 Ask about Q3 sales performance, and you'll get the actual revenue chart from the board deck. Wonder how the authentication flow works? The system architecture diagram appears right in your chat.
 
@@ -119,7 +119,7 @@ Glean pairs its multimodal image understanding capabilities along with inline im
 
 ## Visual discovery for everyday work
 
-When Assistant can show you a chart or surface a diagram instead of explaining it, you aren’t just saving time. You're getting a better answer that enables you to understand the topic faster. You're staying in flow instead of context-switching and digging through text-based responses to hunt down visual files—and that can make all the difference.
+When Assistant can show you a chart or surface a diagram instead of explaining it, you aren’t just saving time. You're getting a better answer that enables you to understand the topic faster. You're staying in flow instead of context-switching and digging through text-based responses to hunt down visual files-and that can make all the difference.
 
 Learn more about contextual images [here](https://docs.glean.com/user-guide/assistant/contextual-images), and check out [more details](http://www.glean.com/product-drop/october-2025) on other exciting Glean features coming your way!
 

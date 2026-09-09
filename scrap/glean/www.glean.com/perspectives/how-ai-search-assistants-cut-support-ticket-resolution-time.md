@@ -71,7 +71,7 @@ AI search assistants represent a transformative approach to this challenge, with
 
 ## What are AI search assistants?
 
-AI search assistants are sophisticated software systems that leverage artificial intelligence to help support teams quickly find, process, and apply information from across an organization's knowledge ecosystem. Unlike traditional search tools that rely on keyword matching, these assistants understand context, interpret natural language queries, and retrieve relevant information from multiple data sources simultaneously — including documentation, past tickets, internal wikis, and communication channels. For example, AssemblyAI achieved a [97% reduction](https://usepylon.com/blog/ai-powered-customer-support-guide) in response time using AI search assistants, dropping from 15 minutes to just 23 seconds. The company now resolves 50% of support tickets automatically without human intervention.
+AI search assistants are sophisticated software systems that leverage artificial intelligence to help support teams quickly find, process, and apply information from across an organization's knowledge ecosystem. Unlike traditional search tools that rely on keyword matching, these assistants understand context, interpret natural language queries, and retrieve relevant information from multiple data sources simultaneously - including documentation, past tickets, internal wikis, and communication channels. For example, AssemblyAI achieved a [97% reduction](https://usepylon.com/blog/ai-powered-customer-support-guide) in response time using AI search assistants, dropping from 15 minutes to just 23 seconds. The company now resolves 50% of support tickets automatically without human intervention.
 
 At their core, AI search assistants employ several key technologies:
 
@@ -141,7 +141,7 @@ Adapting AI tools to the unique characteristics of your organization ensures the
 
 To maintain peak performance, ongoing evaluation of AI systems is crucial. Regular reviews enable organizations to ensure AI tools remain effective and responsive to changing demands.
 
-The future of customer support lies in intelligent systems that empower teams to work smarter, not harder. By implementing AI search assistants strategically, you can transform ticket resolution from a bottleneck into a competitive advantage. We're here to help you unlock the full potential of AI-powered support — [request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo).
+The future of customer support lies in intelligent systems that empower teams to work smarter, not harder. By implementing AI search assistants strategically, you can transform ticket resolution from a bottleneck into a competitive advantage. We're here to help you unlock the full potential of AI-powered support - [request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo).
 
 [
 

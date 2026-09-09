@@ -103,7 +103,7 @@ See [Create Integration Records for Applications to Use OAuth 2.0](https://docs.
 
 warning
 
-The **Callback URL** must exactly match the redirect URI shown in Glean — including scheme, host, path, and trailing slash. Even a trailing-slash mismatch causes an `Invalid login attempt` error when users try to authorize.
+The **Callback URL** must exactly match the redirect URI shown in Glean - including scheme, host, path, and trailing slash. Even a trailing-slash mismatch causes an `Invalid login attempt` error when users try to authorize.
 
 ### Step 5: Confirm the integration record is enabled[​](#step-5-confirm-the-integration-record-is-enabled "Direct link to Step 5: Confirm the integration record is enabled")
 
@@ -117,7 +117,7 @@ See [Connect to the NetSuite AI Connector Service](https://docs.oracle.com/en/cl
 
 1.  In the **Glean admin console**, go to the MCP connection setup for NetSuite.
 2.  Enter the following:
-    -   **Account ID:** Your NetSuite account ID (for example, `12345` for production or `12345-sb1` for sandbox — retrieve this from your NetSuite URL)
+    -   **Account ID:** Your NetSuite account ID (for example, `12345` for production or `12345-sb1` for sandbox - retrieve this from your NetSuite URL)
     -   **Client ID:** From [step 4](#step-4-create-the-oauth-20-integration-record)
     -   **Client Secret:** From [step 4](#step-4-create-the-oauth-20-integration-record)
 3.  Before initiating, verify that the redirect URI saved on the NetSuite integration record matches the callback URL shown in Glean exactly.
@@ -177,7 +177,7 @@ Most NetSuite MCP tools are read-only. Only **Create Record** and **Update Recor
 
 **Cause:** The callback URL in the NetSuite integration record does not match the redirect URI in Glean.
 
-**Fix:** In NetSuite, go to **Setup > Integration > Manage Integrations**, open the integration record, and verify that the **Callback URL** exactly matches the redirect URI shown in the Glean admin console — including scheme, host, path, and trailing slash. Update it if needed, then save and retry.
+**Fix:** In NetSuite, go to **Setup > Integration > Manage Integrations**, open the integration record, and verify that the **Callback URL** exactly matches the redirect URI shown in the Glean admin console - including scheme, host, path, and trailing slash. Update it if needed, then save and retry.
 
 ### Users get 'Access denied' when connecting
 

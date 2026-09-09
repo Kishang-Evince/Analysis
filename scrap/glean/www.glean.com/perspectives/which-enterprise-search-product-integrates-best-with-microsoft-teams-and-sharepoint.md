@@ -73,7 +73,7 @@ The right search tool transforms how teams access organizational knowledge, redu
 
 ## What makes an enterprise search tool effective for Microsoft Teams and SharePoint?
 
-An effective enterprise search tool for Microsoft Teams and SharePoint must seamlessly integrate with the Microsoft 365 architecture while extending beyond its native limitations. The foundation lies in leveraging Microsoft Graph API and connectors to access content across Teams conversations, SharePoint document libraries, OneDrive files, and other Microsoft applications. This integration should feel native to users — maintaining the familiar Microsoft interface while delivering enhanced search capabilities that Microsoft's built-in tools cannot provide.
+An effective enterprise search tool for Microsoft Teams and SharePoint must seamlessly integrate with the Microsoft 365 architecture while extending beyond its native limitations. The foundation lies in leveraging Microsoft Graph API and connectors to access content across Teams conversations, SharePoint document libraries, OneDrive files, and other Microsoft applications. This integration should feel native to users - maintaining the familiar Microsoft interface while delivering enhanced search capabilities that Microsoft's built-in tools cannot provide.
 
 The most critical technical requirements include:
 
@@ -168,7 +168,7 @@ Modern enterprise search tools rely on cloud-native, distributed architectures t
 
 Enterprise search tools must include features that adapt to the evolving needs of a growing enterprise. Essential elements involve:
 
-Scalability in enterprise search tools is about more than technology—it's about creating a responsive system that evolves with organizational demands, ensuring consistent access to vital information while maintaining high performance and security.
+Scalability in enterprise search tools is about more than technology-it's about creating a responsive system that evolves with organizational demands, ensuring consistent access to vital information while maintaining high performance and security.
 
 ## What implementation strategies ensure success?
 

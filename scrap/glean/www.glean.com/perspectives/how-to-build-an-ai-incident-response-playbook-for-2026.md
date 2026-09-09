@@ -65,7 +65,7 @@ Share this article:
 
 An AI incident response playbook is a repeatable operating system for detecting, containing, and recovering from failures in AI systems, and you build one by predefining the triggers, owners, evidence sources, containment choices, recovery checks, and communication paths that turn a chaotic scramble into a rehearsed response. Start with a clear scope: it should cover [AI search](https://www.glean.com/product/workplace-search-ai), assistants, agents, internal knowledge tools, and the workflows they connect.
 
-AI incident management differs from traditional IT response because the failures are behavioral, not just infrastructural. A model can drift, hallucinate, or misclassify intent while every infrastructure dashboard shows green, so the technical layer looks healthy even as the model fails — the kind of adversarial behaviors cataloged by [MITRE ATLAS](https://atlas.mitre.org/).
+AI incident management differs from traditional IT response because the failures are behavioral, not just infrastructural. A model can drift, hallucinate, or misclassify intent while every infrastructure dashboard shows green, so the technical layer looks healthy even as the model fails - the kind of adversarial behaviors cataloged by [MITRE ATLAS](https://atlas.mitre.org/).
 
 These failures are also conditional rather than consistent. A probabilistic system might produce a harmful output once and something different moments later, which means deterministic test cases miss the problem and detection, not public relations, becomes the real risk when customers spot the issue first.
 

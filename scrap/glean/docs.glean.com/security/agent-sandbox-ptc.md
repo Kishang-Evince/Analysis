@@ -99,7 +99,7 @@ Every sandbox instance runs in an isolated environment designed to keep each ses
 
 ### Data residency[​](#data-residency "Direct link to Data residency")
 
-Sandbox execution runs on infrastructure Glean operates on behalf of your isolated customer environment—not on end-user devices. Data you process in the sandbox stays within your tenant’s Glean boundary and is not sent to third-party orchestration services for sandbox control.
+Sandbox execution runs on infrastructure Glean operates on behalf of your isolated customer environment-not on end-user devices. Data you process in the sandbox stays within your tenant’s Glean boundary and is not sent to third-party orchestration services for sandbox control.
 
 For how Glean provisions isolated sandbox workloads, see [Data Analysis: Technical Overview](/administration/assistant/data-analysis/technical-overview).
 
@@ -134,7 +134,7 @@ Optional Palo Alto Networks Prisma AIRS integration is available for organizatio
 
 PTC enables LLM-generated code to orchestrate enterprise tools from within the sandbox. Additional security controls include:
 
--   **No credentials in sandbox:** The sandbox never holds authentication tokens, API keys, or secrets. Tool calls are mediated by the host agent — no credentials cross the sandbox boundary.
+-   **No credentials in sandbox:** The sandbox never holds authentication tokens, API keys, or secrets. Tool calls are mediated by the host agent - no credentials cross the sandbox boundary.
 -   **Tool allowlisting:** Only explicitly allowlisted tools are exposed. By default, the allowlist is restricted to a curated set of read-only native tools. Write tools are not supported through programmatic tool calling. Administrators control which tools are exposed.
 -   **Global call budget:** A per-session cap on total tool invocations prevents runaway loops or resource exhaustion.
 -   **Permission enforcement:** All tool calls go through the same permission-aware execution path as direct tool calls. Source-app ACLs are enforced outside the sandbox.

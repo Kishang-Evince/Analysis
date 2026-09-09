@@ -9,7 +9,7 @@ fetched_at: "2026-09-01T13:25:35.843Z"
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69b7bc737210db702f3c887b_5467dc709e89d6c1a341a6e06425160e_glean-logo.svg)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69b7bcde9f42089ab56b87a6_line.svg)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6846fccb346415bfcbd5546c_Booking.com%20white.svg)
 
-# Booking.com scales AI to 14,000 employees—and redefines work—with Glean
+# Booking.com scales AI to 14,000 employees-and redefines work-with Glean
 
 [
 
@@ -27,7 +27,7 @@ Share this customer story:
 
 ## Overview
 
-**Connecting millions to the world—and employees to smarter work**
+**Connecting millions to the world-and employees to smarter work**
 
 ‍
 
@@ -41,7 +41,7 @@ Partnering with hotels, places, and airlines, Booking.com enables properties wor
 
 **The search that finally worked**
 
-Before Glean, Booking.com juggled numerous workplace applications and dealt with inefficient information access—resulting in stale data, inefficient collaboration, and reduced productivity.
+Before Glean, Booking.com juggled numerous workplace applications and dealt with inefficient information access-resulting in stale data, inefficient collaboration, and reduced productivity.
 
 They needed a scalable search and AI solution that helped them solve these problems while adhering to strict security and GDPR requirements. They tried several other search solutions, but none did the trick.
 
@@ -59,7 +59,7 @@ Booking.com creates promotional videos for its many partners, but the volume of 
 
 ‍
 
-Glean’s AI and search platform helped them keep up with the pace of business, critical revenue events, and production deadlines—reducing creation time per video from 8 to 2 weeks, while increasing output from 2 to 5 videos per month.
+Glean’s AI and search platform helped them keep up with the pace of business, critical revenue events, and production deadlines-reducing creation time per video from 8 to 2 weeks, while increasing output from 2 to 5 videos per month.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6846dcd5b415312eda6c6de4_Frame%202083936235.webp)
 
@@ -73,13 +73,13 @@ By enabling technicians to query their needs in natural language and find answer
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6846dcd5d49ed26bce0c11fc_79d273a093cb881fc181e4bf907407b4_Frame%202083936237.webp)
 
-### AI that works—company-wide
+### AI that works-company-wide
 
 Booking.com knew that it wanted to integrate AI further into its strategy and workflows. Glean provided the perfect gateway. Quick to set up and easy to use, Glean became the first AI platform adopted company-wide at Booking.com.
 
 ‍
 
-Employees were introduced to task automation, prompt creation, and agent customization—all through natural language, making early AI literacy practical and accessible.
+Employees were introduced to task automation, prompt creation, and agent customization-all through natural language, making early AI literacy practical and accessible.
 
 ...The faster we can get our culture comfortable with AI... the better we can position ourselves for the future.”
 
@@ -97,7 +97,7 @@ For a customer-focused organization like Booking.com, customer feedback and rese
 
 ‍
 
-Booking.com plans to expand this agent’s capabilities to perform additional capabilities like indexing over 500,000 open survey responses received every month—consolidating insights across multiple sources, and making it all accessible through a personalized, powerful, and scalable tool.
+Booking.com plans to expand this agent’s capabilities to perform additional capabilities like indexing over 500,000 open survey responses received every month-consolidating insights across multiple sources, and making it all accessible through a personalized, powerful, and scalable tool.
 
 ## Explore more customer stories
 

@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/ai-tooling-stack-report-for-software-engineers"
 canonical: "https://www.glean.com/blog/ai-tooling-stack-report-for-software-engineers"
 title: "AI tooling stack report for software engineers"
-description: "Peter Kim  | Field guide to the modern AI tooling stack for software engineering teams—how to unify context, improve onboarding, code changes, and incidents with Glean"
+description: "Peter Kim  | Field guide to the modern AI tooling stack for software engineering teams-how to unify context, improve onboarding, code changes, and incidents with Glean"
 fetched_at: "2026-09-01T13:26:28.480Z"
 ---
 Last updated May 14, 2026.

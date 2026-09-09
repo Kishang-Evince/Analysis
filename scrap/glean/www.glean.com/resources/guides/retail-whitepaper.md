@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/retail-whitepaper"
 canonical: "https://www.glean.com/resources/guides/retail-whitepaper"
 title: "Retail is evolving. AI is the key to staying ahead."
-description: "Enterprise AI is changing how retailers work, from customer support to storefronts to supply chain. But real transformation takes more than standalone tools. This whitepaper shares five high-impact ways retailers can use AI to drive faster service, smarter operations, and better results — plus how a connected approach unlocks even more value."
+description: "Enterprise AI is changing how retailers work, from customer support to storefronts to supply chain. But real transformation takes more than standalone tools. This whitepaper shares five high-impact ways retailers can use AI to drive faster service, smarter operations, and better results - plus how a connected approach unlocks even more value."
 fetched_at: "2026-09-01T13:27:10.545Z"
 ---
 ## Work AI that works.

@@ -49,7 +49,7 @@ What You’ll Learn
 
 -   How HubSpot’s teams piloted Glean, from grassroots adoption to change management and agile rollout.
 -   How conversational search and unified sources help HubSpot Solutions Engineers find answers faster, analyze competitors, stay up to date, and identify internal experts, cutting search time from hours to minutes and building trust in company knowledge.
--   How to set up the Glean + HubSpot connector to instantly surface relevant contacts, deals, companies, and tickets—unlocking faster resolutions and new opportunities.
+-   How to set up the Glean + HubSpot connector to instantly surface relevant contacts, deals, companies, and tickets-unlocking faster resolutions and new opportunities.
 
 ![How HubSpot Works Smarter with Glean](https://cdn.prod.website-files.com/613513981b0efaf850830620/688b890c1d17b693324d6fb0_Hubspot_TN.webp)
 

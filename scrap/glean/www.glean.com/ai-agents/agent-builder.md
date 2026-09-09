@@ -91,7 +91,7 @@ AI agent builder · Security compliance
 
 ## Safely connect agents to company knowledge.
 
-Connect agents directly to live company data, enforce permissions automatically, and choose the right LLM for each use case — all while keeping your information up-to-date and protected.
+Connect agents directly to live company data, enforce permissions automatically, and choose the right LLM for each use case - all while keeping your information up-to-date and protected.
 
 ![Product screenshot](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6a8e86e36e73b8e5db48c89b_Agent%20Builder%20Test%20Run%20Desktop.png)
 
@@ -120,7 +120,7 @@ Provide plain-language instructions for your workflow or autonomous agent, and G
 
 Connect
 
-Securely link agents to enterprise data sources, systems, and third-party APIs — all with permissions intact.
+Securely link agents to enterprise data sources, systems, and third-party APIs - all with permissions intact.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6a8e8dac6e73b8e5db4f30c2_Agent%20Builder%20Accordion%20Connect%20Sources.png)
 

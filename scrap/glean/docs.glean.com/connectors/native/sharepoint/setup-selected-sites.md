@@ -17,7 +17,7 @@ Before you begin the selected-sites setup, contact your Glean Deployment Enginee
 
 ## Sites.Selected compared to Sites.FullControl.All[​](#sitesselected-compared-to-sitesfullcontrolall "Direct link to Sites.Selected compared to Sites.FullControl.All")
 
-Before choosing `Sites.Selected`, consider that Glean respects the permissions set in your source applications — users only see content in Glean that they can access in SharePoint.
+Before choosing `Sites.Selected`, consider that Glean respects the permissions set in your source applications - users only see content in Glean that they can access in SharePoint.
 
 Glean's [Sensitive findings](/administration/protect/sensitive-findings/about) dashboard helps you manage and protect sensitive data across all connected applications. Use Sensitive findings to detect broadly shared, externally exposed, or overshared sensitive data and maintain compliance with data protection regulations.
 
@@ -26,7 +26,7 @@ The key difference between the two options: `Sites.FullControl.All` provides bro
 ### Sites.FullControl.All[​](#sitesfullcontrolall "Direct link to Sites.FullControl.All")
 
 -   Grants full control over all SharePoint sites in the tenant with no need to manually add sites.
--   Requires one-time setup — the admin grants permissions once, and Glean includes new sites automatically.
+-   Requires one-time setup - the admin grants permissions once, and Glean includes new sites automatically.
 -   Collects activity data across all sites to improve search ranking and personalization.
 -   Supports webhook updates, so Glean refreshes content and permissions hourly.
 -   Allows admins to use greenlists and redlists to control which sites Glean crawls.
@@ -35,8 +35,8 @@ The key difference between the two options: `Sites.FullControl.All` provides bro
 ### Sites.Selected[​](#sitesselected "Direct link to Sites.Selected")
 
 -   Limits access to specific SharePoint sites that the admin explicitly grants.
--   Requires manual configuration for each site through PowerShell — the admin must notify Glean of any changes.
--   Does not automatically include new sites — admins must update the list and inform Glean for each addition.
+-   Requires manual configuration for each site through PowerShell - the admin must notify Glean of any changes.
+-   Does not automatically include new sites - admins must update the list and inform Glean for each addition.
 -   Prevents Glean from collecting activity data (document views, modifications, shares), which degrades search ranking and personalization.
 -   Increases management overhead and the risk of errors or mismatches.
 -   Has led some customers to report user confusion and a degraded search experience due to missing content.

@@ -198,19 +198,19 @@ Glean
 
 Based on the search results, here's what I found for last week's SSAT alerts (week of 4/28–5/4, covered by Alex Chen):
 
--   **Maxium Corp** — Google Drive indexed docs spiked steeply, with a corresponding spike in incidence in top 10 results. Root cause follow-up was linked in the ssat-alerts thread.
--   **Ironbridge Health and Provo Systems** — Both dropped for a day but recovered on their own. The note says they'll look into it further if it persists.
+-   **Maxium Corp** - Google Drive indexed docs spiked steeply, with a corresponding spike in incidence in top 10 results. Root cause follow-up was linked in the ssat-alerts thread.
+-   **Ironbridge Health and Provo Systems** - Both dropped for a day but recovered on their own. The note says they'll look into it further if it persists.
 
 This is from a running on-call/search quality doc on Drive. Want me to pull up more detail on any of these, like the linked Slack threads?
 
 Off-the-shelf MCP
 
-The #ssat-alerts channel had alerts most days last week. The April 29th post had 13 replies — let me dig into that thread and the others to find which specific deployments were flagged. Each alert has a CSV file with the deployment list. Let me try to download those to get the actual names. The CSV content isn't loading directly. Let me try to fetch the files and also search for any direct mentions of deployment names in the channel. The CSV content isn't accessible directly. Let me look at the Maxium Corp thread that was referenced, and also try to find other customer/deployment mentions. Based on the threads I've read, here's what I found for last week (Apr 28–May 2):
+The #ssat-alerts channel had alerts most days last week. The April 29th post had 13 replies - let me dig into that thread and the others to find which specific deployments were flagged. Each alert has a CSV file with the deployment list. Let me try to download those to get the actual names. The CSV content isn't loading directly. Let me try to fetch the files and also search for any direct mentions of deployment names in the channel. The CSV content isn't accessible directly. Let me look at the Maxium Corp thread that was referenced, and also try to find other customer/deployment mentions. Based on the threads I've read, here's what I found for last week (Apr 28–May 2):
 
 -   **Maxium Corp prod** was the deployment flagged on SSAT alerts, appearing across all 5 daily alert CSVs from the Acme bot in #ssat-alerts. The alert ran for multiple consecutive days, which is what prompted the escalation.
--   The discussion in the thread zeroed in on the cause: a spike in indexed Google Drive documents causing Google Drive results to over-represent, hurting search quality. Jordan Park investigated and cross-posted to #internal-maxium-corp, where Marcus Reyes confirmed that additional Google Drive support had been recently enabled for the Maxium Corp deployment — this expanded what was being crawled and shifted the results mix.
+-   The discussion in the thread zeroed in on the cause: a spike in indexed Google Drive documents causing Google Drive results to over-represent, hurting search quality. Jordan Park investigated and cross-posted to #internal-maxium-corp, where Marcus Reyes confirmed that additional Google Drive support had been recently enabled for the Maxium Corp deployment - this expanded what was being crawled and shifted the results mix.
 
-One note: the May 1 CSV was noticeably larger (~446 bytes vs ~208 bytes for the other days), so there may have been additional deployments flagged that day specifically, but those names aren't surfaced in the Slack discussion — they'd be in the CSV attached to this message.
+One note: the May 1 CSV was noticeably larger (~446 bytes vs ~208 bytes for the other days), so there may have been additional deployments flagged that day specifically, but those names aren't surfaced in the Slack discussion - they'd be in the CSV attached to this message.
 
 *This response was slightly altered and pseudonyms were used to protect the names of customers and sensitive data.*
 

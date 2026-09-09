@@ -2,7 +2,7 @@
 url: "https://www.glean.com/work-ai-institute/reports/work-ai-index"
 canonical: "https://www.glean.com/work-ai-institute/reports/work-ai-index"
 title: "Work AI Index 2026"
-description: "The Work AI Index 2026 uncovers the hidden human labor of AI at work — botsitting and botshitting — and how leading organizations turn widespread AI use into real performance gains."
+description: "The Work AI Index 2026 uncovers the hidden human labor of AI at work - botsitting and botshitting - and how leading organizations turn widespread AI use into real performance gains."
 fetched_at: "2026-09-01T13:25:38.047Z"
 ---
 Botsitting, Botshitting & the Hidden Human Labor of AI at Work
@@ -117,9 +117,9 @@ AI has arrived in the workplace. The organizational impact has not.
   
 So where are the gains going?  
   
-They’re being swallowed by a new, largely invisible form of labor. We call it ***botsitting***: the work required to make AI usable, including feeding it missing context, checking its outputs, debugging its mistakes, rerunning prompts, and cleaning up the confident-but-wrong answers AI leaves behind. Workers now burn an average of 6.4 hours a week *botsitting* — most of a full working day, every week.  
+They’re being swallowed by a new, largely invisible form of labor. We call it ***botsitting***: the work required to make AI usable, including feeding it missing context, checking its outputs, debugging its mistakes, rerunning prompts, and cleaning up the confident-but-wrong answers AI leaves behind. Workers now burn an average of 6.4 hours a week *botsitting* - most of a full working day, every week.  
   
-When that labor is untracked, unbudgeted, and unrewarded, workers start cutting corners. They stop checking outputs and deliver work they can’t fully explain or defend. That’s when *botsitting* turns into something more dangerous: ***botshitting*** — shipping AI-generated work that workers haven’t reviewed, don’t fully understand, or couldn’t defend if asked. Today, 69% of AI users admit to *botshitting* at work.  
+When that labor is untracked, unbudgeted, and unrewarded, workers start cutting corners. They stop checking outputs and deliver work they can’t fully explain or defend. That’s when *botsitting* turns into something more dangerous: ***botshitting*** - shipping AI-generated work that workers haven’t reviewed, don’t fully understand, or couldn’t defend if asked. Today, 69% of AI users admit to *botshitting* at work.  
   
 The organizations pulling ahead aren’t simply using more AI. They’re building what we call the human infrastructure of AI. And they’re doing it at three levels.
 
@@ -129,7 +129,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 At the individual level
 
-High AI achievers (people who report both productivity and quality gains from using AI) don’t just prompt and pray. They use their judgment. They spend more of their time botsitting (40% vs. 33% for low AI achievers) and are 18% more likely to deliberately refrain from using AI on certain tasks. But they’re also more likely to bend or break the rules to get value from it: 54% use unapproved tools or approved tools in noncompliant ways, and 36% hide how much AI is helping them — often because they’re working around an official system that is too slow, too narrow, or too disconnected from how the work actually gets done.
+High AI achievers (people who report both productivity and quality gains from using AI) don’t just prompt and pray. They use their judgment. They spend more of their time botsitting (40% vs. 33% for low AI achievers) and are 18% more likely to deliberately refrain from using AI on certain tasks. But they’re also more likely to bend or break the rules to get value from it: 54% use unapproved tools or approved tools in noncompliant ways, and 36% hide how much AI is helping them - often because they’re working around an official system that is too slow, too narrow, or too disconnected from how the work actually gets done.
 
 Team
 
@@ -137,7 +137,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 **At the team level**
 
-High-achieving AI teams treat AI as a teammate rather than a tool (75% of high AI achievers trust AI as a teammate vs. 32% for low AI achievers). 64% of high AI achievers say AI is easier to collaborate with than their human colleagues and 74% say AI helps more with daily work than their manager does. Additionally, 44% say it is more fair than their boss — a number that climbs when managers have too many direct reports and too little time for any of them. This, however, does not mean human managers are becoming obsolete. Managers who are high AI achievers are offloading 32% more of the coordination work to AI, reclaiming time for coaching, mentoring, and helping their people build new AI skills.
+High-achieving AI teams treat AI as a teammate rather than a tool (75% of high AI achievers trust AI as a teammate vs. 32% for low AI achievers). 64% of high AI achievers say AI is easier to collaborate with than their human colleagues and 74% say AI helps more with daily work than their manager does. Additionally, 44% say it is more fair than their boss - a number that climbs when managers have too many direct reports and too little time for any of them. This, however, does not mean human managers are becoming obsolete. Managers who are high AI achievers are offloading 32% more of the coordination work to AI, reclaiming time for coaching, mentoring, and helping their people build new AI skills.
 
 Organization
 
@@ -147,7 +147,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Leading AI organizations resist AI addition sickness: the reflex to solve every problem by buying more AI, adding more tools, or pushing people to use AI whether or not it helps. They start with the work, selecting tools and platforms that fit the job instead of letting vendor contracts dictate their AI strategy. And they understand that giving AI access to data is not the same as giving it context. More than half (53%) of workers say critical information they need to do their jobs is not accessible through their AI systems. By contrast, workers in “context-rich” AI organizations are 64% less likely to feel worn out by AI, 52% less likely to ship work they can’t explain, spend 9% less of their AI time botsitting, and 31% less likely to botshit.
 
-There’s plenty we still don’t know about how AI will transform work, but this much is clear: Organizations must build the human infrastructure (not just the technology infrastructure) that makes AI worth using, or they’ll keep paying the bill — in botsitting, in botshitting, and in the exodus of people who got fed up cleaning up after the bots.
+There’s plenty we still don’t know about how AI will transform work, but this much is clear: Organizations must build the human infrastructure (not just the technology infrastructure) that makes AI worth using, or they’ll keep paying the bill - in botsitting, in botshitting, and in the exodus of people who got fed up cleaning up after the bots.
 
 SECTION 02
 
@@ -155,7 +155,7 @@ SECTION 02
 
 Robin
 
-It’s 11 p.m., and Robin, a junior software engineer, pastes a thousand lines of AI-generated code into a pull request and goes to bed. By morning, the build has broken. A senior engineer, already behind on her own deadlines, spends half the morning untangling code that no one on the team can explain — including Robin.
+It’s 11 p.m., and Robin, a junior software engineer, pastes a thousand lines of AI-generated code into a pull request and goes to bed. By morning, the build has broken. A senior engineer, already behind on her own deadlines, spends half the morning untangling code that no one on the team can explain - including Robin.
 
 Robin is one of the **41%** of workers who now ship AI outputs they can’t explain.
 
@@ -167,13 +167,13 @@ Evelyn is one of the **60%** of US workers who rerun the same prompt through mul
 
 Michael
 
-It’s 4:47 p.m. on a Friday. Michael, a financial analyst, uploads last quarter’s numbers to an AI assistant, skims the summary, and fires it off to his CFO. At Monday’s quarterly business review, three of the figures don’t match the spreadsheet they came from. The discrepancy derails the discussion, and Michael — who never opened the source file — blames the tool.
+It’s 4:47 p.m. on a Friday. Michael, a financial analyst, uploads last quarter’s numbers to an AI assistant, skims the summary, and fires it off to his CFO. At Monday’s quarterly business review, three of the figures don’t match the spreadsheet they came from. The discrepancy derails the discussion, and Michael - who never opened the source file - blames the tool.
 
 Michael is one of the **28%** of workers who now blame their own mistakes on AI.
 
 This is what AI at work looks like in 2026.  
 ‍  
-The Work AI Index from the [Work AI Institute](/work-ai-institute) is an effort to understand the hidden human labor AI has added to the workday. We surveyed 6,000 full-time digital workers1 across the United States, the United Kingdom, and Australia, spoke with dozens of AI leaders, and analyzed anonymized, aggregated workplace AI interactions from the Glean Work AI platform. What we found is a workforce that has embraced AI — along with a thick, mostly invisible layer of human labor holding the whole thing together.
+The Work AI Index from the [Work AI Institute](/work-ai-institute) is an effort to understand the hidden human labor AI has added to the workday. We surveyed 6,000 full-time digital workers1 across the United States, the United Kingdom, and Australia, spoke with dozens of AI leaders, and analyzed anonymized, aggregated workplace AI interactions from the Glean Work AI platform. What we found is a workforce that has embraced AI - along with a thick, mostly invisible layer of human labor holding the whole thing together.
 
 ### AI is everywhere. The gains are not.
 
@@ -191,11 +191,11 @@ The Work AI Index from the [Work AI Institute](/work-ai-institute) is an effort 
 
 **Workers are handing over bigger parts of their jobs to AI and want to hand over even more.**
 
-AI now automates 27% of their work output. Within a year, they expect that number to climb to 35% — a 30% jump in twelve months. And they want it higher still: 57% say they want AI to automate *more* of their job than they think it actually will.
+AI now automates 27% of their work output. Within a year, they expect that number to climb to 35% - a 30% jump in twelve months. And they want it higher still: 57% say they want AI to automate *more* of their job than they think it actually will.
 
 **Workers are handing over bigger parts of their jobs to AI and want to hand over even more.**
 
-AI now automates 27% of their work output. Within a year, they expect that number to climb to 35% — a 30% jump in twelve months. And they want it higher still: 57% say they want AI to automate *more* of their job than they think it actually will.
+AI now automates 27% of their work output. Within a year, they expect that number to climb to 35% - a 30% jump in twelve months. And they want it higher still: 57% say they want AI to automate *more* of their job than they think it actually will.
 
 1
 
@@ -229,13 +229,13 @@ say their organization is performing significantly better because of it
 
 **So, where are those 11 hours going?**  
   
-As it turns out, not to the higher-level work leaders promised AI would free people up to do. The hours are going into the work nobody planned for — the human labor of making AI itself usable. We call this work *botsitting*2.
+As it turns out, not to the higher-level work leaders promised AI would free people up to do. The hours are going into the work nobody planned for - the human labor of making AI itself usable. We call this work *botsitting*2.
 
 DEFINITION
 
 Botsitting (n.)
 
-The largely unrecognized, unbudgeted, and untracked labor of making AI usable — feeding it context, supervising its output, debugging its mistakes, and cleaning up after it.
+The largely unrecognized, unbudgeted, and untracked labor of making AI usable - feeding it context, supervising its output, debugging its mistakes, and cleaning up after it.
 
 ### Methodology and caveats
 
@@ -245,7 +245,7 @@ Our sample skews higher on AI adoption, seniority, and digitally intensive secto
 ‍  
 The survey data are self-reported, which means they are subject to social desirability bias and recall bias. We screened out inattentive and “speeder” respondents using standard attention checks. Where possible, we triangulated survey findings with interviews, case studies, third-party research, and anonymous, aggregated telemetry data from the Glean Work AI platform.  
 ‍  
-Despite these caveats, the findings point to a shift in how work actually gets done, and to a widening gap between what leaders think AI is accomplishing and what their employees are doing to make it work. Most “state of AI” analyses (and most AI strategies inside organizations) treat AI as if it lives apart from the messy reality of work. They focus on model performance, speed, and which tasks and jobs are theoretically at risk. They pay far less attention to what happens when the technology meets real workflows — what workers actually do with it, and how organizations deploy, manage, or mismanage it. The result is a [knowing–doing gap](https://www.gsb.stanford.edu/insights/knowing-doing-gap) between what leaders believe AI is achieving and what is happening on the ground.  
+Despite these caveats, the findings point to a shift in how work actually gets done, and to a widening gap between what leaders think AI is accomplishing and what their employees are doing to make it work. Most “state of AI” analyses (and most AI strategies inside organizations) treat AI as if it lives apart from the messy reality of work. They focus on model performance, speed, and which tasks and jobs are theoretically at risk. They pay far less attention to what happens when the technology meets real workflows - what workers actually do with it, and how organizations deploy, manage, or mismanage it. The result is a [knowing–doing gap](https://www.gsb.stanford.edu/insights/knowing-doing-gap) between what leaders believe AI is achieving and what is happening on the ground.  
   
 Over time, we think this gap (not raw model capability) will drive whether AI delivers real results in organizations.  
   
@@ -259,7 +259,7 @@ For every hour a worker spends getting useful output from AI, they spend roughly
 
 Where AI time actually goes
 
-Workers spend 6.4 hours a week botsitting — most of a full workday, every week. That's more time than they spend actually using AI to do the work.
+Workers spend 6.4 hours a week botsitting - most of a full workday, every week. That's more time than they spend actually using AI to do the work.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6a140698b4c33bf17f891e07_top-layer.webp)
 
@@ -341,7 +341,7 @@ Feeding AI context eats the most time, while debugging is the most exhausting
 
 2.3 hrs/week · 14% of total AI time4 · 1.2× exhaustion multiplier5
 
-Before AI can produce anything useful, workers spend time loading the context window with information the AI should already have access to. In many cases, the more they load, the worse the output gets—a phenomenon researchers call "context rot." For every 10% more time workers spend feeding AI context, they are 25% more likely to report feeling worn out by it.
+Before AI can produce anything useful, workers spend time loading the context window with information the AI should already have access to. In many cases, the more they load, the worse the output gets-a phenomenon researchers call "context rot." For every 10% more time workers spend feeding AI context, they are 25% more likely to report feeling worn out by it.
 
 Feeding the AI context
 
@@ -417,13 +417,13 @@ Presented  by
 
 Powered by
 
-But volume isn’t the biggest culprit. *Tool sprawl* — the sheer number of AI tools workers juggle in a given week — is. Very few daily AI users rely on just one AI tool. For example, only 0.5% of Claude users use Claude alone. The average Claude user runs four other AI tools alongside it. 77% of AI users bounce between multiple tools every week, and 33% bounce between four or more. Every switch costs context, focus, and time. And every switch chips away at the sanity of the worker doing all the bouncing.
+But volume isn’t the biggest culprit. *Tool sprawl* - the sheer number of AI tools workers juggle in a given week - is. Very few daily AI users rely on just one AI tool. For example, only 0.5% of Claude users use Claude alone. The average Claude user runs four other AI tools alongside it. 77% of AI users bounce between multiple tools every week, and 33% bounce between four or more. Every switch costs context, focus, and time. And every switch chips away at the sanity of the worker doing all the bouncing.
 
 35%
 
 Workers who use multiple AI tools are 35% more likely to report frequent botsitting.
 
-Standards like APIs and the Model Context Protocol (MCP) were supposed to rein in tool sprawl by letting tools talk to each other, share data, and curb all that toggling. They help with connectivity, but they don’t solve the bigger gap: context. For AI tools, context means understanding the inner workings of an organization — which source is authoritative, which version is current, how one workflow depends on another, what a baffling internal acronym means in this particular company, and which unwritten rules keep work moving.  
+Standards like APIs and the Model Context Protocol (MCP) were supposed to rein in tool sprawl by letting tools talk to each other, share data, and curb all that toggling. They help with connectivity, but they don’t solve the bigger gap: context. For AI tools, context means understanding the inner workings of an organization - which source is authoritative, which version is current, how one workflow depends on another, what a baffling internal acronym means in this particular company, and which unwritten rules keep work moving.  
 ‍  
 Take Michael, the financial analyst from the opening. A well-built integration or MCP could pull every Q3 number from his company’s systems. But on its own, it still couldn’t tell the model which version was final, whether Q3 meant 2025 or 2026, or that finance had restated the numbers two weeks earlier.  
 ‍  
@@ -431,7 +431,7 @@ So the worker becomes the integration layer. They explain the project to one too
 
 60%
 
-60% of workers rerun the same prompt across multiple tools because the first output wasn’t good enough — too generic, too disconnected, or just plain wrong.
+60% of workers rerun the same prompt across multiple tools because the first output wasn’t good enough - too generic, too disconnected, or just plain wrong.
 
 All of it adds up to a steep cognitive bill. We call it the ***AI toggle tax***. Pay that tax long enough, and something has to give.
 
@@ -439,7 +439,7 @@ DEFINITION
 
 AI toggle tax (n.)
 
-The cumulative cost — in time, attention, and sanity — of switching between disconnected AI tools, apps, and systems, as the worker carries context, data, and intent from one tool to the next.
+The cumulative cost - in time, attention, and sanity - of switching between disconnected AI tools, apps, and systems, as the worker carries context, data, and intent from one tool to the next.
 
 SECTION 05
 
@@ -621,9 +621,9 @@ Botsitting and botshitting feed each other and form a vicious cycle that degrade
 
 1
 
-**The organization deploys AI,** not always because it solves a real problem, but because deploying it signals “transformation” to stakeholders — something impressive to point at when the board asks what the company is doing with AI.
+**The organization deploys AI,** not always because it solves a real problem, but because deploying it signals “transformation” to stakeholders - something impressive to point at when the board asks what the company is doing with AI.
 
-**The organization deploys AI,** not always because it solves a real problem, but because deploying it signals “transformation” to stakeholders — something impressive to point at when the board asks what the company is doing with AI.
+**The organization deploys AI,** not always because it solves a real problem, but because deploying it signals “transformation” to stakeholders - something impressive to point at when the board asks what the company is doing with AI.
 
 2
 
@@ -785,7 +785,7 @@ Women in professional settings have [long paid a steeper price than men for visi
 
 ### The “smarter” the tool, the sloppier the worker
 
-It’s tempting to assume that better AI tools lead to less botshitting. Our data points to the opposite. Among ChatGPT, Claude, Gemini, and Microsoft Copilot, the tools whose workers report the biggest productivity gains — ChatGPT (67%) and Claude (59%) — are also the tools whose users report the most botshitting: 71% and 92% admit to it at least monthly.
+It’s tempting to assume that better AI tools lead to less botshitting. Our data points to the opposite. Among ChatGPT, Claude, Gemini, and Microsoft Copilot, the tools whose workers report the biggest productivity gains - ChatGPT (67%) and Claude (59%) - are also the tools whose users report the most botshitting: 71% and 92% admit to it at least monthly.
 
 More capable models aren’t an antidote to botshitting. They can make it worse.
 
@@ -805,21 +805,21 @@ When a system performs well, people stop watching it closely. Researchers call t
 
 **Trust through helpfulness.**
 
-Workers don’t just trust AI when it’s right. They trust it when it agrees with them. [Research on sycophancy](https://arxiv.org/abs/2310.13548) shows that LLMs often serve up the answer the user seems to want. And users rate those agreeable answers as more correct, even when they’re wrong. This taps into a well-documented [human bias](https://pmc.ncbi.nlm.nih.gov/articles/PMC9561316/) — we tend to trust people more when they share our views than when they challenge them. Tools optimized to be “helpful” can amplify the bias rather than correct for it.
+Workers don’t just trust AI when it’s right. They trust it when it agrees with them. [Research on sycophancy](https://arxiv.org/abs/2310.13548) shows that LLMs often serve up the answer the user seems to want. And users rate those agreeable answers as more correct, even when they’re wrong. This taps into a well-documented [human bias](https://pmc.ncbi.nlm.nih.gov/articles/PMC9561316/) - we tend to trust people more when they share our views than when they challenge them. Tools optimized to be “helpful” can amplify the bias rather than correct for it.
 
 **Trust through helpfulness.**
 
-Workers don’t just trust AI when it’s right. They trust it when it agrees with them. [Research on sycophancy](https://arxiv.org/abs/2310.13548) shows that LLMs often serve up the answer the user seems to want. And users rate those agreeable answers as more correct, even when they’re wrong. This taps into a well-documented [human bias](https://pmc.ncbi.nlm.nih.gov/articles/PMC9561316/) — we tend to trust people more when they share our views than when they challenge them. Tools optimized to be “helpful” can amplify the bias rather than correct for it.
+Workers don’t just trust AI when it’s right. They trust it when it agrees with them. [Research on sycophancy](https://arxiv.org/abs/2310.13548) shows that LLMs often serve up the answer the user seems to want. And users rate those agreeable answers as more correct, even when they’re wrong. This taps into a well-documented [human bias](https://pmc.ncbi.nlm.nih.gov/articles/PMC9561316/) - we tend to trust people more when they share our views than when they challenge them. Tools optimized to be “helpful” can amplify the bias rather than correct for it.
 
 1
 
 **Trust through humanness.**
 
-Workers who say “please,” apologize to the tool, or soften their tone are more likely to botshit. The more the tool feels human, the more workers [trust](https://doi.org/10.1037/xap0000092) it like one — and the more they forget it can sound warm, helpful, and dead wrong at once.
+Workers who say “please,” apologize to the tool, or soften their tone are more likely to botshit. The more the tool feels human, the more workers [trust](https://doi.org/10.1037/xap0000092) it like one - and the more they forget it can sound warm, helpful, and dead wrong at once.
 
 **Trust through humanness.**
 
-Workers who say “please,” apologize to the tool, or soften their tone are more likely to botshit. The more the tool feels human, the more workers [trust](https://doi.org/10.1037/xap0000092) it like one — and the more they forget it can sound warm, helpful, and dead wrong at once.
+Workers who say “please,” apologize to the tool, or soften their tone are more likely to botshit. The more the tool feels human, the more workers [trust](https://doi.org/10.1037/xap0000092) it like one - and the more they forget it can sound warm, helpful, and dead wrong at once.
 
 SECTION 06
 
@@ -843,7 +843,7 @@ of workers say AI makes them more productive
 
 of workers say AI lets them do things they couldn’t do before
 
-But only 13% of employees say AI has significantly improved their organization’s performance and outcomes. A big driver is [what researchers call coordination neglect](https://www.sciencedirect.com/science/article/abs/pii/S0191308500220054) — our chronic tendency to underestimate the work and effort required to coordinate work across people, teams, tools, and systems.  
+But only 13% of employees say AI has significantly improved their organization’s performance and outcomes. A big driver is [what researchers call coordination neglect](https://www.sciencedirect.com/science/article/abs/pii/S0191308500220054) - our chronic tendency to underestimate the work and effort required to coordinate work across people, teams, tools, and systems.  
   
 AI can make coordination neglect worse because it churns out work that looks correct and finished before it actually is. In 2025, lawyers representing plaintiffs in a [Walmart lawsuit](https://www.reuters.com/legal/government/judge-fines-lawyers-walmart-lawsuit-over-fake-ai-generated-cases-2025-02-25/) filed a motion citing eight fabricated cases. One attorney had used an AI tool that hallucinated the citations. The rest of the team rubber-stamped it without catching the problem. Everyone presumably assumed someone else had checked the work, but nobody had. That’s coordination neglect.
 
@@ -857,9 +857,9 @@ of workers have corrected or redone AI-assisted work in the past month
 
 do it at least weekly
 
-As AI moves into higher-stakes work, each botshitting lapse gets more expensive. Heavy users encounter more botshit, and they spend more time mopping up each incident. They aren’t just drafting emails and memos anymore. They’re feeding AI into financial models, strategic analyses, and cross-functional deliverables. A single bad assumption can infect a dozen decisions before anyone catches it — if anyone catches it.
+As AI moves into higher-stakes work, each botshitting lapse gets more expensive. Heavy users encounter more botshit, and they spend more time mopping up each incident. They aren’t just drafting emails and memos anymore. They’re feeding AI into financial models, strategic analyses, and cross-functional deliverables. A single bad assumption can infect a dozen decisions before anyone catches it - if anyone catches it.
 
-Heavy AI users do the most cleanup — and each cleanup incident takes longer
+Heavy AI users do the most cleanup - and each cleanup incident takes longer
 
 AI usage level (share of work time involving AI)
 
@@ -921,7 +921,7 @@ Powered by
 
 > AI makes oversight more important, and strips away the cues that used to trigger it.
 
-Knowledge work has long relied on a crude but handy heuristic: bad work usually looks bad. The messy draft, the awkward sentence, the typo in the first paragraph — these act as little speed bumps for the brain. They make us tap the brakes and ask, “Wait, what else might be wrong here?”  
+Knowledge work has long relied on a crude but handy heuristic: bad work usually looks bad. The messy draft, the awkward sentence, the typo in the first paragraph - these act as little speed bumps for the brain. They make us tap the brakes and ask, “Wait, what else might be wrong here?”  
   
 AI erases many of those cues. Researchers call them [disfluency cues:](https://psycnet.apa.org/doiLanding?doi=10.1037%2F0096-3445.136.4.569) the small frictions in a piece of work that prompt a reader to slow down. When everything AI produces looks polished, the appearance of the work gets decoupled from the substance. The cheap heuristic knowledge workers have leaned on for decades is gone, and most organizations haven’t replaced it with anything more systematic, such as clear quality bars, structured reviews, and explicit standards for what “good” looks like.  
   
@@ -1087,7 +1087,7 @@ Powered by
 
 Many workers are trapped between two AI threats at once: the threat of being replaced by AI, and the threat of looking obsolete if they do not use enough of it. And who can blame them? Executives are [declaring](https://x.com/tobi/status/1909251946235437514) that “reflexive AI usage is now a baseline expectation.” They’re baking AI fluency into performance reviews, making it a condition for new headcount, stack-ranking employees by token counts, and showing laggards the door. In that climate, standing still doesn’t protect your expertise. It paints a target on your back.  
   
-So workers double down. The ones most worried AI will eliminate their role are also the ones using it most — and automating more of their own work in the process. Not necessarily because the work is getting better, but because visible AI usage has become a badge of competence. If you suspect you’re on the chopping block, the rational move is to flaunt fluency in the technology that’s coming for your job.
+So workers double down. The ones most worried AI will eliminate their role are also the ones using it most - and automating more of their own work in the process. Not necessarily because the work is getting better, but because visible AI usage has become a badge of competence. If you suspect you’re on the chopping block, the rational move is to flaunt fluency in the technology that’s coming for your job.
 
 Workers most afraid of being replaced by AI are also the ones who want more of it
 
@@ -1247,7 +1247,7 @@ SECTION 07
 
 ## How to Break the Botsitting-Botshitting Cycle
 
-Organizations often respond to failed or lackluster “AI transformations” the same way they respond to most organizational problems: through addition. More tools, more licenses, more tokens, more mandates to use the tools. Stanford Professor Emeritus and Work AI Institute Founding Member Bob Sutton calls this [addition sickness](https://www.gsb.stanford.edu/insights/workplace-friction-how-make-right-things-easier-wrong-things-harder) — the reflex to solve problems by piling more on top instead of subtracting what’s already there. AI has spawned a particularly expensive version of it in the form of tokenmaxxing: the belief that more AI tokens signal more productivity. Until early 2026, Meta employees competed on an [internal leaderboard](https://fortune.com/2026/04/09/meta-killed-employee-ai-token-dashboard/) that ranked them by token usage. The “winner” averaged 281 billion tokens per month, at a compute cost of hundreds of thousands of dollars. Whether any of those tokens produced anything useful was, as far as we can tell, beside the point.  
+Organizations often respond to failed or lackluster “AI transformations” the same way they respond to most organizational problems: through addition. More tools, more licenses, more tokens, more mandates to use the tools. Stanford Professor Emeritus and Work AI Institute Founding Member Bob Sutton calls this [addition sickness](https://www.gsb.stanford.edu/insights/workplace-friction-how-make-right-things-easier-wrong-things-harder) - the reflex to solve problems by piling more on top instead of subtracting what’s already there. AI has spawned a particularly expensive version of it in the form of tokenmaxxing: the belief that more AI tokens signal more productivity. Until early 2026, Meta employees competed on an [internal leaderboard](https://fortune.com/2026/04/09/meta-killed-employee-ai-token-dashboard/) that ranked them by token usage. The “winner” averaged 281 billion tokens per month, at a compute cost of hundreds of thousands of dollars. Whether any of those tokens produced anything useful was, as far as we can tell, beside the point.  
   
 The companies pulling ahead are doing something different. They aren’t spending a greater share of their AI time using AI. They’re spending a greater share on the work around it: setting context, defining what “good” looks like, building judgment, and deciding what should never have been handed to a model in the first place. At organizations reporting no impact, negative impact, or impact they can’t yet measure, workers spend a greater share (81% more) of their time using AI to produce work than workers at transformative companies do. People in transformative organizations spend that time elsewhere, including on the productive forms of botsitting.  
   
@@ -1266,7 +1266,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Most workers point AI straight at the heart of the job. Developers use it to write the code. Analysts use it to crunch the numbers. Communications professionals use it to draft the content. The average worker spends 41% of their AI time using AI to perform their core job tasks. Low AI achievers spend roughly half (48%), whereas high AI achievers spend closer to a third (38%).  
   
-Take a high-performing analyst. She uses AI to clean messy data, summarize interview notes, and poke holes in her assumptions. But the parts of her job that require her own expert judgment: which model to build, which variables to choose, what the results actually mean — she still does herself. Wharton professor Ethan Mollick [calls](https://www.oneusefulthing.org/p/centaurs-and-cyborgs-on-the-jagged) workers who divide labor this way Centaurs. They draw a clear line between humans and machines and assign tasks based on what each does best. Mollick describes his own work the same way: *“I will decide on what statistical techniques to do, but then let the AI handle producing graphs.”*
+Take a high-performing analyst. She uses AI to clean messy data, summarize interview notes, and poke holes in her assumptions. But the parts of her job that require her own expert judgment: which model to build, which variables to choose, what the results actually mean - she still does herself. Wharton professor Ethan Mollick [calls](https://www.oneusefulthing.org/p/centaurs-and-cyborgs-on-the-jagged) workers who divide labor this way Centaurs. They draw a clear line between humans and machines and assign tasks based on what each does best. Mollick describes his own work the same way: *“I will decide on what statistical techniques to do, but then let the AI handle producing graphs.”*
 
 High AI achievers spend a smaller share of their AI time on their primary core task than low AI achievers do
 
@@ -1370,11 +1370,11 @@ High AI achievers are 18% more likely to deliberately limit their reliance on AI
 
 **The pride is in the part that AI didn’t touch.**
 
-Your judgment, your taste, your experience — that’s what makes the work yours. The more of that you keep, the prouder you are of what gets shipped. High AI achievers are 4.4 times more likely to feel proud of their AI-assisted work than low AI achievers are. Because they’ve kept more of themselves in it.
+Your judgment, your taste, your experience - that’s what makes the work yours. The more of that you keep, the prouder you are of what gets shipped. High AI achievers are 4.4 times more likely to feel proud of their AI-assisted work than low AI achievers are. Because they’ve kept more of themselves in it.
 
 **The pride is in the part that AI didn’t touch.**
 
-Your judgment, your taste, your experience — that’s what makes the work yours. The more of that you keep, the prouder you are of what gets shipped. High AI achievers are 4.4 times more likely to feel proud of their AI-assisted work than low AI achievers are. Because they’ve kept more of themselves in it.
+Your judgment, your taste, your experience - that’s what makes the work yours. The more of that you keep, the prouder you are of what gets shipped. High AI achievers are 4.4 times more likely to feel proud of their AI-assisted work than low AI achievers are. Because they’ve kept more of themselves in it.
 
 2
 
@@ -1388,7 +1388,7 @@ The first is quality control. High AI achievers are far more likely to catch bot
   
 The second is learning. Most botsitting is grunt work, but some is productive. And that’s where high AI achievers do much of their learning. Every prompt is practice, and every bad output is feedback. Over enough cycles, the worker builds a working theory of what the tool can be trusted with, and what still needs a human at the wheel. They are more than twice as likely to rate AI itself as a valuable teacher (68% vs. 28%). They don’t wait for an org-wide training program. They learn from the tool itself in real time and on real work.
 
-High AI achievers learn from everything — but their biggest edge is treating AI itself as a teacher14
+High AI achievers learn from everything - but their biggest edge is treating AI itself as a teacher14
 
 Learning source
 
@@ -1480,7 +1480,7 @@ Presented  by
 
 Powered by
 
-This is why AI tool design matters more than most organizations realize. Workers who say their AI tools are easy to use are 110% more likely to rate AI itself as a valuable learning source (61% vs. 29%). A clunky tool eats the attention that would otherwise go to learning. People spend their time wrestling with the interface, troubleshooting the workflow, and figuring out why the agent stopped halfway. Organizations often treat AI usability as a nice-to-have. It isn’t. When the tool is also the teacher, a clunky UI isn’t just a UX problem. It’s a tax on learning — paid in attention, focus, frustration, and skills workers never get to build.
+This is why AI tool design matters more than most organizations realize. Workers who say their AI tools are easy to use are 110% more likely to rate AI itself as a valuable learning source (61% vs. 29%). A clunky tool eats the attention that would otherwise go to learning. People spend their time wrestling with the interface, troubleshooting the workflow, and figuring out why the agent stopped halfway. Organizations often treat AI usability as a nice-to-have. It isn’t. When the tool is also the teacher, a clunky UI isn’t just a UX problem. It’s a tax on learning - paid in attention, focus, frustration, and skills workers never get to build.
 
 3
 
@@ -1490,7 +1490,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 When AI gives a worker an hour back in time savings, what happens to that hour matters.  
   
-Low AI achievers don’t get much of a dividend to begin with. What they do get gets reabsorbed into more of the same work. High AI achievers spend theirs differently. They’re more likely to reinvest it into higher-quality work and building new and stronger AI skills — running agents, connecting tools through APIs, and debugging workflows when something breaks.  
+Low AI achievers don’t get much of a dividend to begin with. What they do get gets reabsorbed into more of the same work. High AI achievers spend theirs differently. They’re more likely to reinvest it into higher-quality work and building new and stronger AI skills - running agents, connecting tools through APIs, and debugging workflows when something breaks.  
   
 And, most importantly, they’ve learned when not to use AI at all.
 
@@ -1582,7 +1582,7 @@ Presented  by
 
 Powered by
 
-Knowing when to skip the tool is often the hardest skill to build. It takes restraint, and that kind of restraint is rarely taught in a formal L&D session. It’s earned the hard way — when a polished output falls apart downstream, when a shortcut creates more botshit cleanup than it saved, when the AI sounds confident and the worker doesn’t believe it. You don’t read about that in a training module. You collect the scars. And the next time the tool offers an easy answer, you pause.
+Knowing when to skip the tool is often the hardest skill to build. It takes restraint, and that kind of restraint is rarely taught in a formal L&D session. It’s earned the hard way - when a polished output falls apart downstream, when a shortcut creates more botshit cleanup than it saved, when the AI sounds confident and the worker doesn’t believe it. You don’t read about that in a training module. You collect the scars. And the next time the tool offers an easy answer, you pause.
 
 33%
 
@@ -1608,7 +1608,7 @@ hide how much AI helps them.
 
 Researchers call this [constructive deviance:](https://pmc.ncbi.nlm.nih.gov/articles/PMC9521626/) rule-breaking by people who believe the outcome matters more than the process. These workers often aren’t reckless. They’re committed to the organization’s goals. But when policy can’t keep up with how the work actually gets done, they work around it and choose the work.
 
-High AI achievers are more likely to break the rules — and more likely to hide it
+High AI achievers are more likely to break the rules - and more likely to hide it
 
 Behavior
 
@@ -1671,7 +1671,7 @@ Good leaders treat both kinds of workaround as feedback on their AI strategy. Th
 ### The team level:    
 How high-achieving AI teams15 manage AI
 
-For decades, the team has been a stable unit — a manager, a group of human coworkers, and the institutional scaffolding around them: org charts, performance reviews, compensation bands, hiring pipelines, succession plans. All of that scaffolding assumes teams are made of humans.  
+For decades, the team has been a stable unit - a manager, a group of human coworkers, and the institutional scaffolding around them: org charts, performance reviews, compensation bands, hiring pipelines, succession plans. All of that scaffolding assumes teams are made of humans.  
 ‍  
 That assumption is cracking. The team is becoming a hybrid unit, with humans plus a growing cast of AI assistants, copilots, agents, and digital twins. They attend meetings, draft deliverables, make recommendations, and hand work back to the humans who’ll be evaluated on it. Workers are no longer sure their human coworkers are the most useful members of the team.
 
@@ -1725,7 +1725,7 @@ They treat AI as a teammate, but keep accountability where it belongs.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-High AI achievers don’t just use AI differently. They relate to it differently. Less like software, more like a colleague — one that’s useful, fast, available at 2 a.m., and still willing to bluff when it doesn’t know the answer. High AI achievers are 2.3x more likely than low AI achievers to say they trust AI as a teammate.
+High AI achievers don’t just use AI differently. They relate to it differently. Less like software, more like a colleague - one that’s useful, fast, available at 2 a.m., and still willing to bluff when it doesn’t know the answer. High AI achievers are 2.3x more likely than low AI achievers to say they trust AI as a teammate.
 
 High AI achievers are more likely to treat AI as a teammate, not just a tool
 
@@ -1783,7 +1783,7 @@ Powered by
 
 High AI achievers are more than 2x more likely than low AI achievers to trust AI as a teammate.
 
-George Lakoff’s work on [categorization](https://www.bibliovault.org/BV.landing.epl?ISBN=9780226468044) shows that the labels we attach to things don’t just describe them — they shape how we behave toward them. Call AI a tool and the relationship turns transactional. You use it, it gives you something back and when it disappoints, you move on. But call it a *teammate* and the dynamics change. You assign it work, push back on the first draft, explain what fell short, and try again. Workers who think of AI as a tool are 26% more likely to give up after a poor output. Workers who view it as a teammate keep pushing — rerunning prompts, swapping models, adding context, and hashing the problem out with the AI.
+George Lakoff’s work on [categorization](https://www.bibliovault.org/BV.landing.epl?ISBN=9780226468044) shows that the labels we attach to things don’t just describe them - they shape how we behave toward them. Call AI a tool and the relationship turns transactional. You use it, it gives you something back and when it disappoints, you move on. But call it a *teammate* and the dynamics change. You assign it work, push back on the first draft, explain what fell short, and try again. Workers who think of AI as a tool are 26% more likely to give up after a poor output. Workers who view it as a teammate keep pushing - rerunning prompts, swapping models, adding context, and hashing the problem out with the AI.
 
 When AI underperforms, high AI achievers are less likely to give up and keep iterating
 
@@ -1863,9 +1863,9 @@ Powered by
 
 This may also help explain why 64% of high AI achievers say collaborating with AI is easier than collaborating with human colleagues. Not because AI is smarter, but because it is easier to work with. It’s always available. It doesn’t get defensive on the tenth revision of the same paragraph. And, as far as we know, it has never scheduled a meeting that could have been a three-line email.  
   
-But the teammate frame has limits. Earlier in this report we showed how humanizing AI can inflate trust and breed more botshitting. Some organizations are blowing past that limit altogether — putting agents on the org chart, assigning them roles, and counting them as headcount. That can go sideways quickly. In a recent randomized experiment, researchers at [Boston Consulting Group](https://hbr.org/2026/05/research-why-you-shouldnt-treat-ai-agents-like-employees) found that when AI was framed as an employee rather than a tool, workers felt less accountable for what it produced and reviewed its output less carefully.  
+But the teammate frame has limits. Earlier in this report we showed how humanizing AI can inflate trust and breed more botshitting. Some organizations are blowing past that limit altogether - putting agents on the org chart, assigning them roles, and counting them as headcount. That can go sideways quickly. In a recent randomized experiment, researchers at [Boston Consulting Group](https://hbr.org/2026/05/research-why-you-shouldnt-treat-ai-agents-like-employees) found that when AI was framed as an employee rather than a tool, workers felt less accountable for what it produced and reviewed its output less carefully.  
   
-The point of the teammate metaphor isn’t to make AI feel more human. It’s to give workers a working mental model for getting useful work out of it. Treat AI as a teammate, but keep the accountability where it belongs — with the human. And don’t put a bot on the org chart until you’ve built the guardrails that keep humans responsible for whatever it produces.
+The point of the teammate metaphor isn’t to make AI feel more human. It’s to give workers a working mental model for getting useful work out of it. Treat AI as a teammate, but keep the accountability where it belongs - with the human. And don’t put a bot on the org chart until you’ve built the guardrails that keep humans responsible for whatever it produces.
 
 2
 
@@ -1907,7 +1907,7 @@ Managers who are high AI achievers spend about the same share of their time on c
 
 74% of high AI achievers say AI helps them more with daily work than their manager does.
 
-That sounds like bad news for managers. We think it’s the opposite. The best managers don’t try to compete with AI on coordination work. They delegate the coordination work to AI, using AI to draft the status update, route the request, summarize the meeting. And they reclaim precious time for the work they ought to be spending more of their time doing — coaching, developing, and inspiring their people.
+That sounds like bad news for managers. We think it’s the opposite. The best managers don’t try to compete with AI on coordination work. They delegate the coordination work to AI, using AI to draft the status update, route the request, summarize the meeting. And they reclaim precious time for the work they ought to be spending more of their time doing - coaching, developing, and inspiring their people.
 
 Good managers turn AI into a growth opportunity, while others leave workers to figure it out alone
 
@@ -2080,7 +2080,7 @@ The reflex inside most organizations has been to push AI usage up: more tools, m
   
 Workers at organizations reporting no impact, negative impact, or no idea spend nearly half of their AI time (49%) directly inside AI tools, versus just over a quarter (27%) for workers at transformative organizations. The same pattern showed up among the high AI achievers we identified earlier, who cluster in these same transformative organizations.  
   
-They aren’t getting ahead by maxing out their tool time. They’re getting ahead on the work around the tool — setting the context, catching what the tool is too confident about, integrating the results into real work, and knowing when to leave AI out of it entirely.
+They aren’t getting ahead by maxing out their tool time. They’re getting ahead on the work around the tool - setting the context, catching what the tool is too confident about, integrating the results into real work, and knowing when to leave AI out of it entirely.
 
 Transformative organizations spend a lower share of their AI time inside AI tools, not more
 
@@ -2122,13 +2122,13 @@ They measure what matters, not what’s easiest to count.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-Too many organizations measure AI through vanity metrics: tokens consumed, lines of code generated, tool clicks, login rates, dashboards that glow reassuringly upward. We’ve spoken with leaders at major tech firms that [count](#) AI-generated lines of code in performance reviews. These metrics are easy to count. They’re also easy to game. When leaders measure AI activity, workers learn to produce AI activity — and, often, little else.  
+Too many organizations measure AI through vanity metrics: tokens consumed, lines of code generated, tool clicks, login rates, dashboards that glow reassuringly upward. We’ve spoken with leaders at major tech firms that [count](#) AI-generated lines of code in performance reviews. These metrics are easy to count. They’re also easy to game. When leaders measure AI activity, workers learn to produce AI activity - and, often, little else.  
   
 One engineer at a major tech company [described](#) doing exactly that: routinely asking AI questions whose answers were already sitting in the company’s documentation, just to inflate his token numbers:
 
 > “I am conscious of not wanting to be seen as ‘uses too little AI,’ and I’m not ashamed to say I need to do tokenmaxxing to do this. Things I do to inflate my token usage metrics: Ask AI questions about the code already in the documentation. The AI pulls up the documentation, processes it, and gives me results 10x slower, but while burning lots of tokens. I could use ‘readthedocs’ \[an internal product\], but then my token numbers would be lower. Ask the AI to prototype a feature that I have no intention of working on. Prompt it a few more times, then throw the whole thing away. Default to always using the agent, even when I know I could do the work by hand much faster. Then watch it fail.”
 
-That’s [Goodhart’s Law](#) in action: “When a measure becomes a target, it ceases to be a good measure.” If the metric is token volume, workers produce token volume. Whether the work is any good — or just expensive botshit — becomes somebody else’s problem.  
+That’s [Goodhart’s Law](#) in action: “When a measure becomes a target, it ceases to be a good measure.” If the metric is token volume, workers produce token volume. Whether the work is any good - or just expensive botshit - becomes somebody else’s problem.  
   
 Steven Kerr warned about this fifty years ago in his essay, “[On the Folly of Rewarding A, While Hoping for B.](#)” Organizations say they want one thing and reward another. They hope for long-term growth and reward quarterly earnings. They hope for teamwork and reward individual heroics. They hope for candor and reward the people who tell the boss what the boss already believes. Now they’re doing it again with AI.
 
@@ -2218,7 +2218,7 @@ There’s a heavy cost tied to measuring the wrong thing. 74% of workers in orga
   
 Metrics don’t just measure behavior. They tell employees what the organization values and, in turn, they incentivize certain behaviors. When organizations measure quality, people slow down where human judgment matters. When they measure only speed, people speed up, pumping out faster drafts and leaving downstream cleanup to someone else.  
   
-Transformative AI organizations build measurement systems that reward the behaviors they actually want. At one organization we studied, AI success is evaluated across three dimensions: efficiency, quality, and employee experience — so the company doesn’t reward fast work at the expense of good work or good people. One Fortune 100 executive told us his company measures “intent diversity”: how many different use cases employees apply a given AI tool to. It’s a better proxy for real learning because it shows whether workers are expanding their grasp of where AI is actually useful, not just clicking the tool more often.  
+Transformative AI organizations build measurement systems that reward the behaviors they actually want. At one organization we studied, AI success is evaluated across three dimensions: efficiency, quality, and employee experience - so the company doesn’t reward fast work at the expense of good work or good people. One Fortune 100 executive told us his company measures “intent diversity”: how many different use cases employees apply a given AI tool to. It’s a better proxy for real learning because it shows whether workers are expanding their grasp of where AI is actually useful, not just clicking the tool more often.  
   
 Transformative organizations know no single metric tells the whole AI story. They evaluate AI initiatives across five different dimensions on average, compared with three at other organizations.
 
@@ -2394,9 +2394,9 @@ Presented  by
 
 Powered by
 
-Transformative organizations don’t just write a policy, post it, and wander off. They review it regularly, explain why it exists, and enforce it when somebody breaks it. Only 60% of workers say they’ve read their organization’s AI policy. For everyone else, it’s just another prop in the AI governance theater — written for the auditor, displayed for the board, ignored by everyone with actual work to do.  
+Transformative organizations don’t just write a policy, post it, and wander off. They review it regularly, explain why it exists, and enforce it when somebody breaks it. Only 60% of workers say they’ve read their organization’s AI policy. For everyone else, it’s just another prop in the AI governance theater - written for the auditor, displayed for the board, ignored by everyone with actual work to do.  
   
-Transformative organizations also define who’s allowed to build and deploy AI agents. Without that line drawn, you get agent sprawl — three different teams have built three different bots to do the same thing, two of them are running on data the company never sanctioned, and nobody can remember who approved any of it.
+Transformative organizations also define who’s allowed to build and deploy AI agents. Without that line drawn, you get agent sprawl - three different teams have built three different bots to do the same thing, two of them are running on data the company never sanctioned, and nobody can remember who approved any of it.
 
 Transformative organizations have clear, active, and trusted AI governance
 
@@ -2514,9 +2514,9 @@ Confidence lift
 
 +15%
 
-When leaders communicate AI goals clearly, workers stop filling in the gaps with worst-case scenarios. When the information they need is actually accessible through AI, the tool stops producing generic answers and starts producing useful ones. And when AI is used to redesign the work rather than load more onto it, the credibility shows up in visible relief — not in another round of promises about what AI will eventually deliver.  
+When leaders communicate AI goals clearly, workers stop filling in the gaps with worst-case scenarios. When the information they need is actually accessible through AI, the tool stops producing generic answers and starts producing useful ones. And when AI is used to redesign the work rather than load more onto it, the credibility shows up in visible relief - not in another round of promises about what AI will eventually deliver.  
   
-Transformative organizations don’t treat governance as a communications exercise. They give it decision rights, accountability, and budget. They’re more likely to put a named AI owner in the C-suite. And their CEOs don’t just talk about AI in town halls. They use it — in front of their employees. Nvidia CEO Jensen Huang has been [publicly clear](https://www.youtube.com/watch?v=7ARBJQn6QkM) that he uses AI daily, “as a tutor, a research assistant, a coach, a thought partner.”
+Transformative organizations don’t treat governance as a communications exercise. They give it decision rights, accountability, and budget. They’re more likely to put a named AI owner in the C-suite. And their CEOs don’t just talk about AI in town halls. They use it - in front of their employees. Nvidia CEO Jensen Huang has been [publicly clear](https://www.youtube.com/watch?v=7ARBJQn6QkM) that he uses AI daily, “as a tutor, a research assistant, a coach, a thought partner.”
 
 In transformative organizations, AI shows up in what leaders do, not just what they say
 
@@ -2700,7 +2700,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 AI transformation is disruptive. Roles shift. Some disappear entirely. And when companies cite AI in layoffs, the fear cuts deeper: 73% of workers worry their own role could be next.  
   
-The impact of layoffs doesn’t end when the laid-off employees leave the building. Research on “[layoff survivors](https://journals.aom.org/doi/10.5465/amr.1998.926627)” shows that downsizing increases job insecurity, erodes trust in management, and raises turnover intentions among the people who remain. When AI is cited as the reason, workers start optimizing for self-protection over careful judgment — moving fast, hiding how they use AI, pushing through work they don’t fully trust. Many start looking for the exit. At organizations that cited AI in layoffs, 62% of workers are actively job-hunting.
+The impact of layoffs doesn’t end when the laid-off employees leave the building. Research on “[layoff survivors](https://journals.aom.org/doi/10.5465/amr.1998.926627)” shows that downsizing increases job insecurity, erodes trust in management, and raises turnover intentions among the people who remain. When AI is cited as the reason, workers start optimizing for self-protection over careful judgment - moving fast, hiding how they use AI, pushing through work they don’t fully trust. Many start looking for the exit. At organizations that cited AI in layoffs, 62% of workers are actively job-hunting.
 
 When AI is named in layoffs, workers go into self-protection mode
 
@@ -2862,7 +2862,7 @@ Presented  by
 
 Powered by
 
-Both botsitting and botshitting are higher in organizations that have done layoffs, and higher still when AI is named as the reason. Layoffs put more pressure on the people who stayed, so they lean harder on AI — and they ship more work they wouldn’t defend if asked.
+Both botsitting and botshitting are higher in organizations that have done layoffs, and higher still when AI is named as the reason. Layoffs put more pressure on the people who stayed, so they lean harder on AI - and they ship more work they wouldn’t defend if asked.
 
 When AI is blamed for layoffs, the people left behind do more botsitting and botshitting
 
@@ -2984,7 +2984,7 @@ Presented  by
 
 Powered by
 
-One of the most important things transformative organizations do is treat AI as a chance to redesign the work — not as a shiny excuse to squeeze more output from fewer people. 90% of workers at transformative organizations say their employer treats AI as a chance to redesign work, compared with 54% at other organizations.
+One of the most important things transformative organizations do is treat AI as a chance to redesign the work - not as a shiny excuse to squeeze more output from fewer people. 90% of workers at transformative organizations say their employer treats AI as a chance to redesign work, compared with 54% at other organizations.
 
 SECTION 08
 
@@ -2995,9 +2995,9 @@ Workers tell us that AI automation saves them roughly 11 hours every week. But o
   
 And they’re doing it at every level: individual, team, and organizational. They’re helping their people cut the hidden human labor AI creates. They’re measuring whether the work produced is better, not just faster. And they’re investing in AI tools and platforms that cut the toggle tax and ground AI in the context that actually makes it useful.  
   
-Until more organizations do this, the other 87% will keep learning the hard way that AI’s time savings aren’t free. The hours workers “save” come back as botsitting. The judgment they offload comes back as botshitting. The workplace fills up with work that looks finished, sounds confident, and is hollow enough that some exhausted human — usually without credit or reward — still has to mop it up.  
+Until more organizations do this, the other 87% will keep learning the hard way that AI’s time savings aren’t free. The hours workers “save” come back as botsitting. The judgment they offload comes back as botshitting. The workplace fills up with work that looks finished, sounds confident, and is hollow enough that some exhausted human - usually without credit or reward - still has to mop it up.  
   
-That’s the choice in front of every organization. Build the human infrastructure that makes AI worth using. Or keep paying the bill — in botsitting, in botshitting, and in the steady departure of the people who got tired of cleaning up after the bots.
+That’s the choice in front of every organization. Build the human infrastructure that makes AI worth using. Or keep paying the bill - in botsitting, in botshitting, and in the steady departure of the people who got tired of cleaning up after the bots.
 
 SECTION 09
 
@@ -3131,7 +3131,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 **The tradeoff**
 
-**Sales is using AI faster than it is measuring the results.** 14% say their organization is not systematically measuring AI impact, compared with 8% on average. Sales leaders apply rigorous measurement to much of their daily work — quota attainment, pipeline coverage, and ramp time — but AI lacks the same discipline.
+**Sales is using AI faster than it is measuring the results.** 14% say their organization is not systematically measuring AI impact, compared with 8% on average. Sales leaders apply rigorous measurement to much of their daily work - quota attainment, pipeline coverage, and ramp time - but AI lacks the same discipline.
 
 Marketing
 
@@ -3159,7 +3159,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 **The posture**
 
-**Support is lagging in realizing AI value.** 68% of support workers use AI at work, compared with 87% on average, the lowest of any function. 64% say it makes them more productive, compared with 75% on average. Much of the work is well suited to AI — summarizing issues, drafting replies, routing tickets, and surfacing answers — but the tools, training, and workflow integration around it haven’t caught up.
+**Support is lagging in realizing AI value.** 68% of support workers use AI at work, compared with 87% on average, the lowest of any function. 64% say it makes them more productive, compared with 75% on average. Much of the work is well suited to AI - summarizing issues, drafting replies, routing tickets, and surfacing answers - but the tools, training, and workflow integration around it haven’t caught up.
 
 **How AI gets absorbed**
 
@@ -3179,7 +3179,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 **The posture**
 
-**HR is adopting AI at above-average levels and results.** 90% of HR workers use AI at work, compared with 87% on average, and **78% say it makes them more productive**, compared with 75% on average. HR has many AI-ready workflows — drafting job descriptions, summarizing feedback, preparing interview materials, answering policy questions, analyzing engagement data, and personalizing employee communications — where AI can reduce administrative load.
+**HR is adopting AI at above-average levels and results.** 90% of HR workers use AI at work, compared with 87% on average, and **78% say it makes them more productive**, compared with 75% on average. HR has many AI-ready workflows - drafting job descriptions, summarizing feedback, preparing interview materials, answering policy questions, analyzing engagement data, and personalizing employee communications - where AI can reduce administrative load.
 
 **How AI gets absorbed**
 
@@ -3199,7 +3199,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 **The posture**
 
-**AI is helping PMs produce artifacts faster, but not necessarily make better product calls.** 92% of PMs use AI at work, compared with 87% on average, but only **70% report productivity gains**, compared with 75% on average. AI accelerates the artifacts of product work — PRDs, briefs, summaries, and stakeholder updates — but without organizational context, it struggles with the judgment-intensive parts of the role: prioritization, tradeoffs, alignment, and customer insight.
+**AI is helping PMs produce artifacts faster, but not necessarily make better product calls.** 92% of PMs use AI at work, compared with 87% on average, but only **70% report productivity gains**, compared with 75% on average. AI accelerates the artifacts of product work - PRDs, briefs, summaries, and stakeholder updates - but without organizational context, it struggles with the judgment-intensive parts of the role: prioritization, tradeoffs, alignment, and customer insight.
 
 **How AI gets absorbed**
 
@@ -3445,7 +3445,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 **The posture**
 
-**Useful in day-to-day operations, but not producing broad gains.** 83% of transportation and logistics workers use AI at work. But **only 66% say it makes them more productive**, compared with 75% on average. The sector has obvious use cases — dispatch, routing, planning, and warehousing — but **many real-time edge cases still resist automation.**
+**Useful in day-to-day operations, but not producing broad gains.** 83% of transportation and logistics workers use AI at work. But **only 66% say it makes them more productive**, compared with 75% on average. The sector has obvious use cases - dispatch, routing, planning, and warehousing - but **many real-time edge cases still resist automation.**
 
 **How AI gets absorbed**
 
@@ -3485,7 +3485,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 **The posture**
 
-**Hospitality reports one of the weakest AI productivity cases of any industry.** 87% of hospitality and travel workers use AI at work, but **only 65% say it makes them more productive**, compared with 74% on average. The work carries a layer of live human judgment — reading a guest’s mood, solving a booking problem in real time, pacing a dining experience — that **AI can assist around but rarely replaces.**
+**Hospitality reports one of the weakest AI productivity cases of any industry.** 87% of hospitality and travel workers use AI at work, but **only 65% say it makes them more productive**, compared with 74% on average. The work carries a layer of live human judgment - reading a guest’s mood, solving a booking problem in real time, pacing a dining experience - that **AI can assist around but rarely replaces.**
 
 **How AI gets absorbed**
 
@@ -3517,6 +3517,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 **The tradeoff**
 
-**Limited investment means fewer mistakes — and fewer lessons.** 24% say their organization isn’t systematically measuring AI impact, compared with 8% on average. 22% aren’t sure what their organization measures, compared with 6% on average. Using AI less may mean fewer obvious mistakes, but **it also means fewer chances to learn where it saves time, improves services, or helps stretched teams do more.**
+**Limited investment means fewer mistakes - and fewer lessons.** 24% say their organization isn’t systematically measuring AI impact, compared with 8% on average. 22% aren’t sure what their organization measures, compared with 6% on average. Using AI less may mean fewer obvious mistakes, but **it also means fewer chances to learn where it saves time, improves services, or helps stretched teams do more.**
 
 Percentages reflect the share of digital workers in each industry (total n=6,000 across US, UK, and Australia) who selected the corresponding response. Industry-level samples range from n=312 (Construction) to n=1,104 (Technology). Comparisons in parentheses show the cross-industry global average and a peer-anchor industry (the top or bottom performer on that dimension). Differences of four percentage points or more are statistically significant at p<.05.

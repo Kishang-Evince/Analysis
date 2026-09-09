@@ -89,7 +89,7 @@ Yet most sales processes weren’t designed for this pace. Information is scatte
 
 **Glean Agents are built for this reality.** They connect to your systems, interpret company knowledge, and deliver precise, ready-to-use output that helps sellers move faster at every stage of the lifecycle. And because they run on Glean’s enterprise knowledge graph with permissions-enforced security, teams get reliable, contextual results they can trust.
 
-Today, we’re introducing eight new quickstart sales agents in the Glean [agent library](https://www.glean.com/agent-library). These agents support the full sales motion — from account prep and prospecting to deal strategy, coaching, loss analysis, and post‑sales handoff. Each one is ready to use as a template, and can be customized as your motion evolves.
+Today, we’re introducing eight new quickstart sales agents in the Glean [agent library](https://www.glean.com/agent-library). These agents support the full sales motion - from account prep and prospecting to deal strategy, coaching, loss analysis, and post‑sales handoff. Each one is ready to use as a template, and can be customized as your motion evolves.
 
 Below is your guide to what they do and how they can help.
 

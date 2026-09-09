@@ -76,7 +76,7 @@ April 8, 2025
 
 ### Glean named 2025 Google Cloud Technology Partner of the Year for Marketplace-Business Applications
 
-Glean is honored to receive Google’s 2025 Cloud Technology Partner of the Year Award — and bolster our growing partnership to better serve customers through Google Cloud Marketplace.
+Glean is honored to receive Google’s 2025 Cloud Technology Partner of the Year Award - and bolster our growing partnership to better serve customers through Google Cloud Marketplace.
 
 ![Leena Kamath](https://cdn.prod.website-files.com/613513981b0efaf850830620/67f4e1e6552c1052beadd231_Leena.webp)
 

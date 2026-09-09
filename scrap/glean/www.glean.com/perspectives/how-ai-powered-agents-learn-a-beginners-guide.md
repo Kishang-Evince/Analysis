@@ -63,32 +63,32 @@ Share this article:
 
 # How ai-powered agents learn: a beginner's guide
 
-AI-powered agents represent a fundamental shift in how enterprise software operates. Instead of static tools that execute predefined instructions, these systems observe their environment, reason through problems, and take autonomous action to achieve specific goals — all while learning from every interaction.
+AI-powered agents represent a fundamental shift in how enterprise software operates. Instead of static tools that execute predefined instructions, these systems observe their environment, reason through problems, and take autonomous action to achieve specific goals - all while learning from every interaction.
 
 For teams across engineering, customer support, sales, IT, and HR, this shift matters because the nature of work itself is changing. Knowledge is distributed across dozens of applications, decisions depend on real-time context, and the volume of information employees must process grows every quarter.
 
-Understanding how AI agents work — and how they learn — is the first step toward putting them to practical use. This guide breaks down the core mechanisms behind agent learning, the role of machine learning in continuous improvement, and what it takes to implement self-learning AI in an enterprise setting.
+Understanding how AI agents work - and how they learn - is the first step toward putting them to practical use. This guide breaks down the core mechanisms behind agent learning, the role of machine learning in continuous improvement, and what it takes to implement self-learning AI in an enterprise setting.
 
 ## What is an AI-powered agent?
 
-An AI-powered agent is software that can perceive its environment, reason through problems, and take autonomous action to achieve a defined goal. That distinction matters: traditional automation follows a fixed script, and when something unexpected happens, the process breaks. An AI agent, by contrast, operates on a continuous loop — observe, decide, act, learn — that allows it to handle variability and adapt over time. The shift from static rule-based systems to dynamic, context-aware agents is what separates modern agentic automation from the workflow tools enterprises have relied on for the past decade.
+An AI-powered agent is software that can perceive its environment, reason through problems, and take autonomous action to achieve a defined goal. That distinction matters: traditional automation follows a fixed script, and when something unexpected happens, the process breaks. An AI agent, by contrast, operates on a continuous loop - observe, decide, act, learn - that allows it to handle variability and adapt over time. The shift from static rule-based systems to dynamic, context-aware agents is what separates modern agentic automation from the workflow tools enterprises have relied on for the past decade.
 
-At the core, understanding what an AI agent actually does starts with recognizing what it is *not*. It is not a chatbot that pattern-matches keywords to canned responses. It is not an RPA bot that clicks through the same sequence of screens regardless of context. An AI agent maintains memory across interactions, builds on prior encounters, and treats each new task as an opportunity to refine its approach. When a support agent resolves a ticket, it retains knowledge about the root cause, the resolution path, and the customer's context — so the next similar ticket gets handled faster and with greater precision.
+At the core, understanding what an AI agent actually does starts with recognizing what it is *not*. It is not a chatbot that pattern-matches keywords to canned responses. It is not an RPA bot that clicks through the same sequence of screens regardless of context. An AI agent maintains memory across interactions, builds on prior encounters, and treats each new task as an opportunity to refine its approach. When a support agent resolves a ticket, it retains knowledge about the root cause, the resolution path, and the customer's context - so the next similar ticket gets handled faster and with greater precision.
 
 ### Core building blocks of an enterprise AI agent
 
 Enterprise-grade agents combine several distinct components into a unified system:
 
--   **Models for reasoning**: Large language models (LLMs) provide the base cognitive layer — the ability to parse language, synthesize information, and generate responses. But raw model capability alone is insufficient for enterprise use without grounding in organizational data.
--   **Tools for reading and writing data**: Agents need access to external systems — databases, ticketing platforms, calendars, email, code repositories — through structured tool integrations. "Read tools" fetch relevant context; "write tools" trigger actions like updating a record or sending a notification.
--   **Workflows that define execution structure**: A workflow provides the blueprint an agent follows to complete multi-step processes. It encodes how work gets done — decision points, approval gates, escalation paths — so the agent operates within defined parameters rather than improvising without guardrails.
+-   **Models for reasoning**: Large language models (LLMs) provide the base cognitive layer - the ability to parse language, synthesize information, and generate responses. But raw model capability alone is insufficient for enterprise use without grounding in organizational data.
+-   **Tools for reading and writing data**: Agents need access to external systems - databases, ticketing platforms, calendars, email, code repositories - through structured tool integrations. "Read tools" fetch relevant context; "write tools" trigger actions like updating a record or sending a notification.
+-   **Workflows that define execution structure**: A workflow provides the blueprint an agent follows to complete multi-step processes. It encodes how work gets done - decision points, approval gates, escalation paths - so the agent operates within defined parameters rather than improvising without guardrails.
 -   **Memory that captures learning over time**: Every interaction generates data the agent can store and reference later. This memory layer preserves domain-specific knowledge, user preferences, and historical outcomes, preventing the agent from flattening its responses into generic, one-size-fits-all outputs.
 
 ### Where AI agents show up in practice
 
 AI agents examples span nearly every function in a modern enterprise. In customer support, agents diagnose issues, search internal knowledge bases, and draft responses grounded in company documentation. In software development, they assist with code review, bug triage, and production debugging. Sales teams use agents to surface relevant account history and competitive intelligence before a call. HR and IT teams rely on them for onboarding workflows, policy lookups, and internal service requests.
 
-What ties these use cases together is a shared dependency on real-time, permission-aware access to organizational knowledge. An agent that cannot retrieve current, authorized information from across an organization's tools — the kind of retrieval infrastructure available through platforms like Glean — will produce outputs based on stale training data rather than the reality of what is happening inside the business today. That grounding in live enterprise context is what separates a useful agent from a sophisticated autocomplete.
+What ties these use cases together is a shared dependency on real-time, permission-aware access to organizational knowledge. An agent that cannot retrieve current, authorized information from across an organization's tools - the kind of retrieval infrastructure available through platforms like Glean - will produce outputs based on stale training data rather than the reality of what is happening inside the business today. That grounding in live enterprise context is what separates a useful agent from a sophisticated autocomplete.
 
 ## How do AI-powered agents actually learn?
 
@@ -101,9 +101,9 @@ Two details separate real progress from prompt edits: clear success criteria and
 At runtime, an agent can treat each task as a test with an explicit scorecard. A practical cycle looks like this:
 
 1.  **Execute**: The agent produces an output or completes an action sequence (draft a support reply, route an IT request, compile a status update).
-2.  **Score**: The system compares the result to success criteria—resolution rate, policy adherence, factual accuracy, time-to-resolution, escalation rate.
+2.  **Score**: The system compares the result to success criteria-resolution rate, policy adherence, factual accuracy, time-to-resolution, escalation rate.
 3.  **Classify the failure mode**: The agent (or a supervising evaluator model) identifies the error class: absent context, weak retrieval, incorrect tool call, tone mismatch, or policy breach.
-4.  **Adjust the policy**: The agent updates its approach on the next attempt—different tool order, narrower scope, stronger evidence requirements, different style constraints.
+4.  **Adjust the policy**: The agent updates its approach on the next attempt-different tool order, narrower scope, stronger evidence requirements, different style constraints.
 5.  **Persist signal**: The system records what worked, tied to task type and context, so future decisions start from a stronger default.
 
 This cycle accelerates fastest in high-volume environments. A service desk that handles hundreds of similar requests per day yields rapid adaptation; a low-volume workflow in finance yields slower change because the agent receives fewer high-quality examples of success and failure.
@@ -140,13 +140,13 @@ A solid self-reflection routine includes:
 
 -   **Gap detection**: Identify absent facts, weak evidence, or tone mismatch relative to the task type.
 -   **Policy checks**: Validate constraints such as privacy rules, security boundaries, and escalation requirements.
--   **Revision directives**: Specify what must change—add a missing step, narrow scope, request clarification, or fetch additional context via tools.
+-   **Revision directives**: Specify what must change-add a missing step, narrow scope, request clarification, or fetch additional context via tools.
 
 Self-review works best when paired with evaluation. A rubric without measurement becomes theater; evaluation without a rubric becomes inconsistent.
 
 ### Experience store: persisted feedback that shapes future decisions
 
-In agentic systems, an experience store acts as a record of prior tasks—more than chat history, and more durable than a single session. It can capture patterns such as “this customer segment prefers concise replies,” “this outage type requires a standard escalation path,” or “this request type fails without a specific internal document.”
+In agentic systems, an experience store acts as a record of prior tasks-more than chat history, and more durable than a single session. It can capture patterns such as “this customer segment prefers concise replies,” “this outage type requires a standard escalation path,” or “this request type fails without a specific internal document.”
 
 To make this record actionable, the system needs explicit signals that store cleanly and retrieve reliably:
 
@@ -179,7 +179,7 @@ Capability does not improve through a single model update; it improves through r
 
 A practical continuous-improvement system usually includes:
 
-1.  **Data capture with intent**: logs that preserve the full task context—user intent, retrieved sources, tool outcomes, and final resolution state—so later updates target the real failure, not a proxy.
+1.  **Data capture with intent**: logs that preserve the full task context-user intent, retrieved sources, tool outcomes, and final resolution state-so later updates target the real failure, not a proxy.
 2.  **Label strategy that scales**: lightweight preference signals for high-volume tasks, plus expert labels for rare, high-impact workflows such as legal, security, or finance.
 3.  **Drift detection**: monitoring that flags when user language shifts, internal policies change, or knowledge sources move, which helps prevent silent degradation.
 4.  **Release discipline**: canary tests and A/B trials that compare agent versions on the same task distribution, which reduces risk and clarifies what improved and what regressed.
@@ -195,7 +195,7 @@ Adaptation depends on runtime awareness, resilient context access, and plan-driv
 
 ### Real-time data processing: pattern shifts become actionable signals
 
-In dynamic environments, the first adaptation step involves detection. Signals in tickets, chats, and system events reveal what changed—new failure modes, new request types, or a new standard operating procedure.
+In dynamic environments, the first adaptation step involves detection. Signals in tickets, chats, and system events reveal what changed-new failure modes, new request types, or a new standard operating procedure.
 
 A lightweight detection layer can focus on a few high-signal changes:
 
@@ -203,7 +203,7 @@ A lightweight detection layer can focus on a few high-signal changes:
 -   **Outcome drift**: A decline in task success for a workflow that previously met quality targets, which often points to a process change rather than a model issue.
 -   **Source volatility**: Documents or fields that change frequently (policies, runbooks, pricing tables) that require a stricter freshness requirement before use.
 
-These signals can trigger targeted behavior changes—tighter evidence requirements, new routing logic, or a revised tool sequence for that task family.
+These signals can trigger targeted behavior changes-tighter evidence requirements, new routing logic, or a revised tool sequence for that task family.
 
 ### Retrieval infrastructure: adaptation without the hallucinated “best guess”
 
@@ -211,9 +211,9 @@ Adaptation fails when an agent relies on stale or incomplete context. A practica
 
 Retrieval infrastructure supports this approach through:
 
--   **State-aligned context**: Context reflects the latest status of a record, not last week’s copy—ticket fields, incident timelines, account notes, or policy revisions.
+-   **State-aligned context**: Context reflects the latest status of a record, not last week’s copy-ticket fields, incident timelines, account notes, or policy revisions.
 -   **Authorization continuity**: Context access respects source-of-truth access rules so the agent cannot incorporate material outside the user’s allowed scope.
--   **Cross-system stitching**: One task often spans multiple tools—an incident postmortem, a runbook step, and a customer commitment in a contract system—so retrieval must assemble a coherent evidence set across silos.
+-   **Cross-system stitching**: One task often spans multiple tools-an incident postmortem, a runbook step, and a customer commitment in a contract system-so retrieval must assemble a coherent evidence set across silos.
 
 With these properties in place, the agent bases decisions on verifiable internal facts, even as internal knowledge shifts.
 
@@ -223,7 +223,7 @@ When the task does not match a familiar pattern, agentic reasoning provides an e
 
 A plan-oriented routine can follow a stable progression:
 
-1.  **Define the target**: Identify the outcome—close a ticket with correct guidance, draft an incident update, or diagnose a build failure.
+1.  **Define the target**: Identify the outcome-close a ticket with correct guidance, draft an incident update, or diagnose a build failure.
 2.  **Choose an evidence map**: Identify which systems can confirm key facts and which sources carry policy authority.
 3.  **Run bounded steps**: Execute one step at a time; validate each result against retrieved evidence and tool outputs.
 4.  **Revise on mismatch**: Update the plan when tool output contradicts expectations, when evidence lacks coverage, or when access limits block verification.
@@ -236,8 +236,8 @@ A language model can reason about what to do, but it cannot directly inspect mos
 
 A practical separation of capabilities can look like this:
 
--   **Query tools**: Pull structured context—ticket metadata, CRM activity, policy excerpts, log segments, or recent incident notes—so the agent grounds decisions in operational data.
--   **Action tools**: Apply safe changes—update a record, draft a response in the right channel, create a follow-up task, or route work to the correct owner.
+-   **Query tools**: Pull structured context-ticket metadata, CRM activity, policy excerpts, log segments, or recent incident notes-so the agent grounds decisions in operational data.
+-   **Action tools**: Apply safe changes-update a record, draft a response in the right channel, create a follow-up task, or route work to the correct owner.
 -   **Process checkpoints**: Require review for sensitive actions, enforce required fields, and attach evidence to any automated update so downstream teams can verify rationale.
 
 Composable tools allow flexible step sequences, which helps the agent adapt when systems change formats or when a task needs a different path than the default.
@@ -249,7 +249,7 @@ Some environments change too fast for a single generalist agent to cover every n
 This approach supports parallel execution and clearer specialization:
 
 -   **Intake agent**: Classifies the request, extracts constraints, and assembles initial evidence.
--   **Specialist agent**: Performs deep analysis in a narrow domain—engineering triage, security review, finance policy interpretation—then returns findings with supporting artifacts.
+-   **Specialist agent**: Performs deep analysis in a narrow domain-engineering triage, security review, finance policy interpretation-then returns findings with supporting artifacts.
 -   **Comms agent**: Produces customer- or employee-facing updates with correct tone, approved language, and verified facts.
 
 This structure improves long- and short-horizon outcomes: fast triage, deeper investigation when needed, and consistent communication even as processes and terminology evolve.
@@ -258,7 +258,7 @@ This structure improves long- and short-horizon outcomes: fast triage, deeper in
 
 Self-learning agents create a different improvement curve than script-based automation. A rules engine stays fixed unless someone edits logic; an agent can shift behavior as outcome data accumulates, so performance can rise as work volume rises.
 
-That shift matters in enterprise operations because many processes sit in the “long tail”: too variable for deterministic scripts, yet too frequent to handle manually. An agent can absorb nuance from outcomes—what resolved a case, what triggered escalation, what passed review—then apply that pattern the next time the same shape of problem appears.
+That shift matters in enterprise operations because many processes sit in the “long tail”: too variable for deterministic scripts, yet too frequent to handle manually. An agent can absorb nuance from outcomes-what resolved a case, what triggered escalation, what passed review-then apply that pattern the next time the same shape of problem appears.
 
 ### Compounding returns from outcome-driven optimization
 
@@ -272,13 +272,13 @@ Over time, these improvements show up as measurable shifts in operational metric
 
 ### Why self-learning matters for AI agents for reporting
 
-Reporting workflows rarely fail because of missing charts; they fail because reports lack decision-ready framing. Self-learning agents can improve here because each review cycle supplies direct preference signals—what leaders accept, what teams reject, what details auditors request, what sections require more evidence.
+Reporting workflows rarely fail because of missing charts; they fail because reports lack decision-ready framing. Self-learning agents can improve here because each review cycle supplies direct preference signals-what leaders accept, what teams reject, what details auditors request, what sections require more evidence.
 
 In mature deployments, improvement tends to cluster around three areas:
 
 -   **Variance interpretation**: The agent learns which deltas require explanation, which require escalation, and which can stay as a footnote based on stakeholder feedback patterns.
--   **Audit-friendly structure**: The agent adopts stable sections that map to internal controls—assumptions, source notes, and rationale—so review teams spend less time on backtracking.
--   **Audience-specific focus**: The agent learns that a finance audience values reconciliation detail, while an executive audience values risks, trend direction, and next actions—then shapes the report accordingly.
+-   **Audit-friendly structure**: The agent adopts stable sections that map to internal controls-assumptions, source notes, and rationale-so review teams spend less time on backtracking.
+-   **Audience-specific focus**: The agent learns that a finance audience values reconciliation detail, while an executive audience values risks, trend direction, and next actions-then shapes the report accordingly.
 
 ### Agentic automation as the unlock for unstructured, variable work
 
@@ -286,7 +286,7 @@ Agentic automation extends automation into processes that include ambiguous inpu
 
 This works best with a deliberate split of responsibilities:
 
--   **Workflows encode invariants**: Required steps, approvals, policy checks, and escalation triggers—elements the business cannot treat as optional.
+-   **Workflows encode invariants**: Required steps, approvals, policy checks, and escalation triggers-elements the business cannot treat as optional.
 -   **Agents handle variability**: Context interpretation, evidence selection, tool choice, and response format within the workflow’s boundaries.
 
 This pairing can deliver predictability where it counts and flexibility where it helps.
@@ -295,7 +295,7 @@ This pairing can deliver predictability where it counts and flexibility where it
 
 Many automation efforts stall because context stays scattered across systems: one holds the request, another holds the policy, another holds status history, and none share a unified view. When an agent can assemble cross-tool context into one task frame, it can reduce delays from missing details and prevent partial answers that force a second pass.
 
-Agent-to-agent coordination raises quality for complex cases because specialization becomes practical. One agent can focus on technical diagnosis with strict evidence requirements, while another agent focuses on stakeholder communication with approved language and constraints; the handoff can include a structured packet—facts, sources, open questions, and recommended next steps—so each agent operates with clear boundaries and high signal.
+Agent-to-agent coordination raises quality for complex cases because specialization becomes practical. One agent can focus on technical diagnosis with strict evidence requirements, while another agent focuses on stakeholder communication with approved language and constraints; the handoff can include a structured packet-facts, sources, open questions, and recommended next steps-so each agent operates with clear boundaries and high signal.
 
 ## Challenges to keep in mind
 
@@ -303,7 +303,7 @@ Self-improving agents shift effort from manual rule maintenance to system design
 
 ### Interaction volume and usable signals
 
-Many enterprise tasks produce **sparse or delayed feedback**, even when request volume stays high. A support reply may look correct in the moment, yet the only reliable signal arrives later—reopen rate, escalation outcome, or customer churn—so the agent faces a classic reinforcement learning problem: **credit assignment** across multiple steps.
+Many enterprise tasks produce **sparse or delayed feedback**, even when request volume stays high. A support reply may look correct in the moment, yet the only reliable signal arrives later-reopen rate, escalation outcome, or customer churn-so the agent faces a classic reinforcement learning problem: **credit assignment** across multiple steps.
 
 A few patterns create avoidable drag:
 
@@ -313,7 +313,7 @@ A few patterns create avoidable drag:
 
 ### Data quality, permission integrity, and source provenance
 
-Enterprise content often includes contradictions—two policies, two “final” decks, two owners—plus shifting schemas in operational systems. That creates a subtle failure mode: the agent retrieves correct text but from the wrong authority tier, which leads to confident output with the wrong governance backing.
+Enterprise content often includes contradictions-two policies, two “final” decks, two owners-plus shifting schemas in operational systems. That creates a subtle failure mode: the agent retrieves correct text but from the wrong authority tier, which leads to confident output with the wrong governance backing.
 
 Operational issues that tend to surface:
 
@@ -323,17 +323,17 @@ Operational issues that tend to surface:
 
 ### Guardrails and oversight: autonomy within constraints
 
-Agents can optimize toward the wrong objective when incentives stay misaligned. In reinforcement learning terms, a poorly shaped reward can produce **reward hacking**—the agent finds a shortcut that scores well while it violates intent, policy, or user trust.
+Agents can optimize toward the wrong objective when incentives stay misaligned. In reinforcement learning terms, a poorly shaped reward can produce **reward hacking**-the agent finds a shortcut that scores well while it violates intent, policy, or user trust.
 
 Controls that address modern enterprise risks go beyond simple “approval required” rules:
 
 -   **Prompt-injection resistance**: External text can contain hidden instructions that redirect tool use or request sensitive data; the system needs input sanitation and tool-call constraints.
--   **Policy-as-code checks**: Explicit, testable rules—data residency, retention, PII handling, contract language constraints—must gate both retrieval use and action execution.
+-   **Policy-as-code checks**: Explicit, testable rules-data residency, retention, PII handling, contract language constraints-must gate both retrieval use and action execution.
 -   **Action sandboxing**: High-impact tools (customer comms, financial adjustments, access grants) need isolated execution contexts with scoped permissions and strict logging, even when the agent operates with broad read access.
 
 ### Tool misconfiguration and workflow brittleness
 
-Agent reliability depends on the “action layer” as much as the reasoning layer. APIs can return partial results, rate limits can trigger retries, and side effects can duplicate without idempotency—problems that standard chat evaluations rarely catch.
+Agent reliability depends on the “action layer” as much as the reasoning layer. APIs can return partial results, rate limits can trigger retries, and side effects can duplicate without idempotency-problems that standard chat evaluations rarely catch.
 
 Common engineering pitfalls include:
 
@@ -343,11 +343,11 @@ Common engineering pitfalls include:
 
 ### Memory and feedback governance
 
-Memory can accumulate sensitive details, stale preferences, or adversarial edits—then replay them at the worst time. A production agent needs governance for what memory stores, how long it persists, and what happens when feedback conflicts.
+Memory can accumulate sensitive details, stale preferences, or adversarial edits-then replay them at the worst time. A production agent needs governance for what memory stores, how long it persists, and what happens when feedback conflicts.
 
 Two issues deserve explicit design:
 
--   **Feedback poisoning**: A small amount of bad guidance—malicious or accidental—can push behavior off course; robust systems weight feedback by reviewer role, confidence, and task risk.
+-   **Feedback poisoning**: A small amount of bad guidance-malicious or accidental-can push behavior off course; robust systems weight feedback by reviewer role, confidence, and task risk.
 -   **Preference drift**: Team standards shift (tone, escalation norms, policy language); memory needs expiration rules and versioned “truth sets” so old preferences do not override current operating policy.
 
 ## How to get started with AI agents in your organization
@@ -361,7 +361,7 @@ Select work with observable outcomes and low ambiguity about “done.” In rein
 Use a selection filter that avoids surprises:
 
 -   **Closed-loop outcome**: A final state exists in a system of record (resolved, approved, reconciled, shipped), not just “sent a message.”
--   **Stable input shape**: Requests share a common structure—fields, forms, templates, or recurring patterns—so the agent can generalize from experience.
+-   **Stable input shape**: Requests share a common structure-fields, forms, templates, or recurring patterns-so the agent can generalize from experience.
 -   **Bounded downside**: Early mistakes carry limited risk; a human can reverse the action without incident.
 -   **Data density**: Each task includes enough context for retrieval plus enough repetition to support improvement.
 
@@ -375,7 +375,7 @@ A practical scorecard can include metrics that stay specific yet scalable:
 
 -   **Evidence coverage**: Minimum source support per claim; “no source, no statement” for high-risk tasks.
 -   **Edit distance**: Human change volume between draft and approved output; a low delta often correlates with usefulness.
--   **Handoff quality**: Completeness of escalation packets—key facts, attempted steps, open questions—so specialist teams do not repeat work.
+-   **Handoff quality**: Completeness of escalation packets-key facts, attempted steps, open questions-so specialist teams do not repeat work.
 -   **Tool reliability**: Error rate per tool call plus recovery success (retry, fallback, or graceful stop).
 -   **Cost per accepted task**: Compute plus tool calls per output that meets the acceptance bar.
 
@@ -390,13 +390,13 @@ A resilient design usually includes:
 -   **Authority tiers**: Policy doc > runbook > ticket comment, or whatever hierarchy matches your governance; retrieval must respect that order.
 -   **Identity alignment**: One consistent mapping from user identity to downstream app entitlements; ambiguity here produces silent access gaps.
 -   **Tool envelope**: Narrow, typed tool interfaces that expose only the fields the agent needs; broad “do anything” tools create unnecessary blast radius.
--   **Workflow gates**: Mandatory checkpoints for sensitive steps—approval, dual control, or explicit escalation—so autonomy stays bounded.
+-   **Workflow gates**: Mandatory checkpoints for sensitive steps-approval, dual control, or explicit escalation-so autonomy stays bounded.
 
 For early phases, use a “draft-only” execution mode: the agent prepares the change request with rationale and evidence, while a human submits the final write. This mode supplies high-quality demonstrations for imitation learning without operational risk.
 
 ### Put feedback and evaluation on rails
 
-Agent improvement depends on consistent labels, not occasional anecdotes. Feedback collection must integrate with existing work rituals—review queues, ticket approvals, report sign-off—so signal arrives with minimal friction.
+Agent improvement depends on consistent labels, not occasional anecdotes. Feedback collection must integrate with existing work rituals-review queues, ticket approvals, report sign-off-so signal arrives with minimal friction.
 
 A high-signal feedback system often uses a blend of mechanisms:
 
@@ -405,7 +405,7 @@ A high-signal feedback system often uses a blend of mechanisms:
 -   **Rubric-based auto-grades**: Model-based checks that validate evidence use, forbidden content, required fields, and action feasibility before a human sees the output.
 -   **Expert review pools**: Rotations of domain owners who review a fixed sample for nuance that automated checks miss, especially in regulated domains.
 
-This setup supports continuous improvement without a bottleneck. Each signal type feeds a specific improvement path—prompt updates, tool schema fixes, retrieval tuning, or policy constraints.
+This setup supports continuous improvement without a bottleneck. Each signal type feeds a specific improvement path-prompt updates, tool schema fixes, retrieval tuning, or policy constraints.
 
 ### Expand scope based on trajectory, not launch-day accuracy
 
@@ -420,7 +420,7 @@ A phased expansion pattern can follow operational risk tiers:
 
 Track trend lines by task family rather than a single aggregate score. Improvement in one workflow can mask regression in another when tool contracts, source authority, or entitlement mappings differ across departments.
 
-The path from static automation to self-learning agents is not a single leap — it is a disciplined series of small, measurable improvements grounded in real work outcomes. Every feedback signal, every tool integration, and every workflow checkpoint compounds into an agent that genuinely understands how your organization operates.
+The path from static automation to self-learning agents is not a single leap - it is a disciplined series of small, measurable improvements grounded in real work outcomes. Every feedback signal, every tool integration, and every workflow checkpoint compounds into an agent that genuinely understands how your organization operates.
 
 If you're ready to see what that looks like in practice, [request a demo to explore how we can help AI transform your workplace](https://www.glean.com/get-a-demo).
 

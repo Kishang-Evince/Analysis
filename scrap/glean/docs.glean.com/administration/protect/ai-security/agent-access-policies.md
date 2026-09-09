@@ -201,7 +201,7 @@ For detailed information on handling alerts, see [Findings Dashboard](/administr
 
 ### Does this replace existing source permissions or RBAC?
 
-No. Agent access policies add a runtime governance layer on top of existing permissions. The underlying source-system permissions and Glean's RBAC continue to apply — agent access policies can only further restrict what an agent can do, never expand it.
+No. Agent access policies add a runtime governance layer on top of existing permissions. The underlying source-system permissions and Glean's RBAC continue to apply - agent access policies can only further restrict what an agent can do, never expand it.
 
 ### What happens when multiple policies apply to the same call?
 

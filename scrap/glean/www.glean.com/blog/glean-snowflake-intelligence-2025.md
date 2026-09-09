@@ -85,9 +85,9 @@ Listen to article
 
 LLMs have made it easier to ask questions about your data in plain English. Despite this, most insights live in isolation across disconnected documents, applications, and data warehouses. While data is now more accessible, it’s still difficult to retrieve holistic, actionable results from them. 
 
-The real opportunity isn't just translating English to SQL—it's letting agents share context across your entire data stack. When your analytics platform can talk to your knowledge base, and both can trigger workflows, you move from insight to impact without the busy work in between.
+The real opportunity isn't just translating English to SQL-it's letting agents share context across your entire data stack. When your analytics platform can talk to your knowledge base, and both can trigger workflows, you move from insight to impact without the busy work in between.
 
-That’s why we’re excited to integrate Glean directly into Snowflake Intelligence. Together, **Glean** and **Snowflake Intelligence** will help teams get grounded answers and take action—combining governed data in Snowflake with company knowledge from documents, tickets, chats, and more indexed in Glean.
+That’s why we’re excited to integrate Glean directly into Snowflake Intelligence. Together, **Glean** and **Snowflake Intelligence** will help teams get grounded answers and take action-combining governed data in Snowflake with company knowledge from documents, tickets, chats, and more indexed in Glean.
 
 ‍
 
@@ -99,14 +99,14 @@ Snowflake Intelligence agents will soon be able to call Glean as a tool to retri
 
 For our joint customers, this partnership delivers:  
 
--   **One question, complete answers**: Ask a question in Snowflake Intelligence and get live metrics from your Snowflake environment alongside the “why” from Glean—product specs, design docs, support threads, Gong calls, Jira tickets, and more.**‍**
+-   **One question, complete answers**: Ask a question in Snowflake Intelligence and get live metrics from your Snowflake environment alongside the “why” from Glean-product specs, design docs, support threads, Gong calls, Jira tickets, and more.**‍**
 -   **Enterprise‑grade trust**: Both products respect existing permissions and governance. Glean returns only what each user is allowed to see, with citations and links back to sources for verification.**‍**
--   **Faster time‑to‑value**: Standards‑based integration means you can add Glean as a Snowflake tool quickly—no code and custom API maintenance.**‍**
--   **From insight to action**: Use Glean to generate summaries, draft updates, or kick off workflows once you’ve found the metric you need in Snowflake—right where work happens.
+-   **Faster time‑to‑value**: Standards‑based integration means you can add Glean as a Snowflake tool quickly-no code and custom API maintenance.**‍**
+-   **From insight to action**: Use Glean to generate summaries, draft updates, or kick off workflows once you’ve found the metric you need in Snowflake-right where work happens.
 
 ## An integration for everyday work  
 
-Integrating these new capabilities across the entire organization is easy—and delivers quick, comprehensive results that drive work forward. For example:  
+Integrating these new capabilities across the entire organization is easy-and delivers quick, comprehensive results that drive work forward. For example:  
 
 -   A **revenue leader** asks, “Which deals are at risk this quarter and why?” Snowflake Intelligence returns pipeline and forecast signals; Glean adds context from customer call transcripts, recordings of recent pipeline reviews by sales managers, support tickets that might create deal risk, and competitive notes to explain the risks and next steps.
 -   A **support manager** asks, “What’s driving escalations this week?” Snowflake provides call volume and handle time trend lines; Glean surfaces root‑cause evidence from engineering docs, Jira tickets escalated to engineering, product changes shipped and release notes, and customer conversations.

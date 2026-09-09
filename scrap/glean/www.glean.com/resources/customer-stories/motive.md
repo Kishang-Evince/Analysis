@@ -57,7 +57,7 @@ Motive is an AI platform for physical operations that empowers the people who ru
 
 ## Before Glean
 
-As Motive scaled, they identified an opportunity to accelerate productivity by improving how employees access knowledge across the organization. With an ambitious goal of boosting productivity by 50%, Motive prioritized enterprise search as a foundational capability. Beyond search, Motive was focused on equipping teams with more secure, company-contextual AI that could meaningfully improve day-to-day workflows — ensuring employees had fast, trusted access to the information they need while maintaining the highest standards of security.
+As Motive scaled, they identified an opportunity to accelerate productivity by improving how employees access knowledge across the organization. With an ambitious goal of boosting productivity by 50%, Motive prioritized enterprise search as a foundational capability. Beyond search, Motive was focused on equipping teams with more secure, company-contextual AI that could meaningfully improve day-to-day workflows - ensuring employees had fast, trusted access to the information they need while maintaining the highest standards of security.
 
 They needed a solution that would democratize employee access to powerful AI capabilities, allow employees to experiment with various models, and unlock agentic workflows, while maintaining strict security standards. Furthermore, repeatedly toggling between applications and tasks took workers out of flow, impacting focus and productivity. They needed a centralized, searchable intranet to consolidate data currently isolated across various applications and provide context for everyday work.
 
@@ -105,7 +105,7 @@ GTM Team
 
 Sales Prospecting Assistant
 
-Drawing from nearly 80 pieces of Motive’s sales content, this agent helps sellers quickly tailor high-quality emails, discovery questions, and talk tracks that align with Motive’s sales methodology and best practice frameworks. Estimated to save 60 minutes per run, this one agent has unlocked valuable time savings for sellers to focus more time on customer conversations — enabling more consistent engagement, stronger buyer experiences, and increased meeting volume.
+Drawing from nearly 80 pieces of Motive’s sales content, this agent helps sellers quickly tailor high-quality emails, discovery questions, and talk tracks that align with Motive’s sales methodology and best practice frameworks. Estimated to save 60 minutes per run, this one agent has unlocked valuable time savings for sellers to focus more time on customer conversations - enabling more consistent engagement, stronger buyer experiences, and increased meeting volume.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69f0c965b9236ca97bad0e8f_motive-static-img.webp)
 
@@ -141,7 +141,7 @@ Motive continues to push the boundaries of AI adoption by analyzing how AI usage
 
 ‍
 
-They're focused on quantifying not just efficiency gains but effectiveness improvements and innovation investments — whether that's getting the time back to focus more on upskilling, tackling higher-value work, or simply taking a walk outside to become a happier, better employee. When it comes to AI, Maddie believes that everyone should feel empowered. “This type of technology for the enterprise is still somewhat new, which makes AI a fairly even playing field. It’s allowing everyone to have a seat at the table. While this can be daunting, it also makes right now the perfect time to experiment.”
+They're focused on quantifying not just efficiency gains but effectiveness improvements and innovation investments - whether that's getting the time back to focus more on upskilling, tackling higher-value work, or simply taking a walk outside to become a happier, better employee. When it comes to AI, Maddie believes that everyone should feel empowered. “This type of technology for the enterprise is still somewhat new, which makes AI a fairly even playing field. It’s allowing everyone to have a seat at the table. While this can be daunting, it also makes right now the perfect time to experiment.”
 
 ## Explore more customer stories
 

@@ -57,7 +57,7 @@ adoption
 
 ## Introduction
 
-Zapier is an AI orchestration platform built for teams at organizations of every size, helping teams connect with over 9,000 apps to automate the most tedious parts of the workday. It turns complex integrations into simple, point-and-click workflows that handle everything from lead routing and data synchronization to customer conversations, all without requiring users to write a line of code. Since 2012, millions of users—from scrappy startups to Fortune 500 companies—have trusted Zapier to streamline their operations, reduce errors, and accelerate growth through intelligent automation.
+Zapier is an AI orchestration platform built for teams at organizations of every size, helping teams connect with over 9,000 apps to automate the most tedious parts of the workday. It turns complex integrations into simple, point-and-click workflows that handle everything from lead routing and data synchronization to customer conversations, all without requiring users to write a line of code. Since 2012, millions of users-from scrappy startups to Fortune 500 companies-have trusted Zapier to streamline their operations, reduce errors, and accelerate growth through intelligent automation.
 
 ## Before Glean
 
@@ -119,7 +119,7 @@ Director of GTM Innovation, Zapier
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6846e09ffb297bfbf46f2cbd_Quote%20BG.svg)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6a8785705766495eb3719795_LindsayRothlisberger.jpeg)
 
-“Glean was just so easy to roll out—it's not some project that took forever and became a slog. Now, it's just part of the DNA of how we operate.”
+“Glean was just so easy to roll out-it's not some project that took forever and became a slog. Now, it's just part of the DNA of how we operate.”
 
 Elise Dunham
 
@@ -131,7 +131,7 @@ Knowledge Manager, Zapier
 
 ### What’s next for Zapier
 
-With information easy to find and Glean woven into day-to-day work across the organization, Zapier's focus is continuing to enhance their context layer, expanding that foundation so every employee, and the agents they use, can draw on the full context they need to do their jobs—no matter what tool they choose to work in.
+With information easy to find and Glean woven into day-to-day work across the organization, Zapier's focus is continuing to enhance their context layer, expanding that foundation so every employee, and the agents they use, can draw on the full context they need to do their jobs-no matter what tool they choose to work in.
 
 ## Explore more customer stories
 

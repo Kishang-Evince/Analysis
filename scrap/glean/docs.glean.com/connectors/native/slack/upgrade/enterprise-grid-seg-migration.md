@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:29:43.610Z"
 ---
 On this page
 
-Glean is moving your Slack Enterprise Grid connector from the Discovery API to the new Web API-powered Slack Enterprise connector. Glean has already migrated your existing configuration — the Slack Enterprise domain, Enterprise ID, App-Level Token, and Signing Secret — so you only need to install the Glean app across your workspaces and add your **Client ID** and **Client Secret**.
+Glean is moving your Slack Enterprise Grid connector from the Discovery API to the new Web API-powered Slack Enterprise connector. Glean has already migrated your existing configuration - the Slack Enterprise domain, Enterprise ID, App-Level Token, and Signing Secret - so you only need to install the Glean app across your workspaces and add your **Client ID** and **Client Secret**.
 
 Follow this guide when Glean has started the migration for you and you see a setup page titled **Finish upgrading your Slack Enterprise connection** in the admin console. If you're upgrading your Slack connector on your own instead, follow the [Slack Enterprise Grid (Discovery API) app upgrade guide](/connectors/native/slack/upgrade/enterprise-grid-app-upgrade).
 

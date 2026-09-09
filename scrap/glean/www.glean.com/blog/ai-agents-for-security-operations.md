@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/ai-agents-for-security-operations"
 canonical: "https://www.glean.com/blog/ai-agents-for-security-operations"
 title: "11 AI agents powering every stage of security operations"
-description: "Sunil Agrawal  | Discover the security AI agents that help teams detect, investigate, and respond faster — strengthening protection with trusted, governed intelligence."
+description: "Sunil Agrawal  | Discover the security AI agents that help teams detect, investigate, and respond faster - strengthening protection with trusted, governed intelligence."
 fetched_at: "2026-09-01T13:26:25.754Z"
 ---
 Last updated Nov 03, 2025.
@@ -184,7 +184,7 @@ Recommend actions to isolate or mitigate threats while maintaining compliance wi
 
 #### Incident response process 
 
-Helps security teams respond quickly and consistently by guiding them through approved playbooks — or, creates a tailored template playbook if one doesn’t exist.
+Helps security teams respond quickly and consistently by guiding them through approved playbooks - or, creates a tailored template playbook if one doesn’t exist.
 
 -   **Problem to solve:** During incidents, responders often rely on fragmented documentation or past experience to determine next steps, leading to inconsistent remediation and slower resolution.
 -   **What it does:** Retrieves the right playbook for scenarios such as account compromise, lateral movement, or privilege escalation from connected knowledge and ticketing systems like ServiceNow, walking analysts through step-by-step actions. If no playbook exists, Glean drafts a tailored template informed by the issue type and the customer’s connected systems.
@@ -192,7 +192,7 @@ Helps security teams respond quickly and consistently by guiding them through ap
 
 ### Document evidence and analyst notes
 
-Capture key investigation details — actions taken, data reviewed, and outcomes — as work happens. Documentation at this stage ensures every response is complete, auditable, and easy to revisit.
+Capture key investigation details - actions taken, data reviewed, and outcomes - as work happens. Documentation at this stage ensures every response is complete, auditable, and easy to revisit.
 
 #### Incident response documentation 
 
@@ -262,7 +262,7 @@ Together, Search and Assistant reduce friction across investigations. They help 
 
 ## **Why security teams choose Glean**
 
-AI agents are only as effective as the data and context they’re built on. Glean’s Work AI platform gives security teams a foundation that’s secure, scalable, and proven — helping them adopt AI responsibly across every part of their operations.
+AI agents are only as effective as the data and context they’re built on. Glean’s Work AI platform gives security teams a foundation that’s secure, scalable, and proven - helping them adopt AI responsibly across every part of their operations.
 
 **Enterprise-grade security**
 
@@ -284,7 +284,7 @@ By turning fragmented security data into a connected layer of intelligence, Glea
 
 ## **The future of security is built on trusted intelligence**
 
-Every security team shares the same mandate: act fast, stay compliant, and protect the organization’s most valuable data. What’s changing is how that mandate gets fulfilled. Security is becoming more connected, deliberate, and informed — with AI now embedded in how teams detect, investigate, and respond. That foundation of knowledge strengthens every decision.
+Every security team shares the same mandate: act fast, stay compliant, and protect the organization’s most valuable data. What’s changing is how that mandate gets fulfilled. Security is becoming more connected, deliberate, and informed - with AI now embedded in how teams detect, investigate, and respond. That foundation of knowledge strengthens every decision.
 
 When intelligence is built on verified data and governed access, trust becomes measurable. It shows up in every alert, action, and audit trail. Glean helps security teams reach that level of confidence by unifying knowledge across tools and guiding responses with precision and accountability.
 

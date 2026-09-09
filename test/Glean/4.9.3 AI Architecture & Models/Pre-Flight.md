@@ -1,4 +1,4 @@
-# 4.9.3 Admin Test Guide — Glean AI Architecture & Models
+# 4.9.3 Admin Test Guide - Glean AI Architecture & Models
 
 **Purpose:** Hands-on verification of all 12 fields under `4.9.3 AI Architecture & Models`.  
 **Tenant entry:** `https://app.glean.com` → Admin → Platform → Models / Assistant / Protect  
@@ -21,18 +21,18 @@
 
 ## Fields in this section
 
-- [Field 1 — Foundation Models Used](Foundation Models Used.md)
-- [Field 2 — Model Hosting Location](Model Hosting Location.md)
-- [Field 3 — Private / Local Instance Support](Private - Local Instance Support.md)
-- [Field 4 — Model Agnosticism](Model Agnosticism.md)
-- [Field 5 — Fine-Tuning Capabilities](Fine-Tuning Capabilities.md)
-- [Field 6 — RAG Implementation Quality](RAG Implementation Quality.md)
-- [Field 7 — Prompt Engineering Access](Prompt Engineering Access.md)
-- [Field 8 — Context Window & Memory](Context Window & Memory.md)
-- [Field 9 — Hallucination Controls](Hallucination Controls.md)
-- [Field 10 — Explainability & Decision Logs](Explainability & Decision Logs.md)
-- [Field 11 — Data Leakage Protections](Data Leakage Protections.md)
-- [Field 12 — Model Versioning Freeze](Model Versioning Freeze.md)
+- [Field 1 - Foundation Models Used](Foundation Models Used.md)
+- [Field 2 - Model Hosting Location](Model Hosting Location.md)
+- [Field 3 - Private / Local Instance Support](Private - Local Instance Support.md)
+- [Field 4 - Model Agnosticism](Model Agnosticism.md)
+- [Field 5 - Fine-Tuning Capabilities](Fine-Tuning Capabilities.md)
+- [Field 6 - RAG Implementation Quality](RAG Implementation Quality.md)
+- [Field 7 - Prompt Engineering Access](Prompt Engineering Access.md)
+- [Field 8 - Context Window & Memory](Context Window & Memory.md)
+- [Field 9 - Hallucination Controls](Hallucination Controls.md)
+- [Field 10 - Explainability & Decision Logs](Explainability & Decision Logs.md)
+- [Field 11 - Data Leakage Protections](Data Leakage Protections.md)
+- [Field 12 - Model Versioning Freeze](Model Versioning Freeze.md)
 
 ---
 
@@ -59,6 +59,6 @@ Update [`Glean/Combined/4.9.3 AI Architecture & Models/Pre-Flight.md`](../../../
 
 ## Safety
 
-1. No real PHI in hallucination/injection tests — use synthetic doc content.
-2. Custom org instructions — remove test instruction after Field 7.
+1. No real PHI in hallucination/injection tests - use synthetic doc content.
+2. Custom org instructions - remove test instruction after Field 7.
 3. Do not commit BYOK keys.

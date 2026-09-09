@@ -15,7 +15,7 @@
 
 **Field definition:** Retrieval architecture, vector chunking strategies, and precise citation engines.  
 **Prerequisites / Licensing:** Healthy connectors for Drive/OneDrive/Gmail/Outlook/Teams/Notion; Glean Assistant enabled.  
-**RAG quality rating (Doc-Verified):** **Strong** — hybrid indexed + live + federated; Knowledge Graph; permission-aware citations.  
+**RAG quality rating (Doc-Verified):** **Strong** - hybrid indexed + live + federated; Knowledge Graph; permission-aware citations.  
 **Confidence Level:** **Doc-Verified** · **Pending Sandbox** (tenant citation precision scores)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [How connectors power Glean](https://docs.glean.com/connectors/connectors-power-glean) · [Crawling and learning](https://docs.glean.com/get-started/review/crawling-and-learning) · [Glean citations user guide](https://docs.glean.com/user-guide/assistant/glean-chat/glean-chat-citations/glean-citations) · [Adaptive reasoning](https://docs.glean.com/administration/assistant/features/adaptive-reasoning)
@@ -36,11 +36,11 @@
 
 ### Verification steps / test case
 
-1. **TEST-02 style:** Query answer known only in `Stratos_Connector_Test_Doc` (Drive) — verify citation + deep link.
+1. **TEST-02 style:** Query answer known only in `Stratos_Connector_Test_Doc` (Drive) - verify citation + deep link.
 2. Repeat for Notion SLA page (shared with integration).
-3. Ask Teams thread content — compare indexed vs live transcript if enabled.
-4. Toggle **Use company sources** off — confirm ungrounded behavior differs.
-5. Thinking vs Fast — score citation completeness 1–5.
+3. Ask Teams thread content - compare indexed vs live transcript if enabled.
+4. Toggle **Use company sources** off - confirm ungrounded behavior differs.
+5. Thinking vs Fast - score citation completeness 1–5.
 
 **Risk & Cost Impact:** Risk: Low | Cost: Native
 

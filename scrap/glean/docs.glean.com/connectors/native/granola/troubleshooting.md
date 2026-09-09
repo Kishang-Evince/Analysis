@@ -19,7 +19,7 @@ If the connector validates successfully but no Team space notes appear after the
 
 ### My personal notes are not appearing
 
-Personal notes are indexed only when you have connected a personal API key from the **Granola** toggle in the right-hand panel of the Glean search results page. If you haven't connected a key, run a search in Glean and toggle on **Granola** in the right panel to paste your personal API key. Personal API keys cannot currently be updated or removed from Glean once connected — if your key is revoked or expired in Granola, contact your Glean administrator.
+Personal notes are indexed only when you have connected a personal API key from the **Granola** toggle in the right-hand panel of the Glean search results page. If you haven't connected a key, run a search in Glean and toggle on **Granola** in the right panel to paste your personal API key. Personal API keys cannot currently be updated or removed from Glean once connected - if your key is revoked or expired in Granola, contact your Glean administrator.
 
 Note that personal notes already in your Team space are deduplicated against the workspace crawl and only appear once in Glean.
 

@@ -24,27 +24,27 @@
 
 | Surface | User-visible explanation | Routing/model logic exposed? |
 |---|---|---|
-| **Assistant Chat** | Inline citation markers; **View sources** panel; hover preview; deep-linked passage when enabled | **No** — Waldo retrieval plan hidden |
-| **Search** | Ranked results with snippets; verified badge | **No** — ranking opaque |
+| **Assistant Chat** | Inline citation markers; **View sources** panel; hover preview; deep-linked passage when enabled | **No** - Waldo retrieval plan hidden |
+| **Search** | Ranked results with snippets; verified badge | **No** - ranking opaque |
 | **Answers** | Curated human-authored card pinned when match confident | **No** score shown |
-| **Agents (runtime)** | Step output text + citations in response | **No** — unless builder uses Debug in Preview |
-| **Agents (Debug mode)** | Step list, spans, I/O, model metadata | **Yes** — builder/admin only; not Azure-hosted |
+| **Agents (runtime)** | Step output text + citations in response | **No** - unless builder uses Debug in Preview |
+| **Agents (Debug mode)** | Step list, spans, I/O, model metadata | **Yes** - builder/admin only; not Azure-hosted |
 | **Deep Research** | Multi-page report with linked citations | **No** intermediate reasoning chain to user |
 
 ### Engineering observation (Doc-Verified)
 
-- Citations **never grant new access** — explanation is permission-bound; User B sees masked sources in shared chats.
-- Fast mode may skip retrieval — answer without citations; docs say absence of citations ≠ hallucination.
+- Citations **never grant new access** - explanation is permission-bound; User B sees masked sources in shared chats.
+- Fast mode may skip retrieval - answer without citations; docs say absence of citations ≠ hallucination.
 - Adaptive reasoning: Waldo plans searches **before** frontier model; user sees final answer only.
 - For client-facing explainability: **"show your work" = citations**, not **"show your routing"**.
 
 ### Verification steps / test case
 
-1. Assistant query on `Stratos_Connector_Test_Doc` — confirm inline citation + deep link opens correct passage.
-2. Same query in Fast vs Thinking — compare citation count (Thinking should be richer).
-3. Turn off **Use company sources** — confirm uncited general-knowledge response; document disclaimer behavior.
-4. Agent Preview with Debug — export step trace for Drive→Notion workflow; confirm not visible to end user in published agent.
-5. Ask *"Why did you choose these sources?"* — note whether Assistant explains retrieval vs deflects.
+1. Assistant query on `Stratos_Connector_Test_Doc` - confirm inline citation + deep link opens correct passage.
+2. Same query in Fast vs Thinking - compare citation count (Thinking should be richer).
+3. Turn off **Use company sources** - confirm uncited general-knowledge response; document disclaimer behavior.
+4. Agent Preview with Debug - export step trace for Drive→Notion workflow; confirm not visible to end user in published agent.
+5. Ask *"Why did you choose these sources?"* - note whether Assistant explains retrieval vs deflects.
 
 **Risk & Cost Impact:** Risk: Medium (users trust uncited Fast answers) | Cost: Native
 

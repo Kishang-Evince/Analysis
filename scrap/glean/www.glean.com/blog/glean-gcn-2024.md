@@ -91,11 +91,11 @@ Interested in learning about the best way to bring generative AI into the enterp
 
 -   **CloudTalk Theatre Session:** [Building generative AI experiences for the enterprise on Google Cloud  
     ](https://cloud.withgoogle.com/next/session-library?session=CT210#all)**Speaker:** Eddie Zhou, Founding Engineer  
-    ‍**About:** Building an assistant capable of answering complex, company-specific questions and executing workflows requires first building a powerful [Retrieval Augmented Generation](https://www.glean.com/resources/guides/what-is-retrieval-augmented-generation-rag) (RAG) system. Founding engineer Eddie Zhou explains how Glean built its RAG system on Google Cloud— combining a domain-adapted search engine with dynamic prompts to harness the full capabilities of Gemini's reasoning engine.
+    ‍**About:** Building an assistant capable of answering complex, company-specific questions and executing workflows requires first building a powerful [Retrieval Augmented Generation](https://www.glean.com/resources/guides/what-is-retrieval-augmented-generation-rag) (RAG) system. Founding engineer Eddie Zhou explains how Glean built its RAG system on Google Cloud- combining a domain-adapted search engine with dynamic prompts to harness the full capabilities of Gemini's reasoning engine.
 
 -   **Panel Session:** [A guide for enterprises: How to implement generative AI applications  
     ](https://cloud.withgoogle.com/next/session-library?utm_source=google&utm_medium=cpc&utm_campaign=FY24-Q2-global-ENDM33-physicalevent-er-next-2024-mc&utm_content=-&utm_term=-&gad_source=1&gclid=Cj0KCQjwwMqvBhCtARIsAIXsZpYe008Y_r4SdmC1Jd2nA7K_ky7gk4MSCJsvlyTtAochDsyPpkEr2nIaAvHJEALw_wcB&gclsrc=aw.ds&session=AIML145#all)**Speaker:** Arvind Jain, Founder & CEO  
-    ‍**About:** Join experts from Box, Typeface, Glean, CitiBank, and Securiti AI for actionable tips to effectively implement AI-powered apps across your enterprise. We'll discuss real use cases, implementation best practices, and how to measure returns on investment — whether that's in marketing, financial services, HR, or beyond.
+    ‍**About:** Join experts from Box, Typeface, Glean, CitiBank, and Securiti AI for actionable tips to effectively implement AI-powered apps across your enterprise. We'll discuss real use cases, implementation best practices, and how to measure returns on investment - whether that's in marketing, financial services, HR, or beyond.
 
 -   **Panel Session:** [Founder series panel: Solving consumer and enterprise hurdles with natural language  
     ](https://cloud.withgoogle.com/next/session-library?session=AIML155#all)**Speaker:** Arvind Jain, Founder & CEO  

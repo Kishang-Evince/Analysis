@@ -83,23 +83,23 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-AI is at a turning point—the reasoning capabilities of large language models (LLMs), combined with enterprise data and tools enable AI to contribute directly to real, impactful work. By empowering AI to handle work alongside humans, companies can accelerate execution, democratize insights, and fundamentally alter the innovation curve to be more competitive. 
+AI is at a turning point-the reasoning capabilities of large language models (LLMs), combined with enterprise data and tools enable AI to contribute directly to real, impactful work. By empowering AI to handle work alongside humans, companies can accelerate execution, democratize insights, and fundamentally alter the innovation curve to be more competitive. 
 
-To maximize AI's potential, it is crucial to provide agents with broad access to company data. While this improves the relationship between companies and their data where more context results in benefits, it’s also resulting in growing security requirements. To prevent leaks, data permissions need to be enforced—which Glean has done from day one. However, sometimes permissions are not enough. Sensitive data can be overshared, stored incorrectly, or exceed a retention policy. Instead, it’s important to actively protect sensitive data across all enterprise applications for AI. 
+To maximize AI's potential, it is crucial to provide agents with broad access to company data. While this improves the relationship between companies and their data where more context results in benefits, it’s also resulting in growing security requirements. To prevent leaks, data permissions need to be enforced-which Glean has done from day one. However, sometimes permissions are not enough. Sensitive data can be overshared, stored incorrectly, or exceed a retention policy. Instead, it’s important to actively protect sensitive data across all enterprise applications for AI. 
 
 Today, we’re excited to announce active data and AI governance for the age of agents in the workplace. This new capability continuously scans and remediates overshared sensitive data, data shared beyond its intended scope or retention, across enterprise applications, enabling enterprises to securely adopt agents.
 
 In this blog, we’ll share how active governance builds on Glean’s modern security framework that enforces permissions, protects data, and meets compliance requirements. We’re also introducing a new Open Security and Governance Partner Program with leaders in data and AI security, including BigID, Cisco, Palo Alto Networks, Rubrik, and Virtue AI in our initial cohort.
 
-## Unified permissions—the groundwork for data governance
+## Unified permissions-the groundwork for data governance
 
 Glean unites world and work data, both structured and unstructured, into a [universal knowledge](https://www.glean.com/blog/univ-knowledge-product-blog) base to help employees and agents work smarter with AI. By connecting to 100+ business applications, Glean has full context into your company and operates as a horizontal platform across all departments. 
 
-To ensure data security, Glean builds a unified permissions framework across its entire Work AI platform— Glean Search, Glean Assistant, and Glean Agents—so users can only view data they are authorized to access in the source application. Your data and permissions are always secure, isolated, and quickly updated to maintain data security
+To ensure data security, Glean builds a unified permissions framework across its entire Work AI platform- Glean Search, Glean Assistant, and Glean Agents-so users can only view data they are authorized to access in the source application. Your data and permissions are always secure, isolated, and quickly updated to maintain data security
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/67ac8eee13e234d203fa0ab9_Levels.png)
 
-The value of enterprise data is accelerating as employees broadly leverage AI and agents to automate work and make informed, data-driven decisions. With Glean, we’re introducing another layer of governance on top of our permissions framework that makes it easy for companies to continue their adoption of AI in a secure and compliant way—active data and AI governance. 
+The value of enterprise data is accelerating as employees broadly leverage AI and agents to automate work and make informed, data-driven decisions. With Glean, we’re introducing another layer of governance on top of our permissions framework that makes it easy for companies to continue their adoption of AI in a secure and compliant way-active data and AI governance. 
 
 ## Securing sensitive content with active governance 
 
@@ -113,7 +113,7 @@ Glean’s active data and AI governance provides:
 **With coverage for over 100 applications, Glean provides a platform-approach to data governance so that all employees and agents can leverage company knowledge while keeping sensitive data off limits. With universal knowledge, Glean eliminates the need to setup and maintain scans for each application. All data can be analyzed and managed in a single place.
 
 **Continuous reports with automatic remediation  
-**Continuous reports with automatic remediation protects sensitive content from being used across Glean- Glean Search, Glean Assistant, and Glean Agents. You can also run reports on your own schedule—continuously, weekly, or one at a time.
+**Continuous reports with automatic remediation protects sensitive content from being used across Glean- Glean Search, Glean Assistant, and Glean Agents. You can also run reports on your own schedule-continuously, weekly, or one at a time.
 
 **Customizable reports for your business  
 **With access to 100+ predefined infotypes, custom terms, and regular expressions, you have the building blocks to create comprehensive, customized reports for your business. Granular report settings, including the ability to hone in on user groups, data sources, distribution, and see sensitive data in context, helps you to safeguard company data.
@@ -132,7 +132,7 @@ With active governance in place, Glean improves engineering productivity, reduci
 
 **Global transportation company actively remediates accidentally overshared sensitive content and continues its adoption of enterprise AI.** 
 
-This transportation company was able to provide their engineers with the right context across documentation, conversations, tickets, and the code base—all while automatically remediating overshared content—enabling them to ship code faster. 
+This transportation company was able to provide their engineers with the right context across documentation, conversations, tickets, and the code base-all while automatically remediating overshared content-enabling them to ship code faster. 
 
 ## Access leading AI and data security models with the Open Security and Governance Partner Program
 

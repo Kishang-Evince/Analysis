@@ -40,6 +40,6 @@ Individual users can also opt out of chat history for their own account, even wh
 
 ## Effect on Glean Customer Event logs[​](#effect-on-glean-customer-event-logs "Direct link to Effect on Glean Customer Event logs")
 
-Turning off chat history — whether at the organization level or the individual user level — controls only whether past chats are stored and visible in the chat history panel. It doesn't affect [Glean Customer Event logs](/administration/gce-logs/data-dictionary).
+Turning off chat history - whether at the organization level or the individual user level - controls only whether past chats are stored and visible in the chat history panel. It doesn't affect [Glean Customer Event logs](/administration/gce-logs/data-dictionary).
 
 Glean Customer Event logging is a separate system that records events (including `CHAT` events) for analytics and auditing purposes. These logs continue to be written regardless of the chat history setting.

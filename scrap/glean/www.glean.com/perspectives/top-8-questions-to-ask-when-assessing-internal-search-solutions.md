@@ -63,7 +63,7 @@ Share this article:
 
 # Top 8 questions to ask when assessing internal search solutions
 
-Every enterprise reaches a point where the volume of internal knowledge — scattered across dozens of apps, drives, and platforms — outpaces any individual's ability to find what they need. The cost of that fragmentation is real: lost hours, duplicated work, and decisions made without the full picture.
+Every enterprise reaches a point where the volume of internal knowledge - scattered across dozens of apps, drives, and platforms - outpaces any individual's ability to find what they need. The cost of that fragmentation is real: lost hours, duplicated work, and decisions made without the full picture.
 
 An internal search solution addresses this problem directly by giving employees a single interface to locate information across the entire digital workplace. The right tool doesn't just save time; it reshapes how teams access knowledge, collaborate, and move work forward.
 
@@ -71,27 +71,27 @@ This guide breaks down the eight most important questions to ask when evaluating
 
 ## What is an internal search solution and why does it matter?
 
-An internal search solution is a tool that allows employees to find information, documents, and answers across an organization's applications, files, and systems — all from a single search interface. Unlike external search engines that crawl the open web, internal search indexes content within your organization's digital boundaries: intranets, cloud storage, email, knowledge bases, ticketing systems, CRMs, and business applications. The distinction matters because enterprise data lives behind authentication layers, permission structures, and organizational context that public search engines simply cannot reach.
+An internal search solution is a tool that allows employees to find information, documents, and answers across an organization's applications, files, and systems - all from a single search interface. Unlike external search engines that crawl the open web, internal search indexes content within your organization's digital boundaries: intranets, cloud storage, email, knowledge bases, ticketing systems, CRMs, and business applications. The distinction matters because enterprise data lives behind authentication layers, permission structures, and organizational context that public search engines simply cannot reach.
 
 The practical impact extends well beyond convenience. Employees in engineering, sales, support, HR, and IT rely on quick access to context-rich information to do their jobs effectively. When a support agent needs to reference a product update buried in a Confluence page, or an engineer needs the latest architecture decision documented in a Google Doc, the speed of that retrieval directly affects outcomes. A well-functioning internal search tool reduces the time spent switching between apps, re-asking colleagues for information that already exists somewhere, and making decisions based on incomplete or outdated knowledge.
 
-For enterprise organizations — particularly those in technology, financial services, retail, and manufacturing — the stakes compound as teams grow and content volumes increase. Three dynamics make internal search a foundational layer rather than a nice-to-have:
+For enterprise organizations - particularly those in technology, financial services, retail, and manufacturing - the stakes compound as teams grow and content volumes increase. Three dynamics make internal search a foundational layer rather than a nice-to-have:
 
 -   **Knowledge management sprawl**: The average enterprise uses well over 100 SaaS applications. Without a unified search layer, each app becomes its own silo, and institutional knowledge fragments across platforms that don't communicate with each other.
 -   **Distributed team structures**: Remote and hybrid work models mean employees can no longer walk to a colleague's desk to ask a quick question. Search becomes the primary mechanism for self-service knowledge access, and its quality determines whether people find answers in seconds or spend 20 minutes hunting.
 -   **Decision velocity**: In fast-moving organizations, the ability to surface the right document, the right expert, or the right data point at the right moment has a measurable effect on how quickly teams ship products, close deals, and resolve customer issues.
 
-It's also worth noting what internal search is *not*. Intranet search — the kind built into a single platform like a company portal — covers only a narrow slice of where work actually happens. True internal search spans the full ecosystem of tools an organization depends on, treating every connected source as part of a unified, searchable knowledge layer. That breadth is what transforms search from a feature into infrastructure.
+It's also worth noting what internal search is *not*. Intranet search - the kind built into a single platform like a company portal - covers only a narrow slice of where work actually happens. True internal search spans the full ecosystem of tools an organization depends on, treating every connected source as part of a unified, searchable knowledge layer. That breadth is what transforms search from a feature into infrastructure.
 
 ## Does it connect to all the places your team actually works?
 
-Start with a source inventory, not a feature checklist. Before anything else, the product should map cleanly to the systems that hold day-to-day knowledge across sales, support, engineering, IT, and HR — from SharePoint, Google Drive, Salesforce, ServiceNow, Zendesk, and Workday to internal portals, file stores, and ticket history.
+Start with a source inventory, not a feature checklist. Before anything else, the product should map cleanly to the systems that hold day-to-day knowledge across sales, support, engineering, IT, and HR - from SharePoint, Google Drive, Salesforce, ServiceNow, Zendesk, and Workday to internal portals, file stores, and ticket history.
 
 Connector count alone does not answer the question. What matters is whether the platform reaches the systems that carry real operational context across your company, without long implementation cycles or brittle custom integrations.
 
 ### Connector breadth matters more than a polished demo
 
-A serious evaluation should look for native coverage across both structured and unstructured content. In practice, that means support for documents, PDFs, spreadsheets, wiki pages, CRM records, case notes, ticket threads, and employee data — not just files with neat titles and metadata.
+A serious evaluation should look for native coverage across both structured and unstructured content. In practice, that means support for documents, PDFs, spreadsheets, wiki pages, CRM records, case notes, ticket threads, and employee data - not just files with neat titles and metadata.
 
 The strongest platforms, including systems like Glean, usually support more than 100 integrations because enterprise knowledge rarely sits in one content format. A useful connector strategy should account for:
 
@@ -116,7 +116,7 @@ A strong platform enforces source-level permissions down to the object, field, a
 
 ### Access control should survive real-world change
 
-Permission drift creates most of the risk. Role changes, offboarding events, matter reassignments, and temporary project access happen every day, so the search layer has to reflect those changes on the next query — not after a nightly sync or a manual reindex.
+Permission drift creates most of the risk. Role changes, offboarding events, matter reassignments, and temporary project access happen every day, so the search layer has to reflect those changes on the next query - not after a nightly sync or a manual reindex.
 
 Ask the vendor to explain four specifics:
 
@@ -150,7 +150,7 @@ Basic retrieval systems rank text that looks similar. Strong enterprise search r
 
 ### Context turns retrieval into understanding
 
-Meaning inside a company depends on relationships. A query such as “head of security” may point to a leader, an org chart entry, a team page, a policy owner, or a recent announcement. The right result depends on role, source, and organizational context — not just the words themselves.
+Meaning inside a company depends on relationships. A query such as “head of security” may point to a leader, an org chart entry, a team page, a policy owner, or a recent announcement. The right result depends on role, source, and organizational context - not just the words themselves.
 
 This is where a knowledge graph becomes important. It maps how people, teams, documents, tools, and activity connect, which gives search the context to answer requests such as “Who supports payroll in London?” or “Which team owns contractor access reviews?” with much higher precision. Products built with this kind of structure, such as Glean, can reason across those relationships instead of treating every query as plain text. Without that layer, people search, expertise lookup, and org-aware queries tend to degrade into guesswork.
 
@@ -158,12 +158,12 @@ This is where a knowledge graph becomes important. It maps how people, teams, do
 
 Once a platform can retrieve the right information securely, the next test is whether it can rank that information differently for different employees. Relevance inside an enterprise is not fixed; the best result for a support manager, an account executive, and an HR partner can come from the same set of systems but require a different order of results.
 
-That shift should appear throughout the experience — in result ranking, autocomplete, suggested answers, and the information surfaced inside tools people already use. Strong internal search products rely on contextual signals such as department, geography, recency, project involvement, and prior engagement so employees see less noise and reach the right page, message, or record faster.
+That shift should appear throughout the experience - in result ranking, autocomplete, suggested answers, and the information surfaced inside tools people already use. Strong internal search products rely on contextual signals such as department, geography, recency, project involvement, and prior engagement so employees see less noise and reach the right page, message, or record faster.
 
 ### What good personalization looks like
 
 -   **Adaptive ranking**: The system should reorder results based on patterns from similar users and prior interactions, not force every employee through the same default ranking model. This reduces dependence on manual boosts and rule-heavy tuning.
--   **Workday context**: Search quality improves when the engine accounts for what a person has touched recently — active opportunities, current tickets, scheduled meetings, open projects, or documents viewed in the last few days. Recency often matters more than static profile fields alone.
+-   **Workday context**: Search quality improves when the engine accounts for what a person has touched recently - active opportunities, current tickets, scheduled meetings, open projects, or documents viewed in the last few days. Recency often matters more than static profile fields alone.
 -   **Proactive discovery**: The best tools do not wait for a perfectly timed search. They can surface likely-useful information in chat, browser extensions, or workspace hubs based on the task already in front of the employee.
 
 A practical way to test this during evaluation: compare the same search across users from different functions and inspect the ranking, not just the presence of results. Personalization is real only when the output changes in a way that feels precise, explainable, and consistently useful across teams.
@@ -176,7 +176,7 @@ At a minimum, the platform should expose search performance in a way that knowle
 
 -   **Query success rate**: The share of searches that end in a useful result. This metric gives you the clearest signal on whether employees leave search with what they came for.
 -   **Click-through rate**: The percentage of searches that lead to a click on a result, answer, or suggested source. Weak click-through often points to poor ranking, weak result summaries, or a mismatch between intent and output.
--   **Zero-results rate**: The percentage of searches that return nothing. Each no-results query exposes a gap — absent content, poor indexing, weak synonym coverage, or language the system fails to map correctly.
+-   **Zero-results rate**: The percentage of searches that return nothing. Each no-results query exposes a gap - absent content, poor indexing, weak synonym coverage, or language the system fails to map correctly.
 -   **Search refinement frequency**: How often people rewrite a search after the first attempt. A high refinement rate usually means the first response did not satisfy the need.
 -   **Time-to-answer**: How long it takes a user to reach useful information. This matters more than raw interface speed; instant but irrelevant output still wastes time.
 
@@ -194,7 +194,7 @@ Adoption data also helps separate product issues from behavior patterns. Low usa
 
 ### Content gap and quality metrics
 
-The most useful analytics do more than score the search layer. They reveal weaknesses in the underlying knowledge environment — thin documentation, poor metadata, duplicate assets, and outdated material that should not rank near the top.
+The most useful analytics do more than score the search layer. They reveal weaknesses in the underlying knowledge environment - thin documentation, poor metadata, duplicate assets, and outdated material that should not rank near the top.
 
 Two metrics stand out here:
 
@@ -219,18 +219,18 @@ These metrics matter because polished language can hide weak performance. A part
 
 ## How does AI enhance the search experience beyond retrieval?
 
-Once a search platform can surface relevant material, the next layer of value comes from interpretation and execution. AI shortens the path from a question to a usable outcome — not by replacing search, but by turning search results into a response that reflects company language, recent updates, and the full context of the request.
+Once a search platform can surface relevant material, the next layer of value comes from interpretation and execution. AI shortens the path from a question to a usable outcome - not by replacing search, but by turning search results into a response that reflects company language, recent updates, and the full context of the request.
 
-That shift usually relies on retrieval augmented generation, or RAG. In practice, that means the system does more than fetch documents and hand them to a model. It rewrites the question when needed, pulls the most useful passages from the right systems, and assembles a response that saves the employee from opening five tabs to piece together an answer. A request such as “What is our current policy on remote work for contractors?” should pull from the handbook, regional guidance, legal exceptions, and any recent HR update — then present a clear answer in one place.
+That shift usually relies on retrieval augmented generation, or RAG. In practice, that means the system does more than fetch documents and hand them to a model. It rewrites the question when needed, pulls the most useful passages from the right systems, and assembles a response that saves the employee from opening five tabs to piece together an answer. A request such as “What is our current policy on remote work for contractors?” should pull from the handbook, regional guidance, legal exceptions, and any recent HR update - then present a clear answer in one place.
 
 ### From search results to synthesized responses
 
-This is where evaluation gets more practical. A vendor should be able to explain how the product handles query planning, context selection, and response construction across real enterprise content — not just polished demo prompts.
+This is where evaluation gets more practical. A vendor should be able to explain how the product handles query planning, context selection, and response construction across real enterprise content - not just polished demo prompts.
 
 Three areas deserve close scrutiny:
 
 -   **Query planning**: The system should translate vague or messy language into something the search layer can use well. Employees rarely search with perfect terminology; they use abbreviations, partial phrases, internal shorthand, and requests with missing context.
--   **Context assembly**: The model should receive the right snippets, not an oversized dump of loosely related text. High-performing systems select from mixed content types — policy docs, PDFs, chat threads, tickets, spreadsheets — and balance relevance with freshness.
+-   **Context assembly**: The model should receive the right snippets, not an oversized dump of loosely related text. High-performing systems select from mixed content types - policy docs, PDFs, chat threads, tickets, spreadsheets - and balance relevance with freshness.
 -   **Verification signals**: The answer should make it easy to inspect why a statement appears. Good products show document references, quoted passages, dates, and clear markers when sources conflict or the system has limited confidence.
 
 This part of the stack separates useful AI from decorative AI. A search tool with a language model on top is not enough; the retrieval layer, prompt strategy, and answer checks determine whether the experience feels precise or unreliable.
@@ -250,7 +250,7 @@ At that point, AI improves search in a concrete way: it reduces manual synthesis
 
 ## How quickly can you deploy it, and will your team actually use it?
 
-The first deployment question is not how impressive the product looks in a demo; it is how much work your team must absorb before employees see any value. Ask for a concrete rollout plan with named steps — identity setup, source authorization, result validation, pilot launch, and wider release — plus a clear owner for each part. A mature product should come with strong onboarding, usable admin documentation, and direct vendor support so the project does not turn into an open-ended internal build.
+The first deployment question is not how impressive the product looks in a demo; it is how much work your team must absorb before employees see any value. Ask for a concrete rollout plan with named steps - identity setup, source authorization, result validation, pilot launch, and wider release - plus a clear owner for each part. A mature product should come with strong onboarding, usable admin documentation, and direct vendor support so the project does not turn into an open-ended internal build.
 
 Usability deserves the same level of scrutiny. Employees should understand where to search, how to narrow results, and how to open the right source without a training session. Strong products make that easy with uncluttered design, readable previews, and clear recovery paths when a search returns too much, too little, or the wrong type of content.
 
@@ -270,7 +270,7 @@ Long-term fit shows up in operations, not just feature breadth. Ask what uptime 
 
 The roadmap should show more than broad AI ambition. Look for steady product depth: stronger admin tooling, better governance controls, wider deployment options, and more precise ways to adapt the experience for different departments. A credible vendor usually speaks in specific platform priorities and release areas, not vague promises.
 
-The right internal search solution does more than return results — it becomes the connective layer between your people, your knowledge, and the work that matters most. These eight questions give you a framework to evaluate with precision, not assumption.
+The right internal search solution does more than return results - it becomes the connective layer between your people, your knowledge, and the work that matters most. These eight questions give you a framework to evaluate with precision, not assumption.
 
 [Request a demo](https://www.glean.com/get-a-demo) to explore how we can help AI transform your workplace.
 

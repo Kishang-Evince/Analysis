@@ -41,7 +41,7 @@ The search integration is crawl-based. Changes in NetSuite become visible in Gle
 
 You will need the following information during setup:
 
--   NetSuite Account ID (retrieve from your NetSuite URL — for example, `https://12345-sb1.app.netsuite.com` → `12345-sb1`, `https://12345.app.netsuite.com` → `12345`). The Account ID is not case-sensitive.
+-   NetSuite Account ID (retrieve from your NetSuite URL - for example, `https://12345-sb1.app.netsuite.com` → `12345-sb1`, `https://12345.app.netsuite.com` → `12345`). The Account ID is not case-sensitive.
 -   A Machine‑to‑Machine OAuth 2.0 Server Application in NetSuite with:
     -   Integration type: OAuth 2.0 Server Application
     -   Grant type: Client Credentials
@@ -150,7 +150,7 @@ The following transaction types contain specialized data structures.
 
 -   **Credit memos:** Customer transactions that are structured like invoices. Glean titles and dates these records similarly to other customer transactions and associates them with the related customer.
 -   **Journal entries:** General ledger (GL) postings that do not have customer or vendor associations. Each line item is a GL posting that carries its account and a debit or credit amount. The total record amount equals the sum of the line debits. For large journals, such as allocations or payroll, Glean indexes the first 100 GL lines and appends an "… and N more" summary.
--   **Opportunities:** Pre-sales customer relationship management (CRM) records. In addition to line items, these entries surface core CRM header fields — customer, expected close date, projected total, win probability, and sales representative. Users can filter these records by sales representative and expected close date.
+-   **Opportunities:** Pre-sales customer relationship management (CRM) records. In addition to line items, these entries surface core CRM header fields - customer, expected close date, projected total, win probability, and sales representative. Users can filter these records by sales representative and expected close date.
 
 ### Identity and permissions data[​](#identity-and-permissions-data "Direct link to Identity and permissions data")
 
@@ -206,7 +206,7 @@ Use the numeric-only format for production accounts (for example, `12345`) and i
 
 ### Certificate file formats
 
-NetSuite requires a `.pem` extension for the certificate upload, while Glean requires a `.crt` extension. Both files contain the same certificate content — only the extension differs.
+NetSuite requires a `.pem` extension for the certificate upload, while Glean requires a `.crt` extension. Both files contain the same certificate content - only the extension differs.
 
 ### Authentication failures
 

@@ -176,11 +176,11 @@ Your rollout plan
 
 Copy plan
 
-1.  Wave 1 — Marketing
+1.  Wave 1 - Marketing
     
     Scope the PAT's base access (or ask Glean support to set the backend allowlist) to only Marketing's workspaces or bases. Keep the enterprise identity scopes enabled. Run the crawl and validate what is indexed.
     
-2.  Wave 2 — Sales
+2.  Wave 2 - Sales
     
     Widen the same PAT's base access (or the support-set allowlist) to add Sales's workspaces or bases, then rerun the crawl and validate.
     

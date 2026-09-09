@@ -26,17 +26,17 @@ Admins can manage and configure their deployment from the Glean Admin Console. T
 
 ## Admin Chat[​](#admin-chat "Direct link to Admin Chat")
 
-Admin Chat is an embedded, admin-focused chat experience in the Admin Console. It helps you configure, operate, and troubleshoot Glean using Glean's public documentation—the Help Center, Developer Docs, and Gleaniverse. It appears as a resizable widget labeled **Admin Chat** in the bottom-right corner of the Admin Console.
+Admin Chat is an embedded, admin-focused chat experience in the Admin Console. It helps you configure, operate, and troubleshoot Glean using Glean's public documentation-the Help Center, Developer Docs, and Gleaniverse. It appears as a resizable widget labeled **Admin Chat** in the bottom-right corner of the Admin Console.
 
 info
 
-Admin Chat is for Glean admins, not end users. It uses only Glean's public documentation—it doesn't read your private content, inspect your tenant configuration, or change settings on your behalf. For tenant-specific help, it points you to the relevant docs or to Glean Support.
+Admin Chat is for Glean admins, not end users. It uses only Glean's public documentation-it doesn't read your private content, inspect your tenant configuration, or change settings on your behalf. For tenant-specific help, it points you to the relevant docs or to Glean Support.
 
 Use it for onboarding and setup, feature discovery, security and governance questions, and connector or indexing troubleshooting. For the best answers, state your goal, mention where you are in the Admin Console, and include key constraints (for example, "pilot rollout to a small group" or "GCP deployment"). You can ask follow-up questions in the same panel; conversations aren't saved to your chat history.
 
 ## Locate your Tenant ID[​](#locate-your-tenant-id "Direct link to Locate your Tenant ID")
 
-When integrating Glean with connectors and applications, you'll often need your Glean **Tenant ID** or **Tenant Domain**. The domain typically follows the format `tenant_id-be.glean.com`—also called the Backend Domain or Query Endpoint (QE) Domain—where `tenant_id` is your unique Glean Tenant ID. It's used for login, search, crawling, webhooks, and API interactions, so you'll need it when setting up SSO or connectors.
+When integrating Glean with connectors and applications, you'll often need your Glean **Tenant ID** or **Tenant Domain**. The domain typically follows the format `tenant_id-be.glean.com`-also called the Backend Domain or Query Endpoint (QE) Domain-where `tenant_id` is your unique Glean Tenant ID. It's used for login, search, crawling, webhooks, and API interactions, so you'll need it when setting up SSO or connectors.
 
 note
 
@@ -46,7 +46,7 @@ Glean usually includes your Tenant ID in the customized setup instructions in th
 
 -   **From a connector's setup instructions:** Go to **Admin Console → Platform → [Connectors](https://app.glean.com/admin/setup/apps)** and select **Add App**, then choose any app. In the setup sidebar, the *Setting up webhooks* section shows a URL containing your Tenant Domain.
     
--   **From browser developer tools at login:** Open an incognito window, go to [app.glean.com](https://app.glean.com/), open your browser's **Network** tab, and sign in. Look for a request to `https://tenant_id-be.glean.com/login`—the `tenant_id` in that URL is your Tenant ID.
+-   **From browser developer tools at login:** Open an incognito window, go to [app.glean.com](https://app.glean.com/), open your browser's **Network** tab, and sign in. Look for a request to `https://tenant_id-be.glean.com/login`-the `tenant_id` in that URL is your Tenant ID.
     
 
 Learn with Glean Academy

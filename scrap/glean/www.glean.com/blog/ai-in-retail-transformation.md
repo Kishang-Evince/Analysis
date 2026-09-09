@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/ai-in-retail-transformation"
 canonical: "https://www.glean.com/blog/ai-in-retail-transformation"
 title: "5 ways AI in retail helps teams save time and simplify work"
-description: "Stephanie Baladi  | Discover five powerful ways AI is driving retail transformation — from customer service and omnichannel to employee enablement and operations."
+description: "Stephanie Baladi  | Discover five powerful ways AI is driving retail transformation - from customer service and omnichannel to employee enablement and operations."
 fetched_at: "2026-09-01T13:26:27.511Z"
 ---
 Last updated May 30, 2025.
@@ -83,7 +83,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Retail is moving faster than ever — but the real challenge is no longer just speed. Its keeping stores, ecommerce, customer service, and merchandising aligned as conditions change.
+Retail is moving faster than ever - but the real challenge is no longer just speed. Its keeping stores, ecommerce, customer service, and merchandising aligned as conditions change.
 
 Between changing tariffs, shifting customer expectations, economic pressures, and increasingly complex tech stacks, retailers need a faster way to act on what's happening across the business. That’s where AI comes in. At its best, AI helps retailers work from shared context - so teams can prepare the next step, coordinate faster, and keep execution consistent across every channel.
 
@@ -101,7 +101,7 @@ AI can help support teams:
 -   Prepare clearer responses and next steps
 -   Resolve issues with speed and consistency
 
-With Glean, support reps don’t have to manually dig through documents, systems, or emails. They simply ask a question — like “What’s our return policy for international orders?” — and get clear, trusted answers in seconds to keep service moving during high-volume moments.
+With Glean, support reps don’t have to manually dig through documents, systems, or emails. They simply ask a question - like “What’s our return policy for international orders?” - and get clear, trusted answers in seconds to keep service moving during high-volume moments.
 
 ## 2\. Keep omnichannel execution in sync
 
@@ -114,7 +114,7 @@ AI helps omnichannel teams:
 -   Unify customer data from ecommerce, POS, CRM, loyalty programs, and support systems
 -   Power real-time personalization across channels
 -   Maintain consistent product and inventory info across platforms
--   Enable seamless fulfillment — from BOPIS to curbside pickup
+-   Enable seamless fulfillment - from BOPIS to curbside pickup
 
 With Glean, retailers can connect signals across channels, quickly analyze performance, and ensure that store & digital teams are working from the same operating context.
 

@@ -103,7 +103,7 @@ To understand what stands in the way of that vision, it helps to look at where m
 
 RevOps teams have poured time and resources into CRMs, BI tools, and analytics platforms, yet familiar challenges remain. Forecast accuracy, pipeline velocity, rep productivity, and data hygiene still depend on every go-to-market team doing their part at the right time.
 
-The problem is that information lives everywhere. Deal updates sit in Slack, customer context hides in email threads, and product usage data stays siloed in separate systems. Ops teams spend hours each week pulling reports, cleaning spreadsheets, and reminding reps to update Salesforce fields — time that could be spent improving process or strategy.
+The problem is that information lives everywhere. Deal updates sit in Slack, customer context hides in email threads, and product usage data stays siloed in separate systems. Ops teams spend hours each week pulling reports, cleaning spreadsheets, and reminding reps to update Salesforce fields - time that could be spent improving process or strategy.
 
 When data is disconnected, it doesn’t just slow teams down. It creates real risk. Incomplete or outdated CRM records turn forecasting into guesswork and reduce leadership visibility into pipeline health. Reps waste valuable time searching instead of selling, and the business never gets a complete view of its customers.
 

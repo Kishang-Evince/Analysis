@@ -6,7 +6,7 @@ fetched_at: "2026-09-01T13:25:48.717Z"
 ---
 ### Overview
 
-Glean's integration with Microsoft 365 brings permissions-aware enterprise context to the surfaces you already use. Search across your company's knowledge, then take action — create Word documents, draft and send Outlook emails, build Excel spreadsheets, and manage calendar events and contacts without leaving your workflow.
+Glean's integration with Microsoft 365 brings permissions-aware enterprise context to the surfaces you already use. Search across your company's knowledge, then take action - create Word documents, draft and send Outlook emails, build Excel spreadsheets, and manage calendar events and contacts without leaving your workflow.
 
 ### Features
 

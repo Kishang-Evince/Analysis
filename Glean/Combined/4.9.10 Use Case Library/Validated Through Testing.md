@@ -26,12 +26,12 @@
 |---|---|---|---|
 | UC-01 | **PARTIAL YES** | Unified search across Drive/OneDrive/Notion/Gmail/Teams (4.9.1 F1.2) | OneDrive crawl lag; Notion 6h lag |
 | UC-02 | **PARTIAL YES** | Cited Assistant answer on `Stratos_Connector_Test_Doc` (4.9.1 F1.3) | Healthcare policy corpus not loaded; Protect+ not tested |
-| UC-03 | **NO** | — | Collections/Answers onboarding path not built |
+| UC-03 | **NO** | - | Collections/Answers onboarding path not built |
 | UC-04 | **PARTIAL YES** | Teams sidebar search tested (4.9.1 F1.1) | Full dept pilot metrics Pending |
 | UC-05 | **PARTIAL YES** | Auto agent summarize Sheet/Doc (4.9.1 F1.4) | OAuth `tools_unauthorized` edge cases remain |
-| UC-06 | **NO** | — | Go Links `go/stratos-sow` referenced; full deflection flow not measured |
-| UC-07 | **NO** | — | Gmail/Outlook thread summary not timed in sandbox |
-| UC-08 | **NO** | — | Compliance Collection not built; Notion governance test Pending |
+| UC-06 | **NO** | - | Go Links `go/stratos-sow` referenced; full deflection flow not measured |
+| UC-07 | **NO** | - | Gmail/Outlook thread summary not timed in sandbox |
+| UC-08 | **NO** | - | Compliance Collection not built; Notion governance test Pending |
 
 ### Sandbox test mapping
 
@@ -48,7 +48,7 @@
 
 ### Verification steps / test case
 
-1. Run UC10-T01 through UC10-T08 in Admin Test Guide — update YES/NO per UC.
+1. Run UC10-T01 through UC10-T08 in Admin Test Guide - update YES/NO per UC.
 2. Require **YES** on Fields 1–9 deps before marking Field 10 YES.
 3. Partial = core happy path works; known gaps documented in eval log.
 4. Re-validate after sandbox wave-2 (crawl lag, OAuth, Notion segmentation).

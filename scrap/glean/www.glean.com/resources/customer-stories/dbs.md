@@ -36,7 +36,7 @@ Share this customer story:
 
 **Model exploration & experimentation:**
 
-**‍**Impressed with the performance of LLMs and AI, DBS asked themselves—if models can do this with world knowledge, how do we make this work with enterprise knowledge?
+**‍**Impressed with the performance of LLMs and AI, DBS asked themselves-if models can do this with world knowledge, how do we make this work with enterprise knowledge?
 
 The vision was to marry enterprise knowledge with world knowledge to help employees work faster, smarter, better.
 
@@ -75,7 +75,7 @@ Product Team
 
 Safe and secure scalability
 
-Glean’s agent builder was accessible to anyone at DBS through natural language queries—and Glean Protect ensured scalability without concerns of oversharing or leaking data
+Glean’s agent builder was accessible to anyone at DBS through natural language queries-and Glean Protect ensured scalability without concerns of oversharing or leaking data
 
 Product Team
 

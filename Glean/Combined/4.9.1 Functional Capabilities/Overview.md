@@ -11,7 +11,7 @@
 
 **Tenant test stack (in scope):** Notion, Microsoft Teams, Outlook, OneDrive, Gmail, Google Drive, Google Docs, Google Sheets.  
 **Out of scope for this eval:** Salesforce, Slack, Jira, Confluence, Snowflake/BigQuery/Databricks, GitHub, etc.  
-**Companion runbook:** [test/Glean/4.9.1 Functional Capabilities/Pre-Flight.md](../../../test/Glean/4.9.1%20Functional%20Capabilities/Pre-Flight.md) — Fields 4–8 verification steps align with this log.
+**Companion runbook:** [test/Glean/4.9.1 Functional Capabilities/Pre-Flight.md](../../../test/Glean/4.9.1%20Functional%20Capabilities/Pre-Flight.md) - Fields 4–8 verification steps align with this log.
 
 ---
 

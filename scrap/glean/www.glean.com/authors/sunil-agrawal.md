@@ -99,7 +99,7 @@ November 3, 2025
 
 ### 11 AI agents powering every stage of security operations
 
-Discover the security AI agents that help teams detect, investigate, and respond faster — strengthening protection with trusted, governed intelligence.
+Discover the security AI agents that help teams detect, investigate, and respond faster - strengthening protection with trusted, governed intelligence.
 
 ![Sunil Agrawal](https://cdn.prod.website-files.com/613513981b0efaf850830620/67ac95165f7b0f3e4b901ab2_Sunil%20Agarwal.jpeg)
 

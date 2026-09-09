@@ -2,12 +2,12 @@
 url: "https://docs.glean.com/administration/platform/mcp/about"
 canonical: "https://docs.glean.com/administration/platform/mcp/about"
 title: "About Glean MCP server"
-description: "The Model Context Protocol (MCP) is an emerging open-source standard designed to act as a universal interface, enabling AI assistants to securely connect with external data and tools—without requiring custom integrations. Think of it as a \"USB for AI applications\", providing a standard way for large language models (LLMs) to discover and use capabilities in other tools."
+description: "The Model Context Protocol (MCP) is an emerging open-source standard designed to act as a universal interface, enabling AI assistants to securely connect with external data and tools-without requiring custom integrations. Think of it as a \"USB for AI applications\", providing a standard way for large language models (LLMs) to discover and use capabilities in other tools."
 fetched_at: "2026-09-01T13:29:12.211Z"
 ---
 On this page
 
-The [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) is an emerging open-source standard designed to act as a universal interface, enabling AI assistants to securely connect with external data and tools—without requiring custom integrations. Think of it as a *"USB for AI applications"*, providing a standard way for large language models (LLMs) to discover and use capabilities in other tools.
+The [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) is an emerging open-source standard designed to act as a universal interface, enabling AI assistants to securely connect with external data and tools-without requiring custom integrations. Think of it as a *"USB for AI applications"*, providing a standard way for large language models (LLMs) to discover and use capabilities in other tools.
 
 How Glean's MCP servers connect your tools to AI, bringing your company's full context wherever your AI runs
 
@@ -65,7 +65,7 @@ As an industry standard, MCP reduces vendor lock-in. Glean's approach to MCP mak
 
 ### Bring Glean to Any App
 
-Developers and power users can access Glean's search, chat, and agents directly in preferred tools such as Cursor, VS Code, Claude Desktop, and ChatGPT — without switching context.
+Developers and power users can access Glean's search, chat, and agents directly in preferred tools such as Cursor, VS Code, Claude Desktop, and ChatGPT - without switching context.
 
 ## Common use cases[​](#common-use-cases "Direct link to Common use cases")
 
@@ -233,7 +233,7 @@ IDE
 
 info
 
-This list covers the hosts we've explicitly tested and documented. Glean also works with **any other MCP-compliant client** — in the MCP Configurator, choose **Custom** and use your Glean MCP server URL.
+This list covers the hosts we've explicitly tested and documented. Glean also works with **any other MCP-compliant client** - in the MCP Configurator, choose **Custom** and use your Glean MCP server URL.
 
 ## MCP configurator[​](#mcp-configurator "Direct link to MCP configurator")
 

@@ -87,7 +87,7 @@ Finance teams are under pressure to move faster, operate leaner, and deliver sha
 
 **AI agents offer a smarter approach.** These intelligent systems understand business context, surface the right information at the right time, and help teams execute multi-step financial workflows with more speed and confidence. Whether it’s closing the books, prepping for audits, or analyzing variances, finance [AI agents](https://www.glean.com/product/ai-agents) can give teams the time to focus on what matters most.
 
-This blog explores what’s possible when [finance teams](https://www.glean.com/industries/financial-services) build their own AI agents using platforms like Glean. The examples that follow are meant to spark ideas — showing how purpose-built agents can reduce manual effort, improve accuracy, and help teams get more value from the tools and data they already have.
+This blog explores what’s possible when [finance teams](https://www.glean.com/industries/financial-services) build their own AI agents using platforms like Glean. The examples that follow are meant to spark ideas - showing how purpose-built agents can reduce manual effort, improve accuracy, and help teams get more value from the tools and data they already have.
 
 ## What are AI agents for finance teams?
 
@@ -110,7 +110,7 @@ When built on platforms like Glean, these agents can securely connect to the too
 
 ## How AI agents are transforming finance workflows
 
-AI agents give finance teams a new way to work — one that reduces friction, eliminates busywork, and helps teams make faster, more confident decisions. By tapping into real business context, these agents can support complex processes, surface critical insights, and keep information aligned across systems. They’re designed to be secure, compliant, and adaptable to your organization’s structure and tools.
+AI agents give finance teams a new way to work - one that reduces friction, eliminates busywork, and helps teams make faster, more confident decisions. By tapping into real business context, these agents can support complex processes, surface critical insights, and keep information aligned across systems. They’re designed to be secure, compliant, and adaptable to your organization’s structure and tools.
 
 Here are a few examples of where agents can make an immediate impact:
 

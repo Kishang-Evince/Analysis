@@ -14,7 +14,7 @@ at Glean Academy
 
 A free, three-part lecture program from Glean Academy and Work AI Institute. Built on the AI Transformation 100, this series translates research into playbooks you can apply now.  
   
-Designed for technology and business leaders who want to drive adoption, redesign roles and handoffs, and lead with confidence — without the AI theater.
+Designed for technology and business leaders who want to drive adoption, redesign roles and handoffs, and lead with confidence - without the AI theater.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/68a404f7ecc9cee981b6900a_academy%20hero%20bg-min.webp)![academy hero bg circle only](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/68a45077b29ed8ab1a0dfaf4_academy%20hero%20bg%20circle%20only.svg)
 
@@ -32,7 +32,7 @@ Designed for technology and business leaders who want to drive adoption, redesig
 
 ## AI 201: How AI Adoption Really Happens
 
-One of the biggest mistakes organizations make is mistaking AI exposure for adoption. Learn how adoption spreads through use—by backing people who experiment, embedding AI into daily workflows, and spotting “AI theater” before it spreads.
+One of the biggest mistakes organizations make is mistaking AI exposure for adoption. Learn how adoption spreads through use-by backing people who experiment, embedding AI into daily workflows, and spotting “AI theater” before it spreads.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/698e6e70cf18588425a2cd25_Shweta_Academy.webp)
 
@@ -52,7 +52,7 @@ Cofounder & CEO
 
 ## AI 202: How to Design Your Organization for AI
 
-As AI becomes part of everyday work, it often exposes organizational friction, bottlenecks, and unclear ownership. Learn how to clarify decision rights, add roles that help work move, remove those that add noise, and decide when AI should be centralized versus owned by teams —without a full reorg.
+As AI becomes part of everyday work, it often exposes organizational friction, bottlenecks, and unclear ownership. Learn how to clarify decision rights, add roles that help work move, remove those that add noise, and decide when AI should be centralized versus owned by teams -without a full reorg.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/697d17ee365e9fee16da862e_Academy%20S2-phil.webp)
 
@@ -76,7 +76,7 @@ Fmr. Sr. Manager of Digital Workplace & AI Strategy
 
 ## AI 203: How to Lead in the Age of AI
 
-Effective leaders don’t just sponsor AI—they demonstrate high-impact use cases for their teams. Learn how to model adoption, set guardrails that enable progress rather than slow it, know when to intervene and when to step back, and build a culture where small AI wins compound into sustained momentum.
+Effective leaders don’t just sponsor AI-they demonstrate high-impact use cases for their teams. Learn how to model adoption, set guardrails that enable progress rather than slow it, know when to intervene and when to step back, and build a culture where small AI wins compound into sustained momentum.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/698e6e706e425083c950e5b2_Lauren_Academy.webp)
 

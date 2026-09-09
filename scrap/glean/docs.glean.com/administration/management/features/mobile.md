@@ -24,7 +24,7 @@ Before deploying the Glean mobile apps, make sure you have:
 
 The Glean mobile apps for iOS and Android integrate with the Microsoft Intune App SDK, so you can apply Microsoft Intune App Protection Policies (MAM) to the Glean app without requiring full device enrollment (MDM). The integration also supports signing in through the Intune-managed Microsoft Edge browser, which is required for Conditional Access policies that use the **Require app protection policy** grant.
 
-For the complete setup guide — including prerequisites, App Protection Policy support, Microsoft Edge sign-in, Conditional Access, data protection, and troubleshooting — see [Configure Microsoft Intune MAM for the Glean mobile app](/administration/management/features/mobile-intune-mam).
+For the complete setup guide - including prerequisites, App Protection Policy support, Microsoft Edge sign-in, Conditional Access, data protection, and troubleshooting - see [Configure Microsoft Intune MAM for the Glean mobile app](/administration/management/features/mobile-intune-mam).
 
 ## Control mobile access[​](#control-mobile-access "Direct link to Control mobile access")
 

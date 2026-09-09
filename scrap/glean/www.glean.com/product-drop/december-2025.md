@@ -2,7 +2,7 @@
 url: "https://www.glean.com/product-drop/december-2025"
 canonical: "https://www.glean.com/product-drop/december-2025"
 title: "December 2025 Product Drop: What's New & Trending"
-description: "Explore the latest December 2025 product drop—discover new releases, trending items, and seasonal highlights for all your shopping needs."
+description: "Explore the latest December 2025 product drop-discover new releases, trending items, and seasonal highlights for all your shopping needs."
 fetched_at: "2026-09-01T13:25:31.607Z"
 ---
 # December  
@@ -52,7 +52,7 @@ Watch now
 
 AI in the enterprise: What’s working, what’s scaling, what’s next
 
-Hear from CNBC’s Deirdre Bosa as she joins Stanford Professor Emeritus Bob Sutton, UC Santa Barbara Professor Paul Leonardi, and Glean CEO Arvind Jain for a candid conversation about enterprise AI ROI, scaling with less friction, and using AI to reduce digital exhaustion — not add to it.
+Hear from CNBC’s Deirdre Bosa as she joins Stanford Professor Emeritus Bob Sutton, UC Santa Barbara Professor Paul Leonardi, and Glean CEO Arvind Jain for a candid conversation about enterprise AI ROI, scaling with less friction, and using AI to reduce digital exhaustion - not add to it.
 
 [
 

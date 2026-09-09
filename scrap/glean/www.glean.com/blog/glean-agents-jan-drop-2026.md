@@ -83,7 +83,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Marketing teams already move fast. Now, AI is raising expectations across the board — for speed, quality, and consistency. It’s no longer enough to produce content quickly. Marketers need their work to reflect what customers are saying, how the product is evolving, and how the business actually operates.
+Marketing teams already move fast. Now, AI is raising expectations across the board - for speed, quality, and consistency. It’s no longer enough to produce content quickly. Marketers need their work to reflect what customers are saying, how the product is evolving, and how the business actually operates.
 
 That context already exists. It lives in your sales calls, product and engineering updates, technical documentation, white papers, and the templates teams rely on every day. The challenge has been turning those scattered inputs into clear, usable outputs.
 
@@ -220,7 +220,7 @@ You can use these agents on their own, depending on what your team needs. They a
 
 ## A practical way to scale marketing work
 
-Great marketing work depends on context. The challenge is that context is often scattered — across calls, drafts, briefs, and internal notes — making it harder than it should be to reuse what already exists.
+Great marketing work depends on context. The challenge is that context is often scattered - across calls, drafts, briefs, and internal notes - making it harder than it should be to reuse what already exists.
 
 These seven agents are designed to close that gap. Each one takes inputs [marketing teams](https://www.glean.com/solutions/marketing) already rely on and turns them into something usable: clearer insights, more consistent assets, and outputs that don’t need to be rebuilt from scratch every time.
 

@@ -15,7 +15,7 @@ The Glean MCP Gateway brings tools from outside Glean's own platform into your G
 
 Through one secure, Glean-governed endpoint, the gateway exposes these tools to every assistant your teams use like Claude, ChatGPT, Cursor, Gemini, Microsoft Copilot, Claude Code, and more while enforcing permissions, policy, and audit on every call. It exposes 2,000+ governed tools this way, and as new tools are added they become available through the Glean MCP tools automatically.
 
-To set up external tools, see [Set up external tools with MCP Gateway](/administration/platform/mcp/external-gateway-tools). To proxy a third-party MCP server, see [Connect remote MCP servers](/administration/tools/connect-remote-mcp-servers-to-glean). For general MCP server concepts—architecture, supported hosts, the MCP configurator, authentication, and pricing—see [About Glean MCP server](/administration/platform/mcp/about).
+To set up external tools, see [Set up external tools with MCP Gateway](/administration/platform/mcp/external-gateway-tools). To proxy a third-party MCP server, see [Connect remote MCP servers](/administration/tools/connect-remote-mcp-servers-to-glean). For general MCP server concepts-architecture, supported hosts, the MCP configurator, authentication, and pricing-see [About Glean MCP server](/administration/platform/mcp/about).
 
 Ship MCP tools at enterprise scale with the Glean MCP Gateway
 
@@ -50,7 +50,7 @@ An Insights dashboard shows who uses which MCP server, which tools are called, a
 
 ### Management and access control
 
-Manage every MCP server from one console—roll out, update, and revoke access—and limit tool calls to specific departments, roles, or data-sensitivity tiers.
+Manage every MCP server from one console-roll out, update, and revoke access-and limit tool calls to specific departments, roles, or data-sensitivity tiers.
 
 ## How it works[​](#how-it-works "Direct link to How it works")
 
@@ -72,13 +72,13 @@ note
 
 We recommend including a maximum of 40 tools per MCP server. Plan which tools to expose per server accordingly.
 
-All endpoints point to Glean, and Glean enforces what is allowed downstream. Because tools resolve against Glean's permission-aware Knowledge Graph, results stay unified and access-controlled across every connected source—unlike siloed native MCP servers.
+All endpoints point to Glean, and Glean enforces what is allowed downstream. Because tools resolve against Glean's permission-aware Knowledge Graph, results stay unified and access-controlled across every connected source-unlike siloed native MCP servers.
 
 ## Centralized management[​](#centralized-management "Direct link to Centralized management")
 
 Because every endpoint routes through Glean, you manage MCP access from one place instead of configuring each host separately:
 
--   One console for every app: Register an MCP server once and distribute it to every supported host—Claude, ChatGPT, Cursor, Gemini, Microsoft Copilot, and Claude Code—from a single catalog of approved tools and servers.
+-   One console for every app: Register an MCP server once and distribute it to every supported host-Claude, ChatGPT, Cursor, Gemini, Microsoft Copilot, and Claude Code-from a single catalog of approved tools and servers.
 -   Roll out, update, or revoke centrally: Enable or disable any server or tool for your organization from one place, without touching individual user configurations.
 -   Fast rollout at scale: Glean provides a script to deploy MCP servers across managed devices in minutes. See [Deploy MCP servers with MDM](/administration/platform/mcp/mdm-mcp).
 -   Control tool access per user: Decide who can use which tools from the admin console, or set access for each tool directly from the MCP server using [tool advanced settings](/administration/tools/managing-tools/managing-role-based-access-tools#set-access-for-individual-tools-advanced-settings). By default, all tools are on for all users.
@@ -86,17 +86,17 @@ Because every endpoint routes through Glean, you manage MCP access from one plac
 
 note
 
-Tool visibility is governed by MCP access control, so each user sees only the tools they have access to—even when they connect to the same MCP server. For example, if a server is created with 5 tools, a user granted access to all 5 sees 5 tools, while a user granted access to only 2 sees just 2.
+Tool visibility is governed by MCP access control, so each user sees only the tools they have access to-even when they connect to the same MCP server. For example, if a server is created with 5 tools, a user granted access to all 5 sees 5 tools, while a user granted access to only 2 sees just 2.
 
 ## Common use cases[​](#common-use-cases "Direct link to Common use cases")
 
 ### One server for every tool
 
-Create one server that includes Glean built-in tools, custom read and write tools, and external MCP servers—all in one place.
+Create one server that includes Glean built-in tools, custom read and write tools, and external MCP servers-all in one place.
 
 ### Developer workflows
 
-Use Glean context in IDEs (for example, Cursor and VS Code) for debugging, PR reviews, and code navigation, and then close out your Jira tickets—all using one Glean MCP server.
+Use Glean context in IDEs (for example, Cursor and VS Code) for debugging, PR reviews, and code navigation, and then close out your Jira tickets-all using one Glean MCP server.
 
 ### Get work done
 
@@ -110,7 +110,7 @@ If a user invokes a downstream tool that needs its own credentials, the gateway 
 
 ## Security[​](#security "Direct link to Security")
 
-Glean Protect+ guardrails can run on MCP calls and external tool calls—the same guardrails that protect Glean Assistant sit in front of the tool calls your users and agents make. Glean Protect+ can provide:
+Glean Protect+ guardrails can run on MCP calls and external tool calls-the same guardrails that protect Glean Assistant sit in front of the tool calls your users and agents make. Glean Protect+ can provide:
 
 -   Prompt injection detection: Blocks adversarial inputs that try to hijack the agent.
 -   Malicious code detection: Inspects tool inputs and outputs for known attack patterns.

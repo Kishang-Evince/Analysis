@@ -31,8 +31,8 @@ The setup has two main parts: configuring the Databricks tools (if not already d
 
 If you haven't already configured the Databricks tools, follow the instructions in [Databricks tools setup](/administration/tools/setup-tools/databricks-tools-setup). This includes two tools:
 
--   **Search Databricks with Genie** — routes natural-language questions to a Genie space.
--   **Search Databricks with SQL** — runs direct SQL queries against a Databricks warehouse.
+-   **Search Databricks with Genie** - routes natural-language questions to a Genie space.
+-   **Search Databricks with SQL** - runs direct SQL queries against a Databricks warehouse.
 
 The tools setup involves creating an OAuth app in Databricks and registering the credentials in Glean.
 
@@ -73,10 +73,10 @@ For a natural-language question, Assistant should indicate that it used Databric
 
 When a user asks a data question, Assistant performs the following steps:
 
-1.  **Determines relevance** — decides whether Databricks is the right connector for the question.
-2.  **Selects a Genie space** — searches the indexed Genie space metadata (titles, descriptions, sample questions, and table information) to find the best match.
-3.  **Sends the question** — forwards the natural-language question to the selected Genie space via the Databricks Genie API.
-4.  **Returns results** — displays the Genie response, including any generated tables, directly in Assistant.
+1.  **Determines relevance** - decides whether Databricks is the right connector for the question.
+2.  **Selects a Genie space** - searches the indexed Genie space metadata (titles, descriptions, sample questions, and table information) to find the best match.
+3.  **Sends the question** - forwards the natural-language question to the selected Genie space via the Databricks Genie API.
+4.  **Returns results** - displays the Genie response, including any generated tables, directly in Assistant.
 
 If no Genie space matches, Assistant falls back to Databricks SQL only when the user explicitly requests a SQL query.
 

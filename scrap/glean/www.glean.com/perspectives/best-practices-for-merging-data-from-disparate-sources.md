@@ -63,46 +63,46 @@ Share this article:
 
 # Best practices for merging data from disparate sources
 
-The average enterprise relies on more than a thousand applications, yet fewer than a third are integrated. That gap turns every reporting cycle, analytics project, and AI initiative into a manual puzzle—one where teams spend more time stitching data together than actually learning from it.
+The average enterprise relies on more than a thousand applications, yet fewer than a third are integrated. That gap turns every reporting cycle, analytics project, and AI initiative into a manual puzzle-one where teams spend more time stitching data together than actually learning from it.
 
 Merging data from disparate sources is fundamentally a problem of meaning, not just mechanics. Inconsistent identifiers, mismatched definitions, duplicated records, and conflicting time windows can quietly corrupt the numbers that drive decisions. Small integration errors compound fast; a single misaligned grain or ambiguous field name can inflate a metric by double digits before anyone notices.
 
-This guide lays out a repeatable, best-practice workflow for combining datasets across systems—covering source identification, definition alignment, cleaning, deduplication, and validation. The goal: merged data that stays accurate, auditable, and ready for analysis without breaking security or governance.
+This guide lays out a repeatable, best-practice workflow for combining datasets across systems-covering source identification, definition alignment, cleaning, deduplication, and validation. The goal: merged data that stays accurate, auditable, and ready for analysis without breaking security or governance.
 
 ## What are best practices for merging data from disparate sources?
 
-Best practices for merging data from disparate sources form a structured, repeatable process—not a one-time data task. The process spans source identification, schema alignment, cleaning, deduplication, and validation, and it demands as much attention to definitions and ownership as it does to joins and pipelines. Teams that treat merging as purely technical work tend to produce datasets that look correct in a dashboard but fall apart under scrutiny.
+Best practices for merging data from disparate sources form a structured, repeatable process-not a one-time data task. The process spans source identification, schema alignment, cleaning, deduplication, and validation, and it demands as much attention to definitions and ownership as it does to joins and pipelines. Teams that treat merging as purely technical work tend to produce datasets that look correct in a dashboard but fall apart under scrutiny.
 
-The first principle worth internalizing: every merge should serve a clear end goal. Whether the combined dataset will power executive reporting, feed an operational workflow, prepare training data for an AI model, or enable self-serve analytics, that purpose shapes every downstream decision—what grain to target, which sources are authoritative, how fresh the data needs to be, and what level of deduplication is acceptable. Without a defined outcome, teams default to "get everything into one table," which almost always creates more confusion than it resolves.
+The first principle worth internalizing: every merge should serve a clear end goal. Whether the combined dataset will power executive reporting, feed an operational workflow, prepare training data for an AI model, or enable self-serve analytics, that purpose shapes every downstream decision-what grain to target, which sources are authoritative, how fresh the data needs to be, and what level of deduplication is acceptable. Without a defined outcome, teams default to "get everything into one table," which almost always creates more confusion than it resolves.
 
 ### Meaning matters more than mechanics
 
 The hardest parts of data merging rarely involve the JOIN syntax. They involve questions like:
 
--   **Does "customer" mean the same thing everywhere?** In a CRM, it might represent a billing account. In a support system, it could refer to an individual end user. In a contracts database, it maps to a legal entity. If these definitions aren't reconciled before the merge, every downstream metric—customer count, churn rate, revenue per customer—will carry a silent error.
--   **Which source wins when two systems disagree?** Overlapping attributes are inevitable. Revenue might appear in both the ERP and the billing platform, recorded at different stages (booked vs. collected). Establishing "system of record" rules for each attribute—and documenting the conditions under which one source overrides another—prevents the kind of metric drift that erodes stakeholder trust.
+-   **Does "customer" mean the same thing everywhere?** In a CRM, it might represent a billing account. In a support system, it could refer to an individual end user. In a contracts database, it maps to a legal entity. If these definitions aren't reconciled before the merge, every downstream metric-customer count, churn rate, revenue per customer-will carry a silent error.
+-   **Which source wins when two systems disagree?** Overlapping attributes are inevitable. Revenue might appear in both the ERP and the billing platform, recorded at different stages (booked vs. collected). Establishing "system of record" rules for each attribute-and documenting the conditions under which one source overrides another-prevents the kind of metric drift that erodes stakeholder trust.
 -   **What grain does each dataset represent?** One row per event, one row per user, and one row per account are not interchangeable. Merging datasets at mismatched grains is the single most common reason aggregations silently inflate or deflate. If grains differ, the team must decide upfront whether to aggregate, explode, or build a dimensional model.
 
 ### The hard parts to name upfront
 
 Experienced data teams call out specific risks at the start of any integration effort rather than discovering them mid-project:
 
--   **Inconsistent identifiers**: Stable primary keys are the ideal merge key, but many enterprise systems rely on emails, domain names, location names, or SKUs—fields that are frequently messy and require normalization or fuzzy matching logic.
+-   **Inconsistent identifiers**: Stable primary keys are the ideal merge key, but many enterprise systems rely on emails, domain names, location names, or SKUs-fields that are frequently messy and require normalization or fuzzy matching logic.
 -   **Mismatched time windows and refresh cadences**: One source updates hourly; another refreshes weekly. A merge that doesn't account for temporal alignment will produce results that change depending on when the pipeline runs, not because the underlying reality shifted.
--   **Duplicates that survive undetected**: Without explicit deduplication methods—deterministic matching on stable IDs, probabilistic matching with confidence thresholds, and clearly defined survivorship rules—duplicates flow into the merged dataset and inflate every count and sum built on top of it.
+-   **Duplicates that survive undetected**: Without explicit deduplication methods-deterministic matching on stable IDs, probabilistic matching with confidence thresholds, and clearly defined survivorship rules-duplicates flow into the merged dataset and inflate every count and sum built on top of it.
 -   **Permission and access control mismatches**: When teams copy sensitive data into broader-access locations "just to make the merge work," they create governance gaps that are far more expensive to fix after the fact.
 
 ### A validation mindset from the start
 
-One often-overlooked best practice comes from enterprise data analysis disciplines: favor deterministic, reproducible outputs over results that shift between runs. If the same query against the same merged dataset produces different answers on Monday and Tuesday—without any underlying data change—the merge has an ambiguity problem. This might stem from non-deterministic join ordering, unstable deduplication logic, or definitions that leave room for interpretation.
+One often-overlooked best practice comes from enterprise data analysis disciplines: favor deterministic, reproducible outputs over results that shift between runs. If the same query against the same merged dataset produces different answers on Monday and Tuesday-without any underlying data change-the merge has an ambiguity problem. This might stem from non-deterministic join ordering, unstable deduplication logic, or definitions that leave room for interpretation.
 
-The practical test is straightforward. Write down five to ten business questions the merged dataset must answer. Then ask whether each question has exactly one defensible answer given the current schema, grain, and source-of-record rules. Questions that produce "multiple plausible answers" are signals that definitions, keys, or governance need tightening before the merge moves forward. That discipline—treating validation as a design constraint rather than a post-launch checklist—is what separates durable data integration from a fragile export that breaks at the next quarterly review.
+The practical test is straightforward. Write down five to ten business questions the merged dataset must answer. Then ask whether each question has exactly one defensible answer given the current schema, grain, and source-of-record rules. Questions that produce "multiple plausible answers" are signals that definitions, keys, or governance need tightening before the merge moves forward. That discipline-treating validation as a design constraint rather than a post-launch checklist-is what separates durable data integration from a fragile export that breaks at the next quarterly review.
 
 ## How to merge data from disparate sources (best-practice workflow)
 
 A reliable merge program needs an operating model that survives new source systems, schema shifts, and quarterly re-orgs. Treat the merged dataset like a service: clear interfaces, predictable releases, and explicit support expectations.
 
-Early progress comes from a narrow slice that exercises the full path—ingest, transform, publish, and verify—under real constraints. After that slice holds, add durability in layers so the work does not collapse into a cycle of one-off fixes.
+Early progress comes from a narrow slice that exercises the full path-ingest, transform, publish, and verify-under real constraints. After that slice holds, add durability in layers so the work does not collapse into a cycle of one-off fixes.
 
 ### Set outcomes, owners, and a maintenance plan
 
@@ -112,7 +112,7 @@ Define the merge as a managed asset with a backlog and a release process. Instea
 -   **Latency class**: batch daily, intra-day micro-batch, or near–real time via CDC; each class drives design choices for watermarks, replay, and cost.
 -   **Retention and history**: raw snapshots for audit and replay; curated history rules for point-in-time analysis when needed (for example: attribute history that supports month-end reporting).
 
-Assign one accountable owner for the merged product plus explicit stewards for each domain dataset. Add an incident path—triage owner, escalation steps, and a “stop the line” rule when a quality gate fails—so production issues do not turn into quiet metric drift.
+Assign one accountable owner for the merged product plus explicit stewards for each domain dataset. Add an incident path-triage owner, escalation steps, and a “stop the line” rule when a quality gate fails-so production issues do not turn into quiet metric drift.
 
 ### Ship the simplest end-to-end path, then harden it
 
@@ -151,7 +151,7 @@ Use a layered control set that matches enterprise governance needs:
 
 ### Select authoritative sources with explicit signals
 
-Authority selection works best as a data modeling decision, not a debate in a dashboard review. For shared entities—customer, product, location, employee—define conformed dimensions and reference data that impose consistent codes and hierarchies across systems.
+Authority selection works best as a data modeling decision, not a debate in a dashboard review. For shared entities-customer, product, location, employee-define conformed dimensions and reference data that impose consistent codes and hierarchies across systems.
 
 Use objective signals to choose the authoritative source per attribute:
 
@@ -187,10 +187,10 @@ A merge that holds up in audits follows a disciplined flow from intent to publis
 
 ### 2\. How can I ensure data quality when merging datasets?
 
-Data quality work needs explicit standards plus continuous measurement. Strong programs use quality dimensions—completeness, validity, consistency, uniqueness, timeliness—as enforceable expectations rather than informal guidelines.
+Data quality work needs explicit standards plus continuous measurement. Strong programs use quality dimensions-completeness, validity, consistency, uniqueness, timeliness-as enforceable expectations rather than informal guidelines.
 
 -   **Profile inputs, codify rules, and add automated tests (nulls, uniqueness, referential integrity).** Establish baseline scorecards per source and per critical table, then enforce constraints that reflect business reality (allowed statuses, valid date ranges, unique identifiers, resolvable foreign keys).
--   **Track provenance fields (source IDs, timestamps) so issues can be traced.** Keep a record-level breadcrumb trail—original system, native identifier, extract batch, and transform version—so a defect report can point to a specific source record and rule path.
+-   **Track provenance fields (source IDs, timestamps) so issues can be traced.** Keep a record-level breadcrumb trail-original system, native identifier, extract batch, and transform version-so a defect report can point to a specific source record and rule path.
 -   **Monitor for drift and anomalies after deployment; quality is ongoing, not a pre-launch checklist.** Track freshness adherence, category churn, and distribution movement for key measures; treat sudden changes as an investigation trigger, not as “new insights.”
 -   **Add an evaluation loop: check outputs for correctness/completeness/grounding and ensure the checks are consistent across repeated runs.** Pair automated checks with periodic human spot audits that reproduce a metric from curated output back to raw inputs; consistency across runs signals stable definitions and stable linkage rules.
 
@@ -203,7 +203,7 @@ Tool selection depends on latency needs, governance requirements, and how much t
 -   **Data warehouses/lakes for scalable storage and modeling.** Favor systems that support ACID-like reliability, time-travel or snapshot patterns, and robust access control so curated outputs stay stable under change.
 -   **BI tools for exploratory data blending (good for discovery, weaker for governance if used alone).** Use these tools to confirm join logic, conformed dimensions, and field definitions; avoid using dashboard-layer logic as the only place where business rules live.
 -   **Data quality tools for profiling, matching, and deduplication.** Prioritize capabilities for rule versioning, match evidence retention, and review workflows for borderline entity matches.
--   **The “best” tool is the one that supports governance, testing, and maintainability—not just quick joins.** Look for native support for data contracts, approval workflows for definition changes, and simple rollback paths when a transformation rule proves wrong.
+-   **The “best” tool is the one that supports governance, testing, and maintainability-not just quick joins.** Look for native support for data contracts, approval workflows for definition changes, and simple rollback paths when a transformation rule proves wrong.
 -   **For end-user analysis across systems, prioritize tools that can leverage metadata (schemas/relationships), identify authoritative sources, and run deterministic computations (SQL/Python) to avoid partial/inconsistent results.** Systems that expose relationship metadata and metric logic reduce ad hoc joins and make analysis outputs easier to reproduce across teams.
 
 ### 4\. What common challenges should I be aware of when merging data?
@@ -222,9 +222,9 @@ Duplicate handling needs explicit entity logic, not only a technical de-duplicat
 
 -   **Start with deterministic matching on stable IDs; only escalate to fuzzy matching when necessary.** Use exact keys where they exist; when they do not, apply normalization first so fuzzy logic does not compensate for avoidable formatting noise.
 -   **Store match confidence and keep an audit trail of merged records.** Persist candidate pairs, match features, and confidence thresholds; this evidence supports review queues and later dispute resolution.
--   **Use survivorship rules per attribute (not “one record wins everything”) when sources have different strengths.** Apply attribute-level trust—billing systems for payment status, support systems for case state, HR systems for employee status—and retain non-winning values in history to support traceable corrections.
+-   **Use survivorship rules per attribute (not “one record wins everything”) when sources have different strengths.** Apply attribute-level trust-billing systems for payment status, support systems for case state, HR systems for employee status-and retain non-winning values in history to support traceable corrections.
 
-Data merging isn't a one-time project — it's an operating discipline that compounds in value every time a new source plugs into a well-governed framework. The teams that invest in clear definitions, traceable lineage, and enforceable quality gates don't just get cleaner data; they get faster decisions and fewer fire drills.
+Data merging isn't a one-time project - it's an operating discipline that compounds in value every time a new source plugs into a well-governed framework. The teams that invest in clear definitions, traceable lineage, and enforceable quality gates don't just get cleaner data; they get faster decisions and fewer fire drills.
 
 If you're ready to move beyond fragmented tools and disconnected knowledge, [request a demo](https://www.glean.com/get-a-demo) to explore how we can help transform the way your teams find, connect, and act on information across your organization.
 

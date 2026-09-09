@@ -17,7 +17,7 @@ glean-idx doctor                    # are my credentials right?glean-idx validat
 
 Commands fall into three groups, and knowing which is which saves the most common confusion. `glean-idx --help` restates it.
 
-**Credentials only.** Most commands need nothing but `GLEAN_SERVER_URL` and `GLEAN_INDEXING_API_TOKEN`. They never import your code, so they run from any directory — including with nothing installed:
+**Credentials only.** Most commands need nothing but `GLEAN_SERVER_URL` and `GLEAN_INDEXING_API_TOKEN`. They never import your code, so they run from any directory - including with nothing installed:
 
 ```
 uvx --from glean-indexing-sdk glean-idx doctor
@@ -79,7 +79,7 @@ glean-idx test --phase live --mode full --allow-destructive-liveglean-idx test -
 | `glean-idx document access --datasource NAME --object-type TYPE --id ID --user EMAIL` | Whether a given user can see a document. |
 | `glean-idx document events --datasource NAME --object-type TYPE --id ID` | A document's lifecycle events, for when it uploaded but never became searchable. |
 
-`document status` and `document access` are the two worth reaching for first when something is missing from search — see [Status and debugging](/libraries/indexing-sdk/status-and-debugging).
+`document status` and `document access` are the two worth reaching for first when something is missing from search - see [Status and debugging](/libraries/indexing-sdk/status-and-debugging).
 
 ### Removing things[​](#removing-things "Direct link to Removing things")
 
@@ -120,7 +120,7 @@ glean-idx datasource status --datasource companywiki --output json | jq .data.do
 {  "ok": true,  "data": { "datasource": "companywiki", "documents": { "uploaded": { "article": 42 } } }}
 ```
 
-Output defaults to text at a terminal and JSON when redirected, so a piped command is machine-readable without passing anything. In JSON mode the envelope goes to **stdout whether the command succeeded or not** — an `ok: false` result is still the result — so there is one stream to parse. Text-mode errors go to stderr, as does connector logging from `run`.
+Output defaults to text at a terminal and JSON when redirected, so a piped command is machine-readable without passing anything. In JSON mode the envelope goes to **stdout whether the command succeeded or not** - an `ok: false` result is still the result - so there is one stream to parse. Text-mode errors go to stderr, as does connector logging from `run`.
 
 SDK-owned exit codes are stable. When a deployment subprocess starts and exits nonzero, the CLI preserves that Docker, Terraform, or `kubectl` exit code (from `1` through `255`) and includes the command and captured diagnostics in the error envelope.
 

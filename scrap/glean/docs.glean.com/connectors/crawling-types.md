@@ -2,7 +2,7 @@
 url: "https://docs.glean.com/connectors/crawling-types"
 canonical: "https://docs.glean.com/connectors/crawling-types"
 title: "Crawl types"
-description: "The different types of crawls Glean runs — full, incremental, activity, identity, and people data — and how crawl configuration can be customized."
+description: "The different types of crawls Glean runs - full, incremental, activity, identity, and people data - and how crawl configuration can be customized."
 fetched_at: "2026-09-01T13:29:18.473Z"
 ---
 On this page

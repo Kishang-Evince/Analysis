@@ -26,7 +26,7 @@ Senior Solutions Engineer at Glean
 
 ## Overview
 
-Most enterprises have approached AI security through the lens of Assistants—tools that summarize information or generate content. In that model, the main concern is data access and privacy, ensuring that no enterprise data leaks out.
+Most enterprises have approached AI security through the lens of Assistants-tools that summarize information or generate content. In that model, the main concern is data access and privacy, ensuring that no enterprise data leaks out.
 
 With the rise of AI agents that can take autonomous action, the risk profile expands to include not just the information agents can see but also the actions that they can take in enterprise applications. 
 

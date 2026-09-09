@@ -31,7 +31,7 @@ Once both phases complete, the connector enters **steady state** and processes i
 | Metric | Description |
 | --- | --- |
 | **Items synced** | Total items fetched from the source. Refreshes hourly. Should increase steadily during initial sync. See [Crawling FAQ](/connectors/crawling-faq) for expected timelines. |
-| **Crawl rate** | Hourly rate of crawling tasks across document parts (content, metadata, permissions) during initial crawl. Acts as a heartbeat — if it flatlines, investigate connector health. See [Crawling strategy](/connectors/crawling-frequency) for how Glean optimizes crawl scheduling. |
+| **Crawl rate** | Hourly rate of crawling tasks across document parts (content, metadata, permissions) during initial crawl. Acts as a heartbeat - if it flatlines, investigate connector health. See [Crawling strategy](/connectors/crawling-frequency) for how Glean optimizes crawl scheduling. |
 | **Change rate (items/day)** | Creates, edits, permission and metadata changes, and deletes synced in the past 24 hours. Available after initial sync completes. See [Crawling strategy](/connectors/crawling-frequency) for details on incremental updates. |
 
 note
@@ -40,9 +40,9 @@ note
 
 ### Signs of a problem[​](#signs-of-a-problem "Direct link to Signs of a problem")
 
--   **Items synced** stops increasing for 24 or more hours during initial sync — verify connector permissions, API throttling, or configuration issues.
--   **Change rate** is 0 for an extended period when you expect activity — check webhook or incremental crawl health.
--   A connector remains in **Indexing** for multiple days with no progress — contact [Glean Support](https://support.glean.com).
+-   **Items synced** stops increasing for 24 or more hours during initial sync - verify connector permissions, API throttling, or configuration issues.
+-   **Change rate** is 0 for an extended period when you expect activity - check webhook or incremental crawl health.
+-   A connector remains in **Indexing** for multiple days with no progress - contact [Glean Support](https://support.glean.com).
 
 ### Search results[​](#search-results "Direct link to Search results")
 
@@ -70,20 +70,20 @@ You cannot easily reverse these tools. Deleting a connector requires you to go t
 **Limitations:**
 
 -   Connectors that do not support multiple instances (for example, Outlook) may not show the **Delete instance** option.
--   You cannot delete your active People connector — set a new one first.
+-   You cannot delete your active People connector - set a new one first.
 -   Some Slack instances only show **Stop crawl** under **Extreme measures**.
 
 For more information, see [Crawling FAQ](/connectors/crawling-faq).
 
 ## Setup tab[​](#setup-tab "Direct link to Setup tab")
 
-The **Setup** tab contains the connector-specific configuration flow — credentials, OAuth, workspace settings, and other parameters required to connect the connector. Each connector documents its own setup steps. Refer to the connector's setup page for details.
+The **Setup** tab contains the connector-specific configuration flow - credentials, OAuth, workspace settings, and other parameters required to connect the connector. Each connector documents its own setup steps. Refer to the connector's setup page for details.
 
 After initial setup, you can return to this tab to update credentials, reconfigure authentication, or modify connector-specific parameters.
 
 ## Manage data tab[​](#manage-data-tab "Direct link to Manage data tab")
 
-Some connectors provide a **Manage data** tab for controlling which content is crawled and indexed. Not all connectors have this tab — if yours does not, contact Glean support for backend configuration options. ![Manage data tab showing inclusion and exclusion rules](/assets/images/manage-data-rules-30c1ac3727da9cb76dc926fbc4a2b5f2.png)
+Some connectors provide a **Manage data** tab for controlling which content is crawled and indexed. Not all connectors have this tab - if yours does not, contact Glean support for backend configuration options. ![Manage data tab showing inclusion and exclusion rules](/assets/images/manage-data-rules-30c1ac3727da9cb76dc926fbc4a2b5f2.png)
 
 ### Inclusion rules (greenlisting)[​](#inclusion-rules-greenlisting "Direct link to Inclusion rules (greenlisting)")
 
@@ -96,7 +96,7 @@ Inclusion rules specify exactly which content to crawl. When you add inclusion r
 
 ### Exclusion rules (redlisting)[​](#exclusion-rules-redlisting "Direct link to Exclusion rules (redlisting)")
 
-Exclusion rules remove specific content from crawling. If both inclusion and exclusion rules apply to the same content, **exclusion takes priority** — Glean does not index the content. Examples:
+Exclusion rules remove specific content from crawling. If both inclusion and exclusion rules apply to the same content, **exclusion takes priority** - Glean does not index the content. Examples:
 
 -   User IDs or email addresses
 -   Folder paths
@@ -105,7 +105,7 @@ Exclusion rules remove specific content from crawling. If both inclusion and exc
 
 ### Content type filters[​](#content-type-filters "Direct link to Content type filters")
 
-Some connectors let you filter by content type — for example, crawling only specific file types or object categories.
+Some connectors let you filter by content type - for example, crawling only specific file types or object categories.
 
 tip
 
@@ -113,10 +113,10 @@ Use inclusion and exclusion rules sparingly. Most customers do not apply any rul
 
 **Connector-specific behavior:**
 
--   **Gmail** — manage data restrictions apply only to data crawling and indexing, not to data fetching (federated search).
--   **Google Drive** — supports exclusion by shared drive IDs, folder paths, user email addresses, and Drive sensitivity labels.
--   **Google Chat** — configure crawl toggles for DMs, group chats, and bot messages.
--   **Seismic** — use the **Manage data** tab to greenlist specific file extensions.
+-   **Gmail** - manage data restrictions apply only to data crawling and indexing, not to data fetching (federated search).
+-   **Google Drive** - supports exclusion by shared drive IDs, folder paths, user email addresses, and Drive sensitivity labels.
+-   **Google Chat** - configure crawl toggles for DMs, group chats, and bot messages.
+-   **Seismic** - use the **Manage data** tab to greenlist specific file extensions.
 
 For details on inclusion and exclusion rules, see [Excluding content](/connectors/excluding-content).
 
@@ -127,7 +127,7 @@ The **Result display** tab controls how items from a connector appear in Glean s
 ### What you can configure[​](#what-you-can-configure "Direct link to What you can configure")
 
 -   Select up to 6 metadata fields to display on search result cards.
--   Configure display settings for each object type — for example, a Salesforce connector can have different display settings for Deals, Accounts, and Contacts.
+-   Configure display settings for each object type - for example, a Salesforce connector can have different display settings for Deals, Accounts, and Contacts.
 -   Reset to Glean defaults at any time.
 
 ### When the tab appears empty[​](#when-the-tab-appears-empty "Direct link to When the tab appears empty")
@@ -175,9 +175,9 @@ Visibility controls let you limit who sees indexed content during rollout. This 
 
 From the **Overview** tab's **Search results** section, choose one of:
 
-1.  **Visible to everyone** — all users with source permissions see results.
-2.  **Visible to test group only** — only members of the assigned test group see results.
-3.  **Not visible** — no users see results from this source.
+1.  **Visible to everyone** - all users with source permissions see results.
+2.  **Visible to test group only** - only members of the assigned test group see results.
+3.  **Not visible** - no users see results from this source.
 
 ### Create and manage test groups[​](#create-and-manage-test-groups "Direct link to Create and manage test groups")
 

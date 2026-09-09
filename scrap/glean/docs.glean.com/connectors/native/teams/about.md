@@ -11,7 +11,7 @@ Microsoft Teams is a collaboration platform where teams hold conversations, shar
 
 Standalone connector
 
-The Microsoft Teams connector uses its own Azure app registration — it is not part of the [Microsoft 365](/connectors/native/microsoft365/) parent connector suite. Set it up independently from OneDrive, SharePoint, and Outlook.
+The Microsoft Teams connector uses its own Azure app registration - it is not part of the [Microsoft 365](/connectors/native/microsoft365/) parent connector suite. Set it up independently from OneDrive, SharePoint, and Outlook.
 
 ## What gets indexed[​](#what-gets-indexed "Direct link to What gets indexed")
 
@@ -30,4 +30,4 @@ The Microsoft Teams connector uses its own Azure app registration — it is not 
 
 ## Permissions and security[​](#permissions-and-security "Direct link to Permissions and security")
 
-Glean mirrors Teams membership and access — users see only the teams, channels, and chats they belong to in Microsoft Teams. Glean evaluates permissions at query time. The connector uses read-only, application-level access through your Entra ID app registration.
+Glean mirrors Teams membership and access - users see only the teams, channels, and chats they belong to in Microsoft Teams. Glean evaluates permissions at query time. The connector uses read-only, application-level access through your Entra ID app registration.

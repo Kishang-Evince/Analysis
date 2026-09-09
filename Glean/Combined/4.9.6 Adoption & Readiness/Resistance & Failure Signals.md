@@ -28,8 +28,8 @@
 | **People-data gaps** | Broken search relevance, org chart, Insights segmentation | "Attention required" flags in Admin |
 | **Skipping 5-step admin checklist** | SSO assignment, invites, extension gaps | Unassigned IdP users cannot access Glean |
 | **Missing connectors at kickoff** | Users expect content Glean cannot surface | Set expectation: only connected apps searchable |
-| **Poor source data / ambiguous prompts** | "Not helpful" feedback — not auto-fixed | Downvote tracking in Assistant Insights |
-| **Notion over-share** | Trust erosion — wrong content visible org-wide | Governance failure signal |
+| **Poor source data / ambiguous prompts** | "Not helpful" feedback - not auto-fixed | Downvote tracking in Assistant Insights |
+| **Notion over-share** | Trust erosion - wrong content visible org-wide | Governance failure signal |
 | **ML indexing incomplete** | 2–14 day gate before full usage | Users abandon during empty-index period |
 
 ### Insights abandonment proxy framework
@@ -43,15 +43,15 @@
 
 ### Engineering observation (Doc-Verified)
 
-- No packaged change-management methodology beyond rollout playbook — customer owns comms cadence.
-- Kickoff must explicitly state Glean won't surface unconnected apps — prevents false failure attribution.
+- No packaged change-management methodology beyond rollout playbook - customer owns comms cadence.
+- Kickoff must explicitly state Glean won't surface unconnected apps - prevents false failure attribution.
 - 28-day cohort with signup but zero qualifying active actions = abandonment proxy for sandbox measurement.
 
 ### Verification steps / test case
 
-1. Introduce people-data gap (missing dept) — confirm Admin flag + degraded Insights.
-2. Query content from unconnected source — verify poor/empty results match kickoff messaging.
-3. Track pilot cohort 28 days — flag signup + zero active actions.
+1. Introduce people-data gap (missing dept) - confirm Admin flag + degraded Insights.
+2. Query content from unconnected source - verify poor/empty results match kickoff messaging.
+3. Track pilot cohort 28 days - flag signup + zero active actions.
 4. Monitor downvote spike after intentional Notion misconfiguration test (disposable content).
 5. Document connector approval timeline for M365 stack vs 1–3 week deployment baseline.
 

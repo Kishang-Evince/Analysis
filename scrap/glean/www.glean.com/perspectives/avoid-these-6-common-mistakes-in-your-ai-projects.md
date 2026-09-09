@@ -2,7 +2,7 @@
 url: "https://www.glean.com/perspectives/avoid-these-6-common-mistakes-in-your-ai-projects"
 canonical: "https://www.glean.com/perspectives/avoid-these-6-common-mistakes-in-your-ai-projects"
 title: "Avoid these 6 common mistakes in your AI projects"
-description: "The Glean Team | AI projects: avoid these 6 common mistakes—poor data quality, unclear goals, rushed planning, inadequate expertise, and missing ROI metrics."
+description: "The Glean Team | AI projects: avoid these 6 common mistakes-poor data quality, unclear goals, rushed planning, inadequate expertise, and missing ROI metrics."
 fetched_at: "2026-09-01T13:27:32.187Z"
 ---
 Last updated Nov 25, 2025.
@@ -71,7 +71,7 @@ The path to successful AI implementation becomes clearer when organizations unde
 
 ## What are common pitfalls to avoid during AI deployment?
 
-AI deployment challenges extend far beyond technical implementation — they encompass strategic alignment, data infrastructure, and organizational readiness. Understanding these pitfalls helps enterprises build resilient AI systems that deliver measurable business value rather than becoming abandoned proof-of-concepts.
+AI deployment challenges extend far beyond technical implementation - they encompass strategic alignment, data infrastructure, and organizational readiness. Understanding these pitfalls helps enterprises build resilient AI systems that deliver measurable business value rather than becoming abandoned proof-of-concepts.
 
 Many enterprises launch AI initiatives without establishing clear connections to business objectives. This disconnect manifests when teams focus on implementing cutting-edge models while losing sight of the problems they're meant to solve. Compounding the problem, 91% of machine learning models suffer from [model drift](https://research.aimultiple.com/model-drift/), representing the largest reason for production model performance declines. This degradation often occurs within days of deployment as production data diverges from training data. A financial services company might deploy advanced natural language processing for customer service without first defining success metrics: Should the system reduce response times, improve satisfaction scores, or decrease operational costs?
 
@@ -135,7 +135,7 @@ Professional services firms implementing AI for document analysis must balance a
 
 Objectives that don't align with business goals can derail AI projects. Companies often initiate AI initiatives with enthusiasm but fail to connect them to specific outcomes. This oversight causes efforts to misfire, consuming resources without delivering the intended impact. It's crucial to embed AI projects within the broader strategy to ensure they contribute effectively to business success.
 
-Aligning AI efforts with measurable outcomes requires a deliberate approach. Start by pinpointing the core business challenges AI will address. For example, a financial institution might focus on reducing fraud through advanced analytics. Define clear metrics — such as increased efficiency or enhanced customer satisfaction — to measure success and validate the AI's contribution.
+Aligning AI efforts with measurable outcomes requires a deliberate approach. Start by pinpointing the core business challenges AI will address. For example, a financial institution might focus on reducing fraud through advanced analytics. Define clear metrics - such as increased efficiency or enhanced customer satisfaction - to measure success and validate the AI's contribution.
 
 Collaboration across departments enhances alignment. Involve key stakeholders from areas like IT, customer service, and operations to gather diverse insights. This inclusive approach fosters a unified vision of AI's role in achieving business objectives. A structured governance framework further supports alignment by ensuring transparent decision-making and accountability.
 
@@ -191,7 +191,7 @@ Strategic anticipation is crucial for optimizing AI investments. By identifying 
 
 Regular assessment and refinement ensure AI remains aligned with evolving business needs. As technology advances, periodic reviews help maintain relevance and drive continuous improvement. By fostering adaptability and innovation, organizations can fully harness AI's transformative potential.
 
-Successfully navigating these common AI pitfalls requires more than awareness — it demands the right tools and strategies to transform your organization's approach to AI deployment. We understand that every enterprise faces unique challenges in their AI journey, and having a unified platform that addresses data quality, governance, and scalability concerns can make the difference between AI success and failure. [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) and discover how we can help you build AI solutions that deliver real business value.
+Successfully navigating these common AI pitfalls requires more than awareness - it demands the right tools and strategies to transform your organization's approach to AI deployment. We understand that every enterprise faces unique challenges in their AI journey, and having a unified platform that addresses data quality, governance, and scalability concerns can make the difference between AI success and failure. [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) and discover how we can help you build AI solutions that deliver real business value.
 
 [
 

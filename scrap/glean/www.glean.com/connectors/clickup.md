@@ -18,7 +18,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-Unify ClickUp with the rest of your context in Glean so teams can quickly find tasks and docs, understand status and ownership, then log time, update work, and collaborate in ClickUp—without switching apps.
+Unify ClickUp with the rest of your context in Glean so teams can quickly find tasks and docs, understand status and ownership, then log time, update work, and collaborate in ClickUp-without switching apps.
 
 ## Work AI that works.
 

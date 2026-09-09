@@ -63,7 +63,7 @@ Share this article:
 
 # What is knowledge discovery and its impact on productivity
 
-Every organization sits on a wealth of untapped information — scattered across databases, documents, communications, and dozens of workplace applications. The challenge has never been a lack of data. It's the ability to extract meaningful insight from that data quickly enough to act on it.
+Every organization sits on a wealth of untapped information - scattered across databases, documents, communications, and dozens of workplace applications. The challenge has never been a lack of data. It's the ability to extract meaningful insight from that data quickly enough to act on it.
 
 Knowledge discovery addresses this gap directly. It transforms raw, fragmented information into patterns, relationships, and actionable understanding that teams can use to make better decisions, move faster, and avoid redundant work.
 
@@ -71,11 +71,11 @@ As enterprises scale and the number of tools employees rely on continues to grow
 
 ## What is knowledge discovery?
 
-Knowledge discovery is the process of extracting useful, previously unknown patterns, relationships, and insights from large volumes of structured and unstructured data. First formalized as a discipline in the late 1980s — when Gregory Piatetsky-Shapiro organized a workshop that coined the term Knowledge Discovery in Databases (KDD) — it has since expanded well beyond traditional database analysis into enterprise content, communications, and workplace applications. In a data mining context, KDD refers specifically to the end-to-end pipeline of turning raw data into validated knowledge, with data mining itself representing just one step within that broader process.
+Knowledge discovery is the process of extracting useful, previously unknown patterns, relationships, and insights from large volumes of structured and unstructured data. First formalized as a discipline in the late 1980s - when Gregory Piatetsky-Shapiro organized a workshop that coined the term Knowledge Discovery in Databases (KDD) - it has since expanded well beyond traditional database analysis into enterprise content, communications, and workplace applications. In a data mining context, KDD refers specifically to the end-to-end pipeline of turning raw data into validated knowledge, with data mining itself representing just one step within that broader process.
 
-The knowledge discovery process is iterative by design. It doesn't produce a single output and stop; instead, it involves repeated cycles of refining data inputs, adjusting analytical methods, and evaluating outputs to improve the accuracy and relevance of what's uncovered. Fayyad et al. defined KDD in 1996 as "the non-trivial process of identifying valid, novel, potentially useful, and ultimately understandable patterns in data" — a definition that still holds. Each of those criteria matters: the patterns must generalize beyond the dataset they came from, reveal something genuinely new, serve a practical purpose, and remain interpretable to the people who need them.
+The knowledge discovery process is iterative by design. It doesn't produce a single output and stop; instead, it involves repeated cycles of refining data inputs, adjusting analytical methods, and evaluating outputs to improve the accuracy and relevance of what's uncovered. Fayyad et al. defined KDD in 1996 as "the non-trivial process of identifying valid, novel, potentially useful, and ultimately understandable patterns in data" - a definition that still holds. Each of those criteria matters: the patterns must generalize beyond the dataset they came from, reveal something genuinely new, serve a practical purpose, and remain interpretable to the people who need them.
 
-In an enterprise setting, knowledge discovery bridges the gap between the information an organization already possesses and the understanding its teams actually need. This means surfacing the right document from a sprawling content library, identifying a trend buried in operational data, or connecting insights across departments — all without requiring employees to know exactly where to look. For teams in engineering, support, sales, HR, and IT — roles that depend on quick, context-rich answers — effective knowledge extraction eliminates hours of manual searching and replaces it with direct access to what matters. The distinction between knowledge discovery and simple search is critical: search retrieves what you ask for, while knowledge discovery reveals what you didn't know to ask.
+In an enterprise setting, knowledge discovery bridges the gap between the information an organization already possesses and the understanding its teams actually need. This means surfacing the right document from a sprawling content library, identifying a trend buried in operational data, or connecting insights across departments - all without requiring employees to know exactly where to look. For teams in engineering, support, sales, HR, and IT - roles that depend on quick, context-rich answers - effective knowledge extraction eliminates hours of manual searching and replaces it with direct access to what matters. The distinction between knowledge discovery and simple search is critical: search retrieves what you ask for, while knowledge discovery reveals what you didn't know to ask.
 
 ## How the knowledge discovery process works
 
@@ -93,7 +93,7 @@ This stage involves converting data into formats that facilitate analysis. It in
 
 ### Data Mining and Pattern Extraction
 
-This is the heart of knowledge discovery — where hidden patterns and relationships come to light. Techniques such as clustering, classification, and regression are employed to reveal these insights. The extracted patterns must be applicable to new data, provide fresh perspectives, support decision-making, and be easily interpreted by stakeholders.
+This is the heart of knowledge discovery - where hidden patterns and relationships come to light. Techniques such as clustering, classification, and regression are employed to reveal these insights. The extracted patterns must be applicable to new data, provide fresh perspectives, support decision-making, and be easily interpreted by stakeholders.
 
 ### Evaluation and Interpretation
 
@@ -159,7 +159,7 @@ Establish clear productivity benchmarks to measure the impact of knowledge disco
 
 Finally, adopt a flexible strategy. Knowledge discovery is a dynamic process that evolves alongside organizational needs and technological advancements. Continuously adapt your approach to leverage new insights and capabilities as they emerge.
 
-Knowledge discovery isn't a one-time project — it's an ongoing capability that compounds in value as your organization grows, generates more data, and asks harder questions. The companies that treat it as foundational infrastructure, rather than a nice-to-have, are the ones consistently outpacing their peers in speed, clarity, and decision quality.
+Knowledge discovery isn't a one-time project - it's an ongoing capability that compounds in value as your organization grows, generates more data, and asks harder questions. The companies that treat it as foundational infrastructure, rather than a nice-to-have, are the ones consistently outpacing their peers in speed, clarity, and decision quality.
 
 We built our platform to make that kind of capability accessible to every team, across every workflow. [Request a demo](https://www.glean.com/get-a-demo) to explore how we can help transform the way your organization discovers and acts on knowledge.
 

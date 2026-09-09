@@ -122,7 +122,7 @@ Your browser does not support the video tag.@media only screen and (max-width: 7
 
 If you’re looking to move quickly and build enterprise-sensitive content without working from scratch, Glean Chat has you covered. It can generate refined assets like marketing emails, Jira tickets, and customer communications that integrate a thorough understanding of all relevant content and context – helping you proceed quickly and confidently with your work.
 
-"Generating quick answers and summaries of tens of thousands of documents from our own knowledge bases without having to read through long documents is becoming invaluable in our company— a huge time saver," said Rebecca Scales, Head of Tech Learning & Development at Noom.
+"Generating quick answers and summaries of tens of thousands of documents from our own knowledge bases without having to read through long documents is becoming invaluable in our company- a huge time saver," said Rebecca Scales, Head of Tech Learning & Development at Noom.
 
 {{richtext-banner-component}}  
 

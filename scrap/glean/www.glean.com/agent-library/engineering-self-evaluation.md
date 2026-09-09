@@ -27,7 +27,7 @@ The engineering self-evaluation agent generates a detailed self-review based on 
 
 ## See it in action
 
-Watch how the engineering self-evaluation agent turns your contributions into a structured, evidence-backed self-assessment — no digging, formatting, or guesswork required.
+Watch how the engineering self-evaluation agent turns your contributions into a structured, evidence-backed self-assessment - no digging, formatting, or guesswork required.
 
 ## Capabilities
 

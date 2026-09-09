@@ -124,7 +124,7 @@ Continuous capture also strengthens knowledge transfer. It gives clients a clear
 
 ## Turn search into grounded answers consultants can trust
 
-Turn search into grounded answers, because a list of links is not enough the hour before a client meeting or a proposal deadline — in one survey, [70% of professionals](https://www.pryon.com/resource/why-workers-waste-hours-searching-for-information) said finding a single piece of information takes an hour or more. A consultant should be able to ask a natural-language question and get a concise answer grounded in the firm's knowledge, with citations to the source documents, messages, or records behind it.
+Turn search into grounded answers, because a list of links is not enough the hour before a client meeting or a proposal deadline - in one survey, [70% of professionals](https://www.pryon.com/resource/why-workers-waste-hours-searching-for-information) said finding a single piece of information takes an hour or more. A consultant should be able to ask a natural-language question and get a concise answer grounded in the firm's knowledge, with citations to the source documents, messages, or records behind it.
 
 Trustworthy retrieval combines several signals: keyword relevance, [semantic understanding](https://www.glean.com/blog/enterprise-search-is-hard-why-its-so-behind-and-what-itll-take-to-catch-up) of what the question means, organizational context about people and projects, and the source permissions that govern access. Together they make answers both fast and defensible.
 

@@ -83,17 +83,17 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-In today’s fast-moving retail landscape, store associates are being asked to do more than ever — answer complex questions, personalize service, manage inventory, and bridge the gap between digital and in-store experiences. But without the right tools, meeting those expectations can feel impossible.
+In today’s fast-moving retail landscape, store associates are being asked to do more than ever - answer complex questions, personalize service, manage inventory, and bridge the gap between digital and in-store experiences. But without the right tools, meeting those expectations can feel impossible.
 
 That’s why more retailers are turning to AI to support their frontline teams. From surfacing real-time product and inventory data to delivering insights about customer preferences, AI is reshaping what store associates can do and how they do it. By giving employees faster access to information and reducing routine work, AI tools are helping teams move with greater speed, precision, and confidence.
 
 ## What are AI tools for store associates?
 
-AI tools for store associates are intelligent systems that give frontline employees real-time access to the knowledge they need — including product information, inventory status, company policies, and customer insights. These tools use natural language processing, machine learning, and retrieval-based AI to help associates make decisions quickly and confidently, even during peak periods.
+AI tools for store associates are intelligent systems that give frontline employees real-time access to the knowledge they need - including product information, inventory status, company policies, and customer insights. These tools use natural language processing, machine learning, and retrieval-based AI to help associates make decisions quickly and confidently, even during peak periods.
 
 Instead of navigating disconnected systems or relying on manual processes, associates can ask a question like “Is this item in stock in another location?” or “What are the return options for an online purchase?” and get an immediate, accurate response. This instant access to information removes friction from the employee experience and improves service for the customer.
 
-AI tools also help associates move beyond task execution. With visibility into customer preferences, past purchases, and loyalty status, associates can make more informed recommendations, offer tailored promotions, and guide shoppers through complex decisions. In this way, AI doesn’t replace the human element — it enhances it, enabling store teams to deliver more personalized and effective service.
+AI tools also help associates move beyond task execution. With visibility into customer preferences, past purchases, and loyalty status, associates can make more informed recommendations, offer tailored promotions, and guide shoppers through complex decisions. In this way, AI doesn’t replace the human element - it enhances it, enabling store teams to deliver more personalized and effective service.
 
 ## Benefits of AI for store associates
 
@@ -101,13 +101,13 @@ AI gives store associates the support they need to do their jobs more effectivel
 
 ### Fast, informed service
 
-Store associates often field questions about product availability, sizing, compatibility, or return policies — and the answers aren’t always easy to find. AI makes it easier by providing instant access to inventory data and product information across both in-store and digital systems.
+Store associates often field questions about product availability, sizing, compatibility, or return policies - and the answers aren’t always easy to find. AI makes it easier by providing instant access to inventory data and product information across both in-store and digital systems.
 
 Instead of toggling between tools or relying on a manager, associates can quickly check what’s in stock, pull up product specs, or guide a customer through a return. With clear documentation at their fingertips, they can keep service moving and avoid long wait times.
 
 ### Personalized customer interactions
 
-Personalized service is no longer a differentiator — it’s the expectation. According to McKinsey, 80% of customers are more likely to buy when they receive a personalized experience, and 76% feel frustrated when they don’t (Source: [McKinsey](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-value-of-getting-personalization-right-or-wrong-is-multiplying)). 
+Personalized service is no longer a differentiator - it’s the expectation. According to McKinsey, 80% of customers are more likely to buy when they receive a personalized experience, and 76% feel frustrated when they don’t (Source: [McKinsey](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-value-of-getting-personalization-right-or-wrong-is-multiplying)). 
 
 AI tools help store associates deliver on that expectation. By combining data from ecommerce, loyalty programs, and support systems, AI gives employees a complete view of each customer. They can make relevant product recommendations, apply targeted promotions, and create interactions that feel tailored to the individual. The kind of personalization that once lived online now extends to the store floor.
 
@@ -123,7 +123,7 @@ AI takes care of repetitive tasks like checking stock or searching for documenta
 
 ## How AI tools like Glean work in retail stores
 
-AI in retail isn’t about robots in the aisles or futuristic gadgets. It’s about giving store teams access to the right knowledge at the right moment. Glean makes that possible by connecting the systems and information associates rely on — and making it easy to search, understand, and act on.
+AI in retail isn’t about robots in the aisles or futuristic gadgets. It’s about giving store teams access to the right knowledge at the right moment. Glean makes that possible by connecting the systems and information associates rely on - and making it easy to search, understand, and act on.
 
 Here’s how it works.
 
@@ -131,19 +131,19 @@ Here’s how it works.
 
 Retail associates often need quick answers: What’s our refund policy for curbside pickup? Is this item available in another size or location? Glean allows them to ask those questions in plain language and get accurate, trusted responses immediately.
 
-Glean searches across ecommerce platforms, POS systems, policy documents, product specs, and more — so employees don’t have to jump between tools or wait for a colleague to respond. This helps keep lines moving, reduces customer frustration, and gives associates more time to focus on service.
+Glean searches across ecommerce platforms, POS systems, policy documents, product specs, and more - so employees don’t have to jump between tools or wait for a colleague to respond. This helps keep lines moving, reduces customer frustration, and gives associates more time to focus on service.
 
 ### Cross-channel customer context
 
 Customers now move fluidly between online and in-store touchpoints. They might place an order online, call support about a delay, and then visit a store to follow up. According to [McKinsey](https://www.mckinsey.com/capabilities/operations/our-insights/redefine-the-omnichannel-approach-focus-on-what-truly-matters) shoppers expect “consistent information at their fingertips, regardless of the channel they choose to engage with.”
 
-Glean brings that consistency to life. By surfacing relevant customer history — including past purchases, loyalty status, open support cases, and eligibility for promotions — associates can deliver a more seamless experience. They’re able to pick up the conversation where it left off, even if it started in a completely different channel.
+Glean brings that consistency to life. By surfacing relevant customer history - including past purchases, loyalty status, open support cases, and eligibility for promotions - associates can deliver a more seamless experience. They’re able to pick up the conversation where it left off, even if it started in a completely different channel.
 
 ### Proactive assistance through AI agents
 
 Retailers often struggle to scale best practices across every store. Glean’s AI agents help solve that by delivering proactive recommendations and automating common workflows.
 
-For example, a store manager might use an agent to notify employees when inventory for a popular product is running low. Another agent might surface relevant add-on items based on a shopper’s purchase history. These capabilities help associates make smarter decisions in the moment — without needing to memorize every process or campaign.
+For example, a store manager might use an agent to notify employees when inventory for a popular product is running low. Another agent might surface relevant add-on items based on a shopper’s purchase history. These capabilities help associates make smarter decisions in the moment - without needing to memorize every process or campaign.
 
 By giving store teams access to timely insights and task automation, Glean allows retailers to operate with greater consistency and agility across every location.
 
@@ -151,7 +151,7 @@ By giving store teams access to timely insights and task automation, Glean allow
 
 Rolling out an AI platform like Glean begins with identifying the most valuable use cases for your retail teams. That might include shortening onboarding time, improving product visibility, delivering more personalized service, or helping associates resolve issues faster on the floor.
 
-These are not long-term aspirations — they’re immediate priorities. In fact, 80% of retail executives expect their companies to adopt intelligent automation by 2025, and 40% have already started implementing it(Source: [Analytics Insight](https://www.analyticsinsight.net/intelligent-automation/80-of-companies-will-adopt-intelligent-automation-by-2025)). The industry is moving quickly, and retailers who act now are better positioned to lead.
+These are not long-term aspirations - they’re immediate priorities. In fact, 80% of retail executives expect their companies to adopt intelligent automation by 2025, and 40% have already started implementing it(Source: [Analytics Insight](https://www.analyticsinsight.net/intelligent-automation/80-of-companies-will-adopt-intelligent-automation-by-2025)). The industry is moving quickly, and retailers who act now are better positioned to lead.
 
 Glean simplifies adoption by working within your existing infrastructure. It integrates with the systems your teams already use, including ecommerce platforms, marketing tools, customer support systems, and internal documentation. There’s no need to rebuild access controls or train employees on complex new software. Glean respects existing permissions and fits naturally into established workflows.
 
@@ -164,19 +164,19 @@ For many retailers, key focus areas include:
 
 Once these priorities are mapped, it’s easy to start small. Many retailers begin with a pilot in one store or region, using clear metrics to track improvements in productivity, service quality, and associate satisfaction. From there, scaling Glean across the organization becomes a natural next step.
 
-By keeping implementation focused, flexible, and aligned with real business goals, retailers can unlock value quickly — without disrupting daily operations.
+By keeping implementation focused, flexible, and aligned with real business goals, retailers can unlock value quickly - without disrupting daily operations.
 
 ## Real-world outcomes: AI at work in the store
 
 Retailers that have adopted Glean are already seeing meaningful results on the sales floor. In one example, associates increased sales per interaction by using Glean to identify relevant cross-sell and upsell opportunities based on customer behavior and purchase history.
 
-Other teams have reduced return rates by providing more accurate product information at the point of sale. When customers have the right details upfront — whether about sizing, compatibility, or usage — they’re more likely to make the right purchase the first time. Associates also use Glean to walk shoppers through return and exchange processes, with step-by-step guidance that helps them resolve issues quickly and clearly. With all the product information at their fingertips, they can also offer personalized recommendations to increase the basket size. 
+Other teams have reduced return rates by providing more accurate product information at the point of sale. When customers have the right details upfront - whether about sizing, compatibility, or usage - they’re more likely to make the right purchase the first time. Associates also use Glean to walk shoppers through return and exchange processes, with step-by-step guidance that helps them resolve issues quickly and clearly. With all the product information at their fingertips, they can also offer personalized recommendations to increase the basket size. 
 
 These aren’t pilot experiments or hypothetical use cases. They’re practical, everyday applications that improve service, drive efficiency, and deliver measurable value to customers and employees alike.
 
 ## Overcoming common challenges
 
-Adopting AI in a retail environment can bring up valid concerns — from implementation complexity to employee training and data security. Glean is designed to address those concerns head-on.
+Adopting AI in a retail environment can bring up valid concerns - from implementation complexity to employee training and data security. Glean is designed to address those concerns head-on.
 
 -   **No need to start over.** Glean integrates with more than 100 enterprise systems, so retailers can keep their existing workflows intact. There’s no need to rip and replace what’s already working.
 -   **Security you can trust.** Glean respects all existing data permissions and meets enterprise-grade standards, including SOC 2 Type II and GDPR compliance. Sensitive information stays protected at every level.
@@ -188,7 +188,7 @@ By keeping implementation simple and user experience front and center, Glean hel
 
 Store associates are no longer just executing transactions. They’re delivering experiences, building loyalty, and representing the brand at every touchpoint. But they can’t do it alone. They need tools that keep pace with today’s customers and today’s complexity.
 
-AI gives them that edge. With instant access to the right knowledge, associates can answer confidently, personalize service in the moment, and move seamlessly between digital and in-store interactions. It’s not just about working faster—it’s about working smarter.
+AI gives them that edge. With instant access to the right knowledge, associates can answer confidently, personalize service in the moment, and move seamlessly between digital and in-store interactions. It’s not just about working faster-it’s about working smarter.
 
 Glean helps make that possible. By connecting systems, surfacing insights, and simplifying workflows, Glean empowers your frontline teams to deliver the kind of service today’s shoppers expect. The result is better experiences for customers, and better outcomes for the business.
 

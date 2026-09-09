@@ -2,7 +2,7 @@
 url: "https://www.glean.com/agent-library/daily-meeting-action-summary"
 canonical: "https://www.glean.com/agent-library/daily-meeting-action-summary"
 title: "Daily meeting action summary agent | Glean AI Agent Library"
-description: "Get a clear summary of action items from every meeting — delivered automatically."
+description: "Get a clear summary of action items from every meeting - delivered automatically."
 fetched_at: "2026-09-01T13:27:27.831Z"
 ---
 [
@@ -19,11 +19,11 @@ Featured
 
 # Daily meeting action summary
 
-Get a clear summary of action items from every meeting — delivered automatically.
+Get a clear summary of action items from every meeting - delivered automatically.
 
 ## Overview
 
-The daily meeting action summary agent helps you stay on top of next steps by pulling action items from every meeting you attended that day. It searches your calendar, reviews transcripts, and compiles a clear, actionable list — so you never miss a follow-up.
+The daily meeting action summary agent helps you stay on top of next steps by pulling action items from every meeting you attended that day. It searches your calendar, reviews transcripts, and compiles a clear, actionable list - so you never miss a follow-up.
 
 ## See it in action
 
@@ -31,7 +31,7 @@ Watch how this agent reviews your completed meetings, identifies key takeaways, 
 
 ## Capabilities
 
-Stay organized by receiving a clear summary of action items of all your meetings.Save time with automatic extraction of next steps—no need to reread transcripts.Keep moving forward with daily Slack messages that surface what needs follow-up.Stay consistent with scheduled runs that ensure nothing slips through the cracks.Focus on real work instead of jumping between tools to piece together tasks.
+Stay organized by receiving a clear summary of action items of all your meetings.Save time with automatic extraction of next steps-no need to reread transcripts.Keep moving forward with daily Slack messages that surface what needs follow-up.Stay consistent with scheduled runs that ensure nothing slips through the cracks.Focus on real work instead of jumping between tools to piece together tasks.
 
 ## Example output
 
@@ -65,7 +65,7 @@ Stay organized by receiving a clear summary of action items of all your meetings
 
 ### Step 1: Schedule activation (beta)
 
-The agent runs on a set schedule defined by the user — daily, weekly, or whatever cadence works best.
+The agent runs on a set schedule defined by the user - daily, weekly, or whatever cadence works best.
 
 ### Step 2: Search calendar events
 

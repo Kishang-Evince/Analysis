@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:28:59.230Z"
 ---
 On this page
 
-A Sentry service credential lets a Glean agent read data from Sentry — issues, events, projects, and releases — with an Internal Integration auth token instead of acting on behalf of an individual user. Every call the agent makes is authenticated as one read-only, non-human identity.
+A Sentry service credential lets a Glean agent read data from Sentry - issues, events, projects, and releases - with an Internal Integration auth token instead of acting on behalf of an individual user. Every call the agent makes is authenticated as one read-only, non-human identity.
 
 Glean adds the auth token to outbound requests to `sentry.io`, so the agent never sees the raw token.
 
@@ -25,7 +25,7 @@ Glean adds the auth token to outbound requests to `sentry.io`, so the agent neve
 
 Token type
 
-The token **must** be an **Internal Integration auth token**. Do **not** use an Organization Auth Token (`org:ci` scope only) or a personal User Auth Token — those will not work with this integration.
+The token **must** be an **Internal Integration auth token**. Do **not** use an Organization Auth Token (`org:ci` scope only) or a personal User Auth Token - those will not work with this integration.
 
 ## Step 1: Create an Internal Integration in Sentry[​](#step-1-create-an-internal-integration-in-sentry "Direct link to Step 1: Create an Internal Integration in Sentry")
 
@@ -44,7 +44,7 @@ The token **must** be an **Internal Integration auth token**. Do **not** use an 
 
 1.  On the integration's detail page, locate the generated auth token.
 2.  The token starts with `sntrys_` and is shown only once.
-3.  Copy the token value and store it securely (for example, in a secrets vault or 1Password) — you'll need it when creating the service credential in Glean.
+3.  Copy the token value and store it securely (for example, in a secrets vault or 1Password) - you'll need it when creating the service credential in Glean.
 
 caution
 
@@ -66,7 +66,7 @@ Store the auth token securely. It is shown only once and cannot be retrieved lat
 2.  Click **Add**.
 3.  Select **Sentry** under **Service credentials**.
 4.  Fill in these fields:
-    -   **Credential name**: A human-readable name, for example, "Sentry Agent — your-org."
+    -   **Credential name**: A human-readable name, for example, "Sentry Agent - your-org."
     -   **Description**: A brief description of what this credential is used for.
     -   **Auth token**: The Internal Integration auth token you copied in Step 2 (format: `sntrys_...`).
     -   **Audience**: Which users or groups can attach this credential to agents.
@@ -98,7 +98,7 @@ With a Sentry credential attached, the agent can read Sentry data:
 -   Check release health and deployment status
 -   Summarize error trends and frequencies
 
-The integration is read-only — the agent cannot create, update, or delete any Sentry resources.
+The integration is read-only - the agent cannot create, update, or delete any Sentry resources.
 
 ## Security and operational notes[​](#security-and-operational-notes "Direct link to Security and operational notes")
 

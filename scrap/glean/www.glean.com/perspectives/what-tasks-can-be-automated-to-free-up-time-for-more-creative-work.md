@@ -71,7 +71,7 @@ Automation presents a practical solution to this productivity paradox. [94%](htt
 
 ## What tasks can be automated to free up time for more creative work?
 
-Task automation represents the strategic use of technology to handle repetitive activities, enabling professionals to concentrate on creative and strategic initiatives. This approach transforms workplace efficiency by eliminating time-consuming manual processes that bog down talented teams across every department — from engineering to HR.
+Task automation represents the strategic use of technology to handle repetitive activities, enabling professionals to concentrate on creative and strategic initiatives. This approach transforms workplace efficiency by eliminating time-consuming manual processes that bog down talented teams across every department - from engineering to HR.
 
 The shift toward automation isn't about replacing human intelligence; it's about amplifying it. When routine tasks run on autopilot, professionals gain the mental space and time to tackle complex challenges, develop innovative solutions, and engage in the deep work that drives organizational success. Modern AI tools have evolved beyond simple rule-based systems to become [intelligent assistants](https://www.glean.com/agent-library) that understand context, learn patterns, and adapt to specific business needs.
 
@@ -165,7 +165,7 @@ By starting with small, manageable tasks and selecting compatible tools, organiz
 
 The path to enhanced creative productivity starts with identifying which tasks drain your team's time and energy. By implementing strategic automation across these five key areas, you can unlock significant time savings and empower your teams to focus on the innovative work that drives real business value.
 
-Ready to see how AI-powered automation can transform your workplace productivity? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) — we'll show you exactly how to reclaim hours in your workday.
+Ready to see how AI-powered automation can transform your workplace productivity? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) - we'll show you exactly how to reclaim hours in your workday.
 
 [
 

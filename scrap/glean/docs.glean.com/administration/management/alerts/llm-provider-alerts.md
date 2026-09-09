@@ -2,7 +2,7 @@
 url: "https://docs.glean.com/administration/management/alerts/llm-provider-alerts"
 canonical: "https://docs.glean.com/administration/management/alerts/llm-provider-alerts"
 title: "LLM provider alerts"
-description: "Understand LLM provider alert emails — what triggers them and how to resolve the underlying errors"
+description: "Understand LLM provider alert emails - what triggers them and how to resolve the underlying errors"
 fetched_at: "2026-09-01T13:29:08.472Z"
 ---
 On this page

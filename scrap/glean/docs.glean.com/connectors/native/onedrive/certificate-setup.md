@@ -17,7 +17,7 @@ Set up the [Microsoft 365 parent connector](/connectors/native/microsoft365/) be
 
 ## Add content permissions to the parent app[​](#add-content-permissions-to-the-parent-app "Direct link to Add content permissions to the parent app")
 
-The identity permissions (`User.Read.All`, `GroupMember.Read.All`, `Member.Read.Hidden`, `Reports.Read.All`) are already granted on the shared app during [Microsoft 365 setup](/connectors/native/microsoft365/) — they cover the parent connector and don't need to be re-added here. This step adds the content permissions OneDrive uses on the same app.
+The identity permissions (`User.Read.All`, `GroupMember.Read.All`, `Member.Read.Hidden`, `Reports.Read.All`) are already granted on the shared app during [Microsoft 365 setup](/connectors/native/microsoft365/) - they cover the parent connector and don't need to be re-added here. This step adds the content permissions OneDrive uses on the same app.
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/). Navigate to **Microsoft Entra ID** → **Manage** → **App registrations** and select the app created for the Microsoft 365 suite.
     

@@ -25,7 +25,7 @@ Actions *FR-3204*
 
 #### Agent LLM Model selector now more easily accessible[​](#agent-llm-model-selector-now-more-easily-accessible "Direct link to Agent LLM Model selector now more easily accessible")
 
-Model choice plays a critical role in agent performance. Previously, changing the model required navigating through multiple screens to access the advanced settings for each step — making it cumbersome for builders and admins to update. We've now moved the model selector directly into the agent step configuration settings, making it more visible and easier to use. This change simplifies model customization for each step, giving customers more control with less friction.
+Model choice plays a critical role in agent performance. Previously, changing the model required navigating through multiple screens to access the advanced settings for each step - making it cumbersome for builders and admins to update. We've now moved the model selector directly into the agent step configuration settings, making it more visible and easier to use. This change simplifies model customization for each step, giving customers more control with less friction.
 
 [Learn more](/administration/llms#supported-models)
 
@@ -127,7 +127,7 @@ Assistant *FR-3024*
 
 #### Expanded Model Access for Agents with Cross-Cloud Model Hub in Glean Key (GCP <> AWS)[​](#expanded-model-access-for-agents-with-cross-cloud-model-hub-in-glean-key-gcp--aws "Direct link to Expanded Model Access for Agents with Cross-Cloud Model Hub in Glean Key (GCP <> AWS)")
 
-Glean customers can now select and use large language models (LLMs) across both AWS (Amazon Bedrock) and GCP (Google Vertex AI) platforms in the model hub, regardless of their deployment’s primary cloud. For example, GCP-hosted customers can now enable Bedrock-hosted models for use in agents, while AWS-hosted customers can access Vertex AI-hosted models—significantly broadening choice for Glean Agents and improving flexibility for diverse workflows.
+Glean customers can now select and use large language models (LLMs) across both AWS (Amazon Bedrock) and GCP (Google Vertex AI) platforms in the model hub, regardless of their deployment’s primary cloud. For example, GCP-hosted customers can now enable Bedrock-hosted models for use in agents, while AWS-hosted customers can access Vertex AI-hosted models-significantly broadening choice for Glean Agents and improving flexibility for diverse workflows.
 
 **How to access:** Glean Key Customers only. Admins can enable any available models directly in the model hub configuration within the Glean Admin Console. This update does not impact the default model for Glean Assistant.
 

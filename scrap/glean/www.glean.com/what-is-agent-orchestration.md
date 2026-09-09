@@ -10,7 +10,7 @@ fetched_at: "2026-09-01T13:25:31.887Z"
 Multi-agent systems break down fast without the right coordination layer. Tasks run out of order, state gets lost, errors vanish into logs, and you’re left guessing which agent failed and why. Glean’s orchestration engine fixes that by giving every workflow a clear structure and a durable execution model. Glean handles the heavy technical work for you:
 
 1.  **Declarative workflows  
-    **Define branching, looping, retries, escalations, and human approval steps — without hand-coding chains between agents.
+    **Define branching, looping, retries, escalations, and human approval steps - without hand-coding chains between agents.
 2.  **Durable state + checkpointing  
     **Every step is saved, so workflows can pause, resume, or recover from failures without losing context. No more “start over from the top” issues.
 3.  **Parallel and sequential coordination  
@@ -39,7 +39,7 @@ Glean gives your agents access to company data without exposing your systems or 
 4.  **Built-in redaction and field-level masking  
     **Sensitive fields stay hidden or hashed, and logs remain clean without extra engineering work.
 5.  **Safe access across all your systems  
-    **Databases, internal APIs, SaaS apps — Glean connects to everything without custom scripts or brittle tooling.
+    **Databases, internal APIs, SaaS apps - Glean connects to everything without custom scripts or brittle tooling.
 6.  **Full audit trails  
     **Every tool call, decision, and data touchpoint is automatically recorded for compliance.
 7.  **Consistent, up-to-date data  
@@ -50,7 +50,7 @@ Glean gives your agents access to company data without exposing your systems or 
 Agents shouldn’t freeze the day you ship them. Glean is built so you can keep upgrading how your agents think, what they know, and what they’re allowed to do without breaking production or your compliance story.
 
 1.  **Ship fast, change safely  
-    **Every edit—new step, different model, tweaked prompt, added tool—is tracked as a version. Test it, compare behavior, and roll back in one click if it doesn’t hold up in the real world.
+    **Every edit-new step, different model, tweaked prompt, added tool-is tracked as a version. Test it, compare behavior, and roll back in one click if it doesn’t hold up in the real world.
 2.  **Learn from every run, not just gut feel  
     **Glean logs full agent traces: what tools were called, what data was touched, where the conversation branched, and where it failed. You see exactly which step slowed things down, hallucinated, or hit a permission wall and fix that, not everything.
 3.  **Close the loop with real users**  
@@ -97,7 +97,7 @@ Enter your query into Glean’s powerful universal AI search. Whether you need a
 
 ### Understand
 
-Deep learning models and generative AI unlock real semantic understanding, harnessing your company’s unique context to deliver highly relevant answers—automatically refined and optimized by AI.
+Deep learning models and generative AI unlock real semantic understanding, harnessing your company’s unique context to deliver highly relevant answers-automatically refined and optimized by AI.
 
 ![Glean Understand Graphic ](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/67991c37d5f650c88d7f5cac_Understand.webp)
 

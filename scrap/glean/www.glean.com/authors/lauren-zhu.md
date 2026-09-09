@@ -2,7 +2,7 @@
 url: "https://www.glean.com/authors/lauren-zhu"
 canonical: "https://www.glean.com/authors/lauren-zhu"
 title: "Lauren Zhu | Glean"
-description: "Lauren’s worked with all things AI and ML—multilingual machine translation, autonomous vehicles, gun detection, and is excited to make Glean the next best thing. Her favorite pastime is playing with dogs, but you can also find her writing songs, grilling salmon, and posting travel vlogs."
+description: "Lauren’s worked with all things AI and ML-multilingual machine translation, autonomous vehicles, gun detection, and is excited to make Glean the next best thing. Her favorite pastime is playing with dogs, but you can also find her writing songs, grilling salmon, and posting travel vlogs."
 fetched_at: "2026-09-01T13:26:03.444Z"
 ---
 # Lauren Zhu
@@ -15,7 +15,7 @@ Engineering
 
 ## Lauren Zhu
 
-Lauren’s worked with all things AI and ML—multilingual machine translation, autonomous vehicles, gun detection, and is excited to make Glean the next best thing. Her favorite pastime is playing with dogs, but you can also find her writing songs, grilling salmon, and posting travel vlogs.
+Lauren’s worked with all things AI and ML-multilingual machine translation, autonomous vehicles, gun detection, and is excited to make Glean the next best thing. Her favorite pastime is playing with dogs, but you can also find her writing songs, grilling salmon, and posting travel vlogs.
 
 ## Connect with
 

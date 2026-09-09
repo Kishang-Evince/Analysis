@@ -92,7 +92,7 @@ Use this option only if you are using the **Salesforce Extension Tools** and are
 3.  Add the following **OAuth scopes**:
     -   `Manage user data via APIs (api)`
     -   `Perform requests at anytime (refresh_token, offline_access)`
-    -   `Full access (full)` — required when setting up Custom authentication for the Salesforce Extension Tools.
+    -   `Full access (full)` - required when setting up Custom authentication for the Salesforce Extension Tools.
 4.  Based on your requirement, you can either enable or disable the following options:
     -   **Introspect all Tokens**: Allows the app to use the token introspection endpoint of Salesforce to validate and inspect access/refresh tokens across the org. Enable this if you plan to check token status through `/services/oauth2/introspect`.
     -   **Configure ID token**: Controls how Salesforce issues OpenID Connect ID tokens. If your integration uses the `openid` scope, enable this to configure ID token behavior; otherwise, leave it disabled.

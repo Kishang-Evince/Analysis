@@ -95,7 +95,7 @@ The Procore connector indexes attachments for key objects where supported by the
 
 -   Only Procore content accessible via the configured Procore application and service account is indexed. If the service account cannot see a project or tool, that data will not appear in Glean.
 -   Permissions are modeled primarily via Procore’s project‑centric permission templates and tool‑level permissions. Highly custom, non‑template permissions require an explicit admin choice during setup (see [Permissions and security](#permissions-and-security)).
--   Some Procore tools and objects — for example, certain change order or punch list workflows — are currently not supported.
+-   Some Procore tools and objects - for example, certain change order or punch list workflows - are currently not supported.
 
 ## Permissions and security[​](#permissions-and-security "Direct link to Permissions and security")
 

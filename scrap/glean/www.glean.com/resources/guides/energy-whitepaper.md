@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/energy-whitepaper"
 canonical: "https://www.glean.com/resources/guides/energy-whitepaper"
 title: "Powering smarter energy operations with AI"
-description: "Energy leaders are under pressure to scale quickly, keep systems stable, and meet growing power demand — all while navigating complex regulations and aging infrastructure. This one-pager explores how companies are using Glean to connect knowledge across operations and make faster, more confident decisions."
+description: "Energy leaders are under pressure to scale quickly, keep systems stable, and meet growing power demand - all while navigating complex regulations and aging infrastructure. This one-pager explores how companies are using Glean to connect knowledge across operations and make faster, more confident decisions."
 fetched_at: "2026-09-01T13:27:06.870Z"
 ---
 ## Work AI that works.

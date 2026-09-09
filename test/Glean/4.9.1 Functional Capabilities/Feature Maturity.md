@@ -1,4 +1,4 @@
-# Field 4 — Feature Maturity
+# Field 4 - Feature Maturity
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Feature Maturity.md](../../../Glean/Combined/4.9.1 Functional Capabilities/Feature Maturity.md)
@@ -9,10 +9,10 @@
 **Write results to:** [4.9.1 - Functional Capabilities](../../../Glean/Combined/4.9.1%20Functional%20Capabilities/Pre-Flight.md) → Field 4 matrix (Admin UI badge column).
 
 ### Steps
-1. **Admin → What's new → Feature rollouts** — Beta + Managed rollout tabs; note enrollment + forced GA dates
-2. **Platform → Models (Model Hub)** — deprecation notices, premium model badges
-3. **Agents** — Auto vs Workflow labels; any Beta stickers on Multiplayer / team chat
-4. **Platform → Glean MCP server** — default-enabled OAuth (GA-class per July 2026 release)
+1. **Admin → What's new → Feature rollouts** - Beta + Managed rollout tabs; note enrollment + forced GA dates
+2. **Platform → Models (Model Hub)** - deprecation notices, premium model badges
+3. **Agents** - Auto vs Workflow labels; any Beta stickers on Multiplayer / team chat
+4. **Platform → Glean MCP server** - default-enabled OAuth (GA-class per July 2026 release)
 5. Cross-check doc-backed matrix in eval log rows 1–14
 6. Update **Admin UI badge** column from Pending → observed
 

@@ -11,7 +11,7 @@ fetched_at: "2026-09-01T13:25:34.291Z"
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69b7bc737210db702f3c887b_5467dc709e89d6c1a341a6e06425160e_glean-logo.svg)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69b7bcde9f42089ab56b87a6_line.svg)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6a35704e99c7e95731a96764_Financial%20Services.svg)
 
-# This leading financial software provider saved 3k+ hours monthly with Glean — unlocking $2.3M yearly value.
+# This leading financial software provider saved 3k+ hours monthly with Glean - unlocking $2.3M yearly value.
 
 [
 
@@ -53,7 +53,7 @@ search time saved per employee, weekly
 
 ## The challenge
 
-With over 1,000 employees relying on 30+ tools — including Salesforce, OneDrive, and Outlook — finding the right information was an ongoing frustration. Search functions within these platforms weren’t powerful enough, leaving employees bouncing between systems, sifting through outdated content, or interrupting colleagues for answers.
+With over 1,000 employees relying on 30+ tools - including Salesforce, OneDrive, and Outlook - finding the right information was an ongoing frustration. Search functions within these platforms weren’t powerful enough, leaving employees bouncing between systems, sifting through outdated content, or interrupting colleagues for answers.
 
 ‍
 
@@ -61,7 +61,7 @@ Even with top-tier collaboration tools like Slack and Confluence, teams struggle
 
 ## The solution
 
-The company needed a fast, intuitive way to surface knowledge — without the complexity of hiring dedicated search engineers or overhauling existing systems. After a successful pilot, where 96.8% of participants said they’d recommend Glean, the team rolled it out company-wide.
+The company needed a fast, intuitive way to surface knowledge - without the complexity of hiring dedicated search engineers or overhauling existing systems. After a successful pilot, where 96.8% of participants said they’d recommend Glean, the team rolled it out company-wide.
 
 ‍
 
@@ -71,7 +71,7 @@ Glean connected 33 data sources, giving employees a single place to search for w
 
 The results:
 
--   Adoption skyrocketed — more than 80% of employees used Glean, and 78% remained active each month.
+-   Adoption skyrocketed - more than 80% of employees used Glean, and 78% remained active each month.
 -   Over 6.4 million queries were run in a single year, helping teams unlock critical insights across systems like Salesforce, OneDrive, and Outlook.
 -   Employees spent less time searching and more time focusing on high-value work.
 

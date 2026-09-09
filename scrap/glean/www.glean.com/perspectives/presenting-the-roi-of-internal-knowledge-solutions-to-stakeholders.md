@@ -63,23 +63,23 @@ Share this article:
 
 # Presenting the ROI of internal knowledge solutions to stakeholders
 
-Every enterprise sits on a wealth of internal knowledge — scattered across dozens of apps, buried in chat threads, locked inside documents that only a handful of people know exist. The cost of that fragmentation rarely appears as a line item, but it shows up every day in slower decisions, duplicated effort, and employees who spend more time searching than doing.
+Every enterprise sits on a wealth of internal knowledge - scattered across dozens of apps, buried in chat threads, locked inside documents that only a handful of people know exist. The cost of that fragmentation rarely appears as a line item, but it shows up every day in slower decisions, duplicated effort, and employees who spend more time searching than doing.
 
 For decision-makers evaluating an internal knowledge search solution, the central question is straightforward: does better access to information produce measurable business outcomes? The answer requires more than intuition. It demands a clear framework that connects knowledge discovery to productivity, cost reduction, and operational performance.
 
-This guide breaks down how to calculate, present, and defend the ROI of internal knowledge solutions in terms stakeholders already trust — time saved, support costs avoided, and real gains in employee efficiency across engineering, sales, IT, HR, and customer service teams.
+This guide breaks down how to calculate, present, and defend the ROI of internal knowledge solutions in terms stakeholders already trust - time saved, support costs avoided, and real gains in employee efficiency across engineering, sales, IT, HR, and customer service teams.
 
 ## What is the ROI of implementing an internal knowledge search solution?
 
-Internal knowledge search ROI is the measurable value an organization gains when employees can find trusted, permission-aware answers faster across company systems. In practice, that value appears as reduced time-to-answer, fewer repeat questions, less duplicated work, faster onboarding, and stronger decision quality — all weighed against the cost to deploy, manage, and improve the solution.
+Internal knowledge search ROI is the measurable value an organization gains when employees can find trusted, permission-aware answers faster across company systems. In practice, that value appears as reduced time-to-answer, fewer repeat questions, less duplicated work, faster onboarding, and stronger decision quality - all weighed against the cost to deploy, manage, and improve the solution.
 
-The strongest ROI case combines hard financial returns with operational gains. Productivity improvements are the most visible: employees spend less time hunting for information and more time on work that moves the business forward. But the returns extend further — into support deflection, knowledge reuse, consistency of answers across teams, and reduced dependence on a small group of subject-matter experts who field the same questions week after week. McKinsey research has found that employees spend roughly 20% of their workday searching for the information they need. For a 1,000-person organization with an average salary of $60,000, that translates to approximately $12 million per year in labor dedicated to finding — not applying — knowledge.
+The strongest ROI case combines hard financial returns with operational gains. Productivity improvements are the most visible: employees spend less time hunting for information and more time on work that moves the business forward. But the returns extend further - into support deflection, knowledge reuse, consistency of answers across teams, and reduced dependence on a small group of subject-matter experts who field the same questions week after week. McKinsey research has found that employees spend roughly 20% of their workday searching for the information they need. For a 1,000-person organization with an average salary of $60,000, that translates to approximately $12 million per year in labor dedicated to finding - not applying - knowledge.
 
 ### What a modern solution should deliver
 
 Not all internal search tools produce meaningful ROI. The difference lies in how the solution handles the complexity of enterprise knowledge. A modern platform should:
 
--   **Unify information across tools**: Connect content from chat, wikis, drives, ticketing systems, CRM platforms, and team-specific repositories into a single search experience — without forcing employees to remember where something lives.
+-   **Unify information across tools**: Connect content from chat, wikis, drives, ticketing systems, CRM platforms, and team-specific repositories into a single search experience - without forcing employees to remember where something lives.
 -   **Respect existing access controls**: Enforce permissions at the source level so employees only see information they are authorized to access. This is a non-negotiable requirement for enterprise-grade deployment.
 -   **Return contextual, relevant answers**: Go beyond keyword matching to understand intent, surface authoritative content, and account for relationships between people, teams, and activity data.
 
@@ -87,11 +87,11 @@ Without these capabilities, search improvements tend to stall at surface-level c
 
 ### Why fragmented knowledge creates hidden costs
 
-The cost of poor knowledge discoverability compounds in ways that rarely surface in a quarterly review. Engineers rebuild solutions that already exist elsewhere. Sales teams send outdated collateral because the approved version is buried three folders deep. Support agents escalate tickets that could have been resolved with a single knowledge base article — if they had known it existed.
+The cost of poor knowledge discoverability compounds in ways that rarely surface in a quarterly review. Engineers rebuild solutions that already exist elsewhere. Sales teams send outdated collateral because the approved version is buried three folders deep. Support agents escalate tickets that could have been resolved with a single knowledge base article - if they had known it existed.
 
 These patterns create a drag on performance that grows with organizational complexity. Fortune 500 companies lose an estimated $31.5 billion annually by failing to share knowledge effectively, according to research published by the Society for Human Resource Management. Even at smaller scale, the math is unfavorable: if 1,000 employees each waste just 10 minutes per day on failed searches, that adds up to more than 40,000 hours of lost productivity per year.
 
-The real risk for stakeholders is not whether search matters — it is whether the current approach to knowledge access is quietly eroding the returns on every other investment the organization makes in its people, tools, and processes. A well-structured ROI model, like the one we offer at Glean, makes that cost visible and positions internal knowledge search as a productivity layer that strengthens the entire operation.
+The real risk for stakeholders is not whether search matters - it is whether the current approach to knowledge access is quietly eroding the returns on every other investment the organization makes in its people, tools, and processes. A well-structured ROI model, like the one we offer at Glean, makes that cost visible and positions internal knowledge search as a productivity layer that strengthens the entire operation.
 
 ## How to Present the ROI of Internal Knowledge Solutions to Stakeholders
 
@@ -101,7 +101,7 @@ Present internal knowledge search as a system that improves execution across kno
 
 ### Start with the business problem, not the tool
 
-Lead with the cost of slow knowledge access in terms the business already tracks. That means cycle time, service quality, labor efficiency, onboarding speed, and support capacity — not search features, interface details, or repository counts.
+Lead with the cost of slow knowledge access in terms the business already tracks. That means cycle time, service quality, labor efficiency, onboarding speed, and support capacity - not search features, interface details, or repository counts.
 
 A strong opening keeps the story plain: work slows down when answers sit behind unclear ownership, inconsistent sources, and hard-to-navigate systems. A better internal search layer shortens the path from request to resolution; the gains then spread across departments that rely on accurate internal knowledge every day.
 
@@ -111,7 +111,7 @@ Three benefits usually make the case clear without oversell:
 -   **Lower coordination overhead**: Teams spend less time in back-and-forth messages, side-channel requests, and manual confirmation of which source reflects the current answer. That reduction shows up as smoother handoffs and fewer avoidable delays.
 -   **Broader self-service coverage**: More routine questions shift away from inboxes, queue-based support, and manager interruptions. The result is more capacity for work that requires judgment rather than lookup.
 
-That framing lands well because it connects knowledge search to outcomes that executives already fund. It also places the discussion inside a broader transformation agenda — one focused on throughput, consistency, and measurable operating improvement.
+That framing lands well because it connects knowledge search to outcomes that executives already fund. It also places the discussion inside a broader transformation agenda - one focused on throughput, consistency, and measurable operating improvement.
 
 ### Use three questions to structure the case
 
@@ -143,7 +143,7 @@ That cross-functional view strengthens the case because it aligns with how stake
 
 Start with the systems employees already use every day. Company knowledge tends to live in places built for authorship or communication, not retrieval: project docs, chat channels, case systems, file shares, CRM records, and department portals. The issue is not scarcity. The issue is the amount of effort required to reach a reliable answer.
 
-That effort creates a hidden operating cost. Each search begins with uncertainty — which tool holds the source of record, which document reflects the latest policy, which answer still applies after the last process change. Even routine work takes longer when employees must verify the answer before they can use it.
+That effort creates a hidden operating cost. Each search begins with uncertainty - which tool holds the source of record, which document reflects the latest policy, which answer still applies after the last process change. Even routine work takes longer when employees must verify the answer before they can use it.
 
 ### What poor discoverability looks like in day-to-day work
 
@@ -218,13 +218,13 @@ These measures strengthen the ROI model because they tie knowledge access to lab
 
 Some organizations lack clean company-wide measurement at the start. In that case, a pilot offers a stronger foundation than a broad estimate built on rough averages.
 
-Choose one or two teams with visible friction and stable workflows. Set a short review window — often 30, 60, or 90 days — and capture the pre-pilot state with task timing, ticket tags, search-session reviews, and a small sample of employee feedback. This approach works well in IT, HR, support, sales, and engineering because those teams tend to produce clear operational records and repeatable knowledge tasks.
+Choose one or two teams with visible friction and stable workflows. Set a short review window - often 30, 60, or 90 days - and capture the pre-pilot state with task timing, ticket tags, search-session reviews, and a small sample of employee feedback. This approach works well in IT, HR, support, sales, and engineering because those teams tend to produce clear operational records and repeatable knowledge tasks.
 
 A disciplined pilot should document more than usage. Record the starting task path, the number of systems checked, the point where the user loses confidence, and the cost of the fallback step. That structure gives stakeholders a cleaner line between baseline conditions and measurable improvement.
 
 ### Separate discovery issues from knowledge issues
 
-A weak result does not always point to the search layer. In many cases, the deeper problem sits inside the knowledge estate itself — duplicate articles, stale policies, missing owners, or several versions of the same answer spread across different tools.
+A weak result does not always point to the search layer. In many cases, the deeper problem sits inside the knowledge estate itself - duplicate articles, stale policies, missing owners, or several versions of the same answer spread across different tools.
 
 That distinction matters because the fix depends on the source of the failure. Search tuning may improve ranking, query understanding, or permissions behavior. Content work may require owner assignment, freshness reviews, archival rules, or consolidation of conflicting sources. Baseline work should capture both sides so the ROI model reflects reality instead of assigning every problem to search.
 
@@ -305,7 +305,7 @@ A practical formula keeps this section grounded: annual support benefit = reduct
 
 A strong ROI model does not hide the investment side of the equation. License price is only the most visible number; it does not show what the organization must fund to move from purchase to measurable impact.
 
-This is the point where many business cases lose credibility. Leaders want a view of knowledge search implementation costs that reflects actual deployment conditions inside the enterprise — system complexity, internal labor, rollout scope, and the level of support required after launch.
+This is the point where many business cases lose credibility. Leaders want a view of knowledge search implementation costs that reflects actual deployment conditions inside the enterprise - system complexity, internal labor, rollout scope, and the level of support required after launch.
 
 ### Separate one-time costs from recurring costs
 
@@ -358,7 +358,7 @@ Employee experience improves when the path to a reliable answer feels predictabl
 
 That trust matters because poor discoverability changes behavior. Employees create personal copies of documents, save unofficial cheat sheets, or depend on a small informal network for answers. Over time, those habits weaken standardization and make knowledge harder to maintain. A strong internal knowledge layer reverses that pattern by making the official answer easier to use than the workaround.
 
-For newer employees, the benefit shows up as a more consistent ramp. Instead of uneven handoffs between managers or heavy dependence on whoever sits nearby, new hires can access the context that helps them join real work sooner: team norms, prior decisions, common workflows, and role-specific guidance. That creates a more uniform onboarding experience across offices, functions, and managers — a strategic advantage for enterprises that scale quickly or operate across multiple regions.
+For newer employees, the benefit shows up as a more consistent ramp. Instead of uneven handoffs between managers or heavy dependence on whoever sits nearby, new hires can access the context that helps them join real work sooner: team norms, prior decisions, common workflows, and role-specific guidance. That creates a more uniform onboarding experience across offices, functions, and managers - a strategic advantage for enterprises that scale quickly or operate across multiple regions.
 
 ### Keep revenue claims disciplined
 
@@ -376,7 +376,7 @@ That structure works best when each page answers a different executive concern. 
 
 ### Match the message to the audience
 
-The core analysis stays the same, but the emphasis should shift by stakeholder. A CFO usually looks for financial discipline — what assumptions drive the model, which benefits count as hard savings, where partial realization may occur, and how long it takes for the investment to pay back. A CIO or IT leader will inspect a different layer: access controls, connector coverage, governance ownership, content freshness, and the level of effort required from admins after launch.
+The core analysis stays the same, but the emphasis should shift by stakeholder. A CFO usually looks for financial discipline - what assumptions drive the model, which benefits count as hard savings, where partial realization may occur, and how long it takes for the investment to pay back. A CIO or IT leader will inspect a different layer: access controls, connector coverage, governance ownership, content freshness, and the level of effort required from admins after launch.
 
 Functional leaders need a more concrete view of operating impact. A support executive will care about queue pressure, handle time, repeat escalations, and answer consistency across teams. A sales or revenue leader will care about how fast reps can locate current messaging, pricing guidance, and approved material. People leaders will focus on how quickly new hires become self-sufficient and how often employees can solve policy or process questions without direct help.
 
@@ -384,11 +384,11 @@ Use a forecast range rather than one headline number. A floor case, a target cas
 
 ### Close with a pilot and a review plan
 
-The last part of the story should convert interest into a testable operating plan. A limited-scope pilot gives stakeholders a way to validate the assumptions with internal evidence instead of broad benchmarks alone. The best pilot groups tend to have high search volume, clear workflow repetition, and measurable downstream effects — internal support, HR operations, technical teams, sales enablement, and customer-facing service functions often fit that profile.
+The last part of the story should convert interest into a testable operating plan. A limited-scope pilot gives stakeholders a way to validate the assumptions with internal evidence instead of broad benchmarks alone. The best pilot groups tend to have high search volume, clear workflow repetition, and measurable downstream effects - internal support, HR operations, technical teams, sales enablement, and customer-facing service functions often fit that profile.
 
 Keep the pilot design tight:
 
-1.  **Choose a narrow set of workflows**: Pick a small group of recurring tasks with visible friction — policy lookups, access requests, technical documentation searches, escalation guidance, or approved content retrieval.
+1.  **Choose a narrow set of workflows**: Pick a small group of recurring tasks with visible friction - policy lookups, access requests, technical documentation searches, escalation guidance, or approved content retrieval.
 2.  **Define the scorecard before launch**: Select a fixed metric set such as search success, time to first useful answer, repeat requests, escalation frequency, or expert interruptions. Resist the urge to expand the scorecard midstream.
 3.  **Set a review cadence and ownership model**: Name who tracks results, who resolves content gaps, and who owns governance decisions during the test window.
 4.  **Document what changed and why**: Capture whether the gains came from better retrieval, cleaner content, stronger permissions alignment, or a simpler user path. That detail matters for scale decisions later.
@@ -442,7 +442,7 @@ This is why small search improvements can produce outsized returns. The value do
 
 ### 4\. What challenges might I face when calculating the ROI of a knowledge search solution?
 
-One common problem is double-counting. A company may count the same benefit twice — once as employee time saved and again as support savings — which weakens credibility fast under finance review.
+One common problem is double-counting. A company may count the same benefit twice - once as employee time saved and again as support savings - which weakens credibility fast under finance review.
 
 Other challenges tend to show up in the model design itself:
 
@@ -462,13 +462,13 @@ A practical stakeholder deck often works best with five clear components:
 
 1.  **A one-slide baseline snapshot**: Show the current state with a few high-signal numbers, such as unresolved search gaps, repeat requests, or slow knowledge-dependent workflows.
 2.  **A hard-benefits model**: Isolate savings that can tie directly to labor, service cost, or efficiency improvement.
-3.  **A soft-benefits section**: Include outcomes such as better employee experience, stronger compliance posture, or improved knowledge continuity — but keep them separate from the ROI math.
+3.  **A soft-benefits section**: Include outcomes such as better employee experience, stronger compliance posture, or improved knowledge continuity - but keep them separate from the ROI math.
 4.  **A sensitivity view**: Show conservative, expected, and upside cases so finance and procurement can judge the range rather than debate one headline figure.
 5.  **A post-launch scorecard**: Define what success looks like after 30, 90, and 180 days, including which metrics will be reviewed and who owns them.
 
 This structure works because it answers the questions stakeholders tend to ask in sequence: what is broken, what changes, what it is worth, what it costs, and how progress will be checked.
 
-The difference between a funded initiative and a stalled proposal often comes down to how clearly the value story connects to the way stakeholders already evaluate investments. A disciplined model — grounded in baseline evidence, honest cost assumptions, and a pilot-ready execution plan — gives leaders the confidence to act rather than defer. If you're ready to see how a unified AI-powered knowledge platform can deliver measurable ROI across your organization, [request a demo to explore how we can transform your workplace](https://www.glean.com/get-a-demo).
+The difference between a funded initiative and a stalled proposal often comes down to how clearly the value story connects to the way stakeholders already evaluate investments. A disciplined model - grounded in baseline evidence, honest cost assumptions, and a pilot-ready execution plan - gives leaders the confidence to act rather than defer. If you're ready to see how a unified AI-powered knowledge platform can deliver measurable ROI across your organization, [request a demo to explore how we can transform your workplace](https://www.glean.com/get-a-demo).
 
 [
 

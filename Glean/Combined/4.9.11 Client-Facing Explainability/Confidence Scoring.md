@@ -28,22 +28,22 @@
 | Answer ranking ("highly confident") | Answers pinned to top | **No** numeric | Internal ranking only |
 | Citations present/absent | Yes | **No** | Proxy for grounding, not confidence % |
 | Verified document badge | Green badge on search hit | **No** | Human verification, not AI score |
-| Protect+ harmful content | Block/warn in UI | **Yes** — per-category thresholds | Admin/policy layer; not answer truth |
+| Protect+ harmful content | Block/warn in UI | **Yes** - per-category thresholds | Admin/policy layer; not answer truth |
 | Guardrails Insights dashboard | Admin only | Policy confidence trends | Protect+ licensed |
 | Client API `chat.create` response | Developer | **No** `confidence` field in standard schema | Citations + fragments only |
 | MCP support prompts | Example text only | Suggests "confidence level" in prompt | **Not** platform feature |
 
 ### Engineering observation (Doc-Verified)
 
-- Glean marketing/perspective pages discuss confidence scores in **generic AI industry** context — **not** shipped as user-facing Assistant feature in tenant eval corpus.
-- Healthcare/compliance buyers often expect **% confidence or "needs review" flag** — Glean relies on **citations + human verification** instead.
+- Glean marketing/perspective pages discuss confidence scores in **generic AI industry** context - **not** shipped as user-facing Assistant feature in tenant eval corpus.
+- Healthcare/compliance buyers often expect **% confidence or "needs review" flag** - Glean relies on **citations + human verification** instead.
 - Protect+ confidence is for **safety categories** (toxic/injection), not factual accuracy.
 
 ### Verification steps / test case
 
-1. `client.chat.create()` — inspect JSON response for `confidence`, `score`, `similarity` fields — document **absent**.
-2. Assistant UI — confirm no % or truth meter on cited answer.
-3. Protect+ admin — confirm per-category scores on test injection (if licensed).
+1. `client.chat.create()` - inspect JSON response for `confidence`, `score`, `similarity` fields - document **absent**.
+2. Assistant UI - confirm no % or truth meter on cited answer.
+3. Protect+ admin - confirm per-category scores on test injection (if licensed).
 4. Compare to client requirement: if numeric confidence mandatory, flag as **gap**.
 
 **Risk & Cost Impact:** Risk: **Medium** for regulated RFP workflows expecting scores | Cost: Workaround = Answers + human review queue

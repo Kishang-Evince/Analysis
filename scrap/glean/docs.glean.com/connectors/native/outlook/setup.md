@@ -15,10 +15,10 @@ This section covers setup requirements, permissions, and behavior specific to th
 
 Have these in place before you configure the Outlook indexing connector:
 
--   **Azure tenant administrator** — an Azure tenant admin must grant admin consent for the Microsoft Graph application permissions below.
+-   **Azure tenant administrator** - an Azure tenant admin must grant admin consent for the Microsoft Graph application permissions below.
 -   **A registered Azure AD application.** Register it with the Microsoft Graph application permissions, and upload a certificate to the app registration (**App registration → Certificates & secrets → Certificates**). Indexing requires certificate-based authentication. A client secret works only for real-time access. Outlook requires its own dedicated app registration, separate from any Microsoft 365 parent app or other connector apps you have configured.
--   **Microsoft 365 / Exchange Online** — the connector supports Exchange Online only, not on-premises or legacy Exchange Server.
--   **(Optional) Scoping decisions** — an Azure AD product access group (`productAccessGroupId`) to limit which mailboxes are indexed, and an allowed sender-domain list.
+-   **Microsoft 365 / Exchange Online** - the connector supports Exchange Online only, not on-premises or legacy Exchange Server.
+-   **(Optional) Scoping decisions** - an Azure AD product access group (`productAccessGroupId`) to limit which mailboxes are indexed, and an allowed sender-domain list.
 
 ## Required permissions[​](#required-permissions "Direct link to Required permissions")
 
@@ -63,9 +63,9 @@ Microsoft Graph API Application
 
 The connector combines periodic full crawls with frequent incremental updates using Microsoft Graph delta queries.
 
--   **Initial full crawl** — crawls mailboxes for users in the configured product access group across the Inbox, Sent, and selected folders.
--   **Incremental updates** — delta queries on mail folders discover new messages, detect updates, and detect deletions or moves on a frequent schedule subject to Microsoft's Outlook mail API throttling limits (about 10,000 requests per 10 minutes per mailbox).
--   **Deletion handling** — when a user deletes messages or moves them to junk/spam, Glean removes the thread on the next incremental pass.
+-   **Initial full crawl** - crawls mailboxes for users in the configured product access group across the Inbox, Sent, and selected folders.
+-   **Incremental updates** - delta queries on mail folders discover new messages, detect updates, and detect deletions or moves on a frequent schedule subject to Microsoft's Outlook mail API throttling limits (about 10,000 requests per 10 minutes per mailbox).
+-   **Deletion handling** - when a user deletes messages or moves them to junk/spam, Glean removes the thread on the next incremental pass.
 
 Glean's crawling system centrally manages crawl schedules. The Admin console has no connector-level crawl-frequency setting.
 

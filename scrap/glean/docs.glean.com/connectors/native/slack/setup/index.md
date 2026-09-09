@@ -50,7 +50,7 @@ During setup, you will select one of the following modes based on your Slack arc
 
 Choose workspace configuration
 
-Select your configuration mode based on **how many workspaces you want to search across**, not your Slack plan type. If you only need to access data in one workspace, select Single workspace — even if your organization uses a Slack Enterprise Grid plan.
+Select your configuration mode based on **how many workspaces you want to search across**, not your Slack plan type. If you only need to access data in one workspace, select Single workspace - even if your organization uses a Slack Enterprise Grid plan.
 
 ### Single workspace[​](#single-workspace "Direct link to Single workspace")
 

@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/government"
 canonical: "https://www.glean.com/resources/guides/government"
 title: "AI that helps government teams move faster"
-description: "Serve constituents faster and operate more efficiently — with AI that understands your agency’s systems, workflows, and oversight requirements."
+description: "Serve constituents faster and operate more efficiently - with AI that understands your agency’s systems, workflows, and oversight requirements."
 fetched_at: "2026-09-01T13:27:08.936Z"
 ---
 ## Work AI that works.

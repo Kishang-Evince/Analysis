@@ -10,6 +10,7 @@
 **Out of scope for this eval:** Salesforce, Slack, Jira, Confluence, Snowflake/BigQuery/Databricks, GitHub, etc.  
 **Section overview:** [Overview.md](Overview.md)
 **Companion test guide:** [Undocumented Features (found, not in marketing).md](../../../test/Glean/4.9.1 Functional Capabilities/Undocumented Features (found, not in marketing).md)
+**Deep dive (V2):** 12-item re-verification (8 original + 4 new) → [V2/Undocumented Features.md](V2/Undocumented%20Features.md)
 
 ---
 

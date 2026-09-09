@@ -31,16 +31,16 @@
 
 ### Engineering observation (Doc-Verified)
 
-- BYOK routes LLM traffic through **your** Azure OpenAI / Vertex / Bedrock / Anthropic contracts — strongest control for model-layer encryption and residency.
-- Infrastructure-layer customer-managed KMS documented for Customer Hosted — not same as BYOK for all tenant data stores on Glean Hosted.
+- BYOK routes LLM traffic through **your** Azure OpenAI / Vertex / Bedrock / Anthropic contracts - strongest control for model-layer encryption and residency.
+- Infrastructure-layer customer-managed KMS documented for Customer Hosted - not same as BYOK for all tenant data stores on Glean Hosted.
 - TLS inspection proxy: upload internal CA certs via Admin SSL Certificates tab.
 
 ### Verification steps / test case
 
-1. Admin → Models — confirm Universal Key vs Customer Key mode.
-2. `openssl s_client -connect <instance>-be.glean.com:443` — verify TLS 1.2+.
-3. If BYOK: add provider key — verify Insights → LLM dashboard (BYOK only).
-4. Trust Portal / legal page — confirm FIPS 140-2 claim for regulated clients.
+1. Admin → Models - confirm Universal Key vs Customer Key mode.
+2. `openssl s_client -connect <instance>-be.glean.com:443` - verify TLS 1.2+.
+3. If BYOK: add provider key - verify Insights → LLM dashboard (BYOK only).
+4. Trust Portal / legal page - confirm FIPS 140-2 claim for regulated clients.
 
 **Risk & Cost Impact:** Risk: Low | Cost: BYOK / Cloud-Prem uplift
 

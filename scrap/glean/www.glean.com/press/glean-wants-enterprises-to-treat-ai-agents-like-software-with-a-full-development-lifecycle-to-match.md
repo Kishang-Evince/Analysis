@@ -1,7 +1,7 @@
 ---
 url: "https://www.glean.com/press/glean-wants-enterprises-to-treat-ai-agents-like-software-with-a-full-development-lifecycle-to-match"
 canonical: "https://www.glean.com/press/glean-wants-enterprises-to-treat-ai-agents-like-software-with-a-full-development-lifecycle-to-match"
-title: "Glean Wants Enterprises to Treat AI Agents Like Software—With a Full Development Lifecycle to Match | Glean Press"
+title: "Glean Wants Enterprises to Treat AI Agents Like Software-With a Full Development Lifecycle to Match | Glean Press"
 fetched_at: "2026-09-01T13:26:19.355Z"
 ---
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/697780a68f0aaa59aa8c86e5_glean_live-wordmark-feb26.webp)

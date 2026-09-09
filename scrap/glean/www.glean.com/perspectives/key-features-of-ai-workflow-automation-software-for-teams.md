@@ -63,7 +63,7 @@ Share this article:
 
 # What features should you look for in AI workflow automation software for teams?
 
-AI workflow automation software for operations teams uses machine learning and natural language processing to run and improve routine processes — giving teams less manual work, faster cycle times, and more time for decisions that actually need a person. The best platforms combine contextual intelligence, permission-aware execution, agentic orchestration, native connectors, hybrid search with retrieval-augmented generation, and natural language interaction.
+AI workflow automation software for operations teams uses machine learning and natural language processing to run and improve routine processes - giving teams less manual work, faster cycle times, and more time for decisions that actually need a person. The best platforms combine contextual intelligence, permission-aware execution, agentic orchestration, native connectors, hybrid search with retrieval-augmented generation, and natural language interaction.
 
 Unlike older tools that follow fixed if-then rules, these platforms read context, handle messy data, and adapt as conditions change. They can route tickets, match invoices, update records, and draft reports without step-by-step instructions.
 
@@ -101,7 +101,7 @@ AI workflow automation handles the repetitive, pattern-based work that fills an 
 
 ### Operations and IT workflows
 
-Operations and IT teams automate the request and monitoring work that usually needs manual triage — a shift that is accelerating, as Gartner predicts [30% of enterprises](https://www.gartner.com/en/newsroom/press-releases/2024-09-18-gartner-says-30-percent-of-enterprises-will-automate-more-than-half-of-their-network-activities-by-2026) will automate more than half of their network activities by 2026.
+Operations and IT teams automate the request and monitoring work that usually needs manual triage - a shift that is accelerating, as Gartner predicts [30% of enterprises](https://www.gartner.com/en/newsroom/press-releases/2024-09-18-gartner-says-30-percent-of-enterprises-will-automate-more-than-half-of-their-network-activities-by-2026) will automate more than half of their network activities by 2026.
 
 -   Ticket classification, urgency scoring, and routing to the correct team without a human sorting the queue
 -   System monitoring with anomaly detection that opens incidents and triggers remediation steps automatically
@@ -134,7 +134,7 @@ Explore more [ai automation use cases](https://www.glean.com/perspectives/ai-aut
 
 ## Which features matter most in AI workflow automation software?
 
-The features that matter most in AI workflow automation software separate tools that make smart decisions from tools that only shuttle data between apps. The stakes are rising fast — Gartner forecasts AI agent software spending will reach [$206.5 billion](https://www.gartner.com/en/newsroom/press-releases/2026-05-05-gartner-says-autonomous-business-and-artificial-intelligence-layoffs-may-create-budget-room-but-do-not-deliver-returns) in 2026. Weigh the six below when you evaluate platforms for your operations team.
+The features that matter most in AI workflow automation software separate tools that make smart decisions from tools that only shuttle data between apps. The stakes are rising fast - Gartner forecasts AI agent software spending will reach [$206.5 billion](https://www.gartner.com/en/newsroom/press-releases/2026-05-05-gartner-says-autonomous-business-and-artificial-intelligence-layoffs-may-create-budget-room-but-do-not-deliver-returns) in 2026. Weigh the six below when you evaluate platforms for your operations team.
 
 ### Build contextual intelligence with an enterprise knowledge graph
 
@@ -162,7 +162,7 @@ Team members should be able to ask questions, trigger workflows, and configure a
 
 ## How to measure the ROI of AI workflow automation
 
-Measure the ROI of AI workflow automation by baselining a process before you automate it, then comparing the same metrics after. The upside is large — McKinsey sizes the long-term productivity opportunity from AI at [$4.4 trillion](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/superagency-in-the-workplace-empowering-people-to-unlock-ais-full-potential-at-work), yet only 1% of companies call their deployment mature — so disciplined measurement is what turns spend into value. Capture time spent per task, error rates, ticket volume, average resolution time, and cost per process cycle up front, so you have a clear before-and-after.
+Measure the ROI of AI workflow automation by baselining a process before you automate it, then comparing the same metrics after. The upside is large - McKinsey sizes the long-term productivity opportunity from AI at [$4.4 trillion](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/superagency-in-the-workplace-empowering-people-to-unlock-ais-full-potential-at-work), yet only 1% of companies call their deployment mature - so disciplined measurement is what turns spend into value. Capture time spent per task, error rates, ticket volume, average resolution time, and cost per process cycle up front, so you have a clear before-and-after.
 
 Track time saved per employee per week on tasks that used to be manual. Operations teams commonly recover hours on triage, reporting, and coordination. One team saved three to five hours per person each week after adopting an AI workflow platform (see [Wrike's Jellyfish customer story](https://www.wrike.com/customer-stories/jellyfish/)). Pair that with error reduction in data handling, routing accuracy, and compliance adherence, which counts as direct cost avoidance.
 

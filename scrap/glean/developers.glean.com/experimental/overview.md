@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:23:01.377Z"
 ---
 On this page
 
-Glean ships some capabilities as **experimental** so you can preview and give feedback on new functionality before it becomes generally available (GA). Experimental features are opt-in, and they may change — or be removed — without the notice period that applies to stable APIs.
+Glean ships some capabilities as **experimental** so you can preview and give feedback on new functionality before it becomes generally available (GA). Experimental features are opt-in, and they may change - or be removed - without the notice period that applies to stable APIs.
 
 warning
 
@@ -24,7 +24,7 @@ Preview functionality that is still evolving:
 -   Not yet generally available
 -   May change or be removed without notice
 -   Not covered by the deprecation policy
--   Opt-in only — hidden unless you ask for it
+-   Opt-in only - hidden unless you ask for it
 
 ### Generally Available
 
@@ -65,7 +65,7 @@ Without the `X-Glean-Include-Experimental` header, experimental endpoints and fi
 
 ## Using the SDKs[​](#using-the-sdks "Direct link to Using the SDKs")
 
-Glean's official SDKs can set this header for you through a constructor option or an environment variable — no need to manage the raw header yourself.
+Glean's official SDKs can set this header for you through a constructor option or an environment variable - no need to manage the raw header yourself.
 
 #### Using an Environment Variable[​](#using-an-environment-variable "Direct link to Using an Environment Variable")
 

@@ -38,7 +38,7 @@ If the **Announcements** tab shows no data for a given time range, check the fol
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [How Announcements work](/user-guide/knowledge/announcements/how-announcements-work) — the end-user guide to composing, targeting, scheduling, and publishing announcements.
+-   [How Announcements work](/user-guide/knowledge/announcements/how-announcements-work) - the end-user guide to composing, targeting, scheduling, and publishing announcements.
 -   [Enable announcements from Slack](/administration/platform/embedded-integrations/slackbot/admin-guide/enable-announcements)
 -   [User roles](/administration/identity/roles/user-roles)
 -   [Insights overview](/administration/insights/overview)

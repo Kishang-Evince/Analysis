@@ -127,7 +127,7 @@ Embed Glean’s UI in your apps to power context-aware chatbots and agents where
 
 Agent toolkit
 
-Build agents in your preferred framework — OpenAI, LangChain, Google ADK, CrewAI, and more — all grounded in the full context of your enterprise.
+Build agents in your preferred framework - OpenAI, LangChain, Google ADK, CrewAI, and more - all grounded in the full context of your enterprise.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6a8d475039effe68d72aa32d_Server%20Rack%20Icon.svg)
 

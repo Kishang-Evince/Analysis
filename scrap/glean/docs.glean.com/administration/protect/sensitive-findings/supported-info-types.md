@@ -181,7 +181,7 @@ Glean uses Google’s DLP API to run InfoType scanning for sensitive findings.
 | --- | --- |
 | INDIA\_AADHAAR\_INDIVIDUAL | The Indian Aadhaar number is a 12-digit unique identity number obtained by residents of India, based on their biometric and demographic data. |
 | INDIA\_GST\_INDIVIDUAL | The Indian GST identification number (GSTIN) is a unique identifier required of every business in India for taxation. |
-| INDIA\_PAN\_INDIVIDUAL | The Indian Personal Permanent Account Number (PAN) is a unique 10-digit alphanumeric identifier used for identification of individuals—particularly people who pay income tax. It's issued by the Indian Income Tax Department. The PAN is valid for the lifetime of the holder. |
+| INDIA\_PAN\_INDIVIDUAL | The Indian Personal Permanent Account Number (PAN) is a unique 10-digit alphanumeric identifier used for identification of individuals-particularly people who pay income tax. It's issued by the Indian Income Tax Department. The PAN is valid for the lifetime of the holder. |
 
 ### Indonesia[​](#indonesia "Direct link to Indonesia")
 
@@ -201,7 +201,7 @@ Glean uses Google’s DLP API to run InfoType scanning for sensitive findings.
 | --- | --- |
 | JAPAN\_BANK\_ACCOUNT | A Japanese bank account number. |
 | JAPAN\_DRIVERS\_LICENSE\_NUMBER | A Japanese driver's license number. |
-| JAPAN\_INDIVIDUAL\_NUMBER | The Japanese national identification number—sometimes referred to as "My Number"—is a new national ID number as of January 2016. |
+| JAPAN\_INDIVIDUAL\_NUMBER | The Japanese national identification number-sometimes referred to as "My Number"-is a new national ID number as of January 2016. |
 | JAPAN\_PASSPORT | A Japanese passport number. The passport number consists of two alphabetic characters followed by seven digits. |
 
 ### Korea[​](#korea "Direct link to Korea")

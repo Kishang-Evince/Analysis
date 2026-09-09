@@ -24,12 +24,12 @@ Before you create a ticket:
 
 A clear and complete ticket helps our support team resolve your issue faster. Include these details so we have the full context:
 
--   **Issue description** — A clear, detailed explanation of the problem, including what you were attempting to do when the issue occurred and any steps to reproduce it.
--   **Error messages** — The exact text or error code that was displayed.
--   **Timing information** — The date and time when the issue occurred, along with your timezone, so support can correlate it with system logs.
--   **User impact** — Whether the issue affects just your account or multiple users.
--   **Document reference** — For issues related to specific content, such as missing search results or permission problems, the relevant URL.
--   **Visual evidence** — Screenshots or recordings that demonstrate the issue, when possible.
+-   **Issue description** - A clear, detailed explanation of the problem, including what you were attempting to do when the issue occurred and any steps to reproduce it.
+-   **Error messages** - The exact text or error code that was displayed.
+-   **Timing information** - The date and time when the issue occurred, along with your timezone, so support can correlate it with system logs.
+-   **User impact** - Whether the issue affects just your account or multiple users.
+-   **Document reference** - For issues related to specific content, such as missing search results or permission problems, the relevant URL.
+-   **Visual evidence** - Screenshots or recordings that demonstrate the issue, when possible.
 
 ## Priority levels[​](#priority-levels "Direct link to Priority levels")
 
@@ -105,4 +105,4 @@ Once in the customer portal, use the dropdown at the top of the page to switch b
 
 Important
 
-You **must** access the customer portal through the link inside the support widget. Don't bookmark or navigate directly to `ticket.glean.com` — the portal will not recognize your identity unless you go through the authenticated Gleaniverse path. Always start from [Gleaniverse](https://community.glean.com), open the support widget, and select **Go to customer portal**.
+You **must** access the customer portal through the link inside the support widget. Don't bookmark or navigate directly to `ticket.glean.com` - the portal will not recognize your identity unless you go through the authenticated Gleaniverse path. Always start from [Gleaniverse](https://community.glean.com), open the support widget, and select **Go to customer portal**.

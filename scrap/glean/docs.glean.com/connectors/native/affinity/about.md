@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:29:21.386Z"
 ---
 On this page
 
-The Affinity native connector allows relationship‑driven organizations—especially private equity, venture capital, and investment banking firms—to bring Affinity’s relationship intelligence data into Glean. With this integration, teams can search, analyze, and use their Affinity people, company, and opportunity data alongside the rest of their enterprise knowledge.
+The Affinity native connector allows relationship‑driven organizations-especially private equity, venture capital, and investment banking firms-to bring Affinity’s relationship intelligence data into Glean. With this integration, teams can search, analyze, and use their Affinity people, company, and opportunity data alongside the rest of their enterprise knowledge.
 
 Glean honors Affinity’s workspace‑level visibility for people and organizations, and list‑based permissions for opportunities and lists, so users only see what they can access in Affinity itself.
 
@@ -126,7 +126,7 @@ The connector uses the following Affinity v2 API endpoints to fetch data:
 
 ### Full crawl[​](#full-crawl "Direct link to Full crawl")
 
--   For each supported Affinity object type—People, Organizations, Opportunities, Lists, and their associated schemas—the connector currently performs full crawls only (no incremental crawls).
+-   For each supported Affinity object type-People, Organizations, Opportunities, Lists, and their associated schemas-the connector currently performs full crawls only (no incremental crawls).
 -   By default, a full crawl for each object type and its schema runs approximately once per hour, although this cadence can be adjusted via configuration by Glean.
 -   Because the connector relies solely on full crawls, changes made in Affinity can take up to about one hour (or your customized full‑crawl interval) to appear in Glean search and Glean responses.
 

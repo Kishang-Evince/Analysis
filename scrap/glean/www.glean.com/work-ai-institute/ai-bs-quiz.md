@@ -9,7 +9,7 @@ fetched_at: "2026-09-01T13:25:31.240Z"
 
 Is your organization faking it or making it?
 
-Are you driving real AI transformation, or just putting on a good show? This quick quiz, inspired by insights from the Work AI Institute’s AI Transformation 100, reveals whether you’re using AI to make work genuinely better—or simply staging another round of innovation theater. Take a moment to see where you stand, do some honest reflection, and uncover insights in The 100 that can help you move from hype to real change.
+Are you driving real AI transformation, or just putting on a good show? This quick quiz, inspired by insights from the Work AI Institute’s AI Transformation 100, reveals whether you’re using AI to make work genuinely better-or simply staging another round of innovation theater. Take a moment to see where you stand, do some honest reflection, and uncover insights in The 100 that can help you move from hype to real change.
 
 [
 
@@ -47,7 +47,7 @@ Next
 
 # Too much theatre.
 
-Lots of motion, not much movement. You've got activity, maybe even ambition—but it's not adding up to meaningful progress yet. Take a step back and look for what's slowing real change.
+Lots of motion, not much movement. You've got activity, maybe even ambition-but it's not adding up to meaningful progress yet. Take a step back and look for what's slowing real change.
 
 We think you'll find these numbers in the AI Transformation 100 report most helpful:
 

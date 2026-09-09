@@ -15,11 +15,11 @@ Setting up Microsoft 365 is a one-app job. You register a single Glean app in Mi
 -   **SharePoint and OneDrive inherit it fully.** Each inherits the parent app's client ID, tenant ID, and certificate, and only asks for child-specific configuration.
 -   **Outlook inherits part of it.** Outlook inherits the tenant ID, but you still register its own client ID and certificate.
 
-1.  Log in to the Admin consoletoday — current step
-2.  Register the Glean app in Azuretoday — current step
-3.  Connect the suite in Gleantoday — current step
-4.  Identity crawl runs in the backgrounda few days — happens automatically
-5.  SharePoint, OneDrive, and Outlook join the suitea few days — happens automatically
+1.  Log in to the Admin consoletoday - current step
+2.  Register the Glean app in Azuretoday - current step
+3.  Connect the suite in Gleantoday - current step
+4.  Identity crawl runs in the backgrounda few days - happens automatically
+5.  SharePoint, OneDrive, and Outlook join the suitea few days - happens automatically
 
 ## Connector setup[​](#connector-setup "Direct link to Connector setup")
 

@@ -223,7 +223,7 @@ No items found.
 
 ### Glean integrates securely across your entire Microsoft ecosystem
 
-Energy leaders are under pressure to scale quickly, keep systems stable, and meet growing power demand — all while navigating complex regulations and aging infrastructure. This one-pager explores how companies are using Glean to connect knowledge across operations and make faster, more confident decisions.
+Energy leaders are under pressure to scale quickly, keep systems stable, and meet growing power demand - all while navigating complex regulations and aging infrastructure. This one-pager explores how companies are using Glean to connect knowledge across operations and make faster, more confident decisions.
 
 ### Glean integrates securely across your entire Microsoft ecosystem
 
@@ -239,7 +239,7 @@ No items found.
 
 ### Powering smarter energy operations with AI
 
-Energy leaders are under pressure to scale quickly, keep systems stable, and meet growing power demand — all while navigating complex regulations and aging infrastructure. This one-pager explores how companies are using Glean to connect knowledge across operations and make faster, more confident decisions.
+Energy leaders are under pressure to scale quickly, keep systems stable, and meet growing power demand - all while navigating complex regulations and aging infrastructure. This one-pager explores how companies are using Glean to connect knowledge across operations and make faster, more confident decisions.
 
 ### Powering smarter energy operations with AI
 
@@ -341,7 +341,7 @@ No items found.
 
 ### How the role of AI is evolving in IT service
 
-ITSM organizations face rising delivery pressures and metrics scrutiny amidst limited budget growth and evolving talent needs. Generative AI provides a perfect way to tackle these challenges—but it takes a measured, thoughtful approach to integrate it effectively into ITSM workflows.
+ITSM organizations face rising delivery pressures and metrics scrutiny amidst limited budget growth and evolving talent needs. Generative AI provides a perfect way to tackle these challenges-but it takes a measured, thoughtful approach to integrate it effectively into ITSM workflows.
 
 ### How the role of AI is evolving in IT service
 
@@ -443,7 +443,7 @@ No items found.
 
 ### Unlocking Business Insights with Glean + Snowflake
 
-Discover how Glean + Snowflake empower every team to ask questions in plain English, get instant insights, and drive smarter decisions—no SQL required.
+Discover how Glean + Snowflake empower every team to ask questions in plain English, get instant insights, and drive smarter decisions-no SQL required.
 
 ### Unlocking Business Insights with Glean + Snowflake
 

@@ -75,7 +75,7 @@ AI model monitoring is the continuous observation of AI systems to ensure they f
 
 AI model monitoring is the continuous observation of AI systems to ensure they function correctly over time. It involves tracking performance metrics, identifying issues, and implementing improvements to maintain effectiveness and reliability.
 
-At its core, AI model monitoring encompasses several critical activities that work together to preserve system integrity. Performance tracking measures key indicators like accuracy, precision, recall, and response times against established baselines. Data validation ensures incoming information meets quality standards before processing. Drift detection identifies when model predictions or input data distributions deviate from expected patterns — a common occurrence as market conditions, user behavior, and business environments evolve.
+At its core, AI model monitoring encompasses several critical activities that work together to preserve system integrity. Performance tracking measures key indicators like accuracy, precision, recall, and response times against established baselines. Data validation ensures incoming information meets quality standards before processing. Drift detection identifies when model predictions or input data distributions deviate from expected patterns - a common occurrence as market conditions, user behavior, and business environments evolve.
 
 Deploying observability tools is crucial to maintain model health. These solutions identify potential issues swiftly, enabling rapid interventions to prevent disruptions. The median cost of a high-impact IT outage has reached [$2 million](https://www.helpnetsecurity.com/2025/09/23/high-impact-it-outages-costs/) per hour, with organizations possessing full-stack observability capabilities able to reduce this cost by approximately half. By keeping a close watch on model performance, organizations can ensure alignment with their goals.
 
@@ -139,7 +139,7 @@ Incorporate human expertise to provide context and insights beyond automated cap
 
 Effective AI model monitoring and maintenance transforms theoretical potential into sustained business value. By implementing these strategies, you ensure your AI systems remain accurate, reliable, and aligned with evolving organizational needs.
 
-Ready to see how enterprise AI can work seamlessly across your organization? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) — we'll show you how modern AI platforms handle maintenance automatically while delivering consistent results.
+Ready to see how enterprise AI can work seamlessly across your organization? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) - we'll show you how modern AI platforms handle maintenance automatically while delivering consistent results.
 
 [
 

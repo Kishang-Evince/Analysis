@@ -63,36 +63,36 @@ Share this article:
 
 # How to negotiate SLA terms for enterprise AI services key strategies
 
-Enterprise AI search services sit at the center of daily work for engineering, support, sales, HR, and IT teams — and the service level agreement that governs one of these platforms carries far more weight than a standard SaaS uptime commitment. When the tool your organization relies on to surface knowledge, enforce permissions, and generate answers across hundreds of connected applications falls short, the impact ripples through every department that depends on it.
+Enterprise AI search services sit at the center of daily work for engineering, support, sales, HR, and IT teams - and the service level agreement that governs one of these platforms carries far more weight than a standard SaaS uptime commitment. When the tool your organization relies on to surface knowledge, enforce permissions, and generate answers across hundreds of connected applications falls short, the impact ripples through every department that depends on it.
 
-Yet most SLA templates still treat AI search like any other cloud subscription: a single availability number, a vague support promise, and a credit schedule that rarely reflects real business disruption. The gap between what these agreements measure and what actually matters to enterprise buyers — retrieval quality, connector health, permission accuracy, model stability — creates risk that generic contract language was never built to address.
+Yet most SLA templates still treat AI search like any other cloud subscription: a single availability number, a vague support promise, and a credit schedule that rarely reflects real business disruption. The gap between what these agreements measure and what actually matters to enterprise buyers - retrieval quality, connector health, permission accuracy, model stability - creates risk that generic contract language was never built to address.
 
 This guide walks through the specific strategies, contract structures, and negotiation tactics that procurement leaders, legal teams, and IT buyers need to secure SLA terms aligned with how enterprise AI search actually operates. Each section focuses on a concrete area of the agreement, from service definition and performance metrics to data rights, remedies, and exit planning.
 
 ## What Is an Enterprise AI Search Service SLA?
 
-An enterprise AI search service SLA is a formal agreement that defines how reliably, securely, and consistently an AI-powered search platform will perform across the connected workplace data it indexes. Unlike a traditional SaaS SLA — which typically centers on a single uptime percentage — this document should address a broader set of AI service level expectations: query latency, indexing freshness, connector availability, permissions enforcement, support responsiveness, incident communication, remedies for failure, and change management for model or ranking updates.
+An enterprise AI search service SLA is a formal agreement that defines how reliably, securely, and consistently an AI-powered search platform will perform across the connected workplace data it indexes. Unlike a traditional SaaS SLA - which typically centers on a single uptime percentage - this document should address a broader set of AI service level expectations: query latency, indexing freshness, connector availability, permissions enforcement, support responsiveness, incident communication, remedies for failure, and change management for model or ranking updates.
 
-For enterprise teams, the SLA functions as an operating framework, not just a legal appendix. It sets the baseline for what "working" actually means when hundreds or thousands of employees depend on the platform to retrieve accurate, permission-aware results from sources as varied as ticketing systems, wikis, cloud drives, CRMs, and communication tools. A login page that loads while search returns stale or unauthorized content is not meaningful availability — and the SLA should reflect that distinction.
+For enterprise teams, the SLA functions as an operating framework, not just a legal appendix. It sets the baseline for what "working" actually means when hundreds or thousands of employees depend on the platform to retrieve accurate, permission-aware results from sources as varied as ticketing systems, wikis, cloud drives, CRMs, and communication tools. A login page that loads while search returns stale or unauthorized content is not meaningful availability - and the SLA should reflect that distinction.
 
 ### Separate the Layers That Matter
 
 The strongest enterprise AI service agreements break the service into distinct, measurable components rather than collapsing everything into one availability metric. A useful structure typically includes:
 
--   **Core platform availability**: Authentication, infrastructure uptime, and basic service responsiveness — the foundation that must be present for anything else to function.
--   **Search retrieval performance**: Query handling, result ranking, and response latency — the layer most directly tied to user productivity.
+-   **Core platform availability**: Authentication, infrastructure uptime, and basic service responsiveness - the foundation that must be present for anything else to function.
+-   **Search retrieval performance**: Query handling, result ranking, and response latency - the layer most directly tied to user productivity.
 -   **Connector and sync health**: Freshness of indexed content and operational status of integrations with source systems, measured per connector type when possible.
 -   **Permissions enforcement**: Accuracy and timeliness of identity mapping and access controls, so users only see content they are authorized to view.
 -   **Generative or assistant features**: If the platform includes AI-generated answers, chat, or summarization, those commitments deserve separate treatment from deterministic search retrieval.
--   **Agent or workflow execution**: For platforms that trigger actions — closing tickets, drafting responses, routing requests — the SLA should capture execution reliability independently.
+-   **Agent or workflow execution**: For platforms that trigger actions - closing tickets, drafting responses, routing requests - the SLA should capture execution reliability independently.
 
 This separation prevents a common failure mode in SLA design: a provider reports 99.9% uptime while connectors lag, permissions drift, and generated answers go ungrounded. Each layer carries its own risk profile and its own measurement method; bundling them together obscures accountability.
 
 ### Shared Responsibility Belongs in the Agreement
 
-A well-structured SLA also makes shared responsibility explicit. The provider typically owns platform operations, connector maintenance, model management, and support delivery. The customer, however, may own identity provider configuration, source system permissions, internal rollout decisions, and acceptable-use governance. When a failure occurs — say, a permissions gap caused by a misconfigured identity sync on the customer side — both parties need a documented framework for determining responsibility. Without that clarity, incident resolution stalls and finger-pointing replaces accountability.
+A well-structured SLA also makes shared responsibility explicit. The provider typically owns platform operations, connector maintenance, model management, and support delivery. The customer, however, may own identity provider configuration, source system permissions, internal rollout decisions, and acceptable-use governance. When a failure occurs - say, a permissions gap caused by a misconfigured identity sync on the customer side - both parties need a documented framework for determining responsibility. Without that clarity, incident resolution stalls and finger-pointing replaces accountability.
 
-This shared-responsibility model matters especially in enterprise AI search because the platform depends on external data sources, identity systems, and API access that sit outside the provider's direct control. The SLA should name those boundaries plainly, assign obligations to the right party, and describe how cross-boundary issues are escalated and resolved. Treat the SLA as the document that governs daily operations and long-term vendor performance — not a checkbox filed away after signature.
+This shared-responsibility model matters especially in enterprise AI search because the platform depends on external data sources, identity systems, and API access that sit outside the provider's direct control. The SLA should name those boundaries plainly, assign obligations to the right party, and describe how cross-boundary issues are escalated and resolved. Treat the SLA as the document that governs daily operations and long-term vendor performance - not a checkbox filed away after signature.
 
 ## How to negotiate SLA terms for an enterprise AI search service?
 
@@ -158,7 +158,7 @@ This is also a useful place for internal AI support. Teams can use AI to compare
 
 After scope is clear, assign business weight to failure. A percentage target means little until your team agrees on what breaks, who gets blocked, and how long the organization can absorb the disruption.
 
-Use concrete scenarios before the first redline exchange: two hours of slow results during a product launch; one business day of outdated ticket data during a support surge; a regional access-sync issue during quarter close. That exercise gives procurement, legal, IT, and the business owner a shared view of risk — and it gives the provider far less room to hide behind boilerplate.
+Use concrete scenarios before the first redline exchange: two hours of slow results during a product launch; one business day of outdated ticket data during a support surge; a regional access-sync issue during quarter close. That exercise gives procurement, legal, IT, and the business owner a shared view of risk - and it gives the provider far less room to hide behind boilerplate.
 
 ### Map the workflows that carry the most business weight
 
@@ -176,10 +176,10 @@ This map should lead to a simple ranking model. Score each workflow by customer 
 
 Once the high-value workflows are ranked, convert that business view into incident levels that the provider can accept in writing. The right model focuses on business effect first, then technical symptom.
 
-1.  **Tier 1 — immediate business interruption**: Employees cannot complete customer, revenue, or operational tasks within normal timelines; work stops or shifts to manual escalation at scale.
-2.  **Tier 2 — material service impairment**: Teams can still operate, but with major friction — delayed search responses, outdated source content, absent support evidence, or incomplete answer context across a core workflow.
-3.  **Tier 3 — contained operational issue**: One source, department, or region loses normal efficiency, but the business has a practical workaround and the issue does not spread widely.
-4.  **Tier 4 — low-impact defect**: The issue is visible but non-blocking, such as formatting faults, limited relevance drift in a narrow use case, or a minor reporting inconsistency.
+1.  **Tier 1 - immediate business interruption**: Employees cannot complete customer, revenue, or operational tasks within normal timelines; work stops or shifts to manual escalation at scale.
+2.  **Tier 2 - material service impairment**: Teams can still operate, but with major friction - delayed search responses, outdated source content, absent support evidence, or incomplete answer context across a core workflow.
+3.  **Tier 3 - contained operational issue**: One source, department, or region loses normal efficiency, but the business has a practical workaround and the issue does not spread widely.
+4.  **Tier 4 - low-impact defect**: The issue is visible but non-blocking, such as formatting faults, limited relevance drift in a narrow use case, or a minor reporting inconsistency.
 
 This structure gives the SLA a practical backbone. Response times, workaround deadlines, incident update frequency, review meetings, and commercial remedies all become easier to negotiate when each level ties back to a known business consequence rather than a vague technical label.
 
@@ -248,7 +248,7 @@ The cleanest approach is a metric schedule. Each row should cover one obligation
 A strong metric table usually includes:
 
 -   **Metric name**: State the exact obligation, such as monthly service availability, p95 search response time, or permission update propagation.
--   **Measurement method**: Define the source of truth — vendor logs, customer-visible monitoring, synthetic tests, or a shared dashboard.
+-   **Measurement method**: Define the source of truth - vendor logs, customer-visible monitoring, synthetic tests, or a shared dashboard.
 -   **Measurement period**: Set the reporting window, such as calendar month or rolling quarter, so disputes do not turn on timing games.
 -   **Clock start and stop points**: For latency, specify the exact user event that begins the clock and the exact system event that ends it.
 -   **Inclusions and exclusions**: List every excluded event with precision. Scheduled maintenance should sit inside narrow windows with advance notice, not broad provider discretion.
@@ -298,10 +298,10 @@ Use the severity schedule you already negotiated as a routing framework. The SLA
 
 A strong incident model usually covers four points:
 
--   **Authorized requesters**: Name the customer roles that may declare or escalate a critical issue — platform admins, IT operations leads, security contacts, or named business owners. This prevents delays when frontline users report a major failure but no approved contact has authority to push the case forward.
+-   **Authorized requesters**: Name the customer roles that may declare or escalate a critical issue - platform admins, IT operations leads, security contacts, or named business owners. This prevents delays when frontline users report a major failure but no approved contact has authority to push the case forward.
 -   **Channel rules**: Spell out whether each tier runs through email, ticket portal, phone, live bridge, or a dedicated incident line. Critical events should not depend on an unattended inbox.
 -   **Coverage window**: Match support coverage to the service footprint. A platform used across regions may need 24x7 handling for the highest-impact incidents even when routine support stays within business hours.
--   **Internal handoff expectations**: Require the provider to route the issue to the correct function — infrastructure, connector engineering, identity, security, or product operations — without restarting diagnosis each time the case changes hands.
+-   **Internal handoff expectations**: Require the provider to route the issue to the correct function - infrastructure, connector engineering, identity, security, or product operations - without restarting diagnosis each time the case changes hands.
 
 This part of the SLA should also address customer-side participation. For certain issues, the provider may need log samples, identity details, or confirmation from the system owner. That dependency should appear in the workflow so neither party loses time over missing inputs during a high-pressure event.
 
@@ -324,7 +324,7 @@ Outside active incidents, the SLA should create a regular operating rhythm. Quar
 
 Those reviews should run from a written packet delivered in advance. Useful material includes open case aging, reopen rates, source-specific connector stability, search performance trends, support backlog by severity, missed commitments, policy or coverage changes, planned connector retirements, API deprecations, and upcoming product changes that may affect administration or user experience.
 
-This review cadence also creates a stronger record for commercial discussions. When service credits, staffing concerns, or repeated misses enter the conversation, both parties can work from documented trends instead of fragmented ticket history. That matters even more in enterprise AI environments, where small operational changes — a new model release, a revised connector, a different abuse-monitoring policy — can alter day-to-day service quality without a headline outage.
+This review cadence also creates a stronger record for commercial discussions. When service credits, staffing concerns, or repeated misses enter the conversation, both parties can work from documented trends instead of fragmented ticket history. That matters even more in enterprise AI environments, where small operational changes - a new model release, a revised connector, a different abuse-monitoring policy - can alter day-to-day service quality without a headline outage.
 
 ### Test where flexibility still exists
 
@@ -342,13 +342,13 @@ This is also a practical test of provider maturity. A well-run team can describe
 
 ## 5\. Protect data, permissions, and legal rights from the start
 
-Once the operating mechanics are in place, the contract has to answer a harder set of questions: what data enters the system, what the provider may do with it, and what rights remain with the customer throughout the relationship. Enterprise AI search touches internal documents, employee queries, generated answers, usage traces, and admin activity — and each of those assets carries a different risk profile.
+Once the operating mechanics are in place, the contract has to answer a harder set of questions: what data enters the system, what the provider may do with it, and what rights remain with the customer throughout the relationship. Enterprise AI search touches internal documents, employee queries, generated answers, usage traces, and admin activity - and each of those assets carries a different risk profile.
 
 This is where standard SaaS paper often falls short. Many vendor templates collapse everything into “customer data,” then reserve broad rights to use service data for analytics, product improvement, or model tuning; that shortcut leaves too much room for interpretation once sensitive internal knowledge starts to flow through the platform.
 
 ### Make security obligations contract-grade
 
-The agreement should move past general promises and spell out the controls that matter in an enterprise deployment. Precision matters most around tenant isolation, privileged access, retention, and traceability — the areas where AI search platforms often inherit risk from connectors, support tooling, and downstream model calls.
+The agreement should move past general promises and spell out the controls that matter in an enterprise deployment. Precision matters most around tenant isolation, privileged access, retention, and traceability - the areas where AI search platforms often inherit risk from connectors, support tooling, and downstream model calls.
 
 -   **Privileged access controls**: Define how provider staff may access tenant environments for support, troubleshooting, or maintenance. Require role separation, approval controls, session logging, and a clear rule for emergency access.
 -   **Retention and deletion rules**: Set retention periods for indexed content, prompt history, answer history, audit logs, and diagnostic records. The contract should also cover deletion timelines after termination and, where needed, written confirmation of deletion.
@@ -416,7 +416,7 @@ Useful contract points include:
 
 -   **Dependency inventory**: A list of material third-party services that support model access, answer generation, connector sync, identity checks, or data processing.
 -   **Substitution standard**: A rule that any replacement dependency must provide materially equivalent function, security posture, and compliance support.
--   **Deprecation handling**: A written process for third-party retirement, rate limits, or API shutdowns — including notice timing, mitigation steps, and customer communication.
+-   **Deprecation handling**: A written process for third-party retirement, rate limits, or API shutdowns - including notice timing, mitigation steps, and customer communication.
 -   **Continuity support**: A commitment to preserve service through fallback routing, alternate model paths, queued processing, or temporary feature downgrade where feasible.
 
 That level of transparency helps procurement and security teams evaluate whether the provider has real contingency planning or simply passes upstream risk downstream.
@@ -453,7 +453,7 @@ This is where procurement and legal need to work together. Finance may focus on 
 
 ### Make termination rights precise enough to use
 
-Termination language should rely on thresholds, dates, and defined failure types — not broad statements about dissatisfaction. A workable clause might tie termination to repeated severity-one incidents, a set number of missed critical service levels in consecutive months, or an uncured failure against a named obligation such as permission enforcement or incident notification.
+Termination language should rely on thresholds, dates, and defined failure types - not broad statements about dissatisfaction. A workable clause might tie termination to repeated severity-one incidents, a set number of missed critical service levels in consecutive months, or an uncured failure against a named obligation such as permission enforcement or incident notification.
 
 Vendors often accept termination for chronic underperformance more readily than buyers expect, provided the trigger is objective and the cure process is clear. That usually means a written notice requirement, a short remediation window for curable failures, and a record of prior misses based on the vendor’s own reports. Precision matters here because the clause may not need to be invoked often, but it needs to function the moment it becomes necessary.
 
@@ -477,7 +477,7 @@ Start with the usual contract elements, but do not stop there. For enterprise AI
 
 Three components often make the difference between a usable SLA and a generic one:
 
--   **A measurement appendix**: This should show each service level in plain form — target, formula, sample report, and the exact system of record. That appendix saves time during disputes because both sides work from the same template.
+-   **A measurement appendix**: This should show each service level in plain form - target, formula, sample report, and the exact system of record. That appendix saves time during disputes because both sides work from the same template.
 -   **A dependency map**: This should identify which parts of performance depend on customer identity systems, source-system APIs, or third-party infrastructure. Without that map, responsibility becomes blurry the moment something breaks across a boundary.
 -   **A change-control clause**: This should cover policy changes, feature withdrawals, connector retirement, and updates to any public terms that affect service delivery. AI services evolve fast; the SLA should not leave those shifts outside contract control.
 
@@ -502,7 +502,7 @@ The point is not to force custom language at every turn. The point is to learn w
 
 One of the biggest errors is lack of a pre-signature baseline. Teams often negotiate targets without first asking the provider for current performance data, incident trends, or connector failure history. That makes it hard to tell whether a promised service level reflects real capability or just optimistic drafting.
 
-Another frequent problem sits in clause placement. Important limits may appear outside the SLA itself — in support guides, technical documentation, order assumptions, or web-posted policies. A term can look favorable in one document and lose value in another if the papers do not align.
+Another frequent problem sits in clause placement. Important limits may appear outside the SLA itself - in support guides, technical documentation, order assumptions, or web-posted policies. A term can look favorable in one document and lose value in another if the papers do not align.
 
 Watch for these red flags:
 
@@ -531,18 +531,18 @@ It also helps to ask for one sample monthly report before signature. That report
 
 ### 5\. What legal protections should I consider when negotiating AI SLAs?
 
-Focus on legal controls that preserve leverage after the deal closes. The most useful protections often sit at the intersection of the SLA, the security schedule, and the main commercial terms — especially where AI features rely on third-party models, cloud infrastructure, or downstream processors.
+Focus on legal controls that preserve leverage after the deal closes. The most useful protections often sit at the intersection of the SLA, the security schedule, and the main commercial terms - especially where AI features rely on third-party models, cloud infrastructure, or downstream processors.
 
 A well-built legal package should address four areas with precision:
 
 -   **Control of contract change**: posted terms, support manuals, and technical policies should not override signed commitments through silent website updates.
 -   **Evidence preservation**: the provider should keep incident records, access logs, and service reports long enough for audit, dispute review, and compliance needs.
 -   **Third-party flow-down obligations**: where outside infrastructure or model providers support the service, the vendor should carry obligations that match the customer's security and confidentiality requirements.
--   **Post-termination mechanics**: the contract should state what survives exit — access to reports, export of configuration data, certificate of deletion, and any temporary support needed to unwind the service cleanly.
+-   **Post-termination mechanics**: the contract should state what survives exit - access to reports, export of configuration data, certificate of deletion, and any temporary support needed to unwind the service cleanly.
 
 For legal teams, one of the most useful edits is not a dramatic clause rewrite. It is a consistency check across the full agreement set. Rights around confidentiality, use of customer data, notice of security events, and control over contract changes should read as one system, not a patchwork of separate promises.
 
-The contract you sign today will shape how your organization experiences AI search for years — so every clause, metric, and remedy deserves the same rigor you'd apply to the platform selection itself. Treat the SLA as a living operational framework, not a legal formality, and you'll build a vendor relationship that holds up under real pressure.
+The contract you sign today will shape how your organization experiences AI search for years - so every clause, metric, and remedy deserves the same rigor you'd apply to the platform selection itself. Treat the SLA as a living operational framework, not a legal formality, and you'll build a vendor relationship that holds up under real pressure.
 
 [Request a demo](https://www.glean.com/get-a-demo) to explore how we can help transform your workplace with AI that's built for the way your teams actually work.
 

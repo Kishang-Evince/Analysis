@@ -65,7 +65,7 @@ Share this article:
 
 To scale consulting expertise without rework, change the operating model before adding headcount: standardize the parts of delivery that repeat, connect knowledge so consultants stop rebuilding it, and reserve senior judgment for the work that actually needs it.
 
-Rework is the hidden tax on consulting growth, and it is bigger than most firms think — teams and executives now lose about a [quarter of the workweek](https://www.atlassian.com/blog/state-of-teams-2025) just searching for information. It shows up as duplicate market scans, three versions of the same deck, proposals rewritten from scratch, and subject-matter experts answering the same question for the tenth time.
+Rework is the hidden tax on consulting growth, and it is bigger than most firms think - teams and executives now lose about a [quarter of the workweek](https://www.atlassian.com/blog/state-of-teams-2025) just searching for information. It shows up as duplicate market scans, three versions of the same deck, proposals rewritten from scratch, and subject-matter experts answering the same question for the tenth time.
 
 Firms hit this wall because expertise stays trapped in people, folders, and chat threads. The goal is to make proven thinking reusable, keep the judgment that clients pay for, and cut the operational drag that slows every engagement.
 
@@ -79,7 +79,7 @@ Growth breaks when expertise lives only in individuals. The fix is to standardiz
 
 ## How consulting leaders can scale consulting expertise without scaling rework
 
-Start with the operating model, not the org chart. Adding consultants to a manual model adds coordination complexity faster than it adds output, which is how firms grow revenue while margins slip — and it is why practitioners find that [redesigning workflows](https://hdsr.mitpress.mit.edu/pub/0mrfxamu) around new capabilities, rather than bolting them onto old processes, is what unlocks the largest gains. Consulting firm scalability comes from changing how work moves through the firm, not from more people doing the same fragmented work.
+Start with the operating model, not the org chart. Adding consultants to a manual model adds coordination complexity faster than it adds output, which is how firms grow revenue while margins slip - and it is why practitioners find that [redesigning workflows](https://hdsr.mitpress.mit.edu/pub/0mrfxamu) around new capabilities, rather than bolting them onto old processes, is what unlocks the largest gains. Consulting firm scalability comes from changing how work moves through the firm, not from more people doing the same fragmented work.
 
 The path has six steps: find where rework starts, make proven work reusable, connect knowledge across systems, apply grounded AI to low-value repetitive tasks, route expertise to the right people, and govern quality as volume rises. Each step below stands on its own, so you can start where your firm bleeds the most time.
 
@@ -103,7 +103,7 @@ Source-backed reuse should be the default, and it also sets up everything that c
 
 ## 3\. Connect knowledge across systems so consultants can find answers in one place
 
-Connect knowledge across every system into one permission-aware layer so consultants search once and get grounded answers instead of hunting through tools. Expertise scatters across documents, chat messages, project management tools, the CRM, meeting notes, tickets, wikis, and past deliverables. When a consultant has to check six places, most give up after two — unsurprising when internal enterprise searches succeed on the [first attempt only about 10%](https://slite.com/learn/enterprise-search-survey-findings) of the time.
+Connect knowledge across every system into one permission-aware layer so consultants search once and get grounded answers instead of hunting through tools. Expertise scatters across documents, chat messages, project management tools, the CRM, meeting notes, tickets, wikis, and past deliverables. When a consultant has to check six places, most give up after two - unsurprising when internal enterprise searches succeed on the [first attempt only about 10%](https://slite.com/learn/enterprise-search-survey-findings) of the time.
 
 Permission awareness is non-negotiable in consulting service delivery. Client confidentiality and regulated engagements require that people see only what they are cleared to see, and answers should link back to the source document so reviewers can verify them. Tag knowledge with metadata that matches how consultants actually search: sector, function, geography, engagement type, methodology, delivery stage, and reviewer. The move toward [grounded, cited answers built on agentic reasoning](https://www.glean.com/blog/agentic-reasoning-future-ai) treats this layer as the foundation everything else builds on.
 

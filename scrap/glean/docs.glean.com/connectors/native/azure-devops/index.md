@@ -9,7 +9,7 @@ On this page
 
 The Azure DevOps connector indexes content from your Azure DevOps Services (cloud) projects: wiki pages, work items and boards, and repository content such as source files, commits, and pull requests. This makes it searchable in Glean alongside other sources such as Confluence, Google Drive, and Slack. After setup and an initial crawl, this content is available in Glean Search, Glean Assistant, Glean Agents, and Glean MCP.
 
-The connector depends on a healthy **Microsoft 365** connector for identity and permission mapping. It does not resolve users and groups on its own — that identity data comes from your Microsoft 365 connector.
+The connector depends on a healthy **Microsoft 365** connector for identity and permission mapping. It does not resolve users and groups on its own - that identity data comes from your Microsoft 365 connector.
 
 Before you begin
 
@@ -173,7 +173,7 @@ The connector's **Manage data** tab in the **Admin console** adds repository-lev
 -   **Code repository options.** Select **Index Code File Body** to index and make code file body content searchable. Under **Code file types to index body**, select the file types Glean should index for code body content. You can select supported file types or add custom extensions. This connector-level setting applies across the repositories included in the connector. You can also toggle **Crawl repositories in maintenance** (off by default) and **Crawl disabled repositories** (off by default).
 -   **URL settings.** Enable **Use legacy URLs** if your organization uses `org.visualstudio.com` URLs instead of `dev.azure.com/org`.
 
-Inclusion and exclusion rules apply to repositories. There are no per-item rules for individual wikis or work item types — project membership is what scopes those.
+Inclusion and exclusion rules apply to repositories. There are no per-item rules for individual wikis or work item types - project membership is what scopes those.
 
 ## Test with a pilot group[​](#test-with-a-pilot-group "Direct link to Test with a pilot group")
 

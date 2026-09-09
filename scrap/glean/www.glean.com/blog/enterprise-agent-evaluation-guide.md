@@ -91,7 +91,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-You’ve built your first agent. You run a few test queries, and the results look promising—so what’s next? The key to moving from a cool demo to a reliable agent is creating an evaluation.
+You’ve built your first agent. You run a few test queries, and the results look promising-so what’s next? The key to moving from a cool demo to a reliable agent is creating an evaluation.
 
 Everyone should learn how to evaluate agents, not just because it builds confidence in agent quality, but because it teaches you how to best use your agent platform. The best agent platforms make evaluations accessible by assuring that agents excel at fundamentals. Think instruction-following, safety, personalization, and contextual awareness. This allows builders to focus evaluations on the higher level quality specs that make agents impactful for end users. 
 
@@ -130,10 +130,10 @@ Focusing on one main metric doesn’t mean ignoring how it’s achieved. Think o
     -   A **proof point** (like a stat or customer example).
     -   A clear **call to action**.
 -   **Personalization:** Is the message tailored to the prospect?  
-    -   *Relevant:* *“Expanding into Europe with \[customer program\] adds a lot of complexity—how’s your team handling knowledge sharing across time zones and regions?”*
+    -   *Relevant:* *“Expanding into Europe with \[customer program\] adds a lot of complexity-how’s your team handling knowledge sharing across time zones and regions?”*
     -   *Generic:* *“I see you’re rolling out AI in your app- is the next step AI for your internal teams?”*
 -   **Tone:** Does the message feel personal, insightful, and easy to understand?  
-    -   *Just right:* *“Your engineers spend just two hours a day coding—Glean helps them reclaim the rest by making code, docs, and tickets quickly discoverable.”*
+    -   *Just right:* *“Your engineers spend just two hours a day coding-Glean helps them reclaim the rest by making code, docs, and tickets quickly discoverable.”*
     -   *Wrong tone:* *“Glean’s proprietary search technology queries various unstructured data sources to identify company documents relevant to each individual user.”*
 -   **Groundedness:** Are the claims based on accurate enterprise and public data?
 

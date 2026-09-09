@@ -73,7 +73,7 @@ Version control emerges as the cornerstone solution for these challenges, provid
 
 Version control is a system that records changes to files over time, allowing you to track progress, collaborate with team members, and revert to previous versions when necessary. In the context of AI automation scripts, it serves as a critical infrastructure component that ensures code integrity, facilitates team collaboration, and provides a safety net for experimental changes. Unlike traditional [software development](https://www.glean.com/blog/transforming-the-way-software-engineers-work-by-integrating-generative-ai), AI automation scripts often involve complex dependencies, model configurations, and [data processing pipelines](https://www.glean.com/blog/glean-databricks-genie-announce) that require meticulous tracking.
 
-The unique nature of AI automation scripts demands specialized version control approaches. These scripts frequently interact with machine learning models, handle sensitive data transformations, and integrate with multiple enterprise systems. Version control systems capture not only the code changes but also the context behind modifications — whether updating algorithm parameters, adjusting API integrations, or refining error handling mechanisms. This comprehensive tracking becomes invaluable when debugging issues or understanding the evolution of automated workflows.
+The unique nature of AI automation scripts demands specialized version control approaches. These scripts frequently interact with machine learning models, handle sensitive data transformations, and integrate with multiple enterprise systems. Version control systems capture not only the code changes but also the context behind modifications - whether updating algorithm parameters, adjusting API integrations, or refining error handling mechanisms. This comprehensive tracking becomes invaluable when debugging issues or understanding the evolution of automated workflows.
 
 Modern version control for AI automation extends beyond simple file tracking. It encompasses:
 
@@ -187,7 +187,7 @@ Implementing strategic practices in version control enhances the management and 
 
 ### Informative commit messages
 
-A meticulous review process is vital for maintaining high code quality before merging changes. As AI-generated contributions grow—more than a quarter of all new code at Google is now produced by AI and reviewed by engineers, with some reports suggesting this may reach [30%](https://www.endorlabs.com/learn/the-last-mile-of-ai-productivity-is-code-review)—the resulting volume can create bottlenecks in traditional code review processes. This approach helps identify potential challenges early, ensuring that only well-evaluated changes reach the main codebase.
+A meticulous review process is vital for maintaining high code quality before merging changes. As AI-generated contributions grow-more than a quarter of all new code at Google is now produced by AI and reviewed by engineers, with some reports suggesting this may reach [30%](https://www.endorlabs.com/learn/the-last-mile-of-ai-productivity-is-code-review)-the resulting volume can create bottlenecks in traditional code review processes. This approach helps identify potential challenges early, ensuring that only well-evaluated changes reach the main codebase.
 
 ### Consistent repository backups
 
@@ -199,7 +199,7 @@ A meticulous review process is vital for maintaining high code quality before me
 
 As AI automation scripts become increasingly complex and critical to enterprise operations, implementing robust version control practices with Git ensures your team can innovate confidently while maintaining stability and compliance. The strategies outlined here provide the foundation for managing AI-driven automation at scale, enabling seamless collaboration and continuous improvement across your organization.
 
-Ready to take your AI automation capabilities to the next level? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) — we'll show you how our platform can help streamline your workflows and unlock new possibilities for your team.
+Ready to take your AI automation capabilities to the next level? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) - we'll show you how our platform can help streamline your workflows and unlock new possibilities for your team.
 
 [
 

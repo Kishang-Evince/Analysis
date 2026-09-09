@@ -2,7 +2,7 @@
 url: "https://www.glean.com/platform/browser-extension"
 canonical: "https://www.glean.com/platform/browser-extension"
 title: "Glean Browser Extension – Enterprise AI for Smarter Work"
-description: "Boost productivity with the Glean browser extension. Access enterprise AI to research, write, and find answers instantly—right from any browser tab."
+description: "Boost productivity with the Glean browser extension. Access enterprise AI to research, write, and find answers instantly-right from any browser tab."
 fetched_at: "2026-09-01T13:25:29.202Z"
 ---
 Report
@@ -19,7 +19,7 @@ Download Now
 
 ### Ask in context, getinstant answers.
 
-Need a quick summary? Trying to understand a policy? Just ask. The Glean sidebar uses your current page and company knowledge to deliver relevant answers — no tab switching required.
+Need a quick summary? Trying to understand a policy? Just ask. The Glean sidebar uses your current page and company knowledge to deliver relevant answers - no tab switching required.
 
 ### Discover what matters, without the digging.
 
@@ -27,17 +27,17 @@ Glean proactively surfaces personalized prompts, related resources, and expert i
 
 ### Effortless search, right where you work.
 
-Search across documents, conversations, and experts — all without leaving your tab. Glean's powerful sidebar search connects you to your company's knowledge, while keeping you in context.
+Search across documents, conversations, and experts - all without leaving your tab. Glean's powerful sidebar search connects you to your company's knowledge, while keeping you in context.
 
 ### Your new tab, optimized for productivity.
 
-Turn your new tab into a command center. Get instant access to Glean, personalized suggestions, and your calendar — available for Chrome, Safari, Firefox, Edge, and more.
+Turn your new tab into a command center. Get instant access to Glean, personalized suggestions, and your calendar - available for Chrome, Safari, Firefox, Edge, and more.
 
 ![Ask in context, get instant answers.](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691dbdd8b875f6f4693d0dfa_Ask%20in%20context%2C%20get%20instant%20answers..webp)![Discover what matters, without the digging.](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691dbdd8e7d2951439a66f91_Discover%20what%20matters%2C%20without%20the%20digging..webp)![Effortless search, right where you work.](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691dbdd89a8148723759d264_Effortless%20search%2C%20right%20where%20you%20work..webp)![Your new tab, optimized for productivity.](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691dbdd9dfad2610be0bcdd3_Your%20new%20tab%2C%20optimized%20for%20productivity..webp)![zig-zag section dotted bg](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/686d698e445d7f90e5868c09_zig-zag%20section%20dotted%20bg.svg)
 
 Ask in context, getinstant answers.
 
-Need a quick summary? Trying to understand a policy? Just ask. The Glean sidebar uses your current page and company knowledge to deliver relevant answers — no tab switching required.
+Need a quick summary? Trying to understand a policy? Just ask. The Glean sidebar uses your current page and company knowledge to deliver relevant answers - no tab switching required.
 
 ![Ask in context, get instant answers. - Mobile](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691dbdd5ee8751d8c3361f99_Ask%20in%20context%2C%20get%20instant%20answers.%20-%20Mobile.webp)
 
@@ -49,13 +49,13 @@ Glean proactively surfaces personalized prompts, related resources, and expert i
 
 Effortless search, right where you work.
 
-Search across documents, conversations, and experts — all without leaving your tab. Glean's powerful sidebar search connects you to your company's knowledge, while keeping you in context.
+Search across documents, conversations, and experts - all without leaving your tab. Glean's powerful sidebar search connects you to your company's knowledge, while keeping you in context.
 
 ![Effortless search, right where you work. - Mobile](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691dbdd6446d99dfa9ccc300_Effortless%20search%2C%20right%20where%20you%20work.%20-%20Mobile.webp)
 
 Your new tab, optimized for productivity.
 
-Turn your new tab into a command center. Get instant access to Glean, personalized suggestions, and your calendar — available for Chrome, Safari, Firefox, Edge, and more.
+Turn your new tab into a command center. Get instant access to Glean, personalized suggestions, and your calendar - available for Chrome, Safari, Firefox, Edge, and more.
 
 ![Your new tab, optimized for productivity. - Mobile](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691dbdd6f06d52ddb61c97d4_Your%20new%20tab%2C%20optimized%20for%20productivity.%20-%20Mobile.webp)
 

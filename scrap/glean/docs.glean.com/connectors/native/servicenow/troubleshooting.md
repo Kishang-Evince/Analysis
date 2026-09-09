@@ -81,7 +81,7 @@ Knowledge bases in non-global application scopes require additional ServiceNow c
 
 | Likely cause | Fix / Remediation |
 | --- | --- |
-| **URL format mismatch:** The default URL format configured in Glean does not match your organization's ServiceNow portal setup—for example, a custom portal name (`hr` instead of `kb`), a custom article type identifier, or a different query parameter. | In **Admin console → Connectors → ServiceNow → Settings**, update the **KB Article URL Format** fields to match the URL structure your users see when browsing ServiceNow: set the correct portal name, article type, and query parameter. |
+| **URL format mismatch:** The default URL format configured in Glean does not match your organization's ServiceNow portal setup-for example, a custom portal name (`hr` instead of `kb`), a custom article type identifier, or a different query parameter. | In **Admin console → Connectors → ServiceNow → Settings**, update the **KB Article URL Format** fields to match the URL structure your users see when browsing ServiceNow: set the correct portal name, article type, and query parameter. |
 | **Custom catalog item URL `id`:** Catalog items use a custom `id` field in the URL (for example, `wd_sc_cat_item` instead of `sc_cat_item`). | Contact [Glean Support](https://support.glean.com) to configure custom catalog item URL mapping. |
 
 ## Permissions and access[​](#permissions-and-access "Direct link to Permissions and access")
@@ -167,7 +167,7 @@ Knowledge bases in non-global application scopes require additional ServiceNow c
 
 **Full resolution steps:** See [SERVICENOW\_5](/troubleshooting/error-codes/servicenow/servicenow-5).
 
-### Validation fails with `SERVICENOW_8` — advanced user criteria scripts use `gs.getUser()`[​](#validation-fails-with-servicenow_8--advanced-user-criteria-scripts-use-gsgetuser "Direct link to validation-fails-with-servicenow_8--advanced-user-criteria-scripts-use-gsgetuser")
+### Validation fails with `SERVICENOW_8` - advanced user criteria scripts use `gs.getUser()`[​](#validation-fails-with-servicenow_8--advanced-user-criteria-scripts-use-gsgetuser "Direct link to validation-fails-with-servicenow_8--advanced-user-criteria-scripts-use-gsgetuser")
 
 **Symptoms:**
 
@@ -232,13 +232,13 @@ Glean indexes knowledge article attachments by default. Supported file types inc
 
 ### Does Glean require admin-level permissions for the ServiceNow connector?
 
-The default setup uses a service account (`gleansearch`) with several admin-level roles — including `knowledge_admin`, `catalog_admin`, `user_admin`, and `user_criteria_admin` — to access all required tables and permission data. A non-admin setup using a custom role with reduced permissions is available. See the [custom role setup guide](/connectors/native/servicenow/servicenow-custom-role) for the required configuration.
+The default setup uses a service account (`gleansearch`) with several admin-level roles - including `knowledge_admin`, `catalog_admin`, `user_admin`, and `user_criteria_admin` - to access all required tables and permission data. A non-admin setup using a custom role with reduced permissions is available. See the [custom role setup guide](/connectors/native/servicenow/servicenow-custom-role) for the required configuration.
 
 ### What authentication methods does Glean support for ServiceNow?
 
 Glean supports basic authentication (username and password for the `gleansearch` service account) and OAuth Authorization Code Grant Flow. Both methods require the `gleansearch` service account to be configured in ServiceNow with the appropriate roles.
 
-When using OAuth, the account used to authorize the OAuth flow must be the designated `gleansearch` service account — authorizing with a personal admin account will cause a [SERVICENOW\_10](/troubleshooting/error-codes/servicenow/servicenow-10) user mismatch error.
+When using OAuth, the account used to authorize the OAuth flow must be the designated `gleansearch` service account - authorizing with a personal admin account will cause a [SERVICENOW\_10](/troubleshooting/error-codes/servicenow/servicenow-10) user mismatch error.
 
 ### What content types does Glean index from ServiceNow?
 
@@ -257,7 +257,7 @@ ITSM, APM, and SPM indexing must be enabled in **Admin console → Connectors �
 
 ### Does Glean index attachments from knowledge articles?
 
-Yes. Glean indexes knowledge article attachments by default, including PDFs, plain text, images (PNG and JPEG), and Microsoft Office documents (Word, Excel, and PowerPoint). The set of indexed file types is configurable — contact [Glean Support](https://support.glean.com) to adjust it. Attachments on Customer Service (CSM) cases can also be indexed, but are off by default; contact Glean Support to enable them. Attachments on other content types are not indexed.
+Yes. Glean indexes knowledge article attachments by default, including PDFs, plain text, images (PNG and JPEG), and Microsoft Office documents (Word, Excel, and PowerPoint). The set of indexed file types is configurable - contact [Glean Support](https://support.glean.com) to adjust it. Attachments on Customer Service (CSM) cases can also be indexed, but are off by default; contact Glean Support to enable them. Attachments on other content types are not indexed.
 
 ### Does Glean index embedded links from ServiceNow knowledge articles?
 

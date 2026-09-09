@@ -73,7 +73,7 @@ Ensure your SharePoint sites use the modern experience. SPFx web parts are not c
 
 Install Node.js
 
-The Glean example web parts target SPFx 1.19–1.20, which require Node.js 18.x. Newer SPFx versions support newer Node.js releases — check Microsoft's [SPFx compatibility matrix](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/compatibility) for the version your project uses.
+The Glean example web parts target SPFx 1.19–1.20, which require Node.js 18.x. Newer SPFx versions support newer Node.js releases - check Microsoft's [SPFx compatibility matrix](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/compatibility) for the version your project uses.
 
 ```
 # Check current versionnode -v# Install Node.js 18.x if needed# Visit https://nodejs.org/en/download/package-manager for installation instructions

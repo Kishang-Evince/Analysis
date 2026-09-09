@@ -17,4 +17,4 @@ In the **Connect connectors used across your company** section, select a connect
 
 Connect connectors used across your company
 
-Browse the [Connectors hub](/connectors/) to find the source you want to connect, then follow the connector-specific setup guide. For the end-to-end setup process—prerequisites, configuration, initial sync, and validation—see [Get started with connectors](/connectors/getting-started).
+Browse the [Connectors hub](/connectors/) to find the source you want to connect, then follow the connector-specific setup guide. For the end-to-end setup process-prerequisites, configuration, initial sync, and validation-see [Get started with connectors](/connectors/getting-started).

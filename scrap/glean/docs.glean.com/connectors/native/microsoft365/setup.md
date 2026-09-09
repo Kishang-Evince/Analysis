@@ -75,7 +75,7 @@ The user setting up this connector must be a [Global Administrator](https://lear
 
 note
 
-These four identity permissions cover the parent connector. SharePoint and OneDrive add content permissions to this same app — see [Request all suite permissions upfront](#request-all-suite-permissions-upfront) for the complete list, and add them all now if you already know you'll configure those child connectors.
+These four identity permissions cover the parent connector. SharePoint and OneDrive add content permissions to this same app - see [Request all suite permissions upfront](#request-all-suite-permissions-upfront) for the complete list, and add them all now if you already know you'll configure those child connectors.
 
 ## Grant admin consent[​](#grant-admin-consent "Direct link to Grant admin consent")
 

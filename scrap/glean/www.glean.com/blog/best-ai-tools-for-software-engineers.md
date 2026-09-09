@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/best-ai-tools-for-software-engineers"
 canonical: "https://www.glean.com/blog/best-ai-tools-for-software-engineers"
 title: "Best AI tools for software engineers: how to build the right AI stack"
-description: "Glean  | The best AI tools for software engineers in 2026 — coding assistants, code review, and testing tools compared to help you ship faster."
+description: "Glean  | The best AI tools for software engineers in 2026 - coding assistants, code review, and testing tools compared to help you ship faster."
 fetched_at: "2026-09-01T13:26:29.322Z"
 ---
 Last updated May 05, 2026.
@@ -81,41 +81,41 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-The AI coding tools worth adopting don’t just write code fast — they combine code generation, organizational context, incident response, and governance so engineering teams can ship faster, without trading speed for rework, trust problems, or security risk.
+The AI coding tools worth adopting don’t just write code fast - they combine code generation, organizational context, incident response, and governance so engineering teams can ship faster, without trading speed for rework, trust problems, or security risk.
 
-GitHub Copilot now writes [nearly half](https://medium.com/@reliabledataengineering/ai-is-writing-46-of-all-code-github-copilots-real-impact-on-15-million-developers-787d789fcfdc) of the average developer’s code, and AI-powered coding assistants like Cursor, Claude Code, and Windsurf are becoming default starting points. But coding speed was never the real bottleneck. The hard part — assembling the right context from tickets, design docs, logs, incidents, ownership records, and Slack threads — still falls on the engineer. When AI tools lack that context, saved typing time comes back as downstream fixes and integration debt.
+GitHub Copilot now writes [nearly half](https://medium.com/@reliabledataengineering/ai-is-writing-46-of-all-code-github-copilots-real-impact-on-15-million-developers-787d789fcfdc) of the average developer’s code, and AI-powered coding assistants like Cursor, Claude Code, and Windsurf are becoming default starting points. But coding speed was never the real bottleneck. The hard part - assembling the right context from tickets, design docs, logs, incidents, ownership records, and Slack threads - still falls on the engineer. When AI tools lack that context, saved typing time comes back as downstream fixes and integration debt.
 
 Engineering leaders describe this problem in three ways:
 
--   **An outcome gap.** In a [METR randomized controlled trial](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) of experienced open-source developers, tasks where participants used AI coding tools took 19% longer to complete — even though the developers expected to be 24% faster. A follow-up study with a larger cohort, begun in August 2025, showed mixed results complicated by selection bias, but the perception gap persisted across both studies: developers consistently overestimate AI's impact on their speed.
+-   **An outcome gap.** In a [METR randomized controlled trial](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) of experienced open-source developers, tasks where participants used AI coding tools took 19% longer to complete - even though the developers expected to be 24% faster. A follow-up study with a larger cohort, begun in August 2025, showed mixed results complicated by selection bias, but the perception gap persisted across both studies: developers consistently overestimate AI's impact on their speed.
 -   **A trust gap.** More developers actively distrust AI accuracy than trust it (46% vs. 33%, per the [2025 Stack Overflow Developer Survey](https://survey.stackoverflow.co/2025/ai)), and 66% say their biggest frustration is AI-generated code that's "almost right, but not quite."
 -   **A safety gap.** Close to 45% of AI-generated code introduces at least one OWASP Top 10 security vulnerability, according to the [2025 Veracode GenAI Code Security Report](https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/).
 
-Closing these gaps takes more than a better model in your integrated development environment (IDE). It takes an AI coding stack — and knowing which tools belong in it. This post walks through what to evaluate, the strongest AI developer tools by category, and how to build an AI stack that fits your team's development process.
+Closing these gaps takes more than a better model in your integrated development environment (IDE). It takes an AI coding stack - and knowing which tools belong in it. This post walks through what to evaluate, the strongest AI developer tools by category, and how to build an AI stack that fits your team's development process.
 
 ## **What to look for in an AI coding tool for software engineers**
 
-Before diving into specific tools, it helps to set evaluation criteria for AI assistance that go beyond feature lists. These questions surface how well a tool fits enterprise engineering work — and they apply equally to AI coding assistants, context platforms, observability AI, and agent frameworks.
+Before diving into specific tools, it helps to set evaluation criteria for AI assistance that go beyond feature lists. These questions surface how well a tool fits enterprise engineering work - and they apply equally to AI coding assistants, context platforms, observability AI, and agent frameworks.
 
 ### **What context does an AI tool actually have?**
 
-Most tools claim to be “context-aware,” but the real question is: context over *what*? A tool that only sees the current repo or buffer will miss project specific rules and constraints from tickets, designs, and other services. Look for tools that can surface context across Slack, incident tickets, code changes, ownership records, and past incidents — without someone linking that together by hand. For reference, [41% of developers](https://www.atlassian.com/software/compass/resources/state-of-developer-2024) say their biggest productivity drain is outdated, inconsistent, or siloed information. Any tool operating in isolation adds to that problem.
+Most tools claim to be “context-aware,” but the real question is: context over *what*? A tool that only sees the current repo or buffer will miss project specific rules and constraints from tickets, designs, and other services. Look for tools that can surface context across Slack, incident tickets, code changes, ownership records, and past incidents - without someone linking that together by hand. For reference, [41% of developers](https://www.atlassian.com/software/compass/resources/state-of-developer-2024) say their biggest productivity drain is outdated, inconsistent, or siloed information. Any tool operating in isolation adds to that problem.
 
 ### **How is trust earned, not assumed?**
 
-Engineers won't rely on a system that behaves like a black box. If answers aren't grounded in your own artifacts — code, tickets, logs — with links back to sources, people end up redoing the work just to check it. Adoption stalls.
+Engineers won't rely on a system that behaves like a black box. If answers aren't grounded in your own artifacts - code, tickets, logs - with links back to sources, people end up redoing the work just to check it. Adoption stalls.
 
 ### **Where does your data go, and who can act on it?**
 
-Once AI can read source code files, logs, and tickets — and especially once it can take actions — you’re making a code security and governance decision, not just a tooling decision. Look at where indexes are hosted (your tenant or multi-tenant); whether the tool supports local models or requires cloud inference; whether code and logs stay inside your VPC with tight egress controls; whether the vendor offers zero data retention policies; and whether all queries and actions are logged for audit. If you can't answer these cleanly, your security team will likely block rollout.
+Once AI can read source code files, logs, and tickets - and especially once it can take actions - you’re making a code security and governance decision, not just a tooling decision. Look at where indexes are hosted (your tenant or multi-tenant); whether the tool supports local models or requires cloud inference; whether code and logs stay inside your VPC with tight egress controls; whether the vendor offers zero data retention policies; and whether all queries and actions are logged for audit. If you can't answer these cleanly, your security team will likely block rollout.
 
 ### **Does it fit the way your teams already work?**
 
-The best tools fold into existing development workflows. The worst ask engineers to live in a new tab. Does your tool integrate cleanly with GitHub or GitLab, Jira, your observability stack, and Slack or Teams? Can it coexist with IDE copilots — using them for editing while providing a shared context layer? What’s the realistic path for AI integration: can you start with one team and scale, or does it require a wholesale switch?
+The best tools fold into existing development workflows. The worst ask engineers to live in a new tab. Does your tool integrate cleanly with GitHub or GitLab, Jira, your observability stack, and Slack or Teams? Can it coexist with IDE copilots - using them for editing while providing a shared context layer? What’s the realistic path for AI integration: can you start with one team and scale, or does it require a wholesale switch?
 
 ## **Best AI coding assistants for software engineers**
 
-Intelligent code assistance is where most teams start, and for good reason. These tools handle the mechanical parts of writing code — natural language code generation, code completions, scaffolding, simple refactors, test generation — and increasingly take on complex coding tasks like multi-file edits, code review, and codebase-wide refactors.
+Intelligent code assistance is where most teams start, and for good reason. These tools handle the mechanical parts of writing code - natural language code generation, code completions, scaffolding, simple refactors, test generation - and increasingly take on complex coding tasks like multi-file edits, code review, and codebase-wide refactors.
 
 For most teams, coding assistants function as personal productivity tools for developers rather than the backbone of an organizational AI strategy. They're effective at producing functional code inside a single repo or workspace, but they typically have limited awareness of tickets, incidents, or design rationale; no unified view across multiple repos and services; and security and governance that varies by vendor and requires careful setup.
 
@@ -129,7 +129,7 @@ Cursor is an AI-native code editor built on Visual Studio Code that integrates A
 
 ### **GitHub Copilot**
 
-GitHub Copilot is the most widely adopted AI coding assistant, combining intelligent code generation, chat, and code review features available as a code extension in VS Code, JetBrains, and other editors. It’s tightly integrated with the GitHub ecosystem and supports agent mode for multi-step tasks. For teams already deep in the GitHub ecosystem, Copilot is the path of least resistance — it's everywhere, it's familiar, and the agent mode is catching up fast.
+GitHub Copilot is the most widely adopted AI coding assistant, combining intelligent code generation, chat, and code review features available as a code extension in VS Code, JetBrains, and other editors. It’s tightly integrated with the GitHub ecosystem and supports agent mode for multi-step tasks. For teams already deep in the GitHub ecosystem, Copilot is the path of least resistance - it's everywhere, it's familiar, and the agent mode is catching up fast.
 
 **Key features:** inline code suggestions, Copilot Chat, pull request summaries, code review suggestions, agent mode, broad editor support.
 
@@ -153,13 +153,13 @@ Cody brings AI-assisted coding to enterprise teams that need cross-repository co
 
 ## **Best AI tools for engineering context and knowledge**
 
-This is where the engineering AI stack starts to differentiate — and also where most “best AI tools” roundups come up short.
+This is where the engineering AI stack starts to differentiate - and also where most “best AI tools” roundups come up short.
 
-Engineers are increasingly blocked not by writing code, but by chasing project context across GitHub, Jira, incident tools, wikis, logs, and Slack. In the [2025 JetBrains Developer Ecosystem Survey](https://devecosystem-2025.jetbrains.com/), 62% of developers said non-technical factors — collaboration, communication, and clarity — are as critical to their performance as technical ones. An AI coding assistant that can’t see those systems solves only part of the problem.
+Engineers are increasingly blocked not by writing code, but by chasing project context across GitHub, Jira, incident tools, wikis, logs, and Slack. In the [2025 JetBrains Developer Ecosystem Survey](https://devecosystem-2025.jetbrains.com/), 62% of developers said non-technical factors - collaboration, communication, and clarity - are as critical to their performance as technical ones. An AI coding assistant that can’t see those systems solves only part of the problem.
 
-Enterprise context and knowledge platforms sit above individual tools. They connect the artifacts and people behind the code — not just the code itself — and answer questions like: What broke the last time this alert fired? Where’s the design doc for this service? Who owns this endpoint now?
+Enterprise context and knowledge platforms sit above individual tools. They connect the artifacts and people behind the code - not just the code itself - and answer questions like: What broke the last time this alert fired? Where’s the design doc for this service? Who owns this endpoint now?
 
-These platforms unify code, tickets, logs, docs, designs, incidents, and discussions from tools like GitHub, Jira, observability tools, wikis, document stores, and Slack or Teams into a single, permission-aware, up-to-date context layer. They build links between artifacts — PRs ↔ tickets ↔ incidents ↔ designs ↔ chat — so teams can trace from an alert or question to what changed, who owns it, and relevant prior work.
+These platforms unify code, tickets, logs, docs, designs, incidents, and discussions from tools like GitHub, Jira, observability tools, wikis, document stores, and Slack or Teams into a single, permission-aware, up-to-date context layer. They build links between artifacts - PRs ↔ tickets ↔ incidents ↔ designs ↔ chat - so teams can trace from an alert or question to what changed, who owns it, and relevant prior work.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a042d3818bf93850ca36e6e_Engineering%20AI%20tooling%20landscape%20\(1\).png)
 
@@ -169,7 +169,7 @@ These platforms unify code, tickets, logs, docs, designs, incidents, and discuss
 
 Glean provides the context layer of the engineering AI stack. It builds an enterprise context graph over your real stack by connecting to code hosts like GitHub, GitLab, and Bitbucket; work tracking in Jira; incident and observability tools like PagerDuty and Datadog; docs and wikis in Confluence, Notion, and Drive or SharePoint; and chat in Slack and Teams.
 
-For engineers, search becomes the entry point to a system. Using natural language descriptions of what they need — like "show me the main docs, tickets, incidents, and owners for the payments service" — they get results built from code, tickets, incidents, and ownership, not just keyword matches. Glean agents can turn Jira bug fixes or Slack threads into scoped implementation PRs, and engineers debugging in Cursor or Claude Code can call Glean via MCP to pull in recent incidents, tickets, ownership, and design docs without leaving the editor.
+For engineers, search becomes the entry point to a system. Using natural language descriptions of what they need - like "show me the main docs, tickets, incidents, and owners for the payments service" - they get results built from code, tickets, incidents, and ownership, not just keyword matches. Glean agents can turn Jira bug fixes or Slack threads into scoped implementation PRs, and engineers debugging in Cursor or Claude Code can call Glean via MCP to pull in recent incidents, tickets, ownership, and design docs without leaving the editor.
 
 **Key features:**
 
@@ -188,7 +188,7 @@ During an incident, engineers are usually juggling alerts, dashboards, logs, run
 
 AIOps, observability, and incident assistants typically live inside monitoring and incident response platforms, where they improve response times and resolution rates. They're strong at summarizing alerts, traces, and logs into human-readable narratives, highlighting likely regressions or components involved in an incident, and surfacing known fixes for recurring patterns.
 
-But they’re typically scoped to a single data source — the metrics, logs, and traces for that specific tool. They don't see Jira workflows, code ownership, or design decisions stored elsewhere. For questions that span systems — like "what changed, who owns it, and what related incidents have we seen?" — they need a broader context layer to deliver a useful answer.
+But they’re typically scoped to a single data source - the metrics, logs, and traces for that specific tool. They don't see Jira workflows, code ownership, or design decisions stored elsewhere. For questions that span systems - like "what changed, who owns it, and what related incidents have we seen?" - they need a broader context layer to deliver a useful answer.
 
 ### **PagerDuty**
 
@@ -250,19 +250,19 @@ For each of these platforms, the quality of output depends on what data and cont
 
 ## **How to build the right AI stack for your engineering team**
 
-Most engineering teams assemble a portfolio of development tools. Coding assistants handle local editing and generation inside the IDE. Context platforms connect the dots across systems — code, tickets, incidents, docs, and people. Observability solutions provide the raw signals. Agent frameworks offer orchestration runtimes. The goal is making them work together rather than adding more tabs.
+Most engineering teams assemble a portfolio of development tools. Coding assistants handle local editing and generation inside the IDE. Context platforms connect the dots across systems - code, tickets, incidents, docs, and people. Observability solutions provide the raw signals. Agent frameworks offer orchestration runtimes. The goal is making them work together rather than adding more tabs.
 
 A two-layer model is emerging as the practical architecture:
 
-**Layer 1 — Enterprise context.** This layer connects to code hosts, Jira, incident tools, observability tools, wikis, document stores, and Slack or Teams. It indexes everything with hybrid search (lexical + semantic), builds an enterprise graph linking services, APIs, incidents, tickets, owners, and design artifacts, and enforces security and governance boundaries end-to-end.
+**Layer 1 - Enterprise context.** This layer connects to code hosts, Jira, incident tools, observability tools, wikis, document stores, and Slack or Teams. It indexes everything with hybrid search (lexical + semantic), builds an enterprise graph linking services, APIs, incidents, tickets, owners, and design artifacts, and enforces security and governance boundaries end-to-end.
 
-**Layer 2 — Coding and interaction surfaces.** This is where engineers handle daily coding tasks — IDEs, code hosts, work tracking, and collaboration tools. These surfaces are powerful, but they can't tap into enterprise context unless that context is supplied and structured for every query. 
+**Layer 2 - Coding and interaction surfaces.** This is where engineers handle daily coding tasks - IDEs, code hosts, work tracking, and collaboration tools. These surfaces are powerful, but they can't tap into enterprise context unless that context is supplied and structured for every query. 
 
 Glean is built for Layer 1. It provides the shared, trusted view of your engineering environment that IDEs, incident consoles, agents, and workflows can plug into. Because it’s model-agnostic and exposes data through APIs and MCP-compatible tooling, multiple assistants and frameworks can call into the same graph rather than rebuilding their own embeddings and permissions logic. You index once; you reuse that context across tools and surfaces.
 
 ### **Three priorities for choosing AI powered development tools**
 
-1.  **Measure impact on your development process in terms of cycle time and quality, not adoption counts.** The real gains show up in reduced rework, faster code review and incident resolution, and shorter onboarding ramps — not how many developers have a coding assistant installed.
+1.  **Measure impact on your development process in terms of cycle time and quality, not adoption counts.** The real gains show up in reduced rework, faster code review and incident resolution, and shorter onboarding ramps - not how many developers have a coding assistant installed.
 2.  **Invest in reducing handoffs and rework across systems, not just faster code generation.** [62% of developers](https://www.atlassian.com/software/compass/resources/state-of-developer-2024) say context reconstruction is what slows them down. A coding assistant alone doesn’t fix that.
 3.  **Prioritize security, governance, and transparency before scaling.** Where AI runs, what it can see, how it's audited, and whether engineers can verify why it gave a particular answer will matter as much as raw model quality. Trust and safety are prerequisites, not afterthoughts.
 
@@ -274,15 +274,15 @@ Want to go deeper on the two-layer model? The software engineer's field guide to
 
 ### **How should engineering teams evaluate AI tools beyond demo performance?**
 
-Start with real workflows, not staged scenarios. The most reliable evaluation criteria are: what context the tool can actually see (repo-only vs. cross-system), how trust is built through grounding and citations, where your data goes and who can act on it, and whether the tool fits into the applications your team already uses — GitHub, Jira, Slack, your IDE. If a tool can't answer these cleanly in a pilot with your real data, it won't perform in production.
+Start with real workflows, not staged scenarios. The most reliable evaluation criteria are: what context the tool can actually see (repo-only vs. cross-system), how trust is built through grounding and citations, where your data goes and who can act on it, and whether the tool fits into the applications your team already uses - GitHub, Jira, Slack, your IDE. If a tool can't answer these cleanly in a pilot with your real data, it won't perform in production.
 
 ### **Can code generation assistants and context platforms work together?**
 
-Yes, and this is the direction most engineering teams are headed. Coding generation assistants like Cursor, Copilot, and Claude Code handle local editing and generation inside the IDE. A context platform like Glean provides the governed, organization-wide context layer those assistants can call via MCP from the editor. In practice, that means debugging a production issue in Cursor while pulling in related incidents, tickets, ownership, and design docs from Glean — without leaving the IDE.
+Yes, and this is the direction most engineering teams are headed. Coding generation assistants like Cursor, Copilot, and Claude Code handle local editing and generation inside the IDE. A context platform like Glean provides the governed, organization-wide context layer those assistants can call via MCP from the editor. In practice, that means debugging a production issue in Cursor while pulling in related incidents, tickets, ownership, and design docs from Glean - without leaving the IDE.
 
 ### **What is the two-layer model for engineering AI?**
 
-The two-layer model separates the engineering AI stack into a context layer that unifies code, tickets, incidents, docs, and people into one governed graph, and coding and interaction surfaces where engineers do the work — IDEs, code hosts, Jira, and Slack. The context layer feeds the coding surfaces with real, trusted information so AI suggestions are grounded in your organization's actual systems, constraints, and ownership — not just patterns the model has seen before. For example, an engineer debugging in Cursor can pull in the relevant incident history, the design doc, and the service owner from the context layer without leaving the editor. That's the two layers working together.
+The two-layer model separates the engineering AI stack into a context layer that unifies code, tickets, incidents, docs, and people into one governed graph, and coding and interaction surfaces where engineers do the work - IDEs, code hosts, Jira, and Slack. The context layer feeds the coding surfaces with real, trusted information so AI suggestions are grounded in your organization's actual systems, constraints, and ownership - not just patterns the model has seen before. For example, an engineer debugging in Cursor can pull in the relevant incident history, the design doc, and the service owner from the context layer without leaving the editor. That's the two layers working together.
 
 ### **How does Glean work with AI-powered coding assistants?**
 
@@ -290,11 +290,11 @@ Glean sits in the context layer. It connects to code hosts, work tracking, incid
 
 ### **How long does it take to set up Glean for engineering workflows?**
 
-Teams can connect their main engineering tools — GitHub, Jira, Confluence, Slack, PagerDuty, Datadog, and others — and start using search, Assistant, and agents within days. Indexing begins immediately after authentication, and the enterprise context graph builds automatically as data is processed. Most teams start with one team or workflow and scale across the organization without re-implementing permission models in every tool.
+Teams can connect their main engineering tools - GitHub, Jira, Confluence, Slack, PagerDuty, Datadog, and others - and start using search, Assistant, and agents within days. Indexing begins immediately after authentication, and the enterprise context graph builds automatically as data is processed. Most teams start with one team or workflow and scale across the organization without re-implementing permission models in every tool.
 
 ## **Start your evaluation**
 
-See how Glean's Work AI platform connects your engineering stack — [get a demo](https://www.glean.com/get-a-demo).
+See how Glean's Work AI platform connects your engineering stack - [get a demo](https://www.glean.com/get-a-demo).
 
 ‍
 

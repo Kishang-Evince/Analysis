@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/token-efficient-enterprise-ai-platform-buyers-guide"
 canonical: "https://www.glean.com/blog/token-efficient-enterprise-ai-platform-buyers-guide"
 title: "Buyer’s guide: what to look for in an enterprise AI platform for token-efficient deployment"
-description: "Julie Mills  | What to look for in an enterprise AI platform for token-efficient deployment — retrieval precision, model routing, orchestration, governance, and cost control."
+description: "Julie Mills  | What to look for in an enterprise AI platform for token-efficient deployment - retrieval precision, model routing, orchestration, governance, and cost control."
 fetched_at: "2026-09-01T13:26:54.325Z"
 ---
 Last updated Jun 30, 2026.
@@ -143,7 +143,7 @@ Look for platforms that:
 
 A large context window can’t replace poor context management. Filling a window with marginal material can hurt answer quality as well as cost: models attend less reliably to the relevant passage when it’s buried among thousands of tokens of filler. The cost and latency still surface in production.
 
-Glean treats context as something to manage, not accumulate. The system weighs what’s current, connected, permission-aware, and relevant to the task — which is why retrieval and grounding carry so much of the efficiency story. In one benchmark across roughly 175 enterprise queries, Glean’s enterprise context was preferred about 2.5x as often as off-the-shelf MCP tools, which used around 30% more tokens on average. The test held the model and harness constant and swapped only the context layer.
+Glean treats context as something to manage, not accumulate. The system weighs what’s current, connected, permission-aware, and relevant to the task - which is why retrieval and grounding carry so much of the efficiency story. In one benchmark across roughly 175 enterprise queries, Glean’s enterprise context was preferred about 2.5x as often as off-the-shelf MCP tools, which used around 30% more tokens on average. The test held the model and harness constant and swapped only the context layer.
 
 ## Look for intelligent model routing and right-sized reasoning
 
@@ -160,7 +160,7 @@ Questions to ask:
 
 Right-sized routing is one of the most direct ways to reduce AI inference cost: simpler work runs on cheaper models instead of paying frontier prices for every step. The payoff isn’t only lower AI token cost, though. Latency and throughput improve too, because simple work no longer waits behind oversized reasoning paths.
 
-This is also where the slickest demo can hide an inefficient architecture — one premium model, one oversized context, every task. A more mature platform often spends less because it knows which steps don’t need a frontier model.
+This is also where the slickest demo can hide an inefficient architecture - one premium model, one oversized context, every task. A more mature platform often spends less because it knows which steps don’t need a frontier model.
 
 Glean’s Model Hub gives admins access to 15+ leading models across Amazon Bedrock, Google Vertex AI, and Azure OpenAI through a single universal key, and the agent builder supports per-step model selection so each stage of a workflow can run on the right tier. Glean Search already routes simpler retrieval to lightweight models and reserves deeper reasoning for complex, multi-source queries. For roughly [70% of Glean Assistant interactions](https://futurumgroup.com/insights/glean-doubles-arr-to-200m-can-its-knowledge-graph-beat-copilot/), the platform auto-selects the model based on task context. Admins maintain governance over which model families are available and how they’re used. For a deeper dive into routing mechanics, see [how Glean approaches token routing](https://www.glean.com/perspectives/optimizing-token-consumption-why-routing-matters-more-than-cost).
 
@@ -202,7 +202,7 @@ Look for the ability to inspect:
 
 Uncontrolled usage often leads to uncontrolled spend. When every workflow can retrieve broadly, call the same expensive model, and run without measurement, a platform that looked fine in a pilot gets hard to manage later.
 
-Glean ties efficiency to groundedness, permissions, and evaluation. Its agent observability and evals give you step-by-step insight into agent behavior — where tokens accumulate, which model tier handled each step, and what evidence the answer used. Those are the inputs you need to judge whether the system is improving outcomes per token over time.
+Glean ties efficiency to groundedness, permissions, and evaluation. Its agent observability and evals give you step-by-step insight into agent behavior - where tokens accumulate, which model tier handled each step, and what evidence the answer used. Those are the inputs you need to judge whether the system is improving outcomes per token over time.
 
 ## Watch for these red flags during evaluation
 
@@ -241,7 +241,7 @@ Token efficiency is ultimately a question of enterprise AI architecture. Buyers 
 
 Glean already runs at enterprise scale: [Booking.com](https://www.glean.com/resources/customer-stories/booking-com) adopted it company-wide across roughly 14,000 employees, and [Zillow](https://www.glean.com/resources/customer-stories/zillow) uses it to connect people, projects, and knowledge across the organization. Glean starts from grounded, permission-aware company context and carries that discipline through retrieval, reasoning, and execution, so answer quality and efficiency improve together instead of trading off.
 
-See how Glean improves answer quality and token efficiency through better retrieval and intelligent routing — [explore the platform](https://www.glean.com/product/overview).
+See how Glean improves answer quality and token efficiency through better retrieval and intelligent routing - [explore the platform](https://www.glean.com/product/overview).
 
 ## Frequently asked questions
 
@@ -261,7 +261,7 @@ Not on their own. Larger windows add capacity, but capacity isn’t efficiency: 
 
 Yes. The context layer that decides what reaches the model also determines who is allowed to see what. A platform that selects context well enforces user permissions before data reaches the model, so an answer never draws on sources the requester isn’t cleared to access. Weak context management raises efficiency and exposure risk together.
 
-### Who should own token-efficiency evaluation — IT, the AI platform team, or procurement?
+### Who should own token-efficiency evaluation - IT, the AI platform team, or procurement?
 
 Usually the AI platform or architecture team leads, with IT and procurement involved. The platform team tests retrieval, routing, and orchestration under realistic workflows; IT weighs security, permissions, and governance; procurement frames the decision around cost per outcome rather than model sticker price. Token efficiency cuts across all three, so single-owner evaluations tend to miss either the technical picture or the cost one.
 

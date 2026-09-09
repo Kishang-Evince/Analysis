@@ -13,7 +13,7 @@ On this page
 
 Glean now supports browser notifications for Glean Assistant responses in Chat. When a user receives a reply in Chat and the Glean tab isn’t in focus, a notification will appear, allowing the user to click and jump directly back into the exact thread. This feature helps users stay engaged with long-running queries and ensures they never miss a response.
 
-**How to access:** Notifications require the user to opt in twice—once in Glean and once in their browser and the user must also enable browser notifications at the OS level on Mac or Windows. The user can turn off notifications at any time via the Preferences tab in their settings page.
+**How to access:** Notifications require the user to opt in twice-once in Glean and once in their browser and the user must also enable browser notifications at the OS level on Mac or Windows. The user can turn off notifications at any time via the Preferences tab in their settings page.
 
 [Learn more](https://docs.google.com/document/d/1LlZijhsBfJ_KpOq9lrf3KU_XuhOSxfi1RDzi1C9eJrc/edit?tab=t.0)
 
@@ -23,7 +23,7 @@ Assistant *FR-4198*
 
 #### Easily access Glean Assistant directly in the Glean Desktop App[​](#easily-access-glean-assistant-directly-in-the-glean-desktop-app "Direct link to Easily access Glean Assistant directly in the Glean Desktop App")
 
-Glean Desktop App now offers a chat-first experience, making it easier to access Glean Assistant directly from your desktop. Use quick chat to open a dedicated window and attach screenshots to your chat conversations, streamlining research and collaboration. These enhancements help you find information, summarize content, and interact with your company’s knowledge base more efficiently—right from your desktop.
+Glean Desktop App now offers a chat-first experience, making it easier to access Glean Assistant directly from your desktop. Use quick chat to open a dedicated window and attach screenshots to your chat conversations, streamlining research and collaboration. These enhancements help you find information, summarize content, and interact with your company’s knowledge base more efficiently-right from your desktop.
 
 [Learn more](/user-guide/apps/chat-first-experience)
 

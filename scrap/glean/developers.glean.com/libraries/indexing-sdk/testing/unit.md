@@ -55,7 +55,7 @@ Use the async runner:
 import pytestfrom glean.indexing.testing import StaticAsyncStreamingDataClient, run_connector_async@pytest.mark.asyncioasync def test_async_connector():    result = await run_connector_async(        MyAsyncConnector("myds", StaticAsyncStreamingDataClient(fixtures))    )    result.assert_documents_posted(count=10)
 ```
 
-Calling `run_connector()` on an async connector from inside a running event loop raises a `RuntimeError` telling you to use `run_connector_async` — rather than the confusing `asyncio.run() cannot be called from a running event loop` you'd otherwise get.
+Calling `run_connector()` on an async connector from inside a running event loop raises a `RuntimeError` telling you to use `run_connector_async` - rather than the confusing `asyncio.run() cannot be called from a running event loop` you'd otherwise get.
 
 ## Testing modes and options[​](#testing-modes-and-options "Direct link to Testing modes and options")
 
@@ -71,7 +71,7 @@ When you need to interleave calls or inspect state between them, use the context
 from glean.indexing.testing import mock_glean_clientwith mock_glean_client() as client:    connector.configure_datasource()    connector.index_data(mode=IndexingMode.INCREMENTAL)    client.assert_datasource_configured(name="myds")    client.assert_documents_posted(count=2)
 ```
 
-The yielded client is a facade over a `MagicMock(spec=Glean)`, so the whole generated client surface is reachable — and typos fail loudly rather than silently passing:
+The yielded client is a facade over a `MagicMock(spec=Glean)`, so the whole generated client surface is reachable - and typos fail loudly rather than silently passing:
 
 ```
 client.indexing.documents.bulk_index.assert_called_once()   # real methodclient.indexing.documents.bluk_index                        # AttributeError
@@ -95,7 +95,7 @@ pytest -p no:socket tests/unit
 
 -   `transform()` output: field mapping, timestamp conversion, MIME types.
 -   Edge cases in source data: missing optional fields, empty strings, unicode.
--   Permission mapping — see [Permissions](/libraries/indexing-sdk/permissions).
+-   Permission mapping - see [Permissions](/libraries/indexing-sdk/permissions).
 -   Empty result sets, and that a single malformed record doesn't abort the batch.
 
 What you *can't* test here is whether your assumptions about the source's real responses are correct. That's [Phase 2](/libraries/indexing-sdk/testing/integration).

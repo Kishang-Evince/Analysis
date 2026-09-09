@@ -70,7 +70,7 @@ The client trims the final page so exactly 250 records are yielded, then stops r
 
 ## Non-standard pagination[​](#non-standard-pagination "Direct link to Non-standard pagination")
 
-If your source does something else — a page number, a timestamp watermark, a `has_more` boolean — override `get_source_data()` and drive `self.http` yourself:
+If your source does something else - a page number, a timestamp watermark, a `has_more` boolean - override `get_source_data()` and drive `self.http` yourself:
 
 ```
 class ArticleDataClient(BasePullHttpStreamingDataClient[Article]):    def get_source_data(self, **kwargs):        page = 1        while True:            response = self.http.get(self.path, params={"page": page, "per_page": 100})            body = response.json_dict()            yield from body["items"]            if not body.get("has_more"):                return            page += 1
@@ -80,4 +80,4 @@ You keep retries, backoff, rate limiting, and redaction from `PullHttpClient`; y
 
 danger
 
-Whatever loop you write must terminate on a source that misbehaves. Bound it — by page count, by a repeated-token check, or by `max_items` — so a stuck API can't turn into an infinite crawl. On a full crawl, a loop that exits early also deletes documents as stale.
+Whatever loop you write must terminate on a source that misbehaves. Bound it - by page count, by a repeated-token check, or by `max_items` - so a stuck API can't turn into an infinite crawl. On a full crawl, a loop that exits early also deletes documents as stale.

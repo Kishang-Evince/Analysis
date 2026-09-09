@@ -107,11 +107,11 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Glean is an open platform that supports the latest open-source and commercial models, giving enterprises access to the most advanced LLMs. Glean provides the context these models need by tapping into 100+ data sources across the enterprise and building an Enterprise Graph that understands how your company works—the people, the relationships, the projects, the tasks, and the processes. As a result, we help enterprises get more done with AI—from debugging and writing to data analysis and more, all grounded in context.
+Glean is an open platform that supports the latest open-source and commercial models, giving enterprises access to the most advanced LLMs. Glean provides the context these models need by tapping into 100+ data sources across the enterprise and building an Enterprise Graph that understands how your company works-the people, the relationships, the projects, the tasks, and the processes. As a result, we help enterprises get more done with AI-from debugging and writing to data analysis and more, all grounded in context.
 
 Glean is committed to quickly supporting cutting-edge models, including Claude Sonnet 4.5, and giving users the ability to try them on real enterprise workloads. We are happy to support Sonnet 4.5 this week in our no-code agent builder, letting users pick the best model for the job from Sonnet 4.5 and 15+ models on a per-agent or per-agent-step basis. 
 
-At Glean, we evaluate models and our agentic engine on completeness, correctness, and alignment with human feedback. We then share those results so users can make informed decisions on which models to use. Our evaluations found that compared with Sonnet 4.0, Sonnet 4.5 delivers higher correctness and completeness and, more importantly, successfully tackles an additional 10% of queries with human feedback (downvoted queries), a class of queries that was out of reach for Sonnet 4.0. Sonnet 4.5 gets to the final answer with fewer iterations in planning—driving stronger performance more efficiently.
+At Glean, we evaluate models and our agentic engine on completeness, correctness, and alignment with human feedback. We then share those results so users can make informed decisions on which models to use. Our evaluations found that compared with Sonnet 4.0, Sonnet 4.5 delivers higher correctness and completeness and, more importantly, successfully tackles an additional 10% of queries with human feedback (downvoted queries), a class of queries that was out of reach for Sonnet 4.0. Sonnet 4.5 gets to the final answer with fewer iterations in planning-driving stronger performance more efficiently.
 
 ## Sonnet 4.5 tackles queries that Sonnet 4.0 just couldn’t answer
 
@@ -139,7 +139,7 @@ While we see adaptive planning being valuable for open‑ended or research quest
 
 ## How Sonnet 4.5 optimizes tool calling  
 
-In the evaluation data, we see that Sonnet 4.5 parses the user’s query and figures out the operators to use, effectively applying the right filters and parameters for tools—resulting in more accurate results with fewer tool calls. It’s also better at pinpointing the tools that measurably advance the task—either by reducing uncertainty, ruling out possible execution paths, or producing the final result.
+In the evaluation data, we see that Sonnet 4.5 parses the user’s query and figures out the operators to use, effectively applying the right filters and parameters for tools-resulting in more accurate results with fewer tool calls. It’s also better at pinpointing the tools that measurably advance the task-either by reducing uncertainty, ruling out possible execution paths, or producing the final result.
 
 We see the improvements in tool calling and adaptive planning in this query:
 
@@ -149,7 +149,7 @@ With Sonnet 4.5, this query was answered with 3 parallelized searches rather tha
 
 ## Access Sonnet 4.5 and leading open-source and commercial models in the Glean model hub
 
-Sonnet 4.5 delivers more accurate, more complete answers for enterprise AI than Sonnet 4.0—and uses enterprise tools more effectively to solve tougher questions with better efficiency. Sonnet 4.5 is coming this week to the Glean model hub alongside 15+ leading open-source and commercial models, so you can see how it works on your own enterprise agents.
+Sonnet 4.5 delivers more accurate, more complete answers for enterprise AI than Sonnet 4.0-and uses enterprise tools more effectively to solve tougher questions with better efficiency. Sonnet 4.5 is coming this week to the Glean model hub alongside 15+ leading open-source and commercial models, so you can see how it works on your own enterprise agents.
 
 If you’re not a Glean user and want to see Sonnet 4.5 at work, sign up for a free [demo](https://www.glean.com/get-a-demo) today.
 

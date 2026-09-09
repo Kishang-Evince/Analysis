@@ -47,7 +47,7 @@ Context/Jira: <span class="text-color-blue">Slack thread</span>
 
 This is my agent providing a first pass review:
 
-The updated handlers look clean and follow our current style guide. One small note — consider renaming `logEventData` to something more specific, like `logValidationError`, to improve clarity for future readers.
+The updated handlers look clean and follow our current style guide. One small note - consider renaming `logEventData` to something more specific, like `logValidationError`, to improve clarity for future readers.
 
 ## Agent workflow
 

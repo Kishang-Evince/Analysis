@@ -14,10 +14,10 @@ Connecting Google Drive requires one authorization step. Completing setup allows
 -   **Read and write tools.** Glean and Glean agents can search Drive, read and download files, and create files, docs, and sheets. Every tool runs with a user's Google authorization and Drive permissions.
 -   **Permission-aware search.** Turn on data indexing and Glean builds a search index of your Drive content. Glean mirrors Drive access controls through domain-wide delegation and enforces them at query time. Each user sees only the files they can open in Drive.
 
-1.  Connect and authorizetoday — current step
-2.  Use read and write toolstoday — current step
-3.  Indexing runs in the backgroundtoday — happens automatically
-4.  Permission-aware search switches ontomorrow — happens automatically
+1.  Connect and authorizetoday - current step
+2.  Use read and write toolstoday - current step
+3.  Indexing runs in the backgroundtoday - happens automatically
+4.  Permission-aware search switches ontomorrow - happens automatically
 
 ## Feature availability after setup[​](#feature-availability-after-setup "Direct link to Feature availability after setup")
 

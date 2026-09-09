@@ -37,7 +37,7 @@ Quiz: Measure your AI progress
 
 ### Edit without breaking flow.
 
-Select and refine text inline — just highlight any  
+Select and refine text inline - just highlight any  
 section to explain, rewrite, or summarize, all without  
 ever leaving the page.
 
@@ -93,7 +93,7 @@ Polish your writing with suggestions grounded in your company’s knowledge, not
 
 ![Summarize thumbnail](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/68871cfd23c2e3b69b46d757_Summarize%20-%20M.webp)
 
-Instantly distill long content into scannable key takeaways — so you can understand content faster and act with confidence.
+Instantly distill long content into scannable key takeaways - so you can understand content faster and act with confidence.
 
 ![Edit thumbnail](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/68871cfdc66e32973bc4e152_Edit.webp)![Purple Gradient 3](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/686f9a20b344fca339cd471a_Frame%202083934934.webp)![Yellow Gradient 1](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/686f9a215bb95053ca736097_Frame%202083936656.webp)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/688430cf1edcf2430ced8a99_Orange%20Gradient%204.webp)![Blank Gradient ](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/686f9a208951a8085e9f3e61_Frame%202083934936.webp)
 

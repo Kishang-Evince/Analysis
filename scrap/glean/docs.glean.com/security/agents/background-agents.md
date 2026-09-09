@@ -105,7 +105,7 @@ Refer to the Managing agent access article for more information on Agent Roles a
 
 -   Limit who can subscribe initially, for example, moderators or a pilot cohort.
 -   Subscriptions are required for autonomous execution and remain active across routine edits, for example, updating an input field's description or default value, minimizing disruption.
--   Certain configuration changes automatically deactivate existing subscriptions. In these cases, each subscriber must manually re-activate the agent. These changes include adding or renaming a required input field, changing the trigger type away from **Input form**, removing a user's access, turning off the schedule-enabled setting, or deactivating the agent. See [Schedule triggers — Changes that deactivate subscriptions](/agents/concepts/schedule-triggers#changes-that-deactivate-subscriptions) for the full list.
+-   Certain configuration changes automatically deactivate existing subscriptions. In these cases, each subscriber must manually re-activate the agent. These changes include adding or renaming a required input field, changing the trigger type away from **Input form**, removing a user's access, turning off the schedule-enabled setting, or deactivating the agent. See [Schedule triggers - Changes that deactivate subscriptions](/agents/concepts/schedule-triggers#changes-that-deactivate-subscriptions) for the full list.
 
 ### Observe and improve[​](#observe-and-improve "Direct link to Observe and improve")
 

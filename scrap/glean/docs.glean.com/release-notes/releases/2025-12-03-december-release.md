@@ -11,7 +11,7 @@ On this page
 
 #### Autocomplete document suggestions from within Chat[​](#autocomplete-document-suggestions-from-within-chat "Direct link to Autocomplete document suggestions from within Chat")
 
-Assistant now features real-time document autocomplete suggestions as you type in Chat. As you begin entering keywords or phrases, Glean automatically surfaces a list of relevant documents—matched by title, content, and metadata—directly below the chat composer. You can click a suggestion to insert it into your message or open the document, making it faster and easier to reference or navigate to key information without leaving the chat. This enhancement streamlines document discovery and improves productivity for users who rely on chat for everyday work. This change was be enabled Nov 20 for customers with a Chat-first Assistant experience Dec 4 for all other customers and enabled for Managed Rollout beta customers
+Assistant now features real-time document autocomplete suggestions as you type in Chat. As you begin entering keywords or phrases, Glean automatically surfaces a list of relevant documents-matched by title, content, and metadata-directly below the chat composer. You can click a suggestion to insert it into your message or open the document, making it faster and easier to reference or navigate to key information without leaving the chat. This enhancement streamlines document discovery and improves productivity for users who rely on chat for everyday work. This change was be enabled Nov 20 for customers with a Chat-first Assistant experience Dec 4 for all other customers and enabled for Managed Rollout beta customers
 
 [Learn more](/user-guide/assistant/glean-chat/search-and-autocomplete)
 
@@ -21,7 +21,7 @@ Agents *ROAD-1006-MR*
 
 #### Changes to Glean Assistant: Retiring datasource filtering and source removal[​](#changes-to-glean-assistant-retiring-datasource-filtering-and-source-removal "Direct link to Changes to Glean Assistant: Retiring datasource filtering and source removal")
 
-Glean Assistant will retire two features: the ability to filter specific sources in chat and the option to remove sources from existing Assistant responses. These features are being removed to streamline the user experience and because the latest generation of Glean Assistant, powered by advanced LLMs like GPT-5 and Claude Sonnet 4.5, now provides more accurate, context-aware answers without requiring manual source selection. With improvements in Assistant, users can simply describe what they need in natural language—including whether it should focus on or exclude a specific data source—and Assistant will automatically execute. Users can continue to filter specific sources in search. Change date: December 4, 2025 Learn more @ /release-notes/sunset/assistant
+Glean Assistant will retire two features: the ability to filter specific sources in chat and the option to remove sources from existing Assistant responses. These features are being removed to streamline the user experience and because the latest generation of Glean Assistant, powered by advanced LLMs like GPT-5 and Claude Sonnet 4.5, now provides more accurate, context-aware answers without requiring manual source selection. With improvements in Assistant, users can simply describe what they need in natural language-including whether it should focus on or exclude a specific data source-and Assistant will automatically execute. Users can continue to filter specific sources in search. Change date: December 4, 2025 Learn more @ /release-notes/sunset/assistant
 
 [Learn more](/release-notes/sunset/assistant)
 
@@ -59,7 +59,7 @@ Search *ROAD-1001*
 
 #### More streamlined user experiences in Agents[​](#more-streamlined-user-experiences-in-agents "Direct link to More streamlined user experiences in Agents")
 
-Users can enjoy more control, visibility and clarity when using Agents: Flexible scheduling: Run agents on your cadence—hourly or multiple times per week—just like recurring meetings. Note that scheduling is available for only the agents that the creators opted in to allow running on a schedule. Actionable alerts: Get email notifications when an agent run fails, including the reason and one-click actions to rerun or re-authenticate.
+Users can enjoy more control, visibility and clarity when using Agents: Flexible scheduling: Run agents on your cadence-hourly or multiple times per week-just like recurring meetings. Note that scheduling is available for only the agents that the creators opted in to allow running on a schedule. Actionable alerts: Get email notifications when an agent run fails, including the reason and one-click actions to rerun or re-authenticate.
 
 [Learn more](/agents/concepts/schedule-triggers)
 
@@ -169,7 +169,7 @@ Protect *ROAD-778*
 
 #### Sensitive findings dashboards aggregate results at a per-document level[​](#sensitive-findings-dashboards-aggregate-results-at-a-per-document-level "Direct link to Sensitive findings dashboards aggregate results at a per-document level")
 
-Glean’s sensitive findings dashboard now aggregates at the document level rather than by individual policy violation, letting administrators review all findings and actions—hide, unhide, and severity analysis—for each document in one place. Support for AWS will follow shortly Glean ID: ROAD-1021
+Glean’s sensitive findings dashboard now aggregates at the document level rather than by individual policy violation, letting administrators review all findings and actions-hide, unhide, and severity analysis-for each document in one place. Support for AWS will follow shortly Glean ID: ROAD-1021
 
 [Learn more](/administration/protect/sensitive-findings/view-policy-findings)
 

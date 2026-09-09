@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:48.587Z"
 ---
 ### Overview
 
-LSEG Workspace gives finance teams cross-asset market data, company financials, earnings estimates, and analyst research in one platform. The LSEG MCP connector in Glean lets users query that data directly, so trusted financial context is available alongside internal knowledge — without switching apps.
+LSEG Workspace gives finance teams cross-asset market data, company financials, earnings estimates, and analyst research in one platform. The LSEG MCP connector in Glean lets users query that data directly, so trusted financial context is available alongside internal knowledge - without switching apps.
 
 ### Features
 
@@ -15,7 +15,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-Finance teams get more from LSEG Workspace when it's part of a governed Glean workflow — financial results, segment performance, and market context available the moment research starts.
+Finance teams get more from LSEG Workspace when it's part of a governed Glean workflow - financial results, segment performance, and market context available the moment research starts.
 
 ## Work AI that works.
 

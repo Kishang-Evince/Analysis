@@ -11,7 +11,7 @@ The Glean crawling system retrieves and indexes content from source applications
 
 ### Crawl types
 
-Full, incremental, activity, identity, and people data crawls — what each does and when Glean runs it.
+Full, incremental, activity, identity, and people data crawls - what each does and when Glean runs it.
 
 
 

@@ -101,7 +101,7 @@ The Agent Builder supports a hybrid approach that combines natural language and 
 -   **Return to natural language**: Use the **Open panel** whenever conversational editing is faster than field configuration
 -   **Real-time updates**: Your agent's steps update immediately as you iterate through either method
 
-This unified experience lets you start with natural language and finish with precise configuration—or vice versa—without switching tools.
+This unified experience lets you start with natural language and finish with precise configuration-or vice versa-without switching tools.
 
 ### Preview[​](#preview "Direct link to Preview")
 

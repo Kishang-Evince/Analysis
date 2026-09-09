@@ -13,10 +13,10 @@ Custom Metadata requests require a Bearer token in the `Authorization` header. T
 
 When creating a token via the [indexing token creation flow](/api-info/indexing/authentication/overview), set the scope to one of:
 
--   **Global scope** — `custommetadata:global_scope`. Manages schemas and metadata for **any** group.
--   **Group-specific scope** — `custommetadata:<group_name>`. Manages the schema and metadata for the named group only.
+-   **Global scope** - `custommetadata:global_scope`. Manages schemas and metadata for **any** group.
+-   **Group-specific scope** - `custommetadata:<group_name>`. Manages the schema and metadata for the named group only.
 
-A group-scoped token can manage metadata for that group across any document in Glean — it is not tied to a particular datasource.
+A group-scoped token can manage metadata for that group across any document in Glean - it is not tied to a particular datasource.
 
 ## Choosing a scope[​](#choosing-a-scope "Direct link to Choosing a scope")
 

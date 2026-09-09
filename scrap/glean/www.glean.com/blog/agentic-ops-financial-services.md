@@ -85,13 +85,13 @@ Listen to article
 
 In the ever-evolving financial services landscape, operational efficiency and innovation are paramount. Leveraging agentic AI enables companies to achieve these by helping them transform workflows, enhance decision-making capabilities, and boost customer engagement. However, AI transformation and adopting agentic tools require companies to securely integrate the right environment to build, manage, and share agents.
 
-Glean offers a horizontal agent environment for building, deploying, orchestrating, and governing AI agents at scale, providing a secure and comprehensive environment built for every employee. It makes managing thousands of AI tools and agents easy — allowing financial institutions to embrace AI safely and efficiently across the entire enterprise. Using natural language, employees can improve daily productivity, reshape processes, and lead innovation through a well-governed AI infrastructure. As a result, financial institutions can evolve from isolated personal agents to deployments across multiple departments, significantly amplifying the impact and scale of their AI systems. 
+Glean offers a horizontal agent environment for building, deploying, orchestrating, and governing AI agents at scale, providing a secure and comprehensive environment built for every employee. It makes managing thousands of AI tools and agents easy - allowing financial institutions to embrace AI safely and efficiently across the entire enterprise. Using natural language, employees can improve daily productivity, reshape processes, and lead innovation through a well-governed AI infrastructure. As a result, financial institutions can evolve from isolated personal agents to deployments across multiple departments, significantly amplifying the impact and scale of their AI systems. 
 
 In this blog, we’ll explore some of the most effective ways financial services companies can leverage AI and agentic experiences in the modern era of work AI. 
 
 ## Meeting changing customer expectations
 
-In today's financial services market, consumers expect a better experience — complete with personalized offerings, more accurate information, and faster answers. Firms should aim to deliver elevated, in-kind experiences through AI technologies to keep up with the pace of competition and expectations. 
+In today's financial services market, consumers expect a better experience - complete with personalized offerings, more accurate information, and faster answers. Firms should aim to deliver elevated, in-kind experiences through AI technologies to keep up with the pace of competition and expectations. 
 
 AI can help institutions develop a 360-degree view of their customers by integrating data from numerous touchpoints. It enables them to efficiently deliver personalized services like tailored product recommendations and customized financial planning advice. AI-powered tools can also provide instant access to comprehensive client profiles, including transaction history, life events, and cross-product relationships. 
 
@@ -125,7 +125,7 @@ Glean enables portfolio managers to research investments thoroughly before makin
 
 ## Transformative agentic experiences
 
-Agentic AI in financial services is key to achieving operational efficiencies and transformative business impact amidst growing automation and competition. Beyond immediate improvements in fraud detection and personalized customer support, a horizontal AI environment will increasingly drive innovation on an institutional level — encouraging the adoption and democratization of new agentic solutions across the department. 
+Agentic AI in financial services is key to achieving operational efficiencies and transformative business impact amidst growing automation and competition. Beyond immediate improvements in fraud detection and personalized customer support, a horizontal AI environment will increasingly drive innovation on an institutional level - encouraging the adoption and democratization of new agentic solutions across the department. 
 
 Glean’s unified platform offers every enterprise a secure, scalable environment for AI deployment without requiring technical expertise or building from scratch. By enabling companies to build, manage, and govern AI agents right away, Glean empowers financial services firms to meet evolving customer expectations, optimize investment strategies, and manage risks more effectively right away. 
 

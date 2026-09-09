@@ -35,7 +35,7 @@ Actions *ROAD-1194*
 
 #### Update Salesforce opportunities from Glean Assistant[​](#update-salesforce-opportunities-from-glean-assistant "Direct link to Update Salesforce opportunities from Glean Assistant")
 
-Sales teams can now update Salesforce opportunities directly from Glean Assistant using natural language, without switching into the Salesforce app. When a user asks Assistant to change key opportunity fields—such as amount, stage, close date, or forecast category—Assistant identifies the correct record, collects any missing details in a structured way, and writes the updates back to Salesforce while honoring the user's permissions. Assistant then confirms the change and links to the updated opportunity so sellers can review and move on to their next task faster.
+Sales teams can now update Salesforce opportunities directly from Glean Assistant using natural language, without switching into the Salesforce app. When a user asks Assistant to change key opportunity fields-such as amount, stage, close date, or forecast category-Assistant identifies the correct record, collects any missing details in a structured way, and writes the updates back to Salesforce while honoring the user's permissions. Assistant then confirms the change and links to the updated opportunity so sellers can review and move on to their next task faster.
 
 **How to access:** Administrators must enable for your organization. To use Salesforce opportunity write actions, your organization must have the Salesforce data source connected in Glean with API access to Opportunities and related objects, using the standard Salesforce connector. In the Glean Admin console, go to **Platform → Actions** and ensure the Salesforce action pack and the Update Opportunity write action are enabled for your deployment. End users will need to authenticate their own Salesforce account in Glean when prompted, so Assistant can respect per-user Salesforce permissions for viewing and updating opportunities. Once configured, users can simply ask Glean Assistant to update an opportunity in plain language and confirm the proposed changes in chat.
 
@@ -151,7 +151,7 @@ Agents *ROAD-1445*
 
 #### Persistent permissions for tool use[​](#persistent-permissions-for-tool-use "Direct link to Persistent permissions for tool use")
 
-You can now control exactly how Glean uses your connected tools with persistent permissions. Set any action to "Always Allow," "Ask," or "Block" — and your preference sticks across every session, whether you are in Assistant, Agents, or MCP. A new Connectors pane in your settings gives you a single place to see which apps you have connected, manage authentication, and fine-tune permissions for each tool individually.
+You can now control exactly how Glean uses your connected tools with persistent permissions. Set any action to "Always Allow," "Ask," or "Block" - and your preference sticks across every session, whether you are in Assistant, Agents, or MCP. A new Connectors pane in your settings gives you a single place to see which apps you have connected, manage authentication, and fine-tune permissions for each tool individually.
 
 [Learn more](https://docs.glean.com/actions/actions-overview)
 
@@ -161,7 +161,7 @@ Agents *ROAD-1368*
 
 #### Dictation in Assistant composer[​](#dictation-in-assistant-composer "Direct link to Dictation in Assistant composer")
 
-You can now use your voice to compose messages in Glean Assistant. Dictation is back with a redesigned experience and a significantly upgraded transcription model supporting 98 languages — with high-accuracy results for dozens including English, Spanish, Chinese, and many more. Tap the microphone icon in the composer on web, desktop, or mobile, speak naturally, and your words appear as editable text. Perfect for capturing long thoughts, drafting on the go, or working in your preferred language.
+You can now use your voice to compose messages in Glean Assistant. Dictation is back with a redesigned experience and a significantly upgraded transcription model supporting 98 languages - with high-accuracy results for dozens including English, Spanish, Chinese, and many more. Tap the microphone icon in the composer on web, desktop, or mobile, speak naturally, and your words appear as editable text. Perfect for capturing long thoughts, drafting on the go, or working in your preferred language.
 
 [Learn more](https://docs.glean.com/user-guide/assistant/real-time-voice)
 
@@ -171,7 +171,7 @@ Assistant *ROAD-1456*
 
 #### Greenlist application URLs for functional buttons in HTML artifacts[​](#greenlist-application-urls-for-functional-buttons-in-html-artifacts "Direct link to Greenlist application URLs for functional buttons in HTML artifacts")
 
-Interactive artifacts can now include functional buttons that link directly to your work applications — like Google Docs, Salesforce, Jira, or any other approved application. When you generate an interactive page with action buttons, those buttons actually take you to the tool where you need to act. Non-approved applications will still be accessible after a user clicks through a confirmation modal.
+Interactive artifacts can now include functional buttons that link directly to your work applications - like Google Docs, Salesforce, Jira, or any other approved application. When you generate an interactive page with action buttons, those buttons actually take you to the tool where you need to act. Non-approved applications will still be accessible after a user clicks through a confirmation modal.
 
 This feature may be subject to usage-based pricing. Learn more in Glean's Help Center.
 

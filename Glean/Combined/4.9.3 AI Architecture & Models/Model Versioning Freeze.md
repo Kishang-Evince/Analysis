@@ -15,7 +15,7 @@
 
 **Field definition:** Option to pin specific API model releases to protect against downstream behavior shifts.  
 **Prerequisites / Licensing:** BYOK for closest approximation to pin via deployment name; Universal Key = Glean-managed upgrades.  
-**Version freeze rating (Doc-Verified):** **Weak** — no explicit freeze feature; lifecycle actively managed by Glean especially on Universal Key.  
+**Version freeze rating (Doc-Verified):** **Weak** - no explicit freeze feature; lifecycle actively managed by Glean especially on Universal Key.  
 **Confidence Level:** **Doc-Verified**  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [Model deprecation](https://docs.glean.com/administration/model-deprecation) · [Model exclusion](https://docs.glean.com/administration/model-exclusion) · [LLM key feature availability § upgrades](https://docs.glean.com/administration/llm-key-feature-availability) · [Enterprise Flex pricing](https://docs.glean.com/glean-enterprise-flex-pricing)
@@ -38,14 +38,14 @@
 
 - Flex pricing: *"Model tier for each model is subject to change."*
 - Example deprecation table includes GPT-4o → GPT-5.1, Claude 3.x → 4.x migrations with dated cutoffs.
-- Regulated clients needing frozen model behavior should use **BYOK pinned deployment** + contract notice SLA — not native Glean freeze toggle.
+- Regulated clients needing frozen model behavior should use **BYOK pinned deployment** + contract notice SLA - not native Glean freeze toggle.
 
 ### Verification steps / test case
 
 1. Screenshot current Model Hub enabled models as baseline.
 2. If BYOK: record exact deployment ID strings.
 3. Check Admin for deprecation banners.
-4. Exclude a model — confirm agent fallback model in run.
+4. Exclude a model - confirm agent fallback model in run.
 5. Request written deprecation SLA from Glean if client requires 90-day freeze.
 
 **Risk & Cost Impact:** Risk: Medium (behavior drift on Universal Key) | Cost: Migration testing hours on each deprecation wave

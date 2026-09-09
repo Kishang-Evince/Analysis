@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:42.906Z"
 ---
 ### Overview
 
-CB Insights is a predictive intelligence platform that tracks private companies, markets, and competitive shifts. Glean's integration makes CB Insights data available inside everyday research workflows — putting external market context directly in reach for the teams driving deals, strategy, and growth.
+CB Insights is a predictive intelligence platform that tracks private companies, markets, and competitive shifts. Glean's integration makes CB Insights data available inside everyday research workflows - putting external market context directly in reach for the teams driving deals, strategy, and growth.
 
 ### Features
 
@@ -20,7 +20,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-Strategy, M&A, and business development teams work faster when trusted external intelligence is part of the same context as internal docs, CRM data, and account history — one governed workflow, no context loss.
+Strategy, M&A, and business development teams work faster when trusted external intelligence is part of the same context as internal docs, CRM data, and account history - one governed workflow, no context loss.
 
 ## Work AI that works.
 

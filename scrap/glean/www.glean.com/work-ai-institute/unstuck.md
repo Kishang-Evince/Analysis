@@ -15,11 +15,11 @@ The strategy game for making AI actually work
 
 ## What is the Unstuck Game?
 
-**Unstuck** is a guided experience that helps teams reflect on how they’re leveraging AI at work — and how it can drive more value.
+**Unstuck** is a guided experience that helps teams reflect on how they’re leveraging AI at work - and how it can drive more value.
 
 Through a structured set of prompts and scenarios, Unstuck helps participants uncover where work is slowing down, where adoption is stalling, and where good intentions may be turning into innovation theater instead of real progress.
 
-It’s fast to run, easy to facilitate, and built to spark the kind of honest discussion most teams rarely make time for — but need.
+It’s fast to run, easy to facilitate, and built to spark the kind of honest discussion most teams rarely make time for - but need.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6a0b747506446e7d8e1debd8_unstuck_game.webp)
 

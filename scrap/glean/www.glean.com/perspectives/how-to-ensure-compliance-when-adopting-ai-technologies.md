@@ -65,7 +65,7 @@ Share this article:
 
 AI compliance in software engineering starts with treating AI tools the same way you treat any other system that touches sensitive data: define clear boundaries for what data flows where, enforce identity-based access controls, and build audit trails that prove your policies are working.
 
-That distinction between governance and compliance matters. Governance is the framework — the policies, roles, and decision rights that shape how your organization adopts AI. Compliance is the evidence that the framework is actually operating as intended, day after day.
+That distinction between governance and compliance matters. Governance is the framework - the policies, roles, and decision rights that shape how your organization adopts AI. Compliance is the evidence that the framework is actually operating as intended, day after day.
 
 Gartner predicts that by 2026, organizations that operationalize AI governance will experience 40% fewer AI-related compliance incidents than those relying on policy alone.
 
@@ -79,11 +79,11 @@ The security and governance requirements that matter most come down to five area
 
 The following sequence gives engineering, security, legal, and IT leaders a plan they can follow in order. Start with visibility into what AI tools are already in use, then define data rules, enforce access, govern models and vendors, control code quality, and prove compliance with logs and review.
 
-**Start with visibility.** Before you can govern AI usage, you need to know where it is happening. Shadow AI — unsanctioned tools adopted by individual developers or teams — is a governance problem before it becomes a breach problem.
+**Start with visibility.** Before you can govern AI usage, you need to know where it is happening. Shadow AI - unsanctioned tools adopted by individual developers or teams - is a governance problem before it becomes a breach problem.
 
 Inventory every AI tool in use across your organization, including browser extensions, IDE plugins, and third-party integrations embedded in CI pipelines. Map each tool to the data it can access and the workflows it touches.
 
-**Define data boundaries.** Not all data should flow into AI models. Classify your data by sensitivity — source code, customer PII, credentials, internal architecture documents — and create explicit policies for what can and cannot be sent to external AI services.
+**Define data boundaries.** Not all data should flow into AI models. Classify your data by sensitivity - source code, customer PII, credentials, internal architecture documents - and create explicit policies for what can and cannot be sent to external AI services.
 
 A practical control: block any prompt that includes environment variables or API keys from reaching a cloud-hosted model, using a gateway or proxy layer that inspects outbound requests.
 
@@ -93,15 +93,15 @@ Many point-solution AI tools fall short here because they flatten permissions by
 
 **Govern models and vendors.** Establish an approved list of AI models and vendors. Define evaluation criteria that cover data residency, model training policies (does the vendor train on your data?), and contractual commitments around data retention and deletion.
 
-Map these requirements to your existing compliance frameworks — SOC 2, ISO 27001, GDPR, HIPAA, PCI DSS, or SOX — and align them with the [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) rather than inventing a parallel governance structure.
+Map these requirements to your existing compliance frameworks - SOC 2, ISO 27001, GDPR, HIPAA, PCI DSS, or SOX - and align them with the [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) rather than inventing a parallel governance structure.
 
 **Control code quality at the SDLC level.** AI-generated code needs the same scrutiny as human-written code, and in some cases more. Require automated security scanning on every pull request, regardless of whether the code was written by a developer or suggested by an AI assistant.
 
-Add static analysis rules that flag common AI-generated weaknesses — the 38 CWE categories identified in copilot research are a good starting checklist. Pair these with [jailbreak detection](https://www.glean.com/blog/ai-safeguard-septdrop-2025) capabilities to keep AI-assisted workflows aligned with existing access controls rather than bypassing them.
+Add static analysis rules that flag common AI-generated weaknesses - the 38 CWE categories identified in copilot research are a good starting checklist. Pair these with [jailbreak detection](https://www.glean.com/blog/ai-safeguard-septdrop-2025) capabilities to keep AI-assisted workflows aligned with existing access controls rather than bypassing them.
 
 **Build audit-ready oversight.** Compliance is not a one-time checklist. It requires continuous evidence: logs of which AI tools were used, what data they accessed, what outputs they produced, and who reviewed those outputs.
 
-Design your audit trail so that it maps directly to the controls your compliance framework requires. When an auditor asks how you govern AI-generated code, you should be able to point to specific logs, review records, and policy enforcement events — not a slide deck.
+Design your audit trail so that it maps directly to the controls your compliance framework requires. When an auditor asks how you govern AI-generated code, you should be able to point to specific logs, review records, and policy enforcement events - not a slide deck.
 
 The common thread across all six steps is that compliance has to follow real workflows. Engineers use AI inside repositories, tickets, chat, docs, CI pipelines, and internal tools. Controls that exist only as written policies, disconnected from those workflows, will not hold up under audit or under pressure.
 
@@ -113,7 +113,7 @@ Cast a wide net. Code generation assistants get the most attention, but AI is al
 
 Include browser extensions, IDE plugins, CLI tools, and third-party integrations wired into CI/CD.
 
-Separate sanctioned tools from unsanctioned ones. Shadow AI — tools adopted by individual developers or teams without security review — is a governance problem that compounds silently.
+Separate sanctioned tools from unsanctioned ones. Shadow AI - tools adopted by individual developers or teams without security review - is a governance problem that compounds silently.
 
 A 2024 Salesforce survey found that more than half of generative AI users at work use unapproved tools. The financial risk is significant: IBM's 2025 Cost of a Data Breach Report found that shadow AI adds roughly [$670,000 to the average cost of a breach](https://www.ibm.com/reports/data-breach), making unsanctioned tool usage one of the most expensive governance gaps to leave unaddressed.
 
@@ -141,45 +141,45 @@ Confidential content requires approved retrieval boundaries and audit trails. Re
 
 Do not treat all code equally. Repositories connected to authentication, payment flows, or regulated workloads need tighter controls than low-risk internal utilities. A developer pasting a stack trace from a payment service into an AI tool is a different risk profile than debugging a formatting helper.
 
-Require automated detection for secrets, credentials, private keys, customer identifiers, and regulated records. Effective [sensitive content detection](https://www.glean.com/blog/sensitive-content-models-septdrop-2025) can separate genuine risk from noise at scale, reducing data exposure during AI implementation. Define redaction rules before prompting — if a team wants AI help debugging a production incident, strip unnecessary personal data and credentials first.
+Require automated detection for secrets, credentials, private keys, customer identifiers, and regulated records. Effective [sensitive content detection](https://www.glean.com/blog/sensitive-content-models-septdrop-2025) can separate genuine risk from noise at scale, reducing data exposure during AI implementation. Define redaction rules before prompting - if a team wants AI help debugging a production incident, strip unnecessary personal data and credentials first.
 
 Good policy answers simple questions fast: Can I paste this log into a model? Can this agent read production tickets?
 
-Industries with the most stringent requirements — financial services, healthcare, government — face additional constraints. Mapping your [AI compliance needs](https://www.glean.com/perspectives/top-7-industries-with-stringent-ai-compliance-needs-in-2026) back to the data classes already in your engineering systems avoids creating a disconnected AI policy that nobody follows. Glean Search enforces data classification at the retrieval layer, so answers and suggestions only draw from content the user and their role are authorized to access.
+Industries with the most stringent requirements - financial services, healthcare, government - face additional constraints. Mapping your [AI compliance needs](https://www.glean.com/perspectives/top-7-industries-with-stringent-ai-compliance-needs-in-2026) back to the data classes already in your engineering systems avoids creating a disconnected AI policy that nobody follows. Glean Search enforces data classification at the retrieval layer, so answers and suggestions only draw from content the user and their role are authorized to access.
 
 ## 3\. Enforce identity, access controls, and permission-aware retrieval
 
 Access control failures are the fastest way for an AI deployment to create a data exposure incident. Every approved AI tool in your engineering stack should sit behind the same identity and access infrastructure as your other systems.
 
-Start with SSO, strong authentication, and centralized identity management. Building a robust [identity schema](https://www.glean.com/blog/using-our-identity-schema-to-deliver-personalized-permissions-aware-results) that maps users to their permissions across every connected system is essential — if an AI tool cannot integrate with your identity provider, it should not be approved.
+Start with SSO, strong authentication, and centralized identity management. Building a robust [identity schema](https://www.glean.com/blog/using-our-identity-schema-to-deliver-personalized-permissions-aware-results) that maps users to their permissions across every connected system is essential - if an AI tool cannot integrate with your identity provider, it should not be approved.
 
 Then layer on role-based access controls. Not every developer needs the same access to repositories, internal documentation, or action-taking agents. A junior engineer working on a frontend feature should not have AI-surfaced access to production infrastructure runbooks they cannot reach directly.
 
 Apply least-privilege to both retrieval and actions. An AI system should not read from a data source or trigger a workflow unless both the user and the tool are explicitly authorized. Getting the [permissions structure](https://www.glean.com/blog/secure-generative-ai-for-the-enterprise-requires-the-right-permissions-structure) right from the start prevents the kind of access flattening that turns a productivity tool into a data exposure risk.
 
-Keep permission checks upstream of generation — filter accessible content first, then generate answers only from what the user is allowed to see. Many point-solution AI tools fall short here because they copy content into a separate knowledge layer and flatten permissions in the process.
+Keep permission checks upstream of generation - filter accessible content first, then generate answers only from what the user is allowed to see. Many point-solution AI tools fall short here because they copy content into a separate knowledge layer and flatten permissions in the process.
 
-Segment environments clearly. Development, staging, and production data should not blur together because a single AI interface can reach all three. Restrict high-risk actions — writing back to repositories, updating tickets, triggering deployments — to explicit approval flows with traceable authorization.
+Segment environments clearly. Development, staging, and production data should not blur together because a single AI interface can reach all three. Restrict high-risk actions - writing back to repositories, updating tickets, triggering deployments - to explicit approval flows with traceable authorization.
 
-A strong [AI security](https://www.glean.com/security) posture depends on getting this step right. Permission-aware retrieval is not an optional feature — it is the baseline control that keeps AI-generated answers aligned with your existing security policies.
+A strong [AI security](https://www.glean.com/security) posture depends on getting this step right. Permission-aware retrieval is not an optional feature - it is the baseline control that keeps AI-generated answers aligned with your existing security policies.
 
 Glean's Enterprise Graph enforces source-system permissions at query time, so no user gets broader visibility through AI than they already have in the systems of record.
 
 ## 4\. Govern models, vendors, retention, and allowed AI behavior
 
-Model and vendor governance is the layer most organizations skip — and the one auditors ask about first. Create an approved model policy before you roll out AI tools broadly.
+Model and vendor governance is the layer most organizations skip - and the one auditors ask about first. Create an approved model policy before you roll out AI tools broadly.
 
 Specify which model families are allowed, what tasks each is approved for, and what data classes each can process. When [integrating generative AI](https://www.glean.com/blog/cio-integrating-genai-agents) into enterprise workflows, a model approved for summarizing internal meeting notes is not automatically approved for generating code that touches customer data.
 
 Require contractual controls for every external model provider: data retention limits, training restrictions (does the vendor train on your inputs?), subprocessor disclosure, incident notification terms, and regional processing requirements. With the [EU AI Act](https://artificialintelligenceact.eu/) high-risk provisions becoming enforceable in August 2026 and penalties reaching up to €35 million or 7% of global revenue, these contractual safeguards are no longer optional for organizations operating in or serving European markets.
 
-Maintain a model register. For each approved model, record the version, provider, use case, owner, evaluation status, and known limitations. When a vendor ships a new model version, treat it like any other production dependency change — evaluate before adopting.
+Maintain a model register. For each approved model, record the version, provider, use case, owner, evaluation status, and known limitations. When a vendor ships a new model version, treat it like any other production dependency change - evaluate before adopting.
 
 Evaluate models against the tasks engineers actually perform. For software development, that means testing for secure code generation, safe dependency recommendations, configuration correctness, and resistance to unsafe shortcuts.
 
 Model behavior risks deserve as much attention as data handling risks. Hallucinated APIs, insecure default configurations, and outdated library recommendations are governance issues when engineers act on them without scrutiny.
 
-Add explicit boundaries for agents. An action-taking agent should have documented restrictions on which systems it can query, what tools it can invoke, and which actions require human approval before execution. Glean Agents, for instance, operate within defined guardrails — each agent's permissions, allowed actions, and escalation triggers are configured by administrators rather than left open-ended.
+Add explicit boundaries for agents. An action-taking agent should have documented restrictions on which systems it can query, what tools it can invoke, and which actions require human approval before execution. Glean Agents, for instance, operate within defined guardrails - each agent's permissions, allowed actions, and escalation triggers are configured by administrators rather than left open-ended.
 
 Define escalation rules for high-risk workflows. If an AI system proposes changes affecting authentication, production infrastructure, or customer-facing logic, require stronger review before those changes proceed.
 
@@ -193,7 +193,7 @@ Run the same secure development checks on AI contributions as on any other: stat
 
 Add risk-based review thresholds. A documentation update generated by AI may need a lighter process than code touching authentication, cryptography, billing logic, or infrastructure provisioning. Create explicit coding standards for AI-assisted work: no hardcoded credentials, no unvetted third-party packages, no silent error handling, no insecure defaults, and no unreviewed infrastructure changes.
 
-Require negative testing, not just happy-path coverage. AI-generated tests often look thorough while missing the failure cases that matter most in production — edge cases around null inputs, race conditions, permission boundary violations, and error propagation paths. If a generated test suite only validates the success scenario, it creates false confidence.
+Require negative testing, not just happy-path coverage. AI-generated tests often look thorough while missing the failure cases that matter most in production - edge cases around null inputs, race conditions, permission boundary violations, and error propagation paths. If a generated test suite only validates the success scenario, it creates false confidence.
 
 Preserve traceability from AI suggestion to final commit. Teams should be able to answer three questions about any significant change: Was it AI-assisted? Who reviewed it? Which automated controls ran before merge?
 
@@ -209,7 +209,7 @@ Log the events that matter: tool access, model selection, sensitive data policy 
 
 Capture enough context for investigation without creating a new data exposure problem. In some cases, storing full prompts is appropriate. In others, metadata, classification results, and policy decisions are safer and sufficient.
 
-Keep an evidence package ready before an audit starts. Include the AI tool inventory, approved use cases, model register, access policies, retention terms, review workflows, exception history, and incident response procedures. When an auditor asks how you govern AI-generated code, point to specific logs, review records, and policy enforcement events — not a slide deck.
+Keep an evidence package ready before an audit starts. Include the AI tool inventory, approved use cases, model register, access policies, retention terms, review workflows, exception history, and incident response procedures. When an auditor asks how you govern AI-generated code, point to specific logs, review records, and policy enforcement events - not a slide deck.
 
 Map AI controls to the compliance frameworks your organization already uses. Depending on your industry, that may include SOC 2, ISO 27001, GDPR, HIPAA, PCI DSS, SOX, or internal secure development standards. The goal is to extend existing controls to cover AI, not to build a parallel governance structure.
 
@@ -231,11 +231,11 @@ The essentials are identity-based access control, permission-aware retrieval, le
 
 ### How can organizations maintain compliance when adopting AI technologies?
 
-Start by inventorying every AI tool and use case, then define data handling rules, approve models and vendors, enforce access controls, and build review plus logging into day-to-day workflows. Compliance becomes real when policy translates into technical enforcement and audit evidence — not just an acceptable use document.
+Start by inventorying every AI tool and use case, then define data handling rules, approve models and vendors, enforce access controls, and build review plus logging into day-to-day workflows. Compliance becomes real when policy translates into technical enforcement and audit evidence - not just an acceptable use document.
 
 ### What governance frameworks should be established for AI in software development?
 
-A workable framework includes a cross-functional review body, an approved model register, change management for model updates, exception handling, secure SDLC policies for AI-assisted work, and clear ownership for each AI workflow. It should map back to existing enterprise standards — SOC 2, ISO 27001, GDPR, HIPAA — so teams do not build a separate AI program that conflicts with security and privacy governance already in place.
+A workable framework includes a cross-functional review body, an approved model register, change management for model updates, exception handling, secure SDLC policies for AI-assisted work, and clear ownership for each AI workflow. It should map back to existing enterprise standards - SOC 2, ISO 27001, GDPR, HIPAA - so teams do not build a separate AI program that conflicts with security and privacy governance already in place.
 
 ### What risks are associated with AI tools in software engineering?
 
@@ -245,7 +245,7 @@ The biggest risks are source code exposure, secret leakage, insecure generated c
 
 Keep a human accountable for every merge, require pull request review, run automated security and quality checks in CI, and preserve traceability from AI assistance to final commit. Oversight works best when it is built into the same tools and workflows engineers already use, so secure behavior becomes the default rather than a separate manual step.
 
-AI compliance is not a one-time project. It is an operating discipline that evolves alongside your tools, models, and workflows. The organizations that get this right treat governance as a continuous practice — with clear ownership, enforceable controls, and evidence that holds up under scrutiny.
+AI compliance is not a one-time project. It is an operating discipline that evolves alongside your tools, models, and workflows. The organizations that get this right treat governance as a continuous practice - with clear ownership, enforceable controls, and evidence that holds up under scrutiny.
 
 [Request a demo to explore how Glean and AI can transform your workplace.](https://www.glean.com/get-a-demo)
 

@@ -83,7 +83,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Today, Glean is launching universal knowledge capabilities that combine internal company data and external world data. These capabilities provide access to information from over 100 enterprise applications, LLM-trained data, and now real-time web information—all on the same Work AI platform. 
+Today, Glean is launching universal knowledge capabilities that combine internal company data and external world data. These capabilities provide access to information from over 100 enterprise applications, LLM-trained data, and now real-time web information-all on the same Work AI platform. 
 
 Universal knowledge enables you to derive value from a wider variety of sources by infusing data, regardless of where it’s from, with critical work-related context and analysis. The immediate access to a broader source of knowledge enables you to arrive at the correct answers more consistently, quickly, and confidently.
 
@@ -116,7 +116,7 @@ Universal knowledge can also be applied in situations that require a little more
 
 ## Unifying the complete universe of knowledge for work
 
-As most workers experience today, data in isolation—particularly from external sources like the web—is just data. It’s difficult to identify, understand, analyze, and apply to enterprise workflows. By bringing internal company knowledge and external world knowledge together through its universal knowledge capabilities, Glean enables workers to instantly discover and apply the most relevant information for their day-to-day work through a single Work AI platform. 
+As most workers experience today, data in isolation-particularly from external sources like the web-is just data. It’s difficult to identify, understand, analyze, and apply to enterprise workflows. By bringing internal company knowledge and external world knowledge together through its universal knowledge capabilities, Glean enables workers to instantly discover and apply the most relevant information for their day-to-day work through a single Work AI platform. 
 
 Want to discover more about how universal knowledge capabilities enable Glean to deliver the market’s most comprehensive work AI platform? Watch the [Glean Live: Winter ‘25 launch event](https://www.glean.com/glean-live)! If you’re looking to discover more about how to transform your business with actionable insights provided by the market’s most comprehensive Work AI platform, sign up for a Glean [demo](https://www.glean.com/get-a-demo) today! 
 

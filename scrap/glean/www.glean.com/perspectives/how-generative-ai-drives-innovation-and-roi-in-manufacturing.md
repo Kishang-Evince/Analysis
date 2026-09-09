@@ -2,7 +2,7 @@
 url: "https://www.glean.com/perspectives/how-generative-ai-drives-innovation-and-roi-in-manufacturing"
 canonical: "https://www.glean.com/perspectives/how-generative-ai-drives-innovation-and-roi-in-manufacturing"
 title: "How generative AI drives innovation and ROI in manufacturing"
-description: "The Glean Team | How generative AI drives innovation and ROI in manufacturing through automated design, predictive maintenance, quality control—3.7x proven returns."
+description: "The Glean Team | How generative AI drives innovation and ROI in manufacturing through automated design, predictive maintenance, quality control-3.7x proven returns."
 fetched_at: "2026-09-01T13:27:47.627Z"
 ---
 Last updated Dec 14, 2025.
@@ -63,7 +63,7 @@ Share this article:
 
 # How generative AI drives innovation and ROI in manufacturing
 
-Manufacturing executives are discovering that [generative AI](https://www.glean.com/blog/enterprise-genai-guide-2024) delivers value far beyond traditional automation metrics. The technology transforms not just production efficiency but entire business models — from product design to customer relationships.
+Manufacturing executives are discovering that [generative AI](https://www.glean.com/blog/enterprise-genai-guide-2024) delivers value far beyond traditional automation metrics. The technology transforms not just production efficiency but entire business models - from product design to customer relationships.
 
 While early AI implementations focused on cost reduction and productivity gains, today's generative AI applications create competitive advantages through innovation and market responsiveness. Workers using generative AI save an average of [5.4%](https://www.stlouisfed.org/on-the-economy/2025/feb/impact-generative-ai-work-productivity) of their work hours, contributing to a 1.1% increase in aggregate productivity. This translates to substantial economic value when scaled across manufacturing operations where labor constitutes significant costs. Manufacturers report 200-400% ROI from AI implementations, with 78% of executives already seeing measurable returns from their generative AI investments.
 
@@ -73,7 +73,7 @@ The shift from experimental pilots to enterprise-wide deployment marks a critica
 
 ## What is generative AI in manufacturing?
 
-Generative AI in manufacturing represents a fundamental shift in how factories design products, optimize processes, and create value across the enterprise. Unlike traditional AI that analyzes existing data to make predictions, generative AI creates new designs, solutions, and insights — transforming manufacturing from a reactive to a proactive discipline.
+Generative AI in manufacturing represents a fundamental shift in how factories design products, optimize processes, and create value across the enterprise. Unlike traditional AI that analyzes existing data to make predictions, generative AI creates new designs, solutions, and insights - transforming manufacturing from a reactive to a proactive discipline.
 
 At its core, generative AI leverages advanced algorithms and large language models to generate novel outputs based on training data and specified parameters. In manufacturing contexts, this means AI systems that can autonomously design components optimized for weight and strength, create production schedules that balance multiple constraints, or generate maintenance procedures tailored to specific equipment configurations. The technology extends beyond simple automation: it augments human creativity and decision-making across the entire value chain.
 
@@ -85,7 +85,7 @@ The practical applications of generative AI span every aspect of modern manufact
 
 Modern manufacturing AI deployments rely on sophisticated technology ecosystems that integrate multiple components. Industrial IoT sensors provide real-time data streams from equipment and production lines. Edge computing platforms process this data locally, enabling split-second decisions without cloud latency. Cloud-based [AI platforms](https://www.glean.com/blog/glean-platform-build-custom-generative-ai-solutions-for-work) handle complex model training and cross-facility optimization.
 
-The emergence of [AI agents](https://www.glean.com/blog/ai-agents-enterprise) — specialized models that can independently plan, reason, and perform tasks — marks the next evolution in manufacturing AI. These agents coordinate across departments, managing everything from inventory optimization to customer service responses. Manufacturing executives report that 56% of their organizations actively use AI agents, with 37% deploying more than ten across various functions.
+The emergence of [AI agents](https://www.glean.com/blog/ai-agents-enterprise) - specialized models that can independently plan, reason, and perform tasks - marks the next evolution in manufacturing AI. These agents coordinate across departments, managing everything from inventory optimization to customer service responses. Manufacturing executives report that 56% of their organizations actively use AI agents, with 37% deploying more than ten across various functions.
 
 This technological foundation enables manufacturers to move beyond incremental improvements to transformative changes in how they operate, compete, and deliver value to customers.
 

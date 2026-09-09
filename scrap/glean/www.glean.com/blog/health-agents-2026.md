@@ -93,7 +93,7 @@ Listen to article
 
 Modern infrastructure teams don’t usually lack data. They lack a clear, shared judgment.
 
-At Glean, we ran into a recurring problem: we support hundreds of isolated customer deployments, and as we scaled, it became increasingly difficult to manually monitor system health across critical infrastructure components and deployments. At the same time, signals for internal service health were spread across many disparate sources — dashboards, logs, tickets, alerts, and chat threads — making it impossible to quickly get an accurate top-level view of deployment health for a given customer. This gap was especially painful for customer-facing GTM teams, who needed a reliable summary of customer health but did not have deep expertise in each underlying engineering system.
+At Glean, we ran into a recurring problem: we support hundreds of isolated customer deployments, and as we scaled, it became increasingly difficult to manually monitor system health across critical infrastructure components and deployments. At the same time, signals for internal service health were spread across many disparate sources - dashboards, logs, tickets, alerts, and chat threads - making it impossible to quickly get an accurate top-level view of deployment health for a given customer. This gap was especially painful for customer-facing GTM teams, who needed a reliable summary of customer health but did not have deep expertise in each underlying engineering system.
 
 So, we built the Health Agents platform on top of [Glean Agents](https://www.glean.com/product/ai-agents): a system of proactive, dedicated agents that continuously monitor key infrastructure domains across all deployments, turning messy signals into clear health judgments and explanations.
 

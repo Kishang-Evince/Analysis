@@ -2,7 +2,7 @@
 url: "https://docs.glean.com/user-guide/assistant/query-snowflake-data-in-glean-assistant"
 canonical: "https://docs.glean.com/user-guide/assistant/query-snowflake-data-in-glean-assistant"
 title: "Query Snowflake data in Glean Assistant"
-description: "Query your Snowflake warehouse with natural language or SQL in Assistant—governed, self-serve analysis without leaving chat."
+description: "Query your Snowflake warehouse with natural language or SQL in Assistant-governed, self-serve analysis without leaving chat."
 fetched_at: "2026-09-01T13:30:39.394Z"
 ---
 On this page

@@ -27,29 +27,29 @@
 | Chat message (manual) | Auto + Workflow | In-scope |
 | Input form (`[[field]]`) | Auto + Workflow | In-scope |
 | Scheduled | Both | Admin-gated; max 10 active/user |
-| Content — Gmail | Both | **Recommended** — new email filters |
-| Content — Outlook | Both | **Recommended** — new email filters |
-| Content — Google Drive | Both | **Experimental** — new doc/sheet; hours latency |
-| Content — OneDrive | Both | **Experimental** — new/updated docs; hours latency |
-| Content — Google Calendar | Both | Recommended (if Calendar connected) |
-| Content — Outlook Calendar | Both | Experimental — before event starts |
-| Content — Notion | — | **Not documented** |
-| Content — Teams | — | **Not a trigger source** (embedded surface only) |
+| Content - Gmail | Both | **Recommended** - new email filters |
+| Content - Outlook | Both | **Recommended** - new email filters |
+| Content - Google Drive | Both | **Experimental** - new doc/sheet; hours latency |
+| Content - OneDrive | Both | **Experimental** - new/updated docs; hours latency |
+| Content - Google Calendar | Both | Recommended (if Calendar connected) |
+| Content - Outlook Calendar | Both | Experimental - before event starts |
+| Content - Notion | - | **Not documented** |
+| Content - Teams | - | **Not a trigger source** (embedded surface only) |
 | API `runs/stream` / `runs/wait` | Published agents | External invocation |
 
 ### Engineering observation (Doc-Verified)
 
-- Content triggers run in **activating user's permission context** — each user activates their own trigger instance.
+- Content triggers run in **activating user's permission context** - each user activates their own trigger instance.
 - Experimental sources: expect **~hours latency**, always under a day per docs.
 - **Notion gap** is significant for tenant stack: no content-trigger path documented; rely on manual/API/schedule for Notion-centric workflows.
 - At least one filter recommended per content trigger to avoid quota burn.
 
 ### Verification steps / test case
 
-1. Open trigger picker — confirm Gmail, Outlook, Drive, OneDrive present; Notion/Teams absent.
+1. Open trigger picker - confirm Gmail, Outlook, Drive, OneDrive present; Notion/Teams absent.
 2. Activate Gmail new-email trigger with subject filter; send test mail; measure fire latency.
-3. OneDrive new-doc trigger (experimental) — measure hours-level lag.
+3. OneDrive new-doc trigger (experimental) - measure hours-level lag.
 4. Invoke published agent via Agents API `runs/wait` with test payload.
-5. Schedule daily agent — confirm 10-active cap behavior if applicable.
+5. Schedule daily agent - confirm 10-active cap behavior if applicable.
 
 **Risk & Cost Impact:** Risk: Medium (Notion/Teams trigger gap; experimental latency) | Cost: Native / Metered on high trigger volume

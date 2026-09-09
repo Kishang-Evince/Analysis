@@ -2,7 +2,7 @@
 url: "https://www.glean.com/perspectives/what-is-ai-for-banking-service-and-compliance"
 canonical: "https://www.glean.com/perspectives/what-is-ai-for-banking-service-and-compliance"
 title: "What is AI for banking service and compliance"
-description: "The Glean Team | he growing regulatory burden leaves compliance teams performing more testing and monitoring with the same headcount — a dynamic that drives stress, burnout, and human error."
+description: "The Glean Team | he growing regulatory burden leaves compliance teams performing more testing and monitoring with the same headcount - a dynamic that drives stress, burnout, and human error."
 fetched_at: "2026-09-01T13:28:07.486Z"
 ---
 Last updated Jun 03, 2026.
@@ -63,41 +63,41 @@ Share this article:
 
 # What is AI for banking compliance?
 
-AI for banking compliance refers to the use of artificial intelligence — including machine learning, natural language processing, and generative AI tools — to automate and strengthen how banks meet regulatory obligations. Rather than replacing compliance teams, these tools handle the repetitive, data-heavy work that slows them down: scanning regulatory updates, testing controls, monitoring transactions, and keeping documentation current.
+AI for banking compliance refers to the use of artificial intelligence - including machine learning, natural language processing, and generative AI tools - to automate and strengthen how banks meet regulatory obligations. Rather than replacing compliance teams, these tools handle the repetitive, data-heavy work that slows them down: scanning regulatory updates, testing controls, monitoring transactions, and keeping documentation current.
 
-Banking compliance has grown steadily more complex. Regulations shift frequently, enforcement actions carry higher penalties, and the volume of data a single institution must monitor has outpaced what manual processes can reliably cover. The scale of this challenge is reflected in the broader market: the global [RegTech market](https://www.grandviewresearch.com/industry-analysis/regulatory-technology-market) was valued at USD 24.34 billion in 2025 and is projected to reach USD 112.10 billion by 2033, growing at a CAGR of 21.1%. The growing regulatory burden leaves compliance teams performing more testing and monitoring with the same headcount — a dynamic that drives stress, burnout, and human error.
+Banking compliance has grown steadily more complex. Regulations shift frequently, enforcement actions carry higher penalties, and the volume of data a single institution must monitor has outpaced what manual processes can reliably cover. The scale of this challenge is reflected in the broader market: the global [RegTech market](https://www.grandviewresearch.com/industry-analysis/regulatory-technology-market) was valued at USD 24.34 billion in 2025 and is projected to reach USD 112.10 billion by 2033, growing at a CAGR of 21.1%. The growing regulatory burden leaves compliance teams performing more testing and monitoring with the same headcount - a dynamic that drives stress, burnout, and human error.
 
 AI changes that equation by operating across full data populations rather than samples and flagging risks continuously rather than periodically. It also adapts to new regulatory requirements faster than teams working from static playbooks. For banks navigating [AI for banking](https://www.glean.com/industries/financial-services/banking) at scale, the question is no longer whether to adopt these tools but how to apply them effectively.
 
 ## How banks use AI for compliance today
 
-The most immediate impact is in controls testing and audit readiness. Traditionally, compliance teams pull sample-based evidence during quarterly or annual review cycles — a slow process that leaves gaps. Dedicated [finance AI agents](https://www.glean.com/blog/8-finance-ai-agents) are now automating many of these repetitive audit-prep tasks without compromising security or control.
+The most immediate impact is in controls testing and audit readiness. Traditionally, compliance teams pull sample-based evidence during quarterly or annual review cycles - a slow process that leaves gaps. Dedicated [finance AI agents](https://www.glean.com/blog/8-finance-ai-agents) are now automating many of these repetitive audit-prep tasks without compromising security or control.
 
-AI automates this by continuously assembling evidence from source systems and mapping artifacts to specific control requirements within a bank's risk and control matrices (RACMs) — identifying gaps before auditors arrive. Platforms with continuous monitoring can generate audit-ready documentation and analyze operational and transaction data, replacing periodic spot checks with continuous assurance across AML, KYC, data privacy, and information security controls.
+AI automates this by continuously assembling evidence from source systems and mapping artifacts to specific control requirements within a bank's risk and control matrices (RACMs) - identifying gaps before auditors arrive. Platforms with continuous monitoring can generate audit-ready documentation and analyze operational and transaction data, replacing periodic spot checks with continuous assurance across AML, KYC, data privacy, and information security controls.
 
 Natural language processing extends this to regulatory change management. AI can scan regulatory publications and enforcement actions, then map those changes directly to a bank's internal control inventories and policy frameworks.
 
-Where a compliance team might spend months assessing how a new rule affects existing monitoring routines, AI compresses that response cycle to days by comparing the bank's compliance management system against the updated regulation and recommending where policies or controls need adjustment. A 2023 McKinsey report on risk and compliance noted that genAI could allow risk functions to "shift left" — moving from task-oriented compliance activities to strategic risk prevention.
+Where a compliance team might spend months assessing how a new rule affects existing monitoring routines, AI compresses that response cycle to days by comparing the bank's compliance management system against the updated regulation and recommending where policies or controls need adjustment. A 2023 McKinsey report on risk and compliance noted that genAI could allow risk functions to "shift left" - moving from task-oriented compliance activities to strategic risk prevention.
 
-Transaction monitoring and customer due diligence represent another high-value area. Legacy rule-based systems generate massive volumes of false positives — alerts that compliance analysts must manually review and close. Machine learning–based transaction monitoring analyzes transactional data in real time, flagging suspicious activity for AML and sanctions programs with greater accuracy and reducing false positives by 30% or more, according to McKinsey's 2022 research on financial-crime operations.
+Transaction monitoring and customer due diligence represent another high-value area. Legacy rule-based systems generate massive volumes of false positives - alerts that compliance analysts must manually review and close. Machine learning–based transaction monitoring analyzes transactional data in real time, flagging suspicious activity for AML and sanctions programs with greater accuracy and reducing false positives by 30% or more, according to McKinsey's 2022 research on financial-crime operations.
 
-In KYC and customer due diligence, AI automates periodic reviews, updates risk ratings when customer attributes change, and accelerates onboarding. These capabilities are part of a broader trend of [enterprise AI agents](https://www.glean.com/blog/ai-agents-enterprise) orchestrating multi-step workflows — pulling customer data from source systems and cross-referencing it against updated regulatory criteria to surface only the cases that require human judgment — with full audit trails and permission-aware access to underlying records.
+In KYC and customer due diligence, AI automates periodic reviews, updates risk ratings when customer attributes change, and accelerates onboarding. These capabilities are part of a broader trend of [enterprise AI agents](https://www.glean.com/blog/ai-agents-enterprise) orchestrating multi-step workflows - pulling customer data from source systems and cross-referencing it against updated regulatory criteria to surface only the cases that require human judgment - with full audit trails and permission-aware access to underlying records.
 
 ### Understand the AI technologies powering these workflows
 
 The key AI technologies powering compliance workflows fall into distinct categories:
 
--   **Machine learning and predictive models** — Analyze historical transaction data and customer behavior patterns to detect anomalies, score credit risk, and predict default probabilities. A fraud-detection model trained on millions of transactions learns to distinguish a genuine overseas purchase from a stolen-card pattern with increasing precision.
--   **Natural language processing and generative AI** — Read, summarize, and compare regulatory documents, internal policies, and audit evidence at machine speed. Generative AI drafts suspicious-activity reports (SARs), credit memos, and audit documentation from structured and unstructured source data. Each draft still requires human review, but the starting point is grounded in actual institutional data rather than a blank template.
--   [**AI agents**](https://www.glean.com/blog/ai-agents-financial-services) **and workflow automation** — Plan, execute, and adapt multi-step compliance workflows across systems — assembling evidence and routing reviews while escalating exceptions when controls fail. Glean Agents, built on Glean's Agentic Engine, coordinate these workflows with permission-aware access to every connected system, so every step is logged in an auditable trail.
+-   **Machine learning and predictive models** - Analyze historical transaction data and customer behavior patterns to detect anomalies, score credit risk, and predict default probabilities. A fraud-detection model trained on millions of transactions learns to distinguish a genuine overseas purchase from a stolen-card pattern with increasing precision.
+-   **Natural language processing and generative AI** - Read, summarize, and compare regulatory documents, internal policies, and audit evidence at machine speed. Generative AI drafts suspicious-activity reports (SARs), credit memos, and audit documentation from structured and unstructured source data. Each draft still requires human review, but the starting point is grounded in actual institutional data rather than a blank template.
+-   [**AI agents**](https://www.glean.com/blog/ai-agents-financial-services) **and workflow automation** - Plan, execute, and adapt multi-step compliance workflows across systems - assembling evidence and routing reviews while escalating exceptions when controls fail. Glean Agents, built on Glean's Agentic Engine, coordinate these workflows with permission-aware access to every connected system, so every step is logged in an auditable trail.
 
 ## How AI improves accuracy, speed, and capacity in compliance
 
 AI adoption in compliance delivers measurable operational improvements across the specific workflows compliance officers manage every day. Across [AI in financial services](https://www.glean.com/blog/ai-in-financial-services) more broadly, these gains are reshaping how institutions allocate resources and manage risk.
 
-**More accurate alert triage.** Transaction-monitoring systems historically generate false-positive rates above 90%, according to McKinsey's 2022 research on financial-crime operations. ML-based scoring models have cut those rates by 30% or more at institutions that have deployed them (McKinsey, 2022), and more recent AI-powered platforms are demonstrating even greater improvements — with [false positive reductions of 70–80%](https://www.sanctionscanner.com/blog/ai-powered-transaction-monitoring-how-to-reduce-false-positives-by-7080-1334) according to Everest Group's 2025 benchmarking, letting investigators spend their time on alerts that represent genuine risk rather than sorting through noise.
+**More accurate alert triage.** Transaction-monitoring systems historically generate false-positive rates above 90%, according to McKinsey's 2022 research on financial-crime operations. ML-based scoring models have cut those rates by 30% or more at institutions that have deployed them (McKinsey, 2022), and more recent AI-powered platforms are demonstrating even greater improvements - with [false positive reductions of 70–80%](https://www.sanctionscanner.com/blog/ai-powered-transaction-monitoring-how-to-reduce-false-positives-by-7080-1334) according to Everest Group's 2025 benchmarking, letting investigators spend their time on alerts that represent genuine risk rather than sorting through noise.
 
-**Continuous full-population monitoring.** Traditional compliance testing relies on sampling — reviewing a fraction of transactions or controls and extrapolating. AI shifts that model to continuous monitoring across entire data populations. Every transaction, every control, every policy change gets evaluated in real time, which means gaps surface immediately instead of during the next audit cycle.
+**Continuous full-population monitoring.** Traditional compliance testing relies on sampling - reviewing a fraction of transactions or controls and extrapolating. AI shifts that model to continuous monitoring across entire data populations. Every transaction, every control, every policy change gets evaluated in real time, which means gaps surface immediately instead of during the next audit cycle.
 
 **Faster regulatory change response.** When a new rule drops from the CFPB or FinCEN, NLP models can map its requirements to your existing control inventory within days. Teams that previously spent months parsing regulatory text and updating procedures can compress that timeline dramatically.
 
@@ -111,7 +111,7 @@ Deploying AI in a regulated environment introduces risks that require deliberate
 
 ### Audit models for bias in lending and credit decisions
 
-ML models trained on historical data can inherit the biases embedded in that data. If past lending decisions disproportionately denied credit to certain demographics, a model trained on those outcomes may replicate the pattern — creating exposure under the Equal Credit Opportunity Act (ECOA) and the Fair Housing Act. Regular bias audits, diverse training sets, and explainability testing are baseline requirements, not optional extras.
+ML models trained on historical data can inherit the biases embedded in that data. If past lending decisions disproportionately denied credit to certain demographics, a model trained on those outcomes may replicate the pattern - creating exposure under the Equal Credit Opportunity Act (ECOA) and the Fair Housing Act. Regular bias audits, diverse training sets, and explainability testing are baseline requirements, not optional extras.
 
 ### Close the explainability gap
 
@@ -125,25 +125,25 @@ AI is only as reliable as the data it operates on. Unstructured documents, incon
 
 External AI tools without proper governance can expose proprietary data or customer information. Generative AI adds a specific risk: hallucination, where outputs sound plausible but contain fabricated details. In a compliance context, a hallucinated regulatory citation or invented control description could trigger examiner findings.
 
-Glean Assistant and Glean Agents address these risks through Glean's permission-aware architecture — built on the Enterprise Graph, which maps every user's access controls across connected systems — restricting AI outputs to data the requesting user is authorized to see. Every response includes cited answers that trace back to source documents, giving reviewers a clear verification path. Combined with enterprise-grade audit trails, this design keeps human-in-the-loop review practical rather than aspirational.
+Glean Assistant and Glean Agents address these risks through Glean's permission-aware architecture - built on the Enterprise Graph, which maps every user's access controls across connected systems - restricting AI outputs to data the requesting user is authorized to see. Every response includes cited answers that trace back to source documents, giving reviewers a clear verification path. Combined with enterprise-grade audit trails, this design keeps human-in-the-loop review practical rather than aspirational.
 
 ## How to govern AI responsibly in banking
 
-Effective [AI governance](https://www.glean.com/blog/data-gov-product-blog) in banking is not a one-time policy document — it is a continuous operating discipline that touches every team deploying or consuming AI outputs.
+Effective [AI governance](https://www.glean.com/blog/data-gov-product-blog) in banking is not a one-time policy document - it is a continuous operating discipline that touches every team deploying or consuming AI outputs.
 
 ### Build cross-functional oversight
 
 Start with a governance committee that includes compliance, risk management, IT, legal, and business-line leaders. No single function has the full picture.
 
-Compliance understands regulatory exposure and IT knows the data architecture. Business lines know the workflows AI will touch — without cross-functional input, governance gaps emerge at the seams.
+Compliance understands regulatory exposure and IT knows the data architecture. Business lines know the workflows AI will touch - without cross-functional input, governance gaps emerge at the seams.
 
 ### Classify and validate every use case
 
-Every AI deployment needs a risk assessment before it goes live. Classify use cases by regulatory sensitivity — a model scoring AML alerts carries higher stakes than one summarizing internal meeting notes. High-sensitivity models require more frequent validation, including stress tests for bias, accuracy drift, and explainability. Gartner's 2024 AI governance framework recommends quarterly model reviews for regulated industries, with interim monitoring triggers when data distributions shift. The U.S. Department of the Treasury reinforced this direction in its [December 2024 report on AI in financial services](https://home.treasury.gov/system/files/136/Artificial-Intelligence-in-Financial-Services.pdf), recommending coordinated federal guidance to help firms align AI deployments with existing consumer protection laws.
+Every AI deployment needs a risk assessment before it goes live. Classify use cases by regulatory sensitivity - a model scoring AML alerts carries higher stakes than one summarizing internal meeting notes. High-sensitivity models require more frequent validation, including stress tests for bias, accuracy drift, and explainability. Gartner's 2024 AI governance framework recommends quarterly model reviews for regulated industries, with interim monitoring triggers when data distributions shift. The U.S. Department of the Treasury reinforced this direction in its [December 2024 report on AI in financial services](https://home.treasury.gov/system/files/136/Artificial-Intelligence-in-Financial-Services.pdf), recommending coordinated federal guidance to help firms align AI deployments with existing consumer protection laws.
 
 ### Enforce permission-aware access
 
-In financial services, controlling who sees what is non-negotiable. AI systems must respect your institution's existing access controls — a junior analyst should not receive AI-generated summaries that include board-level risk reports they are not cleared to view. Building a secure [permissions structure](https://www.glean.com/blog/secure-generative-ai-for-the-enterprise-requires-the-right-permissions-structure) is essential for any enterprise deploying generative AI. Glean's Enterprise Graph maps every user's permissions across connected systems, so its AI outputs are filtered through those access boundaries automatically. [AI governance best practices](https://www.glean.com/perspectives/ai-governance-best-practices) reinforce that this kind of architectural enforcement is more reliable than relying on policies alone.
+In financial services, controlling who sees what is non-negotiable. AI systems must respect your institution's existing access controls - a junior analyst should not receive AI-generated summaries that include board-level risk reports they are not cleared to view. Building a secure [permissions structure](https://www.glean.com/blog/secure-generative-ai-for-the-enterprise-requires-the-right-permissions-structure) is essential for any enterprise deploying generative AI. Glean's Enterprise Graph maps every user's permissions across connected systems, so its AI outputs are filtered through those access boundaries automatically. [AI governance best practices](https://www.glean.com/perspectives/ai-governance-best-practices) reinforce that this kind of architectural enforcement is more reliable than relying on policies alone.
 
 ### Demand vendor accountability
 
@@ -159,7 +159,7 @@ Pick compliance workflows where AI delivers measurable ROI within a defined time
 
 ### Target a 90-day initial deployment
 
-Put one governed workflow into production within 90 days. That means one use case with clear ownership, documented escalation procedures, and measurable outcomes. A 90-day window forces discipline — it prevents scope creep and creates a concrete reference point for the next deployment. Leveraging [operational efficiency](https://www.glean.com/blog/agentic-ops-financial-services) gains from agentic AI can accelerate this timeline. Headcount avoidance is often the strongest ROI argument: Forrester's 2024 Total Economic Impact research on enterprise AI platforms found that organizations automating compliance workflows avoided adding 15–20% more compliance staff as regulatory volume increased.
+Put one governed workflow into production within 90 days. That means one use case with clear ownership, documented escalation procedures, and measurable outcomes. A 90-day window forces discipline - it prevents scope creep and creates a concrete reference point for the next deployment. Leveraging [operational efficiency](https://www.glean.com/blog/agentic-ops-financial-services) gains from agentic AI can accelerate this timeline. Headcount avoidance is often the strongest ROI argument: Forrester's 2024 Total Economic Impact research on enterprise AI platforms found that organizations automating compliance workflows avoided adding 15–20% more compliance staff as regulatory volume increased.
 
 ### Ground AI in your institution's data
 
@@ -167,7 +167,7 @@ The difference between a generic AI tool and one that works in your compliance p
 
 ### Build human-in-the-loop review into every workflow
 
-AI handles the heavy lifting — scanning, summarizing, drafting, flagging. Humans validate, approve, and make judgment calls. Design every workflow with explicit review gates so that no AI-generated compliance output reaches a regulator or customer without a qualified person signing off. Plan for scale from day one: broad connector coverage, enterprise-grade security, and an architecture that lets you expand to new use cases without re-platforming.
+AI handles the heavy lifting - scanning, summarizing, drafting, flagging. Humans validate, approve, and make judgment calls. Design every workflow with explicit review gates so that no AI-generated compliance output reaches a regulator or customer without a qualified person signing off. Plan for scale from day one: broad connector coverage, enterprise-grade security, and an architecture that lets you expand to new use cases without re-platforming.
 
 ## Frequently asked questions
 
@@ -177,7 +177,7 @@ AI automates data-intensive compliance tasks like transaction monitoring, regula
 
 ### What are the biggest risks of using AI in banking compliance?
 
-The primary risks are model bias in lending and credit decisions, explainability gaps that regulators may challenge, data quality issues from siloed legacy systems, and hallucination in generative AI outputs. Each requires specific mitigation — bias audits, interpretable models, data integration, and human-in-the-loop review with source citations.
+The primary risks are model bias in lending and credit decisions, explainability gaps that regulators may challenge, data quality issues from siloed legacy systems, and hallucination in generative AI outputs. Each requires specific mitigation - bias audits, interpretable models, data integration, and human-in-the-loop review with source citations.
 
 ### Can AI fully replace compliance teams at banks?
 
@@ -189,9 +189,9 @@ Look for permission-aware access controls, cited answers that trace to source do
 
 ### How long does it take to deploy AI for banking compliance?
 
-A focused deployment targeting one high-priority use case — such as transaction-monitoring optimization or regulatory change management — can reach production in 90 days. Broader rollouts across multiple compliance workflows typically take six to 12 months, depending on data readiness and governance maturity.
+A focused deployment targeting one high-priority use case - such as transaction-monitoring optimization or regulatory change management - can reach production in 90 days. Broader rollouts across multiple compliance workflows typically take six to 12 months, depending on data readiness and governance maturity.
 
-AI is already changing how banks approach compliance — shifting the work from reactive, manual processes to continuous, data-grounded monitoring that scales with regulatory complexity. If your compliance team is ready to move beyond spreadsheets and sample-based reviews, we can help. [Request a demo to explore how Glean and AI can transform your workplace.](https://www.glean.com/get-a-demo)
+AI is already changing how banks approach compliance - shifting the work from reactive, manual processes to continuous, data-grounded monitoring that scales with regulatory complexity. If your compliance team is ready to move beyond spreadsheets and sample-based reviews, we can help. [Request a demo to explore how Glean and AI can transform your workplace.](https://www.glean.com/get-a-demo)
 
 [
 

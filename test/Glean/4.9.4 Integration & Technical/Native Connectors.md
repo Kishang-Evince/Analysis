@@ -1,4 +1,4 @@
-# Field 7 — Native Connectors
+# Field 7 - Native Connectors
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Native Connectors.md](../../../Glean/Combined/4.9.4 Integration & Technical/Native Connectors.md)

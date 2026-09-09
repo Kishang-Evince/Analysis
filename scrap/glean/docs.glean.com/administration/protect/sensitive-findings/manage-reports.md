@@ -167,7 +167,7 @@ You can mix and match these entries in one list. For example, you can exclude do
 
 Broadly shared permissions like “everyone in the organization” or “anyone with the link” are not excluded from the scan when Glean evaluates the Exclusion list:
 
--   If a document is visible to **everyone in your organization**, its viewer set necessarily includes people outside the Exclusion list, so it will **not** be excluded—even if some of those viewers are also on the list.
+-   If a document is visible to **everyone in your organization**, its viewer set necessarily includes people outside the Exclusion list, so it will **not** be excluded-even if some of those viewers are also on the list.
 -   Similarly, if a document is visible to **anyone with the link** (anonymously searchable or accessible), it will not qualify for exclusion, because the Exclusion list cannot cover all possible viewers.
 
 ### Example scenario[​](#example-scenario "Direct link to Example scenario")

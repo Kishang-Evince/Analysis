@@ -7,15 +7,15 @@ fetched_at: "2026-09-01T13:23:05.446Z"
 ---
 On this page
 
-Compose a full search experience from two coordinated components: an autocomplete search box (`renderSearchBox`) and a tabbed results page (`renderSearchResults`). This approach gives you the deepest UI control — you own the page layout, Glean renders the search surfaces.
+Compose a full search experience from two coordinated components: an autocomplete search box (`renderSearchBox`) and a tabbed results page (`renderSearchResults`). This approach gives you the deepest UI control - you own the page layout, Glean renders the search surfaces.
 
-PreviewLive — your instance
+PreviewLive - your instance
 
 portal.sample.internal/search
 
 payments
 
-CPayments Service — Deploy & Rollback RunbookEngineering Wiki · Updated 2 days ago
+CPayments Service - Deploy & Rollback RunbookEngineering Wiki · Updated 2 days ago
 
 Gpayments-servicegit.internal/payments-service · 1mo ago
 
@@ -31,7 +31,7 @@ AllCGSJ
 
 C
 
-Payments Service — Deploy & Rollback RunbookPriya Natarajan · Updated 2 days ago · Engineering WikiCanary the payments service behind the feature gate, then promote once error rates hold under 0.1% for 15 minutes…
+Payments Service - Deploy & Rollback RunbookPriya Natarajan · Updated 2 days ago · Engineering WikiCanary the payments service behind the feature gate, then promote once error rates hold under 0.1% for 15 minutes…
 
 G
 
@@ -39,9 +39,9 @@ payments-serviceRepository · 42 open pull requestsOwns charge creation, refunds
 
 S
 
-#payments-oncall — canary alarm follow-upMarcus Webb · YesterdayThe alarm cleared after we rolled back — updating the runbook with the new dashboard links…
+#payments-oncall - canary alarm follow-upMarcus Webb · YesterdayThe alarm cleared after we rolled back - updating the runbook with the new dashboard links…
 
-Illustrative previewRendered with sample data — in your app, this component renders live against your organization's Glean instance. Try it live →
+Illustrative previewRendered with sample data - in your app, this component renders live against your organization's Glean instance. Try it live →
 
 ## Install the SDK[​](#install-the-sdk "Direct link to Install the SDK")
 
@@ -64,11 +64,11 @@ The Glean web app domain differs from your company's Glean backend domain (find 
 
 ## Render the search page[​](#render-the-search-page "Direct link to Render the search page")
 
-1.  Create two container elements — one for the search box, one for results — each with `position: relative`, `display: block`, and appropriate sizing.
+1.  Create two container elements - one for the search box, one for results - each with `position: relative`, `display: block`, and appropriate sizing.
 
 Sizing the search box container
 
-The search box fills its container (minus any margins from `searchBoxCustomizations`), so size the container to the box itself — around 50–90px tall — not to the dropdown. The autocomplete dropdown renders below the box and extends past the container's bounds, so make sure no ancestor clips it with `overflow: hidden`, and give the search box container a higher `z-index` than the content beneath it so the dropdown overlays that content instead of rendering behind it.
+The search box fills its container (minus any margins from `searchBoxCustomizations`), so size the container to the box itself - around 50–90px tall - not to the dropdown. The autocomplete dropdown renders below the box and extends past the container's bounds, so make sure no ancestor clips it with `overflow: hidden`, and give the search box container a higher `z-index` than the content beneath it so the dropdown overlays that content instead of rendering behind it.
 
 2.  Render both components, and connect them through their `onSearch` callbacks so a query typed in the box re-renders the results:
 
@@ -96,7 +96,7 @@ The search box accepts [`SearchBoxOptions`](/libraries/web-sdk/reference/interfa
 | `hideFiltersColumn` | Results | `boolean` | Hide the righthand filter column. |
 | `onDatasourceChange` | Results | `(datasource) => void` | Invoked when the user switches result tabs. |
 
-All components also accept the common [`Options`](/libraries/web-sdk/reference/interfaces/Options) — `backend`, `authToken`, `theme`, `themeVariant`, `locale`, and more.
+All components also accept the common [`Options`](/libraries/web-sdk/reference/interfaces/Options) - `backend`, `authToken`, `theme`, `themeVariant`, `locale`, and more.
 
 ## Theming[​](#theming "Direct link to Theming")
 

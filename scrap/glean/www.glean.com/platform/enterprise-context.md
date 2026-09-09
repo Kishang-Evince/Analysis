@@ -69,7 +69,7 @@ Glean MCP
 
 Glean makes all your other AI products better.  
   
-Glean MCP feeds governed enterprise context into Claude Code, Codex, Gemini, Cursor, Copilot, and more — so users pick whatever tool fits their work and get better results.
+Glean MCP feeds governed enterprise context into Claude Code, Codex, Gemini, Cursor, Copilot, and more - so users pick whatever tool fits their work and get better results.
 
 [
 
@@ -105,7 +105,7 @@ Director, People and Places Enablement
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6a8cedcf835180a1c1deeb46_ent_context-testimonial-Linkedin.png)
 
-Glean is the enterprise KG that empowers my company to operate at its highest potential. The rich context it creates for individuals and teams has fundamentally transformed the way we collaborate, driving clarity and efficiency in every project. With Glean, we’re not just working—we’re working smarter, making every decision faster and more confidently."
+Glean is the enterprise KG that empowers my company to operate at its highest potential. The rich context it creates for individuals and teams has fundamentally transformed the way we collaborate, driving clarity and efficiency in every project. With Glean, we’re not just working-we’re working smarter, making every decision faster and more confidently."
 
 “In my previous roles, I looked at and tried out tools that said they could handle enterprise search, both on-prem and Saas-based, but nothing worked. So, I was skeptical at first. However, Glean quickly proved that my skepticism was invalid.”
 

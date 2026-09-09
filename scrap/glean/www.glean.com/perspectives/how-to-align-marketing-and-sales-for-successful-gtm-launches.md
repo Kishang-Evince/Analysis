@@ -65,7 +65,7 @@ Share this article:
 
 Align marketing and sales for a GTM launch by giving both teams one launch goal, one message system, one view of target accounts, and one feedback loop that updates as the launch runs. Everything else follows from those four decisions.
 
-GTM launch alignment is the shared operating model that keeps marketing and sales working from the same goals, messages, accounts, timelines, and buyer signals. It turns a launch from disconnected activity into coordinated execution, so handoffs stay clean and buyers hear a consistent story — and the payoff is measurable: tightly aligned revenue teams see [24% faster three-year revenue growth](https://pipeline.zoominfo.com/sales/sales-and-marketing-alignment-statistics) and 27% faster profit growth.
+GTM launch alignment is the shared operating model that keeps marketing and sales working from the same goals, messages, accounts, timelines, and buyer signals. It turns a launch from disconnected activity into coordinated execution, so handoffs stay clean and buyers hear a consistent story - and the payoff is measurable: tightly aligned revenue teams see [24% faster three-year revenue growth](https://pipeline.zoominfo.com/sales/sales-and-marketing-alignment-statistics) and 27% faster profit growth.
 
 Alignment matters because misalignment carries a measurable cost, not an abstract one. [Mural's GTM Alignment Gap study](https://www.mural.co/blog/gtm-alignment-gap-research-study) found an "85/85 gap": 85% of teams report ongoing misalignment even as 85% express confidence in their GTM strategy.
 
@@ -126,7 +126,7 @@ Beware the recurring sync that produces no decisions. It creates the appearance 
 
 ## 6\. Instrument launch performance and fix gaps in real time
 
-Measure a launch across two layers. Outcome metrics track pipeline creation, opportunity rate, [win rate](https://pipeline.zoominfo.com/sales/sales-and-marketing-alignment-statistics), and expansion potential — the metrics where alignment shows up most, with tightly aligned teams seeing 38% higher win rates and 36% higher retention. Workflow metrics track follow-up speed, account coverage, content usage, unanswered questions, and stage conversion. Read them together, because a healthy outcome number can hide a broken workflow underneath.
+Measure a launch across two layers. Outcome metrics track pipeline creation, opportunity rate, [win rate](https://pipeline.zoominfo.com/sales/sales-and-marketing-alignment-statistics), and expansion potential - the metrics where alignment shows up most, with tightly aligned teams seeing 38% higher win rates and 36% higher retention. Workflow metrics track follow-up speed, account coverage, content usage, unanswered questions, and stage conversion. Read them together, because a healthy outcome number can hide a broken workflow underneath.
 
 Add qualitative signals to the picture. If reps keep searching for the same missing answer or ignoring a new asset, that is launch data too. Review by breakdown point rather than by channel: targeting, handoff timing, message clarity, sales readiness, and content coverage each tell a different story. Watch for patterns that expose misalignment, such as high engagement but low meeting conversion, strong early meetings but weak progression, or repeated objections that never make it into the messaging.
 

@@ -99,7 +99,7 @@ Actions *\[ROAD-1056\]*
 
 #### See contextual images in Glean Assistant responses (AWS customers)[​](#see-contextual-images-in-glean-assistant-responses-aws-customers "Direct link to See contextual images in Glean Assistant responses (AWS customers)")
 
-Glean Assistant now displays relevant images from Google Drive and SharePoint documents alongside text responses when appropriate. This enhancement helps users better understand complex information by providing visual context directly in chat answers—no extra steps required. Images are shown only when relevant to the user's query, with full permissions enforced for every user.
+Glean Assistant now displays relevant images from Google Drive and SharePoint documents alongside text responses when appropriate. This enhancement helps users better understand complex information by providing visual context directly in chat answers-no extra steps required. Images are shown only when relevant to the user's query, with full permissions enforced for every user.
 
 This was previously released for GCP customers.
 
@@ -151,7 +151,7 @@ Connectors *\[ROAD-1211\]*
 
 #### Switch models within an existing Assistant chat session[​](#switch-models-within-an-existing-assistant-chat-session "Direct link to Switch models within an existing Assistant chat session")
 
-You can now switch models mid-conversation in Glean Assistant without losing your thread. Previously, changing models would drop you into a new chat — losing your context, canvas, and conversation history. Now your session stays intact, so you can start with a faster model and upgrade to a stronger one when you need it, or experiment across models without starting over.
+You can now switch models mid-conversation in Glean Assistant without losing your thread. Previously, changing models would drop you into a new chat - losing your context, canvas, and conversation history. Now your session stays intact, so you can start with a faster model and upgrade to a stronger one when you need it, or experiment across models without starting over.
 
 [Learn more](https://docs.glean.com/get-started/golive/model-choice)
 
@@ -173,7 +173,7 @@ Assistant *\[ROAD-1318\]-MR*
 
 #### Experience real-time, hands-free voice conversation support with Glean on web, desktop, and mobile[​](#experience-real-time-hands-free-voice-conversation-support-with-glean-on-web-desktop-and-mobile "Direct link to Experience real-time, hands-free voice conversation support with Glean on web, desktop, and mobile")
 
-Experience natural, hands-free real-time voice conversations with Glean Assistant on web, desktop, and mobile. Talk to Assistant and hear it respond immediately and naturally, with low-latency, back-and-forth dialogue—just speak, and Glean responds out loud, allowing you to interrupt or steer the conversation at any time. Real-time voice unlocks new ways to brainstorm, prepare for your day, and get work done wherever you are, making Glean more accessible and productive for users on the go or at their desk.
+Experience natural, hands-free real-time voice conversations with Glean Assistant on web, desktop, and mobile. Talk to Assistant and hear it respond immediately and naturally, with low-latency, back-and-forth dialogue-just speak, and Glean responds out loud, allowing you to interrupt or steer the conversation at any time. Real-time voice unlocks new ways to brainstorm, prepare for your day, and get work done wherever you are, making Glean more accessible and productive for users on the go or at their desk.
 
 This feature is available for Glean Key customers. Admins can control the rollout of this feature to their end users from Admin console → Assistant → Realtime Voice. The default setting lets Glean manage the rollout: voice is off by default and will be turned on for users no earlier than mid-April 2026. We recommend starting with "On only for admins"; if you like it, you can turn it on for everyone in your organization at any time, or select "Off" to opt out. Your choice can be changed at any time and will not be overwritten. This feature may use credits. Learn more in Glean's Help Center.
 

@@ -82,8 +82,8 @@ The attributes on a tool span depend on the tool's export classification (see [T
 
 Glean classifies each tool into one of two export levels:
 
--   **Full export** — the tool name, description, call arguments, and call result are all included in the trace. This applies to customer-authored tools: custom action packs, custom MCP servers, and custom OpenAPI servers, along with any template-backed tool configured to allow externalization.
--   **Redacted** — the tool name is replaced with the placeholder `GLEAN_INTERNAL_TOOL`, and only the call ID and error type (when present) are retained. The tool's description, arguments, and result are omitted because they may be sensitive, proprietary, or retrieval-heavy. Glean's native built-in tools are always redacted, including Glean Search, Code Search, Employee Search, Expert Search, People Search, and Glean Document Reader. Any tool whose classification can't be resolved also fails closed to redacted.
+-   **Full export** - the tool name, description, call arguments, and call result are all included in the trace. This applies to customer-authored tools: custom action packs, custom MCP servers, and custom OpenAPI servers, along with any template-backed tool configured to allow externalization.
+-   **Redacted** - the tool name is replaced with the placeholder `GLEAN_INTERNAL_TOOL`, and only the call ID and error type (when present) are retained. The tool's description, arguments, and result are omitted because they may be sensitive, proprietary, or retrieval-heavy. Glean's native built-in tools are always redacted, including Glean Search, Code Search, Employee Search, Expert Search, People Search, and Glean Document Reader. Any tool whose classification can't be resolved also fails closed to redacted.
 
 ### LLM call spans[​](#llm-call-spans "Direct link to LLM call spans")
 

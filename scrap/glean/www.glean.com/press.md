@@ -411,7 +411,7 @@ Jun 28, 2026
 
 2026
 
-Ex-Google engineer says Larry Page, Sergey Brin and Sundar Pichai share the same trait—it’s the lesson he swears by as a $7.2 billion AI CEO
+Ex-Google engineer says Larry Page, Sergey Brin and Sundar Pichai share the same trait-it’s the lesson he swears by as a $7.2 billion AI CEO
 
 Fortune
 
@@ -723,7 +723,7 @@ May 14, 2026
 
 2026
 
-100M Conversations, In-House Models, Real-Time Agents — How Abridge Built Healthcare's AI Layer
+100M Conversations, In-House Models, Real-Time Agents - How Abridge Built Healthcare's AI Layer
 
 Latent Space
 
@@ -835,7 +835,7 @@ May 12, 2026
 
 2026
 
-Glean Wants Enterprises to Treat AI Agents Like Software—With a Full Development Lifecycle to Match
+Glean Wants Enterprises to Treat AI Agents Like Software-With a Full Development Lifecycle to Match
 
 TheLetterTwo Blog
 
@@ -1321,7 +1321,7 @@ Feb 15, 2026
 
 2026
 
-The enterprise AI land grab is on — Glean is building the layer beneath the interface
+The enterprise AI land grab is on - Glean is building the layer beneath the interface
 
 TechCrunch
 
@@ -1513,7 +1513,7 @@ Dec 10, 2025
 
 2025
 
-AI is giving workers the illusion of expertise — and quietly making them worse at their jobs
+AI is giving workers the illusion of expertise - and quietly making them worse at their jobs
 
 Business Insider
 

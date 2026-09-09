@@ -293,7 +293,7 @@ Read more
 
 Customer Story
 
-## Booking.com scales AI to 14,000 employees—and redefines work—with Glean
+## Booking.com scales AI to 14,000 employees-and redefines work-with Glean
 
 Read More
 
@@ -301,7 +301,7 @@ Read More
 
 Customer Story
 
-## Booking.com scales AI to 14,000 employees—and redefines work—with Glean
+## Booking.com scales AI to 14,000 employees-and redefines work-with Glean
 
 Read More
 

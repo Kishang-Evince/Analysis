@@ -219,52 +219,52 @@ Last updated: 8/24/2026
 
 | Model Family | Model | Input | Cache Write | Cache Read | Output |
 | --- | --- | --- | --- | --- | --- |
-| Glean | Waldo | $0.50 | — | — | $2.50 |
-| OpenAI | o1 | $15.00 | — | $7.50 | $60.00 |
-| o3 | $2.00 | — | $0.50 | $8.00 |
-| o3-mini | $1.10 | — | $0.55 | $4.40 |
-| o4-mini | $1.10 | — | $0.275 | $4.40 |
-| GPT-4o | $2.50 | — | $1.25 | $10.00 |
-| GPT-4o Mini | $0.15 | — | $0.075 | $0.60 |
-| GPT-4o Mini TTS: Text | $0.60 | — | — | — |
-| GPT-4o Mini TTS: Audio | — | — | — | $12.00 |
-| GPT-4o Transcribe | $2.50 | — | — | $10.00 |
-| Whisper | — | — | — | $0.006/min |
-| GPT 4.1 | $2.00 | — | $0.50 | $8.00 |
-| GPT 4.1 Mini | $0.40 | — | $0.10 | $1.60 |
-| GPT 4.1 Nano | $0.10 | — | $0.025 | $0.40 |
-| GPT 5 | $1.25 | — | $0.125 | $10.00 |
-| GPT 5 Mini | $0.25 | — | $0.025 | $2.00 |
-| GPT 5 Nano | $0.05 | — | $0.005 | $0.40 |
-| GPT 5.1 | $1.25 | — | $0.125 | $10.00 |
-| GPT 5.2 | $1.75 | — | $0.175 | $14.00 |
-| GPT 5.4 | $2.50 | — | $0.25 | $15.00 |
-| GPT 5.4 Mini | $0.75 | — | $0.075 | $4.50 |
-| GPT 5.5 | $5.00 | — | $0.50 | $30.00 |
+| Glean | Waldo | $0.50 | - | - | $2.50 |
+| OpenAI | o1 | $15.00 | - | $7.50 | $60.00 |
+| o3 | $2.00 | - | $0.50 | $8.00 |
+| o3-mini | $1.10 | - | $0.55 | $4.40 |
+| o4-mini | $1.10 | - | $0.275 | $4.40 |
+| GPT-4o | $2.50 | - | $1.25 | $10.00 |
+| GPT-4o Mini | $0.15 | - | $0.075 | $0.60 |
+| GPT-4o Mini TTS: Text | $0.60 | - | - | - |
+| GPT-4o Mini TTS: Audio | - | - | - | $12.00 |
+| GPT-4o Transcribe | $2.50 | - | - | $10.00 |
+| Whisper | - | - | - | $0.006/min |
+| GPT 4.1 | $2.00 | - | $0.50 | $8.00 |
+| GPT 4.1 Mini | $0.40 | - | $0.10 | $1.60 |
+| GPT 4.1 Nano | $0.10 | - | $0.025 | $0.40 |
+| GPT 5 | $1.25 | - | $0.125 | $10.00 |
+| GPT 5 Mini | $0.25 | - | $0.025 | $2.00 |
+| GPT 5 Nano | $0.05 | - | $0.005 | $0.40 |
+| GPT 5.1 | $1.25 | - | $0.125 | $10.00 |
+| GPT 5.2 | $1.75 | - | $0.175 | $14.00 |
+| GPT 5.4 | $2.50 | - | $0.25 | $15.00 |
+| GPT 5.4 Mini | $0.75 | - | $0.075 | $4.50 |
+| GPT 5.5 | $5.00 | - | $0.50 | $30.00 |
 | GPT 5.6 Sol | $5.00 | $6.25 | $0.50 | $30.00 |
 | GPT 5.6 Terra | $2.00 | $2.50 | $0.20 | $12.00 |
 | GPT 5.6 Luna | $0.20 | $0.25 | $0.02 | $1.20 |
-| GPT Image 1.5 | $8.00 | — | $2.00 | $32.00 |
-| GPT Realtime 1.5: Audio | $32.00 | — | $0.40 | $64.00 |
-| GPT Realtime 1.5: Text | $4.00 | — | $0.40 | $16.00 |
-| GPT Realtime 1.5: Image | $5.00 | — | $0.50 | — |
-| GPT Realtime 2: Audio | $32.00 | — | $0.40 | $64.00 |
-| GPT Realtime 2: Text | $4.00 | — | $0.40 | $24.00 |
-| GPT Realtime 2: Image | $5.00 | — | $0.50 | — |
-| GPT Realtime 2.1: Audio | $32.00 | — | $0.40 | $64.00 |
-| GPT Realtime 2.1: Text | $4.00 | — | $0.40 | $24.00 |
-| GPT Realtime 2.1: Image | $5.00 | — | $0.50 | — |
-| Google Gemini | Gemini 2.5 Flash | $0.30 | — | $0.03 | $2.50 |
-| Gemini 2.5 Flash Lite Preview | $0.10 | — | $0.01 | $0.40 |
-| Gemini 2.5 Flash Image | $0.30 | — | — | $0.039/img |
-| Gemini 2.5 Pro | $1.25 | — | $0.125 | $10.00 |
-| Gemini 3 Flash Preview | $0.50 | — | $0.05 | $3.00 |
-| Gemini 3 Pro Image Preview | $2.00 | — | — | $120.00 |
-| Gemini 3.1 Flash Image Preview | $0.50 | — | — | $60.00 |
-| Gemini 3.1 Pro Preview | $2.00 | — | $0.20 | $12.00 |
-| Gemini 3.5 Flash | $1.50 | — | $0.15 | $9.00 |
-| Gemini 3.6 Flash | $1.50 | — | $0.15 | $7.50 |
-| Gemini 3.7 Flash | $0.75 | — | $0.075 | $3.75 |
+| GPT Image 1.5 | $8.00 | - | $2.00 | $32.00 |
+| GPT Realtime 1.5: Audio | $32.00 | - | $0.40 | $64.00 |
+| GPT Realtime 1.5: Text | $4.00 | - | $0.40 | $16.00 |
+| GPT Realtime 1.5: Image | $5.00 | - | $0.50 | - |
+| GPT Realtime 2: Audio | $32.00 | - | $0.40 | $64.00 |
+| GPT Realtime 2: Text | $4.00 | - | $0.40 | $24.00 |
+| GPT Realtime 2: Image | $5.00 | - | $0.50 | - |
+| GPT Realtime 2.1: Audio | $32.00 | - | $0.40 | $64.00 |
+| GPT Realtime 2.1: Text | $4.00 | - | $0.40 | $24.00 |
+| GPT Realtime 2.1: Image | $5.00 | - | $0.50 | - |
+| Google Gemini | Gemini 2.5 Flash | $0.30 | - | $0.03 | $2.50 |
+| Gemini 2.5 Flash Lite Preview | $0.10 | - | $0.01 | $0.40 |
+| Gemini 2.5 Flash Image | $0.30 | - | - | $0.039/img |
+| Gemini 2.5 Pro | $1.25 | - | $0.125 | $10.00 |
+| Gemini 3 Flash Preview | $0.50 | - | $0.05 | $3.00 |
+| Gemini 3 Pro Image Preview | $2.00 | - | - | $120.00 |
+| Gemini 3.1 Flash Image Preview | $0.50 | - | - | $60.00 |
+| Gemini 3.1 Pro Preview | $2.00 | - | $0.20 | $12.00 |
+| Gemini 3.5 Flash | $1.50 | - | $0.15 | $9.00 |
+| Gemini 3.6 Flash | $1.50 | - | $0.15 | $7.50 |
+| Gemini 3.7 Flash | $0.75 | - | $0.075 | $3.75 |
 | Anthropic | Claude Haiku 4.5 | $1.00 | $1.25 | $0.10 | $5.00 |
 | Claude Opus 4.6 | $5.00 | $6.25 | $0.50 | $25.00 |
 | Claude Sonnet 4.6 | $3.00 | $3.75 | $0.30 | $15.00 |
@@ -273,10 +273,10 @@ Last updated: 8/24/2026
 | Claude Opus 5 | $5.00 | $6.25 | $0.50 | $25.00 |
 | Claude Sonnet 5 | $2.00 | $2.50 | $0.20 | $10.00 |
 | Claude Fable 5 | $10.00 | $12.50 | $1.00 | $50.00 |
-| Amazon | Nova Pro | $1.03 | — | — | $4.12 |
-| Deepgram | Nova-3 Multilingual (2 channels) | — | — | — | $0.0117/min |
-| Open | GLM 5.2 | $1.40 | — | $0.26 | $4.40 |
-| Nemotron 3 Ultra | $0.60 | — | $0.12 | $2.40 |
+| Amazon | Nova Pro | $1.03 | - | - | $4.12 |
+| Deepgram | Nova-3 Multilingual (2 channels) | - | - | - | $0.0117/min |
+| Open | GLM 5.2 | $1.40 | - | $0.26 | $4.40 |
+| Nemotron 3 Ultra | $0.60 | - | $0.12 | $2.40 |
 
 \* Glean will only charge for successful LLM calls. This includes when Glean sends a request to an AI model and that request is completed successfully.
 

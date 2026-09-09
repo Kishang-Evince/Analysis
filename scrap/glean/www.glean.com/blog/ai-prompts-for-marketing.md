@@ -85,7 +85,7 @@ Listen to article
 
 ## AI-powered marketing: 25 prompts to inspire your strategy
 
-AI is reshaping marketing, helping teams generate fresh content ideas, streamline workflows, and personalize customer experiences. [AI marketing prompts](https://www.glean.com/prompt-library?department=Marketing) are more than a trend — they are a tool for driving real results.
+AI is reshaping marketing, helping teams generate fresh content ideas, streamline workflows, and personalize customer experiences. [AI marketing prompts](https://www.glean.com/prompt-library?department=Marketing) are more than a trend - they are a tool for driving real results.
 
 By tapping into AI-driven insights, marketers can build smarter campaigns and refine messaging. The key lies in leveraging AI-generated suggestions to enhance creativity while maintaining strategic alignment.
 
@@ -856,7 +856,7 @@ clip-rule="evenodd" fill-rule="evenodd"></path>
 </div>  
 </div>
 
-Introducing [Glean's prompt library](https://www.glean.com/prompt-library) — the ultimate solution for organizations looking to harness the power of AI! From marketing to HR, finance, sales, and operations, our library provides ready-to-use prompts tailored for every department. With Glean, you can streamline workflows, boost productivity, and make smarter decisions every day.
+Introducing [Glean's prompt library](https://www.glean.com/prompt-library) - the ultimate solution for organizations looking to harness the power of AI! From marketing to HR, finance, sales, and operations, our library provides ready-to-use prompts tailored for every department. With Glean, you can streamline workflows, boost productivity, and make smarter decisions every day.
 
 [
 

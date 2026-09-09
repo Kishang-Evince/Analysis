@@ -85,7 +85,7 @@ Listen to article
 
 Support teams handle an overwhelming number of customer queries every day. When support agents can’t quickly find the information they need, response times slow down, customer frustration rises, and unresolved tickets pile up.
 
-Traditional methods — manually searching knowledge bases, navigating multiple tools, and waiting on internal teams — are time-consuming and inefficient. To stay ahead, companies need smarter solutions that empower support agents to resolve issues faster.
+Traditional methods - manually searching knowledge bases, navigating multiple tools, and waiting on internal teams - are time-consuming and inefficient. To stay ahead, companies need smarter solutions that empower support agents to resolve issues faster.
 
 ## How Glean reduces ticket backlogs
 
@@ -147,7 +147,7 @@ Pulkit Bhardwaj, Technical Support Engineer at [Confluent](https://www.glean.com
 -   **98% of employees have utilized Glean** to find crucial knowledge
 -   **$1.03M in yearly cost savings** as a result of the time saved with Glean
 
-"I love Glean so much — it's been my lifesaver! Whether I'm on a call with a client or trying to solve a complicated ticket, it’s my go-to," 
+"I love Glean so much - it's been my lifesaver! Whether I'm on a call with a client or trying to solve a complicated ticket, it’s my go-to," 
 
 Helena Daoud, Registered Investment Agent at [Wealthsimple](https://www.glean.com/resources/customer-stories/wealthsimple)
 
@@ -162,13 +162,13 @@ Steve Rouse, Technical Customer Support Specialist at [Webflow](https://www.glea
 
 ## Conclusion
 
-Support teams don’t need to work harder to keep up with ticket backlogs — they need smarter solutions that stop inefficiencies before they become problems. AI-powered search and automation don’t just speed up responses; they reduce repetitive work and give agents more time to focus on complex issues.
+Support teams don’t need to work harder to keep up with ticket backlogs - they need smarter solutions that stop inefficiencies before they become problems. AI-powered search and automation don’t just speed up responses; they reduce repetitive work and give agents more time to focus on complex issues.
 
 When agents have instant access to the right information, they resolve tickets faster. When customers can find answers on their own, they don’t have to submit a ticket at all. Together, these solutions transform support from reactive to proactive.
 
 The best support teams aren’t the ones buried in tickets. They’re the ones using AI to stay ahead of them.
 
-See how Glean helps support teams resolve tickets faster and reduce backlogs — [book a demo today](https://www.glean.com/get-a-demo)!
+See how Glean helps support teams resolve tickets faster and reduce backlogs - [book a demo today](https://www.glean.com/get-a-demo)!
 
 [
 

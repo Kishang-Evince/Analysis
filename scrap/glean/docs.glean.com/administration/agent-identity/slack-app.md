@@ -143,7 +143,7 @@ The deployment name in the manifest URLs is wrong, or the signing secret doesn't
 
 ### The agent can't see or post in a channel
 
-The app isn't a member of that channel. In Slack, invite the bot to the channel — for example, `/invite @Glean Agent Bot`.
+The app isn't a member of that channel. In Slack, invite the bot to the channel - for example, `/invite @Glean Agent Bot`.
 
 ### The Slack app template isn't available
 

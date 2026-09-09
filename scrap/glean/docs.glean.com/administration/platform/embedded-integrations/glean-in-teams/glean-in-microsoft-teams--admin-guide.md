@@ -21,10 +21,10 @@ For the new dedicated agent flow, see [Set up Microsoft Teams service credential
 
 You need admin access to each of the following portals to complete the setup:
 
--   **[Azure portal](https://portal.azure.com/#home)** — to create the Azure Bot and configure app permissions.
--   **[Teams Developer Portal](https://dev.teams.microsoft.com/home)** — to create and configure the Glean app package.
--   **[Teams Admin Center](https://admin.teams.microsoft.com)** — to publish the app and manage deployment to users.
--   **[Glean Admin Console](https://app.glean.com)** — to complete the integration by entering the credentials collected during setup.
+-   **[Azure portal](https://portal.azure.com/#home)** - to create the Azure Bot and configure app permissions.
+-   **[Teams Developer Portal](https://dev.teams.microsoft.com/home)** - to create and configure the Glean app package.
+-   **[Teams Admin Center](https://admin.teams.microsoft.com)** - to publish the app and manage deployment to users.
+-   **[Glean Admin Console](https://app.glean.com)** - to complete the integration by entering the credentials collected during setup.
 
 ## Setup overview[​](#setup-overview "Direct link to Setup overview")
 
@@ -93,7 +93,7 @@ Integration complete
     
     note
     
-    Copy the client secret value immediately — you cannot retrieve it after navigating away. You will need this value in Phase 3.
+    Copy the client secret value immediately - you cannot retrieve it after navigating away. You will need this value in Phase 3.
     
 5.  Select **Overview** in the left navigation and copy the **Application (client) ID**. You will need this value in Phase 3.
     
@@ -172,7 +172,7 @@ Integration complete
     
     After publishing, it takes approximately 24 hours for the Glean app to appear in the Teams store.
     
-3.  Copy the **App ID** shown on the Glean app page — you will need this value in Phase 3.
+3.  Copy the **App ID** shown on the Glean app page - you will need this value in Phase 3.
     
 
 ### Manage access (optional)[​](#manage-access-optional "Direct link to Manage access (optional)")
@@ -238,7 +238,7 @@ If your deployment hasn't opted into the beta, continue adding dedicated agent a
 
 note
 
-For existing setups: if you previously configured dedicated agents using **Add Agent** on the Microsoft Teams connector page, your existing setups will continue to function. They aren't migrated automatically when the beta is enabled—migration is rolled out on a per-deployment basis. After migration completes for your deployment, existing configurations automatically appear under **Tools → Service credentials** and within the Microsoft Teams publishing flow. All new dedicated agent apps must use the service credential flow.
+For existing setups: if you previously configured dedicated agents using **Add Agent** on the Microsoft Teams connector page, your existing setups will continue to function. They aren't migrated automatically when the beta is enabled-migration is rolled out on a per-deployment basis. After migration completes for your deployment, existing configurations automatically appear under **Tools → Service credentials** and within the Microsoft Teams publishing flow. All new dedicated agent apps must use the service credential flow.
 
 ## Troubleshooting[​](#troubleshooting "Direct link to Troubleshooting")
 

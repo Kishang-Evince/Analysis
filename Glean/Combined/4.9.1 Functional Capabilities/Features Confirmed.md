@@ -76,7 +76,7 @@
   1. Open Glean Assistant; prompt: *"Summarize Stratos_Connector_Test_Sheet and cite the Google Sheet"* (or paste Sheet URL).
   2. Prompt: *"Draft a 5-row spreadsheet artifact of action items from that Sheet and related Gmail/Outlook threads."*
   3. Prompt: *"Rewrite the Google Doc into a short status email for Outlook/Gmail tone."*
-  4. Verify citations point at Drive/Gmail/Outlook/Notion — **no** CRM/warehouse tools required.
+  4. Verify citations point at Drive/Gmail/Outlook/Notion - **no** CRM/warehouse tools required.
 
 ---
 
@@ -118,10 +118,10 @@
 - **Validation Date:** September 1, 2026
 - **Source URL / Verification Link:** [https://www.glean.com/platform/security](https://www.glean.com/platform/security)
 - **Verification Steps / Test Case:**
-  1. As **User A** (owner): upload private `FY27_Exec_Compensation.xlsx` to **OneDrive or Google Drive** — **do not share**.
+  1. As **User A** (owner): upload private `FY27_Exec_Compensation.xlsx` to **OneDrive or Google Drive** - **do not share**.
   2. Wait for crawl (or confirm via live URL fetch as owner).
-  3. As **User A**, search: *"Show executive compensation details for FY27"* — expect hit.
-  4. As **User B** (Member, no share), same query — expect **zero** results / no snippet leak.
+  3. As **User A**, search: *"Show executive compensation details for FY27"* - expect hit.
+  4. As **User B** (Member, no share), same query - expect **zero** results / no snippet leak.
   5. Optional: share Drive file with User B → re-crawl/update → User B should then see hit.
 
 ---
@@ -214,7 +214,7 @@
 - **Verification Steps / Test Case:**
   1. Add Glean Remote MCP to Cursor `mcpServers`.
   2. Prompt: *"Search Glean for Stratos_Connector_Test_Doc and summarize the Google Doc."*
-  3. Verify answer cites tenant Drive/Notion — not only public web.
+  3. Verify answer cites tenant Drive/Notion - not only public web.
 
 ---
 

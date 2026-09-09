@@ -20,7 +20,7 @@ Tokens refill continuously at `rate_per_second`, up to `capacity`. Every request
 | Parameter | Meaning |
 | --- | --- |
 | `rate_per_second` | Sustained request rate. Must be greater than zero. |
-| `capacity` | Burst size — how many requests can go out back-to-back after an idle period. |
+| `capacity` | Burst size - how many requests can go out back-to-back after an idle period. |
 | `initial_tokens` | Starting tokens. Defaults to full capacity. |
 
 Setting `capacity` above `rate_per_second` allows a short burst, which is usually what you want: the crawl starts fast, then settles to the sustained rate.
@@ -35,7 +35,7 @@ That's the right pattern when a source enforces its quota per token rather than 
 
 ## Choosing a rate[​](#choosing-a-rate "Direct link to Choosing a rate")
 
-Start from the source's documented quota and leave headroom — other things use the same token. A source allowing 600 requests/minute is 10/second; running at 7–8 leaves room for retries and for whatever else is authenticating as you.
+Start from the source's documented quota and leave headroom - other things use the same token. A source allowing 600 requests/minute is 10/second; running at 7–8 leaves room for retries and for whatever else is authenticating as you.
 
 ## Timeouts[​](#timeouts "Direct link to Timeouts")
 
@@ -51,8 +51,8 @@ If capacity doesn't arrive in time, the SDK raises `RateLimitExceededError`. Wai
 
 They solve different problems and both should be on:
 
--   The **rate limiter** is proactive — it paces requests to stay under the quota.
--   **Retries** are reactive — when a 429 gets through anyway, `PullRetryOptions` backs off and tries again, honoring `Retry-After` by default.
+-   The **rate limiter** is proactive - it paces requests to stay under the quota.
+-   **Retries** are reactive - when a 429 gets through anyway, `PullRetryOptions` backs off and tries again, honoring `Retry-After` by default.
 
 ```
 super().__init__(    base_url="https://api.example.com/v2",    path="/articles",    rate_limiter=TokenBucketRateLimiter(rate_per_second=10, capacity=20),    options=PullOptions(        retries=PullRetryOptions(max_attempts=5, respect_retry_after=True),    ),)
@@ -62,7 +62,7 @@ A rising retry count is a signal your configured rate is too high. [Observabilit
 
 ## Custom limiters[​](#custom-limiters "Direct link to Custom limiters")
 
-`RateLimiter` is a `Protocol`. Anything with a matching `acquire()` works — a distributed limiter backed by Redis, for instance, when several connector instances share one quota:
+`RateLimiter` is a `Protocol`. Anything with a matching `acquire()` works - a distributed limiter backed by Redis, for instance, when several connector instances share one quota:
 
 ```
 class RedisRateLimiter:    def acquire(self, tokens: float = 1.0, timeout_seconds: float | None = None) -> None:        ...  # raise RateLimitExceededError if capacity doesn't arrive in time

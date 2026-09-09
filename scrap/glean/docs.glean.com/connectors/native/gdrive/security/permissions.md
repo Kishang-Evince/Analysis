@@ -18,7 +18,7 @@ If a particular Google document (document, spreadsheet, slide, etc) is set to "G
 
 Important
 
-The **Searchable → Can find in search results** setting also affects agents and Glean Assistant in Slack. When an agent is published to a Slack channel with the `Visible to everyone` option — or when Glean Assistant uses [public mode](/administration/platform/embedded-integrations/slackbot/admin-guide/enable-public-mode) — only documents with **Can find in search results** enabled appear in responses. Documents set to `Must have link to access` aren't discoverable, even if shared to the company domain.
+The **Searchable → Can find in search results** setting also affects agents and Glean Assistant in Slack. When an agent is published to a Slack channel with the `Visible to everyone` option - or when Glean Assistant uses [public mode](/administration/platform/embedded-integrations/slackbot/admin-guide/enable-public-mode) - only documents with **Can find in search results** enabled appear in responses. Documents set to `Must have link to access` aren't discoverable, even if shared to the company domain.
 
 ![Can find in search results setting](/img/connectors/native/gdrive/security/how-does-glean-enforce-permissions-for-google-drive-files-2.png)
 

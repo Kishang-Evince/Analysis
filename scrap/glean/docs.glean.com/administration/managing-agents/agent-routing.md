@@ -69,7 +69,7 @@ Example requests:
 -   “How do I reset my password?”
 -   “How do I request a new laptop?”
 -   “My mouse isn’t working.”
--   “I can’t log in to the benefits portal — my MFA code is invalid.”
+-   “I can’t log in to the benefits portal - my MFA code is invalid.”
 -   “Outlook isn’t showing company holidays.”
 -   “Please grant me access to Zoom Pro and Figma.”
 -   “VPN keeps disconnecting when I’m on hotel Wi‑Fi.”

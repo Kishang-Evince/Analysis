@@ -81,7 +81,7 @@ Moveworks draws a useful line between three levels of capability:
 -   Autonomous AI pursues a single goal within one domain.
 -   Agentic AI breaks a goal into steps and adapts as conditions change.
 
-The distinction matters because most enterprises now run 10 or more SaaS tools — the average company used [106 SaaS applications](https://www.bettercloud.com/monitor/saas-statistics/) in 2024. Knowledge workers lose hours each week to manual handoffs and context switching between them.
+The distinction matters because most enterprises now run 10 or more SaaS tools - the average company used [106 SaaS applications](https://www.bettercloud.com/monitor/saas-statistics/) in 2024. Knowledge workers lose hours each week to manual handoffs and context switching between them.
 
 According to Gartner (August 2025), [40% of enterprise applications](https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025) will embed task-specific AI agents by 2026, up from less than 5% in 2025. That shift turns agents into standard infrastructure and raises the bar for any [enterprise AI platform](https://www.glean.com/enterprise-ai-software) you evaluate.
 

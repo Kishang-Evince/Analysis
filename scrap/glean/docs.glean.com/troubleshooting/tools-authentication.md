@@ -40,7 +40,7 @@ When setting up tools, admins choose between two authentication methods:
 
 ### Central[​](#central "Direct link to Central")
 
-The **Central** option uses a Glean-managed OAuth app. This is the fastest way to get started — no additional configuration is needed in the source system. Token refresh is handled automatically.
+The **Central** option uses a Glean-managed OAuth app. This is the fastest way to get started - no additional configuration is needed in the source system. Token refresh is handled automatically.
 
 Use Central when:
 
@@ -84,7 +84,7 @@ If a teammate's tools authorization needs to be reset:
 
 -   The first time Jira tools are used at your organization, a **Jira site admin must authorize the OAuth app for your Atlassian site**. Until this is done, other teammates will see authorization errors when they try to connect.
 -   If you manage multiple Jira sites, create a **separate tools per site** so each can be bound to its own connector instance.
--   This applies to both Cloud and Service Management — Jira Data Center (on-premises) isn't supported for tools.
+-   This applies to both Cloud and Service Management - Jira Data Center (on-premises) isn't supported for tools.
 
 For setup details, see [Jira tools setup](/administration/tools/setup-tools/jira-tools-setup).
 
@@ -119,11 +119,11 @@ For setup details, see [Zendesk tools setup](/administration/tools/setup-tools/z
 
 | Situation | Who to contact |
 | --- | --- |
-| You're prompted to reconnect and clicking **Connect** resolves it | No action needed — this is normal after a token expires |
-| You're prompted to reconnect every time you run the tool | Your admin — the tool's OAuth configuration or the source system's token policy may need adjustment |
-| Clicking **Connect** fails or doesn't show an authorization screen | Your admin — the OAuth app may be misconfigured or require site-level approval |
+| You're prompted to reconnect and clicking **Connect** resolves it | No action needed - this is normal after a token expires |
+| You're prompted to reconnect every time you run the tool | Your admin - the tool's OAuth configuration or the source system's token policy may need adjustment |
+| Clicking **Connect** fails or doesn't show an authorization screen | Your admin - the OAuth app may be misconfigured or require site-level approval |
 | Assistant writes out instructions or a query instead of running the action, and no **Connect** prompt appears | No admin action needed. Switch to **Thinking** mode (connected-app actions don't load in Fast or Adaptive-on-the-fast-path). See [Assistant returns instructions instead of running an action](#assistant-returns-instructions-instead-of-running-an-action) |
-| Multiple teammates across your organization are affected at the same time | Glean Support — this may indicate a platform-level issue |
+| Multiple teammates across your organization are affected at the same time | Glean Support - this may indicate a platform-level issue |
 
 ## See also[​](#see-also "Direct link to See also")
 

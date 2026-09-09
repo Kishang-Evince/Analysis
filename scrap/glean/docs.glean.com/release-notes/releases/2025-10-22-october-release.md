@@ -11,7 +11,7 @@ On this page
 
 #### Create agents using natural language from within the Agent Builder[​](#create-agents-using-natural-language-from-within-the-agent-builder "Direct link to Create agents using natural language from within the Agent Builder")
 
-Chat is now built into Agent Builder. Create agents through a multi-turn conversation—describe your goal in plain English and let AI draft it—then switch to node-level editing for precision or blend both without losing context. The unified workspace adapts to your style, helping you iterate faster, get better results from advanced reasoning, and avoid choosing between “easy” and “powerful.” Start in natural language, take manual control where it matters, and scale from simplicity to power-user depth on demand.
+Chat is now built into Agent Builder. Create agents through a multi-turn conversation-describe your goal in plain English and let AI draft it-then switch to node-level editing for precision or blend both without losing context. The unified workspace adapts to your style, helping you iterate faster, get better results from advanced reasoning, and avoid choosing between “easy” and “powerful.” Start in natural language, take manual control where it matters, and scale from simplicity to power-user depth on demand.
 
 **How to access:** Administrators must enable for your organization.
 
@@ -23,14 +23,14 @@ Agents *FR-4201*
 
 #### Incorporating adaptive planning into Glean Agents plan & execute steps[​](#incorporating-adaptive-planning-into-glean-agents-plan--execute-steps "Direct link to Incorporating adaptive planning into Glean Agents plan & execute steps")
 
-Glean Agents now thinks before it acts: Instead of giving you one answer and calling it done, Glean Agents plan & execute steps now work more like you do—it thinks through problems step by step, makes a plan, works through the plan, and adjusts when something doesn't work all in service of accomplishing the objective at hand.
+Glean Agents now thinks before it acts: Instead of giving you one answer and calling it done, Glean Agents plan & execute steps now work more like you do-it thinks through problems step by step, makes a plan, works through the plan, and adjusts when something doesn't work all in service of accomplishing the objective at hand.
 
 -   Smarter problem-solving: The agent breaks down complex requests into smaller steps and tackles them one at a time
 -   Course correction: If the first approach doesn't work, it tries a different strategy instead of giving up
 -   Asks for help: When unclear about what you need, it asks clarifying questions rather than guessing
 -   Control level of effort: You can control whether or not plan & execute optimizes for speed or depth in its decision making
 
-Your agent can now handle bigger, more complex tasks that require multiple steps or decisions along the way and anchor more on the objective you want it to accomplish—like analyzing data across different systems, building comprehensive reports, or research projects that need information from various sources.
+Your agent can now handle bigger, more complex tasks that require multiple steps or decisions along the way and anchor more on the objective you want it to accomplish-like analyzing data across different systems, building comprehensive reports, or research projects that need information from various sources.
 
 **How to access:** Administrators must enable for your organization.
 
@@ -96,7 +96,7 @@ Agents *FR-4009*
 
 #### Support Agentic Engine 2 on Claude Sonnet 4.5[​](#support-agentic-engine-2-on-claude-sonnet-45 "Direct link to Support Agentic Engine 2 on Claude Sonnet 4.5")
 
-Glean Assistant now supports the Agentic Engine 2 on Claude Sonnet 4.5. This enhancement brings advanced agentic reasoning capabilities—such as multi-step planning, tool orchestration, and stateful workflows—to customers using Anthropic models. Users can expect higher-quality responses to complex, multi-step queries, improved accuracy, and more efficient cross-tool workflows when leveraging Claude in Glean Assistant.
+Glean Assistant now supports the Agentic Engine 2 on Claude Sonnet 4.5. This enhancement brings advanced agentic reasoning capabilities-such as multi-step planning, tool orchestration, and stateful workflows-to customers using Anthropic models. Users can expect higher-quality responses to complex, multi-step queries, improved accuracy, and more efficient cross-tool workflows when leveraging Claude in Glean Assistant.
 
 [Learn more](/administration/llms)
 
@@ -116,7 +116,7 @@ Assistant *FR-4086*
 
 #### Simpplr Connector (AWS Version)[​](#simpplr-connector-aws-version "Direct link to Simpplr Connector (AWS Version)")
 
-Glean now offers an all-new Simpplr connector built specifically for Simpplr’s AWS platform. As Simpplr transitions all customers from Salesforce to AWS, this connector ensures your organization can seamlessly index and search core Simpplr content—Pages, Sites, and Events—within Glean. The connector honors granular Simpplr permissions, supports efficient incremental crawls, and delivers a streamlined intranet search experience throughout and after your Simpplr platform migration.
+Glean now offers an all-new Simpplr connector built specifically for Simpplr’s AWS platform. As Simpplr transitions all customers from Salesforce to AWS, this connector ensures your organization can seamlessly index and search core Simpplr content-Pages, Sites, and Events-within Glean. The connector honors granular Simpplr permissions, supports efficient incremental crawls, and delivers a streamlined intranet search experience throughout and after your Simpplr platform migration.
 
 [Learn more](/connectors/native/simpplr/)
 

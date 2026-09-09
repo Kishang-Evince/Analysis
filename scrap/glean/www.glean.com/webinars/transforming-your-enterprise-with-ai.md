@@ -23,7 +23,7 @@ Learn practical steps to drive a successful AI adoption, avoid common pitfalls, 
 
 ## Overview
 
-AI is everywhere—but is it delivering value? Leading analysts forecast AI and GenAI investments in Asia/Pacific to reach USD175B by 2028, yet many firms still struggle to translate investment into measurable outcomes. This session will address a range of real-world use cases for AI and how to ensure you get the desired outcomes from your AI implementation. You’ll walk away with practical steps to drive a successful AI adoption, avoid common pitfalls, and deploy enterprise AI solutions that deliver real business value.  
+AI is everywhere-but is it delivering value? Leading analysts forecast AI and GenAI investments in Asia/Pacific to reach USD175B by 2028, yet many firms still struggle to translate investment into measurable outcomes. This session will address a range of real-world use cases for AI and how to ensure you get the desired outcomes from your AI implementation. You’ll walk away with practical steps to drive a successful AI adoption, avoid common pitfalls, and deploy enterprise AI solutions that deliver real business value.  
 
 **Watch this on-demand webinar to understand:**
 

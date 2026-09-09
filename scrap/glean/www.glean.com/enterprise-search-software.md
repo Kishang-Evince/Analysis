@@ -79,7 +79,7 @@ Glean enforces real-time indexing and respects existing permissions, so users on
 
 ![Glean security Graphic ](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/67975d24912f3e0b96e17d1a_Frame%202083935134.webp)
 
-[![Whitepaper — State of AI Thumbnail](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/679759eb9a1e4d5618feb3e3_Whitepaper%20%E2%80%94%20State%20of%20AI%20Thumbnail.webp)
+[![Whitepaper - State of AI Thumbnail](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/679759eb9a1e4d5618feb3e3_Whitepaper%20%E2%80%94%20State%20of%20AI%20Thumbnail.webp)
 
 ## Explore the current landscape and future trends of AI adoption in enterprises
 
@@ -125,7 +125,7 @@ It cuts down on the time spent searching through documents, conversations, or an
 
 How does Glean make search faster?
 
-Glean's AI understands your query's context — your role, projects, and tools — and instantly delivers the most relevant results. You'll find what you need in seconds with proactive recommendations and intuitive filters.
+Glean's AI understands your query's context - your role, projects, and tools - and instantly delivers the most relevant results. You'll find what you need in seconds with proactive recommendations and intuitive filters.
 
 What tools does Glean integrate with?
 
@@ -137,7 +137,7 @@ Glean delivers concise document summaries, key takeaways from meetings, and proa
 
 What makes Glean different from other enterprise search tools?
 
-Glean doesn’t just search for information — it understands your team’s context, surfaces proactive recommendations, and connects knowledge across silos. Its intuitive design makes it easy for teams to adopt and love.
+Glean doesn’t just search for information - it understands your team’s context, surfaces proactive recommendations, and connects knowledge across silos. Its intuitive design makes it easy for teams to adopt and love.
 
 ## See how Glean’s enterprise search software works
 

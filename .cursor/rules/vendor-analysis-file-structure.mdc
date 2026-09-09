@@ -1,5 +1,5 @@
 ---
-description: Rule for organizing Tier 3 vendor analysis eval logs and test guides — one folder per SOW section, one file per field
+description: Rule for organizing Tier 3 vendor analysis eval logs and test guides - one folder per SOW section, one file per field
 globs: Glean/Combined/**/*.md,test/**/*.md
 alwaysApply: false
 ---
@@ -8,14 +8,14 @@ alwaysApply: false
 
 When generating or revising evaluation content for SOW sections (e.g. `4.9.1`, `4.9.2`, etc.):
 
-- **Eval logs (researched documents):** `Glean/Combined/4.9.<N> <Section Name>/<Field Name>.md` — one folder per SOW section, one file per field.
+- **Eval logs (researched documents):** `Glean/Combined/4.9.<N> <Section Name>/<Field Name>.md` - one folder per SOW section, one file per field.
   - Example: `Glean/Combined/4.9.1 Functional Capabilities/Features Confirmed.md`, `Glean/Combined/4.9.1 Functional Capabilities/Features Not Confirmed.md`
-  - No dash between `4.9.<N>` and the section name in the folder; no `Field N` prefix or version suffix (`-2.0`, etc.) in the filename — use git history for versioning.
+  - No dash between `4.9.<N>` and the section name in the folder; no `Field N` prefix or version suffix (`-2.0`, etc.) in the filename - use git history for versioning.
   - Each section folder gets an `Overview.md` carrying the shared header (Category, Vendor, Evaluator, Visibility Tier, Evaluation Date, Overall Section Status, tenant test stack, companion runbook link) plus a list linking every field file in the folder.
-  - `Glean/` root (outside `Combined/`) is for raw/loose research inputs only (`Glean/<vendor>/cloude/` sources, sitemaps, source docx exports) — never place a finalized per-field eval doc there.
-- **Test guides:** `test/Glean/4.9.<N> <Section Name>/<Field Name>.md` — same folder-per-section, file-per-field pattern, filenames matching the paired eval-log field names 1:1.
+  - `Glean/` root (outside `Combined/`) is for raw/loose research inputs only (`Glean/<vendor>/cloude/` sources, sitemaps, source docx exports) - never place a finalized per-field eval doc there.
+- **Test guides:** `test/Glean/4.9.<N> <Section Name>/<Field Name>.md` - same folder-per-section, file-per-field pattern, filenames matching the paired eval-log field names 1:1.
   - Example: `test/Glean/4.9.1 Functional Capabilities/Features Confirmed.md`, `test/Glean/4.9.1 Functional Capabilities/Features Not Confirmed.md`
   - Each section folder gets a `Pre-Flight.md` carrying shared setup (purpose, tenant entry, identities, content pack) plus any cross-field reference material (schedule, evidence mapping, cheat sheet, safety rules).
-- **Deep-dive / re-verified research (V2):** a deeper re-verification pass on a field lives in a `V2/` subfolder inside that section folder, filename matching the original field name exactly — e.g. `Glean/Combined/4.9.1 Functional Capabilities/V2/Features Confirmed.md` and `test/Glean/4.9.1 Functional Capabilities/V2/Features Confirmed.md`. The base field file links to it via "**Deep dive (V2):**"; the V2 file links back to the base field file. Do one field's V2 pass, get it verified, before starting the next field's V2 pass.
+- **Deep-dive / re-verified research (V2):** a deeper re-verification pass on a field lives in a `V2/` subfolder inside that section folder, filename matching the original field name exactly - e.g. `Glean/Combined/4.9.1 Functional Capabilities/V2/Features Confirmed.md` and `test/Glean/4.9.1 Functional Capabilities/V2/Features Confirmed.md`. The base field file links to it via "**Deep dive (V2):**"; the V2 file links back to the base field file. Do one field's V2 pass, get it verified, before starting the next field's V2 pass.
 - **Cross-linking:** every field file links to its folder's `Overview.md`/`Pre-Flight.md` and to its paired file on the other side (eval ↔ test guide).
 - Sourcing rule (`vendor-analysis-web-sourcing.mdc`) still applies inside every one of these files.

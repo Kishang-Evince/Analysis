@@ -92,7 +92,7 @@ Admins can configure real-time voice settings in the **Admin console**. For setu
 
 ### Can I create documents from a voice conversation?
 
-Yes. You can ask Glean to create a document artifact during a voice session. The document appears live in the Canvas and is saved to your Library when the session ends. Only document artifacts are supported from voice at this time — slides, HTML, and other visual artifact types must be created from text chat.
+Yes. You can ask Glean to create a document artifact during a voice session. The document appears live in the Canvas and is saved to your Library when the session ends. Only document artifacts are supported from voice at this time - slides, HTML, and other visual artifact types must be created from text chat.
 
 ### Why don't I see the voice button?
 

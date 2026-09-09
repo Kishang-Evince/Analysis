@@ -9,7 +9,7 @@ On this page
 
 Build custom agents using Glean's REST APIs with our official client libraries. This approach gives you full control over the agent logic while leveraging Glean's search and chat capabilities.
 
-The examples below retrieve documents via `glean.search.query()` — the **Platform API**'s data-first retrieval method (`glean.search`, not `glean.client.search`), which is what document retrieval for an agent's own context actually needs: plain results and pagination, no UI-shaped facets. It's **Experimental** as of its 2026-07 launch, so set `X_GLEAN_INCLUDE_EXPERIMENTAL=true` or every retrieval call fails. Chat and summarization below still use the Client API (`glean.client.*`) — that surface isn't changing here.
+The examples below retrieve documents via `glean.search.query()` - the **Platform API**'s data-first retrieval method (`glean.search`, not `glean.client.search`), which is what document retrieval for an agent's own context actually needs: plain results and pagination, no UI-shaped facets. It's **Experimental** as of its 2026-07 launch, so set `X_GLEAN_INCLUDE_EXPERIMENTAL=true` or every retrieval call fails. Chat and summarization below still use the Client API (`glean.client.*`) - that surface isn't changing here.
 
 ## When to Use[​](#when-to-use "Direct link to When to Use")
 

@@ -71,7 +71,7 @@ The path follows a clear sequence: reduce fragmentation, build a shared context 
 
 ## Audit your fragmented AI initiatives before scaling anything
 
-Start by inventorying every active pilot, copilot, assistant, agent, and prompt library across departments. Most enterprises find overlapping tools, duplicated spend, and several teams solving the same problem in isolation — a pattern that helps explain why roughly [95%](https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/) of generative AI pilots deliver no measurable return. A support group might run a ticket-summarizing assistant while IT tests a separate policy-lookup bot that draws on the same knowledge base.
+Start by inventorying every active pilot, copilot, assistant, agent, and prompt library across departments. Most enterprises find overlapping tools, duplicated spend, and several teams solving the same problem in isolation - a pattern that helps explain why roughly [95%](https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/) of generative AI pilots deliver no measurable return. A support group might run a ticket-summarizing assistant while IT tests a separate policy-lookup bot that draws on the same knowledge base.
 
 Group each initiative by business workflow rather than by model or vendor: onboarding, support resolution, sales prep, policy lookup, engineering knowledge access, and repetitive approvals. For every initiative, document five facts: the user, the source systems, the action it improves, its current guardrails, and its success metric. This inventory exposes where effort concentrates and where [trusted knowledge is missing](https://www.glean.com/blog/enterprise-ai-knowledge-graph).
 
@@ -87,7 +87,7 @@ Use a practical filter before you scale any system: if it cannot cite internal s
 
 ## Prioritize workflows, not demos, with a clear adoption framework
 
-Choose AI use cases by workflow pain, repeatability, and breadth of impact rather than by how well they perform in an executive demo — the discipline that separates the few companies reaching AI value [at scale](https://media-publications.bcg.com/The-Widening-AI-Value-Gap-Sept-2025.pdf). A simple prioritization matrix uses three lenses:
+Choose AI use cases by workflow pain, repeatability, and breadth of impact rather than by how well they perform in an executive demo - the discipline that separates the few companies reaching AI value [at scale](https://media-publications.bcg.com/The-Widening-AI-Value-Gap-Sept-2025.pdf). A simple prioritization matrix uses three lenses:
 
 -   **Frequency:** how often employees perform the task
 -   **Cost of delay or error:** what a slow or wrong answer actually costs

@@ -115,13 +115,13 @@ CEO
 
 No items found.
 
-[![Context is the next data platform—and why context graphs are key to understanding processes](https://cdn.prod.website-files.com/613513981b0efaf850830620/695dcde7ebbfe37d3d087fd8_ContextGraph-Blog-1-6-26%20\(1\).jpg)
+[![Context is the next data platform-and why context graphs are key to understanding processes](https://cdn.prod.website-files.com/613513981b0efaf850830620/695dcde7ebbfe37d3d087fd8_ContextGraph-Blog-1-6-26%20\(1\).jpg)
 
 January 7, 2026
 
-### Context is the next data platform—and why context graphs are key to understanding processes
+### Context is the next data platform-and why context graphs are key to understanding processes
 
-Everyone is suddenly talking about context graphs as AI’s next trillion‑dollar opportunity. At Glean, we’re excited — because it finally has a name.
+Everyone is suddenly talking about context graphs as AI’s next trillion‑dollar opportunity. At Glean, we’re excited - because it finally has a name.
 
 ![Arvind Jain](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a07483653e8ea8ef7c77930_arvind.png)
 
@@ -143,7 +143,7 @@ December 10, 2025
 
 ### Glean Autonomous Agents: Self-evaluating with the context and security you need to automate at scale
 
-For agents to deliver real value in the enterprise, they need to be able to plan, self-evaluate, and act—all of which require reliable, relevant context, and secure guardrails that enable confident scalability.
+For agents to deliver real value in the enterprise, they need to be able to plan, self-evaluate, and act-all of which require reliable, relevant context, and secure guardrails that enable confident scalability.
 
 ![Arvind Jain](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a07483653e8ea8ef7c77930_arvind.png)
 
@@ -331,7 +331,7 @@ November 19, 2024
 
 ### Agentic reasoning: The future of Work AI
 
-The future of AI in the workplace requires agentic reasoning to match growing expectations. Discover how we’re building Glean’s agentic reasoning capabilities to drive the work you do — better and faster.
+The future of AI in the workplace requires agentic reasoning to match growing expectations. Discover how we’re building Glean’s agentic reasoning capabilities to drive the work you do - better and faster.
 
 ![Arvind Jain](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a07483653e8ea8ef7c77930_arvind.png)
 
@@ -419,11 +419,11 @@ Glean + Product
 
 Enterprise Search + GenAI 101
 
-[![What sets great retrieval augmented generation apart — and why vector search isn’t enough for AI](https://cdn.prod.website-files.com/613513981b0efaf850830620/6644a08882465fd80efd1082_image6-min.webp)
+[![What sets great retrieval augmented generation apart - and why vector search isn’t enough for AI](https://cdn.prod.website-files.com/613513981b0efaf850830620/6644a08882465fd80efd1082_image6-min.webp)
 
 May 15, 2024
 
-### What sets great retrieval augmented generation apart — and why vector search isn’t enough for AI
+### What sets great retrieval augmented generation apart - and why vector search isn’t enough for AI
 
 Uncover the differences between Hybrid Search, Retrieval-Augmented Generation (RAG), and Vector Search. Learn which AI approach suits your business needs best.
 

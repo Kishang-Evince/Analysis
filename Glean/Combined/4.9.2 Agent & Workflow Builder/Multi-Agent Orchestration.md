@@ -32,16 +32,16 @@
 
 ### Engineering observation (Doc-Verified)
 
-- Orchestration respects **invoking-user permissions** — child agents cannot escalate ACL beyond parent user.
+- Orchestration respects **invoking-user permissions** - child agents cannot escalate ACL beyond parent user.
 - **10 active background agents/user** and rate limits (0.5 rps agent runs) constrain true parallel fleet behavior.
-- No documented distributed lock for conflicting writes to same Drive/OneDrive file — **Pending Sandbox** for race testing.
+- No documented distributed lock for conflicting writes to same Drive/OneDrive file - **Pending Sandbox** for race testing.
 
 ### Verification steps / test case
 
 1. Parent Auto agent delegates Gmail triage to child "draft reply" sub-agent; inspect Debug for Task-tool calls.
-2. Workflow parent with explicit Sub-agent step — compare trace structure.
-3. Run **3 parallel** Auto agents (Drive + Notion) — note queueing, timeouts, answer degradation.
-4. Optional: two agents write same Doc — observe conflict behavior.
+2. Workflow parent with explicit Sub-agent step - compare trace structure.
+3. Run **3 parallel** Auto agents (Drive + Notion) - note queueing, timeouts, answer degradation.
+4. Optional: two agents write same Doc - observe conflict behavior.
 
 **Risk & Cost Impact:** Risk: Medium (write races) | Cost: Token Metered
 

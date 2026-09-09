@@ -65,11 +65,11 @@ PMM
 
 No items found.
 
-[![Glean joins the Slack Marketplace, making it easy to get all your enterprise context in Slack—and bring your Slack data into Glean](https://cdn.prod.website-files.com/613513981b0efaf850830620/68dd2e74a5a5194615d40d70_Slack%20MarketPlace%20-%20Blog%20-%206%20\(1\).webp)
+[![Glean joins the Slack Marketplace, making it easy to get all your enterprise context in Slack-and bring your Slack data into Glean](https://cdn.prod.website-files.com/613513981b0efaf850830620/68dd2e74a5a5194615d40d70_Slack%20MarketPlace%20-%20Blog%20-%206%20\(1\).webp)
 
 October 1, 2025
 
-### Glean joins the Slack Marketplace, making it easy to get all your enterprise context in Slack—and bring your Slack data into Glean
+### Glean joins the Slack Marketplace, making it easy to get all your enterprise context in Slack-and bring your Slack data into Glean
 
 Glean is excited to be an official application in the Slack Marketplace so enterprises can access trusted, permission‑aware data right where they chat - in Slack.
 

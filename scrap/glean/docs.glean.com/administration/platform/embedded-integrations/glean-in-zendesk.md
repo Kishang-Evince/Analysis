@@ -77,7 +77,7 @@ Note: If you already have the Glean app installed in Zendesk, you should automat
     
 2.  On the installation page, you can configure the settings for your app as described below.
     
-3.  Enter the domain of your Glean backend server. Copy your full backend URL from [app.glean.com/admin/about-glean](https://app.glean.com/admin/about-glean) under **Server instance (QE)**, then enter the domain only (without the `https://` prefix) — for example, if your backend URL is `https://tenant_id-be.glean.com`, enter `tenant_id-be.glean.com`.
+3.  Enter the domain of your Glean backend server. Copy your full backend URL from [app.glean.com/admin/about-glean](https://app.glean.com/admin/about-glean) under **Server instance (QE)**, then enter the domain only (without the `https://` prefix) - for example, if your backend URL is `https://tenant_id-be.glean.com`, enter `tenant_id-be.glean.com`.
     
     1.  Note: if you put “https://” in front of the backend server URL, the Glean app will not work. Please enter the URL without “http” or “https”
 4.  Enter the web app URL for your Glean setup. If you have a custom Glean subdomain, use [https://subdomain.glean.com](https://subdomain.glean.com). Otherwise, use the default URL [https://app.glean.com](https://app.glean.com/)

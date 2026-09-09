@@ -141,7 +141,7 @@ Cvent’s approach inverted the typical enterprise sequence. Rather than waiting
 
 > We needed people to understand what agents can and can't do before we could write good rules about them. You can't govern what your organization doesn't understand yet.
 
-— Pradeep Mannakkara, CIO, Cvent
+- Pradeep Mannakkara, CIO, Cvent
 
 The second key move: introducing ROI gates. New agent projects now pass through a value-creation filter before they reach security review. Does this agent have a measurable business case? If not, it doesn’t proceed – which means the CISO’s team is only ever reviewing requests that the business has already validated as worth pursuing with organizational investment in making it work. The CISO becomes a partner in getting real projects across the finish line, not a gatekeeper standing between the business and its ideas.
 

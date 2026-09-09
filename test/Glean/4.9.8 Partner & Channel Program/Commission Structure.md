@@ -1,4 +1,4 @@
-# Field 2 — Commission Structure
+# Field 2 - Commission Structure
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Commission Structure.md](../../../Glean/Combined/4.9.8 Partner & Channel Program/Commission Structure.md)

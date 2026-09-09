@@ -50,7 +50,7 @@ Glean sends [LLM provider alert emails](/administration/management/alerts/llm-pr
     -   **Azure OpenAI:** Go to the Azure Portal, navigate to your Azure OpenAI resource, and select **Model deployments > Manage Deployments**. Copy the **Deployment name** exactly as shown.
     -   **OpenAI:** Check that the model name in Glean matches a model available in your OpenAI organization.
 2.  In the **Admin console**, go to **Platform → LLMs** and compare the deployment name you entered against the one in your provider's portal.
-3.  Fix any mismatches — deployment names are case-sensitive and must match exactly.
+3.  Fix any mismatches - deployment names are case-sensitive and must match exactly.
 4.  Click **Validate** to confirm the connection.
 
 warning

@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/glean-go-2025-recap"
 canonical: "https://www.glean.com/blog/glean-go-2025-recap"
 title: "Glean:GO 2025 recap: What we launched and learned"
-description: "Matt Kixmoeller  | Relive the highlights from Glean:GO 2025 — new product launches, real customer stories, and insights on scaling AI across the enterprise."
+description: "Matt Kixmoeller  | Relive the highlights from Glean:GO 2025 - new product launches, real customer stories, and insights on scaling AI across the enterprise."
 fetched_at: "2026-09-01T13:26:37.980Z"
 ---
 Last updated Jun 18, 2025.
@@ -91,7 +91,7 @@ Listen to article
 
 This inaugural event was designed to make AI at work real. We brought together business leaders, operators, and innovators to put agents to work, demystify enterprise AI deployment, and share what it takes to shift organizations from isolated AI pilots to real, scaled AI adoption. 
 
-Glean:GO offered practical strategies for every attendee to bring back to their teams — whether they were executives leading AI transformation, admins driving enablement, power users building on the frontline, or newcomers just beginning their journey.
+Glean:GO offered practical strategies for every attendee to bring back to their teams - whether they were executives leading AI transformation, admins driving enablement, power users building on the frontline, or newcomers just beginning their journey.
 
 ### The next chapter of Work AI
 
@@ -105,8 +105,8 @@ Here are a few highlights:
 -   [Agent builder](https://www.glean.com/product/agent-builder) to create AI agents with a no-code, drag-and-drop interface
 -   Quickstart agents to tackle real business tasks out of the box, available in the [Agent Library](https://www.glean.com/agent-library)
 -   [Deep Research](https://www.glean.com/product/deep-research) for combining company knowledge with external context
--   [Glean Protect](https://www.glean.com/product/governance) to secure AI in the enterprise — enforcing your policies, safeguarding your data, and meeting compliance requirements
--   [Model hub](https://www.glean.com/product/model-hub) Model hub to experiment with 15+ LLMs — including Amazon Bedrock, Azure OpenAI, and Google Vertex — in an enterprise-safe environment
+-   [Glean Protect](https://www.glean.com/product/governance) to secure AI in the enterprise - enforcing your policies, safeguarding your data, and meeting compliance requirements
+-   [Model hub](https://www.glean.com/product/model-hub) Model hub to experiment with 15+ LLMs - including Amazon Bedrock, Azure OpenAI, and Google Vertex - in an enterprise-safe environment
 -   New integrations with partners like Snowflake, Palo Alto Networks, Workday, Zoom, and Dell
 
 Check out the [full product recap](https://www.glean.com/blog/go-agents-launch?utm_campaign=glean-go-2025) of everything we announced.
@@ -178,23 +178,23 @@ Kix with Baris Gultekin (Snowflake)
 
 ### Getting hands-on with AI agents
 
-Glean:GO wasn’t just about making announcements — it was about putting our latest products and features into attendees’ hands. From hands-on labs to 1:1 time with engineers, every part of the day was designed to help attendees build, experiment, and learn.
+Glean:GO wasn’t just about making announcements - it was about putting our latest products and features into attendees’ hands. From hands-on labs to 1:1 time with engineers, every part of the day was designed to help attendees build, experiment, and learn.
 
 -   New users got started with Glean [Assistant](https://www.glean.com/product/assistant), [Search](https://www.glean.com/product/workplace-search-ai), and [Agent](https://www.glean.com/product/ai-agents) basics
 -   Power users and admins explored advanced [agent building](https://www.glean.com/product/agent-builder), customization, and reporting
 -   Developers built with our [APIs](https://www.glean.com/product/api) and integrated Glean into existing tools
 -   The Expert Lounge gave attendees 1:1 time with Glean engineers
--   We also launched the [Gleaniverse Community](https://community.glean.com/) — a new space to share ideas and build together
+-   We also launched the [Gleaniverse Community](https://community.glean.com/) - a new space to share ideas and build together
 
-### Looking ahead — this is just the beginning
+### Looking ahead - this is just the beginning
 
 Glean:GO showed what’s possible when builders, business leaders, and customers come together with a shared goal: to put AI to work.
 
-Every attendee — whether a customer, partner, prospect, or Gleaner — left with new ideas, new tools, and new momentum. And when that happens, you don’t just accelerate your company — you accelerate the whole industry.
+Every attendee - whether a customer, partner, prospect, or Gleaner - left with new ideas, new tools, and new momentum. And when that happens, you don’t just accelerate your company - you accelerate the whole industry.
 
 Thank you for helping us make Glean:GO a launchpad for real Work AI, and for shaping the next year of agentic innovation. We can’t wait to see what you build next.
 
-Keep the momentum going — catch up on our [morning](https://youtu.be/13mJmoLoxkk) and [afternoon](https://youtu.be/1uhA1fpign0) keynotes, sign up to watch the [full session replays](https://www.glean.com/events/glean-go-2025), explore the [Agent Library](https://www.glean.com/agent-library), or join the [Gleaniverse](https://community.glean.com/)!
+Keep the momentum going - catch up on our [morning](https://youtu.be/13mJmoLoxkk) and [afternoon](https://youtu.be/1uhA1fpign0) keynotes, sign up to watch the [full session replays](https://www.glean.com/events/glean-go-2025), explore the [Agent Library](https://www.glean.com/agent-library), or join the [Gleaniverse](https://community.glean.com/)!
 
 [
 

@@ -51,11 +51,11 @@ Agent replies with an answer that is “Only visible to you” in the thread. Th
 
 ### Option C - Visible to everyone in the Slack channel[​](#option-c---visible-to-everyone-in-the-slack-channel "Direct link to Option C - Visible to everyone in the Slack channel")
 
-Agent replies with an answer that is visible to everyone in the channel. Glean restricts the agent to only broadly shared content — documents and messages that everyone in your organization can access.
+Agent replies with an answer that is visible to everyone in the channel. Glean restricts the agent to only broadly shared content - documents and messages that everyone in your organization can access.
 
 Important
 
-Option C uses a stricter permission model than the Glean web UI. In the web app, the agent retrieves results based on the signed-in user's individual permissions. In Slack, Option C restricts results to content broadly shared across your organization — regardless of who asked the question. An agent that returns complete answers in the web UI may return different or incomplete results in Slack.
+Option C uses a stricter permission model than the Glean web UI. In the web app, the agent retrieves results based on the signed-in user's individual permissions. In Slack, Option C restricts results to content broadly shared across your organization - regardless of who asked the question. An agent that returns complete answers in the web UI may return different or incomplete results in Slack.
 
 If you notice missing results, see [Troubleshoot incomplete results with Option C](#troubleshoot-incomplete-results-with-option-c) below.
 
@@ -100,7 +100,7 @@ If your agent's knowledge sources include documents that aren't broadly shared, 
 
 ## Best practices[​](#best-practices "Direct link to Best practices")
 
-Use Option C with caution — responses are visible to everyone in the channel.
+Use Option C with caution - responses are visible to everyone in the channel.
 
 -   Avoid adding confidential information to the agent's knowledge sources.
 -   Test the agent in a private channel before deploying it to large production channels.

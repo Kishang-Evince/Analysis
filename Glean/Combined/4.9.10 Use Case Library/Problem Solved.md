@@ -23,7 +23,7 @@
 
 | ID | Problem (pain) | Root cause addressed |
 |---|---|---|
-| UC-01 | **"Where is that doc?"** — 10+ min/day across apps | App sprawl; no unified ACL-aware index |
+| UC-01 | **"Where is that doc?"** - 10+ min/day across apps | App sprawl; no unified ACL-aware index |
 | UC-02 | Policy ambiguity; outdated wiki; compliance risk | Unstructured policies; no cited single answer |
 | UC-03 | Slow time-to-productivity; manager interrupt load | Onboarding docs scattered; no curated path |
 | UC-04 | Low adoption when search lives outside Teams | Context-switch friction |
@@ -35,7 +35,7 @@
 ### Vendor-stated benchmarks (not tenant-verified)
 
 - Employees search **10+ systems daily** (Glean compare pages).
-- Knowledge workers **~20% of week** searching (IDC/Glean collateral — Vendor-Stated).
+- Knowledge workers **~20% of week** searching (IDC/Glean collateral - Vendor-Stated).
 
 ### Verification steps / test case
 

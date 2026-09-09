@@ -99,7 +99,7 @@ Users looking to learn more about any specific topic involving structured data f
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/673b2710a6c6595d12c87641_673b26af402517fcbf53e7b3_image2%2520\(1\).webp)
 
-Glean's data analytics feature understands broader context from across each user's enterprise knowledge, and integrates results with user context. Every user across an organization can tap into Glean to better understand the data they work with on a daily basis — all without leveraging additional resources that may take considerable time and effort. Here are a few examples of how teams can utilize this feature:
+Glean's data analytics feature understands broader context from across each user's enterprise knowledge, and integrates results with user context. Every user across an organization can tap into Glean to better understand the data they work with on a daily basis - all without leveraging additional resources that may take considerable time and effort. Here are a few examples of how teams can utilize this feature:
 
 <div class="overflow-scroll">  
    <table class="rich-text-table\_component">  

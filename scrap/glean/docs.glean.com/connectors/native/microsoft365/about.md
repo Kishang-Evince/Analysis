@@ -15,7 +15,7 @@ This page describes the current Microsoft 365 setup, where SharePoint and OneDri
 
 ## How it works[​](#how-it-works "Direct link to How it works")
 
-You register one app in Microsoft Entra ID. This app handles identity crawling for your Microsoft 365 tenant and provides credentials that SharePoint and OneDrive inherit automatically — there is no separate app registration for each child connector.
+You register one app in Microsoft Entra ID. This app handles identity crawling for your Microsoft 365 tenant and provides credentials that SharePoint and OneDrive inherit automatically - there is no separate app registration for each child connector.
 
 After saving the Microsoft 365 suite, configure SharePoint and OneDrive as child connectors. Each inherits the parent credentials and only requires child-specific configuration.
 

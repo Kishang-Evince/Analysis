@@ -27,7 +27,7 @@ For legacy Glean Enterprise customers, the billing dashboard in Admin Console �
 
 Glean is retiring the embedded support integrations previously known as Glean Assist. This retirement affects Glean in Zendesk and Glean in ServiceNow.
 
-These embedded integrations provided AI-powered support workflows—including ticket summaries, resolution steps, and response drafting—directly inside third-party support tools.
+These embedded integrations provided AI-powered support workflows-including ticket summaries, resolution steps, and response drafting-directly inside third-party support tools.
 
 Use agents in the Glean browser extension as the replacement for these workflows. The browser extension sidebar includes an Agents tab that supports Zendesk tickets and ServiceNow incidents and cases.
 

@@ -1,4 +1,4 @@
-# Field 1 — Certifications Validated
+# Field 1 - Certifications Validated
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Certifications Validated.md](../../../Glean/Combined/4.9.5 Compliance & Regulatory/Certifications Validated.md)

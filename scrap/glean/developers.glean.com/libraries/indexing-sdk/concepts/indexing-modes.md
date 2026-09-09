@@ -23,7 +23,7 @@ from glean.indexing.models import IndexingModeconnector.index_data(mode=Indexing
 
 A full crawl is a **complete replacement of the indexed state**. Every document currently in scope is fetched and indexed, and previously indexed documents absent from the run are deleted as stale.
 
-That last part is the important one. Stale-document deletion is what makes deletions at the source propagate to Glean — and it's also what makes a *partial* full crawl dangerous.
+That last part is the important one. Stale-document deletion is what makes deletions at the source propagate to Glean - and it's also what makes a *partial* full crawl dangerous.
 
 danger
 
@@ -39,7 +39,7 @@ Use a full crawl for the initial load, after changing `transform()`, and on a pe
 
 The connector-building skills generate full crawls only
 
-If you are building a connector with the SDK's skills, they will not write incremental logic for you, and that is deliberate — `connector-builder` records incremental crawl as developer-owned follow-up after a full crawl works end to end, and `connector-pull` will not implement it unless you ask. Incremental is harder to validate: it needs a durable checkpoint *and* a reliable source-side deletion signal before it is correct rather than merely faster.
+If you are building a connector with the SDK's skills, they will not write incremental logic for you, and that is deliberate - `connector-builder` records incremental crawl as developer-owned follow-up after a full crawl works end to end, and `connector-pull` will not implement it unless you ask. Incremental is harder to validate: it needs a durable checkpoint *and* a reliable source-side deletion signal before it is correct rather than merely faster.
 
 Whether it is available at all depends on the source. A modified-since filter is usually offered per object type, so one endpoint may support it while another in the same API does not, and a connector can end up incremental for some objects and full for the rest.
 
@@ -57,7 +57,7 @@ A full crawl always finalizes replacement state, including when the source is em
 
 ### The SDK does not persist checkpoints[​](#the-sdk-does-not-persist-checkpoints "Direct link to The SDK does not persist checkpoints")
 
-This is the part that surprises people. `IndexingMode.INCREMENTAL` calls `_get_last_crawl_timestamp()` on your connector, and the base implementation **returns `None`** — which means `since` is `None` and your data client falls back to a full fetch.
+This is the part that surprises people. `IndexingMode.INCREMENTAL` calls `_get_last_crawl_timestamp()` on your connector, and the base implementation **returns `None`** - which means `since` is `None` and your data client falls back to a full fetch.
 
 To get real incremental behavior, override it and supply the timestamp from wherever you store it:
 
@@ -77,7 +77,7 @@ from glean.indexing.models import ConnectorOptionsconnector.index_data(    mode=
 
 | Option | Default | Effect |
 | --- | --- | --- |
-| `force_restart` | `False` | Discards any in-progress upload session and starts a new one. Use after a crashed run leaves an upload stuck — not as a default. |
+| `force_restart` | `False` | Discards any in-progress upload session and starts a new one. Use after a crashed run leaves an upload stuck - not as a default. |
 | `disable_stale_deletion_check` | `False` | Forces synchronous stale-document deletion after the upload completes. |
 | `upload_timeout_ms` | `None` | Per-call timeout for bulk upload requests only. Raise it for large batches. |
 | `upload_max_workers` | `5` | Concurrent middle-page uploads. First and last pages are always sequential. |
@@ -89,7 +89,7 @@ Datasource and streaming connectors forward `document_batch_size_bytes` to the d
 
 A common pattern:
 
--   **Incremental every 15–60 minutes** — keeps search fresh at low cost.
--   **Full nightly or weekly** — reconciles deletions and repairs drift.
+-   **Incremental every 15–60 minutes** - keeps search fresh at low cost.
+-   **Full nightly or weekly** - reconciles deletions and repairs drift.
 
 Match the incremental cadence to how precise your source's modified-at filter is. If it has minute granularity, overlap the window slightly rather than risking a gap; re-indexing an unchanged document is a no-op from the reader's point of view.

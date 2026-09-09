@@ -1,7 +1,7 @@
 ---
 url: "https://www.glean.com/press/ai-is-giving-workers-the-illusion-of-expertise-and-quietly-making-them-worse-at-their-jobs"
 canonical: "https://www.glean.com/press/ai-is-giving-workers-the-illusion-of-expertise-and-quietly-making-them-worse-at-their-jobs"
-title: "AI is giving workers the illusion of expertise — and quietly making them worse at their jobs | Glean Press"
+title: "AI is giving workers the illusion of expertise - and quietly making them worse at their jobs | Glean Press"
 fetched_at: "2026-09-01T13:26:12.287Z"
 ---
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/697780a68f0aaa59aa8c86e5_glean_live-wordmark-feb26.webp)

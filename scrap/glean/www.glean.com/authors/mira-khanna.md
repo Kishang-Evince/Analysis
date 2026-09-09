@@ -33,7 +33,7 @@ April 10, 2026
 
 ### Execute work in Glean with MCP Apps in Assistant
 
-Glean Assistant is your partner for getting work done — and now it comes with the tools your team already relies on. With open MCP App support, Gamma, Asana, Hex, and Box work directly inside Glean, so you can go from insight to action without ever leaving.
+Glean Assistant is your partner for getting work done - and now it comes with the tools your team already relies on. With open MCP App support, Gamma, Asana, Hex, and Box work directly inside Glean, so you can go from insight to action without ever leaving.
 
 ![Mira Khanna](https://cdn.prod.website-files.com/613513981b0efaf850830620/68b80cb02ed92c2df7221c5e_Mira%20Khanna.webp)
 
@@ -83,7 +83,7 @@ January 13, 2026
 
 ### Introducing Assistant updates: Search in Chat, autocomplete, and image generation
 
-Find what you need faster and generate images that fit seamlessly into the way you work—all in Assistant.
+Find what you need faster and generate images that fit seamlessly into the way you work-all in Assistant.
 
 ![Mira Khanna](https://cdn.prod.website-files.com/613513981b0efaf850830620/68b80cb02ed92c2df7221c5e_Mira%20Khanna.webp)
 
@@ -167,11 +167,11 @@ Customers + Partners
 
 Glean + Product
 
-[![Glean joins the Slack Marketplace, making it easy to get all your enterprise context in Slack—and bring your Slack data into Glean](https://cdn.prod.website-files.com/613513981b0efaf850830620/68dd2e74a5a5194615d40d70_Slack%20MarketPlace%20-%20Blog%20-%206%20\(1\).webp)
+[![Glean joins the Slack Marketplace, making it easy to get all your enterprise context in Slack-and bring your Slack data into Glean](https://cdn.prod.website-files.com/613513981b0efaf850830620/68dd2e74a5a5194615d40d70_Slack%20MarketPlace%20-%20Blog%20-%206%20\(1\).webp)
 
 October 1, 2025
 
-### Glean joins the Slack Marketplace, making it easy to get all your enterprise context in Slack—and bring your Slack data into Glean
+### Glean joins the Slack Marketplace, making it easy to get all your enterprise context in Slack-and bring your Slack data into Glean
 
 Glean is excited to be an official application in the Slack Marketplace so enterprises can access trusted, permission‑aware data right where they chat - in Slack.
 

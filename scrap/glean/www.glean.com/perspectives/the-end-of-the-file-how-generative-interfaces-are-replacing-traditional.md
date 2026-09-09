@@ -63,17 +63,17 @@ Share this article:
 
 # How generative interfaces change user experience in business
 
-The workplace interface stands at a critical inflection point. Enterprise teams across engineering, sales, and support departments spend countless hours navigating complex menus, clicking through multiple screens, and learning proprietary workflows — all to access the information they need to do their jobs effectively.
+The workplace interface stands at a critical inflection point. Enterprise teams across engineering, sales, and support departments spend countless hours navigating complex menus, clicking through multiple screens, and learning proprietary workflows - all to access the information they need to do their jobs effectively.
 
 A new paradigm emerges: generative interfaces that understand intent, adapt to context, and create personalized experiences in real-time. This shift represents more than a technological upgrade; it fundamentally reimagines how professionals interact with their digital tools and organizational knowledge. Generative AI usage in businesses jumped from 33% in 2023 to 71% in 2024, while overall [AI adoption](https://www.netguru.com/blog/ai-adoption-statistics) increased from 55% to 78% in just one year.
 
-From static documents to dynamic information streams, from rigid navigation paths to fluid conversations — the transformation touches every aspect of enterprise productivity. The implications extend far beyond user experience design, reshaping how organizations manage knowledge, automate workflows, and empower their teams to work smarter.
+From static documents to dynamic information streams, from rigid navigation paths to fluid conversations - the transformation touches every aspect of enterprise productivity. The implications extend far beyond user experience design, reshaping how organizations manage knowledge, automate workflows, and empower their teams to work smarter.
 
 ## What are generative interfaces and how do they transform traditional interactions?
 
 Generative interfaces represent a fundamental departure from the static, one-size-fits-all approach that has dominated software design for decades. Unlike traditional graphical user interfaces (GUIs) built around predetermined paths and fixed layouts, generative interfaces create [dynamic, personalized experiences](https://www.glean.com/blog/search-personalization) that adapt in real-time to each user's specific context and needs. This transformation shifts the burden of navigation from the user to the system itself.
 
-The mechanics behind this shift involve sophisticated AI systems that interpret natural language, understand user goals, and generate appropriate responses or actions without requiring users to navigate complex menu structures. Where traditional interfaces demand users learn specific paths — click here, then there, select this option from that dropdown — generative interfaces eliminate this cognitive overhead by focusing on intent rather than process.
+The mechanics behind this shift involve sophisticated AI systems that interpret natural language, understand user goals, and generate appropriate responses or actions without requiring users to navigate complex menu structures. Where traditional interfaces demand users learn specific paths - click here, then there, select this option from that dropdown - generative interfaces eliminate this cognitive overhead by focusing on intent rather than process.
 
 ### The evolution from navigation to conversation
 
@@ -86,7 +86,7 @@ Consider how enterprise search has evolved. Previously, finding a specific custo
 -   **Refining results manually**: Scrolling through pages of partially relevant documents
 -   **Opening multiple files**: Checking each one to find the right version
 
-With generative interfaces, the same task becomes a single expression of intent: "Show me the latest contract with Acme Corp that includes our service level agreements." The system interprets this request, searches across all connected repositories, and surfaces the exact document — or even the specific section within it.
+With generative interfaces, the same task becomes a single expression of intent: "Show me the latest contract with Acme Corp that includes our service level agreements." The system interprets this request, searches across all connected repositories, and surfaces the exact document - or even the specific section within it.
 
 ### From passive tools to collaborative partners
 
@@ -96,7 +96,7 @@ This collaborative aspect manifests through several key capabilities:
 
 -   **Contextual awareness**: The interface remembers previous interactions within a session and across sessions, building a comprehensive understanding of user patterns and preferences
 -   **Proactive assistance**: Rather than waiting for explicit commands, the system suggests relevant information or actions based on current context
--   **Adaptive presentation**: Information displays in the format most appropriate for the task — a summary for quick decisions, detailed analysis for complex problems, or visual representations for data-heavy scenarios
+-   **Adaptive presentation**: Information displays in the format most appropriate for the task - a summary for quick decisions, detailed analysis for complex problems, or visual representations for data-heavy scenarios
 
 Jakob Nielsen's prediction about the end of traditional UI design reflects this reality: when interfaces generate themselves based on user needs, the concept of fixed design patterns becomes obsolete. The interface becomes liquid, reshaping itself moment by moment to serve the user's immediate goals.
 
@@ -254,7 +254,7 @@ Adopt a measured integration strategy to ensure smooth transitions. Introduce ge
 
 ### Governance and training
 
-The shift to generative interfaces represents more than a technological upgrade — it's a fundamental reimagining of how your teams interact with information and accomplish their work. As these intelligent systems continue to evolve, organizations that embrace this transformation will find themselves with a significant competitive advantage in productivity, decision-making, and employee satisfaction. Organizations with strong AI integration achieve [10.3x ROI](https://www.integrate.io/blog/data-transformation-challenge-statistics/) compared to 3.7x for poor integration. Companies report an average 3.7x return on investment for every dollar invested in generative AI. Ready to see how AI-powered interfaces can revolutionize your workplace? Request a demo to explore how Glean and AI can transform your workplace and discover what's possible when technology adapts to your team, not the other way around.
+The shift to generative interfaces represents more than a technological upgrade - it's a fundamental reimagining of how your teams interact with information and accomplish their work. As these intelligent systems continue to evolve, organizations that embrace this transformation will find themselves with a significant competitive advantage in productivity, decision-making, and employee satisfaction. Organizations with strong AI integration achieve [10.3x ROI](https://www.integrate.io/blog/data-transformation-challenge-statistics/) compared to 3.7x for poor integration. Companies report an average 3.7x return on investment for every dollar invested in generative AI. Ready to see how AI-powered interfaces can revolutionize your workplace? Request a demo to explore how Glean and AI can transform your workplace and discover what's possible when technology adapts to your team, not the other way around.
 
 -   **Structured governance**: Implement clear policies to oversee AI outputs, ensuring accountability and transparency.
 -   **Focused training**: Provide comprehensive training that emphasizes adaptability and critical thinking, enabling effective engagement with generative interfaces.
@@ -268,7 +268,7 @@ Ensure your infrastructure supports the dynamic nature of generative interfaces.
 
 By following a structured approach, organizations can harness the full potential of generative interfaces, driving innovation and improving productivity without compromising stability or control.
 
-The shift to generative interfaces represents more than a technological upgrade — it's a fundamental reimagining of how your teams interact with information and accomplish their work. As these intelligent systems continue to evolve, organizations that embrace this transformation will find themselves with a significant competitive advantage in productivity, decision-making, and employee satisfaction. Ready to see how AI-powered interfaces can revolutionize your workplace? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) and discover what's possible when technology adapts to your team, not the other way around.
+The shift to generative interfaces represents more than a technological upgrade - it's a fundamental reimagining of how your teams interact with information and accomplish their work. As these intelligent systems continue to evolve, organizations that embrace this transformation will find themselves with a significant competitive advantage in productivity, decision-making, and employee satisfaction. Ready to see how AI-powered interfaces can revolutionize your workplace? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) and discover what's possible when technology adapts to your team, not the other way around.
 
 [
 

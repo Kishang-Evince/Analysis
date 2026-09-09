@@ -25,11 +25,11 @@
 | Strength | Evidence | Confidence |
 |---|---|---|
 | **Permission-aware RAG (Google/Microsoft)** | User B cannot see private Drive/OneDrive/Gmail/Outlook content; citations ACL-bound | **Tested** (4.9.1 E1, 4.9.5 Field 6) |
-| **All 7 tenant connectors native** | Drive/Docs/Sheets, Gmail, Outlook, OneDrive, Teams, Notion — unified search | **Tested** (4.9.1 Field 1.2, 4.9.4 Field 7) |
+| **All 7 tenant connectors native** | Drive/Docs/Sheets, Gmail, Outlook, OneDrive, Teams, Notion - unified search | **Tested** (4.9.1 Field 1.2, 4.9.4 Field 7) |
 | **Hybrid M365 + GWS in one index** | Real enterprises run both; Copilot M365-centric, Workspace AI Google-centric | **Doc-Verified** |
 | **Model Hub / 40+ LLMs** | Swap models without rebuilding RAG; BYOK option; Waldo agentic retrieval model | **Doc-Verified** (4.9.3 Fields 1, 4) |
 | **Agent Builder (NL-first)** | Auto agents over Drive + Notion without code; sub-agent orchestration | **Tested** (4.9.1 Field 1.4, 4.9.2) |
-| **MCP / embedded context** | Remote MCP to Cursor, Copilot, Claude Desktop — context layer export | **Tested** (4.9.1 Field 1) |
+| **MCP / embedded context** | Remote MCP to Cursor, Copilot, Claude Desktop - context layer export | **Tested** (4.9.1 Field 1) |
 | **Enterprise Graph + cited answers** | Multi-source ranking with deep links | **Tested** (4.9.3 Field 6) |
 
 ### Vendor-stated strengths (not independently verified)
@@ -40,8 +40,8 @@
 
 ### Verification steps / test case
 
-1. Re-run ACL negative test (Drive + Outlook) — confirm vs Copilot single-suite boundary.
-2. Cross-app query spanning Drive + OneDrive + Notion + Gmail — confirm unified ranking.
+1. Re-run ACL negative test (Drive + Outlook) - confirm vs Copilot single-suite boundary.
+2. Cross-app query spanning Drive + OneDrive + Notion + Gmail - confirm unified ranking.
 3. Document 3 strengths with sandbox screenshot evidence for client deck.
 4. Flag vendor benchmarks as Vendor-Stated unless independently replicated.
 

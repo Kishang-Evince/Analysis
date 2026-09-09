@@ -11,7 +11,7 @@ On this page
 
 #### New action to deliver agent results to your email inbox[​](#new-action-to-deliver-agent-results-to-your-email-inbox "Direct link to New action to deliver agent results to your email inbox")
 
-The “Send email from Glean” action lets Agents automatically email their output—text, tables, links, etc.—directly to the user who ran or subscribed to the agent (ie: send me a daily email summary of action items).
+The “Send email from Glean” action lets Agents automatically email their output-text, tables, links, etc.-directly to the user who ran or subscribed to the agent (ie: send me a daily email summary of action items).
 
 **How to access:** Administrators must enable for your organization.
 

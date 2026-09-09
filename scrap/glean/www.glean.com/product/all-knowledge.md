@@ -18,7 +18,7 @@ ALL KNOWLEDGE
 # Break down  
 knowledge barriers.
 
-Search, analyze, and act on insights from company data and the web — all in one place.
+Search, analyze, and act on insights from company data and the web - all in one place.
 
 [Get a demo](/get-a-demo)
 
@@ -26,13 +26,13 @@ Search, analyze, and act on insights from company data and the web — all in on
 
 ### Prepare for any conversation in minutes.
 
-Whether it’s a meeting, a presentation, or an email, Glean pulls together reports, past conversations, and external insights — so you always walk in prepared.
+Whether it’s a meeting, a presentation, or an email, Glean pulls together reports, past conversations, and external insights - so you always walk in prepared.
 
 ![UK Feature Screenshot 1](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/689b1667665fea4b2ce99adc_61ab131ad66b2f8527ca21d8308dbab2_Frame%202083936195.webp)![zig-zag section purple bg](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/686d698ebdf0fd30d3bfb3c5_zig-zag%20section%20purple%20bg.svg)![](https://assets.glean.com/marketing/Assets/zig-zag%20section%20dotted%20bg.svg)
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/688364a7b610a163ba0f0d10_M%20-%20Prepare%20for%20any%20conversation%20in%20minutes.webp)
 
-### Eliminate repetitive searches — just ask once.
+### Eliminate repetitive searches - just ask once.
 
 Instead of running the same search across different platforms, Glean does it for you, pulling data from Slack, Salesforce, Google Drive, and any other connected apps.
 

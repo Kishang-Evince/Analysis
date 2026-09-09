@@ -59,7 +59,7 @@ Assistant *ROAD-1071*
 
 Glean supports Gemini Pro 3.1 for Glean universal model key customers on Assistant and Agents. We also offer Gemini Pro 3.1 for customer key deployments for Glean Agents (agent builder) via Vertex AI.
 
-Gemini Pro 3.1 is Google's latest frontier model, delivering improved performance in coding, reasoning, and agentic workflows over Gemini Pro 3 — at the same price point. Customers can select Gemini Pro 3.1 via model choice in Assistant or configure it for Agent steps in the model hub.
+Gemini Pro 3.1 is Google's latest frontier model, delivering improved performance in coding, reasoning, and agentic workflows over Gemini Pro 3 - at the same price point. Customers can select Gemini Pro 3.1 via model choice in Assistant or configure it for Agent steps in the model hub.
 
 **How to access:** Admins can configure the model by going to Admin Console -> Platform -> LLM.
 
@@ -75,7 +75,7 @@ Agents *ROAD-1171*
 
 Glean supports Claude Sonnet 4.6 for Glean universal model key customers on Assistant and Agents. We also offer Sonnet 4.6 for customer key deployments for Glean Agents (agent builder) via Vertex AI and AWS Bedrock.
 
-Claude Sonnet 4.6 is Anthropic's latest mid-tier model, delivering improved performance in coding, reasoning, and agentic workflows over Sonnet 4.5 — at the same price point. Customers can select Sonnet 4.6 via model choice in Assistant or configure it for Agent steps in the model hub.
+Claude Sonnet 4.6 is Anthropic's latest mid-tier model, delivering improved performance in coding, reasoning, and agentic workflows over Sonnet 4.5 - at the same price point. Customers can select Sonnet 4.6 via model choice in Assistant or configure it for Agent steps in the model hub.
 
 **How to access:** Admins can configure the model by going to Admin Console -> Platform -> LLM.
 
@@ -103,7 +103,7 @@ Agents *ROAD-1134*
 
 #### Agent Builder Header Update: Save, Enable/Disable and Delete[​](#agent-builder-header-update-save-enabledisable-and-delete "Direct link to Agent Builder Header Update: Save, Enable/Disable and Delete")
 
-The Agent Builder and Autonomous Agent Builder headers now use clearer labels and a simpler layout, making it easier to manage your agents. The primary button in the top‑right is now labeled Save instead of Publish, and all related messages have been updated (for example, “Draft saved” and “Agent saved”). Disable / Enable and Delete are now grouped in the More actions (⋮) menu alongside Settings, View insights, Duplicate, and Import/Export. Your agents’ behavior, routing, permissions, and versioning are unchanged—only the labels and menu locations have been updated.
+The Agent Builder and Autonomous Agent Builder headers now use clearer labels and a simpler layout, making it easier to manage your agents. The primary button in the top‑right is now labeled Save instead of Publish, and all related messages have been updated (for example, “Draft saved” and “Agent saved”). Disable / Enable and Delete are now grouped in the More actions (⋮) menu alongside Settings, View insights, Duplicate, and Import/Export. Your agents’ behavior, routing, permissions, and versioning are unchanged-only the labels and menu locations have been updated.
 
 [Learn more](/agents/concepts/agent-builder)
 
@@ -233,7 +233,7 @@ Assistant *ROAD-1070*
 
 #### Procore connector[​](#procore-connector "Direct link to Procore connector")
 
-Users can now securely search and access construction project data from Procore directly within Glean. This integration enables project teams, field staff, and back-office teams to find the latest status, review submittals and RFIs, and streamline decision-making across distributed construction projects—helping contractors standardize workflows, save time, and increase adoption.
+Users can now securely search and access construction project data from Procore directly within Glean. This integration enables project teams, field staff, and back-office teams to find the latest status, review submittals and RFIs, and streamline decision-making across distributed construction projects-helping contractors standardize workflows, save time, and increase adoption.
 
 [Learn more](/connectors/native/procore/)
 

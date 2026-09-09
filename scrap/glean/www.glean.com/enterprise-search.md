@@ -40,7 +40,7 @@ Glean uses deep learning and your company’s unique knowledge to deliver accura
 
 From query to action in seconds
 
-Get instant answers, expert insights, and key details — so you can go from question to clarity without digging, switching tools, or losing momentum.
+Get instant answers, expert insights, and key details - so you can go from question to clarity without digging, switching tools, or losing momentum.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6a8407490b895e304bf53554_icon-placeholder.svg)
 
@@ -108,7 +108,7 @@ Enterprise search · Internal search engine
 
 ## Powerful personalization.
 
--   Glean builds your company’s knowledge graph—understanding people, content, and interactions— so every result is personalized to you.
+-   Glean builds your company’s knowledge graph-understanding people, content, and interactions- so every result is personalized to you.
 -   Users’ results are personalized based on knowledge graph data to ensure that each person sees the information most relevant to them.
 -   If a resource doesn’t exist, Glean identifies subjectmatter experts in your company.
 

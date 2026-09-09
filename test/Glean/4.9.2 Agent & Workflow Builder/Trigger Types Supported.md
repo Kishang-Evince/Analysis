@@ -1,4 +1,4 @@
-# Field 10 — Trigger Types Supported
+# Field 10 - Trigger Types Supported
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Trigger Types Supported.md](../../../Glean/Combined/4.9.2 Agent & Workflow Builder/Trigger Types Supported.md)
@@ -24,6 +24,6 @@
 1. Gmail content trigger + subject filter → send test mail → time to fire
 2. OneDrive new file trigger → upload → time to fire (expect hours)
 3. API `POST /agents/runs/wait` on published agent
-4. Schedule daily run — confirm obeys 10-active cap
+4. Schedule daily run - confirm obeys 10-active cap
 
 ---

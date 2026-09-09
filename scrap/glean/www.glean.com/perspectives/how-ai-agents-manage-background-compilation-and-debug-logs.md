@@ -71,7 +71,7 @@ The challenge lies in managing the dynamic nature of AI agents: they process vas
 
 ## What is background compilation and debug logs?
 
-Background compilation in AI agents refers to the continuous process of data processing, code optimization, and resource management that occurs while the agent performs its primary tasks. Unlike traditional compilation that happens at specific intervals, AI agents compile information dynamically — parsing logs, analyzing patterns, and optimizing their execution paths without interrupting ongoing operations. This process enables agents to maintain peak performance while adapting to changing workloads and data patterns in real-time.
+Background compilation in AI agents refers to the continuous process of data processing, code optimization, and resource management that occurs while the agent performs its primary tasks. Unlike traditional compilation that happens at specific intervals, AI agents compile information dynamically - parsing logs, analyzing patterns, and optimizing their execution paths without interrupting ongoing operations. This process enables agents to maintain peak performance while adapting to changing workloads and data patterns in real-time.
 
 Debug logs serve as comprehensive records that document every decision, action, and interaction an AI agent performs. These structured data records go beyond simple error tracking; they capture the agent's reasoning pathways, tool invocations, performance metrics, and contextual information that influenced each decision. Modern debug logs include:
 
@@ -149,7 +149,7 @@ This approach not only strengthens system reliability but also enables enterpris
 
 ## Step 3: Analyze and utilize debug logs
 
-Analyzing [debug logs](https://www.glean.com/blog/glean-chat-as-a-software-engineer-assistance-debugging) goes beyond error detection—it involves deriving valuable insights that drive efficiency and innovation in AI agent operations. By employing structured logging, teams gain a comprehensive view of workflows, empowering them to identify inefficiencies and optimize processes.
+Analyzing [debug logs](https://www.glean.com/blog/glean-chat-as-a-software-engineer-assistance-debugging) goes beyond error detection-it involves deriving valuable insights that drive efficiency and innovation in AI agent operations. By employing structured logging, teams gain a comprehensive view of workflows, empowering them to identify inefficiencies and optimize processes.
 
 ### Uncovering patterns and anomalies
 
@@ -223,9 +223,9 @@ Ready to see these principles in action? Request a demo to explore how Glean and
 
 ### Utilize advanced tools
 
-As AI agents become more sophisticated and integral to enterprise operations, mastering their compilation and logging processes is no longer optional — it's essential for maintaining competitive advantage. Organizations with formal AI strategies achieve [80 percent](https://writer.com/blog/enterprise-ai-adoption-survey/) success in AI adoption compared to only 37 percent for those without formal strategies, a 43 percentage point difference. The techniques we've explored form the foundation for building resilient, observable, and continuously improving AI systems that deliver real business value.
+As AI agents become more sophisticated and integral to enterprise operations, mastering their compilation and logging processes is no longer optional - it's essential for maintaining competitive advantage. Organizations with formal AI strategies achieve [80 percent](https://writer.com/blog/enterprise-ai-adoption-survey/) success in AI adoption compared to only 37 percent for those without formal strategies, a 43 percentage point difference. The techniques we've explored form the foundation for building resilient, observable, and continuously improving AI systems that deliver real business value.
 
-As AI agents become more sophisticated and integral to [enterprise operations](https://www.glean.com/blog/ai-agents-enterprise), mastering their compilation and logging processes is no longer optional — it's essential for maintaining competitive advantage. The techniques we've explored form the foundation for building resilient, observable, and continuously improving AI systems that deliver real business value.
+As AI agents become more sophisticated and integral to [enterprise operations](https://www.glean.com/blog/ai-agents-enterprise), mastering their compilation and logging processes is no longer optional - it's essential for maintaining competitive advantage. The techniques we've explored form the foundation for building resilient, observable, and continuously improving AI systems that deliver real business value.
 
 Ready to see these principles in action? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) and discover how we can help you implement enterprise-grade AI agent management that scales with your organization's needs.
 

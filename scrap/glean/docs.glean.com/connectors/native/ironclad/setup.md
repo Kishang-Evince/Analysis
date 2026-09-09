@@ -80,7 +80,7 @@ If you’re unsure which domain your instance uses, contact your Ironclad accoun
     -   `public.entities.readRelationshipTypes`
     -   `scim.users.readUsers`
     -   `scim.schemas.readSchemas`
-5.  Complete creation of the OAuth client. **Save the client credentials (Client ID and Client Secret)**—they may only be shown once.
+5.  Complete creation of the OAuth client. **Save the client credentials (Client ID and Client Secret)**-they may only be shown once.
     
 
 These client credentials are used by Glean’s connector to make authenticated, read‑only API calls to Ironclad.

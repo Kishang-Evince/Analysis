@@ -9,24 +9,24 @@ On this page
 
 Glean offers two ways to attach structured metadata to documents for search, filtering, and faceting:
 
-1.  **[Custom Properties](/api-info/indexing/datasource/custom-properties)** — properties defined on a custom datasource and set on each document via the Indexing API's `/indexdocument` endpoint.
-2.  **[Custom Metadata API](/api-info/indexing/custom-metadata/overview)** — a standalone API that attaches metadata to documents already indexed in Glean, regardless of which datasource they came from.
+1.  **[Custom Properties](/api-info/indexing/datasource/custom-properties)** - properties defined on a custom datasource and set on each document via the Indexing API's `/indexdocument` endpoint.
+2.  **[Custom Metadata API](/api-info/indexing/custom-metadata/overview)** - a standalone API that attaches metadata to documents already indexed in Glean, regardless of which datasource they came from.
 
 The most important distinction:
 
 info
 
-**Custom Metadata works with any datasource** — Google Drive, Confluence, Jira, custom datasources you push via the Indexing API, and every other connector indexed in Glean. Custom Properties are limited to documents you index yourself through a custom datasource.
+**Custom Metadata works with any datasource** - Google Drive, Confluence, Jira, custom datasources you push via the Indexing API, and every other connector indexed in Glean. Custom Properties are limited to documents you index yourself through a custom datasource.
 
 ## At a glance[​](#at-a-glance "Direct link to At a glance")
 
 |  | Custom Properties (Indexing API) | Custom Metadata API |
 | --- | --- | --- |
-| **Works with** | Documents from a custom datasource only | Any document in Glean — native connectors (Google Drive, Confluence, Jira, etc.) **and** custom datasources |
+| **Works with** | Documents from a custom datasource only | Any document in Glean - native connectors (Google Drive, Confluence, Jira, etc.) **and** custom datasources |
 | **Purpose** | Attach metadata to documents you index into Glean | Enrich documents already indexed in Glean, without re-indexing |
 | **Schema scope** | Per-datasource | Per metadata group (namespace) |
 | **Update mechanism** | Re-upload the entire document | `PUT` metadata for a single `(document, group)` pair |
-| **UI configuration** | Full support — facet ordering, display labels, search-result rendering (`uiOptions`) | Not supported — no UI display options |
+| **UI configuration** | Full support - facet ordering, display labels, search-result rendering (`uiOptions`) | Not supported - no UI display options |
 | **Property types** | `TEXT`, `PICKLIST`, `TEXTLIST`, `MULTIPICKLIST`, `INT`, `DATE`, `USERID` | `TEXT`, `PICKLIST`, `TEXTLIST`, `MULTIPICKLIST` |
 | **Access control** | Tied to the indexing token for the datasource | Scoped tokens per metadata group (`custommetadata:<group>`) |
 
@@ -37,7 +37,7 @@ Use [Custom Properties](/api-info/indexing/datasource/custom-properties) when yo
 Typical scenarios:
 
 -   **Custom connector with rich metadata.** Your connector pushes documents along with structured metadata from the same source system (e.g., department, priority, document type).
--   **UI-driven faceting and display.** You need control over how metadata appears in the Glean UI — facet ordering, display labels, rendering metadata in search results.
+-   **UI-driven faceting and display.** You need control over how metadata appears in the Glean UI - facet ordering, display labels, rendering metadata in search results.
 -   **Metadata and content share a lifecycle.** When the document is updated, its metadata is typically updated at the same time.
 -   **Numeric or date fields.** Custom Properties support `INT`, `DATE`, and `USERID` types; Custom Metadata does not.
 
@@ -47,14 +47,14 @@ Updating a custom property requires re-uploading the entire document via `/index
 
 ## When to use the Custom Metadata API[​](#when-to-use-the-custom-metadata-api "Direct link to When to use the Custom Metadata API")
 
-Use the [Custom Metadata API](/api-info/indexing/custom-metadata/overview) to enrich documents that already exist in Glean — **including documents from any native connector** — without re-indexing.
+Use the [Custom Metadata API](/api-info/indexing/custom-metadata/overview) to enrich documents that already exist in Glean - **including documents from any native connector** - without re-indexing.
 
 Typical scenarios:
 
 -   **Cross-datasource enrichment.** Tag Google Drive documents with CRM data, label Confluence pages with project codes from Jira, etc.
--   **Native-connector enrichment.** Add metadata to documents from any connector — Google Drive, Confluence, Jira, GitHub, Salesforce, ServiceNow, and so on. You don't need to own or operate the underlying datasource.
+-   **Native-connector enrichment.** Add metadata to documents from any connector - Google Drive, Confluence, Jira, GitHub, Salesforce, ServiceNow, and so on. You don't need to own or operate the underlying datasource.
 -   **Decoupled metadata ownership.** The team managing metadata is different from the team that owns the document source.
--   **High-frequency metadata updates.** Metadata changes often but document content does not — avoid re-uploading entire documents.
+-   **High-frequency metadata updates.** Metadata changes often but document content does not - avoid re-uploading entire documents.
 -   **Tagging and classification.** Apply labels like "reviewed", "compliance-approved", or "deprecated" to existing documents.
 -   **Lightweight integrations.** Attach structured data to documents without building a full custom connector.
 
@@ -65,18 +65,18 @@ The Custom Metadata API does not currently support UI configuration options such
 ## Decision guide[​](#decision-guide "Direct link to Decision guide")
 
 ```
-Is the metadata coming from the same source as the document content? │ ├─ YES → Are you already pushing these documents via the Indexing API? │        │ │        ├─ YES → Do you need UI options (facet ordering, display │        │       names, search-result rendering) or INT/DATE types? │        │       │ │        │       ├─ YES → Use Custom Properties │        │       │ │        │       └─ NO  → Either works. Custom Properties are simpler │        │               if you're already re-uploading. Custom Metadata │        │               is better if metadata changes more often than │        │               content. │        │ │        └─ NO  → Use the Custom Metadata API │ └─ NO  → Use the Custom Metadata API          (works with any datasource — native connectors or custom —           and enriches existing docs without re-indexing)
+Is the metadata coming from the same source as the document content? │ ├─ YES → Are you already pushing these documents via the Indexing API? │        │ │        ├─ YES → Do you need UI options (facet ordering, display │        │       names, search-result rendering) or INT/DATE types? │        │       │ │        │       ├─ YES → Use Custom Properties │        │       │ │        │       └─ NO  → Either works. Custom Properties are simpler │        │               if you're already re-uploading. Custom Metadata │        │               is better if metadata changes more often than │        │               content. │        │ │        └─ NO  → Use the Custom Metadata API │ └─ NO  → Use the Custom Metadata API          (works with any datasource - native connectors or custom -           and enriches existing docs without re-indexing)
 ```
 
 ### Quick reference[​](#quick-reference "Direct link to Quick reference")
 
 | Question | Custom Properties (Indexing API) | Custom Metadata API |
 | --- | --- | --- |
-| Can I add metadata to documents from native connectors (Google Drive, Confluence, Jira, etc.)? | No — only documents indexed via a custom datasource | **Yes — any document in Glean, from any datasource** |
-| Can I update metadata without re-uploading the full document? | No — full document re-upload required | Yes — metadata-only updates |
-| Can I control facet display names and ordering? | Yes — full UI options support | No — not currently supported |
-| Can different teams manage metadata independently? | No — tied to the datasource owner | Yes — scoped tokens per group |
-| Does it support `INT` and `DATE` types? | Yes | No — text-based types only |
+| Can I add metadata to documents from native connectors (Google Drive, Confluence, Jira, etc.)? | No - only documents indexed via a custom datasource | **Yes - any document in Glean, from any datasource** |
+| Can I update metadata without re-uploading the full document? | No - full document re-upload required | Yes - metadata-only updates |
+| Can I control facet display names and ordering? | Yes - full UI options support | No - not currently supported |
+| Can different teams manage metadata independently? | No - tied to the datasource owner | Yes - scoped tokens per group |
+| Does it support `INT` and `DATE` types? | Yes | No - text-based types only |
 
 ## Search behavior[​](#search-behavior "Direct link to Search behavior")
 
@@ -88,19 +88,19 @@ From an end-user perspective, both Custom Properties and Custom Metadata are sea
 
 ## Common patterns[​](#common-patterns "Direct link to Common patterns")
 
-The scenarios below are illustrative examples, not exhaustive prescriptions. Many real-world setups combine the two APIs in ways that aren't listed here — use them as a starting point and adapt to your data ownership, update cadence, and UI needs.
+The scenarios below are illustrative examples, not exhaustive prescriptions. Many real-world setups combine the two APIs in ways that aren't listed here - use them as a starting point and adapt to your data ownership, update cadence, and UI needs.
 
 ### Custom datasource with rich metadata[​](#custom-datasource-with-rich-metadata "Direct link to Custom datasource with rich metadata")
 
 **Preferred: Custom Properties**
 
-You're building a connector for an internal tool. Documents, their content, and metadata all come from the same source. You want facet display names, ordering, and metadata rendered in search results. Custom Properties fit this case naturally because the metadata ships with the document on every index call. Custom Metadata still works here — it's a fine choice if metadata changes more frequently than content — but Custom Properties give you the UI controls and `INT`/`DATE` types that Custom Metadata lacks.
+You're building a connector for an internal tool. Documents, their content, and metadata all come from the same source. You want facet display names, ordering, and metadata rendered in search results. Custom Properties fit this case naturally because the metadata ships with the document on every index call. Custom Metadata still works here - it's a fine choice if metadata changes more frequently than content - but Custom Properties give you the UI controls and `INT`/`DATE` types that Custom Metadata lacks.
 
 ### Enriching native-connector documents[​](#enriching-native-connector-documents "Direct link to Enriching native-connector documents")
 
 **Use: Custom Metadata API**
 
-Google Drive docs (or Confluence, Jira, etc.) are already in Glean via the native connector. Your compliance team wants to tag them with review status from an external workflow tool. Custom Properties are not an option here — the documents come from a native connector, not a datasource you control.
+Google Drive docs (or Confluence, Jira, etc.) are already in Glean via the native connector. Your compliance team wants to tag them with review status from an external workflow tool. Custom Properties are not an option here - the documents come from a native connector, not a datasource you control.
 
 ### Custom datasource with external enrichment[​](#custom-datasource-with-external-enrichment "Direct link to Custom datasource with external enrichment")
 

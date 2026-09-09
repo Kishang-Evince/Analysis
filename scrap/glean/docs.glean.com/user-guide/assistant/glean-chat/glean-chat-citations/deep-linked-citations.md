@@ -31,6 +31,6 @@ When Glean finds a match in a Confluence attachment, the citation experience can
 
 ## Limitations[​](#limitations "Direct link to Limitations")
 
--   Deep-linked citations for complex content Currently, deep-linked citations sourced from non-plaintext content such as tables and code blocks—are displayed as simple plaintext. This presentation may make the cited information difficult to read or parse.
+-   Deep-linked citations for complex content Currently, deep-linked citations sourced from non-plaintext content such as tables and code blocks-are displayed as simple plaintext. This presentation may make the cited information difficult to read or parse.
     
 -   Source Navigation The ability to click on a citation and navigate directly to the cited page is not yet supported in this release.

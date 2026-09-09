@@ -21,7 +21,7 @@ See [Authentication](/api-info/client/authentication/overview) for detailed step
 
 A report runs a one-off scan and lets you download violations as a CSV when it finishes.
 
-Policies support two schedules—`WEEKLY` and `CONTINUOUS`. A policy adds an interactive dashboard where you can review findings, archive items, and optionally hide flagged documents.
+Policies support two schedules-`WEEKLY` and `CONTINUOUS`. A policy adds an interactive dashboard where you can review findings, archive items, and optionally hide flagged documents.
 
 Note: Policy and report APIs share many request fields. Ensure any shared fields use consistent values within the same payload.
 

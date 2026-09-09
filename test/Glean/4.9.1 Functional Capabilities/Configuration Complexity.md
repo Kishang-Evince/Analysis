@@ -1,4 +1,4 @@
-# Field 6 — Configuration Complexity
+# Field 6 - Configuration Complexity
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Configuration Complexity.md](../../../Glean/Combined/4.9.1 Functional Capabilities/Configuration Complexity.md)
@@ -12,7 +12,7 @@
 
 | # | Task | Start | End | Minutes | Blocker |
 |---|---|---|---|---|---|
-| 1 | SSO already done? (note only — not counted) | | | | |
+| 1 | SSO already done? (note only - not counted) | | | | |
 | 2 | Connect Google Drive + Gmail | | | | |
 | 3 | Connect OneDrive + Outlook + Teams (M365 cert) | | | | |
 | 4 | Connect Notion + share test pages to integration | | | | |

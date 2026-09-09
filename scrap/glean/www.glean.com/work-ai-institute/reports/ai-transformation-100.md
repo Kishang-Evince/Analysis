@@ -227,7 +227,7 @@ Don’t lead an AI implementation if you don’t know how AI works
 
 28
 
-Implement nuanced AI policies—and keep updating them
+Implement nuanced AI policies-and keep updating them
 
 ](#)[
 
@@ -303,7 +303,7 @@ Use AI to stress-test the happy path before the handoff
 
 39
 
-Use AI to get the right people on projects—and find them fast
+Use AI to get the right people on projects-and find them fast
 
 ](#)[
 
@@ -609,7 +609,7 @@ Make probabilistic bets on AI projects like venture capitalists do
 
 85
 
-Treat your employees as “customer zero”—Especially the toughest critics
+Treat your employees as “customer zero”-Especially the toughest critics
 
 ](#)[
 
@@ -643,7 +643,7 @@ Build an AI rhythm into your organization
 
 89
 
-Examine what your system rewards—AI will give you more of it, want it or not
+Examine what your system rewards-AI will give you more of it, want it or not
 
 ](#)[
 
@@ -703,7 +703,7 @@ Name the j‑curve
 
 99
 
-Acknowledge—and learn from—ballyhooed changes that let people down before
+Acknowledge-and learn from-ballyhooed changes that let people down before
 
 ](#)[
 
@@ -892,13 +892,13 @@ And more
 
 There’s no shortage of AI promises. Faster productivity and innovation. Lower costs. CEOs making bold claims about “rightsizing” teams and “unlocking efficiencies.” Vendors pitch 10x gains while customers wait for real results. Yet, so far, in too many organizations, the hope and bluster outstrips reality.  
   
-A 2025 Boston Consulting Group study[1](https://www.bcg.com/publications/2025/how-finance-leaders-can-get-roi-from-ai), which surveyed more than 280 finance executives with AI experience in large organizations, found the median reported ROI from AI initiatives is just 10%—well below the 20% or more many were targeting.  
+A 2025 Boston Consulting Group study[1](https://www.bcg.com/publications/2025/how-finance-leaders-can-get-roi-from-ai), which surveyed more than 280 finance executives with AI experience in large organizations, found the median reported ROI from AI initiatives is just 10%-well below the 20% or more many were targeting.  
   
 Beware, however, of treating this, or any other study, as definitive. Estimates of AI success swing wildly across studies depending on the maturity of companies sampled, research methods used, and performance metrics assessed. It’s also notoriously hard to separate the AI hype that people report from what’s actually happening in their organizations.
 
 That’s why we wanted to cut through the noise and see how AI is already improving how people lead and work (and where it shows promise). Our goal was to uncover practical ways that AI can make your work better, by amplifying the good parts and dampening the bad.  
   
-We collected insights from more than 100 leaders, technologists, and researchers across business, healthcare, government, and academia— and conducted live interviews with 35 of them. The result is The AI Transformation 100: our collection of 100 concrete ideas for using AI to improve how work gets done. We developed these ideas to help you navigate the human and organizational messy realities that determine whether AI solutions can be prototyped, implemented, and scaled.
+We collected insights from more than 100 leaders, technologists, and researchers across business, healthcare, government, and academia- and conducted live interviews with 35 of them. The result is The AI Transformation 100: our collection of 100 concrete ideas for using AI to improve how work gets done. We developed these ideas to help you navigate the human and organizational messy realities that determine whether AI solutions can be prototyped, implemented, and scaled.
 
 # Key Takeaways
 
@@ -924,7 +924,7 @@ Leaders can’t phone it in
 
 C
 
-AI adoption isn’t powered by mandates, training portals, or inspirational memos. It spreads when leaders roll up their sleeves and use the tools themselves. When executives model AI in their own work—drafting, debugging, questioning—it encourages others to experiment and incorporate it into their work too.
+AI adoption isn’t powered by mandates, training portals, or inspirational memos. It spreads when leaders roll up their sleeves and use the tools themselves. When executives model AI in their own work-drafting, debugging, questioning-it encourages others to experiment and incorporate it into their work too.
 
 Structure eats AI for breakfast
 
@@ -950,7 +950,7 @@ If you’ve got the time, read the whole list. If not, feed it to your favorite 
 
 Read this report carefully and, based on what you know about me, my organization, and our approach to AI, recommend the top 10 ideas that would be most valuable for our organization to try, with specific rationale and recommended next steps.
 
-And don’t believe everything we tell you. We don’t either. The evidence about AI in the workplace is emerging, messy, and (all too often) contradictory. Any conclusion is at best, provisional. The challenge reminds us of an old (and perhaps apocryphal) story about the Harvard Medical School dean’s warning to incoming medical students on the first day of school: “Fifty percent of what we teach you will turn out to be wrong. The problem is we don’t know which fifty percent.” That’s the right mental provisioning for approaching any advice about AI and work—including ours (although we do hope that fewer than 50% of the ideas on our list turn out to be wrong!)  
+And don’t believe everything we tell you. We don’t either. The evidence about AI in the workplace is emerging, messy, and (all too often) contradictory. Any conclusion is at best, provisional. The challenge reminds us of an old (and perhaps apocryphal) story about the Harvard Medical School dean’s warning to incoming medical students on the first day of school: “Fifty percent of what we teach you will turn out to be wrong. The problem is we don’t know which fifty percent.” That’s the right mental provisioning for approaching any advice about AI and work-including ours (although we do hope that fewer than 50% of the ideas on our list turn out to be wrong!)  
   
 Now, on to the 100 ideas.
 
@@ -958,15 +958,15 @@ THEME 01
 
 # Division of Labor
 
-Who should do what—and why?
+Who should do what-and why?
 
-For centuries, the division of labor has been the backbone of organizational design: break complex work into smaller tasks and assign them to different people. AI is now stretching—and sometimes erasing—those boundaries. And, in some cases, it’s reshuffling who does what, which tasks get automated, and which stay human.
+For centuries, the division of labor has been the backbone of organizational design: break complex work into smaller tasks and assign them to different people. AI is now stretching-and sometimes erasing-those boundaries. And, in some cases, it’s reshuffling who does what, which tasks get automated, and which stay human.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/692fe100f4e26d97b3c0c890_division-of-labor-illustration.webp)
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/692fe100f4e26d97b3c0c893_no-1.svg)
 
-*“Reps had to scavenge through internal systems to dig up past interactions, then scour the web for press releases and news mentions—hours of energy-sapping work before the real conversation even started. Now, an AI assistant does the digging. What once took a couple of hours now takes five minutes.”*
+*“Reps had to scavenge through internal systems to dig up past interactions, then scour the web for press releases and news mentions-hours of energy-sapping work before the real conversation even started. Now, an AI assistant does the digging. What once took a couple of hours now takes five minutes.”*
 
 [Sharon Milz,  
 ](https://www.linkedin.com/in/sharonmilz)CIO, TIME
@@ -975,11 +975,11 @@ For centuries, the division of labor has been the backbone of organizational des
 
 ## Start by using AI to cut administrative sludge
 
-A smart place to begin rethinking the division of labor with AI is by tackling the least-loved burdens—like administrative sludge.  
+A smart place to begin rethinking the division of labor with AI is by tackling the least-loved burdens-like administrative sludge.  
   
-A 2024 survey of over 13,000 knowledge workers across six countries found more than half (53%[1](https://asana.com/resources/state-of-work-innovation)) of their time disappeared into administrative sand traps such as scheduling and rescheduling meetings, writing status updates, and chasing down routine decisions that were stalled and stuck in bureaucracy. A 2025 study[2](https://futureofwork.saltlab.stanford.edu/) led by Yijia Shao and her Stanford colleagues of 1,500 workers in 104 occupations confirmed this is the kind of work people want AI to take off their plates. They’re repetitive, boring, low-value, sometimes mind-numbing chores that still need to get done—and get done quickly and well.  
+A 2024 survey of over 13,000 knowledge workers across six countries found more than half (53%[1](https://asana.com/resources/state-of-work-innovation)) of their time disappeared into administrative sand traps such as scheduling and rescheduling meetings, writing status updates, and chasing down routine decisions that were stalled and stuck in bureaucracy. A 2025 study[2](https://futureofwork.saltlab.stanford.edu/) led by Yijia Shao and her Stanford colleagues of 1,500 workers in 104 occupations confirmed this is the kind of work people want AI to take off their plates. They’re repetitive, boring, low-value, sometimes mind-numbing chores that still need to get done-and get done quickly and well.  
   
-At Time Magazine, one source of sludge was prepping for client meetings. CIO Sharon Milz shared, “Reps had to scavenge through internal systems to dig up past interactions, then scour the web for press releases and news mentions—hours of energy-sapping work before the real conversation even started. Now, an AI assistant does the digging. What once took a couple of hours now takes five minutes.”
+At Time Magazine, one source of sludge was prepping for client meetings. CIO Sharon Milz shared, “Reps had to scavenge through internal systems to dig up past interactions, then scour the web for press releases and news mentions-hours of energy-sapping work before the real conversation even started. Now, an AI assistant does the digging. What once took a couple of hours now takes five minutes.”
 
 Try this
 
@@ -997,11 +997,11 @@ Try this
 
 Why is administrative sludge so hard to avoid and remove? Often because the information needed to move work forward is trapped in unstructured data: emails, PDFs, call transcripts, wikis, chats, support tickets, CRM notes. With data scattered across formats and systems, even simple tasks turn into digital scavenger hunts.  
   
-A 2023 report by IDC[1](https://blog.box.com/90-your-data-unstructured-and-its-full-untapped-value) estimates that 90% of the data generated by companies is unstructured. That’s why Box CEO Aaron Levie points to[2](https://www.linkedin.com/posts/boxaaron_if-youre-building-ai-agents-its-super-activity-7357441777898807296-6ET0) an obvious place to start: “Work that requires a heavy amount of unstructured data and information—documents, visual data on a screen, video content.”
+A 2023 report by IDC[1](https://blog.box.com/90-your-data-unstructured-and-its-full-untapped-value) estimates that 90% of the data generated by companies is unstructured. That’s why Box CEO Aaron Levie points to[2](https://www.linkedin.com/posts/boxaaron_if-youre-building-ai-agents-its-super-activity-7357441777898807296-6ET0) an obvious place to start: “Work that requires a heavy amount of unstructured data and information-documents, visual data on a screen, video content.”
 
 Try this
 
-Follow Workday VP of People Analytics Phil Willburn’s playbook. He told us how he cut out briefing decks and weekly update docs. Instead, unstructured data (including Slack conversations and project plan information) now flows into one AI system. His team no longer spends hours compiling updates. Now, when Willburn heads into a steering committee meeting, he asks AI to compile the brief. If he needs more detail, Willburn queries the AI and drills straight into the source. That shift has wiped out a mountain of low-value work for his team—including piecing together information, late-night slide making, and answering the boss’s barrage of “quick questions” and stray musings.
+Follow Workday VP of People Analytics Phil Willburn’s playbook. He told us how he cut out briefing decks and weekly update docs. Instead, unstructured data (including Slack conversations and project plan information) now flows into one AI system. His team no longer spends hours compiling updates. Now, when Willburn heads into a steering committee meeting, he asks AI to compile the brief. If he needs more detail, Willburn queries the AI and drills straight into the source. That shift has wiped out a mountain of low-value work for his team-including piecing together information, late-night slide making, and answering the boss’s barrage of “quick questions” and stray musings.
 
 [
 
@@ -1060,7 +1060,7 @@ Try this
 
 Some of the most vexing sludge accumulates in customer support. Much of this frustrating friction (for both employees and customers) piles up because employees need to dig through unstructured data such as old tickets, inconsistent documentation, and scattered wikis to answer questions that customers ask again and again. It’s repetitive and rules-based work, seemingly perfect for AI.  
   
-Klarna’s leaders thought so too. In 2023, this “buy now, pay later” company claimed its AI assistant could replace 700 human agents and started culling customer support staff. Yet by 2025, in a show of thoughtful leadership, they’d reversed course. “We just had an epiphany: in a world of AI, nothing will be as valuable as humans,” said Sebastian Siemiatkowski[1](https://x.com/klarnaseb/status/1890336313477361862), CEO of Klarna. “We’re doubling down—investing in the human side of service: empathy, expertise, and real conversations” said a Klarna spokesperson[2](https://www.customerexperiencedive.com/news/klarna-reinvests-human-talent-customer-service-AI-chatbot/747586/).  
+Klarna’s leaders thought so too. In 2023, this “buy now, pay later” company claimed its AI assistant could replace 700 human agents and started culling customer support staff. Yet by 2025, in a show of thoughtful leadership, they’d reversed course. “We just had an epiphany: in a world of AI, nothing will be as valuable as humans,” said Sebastian Siemiatkowski[1](https://x.com/klarnaseb/status/1890336313477361862), CEO of Klarna. “We’re doubling down-investing in the human side of service: empathy, expertise, and real conversations” said a Klarna spokesperson[2](https://www.customerexperiencedive.com/news/klarna-reinvests-human-talent-customer-service-AI-chatbot/747586/).  
   
 Treating all customer support as interchangeable sludge can backfire. For some requests, most customers only care about a fast and accurate response. But when the challenge is complicated or unprecedented, or a valued customer is upset, your organization benefits by offering easy access to human judgment, empathy, warmth, and trust.  
   
@@ -1086,7 +1086,7 @@ As one leader at Navan Travel, part of global travel company, Navan described[1]
 
 Try this
 
-Don’t let AI turn every interaction into a drive-thru transaction. Use a simple rule of thumb: If the customer cares most about speed of resolution, let AI handle it. But only if it’s capable and it’s legal and ethical to do so. And don’t fool yourself into believing it is a quick and easy fix if your AI experience is lousy. As a randomized field experiment[2](<https://papers.ssrn.com/sol3/papers.cfm?abstract_ id=5173181>) by Shunyuan Zhang and Narakesari Das Narayandas of the Harvard Business School found, AI agents boost customer satisfaction for routine issues when the system works well. But they fall flat when customers face repeated problems or systemic failures during interactions with chatbots—fast, polished, and unhelpful replies add to frustration. And once customers have a bad experience with a chatbot, these researchers found that if they are transferred to a human agent, customers continue to feel dissatisfied. In part, because they don’t believe they are talking to a human.  
+Don’t let AI turn every interaction into a drive-thru transaction. Use a simple rule of thumb: If the customer cares most about speed of resolution, let AI handle it. But only if it’s capable and it’s legal and ethical to do so. And don’t fool yourself into believing it is a quick and easy fix if your AI experience is lousy. As a randomized field experiment[2](<https://papers.ssrn.com/sol3/papers.cfm?abstract_ id=5173181>) by Shunyuan Zhang and Narakesari Das Narayandas of the Harvard Business School found, AI agents boost customer satisfaction for routine issues when the system works well. But they fall flat when customers face repeated problems or systemic failures during interactions with chatbots-fast, polished, and unhelpful replies add to frustration. And once customers have a bad experience with a chatbot, these researchers found that if they are transferred to a human agent, customers continue to feel dissatisfied. In part, because they don’t believe they are talking to a human.  
   
 If your goal is to make someone feel respected, valued, and understood, keep it human. The small talk, offhand jokes, and other “inefficient” detours are how people decide if they like you, if they trust your motives, and if they want to keep doing business with you. They slow the transaction, but speed up the relationship. They’re good for business, and good for the soul.
 
@@ -1106,7 +1106,7 @@ Social media creator Aishwarya Srinivasan told us that she’s drawn a hard line
 
 Try this
 
-Identify the parts of your work that carry your distinct value—the things only you can deliver, whether it’s craft, perspective, or creative judgment. Then set clear, measurable boundaries for AI’s role. For example: “no more than 10%,” “only in first drafts,” or “never for client pitches.” Make the division of labor explicit.
+Identify the parts of your work that carry your distinct value-the things only you can deliver, whether it’s craft, perspective, or creative judgment. Then set clear, measurable boundaries for AI’s role. For example: “no more than 10%,” “only in first drafts,” or “never for client pitches.” Make the division of labor explicit.
 
 [
 
@@ -1122,7 +1122,7 @@ Just because you can automate something doesn’t mean you should. Some tasks ar
   
 At one edtech company, a content writer described[2](https://www.bloodinthemachine.com/p/how-ai-is-killing-jobs-in-the-tech-f39) the fallout from a new mandate that all content had to be AI-generated: “Being forced to use AI has turned a job I liked into something I dread. As someone with a journalism background, it feels insulting to use AI instead of creating quality blog posts about education policy.”  
   
-A 2025 University of Groningen study[3](https://www.sciencedirect.com/science/article/pii/S0048733324000362) across 20 European countries found a similar pattern. Workers in highly automated jobs reported less purpose, less control, and more stress—even when the work was technically easier. Workers said they felt like extensions of machines rather than skilled contributors.  
+A 2025 University of Groningen study[3](https://www.sciencedirect.com/science/article/pii/S0048733324000362) across 20 European countries found a similar pattern. Workers in highly automated jobs reported less purpose, less control, and more stress-even when the work was technically easier. Workers said they felt like extensions of machines rather than skilled contributors.  
   
 Professor Matt Beane at the University of California at Santa Barbara told us that he keeps seeing this play out in software development. As AI takes over more coding, senior engineers are pushed into oversight roles: reviewing, prompting, debugging. Some like it. Others miss the craft of writing and building code.
 
@@ -1161,7 +1161,7 @@ At Duolingo, board member John Lilly told us about two non-engineers with no che
   
 AI flipped the order of the workflow. Instead of experts weighing in early and shooting down ideas at the whiteboard stage, they stepped in later, once there was something real to react to. Lilly explained: “If you bring experts in too early, they’ll tell you all the reasons it won’t work. AI let \[the non-engineers\] show what was possible, fast.”  
   
-Google is using a similar approach. Head of Product Madhu Gurumurthy says[1](https://x.com/realmadhuguru/status/1950336434126336154) they’re moving from lengthy Product Requirements Document (PRDs) to prototypes first. With AI-powered “vibe coding,” teams now prototype in code before drafting long proposals—speeding iteration and killing fewer ideas prematurely.
+Google is using a similar approach. Head of Product Madhu Gurumurthy says[1](https://x.com/realmadhuguru/status/1950336434126336154) they’re moving from lengthy Product Requirements Document (PRDs) to prototypes first. With AI-powered “vibe coding,” teams now prototype in code before drafting long proposals-speeding iteration and killing fewer ideas prematurely.
 
 Try this
 
@@ -1184,7 +1184,7 @@ Try this
 
 ## Embed AI experts in business units
 
-The flip side of letting generalists build first is knowing when experts need to sit shoulder-to-shoulder with the people closest to the work. A useful rule of thumb: if the workflow is exploratory and the cost of failure is low, let generalists build first. But if the workflow is critical—where errors could break compliance, expose data, or disrupt core operations—experts should be embedded from the start.  
+The flip side of letting generalists build first is knowing when experts need to sit shoulder-to-shoulder with the people closest to the work. A useful rule of thumb: if the workflow is exploratory and the cost of failure is low, let generalists build first. But if the workflow is critical-where errors could break compliance, expose data, or disrupt core operations-experts should be embedded from the start.  
   
 Wharton professor Daniel Rock has seen a clear pattern across AI-native organizations, as well as legacy firms like a Fortune 500 CPG company and a Fortune 100 insurance company successfully using AI to transform operations. “Results come when AI engineers are embedded directly into business units. Sitting side by side with sales, ops, or support teams, they co-develop solutions with the people closest to the problems.”  
   
@@ -1192,7 +1192,7 @@ It’s not a new idea. Procter & Gamble used a similar approach during its desig
 
 Try this
 
-Pick two or three frontline teams—like sales, ops, or customer support—and embed an AI engineer part-time for one quarter. Have them sit in standups, shadow day-to-day work, and co-build solutions on the spot. Don’t offload everything to them: teams should still learn to handle the low-effort wins with macros or no-code tools. Use the engineer’s time for the high-impact problems that require real engineering expertise and judgment to get right.
+Pick two or three frontline teams-like sales, ops, or customer support-and embed an AI engineer part-time for one quarter. Have them sit in standups, shadow day-to-day work, and co-build solutions on the spot. Don’t offload everything to them: teams should still learn to handle the low-effort wins with macros or no-code tools. Use the engineer’s time for the high-impact problems that require real engineering expertise and judgment to get right.
 
 [
 
@@ -1214,7 +1214,7 @@ Try this
 
 Use AI coding tools to speed prototyping, but hold senior engineers accountable for the last mile. Put them in charge of reviewing architecture, adding error handling, running load tests, locking down security, and refining what AI and juniors start, so you don’t end up shipping “AI slop.” Try these suggestions from[3](https://medium.com/@brain1127/ghost-in-the-code-review-how-ai-is-changing-the-role-of-the-senior-engineer-1999db1db517) Brian Rain, an agile coach at Slalom.
 
-1.  When reviewing AI- or junior-written code, shift the focus from syntax to substance. Ask senior engineers to review for intent, design alignment, and business purpose—not just whether the code runs. Encourage them to explain why the code works (or doesn’t), and how it fits into the bigger system, rather than only flagging if it technically executes.
+1.  When reviewing AI- or junior-written code, shift the focus from syntax to substance. Ask senior engineers to review for intent, design alignment, and business purpose-not just whether the code runs. Encourage them to explain why the code works (or doesn’t), and how it fits into the bigger system, rather than only flagging if it technically executes.
 2.  Prioritize technical debt prevention by encouraging senior engineers “to reject or refactor AI-generated solutions that accrue hidden complexity.”
 
 [
@@ -1225,7 +1225,7 @@ Try this
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/692fe100f4e26d97b3c0c8d1_no-12.svg)
 
-*“Our brains are built for survival, not objectivity. We’re wired to run from the rustling bush, not sit and analyze whether it’s a rabbit or a tiger. AI doesn’t have that wiring—it can calmly explore millions, even billions, of possibilities without flinching. It’s great at broadening the consideration set and ranking what looks most promising.Then humans step in with context—brand, values, and strategy—to make the final call on what deserves to exist.”*
+*“Our brains are built for survival, not objectivity. We’re wired to run from the rustling bush, not sit and analyze whether it’s a rabbit or a tiger. AI doesn’t have that wiring-it can calmly explore millions, even billions, of possibilities without flinching. It’s great at broadening the consideration set and ranking what looks most promising.Then humans step in with context-brand, values, and strategy-to make the final call on what deserves to exist.”*
 
 [Eric Colson,  
 ‍](https://www.linkedin.com/in/ecolson)former Chief Algorithms Officer, Stitch Fix
@@ -1236,9 +1236,9 @@ Try this
 
 The last mile isn’t just an engineering problem. In creative and knowledge domains, the test is whether the work resonates, aligns, and holds up under scrutiny. That final judgment still needs to belong to experts.  
   
-At Stitch Fix, an online clothing retailer, they’ve used algorithms[1](https://multithreaded.stitchfix.com/blog/2016/07/14/data-driven-fashion-design/) to scan inventory and customer preferences to flag gaps—styles, colors, patterns, or fabrics that aren’t being met. AI then generated design suggestions based on those gaps. But instead of letting the system greenlight production, Stitch Fix routed those suggestions to human designers, who decided which ones dovetailed with the brand, met quality standards, and resonated with customers. The AI stretched the creative option set; the experts cut it back to what’s worth doing.  
+At Stitch Fix, an online clothing retailer, they’ve used algorithms[1](https://multithreaded.stitchfix.com/blog/2016/07/14/data-driven-fashion-design/) to scan inventory and customer preferences to flag gaps-styles, colors, patterns, or fabrics that aren’t being met. AI then generated design suggestions based on those gaps. But instead of letting the system greenlight production, Stitch Fix routed those suggestions to human designers, who decided which ones dovetailed with the brand, met quality standards, and resonated with customers. The AI stretched the creative option set; the experts cut it back to what’s worth doing.  
   
-Eric Colson, former Chief Algorithms Officer at Stitch Fix had this to say: “Our brains are built for survival, not objectivity. We’re wired to run from the rustling bush, not sit and analyze whether it’s a rabbit or a tiger. AI doesn’t have that wiring—it can calmly explore millions, even billions, of possibilities without flinching. It’s great at broadening the consideration set and ranking what looks most promising. Then humans step in with context—brand, values, and strategy—to make the final call on what deserves to exist.”
+Eric Colson, former Chief Algorithms Officer at Stitch Fix had this to say: “Our brains are built for survival, not objectivity. We’re wired to run from the rustling bush, not sit and analyze whether it’s a rabbit or a tiger. AI doesn’t have that wiring-it can calmly explore millions, even billions, of possibilities without flinching. It’s great at broadening the consideration set and ranking what looks most promising. Then humans step in with context-brand, values, and strategy-to make the final call on what deserves to exist.”
 
 Try this
 
@@ -1254,7 +1254,7 @@ Try this
 
 ## Beware the temptation to ignore experts
 
-Just as with AI slop, AI can make mediocre work look deceptively polished. At Udemy, Rebecca Stern, Interim Chief Learning Officer, saw teams using AI to generate learning plans for employee development—complete with outlines, objectives, and quizzes. On the surface, the plans looked polished. Underneath, they missed the basics of instructional design (for example, sequencing concepts out of order, misaligning objectives and assessments).  
+Just as with AI slop, AI can make mediocre work look deceptively polished. At Udemy, Rebecca Stern, Interim Chief Learning Officer, saw teams using AI to generate learning plans for employee development-complete with outlines, objectives, and quizzes. On the surface, the plans looked polished. Underneath, they missed the basics of instructional design (for example, sequencing concepts out of order, misaligning objectives and assessments).  
   
 That’s the danger of cutting experts out of the loop. When AI skips steps, the cracks often don’t show until the work is live. And by then, fixes are harder, costlier, and painfully public.
 
@@ -1302,7 +1302,7 @@ Try this
 
 ## Equip your “peer to peer” AI champions for success
 
-Some of the most important new roles in AI adoption aren’t formal titles at all—they’re the “AI champions” or internal “AI influencers” who spread new learnings and habits peer to peer.  
+Some of the most important new roles in AI adoption aren’t formal titles at all-they’re the “AI champions” or internal “AI influencers” who spread new learnings and habits peer to peer.  
   
 Babson College professor Rob Cross has found that while top-down change typically reaches just 30–35%[1](https://www.robcross.org/drive-organizational-change-through-network-influencers/) of employees, pairing those formal efforts with internal influencers can be twice as effective. That’s why it’s important to find your AI champions: the people who are curious, credible, and well-connected enough to inspire others to experiment.  
   
@@ -1322,13 +1322,13 @@ Try this
 
 ## Back AI champions who do smart things, not the ones who spew out smart talk
 
-Often, the best AI champions don’t raise their hands or get nominated by their boss—they reveal themselves through action. That’s how Uber found theirs. GenAI Strategy Lead Manjari Agochiya told us how she launched an open call for AI use cases. She told us, “It surfaced 150 ideas, but more importantly, it revealed several stakeholders across various domains at Uber who were thinking about AI, implementing it in experimental ways and were excited to share their journeys with everyone at Uber. There were around 53 in Marketing and Performance Marketing, around 30 in Legal, and several small teams across the Community Operations, Engineering, and Customer Obsession teams.” Those people who raised their hands with excitement became Uber’s first real network of AI champions.  
+Often, the best AI champions don’t raise their hands or get nominated by their boss-they reveal themselves through action. That’s how Uber found theirs. GenAI Strategy Lead Manjari Agochiya told us how she launched an open call for AI use cases. She told us, “It surfaced 150 ideas, but more importantly, it revealed several stakeholders across various domains at Uber who were thinking about AI, implementing it in experimental ways and were excited to share their journeys with everyone at Uber. There were around 53 in Marketing and Performance Marketing, around 30 in Legal, and several small teams across the Community Operations, Engineering, and Customer Obsession teams.” Those people who raised their hands with excitement became Uber’s first real network of AI champions.  
   
 Udemy took a similar approach. During its company-wide “UDays,” where employees came together to build AI prompts and prototypes, the team didn’t just track attendance; they watched behavior. Interim Chief Learning Officer Rebecca Stern told us, “We looked at who showed up curious. Who helped others learn. Who shared tools and tips. That lens surfaced 31 early AI champions across the company.” The doers, not the talkers.
 
 Try this
 
-Run a prompt-a-thon or agent-a-thon where the goal isn’t just to collect ideas—it’s to watch the behavior. Who dives in? Who collaborates? Who leaves buzzing with new ideas? Most important of all, who implements the best ideas AFTER the challenge ends? Those are your AI champions.
+Run a prompt-a-thon or agent-a-thon where the goal isn’t just to collect ideas-it’s to watch the behavior. Who dives in? Who collaborates? Who leaves buzzing with new ideas? Most important of all, who implements the best ideas AFTER the challenge ends? Those are your AI champions.
 
 [
 
@@ -1349,7 +1349,7 @@ As a result, Beane and team describe new human jobs emerging in this bot economy
 
 Try this
 
-In your next multi-agent project, assign one person as the Fleet Supervisor and another as the Fixer. Have them keep a running log of every time they need to step in. If those logs start filling up with the same problems—loops, duplicate work, or agents talking past each other—that’s your signal. It’s time to make those roles official and give someone the job of keeping your bot ecosystem from eating itself. And, when investing in AI agents, opt for solutions that have strong built-in agent guardrails.
+In your next multi-agent project, assign one person as the Fleet Supervisor and another as the Fixer. Have them keep a running log of every time they need to step in. If those logs start filling up with the same problems-loops, duplicate work, or agents talking past each other-that’s your signal. It’s time to make those roles official and give someone the job of keeping your bot ecosystem from eating itself. And, when investing in AI agents, opt for solutions that have strong built-in agent guardrails.
 
 [
 
@@ -1361,15 +1361,15 @@ Try this
 
 ## Consider merging or melding specialized roles to reduce handoffs
 
-AI is starting to collapse the walls between once-specialized jobs. In some places, work that used to require a lineup of experts—researcher, writer, designer, coder—can now be done by one person with the right AI tools.  
+AI is starting to collapse the walls between once-specialized jobs. In some places, work that used to require a lineup of experts-researcher, writer, designer, coder-can now be done by one person with the right AI tools.  
   
-In software, a single engineer with AI can ideate, write code, generate tests, and deploy—tasks that once required product managers, QA testers, and release engineers. In marketing, one person with AI can research, draft campaigns, design assets, and schedule posts—collapsing analyst, copywriter, designer, and campaign manager into a single role.  
+In software, a single engineer with AI can ideate, write code, generate tests, and deploy-tasks that once required product managers, QA testers, and release engineers. In marketing, one person with AI can research, draft campaigns, design assets, and schedule posts-collapsing analyst, copywriter, designer, and campaign manager into a single role.  
   
 Krishna Mehra, a former Head of Engineering at Meta, argues[1](https://dayzero.substack.com/p/rise-of-the-full-stack-builder-adapt) this is a chance to “rebundle” roles. Startups are skipping layers of project managers and bloated teams and instead hiring “full-stack builders”: people who can take an idea from concept to deployment, leveraging AI at every step. As Mehra notes, these adaptive, end-to-end roles are already powering companies like Cursor (20 people, $100M ARR) and Midjourney (10 people, $200M ARR) as of mid-2025.
 
 Try this
 
-Map your team’s workflows and focus on the baton passes. Where do people in three or four roles each “touch” the work before it ships? Mehra recommends starting small. Spin up a tiger team and challenge them to ship something—an internal tool, a campaign, a feature—using as few role handoffs as possible. Document what worked, what broke, and what AI made easier.
+Map your team’s workflows and focus on the baton passes. Where do people in three or four roles each “touch” the work before it ships? Mehra recommends starting small. Spin up a tiger team and challenge them to ship something-an internal tool, a campaign, a feature-using as few role handoffs as possible. Document what worked, what broke, and what AI made easier.
 
 [
 
@@ -1385,11 +1385,11 @@ Rebundling how work gets done also means rethinking who’s accountable for it. 
   
 AI is starting to change that equation. Dylan Field, CEO of Figma, has noted[1](https://www.businessinsider.com/ai-empowering-generalist-behaviour-figma-ceo-tech-design-2025-8) that “areas that were seen as distinct phases in the product development process are now merging. Product is also blurring with design and development and potentially even parts of research.”  
   
-Tony Gentilcore, Co-founder and Head of Product Engineering at Glean, suggests that it’s time to rethink project ownership structures. Splitting DRIs made sense when each function had to manually manage its own part of the work—product chasing requirements, engineering tracking dependencies, ops managing timelines. But AI is starting to take over those mechanics. Systems can now generate status updates automatically, route tasks to the right owner, and flag dependencies before they block progress. With that administrative load off the table, having three separate DRIs, for example, can add unnecessary coordination costs.
+Tony Gentilcore, Co-founder and Head of Product Engineering at Glean, suggests that it’s time to rethink project ownership structures. Splitting DRIs made sense when each function had to manually manage its own part of the work-product chasing requirements, engineering tracking dependencies, ops managing timelines. But AI is starting to take over those mechanics. Systems can now generate status updates automatically, route tasks to the right owner, and flag dependencies before they block progress. With that administrative load off the table, having three separate DRIs, for example, can add unnecessary coordination costs.
 
 Try this
 
-Take one active project with multiple DRIs. Run a 90-day pilot with a single DRI accountable for the whole effort, while AI tools handle the coordination—status reports, task routing, dependency tracking. Compare speed and clarity against your old structure.
+Take one active project with multiple DRIs. Run a 90-day pilot with a single DRI accountable for the whole effort, while AI tools handle the coordination-status reports, task routing, dependency tracking. Compare speed and clarity against your old structure.
 
 [
 
@@ -1412,7 +1412,7 @@ The org chart is how we carve up roles. It slices work into boxes so decisions d
   
 In a 10-month study[1](https://dl.acm.org/doi/10.1145/3686903) Rebecca Hinds did with Stanford’s Melissa Valentine, they saw such connection-mapping at a digital retailer that used AI to optimize inventory. Human merchants owned narrow categories like “plus-size denim” or “plus-size dresses.” That’s how the org chart divided the work. The AI tools (and experts), however, identified cross-category patterns that humans missed (like spikes in denim sales that predicted spikes in dress sales).  
   
-Coordination troubles flared because no one had the mandate to act on insights that crossed silos. These problems waned after leaders redrew roles—expanding managers’ responsibilities to cover broader product lines—so it was clear which managers had the visibility and authority to act on AI’s system-wide insights.  
+Coordination troubles flared because no one had the mandate to act on insights that crossed silos. These problems waned after leaders redrew roles-expanding managers’ responsibilities to cover broader product lines-so it was clear which managers had the visibility and authority to act on AI’s system-wide insights.  
   
 The same shift is happening elsewhere[2](https://www.geekwire.com/2025/microsoft-taps-linkedin-ceo-for-dual-role-leading-office-apps-in-ai-strategy-shift/). Some companies are consolidating product lines and platforms so AI can analyze relationships across usage, renewal, and expansion. AI might reveal that adoption of one feature predicts renewal rates or upsell potential months later. But in a traditional org chart, product managers own adoption while customer success managers own renewal. Because accountability is split, neither side can act on the full picture. Valuable AI insights fall into the cracks.
 
@@ -1420,7 +1420,7 @@ Try this
 
 Conduct an honest evaluation of your role. As Al Dea, Founder of The Edge of Work, suggests, “If you were to build your function from scratch today, how would it look and operate?”  
   
-Then ground your vision in reality. Audit where AI is surfacing cross-cutting patterns—like when customer churn shows up in product usage data, support tickets, and contract renewals, but no single role owns the whole problem. Give one leader accountability and authority over the full span—not just fragments.
+Then ground your vision in reality. Audit where AI is surfacing cross-cutting patterns-like when customer churn shows up in product usage data, support tickets, and contract renewals, but no single role owns the whole problem. Give one leader accountability and authority over the full span-not just fragments.
 
 [
 
@@ -1466,7 +1466,7 @@ Try this
 
 The solution architect is another role being reshaped by AI. Historically, people in these jobs spent months memorizing product specs and technical documentation before they were credible with customers. As Michael Arena, former Chief Talent Officer at General Motors and Dean of the Crowell School of Business at Biola University, explained to us: “Solution architects have to digest so much technical matter on the front end…if you can augment that and give them the tools…they can then invest in building the trust needed so that they’re creating work ties and people are pulling them in sooner or faster.”  
   
-But Arena also warned us of a trap. Using AI only to enable sales and service workers to handle more accounts (for example by summarizing discovery call notes in Gong and auto-generating systems architecture diagrams in Lucidchart AI) treats them like throughput machines. The bigger payoff comes when people reinvest that new-found time into customers—building trust, uncovering needs, and shaping long-term growth.
+But Arena also warned us of a trap. Using AI only to enable sales and service workers to handle more accounts (for example by summarizing discovery call notes in Gong and auto-generating systems architecture diagrams in Lucidchart AI) treats them like throughput machines. The bigger payoff comes when people reinvest that new-found time into customers-building trust, uncovering needs, and shaping long-term growth.
 
 Try this
 
@@ -1484,7 +1484,7 @@ Try this
 
 AI gobbles up so much computing power that it is, and ought to, change what CFOs do. Traditionally, finance leaders have been stewards of capital and labor. Now, in many companies, computing resources have been added to the list.  
   
-Lily Zhang, VP of Engineering at Instacart, told us that compute allocation—who gets access to GPUs, model licenses, and tokens—is increasingly where the biggest productivity gains or bottlenecks are created. She pointed to Meta’s CFO Susan Li, who has said[1](https://www.youtube.com/watch?v=z6PHZJLo2Sk) compute is now one of the most strategically scarce resources the company manages.  
+Lily Zhang, VP of Engineering at Instacart, told us that compute allocation-who gets access to GPUs, model licenses, and tokens-is increasingly where the biggest productivity gains or bottlenecks are created. She pointed to Meta’s CFO Susan Li, who has said[1](https://www.youtube.com/watch?v=z6PHZJLo2Sk) compute is now one of the most strategically scarce resources the company manages.  
   
 Allocation decisions have important implications. Do you give every developer unlimited AI tokens, as Shopify has[2](https://www.firstround.com/ai/shopify), reasoning that an extra $1,000 per engineer per month is cheap if it delivers a 10% productivity lift? Or do you ration usage, as other companies do, and risk stifling adoption?
 
@@ -1513,18 +1513,18 @@ That’s a mistake. As Telus VP of AI, Alexandre Guilbault, told us: “The best
 
 ‍
 
-Too many AI pilots end up staffed with whomever has “extra capacity” instead of the people who could make the biggest impact. The best performers are often left out—sometimes because they’ve already mastered the task being tested as part of the pilot and dismiss AI as unnecessary. More often, because they’re buried in crucial work and leaders hesitate to pull them away to try a prototype or pilot.
+Too many AI pilots end up staffed with whomever has “extra capacity” instead of the people who could make the biggest impact. The best performers are often left out-sometimes because they’ve already mastered the task being tested as part of the pilot and dismiss AI as unnecessary. More often, because they’re buried in crucial work and leaders hesitate to pull them away to try a prototype or pilot.
 
 ‍
 
 When AI efforts exclude top performers, two problems crop up:
 
 -   The system learns from the habits of average performers instead of the practices that make your best people great.
--   The influencers everyone else looks to have no stake in the outcome—so when the tool rolls out, they’re the first to shrug or resist. That stifles the spread of tools that can speed up and improve the quality of work done throughout your organization.
+-   The influencers everyone else looks to have no stake in the outcome-so when the tool rolls out, they’re the first to shrug or resist. That stifles the spread of tools that can speed up and improve the quality of work done throughout your organization.
 
 Try this
 
-Rotate your best people into AI pilots, even if it hurts short-term execution. Flatter them, pay them, give them a few days off. Do what it takes to get them to sign up and give their all to the task. The short-term cost is a down payment for building systems your top performers will use and refine—and the rest of the organization will trust and benefit from.
+Rotate your best people into AI pilots, even if it hurts short-term execution. Flatter them, pay them, give them a few days off. Do what it takes to get them to sign up and give their all to the task. The short-term cost is a down payment for building systems your top performers will use and refine-and the rest of the organization will trust and benefit from.
 
 [
 
@@ -1534,7 +1534,7 @@ Try this
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/692fe100f4e26d97b3c0c8dc_no-25.svg)
 
-*“This \[prompt engineering\] feels like something everyone will need to be competent at—not work that falls solely to those with a specialized job title within the next few years.”*
+*“This \[prompt engineering\] feels like something everyone will need to be competent at-not work that falls solely to those with a specialized job title within the next few years.”*
 
 [Kelly Daniel,  
 ](https://www.linkedin.com/in/kellyedaniel)Prompt Director, Lazarus AI
@@ -1547,7 +1547,7 @@ As AI reshapes how work gets done, new responsibilities are popping up quickly: 
 
 ‍
 
-Take prompt engineering. Some companies are hiring full-time prompt engineers. Others are folding it into everyone’s job. Kelly Daniel, Prompt Director at Lazarus AI, is betting on the latter. She told us: “This feels like something everyone will need to be competent at—not work that falls solely to those with a specialized job title within the next few years.”
+Take prompt engineering. Some companies are hiring full-time prompt engineers. Others are folding it into everyone’s job. Kelly Daniel, Prompt Director at Lazarus AI, is betting on the latter. She told us: “This feels like something everyone will need to be competent at-not work that falls solely to those with a specialized job title within the next few years.”
 
 ‍
 
@@ -1567,7 +1567,7 @@ Try this
 
 ## Don’t create new AI roles as knee-jerk solutions
 
-When AI creates new kinds of work or responsibilities, some leaders respond by inventing a shiny new role. The Chief AI Officer is a good example. Some leaders told us that, at its best, this role is designed for impact and filled by a star—someone who can set strategy, attract other top talent, shape governance, and unite teams across functions to build and implement AI tools. But too often it’s a ceremonial title—window dressing with no budget, authority, or real influence inside or outside the company.
+When AI creates new kinds of work or responsibilities, some leaders respond by inventing a shiny new role. The Chief AI Officer is a good example. Some leaders told us that, at its best, this role is designed for impact and filled by a star-someone who can set strategy, attract other top talent, shape governance, and unite teams across functions to build and implement AI tools. But too often it’s a ceremonial title-window dressing with no budget, authority, or real influence inside or outside the company.
 
 Try this
 
@@ -1611,7 +1611,7 @@ Instead of theorizing and making proclamations from on high, Reid Hoffman, co-fo
 
 Try this
 
-If you don’t use AI yourself, you’re not qualified to decide how your teams should. Get a mentor and get hands-on like Hoffman and Huang do before you start handing down rules. Follow Wharton Professor and AI expert Ethan Mollick’s “ten-hour rule”[3](https://www.oneusefulthing.org/p/what-people-ask-me-most-also-some): Spend at least ten focused hours working directly with AI so you can experience what he calls the “jagged frontier”—the uneven, often unpredictable line between what AI can and can’t do. Prior to redesigning structures or issuing new mandates, sit with the teams building or deploying AI and watch where approvals, politics, or outdated processes are slowing them down.
+If you don’t use AI yourself, you’re not qualified to decide how your teams should. Get a mentor and get hands-on like Hoffman and Huang do before you start handing down rules. Follow Wharton Professor and AI expert Ethan Mollick’s “ten-hour rule”[3](https://www.oneusefulthing.org/p/what-people-ask-me-most-also-some): Spend at least ten focused hours working directly with AI so you can experience what he calls the “jagged frontier”-the uneven, often unpredictable line between what AI can and can’t do. Prior to redesigning structures or issuing new mandates, sit with the teams building or deploying AI and watch where approvals, politics, or outdated processes are slowing them down.
 
 ‍
 
@@ -1632,7 +1632,7 @@ Try this
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6930317526ea60f332fe288d_Headshot_Kristi_Rible.webp)
 
-## Implement nuanced AI policies—and keep updating them
+## Implement nuanced AI policies-and keep updating them
 
 Too many companies have charged ahead with AI without writing down the guardrails and rules. A 2024 survey by Vanta[1](https://info.vanta.com/hubfs/2024%20State%20of%20Trust%20Report.pdf) of 2,500 IT and business leaders in the U.S., U.K., and Australia found that only 36% work in organizations that have an AI policy or are in the process of developing one.
 
@@ -1646,11 +1646,11 @@ A single static company-wide policy isn’t the solution. New tools emerge, regu
 
 ‍
 
-When we spoke with her, Kristi Rible, CEO of The Huuman Group, emphasized that AI policies should be paired with principles that explain why guardrails and rules are in place—like “humans remain accountable for decisions” or “transparency first.” “Unlike tools or rules that shift with each new model, your AI principles don’t expire. They give the policy a human-centered, durable backbone even as the technology changes.”
+When we spoke with her, Kristi Rible, CEO of The Huuman Group, emphasized that AI policies should be paired with principles that explain why guardrails and rules are in place-like “humans remain accountable for decisions” or “transparency first.” “Unlike tools or rules that shift with each new model, your AI principles don’t expire. They give the policy a human-centered, durable backbone even as the technology changes.”
 
 Try this
 
-Treat your AI policy like a living system. It should be easy to access, list approved tools, flag their risk level, and explain the training required. Pair it with a governance rhythm—steering committees, regular reviews—so the rules evolve as fast as the technology does. And anchor it in a set of enduring principles—like accountability, transparency, and human oversight—so the guardrails stay relevant even as the tech shifts.
+Treat your AI policy like a living system. It should be easy to access, list approved tools, flag their risk level, and explain the training required. Pair it with a governance rhythm-steering committees, regular reviews-so the rules evolve as fast as the technology does. And anchor it in a set of enduring principles-like accountability, transparency, and human oversight-so the guardrails stay relevant even as the tech shifts.
 
 [
 
@@ -1662,7 +1662,7 @@ Try this
 
 ## Flex your organizational hierarchy
 
-Hierarchy is one of the main ways skilled leaders control how AI decisions get made—but they treat it as flexible rather than a fixed one-size-fits-all org chart.
+Hierarchy is one of the main ways skilled leaders control how AI decisions get made-but they treat it as flexible rather than a fixed one-size-fits-all org chart.
 
 ‍
 
@@ -1670,7 +1670,7 @@ University of Michigan Professor Lindy Greer's research[1](https://hbr.org/2023/
 
 ‍
 
-AI makes such flexibility even more critical because it can implement rapid changes in the speed and the scope of decisions. AI surfaces signals in real time—too fast for a rigid chain of approvals. And these signals often cut across teams, products, or platforms—which are often too broad for a single local manager to handle well.
+AI makes such flexibility even more critical because it can implement rapid changes in the speed and the scope of decisions. AI surfaces signals in real time-too fast for a rigid chain of approvals. And these signals often cut across teams, products, or platforms-which are often too broad for a single local manager to handle well.
 
 Try this
 
@@ -1741,7 +1741,7 @@ Try this
 
 ## Don't treat “standardized” and “centralized” AI as dirty words
 
-Another way to draw the lines of control is deciding how centralized—or decentralized—your AI efforts should be. One common approach is to centralize AI into a Center of Excellence (CoE). It brings consistency, shared standards, and governance. But if everything needs to flow through the CoE, you risk creating bottlenecks as every team queues up for support. On the other hand, if you lean too much on decentralization, you get the opposite problem: redundant projects, incompatible models, and fragmented security.
+Another way to draw the lines of control is deciding how centralized-or decentralized-your AI efforts should be. One common approach is to centralize AI into a Center of Excellence (CoE). It brings consistency, shared standards, and governance. But if everything needs to flow through the CoE, you risk creating bottlenecks as every team queues up for support. On the other hand, if you lean too much on decentralization, you get the opposite problem: redundant projects, incompatible models, and fragmented security.
 
 ‍
 
@@ -1764,11 +1764,11 @@ Try this
 
 ## Break down the walls between IT and HR
 
-Another lever of control is redrawing the borders between functions. In 2025, Moderna merged its Human Resources and Technology departments under one leader: the Chief People and Digital Technology Officer. Tracey Franklin (Moderna's former HR chief), who moved to this new position, explained the redesign[1](https://www.unleash.ai/artificial-intelligence/why-moderna-merged-hr-and-it-to-better-architect-the-flow-of-work): “Merging HR and Digital isn't just about consolidation—it's a deliberate move to close the gap between the people who shape culture and those who build the systems that support it.”
+Another lever of control is redrawing the borders between functions. In 2025, Moderna merged its Human Resources and Technology departments under one leader: the Chief People and Digital Technology Officer. Tracey Franklin (Moderna's former HR chief), who moved to this new position, explained the redesign[1](https://www.unleash.ai/artificial-intelligence/why-moderna-merged-hr-and-it-to-better-architect-the-flow-of-work): “Merging HR and Digital isn't just about consolidation-it's a deliberate move to close the gap between the people who shape culture and those who build the systems that support it.”
 
 Try this
 
-Don't let HR and IT manage AI in isolation. Work on solutions—whether through merged leadership, cross-functional governance, or joint planning—that bring together leaders and teams who are responsible for managing the people with those who are responsible for building and running your information systems.
+Don't let HR and IT manage AI in isolation. Work on solutions-whether through merged leadership, cross-functional governance, or joint planning-that bring together leaders and teams who are responsible for managing the people with those who are responsible for building and running your information systems.
 
 [
 
@@ -1787,7 +1787,7 @@ Try this
 
 ## Sketch what your org chart will look like when people manage more AI agents and fewer (if any) humans
 
-As Moderna merged its HR and IT functions under a single leader, it also deployed more than 3,000 GPT agents[1](https://www.duperrin.com/english/2025/05/19/hr-it-merger-moderna-ai/) across a variety of roles. In the coming years, it's likely that most employees won't just use AI—they'll lead small fleets of it. McKinsey[2](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era) calls this the rise of the agentic organization, where humans and AI agents operate side by side, each contributing judgment, execution, and learning. They've already seen teams of two to five humans supervising “agent factories” of 50 to 100 specialized agents running end-to-end processes. While this is not the reality for most organizations, it's a useful exercise to start sketching out.
+As Moderna merged its HR and IT functions under a single leader, it also deployed more than 3,000 GPT agents[1](https://www.duperrin.com/english/2025/05/19/hr-it-merger-moderna-ai/) across a variety of roles. In the coming years, it's likely that most employees won't just use AI-they'll lead small fleets of it. McKinsey[2](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era) calls this the rise of the agentic organization, where humans and AI agents operate side by side, each contributing judgment, execution, and learning. They've already seen teams of two to five humans supervising “agent factories” of 50 to 100 specialized agents running end-to-end processes. While this is not the reality for most organizations, it's a useful exercise to start sketching out.
 
 Try this
 
@@ -1803,9 +1803,9 @@ THEME 05
 
 # Coordination and Silos
 
-How does work move through—or get stuck—inside your organization?
+How does work move through-or get stuck-inside your organization?
 
-Good coordination is what prevents an  organization from wobbling off course. When it works, handoffs are clean, people know what to do and when to do it, time and money are saved, and everyone moves in the same direction. When it fails, you get all the familiar problems: delays and ordeals for colleagues and customers, duplicated effort, frustration and confusion, and strategies that are lost in translation. AI raises the stakes. Now you have to orchestrate not only people—but people and machines together.
+Good coordination is what prevents an  organization from wobbling off course. When it works, handoffs are clean, people know what to do and when to do it, time and money are saved, and everyone moves in the same direction. When it fails, you get all the familiar problems: delays and ordeals for colleagues and customers, duplicated effort, frustration and confusion, and strategies that are lost in translation. AI raises the stakes. Now you have to orchestrate not only people-but people and machines together.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/692fe100f4e26d97b3c0c8aa_coordination-silos.webp)
 
@@ -1813,7 +1813,7 @@ Good coordination is what prevents an  organization from wobbling off course. 
 
 ## Fix your systems before expecting AI to improve coordination
 
-You can't just bolt AI onto a broken system and expect it to work. If you drop it into a flawed legacy system, the same old coordination failures that hurt productivity, innovation, and well-being—and generally drove people crazy for decades—will persist, or get worse.
+You can't just bolt AI onto a broken system and expect it to work. If you drop it into a flawed legacy system, the same old coordination failures that hurt productivity, innovation, and well-being-and generally drove people crazy for decades-will persist, or get worse.
 
 ‍
 
@@ -1825,7 +1825,7 @@ Northwestern Professor Hatim Rahman described a hospital project where his PhD s
 
 Try this
 
-Before deploying AI, ask: What do we need to change in the organization—not just the tech—to train, use, and trust AI tools? Which rules and routines that once served us well now block progress? Which long-ignored problems might AI finally force us to fix? That may mean breaking down silos, loosening overly restrictive rules, and addressing the employee mistrust that was festering long before AI showed up.
+Before deploying AI, ask: What do we need to change in the organization-not just the tech-to train, use, and trust AI tools? Which rules and routines that once served us well now block progress? Which long-ignored problems might AI finally force us to fix? That may mean breaking down silos, loosening overly restrictive rules, and addressing the employee mistrust that was festering long before AI showed up.
 
 [
 
@@ -1835,7 +1835,7 @@ Try this
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/692fe101f4e26d97b3c0c8f7_no-36.svg)
 
-*“If you throw AI at an existing process that has gaps, you’re just scaling \[dysfunction\]—or bad decisions—at a higher velocity.”*
+*“If you throw AI at an existing process that has gaps, you’re just scaling \[dysfunction\]-or bad decisions-at a higher velocity.”*
 
 [Adam Treitler,  
 ](https://www.linkedin.com/in/adam-treitler/)Manager of People Technology and Analytics, Pandora
@@ -1844,7 +1844,7 @@ Try this
 
 ## Map how work is really done before you automate
 
-Even after you tackle the structural problems that constrain AI, you’ll still run into the messy day-to-day reality of how work gets done IN PRACTICE rather than IN THEORY. Most work is propped up by informal fixes, shortcuts, workarounds, rule bending, and judgment calls that aren’t documented—and yet skilled employees use these constantly and can’t do their job without them.
+Even after you tackle the structural problems that constrain AI, you’ll still run into the messy day-to-day reality of how work gets done IN PRACTICE rather than IN THEORY. Most work is propped up by informal fixes, shortcuts, workarounds, rule bending, and judgment calls that aren’t documented-and yet skilled employees use these constantly and can’t do their job without them.
 
 ‍
 
@@ -1856,7 +1856,7 @@ For example:
 
 ‍
 
-If AI models don’t know how people in your organization get work done DESPITE rather than BECAUSE of the formal system, they’ll faithfully scale processes that function only because of hidden workarounds (despite a lousy “official” design), replicating and spreading broken handoffs, redundancies, and poorly written policies and decision rules. “If you throw AI at an existing process that has gaps, you’re just scaling \[dysfunction\]—or bad decisions—at a higher velocity” says Adam Treitler, Manager of People Technology and Analytics at Pandora.
+If AI models don’t know how people in your organization get work done DESPITE rather than BECAUSE of the formal system, they’ll faithfully scale processes that function only because of hidden workarounds (despite a lousy “official” design), replicating and spreading broken handoffs, redundancies, and poorly written policies and decision rules. “If you throw AI at an existing process that has gaps, you’re just scaling \[dysfunction\]-or bad decisions-at a higher velocity” says Adam Treitler, Manager of People Technology and Analytics at Pandora.
 
 ‍
 
@@ -1880,15 +1880,15 @@ There are two powerful tools for understanding how work actually happens in orga
 
 ‍
 
-To best apply AI, you need to understand both. Journey maps[1](https://usability.yale.edu/understanding-your-user/user-journey-maps) uncover the human experience: how customers or clients travel through a system—the steps they take, and the points that feel easy, frustrating, or surprising. Process maps[2](https://www.atlassian.com/work-management/project-management/process-mapping) reveal how work moves through the organization from the perspective of employees who operate the system.
+To best apply AI, you need to understand both. Journey maps[1](https://usability.yale.edu/understanding-your-user/user-journey-maps) uncover the human experience: how customers or clients travel through a system-the steps they take, and the points that feel easy, frustrating, or surprising. Process maps[2](https://www.atlassian.com/work-management/project-management/process-mapping) reveal how work moves through the organization from the perspective of employees who operate the system.
 
 ‍
 
-A 2024 study[3](https://pmc.ncbi.nlm.nih.gov/articles/PMC11102702/pdf/10.1177_20552076241249264.pdf) of stroke rehabilitation mapped how patient care unfolded from both perspectives for 130 patients. Instead of a single clean sequence, they uncovered nine different variants—including cases where discharge readiness (when clinicians judge a patient stable enough to leave hospital care) was recorded before key functional assessments (tests of how independently a patient can move, speak, or perform daily tasks). The study shows how pairing journey maps with process maps exposes both the patient experience and the messy reality of operations. That clarity is essential before layering in AI or automation.
+A 2024 study[3](https://pmc.ncbi.nlm.nih.gov/articles/PMC11102702/pdf/10.1177_20552076241249264.pdf) of stroke rehabilitation mapped how patient care unfolded from both perspectives for 130 patients. Instead of a single clean sequence, they uncovered nine different variants-including cases where discharge readiness (when clinicians judge a patient stable enough to leave hospital care) was recorded before key functional assessments (tests of how independently a patient can move, speak, or perform daily tasks). The study shows how pairing journey maps with process maps exposes both the patient experience and the messy reality of operations. That clarity is essential before layering in AI or automation.
 
 Try this
 
-Help each function build a process map from the insider’s view, and a journey map from the client or customer’s view. For example, Stanford d.school students[4](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/bad-to-great-the-path-to-scaling-up-excellence) shadowed airline customers from arrival to boarding and again after landing—discovering that waiting at the luggage carousel was the worst part of the experience. That revelation surprised airline executives, who said they never check luggage, so didn’t think much about that part of the journey.
+Help each function build a process map from the insider’s view, and a journey map from the client or customer’s view. For example, Stanford d.school students[4](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/bad-to-great-the-path-to-scaling-up-excellence) shadowed airline customers from arrival to boarding and again after landing-discovering that waiting at the luggage carousel was the worst part of the experience. That revelation surprised airline executives, who said they never check luggage, so didn’t think much about that part of the journey.
 
 ‍
 
@@ -1904,7 +1904,7 @@ Try this
 
 ## Use AI to stress-test the happy path before the handoff
 
-Handoffs are classic coordination choke points. In product-engineering handoffs, the product team often presents the “happy path”: focusing on the ideal user journey where nothing breaks. Engineering counters with all the ways it could go wrong. This same dynamic shows up in other handoffs too—like when IT rolls out a slick new workflow and the security team points out the change just opened six fresh vulnerabilities.
+Handoffs are classic coordination choke points. In product-engineering handoffs, the product team often presents the “happy path”: focusing on the ideal user journey where nothing breaks. Engineering counters with all the ways it could go wrong. This same dynamic shows up in other handoffs too-like when IT rolls out a slick new workflow and the security team points out the change just opened six fresh vulnerabilities.
 
 ‍
 
@@ -1919,7 +1919,7 @@ Teamraderie CEO Michael McCarroll explained to us how they use AI to short-circu
 
 ‍
 
-As a result, before the meeting happens, the work has been thoughtfully critiqued and issues addressed. Engineers focus on architecture and scalability—where they add the most value—instead of being the first line of defense and being perceived as pushing back against product managers.
+As a result, before the meeting happens, the work has been thoughtfully critiqued and issues addressed. Engineers focus on architecture and scalability-where they add the most value-instead of being the first line of defense and being perceived as pushing back against product managers.
 
 Try this
 
@@ -1933,13 +1933,13 @@ Try this
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/692fe101f4e26d97b3c0c8ed_no-39.svg)
 
-## Use AI to get the right people on projects—and find them fast
+## Use AI to get the right people on projects-and find them fast
 
 Staffing projects is another coordination choke point. At one consulting firm, consultants were staffed for projects through a clunky, manual process: keyword searches across résumés, multiple database checks, and rounds of verification. The process was slow and left room for bias. If your résumé didn’t have the “right” words, you wouldn’t appear in search results. And when they were under time pressure, managers defaulted to picking people they knew best and had worked with in the past.
 
 ‍
 
-After adopting a Work AI platform (Glean), managers can simply type a natural-language query such as: “Show me three candidates with retail banking experience.” The system searches across the company’s knowledge base—résumés, project records, even work artifacts—and produces a ranked shortlist, complete with summarized skills.
+After adopting a Work AI platform (Glean), managers can simply type a natural-language query such as: “Show me three candidates with retail banking experience.” The system searches across the company’s knowledge base-résumés, project records, even work artifacts-and produces a ranked shortlist, complete with summarized skills.
 
 ‍
 
@@ -1965,15 +1965,15 @@ Once teams are staffed and in place, the questions become: Are they collaboratin
 
 ‍
 
-In their study of 117 remote software development teams on an online platform (www.gigster.com), Katharina Lix, Sameer Srivastava, and Melissa Valentine found[1](https://pubsonline.informs.org/doi/10.1287/mnsc.2021.4274) that high-performing teams adjusted their “discursive diversity” (the range of perspectives, language, and ideas in the conversation) based on the task at hand. When the work called for creativity, they showed higher discursive diversity—drawing on a broad range of language and perspectives. But when the work shifted to execution, their discursive diversity narrowed, keeping conversations more focused and streamlined.
+In their study of 117 remote software development teams on an online platform (www.gigster.com), Katharina Lix, Sameer Srivastava, and Melissa Valentine found[1](https://pubsonline.informs.org/doi/10.1287/mnsc.2021.4274) that high-performing teams adjusted their “discursive diversity” (the range of perspectives, language, and ideas in the conversation) based on the task at hand. When the work called for creativity, they showed higher discursive diversity-drawing on a broad range of language and perspectives. But when the work shifted to execution, their discursive diversity narrowed, keeping conversations more focused and streamlined.
 
 ‍
 
-AI isn’t there yet, but early tools are starting to point in this direction—analyzing participation patterns, spotting when conversations stall, and even suggesting adjustments in real time.
+AI isn’t there yet, but early tools are starting to point in this direction-analyzing participation patterns, spotting when conversations stall, and even suggesting adjustments in real time.
 
 Try this
 
-Run your meeting transcript (with permission) through an AI tool and ask it to assess participation. Did a handful of people dominate, limiting the team’s discursive diversity? Did the group circle around the same points instead of converging on a decision? Use those insights to learn more about whether your team is collaborating in the right mode for the task at hand—broad and exploratory for creativity, or narrow and focused for execution.
+Run your meeting transcript (with permission) through an AI tool and ask it to assess participation. Did a handful of people dominate, limiting the team’s discursive diversity? Did the group circle around the same points instead of converging on a decision? Use those insights to learn more about whether your team is collaborating in the right mode for the task at hand-broad and exploratory for creativity, or narrow and focused for execution.
 
 [
 
@@ -1989,11 +1989,11 @@ Meetings are powerful coordination tools when they enable people to hear from va
 
 ‍
 
-At Stanford, researchers built a Deliberation Platform[1](https://stanforddeliberate.org) that uses AI to improve group dynamics in real time. The system tracks participation and nudges people who haven’t spoken in a while. It also calculates a live “toxicity score.” If toxic behavior by a member is detected, the system asks the group to confirm—and if they agree, it mutes the offender’s mic.
+At Stanford, researchers built a Deliberation Platform[1](https://stanforddeliberate.org) that uses AI to improve group dynamics in real time. The system tracks participation and nudges people who haven’t spoken in a while. It also calculates a live “toxicity score.” If toxic behavior by a member is detected, the system asks the group to confirm-and if they agree, it mutes the offender’s mic.
 
 Try this
 
-Don’t think of AI as just a meeting notetaker. Use it as a facilitator—nudging for equal airtime, surfacing quieter voices, and flagging toxic behavior before it derails the meeting. You might give Stanford’s Online Deliberation Platform a try for meetings with 8 to 15 people. It’s free and easy to use.
+Don’t think of AI as just a meeting notetaker. Use it as a facilitator-nudging for equal airtime, surfacing quieter voices, and flagging toxic behavior before it derails the meeting. You might give Stanford’s Online Deliberation Platform a try for meetings with 8 to 15 people. It’s free and easy to use.
 
 [
 
@@ -2009,7 +2009,7 @@ AI meeting bots can save time. But just like other kinds of software bloat[1](ht
 
 ‍
 
-When we interviewed Phil Kirschner, CEO of PK Consulting, he described a scene that keeps playing out across his clients: five people join a meeting, and three different AI notetakers show up—perhaps Otter, Fireflies, Fathom. Each spits out a transcript with slightly different wording, timestamps, and action items. Then collaborators may waste time debating which record is “right” rather than moving work forward. And the team ends up with “my notes” and “your notes” instead of a shared record on which everyone can align.
+When we interviewed Phil Kirschner, CEO of PK Consulting, he described a scene that keeps playing out across his clients: five people join a meeting, and three different AI notetakers show up-perhaps Otter, Fireflies, Fathom. Each spits out a transcript with slightly different wording, timestamps, and action items. Then collaborators may waste time debating which record is “right” rather than moving work forward. And the team ends up with “my notes” and “your notes” instead of a shared record on which everyone can align.
 
 Try this
 
@@ -2025,7 +2025,7 @@ Try this
 
 ## Cut the bottlenecks out of AI approvals And help your lawyers default to “yes”
 
-Efforts to bring new AI tools into a company often are slowed—or come to a screeching halt—because of a three-headed bottleneck: legal, security, and procurement. A seemingly simple request can drag on for weeks, even months, when staff in such functions are overloaded, overly cautious, don’t communicate their concerns and suggested solutions quickly and clearly, or focus on only their function rather than on what other functions need to do their work.
+Efforts to bring new AI tools into a company often are slowed-or come to a screeching halt-because of a three-headed bottleneck: legal, security, and procurement. A seemingly simple request can drag on for weeks, even months, when staff in such functions are overloaded, overly cautious, don’t communicate their concerns and suggested solutions quickly and clearly, or focus on only their function rather than on what other functions need to do their work.
 
 ‍
 
@@ -2053,7 +2053,7 @@ Too many AI vendors still act like traditional software providers: ship the prod
 
 ‍
 
-That model doesn’t work for AI. AI performance isn’t just about the model—it’s about your business: your messy data, undocumented workflows, cultural quirks, and edge cases that no off-the-shelf system can anticipate. The best AI platforms don’t just deliver technology. They act more like consultants:
+That model doesn’t work for AI. AI performance isn’t just about the model-it’s about your business: your messy data, undocumented workflows, cultural quirks, and edge cases that no off-the-shelf system can anticipate. The best AI platforms don’t just deliver technology. They act more like consultants:
 
 -   They invest the time to understand how your organization really works.
 -   They co-develop solutions with you, not for you.
@@ -2083,7 +2083,7 @@ Try this
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/692fe101f4e26d97b3c0c8ec_no-45.svg)
 
-*“We made sure that we are embedding the solutions rather than bolting on—not another layer, and not asking people to go learn this new UI. It’s the difference between handing somebody a gym membership versus putting a bench press in their backpack.”*
+*“We made sure that we are embedding the solutions rather than bolting on-not another layer, and not asking people to go learn this new UI. It’s the difference between handing somebody a gym membership versus putting a bench press in their backpack.”*
 
 [Ammen Sihngh,  
 ](https://www.linkedin.com/in/ammen-siingh/)Lead Solutions Engineer, Reddit
@@ -2096,7 +2096,7 @@ As employees start using AI, they often rack up more “toggle tax,” the coord
 
 ‍
 
-Multiple leaders we’ve spoken with call this the “swivel chair problem.” Employees don’t want to swivel to another platform just to use AI. At Reddit, that philosophy has guided their approach. “We made sure that we are embedding the solutions rather than bolting on—not another layer, and not asking people to go learn this new UI. It’s the difference between handing somebody a gym membership versus putting a bench press in their backpack,” said Ammen Sihngh, a Lead Solutions Engineer at the company.
+Multiple leaders we’ve spoken with call this the “swivel chair problem.” Employees don’t want to swivel to another platform just to use AI. At Reddit, that philosophy has guided their approach. “We made sure that we are embedding the solutions rather than bolting on-not another layer, and not asking people to go learn this new UI. It’s the difference between handing somebody a gym membership versus putting a bench press in their backpack,” said Ammen Sihngh, a Lead Solutions Engineer at the company.
 
 Try this
 
@@ -2124,7 +2124,7 @@ Truly autonomous agents will be able to do this on their own. Rather than a coll
 
 Try this
 
-Don’t roll out a hodgepodge of disconnected AI apps and agents. Think about how employees will access them as they work. If the experience is overwhelming, AI use will stall, efficiency will suffer, people will make mistakes, and digital exhaustion will spread. Instead, consider a unifying layer—an integrated platform and autonomous agents—that can understand who’s using AI, what they’re trying to accomplish, and route them to the right tool automatically.
+Don’t roll out a hodgepodge of disconnected AI apps and agents. Think about how employees will access them as they work. If the experience is overwhelming, AI use will stall, efficiency will suffer, people will make mistakes, and digital exhaustion will spread. Instead, consider a unifying layer-an integrated platform and autonomous agents-that can understand who’s using AI, what they’re trying to accomplish, and route them to the right tool automatically.
 
 [
 
@@ -2140,11 +2140,11 @@ Treating AI as a side experiment is a surefire way to run up coordination taxes.
 
 ‍
 
-At Zendesk, Nan Guo, Senior VP of Engineering, told us how they avoid the side-project trap by embedding AI directly into their most common coordination rhythm: the sprint. In agile development, a sprint is a short, time-boxed period—usually two weeks—when teams plan, build, and ship work. Instead of asking engineers to go hunt for “AI use cases,” Zendesk leaders insert AI into their usual scrum cadence. As Guo explained: “The Scrum is our standard way of doing day-to-day work. We picked one sprint in October so people actually applied GenAI in their real workflows. That way we could see the impact, not just something additional on the side.”
+At Zendesk, Nan Guo, Senior VP of Engineering, told us how they avoid the side-project trap by embedding AI directly into their most common coordination rhythm: the sprint. In agile development, a sprint is a short, time-boxed period-usually two weeks-when teams plan, build, and ship work. Instead of asking engineers to go hunt for “AI use cases,” Zendesk leaders insert AI into their usual scrum cadence. As Guo explained: “The Scrum is our standard way of doing day-to-day work. We picked one sprint in October so people actually applied GenAI in their real workflows. That way we could see the impact, not just something additional on the side.”
 
 Try this
 
-Identify your team’s core coordination cycle—sprints, project reviews, customer support queues, whatever—and embed AI there. When AI becomes part of the real flow of work, you will cut the coordination costs and continuously learn how to use it to improve productivity, decision-making, and collaboration—and in the places that matter most.
+Identify your team’s core coordination cycle-sprints, project reviews, customer support queues, whatever-and embed AI there. When AI becomes part of the real flow of work, you will cut the coordination costs and continuously learn how to use it to improve productivity, decision-making, and collaboration-and in the places that matter most.
 
 [
 
@@ -2167,23 +2167,23 @@ AI is supposed to take work off people’s plates. But too often, it just shifts
 
 ‍
 
-We experienced this when scheduling interviews for this project. The invite came from “Kiran,” an AI assistant. Kiran’s job was to make scheduling easy. Instead, “she” barraged Bob with reminders—even when he had an out-of-office message. At first, he thought Kiran was an unusually rude human assistant. Then he realized Kiran was a bot.
+We experienced this when scheduling interviews for this project. The invite came from “Kiran,” an AI assistant. Kiran’s job was to make scheduling easy. Instead, “she” barraged Bob with reminders-even when he had an out-of-office message. At first, he thought Kiran was an unusually rude human assistant. Then he realized Kiran was a bot.
 
 ‍
 
-Kiran was optimized for the sender—getting a meeting booked—not for us as the recipients. Michael Arena, Dean of the Crowell School of Business at Biola University and former Chief Talent Officer at General Motors, warned, “People will use AI tools to offload, to decrease their collaborative overloading, \[but\] increase other people’s.” That means one team’s efficiency gain might become another’s hidden tax.
+Kiran was optimized for the sender-getting a meeting booked-not for us as the recipients. Michael Arena, Dean of the Crowell School of Business at Biola University and former Chief Talent Officer at General Motors, warned, “People will use AI tools to offload, to decrease their collaborative overloading, \[but\] increase other people’s.” That means one team’s efficiency gain might become another’s hidden tax.
 
 ‍
 
-And that hidden tax isn’t just about wasted time—it’s also about trust. As researchers Ian McCarthy, Timothy Hannigan, and André Spicer have warned[1](https://hbr.org/2024/07/the-risks-of-botshit), the careless use of AI can produce what they call “botshit”: made-up or misaligned content that people use uncritically. When bots act without oversight, they don’t just spread misinformation—they spread friction. A scheduling bot that spams your inbox or a chatbot that serves up bad data may look efficient from one angle, but it’s quietly pushing cognitive and reputational costs onto others.
+And that hidden tax isn’t just about wasted time-it’s also about trust. As researchers Ian McCarthy, Timothy Hannigan, and André Spicer have warned[1](https://hbr.org/2024/07/the-risks-of-botshit), the careless use of AI can produce what they call “botshit”: made-up or misaligned content that people use uncritically. When bots act without oversight, they don’t just spread misinformation-they spread friction. A scheduling bot that spams your inbox or a chatbot that serves up bad data may look efficient from one angle, but it’s quietly pushing cognitive and reputational costs onto others.
 
 ‍
 
-The costs can pile up fast, and they often land on you. Research[2](https://www.penguinrandomhouse.com/books/760833/digital-exhaustion-by-paul-leonardi/) by Paul Leonardi shows that when bots screw up, the blame doesn’t land on them—it lands on you. People don’t hold the AI accountable. They hold the human who unleashed it.
+The costs can pile up fast, and they often land on you. Research[2](https://www.penguinrandomhouse.com/books/760833/digital-exhaustion-by-paul-leonardi/) by Paul Leonardi shows that when bots screw up, the blame doesn’t land on them-it lands on you. People don’t hold the AI accountable. They hold the human who unleashed it.
 
 Try this
 
-Before deploying an AI agent, ask: Does this bot reduce work for the person receiving the message? Or does it just shift the burden onto them? In an effort to make YOUR work more efficient, are you unwittingly weaponizing friction in ways that—throughout your organization and network—heap more rather than less work on your colleagues and customers?
+Before deploying an AI agent, ask: Does this bot reduce work for the person receiving the message? Or does it just shift the burden onto them? In an effort to make YOUR work more efficient, are you unwittingly weaponizing friction in ways that-throughout your organization and network-heap more rather than less work on your colleagues and customers?
 
 [
 
@@ -2202,7 +2202,7 @@ Try this
 
 ## Use AI to break the bad silos, and keep the good ones
 
-AI can help dismantle the silos that slow teams and individuals down. But not every silo is bad. Some exist for good reason, such as protecting HR files, legal documents, or payroll data. And in many cases where people do creative work, it helps to protect them from distraction, interruption, and bad advice from people in other parts of the company—such as Disney’s “Imagineering[1](https://sites.disney.com/waltdisneyimagineering)” subsidiary and Lockheed’s “Skunkworks[2](https://www.lockheedmartin.com/en-us/news/features/2023/80-years-of-skunk-works-innovation.html).” The challenge is designing AI that can tell the difference between silos that protect necessary privacy, confidentiality, and creative focus versus silos that unnecessarily slow work down, undermine quality, and frustrate employees and customers.
+AI can help dismantle the silos that slow teams and individuals down. But not every silo is bad. Some exist for good reason, such as protecting HR files, legal documents, or payroll data. And in many cases where people do creative work, it helps to protect them from distraction, interruption, and bad advice from people in other parts of the company-such as Disney’s “Imagineering[1](https://sites.disney.com/waltdisneyimagineering)” subsidiary and Lockheed’s “Skunkworks[2](https://www.lockheedmartin.com/en-us/news/features/2023/80-years-of-skunk-works-innovation.html).” The challenge is designing AI that can tell the difference between silos that protect necessary privacy, confidentiality, and creative focus versus silos that unnecessarily slow work down, undermine quality, and frustrate employees and customers.
 
 ‍
 
@@ -2272,7 +2272,7 @@ One Vice President at a Fortune 500 technology organization explained to us that
 
 ‍
 
-Policies like this send a clear signal to employees: changes in jobs here aren’t based on hype, fantasy, or cool-sounding but untested ideas. We won’t change or eliminate your work until we’ve shown the new way is better. This “test your ideas before you change” approach also helps companies redesign jobs and systems to integrate AI-based solutions—without sacrificing productivity, innovation, or the quality of employee and customer experiences. It prevents organizations that are littered with ill-conceived changes that satisfy executives’ whims but waste money and make people miserable.
+Policies like this send a clear signal to employees: changes in jobs here aren’t based on hype, fantasy, or cool-sounding but untested ideas. We won’t change or eliminate your work until we’ve shown the new way is better. This “test your ideas before you change” approach also helps companies redesign jobs and systems to integrate AI-based solutions-without sacrificing productivity, innovation, or the quality of employee and customer experiences. It prevents organizations that are littered with ill-conceived changes that satisfy executives’ whims but waste money and make people miserable.
 
 Try this
 
@@ -2288,7 +2288,7 @@ Try this
 
 ## Use AI to root out bias throughout the employee lifecycle
 
-Every hiring, promotion, and review process introduces bias—because they are designed and completed by imperfect human decision-makers[1](https://thedecisionlab.com/biases) who routinely ignore, twist, misremember, and forget key information. John Lilly, who sits on the board of organizations including Figma, Duolingo, and Code for America described to us how, at one company he is working with, interviews could sometimes be skewed as each interviewer took notes in a different style, making it harder to compare candidates fairly. To counter this, they’re piloting an AI tool that captures notes in a consistent template, reducing variation and leveling the field.
+Every hiring, promotion, and review process introduces bias-because they are designed and completed by imperfect human decision-makers[1](https://thedecisionlab.com/biases) who routinely ignore, twist, misremember, and forget key information. John Lilly, who sits on the board of organizations including Figma, Duolingo, and Code for America described to us how, at one company he is working with, interviews could sometimes be skewed as each interviewer took notes in a different style, making it harder to compare candidates fairly. To counter this, they’re piloting an AI tool that captures notes in a consistent template, reducing variation and leveling the field.
 
 ‍
 
@@ -2306,7 +2306,7 @@ Try this
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/692fe101f4e26d97b3c0c905_no-53.svg)
 
-*“Using AI as a helper removes friction—including writer’s block—and ensures that 100% of Zapier team members benefit from this essential cultural touch point.”*
+*“Using AI as a helper removes friction-including writer’s block-and ensures that 100% of Zapier team members benefit from this essential cultural touch point.”*
 
 [Brandon Sammut,  
 ](https://www.linkedin.com/in/brandon-sammut-8147b76/)Chief People Officer, Zapier
@@ -2319,7 +2319,7 @@ Onboarding is a make-or-break moment of the employee lifecycle. A BambooHR surve
 
 ‍
 
-At Zapier, AI helps newcomers make the best of that time. As Chief People Officer Brandon Sammut has shared[3](https://www.linkedin.com/feed/update/urn:li:activity:7353521442317062144), new hires answer a few questions and AI generates a personalized “How to Work With Me” ReadMe, a short user manual[4](https://www.bloomberg.com/news/newsletters/2024-01-16/worker-user-manuals-could-help-boost-team-success) for working with each employee. Drafted in the employee’s own voice, employees edit the AI draft and share it in Slack so colleagues can quickly learn how best to collaborate with them. Sammut’s People Team estimates that this AI-supported workflow saves one to two hours per new employee. As importantly, he told us, “using AI as a helper removes friction—including writer’s block—and ensures that 100% of Zapier team members benefit from this essential cultural touch point.”
+At Zapier, AI helps newcomers make the best of that time. As Chief People Officer Brandon Sammut has shared[3](https://www.linkedin.com/feed/update/urn:li:activity:7353521442317062144), new hires answer a few questions and AI generates a personalized “How to Work With Me” ReadMe, a short user manual[4](https://www.bloomberg.com/news/newsletters/2024-01-16/worker-user-manuals-could-help-boost-team-success) for working with each employee. Drafted in the employee’s own voice, employees edit the AI draft and share it in Slack so colleagues can quickly learn how best to collaborate with them. Sammut’s People Team estimates that this AI-supported workflow saves one to two hours per new employee. As importantly, he told us, “using AI as a helper removes friction-including writer’s block-and ensures that 100% of Zapier team members benefit from this essential cultural touch point.”
 
 Try this
 
@@ -2353,7 +2353,7 @@ When Hinds asked the Glean Assistant the second question, the answer was: coacha
 
 Try this
 
-Audit your onboarding process. Ask whether new hires can answer the five critical questions above within their first week. Where they can’t, make sure you’ve centralized the right unstructured data—Slack threads, project docs, meeting notes—so AI can surface the answers instead of leaving new hires to guess.
+Audit your onboarding process. Ask whether new hires can answer the five critical questions above within their first week. Where they can’t, make sure you’ve centralized the right unstructured data-Slack threads, project docs, meeting notes-so AI can surface the answers instead of leaving new hires to guess.
 
 [
 
@@ -2365,7 +2365,7 @@ Try this
 
 ## Ask employees to set at least one AI growth goal
 
-Most companies talk about AI adoption at the organizational level—rollouts, pilots, big initiatives—but stop short of making it personal. At Workday, VP of People Analytics Phil Willburn described a different approach: every employee is asked to set a quarterly goal to build their AI skills. That simple expectation shifted AI from an abstract company initiative into an individual commitment. It created accountability and normalized experimentation. Plus, each employee then received personalized insights into their own AI usage, so they could better connect their goal with indicators of skill building.
+Most companies talk about AI adoption at the organizational level-rollouts, pilots, big initiatives-but stop short of making it personal. At Workday, VP of People Analytics Phil Willburn described a different approach: every employee is asked to set a quarterly goal to build their AI skills. That simple expectation shifted AI from an abstract company initiative into an individual commitment. It created accountability and normalized experimentation. Plus, each employee then received personalized insights into their own AI usage, so they could better connect their goal with indicators of skill building.
 
 Try this
 
@@ -2381,7 +2381,7 @@ Try this
 
 ## Let AI brag for you
 
-One of the hardest parts of performance reviews and promotions is remembering—or celebrating—your own wins. At Zapier, Full Stack Engineer Jordan Raleigh and his team[1](https://zapier.com/blog/how-zapier-uses-ai/) used AI to solve that problem with a “brag doc” system.
+One of the hardest parts of performance reviews and promotions is remembering-or celebrating-your own wins. At Zapier, Full Stack Engineer Jordan Raleigh and his team[1](https://zapier.com/blog/how-zapier-uses-ai/) used AI to solve that problem with a “brag doc” system.
 
 ‍
 
@@ -2401,7 +2401,7 @@ THEME 07
 
 # Learning and Development
 
-How are skills taught, learned, updated, and unlearned—and how should they be?
+How are skills taught, learned, updated, and unlearned-and how should they be?
 
 Traditional learning and development has been episodic and standardized: annual training modules that feel like box-checking exercises, annual performance reviews that bleed time and suffer from recency bias, and the occasional “upskilling” course that feels bolted on. AI has the potential to flip that model and turn learning and development into something continuous, personalized, and wired into the work people actually do.
 
@@ -2430,7 +2430,7 @@ Erica Dhawan, AI expert and author of *Digital Body Language* and the forthcomin
 
 ‍
 
-If you treat AI as a substitute for thinking and professional judgment—reflexively leaning on its outputs—you rack up cognitive debt: slower execution in the long run, eroded skills, and misplaced confidence. If you treat AI as a learning tool and collaborator (that helps you critique, compare, and interrogate) and the same system rewards you with a cognitive dividend. It sharpens your judgment and expands your skills, even if sometimes your work takes longer in the short-term.
+If you treat AI as a substitute for thinking and professional judgment-reflexively leaning on its outputs-you rack up cognitive debt: slower execution in the long run, eroded skills, and misplaced confidence. If you treat AI as a learning tool and collaborator (that helps you critique, compare, and interrogate) and the same system rewards you with a cognitive dividend. It sharpens your judgment and expands your skills, even if sometimes your work takes longer in the short-term.
 
 Try this
 
@@ -2457,11 +2457,11 @@ Mentorship is powered by the human touch. But AI can free mentors to spend their
 
 ‍
 
-As Northwestern professor Liz Gerber explained to us, one of the biggest skills novices lack is metacognition: the ability to step back and ask, “Am I even working on the right problem?” Novices who lack this skill default to safe, surface-level tasks such as polishing slides, coding another feature, or tweaking formatting. The harder, riskier work—clarifying assumptions, diagnosing risks, and stress-testing strategy—goes untouched. “You spend half the meeting \[with a mentee\] just trying to figure out what they’re talking about…they’re lacking metacognitive skills to plan, diagnose, and understand the problem they’re tackling.”
+As Northwestern professor Liz Gerber explained to us, one of the biggest skills novices lack is metacognition: the ability to step back and ask, “Am I even working on the right problem?” Novices who lack this skill default to safe, surface-level tasks such as polishing slides, coding another feature, or tweaking formatting. The harder, riskier work-clarifying assumptions, diagnosing risks, and stress-testing strategy-goes untouched. “You spend half the meeting \[with a mentee\] just trying to figure out what they’re talking about…they’re lacking metacognitive skills to plan, diagnose, and understand the problem they’re tackling.”
 
 ‍
 
-Her PhD students experimented[1](https://arxiv.org/html/2508.11052v1) with AI “pre-coaching” to fix this problem with coaches who mentored novice entrepreneurs. Here’s how it worked. Before the coaches had one-on-one meetings, the novices ran through an AI-guided prep: articulating goals, surfacing risks, and reflecting on progress. The system didn’t just collect updates. It used a library of common pitfalls to uncover the novices’ blind spots (like skipping validation or ignoring distribution) and asked the novices targeted follow-ups. One first-time founder admitted, “I felt called out—but in a good way,” after realizing he’d been hiding in the comfort zone of coding instead of facing the real blocker: the lack of a distribution plan for his start-up.
+Her PhD students experimented[1](https://arxiv.org/html/2508.11052v1) with AI “pre-coaching” to fix this problem with coaches who mentored novice entrepreneurs. Here’s how it worked. Before the coaches had one-on-one meetings, the novices ran through an AI-guided prep: articulating goals, surfacing risks, and reflecting on progress. The system didn’t just collect updates. It used a library of common pitfalls to uncover the novices’ blind spots (like skipping validation or ignoring distribution) and asked the novices targeted follow-ups. One first-time founder admitted, “I felt called out-but in a good way,” after realizing he’d been hiding in the comfort zone of coding instead of facing the real blocker: the lack of a distribution plan for his start-up.
 
 ‍
 
@@ -2481,7 +2481,7 @@ Try this
 
 ## Have the juniors mentor the seniors
 
-Just as AI is reshaping mentorship, it’s also upending apprenticeship. Traditionally, workplace learning followed an apprenticeship model: juniors learned the ropes from seniors. But with AI, that script flips. Many junior employees enter with more AI fluency—they’ve picked it up in college or side projects. Seniors still bring the judgment and scar tissue from years of experience, but when it comes to AI, reverse mentorship is often the answer.
+Just as AI is reshaping mentorship, it’s also upending apprenticeship. Traditionally, workplace learning followed an apprenticeship model: juniors learned the ropes from seniors. But with AI, that script flips. Many junior employees enter with more AI fluency-they’ve picked it up in college or side projects. Seniors still bring the judgment and scar tissue from years of experience, but when it comes to AI, reverse mentorship is often the answer.
 
 ‍
 
@@ -2489,7 +2489,7 @@ University of California at Santa Barbara Professor Matt Beane calls this “inv
 
 ‍
 
-Yet Beane and his collaborator Callen Anthony (NYU) found[1](https://pubsonline.informs.org/doi/10.1287/orsc.2023.1688) a notable exception, what they call seeking. In seeking, senior experts don’t delegate AI tasks downward. They dig in and work side-by-side with their junior colleagues. They share the early stumbles, the trial-and-error, and the messy problem-solving. That joint struggle is what builds lasting expertise for both groups—and stronger bonds between novices and experts.
+Yet Beane and his collaborator Callen Anthony (NYU) found[1](https://pubsonline.informs.org/doi/10.1287/orsc.2023.1688) a notable exception, what they call seeking. In seeking, senior experts don’t delegate AI tasks downward. They dig in and work side-by-side with their junior colleagues. They share the early stumbles, the trial-and-error, and the messy problem-solving. That joint struggle is what builds lasting expertise for both groups-and stronger bonds between novices and experts.
 
 Try this
 
@@ -2510,7 +2510,7 @@ The doom narrative says AI will wipe out entry-level roles and recent research[1
 
 ‍
 
-Thawar has explained[3](https://www.firstround.com/ai/shopify) that in the post-LLM era, they bring something else: they’re “AI centaurs.” They experiment fearlessly, chase shortcuts, and don’t waste time reinventing the wheel. “I want them to be lazy and use the latest tooling,” Thawar says. “We saw this happen in mobile—interns were mobile-native. Now they’re AI-native.”
+Thawar has explained[3](https://www.firstround.com/ai/shopify) that in the post-LLM era, they bring something else: they’re “AI centaurs.” They experiment fearlessly, chase shortcuts, and don’t waste time reinventing the wheel. “I want them to be lazy and use the latest tooling,” Thawar says. “We saw this happen in mobile-interns were mobile-native. Now they’re AI-native.”
 
 ‍
 
@@ -2528,7 +2528,7 @@ Try this
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/692fe101f4e26d97b3c0c90c_no-61.svg)
 
-*“Senior devs give those junior devs an impossible task per unit time…the junior devs come screaming across the finish line in 48 hours with code that is functional. And then the senior dev says, ‘There are three problems—go find them. I’m not going to tell you what they are.’”*
+*“Senior devs give those junior devs an impossible task per unit time…the junior devs come screaming across the finish line in 48 hours with code that is functional. And then the senior dev says, ‘There are three problems-go find them. I’m not going to tell you what they are.’”*
 
 [Matt Beane,  
 ](https://www.linkedin.com/in/mattbeane/)Professor, University of California, Santa Barbara
@@ -2537,15 +2537,15 @@ Try this
 
 ## Let junior developers build buggy code, then ask them to find the bugs
 
-The apprenticeship model isn’t just inverted in some organizations. It’s morphed into a two-speed system—where juniors race ahead with AI, then seniors force them to slow down and wrestle with the bugs.
+The apprenticeship model isn’t just inverted in some organizations. It’s morphed into a two-speed system-where juniors race ahead with AI, then seniors force them to slow down and wrestle with the bugs.
 
 ‍
 
-Traditionally, junior developers learned slowly: sitting in code reviews, pair programming, and watching seniors catch mistakes. With AI-assisted “vibe coding,” developers now produce polished-looking code in hours. It compiles, it runs, it looks fine—until it collapses under real-world complexity.
+Traditionally, junior developers learned slowly: sitting in code reviews, pair programming, and watching seniors catch mistakes. With AI-assisted “vibe coding,” developers now produce polished-looking code in hours. It compiles, it runs, it looks fine-until it collapses under real-world complexity.
 
 ‍
 
-Some teams embrace a two-speed model. As University of California at Santa Barbara Professor Matt Beane described to us, they let “junior devs” sprint with AI, then force them to hit the brakes. “Senior devs give those junior devs an impossible task per unit time…the junior devs come screaming across the finish line in 48 hours with code that is functional. And then the senior dev says, “There are three problems —go find them. I’m not going to tell you what they are.”
+Some teams embrace a two-speed model. As University of California at Santa Barbara Professor Matt Beane described to us, they let “junior devs” sprint with AI, then force them to hit the brakes. “Senior devs give those junior devs an impossible task per unit time…the junior devs come screaming across the finish line in 48 hours with code that is functional. And then the senior dev says, “There are three problems -go find them. I’m not going to tell you what they are.”
 
 ‍
 
@@ -2572,7 +2572,7 @@ Try this
 
 ## Coach people to use AI to break big challenges into smaller pieces
 
-Many engineers are trained to think end-to-end: take a big problem, own it, and ship a solution. But with AI in the mix, the skill of decomposition—breaking a big challenge into smaller pieces to figure out which parts can be handled by machines—becomes more valuable.
+Many engineers are trained to think end-to-end: take a big problem, own it, and ship a solution. But with AI in the mix, the skill of decomposition-breaking a big challenge into smaller pieces to figure out which parts can be handled by machines-becomes more valuable.
 
 ‍
 
@@ -2584,7 +2584,7 @@ When you break a problem apart, you’re not just managing complexity. You’re 
 
 Try this
 
-When scoping a project, have engineers break it down into discrete modules before writing any code. Try applying the “Rule of Halves[2](https://www.gsb.stanford.edu/insights/career-advice-how-become-friction-fixer)”: ask engineers to select half of those modules to hand off to AI. And use a similar strategy for other kinds of work too. A marketing campaign can be broken into creative concepts, copy, visuals, audience targeting, and analytics—half of which AI can accelerate. Or take something as personal as planning a wedding: seating charts, invitations, menu options, music playlists—many of those subtasks can be sped up or automated with AI.
+When scoping a project, have engineers break it down into discrete modules before writing any code. Try applying the “Rule of Halves[2](https://www.gsb.stanford.edu/insights/career-advice-how-become-friction-fixer)”: ask engineers to select half of those modules to hand off to AI. And use a similar strategy for other kinds of work too. A marketing campaign can be broken into creative concepts, copy, visuals, audience targeting, and analytics-half of which AI can accelerate. Or take something as personal as planning a wedding: seating charts, invitations, menu options, music playlists-many of those subtasks can be sped up or automated with AI.
 
 ‍
 
@@ -2608,7 +2608,7 @@ At Whoop[1](https://docs.google.com/spreadsheets/d/1zJ4rbi9YcQuGqGxc6-AQD0-44oT9
 
 ‍
 
-A 2023 exploratory study[3](https://www.sciencedirect.com/science/article/pii/S2949882123000026) by Anne Hsu and Divya Chaudhary tested a similar approach. Hsu and Chaudhary experimented with an AI-based web application they developed for conflict resolution with 13 users. Each typed what they’d say in workplace conflict scenarios—some real, some hypothetical—and the AI flagged language likely to trigger defensiveness (e.g., blame, judgment, exaggeration). It suggested more neutral, needs-based phrasing instead.
+A 2023 exploratory study[3](https://www.sciencedirect.com/science/article/pii/S2949882123000026) by Anne Hsu and Divya Chaudhary tested a similar approach. Hsu and Chaudhary experimented with an AI-based web application they developed for conflict resolution with 13 users. Each typed what they’d say in workplace conflict scenarios-some real, some hypothetical-and the AI flagged language likely to trigger defensiveness (e.g., blame, judgment, exaggeration). It suggested more neutral, needs-based phrasing instead.
 
 ‍
 
@@ -2640,7 +2640,7 @@ As part of that 30-day GPT challenge[1](https://docs.google.com/spreadsheets/d/1
 
 -   “What’s a tactful way to decline this while still being helpful?”
 -   “What questions could I ask to understand if this is actually urgent?”
--   “What might this person feel when they read my response—and how could I soften that?”
+-   “What might this person feel when they read my response-and how could I soften that?”
 
 Try this
 
@@ -2656,11 +2656,11 @@ Try this
 
 ## Treat AI learning like a gardener, not a carpenter
 
-U.C. Berkeley professor Alison Gopnik contrasts[1](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-learning-organization-how-to-accelerate-ai-adoption) two mindsets: carpenters try to blueprint and control every outcome, while gardeners focus on creating the conditions for growth. As McKinsey consultants Bob Sternfels and Yuval Atsmon argue, “The most successful managers focus on identifying the sprouts—employees, teams, or departments that are experimenting with new technologies and showing promising early results. They ask, ‘Where is innovation already happening? Who is solving problems in surprisingly effective ways?’” We heard a similar argument from multiple leaders who told us AI spreads more like a garden—through peer networks, visible examples, and small wins. They argued that their job as a leader wasn’t to micromanage the blueprint for adoption step by step, but to make the soil fertile.
+U.C. Berkeley professor Alison Gopnik contrasts[1](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-learning-organization-how-to-accelerate-ai-adoption) two mindsets: carpenters try to blueprint and control every outcome, while gardeners focus on creating the conditions for growth. As McKinsey consultants Bob Sternfels and Yuval Atsmon argue, “The most successful managers focus on identifying the sprouts-employees, teams, or departments that are experimenting with new technologies and showing promising early results. They ask, ‘Where is innovation already happening? Who is solving problems in surprisingly effective ways?’” We heard a similar argument from multiple leaders who told us AI spreads more like a garden-through peer networks, visible examples, and small wins. They argued that their job as a leader wasn’t to micromanage the blueprint for adoption step by step, but to make the soil fertile.
 
 Try this
 
-Don’t just “carpenter” AI adoption with mandates and blueprints. Garden it. Create visible, informal spaces—Slack channels, lunch-and-learns, internal newsletters—where employees can demo real AI use cases, swap ideas, and spark experiments their peers can replicate. Doing so can create healthy blends of formal and informal adoption.
+Don’t just “carpenter” AI adoption with mandates and blueprints. Garden it. Create visible, informal spaces-Slack channels, lunch-and-learns, internal newsletters-where employees can demo real AI use cases, swap ideas, and spark experiments their peers can replicate. Doing so can create healthy blends of formal and informal adoption.
 
 [
 
@@ -2673,15 +2673,15 @@ Try this
 ## Hold up a mirror  
 Show people someone like them using AI
 
-Several of the leaders we interviewed argued that one-size-fits-all training isn’t as effective as seeing someone use AI who has a similar job to yours and who faces similar challenges. This observation dovetails with research on interpersonal behavior[1](https://www.cambridge.org/core/books/diffusion-of-social-movements/AA601F037A4A8DD2A277A463D08625BA) and the spread of social movements[2](https://www.cambridge.org/core/books/diffusion-of-social-movements/AA601F037A4A8DD2A277A463D08625BA) that shows new ideas spread faster when people see them modeled by people who they see as similar to them—for example, who went to the same school, are the same gender or race, the same age, or, in this case, have a similar role or title.
+Several of the leaders we interviewed argued that one-size-fits-all training isn’t as effective as seeing someone use AI who has a similar job to yours and who faces similar challenges. This observation dovetails with research on interpersonal behavior[1](https://www.cambridge.org/core/books/diffusion-of-social-movements/AA601F037A4A8DD2A277A463D08625BA) and the spread of social movements[2](https://www.cambridge.org/core/books/diffusion-of-social-movements/AA601F037A4A8DD2A277A463D08625BA) that shows new ideas spread faster when people see them modeled by people who they see as similar to them-for example, who went to the same school, are the same gender or race, the same age, or, in this case, have a similar role or title.
 
 ‍
 
-At Indeed, Megan Myers, Director of Brand and Advertising, hosts[3](https://www.indeed.com/insights/upskilling-for-the-ai-era-how-to-prepare-your-workforce) “power user panels” where peers do live demos of how they weave AI into their work. At Deloitte, the firm created “Savvy User Profiles[4](https://hbr.org/2025/01/if-you-want-your-team-to-use-gen-ai-focus-on-trust)”—brief write-ups that spotlight employees who are successfully integrating the company’s GenAI assistant into their daily work. Each profile highlights the problems they solve, the steps they take, and the hours they save—which helps colleagues see what effective AI use looks like in practice. And at Zendesk, Nan Guo, Senior VP of Engineering, told us about how her team ran a six-week “How Did I It?” campaign where engineers posted everyday wins in a shared Slack channel and leaders picked winners. Campaigns like this help make AI solutions concrete rather than abstract—something that colleagues a lot like you use to do better work.
+At Indeed, Megan Myers, Director of Brand and Advertising, hosts[3](https://www.indeed.com/insights/upskilling-for-the-ai-era-how-to-prepare-your-workforce) “power user panels” where peers do live demos of how they weave AI into their work. At Deloitte, the firm created “Savvy User Profiles[4](https://hbr.org/2025/01/if-you-want-your-team-to-use-gen-ai-focus-on-trust)”-brief write-ups that spotlight employees who are successfully integrating the company’s GenAI assistant into their daily work. Each profile highlights the problems they solve, the steps they take, and the hours they save-which helps colleagues see what effective AI use looks like in practice. And at Zendesk, Nan Guo, Senior VP of Engineering, told us about how her team ran a six-week “How Did I It?” campaign where engineers posted everyday wins in a shared Slack channel and leaders picked winners. Campaigns like this help make AI solutions concrete rather than abstract-something that colleagues a lot like you use to do better work.
 
 Try this
 
-Build an “AI adoption mirror.” Find your superusers in each role. Document their workflows with screenshots, before/after comparisons, and outcomes achieved. Publish those profiles in Slack, newsletters, or team meetings so peers can see how people like them use AI well. Behavioral research[5](https://www.case.org/system/files/media/inline/Harnessing%20the%20science%20of%20persuasion_0.pdf) shows that people are more likely to adopt new habits when they see someone similar already doing it first. The more concrete, the better. And have leaders amplify these stories so employees know they aren’t side hustles—they’re valued contributions to how the organization works.
+Build an “AI adoption mirror.” Find your superusers in each role. Document their workflows with screenshots, before/after comparisons, and outcomes achieved. Publish those profiles in Slack, newsletters, or team meetings so peers can see how people like them use AI well. Behavioral research[5](https://www.case.org/system/files/media/inline/Harnessing%20the%20science%20of%20persuasion_0.pdf) shows that people are more likely to adopt new habits when they see someone similar already doing it first. The more concrete, the better. And have leaders amplify these stories so employees know they aren’t side hustles-they’re valued contributions to how the organization works.
 
 [
 
@@ -2693,7 +2693,7 @@ Try this
 
 ## Run hack-a-thons, agent-a-thons, and prompt-a-thons that reward “quiet” improvements, not just flashy impact
 
-Hack-a-thons, agent-a-thons, and prompt-a-thons have become a staple of corporate AI rollouts. They’re fun, build awareness, and surface AI champions and use cases. Too often, though, prizes go strictly to the flashiest ideas—the biggest demo, the most visible win—while quieter work such as improving workflows or helping peers adopt AI gets overlooked.
+Hack-a-thons, agent-a-thons, and prompt-a-thons have become a staple of corporate AI rollouts. They’re fun, build awareness, and surface AI champions and use cases. Too often, though, prizes go strictly to the flashiest ideas-the biggest demo, the most visible win-while quieter work such as improving workflows or helping peers adopt AI gets overlooked.
 
 ‍
 
@@ -2721,11 +2721,11 @@ Try this
 
 ## Design AI incentives that fit your team’s DNA
 
-During Udemy’s UDays (monthly days dedicated to learning), Chief Learning Officer Rebecca Stern noticed that people on sales teams jumped in with both feet—they seemed more motivated to win the prize money than folks from other functions. As Stern put it: “They already live in an incentive-driven world—leaderboards, quotas, wins. They knew how to play, and they played to win.” Some other departments lagged. The same prize meant different things depending on the culture of the team.
+During Udemy’s UDays (monthly days dedicated to learning), Chief Learning Officer Rebecca Stern noticed that people on sales teams jumped in with both feet-they seemed more motivated to win the prize money than folks from other functions. As Stern put it: “They already live in an incentive-driven world-leaderboards, quotas, wins. They knew how to play, and they played to win.” Some other departments lagged. The same prize meant different things depending on the culture of the team.
 
 Try this
 
-Run “prompt-a-thons” or “agent-a-thons” to give employees hands-on practice. But consider how to match incentives to the way each team already operates—quota-driven groups may respond to prizes and rankings, while creative teams may value recognition, storytelling, or time to showcase their experiments.
+Run “prompt-a-thons” or “agent-a-thons” to give employees hands-on practice. But consider how to match incentives to the way each team already operates-quota-driven groups may respond to prizes and rankings, while creative teams may value recognition, storytelling, or time to showcase their experiments.
 
 [
 
@@ -2748,7 +2748,7 @@ Not every incentive needs to be cash or prizes. The fear of missing out (FOMO) c
 
 ‍
 
-That’s what they harnessed at Reddit. Lead Solutions Engineer, Ammen Sihngh, described how they picked a spot where friction was already high: a Slack channel where employees constantly posted internal questions and waited—sometimes days—for a response. Instead of letting people slog through the backlog, they dropped in an AI agent powered by Glean. The bot answered instantly—accurate, helpful, and with no human effort.
+That’s what they harnessed at Reddit. Lead Solutions Engineer, Ammen Sihngh, described how they picked a spot where friction was already high: a Slack channel where employees constantly posted internal questions and waited-sometimes days-for a response. Instead of letting people slog through the backlog, they dropped in an AI agent powered by Glean. The bot answered instantly-accurate, helpful, and with no human effort.
 
 ‍
 
@@ -2766,7 +2766,7 @@ Try this
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/692fe101f4e26d97b3c0c900_no-70.svg)
 
-*“The moment you start monitoring usage—active users, number of conversations—you get compliance, not utility. People pretend to use the tool so the metrics look good. That’s surveillance, not adoption.”*
+*“The moment you start monitoring usage-active users, number of conversations-you get compliance, not utility. People pretend to use the tool so the metrics look good. That’s surveillance, not adoption.”*
 
 [Federico Torretti,  
 ](https://www.linkedin.com/in/ftorreti/)Senior Director of AI, Oracle
@@ -2775,7 +2775,7 @@ Try this
 
 ## Beware of vanity metrics, and the “AI theater” they create
 
-One of the easiest traps in AI rollouts is chasing “vanity metrics.” That’s what Oracle’s Senior Director of AI, Federico Torretti calls them. He’s talking about measures such as logins, minutes using the tool, and number of chats that make dashboards look impressive. But don’t measure whether AI is actually improving work. As Torretti put it: “The moment you start monitoring usage—active users, number of conversations—you get compliance, not utility. People pretend to use the tool so the metrics look good. That’s surveillance, not adoption.”
+One of the easiest traps in AI rollouts is chasing “vanity metrics.” That’s what Oracle’s Senior Director of AI, Federico Torretti calls them. He’s talking about measures such as logins, minutes using the tool, and number of chats that make dashboards look impressive. But don’t measure whether AI is actually improving work. As Torretti put it: “The moment you start monitoring usage-active users, number of conversations-you get compliance, not utility. People pretend to use the tool so the metrics look good. That’s surveillance, not adoption.”
 
 ‍
 
@@ -2787,7 +2787,7 @@ The sixth metric, from an engagement survey, captures the emotional side of prod
 
 ‍
 
-Meanwhile, at Oracle, Torretti told us how leaders there are now measuring “AI intent diversity”: the range of tasks employees actually use AI for. When people apply AI across multiple streams of work (drafting, analyzing, debugging, summarizing), it’s a sign it’s becoming part of how their work gets done—not just a novelty or a way to prove productivity through AI theater.
+Meanwhile, at Oracle, Torretti told us how leaders there are now measuring “AI intent diversity”: the range of tasks employees actually use AI for. When people apply AI across multiple streams of work (drafting, analyzing, debugging, summarizing), it’s a sign it’s becoming part of how their work gets done-not just a novelty or a way to prove productivity through AI theater.
 
 Try this
 
@@ -2806,7 +2806,7 @@ Try this
 It’s not enough to avoid vanity metrics. The real challenge is designing measurement systems that assess and drive effective behavior change. At Zendesk, Senior VP of Engineering Nan Guo explained to us about how deliberate her team was about measuring AI adoption by employees:
 
 -   No names. Individual leaderboards were off-limits. Because public rankings can undermine trust, intrinsic motivation, and engagement, and can cause people to focus on gaming the system instead of genuinely improving performance.
--   No direct cross-team comparisons. Metrics only make sense when linked to the nuances of each team’s work. As Guo put it: “UI cannot compare with infrastructure—they are not doing the same thing.”
+-   No direct cross-team comparisons. Metrics only make sense when linked to the nuances of each team’s work. As Guo put it: “UI cannot compare with infrastructure-they are not doing the same thing.”
 -   Give metrics data to the teams. Most importantly, Zendesk put the metrics in the hands of teams, not just management. When engineers saw their own baselines and trends, they felt more empowered because they had information about where their teams were improving and where they needed to focus more effort.
 
 ‍
@@ -2831,15 +2831,15 @@ Try this
 
 ## Don’t turn AI adoption into another stack-rank exercise
 
-We heard plenty of stories about companies that turned AI usage into a surveillance sport—tracking, measuring, and even stack‑ranking employees. The new CEO of a software firm marched in and announced that AI use would now factor into performance reviews. And at one Fortune 100 firm, leaders sent out weekly emails ranking who was using AI the most. As we’ve seen, that kind of surveillance mindset breeds anxiety and gaming, not learning and better work.
+We heard plenty of stories about companies that turned AI usage into a surveillance sport-tracking, measuring, and even stack‑ranking employees. The new CEO of a software firm marched in and announced that AI use would now factor into performance reviews. And at one Fortune 100 firm, leaders sent out weekly emails ranking who was using AI the most. As we’ve seen, that kind of surveillance mindset breeds anxiety and gaming, not learning and better work.
 
 ‍
 
-But peer input, done well, can make AI use feel natural—something everyone does and expects everyone else to do, not just the early adopters or tech enthusiasts. And without turning it into a zero‑sum leaderboard. At Shopify, employees rate each other quarterly on how they use AI tools. In a memo to employees[1](https://x.com/tobi/status/1909251946235437514) CEO Tobi Lütke wrote, “Learning to use AI well is an unlovious skill. My sense is that a lot of people give up after writing a prompt and not getting the ideal thing back immediately. Learning to prompt and load context is important, and getting peers to provide feedback on how this is going will be valuable.” The point at Shopify isn’t to crown winners and losers. It’s to make AI fluency visible and social, part of how colleagues earn credibility with each other.
+But peer input, done well, can make AI use feel natural-something everyone does and expects everyone else to do, not just the early adopters or tech enthusiasts. And without turning it into a zero‑sum leaderboard. At Shopify, employees rate each other quarterly on how they use AI tools. In a memo to employees[1](https://x.com/tobi/status/1909251946235437514) CEO Tobi Lütke wrote, “Learning to use AI well is an unlovious skill. My sense is that a lot of people give up after writing a prompt and not getting the ideal thing back immediately. Learning to prompt and load context is important, and getting peers to provide feedback on how this is going will be valuable.” The point at Shopify isn’t to crown winners and losers. It’s to make AI fluency visible and social, part of how colleagues earn credibility with each other.
 
 ‍
 
-At Zoom, giving people ownership over their AI insights drove adoption. Paul Magnaghi, Head of AI Strategy, described: “With our sales operations, building trust \[around AI tools\] has been critical.” Early on, the company started using conversational intelligence within Zoom to analyze the effectiveness of sales reps’ conversations. “At first, reps were worried about managers using the data to monitor them. We flipped that on its head—opening up the intelligence to the reps themselves and enabling them to query AI tools directly. Now they can ask inquisitive questions like, “Was I effective in this conversation?” We’ve seen that level of trust grow as a result.”
+At Zoom, giving people ownership over their AI insights drove adoption. Paul Magnaghi, Head of AI Strategy, described: “With our sales operations, building trust \[around AI tools\] has been critical.” Early on, the company started using conversational intelligence within Zoom to analyze the effectiveness of sales reps’ conversations. “At first, reps were worried about managers using the data to monitor them. We flipped that on its head-opening up the intelligence to the reps themselves and enabling them to query AI tools directly. Now they can ask inquisitive questions like, “Was I effective in this conversation?” We’ve seen that level of trust grow as a result.”
 
 Try this
 
@@ -2857,7 +2857,7 @@ THEME 08
 
 How does (and should) AI change how new ideas are generated, selected, and implemented?
 
-As Stanford Business School’s Charles O’Reilly has argued, organizational innovation requires both creativity and implementation—good ideas alone aren’t enough, and flawless execution of bad ideas is a waste of time and money. AI is reshaping both sides of that equation: how ideas are generated, how they’re selected, and how they move from concept to reality.
+As Stanford Business School’s Charles O’Reilly has argued, organizational innovation requires both creativity and implementation-good ideas alone aren’t enough, and flawless execution of bad ideas is a waste of time and money. AI is reshaping both sides of that equation: how ideas are generated, how they’re selected, and how they move from concept to reality.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/692fe100f4e26d97b3c0c8b0_innovation-illustration.webp)
 
@@ -2873,7 +2873,7 @@ Before greenlighting any AI project, press your team to answer: “Does this rea
 
 ‍
 
-And if you are looking to provide real human interaction, with eye contact, a gentle smile, and a human touch, AI might give you some hints about how to do it, but can’t do it for you. In the words of GPT‑4o, “Trusting an LLM to comfort you is like asking a Zombie for a hug.” And while an LLM can explain to you how to fix that broken toilet, it’s up to you—or a plumber—to get your hands dirty to fix the thing.
+And if you are looking to provide real human interaction, with eye contact, a gentle smile, and a human touch, AI might give you some hints about how to do it, but can’t do it for you. In the words of GPT‑4o, “Trusting an LLM to comfort you is like asking a Zombie for a hug.” And while an LLM can explain to you how to fix that broken toilet, it’s up to you-or a plumber-to get your hands dirty to fix the thing.
 
 [
 
@@ -2885,17 +2885,17 @@ Try this
 
 ## Don’t fall for the jargon monoxide spewed out by (lousy) AI vendors
 
-AI vendors—at least the crummy ones—love to cloak shaky products in buzzwords that sound smart but mean little. As Sahin Ahmed, Data Scientist at Publicis Media, puts it[1](https://medium.com/@sahin.samia/ai-washing-the-new-dot-com-hype-how-companies-are-misleading-investors-and-consumers-2ac1e233e437): “Lately, it seems like everyone is jumping on the AI bandwagon, tossing around buzzwords like they are confetti at a tech parade.” He warns[2](https://medium.com/@sahin.samia/ai-washing-the-new-dot-com-hype-how-companies-are-misleading-investors-and-consumers-2ac1e233e437): “Be wary of companies that use jargon‑heavy phrases without clear explanations of what their AI actually does.”
+AI vendors-at least the crummy ones-love to cloak shaky products in buzzwords that sound smart but mean little. As Sahin Ahmed, Data Scientist at Publicis Media, puts it[1](https://medium.com/@sahin.samia/ai-washing-the-new-dot-com-hype-how-companies-are-misleading-investors-and-consumers-2ac1e233e437): “Lately, it seems like everyone is jumping on the AI bandwagon, tossing around buzzwords like they are confetti at a tech parade.” He warns[2](https://medium.com/@sahin.samia/ai-washing-the-new-dot-com-hype-how-companies-are-misleading-investors-and-consumers-2ac1e233e437): “Be wary of companies that use jargon‑heavy phrases without clear explanations of what their AI actually does.”
 
 Try this
 
-Before you greenlight or buy anything with “AI‑powered” stamped on it, strip away the label and ask: if the term “AI” vanished from their pitch, would the product still be impressive—or even necessary? Then, run it through our five‑part AI Washing Gut Check, inspired by Ahmed’s advice:
+Before you greenlight or buy anything with “AI‑powered” stamped on it, strip away the label and ask: if the term “AI” vanished from their pitch, would the product still be impressive-or even necessary? Then, run it through our five‑part AI Washing Gut Check, inspired by Ahmed’s advice:
 
 1.  **The Outlandish Promises Test:** Be skeptical of any vendor that can’t show working AI today but promises a revolution tomorrow. If every feature you ask about lives “on the roadmap,” you’re funding their R&D, not your transformation.
-2.  **The AI Residue Test:** After meeting the vendor, remove every instance of the word “AI” from the pitch and read it again. If the story collapses, congratulations—you just wiped off the gloss and found what’s really underneath.
-3.  **The Reference Ghosting Test:** Ask to speak to the vendor’s current customers. If they dodge the request or send you to a “strategic partner,” usually a friendly collaborator, not a real paying user—that’s code for “no happy customers yet.”
+2.  **The AI Residue Test:** After meeting the vendor, remove every instance of the word “AI” from the pitch and read it again. If the story collapses, congratulations-you just wiped off the gloss and found what’s really underneath.
+3.  **The Reference Ghosting Test:** Ask to speak to the vendor’s current customers. If they dodge the request or send you to a “strategic partner,” usually a friendly collaborator, not a real paying user-that’s code for “no happy customers yet.”
 4.  **The Human‑in‑the‑Loop Test:** Genuine enterprise AI enhances judgment, not replaces it. If the vendor’s pitch assumes all or most humans disappear, they’re selling fantasy, not augmentation.
-5.  **The Missing Metric Test:** Every AI claim should tie to something specific you can measure—fewer bugs, faster sales cycles, higher forecast accuracy. If all you hear are adjectives like “smarter” or “transformative,” you’re not buying results—you’re buying adjectives.
+5.  **The Missing Metric Test:** Every AI claim should tie to something specific you can measure-fewer bugs, faster sales cycles, higher forecast accuracy. If all you hear are adjectives like “smarter” or “transformative,” you’re not buying results-you’re buying adjectives.
 
 [
 
@@ -2907,19 +2907,19 @@ Try this
 
 ## Build an AI sandbox to spur safe experiments
 
-Opening up AI innovation to everyone can be risky. That’s why Stanford Medicine built a secure AI “playground” called “SecureGPT” where clinicians, administrators, staff, and members of the IT team can safely test ideas while protecting privacy and security. Michael Pfeffer, CIDO and Associate Dean, told us how Stanford doctors and nurses use it to test prompts in their daily work—without waiting for formal approvals and with every experiment anonymously tracked by the system.
+Opening up AI innovation to everyone can be risky. That’s why Stanford Medicine built a secure AI “playground” called “SecureGPT” where clinicians, administrators, staff, and members of the IT team can safely test ideas while protecting privacy and security. Michael Pfeffer, CIDO and Associate Dean, told us how Stanford doctors and nurses use it to test prompts in their daily work-without waiting for formal approvals and with every experiment anonymously tracked by the system.
 
 ‍
 
-For example, a team led by Chief Data Officer Nigam Shah developed “ChatEHR[1](https://med.stanford.edu/news/all-news/2025/06/chatehr.html)” by categorizing and ranking the experiments performed in the AI playground. This tool enables clinicians “to ask questions about a patient’s medical history, automatically summarize charts and perform other tasks.” As Shah explained, “ChatEHR is secure; it’s pulling directly from relevant medical data; and it’s built into the electronic medical record system, making it easy and accurate for clinical use.” A pilot group of 33 healthcare workers tested ChatEHR’s ability to speed their search for information about each patient’s “whole story.” A Stanford physician who was one of these early users reported that ChatEHR freed him and his colleagues to “spend time on what matters—talking to patients and figuring out what’s going on.” Now, ChatEHR is available to every Stanford clinician.
+For example, a team led by Chief Data Officer Nigam Shah developed “ChatEHR[1](https://med.stanford.edu/news/all-news/2025/06/chatehr.html)” by categorizing and ranking the experiments performed in the AI playground. This tool enables clinicians “to ask questions about a patient’s medical history, automatically summarize charts and perform other tasks.” As Shah explained, “ChatEHR is secure; it’s pulling directly from relevant medical data; and it’s built into the electronic medical record system, making it easy and accurate for clinical use.” A pilot group of 33 healthcare workers tested ChatEHR’s ability to speed their search for information about each patient’s “whole story.” A Stanford physician who was one of these early users reported that ChatEHR freed him and his colleagues to “spend time on what matters-talking to patients and figuring out what’s going on.” Now, ChatEHR is available to every Stanford clinician.
 
 Try this
 
-Before you stand up a secure AI sandbox, ask, “Where is your place for failing?[2](https://www.goodreads.com/quotes/6568144-diego-rodriguez-who-also-teaches-at-stanford-and-writes-the)” When he was Managing Director at IDEO, Harvard Business School Executive Fellow Diego Rodriguez used to pose that question to clients. Every innovative organization needs an answer—a space where people can take risks, learn new skills, screw up, and keep learning.
+Before you stand up a secure AI sandbox, ask, “Where is your place for failing?[2](https://www.goodreads.com/quotes/6568144-diego-rodriguez-who-also-teaches-at-stanford-and-writes-the)” When he was Managing Director at IDEO, Harvard Business School Executive Fellow Diego Rodriguez used to pose that question to clients. Every innovative organization needs an answer-a space where people can take risks, learn new skills, screw up, and keep learning.
 
 ‍
 
-Then build that space for AI. Stand up a secure space where teams can experiment without waiting for help from your IT team. Let anyone—engineers, PMs, interns, skeptical veterans—test ideas and log outcomes. Track the experiments and scale the ones that work.
+Then build that space for AI. Stand up a secure space where teams can experiment without waiting for help from your IT team. Let anyone-engineers, PMs, interns, skeptical veterans-test ideas and log outcomes. Track the experiments and scale the ones that work.
 
 [
 
@@ -2938,7 +2938,7 @@ Try this
 
 ## Don’t hoard the best tools for experts
 
-We’ve heard about multiple companies reserving their strongest AI tools and models for engineering or data teams. Shopify does the opposite: anyone, in any function, can use every model. Their thesis: high‑value use cases can come from anywhere—and some of their fastest adoption came from sales and support, not engineering.
+We’ve heard about multiple companies reserving their strongest AI tools and models for engineering or data teams. Shopify does the opposite: anyone, in any function, can use every model. Their thesis: high‑value use cases can come from anywhere-and some of their fastest adoption came from sales and support, not engineering.
 
 ‍
 
@@ -2958,7 +2958,7 @@ Try this
 
 ## Give people dedicated time for AI experimentation
 
-One theme that came up often in our interviews: people need time to experiment with AI. David Adams, co‑founder and Chief Product Officer of Canva, has reflected[1](https://www.hrgrapevine.com/us/content/article/2025-07-09-canva-gives-5000-employees-the-week-off-to-learn-ai), “Team members told us they needed more time to explore and experiment with AI, rather than trying to squeeze learning into an already busy schedule.” Across organizations, leaders echoed the same challenge: the biggest barrier to using AI isn’t fear or lack of interest—it’s lack of time.
+One theme that came up often in our interviews: people need time to experiment with AI. David Adams, co‑founder and Chief Product Officer of Canva, has reflected[1](https://www.hrgrapevine.com/us/content/article/2025-07-09-canva-gives-5000-employees-the-week-off-to-learn-ai), “Team members told us they needed more time to explore and experiment with AI, rather than trying to squeeze learning into an already busy schedule.” Across organizations, leaders echoed the same challenge: the biggest barrier to using AI isn’t fear or lack of interest-it’s lack of time.
 
 ‍
 
@@ -2978,14 +2978,14 @@ Try this
 
 ## Protect the “blank page”
 
-AI is often pitched as the cure for “blank page syndrome.” But the evidence is mixed. Some studies suggest that early AI input can boost creativity[1](https://www.ucl.ac.uk/news/2024/jul/ai-boosts-individual-creativity-expense-less-varied-content). Others show it can narrow thinking. Consider the MIT study of students who write SAT‑style essays, which was reported[2](https://www.newyorker.com/culture/infinite-scroll/ai-is-homogenizing-our-thoughts) in a *The New Yorker* article on how “AI is Homogenizing Our Thoughts.” The MIT researchers found that LLM users showed reduced alpha wave connectivity in the brain—a signal linked to original thinking and creative flow. In addition, the essays written by the LLM users “tended to converge on common words and ideas” and their “output was very, very similar” to one another.
+AI is often pitched as the cure for “blank page syndrome.” But the evidence is mixed. Some studies suggest that early AI input can boost creativity[1](https://www.ucl.ac.uk/news/2024/jul/ai-boosts-individual-creativity-expense-less-varied-content). Others show it can narrow thinking. Consider the MIT study of students who write SAT‑style essays, which was reported[2](https://www.newyorker.com/culture/infinite-scroll/ai-is-homogenizing-our-thoughts) in a *The New Yorker* article on how “AI is Homogenizing Our Thoughts.” The MIT researchers found that LLM users showed reduced alpha wave connectivity in the brain-a signal linked to original thinking and creative flow. In addition, the essays written by the LLM users “tended to converge on common words and ideas” and their “output was very, very similar” to one another.
 
 ‍
 
 The difference seems to be in whether people use AI to generate or prematurely narrow ideas in the early stage of the creative process:
 
 -   AI can jumpstart the creative process when it offers multiple, varied, and unexpected starting points.
--   But when it creates anchoring—anchoring people to its first output—it can short‑circuit the messy, high‑value parts of creativity where the best ideas often emerge.
+-   But when it creates anchoring-anchoring people to its first output-it can short‑circuit the messy, high‑value parts of creativity where the best ideas often emerge.
 
 ‍
 
@@ -3011,19 +3011,19 @@ Nobel Prize winner Daniel Kahneman’s research[1](https://www.amazon.com/Thinki
 2.  **System 2 (slow thinking):** deliberate, effortful, and analytical.
 
   
-In creative work, both systems matter. System 1 helps generate rapid connections and bold ideas, while System 2 slows things down for reflection, testing, and refinement. The best ideas emerge when people and teams shift fluidly between the two. As one advisor to Fortune 50 companies explained to us, AI can speed up the tasks around creativity—research, prompts, scaffolding ideas—but creativity itself is still messy and inefficient. He said,
+In creative work, both systems matter. System 1 helps generate rapid connections and bold ideas, while System 2 slows things down for reflection, testing, and refinement. The best ideas emerge when people and teams shift fluidly between the two. As one advisor to Fortune 50 companies explained to us, AI can speed up the tasks around creativity-research, prompts, scaffolding ideas-but creativity itself is still messy and inefficient. He said,
 
 ‍
 
-“AI is like instant coffee. It’s always available, it’s fast, and it’s good enough in a pinch. But if you live on nothing but K‑cups, you risk forgetting how to brew the real thing—and you miss out on the richer flavor that comes from time and craft.”
+“AI is like instant coffee. It’s always available, it’s fast, and it’s good enough in a pinch. But if you live on nothing but K‑cups, you risk forgetting how to brew the real thing-and you miss out on the richer flavor that comes from time and craft.”
 
 ‍
 
-AI thrives in fast mode—pulling in data, surfacing options, and executing at a pace humans can’t match. As Chris Yeh, co‑author of *Blitzscaling*, explained to us, AI can speed up the tasks around creativity—research, prompts, scaffolding ideas—but creativity itself is still messy and inefficient. He expands, “AI is like instant coffee. It’s always available, it’s fast, and it’s good enough in a pinch. But if you live on nothing but K‑cups, you risk forgetting how to brew the real thing—and you miss out on the richer flavor that comes from time and craft.”
+AI thrives in fast mode-pulling in data, surfacing options, and executing at a pace humans can’t match. As Chris Yeh, co‑author of *Blitzscaling*, explained to us, AI can speed up the tasks around creativity-research, prompts, scaffolding ideas-but creativity itself is still messy and inefficient. He expands, “AI is like instant coffee. It’s always available, it’s fast, and it’s good enough in a pinch. But if you live on nothing but K‑cups, you risk forgetting how to brew the real thing-and you miss out on the richer flavor that comes from time and craft.”
 
 ‍
 
-That’s why—similar to behavioral scientist and author Lindsay Kohler—he cautioned against skipping incubation. His rule: don’t bring in AI until his thinking has had time to percolate.
+That’s why-similar to behavioral scientist and author Lindsay Kohler-he cautioned against skipping incubation. His rule: don’t bring in AI until his thinking has had time to percolate.
 
 Try this
 
@@ -3043,9 +3043,9 @@ Protecting slow thinking isn’t just about adding pauses. It’s about knowing 
 
 Try this
 
-Instead of asking, “Where can AI help?” ask, “What kind of thinking do I need right now—fast or slow?” Then match the tool to the tempo.
+Instead of asking, “Where can AI help?” ask, “What kind of thinking do I need right now-fast or slow?” Then match the tool to the tempo.
 
--   **When you need speed:** Use AI to blast through tasks that benefit from pattern recognition, synthesis, or scale—summarizing 50 interviews, generating visual options, or pressure‑testing copy.
+-   **When you need speed:** Use AI to blast through tasks that benefit from pattern recognition, synthesis, or scale-summarizing 50 interviews, generating visual options, or pressure‑testing copy.
 -   **When you need slowness:** Hit pause for work that depends on human texture, like sense‑making, judgment, or emotional resonance.
 
 [
@@ -3063,7 +3063,7 @@ Robert Cialdini’s classic book *Influence*[1](https://www.influenceatwork.com)
 
 ‍
 
-As Cialdini would have it, Stanford lecturer Perry Klebahn told us the speed and ease of prototyping enabled by AI—the lack of labor—means founders in his Launchpad accelerator aren’t working as hard and struggling as much now to develop their promising ideas as in the past. Founders of the 125‑plus start‑ups launched pre‑AI were less prone to this “easy‑come, easy‑go” syndrome. They were more committed, it seems, because developing those promising ideas was slower, harder, and more frustrating.
+As Cialdini would have it, Stanford lecturer Perry Klebahn told us the speed and ease of prototyping enabled by AI-the lack of labor-means founders in his Launchpad accelerator aren’t working as hard and struggling as much now to develop their promising ideas as in the past. Founders of the 125‑plus start‑ups launched pre‑AI were less prone to this “easy‑come, easy‑go” syndrome. They were more committed, it seems, because developing those promising ideas was slower, harder, and more frustrating.
 
 ‍
 
@@ -3071,11 +3071,11 @@ Klebahn described a telling symptom of this lack of commitment: Founders often t
 
 ‍
 
-There is, however, a big advantage to this “easy come, easy go” effect. The lack of effort required to generate prototypes with AI means that people will be less likely to be irrationally committed to bad ideas—and it will be easier for them to pull the plug on ideas that seemed good at first, but further testing reveals to be bad or impractical.
+There is, however, a big advantage to this “easy come, easy go” effect. The lack of effort required to generate prototypes with AI means that people will be less likely to be irrationally committed to bad ideas-and it will be easier for them to pull the plug on ideas that seemed good at first, but further testing reveals to be bad or impractical.
 
 Try this
 
-Use AI to accelerate idea generation, but slow the process where it matters—testing, iterating, and pitching—so people invest in making the ideas their own. But beware of becoming irrationally committed to ideas just because they took a lot of effort to identify or test.
+Use AI to accelerate idea generation, but slow the process where it matters-testing, iterating, and pitching-so people invest in making the ideas their own. But beware of becoming irrationally committed to ideas just because they took a lot of effort to identify or test.
 
 [
 
@@ -3095,7 +3095,7 @@ Indeed, a recent survey[1](https://www.prnewswire.com/news-releases/55-of-busine
 
 Try this
 
-Budget and staff with (roughly) the 80/20 ratio in mind. Remind your teams upfront: the majority of our AI experiments will fail. Partner with vendors who have a proven track record so your odds improve. Define “kill criteria” before you start, set time limits on tests, and make it expected—and healthy—for people to shut down weak ideas. That way failures cost less and winners get the oxygen to grow. And you will avoid eliminating or redesigning jobs prematurely, and the employee performance problems and fear that will follow.
+Budget and staff with (roughly) the 80/20 ratio in mind. Remind your teams upfront: the majority of our AI experiments will fail. Partner with vendors who have a proven track record so your odds improve. Define “kill criteria” before you start, set time limits on tests, and make it expected-and healthy-for people to shut down weak ideas. That way failures cost less and winners get the oxygen to grow. And you will avoid eliminating or redesigning jobs prematurely, and the employee performance problems and fear that will follow.
 
 [
 
@@ -3114,7 +3114,7 @@ Try this
 
 ## Beware the AI flattery trap
 
-In April 2025, OpenAI rolled back[1](https://openai.com/index/sycophancy-in-gpt-4o/) a product update after discovering its latest model had developed a bad case of AI sycophancy—a tendency toward overly agreeable or flattering language. Research by Anthropic[2](https://arxiv.org/pdf/2310.13548) has found that when people rate AI responses, they tend to reward answers that agree with their own views, even if those answers are less accurate. As a result, models trained on human feedback learn that flattering users earns higher scores—which unintentionally teaches them to be sycophantic even at the expense of truthfulness.
+In April 2025, OpenAI rolled back[1](https://openai.com/index/sycophancy-in-gpt-4o/) a product update after discovering its latest model had developed a bad case of AI sycophancy-a tendency toward overly agreeable or flattering language. Research by Anthropic[2](https://arxiv.org/pdf/2310.13548) has found that when people rate AI responses, they tend to reward answers that agree with their own views, even if those answers are less accurate. As a result, models trained on human feedback learn that flattering users earns higher scores-which unintentionally teaches them to be sycophantic even at the expense of truthfulness.
 
 ‍
 
@@ -3136,7 +3136,7 @@ In some cases, human judgment will be helpful for vetting the contextual, relati
 
 Try this
 
-Follow Gridley’s advice and have an AI assistant stress‑test your next big idea—not to judge if it’s good, but to surface where it could go wrong. Then bring that list to your team and use human judgment to evaluate which risks are real barriers to innovation.
+Follow Gridley’s advice and have an AI assistant stress‑test your next big idea-not to judge if it’s good, but to surface where it could go wrong. Then bring that list to your team and use human judgment to evaluate which risks are real barriers to innovation.
 
 [
 
@@ -3148,7 +3148,7 @@ Try this
 
 ## Make probabilistic bets on AI projects like venture capitalists do
 
-Given the high failure rate of AI projects, Alexandre Guilbault, Telus VP of AI, urges leaders to think about AI bets like a venture capital portfolio. You might back $20M worth of opportunities, knowing that maybe only $4M will pan out—but those wins more than cover the misses.
+Given the high failure rate of AI projects, Alexandre Guilbault, Telus VP of AI, urges leaders to think about AI bets like a venture capital portfolio. You might back $20M worth of opportunities, knowing that maybe only $4M will pan out-but those wins more than cover the misses.
 
 ‍
 
@@ -3156,11 +3156,11 @@ Guilbault suggests using “risk‑weighted ROI.” On paper, two AI projects mi
 
 ‍
 
-Of course, no one’s crystal ball is clear. Venture capitalists and AI leaders (just like other human beings) are terrible at estimating which bets will win—there’s too much noise and uncertainty. But even rough probabilities force better conversations. Thinking probabilistically shifts the mindset from fantasyland—where every shiny project is a winner—to reality.
+Of course, no one’s crystal ball is clear. Venture capitalists and AI leaders (just like other human beings) are terrible at estimating which bets will win-there’s too much noise and uncertainty. But even rough probabilities force better conversations. Thinking probabilistically shifts the mindset from fantasyland-where every shiny project is a winner-to reality.
 
 Try this
 
-Don’t expect every AI project to return your full investment—let alone much more. Multiply each project’s projected return by your best estimate of its probability of success, and make funding calls based on that math. And if you don’t know the odds? Use the benchmark several leaders we spoke to hovered around: only about 20% of early AI initiatives succeed.
+Don’t expect every AI project to return your full investment-let alone much more. Multiply each project’s projected return by your best estimate of its probability of success, and make funding calls based on that math. And if you don’t know the odds? Use the benchmark several leaders we spoke to hovered around: only about 20% of early AI initiatives succeed.
 
 ‍
 
@@ -3176,7 +3176,7 @@ Try this
 
 ## Treat your employees as “customer zero” Especially the toughest critics
 
-If you’re building AI tools to sell to customers, don’t wait for outsiders to expose the cracks. Adobe doesn’t[1](https://www.greatplacetowork.com/resources/blog/100-best-training-workforce-ai). For example, when it introduced the generative AI tool Firefly in 2023, it turned thousands of employees into “customer zero.” They weren’t just finding bugs—they were surfacing unexpected use cases, flagging risks, and refining features. By the time it reached customers, it had survived some of the toughest critics: the employees who knew the product inside out.
+If you’re building AI tools to sell to customers, don’t wait for outsiders to expose the cracks. Adobe doesn’t[1](https://www.greatplacetowork.com/resources/blog/100-best-training-workforce-ai). For example, when it introduced the generative AI tool Firefly in 2023, it turned thousands of employees into “customer zero.” They weren’t just finding bugs-they were surfacing unexpected use cases, flagging risks, and refining features. By the time it reached customers, it had survived some of the toughest critics: the employees who knew the product inside out.
 
 Try this
 
@@ -3192,7 +3192,7 @@ Try this
 
 ## Innovate where AI can’t replace what people do
 
-AI is making speed and efficiency table stakes. Faster and cheaper are no longer a competitive edge—in many cases, they’re the baseline.
+AI is making speed and efficiency table stakes. Faster and cheaper are no longer a competitive edge-in many cases, they’re the baseline.
 
 ‍
 
@@ -3200,7 +3200,7 @@ The real advantage lies in the parts of work machines can’t replicate: trust, 
 
 Try this
 
-Audit your product or service. Highlight the touchpoints where a human makes the experience better—by listening, surprising, or caring. Protect those. Double down on them. Make them the center of how you compete.
+Audit your product or service. Highlight the touchpoints where a human makes the experience better-by listening, surprising, or caring. Protect those. Double down on them. Make them the center of how you compete.
 
 [
 
@@ -3214,7 +3214,7 @@ THEME 08
 
 How should leaders think about and do their jobs now? What is the same? What is more important than ever? What old behaviors do they need to abandon?
 
-In the AI era, leadership is under renovation. Some parts of the job—like planning, analysis, and routine communication—can be automated or heavily augmented. Others—like earning trust, modeling civility, making hard calls, and showing up with presence—are more vital  than ever. The challenge is knowing which parts to hand off to machines, and which to double down on as fully human.
+In the AI era, leadership is under renovation. Some parts of the job-like planning, analysis, and routine communication-can be automated or heavily augmented. Others-like earning trust, modeling civility, making hard calls, and showing up with presence-are more vital  than ever. The challenge is knowing which parts to hand off to machines, and which to double down on as fully human.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/692fe100f4e26d97b3c0c8c9_leadership-illustration.webp)
 
@@ -3250,7 +3250,7 @@ Try this
 
 ## Build an AI rhythm into your organization
 
-Just like people, organizations run on rhythms. Meetings, budgets, performance reviews—all of them set the pace for how work gets done. The trouble is, most companies treat AI as a side project—something dropped into the schedule here and there. Without a steady beat, adoption fizzles. With one, AI becomes part of the organization’s heartbeat—the “drumbeat that the organization marches to,” as venture capitalist John Lilly puts it. Shared rhythms help people build AI into their routines, know when to focus attention on it, and synchronize AI efforts across the company.
+Just like people, organizations run on rhythms. Meetings, budgets, performance reviews-all of them set the pace for how work gets done. The trouble is, most companies treat AI as a side project-something dropped into the schedule here and there. Without a steady beat, adoption fizzles. With one, AI becomes part of the organization’s heartbeat-the “drumbeat that the organization marches to,” as venture capitalist John Lilly puts it. Shared rhythms help people build AI into their routines, know when to focus attention on it, and synchronize AI efforts across the company.
 
 ‍
 
@@ -3272,7 +3272,7 @@ Try this
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/692fe101f4e26d97b3c0c916_no-89.svg)
 
-## Examine what your system rewards—AI will give you more of it, want it or not
+## Examine what your system rewards-AI will give you more of it, want it or not
 
 Many of the leaders we spoke to described AI as a magnifying glass. It amplifies the patterns that already live in your culture, data, and workflows. As Northwestern Professor Hatim Rahman told us, “AI gives us a tool to amplify more of what you want.” Even though, if you think about your goals more deeply, you may not “want” more of it at all!
 
@@ -3284,7 +3284,7 @@ Try this
 
 Before rolling out AI, run an “amplification audit.” Ask:
 
--   What behaviors get rewarded here—speed, consensus, risk‑taking, accuracy?
+-   What behaviors get rewarded here-speed, consensus, risk‑taking, accuracy?
 -   If AI doubled those behaviors, would that be good or bad?
 -   What safeguards do we need to prevent the bad from scaling?
 
@@ -3340,11 +3340,11 @@ Another common trap is using AI to crank out more work: more emails fired off in
 
 ‍
 
-Michael Pfeffer cautioned us against a narrow focus on efficient throughput without understanding workflow. He gave the example of AI that can predict which patients are likely to be no‑show appointments. A cost‑effective strategy is to double‑book those patients—which maximizes system throughput but leaves patients shortchanged when both arrive for an appointment. A better approach, Pfeffer suggested, is to reduce barriers that cause people to miss appointments in the first place. Such as arranging transportation for people who struggle to get rides to appointments. He adds, “You could predict which patients are more likely to no‑show…You could double book them…and now the doctor potentially has to see two patients, so both get less time. Or you call a ride service and bring the patient who’s more likely to no‑show here…same algorithm, different workflows.”
+Michael Pfeffer cautioned us against a narrow focus on efficient throughput without understanding workflow. He gave the example of AI that can predict which patients are likely to be no‑show appointments. A cost‑effective strategy is to double‑book those patients-which maximizes system throughput but leaves patients shortchanged when both arrive for an appointment. A better approach, Pfeffer suggested, is to reduce barriers that cause people to miss appointments in the first place. Such as arranging transportation for people who struggle to get rides to appointments. He adds, “You could predict which patients are more likely to no‑show…You could double book them…and now the doctor potentially has to see two patients, so both get less time. Or you call a ride service and bring the patient who’s more likely to no‑show here…same algorithm, different workflows.”
 
 Try this
 
-When AI creates time savings, don’t automatically assume that adding more volume to the system is the best answer. Humans suffer from “addition sickness[1](https://www.timeshighereducation.com/blog/our-do-lists-cant-grow-forever-its-time-try-subtraction)”: a bias to add more rather than subtract or improve. Beware of the knee‑jerk reaction to squeeze in another patient, send another email, or tack on another project. Put explicit guardrails in place so the “extra capacity” is invested in higher‑quality and more humane work—listening, advising, designing—rather than just cranking the wheel faster. For example:
+When AI creates time savings, don’t automatically assume that adding more volume to the system is the best answer. Humans suffer from “addition sickness[1](https://www.timeshighereducation.com/blog/our-do-lists-cant-grow-forever-its-time-try-subtraction)”: a bias to add more rather than subtract or improve. Beware of the knee‑jerk reaction to squeeze in another patient, send another email, or tack on another project. Put explicit guardrails in place so the “extra capacity” is invested in higher‑quality and more humane work-listening, advising, designing-rather than just cranking the wheel faster. For example:
 
 -   In healthcare, set policies that ensure freed‑up time goes to longer patient visits, not double‑booking.
 -   In sales, track whether AI frees reps to spend more time in discovery calls, not just more outbound emails.
@@ -3394,7 +3394,7 @@ Try this
 
 ## Stop using “higher‑order work” as a cop‑out
 
-Leaders love to trot out the line: “AI will take the busywork so you can focus on higher‑order tasks.” Udemy’s Interim Chief Learning Officer, Rebecca Stern, explained to us how the slogan can be especially misleading for frontline roles. Junior employees and those in operations‑heavy jobs spend their days on tactical tasks. There’s often no “strategic thinking,” “innovation,” or other so‑called higher‑order work for them waiting to be unlocked—scheduling shifts, processing orders, answering support tickets, keeping the physical machinery running. There are no “higher‑order” tasks to move into, so instead of opportunity, they worry about being expendable.
+Leaders love to trot out the line: “AI will take the busywork so you can focus on higher‑order tasks.” Udemy’s Interim Chief Learning Officer, Rebecca Stern, explained to us how the slogan can be especially misleading for frontline roles. Junior employees and those in operations‑heavy jobs spend their days on tactical tasks. There’s often no “strategic thinking,” “innovation,” or other so‑called higher‑order work for them waiting to be unlocked-scheduling shifts, processing orders, answering support tickets, keeping the physical machinery running. There are no “higher‑order” tasks to move into, so instead of opportunity, they worry about being expendable.
 
 Try this
 
@@ -3414,11 +3414,11 @@ In April 2025, Shopify CEO Tobi Lütke told employees[1](https://x.com/tobi/stat
 
 ‍
 
-This type of decisive leadership—a clear, company‑wide commitment to AI adoption—can fuel AI implementation and use. But if it’s not paired with psychological safety and transparency, it can backfire. At one large real‑estate firm we know, an executive described to us how their CEO declared that everyone must “default to AI” and began tracking weekly usage of their internal GenAI tool. Employees read this type of message as “use AI or else” and as a signal that their jobs—or their coworkers’ jobs—would vanish if they didn’t keep up (or practice the art of “AI theater”).
+This type of decisive leadership-a clear, company‑wide commitment to AI adoption-can fuel AI implementation and use. But if it’s not paired with psychological safety and transparency, it can backfire. At one large real‑estate firm we know, an executive described to us how their CEO declared that everyone must “default to AI” and began tracking weekly usage of their internal GenAI tool. Employees read this type of message as “use AI or else” and as a signal that their jobs-or their coworkers’ jobs-would vanish if they didn’t keep up (or practice the art of “AI theater”).
 
 Try this
 
-Make expectations clear without triggering survival anxiety. Communicate how employees will be trained, supported, and valued through the transition. If layoffs are coming, or are possible, be upfront about that too. Destructive fear and uncertainty can be dampened by communicating to employees[2](https://hbr.org/2025/07/qa-professor-robert-sutton-on-communicating-difficult-decisions-as-a-leader) that their jobs are safe for some specified period—say, for the next month, three months, or six months. This predictability spares your people from constant worry, which reduces their distress and helps them.
+Make expectations clear without triggering survival anxiety. Communicate how employees will be trained, supported, and valued through the transition. If layoffs are coming, or are possible, be upfront about that too. Destructive fear and uncertainty can be dampened by communicating to employees[2](https://hbr.org/2025/07/qa-professor-robert-sutton-on-communicating-difficult-decisions-as-a-leader) that their jobs are safe for some specified period-say, for the next month, three months, or six months. This predictability spares your people from constant worry, which reduces their distress and helps them.
 
 [
 
@@ -3445,7 +3445,7 @@ As Lily Zhang told us, “there’s an opportunity for employees to use AI tools
 
 ‍
 
-AI can’t replace the human connection in leadership, but if you need to stretch your span, it can take over the coordination load—surfacing what each person is working on, flagging blockers, and suggesting talking points.
+AI can’t replace the human connection in leadership, but if you need to stretch your span, it can take over the coordination load-surfacing what each person is working on, flagging blockers, and suggesting talking points.
 
 Try this
 
@@ -3466,7 +3466,7 @@ In 2024, Harvard Professor Raj Choudhury’s team trained an AI[1](https://www.h
 
 ‍
 
-Yet, when employees **believed** a response came from the bot, they rated it as less helpful—even when it was actually from CEO Foster himself. Your people don’t just want your words—they want you behind those words.
+Yet, when employees **believed** a response came from the bot, they rated it as less helpful-even when it was actually from CEO Foster himself. Your people don’t just want your words-they want you behind those words.
 
 ‍
 
@@ -3486,11 +3486,11 @@ Try this
 
 ## Do your homework, but ditch the soulless AI presence
 
-AI‑generated all‑hands scripts and memos can make out‑of‑touch leaders sound overly slick, inauthentic, and disconnected from employees and customers. CEO and author Nancy Duarte, who has helped clients do better speeches and tell better stories for decades, is finding that, in this AI era[1](https://www.hbs.edu/ris/Publication%20Files/25-008_7583ddd3-d5ed-46d5-9475-453a44da0f60.pdf), many of the leaders she works with “lack the ability to walk into any room prepared to make people care.” While the best communicators still do A LOT of homework, they do it with the knowledge that people crave the imperfect, unfiltered presence of a leader—they want the pauses, the rough edges, those bits of humanity that convey, “I’m real, I’m here with you, and you can trust me.”
+AI‑generated all‑hands scripts and memos can make out‑of‑touch leaders sound overly slick, inauthentic, and disconnected from employees and customers. CEO and author Nancy Duarte, who has helped clients do better speeches and tell better stories for decades, is finding that, in this AI era[1](https://www.hbs.edu/ris/Publication%20Files/25-008_7583ddd3-d5ed-46d5-9475-453a44da0f60.pdf), many of the leaders she works with “lack the ability to walk into any room prepared to make people care.” While the best communicators still do A LOT of homework, they do it with the knowledge that people crave the imperfect, unfiltered presence of a leader-they want the pauses, the rough edges, those bits of humanity that convey, “I’m real, I’m here with you, and you can trust me.”
 
 ‍
 
-That human touch matters less in some jobs, though. Wharton Professor Lindsey Cameron found that many gig workers actually prefer being managed by algorithms. In her seven‑year study[2](https://hbr.org/2025/01/if-you-want-your-team-to-use-gen-ai-focus-on-trust) of ride‑hail drivers, many said they valued the schedule flexibility of AI‑driven apps—hundreds of quick interactions a day, constant feedback, and freedom from biased or micromanaging bosses. Cameron shows that these systems create what she calls “choice‑based consent”: even within tight constraints, workers feel a sense of agency and mastery that keeps them engaged in the job. For them, algorithmic management and communication systems work because the job revolves around completing tasks quickly at an attractive piece‑rate, not emotional connection among managers and co‑workers.
+That human touch matters less in some jobs, though. Wharton Professor Lindsey Cameron found that many gig workers actually prefer being managed by algorithms. In her seven‑year study[2](https://hbr.org/2025/01/if-you-want-your-team-to-use-gen-ai-focus-on-trust) of ride‑hail drivers, many said they valued the schedule flexibility of AI‑driven apps-hundreds of quick interactions a day, constant feedback, and freedom from biased or micromanaging bosses. Cameron shows that these systems create what she calls “choice‑based consent”: even within tight constraints, workers feel a sense of agency and mastery that keeps them engaged in the job. For them, algorithmic management and communication systems work because the job revolves around completing tasks quickly at an attractive piece‑rate, not emotional connection among managers and co‑workers.
 
 Try this
 
@@ -3511,11 +3511,11 @@ Leaders often search for that AI quick win. But the reality is that productivity
 
 ‍
 
-The first wins—drafting emails, summarizing notes, generating boilerplate code—come fast. But then the harder work begins: redesigning workflows, retraining employees, rethinking roles. That’s when productivity hits the bottom of the curve. Rahman warns, “There has to be a willingness to view this as a long‑term change process of an organization.”
+The first wins-drafting emails, summarizing notes, generating boilerplate code-come fast. But then the harder work begins: redesigning workflows, retraining employees, rethinking roles. That’s when productivity hits the bottom of the curve. Rahman warns, “There has to be a willingness to view this as a long‑term change process of an organization.”
 
 Try this
 
-Name the productivity j‑curve before it hits. Tell teams to expect that AI may make work slower before it makes it faster—because the flow of work through your organization needs to be rewired and people need time to learn the new system and to do fast, effective, and innovative work together.
+Name the productivity j‑curve before it hits. Tell teams to expect that AI may make work slower before it makes it faster-because the flow of work through your organization needs to be rewired and people need time to learn the new system and to do fast, effective, and innovative work together.
 
 [
 
@@ -3532,9 +3532,9 @@ Try this
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69303177ab1010de671e8baa_Headshot_Rahman_Hatim.webp)
 
-## Acknowledge—and learn from—ballyhooed changes that let people down before
+## Acknowledge-and learn from-ballyhooed changes that let people down before
 
-AI doesn’t arrive in your organization on a blank slate. Most workplaces are littered with the ghosts of past “transformations” that were supposed to make things easier: ERP systems that slowed everyone down, new tools that doubled the clicks, reorganizations that created more confusion than clarity. Some of these changes cost people jobs—and then later, their employers figured out their skills were essential.
+AI doesn’t arrive in your organization on a blank slate. Most workplaces are littered with the ghosts of past “transformations” that were supposed to make things easier: ERP systems that slowed everyone down, new tools that doubled the clicks, reorganizations that created more confusion than clarity. Some of these changes cost people jobs-and then later, their employers figured out their skills were essential.
 
 ‍
 
@@ -3560,9 +3560,9 @@ Try this
 
 So how do you decide what’s safe to try? Start with these three questions:
 
-1.  **Is it reversible?** If it flops, how easy is it to stop or undo? Think Jeff Bezos’ “one‑way” versus “two‑way” doors. If it’s a two‑way door—easy to reverse—go faster.
+1.  **Is it reversible?** If it flops, how easy is it to stop or undo? Think Jeff Bezos’ “one‑way” versus “two‑way” doors. If it’s a two‑way door-easy to reverse-go faster.
 2.  **What’s the objective risk?** How much harm could this do to people, performance, or reputation if it fails? High upside with low downside is usually worth a bet.
-3.  **What’s the political risk?** Sometimes the danger isn’t the idea failing—it’s succeeding and upsetting the wrong powerful, selfish people.
+3.  **What’s the political risk?** Sometimes the danger isn’t the idea failing-it’s succeeding and upsetting the wrong powerful, selfish people.
 
 ‍
 

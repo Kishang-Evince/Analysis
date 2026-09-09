@@ -95,7 +95,7 @@ Make sure the target service account has the BigQuery roles it needs:
 2.  Click **Add**.
 3.  Select **GCP BigQuery** under **Service credentials**.
 4.  Fill in these fields:
-    -   **Credential name**: A human-readable name for the credential, for example, "BigQuery Reader — my-project".
+    -   **Credential name**: A human-readable name for the credential, for example, "BigQuery Reader - my-project".
     -   **Description**: A brief description of what this credential is used for.
     -   **Service account email**: The full email address of the target service account, for example, `bq-reader@<your-gcp-project>.iam.gserviceaccount.com`.
     -   **Audience**: Which users or groups can attach this credential to agents.

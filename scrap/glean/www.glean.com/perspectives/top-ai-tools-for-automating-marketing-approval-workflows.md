@@ -91,11 +91,11 @@ The root cause is not lazy reviewers or broken processes. Approval workflows bre
 
 Without a unified layer connecting that information, every automated check operates on partial data and produces unreliable results.
 
-Glean Agents address this gap by operating on top of the Enterprise Graph, which maps relationships across documents, messages, tools, and people. Instead of building another point solution that checks assets against a static rulebook, the agents pull context from across your connected systems — [marketing automation tools](https://www.glean.com/blog/glean-marketing-apps-actions), project management platforms, brand repositories — and apply permission-aware governance so every automated action respects existing access controls. The difference is that approval automation grounded in full organizational context can make reliable decisions, while tools operating on fragments of information cannot.
+Glean Agents address this gap by operating on top of the Enterprise Graph, which maps relationships across documents, messages, tools, and people. Instead of building another point solution that checks assets against a static rulebook, the agents pull context from across your connected systems - [marketing automation tools](https://www.glean.com/blog/glean-marketing-apps-actions), project management platforms, brand repositories - and apply permission-aware governance so every automated action respects existing access controls. The difference is that approval automation grounded in full organizational context can make reliable decisions, while tools operating on fragments of information cannot.
 
 ## Key capabilities to look for in AI approval workflow tools
 
-The right AI approval tool does more than speed up sign-offs. It understands what your content says, who needs to review it, and what rules apply — then enforces all three without manual coordination. Here is what separates capable platforms from basic automation.
+The right AI approval tool does more than speed up sign-offs. It understands what your content says, who needs to review it, and what rules apply - then enforces all three without manual coordination. Here is what separates capable platforms from basic automation.
 
 ### Content-aware routing and review
 
@@ -111,7 +111,7 @@ Every approval action an AI agent takes should respect your organization's exist
 
 No back doors. No privilege escalation.
 
-Audit trails are equally important. Deloitte's 2026 State of AI report found that only about 20% of organizations have [mature governance frameworks](https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html) for managing AI agents — yet each AI action, human decision, and escalation should be logged with full attribution: who triggered it, what the agent checked, which model and prompt version ran, and what the findings were. When a regulator or internal auditor asks why an asset was approved, you need a clear chain of custody, not a black box.
+Audit trails are equally important. Deloitte's 2026 State of AI report found that only about 20% of organizations have [mature governance frameworks](https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html) for managing AI agents - yet each AI action, human decision, and escalation should be logged with full attribution: who triggered it, what the agent checked, which model and prompt version ran, and what the findings were. When a regulator or internal auditor asks why an asset was approved, you need a clear chain of custody, not a black box.
 
 ### Enterprise context and knowledge integration
 
@@ -159,7 +159,7 @@ When the agent detects a potential violation, it escalates to the appropriate hu
 
 A generic "compliance issue detected" flag forces the reviewer to start from scratch. A finding that says "this claim on slide 3 lacks the required disclaimer under FDA guidance" gives the reviewer a clear action.
 
-Glean's Agentic Engine supports this kind of multi-step validation through [agentic reasoning](https://www.glean.com/blog/agentic-reasoning-future-ai) — planning a sequence of checks, executing each one against the relevant knowledge sources, and assembling findings into a structured report, all while respecting the triggering user's permission boundaries.
+Glean's Agentic Engine supports this kind of multi-step validation through [agentic reasoning](https://www.glean.com/blog/agentic-reasoning-future-ai) - planning a sequence of checks, executing each one against the relevant knowledge sources, and assembling findings into a structured report, all while respecting the triggering user's permission boundaries.
 
 ### Final approval and distribution
 
@@ -185,13 +185,13 @@ If the answer is no, the tool operates in a silo, and your reviewers are still d
 
 Before evaluating any AI approval tool, document your existing workflow end to end. Identify every handoff point, every system where assets live, and every person who touches an approval. Note where bottlenecks occur and where errors originate.
 
-This mapping serves two purposes. First, it reveals which stages would benefit most from AI automation — usually the repetitive, high-volume steps like pre-screening and routing. Second, it exposes the integration requirements your tool must meet.
+This mapping serves two purposes. First, it reveals which stages would benefit most from AI automation - usually the repetitive, high-volume steps like pre-screening and routing. Second, it exposes the integration requirements your tool must meet.
 
 If your assets live in Google Drive, feedback happens in Slack, and brand guidelines sit in Figma, any AI tool you select needs to connect to all three.
 
 ### Prioritize governance and security requirements
 
-AI approval tools handle sensitive content: unreleased product information, financial disclosures, and regulated marketing materials. Treating [AI governance](https://www.glean.com/blog/data-gov-product-blog) and security requirements as non-negotiable selection criteria — not afterthoughts — is essential.
+AI approval tools handle sensitive content: unreleased product information, financial disclosures, and regulated marketing materials. Treating [AI governance](https://www.glean.com/blog/data-gov-product-blog) and security requirements as non-negotiable selection criteria - not afterthoughts - is essential.
 
 Evaluate how the tool handles data retention with its AI model providers. Check whether the tool enforces your existing access permissions or creates its own permission layer.
 
@@ -228,7 +228,7 @@ AI tools improve approvals by pre-screening assets before human review, routing 
 
 AI can automate compliance checks by scanning assets against regulatory frameworks, industry guidelines, and internal policies. The AI flags specific violations with references to the source rule, so reviewers know exactly what to fix.
 
-However, AI handles compliance validation — not compliance decisions. A human reviewer still makes the final call on flagged issues, especially in regulated industries.
+However, AI handles compliance validation - not compliance decisions. A human reviewer still makes the final call on flagged issues, especially in regulated industries.
 
 ### What features should I look for in an AI approval workflow tool?
 

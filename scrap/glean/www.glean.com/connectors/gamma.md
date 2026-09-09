@@ -26,7 +26,7 @@ Glean executes actions across:
 
 ### Benefits
 
-Turn company context into ready-to-share visual content faster. Go from research to Gamma deliverables in one flow—reducing copy-paste and grounding content in real company knowledge.
+Turn company context into ready-to-share visual content faster. Go from research to Gamma deliverables in one flow-reducing copy-paste and grounding content in real company knowledge.
 
 ## Work AI that works.
 

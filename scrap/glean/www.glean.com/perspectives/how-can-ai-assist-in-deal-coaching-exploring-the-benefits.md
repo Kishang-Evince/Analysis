@@ -63,36 +63,36 @@ Share this article:
 
 # How can AI assist in deal coaching exploring the benefits
 
-Sales teams close more deals when coaching happens at the opportunity level — not in a quarterly training session or a generic pipeline review. The shift toward AI-assisted deal coaching represents one of the most practical applications of enterprise AI today, one that connects scattered deal context into focused, actionable guidance for every rep and every opportunity.
+Sales teams close more deals when coaching happens at the opportunity level - not in a quarterly training session or a generic pipeline review. The shift toward AI-assisted deal coaching represents one of the most practical applications of enterprise AI today, one that connects scattered deal context into focused, actionable guidance for every rep and every opportunity.
 
 Deal coaching has always depended on timely information and sharp judgment. AI does not replace either of those; it strengthens both by assembling the full picture faster than any human can across dozens of fragmented systems. The result is a coaching process grounded in evidence rather than memory, available at scale rather than rationed to a few high-priority deals.
 
-This article breaks down what a deal coach actually does, how AI fits into that process, the specific techniques involved, and the measurable benefits enterprise sales teams can expect. Each section builds toward a repeatable method — one that keeps human leadership at the center while AI handles the recall, synthesis, and structured preparation that make coaching sessions more productive.
+This article breaks down what a deal coach actually does, how AI fits into that process, the specific techniques involved, and the measurable benefits enterprise sales teams can expect. Each section builds toward a repeatable method - one that keeps human leadership at the center while AI handles the recall, synthesis, and structured preparation that make coaching sessions more productive.
 
 ## What Is a Deal Coach and Can AI Assist in It?
 
-A deal coach provides tactical guidance on live, active opportunities. Unlike general sales training — which builds broad skills over time — deal coaching zeroes in on a specific deal in motion. The job is to sharpen decision quality: which stakeholders to engage next, what risk deserves attention right now, where momentum is building or fading, and whether the next step is specific enough to advance the opportunity. A strong deal coach helps reps pressure-test their assumptions about a deal rather than simply report its status. That distinction matters. A forecast call asks "will this close?" A pipeline review asks "where are we?" Deal coaching asks "what should we do differently, and why?"
+A deal coach provides tactical guidance on live, active opportunities. Unlike general sales training - which builds broad skills over time - deal coaching zeroes in on a specific deal in motion. The job is to sharpen decision quality: which stakeholders to engage next, what risk deserves attention right now, where momentum is building or fading, and whether the next step is specific enough to advance the opportunity. A strong deal coach helps reps pressure-test their assumptions about a deal rather than simply report its status. That distinction matters. A forecast call asks "will this close?" A pipeline review asks "where are we?" Deal coaching asks "what should we do differently, and why?"
 
-In practice, deal coaching techniques include stakeholder mapping, objection analysis, next-step planning, deal risk review, and strategy pressure-testing. Each of these requires context — often spread across CRM records, meeting notes, email threads, support tickets, product documentation, and internal conversations. For enterprise sales teams managing complex, multi-stakeholder deals, the context problem is acute. Reps enter coaching sessions with partial recall. Managers spend the first half of the conversation just reconstructing what happened. The coaching itself gets compressed into whatever time remains.
+In practice, deal coaching techniques include stakeholder mapping, objection analysis, next-step planning, deal risk review, and strategy pressure-testing. Each of these requires context - often spread across CRM records, meeting notes, email threads, support tickets, product documentation, and internal conversations. For enterprise sales teams managing complex, multi-stakeholder deals, the context problem is acute. Reps enter coaching sessions with partial recall. Managers spend the first half of the conversation just reconstructing what happened. The coaching itself gets compressed into whatever time remains.
 
 ### Where AI Fits
 
-AI becomes useful when it can pull together that fragmented context automatically and present it in a form that accelerates — rather than complicates — the coaching conversation. The most practical applications include:
+AI becomes useful when it can pull together that fragmented context automatically and present it in a form that accelerates - rather than complicates - the coaching conversation. The most practical applications include:
 
 -   **Assembling deal briefs before coaching sessions**: AI can gather account background, recent meeting summaries, stakeholder roles, open risks, and agreed next steps from across business systems so the conversation starts with shared facts instead of reconstruction.
 -   **Surfacing patterns across interactions**: Rather than reviewing one call in isolation, AI can identify recurring objections, single-threaded relationships, weakening next steps, or unresolved technical blockers across the full history of an opportunity.
--   **Guiding preparation and follow-through**: Before a customer conversation, AI can surface likely objections, open questions, and relevant internal knowledge. After the conversation, it can highlight risks, assign follow-ups, and draft summaries — all within the seller's existing workflow.
+-   **Guiding preparation and follow-through**: Before a customer conversation, AI can surface likely objections, open questions, and relevant internal knowledge. After the conversation, it can highlight risks, assign follow-ups, and draft summaries - all within the seller's existing workflow.
 -   **Scaling coaching consistency**: Managers typically have bandwidth to deeply coach only a handful of deals per week. AI extends that reach by providing structured, evidence-based guidance to every rep on every active opportunity.
 
-The most effective model is hybrid. Managers coach the human side of selling — trust, politics, relationship repair, executive judgment, and rep development. AI handles recall, synthesis, and structured guidance. An enterprise AI assistant, such as Glean, supports this approach by connecting company knowledge and workflow context in one place, with permission-aware retrieval that ensures coaching stays grounded in the right information for each person.
+The most effective model is hybrid. Managers coach the human side of selling - trust, politics, relationship repair, executive judgment, and rep development. AI handles recall, synthesis, and structured guidance. An enterprise AI assistant, such as Glean, supports this approach by connecting company knowledge and workflow context in one place, with permission-aware retrieval that ensures coaching stays grounded in the right information for each person.
 
-This balance reflects a broader principle in enterprise AI adoption: the highest-value use case is better decision-making at work, not automation for its own sake. AI deal coaching works best when it sharpens human thinking rather than pretends to replace it — and when it operates with the security, permissions, and auditability that enterprise teams require.
+This balance reflects a broader principle in enterprise AI adoption: the highest-value use case is better decision-making at work, not automation for its own sake. AI deal coaching works best when it sharpens human thinking rather than pretends to replace it - and when it operates with the security, permissions, and auditability that enterprise teams require.
 
 ## How to use AI to assist in deal coaching
 
 Use AI in deal coaching with one rule in mind: it should raise the quality of the conversation, not add another layer of process. The most useful approach supports four moments where deals often drift off course: prep, review, strategy, and execution.
 
-That requires more than a chatbot and a transcript. Good AI sales coaching depends on broad, permission-aware access to the systems that shape a live opportunity — CRM records, calendar notes, email history, support cases, pricing context, product answers, and open tasks. Without that range, the output stays thin, and the coach still has to piece the story together by hand.
+That requires more than a chatbot and a transcript. Good AI sales coaching depends on broad, permission-aware access to the systems that shape a live opportunity - CRM records, calendar notes, email history, support cases, pricing context, product answers, and open tasks. Without that range, the output stays thin, and the coach still has to piece the story together by hand.
 
 ### 1\. Prepare the deal before the coaching session
 
@@ -157,11 +157,11 @@ That shift matters in enterprise sales because risk rarely sits in a single fiel
 ### What a useful deal brief needs to show
 
 -   **Buyer mandate**: The brief should state the business outcome the account needs, the internal priority behind it, and the consequence of delay. This gives the manager a way to test whether the value case still matches the buyer’s stated goal.
--   **Committee map**: A useful brief should distinguish sponsor, champion, evaluator, blocker, and approver — plus the last meaningful interaction with each. That level of detail makes weak stakeholder coverage visible early.
+-   **Committee map**: A useful brief should distinguish sponsor, champion, evaluator, blocker, and approver - plus the last meaningful interaction with each. That level of detail makes weak stakeholder coverage visible early.
 -   **Commercial posture**: Pricing pressure, discount requests, contract redlines, budget limits, and approval path should sit in one place. Commercial risk often shapes deal quality long before a formal procurement stage.
 -   **Delivery readiness**: Implementation scope, technical dependencies, open integration questions, and prior account support history all affect deal strength. A coach needs that operational view to judge whether the plan can hold after signature.
 -   **Momentum markers**: Stage age, reply gaps, missed milestones, meeting quality, and firmness of the next commitment help show whether the deal has real movement or just activity.
--   **Evidence trail**: Each key claim should point back to a source — a meeting note, email, support case, or account update. That keeps the conversation specific and reduces soft assumptions.
+-   **Evidence trail**: Each key claim should point back to a source - a meeting note, email, support case, or account update. That keeps the conversation specific and reduces soft assumptions.
 
 A brief with that structure gives the rep a sharper account readout before the session starts and gives the manager a stronger base for sales strategy. It also helps sales enablement tools do real work: they can expose recurring gaps such as late technical discovery, thin committee maps, or weak commercial planning without a separate manual review.
 
@@ -173,14 +173,14 @@ This approach supports sales performance improvement in practical terms. Reps en
 
 ## 2\. Review conversations and activity patterns, not just isolated moments
 
-After the deal brief sets the baseline, the next step is comparative review. The goal is not to grade one meeting in isolation; the goal is to understand how the opportunity behaves across time. That requires a wider lens — one that reads call transcripts, email response patterns, meeting summaries, calendar gaps, buyer participation, and post-meeting follow-through as parts of the same story.
+After the deal brief sets the baseline, the next step is comparative review. The goal is not to grade one meeting in isolation; the goal is to understand how the opportunity behaves across time. That requires a wider lens - one that reads call transcripts, email response patterns, meeting summaries, calendar gaps, buyer participation, and post-meeting follow-through as parts of the same story.
 
 ### Look for repetition across the deal
 
 A useful coaching review should reveal whether the deal moves forward in a healthy way or merely stays busy. AI can detect patterns that tend to hide inside long sales cycles and crowded activity logs, then turn them into concrete coaching prompts for the rep and manager.
 
 -   **Buyer engagement that narrows instead of expands**: Early calls may include a broad set of participants, then later meetings shrink to one or two familiar contacts. That often signals lost momentum, weak internal alignment, or a champion without enough influence.
--   **Questions that return without stronger answers**: When buyers ask for the same proof more than once — around ROI, implementation effort, security posture, or expected outcomes — the issue usually sits in message quality, not buyer confusion.
+-   **Questions that return without stronger answers**: When buyers ask for the same proof more than once - around ROI, implementation effort, security posture, or expected outcomes - the issue usually sits in message quality, not buyer confusion.
 -   **Stage movement without decision progress**: The CRM stage advances, yet the deal still lacks clear decision criteria, budget clarity, or named approval steps. That mismatch deserves coaching before the forecast does.
 -   **Follow-up quality that declines after each interaction**: Meeting recaps arrive later, action items lose owners, or customer replies grow shorter and less precise. Those are useful signals about deal health, rep discipline, and buyer confidence.
 
@@ -202,11 +202,11 @@ This is where AI in sales earns its place. Rather than add another opinion, it c
 
 A useful coaching system should surface the questions that expose weak planning before the deal reaches a late-stage stall. AI coaching tools can assemble those prompts from the deal record itself and rank them by likely impact.
 
--   **Decision logic**: The rep should know how the buyer plans to make the purchase decision. AI can detect whether the account has named success criteria, an approval path, and a reason to act now — or whether the opportunity still depends on informal interest and loose intent.
+-   **Decision logic**: The rep should know how the buyer plans to make the purchase decision. AI can detect whether the account has named success criteria, an approval path, and a reason to act now - or whether the opportunity still depends on informal interest and loose intent.
 -   **Role coverage**: Enterprise deals rarely move through one lane. AI can inspect the contact pattern across calls, email threads, and follow-ups to show whether the deal includes the people who shape budget, technical review, compliance, rollout, and final sign-off.
 -   **Proof required for this buyer**: Some accounts need a financial case, others need technical certainty, customer references, or rollout confidence. AI can pull those signals forward and show whether the rep has matched the plan to the type of proof the buyer appears to need.
 -   **Operational exposure**: Deals often slow when procurement terms, data handling standards, deployment demands, or support expectations appear too late. AI can flag these dependencies while there is still time to address them in sequence rather than under pressure.
--   **Mutuality of motion**: Forward motion should come with shared commitment. AI can show whether the account has accepted clear actions on its side — reviews, introductions, internal meetings, technical validation, pricing feedback — or whether the seller still carries all the momentum alone.
+-   **Mutuality of motion**: Forward motion should come with shared commitment. AI can show whether the account has accepted clear actions on its side - reviews, introductions, internal meetings, technical validation, pricing feedback - or whether the seller still carries all the momentum alone.
 
 ### Convert strategy review into a clearer path forward
 
@@ -222,7 +222,7 @@ That division of labor matters. The system should challenge the logic of the dea
 
 ## 4\. Deliver coaching in the flow of work so reps can act on it immediately
 
-A useful coaching system has a timing standard: the advice has to appear early enough to change the next customer move. Once a deal enters a fast stretch — procurement review, technical validation, executive alignment, or late-stage negotiation — the value of coaching depends less on depth alone and more on whether the rep can use it inside the tools and routines that already carry the deal forward.
+A useful coaching system has a timing standard: the advice has to appear early enough to change the next customer move. Once a deal enters a fast stretch - procurement review, technical validation, executive alignment, or late-stage negotiation - the value of coaching depends less on depth alone and more on whether the rep can use it inside the tools and routines that already carry the deal forward.
 
 ### Place coaching outputs inside the systems reps already use
 
@@ -262,7 +262,7 @@ This is where AI sales coaching connects directly to sales performance improveme
 
 ### Governance makes the system durable
 
-Enterprise teams also need a method that can stand up to scrutiny. Coaching systems should preserve source evidence, maintain clear access boundaries, and keep a record of how a recommendation took shape — especially when the underlying data includes customer calls, internal reviews, pricing context, or sensitive account history.
+Enterprise teams also need a method that can stand up to scrutiny. Coaching systems should preserve source evidence, maintain clear access boundaries, and keep a record of how a recommendation took shape - especially when the underlying data includes customer calls, internal reviews, pricing context, or sensitive account history.
 
 That discipline matters for another reason: trust. Reps and managers are more likely to use AI coaching tools when the system is transparent about what it evaluated, what it ignored, and where a human can override the recommendation. That is what turns AI from a one-off coaching aid into a dependable operating layer for the sales organization.
 
@@ -318,7 +318,7 @@ That difference becomes obvious in hard moments:- **Commercial judgment**: disco
 
 The strongest use of AI is as a second reader with perfect recall and strong pattern detection. The manager remains the decision-maker.
 
-The difference between a good sales team and a great one often comes down to how consistently coaching reaches every deal, every rep, and every critical moment. AI makes that consistency possible — not by replacing the judgment that wins complex deals, but by ensuring that judgment always rests on the fullest picture available. If you're ready to see what that looks like in practice, [request a demo to explore how AI can transform your workplace](https://www.glean.com/get-a-demo).
+The difference between a good sales team and a great one often comes down to how consistently coaching reaches every deal, every rep, and every critical moment. AI makes that consistency possible - not by replacing the judgment that wins complex deals, but by ensuring that judgment always rests on the fullest picture available. If you're ready to see what that looks like in practice, [request a demo to explore how AI can transform your workplace](https://www.glean.com/get-a-demo).
 
 [
 

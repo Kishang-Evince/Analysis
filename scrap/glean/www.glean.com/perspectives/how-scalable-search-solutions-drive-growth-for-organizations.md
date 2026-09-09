@@ -73,7 +73,7 @@ Scalable search emerges as the critical infrastructure that transforms this chao
 
 Scalable search is a solution designed to grow with an organization, ensuring efficient data retrieval and user experience as demand increases. Unlike traditional search systems that require constant hardware upgrades or complete overhauls, scalable search adapts dynamically to handle more data, users, and queries without compromising performance or inflating costs significantly.
 
-At its core, scalable search leverages [cloud-based infrastructure](https://www.glean.com/blog/glean-google-cloud-partnership) and distributed computing to process information across multiple servers simultaneously. This architecture allows the system to expand resources during peak demand — such as during product launches or seasonal traffic spikes — and scale back during quieter periods. The result is consistent performance regardless of whether 100 or 10,000 employees are searching simultaneously.
+At its core, scalable search leverages [cloud-based infrastructure](https://www.glean.com/blog/glean-google-cloud-partnership) and distributed computing to process information across multiple servers simultaneously. This architecture allows the system to expand resources during peak demand - such as during product launches or seasonal traffic spikes - and scale back during quieter periods. The result is consistent performance regardless of whether 100 or 10,000 employees are searching simultaneously.
 
 Modern scalable search solutions incorporate several key components that distinguish them from legacy systems:
 

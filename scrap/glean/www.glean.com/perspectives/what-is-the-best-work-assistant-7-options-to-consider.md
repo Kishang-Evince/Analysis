@@ -109,7 +109,7 @@ The goal is a single query that returns results across all sources. When a sales
 
 Any tool that touches enterprise data needs to respect existing access controls. A junior analyst should not receive answers drawn from board-level financial documents, and a contractor should not see internal HR policies they are not authorized to view.
 
-Look for audit trails that track who asked what and which sources informed the answer. Data residency options and contractual protections with upstream AI model providers matter for regulated industries. Glean enforces permissions at the retrieval layer — building on a robust [permissions structure](https://www.glean.com/blog/secure-generative-ai-for-the-enterprise-requires-the-right-permissions-structure) — before any content reaches the language model, so every answer reflects only what the individual user is authorized to access.
+Look for audit trails that track who asked what and which sources informed the answer. Data residency options and contractual protections with upstream AI model providers matter for regulated industries. Glean enforces permissions at the retrieval layer - building on a robust [permissions structure](https://www.glean.com/blog/secure-generative-ai-for-the-enterprise-requires-the-right-permissions-structure) - before any content reaches the language model, so every answer reflects only what the individual user is authorized to access.
 
 ### Contextual understanding beyond keyword matching
 

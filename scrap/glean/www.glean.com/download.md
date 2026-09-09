@@ -49,7 +49,7 @@ Stay up to date on projects, prepare for meetings, find experts, and keep up wit
 
 Work smarter from your desktop.  
 
-Shortcut your way to Glean — get answers and put agents to work instantly.  
+Shortcut your way to Glean - get answers and put agents to work instantly.  
 [Learn more about Glean for Desktop](/glean-for-desktop).  
 
 [Download for macOS (recommended)](https://storage.googleapis.com/glean-downloads/glean-desktop-app/Glean.dmg)

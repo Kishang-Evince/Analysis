@@ -75,7 +75,7 @@ As you select the capabilities you need, Glean builds the exact permission set t
 
 Indexing SharePoint sites and files is always included. Select any extras below and the permission set updates instantly. Then copy it to hand to your IT or security team, so every scope is requested in one pass.
 
-Index SharePoint sites & filesAlways includedCrawl sites, document libraries, pages, and lists with permission-aware access.Real-time search (live fetch)Supplement indexed results with content fetched live from SharePoint. Adds delegated permissions and per-user authentication.Exclude by Purview sensitivity labelsRead sensitivity labels so labeled content can be excluded from indexing.OneNote page-body indexingIndex OneNote page content (not just notebooks and sections). Each user connects their M365 account in Glean.Limit to selected sites (Sites.Selected)Grant access to an explicit list of sites instead of the whole tenant. Significant trade-offs — see below.
+Index SharePoint sites & filesAlways includedCrawl sites, document libraries, pages, and lists with permission-aware access.Real-time search (live fetch)Supplement indexed results with content fetched live from SharePoint. Adds delegated permissions and per-user authentication.Exclude by Purview sensitivity labelsRead sensitivity labels so labeled content can be excluded from indexing.OneNote page-body indexingIndex OneNote page content (not just notebooks and sections). Each user connects their M365 account in Glean.Limit to selected sites (Sites.Selected)Grant access to an explicit list of sites instead of the whole tenant. Significant trade-offs - see below.
 
 Permissions to request from ITCopy request
 

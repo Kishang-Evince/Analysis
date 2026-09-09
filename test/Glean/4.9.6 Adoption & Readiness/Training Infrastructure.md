@@ -1,4 +1,4 @@
-# Field 1 — Training Infrastructure
+# Field 1 - Training Infrastructure
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Training Infrastructure.md](../../../Glean/Combined/4.9.6 Adoption & Readiness/Training Infrastructure.md)

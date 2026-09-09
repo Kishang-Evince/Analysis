@@ -27,7 +27,7 @@ This agent uses Glean's knowledge graph to understand what connectors matter mos
 
 | Requirement | Details |
 | --- | --- |
-| Feature flag | None — the [agentic engine](/user-guide/assistant/glean-chat/) is enabled by default |
+| Feature flag | None - the [agentic engine](/user-guide/assistant/glean-chat/) is enabled by default |
 | Connectors | None |
 
 #### Inputs and outputs[​](#inputs-and-outputs "Direct link to Inputs and outputs")
@@ -55,7 +55,7 @@ This agent uses Glean's knowledge graph to understand what connectors matter mos
 
 | Requirement | Details |
 | --- | --- |
-| Feature flag | None — the [agentic engine](/user-guide/assistant/glean-chat/) is enabled by default |
+| Feature flag | None - the [agentic engine](/user-guide/assistant/glean-chat/) is enabled by default |
 | Connectors | **Google Calendar OR Outlook Calendar (via Microsoft Teams)** (at least one calendar connector required) |
 
 #### Inputs and outputs[​](#inputs-and-outputs-1 "Direct link to Inputs and outputs")
@@ -112,7 +112,7 @@ This agent generates customized messaging for different audience segments attend
 
 | Requirement | Details |
 | --- | --- |
-| Feature flag | None — the [agentic engine](/user-guide/assistant/glean-chat/) is enabled by default |
+| Feature flag | None - the [agentic engine](/user-guide/assistant/glean-chat/) is enabled by default |
 | Connectors | None |
 
 #### Inputs and outputs[​](#inputs-and-outputs-3 "Direct link to Inputs and outputs")
@@ -143,7 +143,7 @@ This agent takes your internal event documentation and converts it into polished
 
 | Requirement | Details |
 | --- | --- |
-| Feature flag | None — the [agentic engine](/user-guide/assistant/glean-chat/) is enabled by default |
+| Feature flag | None - the [agentic engine](/user-guide/assistant/glean-chat/) is enabled by default |
 | Connectors | None |
 
 #### Inputs and outputs[​](#inputs-and-outputs-4 "Direct link to Inputs and outputs")
@@ -170,7 +170,7 @@ This agent searches your CRM and internal knowledge to find customers that match
 
 | Requirement | Details |
 | --- | --- |
-| Feature flag | None — the [agentic engine](/user-guide/assistant/glean-chat/) is enabled by default |
+| Feature flag | None - the [agentic engine](/user-guide/assistant/glean-chat/) is enabled by default |
 | Connectors | **Salesforce OR HubSpot** (at least one CRM connector required) |
 
 #### Inputs and outputs[​](#inputs-and-outputs-5 "Direct link to Inputs and outputs")
@@ -203,7 +203,7 @@ This agent takes information about company news, product launches, or team wins 
 
 | Requirement | Details |
 | --- | --- |
-| Feature flag | None — the [agentic engine](/user-guide/assistant/glean-chat/) is enabled by default |
+| Feature flag | None - the [agentic engine](/user-guide/assistant/glean-chat/) is enabled by default |
 | Connectors | None |
 
 #### Inputs and outputs[​](#inputs-and-outputs-6 "Direct link to Inputs and outputs")

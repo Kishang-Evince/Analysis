@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/customer-stories/everpure"
 canonical: "https://www.glean.com/resources/customer-stories/everpure"
 title: "Everpure customer story | Glean Work AI"
-description: "Learn how Everpure automated enterprise search with Glean — cutting search time, enhancing security, and creating custom AI workflows in minutes."
+description: "Learn how Everpure automated enterprise search with Glean - cutting search time, enhancing security, and creating custom AI workflows in minutes."
 fetched_at: "2026-09-01T13:25:34.818Z"
 ---
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69f0915878132132d2e40963_7820eb82a074222a8317d10c8ca25715_everpure-bg.webp)
@@ -53,7 +53,7 @@ search time saved per employee, weekly
 
 ## The challenge
 
-Everpure needed a secure AI solution to help employees quickly find critical information across multiple enterprise systems — without increasing IT overhead or requiring extra training. Employees across teams, from engineering to legal, were losing valuable time searching for policies, product details, and technical documentation. With more employees working remotely, getting quick answers became harder. Teams were wasting time searching for documents instead of asking colleagues.
+Everpure needed a secure AI solution to help employees quickly find critical information across multiple enterprise systems - without increasing IT overhead or requiring extra training. Employees across teams, from engineering to legal, were losing valuable time searching for policies, product details, and technical documentation. With more employees working remotely, getting quick answers became harder. Teams were wasting time searching for documents instead of asking colleagues.
 
 ‍
 

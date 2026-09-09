@@ -290,7 +290,7 @@ Only with permission-aware tooling that respects your existing access controls. 
 
 ‍
 
-Introducing [**Glean's prompt library**](https://www.glean.com/prompt-library) — the ultimate solution for organizations looking to harness the power of AI! From marketing to HR, finance, sales, and operations, our library provides ready-to-use prompts tailored for every department. With Glean, you can streamline workflows, boost productivity, and make smarter decisions every day.
+Introducing [**Glean's prompt library**](https://www.glean.com/prompt-library) - the ultimate solution for organizations looking to harness the power of AI! From marketing to HR, finance, sales, and operations, our library provides ready-to-use prompts tailored for every department. With Glean, you can streamline workflows, boost productivity, and make smarter decisions every day.
 
 ‍
 

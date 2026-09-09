@@ -63,24 +63,24 @@ Share this article:
 
 # 9 key questions for evaluating AI assistant vendors in 2026
 
-Enterprise AI assistants represent a fundamentally different category of software — one that connects to every team, every data source, and every workflow across your organization. That breadth of access demands a vendor evaluation process far more rigorous than a standard SaaS procurement checklist.
+Enterprise AI assistants represent a fundamentally different category of software - one that connects to every team, every data source, and every workflow across your organization. That breadth of access demands a vendor evaluation process far more rigorous than a standard SaaS procurement checklist.
 
 The stakes are high. A misconfigured permission, an opaque data pipeline, or a model that hallucinates sensitive information can expose your organization to regulatory penalties, reputational damage, and erosion of employee trust. Security and compliance can't be afterthoughts bolted on after deployment.
 
-This guide lays out nine essential questions — grounded in real-world AI compliance requirements and enterprise security frameworks — to help decision-makers compare AI assistant vendors with clarity, confidence, and rigor.
+This guide lays out nine essential questions - grounded in real-world AI compliance requirements and enterprise security frameworks - to help decision-makers compare AI assistant vendors with clarity, confidence, and rigor.
 
 ## What does it mean to evaluate an AI assistant vendor for security and compliance?
 
-Vendor evaluation for an AI assistant goes well beyond feature comparisons or demo impressions. It means pressure-testing whether a platform can safely handle your organization's most sensitive data — HR records, financial reports, engineering documentation, customer information — while meeting regulatory requirements that shift year over year. Traditional software procurement focuses on functionality and uptime; AI vendor evaluation questions must also address how models are trained, how outputs are validated, and whether the system respects the permission structures already established across your enterprise applications.
+Vendor evaluation for an AI assistant goes well beyond feature comparisons or demo impressions. It means pressure-testing whether a platform can safely handle your organization's most sensitive data - HR records, financial reports, engineering documentation, customer information - while meeting regulatory requirements that shift year over year. Traditional software procurement focuses on functionality and uptime; AI vendor evaluation questions must also address how models are trained, how outputs are validated, and whether the system respects the permission structures already established across your enterprise applications.
 
 The scope of a thorough AI security assessment should cover several critical dimensions:
 
 -   **Data protection and residency**: Where data is stored, how it flows during processing, and whether proprietary information is ever used to train models for other customers.
--   **Access controls and authorization**: Whether the platform enforces real-time, document-level permissions inherited from source systems — not a separate, static copy of access rules.
+-   **Access controls and authorization**: Whether the platform enforces real-time, document-level permissions inherited from source systems - not a separate, static copy of access rules.
 -   **Regulatory alignment**: How the vendor maps to frameworks like GDPR, CCPA, HIPAA, and the EU AI Act, with documentation to back up claims.
--   **Failure-mode mitigation**: How the system handles AI-specific risks such as hallucinations, prompt injection, and data leakage — risks that traditional security questionnaires rarely cover.
+-   **Failure-mode mitigation**: How the system handles AI-specific risks such as hallucinations, prompt injection, and data leakage - risks that traditional security questionnaires rarely cover.
 
-Enterprise AI assistants sit at the intersection of every department and every piece of institutional knowledge. A vendor risk assessment must extend beyond the model itself to the connector layer, because secure, permission-aware access to enterprise data is a core determinant of whether a system is truly enterprise-ready. The goal isn't to slow down AI adoption. It's to adopt with confidence — ensuring the platform you choose strengthens your security posture rather than introducing new vulnerabilities.
+Enterprise AI assistants sit at the intersection of every department and every piece of institutional knowledge. A vendor risk assessment must extend beyond the model itself to the connector layer, because secure, permission-aware access to enterprise data is a core determinant of whether a system is truly enterprise-ready. The goal isn't to slow down AI adoption. It's to adopt with confidence - ensuring the platform you choose strengthens your security posture rather than introducing new vulnerabilities.
 
 ## Why security and compliance matter more for AI assistants than traditional software
 
@@ -108,7 +108,7 @@ That is why mature platforms make governance part of the product itself: permiss
 
 ## Question 1: How does the vendor handle data access permissions and authorization?
 
-Start with an entitlement test, not a product tour. Pick three cases that expose edge conditions: a newly hired employee, a manager with temporary access to a sensitive folder, and a contractor whose access ended that morning. The vendor should show how the assistant behaves in each case across connectors, chat, and actions — with no lag, no manual override, and no hidden cache that still holds yesterday’s entitlements.
+Start with an entitlement test, not a product tour. Pick three cases that expose edge conditions: a newly hired employee, a manager with temporary access to a sensitive folder, and a contractor whose access ended that morning. The vendor should show how the assistant behaves in each case across connectors, chat, and actions - with no lag, no manual override, and no hidden cache that still holds yesterday’s entitlements.
 
 The strongest platforms treat authorization as a live control plane rather than a one-time import. That standard should hold across every surface the product touches:
 
@@ -117,15 +117,15 @@ The strongest platforms treat authorization as a live control plane rather than 
 -   **Workflow execution**: an agent should not draft, send, update, or close anything unless the initiating user has that exact right in the destination tool.
 -   **Delegated access**: temporary project access, group changes, and offboarding events should take effect fast enough to prevent stale exposure.
 
-Ask for specifics on revocation latency, group membership updates, and service-account scope. A mature vendor should document how each connector handles ACL inheritance, row-level rules, shared links, private channels, and deleted content. Weak answers usually sound broad — “we sync permissions regularly,” “admins can configure access,” or “we support role-based controls” — without proof that the system can survive day-to-day identity changes inside a large enterprise.
+Ask for specifics on revocation latency, group membership updates, and service-account scope. A mature vendor should document how each connector handles ACL inheritance, row-level rules, shared links, private channels, and deleted content. Weak answers usually sound broad - “we sync permissions regularly,” “admins can configure access,” or “we support role-based controls” - without proof that the system can survive day-to-day identity changes inside a large enterprise.
 
-## Question 2: Where does your data go — and does it stay there?
+## Question 2: Where does your data go - and does it stay there?
 
-Data custody deserves its own review. Ask for a system map that names each step in the request path: connector extraction, index creation, prompt assembly, model inference, telemetry, backup, and support access. That map should make clear whether a request ever leaves your controlled environment for inference, safety filters, analytics, or vendor support — and which subprocessors, cloud regions, and service layers touch customer content along the way.
+Data custody deserves its own review. Ask for a system map that names each step in the request path: connector extraction, index creation, prompt assembly, model inference, telemetry, backup, and support access. That map should make clear whether a request ever leaves your controlled environment for inference, safety filters, analytics, or vendor support - and which subprocessors, cloud regions, and service layers touch customer content along the way.
 
 Contract terms matter as much as system design. Require a written no-training commitment that covers prompts, files, outputs, and metadata; then verify that the same restriction applies to every downstream provider in the stack. For teams with sector rules or cross-border limits, ask whether the vendor can pin storage, inference, and disaster recovery to named jurisdictions, and whether failover shifts data to another region during an outage.
 
-Retention needs precision, not broad assurances. Confirm default timelines for chat history, cached context, admin logs, deleted records, and backup copies; then ask which controls sit with your administrators versus the vendor. Strong vendors support that answer with formal evidence — SOC 2 Type II as a baseline, plus ISO 27001 or ISO 42001 where relevant — and they can show how data moves from connector pipelines to index layers to model calls, then to verified deletion under policy.
+Retention needs precision, not broad assurances. Confirm default timelines for chat history, cached context, admin logs, deleted records, and backup copies; then ask which controls sit with your administrators versus the vendor. Strong vendors support that answer with formal evidence - SOC 2 Type II as a baseline, plus ISO 27001 or ISO 42001 where relevant - and they can show how data moves from connector pipelines to index layers to model calls, then to verified deletion under policy.
 
 ## Question 3: What security certifications and compliance frameworks does the vendor follow?
 
@@ -134,14 +134,14 @@ After permissions and data boundaries, ask what independent assurance actually c
 Focus the conversation on scope, evidence, and change control:
 
 -   **Audit scope and exclusions**: Ask which products, environments, and subprocessors sit inside the audit boundary. A report that covers only a narrow slice of the platform leaves real gaps, especially when connectors, admin controls, or model orchestration sit outside scope.
--   **Contract-ready compliance artifacts**: Request the documents your team will need before purchase approval — data processing terms, healthcare addenda where relevant, subprocessor disclosures, penetration test attestations, encryption details, and key-management summaries.
+-   **Contract-ready compliance artifacts**: Request the documents your team will need before purchase approval - data processing terms, healthcare addenda where relevant, subprocessor disclosures, penetration test attestations, encryption details, and key-management summaries.
 -   **Regulatory change management**: Ask how the vendor tracks new obligations and turns them into product controls, not policy statements. Strong vendors can point to release notes, admin settings, and documented process changes that reflect new requirements.
 
 The stronger signal is operational depth. Mature vendors can map policy to system behavior: connector hardening, action approvals, audit trails, vulnerability remediation targets, and review gates for model or feature releases. They can also explain who owns each control, how exceptions get handled, and what happens when a regulator, customer, or internal auditor asks for proof. That level of precision shows a security program built for enterprise scrutiny rather than procurement theater.
 
 ## Question 4: How does the vendor prevent AI-specific risks like hallucinations and data leakage?
 
-Most procurement reviews cover encryption, access policy, and uptime. They rarely test model behavior under pressure — for example, whether an assistant invents facts when evidence is thin, follows hostile instructions hidden in a document, or exposes restricted material through an overly broad response.
+Most procurement reviews cover encryption, access policy, and uptime. They rarely test model behavior under pressure - for example, whether an assistant invents facts when evidence is thin, follows hostile instructions hidden in a document, or exposes restricted material through an overly broad response.
 
 Ask the vendor to walk through the full response path from query to answer. Strong platforms use a bounded process: query planning, controlled retrieval, context filtering, response generation, and post-response checks. That sequence matters. A system with source-aware retrieval, refusal logic, and answer verification will produce a very different risk profile from one that simply sends a user prompt to a frontier model and returns whatever comes back. The right question is not whether the vendor uses RAG; it is how the vendor tests retrieval precision, trims unsafe context, and blocks unsupported claims before the answer reaches the user.
 
@@ -171,9 +171,9 @@ Start with identity and observability. Confirm support for SAML or OIDC, multi-f
 
 This part of the evaluation often exposes operational risk faster than a feature demo. A platform that fits cleanly into your security stack usually requires fewer exceptions, fewer manual controls, and far less policy cleanup after deployment.
 
-## Question 6: What happens when something goes wrong — and how will you know?
+## Question 6: What happens when something goes wrong - and how will you know?
 
-No enterprise AI rollout stays incident-free. Ask for the vendor’s AI incident playbook; it should define severity levels, named owners, containment steps, and customer communication rules for events unique to assistants — prompt injection, unauthorized tool use, cross-tenant exposure, failed approval gates, and upstream model outages.
+No enterprise AI rollout stays incident-free. Ask for the vendor’s AI incident playbook; it should define severity levels, named owners, containment steps, and customer communication rules for events unique to assistants - prompt injection, unauthorized tool use, cross-tenant exposure, failed approval gates, and upstream model outages.
 
 The response process needs precision, not broad assurances. Ask when the notification clock starts, what the first notice includes, and what follows after containment. A serious vendor can spell out the evidence package as well: user prompt history, model version, retrieved context, tool calls, policy decisions, and any admin override that shaped the result. That record matters for internal review, regulator questions, and contractual accountability.
 
@@ -207,7 +207,7 @@ These questions work best inside a formal procurement method with clear scoring,
 
 Start with a weighted scorecard tied to business impact and regulatory exposure. A healthcare team may assign more weight to audit controls and jurisdictional requirements; a multinational support organization may rank uptime architecture, workflow execution controls, and multilingual coverage higher. Keep the rubric evidence-based:
 
--   **Control maturity**: Score vendors on the depth of their operating model — policy ownership, review cycles, validation methods, and incident playbooks — not on broad claims or polished demos.
+-   **Control maturity**: Score vendors on the depth of their operating model - policy ownership, review cycles, validation methods, and incident playbooks - not on broad claims or polished demos.
 -   **Operational proof**: Require artifacts that show how the system performs under production-like conditions, such as model evaluation reports, architecture diagrams, red-team findings, and sample audit exports.
 -   **Commercial enforceability**: Convert critical promises into procurement terms, service levels, and security schedules so the buying team can measure compliance after launch.
 
@@ -215,7 +215,7 @@ A strong review also needs decision-makers from more than one function. Security
 
 Build one review packet for every vendor and keep the format identical. Include the scorecard, evidence log, stakeholder notes, unresolved gaps, and procurement conditions for phase one rollout. Revisit the framework on a fixed schedule and after any major regulatory shift, architectural change, or expansion into higher-risk use cases. The most durable evaluation programs rely on repeatable criteria, clear ownership, and hard evidence that stands up long after the demo ends.
 
-The right AI assistant vendor should earn your trust through evidence, not promises — and the questions above give your team a repeatable way to hold every candidate to that standard. The landscape will keep shifting, but organizations that build evaluation rigor now will adopt faster and safer than those still relying on instinct and slide decks.
+The right AI assistant vendor should earn your trust through evidence, not promises - and the questions above give your team a repeatable way to hold every candidate to that standard. The landscape will keep shifting, but organizations that build evaluation rigor now will adopt faster and safer than those still relying on instinct and slide decks.
 
 [Request a demo](https://www.glean.com/get-a-demo) to explore how we can help AI transform your workplace.
 

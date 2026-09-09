@@ -83,7 +83,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Project management is a constant balancing act. Between strategic planning, stakeholder updates, and last-minute changes, there’s a lot to juggle. AI-powered tools can lighten the load — helping you streamline workflows, make faster decisions, and keep teams aligned.
+Project management is a constant balancing act. Between strategic planning, stakeholder updates, and last-minute changes, there’s a lot to juggle. AI-powered tools can lighten the load - helping you streamline workflows, make faster decisions, and keep teams aligned.
 
 Below are 15+ AI prompts designed to make project management smoother, more efficient, and less stressful.
 
@@ -474,7 +474,7 @@ Below are 15+ AI prompts designed to make project management smoother, more effi
    </div>  
 </div>
 
-**Why it’s useful:** Motivated teams produce better work—and stay engaged for the long haul.
+**Why it’s useful:** Motivated teams produce better work-and stay engaged for the long haul.
 
 ### 13\. Creative problem-solving
 
@@ -573,7 +573,7 @@ Below are 15+ AI prompts designed to make project management smoother, more effi
 
 **Why it’s useful:** Looking back at what worked (and what didn’t) helps improve future projects.
 
-Introducing [Glean's prompt library](https://www.glean.com/prompt-library) — the ultimate solution for organizations looking to harness the power of AI! From marketing to HR, finance, sales, and operations, our library provides ready-to-use prompts tailored for every department. With Glean, you can streamline workflows, boost productivity, and make smarter decisions every day.
+Introducing [Glean's prompt library](https://www.glean.com/prompt-library) - the ultimate solution for organizations looking to harness the power of AI! From marketing to HR, finance, sales, and operations, our library provides ready-to-use prompts tailored for every department. With Glean, you can streamline workflows, boost productivity, and make smarter decisions every day.
 
 [
 

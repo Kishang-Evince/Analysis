@@ -34,14 +34,14 @@ You'll do the setup in two places: Coda to gather the required values and the **
 1.  Sign in to Coda with an Organization Admin account.
 2.  Open your organization settings.
 3.  Find the **Organization ID** for your Enterprise tenant.
-4.  Copy the value — you will paste it into Glean later.
+4.  Copy the value - you will paste it into Glean later.
 
 ## Step 2: Generate an Admin API token[​](#step-2-generate-an-admin-api-token "Direct link to Step 2: Generate an Admin API token")
 
 1.  Open [Coda account settings](https://coda.io/account) while signed in as an [Organization Admin](https://help.coda.io/hc/en-us/articles/39555906605965-Enterprise-org-admins).
 2.  Create a new API token for Glean.
 3.  Grant the token organization-level access.
-4.  Copy the token value — you will paste it into Glean later.
+4.  Copy the token value - you will paste it into Glean later.
 
 ## Step 3: Enter the values in Glean[​](#step-3-enter-the-values-in-glean "Direct link to Step 3: Enter the values in Glean")
 

@@ -1,4 +1,4 @@
-# Field 5 — Data Encryption Standards
+# Field 5 - Data Encryption Standards
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Data Encryption Standards.md](../../../Glean/Combined/4.9.5 Compliance & Regulatory/Data Encryption Standards.md)

@@ -66,7 +66,7 @@ Within **about 1–2 hours** of setting up the RTS instance, the new Glean bot i
 
 warning
 
-This 1–2 hour unavailability window impacts **all users** in the workspace — even if the RTS connector is set to “Visible to test group only.” The channel invite job runs globally and is not scoped to a specific user group.
+This 1–2 hour unavailability window impacts **all users** in the workspace - even if the RTS connector is set to “Visible to test group only.” The channel invite job runs globally and is not scoped to a specific user group.
 
 This invite job:
 
@@ -176,7 +176,7 @@ Yes.
 
 Once the RTS app is installed:
 
--   Slack routes the `/glean` command to the **most recently installed app** — the RTS app.
+-   Slack routes the `/glean` command to the **most recently installed app** - the RTS app.
     -   The slash glean commands are removed on the custom app, so the conflict shouldn’t happen in the first place.
 
 ### Can we roll back to the native app if needed?
@@ -187,8 +187,8 @@ Please reach out to Glean support for assistance.
 
 Users will see **both** apps listed in Slack:
 
--   Glean (RTS marketplace app) — the active, responding app
--   Enterprise Graph (legacy custom app) — runs in the background
+-   Glean (RTS marketplace app) - the active, responding app
+-   Enterprise Graph (legacy custom app) - runs in the background
 
 However:
 

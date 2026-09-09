@@ -60,13 +60,13 @@ To ensure a secure and stable deployment, expand the visibility scope of your to
 
 | Stage | Recommended scope |
 | --- | --- |
-| Initial pilot | Specific users — limit to your test group or IT and ops team |
-| Departmental rollout | Specific departments — for example, Engineering only for Jira tools |
+| Initial pilot | Specific users - limit to your test group or IT and ops team |
+| Departmental rollout | Specific departments - for example, Engineering only for Jira tools |
 | Full rollout | Everyone |
 
 ## Visibility scope vs agent sharing[​](#visibility-scope-vs-agent-sharing "Direct link to Visibility scope vs agent sharing")
 
-If an agent uses a tool that's scoped to specific users, the tool only executes successfully for users within that scope — even if the agent itself is shared more broadly.
+If an agent uses a tool that's scoped to specific users, the tool only executes successfully for users within that scope - even if the agent itself is shared more broadly.
 
 warning
 
@@ -78,8 +78,8 @@ A Jira agent shared with the entire company but backed by Jira Extension Tools s
 
 If a user reports that a tool is available for some colleagues but not for them, check these three settings in order:
 
-1.  **Visibility scope** — the user's account or department isn't included in the **Make available to** setting.
-2.  **Chat vs Agents toggle** — the tool is enabled for Agents only, not Chat. See [Enabling tools for Chat vs Agents](/administration/tools/managing-tools/tools-chat-vs-agents).
-3.  **Individual tool disabled** — the specific tool they need is unchecked. See [Per-tool enable/disable](/administration/tools/managing-tools/per-tool-enable-disable).
+1.  **Visibility scope** - the user's account or department isn't included in the **Make available to** setting.
+2.  **Chat vs Agents toggle** - the tool is enabled for Agents only, not Chat. See [Enabling tools for Chat vs Agents](/administration/tools/managing-tools/tools-chat-vs-agents).
+3.  **Individual tool disabled** - the specific tool they need is unchecked. See [Per-tool enable/disable](/administration/tools/managing-tools/per-tool-enable-disable).
 
 For questions and support, reach out to the [Glean support team](http://gleanwork.zendesk.com/).

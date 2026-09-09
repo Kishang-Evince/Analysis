@@ -43,4 +43,4 @@ The following requirements must be met for successful deployment and operation o
 4.  Select **Authorize**.
 5.  In Gong, select **Allow**.
 
-After setup, Glean crawls Gong content and permissions. If needed, configure access to Gong search results for the users and groups in your organization. Glean processes and ingests data and permissions according to Gong’s model and reflects permissions changes promptly—if a user's access changes in Gong, this is updated in Glean during the next crawl cycle.
+After setup, Glean crawls Gong content and permissions. If needed, configure access to Gong search results for the users and groups in your organization. Glean processes and ingests data and permissions according to Gong’s model and reflects permissions changes promptly-if a user's access changes in Gong, this is updated in Glean during the next crawl cycle.

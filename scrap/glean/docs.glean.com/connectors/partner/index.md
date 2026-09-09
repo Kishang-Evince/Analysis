@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:29:48.756Z"
 ---
 On this page
 
-Partner connectors are built and maintained by Glean technology partners. They use the [Indexing API](https://developers.glean.com/) to push data into Glean, but the integration is developed, configured, and supported by the partner organization — so setup happens in the partner's product rather than the Glean admin console.
+Partner connectors are built and maintained by Glean technology partners. They use the [Indexing API](https://developers.glean.com/) to push data into Glean, but the integration is developed, configured, and supported by the partner organization - so setup happens in the partner's product rather than the Glean admin console.
 
 New to Glean connectors? See [About connectors](/connectors/about) for the full breakdown of every connector type and data access mode.
 

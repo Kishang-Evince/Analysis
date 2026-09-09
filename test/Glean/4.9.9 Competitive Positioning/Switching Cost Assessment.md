@@ -1,4 +1,4 @@
-# Field 7 — Switching Cost Assessment
+# Field 7 - Switching Cost Assessment
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Switching Cost Assessment.md](../../../Glean/Combined/4.9.9 Competitive Positioning/Switching Cost Assessment.md)

@@ -90,7 +90,7 @@ To turn off a premium model completely across Glean, go to the **Models** page a
 
 You can restrict any model to one or more departments so that only members of those departments can use it. This works for both Glean Universal Model Key and Customer Key deployments and applies wherever the model is used, including Glean Assistant and Glean Agents.
 
-By default, Glean doesn't restrict models by department. If you don't select any departments for a model, everyone can use it. Department restrictions layer on top of the existing model controls — you still have to turn the model on (Glean Universal Model Key) or configure it (Customer Key) before the restriction takes effect.
+By default, Glean doesn't restrict models by department. If you don't select any departments for a model, everyone can use it. Department restrictions layer on top of the existing model controls - you still have to turn the model on (Glean Universal Model Key) or configure it (Customer Key) before the restriction takes effect.
 
 Glean determines department membership from your synced people data. To learn how to populate the **Department** field for your users, see [Sync people data](/get-started/setup/sync-people-data).
 

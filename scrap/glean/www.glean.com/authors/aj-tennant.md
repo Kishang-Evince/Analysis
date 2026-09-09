@@ -33,7 +33,7 @@ June 27, 2022
 
 ### Building a strong, customer-obsessed go-to-market team
 
-Leading a category— enterprise search and knowledge management— requires a strong, customer-obsessed go-to-market team partnering deeply with product and engineering.
+Leading a category- enterprise search and knowledge management- requires a strong, customer-obsessed go-to-market team partnering deeply with product and engineering.
 
 ![AJ Tennant](https://cdn.prod.website-files.com/613513981b0efaf850830620/62b8e315c89f594451e031b7_AJ%20headshot.jpeg)
 

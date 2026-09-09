@@ -93,7 +93,7 @@ Glean enforces department limits the same way as user limits. For details, see [
 
 ### How department limits interact with other limits[​](#how-department-limits-interact-with-other-limits "Direct link to How department limits interact with other limits")
 
-A department limit is *not pooled*. It sets the same monthly limit for *each* member of the department. For example, if you set a $100 department limit for R&D, every user in R&D gets an individual $100 limit — not $100 shared across the whole team.
+A department limit is *not pooled*. It sets the same monthly limit for *each* member of the department. For example, if you set a $100 department limit for R&D, every user in R&D gets an individual $100 limit - not $100 shared across the whole team.
 
 When more than one limit could apply to a user, Glean enforces the most specific one, in this order:
 

@@ -35,7 +35,7 @@
 ### Verification steps / test case
 
 1. For each UC, document 3–5 manual steps in current-state process map.
-2. Run sandbox flow — confirm Glean replaces ≥1 full manual step.
+2. Run sandbox flow - confirm Glean replaces ≥1 full manual step.
 3. Flag processes that still need human approval (no auto-write to SoR).
 
 **Risk & Cost Impact:** Risk: Low | Cost: Native

@@ -23,7 +23,7 @@ Actions *FR-3245*
 
 #### See contextual images in Glean Assistant Responses[​](#see-contextual-images-in-glean-assistant-responses "Direct link to See contextual images in Glean Assistant Responses")
 
-Glean Assistant now displays relevant images from Google Drive and SharePoint documents alongside text responses when appropriate. This enhancement helps users better understand complex information by providing visual context directly in chat answers—no extra steps required. Images are shown only when relevant to the user's query, with full permissions enforced for every user.
+Glean Assistant now displays relevant images from Google Drive and SharePoint documents alongside text responses when appropriate. This enhancement helps users better understand complex information by providing visual context directly in chat answers-no extra steps required. Images are shown only when relevant to the user's query, with full permissions enforced for every user.
 
 **How to access:** Administrators must enable for your organization. Currently only available for customers with GCP hosted deployments. Will be extended to AWS deployments by October 7, 2025.
 
@@ -141,7 +141,7 @@ Agents *FR-3653*
 
 #### AWS Customers can now bring their own keys for Vertex AI to the model hub[​](#aws-customers-can-now-bring-their-own-keys-for-vertex-ai-to-the-model-hub "Direct link to AWS Customers can now bring their own keys for Vertex AI to the model hub")
 
-AWS customers using their own LLM key can now configure and use Google Vertex AI models—including Gemini—for Glean Agents and web search. This update expands model choice and enables organizations on AWS to leverage Gemini’s advanced capabilities for both internal automations and real-time web search, all while maintaining control over their own LLM credentials and billing. No additional code changes or manual intervention is required; Gemini web search and Vertex AI models are now available for self-serve setup in the Admin Console.
+AWS customers using their own LLM key can now configure and use Google Vertex AI models-including Gemini-for Glean Agents and web search. This update expands model choice and enables organizations on AWS to leverage Gemini’s advanced capabilities for both internal automations and real-time web search, all while maintaining control over their own LLM credentials and billing. No additional code changes or manual intervention is required; Gemini web search and Vertex AI models are now available for self-serve setup in the Admin Console.
 
 **How to access:** To enable Vertex AI (Gemini) models on AWS with your own key: In the Glean Admin Console, navigate to Platform > LLM and click Add LLM. Select Google Vertex AI as the provider and when prompted, upload your GCP service account key JSON and provide the relevant GCP project ID. Note: This service account must have the necessary Vertex AI permissions. Choose the Gemini models you wish to enable, validate the connection, and save your settings. Once configured, these models will be available for use in Glean Agents and web search action packs.
 
@@ -163,7 +163,7 @@ Assistant *FR-3649*
 
 #### Salesforce connector now supports draft knowledge articles[​](#salesforce-connector-now-supports-draft-knowledge-articles "Direct link to Salesforce connector now supports draft knowledge articles")
 
-Glean’s Salesforce connector now supports draft versions of knowledge articles. This enhancement ensures that both published and draft articles in Salesforce are discoverable in Glean search, making it easier for support engineers and internal users to access the most up-to-date and relevant information—even if it’s not yet published externally.
+Glean’s Salesforce connector now supports draft versions of knowledge articles. This enhancement ensures that both published and draft articles in Salesforce are discoverable in Glean search, making it easier for support engineers and internal users to access the most up-to-date and relevant information-even if it’s not yet published externally.
 
 [Learn more](/connectors/native/salesforce/about#key-features)
 

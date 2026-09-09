@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/glean-information-retrieval"
 canonical: "https://www.glean.com/blog/glean-information-retrieval"
 title: "A comprehensive guide to information retrieval"
-description: "Glean  | Information retrieval is essential to helping organizations stay better-informed and ahead of the competition. Thanks to AI and machine learning, it’s a rapidly developing field—discover what you need to know for 2024."
+description: "Glean  | Information retrieval is essential to helping organizations stay better-informed and ahead of the competition. Thanks to AI and machine learning, it’s a rapidly developing field-discover what you need to know for 2024."
 fetched_at: "2026-09-01T13:26:38.387Z"
 ---
 Last updated Jun 28, 2024.

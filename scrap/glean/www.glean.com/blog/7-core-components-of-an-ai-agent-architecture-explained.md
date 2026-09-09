@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/7-core-components-of-an-ai-agent-architecture-explained"
 canonical: "https://www.glean.com/blog/7-core-components-of-an-ai-agent-architecture-explained"
 title: "7 Core Components of an AI Agent Architecture Explained"
-description: "Glean  | The 7 core components every AI agent architecture needs — from memory to tool use — explained with real examples for teams building AI agents."
+description: "Glean  | The 7 core components every AI agent architecture needs - from memory to tool use - explained with real examples for teams building AI agents."
 fetched_at: "2026-09-01T13:26:23.985Z"
 ---
 Last updated Apr 01, 2026.

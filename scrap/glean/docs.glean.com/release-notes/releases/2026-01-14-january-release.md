@@ -41,7 +41,7 @@ Assistant *ROAD-1072*
 
 #### Glean in Webex[​](#glean-in-webex "Direct link to Glean in Webex")
 
-Glean is now embedded within Webex through the Cisco AI Assistant in the Webex ecosystem. Users can query Glean directly from within Webex—whether in meetings, messaging, or elsewhere—to discover knowledge and boost productivity. This integration enables seamless access to your connected Glean instance, helping you find information and get work done without leaving Webex.
+Glean is now embedded within Webex through the Cisco AI Assistant in the Webex ecosystem. Users can query Glean directly from within Webex-whether in meetings, messaging, or elsewhere-to discover knowledge and boost productivity. This integration enables seamless access to your connected Glean instance, helping you find information and get work done without leaving Webex.
 
 **How to access:** Administrators must enable for your organization.
 
@@ -73,7 +73,7 @@ Admin Capabilities *ROAD-1050*
 
 #### Configure actions during data source setup - Expand to all eligible datasources[​](#configure-actions-during-data-source-setup---expand-to-all-eligible-datasources "Direct link to Configure actions during data source setup - Expand to all eligible datasources")
 
-Access and configure actions directly from the data source setup flow via clear “Go to setup” links. This new experience introduces an optional Actions step in the datasource setup UI, making it easier for admins to discover and enable relevant pre-built actions and (soon) MCP tools for select apps—all while configuring the datasource, without context switching. With this latest update, the combined setup is supported for all actions - Google, Microsoft, Salesforce, Jira, etc.
+Access and configure actions directly from the data source setup flow via clear “Go to setup” links. This new experience introduces an optional Actions step in the datasource setup UI, making it easier for admins to discover and enable relevant pre-built actions and (soon) MCP tools for select apps-all while configuring the datasource, without context switching. With this latest update, the combined setup is supported for all actions - Google, Microsoft, Salesforce, Jira, etc.
 
 [Learn more](/connectors/configure-tools-in-connector/config-tools-mcp-from-connector)
 
@@ -95,7 +95,7 @@ Admin Capabilities *ROAD-848*
 
 #### Native connectors that are hybrid are configured in data sources in the admin console[​](#native-connectors-that-are-hybrid-are-configured-in-data-sources-in-the-admin-console "Direct link to Native connectors that are hybrid are configured in data sources in the admin console")
 
-Native connectors that are hybrid—combining indexed and federated access—are configured in the Admin Console under the Data sources tab. From there, you can now manage Confluence Cloud access to both indexed and federated data.
+Native connectors that are hybrid-combining indexed and federated access-are configured in the Admin Console under the Data sources tab. From there, you can now manage Confluence Cloud access to both indexed and federated data.
 
 [Learn more](/connectors/native/confluence/)
 
@@ -117,7 +117,7 @@ Assistant *ROAD-742*
 
 #### Simpplr Connector (AWS Version)[​](#simpplr-connector-aws-version "Direct link to Simpplr Connector (AWS Version)")
 
-Glean now offers an all-new Simpplr connector built specifically for Simpplr’s AWS platform. As Simpplr transitions all customers from Salesforce to AWS, this connector ensures your organization can seamlessly index and search core Simpplr content—Pages, Sites, and Events—within Glean. The connector honors granular Simpplr permissions, supports efficient incremental crawls, and delivers a streamlined intranet search experience throughout and after your Simpplr platform migration.
+Glean now offers an all-new Simpplr connector built specifically for Simpplr’s AWS platform. As Simpplr transitions all customers from Salesforce to AWS, this connector ensures your organization can seamlessly index and search core Simpplr content-Pages, Sites, and Events-within Glean. The connector honors granular Simpplr permissions, supports efficient incremental crawls, and delivers a streamlined intranet search experience throughout and after your Simpplr platform migration.
 
 [Learn more](/connectors/native/simpplr/)
 

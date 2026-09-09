@@ -11,7 +11,7 @@ People data is your employee directory synced into Glean. Syncing this data lets
 
 tip
 
-If you configured SSO using OIDC in the previous step, and your directory is the same as your SSO platform (for example, Entra ID or Okta), your directory is already configured as part of SSO—you only need to enable it as a people connector here.
+If you configured SSO using OIDC in the previous step, and your directory is the same as your SSO platform (for example, Entra ID or Okta), your directory is already configured as part of SSO-you only need to enable it as a people connector here.
 
 note
 

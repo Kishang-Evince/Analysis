@@ -73,7 +73,7 @@ These two goals pull against each other at a fundamental level, and the tension 
 
 Every token you feed into a large language model (LLM) is information the model can reason over. Every token you remove is information it cannot.
 
-Token efficiency is not about making prompts as short as possible. It is about making every token directly contribute to the quality of the answer. Research from Georgia Tech and MIT confirms the scale of this challenge: their [OckBench study](https://arxiv.org/html/2511.05722v2) found that models of identical size achieving similar accuracy can differ by over 5× in token consumption, revealing that token efficiency is a critical — and often overlooked — dimension of model intelligence.
+Token efficiency is not about making prompts as short as possible. It is about making every token directly contribute to the quality of the answer. Research from Georgia Tech and MIT confirms the scale of this challenge: their [OckBench study](https://arxiv.org/html/2511.05722v2) found that models of identical size achieving similar accuracy can differ by over 5× in token consumption, revealing that token efficiency is a critical - and often overlooked - dimension of model intelligence.
 
 A [K2view comparison](https://www.k2view.com/blog/mcp-strategies-for-grounded-prompts-and-token-efficient-llm-context/) illustrates the gap: an overloaded 4,000-token prompt produced high hallucination risk, 2.5-second latency, and low accuracy, while a precise 800-token prompt cut hallucination risk, dropped latency to 600 milliseconds, and improved accuracy. The overloaded prompt included irrelevant fields, redundant context, and unresolved nested data structures that confused the model.
 
@@ -91,7 +91,7 @@ Many teams approach token reduction the same way they approach editing a documen
 
 The problem is that not all tokens carry equal weight. Some tokens clarify intent, encode policy requirements, or preserve source attribution. Removing them to save on cost introduces failures that are harder to detect and more expensive to fix than the tokens they saved.
 
-Context rot describes the progressive decay in output quality that occurs when relevant information is removed from or buried within a prompt. Chroma's 2025 research underscores this risk: after testing 18 LLMs including GPT-4.1, Claude 4, and Gemini 2.5, they found that model performance [grows less reliable as input length grows](https://www.trychroma.com/research/context-rot) — even on intentionally simple tasks designed to isolate the impact of context length alone.
+Context rot describes the progressive decay in output quality that occurs when relevant information is removed from or buried within a prompt. Chroma's 2025 research underscores this risk: after testing 18 LLMs including GPT-4.1, Claude 4, and Gemini 2.5, they found that model performance [grows less reliable as input length grows](https://www.trychroma.com/research/context-rot) - even on intentionally simple tasks designed to isolate the impact of context length alone.
 
 Removing recency indicators from retrieved documents causes a different kind of failure. The model treats outdated information as current, producing answers that are factually stale.
 

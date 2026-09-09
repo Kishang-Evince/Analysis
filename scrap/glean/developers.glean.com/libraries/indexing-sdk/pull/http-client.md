@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:23:04.646Z"
 ---
 On this page
 
-`PullHttpClient` is the SDK's HTTP client for talking to **your source system**. It is not the client that talks to Glean — that's [`PushUploader`](/libraries/indexing-sdk/push/uploader).
+`PullHttpClient` is the SDK's HTTP client for talking to **your source system**. It is not the client that talks to Glean - that's [`PushUploader`](/libraries/indexing-sdk/push/uploader).
 
 It exists because every hand-rolled connector ends up reimplementing the same things: session reuse, retry with backoff, honoring `Retry-After`, and keeping API keys out of logs.
 
@@ -22,7 +22,7 @@ from glean.indexing.recipes.pull import PullHttpClient, PullOptionswith PullHttp
 | `get(path_or_url, *, params, headers, timeout_seconds)` | `PullResponse` |
 | `post(path_or_url, *, json, data, params, headers, timeout_seconds)` | `PullResponse` |
 | `request(method, path_or_url, ...)` | `PullResponse` |
-| `get_bytes(path_or_url, *, headers, timeout_seconds, max_bytes)` | `tuple[bytes, str]` — body and content type |
+| `get_bytes(path_or_url, *, headers, timeout_seconds, max_bytes)` | `tuple[bytes, str]` - body and content type |
 
 Paths are resolved against `base_url`; absolute URLs are used as-is, which is what makes [`Link`\-header pagination](/libraries/indexing-sdk/pull/pagination) work without extra bookkeeping.
 
@@ -31,7 +31,7 @@ Paths are resolved against `base_url`; absolute URLs are used as-is, which is wh
 `PullResponse` is a frozen dataclass with two accessors that fail loudly on shape mismatches:
 
 ```
-response.status_code   # intresponse.headers       # dict[str, str]response.url           # strresponse.json_dict()   # dict — raises TypeError if the body was a listresponse.json_list()   # list — raises TypeError if the body was an object
+response.status_code   # intresponse.headers       # dict[str, str]response.url           # strresponse.json_dict()   # dict - raises TypeError if the body was a listresponse.json_list()   # list - raises TypeError if the body was an object
 ```
 
 Preferring these over raw `.data` means a source that starts returning `{"error": ...}` where you expected a list fails with a clear `TypeError` at the boundary instead of an `AttributeError` deep inside `transform()`.
@@ -57,7 +57,7 @@ options = PullOptions(    timeout_seconds=30.0,    retries=PullRetryOptions(    
 
 info
 
-The default `max_attempts=2` is deliberately conservative — one retry. Most production connectors should raise it to 4 or 5, particularly against APIs that rate-limit aggressively. Pair it with a [rate limiter](/libraries/indexing-sdk/pull/rate-limiting) so you're pacing requests rather than only reacting to 429s.
+The default `max_attempts=2` is deliberately conservative - one retry. Most production connectors should raise it to 4 or 5, particularly against APIs that rate-limit aggressively. Pair it with a [rate limiter](/libraries/indexing-sdk/pull/rate-limiting) so you're pacing requests rather than only reacting to 429s.
 
 Failures that exhaust retries raise `PullHttpError`, which carries `status_code` and the underlying `response`:
 
@@ -91,7 +91,7 @@ The client owns an `httpx.Client` unless you pass your own. Use it as a context 
 http = PullHttpClient(base_url="https://api.example.com")try:    ...finally:    http.close()
 ```
 
-If you pass `client=my_httpx_client`, the SDK will not close it — ownership stays with you.
+If you pass `client=my_httpx_client`, the SDK will not close it - ownership stays with you.
 
 ## Next[​](#next "Direct link to Next")
 

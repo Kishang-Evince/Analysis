@@ -47,13 +47,13 @@ info
 
 ## Prefer a ready-made dataset?[​](#prefer-a-ready-made-dataset "Direct link to Prefer a ready-made dataset?")
 
-The rest of this page has you write a small data client over invented data, which is the fastest way to see the shape of a connector. If you would rather index something with a real permission model already in it — 29 documents, six groups, a few deliberately restricted files, and one restricted to named users rather than a group — there is a complete runnable example you can copy instead:
+The rest of this page has you write a small data client over invented data, which is the fastest way to see the shape of a connector. If you would rather index something with a real permission model already in it - 29 documents, six groups, a few deliberately restricted files, and one restricted to named users rather than a group - there is a complete runnable example you can copy instead:
 
 ```
 npx tiged --mode=git gleanwork/glean-cookbook/examples/sample-catalog sample-catalogcd sample-catalog && cat README.md
 ```
 
-It registers as a [test datasource](/api-info/indexing/datasource/test-datasource), so ranking signals are off and nothing is visible until you allow-list yourself — which makes it safe to run against an instance other people search. Come back here for the concepts; that example is just content to point them at.
+It registers as a [test datasource](/api-info/indexing/datasource/test-datasource), so ranking signals are off and nothing is visible until you allow-list yourself - which makes it safe to run against an instance other people search. Come back here for the concepts; that example is just content to point them at.
 
 ## Write a data client[​](#write-a-data-client "Direct link to Write a data client")
 
@@ -75,7 +75,7 @@ Save the data client, connector, and factory in `connector.py`. The zero-argumen
 
 warning
 
-`created_at` and `updated_at` are **integers** — Unix epoch seconds. Passing an ISO 8601 string is the most common first-connector mistake, and it surfaces later as documents sorting or displaying with the wrong date rather than as an upload error.
+`created_at` and `updated_at` are **integers** - Unix epoch seconds. Passing an ISO 8601 string is the most common first-connector mistake, and it surfaces later as documents sorting or displaying with the wrong date rather than as an upload error.
 
 ## Test it before you push[​](#test-it-before-you-push "Direct link to Test it before you push")
 
@@ -115,7 +115,7 @@ Do not rely on `--max-items` to make a shared datasource safe: limiting source c
 
 ## Verify it landed[​](#verify-it-landed "Direct link to Verify it landed")
 
-Indexing is asynchronous — an accepted upload is not yet a searchable document. Check status from the CLI:
+Indexing is asynchronous - an accepted upload is not yet a searchable document. Check status from the CLI:
 
 ```
 glean-idx document status --datasource companywiki --document article page_123 --poll

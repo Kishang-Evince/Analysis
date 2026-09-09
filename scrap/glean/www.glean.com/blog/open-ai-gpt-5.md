@@ -187,7 +187,7 @@ We’ve seen follow-up questions become commonplace, both within the Glean Assis
 
 Fun fact: When Glean originally built its Assistant experience our engineering team put in place an explicit instruction to use brevity wherever possible. They judged chat quality from their own perspective, preferring to get straight to the point rather than adding extra fluff (their words, not mine). We’ve since removed this setting, recognizing that it limited the ability of the Assistant to both adapt to the task as well as individual preferences.
 
-One interesting addition from GPT-5 is that it introduces verbosity—the ability to range from brief to average to lengthy responses—*and can answer the prompt completely even when using medium level verbosity.*
+One interesting addition from GPT-5 is that it introduces verbosity-the ability to range from brief to average to lengthy responses-*and can answer the prompt completely even when using medium level verbosity.*
 
 Let’s see this in an Assistant query for a product support question:
 

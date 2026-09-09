@@ -2,7 +2,7 @@
 url: "https://docs.glean.com/administration/identity/sso/configuration/okta-oidc"
 canonical: "https://docs.glean.com/administration/identity/sso/configuration/okta-oidc"
 title: "Okta (OIDC)"
-description: "Step-by-step guide to configuring Okta as the SSO provider for Glean using OIDC — with an automated API token setup or the Glean OIN integration."
+description: "Step-by-step guide to configuring Okta as the SSO provider for Glean using OIDC - with an automated API token setup or the Glean OIN integration."
 fetched_at: "2026-09-01T13:29:07.677Z"
 ---
 On this page
@@ -10,7 +10,7 @@ On this page
 This guide provides instructions for configuring Okta as the SSO provider for Glean using OIDC. You can set up the connection in one of two ways:
 
 -   **API token (automated)**: Provide a temporary **Super admin** API token and Glean creates and assigns the OIDC app for you. Choose this for the quickest setup when you can generate a super admin API token.
--   **Glean OIN integration**: Install the preconfigured **Glean** app from the Okta Integration Network (OIN) and provide its Client ID and Client Secret to Glean. Choose this when you'd rather not share an API token or you standardize on OIN-managed integrations. This method isn't self-serve yet — contact [Glean support](https://support.glean.com) to enable it.
+-   **Glean OIN integration**: Install the preconfigured **Glean** app from the Okta Integration Network (OIN) and provide its Client ID and Client Secret to Glean. Choose this when you'd rather not share an API token or you standardize on OIN-managed integrations. This method isn't self-serve yet - contact [Glean support](https://support.glean.com) to enable it.
 
 Both methods result in the same OIDC SSO connection.
 
@@ -56,7 +56,7 @@ With this method, Glean uses a temporary **Super admin** API token to create the
 
 ### Create a temporary API token in Okta[​](#create-a-temporary-api-token-in-okta "Direct link to Create a temporary API token in Okta")
 
-1.  Sign in to Okta as a **Super admin**. Note your Okta domain URL from the address bar — you'll paste it into Glean later. For example, `https://yourcompany-admin.okta.com`.
+1.  Sign in to Okta as a **Super admin**. Note your Okta domain URL from the address bar - you'll paste it into Glean later. For example, `https://yourcompany-admin.okta.com`.
 2.  In the left navigation panel, navigate to **Security → API → Tokens**.
 3.  Click **Create token**.
 4.  Add the following details:
@@ -171,5 +171,5 @@ If any of the SSO flows fail, consult the following table. If you have issues th
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [Okta OIDC SSO tokenless setup](/administration/identity/sso/configuration/okta-oidc-tokenless) — build a custom OIDC app manually instead of using the Glean OIN integration.
--   [Okta (SAML)](/administration/identity/sso/configuration/okta-saml) — configure Okta SSO with SAML 2.0 instead of OIDC.
+-   [Okta OIDC SSO tokenless setup](/administration/identity/sso/configuration/okta-oidc-tokenless) - build a custom OIDC app manually instead of using the Glean OIN integration.
+-   [Okta (SAML)](/administration/identity/sso/configuration/okta-saml) - configure Okta SSO with SAML 2.0 instead of OIDC.

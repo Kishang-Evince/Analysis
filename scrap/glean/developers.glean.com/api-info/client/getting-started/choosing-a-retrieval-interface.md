@@ -27,15 +27,15 @@ The Glean MCP server exposes Glean's capabilities as tools that an LLM can invok
 
 ## Example: retrieving context for an LLM[​](#example-retrieving-context-for-an-llm "Direct link to Example: retrieving context for an LLM")
 
-A common mistake is calling the Search REST API from an LLM-based application. The Search API expects a deterministic query and returns structured results — it is not designed for the variable, rewritten queries an LLM produces.
+A common mistake is calling the Search REST API from an LLM-based application. The Search API expects a deterministic query and returns structured results - it is not designed for the variable, rewritten queries an LLM produces.
 
 For LLM applications, use the MCP tools instead:
 
 | Goal | Use |
 | --- | --- |
-| Retrieve documents for an LLM to reason over | Glean MCP `search` tool — send the LLM-rewritten query |
-| Build an end-to-end chat experience | Glean MCP `chat` tool — send the original user query |
-| Build a custom search UI | Search REST API — send the user query directly |
+| Retrieve documents for an LLM to reason over | Glean MCP `search` tool - send the LLM-rewritten query |
+| Build an end-to-end chat experience | Glean MCP `chat` tool - send the original user query |
+| Build a custom search UI | Search REST API - send the user query directly |
 
 info
 

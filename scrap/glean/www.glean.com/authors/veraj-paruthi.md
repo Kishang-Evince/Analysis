@@ -59,7 +59,7 @@ July 2, 2024
 
 ### How input token count impacts the latency of AI chat tools
 
-Ever wonder what the impact of input token count is on the responsiveness of AI chat tools? We did—after some testing, here’s what we discovered regarding the correlation between input counts and time to first token.
+Ever wonder what the impact of input token count is on the responsiveness of AI chat tools? We did-after some testing, here’s what we discovered regarding the correlation between input counts and time to first token.
 
 ![Veraj Paruthi](https://cdn.prod.website-files.com/613513981b0efaf850830620/66840a221b73b7ede8cfb10f_Veraj.webp)
 

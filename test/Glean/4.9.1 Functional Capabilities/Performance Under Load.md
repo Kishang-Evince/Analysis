@@ -1,4 +1,4 @@
-# Field 8 — Performance Under Load
+# Field 8 - Performance Under Load
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Performance Under Load.md](../../../Glean/Combined/4.9.1 Functional Capabilities/Performance Under Load.md)
@@ -8,7 +8,7 @@
 **Goal:** Latency curve under polite concurrency.  
 **Write results to:** eval log Field 8 measured table + verdict.
 
-### Published ceilings (Doc-Verified — do not exceed aggressively)
+### Published ceilings (Doc-Verified - do not exceed aggressively)
 
 | Endpoint | Limit |
 |---|---|

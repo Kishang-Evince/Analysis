@@ -17,7 +17,7 @@ ENTERPRISE GRAPH
 
 # The foundation of enterprise superintelligence.
 
-Glean’s Enterprise Graph understands how your company really works—capturing relationships across people, projects, teams, and processes—to deliver AI that understands your business better than any individual employee.
+Glean’s Enterprise Graph understands how your company really works-capturing relationships across people, projects, teams, and processes-to deliver AI that understands your business better than any individual employee.
 
 [Get a demo](/get-a-demo)
 
@@ -39,7 +39,7 @@ Quiz: Measure your AI progress
 
 ### Equip employees and agents alike with multi-hop reasoning.
 
-AI needs context to handle complex tasks the way humans do. When we look at information, we naturally connect it to related work, people, and projects. To make that connection, AI relies on the Enterprise Graph to organize relationships in data — enabling pattern recognition and intelligent action.
+AI needs context to handle complex tasks the way humans do. When we look at information, we naturally connect it to related work, people, and projects. To make that connection, AI relies on the Enterprise Graph to organize relationships in data - enabling pattern recognition and intelligent action.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6995e937fbc1f3353cbae912_enterprise-graph_image1.webp)![zig-zag section green bg](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/686d69902983b85e2d0ce178_zig-zag%20section%20green%20bg.svg)![](https://assets.glean.com/marketing/Assets/zig-zag%20section%20dotted%20bg.svg)
 
@@ -47,7 +47,7 @@ AI needs context to handle complex tasks the way humans do. When we look at info
 
 ### Go beyond a surface-level understanding of your content.
 
-The Enterprise Graph builds on a rich knowledge graph that identifies high value entities — such as projects, people, customers, and products. Each entity is supported by a network of related signals — for example, all the documentation, support tickets, and feature specs connected to a certain product.
+The Enterprise Graph builds on a rich knowledge graph that identifies high value entities - such as projects, people, customers, and products. Each entity is supported by a network of related signals - for example, all the documentation, support tickets, and feature specs connected to a certain product.
 
 ‍
 
@@ -87,7 +87,7 @@ The Enterprise Graph brings together organization-wide knowledge and personal gr
 
 ‍
 
-One of the strengths of these graphs is their dynamic nature — they evolve with changing relationships, roles, and workflows, reflecting the fluid, nuanced reality of work.
+One of the strengths of these graphs is their dynamic nature - they evolve with changing relationships, roles, and workflows, reflecting the fluid, nuanced reality of work.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6995e938c8a00671cd1327e4_5754b5d503b5c372bc1287495ae4067f_enterprise-graph_image5.webp)![zig-zag section green bg](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/686d69902983b85e2d0ce178_zig-zag%20section%20green%20bg.svg)![](https://assets.glean.com/marketing/Assets/zig-zag%20section%20dotted%20bg.svg)
 

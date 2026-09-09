@@ -16,7 +16,7 @@
 **Field definition:** Confirmed enterprise pricing, discount tiers, and volume pricing scales.  
 **Prerequisites / Licensing:** Glean sales quote or partner (Carahsoft, AWS/Google/Azure Marketplace) proposal.  
 **Public list price (Doc-Verified):** **None published.** Commercial terms are quote-based.  
-**Negotiated price (Pending Contract):** _TBD — per-seat $, volume tiers, multi-year discount_  
+**Negotiated price (Pending Contract):** _TBD - per-seat $, volume tiers, multi-year discount_  
 **Confidence Level:** **Doc-Verified** (no public list) · **Pending Contract** (actual dollars)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [Enterprise Flex pricing](https://docs.glean.com/glean-enterprise-flex-pricing) · [Core Suite pricing](https://docs.glean.com/glean-core-suite-pricing) · [Partners](https://www.glean.com/partners) · [Partner referral economics](https://www.glean.com/partners/referral)
@@ -27,7 +27,7 @@
 |---|---|---|
 | **Direct / Glean sales** | Primary enterprise path | Quote only |
 | **Authorized resellers** | Carahsoft and others listed on partners page | Quote only |
-| **Cloud marketplaces** | AWS, Google Cloud, Azure — draw against committed spend | Marketplace listing; no public seat price in docs |
+| **Cloud marketplaces** | AWS, Google Cloud, Azure - draw against committed spend | Marketplace listing; no public seat price in docs |
 | **Referral partners** | 5–10% of first-year ARR to referring partner (Vendor-Stated) | Partner reward, not customer discount |
 
 ### Documented discount types (not percentages)
@@ -47,7 +47,7 @@
 ### Verification steps / test case
 
 1. Request formal quote: 100 Enterprise Flex seats, 3-year term.
-2. If partner path: request Carahsoft or marketplace quote — compare to direct.
+2. If partner path: request Carahsoft or marketplace quote - compare to direct.
 3. Document negotiated $/seat/month, prepay discount, renewal uplift cap.
 4. Record BYOK/self-host discount % if applicable.
 

@@ -1,4 +1,4 @@
-# Field 6 — Coexistence Scenarios
+# Field 6 - Coexistence Scenarios
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Coexistence Scenarios.md](../../../Glean/Combined/4.9.9 Competitive Positioning/Coexistence Scenarios.md)
@@ -20,6 +20,6 @@ Draw boxes for client:
 | Teams | |
 | EHR (if applicable) | |
 
-Train users: **when Glean vs when Copilot** — 1-page guide.
+Train users: **when Glean vs when Copilot** - 1-page guide.
 
 ---

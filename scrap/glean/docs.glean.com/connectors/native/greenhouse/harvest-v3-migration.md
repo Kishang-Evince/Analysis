@@ -26,8 +26,8 @@ If you do not update the credentials before August 31, 2026, the Greenhouse conn
 4.  Click **Create New API Credentials**.
     -   For **API Type**, select **Harvest V3 (OAuth)**
     -   For **Description**, enter `Glean Harvest v3 Credentials`
-5.  Click **View and store credentials** — Greenhouse displays your *Client ID* and *Client Secret*.
-6.  Copy the *Client ID* and *Client Secret* and store them somewhere safe — you'll paste them into Glean next. Then click **I have stored the client credentials**.
+5.  Click **View and store credentials** - Greenhouse displays your *Client ID* and *Client Secret*.
+6.  Copy the *Client ID* and *Client Secret* and store them somewhere safe - you'll paste them into Glean next. Then click **I have stored the client credentials**.
 7.  Under **Manage Scopes**, check **Select All** to grant all scopes, then click **Save**.
 
 ## Enter the credentials in Glean[​](#enter-the-credentials-in-glean "Direct link to Enter the credentials in Glean")
@@ -38,13 +38,13 @@ If you do not update the credentials before August 31, 2026, the Greenhouse conn
     
     In the **admin console**, click the **Connectors** tab in the side panel. Search for **Greenhouse**, open the connector, and click the **Setup** tab. Continue from step 2 below.
     
-2.  Verify that the **Greenhouse Base URL** reflects your Greenhouse URL in the format `https://yourDomain.greenhouse.io` — no trailing slash or extra path.
+2.  Verify that the **Greenhouse Base URL** reflects your Greenhouse URL in the format `https://yourDomain.greenhouse.io` - no trailing slash or extra path.
     
 3.  Enter your v3 credentials:
     
-    -   **Client ID** — from the previous section
-    -   **Client Secret** — from the previous section
-4.  Leave your existing **Harvest API Key** and **Webhook Secret** in place — don't remove them.
+    -   **Client ID** - from the previous section
+    -   **Client Secret** - from the previous section
+4.  Leave your existing **Harvest API Key** and **Webhook Secret** in place - don't remove them.
     
 5.  Click **Save**.
     
@@ -52,7 +52,7 @@ If you do not update the credentials before August 31, 2026, the Greenhouse conn
 ## Confirm validation[​](#confirm-validation "Direct link to Confirm validation")
 
 1.  When you save, Glean checks the new credentials. This can take a few minutes.
-2.  If the credentials are valid, you'll see **Saved** — Glean automatically switches to the v3 API and keeps the connection refreshed on its own.
+2.  If the credentials are valid, you'll see **Saved** - Glean automatically switches to the v3 API and keeps the connection refreshed on its own.
 3.  If you see **Failed to save changes**, click the help article link for the failed validation step. It redirects you to the specific troubleshooting page for resolving the failure.
 
 ## What to expect[​](#what-to-expect "Direct link to What to expect")
@@ -64,7 +64,7 @@ If you do not update the credentials before August 31, 2026, the Greenhouse conn
 
 Do I have to remove my old Harvest API Key?
 
-Not during the update — keep it in place so there's no interruption. You can remove or revoke it after August 31, 2026.
+Not during the update - keep it in place so there's no interruption. You can remove or revoke it after August 31, 2026.
 
 Will search results break or lose history while I update?
 
@@ -72,7 +72,7 @@ No. Content, result links, and access permissions are preserved. There is no re-
 
 What does the "Failed to save changes" error mean?
 
-It means Glean couldn't validate a working set of credentials — most often the v3 client ID or client secret is missing or incorrect. Click the help article link displayed, which redirects you to the specific troubleshooting page.
+It means Glean couldn't validate a working set of credentials - most often the v3 client ID or client secret is missing or incorrect. Click the help article link displayed, which redirects you to the specific troubleshooting page.
 
 How do I find or confirm my Greenhouse base URL?
 
@@ -82,7 +82,7 @@ Expected format: `https://yourDomain.greenhouse.io`
 
 Why did validation fail on the base URL?
 
-The base URL must be exactly your Greenhouse address in the format `https://yourDomain.greenhouse.io` — no trailing slash and no path after the domain.
+The base URL must be exactly your Greenhouse address in the format `https://yourDomain.greenhouse.io` - no trailing slash and no path after the domain.
 
 Do I need to re-enter or recreate anything on the Glean side beyond the credentials?
 

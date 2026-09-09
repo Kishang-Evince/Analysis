@@ -2,7 +2,7 @@
 url: "https://docs.glean.com/user-guide/embedded-integrations/"
 canonical: "https://docs.glean.com/user-guide/embedded-integrations/"
 title: "Embedded integrations"
-description: "Use Glean directly inside the apps you already work in — Slack, Microsoft Teams, and more."
+description: "Use Glean directly inside the apps you already work in - Slack, Microsoft Teams, and more."
 fetched_at: "2026-09-01T13:30:39.817Z"
 ---
 On this page
@@ -15,7 +15,7 @@ Glean meets you where you work. Search, ask questions, and get AI-powered answer
 
 ### Glean in Slack
 
-Search, ask questions, run agents, and subscribe to a daily digest — all from inside Slack.
+Search, ask questions, run agents, and subscribe to a daily digest - all from inside Slack.
 
 
 

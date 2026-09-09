@@ -30,20 +30,20 @@
 | **Outlook / Gmail** | Indexed mail + federated fetch; M365 email tools for agents | Low | Mail stays in mailbox; Glean reads |
 | **Drive / OneDrive / Notion** | Index + optional write tools | Low | Source systems remain authoritative |
 | **Cursor / GitHub Copilot** | IDE coding; Glean MCP for enterprise context | Low | Dev knowledge via MCP |
-| **EHR / billing / CRM** | Out of scope — coexist as SoR | None in tenant eval | No writeback; no displacement claim |
+| **EHR / billing / CRM** | Out of scope - coexist as SoR | None in tenant eval | No writeback; no displacement claim |
 | **IdP (Entra / Okta)** | SSO + SCIM; Glean consumes identity | None | Standard |
 
 ### Engineering observation (Doc-Verified)
 
-- Glean life sciences blog: *"Glean complements those investments by acting as the system of context"* — explicit coexistence positioning.
-- Connectors are **read-only** for indexing; writeback only via governed agent tools — reduces collision with source apps.
+- Glean life sciences blog: *"Glean complements those investments by acting as the system of context"* - explicit coexistence positioning.
+- Connectors are **read-only** for indexing; writeback only via governed agent tools - reduces collision with source apps.
 - Remote MCP (4.9.1) makes coexistence **technical**, not just commercial.
 
 ### Verification steps / test case
 
 1. Draw client architecture: mark Glean box as "context + search + agents" not "replace Copilot."
 2. Pilot messaging: train users when to use Teams Copilot vs Glean sidebar.
-3. Confirm no duplicate license waste — client already has Copilot? Position Glean as cross-suite layer.
+3. Confirm no duplicate license waste - client already has Copilot? Position Glean as cross-suite layer.
 4. Document Perimeter coexistence: EHR stays SoR; Glean for internal knowledge (policies, ops docs, Teams/Drive).
 
 **Risk & Cost Impact:** Risk: Low (clear boundaries prevent buyer remorse) | Cost: May mean dual AI spend

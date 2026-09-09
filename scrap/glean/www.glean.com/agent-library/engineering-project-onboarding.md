@@ -23,7 +23,7 @@ Get up to speed on engineering projects faster with a complete view of project d
 
 ## Overview
 
-The engineering project onboarding agent helps engineers get up to speed on any project — fast. It gathers the essentials in one place: key documents, owners, Slack channels, Jira tickets, and code references. Whether you're joining a new team or contributing to an unfamiliar component, this agent cuts through the noise to give you the details that matter.
+The engineering project onboarding agent helps engineers get up to speed on any project - fast. It gathers the essentials in one place: key documents, owners, Slack channels, Jira tickets, and code references. Whether you're joining a new team or contributing to an unfamiliar component, this agent cuts through the noise to give you the details that matter.
 
 ## See it in action
 

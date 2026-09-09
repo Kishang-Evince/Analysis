@@ -71,7 +71,7 @@ That gap is where hours disappear and decisions stall. Closing it turns raw tele
 
 ## What is connected context in energy management?
 
-Connected context is the understanding layer that links operational data — equipment status, maintenance history, occupancy patterns, grid conditions, and sustainability targets — into a unified picture that explains why numbers are moving. Traditional analytics tools show what happened. Connected context connects the dots across systems, teams, and time so leaders see root causes and act with confidence.
+Connected context is the understanding layer that links operational data - equipment status, maintenance history, occupancy patterns, grid conditions, and sustainability targets - into a unified picture that explains why numbers are moving. Traditional analytics tools show what happened. Connected context connects the dots across systems, teams, and time so leaders see root causes and act with confidence.
 
 In practice, this means tying energy consumption to asset performance records, compliance obligations, weather patterns, and workforce activity automatically, with permissions respected. A weekly operations view is only useful when metrics connect to asset status, work orders, and the responsible team, not when they sit as an isolated chart.
 
@@ -158,7 +158,7 @@ Traditional dashboards display metrics without operational context. They show wh
 
 ### How can connected context improve decision-making in energy management?
 
-Connected context links energy data to its operational origins — specific assets, maintenance events, occupancy patterns, and compliance requirements. Decision-makers get answers with causal explanations and clear next steps, not visualizations that still need interpretation. The signal and its cause arrive together, which shortens time from data to action.
+Connected context links energy data to its operational origins - specific assets, maintenance events, occupancy patterns, and compliance requirements. Decision-makers get answers with causal explanations and clear next steps, not visualizations that still need interpretation. The signal and its cause arrive together, which shortens time from data to action.
 
 ### What alternatives exist to dashboards for energy leaders?
 

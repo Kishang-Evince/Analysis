@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/glean-year-in-review-2025"
 canonical: "https://www.glean.com/resources/guides/glean-year-in-review-2025"
 title: "Glean Year in Review: 2025"
-description: "In 2025, Glean became trusted Work AI infrastructure for leading enterprises—crossing >$250M ARR (>150% YoY growth), powering a 20T+ tokens‑per‑year run rate, and driving 270M+ Glean Assistant actions across high‑stakes workflows."
+description: "In 2025, Glean became trusted Work AI infrastructure for leading enterprises-crossing >$250M ARR (>150% YoY growth), powering a 20T+ tokens‑per‑year run rate, and driving 270M+ Glean Assistant actions across high‑stakes workflows."
 fetched_at: "2026-09-01T13:27:08.687Z"
 ---
 ## Work AI that works.

@@ -2,7 +2,7 @@
 url: "https://docs.glean.com/connectors/native/stackoverflow/about"
 canonical: "https://docs.glean.com/connectors/native/stackoverflow/about"
 title: "Overview"
-description: "How the Stack Overflow connector works for public Stack Overflow, Stack Overflow for Teams, and Enterprise—authentication, tag filters, APIs, and setup."
+description: "How the Stack Overflow connector works for public Stack Overflow, Stack Overflow for Teams, and Enterprise-authentication, tag filters, APIs, and setup."
 fetched_at: "2026-09-01T13:29:44.453Z"
 ---
 On this page

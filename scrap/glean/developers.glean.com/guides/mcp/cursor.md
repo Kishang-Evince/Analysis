@@ -2,7 +2,7 @@
 url: "https://developers.glean.com/guides/mcp/cursor"
 canonical: "https://developers.glean.com/guides/mcp/cursor"
 title: "Glean Plugin for Cursor | Glean Developer"
-description: "Install the official Glean plugin for Cursor — enterprise search and knowledge directly in your editor."
+description: "Install the official Glean plugin for Cursor - enterprise search and knowledge directly in your editor."
 fetched_at: "2026-09-01T13:23:02.553Z"
 ---
 Official Glean plugin

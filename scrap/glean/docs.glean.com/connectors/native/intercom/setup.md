@@ -106,13 +106,13 @@ Repeat this step for each workspace. Each workspace requires its own connector i
 
 ### Authorize users in Intercom[​](#authorize-users-in-intercom "Direct link to Authorize users in Intercom")
 
-1.  On the Intercom authorization page, select the correct workspace from the list—ensure it matches the workspace you created the OAuth app for.
+1.  On the Intercom authorization page, select the correct workspace from the list-ensure it matches the workspace you created the OAuth app for.
 2.  Grant access to the Glean app when prompted by Intercom.
 3.  Glean begins indexing your Intercom content automatically.
 
 warning
 
-Verify you are authorizing the correct workspace. In the Intercom OAuth prompt, confirm the workspace shown matches the one you created the OAuth app for. If you are logged into multiple Intercom workspaces, Intercom may default to a different one—switch to the correct workspace before granting access.
+Verify you are authorizing the correct workspace. In the Intercom OAuth prompt, confirm the workspace shown matches the one you created the OAuth app for. If you are logged into multiple Intercom workspaces, Intercom may default to a different one-switch to the correct workspace before granting access.
 
 ![Choose the correct workspace to authorize Intercom](/img/connectors/native/intercom/oauthworkspaceselection.png)
 

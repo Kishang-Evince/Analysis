@@ -9,7 +9,7 @@ On this page
 
 After your administrator sets up Glean in Gemini chat and shares the app URL, you can use Gemini to ask work questions grounded in company knowledge from Glean.
 
-With the default tool set, this integration is read-only — it can search and synthesize company knowledge but does not create, update, or delete records in connected systems. Your administrator controls which tools are enabled.
+With the default tool set, this integration is read-only - it can search and synthesize company knowledge but does not create, update, or delete records in connected systems. Your administrator controls which tools are enabled.
 
 Admins: see the [Installation guide](/administration/platform/embedded-integrations/glean-in-gemini-chat/installation-guide).
 

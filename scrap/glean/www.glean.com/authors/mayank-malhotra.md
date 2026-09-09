@@ -30,7 +30,7 @@ January 13, 2026
 
 ### Introducing Assistant updates: Search in Chat, autocomplete, and image generation
 
-Find what you need faster and generate images that fit seamlessly into the way you work—all in Assistant.
+Find what you need faster and generate images that fit seamlessly into the way you work-all in Assistant.
 
 ![Mira Khanna](https://cdn.prod.website-files.com/613513981b0efaf850830620/68b80cb02ed92c2df7221c5e_Mira%20Khanna.webp)
 

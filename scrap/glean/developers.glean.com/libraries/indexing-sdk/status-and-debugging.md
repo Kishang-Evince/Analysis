@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:23:04.854Z"
 ---
 On this page
 
-Indexing is asynchronous. An upload that returns success has been *accepted*, not indexed — documents become searchable some time later. Most "the connector is broken" reports are really one of four things, and this sequence separates them.
+Indexing is asynchronous. An upload that returns success has been *accepted*, not indexed - documents become searchable some time later. Most "the connector is broken" reports are really one of four things, and this sequence separates them.
 
 ## Why isn't my document in search?[​](#why-isnt-my-document-in-search "Direct link to Why isn't my document in search?")
 
@@ -23,7 +23,7 @@ Run against a recording mock and print `result.documents_posted`. If the documen
 
 Has it finished indexing?
 
-Run `glean-idx document status --datasource NAME --document TYPE ID --poll`. If it’s still pending, wait — large uploads take longer.
+Run `glean-idx document status --datasource NAME --document TYPE ID --poll`. If it’s still pending, wait - large uploads take longer.
 
 3
 
@@ -35,7 +35,7 @@ Is the datasource healthy?
 
 Can the user see it?
 
-If the document is indexed but one person can’t find it, it’s a permissions problem. `glean-idx document access --datasource NAME --object-type TYPE --id ID --user them@example.com` answers it directly — a correct-looking ACL is still wrong if the identities it names were never pushed.
+If the document is indexed but one person can’t find it, it’s a permissions problem. `glean-idx document access --datasource NAME --object-type TYPE --id ID --user them@example.com` answers it directly - a correct-looking ACL is still wrong if the identities it names were never pushed.
 
 ## StatusClient[​](#statusclient "Direct link to StatusClient")
 
@@ -49,7 +49,7 @@ The constructor takes the same optional overrides as `PushUploader`: `retries`, 
 
 ## The CLI[​](#the-cli "Direct link to The CLI")
 
-The SDK ships one CLI, `glean-idx`. This needs only credentials, so it runs anywhere — including with no install:
+The SDK ships one CLI, `glean-idx`. This needs only credentials, so it runs anywhere - including with no install:
 
 ```
 glean-idx document status \  --datasource companywiki \  --document article page_123 \  --document article page_124 \  --poll
@@ -63,7 +63,7 @@ In Python:
 from glean.api_client.models import DebugDocumentRequestfrom glean.indexing.testing import check_documents_status, poll_documents_statussnapshot = poll_documents_status(    "companywiki",    [DebugDocumentRequest(object_type="article", doc_id="page_123")],)print(snapshot.result)
 ```
 
-This is worth wiring into a deployment smoke test — index a known document, then confirm it becomes searchable before declaring the rollout good.
+This is worth wiring into a deployment smoke test - index a known document, then confirm it becomes searchable before declaring the rollout good.
 
 ## Common causes[​](#common-causes "Direct link to Common causes")
 
@@ -81,7 +81,7 @@ This is worth wiring into a deployment smoke test — index a known document, th
 
 If documents vanish after a scheduled run, the cause is almost always a full crawl that fetched an incomplete result set. A full crawl deletes anything it didn't include.
 
-Look for a partial fetch that was allowed to complete successfully — a source error swallowed inside a paging loop, an auth token expiring mid-crawl, or a `max_items` cap left set from local testing. `max_items` limits source consumption; it is not a blast-radius guarantee, and on a full crawl it can make the replacement dangerously incomplete. Alert on `documents_indexed` dropping sharply between runs; that catches it before the deletion propagates. See [Indexing modes](/libraries/indexing-sdk/concepts/indexing-modes).
+Look for a partial fetch that was allowed to complete successfully - a source error swallowed inside a paging loop, an auth token expiring mid-crawl, or a `max_items` cap left set from local testing. `max_items` limits source consumption; it is not a blast-radius guarantee, and on a full crawl it can make the replacement dangerously incomplete. Alert on `documents_indexed` dropping sharply between runs; that catches it before the deletion propagates. See [Indexing modes](/libraries/indexing-sdk/concepts/indexing-modes).
 
 ## Tracing a document through the logs[​](#tracing-a-document-through-the-logs "Direct link to Tracing a document through the logs")
 

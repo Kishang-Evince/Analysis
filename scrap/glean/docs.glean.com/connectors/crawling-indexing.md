@@ -2,7 +2,7 @@
 url: "https://docs.glean.com/connectors/crawling-indexing"
 canonical: "https://docs.glean.com/connectors/crawling-indexing"
 title: "Crawl and index connectors"
-description: "How Glean crawls and indexes content from connectors — crawl types, freshness, limits, and restrictions."
+description: "How Glean crawls and indexes content from connectors - crawl types, freshness, limits, and restrictions."
 fetched_at: "2026-09-01T13:29:18.448Z"
 ---
 Glean continuously crawls connectors to keep search results fresh and accurate. This section covers how crawling works, how to configure it, and what constraints apply.

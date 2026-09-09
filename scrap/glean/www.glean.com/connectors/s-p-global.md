@@ -20,7 +20,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-S&P Global data is critical to decisioning — but only as useful as the workflow it sits in. In Glean, permissions-aware financial intelligence connects directly to internal research, account data, and deal context, giving every decision the full picture.
+S&P Global data is critical to decisioning - but only as useful as the workflow it sits in. In Glean, permissions-aware financial intelligence connects directly to internal research, account data, and deal context, giving every decision the full picture.
 
 ## Work AI that works.
 

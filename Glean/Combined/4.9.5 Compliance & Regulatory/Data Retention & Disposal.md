@@ -27,19 +27,19 @@
 | **Indexed connector data** | Connector instance lifecycle | Delete connector removes index in background (~5 min search disappearance) |
 | **Source deletions** | Webhooks (Drive) + full-crawl reconcile | Removed from index per connector SLA |
 | **Outlook mail** | Lookback window = crawl scope + retention bound | Reducing lookback drops older mail on next crawl |
-| **Contract termination** | Limited Retention Addendum referenced | Legal review required — text not in product docs |
+| **Contract termination** | Limited Retention Addendum referenced | Legal review required - text not in product docs |
 
 ### Engineering observation (Doc-Verified)
 
-- Chat retention is org-wide — affects all users immediately on change.
+- Chat retention is org-wide - affects all users immediately on change.
 - Index disposal on connector delete is fast (~5 min) but **not instant**.
-- Post-contract data scrubbing timelines require **Limited Retention Addendum / DPA** — not enumerated in Admin UI.
+- Post-contract data scrubbing timelines require **Limited Retention Addendum / DPA** - not enumerated in Admin UI.
 
 ### Verification steps / test case
 
-1. Set chat retention 30 days — create test chat — verify retention message.
-2. Delete test Drive doc — confirm removal from search within connector SLA.
-3. Delete test connector instance — confirm docs vanish from search within ~5 min.
+1. Set chat retention 30 days - create test chat - verify retention message.
+2. Delete test Drive doc - confirm removal from search within connector SLA.
+3. Delete test connector instance - confirm docs vanish from search within ~5 min.
 4. Legal: review Limited Retention Addendum for termination scrub SLA.
 
 **Risk & Cost Impact:** Risk: Low | Cost: Native

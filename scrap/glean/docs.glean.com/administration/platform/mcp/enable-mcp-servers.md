@@ -13,8 +13,8 @@ The **Glean MCP server** is fully managed and built into your Glean instance. Gl
 
 Along with the MCP server, Glean turns on the supporting pieces needed to connect MCP hosts:
 
--   **Glean OAuth authorization server** — provides OAuth-based authentication for MCP, so supported AI tools can connect without manual OAuth setup.
--   **Approved-application greenlisting** — Dynamic Client Registration (DCR) is restricted to a Glean-managed list of vetted client applications, so only approved MCP hosts can register. See [Dynamic Client Registration](/administration/oauth/dynamic-client-registration) and the [MCP security overview](/administration/platform/mcp/security#client-identity-binding) for details.
+-   **Glean OAuth authorization server** - provides OAuth-based authentication for MCP, so supported AI tools can connect without manual OAuth setup.
+-   **Approved-application greenlisting** - Dynamic Client Registration (DCR) is restricted to a Glean-managed list of vetted client applications, so only approved MCP hosts can register. See [Dynamic Client Registration](/administration/oauth/dynamic-client-registration) and the [MCP security overview](/administration/platform/mcp/security#client-identity-binding) for details.
 
 This default-on configuration applies to customers who haven't already enabled MCP, and to all new customers. Customers who had previously configured MCP or their own OAuth keep their existing settings.
 

@@ -39,6 +39,6 @@ Address any **Attention required** items before launching to your users. Missing
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [Sync people data](/get-started/setup/sync-people-data) — the workspace-setup step where you select a people connector
+-   [Sync people data](/get-started/setup/sync-people-data) - the workspace-setup step where you select a people connector
 -   [Attribute mapping](/administration/identity/people-data/attribute-mapping)
 -   [People data issues](/administration/identity/people-data/troubleshooting/people-data-issues)

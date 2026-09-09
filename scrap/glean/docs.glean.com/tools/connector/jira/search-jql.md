@@ -76,11 +76,11 @@ Before investigating gaps in agent output, run your JQL directly in Jira (**Filt
 
 Narrow your query so it returns a manageable set of issues:
 
--   Time range — `created >= -90d` or `updated >= -30d`
--   Status — `status in ("In Progress", "Open")`
--   Assignee — `assignee = currentUser()`
--   Priority — `priority in (High, Highest)`
--   Project scope — `project = PROJ AND component = "Billing"`
+-   Time range - `created >= -90d` or `updated >= -30d`
+-   Status - `status in ("In Progress", "Open")`
+-   Assignee - `assignee = currentUser()`
+-   Priority - `priority in (High, Highest)`
+-   Project scope - `project = PROJ AND component = "Billing"`
 
 ### Batch by time window[​](#batch-by-time-window "Direct link to Batch by time window")
 
@@ -90,7 +90,7 @@ For projects with thousands of issues, split a single broad query into multiple 
 project = PROJ AND created >= 2026-01-01 AND created < 2026-02-01project = PROJ AND created >= 2026-02-01 AND created < 2026-03-01
 ```
 
-You can also batch by fields like status, priority, or assignee — for example, `project = PROJ AND status = "In Progress"` followed by `project = PROJ AND status = "Done"`.
+You can also batch by fields like status, priority, or assignee - for example, `project = PROJ AND status = "In Progress"` followed by `project = PROJ AND status = "Done"`.
 
 Then pass the aggregated output to an [Analyze data](/tools/glean/analyze-data) step for summarization.
 

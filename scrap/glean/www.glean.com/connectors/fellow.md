@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:45.181Z"
 ---
 ### Overview
 
-Fellow captures and summarizes your meetings and action items—Glean makes them discoverable as part of your organization’s knowledge base. Glean enforces your Fellow permissions, ensuring sensitive meeting content stays secure and is only accessible to the people who should have access.
+Fellow captures and summarizes your meetings and action items-Glean makes them discoverable as part of your organization’s knowledge base. Glean enforces your Fellow permissions, ensuring sensitive meeting content stays secure and is only accessible to the people who should have access.
 
 ### Features
 
@@ -21,7 +21,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-Make every meeting count—plan effectively, track decisions, and follow through on action items. With Glean and Fellow, you can use meeting context to take action. Glean indexes your meeting transcripts from Fellow, so with one search, you can revisit past discussions, understand key decisions, and move work forward faster.
+Make every meeting count-plan effectively, track decisions, and follow through on action items. With Glean and Fellow, you can use meeting context to take action. Glean indexes your meeting transcripts from Fellow, so with one search, you can revisit past discussions, understand key decisions, and move work forward faster.
 
 ## Work AI that works.
 

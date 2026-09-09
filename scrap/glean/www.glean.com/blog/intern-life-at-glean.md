@@ -91,7 +91,7 @@ Aurelia Wang (Software Engineer Intern) spearheaded the overhaul of **Glean’s 
 
 With the new platform live, Aurelia went further by contributing to an open source plugin that embeds public Glean Search directly into the docs, giving developers instant, familiar search from any page. She followed up by using Glean’s indexing SDK to build a custom connector that flags API reference pages separately from tutorials, boosting both relevance and result presentation. The payoff: faster discovery, smoother navigation, and rave reviews from Gleanies and customers alike.
 
-Her roadmap is still rolling. Aurelia is weaving public Glean Search into our developer docs and building a public MCP server that will let any LLM tap directly into Glean’s content — no Glean account required. The mission remains the same: make sure every developer finds the right answer, right when they need it.
+Her roadmap is still rolling. Aurelia is weaving public Glean Search into our developer docs and building a public MCP server that will let any LLM tap directly into Glean’s content - no Glean account required. The mission remains the same: make sure every developer finds the right answer, right when they need it.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/68e06adf0bf150d8b7ed7ace_image6.png)
 
@@ -99,11 +99,11 @@ Her roadmap is still rolling. Aurelia is weaving public Glean Search into our de
 
 Sydney Schirrmeister (Marketing Intern) spent the summer embedded with Glean Marketing, partnering across campaigns while owning one initiative end-to-end: t**argeted newsletter sponsorships** for the Demand Generation team.
 
-She began by scouting newsletter publishers that could put Glean in front of the right readers. After mapping each vendor’s reach against our ideal customer profile, she narrowed the field, pitched her plan, and secured a budget — all before negotiating rates that kept ROI front-of-mind.
+She began by scouting newsletter publishers that could put Glean in front of the right readers. After mapping each vendor’s reach against our ideal customer profile, she narrowed the field, pitched her plan, and secured a budget - all before negotiating rates that kept ROI front-of-mind.
 
-With the lineup locked, Sydney matched each placement to the Glean asset most likely to resonate — white-papers, e-books, one-pagers, even on-demand webinars — then teamed up with Design to craft eye-catching banners. After analyzing other successful marketing copy and using Glean Assistant to help with the writing process, she crafted engaging copy to catch the attention of various audiences. She kept the production train on schedule, coordinating hand-offs so every file hit the vendor’s inbox on time.
+With the lineup locked, Sydney matched each placement to the Glean asset most likely to resonate - white-papers, e-books, one-pagers, even on-demand webinars - then teamed up with Design to craft eye-catching banners. After analyzing other successful marketing copy and using Glean Assistant to help with the writing process, she crafted engaging copy to catch the attention of various audiences. She kept the production train on schedule, coordinating hand-offs so every file hit the vendor’s inbox on time.
 
-Some placements will continue after her internship wraps, but Sydney is already tracking performance for the ads that are live. Early results will shape our next demand-gen moves, and longer-term, the campaign is projected to drive up to one million impressions among engaged tech readers — fueling pipeline and giving our brand a louder voice in the market.
+Some placements will continue after her internship wraps, but Sydney is already tracking performance for the ads that are live. Early results will shape our next demand-gen moves, and longer-term, the campaign is projected to drive up to one million impressions among engaged tech readers - fueling pipeline and giving our brand a louder voice in the market.
 
 ## Deep Research
 
@@ -119,23 +119,23 @@ In addition to his work on evaluations, Param contributed to the Deep Research a
 
 Varun Vobilisetty’s (Product Management Intern) internship was focused on empowering client administrators and optimizing internal operations through key product initiatives.
 
-As product lead for the **self-serve feature rollout** initiative, Varun rallied a tiger team across Product Ops, GTM, Sales, and User Research to replace our piecemeal, manual enablement process with a single, transparent dashboard. He prototyped early flows in Vercel and Lovable, iterated with Design, and partnered with Engineering and Data to wire everything up. The result is a scalable feature-management tool that lets admins turn betas on — or off — without filing a ticket, building trust while freeing R&D and Support to focus on harder problems.
+As product lead for the **self-serve feature rollout** initiative, Varun rallied a tiger team across Product Ops, GTM, Sales, and User Research to replace our piecemeal, manual enablement process with a single, transparent dashboard. He prototyped early flows in Vercel and Lovable, iterated with Design, and partnered with Engineering and Data to wire everything up. The result is a scalable feature-management tool that lets admins turn betas on - or off - without filing a ticket, building trust while freeing R&D and Support to focus on harder problems.
 
 In parallel, he tackled the support backlog head-on with **Glean for Admin Support**, a three-pillar model of prevention, robust self-service, and frictionless escalation. After mining thousands of admin interactions to surface the biggest pain points, Varun built and benchmarked an in-product Glean agent that resolves common questions on the spot and points users to smarter documentation when they need a deeper dive. The goal: slash time-to-resolution and keep our support team laser-focused on issues that truly need a human touch.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/68e06b368d22b6af5aedd01c_image4.png)
 
-Beyond these flagship projects, Varun helped shape the Admin & Workspace team’s FY26 strategy and roadmap and jumped in to lead the **Connector Health Visibility** project, an effort outside his assigned scope. When the existing approach wasn’t meeting customer needs, Varun proactively picked it up, conducted customer research, and reworked the product offering to launch a beta addressing the real user problems — turning a stalled initiative into a solution that gives admins real-time visibility into setup health and progress — another step toward making Glean effortless to deploy and manage.
+Beyond these flagship projects, Varun helped shape the Admin & Workspace team’s FY26 strategy and roadmap and jumped in to lead the **Connector Health Visibility** project, an effort outside his assigned scope. When the existing approach wasn’t meeting customer needs, Varun proactively picked it up, conducted customer research, and reworked the product offering to launch a beta addressing the real user problems - turning a stalled initiative into a solution that gives admins real-time visibility into setup health and progress - another step toward making Glean effortless to deploy and manage.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/68e06b7011c85940d1e378c3_image2.png)
 
 ## Implementing Agent Featuring in Glean
 
-Christina Wu (Product Design Intern) put Glean’s new **Agent Featuring** capability on the fast track, adding a dedicated **Featured** row to the Agent Library that admins or moderators can rename, reorder, and populate — so every employee sees company-approved agents the instant they open Glean. Customer demand was sky-high, so the team sprinted from kickoff to ship in less than three weeks.
+Christina Wu (Product Design Intern) put Glean’s new **Agent Featuring** capability on the fast track, adding a dedicated **Featured** row to the Agent Library that admins or moderators can rename, reorder, and populate - so every employee sees company-approved agents the instant they open Glean. Customer demand was sky-high, so the team sprinted from kickoff to ship in less than three weeks.
 
 As design DRI, Christina locked in early alignment with PM and Engineering, stress-testing ideas against tech constraints before a single pixel was final. Weekly reviews, rapid Slack huddles, and Figma prototypes kept everyone moving in lockstep.
 
-The results showed up fast: Dell green-lit its agent rollout the moment the feature landed, and early telemetry points to a sharp jump in agent launches from the zero-state feed where Featured agents now sit. By building on Glean’s existing Collections framework, Christina’s crew also laid a scalable foundation for future custom categories — letting admins surface the right agents, right when their teams need them.
+The results showed up fast: Dell green-lit its agent rollout the moment the feature landed, and early telemetry points to a sharp jump in agent launches from the zero-state feed where Featured agents now sit. By building on Glean’s existing Collections framework, Christina’s crew also laid a scalable foundation for future custom categories - letting admins surface the right agents, right when their teams need them.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/68e06b848f54c138d9a7f640_image5.png)
 
@@ -143,7 +143,7 @@ The results showed up fast: Dell green-lit its agent rollout the moment the feat
 
 Maria Morris (Content Design Intern) led the charge on **terminology governance**, giving Glean a single, rock-solid source of truth for every user-facing term across product, docs, and marketing. She built a living database that pairs crisp definitions with real-world usage notes, then prototyped UX-writing agents that surface that guidance right inside creators’ workflows.
 
-True to Glean style, she kept the process collaborative — running feedback loops with design, product marketing, and technical writing to pressure-test language standards and make sure the system would hold up long after hand-off. The payoff: tighter copy, quicker cross-team alignment, and a linguistic backbone that keeps our AI experiences on-brand and crystal clear for users. Maria’s framework turns careful word choice into durable value — for every Glean team and for everyone who reads our work.
+True to Glean style, she kept the process collaborative - running feedback loops with design, product marketing, and technical writing to pressure-test language standards and make sure the system would hold up long after hand-off. The payoff: tighter copy, quicker cross-team alignment, and a linguistic backbone that keeps our AI experiences on-brand and crystal clear for users. Maria’s framework turns careful word choice into durable value - for every Glean team and for everyone who reads our work.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/68e06b9b5bfe12b2d0cae52b_image3.png)
 

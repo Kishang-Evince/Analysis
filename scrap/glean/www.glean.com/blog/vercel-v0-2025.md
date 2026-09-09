@@ -83,13 +83,13 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-**v0 by Vercel** is an AI-powered development platform that enables anyone to quickly turn ideas into production-ready interfaces. But the most valuable apps don’t just look right—they reflect how your business actually works. They need to fully understand and integrate everything from security policies and architecture decisions to product specs and incident history in order to deliver truly useful results in the enterprise.
+**v0 by Vercel** is an AI-powered development platform that enables anyone to quickly turn ideas into production-ready interfaces. But the most valuable apps don’t just look right-they reflect how your business actually works. They need to fully understand and integrate everything from security policies and architecture decisions to product specs and incident history in order to deliver truly useful results in the enterprise.
 
 That’s why we’ve partnered with Vercel to bring **Glean’s enterprise context into v0 through the Model Context Protocol (MCP)**. With Glean in v0, builders can ground their AI-generated apps in live company knowledge, so every flow is informed by real documentation, systems, and decisions,not generic guesses.
 
 ## Why Glean + v0
 
-Glean is the **Work AI platform** that connects and understands all of your enterprise data—documents, tickets, chats, code, and more—and delivers it as a secure, permission-aware context layer for AI agents and applications. With our **remote MCP server**, your company knowledge can now be used by MCP clients like v0, just like other agent platforms and tools in our broader ecosystem.
+Glean is the **Work AI platform** that connects and understands all of your enterprise data-documents, tickets, chats, code, and more-and delivers it as a secure, permission-aware context layer for AI agents and applications. With our **remote MCP server**, your company knowledge can now be used by MCP clients like v0, just like other agent platforms and tools in our broader ecosystem.
 
 For joint Vercel and Glean customers, this means:
 
@@ -103,7 +103,7 @@ For joint Vercel and Glean customers, this means:
     As you design workflows in v0, you can pull in related specs, incident postmortems, and past decisions from Glean without leaving the build surface, so all of that context stays right next to the UI and logic you’re building.
 
 -   **Reusable patterns across teams**  
-    Once you’ve wired a pattern—say, an onboarding microsite that pulls context from product docs, Salesforce, and support threads via Glean—you can templatize and reuse it across business units and markets, instead of starting from scratch every time.
+    Once you’ve wired a pattern-say, an onboarding microsite that pulls context from product docs, Salesforce, and support threads via Glean-you can templatize and reuse it across business units and markets, instead of starting from scratch every time.
 
 -   **Unlock the value of an open, future-ready AI platform   
     ‍**Glean’s remote MCP server enables external tools to access Glean’s search and chat through a standard protocol. By connecting Glean’s AI platform with enterprise context via agent platforms, IDEs, and model providers, organizations can seamlessly integrate their preferred tools and adapt as new technologies emerge.
@@ -117,7 +117,7 @@ By leveraging Glean’s ability to extract structured and unstructured data from
     -   Outcome: With Glean connected to v0, you can have v0 read all your internal auth docs in Glean and generate a logic flow that matches your actual security policies and edge cases. That means every screen and rule comes from your real specs, not generic boilerplate.
 -   **Website/marketing copy updates**   
     -   Prompt: “Can you draft updated website copy based on the latest product updates in Glean?”
-    -   Outcome: v0 can ask Glean for the latest product context—PRDs, release notes, positioning docs, and customer stories—and use that to draft updated website or marketing copy. The result is on‑brand, grounded content that reflects what your product actually does today.
+    -   Outcome: v0 can ask Glean for the latest product context-PRDs, release notes, positioning docs, and customer stories-and use that to draft updated website or marketing copy. The result is on‑brand, grounded content that reflects what your product actually does today.
 -   **UI prototyping**   
     -   Prompt: “Can you generate a prototype UI using the PRD in Glean?”
     -   Outcome: By pointing v0 at a PRD stored in Glean, you can generate a prototype UI that’s driven by real user stories, requirements, and constraints. Glean turns the PRD into structured context, and v0 translates it into pages, components, and flows that align with the spec.

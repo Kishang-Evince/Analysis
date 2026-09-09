@@ -1,4 +1,4 @@
-# Field 2 — License Structure Details
+# Field 2 - License Structure Details
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [License Structure Details.md](../../../Glean/Combined/4.9.7 Pricing & TCO/License Structure Details.md)

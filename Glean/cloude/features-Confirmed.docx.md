@@ -1,5 +1,5 @@
 **Glean Tier 3 Advanced Evaluation**  
-**Features Confirmed — Full List**
+**Features Confirmed - Full List**
 
 *Every Glean capability independently confirmed through hands-on SDK testing and official documentation review (Section 4.10.1, "Features Confirmed")*
 

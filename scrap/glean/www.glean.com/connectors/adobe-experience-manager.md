@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:41.586Z"
 ---
 ### Overview
 
-Adobe Experience Manager (AEM) provides an enterprise platform for digital experiences across audiences and channels. Connecting Glean to AEM enables you to search all of your organization's digital assets — from web, to mobile, to apps — while maintaining user access permissions.
+Adobe Experience Manager (AEM) provides an enterprise platform for digital experiences across audiences and channels. Connecting Glean to AEM enables you to search all of your organization's digital assets - from web, to mobile, to apps - while maintaining user access permissions.
 
 ### Features
 

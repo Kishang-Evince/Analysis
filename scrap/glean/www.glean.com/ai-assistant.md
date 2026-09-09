@@ -171,7 +171,7 @@ Work execution
 
 ## Delegate work and take action from Assistant.
 
-Assistant helps you complete work across your systems without switching apps — from updating records to troubleshooting code.
+Assistant helps you complete work across your systems without switching apps - from updating records to troubleshooting code.
 
 [
 

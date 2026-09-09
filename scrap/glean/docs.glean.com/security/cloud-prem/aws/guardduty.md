@@ -13,9 +13,9 @@ Glean supports [AWS GuardDuty](https://aws.amazon.com/guardduty/features/) as an
 
 The following [GuardDuty foundational data sources](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html) work with Glean:
 
--   **CloudTrail management event analysis** — provides visibility into how AWS API calls are used in the account, including detections for suspicious API usage and some IAM credential exfiltration. See the [IAM finding types](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.html).
--   **Network intrusion detection (NIDS) via VPC Flow Log analysis** — detects suspicious network activity that can indicate a compromise, such as instances communicating with command-and-control systems. You do not need to enable VPC Flow Logs. GuardDuty manages this automatically. See the [EC2 finding types](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.html).
--   **DNS log analysis** — detects DNS queries that suggest instances are communicating with suspicious systems. See the [EC2 finding types](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.html).
+-   **CloudTrail management event analysis** - provides visibility into how AWS API calls are used in the account, including detections for suspicious API usage and some IAM credential exfiltration. See the [IAM finding types](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.html).
+-   **Network intrusion detection (NIDS) via VPC Flow Log analysis** - detects suspicious network activity that can indicate a compromise, such as instances communicating with command-and-control systems. You do not need to enable VPC Flow Logs. GuardDuty manages this automatically. See the [EC2 finding types](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.html).
+-   **DNS log analysis** - detects DNS queries that suggest instances are communicating with suspicious systems. See the [EC2 finding types](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.html).
 
 ## Enable GuardDuty[​](#enable-guardduty "Direct link to Enable GuardDuty")
 

@@ -1,4 +1,4 @@
-# Field 4 — Partner Support & Enablement
+# Field 4 - Partner Support & Enablement
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Partner Support & Enablement.md](../../../Glean/Combined/4.9.8 Partner & Channel Program/Partner Support & Enablement.md)

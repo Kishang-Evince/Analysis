@@ -19,9 +19,9 @@ Public Mode is configured per channel by your Glean admin. To request that Publi
 
 When Public Mode is enabled in a channel:
 
--   **Replies are visible to everyone** — Glean's responses appear in the Slack channel thread where all members can see them.
+-   **Replies are visible to everyone** - Glean's responses appear in the Slack channel thread where all members can see them.
 -   **Replies are triggered** by a direct `@Glean` mention or automatically when Glean detects a question.
--   **Answers use broadly shared content** — Glean generates public replies using only content that is broadly shared across your organization, such as public documents, org-wide wiki pages, and public Slack channel messages.
+-   **Answers use broadly shared content** - Glean generates public replies using only content that is broadly shared across your organization, such as public documents, org-wide wiki pages, and public Slack channel messages.
 
 ## What content is used[​](#what-content-is-used "Direct link to What content is used")
 

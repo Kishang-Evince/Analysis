@@ -2,12 +2,12 @@
 url: "https://developers.glean.com/api-info/indexing/custom-metadata/overview"
 canonical: "https://developers.glean.com/api-info/indexing/custom-metadata/overview"
 title: "Overview | Glean Developer"
-description: "The Custom Metadata API attaches structured metadata to any document already indexed in Glean — regardless of which datasource it came from. Unlike Custom Properties, which are tied to a custom datasource and require re-uploading the entire document, Custom Metadata can be updated independently and applied to documents from any source (native connectors, custom datasources, etc.)."
+description: "The Custom Metadata API attaches structured metadata to any document already indexed in Glean - regardless of which datasource it came from. Unlike Custom Properties, which are tied to a custom datasource and require re-uploading the entire document, Custom Metadata can be updated independently and applied to documents from any source (native connectors, custom datasources, etc.)."
 fetched_at: "2026-09-01T13:22:50.416Z"
 ---
 On this page
 
-The Custom Metadata API attaches structured metadata to any document already indexed in Glean — regardless of which datasource it came from. Unlike [Custom Properties](/api-info/indexing/datasource/custom-properties), which are tied to a custom datasource and require re-uploading the entire document, Custom Metadata can be updated independently and applied to documents from any source (native connectors, custom datasources, etc.).
+The Custom Metadata API attaches structured metadata to any document already indexed in Glean - regardless of which datasource it came from. Unlike [Custom Properties](/api-info/indexing/datasource/custom-properties), which are tied to a custom datasource and require re-uploading the entire document, Custom Metadata can be updated independently and applied to documents from any source (native connectors, custom datasources, etc.).
 
 For guidance on which approach fits your use case, see [Custom Properties vs Custom Metadata](/api-info/indexing/custom-metadata/custom-properties-vs-custom-metadata).
 

@@ -36,9 +36,9 @@
 
 ### Verification steps / test case
 
-1. Score prospect — any **High** mismatch signal = flag in advisory.
-2. Notion discovery: "Who can see pages shared with Glean integration?" — if answer is "everyone" for sensitive content, worst fit.
-3. Count connected apps — if <10 and single suite, recommend native AI.
+1. Score prospect - any **High** mismatch signal = flag in advisory.
+2. Notion discovery: "Who can see pages shared with Glean integration?" - if answer is "everyone" for sensitive content, worst fit.
+3. Count connected apps - if <10 and single suite, recommend native AI.
 4. Document walk-away criteria for Stratos sales qualification.
 
 **Risk & Cost Impact:** Risk: **High** if forced into worst-fit (failed deployment, reputational) | Cost: Wasted PS + license

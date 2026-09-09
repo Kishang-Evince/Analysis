@@ -63,7 +63,7 @@ Not sure which to use? Start with a conversation. If the issue needs to be escal
 
 ## Feedback[​](#feedback "Direct link to Feedback")
 
-Submit a feature request or product feedback on the [Feedback and Ideas](https://community.glean.com/home/forum/boards/feedback-and-ideas-6ah) board in the Gleaniverse. You can also reach Glean Support by emailing [help@glean.com](mailto:help@glean.com) — the AI assistant triages first and hands off to a human agent for Designated Support Contacts.
+Submit a feature request or product feedback on the [Feedback and Ideas](https://community.glean.com/home/forum/boards/feedback-and-ideas-6ah) board in the Gleaniverse. You can also reach Glean Support by emailing [help@glean.com](mailto:help@glean.com) - the AI assistant triages first and hands off to a human agent for Designated Support Contacts.
 
 ## FAQ[​](#faq "Direct link to FAQ")
 

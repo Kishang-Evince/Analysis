@@ -17,7 +17,7 @@ Glean stores both keys in one service credential and sends them as separate head
 
 note
 
-This template is in private beta — it's only available once Glean enables it for your deployment. If you don't see it in the MCP server catalog, reach out to Glean to have it turned on.
+This template is in private beta - it's only available once Glean enables it for your deployment. If you don't see it in the MCP server catalog, reach out to Glean to have it turned on.
 
 This template defaults to the US1 Datadog site (`app.datadoghq.com`). If your org is on a different site, add `;DD_SITE=<site>` to the key field (see Step 4) so requests route to your region. Keys are region-bound, so the keys must come from the same site you set.
 
@@ -30,7 +30,7 @@ This template defaults to the US1 Datadog site (`app.datadoghq.com`). If your or
 
 ## Step 1: Create a service account[​](#step-1-create-a-service-account "Direct link to Step 1: Create a service account")
 
-A service account is a non-human, admin-managed Datadog account — the right identity for a shared MCP connection, since its credentials aren't tied to any individual's login. Creating one requires admin privileges.
+A service account is a non-human, admin-managed Datadog account - the right identity for a shared MCP connection, since its credentials aren't tied to any individual's login. Creating one requires admin privileges.
 
 1.  In Datadog, go to **Organization Settings**, and under **Accounts** choose **Service Accounts**.
 2.  Click **New Service Account**, then give it a name (for example, "Glean MCP") and an email address.
@@ -40,10 +40,10 @@ A service account is a non-human, admin-managed Datadog account — the right id
 
 Datadog gates MCP access with dedicated RBAC permissions:
 
--   **MCP Read** — required for read operations (querying logs, metrics, traces, monitors, dashboards, incidents).
--   **MCP Write** — required only if your agents should perform mutating operations.
+-   **MCP Read** - required for read operations (querying logs, metrics, traces, monitors, dashboards, incidents).
+-   **MCP Write** - required only if your agents should perform mutating operations.
 
-Assign these to a role held by the service account. Grant the least privilege your agents actually need — MCP Read alone for read-only use. Individual tools also require the matching resource permission (for example, Monitors Read, APM Read).
+Assign these to a role held by the service account. Grant the least privilege your agents actually need - MCP Read alone for read-only use. Individual tools also require the matching resource permission (for example, Monitors Read, APM Read).
 
 note
 
@@ -53,9 +53,9 @@ If you don't see the MCP Read / MCP Write scopes, your org may not be enrolled i
 
 The MCP server needs both a Datadog API key (identifies the org) and an Application key (identifies and scopes the caller).
 
-1.  **API key** — in **Organization Settings → API Keys**, use an existing key or create one. Copy its **Key value** (the secret), not the Key ID — Datadog shows both, but only the value authenticates.
+1.  **API key** - in **Organization Settings → API Keys**, use an existing key or create one. Copy its **Key value** (the secret), not the Key ID - Datadog shows both, but only the value authenticates.
     
-2.  **Application key** — open the service account from Step 1 to its side panel, click **\+ New Key**, give it a name, and click **Create Key**. Scope it to the minimum needed (least privilege). Important: Datadog displays both a **Key value** (the secret token) and a **Key ID** — you must copy and use the **Key value**. This value is shown only once — copy it immediately, as it cannot be retrieved later.
+2.  **Application key** - open the service account from Step 1 to its side panel, click **\+ New Key**, give it a name, and click **Create Key**. Scope it to the minimum needed (least privilege). Important: Datadog displays both a **Key value** (the secret token) and a **Key ID** - you must copy and use the **Key value**. This value is shown only once - copy it immediately, as it cannot be retrieved later.
     
 
 caution

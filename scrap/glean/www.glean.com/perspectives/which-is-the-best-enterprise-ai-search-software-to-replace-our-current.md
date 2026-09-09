@@ -75,9 +75,9 @@ Enterprise knowledge is scattered across disconnected tools: Slack, Confluence, 
 
 Keyword search returns documents *containing* your terms, not *answers* to your question. You still have to open each result and read through it. Worse, terminology mismatches cause silent failures. A search for "offboarding checklist" returns nothing if the document is titled "employee exit process." The system doesn't understand they mean the same thing.
 
-This fragmentation creates a predictable failure pattern. Employees interrupt colleagues, search across tabs in multiple tools, or decide without full context — the Microsoft 2025 Work Trend Index found that nearly half of employees (48%) say [their work feels chaotic and fragmented](https://www.microsoft.com/en-us/worklab/work-trend-index/breaking-down-infinite-workday), driven by information sprawl across apps. None of these scale.
+This fragmentation creates a predictable failure pattern. Employees interrupt colleagues, search across tabs in multiple tools, or decide without full context - the Microsoft 2025 Work Trend Index found that nearly half of employees (48%) say [their work feels chaotic and fragmented](https://www.microsoft.com/en-us/worklab/work-trend-index/breaking-down-infinite-workday), driven by information sprawl across apps. None of these scale.
 
-Maintaining search quality falls on IT: tagging, taxonomies, retiring stale content, managing permissions. This work gets deprioritized, indices go stale, and employees stop trusting results. The pattern is sometimes called "hunt and stitch" — finding scattered pieces of information and stitching them together manually.
+Maintaining search quality falls on IT: tagging, taxonomies, retiring stale content, managing permissions. This work gets deprioritized, indices go stale, and employees stop trusting results. The pattern is sometimes called "hunt and stitch" - finding scattered pieces of information and stitching them together manually.
 
 SharePoint stores files for human browsing, not machine retrieval. When you query a SharePoint library with AI, it may surface outdated PDFs, conflicting guides, and disorganized notes. Without native answer-verification workflows or answer-level audit trails, you get inconsistent or hallucinated responses.
 
@@ -119,7 +119,7 @@ A [knowledge graph](https://www.glean.com/enterprise-context/enterprise-graph) m
 
 Start by mapping your current tool landscape. List every application where knowledge lives: project trackers, CRMs, messaging apps, cloud storage, wikis, email, and any internal systems. Note user counts and flag non-negotiable integrations.
 
-Run a proof-of-concept with real employee queries. Use questions your teams actually ask — not synthetic benchmarks. Measure answer accuracy, source coverage, and response time. If the platform returns answers grounded in company data with correct citations, it passes the baseline. If it hallucinates or misses obvious sources, move on.
+Run a proof-of-concept with real employee queries. Use questions your teams actually ask - not synthetic benchmarks. Measure answer accuracy, source coverage, and response time. If the platform returns answers grounded in company data with correct citations, it passes the baseline. If it hallucinates or misses obvious sources, move on.
 
 Test permissions with users at different access levels. Have someone from engineering search for HR content they should not see. Have a manager search for restricted executive documents. Restricted content must never surface. This test is binary: the platform either enforces existing permissions dynamically or it does not.
 
@@ -143,7 +143,7 @@ Monitor new-hire ramp time. Onboarding accelerates when new employees can ask na
 
 ### Operational impact
 
-Support ticket deflection is measurable — Freshworks' 2025 Freshservice benchmark of thousands of IT teams found its AI agent could [deflect about 65% of tickets](https://www.freshworks.com/freshservice/benchmark-report-2025/). IT and HR teams field repetitive questions: VPN setup, expense policy, PTO requests, password resets. When employees can ask these questions directly and get accurate answers, ticket volume drops. Measure deflection rate by comparing ticket counts before and after rollout.
+Support ticket deflection is measurable - Freshworks' 2025 Freshservice benchmark of thousands of IT teams found its AI agent could [deflect about 65% of tickets](https://www.freshworks.com/freshservice/benchmark-report-2025/). IT and HR teams field repetitive questions: VPN setup, expense policy, PTO requests, password resets. When employees can ask these questions directly and get accurate answers, ticket volume drops. Measure deflection rate by comparing ticket counts before and after rollout.
 
 Knowledge reuse replaces knowledge recreation. Employees who previously rewrote policies, process docs, and templates now find and reuse existing versions. Track content duplication and creation rates to quantify the shift.
 
@@ -155,7 +155,7 @@ Audit permission enforcement consistency. The platform should never surface cont
 
 Track content freshness. Outdated documents in search results erode trust. A governance dashboard should flag stale content and surface gaps.
 
-Monitor queries returning no results. A high rate of zero-result queries signals undocumented knowledge — a risk for the organization and an opportunity for content teams.
+Monitor queries returning no results. A high rate of zero-result queries signals undocumented knowledge - a risk for the organization and an opportunity for content teams.
 
 ## How to plan your migration from SharePoint and Confluence search
 
@@ -183,11 +183,11 @@ Deployment ranges from days to months depending on the platform and environment.
 
 ### Do I need to move my files out of SharePoint or Confluence?
 
-No. Enterprise AI search connects to existing tools and indexes content where it lives. Documents remain in SharePoint, Confluence, and every other source system. The search layer sits on top — no data migration required.
+No. Enterprise AI search connects to existing tools and indexes content where it lives. Documents remain in SharePoint, Confluence, and every other source system. The search layer sits on top - no data migration required.
 
 ### What does enterprise AI search cost compared to native SharePoint or Confluence search?
 
-Native search is bundled with existing licenses at no incremental cost. Enterprise AI search is a separate per-seat investment. ROI rests on reclaimed productivity — if employees save hours each week, the investment pays back quickly.
+Native search is bundled with existing licenses at no incremental cost. Enterprise AI search is a separate per-seat investment. ROI rests on reclaimed productivity - if employees save hours each week, the investment pays back quickly.
 
 ### Can enterprise AI search handle sensitive or regulated data?
 

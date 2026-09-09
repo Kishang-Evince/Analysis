@@ -63,32 +63,32 @@ Share this article:
 
 # How to handle data migration errors during AI platform setup
 
-Data migration errors during an AI platform setup can stall deployments, compromise data integrity, and erode trust in the systems teams depend on daily. Over 80% of data migration projects run over time or budget — not because teams lack effort, but because migrations are deceptively complex, with risks that range from silent data loss to permission failures that surface weeks after go-live.
+Data migration errors during an AI platform setup can stall deployments, compromise data integrity, and erode trust in the systems teams depend on daily. Over 80% of data migration projects run over time or budget - not because teams lack effort, but because migrations are deceptively complex, with risks that range from silent data loss to permission failures that surface weeks after go-live.
 
-The stakes compound when AI is the destination. Every duplicate record, broken permission mapping, or missing parent-child relationship doesn't just affect operational continuity — it degrades the quality of every AI-generated answer, recommendation, and workflow downstream. A migration defect becomes an AI accuracy problem.
+The stakes compound when AI is the destination. Every duplicate record, broken permission mapping, or missing parent-child relationship doesn't just affect operational continuity - it degrades the quality of every AI-generated answer, recommendation, and workflow downstream. A migration defect becomes an AI accuracy problem.
 
-This guide provides a practical framework for preventing, detecting, and resolving data migration errors throughout an AI platform setup. It covers planning, guardrails, real-time troubleshooting, and post-migration validation — all grounded in data migration best practices tailored to enterprise AI environments.
+This guide provides a practical framework for preventing, detecting, and resolving data migration errors throughout an AI platform setup. It covers planning, guardrails, real-time troubleshooting, and post-migration validation - all grounded in data migration best practices tailored to enterprise AI environments.
 
 ## What is handling data migration errors during an AI platform setup?
 
-Handling data migration errors during an AI platform setup is the discipline of preventing, detecting, and resolving issues that arise while enterprise data moves into a new AI-ready environment — without breaking access controls, losing records, or disrupting the teams that rely on that data every day. It combines structured planning, technical safeguards, real-time troubleshooting, and rigorous validation into a single, repeatable process.
+Handling data migration errors during an AI platform setup is the discipline of preventing, detecting, and resolving issues that arise while enterprise data moves into a new AI-ready environment - without breaking access controls, losing records, or disrupting the teams that rely on that data every day. It combines structured planning, technical safeguards, real-time troubleshooting, and rigorous validation into a single, repeatable process.
 
-The goal is not zero errors. That expectation is unrealistic for any migration of meaningful scale. The goal is fast detection, contained blast radius, and a clear path to recovery. When a schema mismatch causes field truncation in a batch of CRM records, the system should catch it before downstream pipelines consume corrupted data. When a permission mapping fails for an entire department's shared drive, the response should be immediate isolation — not a discovery three weeks later when an employee sees content they were never authorized to access.
+The goal is not zero errors. That expectation is unrealistic for any migration of meaningful scale. The goal is fast detection, contained blast radius, and a clear path to recovery. When a schema mismatch causes field truncation in a batch of CRM records, the system should catch it before downstream pipelines consume corrupted data. When a permission mapping fails for an entire department's shared drive, the response should be immediate isolation - not a discovery three weeks later when an employee sees content they were never authorized to access.
 
 ### Why AI platform migrations carry double the risk
 
 In a traditional platform migration, an error affects operational continuity: a missing table breaks a report, a failed export leaves a gap in the archive. In an AI platform data transfer, every error affects two layers simultaneously:
 
 -   **Operational continuity**: Teams lose access to the documents, tickets, knowledge base articles, and conversation histories they need to do their jobs. Support agents can't trace customer history. Engineers can't find runbooks. HR can't locate policy documents.
--   **Downstream AI quality**: AI systems that rely on retrieval — whether for search, chat-based assistants, or automated workflows — inherit every flaw in the underlying data. Duplicates inflate results and confuse ranking. Missing records create blind spots. Broken permissions either block legitimate access or, worse, expose restricted content. Even a strong model produces poor answers when the data it draws from is incomplete, stale, or incorrectly scoped.
+-   **Downstream AI quality**: AI systems that rely on retrieval - whether for search, chat-based assistants, or automated workflows - inherit every flaw in the underlying data. Duplicates inflate results and confuse ranking. Missing records create blind spots. Broken permissions either block legitimate access or, worse, expose restricted content. Even a strong model produces poor answers when the data it draws from is incomplete, stale, or incorrectly scoped.
 
 This dual exposure means data migration risk management for AI platforms must account for more than record counts and transfer speeds. It must also protect the provenance, freshness, and permission boundaries that determine whether AI outputs are trustworthy.
 
 ### The security dimension most teams underestimate
 
-AI platform migrations are also security changes. They introduce new connectors, new indexing stores, new permission enforcement paths, and new service accounts with broad read access across enterprise systems. A connector misconfiguration that silently expands access — indexing a restricted repository as if it were public, or flattening nested group permissions during mapping — turns a migration defect into a security incident.
+AI platform migrations are also security changes. They introduce new connectors, new indexing stores, new permission enforcement paths, and new service accounts with broad read access across enterprise systems. A connector misconfiguration that silently expands access - indexing a restricted repository as if it were public, or flattening nested group permissions during mapping - turns a migration defect into a security incident.
 
-Effective error handling aligns with a broader AI security posture: governance over who can trigger migrations and reindexing, least-privilege scoping for service accounts, auditability of every permission mapping decision, and a clear incident response process when access boundaries drift. Treating these concerns as afterthoughts — something to "clean up after cutover" — is how organizations end up with months of undetected permission leakage baked into their AI platform's foundation.
+Effective error handling aligns with a broader AI security posture: governance over who can trigger migrations and reindexing, least-privilege scoping for service accounts, auditability of every permission mapping decision, and a clear incident response process when access boundaries drift. Treating these concerns as afterthoughts - something to "clean up after cutover" - is how organizations end up with months of undetected permission leakage baked into their AI platform's foundation.
 
 ## How to handle data migration errors during an AI platform setup
 
@@ -102,7 +102,7 @@ Use three outcome targets to shape every tradeoff and every retry:
 
 -   **Minimal downtime**: Set explicit RTO and RPO per domain (support tickets, HR policies, engineering runbooks). Use staged loads plus resume capability so one failure does not force a full restart.
 -   **Preserved security and permissions**: Keep access parity as a testable requirement, not a promise. Validate role and group resolution in the target before any broad backfill that touches sensitive repositories.
--   **Trusted results**: Prove correctness with reconciliation that reflects business reality—counts by partition, value checks on key fields, and integrity checks across parent-child structures.
+-   **Trusted results**: Prove correctness with reconciliation that reflects business reality-counts by partition, value checks on key fields, and integrity checks across parent-child structures.
 
 ### Define “error” before the first run
 
@@ -166,7 +166,7 @@ Treat assistant readiness as a measurable migration property, not as a post-cuto
 
 Operationalize these checks during execution:
 
--   **Provenance stability**: verify that source references resolve consistently after import—document IDs, ticket IDs, and file URLs must map cleanly across systems.
+-   **Provenance stability**: verify that source references resolve consistently after import-document IDs, ticket IDs, and file URLs must map cleanly across systems.
 -   **Freshness control**: set domain-level lag targets and alert thresholds; sync lag often tracks back to throttle behavior, timeout settings, or backlog growth.
 -   **Permission-aware retrieval tests**: run scripted access tests with representative users and groups; fail closed on ambiguity until mapping parity is proven.
 -   **Assistant-grade validation set**: maintain a small set of high-value queries tied to critical workflows, then track pass/fail per batch as a migration health signal.
@@ -190,7 +190,7 @@ In connector-heavy setups, the highest-frequency root cause is weak “failure a
 
 ### How can I prevent data loss during migration?
 
-Prevention depends on two safeguards that teams often skip: explicit “reject accounting” and pre-flight profiling of edge cases. Data loss usually occurs as silent drop behavior—bad rows discarded, oversized files ignored, or conversion failures hidden behind a “job complete” status.
+Prevention depends on two safeguards that teams often skip: explicit “reject accounting” and pre-flight profiling of edge cases. Data loss usually occurs as silent drop behavior-bad rows discarded, oversized files ignored, or conversion failures hidden behind a “job complete” status.
 
 Controls that prevent silent loss without slowing execution:
 
@@ -229,7 +229,7 @@ Tool features that consistently reduce time to resolution:
 -   **Cloud storage retry primitives**: upload/download clients with exponential backoff, jitter, and clear retryable vs non-retryable status classification; this matters when large object transfers hit transient network issues.
 -   **Pipeline controls that isolate malformed inputs**: ingestion systems that can route malformed rows or unsupported formats into a quarantine path with raw payload retention, rather than fail the entire load or drop the record.
 
-Connector-heavy environments also benefit from platforms that demonstrate permission fidelity under real enterprise constructs—nested groups, inherited access, and link-based sharing—along with admin-visible failure modes.
+Connector-heavy environments also benefit from platforms that demonstrate permission fidelity under real enterprise constructs-nested groups, inherited access, and link-based sharing-along with admin-visible failure modes.
 
 ### How do I validate data integrity post-migration?
 
@@ -239,14 +239,14 @@ High-signal validation techniques that catch these defects:
 
 -   **Type and format audits on critical business fields**: verify currency scale, date normalization, time zone handling, and ID fidelity on a representative slice. A single scale error can invalidate financial summaries while leaving totals intact.
 -   **Deduplication behavior verification**: confirm that the target system’s dedup rules align with the source’s method. Differences in hash calculation inputs can reintroduce duplicates or collapse distinct items.
--   **Side-by-side workflow replay**: run a fixed set of business workflows (case reconstruction, policy lookup, incident review) in both systems and compare the artifacts users rely on—attachments, internal notes, and ordering.
+-   **Side-by-side workflow replay**: run a fixed set of business workflows (case reconstruction, policy lookup, incident review) in both systems and compare the artifacts users rely on-attachments, internal notes, and ordering.
 -   **Reject and quarantine closure rate**: track how many rejected items remain unresolved after each validation cycle. A growing queue signals persistent upstream drift or a parser limitation that needs a rule change.
 
 For AI readiness, include provenance tests that verify stable source references and consistent visibility under real roles for sensitive domains.
 
 ### How do migration errors increase the "AI tax"?
 
-The “AI tax” increases when defects force recurring operational work: repeated replay cycles, manual fixes for rejected content, and additional compute spend for reprocessing. Costs also appear in less visible places—API quotas, data egress, storage inflation, and audit overhead when access anomalies require investigation.
+The “AI tax” increases when defects force recurring operational work: repeated replay cycles, manual fixes for rejected content, and additional compute spend for reprocessing. Costs also appear in less visible places-API quotas, data egress, storage inflation, and audit overhead when access anomalies require investigation.
 
 Common cost multipliers that tie directly to migration defects:
 
@@ -255,11 +255,11 @@ Common cost multipliers that tie directly to migration defects:
 -   **Storage bloat**: duplicate objects and repeated intermediate copies inflate storage and backup footprints.
 -   **Incident load**: each unresolved access or correctness defect adds support time across IT, security, and business teams, which slows adoption and increases operational drag.
 
-A cost-aware error plan treats every replay, reindex, and scope change as a measurable expense item—with guardrails that favor narrow repair over repeated full reruns.
+A cost-aware error plan treats every replay, reindex, and scope change as a measurable expense item-with guardrails that favor narrow repair over repeated full reruns.
 
-Migration errors during AI platform setup are inevitable — but with the right planning, guardrails, and validation techniques, they become manageable events rather than project-derailing crises. The difference between a smooth deployment and a prolonged stabilization period almost always comes down to how well teams anticipate failure modes and how quickly they can isolate, fix, and verify.
+Migration errors during AI platform setup are inevitable - but with the right planning, guardrails, and validation techniques, they become manageable events rather than project-derailing crises. The difference between a smooth deployment and a prolonged stabilization period almost always comes down to how well teams anticipate failure modes and how quickly they can isolate, fix, and verify.
 
-If you're ready to move beyond fragmented tools and build a unified AI foundation that works with your data — not against it — [request a demo](https://www.glean.com/get-a-demo) to explore how we can help transform your workplace.
+If you're ready to move beyond fragmented tools and build a unified AI foundation that works with your data - not against it - [request a demo](https://www.glean.com/get-a-demo) to explore how we can help transform your workplace.
 
 [
 

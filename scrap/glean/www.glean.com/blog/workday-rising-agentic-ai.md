@@ -81,13 +81,13 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-[Workday Rising](https://rising.workday.com/us.html) is almost here, and we’re excited for the Workday team — and to see our shared vision come to life at the conference. [HR](https://www.glean.com/solutions/people) and [finance](https://www.glean.com/blog/8-finance-ai-agents) leaders are ready to see practical AI in action. That’s exactly what Glean and Workday are bringing to Workday Rising. From approvals and time off to performance cycles and workforce planning, the path from question to outcome gets shorter when agents work together across enterprise systems.
+[Workday Rising](https://rising.workday.com/us.html) is almost here, and we’re excited for the Workday team - and to see our shared vision come to life at the conference. [HR](https://www.glean.com/solutions/people) and [finance](https://www.glean.com/blog/8-finance-ai-agents) leaders are ready to see practical AI in action. That’s exactly what Glean and Workday are bringing to Workday Rising. From approvals and time off to performance cycles and workforce planning, the path from question to outcome gets shorter when agents work together across enterprise systems.
 
 ## AI that works for HR and finance teams
 
 The most impactful AI for HR and finance does three things well: it understands context across systems, it performs tasks where people already work, and it respects enterprise controls. That’s the goal  of connected AI agents from Glean and Workday.
 
-By centralizing  Glean’s enterprise-wide understanding of work in the [Workday Agent System of Record](https://www.workday.com/en-us/artificial-intelligence/agent-system-of-record.html?refCamp=7014X000002uUGj), employees will be able to complete everyday actions with more context and fewer steps. For example, when a manager needs to reassign work for someone on unexpected leave, they can ask the Glean agent inside Workday Assistant for that person’s active projects and dependencies — no switching tools, no outdated docs.
+By centralizing  Glean’s enterprise-wide understanding of work in the [Workday Agent System of Record](https://www.workday.com/en-us/artificial-intelligence/agent-system-of-record.html?refCamp=7014X000002uUGj), employees will be able to complete everyday actions with more context and fewer steps. For example, when a manager needs to reassign work for someone on unexpected leave, they can ask the Glean agent inside Workday Assistant for that person’s active projects and dependencies - no switching tools, no outdated docs.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/68c49b44eb5426708e3af328_Glean%20Workday%20employee%20leave.png)
 
@@ -104,7 +104,7 @@ Glean’s partnership with Workday will be on display at Workday Rising this yea
 
 **Agent demo:** Our partnership will be highlighted in the Workday Experience PSV. See a Glean agent surface an employee’s project details from within Workday, so a manager can take action instantly with current context from the broader work graph.
 
-**Glean table:** Visit us in the Ventures Zone to see our agent workflows in action and hear how customers are planning to deploy agent workflows across HR and finance — securely and at scale.
+**Glean table:** Visit us in the Ventures Zone to see our agent workflows in action and hear how customers are planning to deploy agent workflows across HR and finance - securely and at scale.
 
 ### What Glean and Workday make possible
 
@@ -116,21 +116,21 @@ Glean and Workday will enable agents that act across systems, giving employees t
 
 #### Smarter agent interactions powered by enterprise-wide context
 
-Workday Illuminate Agents work hand in hand with Glean agents, which connect to the most widely used enterprise SaaS applications — communication, productivity, project management, and CRM tools. At the same time, Glean agents draw directly from Workday HR and finance data. Together, they deliver more complete and contextual responses by grounding agentic workflows in enterprise knowledge.
+Workday Illuminate Agents work hand in hand with Glean agents, which connect to the most widely used enterprise SaaS applications - communication, productivity, project management, and CRM tools. At the same time, Glean agents draw directly from Workday HR and finance data. Together, they deliver more complete and contextual responses by grounding agentic workflows in enterprise knowledge.
 
 #### Enterprise-grade security and governance
 
 All Glean and Workday Illuminate Agent interactions will be designed to respect existing identity systems, data permissions, and compliance frameworks. Whether it’s sensitive payroll data or company-wide policy, strict guardrails protect integrity and access.
 
-These aren’t hypotheticals — they reflect what customers are asking for: interoperable agent experiences that deliver in the flow of work. Glean and Workday are aligning on that future so you can move from reactive to proactive operations with technology that respects how your teams already work.
+These aren’t hypotheticals - they reflect what customers are asking for: interoperable agent experiences that deliver in the flow of work. Glean and Workday are aligning on that future so you can move from reactive to proactive operations with technology that respects how your teams already work.
 
 ### **The road ahead for HR and finance AI**
 
-This is only the beginning. The next wave of enterprise AI is agentic, connected, and governed. It’s less about chat and more about completing work — securely, with context, and inside the tools your teams rely on every day.
+This is only the beginning. The next wave of enterprise AI is agentic, connected, and governed. It’s less about chat and more about completing work - securely, with context, and inside the tools your teams rely on every day.
 
 This year’s Workday Rising is a milestone, not the finish line. Expect deeper interoperability between Workday and Glean, richer context in HR and Finance tasks, and expanded controls that keep security and governance front and center as agentic workflows scale.
 
-We’re energized by what’s possible — and by what customers are already asking for. We look forward to sharing more at Workday Rising and beyond.
+We’re energized by what’s possible - and by what customers are already asking for. We look forward to sharing more at Workday Rising and beyond.
 
 [
 

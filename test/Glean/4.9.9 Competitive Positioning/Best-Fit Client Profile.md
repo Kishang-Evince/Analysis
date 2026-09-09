@@ -1,4 +1,4 @@
-# Field 3 — Best-Fit Client Profile
+# Field 3 - Best-Fit Client Profile
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Best-Fit Client Profile.md](../../../Glean/Combined/4.9.9 Competitive Positioning/Best-Fit Client Profile.md)

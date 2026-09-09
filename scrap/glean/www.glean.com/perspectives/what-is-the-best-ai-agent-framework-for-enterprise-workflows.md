@@ -87,7 +87,7 @@ The evolution from traditional workflow automation to AI agent frameworks repres
 
 The architecture of modern AI agent frameworks goes beyond simple chatbot interactions or robotic process automation. These systems incorporate sophisticated memory mechanisms that allow agents to maintain context across sessions, understanding not just the current request but the full history of interactions with a customer or process. They employ function calling to interact with external tools and systems, enabling them to retrieve real-time data, execute transactions, and coordinate across multiple platforms simultaneously.
 
-What truly distinguishes enterprise-grade frameworks is their ability to handle the complexity and scale of real business operations. A customer service agent built on these platforms can simultaneously manage chat conversations, analyze sentiment, search knowledge bases, create support tickets, and escalate to human agents when necessary — all while maintaining compliance with data privacy regulations and company policies. This orchestration happens through sophisticated routing logic, state management, and error handling that ensures reliability even when dealing with thousands of concurrent requests.
+What truly distinguishes enterprise-grade frameworks is their ability to handle the complexity and scale of real business operations. A customer service agent built on these platforms can simultaneously manage chat conversations, analyze sentiment, search knowledge bases, create support tickets, and escalate to human agents when necessary - all while maintaining compliance with data privacy regulations and company policies. This orchestration happens through sophisticated routing logic, state management, and error handling that ensures reliability even when dealing with thousands of concurrent requests.
 
 The evolution from traditional workflow automation to AI agent frameworks represents a fundamental shift in how enterprises approach digital transformation. Where RPA tools excel at repetitive, structured tasks, AI agents thrive in environments requiring judgment, creativity, and adaptation. They bridge the gap between human intuition and machine efficiency, creating a new category of digital labor that enhances rather than replaces human workers.
 
@@ -99,7 +99,7 @@ Enterprise AI agent frameworks excel with a focus on modularity, allowing seamle
 
 ### Enterprise-grade security
 
-Security remains a cornerstone for AI deployment in enterprises. Advanced frameworks incorporate robust encryption, access controls, and comprehensive audit capabilities. These features ensure adherence to industry regulations, protecting sensitive data and maintaining enterprise trust—a critical requirement for compliance-heavy sectors.
+Security remains a cornerstone for AI deployment in enterprises. Advanced frameworks incorporate robust encryption, access controls, and comprehensive audit capabilities. These features ensure adherence to industry regulations, protecting sensitive data and maintaining enterprise trust-a critical requirement for compliance-heavy sectors.
 
 ### Observability and monitoring
 
@@ -215,7 +215,7 @@ When expanding deployment, establish solid governance practices to guide the sca
 
 Implement a gradual rollout with defined success benchmarks to manage growth effectively. Continuous monitoring and evaluation will provide insights into performance and areas for improvement, ensuring the AI framework remains aligned with evolving business objectives. Equip your team with ongoing training and detailed documentation to foster innovation and adaptability, maximizing the framework's potential impact.
 
-The journey to implementing AI agents in your enterprise starts with selecting the right framework — one that balances power, flexibility, and security while meeting your unique business needs. As you evaluate your options, remember that successful AI adoption isn't just about technology; it's about finding solutions that empower your teams to work smarter and deliver exceptional results. We invite you to [request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) and discover how our platform can help you build the intelligent, connected enterprise of tomorrow.
+The journey to implementing AI agents in your enterprise starts with selecting the right framework - one that balances power, flexibility, and security while meeting your unique business needs. As you evaluate your options, remember that successful AI adoption isn't just about technology; it's about finding solutions that empower your teams to work smarter and deliver exceptional results. We invite you to [request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) and discover how our platform can help you build the intelligent, connected enterprise of tomorrow.
 
 [
 

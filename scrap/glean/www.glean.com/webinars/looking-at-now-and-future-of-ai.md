@@ -37,11 +37,11 @@ Solutions Engineer, Glean
 
 Work is scattered across too many tools, with employees toggling between apps up to 1,200 times per day and needing up to 23 minutes to regain focus because of context loss.  
 
-In this session, see how Glean brings Work AI into the flow of work so teams get trusted answers, automate repetitive steps, and graduate to agents that actually do work—over your company’s data and permissions.  
+In this session, see how Glean brings Work AI into the flow of work so teams get trusted answers, automate repetitive steps, and graduate to agents that actually do work-over your company’s data and permissions.  
 
 **What you’ll learn about**‍
 
--   Work AI in action across Search, Assistant, and Agents—grounded in your knowledge and permissions to cut the toggle tax and speed up everyday work.  
+-   Work AI in action across Search, Assistant, and Agents-grounded in your knowledge and permissions to cut the toggle tax and speed up everyday work.  
 -   Practical agents you can replicate in your own engineering and sales organizations.
 -   The foundation that makes it safe and useful: a knowledge graph with semantic and permissions indexes powering cited answers and permission‑aware automation.  
 

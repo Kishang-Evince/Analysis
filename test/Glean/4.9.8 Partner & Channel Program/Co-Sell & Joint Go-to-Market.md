@@ -1,4 +1,4 @@
-# Field 5 — Co-Sell & Joint Go-to-Market
+# Field 5 - Co-Sell & Joint Go-to-Market
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Co-Sell & Joint Go-to-Market.md](../../../Glean/Combined/4.9.8 Partner & Channel Program/Co-Sell & Joint Go-to-Market.md)

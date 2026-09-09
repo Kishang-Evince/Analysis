@@ -2,14 +2,14 @@
 url: "https://developers.glean.com/cookbook"
 canonical: "https://developers.glean.com/cookbook"
 title: "Cookbook | Glean Developer"
-description: "Recipes for building on Glean — every recipe includes the problem, architecture, prerequisites, runnable code, auth and permissions, and how to push it further."
+description: "Recipes for building on Glean - every recipe includes the problem, architecture, prerequisites, runnable code, auth and permissions, and how to push it further."
 fetched_at: "2026-09-01T13:23:00.043Z"
 ---
 Cookbooks
 
 # Recipes for building on Glean
 
-Runnable patterns that go from problem to a working demo to scaffolded starter code — with the architecture, auth, and permissions laid out for each.
+Runnable patterns that go from problem to a working demo to scaffolded starter code - with the architecture, auth, and permissions laid out for each.
 
 Featured · Beginner
 
@@ -83,7 +83,7 @@ Combine capabilities into useful employee and customer workflows while keeping c
 
 Customer 360: an account page built from your own content
 
-One page per account — status, risks, and a drill-in chat — assembled from whatever your instance already knows about that customer. No CRM export, no separate index.
+One page per account - status, risks, and a drill-in chat - assembled from whatever your instance already knows about that customer. No CRM export, no separate index.
 
 ~1 hr·IntermediatePlatform API
 

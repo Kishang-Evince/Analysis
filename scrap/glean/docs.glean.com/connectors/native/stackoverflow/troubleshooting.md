@@ -9,7 +9,7 @@ On this page
 
 ## No Items Indexed for Stack Overflow Connector[​](#no-items-indexed-for-stack-overflow-connector "Direct link to No Items Indexed for Stack Overflow Connector")
 
-Please check the **Tags** configuration in your Stack Overflow connector. The tag filter uses logical AND—only questions that contain *all* specified tags are eligible for crawling. If you’ve listed more than a few tags, it’s common to see no results because questions will rarely include every tag in the list.
+Please check the **Tags** configuration in your Stack Overflow connector. The tag filter uses logical AND-only questions that contain *all* specified tags are eligible for crawling. If you’ve listed more than a few tags, it’s common to see no results because questions will rarely include every tag in the list.
 
 To increase coverage, reduce the number of tags (for example, start with one or two key tags) and expand only as needed.
 

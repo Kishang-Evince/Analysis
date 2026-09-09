@@ -30,7 +30,7 @@ July 29, 2026
 
 ### Enterprise context starts with indexing, but it doesn’t end there
 
-Indexing improves accuracy, latency, and token efficiency. Learn what makes an enterprise index work — and why AI needs more than retrieval.
+Indexing improves accuracy, latency, and token efficiency. Learn what makes an enterprise index work - and why AI needs more than retrieval.
 
 ![Joel McKelvey](https://cdn.prod.website-files.com/613513981b0efaf850830620/67e61f3a856f1cf6c78c5e5f_Joel%20McKelvey.jpg)
 

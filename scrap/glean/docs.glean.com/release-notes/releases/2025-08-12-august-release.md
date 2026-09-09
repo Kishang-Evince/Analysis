@@ -97,7 +97,7 @@ Admin Capabilities *FR-3608*
 
 #### Sunsetting of Bing for web search and automated migration of customers to Brave and OpenAI providers[​](#sunsetting-of-bing-for-web-search-and-automated-migration-of-customers-to-brave-and-openai-providers "Direct link to Sunsetting of Bing for web search and automated migration of customers to Brave and OpenAI providers")
 
-Bing will retire its Search APIs from the Azure Marketplace on August 11, 2025. To ensure continued service, we will automatically migrate all customers currently using Bing to the Brave and OpenAI action packs—both of which feature zero data retention. This migration will start on July 16, 2025, and is expected to be completed by August 8, 2025.
+Bing will retire its Search APIs from the Azure Marketplace on August 11, 2025. To ensure continued service, we will automatically migrate all customers currently using Bing to the Brave and OpenAI action packs-both of which feature zero data retention. This migration will start on July 16, 2025, and is expected to be completed by August 8, 2025.
 
 [Learn more](/tools/glean/web-search#configuration)
 

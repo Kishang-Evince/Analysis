@@ -15,8 +15,8 @@
 
 **Field definition:** Legacy tools, siloed indexes, or manual pipelines this platform directly replaces.  
 **Prerequisites / Licensing:** Client current-state architecture interview.  
-**Displacement map (Doc-Verified / synthesis):** Federated search, shadow ChatGPT uploads, per-app search bars — **not** full Copilot/EHR/CRM replacement.  
-**Client displacement list (Pending):** _TBD — name legacy tools in each prospect environment_  
+**Displacement map (Doc-Verified / synthesis):** Federated search, shadow ChatGPT uploads, per-app search bars - **not** full Copilot/EHR/CRM replacement.  
+**Client displacement list (Pending):** _TBD - name legacy tools in each prospect environment_  
 **Confidence Level:** **Medium** (pattern strong; client-specific tools TBD)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [M365 vs native comparison](https://www.glean.com/perspectives/how-does-enterprise-ai-software-compare-to-microsoft-copilot-or-googles-native) · [Compliance vs ChatGPT Enterprise](https://www.glean.com/perspectives/understanding-gleans-compliance-features-compared-to-chatgpt-enterprise) · [Life sciences complement blog](https://www.glean.com/blog/ai-in-life-sciences) · Cross-ref [4.9.1 Field 7](../4.9.1%20Functional%20Capabilities/Overview.md) (Go Links/Answers)
@@ -37,16 +37,16 @@
 
 | System | Relationship |
 |---|---|
-| **Microsoft Copilot** (Teams/Outlook/Office authoring) | Coexist — Glean searches, Copilot drafts in-app |
-| **EHR / CRM / ERP** | System of record — Glean retrieves, does not replace |
+| **Microsoft Copilot** (Teams/Outlook/Office authoring) | Coexist - Glean searches, Copilot drafts in-app |
+| **EHR / CRM / ERP** | System of record - Glean retrieves, does not replace |
 | **Notion / Drive as authoring tools** | Content stays in source; Glean indexes |
 | **ITSM / ticketing** | Out of tenant stack; may coexist via future connectors |
 
 ### Verification steps / test case
 
-1. Client workshop: list current search tools — map each to Displace / Coexist / Keep.
+1. Client workshop: list current search tools - map each to Displace / Coexist / Keep.
 2. Quantify time spent "hunting" across apps (baseline for ROI).
-3. Identify one legacy search tool to retire in pilot — measure post-Glean usage.
+3. Identify one legacy search tool to retire in pilot - measure post-Glean usage.
 4. Document named displacement for Perimeter (e.g., intranet search, shared drive hunt).
 
 **Risk & Cost Impact:** Risk: Low | Cost: Retire legacy = license savings offset

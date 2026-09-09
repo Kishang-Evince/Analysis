@@ -215,7 +215,7 @@ Our early versions of trace learning only stored deployment-level strategies so 
 
 Trace learning is a key step toward making agents that improve with experience. By learning from real executions, agents move beyond one-off task completion and start accumulating practical knowledge about what works, what fails, and how to approach similar problems more effectively over time.
 
-But traces aren’t limited to agent runs. They also exist across enterprise systems as records of how work actually gets done, spanning documents, actions, and interactions across tools. The next step is connecting these layers. Agent traces show how tasks are executed, while enterprise traces show how work flows across the organization. Together, they open the door to a deeper understanding of workflows — that’s where [context graphs](https://www.glean.com/blog/how-do-you-build-a-context-graph) come in.
+But traces aren’t limited to agent runs. They also exist across enterprise systems as records of how work actually gets done, spanning documents, actions, and interactions across tools. The next step is connecting these layers. Agent traces show how tasks are executed, while enterprise traces show how work flows across the organization. Together, they open the door to a deeper understanding of workflows - that’s where [context graphs](https://www.glean.com/blog/how-do-you-build-a-context-graph) come in.
 
 Learn more about self-improving task execution by [booking a demo](https://www.glean.com/get-a-demo) today!
 

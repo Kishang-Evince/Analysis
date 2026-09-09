@@ -2,7 +2,7 @@
 url: "https://www.glean.com/mcp/slack"
 canonical: "https://www.glean.com/mcp/slack"
 title: "Slack Agents with Glean: Automate Workflows & Find Answers"
-description: "Discover how Glean’s Slack agents help you find answers, recap key conversations, and automate workflows directly in Slack—boosting productivity with ease."
+description: "Discover how Glean’s Slack agents help you find answers, recap key conversations, and automate workflows directly in Slack-boosting productivity with ease."
 fetched_at: "2026-09-01T13:25:26.189Z"
 ---
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691c78bdcbd0ae3fec2436e3_451%20research%20report%20ebook.svg)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691c7934845a9e514da62588_451-research-mobile.svg)
@@ -31,7 +31,7 @@ Download the report
 
 Chat directly with Glean in Slack to surface answers from past messages, documents, and company-wide knowledge.
 
-### Eliminate repetitive searches — just ask once
+### Eliminate repetitive searches - just ask once
 
 Glean combines Slack conversations with insights from your other enterprise tools to give you everything you need to make informed decisions.
 
@@ -55,7 +55,7 @@ Chat directly with Glean in Slack to surface answers from past messages, documen
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691d5b86a1c635cef7c1adc1_m-Find%20what%20you%20need%2C%20instantly..webp)
 
-Eliminate repetitive searches — just ask once
+Eliminate repetitive searches - just ask once
 
 Glean combines Slack conversations with insights from your other enterprise tools to give you everything you need to make informed decisions.
 

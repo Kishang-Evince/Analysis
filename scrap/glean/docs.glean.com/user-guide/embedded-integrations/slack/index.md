@@ -15,7 +15,7 @@ Glean in Slack brings enterprise search and AI-powered answers directly into you
 
 ### Quick start
 
-The fastest path to using Glean in Slack — from your first search to your first answer in a channel.
+The fastest path to using Glean in Slack - from your first search to your first answer in a channel.
 
 
 

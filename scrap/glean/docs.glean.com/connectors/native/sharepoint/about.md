@@ -55,12 +55,12 @@ Use the comparison below to see what each capability contributes to search, rank
 
 | What you get | Indexed connector | Real-time search | Read and write tools |
 | --- | --- | --- | --- |
-| Coverage | Org-wide: everything crawled is searchable by anyone with permission | Per-user: only content the querying user can access | — |
-| Freshness | Near real-time (webhook-driven updates) | Always live (fetched at query time) | — |
-| AI ranking (activity signals) | ✓ Full ranking | ✗ Not available | — |
-| Fetch unindexed content by URL (for example, sharing links) | ✗ (only documents already in the index) | ✓ (fetched live, even if never indexed) | — |
+| Coverage | Org-wide: everything crawled is searchable by anyone with permission | Per-user: only content the querying user can access | - |
+| Freshness | Near real-time (webhook-driven updates) | Always live (fetched at query time) | - |
+| AI ranking (activity signals) | ✓ Full ranking | ✗ Not available | - |
+| Fetch unindexed content by URL (for example, sharing links) | ✗ (only documents already in the index) | ✓ (fetched live, even if never indexed) | - |
 | Agents read and summarize documents | ✓ | ✓ | Through read tools |
-| Agents can move, update, or share files | — | — | ✓ |
+| Agents can move, update, or share files | - | - | ✓ |
 | Content stored in Glean's index | Yes (crawled and indexed) | No (nothing stored) | No |
 | Separate app registration | No (inherits Microsoft 365) | No (inherits Microsoft 365) | Only for custom OAuth |
 | Separate tool configuration | No | No | Yes (Admin console → Platform → Tools) |

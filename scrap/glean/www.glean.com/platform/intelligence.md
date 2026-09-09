@@ -47,7 +47,7 @@ Continual learning
 
 ## AI that learns and improves over time.
 
-Most AI memory only sees fragments of enterprise workflows. Glean memory learns continuously from enterprise context, Assistant history, and AI activity across the gateway — and shares what it learns across surfaces via MCP.
+Most AI memory only sees fragments of enterprise workflows. Glean memory learns continuously from enterprise context, Assistant history, and AI activity across the gateway - and shares what it learns across surfaces via MCP.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6a8d37723ac775f4faec0f78_gl-intelligence-features-2.webp)
 

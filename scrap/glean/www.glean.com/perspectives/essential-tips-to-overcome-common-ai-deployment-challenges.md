@@ -63,27 +63,27 @@ Share this article:
 
 # Essential tips to overcome common AI deployment challenges
 
-Most enterprise AI projects never make it past the pilot stage. MIT research found that 95% of generative AI pilots fail to deliver measurable business value — not because the technology falls short, but because organizations underestimate the operational complexity that surrounds it.
+Most enterprise AI projects never make it past the pilot stage. MIT research found that 95% of generative AI pilots fail to deliver measurable business value - not because the technology falls short, but because organizations underestimate the operational complexity that surrounds it.
 
-The gap between a promising demo and a production-ready deployment is wider than most teams expect. It's filled with process gaps: misaligned goals, fragmented knowledge, unmanaged permissions, and unclear ownership — none of which a better model can fix on its own.
+The gap between a promising demo and a production-ready deployment is wider than most teams expect. It's filled with process gaps: misaligned goals, fragmented knowledge, unmanaged permissions, and unclear ownership - none of which a better model can fix on its own.
 
-This guide covers the most common AI deployment challenges and the practical steps to address them before, during, and after rollout. The goal is enterprise AI deployment that actually works — not another research project.
+This guide covers the most common AI deployment challenges and the practical steps to address them before, during, and after rollout. The goal is enterprise AI deployment that actually works - not another research project.
 
 ## What are common pitfalls to avoid during AI deployment?
 
-Common AI pitfalls are the predictable mistakes that cause AI programs to stall, misfire, or fail to scale. They rarely stem from a single technical failure. Instead, they compound across the deployment lifecycle — from unclear success criteria and weak data foundations to missing governance and poor change management. The organizations that recognize these patterns early ship useful AI safely, with measurable outcomes. The ones that don't tend to cycle through expensive pilots that never reach production.
+Common AI pitfalls are the predictable mistakes that cause AI programs to stall, misfire, or fail to scale. They rarely stem from a single technical failure. Instead, they compound across the deployment lifecycle - from unclear success criteria and weak data foundations to missing governance and poor change management. The organizations that recognize these patterns early ship useful AI safely, with measurable outcomes. The ones that don't tend to cycle through expensive pilots that never reach production.
 
-In enterprise environments, most "surprises" during AI deployment are actually process gaps hiding in plain sight. A team selects a model before defining the business problem it should solve. Critical knowledge sits scattered across dozens of SaaS applications — docs, tickets, wikis, chat threads, CRM notes — with no unified retrieval layer. Permissions that work fine in individual applications break down the moment an AI system tries to synthesize information across them. Ownership is diffuse: IT manages infrastructure, security reviews access, a business team sponsors the use case, and nobody owns the end-to-end outcome. These gaps don't surface in a controlled demo. They surface at scale, when real users with real questions hit the system and expect accurate, permissioned, trustworthy responses.
+In enterprise environments, most "surprises" during AI deployment are actually process gaps hiding in plain sight. A team selects a model before defining the business problem it should solve. Critical knowledge sits scattered across dozens of SaaS applications - docs, tickets, wikis, chat threads, CRM notes - with no unified retrieval layer. Permissions that work fine in individual applications break down the moment an AI system tries to synthesize information across them. Ownership is diffuse: IT manages infrastructure, security reviews access, a business team sponsors the use case, and nobody owns the end-to-end outcome. These gaps don't surface in a controlled demo. They surface at scale, when real users with real questions hit the system and expect accurate, permissioned, trustworthy responses.
 
 Enterprise-ready deployments consistently fail when foundational requirements go unmet. Those requirements fall into a few categories:
 
--   **Relevant, grounded responses**: The AI must retrieve information from high-quality, up-to-date sources — not generate plausible-sounding answers from stale or incomplete data. This demands strong retrieval infrastructure, not just a capable language model.
--   **Identity-aware access controls**: Every response must respect the permissions of the person asking. A system that surfaces information a user shouldn't see will lose trust immediately — and may create a compliance incident.
+-   **Relevant, grounded responses**: The AI must retrieve information from high-quality, up-to-date sources - not generate plausible-sounding answers from stale or incomplete data. This demands strong retrieval infrastructure, not just a capable language model.
+-   **Identity-aware access controls**: Every response must respect the permissions of the person asking. A system that surfaces information a user shouldn't see will lose trust immediately - and may create a compliance incident.
 -   **Operational ownership**: Someone needs to own each use case end-to-end, with clear handoffs between IT, security, data teams, and business stakeholders. Without this, issues get reported but never resolved.
--   **Content governance and freshness**: Policies change, products evolve, org structures shift. AI systems that rely on stale content produce stale answers — and erode confidence faster than no AI system at all.
+-   **Content governance and freshness**: Policies change, products evolve, org structures shift. AI systems that rely on stale content produce stale answers - and erode confidence faster than no AI system at all.
 -   **Measurable success criteria**: "We deployed AI" is not a business outcome. Successful implementations define what good looks like before launch: time saved, cases deflected, resolution speed improved, risk reduced.
 
-The six sections that follow map directly to these failure patterns. Each one offers a concrete set of AI best practices — structured as a checklist — that teams in engineering, support, sales, HR, and IT can apply whether they're planning a first deployment or trying to move an existing pilot into production.
+The six sections that follow map directly to these failure patterns. Each one offers a concrete set of AI best practices - structured as a checklist - that teams in engineering, support, sales, HR, and IT can apply whether they're planning a first deployment or trying to move an existing pilot into production.
 
 ## How to overcome common AI deployment challenges
 
@@ -127,7 +127,7 @@ Apply these rules as you work through the six steps that follow:
 
 ## 1\. Start with business outcomes (not model selection)
 
-Enterprise teams often treat model choice as the first milestone. That habit blurs priorities: a team debates parameters and context windows while the actual unit of work—case resolution, incident triage, onboarding help—stays undefined.
+Enterprise teams often treat model choice as the first milestone. That habit blurs priorities: a team debates parameters and context windows while the actual unit of work-case resolution, incident triage, onboarding help-stays undefined.
 
 Anchor the effort on one workflow and one measurable result. Use the model as a component that serves that outcome, alongside data readiness, release controls, and a clear measure of impact in day-to-day work.
 
@@ -204,13 +204,13 @@ This catalog becomes the control plane for cleanup: it shows what lacks ownershi
 
 ### Put high-signal content on rails
 
-Start with content that teams cite in high-stakes moments—policies, product docs, runbooks, contract language, incident postmortems, and approved customer statements. These artifacts should behave like stable inputs, not ad hoc files that drift without notice.
+Start with content that teams cite in high-stakes moments-policies, product docs, runbooks, contract language, incident postmortems, and approved customer statements. These artifacts should behave like stable inputs, not ad hoc files that drift without notice.
 
 Make retrieval predictable with a small set of mechanical upgrades:
 
 -   **Hybrid retrieval policy**: keyword match for IDs, error codes, plan names, and ticket tags; semantic match for natural-language phrasing. This avoids “smart” matches that ignore exact terms.
 -   **Document QA checks**: enforce required fields such as title, owner, effective date, and deprecation marker; fail a document from top rank when these fields go missing.
--   **Structure conventions**: a fixed template for runbooks and postmortems—symptoms, cause, impact, remediation, customer language. Clear sections improve passage selection and reduce partial quotes.
+-   **Structure conventions**: a fixed template for runbooks and postmortems-symptoms, cause, impact, remediation, customer language. Clear sections improve passage selection and reduce partial quotes.
 -   **Version discipline**: a single current artifact with explicit supersede markers that point to the new source. Old copies stay visible for history but lose authority for answer use.
 
 When “almost right” answers repeat, isolate retrieval as a testable component. Add those queries to a regression set and track which sources the system selects across releases, just as teams track feature drift in model inputs.
@@ -239,7 +239,7 @@ Define quality in terms that match the work. A support reply draft depends on ac
 
 Quality should map to controls a system can enforce and leaders can audit. Use four dimensions as a baseline, then tie each one to a target and a check.
 
--   **Accuracy**: content matches the current policy or product behavior. Set a verification method per source type—legal sign-off for templates, SME sign-off for runbooks, automated reconciliation for structured records.
+-   **Accuracy**: content matches the current policy or product behavior. Set a verification method per source type-legal sign-off for templates, SME sign-off for runbooks, automated reconciliation for structured records.
 -   **Freshness**: content reflects the current state within an agreed time window. Define maximum staleness per content class, then alert on violations based on last-updated signals and sync lag.
 -   **Completeness**: coverage exists for the scenarios that drive volume. Maintain a coverage map by category (top ticket reasons, top onboarding topics, top sales objections) and track “uncovered” items as backlog work with a due date.
 -   **Traceability**: each answer can map back to a specific artifact version. Require immutable content IDs plus revision markers so audits can reproduce what the system referenced at that time.
@@ -253,7 +253,7 @@ Ownership needs more than a name in a footer. Define accountability by content c
 A simple operating model:
 
 -   **Content steward**: owns correctness for a defined scope; approves edits; retires obsolete guidance with explicit status labels.
--   **Domain approver**: signs off on high-impact changes; legal, HR ops, security, finance—based on the artifact type.
+-   **Domain approver**: signs off on high-impact changes; legal, HR ops, security, finance-based on the artifact type.
 -   **Platform owner**: owns ingestion health, connector behavior, and access-control fidelity; restores service after sync failures or permission mismatches.
 -   **Escalation route**: a named path for incidents such as conflicting guidance across sources, time-sensitive policy updates, or widespread sync delay.
 
@@ -268,7 +268,7 @@ Controls that tend to work in practice:
 -   **Tier-based attestations**: a calendar-based owner attestation for critical content sets, plus a smaller weekly rotation for fast-changing areas such as customer macros and incident response notes.
 -   **Decision records for key artifacts**: a short note that states what changed, who approved it, and what date it applies. This record supports incident review and audit review without excavation.
 -   **Canonical registry**: a centralized index of “approved sources” by topic, with stable identifiers and redirect rules that point old locations to the current artifact. This reduces shadow copies that accumulate in side channels.
--   **Data contract tests**: automated checks that validate shape and meaning—field presence, allowed values, referential integrity, and unexpected distribution shifts relative to a baseline snapshot. These tests catch upstream breaks that pure schema checks miss.
+-   **Data contract tests**: automated checks that validate shape and meaning-field presence, allowed values, referential integrity, and unexpected distribution shifts relative to a baseline snapshot. These tests catch upstream breaks that pure schema checks miss.
 
 These controls reduce a common failure mode: a quiet upstream change that shifts the evidence set, which then shifts outputs without any visible release event.
 
@@ -318,7 +318,7 @@ Controls should align to failure modes that appear in production systems: data e
 
 -   **Data access guardrails**: enforce data classification rules at ingest and at query time; apply DLP policies for prompt and response text; keep high-risk sources behind additional approval gates rather than “all sources by default.”
 -   **Retrieval guardrails**: apply source-tier rules so the system pulls from systems of record first; block “secondary copies” for regulated answers; require freshness thresholds for time-sensitive domains such as benefits, pricing, and incident response.
--   **Output guardrails**: require an evidence bundle for high-stakes answers—source link, excerpt, timestamp, and owner; block publication when evidence falls short; apply redaction and policy checks before the response leaves the system.
+-   **Output guardrails**: require an evidence bundle for high-stakes answers-source link, excerpt, timestamp, and owner; block publication when evidence falls short; apply redaction and policy checks before the response leaves the system.
 
 For workflows that include tool use, add a “safe action boundary”: parameter limits, constrained templates, and a confirmation step for any operation that changes state in another system. This keeps automation useful without allowing a prompt to widen scope.
 
@@ -331,7 +331,7 @@ Use an operational design that teams can run day to day:
 1.  **Exception intake**: a standard report type for “unsafe,” “incorrect,” “out of policy,” and “insufficient support,” with required metadata (use case, topic, evidence link).
 2.  **Severity routing**: automatic triage to the right owner based on topic and risk tier; high-severity events trigger a time-bound response and a temporary block rule for the affected topic.
 3.  **Conflict handling**: a deterministic priority policy for authoritative sources (system of record > approved template > team wiki); when priority rules still conflict, route to review rather than attempt synthesis.
-4.  **Fairness review**: periodic audits that compare outcomes across cohorts that matter to the business—customer segment, locale, accessibility needs, job function, and seniority band—plus targeted remediation when error rates cluster in specific groups.
+4.  **Fairness review**: periodic audits that compare outcomes across cohorts that matter to the business-customer segment, locale, accessibility needs, job function, and seniority band-plus targeted remediation when error rates cluster in specific groups.
 
 Keep language precise for regulated and high-impact workflows: clear source attribution, explicit limitations, and refusal behavior when constraints fail. This reduces silent failure and makes operational review far faster when issues arise.
 
@@ -350,7 +350,7 @@ Use four layers, with thresholds that match each use case:
 -   **Adoption**: weekly active users, repeat use, and use by the intended roles. A high volume from the wrong audience often signals poor routing or unclear positioning inside tools.
 -   **Efficiency**: median time-to-answer, end-to-end time-to-resolution, deflection where a self-serve answer replaces a ticket, and fewer expert interrupts. Compare against the prior process with the same workload mix.
 -   **Quality**: evidence strength (clear source support), user-rated usefulness, and handoff rate to a human queue. Track “useful but incomplete” separately from “incorrect” so teams fix the right layer.
--   **Risk**: data exposure events, policy breaches, and access-control anomalies. Add abuse signals for LLM apps—prompt injection patterns, unusual tool calls, and repeated attempts to elicit restricted content.
+-   **Risk**: data exposure events, policy breaches, and access-control anomalies. Add abuse signals for LLM apps-prompt injection patterns, unusual tool calls, and repeated attempts to elicit restricted content.
 
 ### Build an evaluation loop before the first rollout
 
@@ -358,11 +358,11 @@ A reliable loop needs a repeatable test harness plus a production check. Offline
 
 Keep the loop simple and durable:
 
-1.  **A replay suite**: a curated set of real prompts and tasks from each workflow—common ticket categories, known incident symptoms, standard HR policy requests, sales prep queries. Version the suite so results remain comparable across releases.
-2.  **A review rubric**: a short checklist that mirrors user needs for that workflow—correctness, source support, format fit, and policy alignment. Include “safe refusal” as a positive outcome when the system lacks approved evidence.
+1.  **A replay suite**: a curated set of real prompts and tasks from each workflow-common ticket categories, known incident symptoms, standard HR policy requests, sales prep queries. Version the suite so results remain comparable across releases.
+2.  **A review rubric**: a short checklist that mirrors user needs for that workflow-correctness, source support, format fit, and policy alignment. Include “safe refusal” as a positive outcome when the system lacks approved evidence.
 3.  **A release cadence**: a fixed review rhythm tied to change volume. Pair it with staged release controls: shadow traffic for comparison, small-cohort exposure, then a measured ramp with a rollback trigger.
 
-Where labels arrive late, add a delayed check. Measure downstream outcomes after a defined window—ticket reopen rate, compliance exceptions, escalations—so evaluation reflects real impact rather than first-week perception.
+Where labels arrive late, add a delayed check. Measure downstream outcomes after a defined window-ticket reopen rate, compliance exceptions, escalations-so evaluation reflects real impact rather than first-week perception.
 
 ### Track failure modes as first-class signals
 
@@ -373,7 +373,7 @@ Track these modes explicitly:
 -   **No answer found**: missing coverage, weak retrieval recall, or evidence that exists but remains unreachable due to access rules. Tie this to source gaps, index gaps, or identity scope gaps.
 -   **Answer conflicts with policy**: competing sources, stale “system of record” content, or priority rules that allow secondary copies to outrank canonical guidance. Treat this as a governance defect until proven otherwise.
 -   **Answer lacks citations**: evidence exists but the response does not carry it through, or provenance data lacks enough detail to support trace-back. Treat this as a trust-control defect, not a tone issue.
--   **Answer is correct but unusable**: correct facts with the wrong format, missing next steps, or output that does not fit the handoff point inside a workflow. Treat this as product design work—templates, structure, and system placement.
+-   **Answer is correct but unusable**: correct facts with the wrong format, missing next steps, or output that does not fit the handoff point inside a workflow. Treat this as product design work-templates, structure, and system placement.
 
 ### Split evaluation ownership across the people who carry the risk
 
@@ -389,7 +389,7 @@ Keep ownership tied to decisions: approve release, constrain scope, require a hu
 
 ### Use evaluation results to choose the next engineering investment
 
-Evaluation should point to the smallest change that yields the largest improvement with controlled risk. Most production issues stem from system behavior around the model—data shifts, access edge cases, and run-time constraints—so fixes often live outside model choice.
+Evaluation should point to the smallest change that yields the largest improvement with controlled risk. Most production issues stem from system behavior around the model-data shifts, access edge cases, and run-time constraints-so fixes often live outside model choice.
 
 Use outcome signals to pick a focused fix path:
 
@@ -397,13 +397,13 @@ Use outcome signals to pick a focused fix path:
 -   **Quality decay over weeks**: add drift checks for inputs and outputs, plus alert thresholds and a retrain or rollback playbook tied to those thresholds.
 -   **Latency spikes or cost overrun**: add cache rules for repeated queries, tighten context selection, and set service targets per workflow so performance remains predictable under load.
 -   **Risk signals rise**: tighten data scope rules, enforce stricter provenance requirements for high-stakes topics, and constrain tool actions with parameter limits plus approval gates.
--   **User ratings stay flat while adoption rises**: adjust the workflow surface—where the AI appears, what it returns by default, and how it hands off to systems of record—so outputs match how teams actually execute work.
+-   **User ratings stay flat while adoption rises**: adjust the workflow surface-where the AI appears, what it returns by default, and how it hands off to systems of record-so outputs match how teams actually execute work.
 
 ## 6\. Plan for change management and scale from day one
 
 Enterprise rollout succeeds when teams treat AI as a new work system with explicit norms, not as a feature drop. People need a shared contract for output use: what counts as authoritative, what requires approval, and what never leaves the system.
 
-Expansion introduces its own constraints—capacity, cost ceilings, incident response, and audit demands. Those constraints belong in the rollout plan from the first release, even when the initial audience stays small.
+Expansion introduces its own constraints-capacity, cost ceilings, incident response, and audit demands. Those constraints belong in the rollout plan from the first release, even when the initial audience stays small.
 
 ### Design around real work habits, not ideal workflows
 
@@ -425,11 +425,11 @@ A minimum lovable launch package includes:
 1.  **Operational readiness checks**: SLO targets, alert routes, rollback triggers, and a runbook that names the responder for outages and quality regressions.
 2.  **Cost guardrails**: per-request budgets, rate limits for burst traffic, and cache policy for repeated questions. This prevents sudden spend spikes after internal buzz.
 3.  **Security readiness**: retention rules for prompts and outputs, redaction policy for sensitive fields, and a documented response plan for data exposure events.
-4.  **Work intake triage**: a single queue that tags issues as access, source quality, workflow fit, or runtime reliability—so fixes land in the right team on day one.
+4.  **Work intake triage**: a single queue that tags issues as access, source quality, workflow fit, or runtime reliability-so fixes land in the right team on day one.
 
 ### Teach the behavior with examples and decision cues
 
-Enablement works best when it mirrors live work artifacts—real ticket threads, real runbooks, real policies—without theory or model talk. Teams should learn patterns that reduce rework and risk under pressure.
+Enablement works best when it mirrors live work artifacts-real ticket threads, real runbooks, real policies-without theory or model talk. Teams should learn patterns that reduce rework and risk under pressure.
 
 Build a short set of materials per workflow:
 
@@ -450,16 +450,16 @@ Use a compact service entry for each proposed use case:
 
 This format fits well with standard change-control systems and supports audit narratives later.
 
-### Scale in phases—sources, actions, and autonomy
+### Scale in phases-sources, actions, and autonomy
 
 Expansion should follow a controlled sequence of risk reduction: tighter constraints first, broader reach later. Treat each step as a release with a measurable hypothesis, a cost envelope, and an exit path.
 
 A practical expansion ladder:
 
--   **Phase A: Volume expansion**: same capability, more traffic—add autoscale rules, cache policy, and load tests that reflect peak hours.
--   **Phase B: Domain expansion**: new teams and new content—add data contract tests for each new source and verify permission fidelity for each new identity group.
--   **Phase C: Action expansion**: new downstream effects—add allowlists for actions and parameters, require audit logs per transaction, and define human approval points for high-impact steps.
--   **Phase D: Multi-tool autonomy**: orchestration across systems—add stricter threat models, abuse detection, and “fail closed” controls that block unsafe tool calls.
+-   **Phase A: Volume expansion**: same capability, more traffic-add autoscale rules, cache policy, and load tests that reflect peak hours.
+-   **Phase B: Domain expansion**: new teams and new content-add data contract tests for each new source and verify permission fidelity for each new identity group.
+-   **Phase C: Action expansion**: new downstream effects-add allowlists for actions and parameters, require audit logs per transaction, and define human approval points for high-impact steps.
+-   **Phase D: Multi-tool autonomy**: orchestration across systems-add stricter threat models, abuse detection, and “fail closed” controls that block unsafe tool calls.
 
 Each phase should include a canary cohort plus a rollback plan that restores prior behavior without emergency edits.
 
@@ -471,8 +471,8 @@ A quarterly review should focus on portfolio hygiene:
 
 -   **Keep / improve / retire decisions**: explicit criteria for deprecation when a workflow fails to produce sustained impact or carries persistent risk.
 -   **Source-of-truth audits**: top topics that drive usage, plus verification that authoritative artifacts remain current and owned.
--   **Model and policy change impact**: planned updates to providers, internal policies, or regulatory requirements—mapped to which use cases need re-approval.
--   **Operational load**: incident volume, mean time to restore, and cost per successful task—so growth does not outpace support capacity.
+-   **Model and policy change impact**: planned updates to providers, internal policies, or regulatory requirements-mapped to which use cases need re-approval.
+-   **Operational load**: incident volume, mean time to restore, and cost per successful task-so growth does not outpace support capacity.
 
 ## How to overcome common AI deployment challenges: Frequently Asked Questions
 
@@ -496,18 +496,18 @@ A quarterly review should focus on portfolio hygiene:
 
 ### 3\. What strategies can help align AI initiatives with business goals?
 
--   **Use value-stream mapping, not feature lists**: pick a single bottleneck step—triage, drafting, routing, summarization—and quantify the cost of delay or rework at that step.
+-   **Use value-stream mapping, not feature lists**: pick a single bottleneck step-triage, drafting, routing, summarization-and quantify the cost of delay or rework at that step.
 -   **Set a staged “proof ladder”**: first prove reliability on a narrow scope, then add breadth (more topics), then add depth (more systems), then add autonomy (more actions); each rung needs its own acceptance criteria.
 -   **Tie investment to operational capacity**: align the roadmap to reviewer bandwidth, content stewardship capacity, and support/on-call coverage so outcomes stay stable as usage grows.
 -   **Choose workflows with measurable external signals**: customer support and IT often provide clean outcome signals such as reopen rates, SLA adherence, and resolution time; those signals strengthen prioritization decisions.
--   **Require a stop rule per use case**: define the conditions that pause or retire a capability—cost per successful task, repeated policy conflicts, or sustained low satisfaction—so the portfolio remains outcome-driven.
+-   **Require a stop rule per use case**: define the conditions that pause or retire a capability-cost per successful task, repeated policy conflicts, or sustained low satisfaction-so the portfolio remains outcome-driven.
 -   **Budget for “source hardening” work up front**: plan explicit time for document normalization, metadata completion, and duplication cleanup; this work often produces more KPI impact than additional prompt iterations.
 
 ### 4\. What are the risks associated with AI implementation?
 
 -   **Model supply-chain risk**: changes in upstream model behavior, safety policy, or availability can shift outputs without notice; mitigate with version pinning, change windows, and back-out options.
 -   **Confidentiality leakage through secondary channels**: chat exports, pasted outputs, and screen captures create exposure paths even when primary systems remain secure; address with channel policies and watermarking where appropriate.
--   **Action integrity risk**: any capability that writes to systems of record can create silent corruption—wrong fields, wrong record, wrong status—unless every action has idempotency rules and audit logging.
+-   **Action integrity risk**: any capability that writes to systems of record can create silent corruption-wrong fields, wrong record, wrong status-unless every action has idempotency rules and audit logging.
 -   **Delayed-label risk**: quality defects can hide for weeks when ground truth arrives late; mitigate with proxy signals such as complaint rate, rework rate, and escalation frequency.
 -   **Cross-region compliance drift**: a single global experience can violate local rules on retention, data localization, or accessibility; handle with policy profiles per region and per user type.
 -   **Overreliance risk in high-impact domains**: teams may treat outputs as authoritative even when context lacks support; mitigate with explicit confidence indicators tied to evidence quality, not model self-report.
@@ -522,7 +522,7 @@ A quarterly review should focus on portfolio hygiene:
 -   **Use failure telemetry to target fixes**: categorize defects by system layer (source defect, sync defect, access defect, template defect, action defect) so remediation work stays precise and measurable.
 -   **Knowledge-base addendum: vendor and rollout readiness checks**: include written commitments on data retention and training use, data residency options, security attestations (SOC 2 Type II or equivalent), incident notification SLAs, detailed connector behavior under permission changes, and the ability to export audit logs that support internal investigations without broad data exposure.
 
-The difference between an AI pilot and a production system isn't the model — it's the operational discipline around it. Every challenge covered here comes back to the same principle: treat AI deployment as a system design problem with clear owners, measurable outcomes, and controls that scale alongside adoption.
+The difference between an AI pilot and a production system isn't the model - it's the operational discipline around it. Every challenge covered here comes back to the same principle: treat AI deployment as a system design problem with clear owners, measurable outcomes, and controls that scale alongside adoption.
 
 If you're ready to move from planning to production, [request a demo](https://www.glean.com/get-a-demo) to explore how we can help transform your workplace with AI that actually works.
 

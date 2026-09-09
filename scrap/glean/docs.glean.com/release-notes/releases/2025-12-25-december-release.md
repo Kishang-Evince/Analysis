@@ -25,7 +25,7 @@ Actions *ROAD-1045-MR*
 
 Glean Assistant will retire two features: the ability to filter specific sources in chat and the option to remove sources from existing Assistant responses. These features are being removed to streamline the user experience and because the latest generation of Glean Assistant, powered by advanced LLMs like GPT-5 and Claude Sonnet 4.5, now provides more accurate, context-aware answers without requiring manual source selection.
 
-With improvements in Assistant, users can simply describe what they need in natural language—including whether it should focus on or exclude a specific data source—and Assistant will automatically execute. Users can continue to filter specific sources in search.
+With improvements in Assistant, users can simply describe what they need in natural language-including whether it should focus on or exclude a specific data source-and Assistant will automatically execute. Users can continue to filter specific sources in search.
 
 Change date: December 4, 2025
 

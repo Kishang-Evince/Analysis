@@ -2,12 +2,12 @@
 url: "https://developers.glean.com/cookbook/customer-360"
 canonical: "https://developers.glean.com/cookbook/customer-360"
 title: "Customer 360: an account page built from your own content"
-description: "One page per account — status, risks, and a drill-in chat — assembled from whatever your instance already knows about that customer. No CRM export, no separate index."
+description: "One page per account - status, risks, and a drill-in chat - assembled from whatever your instance already knows about that customer. No CRM export, no separate index."
 fetched_at: "2026-09-01T13:22:59.342Z"
 ---
 # Customer 360: an account page built from your own content
 
-One page per account — status, risks, and a drill-in chat — assembled from whatever your instance already knows about that customer. No CRM export, no separate index.
+One page per account - status, risks, and a drill-in chat - assembled from whatever your instance already knows about that customer. No CRM export, no separate index.
 
 ~1 hrIntermediate
 
@@ -21,7 +21,7 @@ Account context, cited evidence, and follow-up chat in one workspace.
 
 Problem
 
-Account executives jump between CRM notes, renewal docs, and security packets to prep a single customer conversation. This puts those sources in one account workspace with evidence coverage, compact source sections, and an above-the-fold assistant thread — so the next call needs one tab, not nine.
+Account executives jump between CRM notes, renewal docs, and security packets to prep a single customer conversation. This puts those sources in one account workspace with evidence coverage, compact source sections, and an above-the-fold assistant thread - so the next call needs one tab, not nine.
 
 Everything displayed comes from what your instance already knows about that account. The overview shows only the account name you set and counts taken straight from the Search results; assistant claims remain cited rather than turning loose search matches into unsupported CRM facts.
 
@@ -196,7 +196,7 @@ Try it
 
 **What's the status of our renewal with that account?**
 
-Returns a non-empty answer citing real documents about the account you built the page around. Substitute the name when you ask — there is no fixed query text for a page built around whichever account you pick.
+Returns a non-empty answer citing real documents about the account you built the page around. Substitute the name when you ask - there is no fixed query text for a page built around whichever account you pick.
 
 **Give me a customer summary**
 

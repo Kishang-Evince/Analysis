@@ -67,7 +67,7 @@ An [AI agent](https://www.glean.com/blog/ai-agents-enterprise) learns when it ch
 
 Not every AI system does this. Simple reflex agents, goal-based agents, and utility-based agents follow predefined rules or models and never update their behavior. A learning agent works differently, pairing a performance element that makes decisions with a learning element that adjusts them and a critic that evaluates each action and issues rewards or penalties.
 
-That distinction matters when you decide where to apply AI in your workflows. Static automation repeats the same steps regardless of results, while an adaptive agent improves through interaction with real data and users — and it is still rare, with [only 16% of enterprise deployments](https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/) qualifying as true agents that plan, observe feedback, and adapt. The sections below break down the mechanisms that make that improvement possible.
+That distinction matters when you decide where to apply AI in your workflows. Static automation repeats the same steps regardless of results, while an adaptive agent improves through interaction with real data and users - and it is still rare, with [only 16% of enterprise deployments](https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/) qualifying as true agents that plan, observe feedback, and adapt. The sections below break down the mechanisms that make that improvement possible.
 
 ## How machine learning powers AI agent adaptation
 
@@ -83,7 +83,7 @@ Machine learning is [the foundation that lets an AI agent adapt](https://www.gle
 
 Feedback loops turn raw experience into better performance, and they are what separate an agent that improves from one that merely repeats. Without a signal that tells the agent whether an action worked, it has no way to distinguish a good outcome from a bad one, so nothing changes.
 
-Three kinds of feedback drive the process. Outcome feedback comes from the results themselves: resolution time, accuracy, task completion, and satisfaction scores. Human feedback arrives as approvals, corrections, edits, and rejections that become fresh training data — a signal powerful enough that a 1.3B-parameter model [fine-tuned with human feedback](https://arxiv.org/abs/2203.02155) produced outputs people preferred over a model 100 times its size. Self-generated feedback happens when the agent critiques its own draft for consistency and grounding before it finalizes a response.
+Three kinds of feedback drive the process. Outcome feedback comes from the results themselves: resolution time, accuracy, task completion, and satisfaction scores. Human feedback arrives as approvals, corrections, edits, and rejections that become fresh training data - a signal powerful enough that a 1.3B-parameter model [fine-tuned with human feedback](https://arxiv.org/abs/2203.02155) produced outputs people preferred over a model 100 times its size. Self-generated feedback happens when the agent critiques its own draft for consistency and grounding before it finalizes a response.
 
 Together these feed a repeating cycle. The agent performs an action, evaluates the result against success criteria, analyzes where it fell short, adjusts its approach, and repeats, running that loop automatically on every interaction rather than in a quarterly review.
 
@@ -131,7 +131,7 @@ Read the numbers along a maturity curve. Teams usually begin with manual reviews
 
 ## How to set up AI agents for effective learning in your organization
 
-Set your agents up to learn by starting where the data is richest and the volume is highest. High-traffic, well-documented workflows give an agent the repetition it needs to improve quickly, which is why customer support, employee onboarding, sales enablement, and internal knowledge access make strong first deployments — a priority for the [62% of organizations](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) already experimenting with AI agents.
+Set your agents up to learn by starting where the data is richest and the volume is highest. High-traffic, well-documented workflows give an agent the repetition it needs to improve quickly, which is why customer support, employee onboarding, sales enablement, and internal knowledge access make strong first deployments - a priority for the [62% of organizations](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) already experimenting with AI agents.
 
 Getting the groundwork right matters more than moving fast. Follow a clear order:
 

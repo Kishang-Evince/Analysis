@@ -45,7 +45,7 @@ Delegated permissions, which operate on behalf of a logged-in user, do not provi
 
 ## Token security[​](#token-security "Direct link to Token security")
 
-Glean's crawlers use a Service Principal (App Registration) to authenticate with Microsoft Graph and SharePoint REST APIs. The Service Principal is configured with a certificate (X.509 public certificate plus PEM PKCS#8 private key) that is used to authenticate requests to the APIs. Client secrets are not supported for SharePoint or OneDrive — Microsoft retired Azure ACS on April 2, 2026.
+Glean's crawlers use a Service Principal (App Registration) to authenticate with Microsoft Graph and SharePoint REST APIs. The Service Principal is configured with a certificate (X.509 public certificate plus PEM PKCS#8 private key) that is used to authenticate requests to the APIs. Client secrets are not supported for SharePoint or OneDrive - Microsoft retired Azure ACS on April 2, 2026.
 
 ### Secure storage[​](#secure-storage "Direct link to Secure storage")
 

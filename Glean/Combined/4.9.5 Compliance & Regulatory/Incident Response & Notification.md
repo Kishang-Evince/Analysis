@@ -15,7 +15,7 @@
 **Field definition:** SLA timelines and workflows for breach identification and customer reporting.  
 **Prerequisites / Licensing:** Customer SLA PDF; status page subscription.  
 **Incident comms (Doc-Verified):** Status page + admin email + in-product banners; support ticket workflow documented.  
-**Breach notification SLA (Pending Contract):** _TBD — not in product docs; request SLA/DPA_  
+**Breach notification SLA (Pending Contract):** _TBD - not in product docs; request SLA/DPA_  
 **Confidence Level:** **Doc-Verified** (operational comms) · **Pending Contract** (notification timelines)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [Status page](https://docs.glean.com/get-started/start/status-page) · [Customer SLA](https://glean.com/legal/sla) · [Support troubleshooting](https://docs.glean.com/troubleshooting/deployment/support-troubleshooting-in-restricted-glean-environments) · [SDLC security exercises](https://docs.glean.com/security/architecture/sdlc)
@@ -33,14 +33,14 @@
 ### Engineering observation (Doc-Verified)
 
 - SDLC doc: tabletop exercises + external pen tests; reports under NDA via account team.
-- **No 72-hour GDPR breach notification** language found in scraped product docs — must pull from DPA/Security Standard.
+- **No 72-hour GDPR breach notification** language found in scraped product docs - must pull from DPA/Security Standard.
 - Restricted environments troubleshooting references Customer SLA PDF.
 
 ### Verification steps / test case
 
 1. Subscribe to status.glean.com email alerts.
 2. Confirm admin incident email recipients with Glean CSM.
-3. File test support ticket — measure first response vs Customer SLA.
+3. File test support ticket - measure first response vs Customer SLA.
 4. Legal: extract breach notification clause from DPA + Security Standard.
 
 **Risk & Cost Impact:** Risk: Medium (contract-dependent) | Cost: Native

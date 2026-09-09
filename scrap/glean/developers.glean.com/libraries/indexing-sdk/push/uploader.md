@@ -19,7 +19,7 @@ Credentials come from `GLEAN_SERVER_URL` and `GLEAN_INDEXING_API_TOKEN`, same as
 
 | Argument | Default | Purpose |
 | --- | --- | --- |
-| `datasource` | — | Datasource name sent with every call. |
+| `datasource` | - | Datasource name sent with every call. |
 | `retries` | `None` | Generated-client retry configuration. |
 | `server_url` | `None` | Per-call server URL override. |
 | `timeout_ms` | `None` | Per-call timeout override. |
@@ -49,7 +49,7 @@ Batching applies both limits: a batch closes when it hits `batch_size` documents
 
 danger
 
-`bulk_index_documents()` is a **replacement**. Documents absent from the call are deleted as stale. Never call it with a partial result set — see [Indexing modes](/libraries/indexing-sdk/concepts/indexing-modes).
+`bulk_index_documents()` is a **replacement**. Documents absent from the call are deleted as stale. Never call it with a partial result set - see [Indexing modes](/libraries/indexing-sdk/concepts/indexing-modes).
 
 ### Incremental updates[​](#incremental-updates "Direct link to Incremental updates")
 
@@ -69,7 +69,7 @@ uploader.delete_document(object_type="article", document_id="page_123")
 
 ### Pre-supplied batches[​](#pre-supplied-batches "Direct link to Pre-supplied batches")
 
-If you're already producing batches — a streaming connector, or your own chunking — hand them over directly:
+If you're already producing batches - a streaming connector, or your own chunking - hand them over directly:
 
 ```
 uploader.bulk_index_document_batches(batches, batch_count=len(batches))
@@ -101,7 +101,7 @@ uploader.bulk_index_employees(employees=employees, batch_size=1000)
 
 ## Parallelism[​](#parallelism "Direct link to Parallelism")
 
-`bulk_index_document_batches()` uploads middle pages concurrently via a thread pool sized by `upload_max_workers` (default 5). The **first and last pages are always sequential** — the first opens the upload session, the last closes it and triggers stale deletion, so neither can race.
+`bulk_index_document_batches()` uploads middle pages concurrently via a thread pool sized by `upload_max_workers` (default 5). The **first and last pages are always sequential** - the first opens the upload session, the last closes it and triggers stale deletion, so neither can race.
 
 ```
 uploader = PushUploader(datasource="companywiki", upload_max_workers=10)

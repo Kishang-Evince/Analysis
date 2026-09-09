@@ -1,13 +1,13 @@
 ---
 url: "https://www.glean.com/blog/query-snowflake-data-in-glean-assistant"
 canonical: "https://www.glean.com/blog/query-snowflake-data-in-glean-assistant"
-title: "Introducing Snowflake in Glean Assistant — and Why Glean Was Named 2026 AMER Snowflake Product Innovation Partner of the Year"
+title: "Introducing Snowflake in Glean Assistant - and Why Glean Was Named 2026 AMER Snowflake Product Innovation Partner of the Year"
 description: "Kelly Huang Aditya Sharma | Discover how the new Snowflake and Glean Assistant integration gives every employee natural language access to governed enterprise data without needing SQL."
 fetched_at: "2026-09-01T13:26:50.106Z"
 ---
 Last updated Jun 02, 2026.
 
-# Introducing Snowflake in Glean Assistant — and Why Glean Was Named 2026 AMER Snowflake Product Innovation Partner of the Year
+# Introducing Snowflake in Glean Assistant - and Why Glean Was Named 2026 AMER Snowflake Product Innovation Partner of the Year
 
 0
 
@@ -31,7 +31,7 @@ Product Manager
 
 ](/authors/aditya-sharma)
 
-![Introducing Snowflake in Glean Assistant — and Why Glean Was Named 2026 AMER Snowflake Product Innovation Partner of the Year](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a1e503ed7ddcc88bb9475be_6998943b-6d15-423e-8e43-4266f96649ed.png)
+![Introducing Snowflake in Glean Assistant - and Why Glean Was Named 2026 AMER Snowflake Product Innovation Partner of the Year](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a1e503ed7ddcc88bb9475be_6998943b-6d15-423e-8e43-4266f96649ed.png)
 
 Listen to article
 
@@ -120,8 +120,8 @@ Snowflake in Glean Assistant is built on enterprise-grade trust where every answ
 As our Snowflake partnership has expanded, we've built distinct experiences for different users at different points in their data journey. Here's how to think about which experience is right for your team:
 
 -   **Business users and everyday employees :** Ask your Snowflake questions directly in Glean Assistant, where structured data answers are enriched with your company's full knowledge context. No SQL required. No context switching. The answer comes to you.
--   **Data users who live in Snowflake :** [Snowflake Intelligence](https://www.glean.com/blog/glean-snowflake-intelligence-2025) now surfaces Glean as an MCP tool, so your Cortex Agents can pull in permission-aware enterprise context — the "why" behind the "what" — without leaving the Snowflake environment.
--   **Builders and workflow architects :** [Glean Agents](https://www.glean.com/product/ai-agents) remain the right choice for multi-step automation that incorporates Snowflake data at any step — from deal-risk monitors to weekly business review agents to customer health scoring workflows.
+-   **Data users who live in Snowflake :** [Snowflake Intelligence](https://www.glean.com/blog/glean-snowflake-intelligence-2025) now surfaces Glean as an MCP tool, so your Cortex Agents can pull in permission-aware enterprise context - the "why" behind the "what" - without leaving the Snowflake environment.
+-   **Builders and workflow architects :** [Glean Agents](https://www.glean.com/product/ai-agents) remain the right choice for multi-step automation that incorporates Snowflake data at any step - from deal-risk monitors to weekly business review agents to customer health scoring workflows.
 
 Each path shares the same underlying context layer and the same governance model. You don't have to choose between access and control.
 

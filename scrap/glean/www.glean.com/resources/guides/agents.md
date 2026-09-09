@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/agents"
 canonical: "https://www.glean.com/resources/guides/agents"
 title: "Glean Agents"
-description: "Agents use AI to understand tasks and take action on behalf of users — from answering questions and retrieving information to executing work autonomously. This technical white paper explores how agents go beyond simple LLM calls by integrating with tools, workflows, and memory to reliably perform tasks in the enterprise. You’ll learn how Glean uses search to route queries to the right workflows, evaluates agent performance using LLM-based techniques, and scales adoption by designing around common query patterns."
+description: "Agents use AI to understand tasks and take action on behalf of users - from answering questions and retrieving information to executing work autonomously. This technical white paper explores how agents go beyond simple LLM calls by integrating with tools, workflows, and memory to reliably perform tasks in the enterprise. You’ll learn how Glean uses search to route queries to the right workflows, evaluates agent performance using LLM-based techniques, and scales adoption by designing around common query patterns."
 fetched_at: "2026-09-01T13:27:05.822Z"
 ---
 ## Work AI that works.

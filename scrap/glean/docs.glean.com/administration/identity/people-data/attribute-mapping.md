@@ -25,7 +25,7 @@ The mapping table has three columns:
 
 Custom field mapping is only available for **Okta**. If you select Okta as your people connector, you can change which Okta attribute populates each Glean attribute, and you can use the **Reset fields** button (top-right of the table) to revert to defaults.
 
-For every other supported people connector — Entra ID, Google Drive, Workday, BambooHR, Pingboard, Lattice — the mapping is fixed. Glean displays the predetermined source attribute for each Glean field; you cannot change it from this screen. Glean shows a banner on the page in this case:
+For every other supported people connector - Entra ID, Google Drive, Workday, BambooHR, Pingboard, Lattice - the mapping is fixed. Glean displays the predetermined source attribute for each Glean field; you cannot change it from this screen. Glean shows a banner on the page in this case:
 
 > Custom field mapping is not available for {connector}. To continue, click **Save** to set {connector} as your people connector.
 
@@ -65,7 +65,7 @@ Click **Save** at the bottom of the page to commit your mappings. Glean uses the
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [Sync people data](/get-started/setup/sync-people-data) — the workspace setup step where you select a people connector
+-   [Sync people data](/get-started/setup/sync-people-data) - the workspace setup step where you select a people connector
 -   [Sync people data from Okta](/administration/identity/people-data/configuration/people-data-okta)
 -   [Sync people data from Entra ID](/administration/identity/people-data/configuration/people-data-entra-id)
 -   [Sync people data from Google Drive](/administration/identity/people-data/configuration/people-data-google-drive)

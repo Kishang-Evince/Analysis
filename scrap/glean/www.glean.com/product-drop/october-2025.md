@@ -2,7 +2,7 @@
 url: "https://www.glean.com/product-drop/october-2025"
 canonical: "https://www.glean.com/product-drop/october-2025"
 title: "October 2025 Monthly Product Drop | Glean"
-description: "October Drop 2025 is here! Don't break creative flow — bring company context straight into Miro."
+description: "October Drop 2025 is here! Don't break creative flow - bring company context straight into Miro."
 fetched_at: "2026-09-01T13:25:30.293Z"
 ---
 # October  

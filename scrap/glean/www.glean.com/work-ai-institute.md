@@ -25,7 +25,7 @@ Our experts span leading AI academics, executives, and policymakers who are acti
 
 ## Founding members
 
-The Work AI Institute is powered by a founding cohort of world-class AI thinkers and doers—academic pioneers, industry leaders, and practitioners driving the science of work forward.
+The Work AI Institute is powered by a founding cohort of world-class AI thinkers and doers-academic pioneers, industry leaders, and practitioners driving the science of work forward.
 
 [
 
@@ -53,7 +53,7 @@ LinkedIn
 
 ](https://www.linkedin.com/in/hancheng-cao-2480a0b9/)
 
-Professor of Management, Emory University. Dr. Cao studies how emerging technologies — especially AI — reshape work. His research at the intersection of computational social science, HCI, and information systems uses large-scale data and algorithms to understand evolving workplace behaviors.
+Professor of Management, Emory University. Dr. Cao studies how emerging technologies - especially AI - reshape work. His research at the intersection of computational social science, HCI, and information systems uses large-scale data and algorithms to understand evolving workplace behaviors.
 
 ![Jacqueline Ng Lane](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6931d3763bb051a71d128b01_Jacqueline%20Ng%20Lane.webp)
 
@@ -271,7 +271,7 @@ Read now
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69b06a1cbb0eb0251551275d_AWARE_thunmbnail.webp)
 
-The AWARE Framework is a guide for security leaders navigating the shift from generative AI to autonomous agents. Built by the Work AI Institute with leaders from Glean, Palo Alto Networks, and Databricks, it offers a clear framework for governing how AI systems access data, make decisions, and take action—so organizations can scale AI with more control, visibility, and trust.
+The AWARE Framework is a guide for security leaders navigating the shift from generative AI to autonomous agents. Built by the Work AI Institute with leaders from Glean, Palo Alto Networks, and Databricks, it offers a clear framework for governing how AI systems access data, make decisions, and take action-so organizations can scale AI with more control, visibility, and trust.
 
 [
 

@@ -9,12 +9,12 @@ On this page
 
 To create an engaging first experience with Glean, populate the platform with content beyond what Glean crawls from your connectors:
 
--   [Announcements](#announcements) — promote updates on the home page
--   [Answers](#answers) — provide authoritative responses to FAQs
--   [Go Links](#go-links) — create memorable shortcuts to common resources
--   [Projects](#projects) — organize chats and content around a topic
--   [Document verification](#document-verification) — mark trusted (or out-of-date) content
--   [Pinned results](#pinned-results)—push specific content to the top of search results
+-   [Announcements](#announcements) - promote updates on the home page
+-   [Answers](#answers) - provide authoritative responses to FAQs
+-   [Go Links](#go-links) - create memorable shortcuts to common resources
+-   [Projects](#projects) - organize chats and content around a topic
+-   [Document verification](#document-verification) - mark trusted (or out-of-date) content
+-   [Pinned results](#pinned-results)-push specific content to the top of search results
 
 ## Open the populate content setup[​](#open-the-populate-content-setup "Direct link to Open the populate content setup")
 
@@ -28,7 +28,7 @@ Help your teammates get answers easily
 
 ## Announcements[​](#announcements "Direct link to Announcements")
 
-Announcements promote updates on Glean's home page — useful for company-wide news or messages targeted to specific teams, and especially valuable if teammates use Glean as their new tab page.
+Announcements promote updates on Glean's home page - useful for company-wide news or messages targeted to specific teams, and especially valuable if teammates use Glean as their new tab page.
 
 To create one, navigate to  [Knowledge → Announcements](https://app.glean.com/knowledge/announcements) and select **New announcement**. For audience targeting, scheduling, banners, and media, see [How Announcements work](/user-guide/knowledge/announcements/how-announcements-work).
 
@@ -111,7 +111,7 @@ Document verification lets owners and moderators mark search results as **Verifi
 
 To verify or deprecate a document, search for it, open the **More options** (⋮) menu on the search result, and select **Verify or deprecate**. See [How verification works](/user-guide/knowledge/verification/how-verification-works) for the full flow and [Which documents should I verify?](/user-guide/knowledge/verification/which-documents-should-i-verify) for guidance on what to prioritize.
 
-Verify the documents teammates rely on most — your employee handbook, travel & expense policy, IT setup guide, and similar canonical references.
+Verify the documents teammates rely on most - your employee handbook, travel & expense policy, IT setup guide, and similar canonical references.
 
 * * *
 

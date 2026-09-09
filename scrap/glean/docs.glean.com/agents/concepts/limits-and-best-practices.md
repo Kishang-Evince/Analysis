@@ -11,7 +11,7 @@ Agents execute multi-step workflows that may query, transform, and write data ac
 
 ## Tool-call budget[​](#tool-call-budget "Direct link to Tool-call budget")
 
-Each agent run has a maximum number of tool calls it can make. This budget covers every tool the agent invokes — searches, reads, writes, and orchestration steps all count toward the same limit.
+Each agent run has a maximum number of tool calls it can make. This budget covers every tool the agent invokes - searches, reads, writes, and orchestration steps all count toward the same limit.
 
 When an agent needs to paginate or iterate across many records, design the workflow so each step does meaningful work. For example, batch records by date range or status rather than fetching one record at a time.
 
@@ -23,7 +23,7 @@ If your agent is running out of tool calls before it finishes, break the work in
 
 Each tool response is subject to a size cap. When a search or query returns many large records, the response may be truncated even though the underlying system has more matches.
 
-Several tools — including [Search Jira with JQL](/tools/connector/jira/search-jql) and [Search Salesforce with SOQL](/tools/connector/salesforce/search-salesforce-with-soql) — provide a downloadable result link so you can retrieve the full dataset outside of the in-chat response. Look for a download link in the intermediate step output when working with large result sets.
+Several tools - including [Search Jira with JQL](/tools/connector/jira/search-jql) and [Search Salesforce with SOQL](/tools/connector/salesforce/search-salesforce-with-soql) - provide a downloadable result link so you can retrieve the full dataset outside of the in-chat response. Look for a download link in the intermediate step output when working with large result sets.
 
 ## Use native connector tools for large datasets[​](#use-native-connector-tools-for-large-datasets "Direct link to Use native connector tools for large datasets")
 
@@ -41,11 +41,11 @@ Company search is ideal for questions like "find the most relevant Confluence pa
 
 ### Native connector tools[​](#native-connector-tools "Direct link to Native connector tools")
 
-Use native connector tools — such as [Search Jira with JQL](/tools/connector/jira/search-jql), [Search Salesforce with SOQL](/tools/connector/salesforce/search-salesforce-with-soql), or [Search Databricks with SQL](/tools/connector/databricks-tools) — when you need:
+Use native connector tools - such as [Search Jira with JQL](/tools/connector/jira/search-jql), [Search Salesforce with SOQL](/tools/connector/salesforce/search-salesforce-with-soql), or [Search Databricks with SQL](/tools/connector/databricks-tools) - when you need:
 
--   **Exhaustive enumeration** — for example, listing every open ticket in a project or every opportunity closing this quarter.
--   **Precise field-based filtering** that the Glean index doesn't expose — for example, filtering by a custom Jira field or a Salesforce formula field.
--   **Aggregations or sorting** that company search doesn't support — for example, counting tickets by priority or summing opportunity amounts by stage.
+-   **Exhaustive enumeration** - for example, listing every open ticket in a project or every opportunity closing this quarter.
+-   **Precise field-based filtering** that the Glean index doesn't expose - for example, filtering by a custom Jira field or a Salesforce formula field.
+-   **Aggregations or sorting** that company search doesn't support - for example, counting tickets by priority or summing opportunity amounts by stage.
 
 ### When to combine both[​](#when-to-combine-both "Direct link to When to combine both")
 
@@ -65,7 +65,7 @@ Start with a lower result count and increase it only when your agent's answers a
 
 When a project, account, or ticket queue contains more records than a single tool call can return, use field-based batching to retrieve results in manageable chunks:
 
--   **Time-based batching** — split queries by date range. For example, query one month at a time using JQL like `project = ABC AND created >= "2025-01-01" AND created < "2025-02-01"`.
--   **Field-based batching** — split queries by a categorical field such as status, priority, or assignee.
+-   **Time-based batching** - split queries by date range. For example, query one month at a time using JQL like `project = ABC AND created >= "2025-01-01" AND created < "2025-02-01"`.
+-   **Field-based batching** - split queries by a categorical field such as status, priority, or assignee.
 
 Agents can iterate across batches using looping steps and aggregate the results into a spreadsheet output or a consolidated response. For a worked example using JQL, see [Handling large result sets](/tools/connector/jira/search-jql#handling-large-result-sets) on the Search Jira with JQL page.

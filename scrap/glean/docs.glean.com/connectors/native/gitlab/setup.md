@@ -41,7 +41,7 @@ Gather these values before you start:
 
 ## 1\. Create an access token[​](#1-create-an-access-token "Direct link to 1. Create an access token")
 
-Use a token scoped to the single top-level group you want to index. Avoid user tokens that span multiple top-level groups — Glean's validation fails if the token reaches more than one.
+Use a token scoped to the single top-level group you want to index. Avoid user tokens that span multiple top-level groups - Glean's validation fails if the token reaches more than one.
 
 ### Option A: group access token (preferred)[​](#option-a-group-access-token-preferred "Direct link to Option A: group access token (preferred)")
 
@@ -78,11 +78,11 @@ If you grant read-only scopes, clear the **API token has write privileges** chec
 
 Glean indexes one top-level group per connector, identified by its URL path. If your group URL is `https://gitlab.com/your-group`, then the path is `your-group`.
 
-Keep this value — you enter it in the Glean **Admin console** during [Configure in Glean](#configure-in-glean).
+Keep this value - you enter it in the Glean **Admin console** during [Configure in Glean](#configure-in-glean).
 
 ## Create webhooks manually[​](#create-webhooks-manually-read-only-scopes-only "Direct link to Create webhooks manually")
 
-Skip this step if your token has the `api` scope and the **Owner** role on the top-level group — Glean creates the webhooks for you.
+Skip this step if your token has the `api` scope and the **Owner** role on the top-level group - Glean creates the webhooks for you.
 
 Otherwise, create a webhook for each group or project you want Glean to receive change events for. Group webhooks apply to all projects in a group and its subgroups; project webhooks apply to a single project.
 
@@ -105,12 +105,12 @@ Otherwise, create a webhook for each group or project you want Glean to receive 
 The GitLab API does not return user email addresses, so Glean needs a CSV that maps each GitLab user ID to the person's company (SSO) email. This file is **required** for the GitLab Cloud connector.
 
 1.  Create a CSV with two columns in the order **user ID, email**. Column headers are not required.
-    -   The user ID is the numeric `id` from the GitLab API — not the username. Retrieve IDs with the [members API](https://docs.gitlab.com/ee/api/members.html#list-all-members-of-a-group-or-project).
+    -   The user ID is the numeric `id` from the GitLab API - not the username. Retrieve IDs with the [members API](https://docs.gitlab.com/ee/api/members.html#list-all-members-of-a-group-or-project).
     -   Example row:
         
         `12345,user1@example.com`📋
         
-2.  Keep the file — you upload it in the Glean **Admin console** during [Configure in Glean](#configure-in-glean).
+2.  Keep the file - you upload it in the Glean **Admin console** during [Configure in Glean](#configure-in-glean).
 
 You can source company emails from your identity provider (for example, Okta or Google Workspace).
 
@@ -132,7 +132,7 @@ In the **Webhook secret token** field, enter the same secret token value you use
 
 ### 4\. Enter the top-level group path[​](#4-enter-the-top-level-group-path "Direct link to 4. Enter the top-level group path")
 
-In **URL Path of Top Level Group**, enter the [top-level group path](#2-find-your-top-level-group-path) — for example, `your-group`.
+In **URL Path of Top Level Group**, enter the [top-level group path](#2-find-your-top-level-group-path) - for example, `your-group`.
 
 ### 5\. Set the token privilege checkboxes[​](#5-set-the-token-privilege-checkboxes "Direct link to 5. Set the token privilege checkboxes")
 
@@ -147,12 +147,12 @@ Upload the [user-mapping CSV](#3-build-the-user-mapping-file) so Glean can map G
 
 Select **Save**. Glean validates the connection before saving it, then starts the initial crawl. Once it completes, GitLab content appears in Glean search results for users who have access to it.
 
-If validation fails, the connector is not saved — fix the reported problem and select **Save** again. Two checks are specific to the top-level group:
+If validation fails, the connector is not saved - fix the reported problem and select **Save** again. Two checks are specific to the top-level group:
 
 -   [GITLAB\_7](/troubleshooting/error-codes/gitlab/gitlab-7): the token does not resolve to exactly one top-level group, or the path you entered does not match the group the token reaches.
 -   [GITLAB\_8](/troubleshooting/error-codes/gitlab/gitlab-8): the token does not have **Owner** access to the top-level group. This is only checked when **API token has Top Level Group Owner Privileges** is selected.
 
-Glean indexes merge requests (with comments and diffs), code, issues, and wikis by default, and these object types have no per-object toggles. Epics are also indexed by default, controlled by the **Crawl Group Epics** toggle on the setup page — leave it selected to index epics, or clear it to skip them. Code is made searchable through [Code Search](/user-guide/assistant/code-search), which is enabled by default after the connector is connected.
+Glean indexes merge requests (with comments and diffs), code, issues, and wikis by default, and these object types have no per-object toggles. Epics are also indexed by default, controlled by the **Crawl Group Epics** toggle on the setup page - leave it selected to index epics, or clear it to skip them. Code is made searchable through [Code Search](/user-guide/assistant/code-search), which is enabled by default after the connector is connected.
 
 ## Select code file types[​](#select-code-file-types "Direct link to Select code file types")
 

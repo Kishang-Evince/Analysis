@@ -11,20 +11,20 @@ Glean in Slack brings enterprise search and AI-powered answers directly into you
 
 ## What Glean in Slack can do for you[​](#what-glean-in-slack-can-do-for-you "Direct link to What Glean in Slack can do for you")
 
--   **Search everything from Slack** — find documents, tickets, wiki pages, and more across all connectors without leaving Slack.
--   **Get automatic answers** — when you ask a question in a channel where Glean is active, Glean detects it and offers an AI-generated answer.
--   **Chat with Assistant** — open the Glean sidebar in Slack to have a full conversation with Glean Assistant or run specialized agents.
--   **Turn conversations into code** — use Code Writer to turn Slack discussions into draft pull requests in GitHub.
--   **Stay up to date** — subscribe to a daily digest of channels and topics you care about. (Not available if your organization uses Slack RTS — contact your admin to confirm.)
+-   **Search everything from Slack** - find documents, tickets, wiki pages, and more across all connectors without leaving Slack.
+-   **Get automatic answers** - when you ask a question in a channel where Glean is active, Glean detects it and offers an AI-generated answer.
+-   **Chat with Assistant** - open the Glean sidebar in Slack to have a full conversation with Glean Assistant or run specialized agents.
+-   **Turn conversations into code** - use Code Writer to turn Slack discussions into draft pull requests in GitHub.
+-   **Stay up to date** - subscribe to a daily digest of channels and topics you care about. (Not available if your organization uses Slack RTS - contact your admin to confirm.)
 
 ## Find Glean in Slack[​](#find-glean-in-slack "Direct link to Find Glean in Slack")
 
 There are several ways to interact with Glean in your Slack workspace:
 
--   **The `/glean` command** — type `/glean` followed by a search query in any channel to search across your company's connectors.
--   **@Glean mentions** — mention `@Glean` in a channel to ask a question and get an AI-generated answer.
--   **The Glean sidebar** — click the Glean icon in the top-right corner of Slack to open the sidebar and chat with Assistant or run agents.
--   **Automatic answers** — in channels where Glean is active, Glean detects questions and offers to generate answers for you.
+-   **The `/glean` command** - type `/glean` followed by a search query in any channel to search across your company's connectors.
+-   **@Glean mentions** - mention `@Glean` in a channel to ask a question and get an AI-generated answer.
+-   **The Glean sidebar** - click the Glean icon in the top-right corner of Slack to open the sidebar and chat with Assistant or run agents.
+-   **Automatic answers** - in channels where Glean is active, Glean detects questions and offers to generate answers for you.
 
 ## Prerequisites[​](#prerequisites "Direct link to Prerequisites")
 

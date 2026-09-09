@@ -49,7 +49,7 @@ Agents *ROAD-894-MR*
 
 #### Connect Glean Agents to Remote MCP Servers (MCP Host)[​](#connect-glean-agents-to-remote-mcp-servers-mcp-host "Direct link to Connect Glean Agents to Remote MCP Servers (MCP Host)")
 
-Glean Agents can now call tools hosted on remote Model Context Protocol (MCP) servers, so your agents can take actions in systems like Notion, Asana, GitHub, ServiceNow, Snowflake, and more—all from within Glean. Admins and builders can plug approved third-party or internal MCP servers into agent workflows. This helps teams automate more of their workflows without rebuilding custom integrations for every system.
+Glean Agents can now call tools hosted on remote Model Context Protocol (MCP) servers, so your agents can take actions in systems like Notion, Asana, GitHub, ServiceNow, Snowflake, and more-all from within Glean. Admins and builders can plug approved third-party or internal MCP servers into agent workflows. This helps teams automate more of their workflows without rebuilding custom integrations for every system.
 
 **How to access:** To use MCP servers in Glean Agents, first have a Glean admin configure the MCP servers in the Admin console under Platform → Actions, where MCP-powered integrations and templates are listed. Admins can either import an MCP server by providing its URL and metadata or use pre-set templates from the MCP registry, then connect and discover available tools and choose which tools are available to which users or groups.
 
@@ -79,7 +79,7 @@ Agents *ROAD-1189*
 
 #### Create Images with Glean Agents in both Workflow and Auto mode[​](#create-images-with-glean-agents-in-both-workflow-and-auto-mode "Direct link to Create Images with Glean Agents in both Workflow and Auto mode")
 
-We are releasing dedicated, governed image creation capabilities in our Agents platform across three surfaces: a dedicated node in the Agent Builder, an explicit “Generate Image” action within Plan & Execute, and native support in autonomous agents. In the Agent Builder, a configurable “Generate Image” node enables builders to define prompts, styles, aspect ratios, and image counts, draw on relevant context, and return structured outputs (image URLs plus metadata) for downstream nodes, while in Plan & Execute a dedicated action lets the planner reason explicitly about visual steps—when to generate images, how many, and which parts of the plan they support—using the same backend with quotas and fallbacks so plans can still succeed in text-only mode if image creation fails. Autonomous agents determine when visuals materially improve a task, derive prompts from artifact content, generate and embed images in the final output, and operate under clear safety, cost, and performance guardrails.
+We are releasing dedicated, governed image creation capabilities in our Agents platform across three surfaces: a dedicated node in the Agent Builder, an explicit “Generate Image” action within Plan & Execute, and native support in autonomous agents. In the Agent Builder, a configurable “Generate Image” node enables builders to define prompts, styles, aspect ratios, and image counts, draw on relevant context, and return structured outputs (image URLs plus metadata) for downstream nodes, while in Plan & Execute a dedicated action lets the planner reason explicitly about visual steps-when to generate images, how many, and which parts of the plan they support-using the same backend with quotas and fallbacks so plans can still succeed in text-only mode if image creation fails. Autonomous agents determine when visuals materially improve a task, derive prompts from artifact content, generate and embed images in the final output, and operate under clear safety, cost, and performance guardrails.
 
 This feature may use credits. Learn more in Glean's Help Center.
 
@@ -121,7 +121,7 @@ Assistant *ROAD-1114*
 
 #### Desktop App Refresh and improvements to Spotlight[​](#desktop-app-refresh-and-improvements-to-spotlight "Direct link to Desktop App Refresh and improvements to Spotlight")
 
-The Glean desktop app now has a refreshed, modern look with a dedicated app shell that makes it easier to move and resize the window. We’ve also upgraded the desktop Spotlight (the Cmd‑Shift‑J quick entry bar) so it’s no longer just a simple input field—it now supports the full Glean Assistant chat experience, including switching between Fast and Thinking modes, choosing custom models, and generating images, all without opening the main app. This makes Spotlight a more powerful, always-available way to start or continue chats, run searches, and get work done directly from your desktop.
+The Glean desktop app now has a refreshed, modern look with a dedicated app shell that makes it easier to move and resize the window. We’ve also upgraded the desktop Spotlight (the Cmd‑Shift‑J quick entry bar) so it’s no longer just a simple input field-it now supports the full Glean Assistant chat experience, including switching between Fast and Thinking modes, choosing custom models, and generating images, all without opening the main app. This makes Spotlight a more powerful, always-available way to start or continue chats, run searches, and get work done directly from your desktop.
 
 Note: Mac desktop refresh now available. Windows desktop app refresh will launch by March 26, 2026.
 
@@ -193,7 +193,7 @@ Connectors *ROAD-820*
 
 #### Affinity connector[​](#affinity-connector "Direct link to Affinity connector")
 
-The Affinity Connector lets teams—especially those in private equity, venture capital, and investment banking—bring Affinity’s relationship intelligence into Glean. With this integration, users can search for contacts, companies, opportunities, and lists from Affinity alongside other sources in Glean.
+The Affinity Connector lets teams-especially those in private equity, venture capital, and investment banking-bring Affinity’s relationship intelligence into Glean. With this integration, users can search for contacts, companies, opportunities, and lists from Affinity alongside other sources in Glean.
 
 [Learn more](/connectors/native/affinity/)
 
@@ -205,7 +205,7 @@ Connectors *ROAD-737*
 
 We’re introducing service restoration access to provide secure, audited, and time‑bound infrastructure-only access during rare, high‑severity incidents when normal administrative paths are unavailable for cloud-prem customers. As part of this change, we’re also moving from broad “project admin/owner” access to more granular, least‑privilege roles.
 
-In addition, we’re deploying an isolated backend service that automatically executes pre‑approved infrastructure commands using these least‑privilege credentials—no human ever authenticates directly with this account.
+In addition, we’re deploying an isolated backend service that automatically executes pre‑approved infrastructure commands using these least‑privilege credentials-no human ever authenticates directly with this account.
 
 In cases of service account restoration, you may see cloud audit logs labeled service restoration access. Learn more about Glean's access to customer cloud-prem deployments on the Trust Center ([https://trust.glean.com/resources?s=xeeowws1dsh9xnx0n33ij\\&name=glean-access-to-customer-deployments](https://trust.glean.com/resources?s=xeeowws1dsh9xnx0n33ij%5C&name=glean-access-to-customer-deployments))
 

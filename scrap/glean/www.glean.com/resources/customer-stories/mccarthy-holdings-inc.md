@@ -53,11 +53,11 @@ company engagement
 
 ## Introduction
 
-McCarthy Holding Companies, Inc. (McCarthy), holding company of McCarthy Building Companies, Inc., has been solving complex construction challenges for more than 160 years. Operating in nearly every U.S. state, the firm builds hospitals, data centers, government facilities, and more—at scales ranging from less than $1 million to over $1 billion. With approximately 4,000 salaried employees in offices and on active jobsites nationwide, the enterprise applies the same meticulous planning to technology that it brings to every build: each workflow and tool must measurably improve safety, efficiency and decision-making across the company.
+McCarthy Holding Companies, Inc. (McCarthy), holding company of McCarthy Building Companies, Inc., has been solving complex construction challenges for more than 160 years. Operating in nearly every U.S. state, the firm builds hospitals, data centers, government facilities, and more-at scales ranging from less than $1 million to over $1 billion. With approximately 4,000 salaried employees in offices and on active jobsites nationwide, the enterprise applies the same meticulous planning to technology that it brings to every build: each workflow and tool must measurably improve safety, efficiency and decision-making across the company.
 
 ## Before Glean
 
-With 100 million files covering projects stretching back decades and detailed documentation for every role in the company, McCarthy employees identified a growing challenge accessing information across many distributed tools. Critical information — policies, procedures, project records, material specifications, historical data — was dispersed across SharePoint, Microsoft Teams, Procore and other enterprise systems. Employees were worried about losing time searching for answers that existed somewhere in the organization but weren’t readily reachable.
+With 100 million files covering projects stretching back decades and detailed documentation for every role in the company, McCarthy employees identified a growing challenge accessing information across many distributed tools. Critical information - policies, procedures, project records, material specifications, historical data - was dispersed across SharePoint, Microsoft Teams, Procore and other enterprise systems. Employees were worried about losing time searching for answers that existed somewhere in the organization but weren’t readily reachable.
 
 McCarthy’s digital team evaluated Microsoft Copilot as part of a broader push toward AI-powered knowledge access. Copilot handled note-taking and summarization well, but its search and retrieval experience was opaque and it lacked the LLM flexibility and user experience that the team envisioned.
 
@@ -71,7 +71,7 @@ After exploring alternatives and running a head-to-head POC, they chose **Glean.
 
 ‍
 
-When Glean went live, the contrast was striking. The interface was more intuitive, search worked across systems and Glean’s enterprise knowledge graph — built automatically from McCarthy’s own data rather than dependent on Microsoft’s graph — gave the team a level of control and transparency they hadn't had before.
+When Glean went live, the contrast was striking. The interface was more intuitive, search worked across systems and Glean’s enterprise knowledge graph - built automatically from McCarthy’s own data rather than dependent on Microsoft’s graph - gave the team a level of control and transparency they hadn't had before.
 
 ‍
 
@@ -83,13 +83,13 @@ For a Microsoft-centric organization, moving to Glean wasn’t about replacing e
 
 ‍
 
-From the start, Glean was positioned as an AI experimentation layer internally — a governed environment where employees across the enterprise could explore what AI-powered work actually looks like in practice. Corporate team adoption quickly ran to 90%. Field and operations teams reached almost 60% in months, a meaningful number for a workforce spread across active jobsites nationwide.
+From the start, Glean was positioned as an AI experimentation layer internally - a governed environment where employees across the enterprise could explore what AI-powered work actually looks like in practice. Corporate team adoption quickly ran to 90%. Field and operations teams reached almost 60% in months, a meaningful number for a workforce spread across active jobsites nationwide.
 
 ## With Glean
 
 ### Search delivers instant value
 
-For McCarthy employees, the immediate impact was simple: finding information faster. Knowledge that once required digging across multiple systems now surfaces in seconds. In one case, a user located a file containing a 14-year-old 3D building model almost instantly — a search that previously demanded significant time from multiple people. Across the enterprise, McCarthy estimates a conservative two hours saved per employee per week, enabling every employee to make decisions faster.
+For McCarthy employees, the immediate impact was simple: finding information faster. Knowledge that once required digging across multiple systems now surfaces in seconds. In one case, a user located a file containing a 14-year-old 3D building model almost instantly - a search that previously demanded significant time from multiple people. Across the enterprise, McCarthy estimates a conservative two hours saved per employee per week, enabling every employee to make decisions faster.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6a358acdefe357a449e68461_mcarthy-withglean-2.webp)
 
@@ -119,7 +119,7 @@ Product Team
 
 Procedural Update Agent
 
-After reorganization or process changes, McCarthy teams now use Glean to compare new and existing procedural matrices. Glean recommends updates needed across thousands of affected documents — a task that previously would have landed on leadership to complete manually over several weeks.
+After reorganization or process changes, McCarthy teams now use Glean to compare new and existing procedural matrices. Glean recommends updates needed across thousands of affected documents - a task that previously would have landed on leadership to complete manually over several weeks.
 
 Product Team
 
@@ -131,7 +131,7 @@ Product Team
 
 Materials Quality Management Tracking
 
-Tracing a failed material across dozens of active projects is painstaking work at scale. Now an agent surfaces those connections in minutes — faster and more completely than any manual process could.
+Tracing a failed material across dozens of active projects is painstaking work at scale. Now an agent surfaces those connections in minutes - faster and more completely than any manual process could.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6a358bd0ca0e46e56cda65b4_mcCarthy-inserts-3.webp)
 
@@ -139,7 +139,7 @@ Lewis sees McCarthy’s rollout of AI agents as a competitive moat in the indust
 
 ## Driving Success with Glean
 
-McCarthy’s agent rollout reflects a deliberate balance between openness and oversight. Any employee can use Glean to experiment and create in what Lewis calls "our playground to build agents," while a smaller, vetted group holds publishing rights for company-wide deployment — structured enough to be responsible, open enough to drive real innovation across the organization.
+McCarthy’s agent rollout reflects a deliberate balance between openness and oversight. Any employee can use Glean to experiment and create in what Lewis calls "our playground to build agents," while a smaller, vetted group holds publishing rights for company-wide deployment - structured enough to be responsible, open enough to drive real innovation across the organization.
 
 ‍
 
@@ -153,7 +153,7 @@ The adoption numbers reflect something harder to quantify: a workforce that has 
 
 For Lewis, the results speak for themselves. “We feel like we did something really great here.”
 
-Glean is our playground to build agents — with guardrails, we’ve opened it up to everybody. Meanwhile our experts develop advanced agents, maintain our library, help people learn and quantify ROIs, and share successes.
+Glean is our playground to build agents - with guardrails, we’ve opened it up to everybody. Meanwhile our experts develop advanced agents, maintain our library, help people learn and quantify ROIs, and share successes.
 
 McKenzie Lewis
 
@@ -205,7 +205,7 @@ The materials quality agent represents a broader strategic direction: using Glea
 
 ‍
 
-"We're about two to three months ahead of schedule because of what we're able to produce out of Glean," said JT Searles, lead on the formation of a new business unit to transform equipment and materials management nationwide — a research-intensive effort drawing heavily on historical data.
+"We're about two to three months ahead of schedule because of what we're able to produce out of Glean," said JT Searles, lead on the formation of a new business unit to transform equipment and materials management nationwide - a research-intensive effort drawing heavily on historical data.
 
 ‍
 

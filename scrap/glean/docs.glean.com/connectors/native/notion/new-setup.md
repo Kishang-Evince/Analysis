@@ -14,10 +14,10 @@ Connecting Notion takes one guided setup. It authorizes Notion's MCP server and 
 -   **Read and write tools** work right away, as soon as you authorize the MCP connection. Glean and Glean agents can search Notion, fetch pages and comments, and create or update pages, databases, and comments. Every tool runs as the person asking, using their own Notion authorization, so it respects that user's Notion permissions.
 -   **Org-wide search** is part of the same setup. You provide the indexing credentials during setup, and Glean builds a search index from the pages, databases, and blocks you share with it. This index is not permission-aware, so any shared content is visible to every Glean user who can access the connector.
 
-1.  Connect, authorize, and provide indexing credentialstoday — current step
-2.  Use read and write toolstoday — current step
-3.  Indexing runs in the backgroundtoday — happens automatically
-4.  Org-wide search switches ontomorrow — happens automatically
+1.  Connect, authorize, and provide indexing credentialstoday - current step
+2.  Use read and write toolstoday - current step
+3.  Indexing runs in the backgroundtoday - happens automatically
+4.  Org-wide search switches ontomorrow - happens automatically
 
 ## Feature availability after setup[​](#feature-availability-after-setup "Direct link to Feature availability after setup")
 

@@ -21,9 +21,9 @@ Glean was unable to authenticate with your Veeva Vault instance during connector
 
 ### OAuth Authentication[​](#oauth-authentication "Direct link to OAuth Authentication")
 
--   **OAuth Token Failure** — Verify that the Token Endpoint URL, Client ID, and Client Secret are correct. Ensure your IdP enables the `client_credentials` grant type for the OAuth client.
--   **OAuth Session Exchange Failed** — the OIDC Profile ID does not match the profile configured in Vault Admin. If using an API gateway, the Session Exchange Base URL or required custom headers may be incorrect.
--   **API Gateway (Kong) Errors** — custom headers are incorrectly configured, or the OAuth client is not authorized for the gateway routes.
+-   **OAuth Token Failure** - Verify that the Token Endpoint URL, Client ID, and Client Secret are correct. Ensure your IdP enables the `client_credentials` grant type for the OAuth client.
+-   **OAuth Session Exchange Failed** - the OIDC Profile ID does not match the profile configured in Vault Admin. If using an API gateway, the Session Exchange Base URL or required custom headers may be incorrect.
+-   **API Gateway (Kong) Errors** - custom headers are incorrectly configured, or the OAuth client is not authorized for the gateway routes.
 
 ## Resolution[​](#resolution "Direct link to Resolution")
 

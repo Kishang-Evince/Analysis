@@ -97,12 +97,12 @@ Call this endpoint when uploaded user counts don't match indexed counts, or when
 
 If users aren't appearing as expected after a bulk upload, follow these steps:
 
-1.  **Check upload status** — call the [connector status endpoint](#debug-connector-status) and confirm that `identity.users.bulkUploadHistory` shows `processingState: UPLOAD COMPLETED` and `status: SUCCESSFUL`.
-2.  **Compare uploaded vs indexed counts** — in the same response, compare `identity.users.counts.uploaded` with the indexed counts. If indexed is much lower, the processing step may not have completed.
-3.  **Trigger reprocessing** — call `/processallmemberships` to trigger membership expansion.
-4.  **Wait and re-check** — allow several minutes for processing, then call the status endpoint again to check whether `counts.indexed` has increased.
-5.  **Inspect individual users** — use the [debug user endpoint](#debug-connector-user) with a specific user's email to check their `uploadStatus`, `isActiveUser`, and `uploadedGroups`. If `uploadedGroups` is empty, the user was uploaded but not yet associated with any groups.
-6.  **Check your upload payload** — verify that your `/bulkindexusers` or `/bulkindexmemberships` payloads include the correct `isFirstPage`, `isLastPage`, and `uploadId` pagination flags. Incorrect pagination can cause partial uploads to be treated as complete.
+1.  **Check upload status** - call the [connector status endpoint](#debug-connector-status) and confirm that `identity.users.bulkUploadHistory` shows `processingState: UPLOAD COMPLETED` and `status: SUCCESSFUL`.
+2.  **Compare uploaded vs indexed counts** - in the same response, compare `identity.users.counts.uploaded` with the indexed counts. If indexed is much lower, the processing step may not have completed.
+3.  **Trigger reprocessing** - call `/processallmemberships` to trigger membership expansion.
+4.  **Wait and re-check** - allow several minutes for processing, then call the status endpoint again to check whether `counts.indexed` has increased.
+5.  **Inspect individual users** - use the [debug user endpoint](#debug-connector-user) with a specific user's email to check their `uploadStatus`, `isActiveUser`, and `uploadedGroups`. If `uploadedGroups` is empty, the user was uploaded but not yet associated with any groups.
+6.  **Check your upload payload** - verify that your `/bulkindexusers` or `/bulkindexmemberships` payloads include the correct `isFirstPage`, `isLastPage`, and `uploadId` pagination flags. Incorrect pagination can cause partial uploads to be treated as complete.
 
 ## Custom property validation errors[​](#custom-property-validation-errors "Direct link to Custom property validation errors")
 
@@ -167,5 +167,5 @@ If you need help debugging your issue, contact [Glean Support](https://support.g
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [Verify if a document is visible in Glean](/administration/search/access-verification) — check document visibility and access from the **Admin console**
--   [Connector refresh rates](/connectors/crawling-refresh-rates) — default crawl intervals by connector
+-   [Verify if a document is visible in Glean](/administration/search/access-verification) - check document visibility and access from the **Admin console**
+-   [Connector refresh rates](/connectors/crawling-refresh-rates) - default crawl intervals by connector

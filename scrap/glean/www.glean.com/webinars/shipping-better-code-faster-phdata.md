@@ -43,14 +43,14 @@ Product Manager, Glean
 
 Most engineering teams are paying a tax they never budgeted for: context retrieval.
 
-Design docs live in Docs and Confluence. Architecture decisions are buried in Slack. Jira tickets capture tribal knowledge that never makes it back into documentation. Senior engineers become the system of record—and the support desk.
+Design docs live in Docs and Confluence. Architecture decisions are buried in Slack. Jira tickets capture tribal knowledge that never makes it back into documentation. Senior engineers become the system of record-and the support desk.
 
 In this session, you’ll see how phData is using work AI to eliminate that “missing context tax,” reduce internal support work, and help engineers ship better code with more confidence.
 
 **Register to learn how to:**
 
 -   **Cut the internal support tax on senior engineers** by routing repeat questions and “where is X?” requests through AI grounded in your own systems and context.
--   **Turn scattered tribal knowledge into living documentation** that’s generated from real tickets, incidents, and repos—then kept up to date automatically as work happens.
+-   **Turn scattered tribal knowledge into living documentation** that’s generated from real tickets, incidents, and repos-then kept up to date automatically as work happens.
 -   **Put AI coding assistance in the flow of your SDLC** so engineers can understand services, implement changes, and write tests with tools that already know your stack, patterns, and constraints.
 -   **Improve velocity *and* reliability at the same time** by connecting AI to your actual code, tickets, and runbooks instead of treating it as an isolated sidekick.
 

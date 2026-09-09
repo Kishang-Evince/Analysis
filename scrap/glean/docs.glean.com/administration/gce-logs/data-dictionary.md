@@ -11,7 +11,7 @@ Glean's usage analytics log provides a structured, easy-to-analyze record of key
 
 By default, Glean Customer Event logging is enabled and events are written as a unified stream called `glean-customer-event` to a log bucket in object storage (for example, Google Cloud Storage or Amazon S3) in your Glean project. For analytics and ad‑hoc queries, these logs are typically loaded into a data warehouse (such as BigQuery or Athena).
 
-GCE log export is delivered as a single unified stream. Filtering by event type, connector, user, or content is not supported at the export layer—all events flow to the configured destination. Downstream systems (BigQuery, Athena, Splunk, and similar) must apply filters after ingestion. Plan destination index sizing, retention, and license consumption accordingly.
+GCE log export is delivered as a single unified stream. Filtering by event type, connector, user, or content is not supported at the export layer-all events flow to the configured destination. Downstream systems (BigQuery, Athena, Splunk, and similar) must apply filters after ingestion. Plan destination index sizing, retention, and license consumption accordingly.
 
 Exports of these logs to customer-managed analytics destinations (for example, a BigQuery dataset in your own project) are **not** enabled by default. The exact project, dataset, and table names are set your organization during onboarding and feature enablement and may differ from the examples shown here.
 

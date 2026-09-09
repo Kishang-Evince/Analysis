@@ -63,7 +63,7 @@ Share this article:
 
 # What is the importance of data quality in AI implementation
 
-AI models learn from the data they receive — every pattern, every gap, every inconsistency. When that data is accurate and well-structured, AI delivers reliable outputs that teams can trust. When it's not, the problems compound fast and at scale.
+AI models learn from the data they receive - every pattern, every gap, every inconsistency. When that data is accurate and well-structured, AI delivers reliable outputs that teams can trust. When it's not, the problems compound fast and at scale.
 
 Most enterprise AI initiatives don't fail because of flawed algorithms or insufficient compute power. They fail because the data underneath isn't ready. According to research from the IBM Institute for Business Value, only 16% of AI initiatives have successfully scaled across the enterprise, and data quality is consistently cited as a primary differentiator between organizations that scale and those that stall.
 
@@ -71,30 +71,30 @@ This guide breaks down what data quality means in the context of AI, why it matt
 
 ## What is data quality in AI?
 
-Data quality in AI refers to the degree to which an organization's data is accurate, complete, consistent, timely, and fit for use across the entire AI lifecycle — from training and validation to deployment and ongoing operation. The concept isn't new; businesses have always cared about clean records for reporting and compliance. But AI raises the stakes considerably. Traditional data quality asks whether a record is correct. AI data quality asks whether the data can teach a model to make sound decisions.
+Data quality in AI refers to the degree to which an organization's data is accurate, complete, consistent, timely, and fit for use across the entire AI lifecycle - from training and validation to deployment and ongoing operation. The concept isn't new; businesses have always cared about clean records for reporting and compliance. But AI raises the stakes considerably. Traditional data quality asks whether a record is correct. AI data quality asks whether the data can teach a model to make sound decisions.
 
-The distinction matters because AI models don't just display data — they consume it, learn from it, and act on it. A dashboard with a few stale records is an inconvenience. A machine learning model trained on stale records is a liability. The principle holds across every AI application: high-quality data in, reliable outputs out. Poor-quality data in, compounding errors out.
+The distinction matters because AI models don't just display data - they consume it, learn from it, and act on it. A dashboard with a few stale records is an inconvenience. A machine learning model trained on stale records is a liability. The principle holds across every AI application: high-quality data in, reliable outputs out. Poor-quality data in, compounding errors out.
 
 ### Beyond traditional data quality dimensions
 
 AI data quality encompasses several dimensions that traditional data management often overlooks:
 
 -   **Representativeness**: Training data must cover the full range of scenarios, populations, and edge cases the model will encounter in production. A dataset that reflects only the most common situations will produce a model that fails on everything else.
--   **Label accuracy**: Supervised learning depends on correctly labeled examples. Inconsistent or ambiguous labels — common when multiple teams contribute to annotation — teach models to replicate human disagreements at scale.
+-   **Label accuracy**: Supervised learning depends on correctly labeled examples. Inconsistent or ambiguous labels - common when multiple teams contribute to annotation - teach models to replicate human disagreements at scale.
 -   **Bias**: Historical data carries historical biases. Amazon's abandoned AI recruiting tool demonstrated this vividly; the system penalized resumes that included terms associated with women because it learned from a decade of male-dominated hiring patterns. Without deliberate intervention, AI encodes and amplifies these patterns.
--   **Noise**: Irrelevant or redundant information — short Slack messages without context, duplicate records, inconsistent formatting across departments — degrades a model's ability to identify meaningful signals.
+-   **Noise**: Irrelevant or redundant information - short Slack messages without context, duplicate records, inconsistent formatting across departments - degrades a model's ability to identify meaningful signals.
 
 ### The enterprise connector problem
 
 For enterprise AI systems that pull from dozens or hundreds of upstream applications, data quality also depends heavily on connector quality. A source system can contain perfectly clean data, but if the connector that ingests it has poor sync frequency, misses metadata, drops permission boundaries, or fails to deduplicate across systems, the downstream AI effectively operates on low-quality data.
 
-This is especially relevant for organizations with distributed knowledge spread across SaaS tools, internal wikis, ticketing systems, and communication platforms. Connector coverage, sync latency, schema fidelity, and permission mapping all become measurable data quality dimensions — not just infrastructure concerns. Platforms that provide enterprise AI search and retrieval, such as Glean, treat connector integrity as a first-class component of data quality for exactly this reason.
+This is especially relevant for organizations with distributed knowledge spread across SaaS tools, internal wikis, ticketing systems, and communication platforms. Connector coverage, sync latency, schema fidelity, and permission mapping all become measurable data quality dimensions - not just infrastructure concerns. Platforms that provide enterprise AI search and retrieval, such as Glean, treat connector integrity as a first-class component of data quality for exactly this reason.
 
-Organizations that treat data quality as a foundational discipline — not a one-time cleanup project — are far better positioned to see real returns from their AI investments. The gap between AI initiatives that deliver value and those that stall almost always traces back to this foundation.
+Organizations that treat data quality as a foundational discipline - not a one-time cleanup project - are far better positioned to see real returns from their AI investments. The gap between AI initiatives that deliver value and those that stall almost always traces back to this foundation.
 
 ## Why is data quality critical for AI success?
 
-AI systems treat inputs as literal signals. A mislabeled example, a shifted schema, or a quietly truncated field can steer a model toward spurious correlations—then that behavior shows up everywhere the model runs. In enterprise settings, those defects often hide inside routine data flows: CRM exports, ticket fields, HR rosters, policy docs, and chat transcripts.
+AI systems treat inputs as literal signals. A mislabeled example, a shifted schema, or a quietly truncated field can steer a model toward spurious correlations-then that behavior shows up everywhere the model runs. In enterprise settings, those defects often hide inside routine data flows: CRM exports, ticket fields, HR rosters, policy docs, and chat transcripts.
 
 High-performing AI programs share one operational advantage: disciplined data control. Clear definitions, dataset lineage, and enforced standards make model behavior reproducible across retrains, audits, and incident reviews. Without that backbone, teams spend cycles on diagnosis instead of progress, and every new use case inherits the same uncertainty.
 
@@ -110,15 +110,15 @@ Three data attributes matter most in day-to-day enterprise retrieval:
 
 ### Reliable AI requires cross-department confidence, not isolated accuracy
 
-Enterprise AI rarely serves one team in isolation. Engineering needs accurate incident context; support needs verified troubleshooting steps; sales needs current account facts; HR and IT need correct policy and process guidance. Data gaps in any one stream can spill into adjacent workflows—especially when AI outputs become shared inputs, such as summaries, handoffs, and automated updates.
+Enterprise AI rarely serves one team in isolation. Engineering needs accurate incident context; support needs verified troubleshooting steps; sales needs current account facts; HR and IT need correct policy and process guidance. Data gaps in any one stream can spill into adjacent workflows-especially when AI outputs become shared inputs, such as summaries, handoffs, and automated updates.
 
 Data quality also shapes operational risk and compliance posture. Frameworks such as the NIST AI Risk Management Framework and OECD AI principles stress traceability, robustness, and accountability; those goals become difficult when training and source data lack clear provenance, consistent definitions, or reliable coverage across real-world cases.
 
 ### Evaluation frameworks expose data quality problems early
 
-Modern AI teams treat evaluation as a production system, not a one-time test. Automated evaluators and agent evaluation methods score retrieval relevance, groundedness, and task success across scenario sets and data slices; those scores pinpoint where data defects—not model choice—cause failures.
+Modern AI teams treat evaluation as a production system, not a one-time test. Automated evaluators and agent evaluation methods score retrieval relevance, groundedness, and task success across scenario sets and data slices; those scores pinpoint where data defects-not model choice-cause failures.
 
-Evaluation can also reduce guesswork in quality debates. In one internal comparison described in industry research, human raters agreed with each other only 79% of the time on response quality, while an AI evaluator matched that agreement rate closely at 74%. That gap clarifies why calibrated automated evaluation, paired with targeted human review, can surface data issues faster than ad hoc feedback—especially when inputs shift over time and model performance depends on stable, well-defined data.
+Evaluation can also reduce guesswork in quality debates. In one internal comparison described in industry research, human raters agreed with each other only 79% of the time on response quality, while an AI evaluator matched that agreement rate closely at 74%. That gap clarifies why calibrated automated evaluation, paired with targeted human review, can surface data issues faster than ad hoc feedback-especially when inputs shift over time and model performance depends on stable, well-defined data.
 
 ## What are the consequences of poor data quality in AI?
 
@@ -128,7 +128,7 @@ The most damaging outcome tends to be organizational whiplash. One group adapts 
 
 ### Bias, brittleness, and uneven performance across the business
 
-When enterprise datasets reflect only a narrow slice of reality, AI outputs favor that slice. Gaps show up as sharp performance cliffs in scenarios that matter—new product lines, uncommon incident types, non-standard contract terms, or smaller geographies.
+When enterprise datasets reflect only a narrow slice of reality, AI outputs favor that slice. Gaps show up as sharp performance cliffs in scenarios that matter-new product lines, uncommon incident types, non-standard contract terms, or smaller geographies.
 
 -   **Hidden bias through proxy fields**: Seemingly neutral attributes (location, tenure band, channel, device type) can stand in for protected classes or sensitive categories; the model then reproduces skewed outcomes without an explicit “bias feature.”
 -   **Blind spots from missingness**: Sparse fields, partial forms, and optional metadata reduce coverage for rare but high-impact cases; accuracy looks fine on averages but drops on critical slices.
@@ -136,13 +136,13 @@ When enterprise datasets reflect only a narrow slice of reality, AI outputs favo
 
 ### Operational drag in search, recommendations, and customer-facing work
 
-Poor data quality degrades retrieval and ranking in a very specific way: the system retrieves “plausible” context that lacks the decisive detail a user needs. The result becomes extra verification work, slower handoffs, and more escalations—especially in support and IT workflows that depend on precise steps and current policy.
+Poor data quality degrades retrieval and ranking in a very specific way: the system retrieves “plausible” context that lacks the decisive detail a user needs. The result becomes extra verification work, slower handoffs, and more escalations-especially in support and IT workflows that depend on precise steps and current policy.
 
 Typical operational symptoms include:
 
 -   **Ranking that favors noise**: Redundant pages and near-duplicate tickets crowd out the authoritative source; teams receive long result lists with weak signal density.
 -   **Context fragmentation across systems**: Disconnected records prevent a clean join between customer history, ticket updates, product changes, and internal decisions; the AI response misses key dependencies because the underlying data cannot connect.
--   **Recommendation drift**: As source data shifts—new fields, new categories, new templates—recommendations skew toward outdated patterns and inconsistent taxonomies.
+-   **Recommendation drift**: As source data shifts-new fields, new categories, new templates-recommendations skew toward outdated patterns and inconsistent taxonomies.
 
 ### Compliance exposure, audit friction, and measurable financial loss
 
@@ -152,7 +152,7 @@ The resource impact proves persistent. Data teams allocate substantial time to r
 
 ## Key dimensions of data quality for AI
 
-Data quality for AI breaks into a handful of dimensions that teams can measure, test, and enforce in pipelines. Each dimension maps to distinct failure patterns—misclassification, unstable retrieval, compliance gaps, or brittle performance under change.
+Data quality for AI breaks into a handful of dimensions that teams can measure, test, and enforce in pipelines. Each dimension maps to distinct failure patterns-misclassification, unstable retrieval, compliance gaps, or brittle performance under change.
 
 ### Accuracy and completeness
 
@@ -182,14 +182,14 @@ Relevance means each feature, field, or document earns its place by improving ou
 
 Uniqueness ensures the dataset reflects reality rather than copy patterns. Duplication often comes from templates, mirrored repositories, forwarded email chains, or repeated exports; AI can overweight those artifacts unless teams create canonical records.
 
--   **Noise control for knowledge corpora**: Apply ROT controls (redundant, outdated, trivial) with lifecycle metadata—owner, review date, retirement status.
+-   **Noise control for knowledge corpora**: Apply ROT controls (redundant, outdated, trivial) with lifecycle metadata-owner, review date, retirement status.
 -   **Feature usefulness tests**: Evaluate features against task metrics (precision for routing, accuracy for classification, groundedness for answers) and remove fields that fail to move those measures.
 -   **Canonical entity rules**: Define one primary record for people, customers, services, and policies; store references and aliases instead of parallel “truths.”
 -   **Near-duplicate handling**: Use similarity thresholds to group copied content and preserve the best instance as the reference source.
 
 ### Representativeness and bias
 
-Representativeness means the dataset matches where the business runs today—channels, geographies, customer segments, product mix, and language. AI performance depends on balanced exposure to both routine cases and the rarer scenarios that stress workflows and controls.
+Representativeness means the dataset matches where the business runs today-channels, geographies, customer segments, product mix, and language. AI performance depends on balanced exposure to both routine cases and the rarer scenarios that stress workflows and controls.
 
 Bias enters through selection, labeling, and historical process choices. Bias rarely sits in a single column; it often appears as imbalanced sampling, proxy variables, or inconsistent labeling standards across teams.
 
@@ -200,7 +200,7 @@ Bias enters through selection, labeling, and historical process choices. Bias ra
 
 ### Governance, security, and permissions (enterprise-critical)
 
-Governance defines who owns data, how changes get approved, and how teams prove reliability under audit. For enterprise AI, governance must also cover access policy enforcement across every stage that touches data—ingest, storage, retrieval, generation, and action.
+Governance defines who owns data, how changes get approved, and how teams prove reliability under audit. For enterprise AI, governance must also cover access policy enforcement across every stage that touches data-ingest, storage, retrieval, generation, and action.
 
 Security quality includes access correctness, retention controls, and evidence trails that support investigations without broad exposure. A strong governance layer reduces the probability that AI systems learn from or reveal data outside intended bounds.
 
@@ -213,11 +213,11 @@ Security quality includes access correctness, retention controls, and evidence t
 
 Assessment should produce concrete artifacts that engineering, security, and data teams can review: a source inventory, a risk register, a metric baseline, and a set of acceptance tests tied to the target workflows. This approach reduces debate over “good data” and replaces it with evidence that aligns to business outcomes and governance expectations highlighted in frameworks such as NIST’s AI risk work.
 
-Treat the exercise as two parallel workstreams: input readiness (what the AI can safely consume) and outcome readiness (how the AI behaves when it uses that input). The handoff between the two should remain explicit—each failed outcome test should trace back to a specific upstream defect class.
+Treat the exercise as two parallel workstreams: input readiness (what the AI can safely consume) and outcome readiness (how the AI behaves when it uses that input). The handoff between the two should remain explicit-each failed outcome test should trace back to a specific upstream defect class.
 
 ### Run a source-by-source data audit
 
-Build a catalog of every source the AI will rely on, then document what each source can and cannot support for the use case. The objective here is clarity on scope, quality risk, and operational constraints—not a one-time cleanup effort.
+Build a catalog of every source the AI will rely on, then document what each source can and cannot support for the use case. The objective here is clarity on scope, quality risk, and operational constraints-not a one-time cleanup effort.
 
 -   **Inventory with purpose**: list each dataset or repository plus its intended role (training, retrieval corpus, reference data, or feedback signal).
 -   **Field and document inspection**: record schema shape, null patterns, value distributions, text length limits, and format deviations that will affect feature use or retrieval context.
@@ -239,7 +239,7 @@ Use a metric set such as:
 
 ### Test coverage and representativeness with slice analysis
 
-An enterprise dataset can look robust yet fail on the situations that matter most—rare escalations, new regions, non-default languages, or unusual contract structures. Use slice checks to confirm that the AI will see enough examples of the real conditions it must handle.
+An enterprise dataset can look robust yet fail on the situations that matter most-rare escalations, new regions, non-default languages, or unusual contract structures. Use slice checks to confirm that the AI will see enough examples of the real conditions it must handle.
 
 A practical slice plan can include:
 
@@ -293,27 +293,27 @@ Connector quality determines what the AI can access, how it interprets content, 
 
 ## Data quality best practices for AI readiness
 
-AI readiness depends on operational habits that keep data dependable as systems and processes shift. These practices work best when they sit close to how teams already ship changes—data pipelines, content publishing, application administration, and security reviews.
+AI readiness depends on operational habits that keep data dependable as systems and processes shift. These practices work best when they sit close to how teams already ship changes-data pipelines, content publishing, application administration, and security reviews.
 
 ### Build a strong data governance foundation
 
 Governance has to make quality enforceable: clear responsibility, shared definitions, and a repeatable path from issue discovery to remediation. Without that, AI teams inherit local interpretations of “truth,” and model behavior varies by department.
 
 -   **Assign accountable owners for critical data elements**: Name an owner not only for each source, but also for high-impact fields and document sets (severity, entitlement, policy effective date, support resolution codes). Ownership includes approval rights for schema changes and responsibility for downstream breakage.
--   **Define standards that match AI usage, not only reporting**: Extend classic dimensions (accuracy, completeness, consistency, timeliness, uniqueness) with AI-specific requirements—label guidelines, representativeness expectations, and documented intended use for each dataset.
+-   **Define standards that match AI usage, not only reporting**: Extend classic dimensions (accuracy, completeness, consistency, timeliness, uniqueness) with AI-specific requirements-label guidelines, representativeness expectations, and documented intended use for each dataset.
 -   **Set consistent collection and update rules across systems**: Standardize taxonomies, required fields, and allowed values at the point of entry. “Fix it later” creates permanent variance once those records propagate into training sets and retrieval corpora.
 -   **Create fast feedback paths between producers and consumers**: Route defects to the team that controls the source process, with a shared severity scale and resolution SLAs. Treat repeated defects as process issues, not individual record issues.
 -   **Make connector governance a first-class domain**: Track connector versions, schema changes, and permission sync health; run periodic access parity checks and content coverage checks after upstream application updates.
 
 ### Prioritize continuous monitoring over one-time cleanup
 
-Static quality scores age quickly because enterprise data never stays still—new fields arrive, workflows change, and records drift away from earlier assumptions. Continuous checks reduce the window between a quality regression and detection, which protects downstream AI behavior.
+Static quality scores age quickly because enterprise data never stays still-new fields arrive, workflows change, and records drift away from earlier assumptions. Continuous checks reduce the window between a quality regression and detection, which protects downstream AI behavior.
 
 -   **Adopt data observability across pipelines and sources**: Monitor volume, freshness, schema stability, and distribution shifts with automated thresholds that adapt to normal patterns. A sudden drop in records or a new null spike should trigger an alert before model output quality drops.
 -   **Automate validation at ingest and before model use**: Apply schema rules, range checks, format validation, and deduplication as standard pipeline gates. Use anomaly detection for high-velocity sources where manual review cannot scale.
 -   **Track “AI-facing” quality indicators**: Maintain dashboards for label consistency, slice coverage, document staleness, and duplicate content density. These indicators correlate more strongly with retrieval accuracy and response reliability than generic database health checks.
 -   **Couple monitoring with outcome scoring**: Add continuous scoring for source traceability rate, verified-source match rate, workflow completion rate, and human override rate. A stable pipeline can still produce degraded outputs when semantics shift in a key system.
--   **Define remediation workflows that close the loop**: Alerts should map to concrete actions—rollback a schema change, re-sync a connector, retire an outdated document set, re-label a class with poor agreement, or expand data collection for a thin slice.
+-   **Define remediation workflows that close the loop**: Alerts should map to concrete actions-rollback a schema change, re-sync a connector, retire an outdated document set, re-label a class with poor agreement, or expand data collection for a thin slice.
 
 ### Connect and unify organizational knowledge
 
@@ -322,12 +322,12 @@ Most enterprise AI use cases fail at the seams: the same customer appears under 
 -   **Establish master references for core entities**: Create authoritative reference tables for people, customers, products, services, and locations; maintain alias maps for common variations from upstream applications. This reduces duplicate retrieval and stabilizes joins across systems.
 -   **Normalize information architecture across repositories**: Standardize document types, lifecycle states (draft, active, deprecated), ownership, and review cadence. Retire redundant, outdated, and trivial content so retrieval systems do not overweight noise.
 -   **Build relationship signals that reflect real work**: Link incidents to services, tickets to customers, policies to owners, and decisions to supporting docs. Relationship integrity improves context selection for RAG and reduces brittle “keyword only” matches.
--   **Preserve access policy fidelity across the unified view**: Enforce least-privilege access at every layer that touches content—index, retrieval, and response generation. Treat entitlement mismatches and stale group membership as data quality defects because they corrupt what the system can safely use.
--   **Align unification work with retrieval performance goals**: Measure improvements through retrieval precision, citation alignment, and reduction in duplicate results per query. Tie these metrics back to specific unification steps—identity resolution, lifecycle cleanup, and relationship linking.
+-   **Preserve access policy fidelity across the unified view**: Enforce least-privilege access at every layer that touches content-index, retrieval, and response generation. Treat entitlement mismatches and stale group membership as data quality defects because they corrupt what the system can safely use.
+-   **Align unification work with retrieval performance goals**: Measure improvements through retrieval precision, citation alignment, and reduction in duplicate results per query. Tie these metrics back to specific unification steps-identity resolution, lifecycle cleanup, and relationship linking.
 
 ## How to maintain data quality after AI deployment
 
-After deployment, quality work shifts from “prepare the dataset” to “protect the system.” Every new policy page, ticket template, CRM field change, or org restructure can alter what the AI sees and how it behaves—especially in assistants that pull from both structured records and unstructured knowledge.
+After deployment, quality work shifts from “prepare the dataset” to “protect the system.” Every new policy page, ticket template, CRM field change, or org restructure can alter what the AI sees and how it behaves-especially in assistants that pull from both structured records and unstructured knowledge.
 
 A durable approach treats data quality as part of runtime reliability: detect degradation early, trace it to a specific upstream change, then apply a fix that prevents recurrence.
 
@@ -350,10 +350,10 @@ A single refresh cadence rarely fits the whole enterprise. Support guidance chan
 A practical operating model:
 
 1.  **Domain-specific data recertification**: require periodic recertification for high-impact knowledge sets (runbooks, escalation playbooks, policy docs) with an explicit “effective as of” marker and an owner sign-off.
-2.  **Event-driven retrain triggers**: retrain when a measurable shift appears in label distributions, resolution codes, product taxonomy, or customer segmentation—not only on a calendar.
+2.  **Event-driven retrain triggers**: retrain when a measurable shift appears in label distributions, resolution codes, product taxonomy, or customer segmentation-not only on a calendar.
 3.  **Backtesting before rollout**: run pre-release comparisons against a fixed benchmark set plus a recent “live slice” set so the system does not regress on new patterns that did not exist during initial training.
 
-This cadence should include the retrieval corpus, not just the model. Many production regressions come from content churn—renamed pages, moved folders, rewritten templates—rather than from algorithm changes.
+This cadence should include the retrieval corpus, not just the model. Many production regressions come from content churn-renamed pages, moved folders, rewritten templates-rather than from algorithm changes.
 
 ### Link quality alerts to concrete remediation paths
 
@@ -369,7 +369,7 @@ Verification should not rely on “looks correct.” Use explicit checks such as
 
 ### Use AI to enforce data quality at scale
 
-AI can help maintain quality, but it should operate as a controlled assistant to data processes—not as an opaque editor. The strongest use cases target repeatable patterns: anomalies, duplicates, and inconsistent labels.
+AI can help maintain quality, but it should operate as a controlled assistant to data processes-not as an opaque editor. The strongest use cases target repeatable patterns: anomalies, duplicates, and inconsistent labels.
 
 High-leverage automation patterns include:
 
@@ -381,7 +381,7 @@ These controls work best with tight logging: what rule fired, what content chang
 
 ### Make evaluation a production control plane
 
-Production evaluation should function as a quality gate and an early-warning system. It should cover both “did the system find the right evidence?” and “did it use that evidence correctly?”—because many failures originate in context selection rather than generation.
+Production evaluation should function as a quality gate and an early-warning system. It should cover both “did the system find the right evidence?” and “did it use that evidence correctly?”-because many failures originate in context selection rather than generation.
 
 Maintain a rolling evaluation program with three layers:
 
@@ -415,7 +415,7 @@ Key governance upgrades that support action-oriented AI:
 
 As capabilities expand, governance should also cover retention and provenance expectations so teams can recreate what the AI saw at the time of an action, with a clear chain from source data to decision to outcome.
 
-Data quality isn't a prerequisite you check off before AI deployment — it's an ongoing discipline that determines whether your AI investment compounds in value or quietly erodes trust. The organizations that treat it as a living practice, not a one-time project, are the ones building AI systems their teams actually rely on.
+Data quality isn't a prerequisite you check off before AI deployment - it's an ongoing discipline that determines whether your AI investment compounds in value or quietly erodes trust. The organizations that treat it as a living practice, not a one-time project, are the ones building AI systems their teams actually rely on.
 
 If you're ready to see how we approach this challenge, [request a demo](https://www.glean.com/get-a-demo) to explore how AI can transform your workplace.
 

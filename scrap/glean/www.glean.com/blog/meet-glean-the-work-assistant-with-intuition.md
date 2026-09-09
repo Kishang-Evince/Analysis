@@ -95,7 +95,7 @@ Help to make sense of it all. But how? Key conversations are happening around th
 
 There’s no way we could know everything we need to know. But, what if there was?  
 
-**What if you could know what your company knows—instantly.**   
+**What if you could know what your company knows-instantly.**   
 
 What if you could know things, like you know to wake up in the middle of the night to turn off the oven. Or like you know there’s something still missing in the deck you’re presenting to your boss tomorrow. Or like you know to trust that your idea is not only going to work, but that it’s going to change the world. Now you can with Glean.   
 
@@ -117,7 +117,7 @@ Know Pam is working on something that could make your project better. Know that 
 
 Now, there’s nothing standing in the way of you and your team getting big things done. Glean is fired up and ready to go, right out of the box. So, what are you waiting for?
 
-‍**Know what your company knows—instantly.**   
+‍**Know what your company knows-instantly.**   
 
 We’re here to bring people the knowledge they need to make a difference in the world. And we’re ready to bring it to you with [Glean](https://www.glean.com/).  
 

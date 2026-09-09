@@ -107,7 +107,7 @@ Generative AI agents can be categorized based on their functionality and the nat
 
 Generative AI agents operate using complex models trained on extensive datasets. Here's a breakdown of their functionality:
 
-1.  **Data collection and training:** They are trained on large datasets relevant to their task—be it text, images, or audio. During training, they learn the patterns, structures, and nuances of the data.
+1.  **Data collection and training:** They are trained on large datasets relevant to their task-be it text, images, or audio. During training, they learn the patterns, structures, and nuances of the data.
 2.  **Model architecture:** Common architectures include transformers (for text generation) and GANs (for image generation). These models consist of multiple layers of neural networks that process data and generate outputs.
 3.  **Output generation:** Upon receiving an input or prompt, the agent generates new content. This process involves sampling from the model's learned distribution to create outputs that are novel yet consistent with the training data.
 4.  **Feedback and learning:** They can improve over time through reinforcement learning and fine-tuning, adapting to user feedback and evolving needs.

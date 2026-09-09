@@ -100,7 +100,7 @@ List‑specific properties for Contacts and Companies remain unsupported at this
 
 ### How long do changes in Affinity take to show up in Glean?
 
-The connector uses **full crawls only**, changes in Affinity (such as new opportunities, updated fields, or new relationships) can take up to the configured full‑crawl interval—by default, about **one hour**—to appear in Glean search. This interval can be adjusted by Glean on a per‑object basis if needed.
+The connector uses **full crawls only**, changes in Affinity (such as new opportunities, updated fields, or new relationships) can take up to the configured full‑crawl interval-by default, about **one hour**-to appear in Glean search. This interval can be adjusted by Glean on a per‑object basis if needed.
 
 ## See also[​](#see-also "Direct link to See also")
 

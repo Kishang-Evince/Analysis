@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:52.071Z"
 ---
 ### Overview
 
-Ramp brings corporate cards, expense management, bill pay, and accounting automation into one finance platform. Connecting Ramp to Glean puts that functionality inside everyday workflows — so teams can access finance context and ask spend questions in natural language without a platform switch.
+Ramp brings corporate cards, expense management, bill pay, and accounting automation into one finance platform. Connecting Ramp to Glean puts that functionality inside everyday workflows - so teams can access finance context and ask spend questions in natural language without a platform switch.
 
 ### Features
 

@@ -17,7 +17,7 @@ All Glean customers who connect Slack must deploy Slack Real Time Search (RTS). 
 
 ## How Slack RTS works[​](#how-slack-rts-works "Direct link to How Slack RTS works")
 
-The Slack RTS connector is a **federated connector** — it does not crawl or index Slack message content. Instead, Glean fetches Slack messages live at query time via Slack's RTS API. Message bodies are processed in memory only and are not written into a Glean index.
+The Slack RTS connector is a **federated connector** - it does not crawl or index Slack message content. Instead, Glean fetches Slack messages live at query time via Slack's RTS API. Message bodies are processed in memory only and are not written into a Glean index.
 
 The full Slack integration is a **hybrid connector** that requires both connectors configured in order:
 
@@ -30,7 +30,7 @@ Together, these two connectors blend real-time results from Slack's RTS API with
 
 note
 
-You may notice that the Slack RTS connector shows only a small number of records being "synced." This is expected. Glean only crawls identity and metadata (users, channels, memberships) — not message content. Message bodies are retrieved live at query time.
+You may notice that the Slack RTS connector shows only a small number of records being "synced." This is expected. Glean only crawls identity and metadata (users, channels, memberships) - not message content. Message bodies are retrieved live at query time.
 
 ## Features available with Slack RTS[​](#features-available-with-slack-rts "Direct link to Features available with Slack RTS")
 
@@ -45,7 +45,7 @@ Feature limitations with Slack RTS
 
 The following Glean in Slack features are **not available** with Slack RTS:
 
--   **Daily digest** — delivery is not supported for RTS-powered deployments
+-   **Daily digest** - delivery is not supported for RTS-powered deployments
 
 ![Glean search results in Slack](/img/administration/assistant/slackbot/about-slackbot/glean-search-results1.png)
 
@@ -71,8 +71,8 @@ There is no way to partially upgrade Glean in Slack. Once you complete the Slack
 
 Once the upgrade is complete, interact with the new Glean app:
 
--   **Primary app (Glean)** — use the app named **Glean** for all `/glean` commands and `@Glean` mentions. This is the RTS-powered app that handles your searches and questions.
--   **Background App (Enterprise Graph)** — you may still see an app named **Enterprise Graph** in your Slack sidebar or mentioned in older messages. This app remains active in the background to ensure search results stay accurate and ranked correctly, but you do not need to message or interact with it directly.
+-   **Primary app (Glean)** - use the app named **Glean** for all `/glean` commands and `@Glean` mentions. This is the RTS-powered app that handles your searches and questions.
+-   **Background App (Enterprise Graph)** - you may still see an app named **Enterprise Graph** in your Slack sidebar or mentioned in older messages. This app remains active in the background to ensure search results stay accurate and ranked correctly, but you do not need to message or interact with it directly.
 
 tip
 
@@ -97,9 +97,9 @@ Each user must individually authorize the Glean Slack app to see full, permissio
 The RTS upgrade is handled through the Slack connector configuration. For detailed upgrade instructions, refer to:
 
 -   [Identify your connector and existing setup](/connectors/native/slack/upgrade/identify-connector-type/): determine your current configuration before upgrading
--   [Slack RTS connector setup](/connectors/native/slack/setup/slack-rts-connector/) — full RTS connector setup steps
--   [Gleanbot behavior during upgrade](/connectors/native/slack/upgrade/gleanbot-during-upgrade/) — what happens to the bot during the transition
--   [Slack connector changes: Gleanbot impacts and FAQ](/connectors/native/slack/about/gleanbot-impacts/) — common questions about connector changes
+-   [Slack RTS connector setup](/connectors/native/slack/setup/slack-rts-connector/) - full RTS connector setup steps
+-   [Gleanbot behavior during upgrade](/connectors/native/slack/upgrade/gleanbot-during-upgrade/) - what happens to the bot during the transition
+-   [Slack connector changes: Gleanbot impacts and FAQ](/connectors/native/slack/about/gleanbot-impacts/) - common questions about connector changes
 
 ## Cost considerations[​](#cost-considerations "Direct link to Cost considerations")
 

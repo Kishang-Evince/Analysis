@@ -83,7 +83,7 @@ The difference between a citation assistant that saves time and one that creates
 
 ### Retrieval-augmented generation (RAG)
 
-RAG-based assistants pull actual source content from connected repositories before generating a response, rather than reconstructing facts from model memory. This retrieval step grounds every claim in a real document, and it is the single most effective way to reduce fabricated citations. A [Stanford HAI study](https://hai.stanford.edu/news/ai-trial-legal-models-hallucinate-1-out-6-or-more-benchmarking-queries) found that RAG-based legal research tools hallucinate 17–34% of the time, compared to 58–82% for general-purpose chatbots — a meaningful reduction, though not elimination.
+RAG-based assistants pull actual source content from connected repositories before generating a response, rather than reconstructing facts from model memory. This retrieval step grounds every claim in a real document, and it is the single most effective way to reduce fabricated citations. A [Stanford HAI study](https://hai.stanford.edu/news/ai-trial-legal-models-hallucinate-1-out-6-or-more-benchmarking-queries) found that RAG-based legal research tools hallucinate 17–34% of the time, compared to 58–82% for general-purpose chatbots - a meaningful reduction, though not elimination.
 
 Without RAG, a language model predicts what a citation should look like based on patterns in training data. The result often reads correctly but points to a source that does not exist.
 
@@ -239,7 +239,7 @@ Academic citation workflows require format compliance (APA, MLA, Chicago) and so
 
 They do if the tool connects to your internal repositories. Consumer-grade citation tools typically search public sources and academic databases. Enterprise citation assistants like Glean connect to internal tools such as Confluence, Google Drive, Slack, Jira, and SharePoint through native connectors, indexing content with permission controls so citations draw from your organization's actual knowledge.
 
-The right AI citation assistant turns every answer into a verifiable, permission-aware response grounded in your organization's actual knowledge. When citations are accurate and traceable, your team can move from checking sources manually to acting on answers with confidence — especially critical given that [AI hallucinations cost businesses $67.4 billion in 2024](https://fourdots.com/business-impact-of-ai-hallucinations-rates-and-ranks). [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo).
+The right AI citation assistant turns every answer into a verifiable, permission-aware response grounded in your organization's actual knowledge. When citations are accurate and traceable, your team can move from checking sources manually to acting on answers with confidence - especially critical given that [AI hallucinations cost businesses $67.4 billion in 2024](https://fourdots.com/business-impact-of-ai-hallucinations-rates-and-ranks). [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo).
 
 [
 

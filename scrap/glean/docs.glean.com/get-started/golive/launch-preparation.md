@@ -2,7 +2,7 @@
 url: "https://docs.glean.com/get-started/golive/launch-preparation"
 canonical: "https://docs.glean.com/get-started/golive/launch-preparation"
 title: "Rollout strategy"
-description: "Strategies and best practices for a successful Glean rollout — staggered launches, user surveys, kickoff sessions, office hours, and communication templates."
+description: "Strategies and best practices for a successful Glean rollout - staggered launches, user surveys, kickoff sessions, office hours, and communication templates."
 fetched_at: "2026-09-01T13:29:49.615Z"
 ---
 On this page
@@ -13,7 +13,7 @@ Because implementing Glean across your organization can be a transformative step
 
 info
 
-This article covers the strategic side of a rollout — identifying users, surveys, kickoff sessions, office hours, and communications. For the operational checklist you complete in the **Admin console** (people data, permissions, SSO assignment, invitations, and the browser extension), see [Roll out Glean to your teammates](/get-started/golive/roll-out-glean-to-teammates).
+This article covers the strategic side of a rollout - identifying users, surveys, kickoff sessions, office hours, and communications. For the operational checklist you complete in the **Admin console** (people data, permissions, SSO assignment, invitations, and the browser extension), see [Roll out Glean to your teammates](/get-started/golive/roll-out-glean-to-teammates).
 
 ## Pre-launch preparation[​](#pre-launch-preparation "Direct link to Pre-launch preparation")
 
@@ -179,7 +179,7 @@ Refer to below email template below for a company-wide communication to inform o
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [Roll out Glean to your teammates](/get-started/golive/roll-out-glean-to-teammates) — the operational five-step checklist in the **Admin console**
--   [Deploy the Glean apps](/get-started/golive/deploy-apps) — set up the managed browser extension rollout that's referenced in your communications
--   [Populate content](/get-started/golive/populate-content) — add Announcements, Answers, Go Links, Collections, and verified documents before your users arrive
--   [Post-launch tasks](/get-started/start/post-launch-tasks) — what to do once your initial users are signed in
+-   [Roll out Glean to your teammates](/get-started/golive/roll-out-glean-to-teammates) - the operational five-step checklist in the **Admin console**
+-   [Deploy the Glean apps](/get-started/golive/deploy-apps) - set up the managed browser extension rollout that's referenced in your communications
+-   [Populate content](/get-started/golive/populate-content) - add Announcements, Answers, Go Links, Collections, and verified documents before your users arrive
+-   [Post-launch tasks](/get-started/start/post-launch-tasks) - what to do once your initial users are signed in

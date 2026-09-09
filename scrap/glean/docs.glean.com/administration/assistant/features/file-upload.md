@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:29:00.211Z"
 ---
 On this page
 
-File upload lets users upload and analyze local files directly in Glean, Public Knowledge, and Apps — querying, summarizing, and generating content from them. This page covers how to enable file upload and the security and retention behavior admins should know. For end-user instructions and supported formats, see the [file upload user guide](/user-guide/assistant/file-upload).
+File upload lets users upload and analyze local files directly in Glean, Public Knowledge, and Apps - querying, summarizing, and generating content from them. This page covers how to enable file upload and the security and retention behavior admins should know. For end-user instructions and supported formats, see the [file upload user guide](/user-guide/assistant/file-upload).
 
 ## Enable file upload[​](#enable-file-upload "Direct link to Enable file upload")
 

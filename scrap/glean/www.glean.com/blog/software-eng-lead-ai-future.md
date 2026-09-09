@@ -95,15 +95,15 @@ In a recent roundtable discussion that I hosted in partnership with the Executiv
 
 ## The role of AI in software engineering: a balancing act
 
-According to GitHub, developers spend 75% of their time on non-coding tasks. This statistic underscores a long-standing challenge in the software engineering domain—optimizing workflows so engineers can focus on high-value problem-solving rather than administrative overhead.
+According to GitHub, developers spend 75% of their time on non-coding tasks. This statistic underscores a long-standing challenge in the software engineering domain-optimizing workflows so engineers can focus on high-value problem-solving rather than administrative overhead.
 
 During the roundtable, attendees shared their experiences with AI-powered tools, discussing the benefits and complexities of measuring productivity gains. For example, one technology leader from an international investment bank elaborated on their experience of rolling out AI-supported coding to thousands of engineers, emphasising the need to justify ROI while ensuring that AI augments human capabilities rather than replaces them. Others echoed this sentiment, highlighting the need for continuous human oversight in AI-assisted coding to maintain code quality and governance.  
 
 ## Rethinking talent strategies for the AI era
 
-Another conversation revolved around talent management and the evolving skill set required in modern software engineering. The concept of the ‘skills half-life’ emerged as a concern—technical expertise is becoming obsolete faster than ever, requiring software engineers to adapt constantly. This also necessitates continuous skills development, along with the associated costs.
+Another conversation revolved around talent management and the evolving skill set required in modern software engineering. The concept of the ‘skills half-life’ emerged as a concern-technical expertise is becoming obsolete faster than ever, requiring software engineers to adapt constantly. This also necessitates continuous skills development, along with the associated costs.
 
-Some leaders shared their strategies for hiring and retaining talent in an AI-enabled world, emphasising problem-solving abilities and adaptability over several years of experience with specific tools. One engineering director expressed the difficulty of balancing deep technical expertise with the ability to learn and evolve—something that is very difficult to write into a job specification, because it is as much about future potential as prior experience.
+Some leaders shared their strategies for hiring and retaining talent in an AI-enabled world, emphasising problem-solving abilities and adaptability over several years of experience with specific tools. One engineering director expressed the difficulty of balancing deep technical expertise with the ability to learn and evolve-something that is very difficult to write into a job specification, because it is as much about future potential as prior experience.
 
 Another recurring theme was the value of full-stack generalists - engineers with a holistic understanding of the software development ecosystem - who can seamlessly integrate AI into their workflows. Moreover, participants underscored the importance of maintaining a mix of senior and junior talent to maximise AI’s potential in different contexts, ensuring diverse perspectives in technical decision-making.  
 
@@ -113,11 +113,11 @@ The discussion shifted to how software engineering teams should be structured wh
 
 This led to broader conversations around governance, ethical considerations, and the importance of human values in AI development. One attendee noted that before embedding ethics into AI models, teams must establish clear ethical guidelines within their organisations – for example, how personal data is handled and what constitutes fair and legitimate use.
 
-AI is increasingly influencing other aspects of the software development lifecycle beyond coding, including requirements gathering, testing, and deployment automation. This holistic approach requires engineering leaders to rethink how responsibilities are divided between human expertise and AI-generated efficiencies—each has something valuable to offer and it is the role of leaders to maximise the delivery of that value.  
+AI is increasingly influencing other aspects of the software development lifecycle beyond coding, including requirements gathering, testing, and deployment automation. This holistic approach requires engineering leaders to rethink how responsibilities are divided between human expertise and AI-generated efficiencies-each has something valuable to offer and it is the role of leaders to maximise the delivery of that value.  
 
 ## Measuring productivity in an AI-augmented world
 
-One of the debated topics in the session was how organisations should measure productivity in the context of AI. Simplistic methods—such as counting lines of code—were criticised as poor indicators of meaningful output. Instead, our leaders advocated using established industry metrics like DORA, which focus on broader team performance rather than isolated developer output.
+One of the debated topics in the session was how organisations should measure productivity in the context of AI. Simplistic methods-such as counting lines of code-were criticised as poor indicators of meaningful output. Instead, our leaders advocated using established industry metrics like DORA, which focus on broader team performance rather than isolated developer output.
 
 The consensus was clear: productivity measurement must be tied to tangible business outcomes. AI-driven efficiencies are only valuable if they significantly improve software quality, delivery timelines, and end-user experience. One attendee pointed out that executive leadership teams are often primarily concerned with timely delivery rather than the specific processes used to achieve it, reinforcing the need for strategic alignment between AI initiatives and business goals.  
 
@@ -129,7 +129,7 @@ AI’s ability to automatically document code in natural language can streamline
 
 ## The future of AI in engineering leadership
 
-As software engineering evolves alongside AI, leaders must navigate a delicate balance—leveraging automation while preserving the human ingenuity and creativity that drives innovation. Our conversation highlighted that AI is an enabler, not a replacement for talented software engineers, and the most effective leaders will be those who blend technical foresight with ethical and strategic leadership.
+As software engineering evolves alongside AI, leaders must navigate a delicate balance-leveraging automation while preserving the human ingenuity and creativity that drives innovation. Our conversation highlighted that AI is an enabler, not a replacement for talented software engineers, and the most effective leaders will be those who blend technical foresight with ethical and strategic leadership.
 
 In my view, the road ahead is not just about mastering AI tools but also about reshaping software engineering cultures to embrace AI as a collaborative force rather than a disruptive threat. 
 

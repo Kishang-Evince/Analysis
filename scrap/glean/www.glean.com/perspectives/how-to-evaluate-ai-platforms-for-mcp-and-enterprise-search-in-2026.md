@@ -63,7 +63,7 @@ Share this article:
 
 # How to evaluate AI platforms for MCP and enterprise search in 2026
 
-Evaluating AI platforms for MCP and enterprise search starts with how well a platform retrieves verified answers from your company's knowledge and whether it enforces permissions so each engineer sees only what they're authorized to access. Equally important is how the platform connects models to live tools through standardized protocols like [MCP](https://www.glean.com/blog/cowork-mcp-eval) — enabling action, not just answers.
+Evaluating AI platforms for MCP and enterprise search starts with how well a platform retrieves verified answers from your company's knowledge and whether it enforces permissions so each engineer sees only what they're authorized to access. Equally important is how the platform connects models to live tools through standardized protocols like [MCP](https://www.glean.com/blog/cowork-mcp-eval) - enabling action, not just answers.
 
 Indexed knowledge retrieval and permission-aware context work together with live tool integration to keep engineering teams productive without creating security gaps. A strong [enterprise AI search](https://www.glean.com/blog/enterprise-ai-search-rag) foundation ensures that when any of these layers is missing, teams either lose time searching across disconnected systems or risk exposing sensitive data to the wrong people.
 
@@ -71,11 +71,11 @@ The practical approach is to evaluate architecture, security, and real workflow 
 
 ## Combine architecture, security, and workflow testing in one evaluation
 
-Start with the decision that matters most: pick the platform that helps engineers find answers they can verify, act on approved systems safely, and stay within their existing permissions. Your evaluation should combine an architecture review with a security review and hands-on workflow testing. Running these reviews in parallel surfaces tradeoffs early — a platform might score well on retrieval speed but fail on dynamic permission enforcement, or handle permissions correctly but lack the protocol support to connect with live development tools.
+Start with the decision that matters most: pick the platform that helps engineers find answers they can verify, act on approved systems safely, and stay within their existing permissions. Your evaluation should combine an architecture review with a security review and hands-on workflow testing. Running these reviews in parallel surfaces tradeoffs early - a platform might score well on retrieval speed but fail on dynamic permission enforcement, or handle permissions correctly but lack the protocol support to connect with live development tools.
 
-Enterprise search retrieves knowledge from documentation, wikis, code repositories, and internal tools — the stable, indexed information your team relies on daily. With the [enterprise search market](https://www.precedenceresearch.com/enterprise-search-market) projected to grow from $5.83 billion in 2026 to $12.71 billion by 2035, the stakes of choosing the right platform are significant. Permission-aware context sits on top, filtering results so each user only sees content they're authorized to access based on their role, team, and project scope.
+Enterprise search retrieves knowledge from documentation, wikis, code repositories, and internal tools - the stable, indexed information your team relies on daily. With the [enterprise search market](https://www.precedenceresearch.com/enterprise-search-market) projected to grow from $5.83 billion in 2026 to $12.71 billion by 2035, the stakes of choosing the right platform are significant. Permission-aware context sits on top, filtering results so each user only sees content they're authorized to access based on their role, team, and project scope.
 
-MCP (Model Context Protocol) connects the AI model to live tools and data sources — CI/CD pipelines, incident management systems, feature flag services — so the model can take action, not just answer questions. Glean's [Work AI platform](https://www.glean.com/blog/the-definitive-guide-to-ai-based-enterprise-search-for-2025) combines enterprise search with dynamic permission enforcement at the retrieval layer, meaning access controls are applied before results ever reach the user rather than being filtered after the fact.
+MCP (Model Context Protocol) connects the AI model to live tools and data sources - CI/CD pipelines, incident management systems, feature flag services - so the model can take action, not just answer questions. Glean's [Work AI platform](https://www.glean.com/blog/the-definitive-guide-to-ai-based-enterprise-search-for-2025) combines enterprise search with dynamic permission enforcement at the retrieval layer, meaning access controls are applied before results ever reach the user rather than being filtered after the fact.
 
 Modern engineering work spans both stable documentation and fast-changing operational systems, so your evaluation should compare indexed knowledge and live tool access side by side. An engineer debugging a production incident needs to pull from runbooks (indexed knowledge) and query the current state of a deployment pipeline (live tool access via MCP).
 
@@ -85,19 +85,19 @@ Evaluate whether a platform handles both by running a concrete test: ask it to s
 
 Before you open a vendor demo, map the work your engineers actually do every day. That list typically includes finding design documents, tracing decision history across months of comments and threads, debugging incidents under time pressure, reviewing pull request context spread across multiple repositories, triaging tickets with incomplete descriptions, and onboarding to services owned by other teams.
 
-Split those workflows into two categories: read-heavy and action-heavy. Read-heavy work — finding the right architecture doc, understanding why a migration was paused, pulling context for a code review — requires strong retrieval and cited, grounded answers. Understanding the tradeoffs between [federated search](https://www.glean.com/blog/federated-indexed-enterprise-ai) and indexed retrieval will help you evaluate which approach best supports these read-heavy patterns. Action-heavy work — creating a summary ticket from an incident channel, updating a runbook, kicking off a deployment check — requires safe tool use through MCP with clear guardrails.
+Split those workflows into two categories: read-heavy and action-heavy. Read-heavy work - finding the right architecture doc, understanding why a migration was paused, pulling context for a code review - requires strong retrieval and cited, grounded answers. Understanding the tradeoffs between [federated search](https://www.glean.com/blog/federated-indexed-enterprise-ai) and indexed retrieval will help you evaluate which approach best supports these read-heavy patterns. Action-heavy work - creating a summary ticket from an incident channel, updating a runbook, kicking off a deployment check - requires safe tool use through MCP with clear guardrails.
 
 Make success measurable before you see a single demo. Write 10 to 15 test prompts drawn from real engineering language: prompts with internal acronyms, partial service names, and the kind of half-remembered context that engineers actually type.
 
-Decide what "good" looks like for each prompt — time to answer, citation accuracy, whether the response respects permission boundaries, and whether any triggered action completed correctly. Glean's Enterprise Graph maps relationships across documents, people, and tools, which gives retrieval a structural advantage on prompts that span multiple systems.
+Decide what "good" looks like for each prompt - time to answer, citation accuracy, whether the response respects permission boundaries, and whether any triggered action completed correctly. Glean's Enterprise Graph maps relationships across documents, people, and tools, which gives retrieval a structural advantage on prompts that span multiple systems.
 
 ## 2\. Separate enterprise search, code assistance, and MCP tool access before you compare platforms
 
 Vendors have a strong incentive to collapse distinct capabilities into a single pitch. Resist that framing.
 
-Enterprise search answers questions across company knowledge — wikis, design docs, incident postmortems, team chat, ticket history. Code assistance operates inside a development environment on source files, completions, and refactors. MCP tool access lets an AI interact with live systems: querying dashboards, reading deployment status, filing tickets, or triggering approved workflows.
+Enterprise search answers questions across company knowledge - wikis, design docs, incident postmortems, team chat, ticket history. Code assistance operates inside a development environment on source files, completions, and refactors. MCP tool access lets an AI interact with live systems: querying dashboards, reading deployment status, filing tickets, or triggering approved workflows.
 
-Ask pointed questions at each boundary. Does the platform search code-adjacent knowledge — review comments, architecture decision records, incident notes linked to specific commits — or does it only index source files? Evaluating how vendors differentiate as [enterprise AI systems](https://www.glean.com/blog/enterprise-ai-vendor-9-questions) can help you cut through surface-level claims. Code search alone misses the reasoning layer that engineers rely on when they need to understand why something was built a certain way.
+Ask pointed questions at each boundary. Does the platform search code-adjacent knowledge - review comments, architecture decision records, incident notes linked to specific commits - or does it only index source files? Evaluating how vendors differentiate as [enterprise AI systems](https://www.glean.com/blog/enterprise-ai-vendor-9-questions) can help you cut through surface-level claims. Code search alone misses the reasoning layer that engineers rely on when they need to understand why something was built a certain way.
 
 On the MCP side, ask whether tool access stops at simple single-step calls or extends to multi-step workflows with session management, approved action lists, and audit trails. With the MCP ecosystem now exceeding [over 10,000 active public servers](https://www.digitalapplied.com/blog/mcp-adoption-statistics-2026-model-context-protocol) and 97 million monthly SDK downloads, a platform that wraps a single API call in MCP branding is not offering governed tool use.
 
@@ -114,13 +114,13 @@ Test retrieval across multiple dimensions:
 -   **Fragmented-context handling:** When the answer lives across four documents from different tools, can the platform synthesize a coherent response without dropping attribution for any source?
 -   **Ambiguity:** Search for a term your organization uses for two different services, or reference a project by its old name. See whether the platform disambiguates or returns a confused mix.
 
-Measure freshness directly. Update a document — change a runbook step or close an incident — and measure how quickly the platform reflects the change. Glean Search uses hybrid retrieval across 100-plus connectors and ranks results using the Enterprise Graph's understanding of team ownership and document relationships. Freshness and disambiguation are where many platforms quietly fall short, so test them early.
+Measure freshness directly. Update a document - change a runbook step or close an incident - and measure how quickly the platform reflects the change. Glean Search uses hybrid retrieval across 100-plus connectors and ranks results using the Enterprise Graph's understanding of team ownership and document relationships. Freshness and disambiguation are where many platforms quietly fall short, so test them early.
 
 ## 4\. Verify that permission-aware context is enforced before answers are generated
 
 Permission enforcement is not a feature checkbox. It is an architecture decision that shapes how every answer gets assembled. A permission-aware platform should inherit source-system permissions at retrieval time, so restricted content never enters the context window that feeds the model. Building the right [permissions structure](https://www.glean.com/blog/secure-generative-ai-for-the-enterprise-requires-the-right-permissions-structure) is essential for secure and relevant results in complex enterprise environments.
 
-An engineer asking about a sensitive incident review should receive a different answer than a contractor asking the same question — not because the answer is filtered after generation, but because the retrieval set itself was different.
+An engineer asking about a sensitive incident review should receive a different answer than a contractor asking the same question - not because the answer is filtered after generation, but because the retrieval set itself was different.
 
 Run live tests with accounts at different access levels. Have an engineer, a manager, and an external contractor issue the same prompt and compare results side by side. This matters because [76% of enterprises](https://medhacloud.com/blog/ai-adoption-statistics-2026) cite data privacy and security as their top AI risk, and 34% have already experienced an AI-related security incident. Probe edge cases: private Slack threads, restricted Confluence spaces, repositories with branch-level access rules, and HR documents shared with a limited distribution list.
 
@@ -134,25 +134,25 @@ A vendor's MCP page might list dozens of tool integrations. That count tells you
 
 Ask to see the gateway or control plane that sits between the AI and your production systems. Without that layer, MCP support is just unmanaged API calls with a new label.
 
-Examine tool contracts in detail. Every MCP-connected tool should have clearly defined inputs, outputs, scopes, and side effects. Understanding how enterprise-grade [MCP servers](https://www.glean.com/blog/mcp-servers-septdrop-2025) ground AI tools with full company context and permissions can help you benchmark what good looks like. The platform should select the right tool at the right moment based on the user's intent and current context — not through brittle prompt templates that break when phrasing changes.
+Examine tool contracts in detail. Every MCP-connected tool should have clearly defined inputs, outputs, scopes, and side effects. Understanding how enterprise-grade [MCP servers](https://www.glean.com/blog/mcp-servers-septdrop-2025) ground AI tools with full company context and permissions can help you benchmark what good looks like. The platform should select the right tool at the right moment based on the user's intent and current context - not through brittle prompt templates that break when phrasing changes.
 
 Test a realistic multi-step workflow: an engineer investigating a production alert who needs to pull recent deployment logs, check related tickets, gather relevant runbook sections, and produce a summary. The platform should chain those steps with each tool call scoped to the engineer's permissions.
 
 Pay close attention to failure handling and write-action governance. What happens when a tool endpoint is slow, a permission check fails mid-workflow, or a tool returns partial results? The platform should degrade gracefully, surface the gap, and avoid silently skipping steps.
 
-For any action that modifies state — creating a ticket, updating a document, triggering a pipeline — require human confirmation gates, durable audit logs, and rollback paths. Glean's Agentic Engine orchestrates multi-step workflows with enterprise governance, and the evaluation principle is the same for any platform: depth of control matters more than breadth of logos.
+For any action that modifies state - creating a ticket, updating a document, triggering a pipeline - require human confirmation gates, durable audit logs, and rollback paths. Glean's Agentic Engine orchestrates multi-step workflows with enterprise governance, and the evaluation principle is the same for any platform: depth of control matters more than breadth of logos.
 
 ## 6\. Look for a strong context layer, not just a large model
 
-Models improve on a rapid cycle. The model powering your platform today will likely be swapped or upgraded within months. What does not change as quickly is the context layer — the organizational knowledge graph that tells the platform which documents matter to which teams, who last edited a runbook, which services a group owns, and how a design decision connects to a pull request from three months ago.
+Models improve on a rapid cycle. The model powering your platform today will likely be swapped or upgraded within months. What does not change as quickly is the context layer - the organizational knowledge graph that tells the platform which documents matter to which teams, who last edited a runbook, which services a group owns, and how a design decision connects to a pull request from three months ago.
 
 That structural understanding is what makes answers traceable and verifiable rather than plausible-sounding guesses. Understanding how [knowledge graphs](https://www.glean.com/blog/knowledge-graph-agentic-engine) enable multi-hop reasoning and enterprise-specific language helps explain why this layer is so critical for agentic AI.
 
-A strong context layer enables responsible personalization without creating a black box. When an engineer on the payments team asks about "the migration," the platform should weight results toward the payments migration — not the marketing site migration or the database migration running in another division.
+A strong context layer enables responsible personalization without creating a black box. When an engineer on the payments team asks about "the migration," the platform should weight results toward the payments migration - not the marketing site migration or the database migration running in another division.
 
 That ranking should be traceable: the engineer should be able to see why a particular document surfaced. Glean's Enterprise Graph and Personal Graph build organizational context by mapping relationships across documents, people, teams, and tools, which gives retrieval a structural signal that pure keyword or embedding search lacks.
 
-Test the context layer with a concrete scenario. Have a new engineer — someone who just joined a team and has no query history — ask a question about the service they're onboarding to. Does the platform return relevant architecture docs and team-specific runbooks, or does it return the same generic results any user would see? Context quality is the longer-term advantage.
+Test the context layer with a concrete scenario. Have a new engineer - someone who just joined a team and has no query history - ask a question about the service they're onboarding to. Does the platform return relevant architecture docs and team-specific runbooks, or does it return the same generic results any user would see? Context quality is the longer-term advantage.
 
 ## 7\. Assess governance, model flexibility, and deployment fit
 
@@ -160,7 +160,7 @@ Governance should be built into the platform's architecture, not added as a sett
 
 Every MCP tool call, every search query, and every generated answer should produce an auditable record that your security team can query. Implementing [AI governance](https://www.glean.com/blog/data-gov-product-blog) that flags and remediates overshared sensitive data is essential for safely deploying agents at scale.
 
-Ask about model flexibility and deployment boundaries. Can you choose different models for different tasks — a fast model for simple lookups, a more capable model for complex multi-step reasoning — or are you locked into a single provider's offering? On deployment, clarify data residency: does the platform support managed cloud, VPC deployment, or on-premises hosting for teams with strict data boundary requirements?
+Ask about model flexibility and deployment boundaries. Can you choose different models for different tasks - a fast model for simple lookups, a more capable model for complex multi-step reasoning - or are you locked into a single provider's offering? On deployment, clarify data residency: does the platform support managed cloud, VPC deployment, or on-premises hosting for teams with strict data boundary requirements?
 
 Connector depth matters more than connector count. A connector that indexes Jira ticket titles but skips comments, attachments, and custom fields will leave gaps in every answer that depends on ticket context.
 
@@ -181,15 +181,15 @@ Score each task across these dimensions:
 -   **Latency:** Was the response fast enough to stay in the engineer's flow?
 -   **Operator confidence:** Did the engineer trust the result enough to act on it without a second manual check?
 
-Collect both quantitative scores and qualitative notes — the scores show patterns, but the notes reveal failure modes you did not anticipate.
+Collect both quantitative scores and qualitative notes - the scores show patterns, but the notes reveal failure modes you did not anticipate.
 
-Watch for subtle breakdowns that only surface under real use — stale answers drawn from outdated documents, permission leaks where a synthesized response hints at content the user should not see, and fragile tool selection that works for one phrasing but fails on a slight restatement. Glean Agents can orchestrate multi-step pilot tasks with governed tool access, making it possible to test retrieval, permissions, and action in a single workflow.
+Watch for subtle breakdowns that only surface under real use - stale answers drawn from outdated documents, permission leaks where a synthesized response hints at content the user should not see, and fragile tool selection that works for one phrasing but fails on a slight restatement. Glean Agents can orchestrate multi-step pilot tasks with governed tool access, making it possible to test retrieval, permissions, and action in a single workflow.
 
 ## Frequently asked questions
 
 ### What criteria should teams use to evaluate AI platforms for MCP support?
 
-Focus on governed tool discovery, policy enforcement, and audit depth — not the number of listed integrations. The platform should authenticate each tool call, enforce scoped permissions, handle failures gracefully, and produce a durable log of every action.
+Focus on governed tool discovery, policy enforcement, and audit depth - not the number of listed integrations. The platform should authenticate each tool call, enforce scoped permissions, handle failures gracefully, and produce a durable log of every action.
 
 ### How does permission-aware context impact engineering workflows?
 

@@ -47,10 +47,10 @@
 
 ### Verification steps / test case
 
-1. Notion ACL gap test — share page with integration, confirm all connector users see it.
-2. Time OneDrive upload to search hit — document lag vs Drive webhook speed.
-3. List weaknesses in client-facing advisory with severity tags — no spin.
-4. Compare weakness list to Glean compare pages — note omissions.
+1. Notion ACL gap test - share page with integration, confirm all connector users see it.
+2. Time OneDrive upload to search hit - document lag vs Drive webhook speed.
+3. List weaknesses in client-facing advisory with severity tags - no spin.
+4. Compare weakness list to Glean compare pages - note omissions.
 
 **Risk & Cost Impact:** Risk: **High** if weaknesses not disclosed pre-sale (Notion/healthcare) | Cost: Mitigation = connector segmentation + Live Mode
 

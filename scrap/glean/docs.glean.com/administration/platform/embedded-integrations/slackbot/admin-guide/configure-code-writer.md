@@ -23,17 +23,17 @@ Code Writer uses the same GitHub connector, GitHub App, and tools configuration 
 
 Before users can use Code Writer in Slack:
 
-1.  **Glean in Slack is installed** — Follow the setup steps in the Glean in Slack documentation so your workspace can use the Glean app.
+1.  **Glean in Slack is installed** - Follow the setup steps in the Glean in Slack documentation so your workspace can use the Glean app.
     
-2.  **GitHub is connected** — The GitHub connector is configured and connected to the repositories where Code Writer will open pull requests.
+2.  **GitHub is connected** - The GitHub connector is configured and connected to the repositories where Code Writer will open pull requests.
     
-3.  **Code Writer tools are configured** — The Code generation / Code Writer tools are set up in the Admin console with:
+3.  **Code Writer tools are configured** - The Code generation / Code Writer tools are set up in the Admin console with:
     
     -   A GitHub connector instance.
     -   The Glean GitHub App installed.
     -   Authentication and (optional) GPG signing configured.
     -   Access granted to the groups who will use Slack.
-4.  **User GitHub auth completed** — On first use, engineers connect their GitHub account via OAuth so Code Writer can run on their behalf.
+4.  **User GitHub auth completed** - On first use, engineers connect their GitHub account via OAuth so Code Writer can run on their behalf.
     
 
 ## Admin configuration for Slack[​](#admin-configuration-for-slack "Direct link to Admin configuration for Slack")

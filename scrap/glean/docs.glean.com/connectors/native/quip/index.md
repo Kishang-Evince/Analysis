@@ -41,7 +41,7 @@ You need Admin API access, OAuth credentials, the right Quip admin roles, and Gl
 
 ### Technical requirements[​](#technical-requirements "Direct link to Technical requirements")
 
--   **Quip Admin API** enabled for your org (off by default—request it from Salesforce)
+-   **Quip Admin API** enabled for your org (off by default-request it from Salesforce)
 -   Access to a live Quip tenant and **company admin** privileges
 -   Ability to create and rotate **OAuth 2.0** client credentials for the integration
 -   (Optional) A higher Admin API rate limit for large orgs
@@ -53,7 +53,7 @@ You need Admin API access, OAuth credentials, the right Quip admin roles, and Gl
 -   The integration user must appear on the **Admin API users** list in Quip with the admin API management permission (that permission is hidden until Admin API is enabled)
 -   Your Quip **company ID** (from the Quip admin console)
 -   Your Quip **instance hostname** (for example `yourcompany.quip.com`)
--   A **dedicated Quip user** (service-style account) used only for Glean—strongly recommended
+-   A **dedicated Quip user** (service-style account) used only for Glean-strongly recommended
 
 ### Before you connect[​](#before-you-connect "Direct link to Before you connect")
 
@@ -76,7 +76,7 @@ Work is split between **Quip** (API access, OAuth app, IDs) and the Glean **Admi
 
 ### Enable the Quip Admin API[​](#enable-the-quip-admin-api "Direct link to Enable the Quip Admin API")
 
-1.  Confirm the Admin API is allowed for your org. If it is not on yet, follow Salesforce/Quip support guidance—see [Quip Admin API requirements](https://quip.com/dev/admin/documentation/current#section/Requirements). When you request enablement, ask to raise the per-user rate limit to **500 requests per minute** if you expect a large corpus (default is **100**).
+1.  Confirm the Admin API is allowed for your org. If it is not on yet, follow Salesforce/Quip support guidance-see [Quip Admin API requirements](https://quip.com/dev/admin/documentation/current#section/Requirements). When you request enablement, ask to raise the per-user rate limit to **500 requests per minute** if you expect a large corpus (default is **100**).
 2.  As a sanity check, call the [`/users/list`](https://quip.com/dev/admin/documentation/current#operation/listUsersAtCompany) endpoint with admin credentials.
 
 ### Add Quip identifiers in Glean[​](#add-quip-identifiers-in-glean "Direct link to Add Quip identifiers in Glean")

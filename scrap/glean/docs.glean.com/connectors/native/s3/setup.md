@@ -66,7 +66,7 @@ In the Glean **Admin console**, open the **S3** connector and provide:
 
 1.  In AWS, open **IAM**.
 2.  Choose **Roles** → **Create role**.
-3.  Use the **trusted entity type** and trust policy from the Glean **S3** connector setup page for AWS-hosted Glean (typically a cross-account trust to Glean’s AWS account—not the Google web identity flow).
+3.  Use the **trusted entity type** and trust policy from the Glean **S3** connector setup page for AWS-hosted Glean (typically a cross-account trust to Glean’s AWS account-not the Google web identity flow).
 4.  Attach `AmazonS3ReadOnlyAccess` (or your approved read-only policy).
 5.  Name the role, create it, then open the role and copy **Role ARN**.
 

@@ -63,7 +63,7 @@ Share this article:
 
 # Unlocking knowledge: AI's role in workplace transformation
 
-The modern workplace generates an overwhelming amount of information every day. Emails, documents, chat messages, and databases scatter critical knowledge across dozens of applications, making it increasingly difficult for employees to find what they need. This fragmentation costs businesses dearly—employees lose at least two hours daily searching for information, equivalent to one full workday each week.
+The modern workplace generates an overwhelming amount of information every day. Emails, documents, chat messages, and databases scatter critical knowledge across dozens of applications, making it increasingly difficult for employees to find what they need. This fragmentation costs businesses dearly-employees lose at least two hours daily searching for information, equivalent to one full workday each week.
 
 But artificial intelligence is fundamentally changing how we discover, access, and use workplace knowledge. The average large US company loses [$47 million](https://www.panopto.com/company/news/inefficient-knowledge-sharing-costs-large-businesses-47-million-per-year/) in productivity annually as a direct result of inefficient knowledge sharing. US knowledge workers waste 5.3 hours every week waiting for vital information from colleagues or recreating existing institutional knowledge. By transforming scattered data into accessible insights, AI-powered systems are revolutionizing productivity and reshaping how organizations operate.
 
@@ -75,11 +75,11 @@ But artificial intelligence is fundamentally changing how we discover, access, a
 
 AI-driven knowledge discovery represents the convergence of artificial intelligence with enterprise search and knowledge management systems. It's a fundamental shift in how employees interact with organizational information.
 
-Unlike traditional search that relies on keyword matching, AI understands context, intent, and relationships between information. When an engineer searches for "employee onboarding," the system knows to surface development environment setup guides and code repository access—not the sales enablement materials a new sales representative would need for the same query.
+Unlike traditional search that relies on keyword matching, AI understands context, intent, and relationships between information. When an engineer searches for "employee onboarding," the system knows to surface development environment setup guides and code repository access-not the sales enablement materials a new sales representative would need for the same query.
 
 Modern AI-powered [workplace search](https://www.glean.com/product/workplace-search-ai) uses natural language processing to interpret queries the way humans naturally ask questions. Instead of forcing employees to think in keywords, they can ask "What's our parental leave policy?" or "How do I file expenses?" and receive accurate, contextual answers.
 
-These systems connect to 100+ enterprise applications while maintaining strict security permissions. Whether information lives in Slack, email, cloud storage, or specialized databases, AI creates a unified access point. Importantly, permissions remain intact—employees only see what they're authorized to access, preventing data leaks while enabling discovery.
+These systems connect to 100+ enterprise applications while maintaining strict security permissions. Whether information lives in Slack, email, cloud storage, or specialized databases, AI creates a unified access point. Importantly, permissions remain intact-employees only see what they're authorized to access, preventing data leaks while enabling discovery.
 
 AI transforms scattered data across emails, documents, conversations, and databases into accessible, actionable insights. The technology moves beyond simple retrieval to provide synthesized answers with citations and context, turning hours of searching into seconds of finding.
 
@@ -87,13 +87,13 @@ AI transforms scattered data across emails, documents, conversations, and databa
 
 Legacy knowledge management relied on manual tagging, rigid taxonomies, and siloed repositories. These systems required constant maintenance and often failed when employees couldn't remember the exact location or naming convention for needed information.
 
-AI automates content classification and creates a [knowledge graph](https://www.glean.com/product/knowledge-graph) of dynamic connections between related information. Instead of forcing data into predetermined categories, machine learning identifies patterns and relationships that humans might miss. A support ticket about a product bug automatically connects to relevant engineering documentation, feature specifications, and previous customer issues—without manual intervention.
+AI automates content classification and creates a [knowledge graph](https://www.glean.com/product/knowledge-graph) of dynamic connections between related information. Instead of forcing data into predetermined categories, machine learning identifies patterns and relationships that humans might miss. A support ticket about a product bug automatically connects to relevant engineering documentation, feature specifications, and previous customer issues-without manual intervention.
 
 Intelligent search platforms now understand organizational context and user roles to deliver personalized results. The same search query returns different results for different teams, ensuring relevance. A product manager searching for "roadmap" sees strategic planning documents, while an engineer sees technical implementation timelines.
 
 Machine learning continuously improves search relevance based on user interactions and feedback. Every click, every document opened, and every query refinement teaches the system about your organization's unique language and priorities. Over time, search quality typically improves by 20% through this self-learning process.
 
-AI eliminates the need for employees to remember where information lives or navigate complex folder structures. Knowledge becomes democratized—accessible to everyone who needs it, regardless of their familiarity with internal systems.
+AI eliminates the need for employees to remember where information lives or navigate complex folder structures. Knowledge becomes democratized-accessible to everyone who needs it, regardless of their familiarity with internal systems.
 
 Real-time indexing ensures the most current information surfaces first, reducing outdated content issues. When policies update or projects evolve, employees automatically see the latest version without hunting through revision histories.
 
@@ -103,7 +103,7 @@ Real-time indexing ensures the most current information surfaces first, reducing
 
 Retrieval Augmented Generation (RAG) combines search capabilities with large language models, creating a powerful synthesis of finding and understanding. Instead of just listing documents, RAG systems comprehend content and generate coherent answers.
 
-RAG systems find relevant information and generate comprehensive, contextual answers. When asked "How do we handle customer refunds?", the system doesn't just point to the policy document—it extracts the specific process, summarizes key points, and provides step-by-step guidance.
+RAG systems find relevant information and generate comprehensive, contextual answers. When asked "How do we handle customer refunds?", the system doesn't just point to the policy document-it extracts the specific process, summarizes key points, and provides step-by-step guidance.
 
 This approach grounds AI responses in actual company data, reducing hallucinations. Unlike general-purpose AI that might invent plausible-sounding but incorrect information, RAG ensures every answer traces back to verified sources within your organization.
 
@@ -113,21 +113,21 @@ The system plans queries, retrieves data, and generates responses with proper ci
 
 ### The rise of agentic reasoning
 
-Agentic AI breaks down complex requests into multiple actionable steps. When asked to "prepare a competitive analysis," the system doesn't just search—it identifies competitors, gathers recent updates, analyzes strengths and weaknesses, and synthesizes findings into actionable insights.
+Agentic AI breaks down complex requests into multiple actionable steps. When asked to "prepare a competitive analysis," the system doesn't just search-it identifies competitors, gathers recent updates, analyzes strengths and weaknesses, and synthesizes findings into actionable insights.
 
 These systems self-reflect and adapt their approach based on results. If initial searches don't yield sufficient information, agents reformulate queries, explore related topics, and piece together answers from multiple sources.
 
-Agents use various tools including search, analysis, and workflow automation. They might pull sales data, analyze trends, search for market reports, and compile everything into a comprehensive response—work that previously required hours of manual effort.
+Agents use various tools including search, analysis, and workflow automation. They might pull sales data, analyze trends, search for market reports, and compile everything into a comprehensive response-work that previously required hours of manual effort.
 
 Architecture improvements show 24% better response relevance with agentic reasoning compared to simple retrieval. The ability to think through problems, rather than just fetch information, marks a fundamental advancement in AI capabilities.
 
-Specialized agents handle repetitive tasks while humans focus on strategic work. Customer service agents draft responses using company knowledge, HR agents answer policy questions, and engineering agents help debug issues—all while learning from human feedback to improve over time.
+Specialized agents handle repetitive tasks while humans focus on strategic work. Customer service agents draft responses using company knowledge, HR agents answer policy questions, and engineering agents help debug issues-all while learning from human feedback to improve over time.
 
 ## Key benefits driving workplace transformation
 
 The impact of AI-driven knowledge discovery extends far beyond time savings, though those alone justify adoption. Employees save hours weekly by finding information in seconds instead of minutes, reclaiming up to 20% of their workweek for higher-value activities.
 
-Knowledge silos dissolve as AI connects information across departments and systems. Marketing teams discover engineering insights, sales accesses customer service patterns, and executives see ground-level realities—all through natural language queries. In fact, Stanford University research found that tasks previously requiring 90 minutes could be completed in just 30 minutes using AI assistance, representing a threefold improvement in task efficiency. Programmers using AI tools completed [126%](https://www.marketingaiinstitute.com/blog/generative-ai-productivity-study) more projects per week compared to control groups.
+Knowledge silos dissolve as AI connects information across departments and systems. Marketing teams discover engineering insights, sales accesses customer service patterns, and executives see ground-level realities-all through natural language queries. In fact, Stanford University research found that tasks previously requiring 90 minutes could be completed in just 30 minutes using AI assistance, representing a threefold improvement in task efficiency. Programmers using AI tools completed [126%](https://www.marketingaiinstitute.com/blog/generative-ai-productivity-study) more projects per week compared to control groups.
 
 Team collaboration with AI improves through shared context and instant access to collective knowledge. Instead of repeatedly answering the same questions or searching for the same documents, teams build on each other's work seamlessly.
 
@@ -141,7 +141,7 @@ Innovation increases as employees spend less time searching and more time creati
 
 ### Multimodal AI Capabilities
 
-Modern AI systems process text, images, audio, and video content simultaneously. This multimodal approach reflects how humans naturally consume information—through various formats and channels.
+Modern AI systems process text, images, audio, and video content simultaneously. This multimodal approach reflects how humans naturally consume information-through various formats and channels.
 
 Visual information in presentations and diagrams becomes searchable and analyzable. Charts embedded in PDFs, architectural diagrams, and even handwritten whiteboard notes enter the searchable knowledge base.
 
@@ -157,7 +157,7 @@ Models understand nuanced business terminology and company-specific language. Th
 
 Multilingual capabilities break down language barriers in global organizations. Employees can search in their preferred language and receive translated content from any source, fostering truly international collaboration.
 
-Improved reasoning capabilities enable complex problem-solving support. AI doesn't just find information—it helps analyze options, identify patterns, and suggest solutions based on organizational knowledge.
+Improved reasoning capabilities enable complex problem-solving support. AI doesn't just find information-it helps analyze options, identify patterns, and suggest solutions based on organizational knowledge.
 
 ### Enterprise-grade security and governance
 
@@ -231,7 +231,7 @@ Predictive analytics will identify knowledge gaps before they impact productivit
 
 Continuous learning systems will keep pace with rapidly changing business environments. As markets shift and technologies evolve, AI will automatically update its understanding, keeping organizational knowledge current and relevant.
 
-The future of work isn't about AI replacing human intelligence—it's about amplifying it. By unlocking the vast knowledge within our organizations, AI enables us to work smarter, collaborate better, and innovate faster. The organizations that embrace this transformation today will define the competitive landscape of tomorrow.
+The future of work isn't about AI replacing human intelligence-it's about amplifying it. By unlocking the vast knowledge within our organizations, AI enables us to work smarter, collaborate better, and innovate faster. The organizations that embrace this transformation today will define the competitive landscape of tomorrow.
 
 Ready to experience the future of workplace intelligence? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) and see firsthand how we can help you unlock the full potential of your organization's knowledge.
 

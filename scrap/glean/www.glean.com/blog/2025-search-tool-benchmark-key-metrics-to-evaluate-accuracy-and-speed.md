@@ -99,13 +99,13 @@ Benchmarking matters more with these platforms because the tool generates answer
 
 Glean grounds this accuracy in the Enterprise Graph, which maps the relationships between documents, messages, tools, and people at your company. That context lets Glean Search return permission-aware, cited answers a user can trace back to the source. For a deeper look at how these systems work, read Glean's [definitive guide to AI-based enterprise search](https://www.glean.com/blog/the-definitive-guide-to-ai-based-enterprise-search-for-2025).
 
-Modern search tool evaluation centers on four primary metric categories. Accuracy measures the correctness and relevance of search results, determining whether users find the right information on the first attempt. Speed encompasses both responsiveness — how quickly results appear — and update frequency, which keeps information current. User experience evaluates interface usability, dashboard clarity, and the quality of reporting tools that help stakeholders extract insights. Finally, pricing and features assess cost-effectiveness relative to the capabilities offered, including advanced AI-driven functionality and integration options.
+Modern search tool evaluation centers on four primary metric categories. Accuracy measures the correctness and relevance of search results, determining whether users find the right information on the first attempt. Speed encompasses both responsiveness - how quickly results appear - and update frequency, which keeps information current. User experience evaluates interface usability, dashboard clarity, and the quality of reporting tools that help stakeholders extract insights. Finally, pricing and features assess cost-effectiveness relative to the capabilities offered, including advanced AI-driven functionality and integration options.
 
 These search tool metrics provide a framework for enterprise search evaluation that goes beyond surface-level comparisons. Organizations that establish clear benchmarking criteria can identify which platforms align with their knowledge management, onboarding, support, or compliance requirements, ultimately driving better adoption and business outcomes.
 
 ## Accuracy metrics: measuring precision and relevance
 
-Accuracy defines the degree to which a search tool retrieves correct, highly relevant results in response to user queries. For AI-powered search platforms like Glean, accuracy extends beyond simple keyword matching to include tool calling accuracy — the system's ability to invoke the right functions or data sources — context retention across multi-turn conversations, and answer correctness when synthesizing information from multiple documents.
+Accuracy defines the degree to which a search tool retrieves correct, highly relevant results in response to user queries. For AI-powered search platforms like Glean, accuracy extends beyond simple keyword matching to include tool calling accuracy - the system's ability to invoke the right functions or data sources - context retention across multi-turn conversations, and answer correctness when synthesizing information from multiple documents.
 
 Accuracy matters because most workers still can't find what they need. Gartner found that [47% of digital workers struggle to find the information they need to do their jobs effectively](https://www.gartner.com/en/newsroom/press-releases/2023-05-10-gartner-survey-reveals-47-percent-of-digital-workers-struggle-to-find-the-information-needed-to-effectively-perform-th). High search accuracy is the fix, and it depends on grounding answers in trusted sources.
 
@@ -113,7 +113,7 @@ Glean addresses this by grounding every answer in your company's knowledge and a
 
 Set accuracy targets carefully, because even the best models fall short of perfect. On Scale AI's [tool-use benchmark for enterprise tasks](https://labs.scale.com/leaderboard/tool_use_enterprise), leading models still reach only about 70%. Rather than trusting vendor claims, teams should define their own accuracy targets and measure candidates against a gold-standard dataset drawn from real queries.
 
-Organizations should test accuracy using real datasets that reflect their actual use cases. This means comparing search results against a gold-standard set of known-correct answers or conducting qualitative assessments with representative user scenarios. For example, an engineering team might evaluate whether the search tool correctly surfaces API documentation, while a customer support department measures first-contact resolution rates — the percentage of inquiries resolved without escalation.
+Organizations should test accuracy using real datasets that reflect their actual use cases. This means comparing search results against a gold-standard set of known-correct answers or conducting qualitative assessments with representative user scenarios. For example, an engineering team might evaluate whether the search tool correctly surfaces API documentation, while a customer support department measures first-contact resolution rates - the percentage of inquiries resolved without escalation.
 
 Accuracy directly impacts productivity across departments. When engineering teams find the right code examples immediately, they reduce research time and accelerate development cycles. Customer support agents equipped with accurate search tools resolve issues faster, improving satisfaction scores and reducing ticket volumes. In knowledge-intensive environments, even a small improvement in search accuracy can translate to meaningful time savings across thousands of employees.
 
@@ -121,13 +121,13 @@ Accuracy directly impacts productivity across departments. When engineering team
 
 Search tool speed encompasses two critical dimensions: response time and update frequency. Response time measures the average duration from query submission to result display, typically tracked in seconds. According to the Nielsen Norman Group's [recognized response-time limits](https://www.nngroup.com/articles/response-times-3-important-limits/), responses near one second keep users in flow, while attention drops sharply beyond about 10 seconds. Delays beyond this threshold create friction that reduces user satisfaction and productivity.
 
-Update frequency determines how quickly new or modified information becomes searchable. For enterprises operating in fast-moving environments — such as software development, financial services, or news organizations — real-time or near-real-time indexing is essential. Leading enterprise search platforms support event-driven indexing via webhooks, change data capture, and API-based connectors so content updates propagate quickly across systems.
+Update frequency determines how quickly new or modified information becomes searchable. For enterprises operating in fast-moving environments - such as software development, financial services, or news organizations - real-time or near-real-time indexing is essential. Leading enterprise search platforms support event-driven indexing via webhooks, change data capture, and API-based connectors so content updates propagate quickly across systems.
 
 Glean keeps results current with more than 100 native connectors that sync content from tools like Slack, Microsoft Teams, SharePoint, Google Drive, and ServiceNow. Event-driven indexing updates the Enterprise Graph as documents change, so a query returns the latest version instead of a stale copy.
 
 Organizations should evaluate speed metrics in the context of their specific workflows. A customer support team needs instant access to the latest product documentation and troubleshooting guides, making real-time updates critical. A legal or compliance department might prioritize accuracy over millisecond-level speed differences but still requires daily indexing so policy changes are immediately searchable.
 
-When comparing platforms, consider creating a table that maps update intervals — real-time, hourly, daily, or weekly — against your department's requirements. Tools that offer configurable update schedules provide flexibility as organizational needs evolve, while platforms with fixed update cycles may create bottlenecks in time-sensitive scenarios.
+When comparing platforms, consider creating a table that maps update intervals - real-time, hourly, daily, or weekly - against your department's requirements. Tools that offer configurable update schedules provide flexibility as organizational needs evolve, while platforms with fixed update cycles may create bottlenecks in time-sensitive scenarios.
 
 ## User experience metrics: interface and reporting quality
 
@@ -173,7 +173,7 @@ A feature comparison matrix helps visualize which capabilities matter most for y
 
 ## Aligning search tool choice with business needs and use cases
 
-Effective search tool selection begins with clearly defined use cases. Organizations should identify their primary applications — knowledge management, employee onboarding, customer support, compliance documentation, or workflow automation — before evaluating specific platforms.
+Effective search tool selection begins with clearly defined use cases. Organizations should identify their primary applications - knowledge management, employee onboarding, customer support, compliance documentation, or workflow automation - before evaluating specific platforms.
 
 Knowledge management use cases prioritize accuracy and broad coverage across diverse content types. Teams need to search documents, presentations, spreadsheets, code repositories, and communication channels from a single interface. Platforms that integrate with existing enterprise tools like Slack, Microsoft Teams, SharePoint, and ServiceNow deliver the most value by eliminating the need to search multiple systems separately.
 
@@ -215,7 +215,7 @@ Set your own accuracy threshold using a representative gold-standard dataset, be
 
 ### How is search tool speed measured and optimized?
 
-Search tool speed is measured by average response time from query submission to result display, guided by recognized response-time limits: responses near one second keep users in flow, and attention drops sharply beyond about 10 seconds. Update frequency — how quickly new information becomes searchable — is measured separately, ranging from real-time to daily or weekly cycles. Optimizing speed involves performance tuning of the underlying infrastructure, implementing real-time indexing for critical data sources, and using caching strategies that store frequently accessed results. Organizations should also consider network latency, especially for distributed teams accessing centralized search systems.
+Search tool speed is measured by average response time from query submission to result display, guided by recognized response-time limits: responses near one second keep users in flow, and attention drops sharply beyond about 10 seconds. Update frequency - how quickly new information becomes searchable - is measured separately, ranging from real-time to daily or weekly cycles. Optimizing speed involves performance tuning of the underlying infrastructure, implementing real-time indexing for critical data sources, and using caching strategies that store frequently accessed results. Organizations should also consider network latency, especially for distributed teams accessing centralized search systems.
 
 ### Which metrics best indicate a search tool's real-world impact?
 
@@ -223,7 +223,7 @@ Metrics that directly connect to business outcomes reveal practical impact most 
 
 ### How often should search tool benchmarks be updated?
 
-Benchmarks should be updated quarterly or whenever a major software update, infrastructure change, or organizational shift occurs. Quarterly reviews keep benchmarks aligned with evolving business needs and capture improvements or regressions in platform performance. Major updates — such as new AI models, interface redesigns, or integration changes — warrant immediate re-benchmarking since they can significantly impact accuracy, speed, or user experience. Organizations experiencing rapid growth or changing use cases may need more frequent assessments so their search tool continues meeting current requirements.
+Benchmarks should be updated quarterly or whenever a major software update, infrastructure change, or organizational shift occurs. Quarterly reviews keep benchmarks aligned with evolving business needs and capture improvements or regressions in platform performance. Major updates - such as new AI models, interface redesigns, or integration changes - warrant immediate re-benchmarking since they can significantly impact accuracy, speed, or user experience. Organizations experiencing rapid growth or changing use cases may need more frequent assessments so their search tool continues meeting current requirements.
 
 ### What tools help automate search performance measurement?
 

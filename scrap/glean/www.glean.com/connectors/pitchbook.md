@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:51.695Z"
 ---
 ### Overview
 
-PitchBook delivers comprehensive data on private and public capital markets — covering companies, investors, deals, funds, and valuations across PE, VC, and M&A. Connecting PitchBook to Glean lets teams query that intelligence directly and run deal research, sourcing, and due diligence without leaving their workflow.
+PitchBook delivers comprehensive data on private and public capital markets - covering companies, investors, deals, funds, and valuations across PE, VC, and M&A. Connecting PitchBook to Glean lets teams query that intelligence directly and run deal research, sourcing, and due diligence without leaving their workflow.
 
 ### Features
 
@@ -20,7 +20,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-PitchBook data changes the quality of a decision — but only if it's available at the moment it gets made. In Glean, deal research and due diligence run on trusted external data and internal context within a single governed workflow.
+PitchBook data changes the quality of a decision - but only if it's available at the moment it gets made. In Glean, deal research and due diligence run on trusted external data and internal context within a single governed workflow.
 
 ## Work AI that works.
 

@@ -89,7 +89,7 @@ In order to scale AI efficiently and effectively, it’ll take an innovative app
 
 When it comes to questions that need answered in the enterprise, most are horizontal in nature. Whether it takes a meeting with a subject matter expert, perusing through an internal wiki, poring through multiple threads on Slack, or several buried emails, the right answer often requires multiple sources and confirmations to put together. So what sort of platform should CIOs consider that enable AI to successfully answer those questions? 
 
-That’s where a complete system—a horizontal strategy for AI—enables it to work with enterprise data and workflows.
+That’s where a complete system-a horizontal strategy for AI-enables it to work with enterprise data and workflows.
 
 ![Glean Marchetcture](https://cdn.prod.website-files.com/613513981b0efaf850830620/66c44e1cec46c0fea62391e5_6697fd5a56e215c45b2ea81c_image1-min.webp)
 
@@ -110,7 +110,7 @@ To achieve this, CIOs need to take into account three critical functions that ar
 -   **Data**
     -   Agents must access, understand, and analyze your personal and enterprise data to do work, in a manner that preserves privacy and security regardless of what the data lives. 
 
-## Enterprise-ready agents — today
+## Enterprise-ready agents - today
 
 For CIOs looking to stay ahead of the curve by harnessing the potential of generative AI now and today, it’s important to keep these factors in mind to ensure that they onboard a solution that’s effective, secure, and cost-efficient. 
 

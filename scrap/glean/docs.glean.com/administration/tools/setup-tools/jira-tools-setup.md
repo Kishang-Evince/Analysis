@@ -51,7 +51,7 @@ You do not need to create a custom Atlassian OAuth app if you use Central authen
 3.  From **Add pre-set tools**, select **Jira Tools** or **Jira Extension Tools** under **Tool templates**.
 4.  In the **Configuration** tab:
     1.  Add the **Instance Name**.
-    2.  Select the connected **Connector Instance** to link this tool to your Jira instance. If you manage multiple Jira sites, create a separate tool instance per site and name them clearly, for example, *Jira Tools — Engineering*, *Jira Tools — Support* so each binds to its own connector instance.
+    2.  Select the connected **Connector Instance** to link this tool to your Jira instance. If you manage multiple Jira sites, create a separate tool instance per site and name them clearly, for example, *Jira Tools - Engineering*, *Jira Tools - Support* so each binds to its own connector instance.
     3.  Configure authentication using the tabs below, based on your requirements.
 
 ### Configure authentication[​](#configure-authentication "Direct link to Configure authentication")

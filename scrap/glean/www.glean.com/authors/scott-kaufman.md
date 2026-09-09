@@ -2,7 +2,7 @@
 url: "https://www.glean.com/authors/scott-kaufman"
 canonical: "https://www.glean.com/authors/scott-kaufman"
 title: "Scott Kaufman | Glean"
-description: "Scott Kaufman is an accomplished marketing and sales professional with over a decade of experience helping technology leaders overcome business challenges. As Account Executive for Majors Central at Glean, Scott empowers organizations to manage their knowledge efficiently, drawing on a strong track record at companies like Check Point Software and MuleSoft—where he drove significant revenue growth and led strategic initiatives. With a background in digital marketing and a degree in Economics from the University of Kentucky, Scott is valued for his analytical skills, innovative mindset, and commitment to driving results."
+description: "Scott Kaufman is an accomplished marketing and sales professional with over a decade of experience helping technology leaders overcome business challenges. As Account Executive for Majors Central at Glean, Scott empowers organizations to manage their knowledge efficiently, drawing on a strong track record at companies like Check Point Software and MuleSoft-where he drove significant revenue growth and led strategic initiatives. With a background in digital marketing and a degree in Economics from the University of Kentucky, Scott is valued for his analytical skills, innovative mindset, and commitment to driving results."
 fetched_at: "2026-09-01T13:26:08.463Z"
 ---
 # Scott Kaufman
@@ -15,7 +15,7 @@ Account Executive
 
 ## Scott Kaufman
 
-Scott Kaufman is an accomplished marketing and sales professional with over a decade of experience helping technology leaders overcome business challenges. As Account Executive for Majors Central at Glean, Scott empowers organizations to manage their knowledge efficiently, drawing on a strong track record at companies like Check Point Software and MuleSoft—where he drove significant revenue growth and led strategic initiatives. With a background in digital marketing and a degree in Economics from the University of Kentucky, Scott is valued for his analytical skills, innovative mindset, and commitment to driving results.
+Scott Kaufman is an accomplished marketing and sales professional with over a decade of experience helping technology leaders overcome business challenges. As Account Executive for Majors Central at Glean, Scott empowers organizations to manage their knowledge efficiently, drawing on a strong track record at companies like Check Point Software and MuleSoft-where he drove significant revenue growth and led strategic initiatives. With a background in digital marketing and a degree in Economics from the University of Kentucky, Scott is valued for his analytical skills, innovative mindset, and commitment to driving results.
 
 ## Connect with
 

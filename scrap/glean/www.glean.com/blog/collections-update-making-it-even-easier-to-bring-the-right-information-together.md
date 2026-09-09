@@ -101,7 +101,7 @@ Here’s how different departments might be able to use the updated Collections 
 
 **For product and project managers:** All context and relevant information for a specific project. Use Headers and Subcollections to create sections for planning docs, trackers, and link to dashboards and tickets. 
 
-Just like the holiday season, the updated Collections feature is a great way to bring people together—and help them share things with each other. For more information about how Glean can help your company work together, contact us for a demo.
+Just like the holiday season, the updated Collections feature is a great way to bring people together-and help them share things with each other. For more information about how Glean can help your company work together, contact us for a demo.
 
 [
 

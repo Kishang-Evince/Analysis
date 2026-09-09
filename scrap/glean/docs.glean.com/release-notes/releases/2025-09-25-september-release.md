@@ -23,7 +23,7 @@ Actions *FR-3994*
 
 #### Scheduled Triggers: Run agents on schedules[​](#scheduled-triggers-run-agents-on-schedules "Direct link to Scheduled Triggers: Run agents on schedules")
 
-Glean Agents now support scheduled triggers, enabling agents to run automatically on a set schedule (such as daily, weekly, or monthly) without user intervention. This enhancement allows users and teams to automate recurring tasks, receive timely updates, and standardize business processes—improving productivity and reducing manual effort. Common use cases include intelligent reminders, delegation trackers, and weekly work reports, all available as templates in the agent library.
+Glean Agents now support scheduled triggers, enabling agents to run automatically on a set schedule (such as daily, weekly, or monthly) without user intervention. This enhancement allows users and teams to automate recurring tasks, receive timely updates, and standardize business processes-improving productivity and reducing manual effort. Common use cases include intelligent reminders, delegation trackers, and weekly work reports, all available as templates in the agent library.
 
 **How to access:** Administrators must enable for your organization. Admins can turn on the scheduled triggers by going to Admin console → Platform → Agents → Scheduled triggers.
 
@@ -69,7 +69,7 @@ Assistant *FR-2329*
 
 #### Glean in slack now with agentic engine & adaptive planning[​](#glean-in-slack-now-with-agentic-engine--adaptive-planning "Direct link to Glean in slack now with agentic engine & adaptive planning")
 
-Bring the power of adaptive planning to Glean in Slack. The Glean Slack app now supports agentic engine 2, enabling Glean to autonomously plan, use tools, and execute multi-step actions directly within Slack threads. Users can ask complex questions or request help in Slack channels or DMs, and Glean will proactively reason through multi-step workflows—researching, gathering context, and following through on tasks so work keeps moving. This improves response quality and enables more advanced automation for both channel conversations and private sidebar interactions.
+Bring the power of adaptive planning to Glean in Slack. The Glean Slack app now supports agentic engine 2, enabling Glean to autonomously plan, use tools, and execute multi-step actions directly within Slack threads. Users can ask complex questions or request help in Slack channels or DMs, and Glean will proactively reason through multi-step workflows-researching, gathering context, and following through on tasks so work keeps moving. This improves response quality and enables more advanced automation for both channel conversations and private sidebar interactions.
 
 **How to access:** Enabled with agentic engine (Ref FR-4123)
 
@@ -91,7 +91,7 @@ Admin Capabilities *FR-4172*
 
 #### Admin Self-Serve for Auto-Runnable Actions[​](#admin-self-serve-for-auto-runnable-actions "Direct link to Admin Self-Serve for Auto-Runnable Actions")
 
-Admins can now choose which actions run automatically in the background from Actions > \[action pack\] > Configure in the admin console. Enable trusted automations—like sending a Slack message or creating a Google Doc—without user approval, while keeping sensitive actions under explicit confirmation. This enables admins to balance automation with security based on the organization's needs.
+Admins can now choose which actions run automatically in the background from Actions > \[action pack\] > Configure in the admin console. Enable trusted automations-like sending a Slack message or creating a Google Doc-without user approval, while keeping sensitive actions under explicit confirmation. This enables admins to balance automation with security based on the organization's needs.
 
 [Learn more](/agents/concepts/schedule-triggers)
 

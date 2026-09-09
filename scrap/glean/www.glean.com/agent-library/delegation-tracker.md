@@ -23,13 +23,13 @@ Surfaces all the asks you’ve made that haven’t gotten a response.
 
 ## Overview
 
-The delegation tracker agent helps you stay on top of your open requests by surfacing outstanding action items from your conversations. It scans your daily meetings, messages, and emails to find things you’ve asked others to do — then organizes those asks into a clear list you can follow up on. It’s a simple way to close loops, avoid delays, and keep work moving across teams.
+The delegation tracker agent helps you stay on top of your open requests by surfacing outstanding action items from your conversations. It scans your daily meetings, messages, and emails to find things you’ve asked others to do - then organizes those asks into a clear list you can follow up on. It’s a simple way to close loops, avoid delays, and keep work moving across teams.
 
 ## See it in action
 
 ## Capabilities
 
-Surfaces open asks and follow-ups hidden in meetings, messages, and emails.Helps you remember what tasks are still outstanding — and who you’re waiting on.Reduces delays in cross-functional collaboration and customer workflows.Keeps your day focused by giving you a clear, up-to-date list of delegated tasks.
+Surfaces open asks and follow-ups hidden in meetings, messages, and emails.Helps you remember what tasks are still outstanding - and who you’re waiting on.Reduces delays in cross-functional collaboration and customer workflows.Keeps your day focused by giving you a clear, up-to-date list of delegated tasks.
 
 ## Example output
 
@@ -135,7 +135,7 @@ Get instant meeting summaries with key takeaways, action items, and stakeholder 
 
 #### Daily meeting action summary
 
-Get a clear summary of action items from every meeting — delivered automatically.
+Get a clear summary of action items from every meeting - delivered automatically.
 
 ](/agent-library/daily-meeting-action-summary)
 

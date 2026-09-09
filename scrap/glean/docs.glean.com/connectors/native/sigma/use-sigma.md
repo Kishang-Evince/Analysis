@@ -9,8 +9,8 @@ On this page
 
 Sigma in Glean gives you two ways to work with your organization's Sigma data without leaving Glean:
 
--   **Find dashboards and charts** — search for Sigma workbooks, pages, and elements directly from Glean search.
--   **Ask natural-language questions** — use Glean Assistant to ask natural-language questions about Sigma data and get answers scoped to your permissions.
+-   **Find dashboards and charts** - search for Sigma workbooks, pages, and elements directly from Glean search.
+-   **Ask natural-language questions** - use Glean Assistant to ask natural-language questions about Sigma data and get answers scoped to your permissions.
 
 Both are scoped to your Sigma permissions. You only see content and data you have access to in Sigma.
 
@@ -28,7 +28,7 @@ After your admin sets up the [Sigma search integration](/connectors/native/sigma
 
 ### Tips for better search results[​](#tips-for-better-search-results "Direct link to Tips for better search results")
 
--   Use **business terms** rather than technical Sigma names — Glean indexes descriptions and tags along with titles.
+-   Use **business terms** rather than technical Sigma names - Glean indexes descriptions and tags along with titles.
 -   Include the **workbook name** when searching for a specific page or element within it.
 -   Sigma search results link directly to the content in Sigma, so you can click through to explore further.
 
@@ -52,7 +52,7 @@ When you ask a question about Sigma data, Glean Assistant:
 3.  Queries Sigma on your behalf using your permissions.
 4.  Returns the answer in the Assistant conversation.
 
-You do not need to specify that you want Sigma data — Assistant routes the question automatically based on context.
+You do not need to specify that you want Sigma data - Assistant routes the question automatically based on context.
 
 ### What to expect[​](#what-to-expect "Direct link to What to expect")
 

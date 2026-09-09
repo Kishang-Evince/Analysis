@@ -87,7 +87,7 @@ Start with the default setting. If the agent returns unexpected errors or fails 
 
 -   When the flow reaches the **Wait for user input** step, execution pauses and the user is prompted for input (message or form), with follow-up clarifications as needed.
 -   Agents cannot be cancelled while they are waiting for user input.
--   Conversation is continuous—all prompts and responses remain in the same chat thread for context.
+-   Conversation is continuous-all prompts and responses remain in the same chat thread for context.
 
 ## FAQ[​](#faq "Direct link to FAQ")
 
@@ -117,9 +117,9 @@ The step completes only when it determines that the goal has been satisfied. If 
 
 Keep the goal focused on collecting the answer, then handle routing in a **Branch** step. For a common example, see **Yes/no confirmation pattern** above.
 
-### The agent returns 'Unable to analyse goal, please try again!' — what should I do?
+### The agent returns 'Unable to analyse goal, please try again!' - what should I do?
 
-This message appears when the agent cannot parse the user's reply within the available context. It most often happens when earlier steps (such as **Read document**) add large outputs to memory. To fix this, open the Wait for user input step's menu, select **Manage memory**, and choose **Only immediate previous step**. Also keep the goal text concise — describe only what the step should collect.
+This message appears when the agent cannot parse the user's reply within the available context. It most often happens when earlier steps (such as **Read document**) add large outputs to memory. To fix this, open the Wait for user input step's menu, select **Manage memory**, and choose **Only immediate previous step**. Also keep the goal text concise - describe only what the step should collect.
 
 ### Can the Wait for user input step take file uploads as input?
 

@@ -38,7 +38,7 @@ This page covers the most common issues seen with the GitLab Cloud connector and
 | --- | --- |
 | The token owner does not have access to the projects. | Glean only crawls projects the token can reach. Grant the token owner access, or use a token with broader access. See [GITLAB\_2](/troubleshooting/error-codes/gitlab/gitlab-2) for the full troubleshooting steps. |
 | The projects are outside the configured top-level group. | Each connector indexes one [top-level group](/connectors/native/gitlab/about#top-level-group-scope). Add a separate GitLab Cloud connector for each additional top-level group you want indexed. |
-| The initial crawl is still in progress. | The first full crawl can take time on large accounts. Wait for it to finish, then re-check. All supported objects — merge requests, code, issues, wikis, and epics — are indexed by default, so there is no per-object setting to enable. |
+| The initial crawl is still in progress. | The first full crawl can take time on large accounts. Wait for it to finish, then re-check. All supported objects - merge requests, code, issues, wikis, and epics - are indexed by default, so there is no per-object setting to enable. |
 | Namespace allow/block lists are excluding projects. | If namespace filters were configured, confirm the projects fall within the allowed namespaces. Contact [Glean Support](https://support.glean.com) to review them. |
 
 **Still not resolved?** Contact [Glean Support](https://support.glean.com).

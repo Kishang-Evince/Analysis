@@ -67,9 +67,9 @@ Healthcare organizations face mounting pressure to adopt AI technologies while m
 
 [AI search platforms](https://www.glean.com/blog/enterprise-ai-search-rag) now process millions of patient records, clinical notes, and medical images daily across enterprise healthcare systems. These platforms must navigate a regulatory landscape that demands not just technical security but comprehensive [governance frameworks](https://www.glean.com/blog/data-gov-product-blog) that ensure every interaction with protected health information meets federal standards.
 
-The stakes for non-compliance extend beyond financial penalties—they include reputational damage, loss of patient trust, and potential criminal liability for executives. Organizations that successfully implement compliant AI search platforms gain competitive advantages through faster clinical decision-making, streamlined administrative workflows, and enhanced patient care coordination. Organizations with high levels of shadow AI experienced breaches that cost an additional [$670,000](https://www.bakerdonelson.com/webfiles/Publications/20250822_Cost-of-a-Data-Breach-Report-2025.pdf) compared to organizations with low or no shadow AI usage.
+The stakes for non-compliance extend beyond financial penalties-they include reputational damage, loss of patient trust, and potential criminal liability for executives. Organizations that successfully implement compliant AI search platforms gain competitive advantages through faster clinical decision-making, streamlined administrative workflows, and enhanced patient care coordination. Organizations with high levels of shadow AI experienced breaches that cost an additional [$670,000](https://www.bakerdonelson.com/webfiles/Publications/20250822_Cost-of-a-Data-Breach-Report-2025.pdf) compared to organizations with low or no shadow AI usage.
 
-The stakes for non-compliance extend beyond financial penalties—they include reputational damage, loss of patient trust, and potential criminal liability for executives. Between 2009 and 2024, healthcare data breaches exposed protected health information for more than [846 million](https://www.hipaajournal.com/healthcare-data-breach-statistics/) individuals—exceeding 2.6 times the entire U.S. population. Organizations that successfully implement compliant AI search platforms gain competitive advantages through faster clinical decision-making, streamlined administrative workflows, and enhanced patient care coordination.
+The stakes for non-compliance extend beyond financial penalties-they include reputational damage, loss of patient trust, and potential criminal liability for executives. Between 2009 and 2024, healthcare data breaches exposed protected health information for more than [846 million](https://www.hipaajournal.com/healthcare-data-breach-statistics/) individuals-exceeding 2.6 times the entire U.S. population. Organizations that successfully implement compliant AI search platforms gain competitive advantages through faster clinical decision-making, streamlined administrative workflows, and enhanced patient care coordination.
 
 ## What is HIPAA compliance for AI platforms?
 
@@ -98,7 +98,7 @@ AI platforms must prioritize secure data handling through advanced protection me
 
 ### Regular audits and monitoring
 
-Regular training is vital for upholding compliance—employees must stay informed about HIPAA requirements and specific protocols of their AI systems. This training should cover data privacy best practices and highlight the importance of safeguarding PHI. While [63%](https://www.wolterskluwer.com/en/expert-insights/genai-in-healthcare-brings-the-need-for-risk-policies) of healthcare professionals report being prepared to use generative AI for workflow optimization, only 18% are aware of published organizational policies governing AI use. Ongoing updates ensure that staff remain alert to the latest compliance needs, fostering a culture of security awareness.
+Regular training is vital for upholding compliance-employees must stay informed about HIPAA requirements and specific protocols of their AI systems. This training should cover data privacy best practices and highlight the importance of safeguarding PHI. While [63%](https://www.wolterskluwer.com/en/expert-insights/genai-in-healthcare-brings-the-need-for-risk-policies) of healthcare professionals report being prepared to use generative AI for workflow optimization, only 18% are aware of published organizational policies governing AI use. Ongoing updates ensure that staff remain alert to the latest compliance needs, fostering a culture of security awareness.
 
 ### Business Associate Agreements (BAAs)
 
@@ -106,7 +106,7 @@ Business Associate Agreements (BAAs) are essential contracts that establish a le
 
 ### Continuous training and updates
 
-Regular training is vital for upholding compliance—employees must stay informed about HIPAA requirements and specific protocols of their AI systems. This training should cover data privacy best practices and highlight the importance of safeguarding PHI. Ongoing updates ensure that staff remain alert to the latest compliance needs, fostering a culture of security awareness.
+Regular training is vital for upholding compliance-employees must stay informed about HIPAA requirements and specific protocols of their AI systems. This training should cover data privacy best practices and highlight the importance of safeguarding PHI. Ongoing updates ensure that staff remain alert to the latest compliance needs, fostering a culture of security awareness.
 
 ### Integration with compliance frameworks
 
@@ -134,7 +134,7 @@ Keeping pace with regulatory shifts is critical for maintaining compliance. Esta
 -   **Engage with regulatory experts**: Consult with specialists to interpret complex changes and implement necessary modifications efficiently.
     
 
-As healthcare organizations continue to navigate the intersection of AI innovation and regulatory compliance, the path forward requires both strategic planning and the right technology partner. We understand that implementing compliant AI search platforms demands expertise across security, privacy, and operational excellence—and we're here to help you succeed in this journey. [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) while maintaining the highest standards of HIPAA compliance.
+As healthcare organizations continue to navigate the intersection of AI innovation and regulatory compliance, the path forward requires both strategic planning and the right technology partner. We understand that implementing compliant AI search platforms demands expertise across security, privacy, and operational excellence-and we're here to help you succeed in this journey. [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) while maintaining the highest standards of HIPAA compliance.
 
 [
 

@@ -7,14 +7,14 @@ fetched_at: "2026-09-01T13:25:36.776Z"
 ---
 ## Event summary
 
-Your organization already has a proven model for delivering software at scale — requirements, governance, testing, staged rollout, and clear accountability at every layer. It's called the Software Development Lifecycle, and it works because it creates a shared operating model: clear ownership, measurable quality, and a repeatable path from idea to production.  
+Your organization already has a proven model for delivering software at scale - requirements, governance, testing, staged rollout, and clear accountability at every layer. It's called the Software Development Lifecycle, and it works because it creates a shared operating model: clear ownership, measurable quality, and a repeatable path from idea to production.  
   
-AI agents don't have an enterprise operating model yet — leaving most organizations exposed to governance gaps, inconsistent quality, and deployments that can't be audited or scaled.  
+AI agents don't have an enterprise operating model yet - leaving most organizations exposed to governance gaps, inconsistent quality, and deployments that can't be audited or scaled.  
 That's the problem this event is designed to solve.
 
-Join Glean and Cursor for an executive session exploring what it takes to bring the same discipline that makes software development work to the development of AI agents. We'll map the SDLC directly against Glean's Agent Development Lifecycle — a seven-stage operating model for taking agents from idea to production-grade deployment — and show how Cursor and Glean fit together in the enterprise AI stack.
+Join Glean and Cursor for an executive session exploring what it takes to bring the same discipline that makes software development work to the development of AI agents. We'll map the SDLC directly against Glean's Agent Development Lifecycle - a seven-stage operating model for taking agents from idea to production-grade deployment - and show how Cursor and Glean fit together in the enterprise AI stack.
 
-Whether you're a CIO establishing enterprise AI governance or a technology leader responsible for moving agents from pilot to production at scale, this session is for the leaders who believe that agents deserve the same rigor as software — and are ready to build accordingly.
+Whether you're a CIO establishing enterprise AI governance or a technology leader responsible for moving agents from pilot to production at scale, this session is for the leaders who believe that agents deserve the same rigor as software - and are ready to build accordingly.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/68550a354ed4e8be4c992a82_Not%20just%20talks%E2%80%94tools%2C%20training%2C%20and%20takeaways..webp)
 
@@ -60,7 +60,7 @@ July 22
 
 ## Bring Structure to Agent Development
 
-Interested in bringing this conversation directly to your organization? We also offer a private 1:1 ADLC Workshop for your team — a deeper working session focused on applying Glean’s Agent Development Lifecycle, a seven-stage operating model, to your own agent initiatives and building a more disciplined path from idea to production.
+Interested in bringing this conversation directly to your organization? We also offer a private 1:1 ADLC Workshop for your team - a deeper working session focused on applying Glean’s Agent Development Lifecycle, a seven-stage operating model, to your own agent initiatives and building a more disciplined path from idea to production.
 
 [Request a Private Workshop](/get-a-demo)
 

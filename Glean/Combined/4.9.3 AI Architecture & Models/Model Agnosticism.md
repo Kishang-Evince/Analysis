@@ -15,7 +15,7 @@
 
 **Field definition:** Ability to swap underlying LLM providers or models without breaking workflows.  
 **Prerequisites / Licensing:** Multiple models enabled in Model Hub; Agent Builder access.  
-**Agnosticism rating (Doc-Verified):** **High** — 40+ models; per-session, per-agent, per-step selection; model exclusion policies.  
+**Agnosticism rating (Doc-Verified):** **High** - 40+ models; per-session, per-agent, per-step selection; model exclusion policies.  
 **Confidence Level:** **Doc-Verified** · **Pending Sandbox** (agent breakage on swap)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [Configure LLMs](https://docs.glean.com/administration/configure-llms) · [Model exclusion](https://docs.glean.com/administration/model-exclusion) · [Model choice go-live](https://docs.glean.com/get-started/golive/model-choice) · [Model Hub marketing](https://www.glean.com/platform/model-hub)
@@ -32,16 +32,16 @@
 
 ### Engineering observation (Doc-Verified)
 
-- Marketing: access models **without lock-in**; auto-routing by task (Beta — verify badge).
-- Swapping model on published agent may change answer quality/citation style — functional breakage rare; quality regression likely.
-- **Auto** mode on Universal Key delegates selection to Glean — reduces user lock-in to one vendor, increases Glean routing dependency.
+- Marketing: access models **without lock-in**; auto-routing by task (Beta - verify badge).
+- Swapping model on published agent may change answer quality/citation style - functional breakage rare; quality regression likely.
+- **Auto** mode on Universal Key delegates selection to Glean - reduces user lock-in to one vendor, increases Glean routing dependency.
 
 ### Verification steps / test case
 
-1. Same prompt to GPT-5.1 vs Claude Sonnet vs Gemini — compare citation format and tone.
-2. Agent with per-step models (Haiku retrieve, Sonnet synthesize) — confirm step-level picker.
-3. Exclude one model in Admin — confirm removal from user picker.
-4. Change agent default model post-publish — re-run golden prompt set.
+1. Same prompt to GPT-5.1 vs Claude Sonnet vs Gemini - compare citation format and tone.
+2. Agent with per-step models (Haiku retrieve, Sonnet synthesize) - confirm step-level picker.
+3. Exclude one model in Admin - confirm removal from user picker.
+4. Change agent default model post-publish - re-run golden prompt set.
 
 **Risk & Cost Impact:** Risk: Low | Cost: Tier/credit shifts on model change
 

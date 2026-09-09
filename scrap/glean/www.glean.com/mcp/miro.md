@@ -53,7 +53,7 @@ Instantly generate PRDs, project plans, and other key documents using pre-built 
 
 ### Keep work moving inside Miro.
 
-Generate structured documents, organize ideas into themes, and create workflows — all within Miro. No need to switch apps or start from scratch.
+Generate structured documents, organize ideas into themes, and create workflows - all within Miro. No need to switch apps or start from scratch.
 
 ![](https://assets.glean.com/marketing/Assets/zig-zag%20section%20dotted%20bg.svg)
 

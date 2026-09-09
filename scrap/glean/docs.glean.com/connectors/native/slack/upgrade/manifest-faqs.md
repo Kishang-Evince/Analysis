@@ -36,7 +36,7 @@ End users will not see any change in how Gleanbot behaves while you are still te
 
 No. Updating and reinstalling the Slack app with the new manifest does **not** regenerate OAuth tokens or trigger a full Slack reindex. It only changes the app configuration (name, commands, scopes) so that Glean can migrate Gleanbot, agents, and tools to the new RTS app. Only regenerating credentials or tokens would cause a new indexing cycle.
 
-### Both the old and new Gleanbot are responding — what should I do?
+### Both the old and new Gleanbot are responding - what should I do?
 
 Immediately after you migrate, there is a short period where both the old and new Glean apps may respond in the same channel while Slack finishes processing the migration. This usually resolves on its own within about 30 minutes. If you still see both bots responding after that, contact Glean Support for assistance.
 
@@ -46,7 +46,7 @@ Not yet. The old app (renamed “Glean Enterprise Graph” in most cases) may st
 
 Removing it too early can impact the Slack experiences. If you have a strong need to remove the old app, contact Glean Support so we can confirm it is safe for your deployment.
 
-### I can't find the Slack app — what if it was created by a different user?
+### I can't find the Slack app - what if it was created by a different user?
 
 If the Slack app was created by another user, it won't appear under your own apps at [api.slack.com/apps](https://api.slack.com/apps). To find it:
 

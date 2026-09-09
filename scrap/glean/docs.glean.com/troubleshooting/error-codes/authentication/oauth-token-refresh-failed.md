@@ -21,7 +21,7 @@ If you're a Glean admin and the tools need re-authorization:
 4.  Complete the OAuth sign-in flow in the provider's consent screen.
 5.  Click **Save**.
 
-After re-authorization, the tool's admin-level credentials are restored. Individual teammates may still need to reconnect their own accounts — see the next section.
+After re-authorization, the tool's admin-level credentials are restored. Individual teammates may still need to reconnect their own accounts - see the next section.
 
 ## Reconnect an individual account[​](#reconnect-an-individual-account "Direct link to Reconnect an individual account")
 
@@ -31,7 +31,7 @@ When a teammate's personal OAuth token expires or is revoked, they'll see a **Co
 2.  Click **Connect** when prompted.
 3.  Complete the OAuth sign-in flow in the provider's consent screen.
 
-An admin can't force re-authorization on behalf of an individual teammate — the teammate must complete the consent flow themselves.
+An admin can't force re-authorization on behalf of an individual teammate - the teammate must complete the consent flow themselves.
 
 ## Common causes[​](#common-causes "Direct link to Common causes")
 
@@ -41,7 +41,7 @@ If someone rotated the client secret in the identity provider's console without 
 
 ### Scope changes[​](#scope-changes "Direct link to Scope changes")
 
-When the OAuth app's required scopes change — for example, after a Glean update adds new capabilities — existing tokens may lack the new scopes and fail with a `403` error. Re-authorize the tools so the consent flow grants the updated scopes.
+When the OAuth app's required scopes change - for example, after a Glean update adds new capabilities - existing tokens may lack the new scopes and fail with a `403` error. Re-authorize the tools so the consent flow grants the updated scopes.
 
 ### OAuth app in testing or unverified state[​](#oauth-app-in-testing-or-unverified-state "Direct link to OAuth app in testing or unverified state")
 
@@ -52,7 +52,7 @@ Some providers limit tokens issued by apps that haven't been published or verifi
 
 ### User revoked app access[​](#user-revoked-app-access "Direct link to User revoked app access")
 
-If a teammate removes the Glean app from their account settings in the identity provider — for example, removing it from **Third-party apps and services** in Google Account settings — their token is invalidated. The teammate must reconnect by completing the OAuth flow again in Glean.
+If a teammate removes the Glean app from their account settings in the identity provider - for example, removing it from **Third-party apps and services** in Google Account settings - their token is invalidated. The teammate must reconnect by completing the OAuth flow again in Glean.
 
 To prevent accidental removal, admins can mark the Glean OAuth app as trusted:
 
@@ -63,20 +63,20 @@ To prevent accidental removal, admins can mark the Glean OAuth app as trusted:
 
 Identity provider policies can force token expiration earlier than the provider's default lifetime:
 
--   **Microsoft Entra**: Conditional Access policies — such as sign-in frequency, device compliance, and location restrictions — can cause background token refresh to fail. Review your tenant's session controls under **Entra ID → Security → Conditional Access**. For details, see the [Microsoft 365 tools setup](/administration/tools/setup-tools/m365-tools-setup).
+-   **Microsoft Entra**: Conditional Access policies - such as sign-in frequency, device compliance, and location restrictions - can cause background token refresh to fail. Review your tenant's session controls under **Entra ID → Security → Conditional Access**. For details, see the [Microsoft 365 tools setup](/administration/tools/setup-tools/m365-tools-setup).
 -   **Google Workspace**: if context-aware access policies block the Glean app, refresh fails silently. Ensure the Glean app is allowed in your context-aware access configuration.
 
 ### Token unused for an extended period[​](#token-unused-for-an-extended-period "Direct link to Token unused for an extended period")
 
-Some providers expire refresh tokens that haven't been used within a window — for example, Google expires refresh tokens after 6 months of inactivity. If the tools haven't been used in a while, re-authorize it to obtain a fresh token.
+Some providers expire refresh tokens that haven't been used within a window - for example, Google expires refresh tokens after 6 months of inactivity. If the tools haven't been used in a while, re-authorize it to obtain a fresh token.
 
 ## Expected token lifetimes by provider[​](#expected-token-lifetimes-by-provider "Direct link to Expected token lifetimes by provider")
 
-Token lifetimes vary by provider and can be shortened by organization policies. For a full reference, see [OAuth options for action packs — Expected token lifetimes](/administration/actions/setup-actions/choose-central-or-custom-oauth#expected-token-lifetimes).
+Token lifetimes vary by provider and can be shortened by organization policies. For a full reference, see [OAuth options for action packs - Expected token lifetimes](/administration/actions/setup-actions/choose-central-or-custom-oauth#expected-token-lifetimes).
 
 ## Central or custom OAuth[​](#central-or-custom-oauth "Direct link to Central or custom OAuth")
 
-If you're setting up a tool for the first time and deciding between central and custom OAuth, see [OAuth options for action packs — Central vs. custom OAuth](/administration/actions/setup-actions/choose-central-or-custom-oauth#choosing-the-right-oauth-model) for a comparison.
+If you're setting up a tool for the first time and deciding between central and custom OAuth, see [OAuth options for action packs - Central vs. custom OAuth](/administration/actions/setup-actions/choose-central-or-custom-oauth#choosing-the-right-oauth-model) for a comparison.
 
 For more guidance across tool authentication issues, see [Troubleshooting tools authentication](/troubleshooting/tools-authentication).
 

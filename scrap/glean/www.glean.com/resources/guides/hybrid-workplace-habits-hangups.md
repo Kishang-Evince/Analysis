@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/hybrid-workplace-habits-hangups"
 canonical: "https://www.glean.com/resources/guides/hybrid-workplace-habits-hangups"
 title: "Hybrid workplace habits & hangups | Glean Work AI"
-description: "A survey from The Harris Poll found that SaaS sprawl—and its drag on employee productivity and experience—is real."
+description: "A survey from The Harris Poll found that SaaS sprawl-and its drag on employee productivity and experience-is real."
 fetched_at: "2026-09-01T13:27:09.763Z"
 ---
 ## Work AI that works.

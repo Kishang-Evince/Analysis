@@ -33,7 +33,7 @@ April 16, 2026
 
 ### Why the AI stack for modern engineering teams requires both coding and context
 
-Bringing together the layer that understands the work with the layer that does the work is key to generating better code, faster—but it needs the right infrastructure to make it work.
+Bringing together the layer that understands the work with the layer that does the work is key to generating better code, faster-but it needs the right infrastructure to make it work.
 
 ![Melissa Albanes](https://cdn.prod.website-files.com/613513981b0efaf850830620/69dfd1f85e2945ea454f97b9_melissa.jpeg)
 

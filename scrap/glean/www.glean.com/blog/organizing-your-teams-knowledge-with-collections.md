@@ -83,9 +83,9 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-It’s been nearly seven months since we launched [Glean](https://www.glean.com). Over that time, we’ve helped more and more people [find what they need at work](https://www.glean.com/blog/finding-what-you-need-at-work-shouldnt-be-so-hard)—and we’re already seeing results. Glean customers have shared that we’ve saved their employees 2-3 hours per person per week, just by allowing them to search across all their company’s apps to find what they need and discover the things they should know.  
+It’s been nearly seven months since we launched [Glean](https://www.glean.com). Over that time, we’ve helped more and more people [find what they need at work](https://www.glean.com/blog/finding-what-you-need-at-work-shouldnt-be-so-hard)-and we’re already seeing results. Glean customers have shared that we’ve saved their employees 2-3 hours per person per week, just by allowing them to search across all their company’s apps to find what they need and discover the things they should know.  
 
-Search is at the core of our product, but we’ve also identified an additional need to organize company knowledge. When you can find all your company’s knowledge all in one place—as you can with Glean—then there’s a new opportunity to start organizing that knowledge in a structured way. That’s why we launched Collections.
+Search is at the core of our product, but we’ve also identified an additional need to organize company knowledge. When you can find all your company’s knowledge all in one place-as you can with Glean-then there’s a new opportunity to start organizing that knowledge in a structured way. That’s why we launched Collections.
 
 Allowing people to create curated collections of information is just a logical extension of what Glean already does. Even though all of a company’s information is only a Glean search away, it can still be difficult for users to find and absorb every piece of relevant information on a given topic; it’s still possible to scroll past a useful file, link, or subject-matter expert. Today, I’m excited to announce Glean’s new and improved Collections, which will help users solve that problem by organizing relevant company information for their coworkers. 
 
@@ -115,7 +115,7 @@ Engineers have found it particularly useful to build collections that create env
 
 For resources that everyone at the company needs, HR teams can use collections to organize information about employee benefits, company policies, and educational programs.
 
-Our [mission](https://www.glean.com/about), from the beginning, has been to bring people the knowledge they need to make a difference in the world. Our new and improved Collections allows users to find what they need even faster—by keeping things organized, structured, and tailored to a company, team, or individual’s needs. 
+Our [mission](https://www.glean.com/about), from the beginning, has been to bring people the knowledge they need to make a difference in the world. Our new and improved Collections allows users to find what they need even faster-by keeping things organized, structured, and tailored to a company, team, or individual’s needs. 
 
 I hope you’ll try them out and let me know what you think!
 

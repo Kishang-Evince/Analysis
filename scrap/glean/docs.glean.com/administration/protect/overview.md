@@ -2,7 +2,7 @@
 url: "https://docs.glean.com/administration/protect/overview"
 canonical: "https://docs.glean.com/administration/protect/overview"
 title: "About Glean Protect and Protect+"
-description: "Compare Glean Protect and Protect+ features — data security, sensitive content scanning, AI guardrails, and agent alignment for enterprise AI deployments."
+description: "Compare Glean Protect and Protect+ features - data security, sensitive content scanning, AI guardrails, and agent alignment for enterprise AI deployments."
 fetched_at: "2026-09-01T13:29:14.018Z"
 ---
 On this page

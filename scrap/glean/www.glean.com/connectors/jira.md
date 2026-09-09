@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:47.937Z"
 ---
 ### Overview
 
-Jira is an issue-tracking platform that organizes engineering work into stories, issues, and tasks. Connecting Glean to Jira gives you permissions-aware visibility across projects along with full context from your company’s knowledge base. Use Glean to turn insight into action—close issues, follow up on comments, and ensure the right people and fields stay updated so you have a record of your engineering work.
+Jira is an issue-tracking platform that organizes engineering work into stories, issues, and tasks. Connecting Glean to Jira gives you permissions-aware visibility across projects along with full context from your company’s knowledge base. Use Glean to turn insight into action-close issues, follow up on comments, and ensure the right people and fields stay updated so you have a record of your engineering work.
 
 ### Features
 
@@ -26,7 +26,7 @@ Glean executes actions across:
 
 ### Benefits
 
-Glean organizes all of your company context in one place — and that includes insights from Jira. Engineering and product teams get immediate visibility into Jira projects and issues and can take action quickly: updating projects, issues, assignees, comments, and more, so you can easily stay on top of engineering initiatives.
+Glean organizes all of your company context in one place - and that includes insights from Jira. Engineering and product teams get immediate visibility into Jira projects and issues and can take action quickly: updating projects, issues, assignees, comments, and more, so you can easily stay on top of engineering initiatives.
 
 ## Work AI that works.
 

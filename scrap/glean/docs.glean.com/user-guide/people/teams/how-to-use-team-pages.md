@@ -32,7 +32,7 @@ Glean recommends ensuring that your team pages have informative and up-to-date d
 -   Links to project plans and quarterly goals
 -   Information about upcoming events or key milestones
 
-To edit these fields, click on the "edit" button in the upper-right-hand corner of the team page. Your organization may have particular style guides or best practices in place for teams pages — for information on that, contact your Glean admin.
+To edit these fields, click on the "edit" button in the upper-right-hand corner of the team page. Your organization may have particular style guides or best practices in place for teams pages - for information on that, contact your Glean admin.
 
 ## Team directory[​](#team-directory "Direct link to Team directory")
 

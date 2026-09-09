@@ -85,7 +85,7 @@ Listen to article
 
 Meetings often take up over 50% of the work week, and they’re where the most up-to-date information about teams and projects is shared. Yet too often, key decisions, priorities, and action items get trapped in the meeting or lost entirely, creating one of the biggest barriers to productivity.
 
-That’s where AI comes in — breaking down meeting silos and unifying scattered insights to tell a complete story of how decisions get made and work gets done. AI is helping meetings thrive by turning them into valuable spaces for sharing insights, making collaborative decisions, and aligning actions well beyond the meeting room.
+That’s where AI comes in - breaking down meeting silos and unifying scattered insights to tell a complete story of how decisions get made and work gets done. AI is helping meetings thrive by turning them into valuable spaces for sharing insights, making collaborative decisions, and aligning actions well beyond the meeting room.
 
 Glean is partnering with Fellow- the AI note-taker built with the privacy and security controls enterprises need to manage sensitive meeting data- to make meetings a key driver of AI transformation at work.
 
@@ -99,9 +99,9 @@ Together, Glean and Fellow are reshaping the role of meetings in the enterprise,
 
 Relying on memory or manual meeting notes often leads to missed details, creating gaps and bottlenecks in your enterprise knowledge. That’s where Fellow comes in, recording and transcribing your meetings using Large Language Models (LLMs) with purpose-built prompts, voice recognition, and contextual information to accurately capture key moments, decisions, and action items.
 
-When connected to Glean, meeting insights don’t just sit in transcripts or recordings — they become part of your company’s searchable knowledge base. Glean indexes the meeting data in real time using both semantic and lexical search, making it easy to find meetings by topic, theme, or even specific naming. Glean’s knowledge graph understands the relationships between the people in the meeting, the content discussed, and the surrounding work. This connects meeting insights to the broader context of your organization, so they become more relevant, actionable, and easy to discover. 
+When connected to Glean, meeting insights don’t just sit in transcripts or recordings - they become part of your company’s searchable knowledge base. Glean indexes the meeting data in real time using both semantic and lexical search, making it easy to find meetings by topic, theme, or even specific naming. Glean’s knowledge graph understands the relationships between the people in the meeting, the content discussed, and the surrounding work. This connects meeting insights to the broader context of your organization, so they become more relevant, actionable, and easy to discover. 
 
-Glean indexing and deep contextual understanding ensure that the right meeting insights — as well as relevant data from projects, tickets, and documents — surface when you ask.
+Glean indexing and deep contextual understanding ensure that the right meeting insights - as well as relevant data from projects, tickets, and documents - surface when you ask.
 
 Glean also makes meeting knowledge actionable through AI agents. Use agents to help plan your day, track to-dos, follow up on initiatives, and stay aligned across projects. Companies on Glean are already using meeting insights to inform product roadmaps, analyze sales conversations for coaching, and improve customer support experiences.
 

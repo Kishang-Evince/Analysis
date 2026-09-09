@@ -11,9 +11,9 @@ Deprecated
 
 `openSidebar` is marked deprecated in the SDK's type definitions and will be removed in a future version. For new integrations, consider the [Recommendations](/libraries/web-sdk/components/recommendations) component for contextual suggestions or [Modal Search](/libraries/web-sdk/components/modal-search) for on-demand search.
 
-The Glean Sidebar opens a Glean Assistant panel — with chat and search — that slides out from the right side of your page.
+The Glean Sidebar opens a Glean Assistant panel - with chat and search - that slides out from the right side of your page.
 
-PreviewLive — your instance
+PreviewLive - your instance
 
 portal.sample.internal/runbooks/payments
 
@@ -27,7 +27,7 @@ Reference current page
 
 Ask Assistant anything…
 
-Illustrative previewRendered with sample data — in your app, this component renders live against your organization's Glean instance. Try it live →
+Illustrative previewRendered with sample data - in your app, this component renders live against your organization's Glean instance. Try it live →
 
 ## Install the SDK[​](#install-the-sdk "Direct link to Install the SDK")
 
@@ -69,4 +69,4 @@ The sidebar closes when the user clicks its close button or presses the escape k
 | `datasourcesFilter` | `string[]` | Restrict results to specific datasources, e.g. `['jira', 'confluence']`. |
 | `filters` | `FilterValue[]` | Pinned, non-modifiable filters applied to every search. |
 
-All components also accept the common [`Options`](/libraries/web-sdk/reference/interfaces/Options) — `backend`, `authToken`, `theme`, `themeVariant`, `locale`, and more.
+All components also accept the common [`Options`](/libraries/web-sdk/reference/interfaces/Options) - `backend`, `authToken`, `theme`, `themeVariant`, `locale`, and more.

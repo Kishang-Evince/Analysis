@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/ai-for-supply-chain"
 canonical: "https://www.glean.com/blog/ai-for-supply-chain"
 title: "The enterprise AI coworker for supply chain teams"
-description: "Ameya Ganpule  | AI for supply chain turns scattered data into shared context — speeding onboarding, reducing risk, and keeping production on track."
+description: "Ameya Ganpule  | AI for supply chain turns scattered data into shared context - speeding onboarding, reducing risk, and keeping production on track."
 fetched_at: "2026-09-01T13:26:26.942Z"
 ---
 Last updated Oct 13, 2025.
@@ -83,7 +83,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Supply chains have always been complex — but the challenge facing leaders today is fundamentally different. They’re expected to move faster, operate leaner, and manage risk in real time, even as disruptions continue to multiply.
+Supply chains have always been complex - but the challenge facing leaders today is fundamentally different. They’re expected to move faster, operate leaner, and manage risk in real time, even as disruptions continue to multiply.
 
 For years, the supply chain industry has experimented with AI and machine learning to forecast demand, optimize routes, and improve efficiency. Now, generative AI has evolved from a chat interface towards powerful coworking abilities capable of driving real workflows.
 
@@ -95,11 +95,11 @@ AI for supply chain teams can do more than just answer questions. It can move wo
 
 ## Why now: from “just-in-time” to “just-in-case”
 
-The past few years have permanently changed how supply chains operate. For decades, they were designed around efficiency — the “just-in-time” model kept inventory lean and operations tightly synchronized. But what worked in a stable world no longer holds up in one defined by disruption.
+The past few years have permanently changed how supply chains operate. For decades, they were designed around efficiency - the “just-in-time” model kept inventory lean and operations tightly synchronized. But what worked in a stable world no longer holds up in one defined by disruption.
 
 As a result, “just-in-case” resilience is more important than ever. This new model prioritizes overlapping networks, strategic capacity, and near- or friend-shoring to withstand disruption and maintain continuity.
 
-Shifting to this model requires more than additional capacity or safety stock — it depends on seamless knowledge flow across teams. Yet three challenges continue to hold companies back:
+Shifting to this model requires more than additional capacity or safety stock - it depends on seamless knowledge flow across teams. Yet three challenges continue to hold companies back:
 
 -   **Siloed data** across on-prem and cloud systems makes it hard to forecast demand, optimize inventory, or respond quickly to disruptions
 -   **Rising costs** compress margins and slow investment
@@ -109,11 +109,11 @@ Generative AI powered by connected context helps bridge these gaps. It brings to
 
 ## Why resilience now requires shared context, not more systems
 
-Supply chain professionals manage complexity every day — but most are still forced to work across multiple tools to build a common operating procedure. Critical data is spread across disparate systems: ERP for planning, WMS/TMS/OMS for logistics, and shared drives or chat tools for collaboration. The result is delay at the very moments when speed matters most — handling a customer escalation, resolving a detention or demurrage dispute, or re-promising an order after a delay.
+Supply chain professionals manage complexity every day - but most are still forced to work across multiple tools to build a common operating procedure. Critical data is spread across disparate systems: ERP for planning, WMS/TMS/OMS for logistics, and shared drives or chat tools for collaboration. The result is delay at the very moments when speed matters most - handling a customer escalation, resolving a detention or demurrage dispute, or re-promising an order after a delay.
 
 AI brings shared context to where work already happens, empowering teams across every function to:
 
--   **Gain end-to-end visibility:** Unify structured and unstructured data — orders, contracts, SOPs, emails, tickets — into a [single, searchable view](https://www.glean.com/product/workplace-search-ai) for planners, operators, and support teams.
+-   **Gain end-to-end visibility:** Unify structured and unstructured data - orders, contracts, SOPs, emails, tickets - into a [single, searchable view](https://www.glean.com/product/workplace-search-ai) for planners, operators, and support teams.
 -   **Maintain omnichannel consistency:** Create one source of truth for inventory, order history, and policy updates to improve fulfillment speed and reduce exceptions.
 -   **Deliver faster, confident customer responses:** Give teams instant access to RFP language, pricing guidance, case studies, and shipment status so they can resolve issues with speed and accuracy.
 
@@ -136,7 +136,7 @@ That is the difference between AI that surfaces information and AI that helps su
 
 Many vendors are adding AI into individual supply chain workflows. The bigger opportunity is to give teams an AI coworker that can work across the stack - with the context, governance, and flexibility to support real operational decisions and follow-through.  
 
-A [Work AI layer](https://www.glean.com/product/overview) that sits above your existing stack — with [strict security](https://www.glean.com/security) and governance policies — unifies knowledge and synchronizes output across systems.
+A [Work AI layer](https://www.glean.com/product/overview) that sits above your existing stack - with [strict security](https://www.glean.com/security) and governance policies - unifies knowledge and synchronizes output across systems.
 
 Here’s what to look for in a platform designed to support AI for supply chain:
 
@@ -150,19 +150,19 @@ Here’s what to look for in a platform designed to support AI for supply chain:
 
 ### Addressing the tough questions: Risk, ROI, and roadmap
 
-**Will it integrate with legacy systems?** Yes — if you choose platforms with [robust connectors](https://www.glean.com/connectors) and enterprise RAG. With on-prem still common in the sector, look for secure connectivity that preserves existing investments while unlocking knowledge across ERPs, logistics systems, and productivity suites.
+**Will it integrate with legacy systems?** Yes - if you choose platforms with [robust connectors](https://www.glean.com/connectors) and enterprise RAG. With on-prem still common in the sector, look for secure connectivity that preserves existing investments while unlocking knowledge across ERPs, logistics systems, and productivity suites.
 
 **Build or buy?** In-house projects often stall under fragmented data, limited talent, and shifting security requirements. Buying an enterprise‑grade platform shortens time-to-value, reduces governance risk, and scales more easily while still allowing custom extensions.
 
-**Where’s the ROI?** Start where manual coordination is the most expensive: onboarding, exception handling, customer communications, and cross-system lookups. Leaders see faster cycles, fewer handoffs, and measurable reductions in time-to-resolve — improving OTIF and reducing operating costs.
+**Where’s the ROI?** Start where manual coordination is the most expensive: onboarding, exception handling, customer communications, and cross-system lookups. Leaders see faster cycles, fewer handoffs, and measurable reductions in time-to-resolve - improving OTIF and reducing operating costs.
 
 ## Building resilient supply chains
 
-The past few years have forced supply chain leaders to rethink everything — what resilience means, where risk hides, and how to keep momentum when the unexpected happens. The next step isn’t another wave of systems or dashboards; it’s an AI coworker that makes the ones you already have work smarter together.
+The past few years have forced supply chain leaders to rethink everything - what resilience means, where risk hides, and how to keep momentum when the unexpected happens. The next step isn’t another wave of systems or dashboards; it’s an AI coworker that makes the ones you already have work smarter together.
 
 When every team operates from the same source of truth, execution stops being a relay race and starts moving in sync. Sales closes deals with clarity and fewer surprises. Operations stay synchronized across channels. Warehouses prioritize the right work. Transportation resolves issues before costs spiral. Support communicates with confidence.
 
-AI brings that possibility within reach. It transforms visibility into action, giving every team the shared context to see what’s happening, understand why, and respond before small issues become big ones. Over time, that shift compounds — fewer fire drills, faster recoveries, and stronger collaboration across every link in the chain.
+AI brings that possibility within reach. It transforms visibility into action, giving every team the shared context to see what’s happening, understand why, and respond before small issues become big ones. Over time, that shift compounds - fewer fire drills, faster recoveries, and stronger collaboration across every link in the chain.
 
 This is what resilience looks like in practice. Not a new system, but a smarter way of connecting what you already have. The companies that embrace this shift will move faster, learn continuously, and build supply chains that don’t just withstand disruption, but improve because of it.
 

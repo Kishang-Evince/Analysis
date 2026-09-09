@@ -73,13 +73,13 @@ The shift toward accessible AI automation represents a fundamental change in how
 
 ## What are lightweight AI agents?
 
-The practical impact becomes clear when examining real-world applications. A lightweight customer support agent might handle initial inquiries by understanding customer intent, retrieving relevant documentation, and providing personalized responses — all while consuming resources comparable to a standard web application. In fact, [70 percent](https://bigsur.ai/blog/Customer-Service-Automation-Statistics) of customer inquiries can be deflected from human agents to virtual assistants, with retail companies achieving 53 percent resolution of incoming queries through automation. This efficiency makes AI-powered automation accessible to startups that previously couldn't justify the investment in enterprise-grade AI systems.
+The practical impact becomes clear when examining real-world applications. A lightweight customer support agent might handle initial inquiries by understanding customer intent, retrieving relevant documentation, and providing personalized responses - all while consuming resources comparable to a standard web application. In fact, [70 percent](https://bigsur.ai/blog/Customer-Service-Automation-Statistics) of customer inquiries can be deflected from human agents to virtual assistants, with retail companies achieving 53 percent resolution of incoming queries through automation. This efficiency makes AI-powered automation accessible to startups that previously couldn't justify the investment in enterprise-grade AI systems.
 
 The architecture of lightweight agents prioritizes efficiency over complexity. These systems typically consist of focused modules: a perception component that processes inputs from emails, databases, or web interfaces; a decision engine that evaluates options based on predefined rules or learned patterns; and an action module that executes tasks through API calls or automated workflows. This modular approach allows startups to deploy agents quickly without overhauling their entire technical infrastructure.
 
 What distinguishes lightweight agents from traditional automation tools is their ability to adapt and learn within resource constraints. While simple reflex agents might automatically route customer emails based on keywords, more sophisticated lightweight agents can:
 
-The practical impact becomes clear when examining real-world applications. A lightweight [customer support agent](https://www.glean.com/blog/ai-customer-service-transform) might handle initial inquiries by understanding customer intent, retrieving relevant documentation, and providing personalized responses — all while consuming resources comparable to a standard web application. This efficiency makes AI-powered automation accessible to startups that previously couldn't justify the investment in enterprise-grade AI systems.
+The practical impact becomes clear when examining real-world applications. A lightweight [customer support agent](https://www.glean.com/blog/ai-customer-service-transform) might handle initial inquiries by understanding customer intent, retrieving relevant documentation, and providing personalized responses - all while consuming resources comparable to a standard web application. This efficiency makes AI-powered automation accessible to startups that previously couldn't justify the investment in enterprise-grade AI systems.
 
 ## How to implement lightweight AI agents in startups
 
@@ -159,7 +159,7 @@ Cultivating an innovative mindset is essential for maximizing the potential of A
 
 By implementing these strategies, startups can effectively harness AI agents to propel operational success and foster a culture of continuous improvement.
 
-The journey to implementing lightweight AI agents doesn't have to be overwhelming — with the right approach, you can transform your startup's operations one workflow at a time. As you evaluate your processes and identify opportunities for automation, remember that the most successful implementations start small and scale based on proven results. Ready to see how AI can revolutionize your team's productivity? [Request a demo to explore how we can help AI transform your workplace](https://www.glean.com/get-a-demo).
+The journey to implementing lightweight AI agents doesn't have to be overwhelming - with the right approach, you can transform your startup's operations one workflow at a time. As you evaluate your processes and identify opportunities for automation, remember that the most successful implementations start small and scale based on proven results. Ready to see how AI can revolutionize your team's productivity? [Request a demo to explore how we can help AI transform your workplace](https://www.glean.com/get-a-demo).
 
 [
 

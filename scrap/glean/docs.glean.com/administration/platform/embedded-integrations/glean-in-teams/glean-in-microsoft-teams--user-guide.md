@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:29:11.338Z"
 ---
 On this page
 
-Glean in Microsoft Teams lets you search your company's knowledge and get AI-powered answers directly in Teams — without switching tabs or tools.
+Glean in Microsoft Teams lets you search your company's knowledge and get AI-powered answers directly in Teams - without switching tabs or tools.
 
 ## Find and install Glean[​](#find-and-install-glean "Direct link to Find and install Glean")
 

@@ -1,8 +1,8 @@
-# `.claude` — project AI configuration
+# `.claude` - project AI configuration
 
 This folder teaches claude agents **how this repo works** before they touch code. It is version-controlled team config: same rules for every developer and every agent session.
 
-Human docs live in `docs/` and `README.md`. `.claude/` is **machine-oriented policy** — short, actionable, loaded automatically.
+Human docs live in `docs/` and `README.md`. `.claude/` is **machine-oriented policy** - short, actionable, loaded automatically.
 
 ---
 
@@ -53,7 +53,7 @@ Markdown with YAML frontmatter. claude merges matching rules into agent context.
 
 ```yaml
 ---
-description: One line — shown in rule picker
+description: One line - shown in rule picker
 alwaysApply: true          # every session
 # OR
 globs: libs/**/*.ts        # when these files are in context
@@ -74,25 +74,25 @@ alwaysApply: false
 - Long tutorials (use `docs/` or a skill)
 - One-off ticket instructions
 - Secrets, API keys, `.env` values
-- Duplicate of entire architecture doc — link instead
+- Duplicate of entire architecture doc - link instead
 
 ### Examples by stack
 
 | Project type             | Example always-on rules                                                                 | Example glob rules                                                  |
 | ------------------------ | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| **NestJS / TypeORM**     | No migration CLI from agent; module layer boundaries; method summary on complex exports | `**/*.entity.ts` — column naming; `**/migrations/**` — suffix bands |
-| **React / Next**         | No default export for pages if team uses named; prefer existing UI kit                  | `**/*.tsx` — hooks rules; `**/app/**` — server vs client components |
+| **NestJS / TypeORM**     | No migration CLI from agent; module layer boundaries; method summary on complex exports | `**/*.entity.ts` - column naming; `**/migrations/**` - suffix bands |
+| **React / Next**         | No default export for pages if team uses named; prefer existing UI kit                  | `**/*.tsx` - hooks rules; `**/app/**` - server vs client components |
 | **Python / Django**      | Type hints on public API; no raw SQL without review                                     | `**/models.py`, `**/views.py`                                       |
-| **Go**                   | Error wrapping style; no `panic` in handlers                                            | `**/*_test.go` — table-driven tests                                 |
+| **Go**                   | Error wrapping style; no `panic` in handlers                                            | `**/*_test.go` - table-driven tests                                 |
 | **Mobile (iOS/Android)** | MVVM layer map; no API route duplication per platform                                   | `**/ios/**`, `**/android/**`                                        |
 | **Monorepo**             | Package boundary imports; shared util location                                          | Per-package globs (`libs/@foo/**`)                                  |
 
 This repo examples:
 
-- `no-run-migrations.mdc` — agent must not run migration CLI
-- `evince-module-standards.mdc` — where controllers, DTOs, constants go
-- `no-over-engineering.mdc` — minimal diff, no extra abstractions
-- `ponytail.mdc` — reuse before write; fix root cause once
+- `no-run-migrations.mdc` - agent must not run migration CLI
+- `evince-module-standards.mdc` - where controllers, DTOs, constants go
+- `no-over-engineering.mdc` - minimal diff, no extra abstractions
+- `ponytail.mdc` - reuse before write; fix root cause once
 
 ---
 
@@ -105,7 +105,7 @@ Skills are **procedures** the agent loads when the task matches the skill `descr
 ```markdown
 ---
 name: my-skill-name
-description: When to use — third person, specific triggers (file paths, task verbs)
+description: When to use - third person, specific triggers (file paths, task verbs)
 ---
 
 # Title
@@ -131,9 +131,9 @@ Optional siblings: `reference.md`, `examples.md`, `agent-prompt.md`, small scrip
 | Location            | Scope                                   |
 | ------------------- | --------------------------------------- |
 | `~/.claude/skills/` | All your projects (personal preference) |
-| `.claude/skills/`   | This repo only — **commit for team**    |
+| `.claude/skills/`   | This repo only - **commit for team**    |
 
-Do not write to `~/.claude/skills-claude/` — reserved for claude built-ins.
+Do not write to `~/.claude/skills-claude/` - reserved for claude built-ins.
 
 ### What belongs in skills
 
@@ -147,7 +147,7 @@ Do not write to `~/.claude/skills-claude/` — reserved for claude built-ins.
 
 - One-line rules (use `.mdc` instead)
 - Information that never changes (put in `docs/`; skill links to it)
-- Huge paste of entire coding standard — skill should **point** to source of truth
+- Huge paste of entire coding standard - skill should **point** to source of truth
 
 ### Examples by stack
 
@@ -167,8 +167,8 @@ This repo index: [skills/README.md](./skills/README.md).
 
 `hooks.json` runs shell commands at lifecycle points:
 
-- **sessionStart** — inject policy reminder into context
-- **preToolUse** — block or warn before Write/StrReplace (e.g. unsolicited `docs/` or test files)
+- **sessionStart** - inject policy reminder into context
+- **preToolUse** - block or warn before Write/StrReplace (e.g. unsolicited `docs/` or test files)
 
 Hooks complement rules; they cannot replace clear `.mdc` text. Restart claude after editing hooks.
 
@@ -232,9 +232,9 @@ Treat `.claude/` like lint config: **small, enforced, reviewed in PR**.
 
 ## Checklist for new projects
 
-- [ ] `rules/` — safety + stack standards (3–8 files, not 30)
-- [ ] `skills/` — 1 scaffold skill + 1 review/audit skill minimum
-- [ ] `skills/README.md` — index for team
+- [ ] `rules/` - safety + stack standards (3–8 files, not 30)
+- [ ] `skills/` - 1 scaffold skill + 1 review/audit skill minimum
+- [ ] `skills/README.md` - index for team
 - [ ] Link from root `README.md` or contributor guide to `.claude/README.md`
 - [ ] No secrets; no duplicate of full architecture bible
 - [ ] Optional hooks only if rules alone fail (e.g. block `docs/` spam)

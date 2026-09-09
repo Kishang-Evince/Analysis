@@ -39,7 +39,7 @@ As Wunderkind expanded its AI efforts, the team saw that standalone AI tools cou
 
 ‍
 
-Wunderkind started with practical, high-value use cases for their sales teams where AI could immediately remove friction. Over time, Glean became a broader operating layer across the company — supporting teams in sales, HR, finance, and operations with knowledge access, content generation, automation, and decision support.
+Wunderkind started with practical, high-value use cases for their sales teams where AI could immediately remove friction. Over time, Glean became a broader operating layer across the company - supporting teams in sales, HR, finance, and operations with knowledge access, content generation, automation, and decision support.
 
 ## The impact
 
@@ -55,7 +55,7 @@ Across the business, teams are also using AI to draft copy, analyze data, genera
 
 ## Driving success
 
-Wunderkind’s success has been driven not just by technology, but by change management. Through workshops, office hours, and ongoing enablement — paired with visible executive sponsorship — Wunderkind has shifted towards treating AI as part of how the company works, not just another tool in the stack.
+Wunderkind’s success has been driven not just by technology, but by change management. Through workshops, office hours, and ongoing enablement - paired with visible executive sponsorship - Wunderkind has shifted towards treating AI as part of how the company works, not just another tool in the stack.
 
 ‍
 

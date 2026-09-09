@@ -71,7 +71,7 @@ This comparison examines how these leading AI models handle various document typ
 
 ## What is document understanding in AI?
 
-Document understanding in AI represents a sophisticated capability that transcends basic text recognition. It encompasses the ability to process, interpret, and extract meaningful information from diverse document formats — whether contracts, technical manuals, or research papers. This technology combines natural language processing with visual understanding to comprehend not just words, but the relationships between different document elements: headers, tables, footnotes, and embedded graphics.
+Document understanding in AI represents a sophisticated capability that transcends basic text recognition. It encompasses the ability to process, interpret, and extract meaningful information from diverse document formats - whether contracts, technical manuals, or research papers. This technology combines natural language processing with visual understanding to comprehend not just words, but the relationships between different document elements: headers, tables, footnotes, and embedded graphics.
 
 The complexity of document understanding becomes apparent when examining what AI models must accomplish. They analyze document structure to identify hierarchies and relationships between sections. They interpret context to understand industry-specific terminology and implicit meanings. They synthesize information across multiple pages while maintaining coherence. For enterprise teams handling procurement contracts or technical documentation, this means AI can identify critical clauses, extract key specifications, and flag potential issues that might take human reviewers hours to discover.
 
@@ -201,7 +201,7 @@ For complex document analysis, consider using multiple models to harness their d
 
 Implement robust verification processes to maintain accuracy and reliability, ensuring the insights derived from complex documents are trustworthy and valuable.
 
-While ChatGPT, Claude, and Gemini each offer powerful document understanding capabilities, the real value comes from having an [AI platform](https://www.glean.com/blog/glean-platform-build-custom-generative-ai-solutions-for-work) that can leverage the best of these models while seamlessly integrating with your existing workflows. The future of enterprise document processing isn't about choosing one AI model — it's about having intelligent systems that orchestrate multiple capabilities to deliver the insights you need, when you need them. If you're ready to move beyond standalone AI tools and embrace a unified approach to document understanding, we invite you to [request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo).
+While ChatGPT, Claude, and Gemini each offer powerful document understanding capabilities, the real value comes from having an [AI platform](https://www.glean.com/blog/glean-platform-build-custom-generative-ai-solutions-for-work) that can leverage the best of these models while seamlessly integrating with your existing workflows. The future of enterprise document processing isn't about choosing one AI model - it's about having intelligent systems that orchestrate multiple capabilities to deliver the insights you need, when you need them. If you're ready to move beyond standalone AI tools and embrace a unified approach to document understanding, we invite you to [request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo).
 
 [
 

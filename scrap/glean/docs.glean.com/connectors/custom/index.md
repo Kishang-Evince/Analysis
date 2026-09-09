@@ -109,7 +109,7 @@ Debugging endpoints and tools to investigate Indexing API issues.
 
 ### Migration playbook
 
-Replace a native connector with a custom one — namespaces, parallel run, and artifacts.
+Replace a native connector with a custom one - namespaces, parallel run, and artifacts.
 
 
 

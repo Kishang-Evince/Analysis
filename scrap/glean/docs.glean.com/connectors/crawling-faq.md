@@ -19,7 +19,7 @@ Initial crawl duration varies significantly based on:
 
 Connector size
 
-The total volume of content — number of documents, messages, and their sizes — directly impacts crawl time.
+The total volume of content - number of documents, messages, and their sizes - directly impacts crawl time.
 
 2
 
@@ -169,7 +169,7 @@ Not necessarily. These metrics reflect activity, not a complete health assessmen
 
 ### Is "Change rate" the number of documents added, deleted, or edited per day?
 
--   Yes—conceptually, it's the count of document change events Glean processed in the last 24 hours for an ongoing crawl. These events include creates (adds), updates (content/metadata/permissions), moves/renames, and deletes. Think of it as an activity "heartbeat" showing that new or changed content is actively being processed.
+-   Yes-conceptually, it's the count of document change events Glean processed in the last 24 hours for an ongoing crawl. These events include creates (adds), updates (content/metadata/permissions), moves/renames, and deletes. Think of it as an activity "heartbeat" showing that new or changed content is actively being processed.
     
 -   In the original spec, the admin table highlights "added in the past day" as the simplest, user-friendly roll-up for ongoing crawls; internally, it's backed by the change-event stream described above.
     
@@ -191,7 +191,7 @@ Not necessarily. These metrics reflect activity, not a complete health assessmen
 -   Early stall detection: If Change rate flatlines while you expect activity, it's a signal to check connector health (auth scopes, webhook subscriptions, errors) even before the total items count moves.
 -   Interpreting gaps vs. Items synced: Because Items synced is a cumulative, lagging indicator, a high Change rate with little movement in Items synced can indicate many edits/deletes or permission-only changes (which don't add to the total).
 -   Validating configuration changes propagate: After updating inclusion/exclusion rules or visibility settings, a non-zero Change rate is a quick way to verify those changes are being picked up and applied by the pipeline.
--   Spotting surges or operational events: Spikes can reflect bulk content uploads/migrations or large permission sweeps—useful operational context that can explain search result shifts or indexing load.
+-   Spotting surges or operational events: Spikes can reflect bulk content uploads/migrations or large permission sweeps-useful operational context that can explain search result shifts or indexing load.
 -   Where it fits with Crawl rate: Use Change rate to monitor ongoing crawls; Crawl rate is the companion metric during initial syncs.
 
 ### Is "Crawl rate" the number of tasks that read permissions/metadata rather than documents?

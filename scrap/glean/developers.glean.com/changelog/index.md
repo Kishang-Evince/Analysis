@@ -99,7 +99,7 @@ August 20
 
 2026
 
-The Platform Triggers API is now documented as an experimental release — subscribe to content events in Glean and receive them at your own endpoint as signed webhooks, instead of polling for changes.
+The Platform Triggers API is now documented as an experimental release - subscribe to content events in Glean and receive them at your own endpoint as signed webhooks, instead of polling for changes.
 
 **Read more**
 
@@ -107,7 +107,7 @@ The Platform Triggers API is now documented as an experimental release — subsc
 
 -   Added endpoints: `GET /api/trigger-presets`, `GET /api/trigger-presets/{preset_id}`, `GET /api/trigger-presets/{preset_id}/input-values`.
 -   Added endpoints: `POST /api/triggers`, `GET /api/triggers`, `GET /api/triggers/{trigger_id}`, `PATCH /api/triggers/{trigger_id}`, `DELETE /api/triggers/{trigger_id}`.
--   Added endpoints: `POST /api/trigger-presets/{preset_id}/events/search`, `POST /api/triggers/{trigger_id}/events/search` — preview what a preset would match, or search recent events a trigger's current configuration matches.
+-   Added endpoints: `POST /api/trigger-presets/{preset_id}/events/search`, `POST /api/triggers/{trigger_id}/events/search` - preview what a preset would match, or search recent events a trigger's current configuration matches.
 -   Triggers are created from **presets**: curated event definitions per datasource, each declaring the inputs it accepts, discoverable at runtime.
 -   Events arrive as [Standard Webhooks](https://www.standardwebhooks.com), signed with HMAC-SHA256. The signing secret is returned once, at creation. Delivery is at least once, and `webhook-id` is stable across retries.
 -   `delivery.auth` attaches a bearer token sent alongside the signature, not instead of it.
@@ -388,7 +388,7 @@ Glean-agent-toolkit 0.6.0: **crewai**: pass args\_schema to BaseTool so the LLM 
 -   **tools**: stop closing shared Glean client on every tool call.
 -   Correct web search tool name from 'Web Browser' to 'Gemini Web Search'.
 -   Resolve remaining P2 eval items (CHK-111, CHK-115, CHK-118, CHK-119).
--   Resolve eval checklist items — dedup, dead code, error handling, imports.
+-   Resolve eval checklist items - dedup, dead code, error handling, imports.
 -   Namespace tool names and optimize descriptions for LLM consumption.
 -   Structured error results and consistent adapter return types.
 -   Depend on langchain-core instead of langchain to support LangGraph 1.x.
@@ -1553,21 +1553,21 @@ May 18
 
 2026
 
-The Custom Metadata API is now generally available — a new capability for attaching structured metadata to documents from any datasource, including native connectors and custom datasources, without re-indexing the source document.
+The Custom Metadata API is now generally available - a new capability for attaching structured metadata to documents from any datasource, including native connectors and custom datasources, without re-indexing the source document.
 
 **Read more**
 
 ## What's new
 
 -   **New endpoints** under `/rest/api/index`:
-    -   `PUT /custom-metadata/schema/{groupName}` — create or update a metadata group schema
-    -   `GET /custom-metadata/schema/{groupName}` — retrieve a metadata group schema
-    -   `DELETE /custom-metadata/schema/{groupName}` — remove a metadata group schema
-    -   `PUT /document/{docId}/custom-metadata/{groupName}` — add or update metadata on a document
-    -   `DELETE /document/{docId}/custom-metadata/{groupName}` — remove metadata from a document
+    -   `PUT /custom-metadata/schema/{groupName}` - create or update a metadata group schema
+    -   `GET /custom-metadata/schema/{groupName}` - retrieve a metadata group schema
+    -   `DELETE /custom-metadata/schema/{groupName}` - remove a metadata group schema
+    -   `PUT /document/{docId}/custom-metadata/{groupName}` - add or update metadata on a document
+    -   `DELETE /document/{docId}/custom-metadata/{groupName}` - remove metadata from a document
 -   **Property types**: `TEXT`, `PICKLIST`, `TEXTLIST`, `MULTIPICKLIST`, with optional `skipIndexing` to keep values retrievable but excluded from full-text search.
--   **Scoped tokens** — manage permissions per metadata group via `custommetadata:<group_name>`, or globally with `custommetadata:global_scope`.
--   **Querying** — values are searchable as facets (`<groupName><keyName>:<value>`) and retrievable through the Client API `getDocuments` endpoint with `includeFields: ["CUSTOM_METADATA"]`.
+-   **Scoped tokens** - manage permissions per metadata group via `custommetadata:<group_name>`, or globally with `custommetadata:global_scope`.
+-   **Querying** - values are searchable as facets (`<groupName><keyName>:<value>`) and retrievable through the Client API `getDocuments` endpoint with `includeFields: ["CUSTOM_METADATA"]`.
 
 ## When to use it
 

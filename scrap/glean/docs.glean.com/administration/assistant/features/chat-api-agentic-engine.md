@@ -20,7 +20,7 @@ If you don't set `agentConfig.agent`, or set it to `DEFAULT`, the API uses legac
 
 note
 
-The agentic engine must be enabled for your tenant and a supported agentic reasoning model must be configured — the same requirements as the Glean UI. If no supported agentic reasoning model is configured, `FAST` and `ADVANCED` requests fail rather than returning a response.
+The agentic engine must be enabled for your tenant and a supported agentic reasoning model must be configured - the same requirements as the Glean UI. If no supported agentic reasoning model is configured, `FAST` and `ADVANCED` requests fail rather than returning a response.
 
 ## Verify the agentic engine is active[​](#verify-the-agentic-engine-is-active "Direct link to Verify the agentic engine is active")
 

@@ -13,7 +13,7 @@ On this page
 
 Admins can now set up Microsoft 365 connectors for SharePoint and OneDrive through a shared Microsoft 365 setup flow, which reduces duplicate configuration and makes setup easier to manage.
 
-This change is for admins only and currently applies to SharePoint and OneDrive only — Outlook and Teams are not included in this launch.
+This change is for admins only and currently applies to SharePoint and OneDrive only - Outlook and Teams are not included in this launch.
 
 The new flow introduces shared/common settings at the Microsoft 365 level, while SharePoint- and OneDrive-specific configuration remains in their respective child setup flows.
 
@@ -45,7 +45,7 @@ Protect *\[ROAD-753\]*
 
 #### Auto mode agents powered by natural language[​](#auto-mode-agents-powered-by-natural-language "Direct link to Auto mode agents powered by natural language")
 
-Auto Mode agents are now generally available, featuring a redesigned natural language agent builder where you simply describe what you want, answer a few guided questions, and reach a testable first draft faster than ever — with full control to refine as you iterate. This release also introduces debug and trace views for step-by-step visibility into agent behavior, and an agent sandbox for dynamic context management and code execution on complex tasks. From idea to production-ready agent, faster — with more power, transparency, and flexibility built in from the start.
+Auto Mode agents are now generally available, featuring a redesigned natural language agent builder where you simply describe what you want, answer a few guided questions, and reach a testable first draft faster than ever - with full control to refine as you iterate. This release also introduces debug and trace views for step-by-step visibility into agent behavior, and an agent sandbox for dynamic context management and code execution on complex tasks. From idea to production-ready agent, faster - with more power, transparency, and flexibility built in from the start.
 
 This feature may be subject to usage-based pricing. Learn more in Glean's Help Center.
 

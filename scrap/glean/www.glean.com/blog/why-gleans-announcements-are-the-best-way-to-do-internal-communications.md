@@ -93,7 +93,7 @@ Announcements appear at the top of the Glean home page (see picture above), and 
 
 How an announcement looks on the Glean home page.
 
-Announcements can be for everyone at your organization, or they can be targeted to specific users by department and location, so the only people who see those announcements are the ones who need them most. Announcements also allow for rich text and custom images, so you can illustrate your points with a picture—or just make the message a little more eye-catching. You can also create an announcement from a message in Slack with just a few clicks, so that it’s easy for everyone to see without having to wade through a river of chat. 
+Announcements can be for everyone at your organization, or they can be targeted to specific users by department and location, so the only people who see those announcements are the ones who need them most. Announcements also allow for rich text and custom images, so you can illustrate your points with a picture-or just make the message a little more eye-catching. You can also create an announcement from a message in Slack with just a few clicks, so that it’s easy for everyone to see without having to wade through a river of chat. 
 
 Creators and Glean admins can view in-depth insights on each announcement to see how many people they have reached. Insights break down by department and location, so it’s easy to understand if a particular message has had an impact with the right audience, and evaluate if and how to create follow-up messaging to shore up any gaps in communication.  
 
@@ -101,7 +101,7 @@ Creators and Glean admins can view in-depth insights on each announcement to see
 
 Short answer: everyone. Longer answer: everyone, but especially internal communications and people team members. Employees can be reached right on the home page, instead of in their inbox or through chat applications like Slack, where they’d have to wade through scores of other messages to find the one they were looking for. With announcements, you’ll be able to get their attention instead of getting lost in the shuffle.
 
-This is obviously great for internal comms professionals, but it’s also great for everyone else—because no one ends up getting held responsible for an email or a chat message they may have missed. Furthermore, because announcements appear at the top of the home page instead of in an inbox or on a chat thread, they take out the guesswork and eliminate time people might waste searching for the latest details on quarter close or the company offsite. 
+This is obviously great for internal comms professionals, but it’s also great for everyone else-because no one ends up getting held responsible for an email or a chat message they may have missed. Furthermore, because announcements appear at the top of the home page instead of in an inbox or on a chat thread, they take out the guesswork and eliminate time people might waste searching for the latest details on quarter close or the company offsite. 
 
 Announcements cut through all the noise, which is good news for everyone. Want to try them out for yourself? [Schedule a demo](https://www.glean.com/get-a-demo) to learn all about how Glean can help unlock your company’s productivity.
 

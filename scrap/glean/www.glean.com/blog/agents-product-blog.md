@@ -83,11 +83,11 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-At Glean, we’ve been shipping agentic AI for years—our customers are prolific users of apps, agents, assistants, and chatbots in Glean today, and in fact our platform has delivered more than 50 million agentic actions over the past year alone. 
+At Glean, we’ve been shipping agentic AI for years-our customers are prolific users of apps, agents, assistants, and chatbots in Glean today, and in fact our platform has delivered more than 50 million agentic actions over the past year alone. 
 
-Now that customers are evolving from individuals building personal agents to departments deploying agents across the business, they’re increasingly thinking about scale—how to 10x, 100x, or even 1000x their agent deployments. Deploying agents at scale not only requires robust enterprise security and governance, but also capabilities for everyone to build, use, and manage agents with ease.
+Now that customers are evolving from individuals building personal agents to departments deploying agents across the business, they’re increasingly thinking about scale-how to 10x, 100x, or even 1000x their agent deployments. Deploying agents at scale not only requires robust enterprise security and governance, but also capabilities for everyone to build, use, and manage agents with ease.
 
-Today we’re excited to announce Glean Agents, a horizontal environment for building, deploying, orchestrating, and governing agents, enabling organizations to scale AI adoption across their businesses**.** With Glean Agents, everyone can easily build and use agents using natural language, as well as discover and share pre-built agents in the agent library. Agent orchestration enables agents to be triggered in reaction to data or app state changes, or in response to seeing questions they can answer. Agents are powered by Glean's LLM-agnostic agentic reasoning engine, which executes complex, multi-step workflows by retrieving data from many sources— across company data and internet data— and using actions to complete work. 
+Today we’re excited to announce Glean Agents, a horizontal environment for building, deploying, orchestrating, and governing agents, enabling organizations to scale AI adoption across their businesses**.** With Glean Agents, everyone can easily build and use agents using natural language, as well as discover and share pre-built agents in the agent library. Agent orchestration enables agents to be triggered in reaction to data or app state changes, or in response to seeing questions they can answer. Agents are powered by Glean's LLM-agnostic agentic reasoning engine, which executes complex, multi-step workflows by retrieving data from many sources- across company data and internet data- and using actions to complete work. 
 
 With Glean Agents, users can build both personal agents for individual use and business agents that reshape how organizations work. Engineering teams can use agents to learn new areas of the code base, review pull requests for accuracy and style, and streamline postmortems. Sales teams can personalize prospecting, receive call coaching, update Salesforce, and ensure legal redlines meet internal requirements. Every department embraces agents to work differently and that starts with individuals embracing agents to change the way they work. 
 
@@ -95,7 +95,7 @@ In this blog, we’ll further detail the capabilities of Glean Agents and how ev
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/67ac85015cec4942b958fa43_WorkAI%20Platform.png)
 
-*Glean’s Work AI Platform — now with Glean Agents*
+*Glean’s Work AI Platform - now with Glean Agents*
 
 ## Enabling everyone to build agents, for themselves and their teams
 
@@ -105,7 +105,7 @@ With Glean’s agentic reasoning engine and agent builder, agents become somethi
 
 Agent builder’s flexibility enables everyone to capture the finer details of their complex daily workflows. Glean's agent builder expands beyond single-track workflows to intelligent branching paths based on real-time decisions. With agentic looping, agents iterate on a task multiple times until certain conditions are met, allowing it to self-correct dynamically.
 
-Glean also makes it easy to get started from square one—pre-built agent templates applicable to a variety of general tasks are automatically provided. These templates, which can be customized and built upon, can serve as a foundation for more specialized agents.
+Glean also makes it easy to get started from square one-pre-built agent templates applicable to a variety of general tasks are automatically provided. These templates, which can be customized and built upon, can serve as a foundation for more specialized agents.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/67ac860b971929abcccb50e3_Templates.png)
 
@@ -113,13 +113,13 @@ All these capabilities are built upon Glean’s Work AI platform, enabling agent
 
 ## Putting agents to work
 
-For agents to be truly useful in the enterprise, they must take a responsive and proactive role within both employee and business processes. This makes agents what they are—rather than following a set of pre-configured rules, they are capable of responding dynamically, infusing reasoning and tools to achieve a specific goal. Agents must be capable of responding not just at the current speed of your business, but also predicting what you need to accelerate. 
+For agents to be truly useful in the enterprise, they must take a responsive and proactive role within both employee and business processes. This makes agents what they are-rather than following a set of pre-configured rules, they are capable of responding dynamically, infusing reasoning and tools to achieve a specific goal. Agents must be capable of responding not just at the current speed of your business, but also predicting what you need to accelerate. 
 
 For example, when a new transcript appears in Gong, a call-coaching agent can be made to trigger, automatically providing the user with summaries, top concerns, and next steps relevant to the user’s workflow. Glean Agents can also be scheduled, giving you daily summaries and catching you up on on company initiatives and industry trends with your morning coffee. In addition, Glean will suggest agents to users based on the company knowledge graph and queries they’ve provided to Glean, making it easier than ever to discover and apply agents relevant to their workflows. 
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/67ac86416cc78fb8d0288997_Agent%20Orchestration.png)
 
-Agent orchestration will be an ongoing journey—we will continue to evolve Glean Agents to support integration with other third-party agents and more at the frontier of GenAI.
+Agent orchestration will be an ongoing journey-we will continue to evolve Glean Agents to support integration with other third-party agents and more at the frontier of GenAI.
 
 ## The capabilities of agentic reasoning
 
@@ -141,7 +141,7 @@ With [our APIs](https://developers.glean.com), you can bring Glean Agents to any
 
 Glean Agents enable everyday users and developers to embrace agentic AI and stay confidently ahead in this new era. Features like the agent library, an explorable, open-source repository of completed agents made by coworkers, make sharing agents easier than ever. This ensures that as individual trailblazers in each company make great strides with AI, those gains can be seen and shared with the entire organization. 
 
-This discoverability of agentic applications, through both Glean’s in-app agent suggestion feature and the agent library, is the foundation of our vision for the future of agents in the workplace. It enables the productivity benefits of agents, otherwise secluded in silos or held back by limited enablement resources, to instead spread to everyone—regardless of their experience and expertise in working with AI systems. 
+This discoverability of agentic applications, through both Glean’s in-app agent suggestion feature and the agent library, is the foundation of our vision for the future of agents in the workplace. It enables the productivity benefits of agents, otherwise secluded in silos or held back by limited enablement resources, to instead spread to everyone-regardless of their experience and expertise in working with AI systems. 
 
 Want to discover more about how Glean Agents help us deliver the market’s most comprehensive work AI platform? Watch the [Glean Live: Winter ‘25 launch event](https://www.glean.com/glean-live)! If you’re looking for a way to transform the way you work with enterprise-ready Work AI and agents, sign up for a [demo](https://www.glean.com/get-a-demo) today. 
 

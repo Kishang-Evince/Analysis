@@ -2,7 +2,7 @@
 url: "https://docs.glean.com/user-guide/assistant/file-upload"
 canonical: "https://docs.glean.com/user-guide/assistant/file-upload"
 title: "Upload files in Assistant"
-description: "Upload and analyze local files in Glean — documents, spreadsheets, presentations, code files, images, and archives."
+description: "Upload and analyze local files in Glean - documents, spreadsheets, presentations, code files, images, and archives."
 fetched_at: "2026-09-01T13:30:38.571Z"
 ---
 On this page
@@ -179,7 +179,7 @@ Minimum file size for upload is 1 KB.
 
 You can upload and analyze `.zip` archives directly in Glean. This is useful for working with bundled documents, code packages, or compressed datasets. Drag and drop a `.zip` file into the composer, then ask questions about its contents. Other archive formats are also accepted: `.tar`, `.tar.gz` / `.tgz`, `.tar.bz2`, `.gz`, and `.bz2`.
 
-Unlike other uploads, archives aren't parsed and indexed up front. Instead, Glean opens them in the [Agent Sandbox](/security/agent-sandbox-ptc) — a virtual computer with a file system, shell, and code interpreter — and inspects or extracts only the files needed to answer your question.
+Unlike other uploads, archives aren't parsed and indexed up front. Instead, Glean opens them in the [Agent Sandbox](/security/agent-sandbox-ptc) - a virtual computer with a file system, shell, and code interpreter - and inspects or extracts only the files needed to answer your question.
 
 ### Requirements[​](#requirements "Direct link to Requirements")
 

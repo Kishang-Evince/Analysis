@@ -2,7 +2,7 @@
 url: "https://developers.glean.com/guides/mcp/claude-code"
 canonical: "https://developers.glean.com/guides/mcp/claude-code"
 title: "Glean Plugin for Claude Code | Glean Developer"
-description: "Install the official Glean plugin for Claude Code — enterprise knowledge as native skills in your terminal."
+description: "Install the official Glean plugin for Claude Code - enterprise knowledge as native skills in your terminal."
 fetched_at: "2026-09-01T13:23:02.510Z"
 ---
 Official Glean plugin
@@ -27,7 +27,7 @@ The plugins require a Glean MCP connection. Use the Glean configurator to connec
 
 Add the Glean marketplace and install the plugin
 
-Run these commands inside Claude Code to install the Glean enterprise-knowledge plugin. Its skills — search, code exploration, people, meetings, onboarding, productivity — auto-trigger by task.
+Run these commands inside Claude Code to install the Glean enterprise-knowledge plugin. Its skills - search, code exploration, people, meetings, onboarding, productivity - auto-trigger by task.
 
 Add the Glean marketplace
 

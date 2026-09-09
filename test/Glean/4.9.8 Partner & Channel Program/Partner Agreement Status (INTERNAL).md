@@ -1,4 +1,4 @@
-# Field 7 — Partner Agreement Status (INTERNAL)
+# Field 7 - Partner Agreement Status (INTERNAL)
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Partner Agreement Status (INTERNAL).md](../../../Glean/Combined/4.9.8 Partner & Channel Program/Partner Agreement Status (INTERNAL).md)

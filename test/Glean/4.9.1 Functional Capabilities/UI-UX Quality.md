@@ -1,4 +1,4 @@
-# Field 5 — UI/UX Quality
+# Field 5 - UI/UX Quality
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [UI-UX Quality.md](../../../Glean/Combined/4.9.1 Functional Capabilities/UI-UX Quality.md)

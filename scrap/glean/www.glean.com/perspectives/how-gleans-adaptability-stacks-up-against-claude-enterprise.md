@@ -85,12 +85,12 @@ The most adaptable platform combines model choice, automatic routing, enterprise
 
 Six criteria separate a flexible platform from a static one:
 
-1.  **Task-level model choice** — can users pick a specific model for a specific job?
-2.  **Multi-model orchestration** — can the system route work across models automatically?
-3.  **Grounding in company context** — does the model output reflect what the organization actually knows?
-4.  **Security and governance** — do permissions, audit trails, and data controls persist regardless of which model runs?
-5.  **Lock-in risk** — can the buyer switch providers without rebuilding integrations?
-6.  **Measurable performance** — does the platform produce better answers, use fewer tokens, or complete complex tasks at a higher rate?
+1.  **Task-level model choice** - can users pick a specific model for a specific job?
+2.  **Multi-model orchestration** - can the system route work across models automatically?
+3.  **Grounding in company context** - does the model output reflect what the organization actually knows?
+4.  **Security and governance** - do permissions, audit trails, and data controls persist regardless of which model runs?
+5.  **Lock-in risk** - can the buyer switch providers without rebuilding integrations?
+6.  **Measurable performance** - does the platform produce better answers, use fewer tokens, or complete complex tasks at a higher rate?
 
 A platform that checks one or two of these boxes still leaves gaps. An enterprise evaluation should weight all six, because model flexibility without governance is a security risk, and governance without flexibility is a productivity ceiling. Glean's Model Hub, Enterprise Graph, and Agentic Engine are designed to address these criteria together in one platform layer.
 

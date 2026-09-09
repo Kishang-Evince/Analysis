@@ -23,7 +23,7 @@ Get consistent, high-quality next steps to resolve support issues faster.
 
 ## Overview
 
-The support ticket next steps agent helps support teams resolve issues faster by recommending clear, actionable next steps. It analyzes the latest message, searches for similar cases, and returns targeted guidance — so agents spend less time digging and more time solving. It’s especially useful for support leads and CX teams looking to deliver consistent service at scale.
+The support ticket next steps agent helps support teams resolve issues faster by recommending clear, actionable next steps. It analyzes the latest message, searches for similar cases, and returns targeted guidance - so agents spend less time digging and more time solving. It’s especially useful for support leads and CX teams looking to deliver consistent service at scale.
 
 ## See it in action
 

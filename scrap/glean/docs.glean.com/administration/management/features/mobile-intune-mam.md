@@ -7,9 +7,9 @@ fetched_at: "2026-09-01T13:29:09.157Z"
 ---
 On this page
 
-This article is for Microsoft Intune administrators and Glean administrators who want to apply **Mobile Application Management (MAM)** controls — also called App Protection Policies — to the Glean mobile app without requiring full device enrollment (MDM). It also covers the optional Microsoft Edge sign-in path, which is required for deployments that use Microsoft Entra ID Conditional Access with the **Require app protection policy** grant.
+This article is for Microsoft Intune administrators and Glean administrators who want to apply **Mobile Application Management (MAM)** controls - also called App Protection Policies - to the Glean mobile app without requiring full device enrollment (MDM). It also covers the optional Microsoft Edge sign-in path, which is required for deployments that use Microsoft Entra ID Conditional Access with the **Require app protection policy** grant.
 
-It applies to the official Glean mobile app from the App Store and Google Play. White-labeled Glean builds follow the same model but use different identifiers — contact your Glean account team to confirm details before applying these steps.
+It applies to the official Glean mobile app from the App Store and Google Play. White-labeled Glean builds follow the same model but use different identifiers - contact your Glean account team to confirm details before applying these steps.
 
 ## Overview[​](#overview "Direct link to Overview")
 
@@ -80,12 +80,12 @@ Glean Support enables Intune MAM mode (and optionally Edge sign-in) and confirms
 
 ### Microsoft Edge sign-in (optional)[​](#microsoft-edge-sign-in-optional "Direct link to Microsoft Edge sign-in (optional)")
 
-Enable this step if your organization requires all SSO sign-in to happen inside the Intune-managed Microsoft Edge browser — for example, when a Conditional Access policy uses the **Require app protection policy** grant on the identity provider. Microsoft Edge sign-in is independent of Intune MAM enrollment — you can enable either, both, or neither.
+Enable this step if your organization requires all SSO sign-in to happen inside the Intune-managed Microsoft Edge browser - for example, when a Conditional Access policy uses the **Require app protection policy** grant on the identity provider. Microsoft Edge sign-in is independent of Intune MAM enrollment - you can enable either, both, or neither.
 
 This section has the following prerequisites:
 
 1.  Microsoft Edge is deployed to your users' devices through Intune and is itself enrolled as a managed app.
-2.  Microsoft Edge on the device is configured to permit redirection back to the Glean app callback URL `com.glean.app:/auth-callback`. The exact setting depends on your Microsoft Edge management configuration — consult Microsoft's Edge for Intune documentation.
+2.  Microsoft Edge on the device is configured to permit redirection back to the Glean app callback URL `com.glean.app:/auth-callback`. The exact setting depends on your Microsoft Edge management configuration - consult Microsoft's Edge for Intune documentation.
 
 Important
 
@@ -112,7 +112,7 @@ After completing the steps above, confirm the setup on a test device before roll
 1.  Install the Glean mobile app on a test device from the App Store or Google Play.
 2.  On a user account that's in the Intune assignment group, open the Glean app and enter the user's work email.
 3.  Confirm that a Microsoft sign-in prompt for Intune enrollment appears.
-4.  Complete the Microsoft sign-in. On iOS, the app may restart automatically — this is expected.
+4.  Complete the Microsoft sign-in. On iOS, the app may restart automatically - this is expected.
 5.  After the app reopens (or after enrollment completes on Android), confirm the Glean SSO sign-in step runs. If Microsoft Edge sign-in is enabled, confirm that this step opens inside Microsoft Edge.
 6.  Confirm that the App Protection Policy controls you configured (for example, app PIN on launch, or copy and paste restrictions) take effect inside the Glean app.
 
@@ -122,12 +122,12 @@ If any of these steps fails, see [Troubleshooting](#troubleshooting) before cont
 
 The first time a user opens the Glean mobile app on a deployment with Intune MAM mode enabled, they see two sequential sign-in steps:
 
-1.  **Microsoft sign-in for Intune enrollment.** The user enters their work account credentials so that the Glean app instance can register with the Intune tenant. On iOS, after enrollment completes, the Glean app may restart automatically — this is expected.
+1.  **Microsoft sign-in for Intune enrollment.** The user enters their work account credentials so that the Glean app instance can register with the Intune tenant. On iOS, after enrollment completes, the Glean app may restart automatically - this is expected.
 2.  **Glean sign-in.** After the app reopens (or after enrollment completes on Android), the user signs in to Glean through your normal SSO provider. If Edge sign-in is enabled, this step opens inside Microsoft Edge instead of the default in-app browser.
 
 On subsequent launches, the Glean app remains enrolled and only the Glean sign-in step is required (and only when the user is signed out).
 
-Once enrolled and signed in, the App Protection Policy controls that you assigned to the Glean app take effect — for example, app PIN, copy and paste restrictions, save-as restrictions, jailbreak and root detection, and offline grace period. See [Supported Intune controls](#supported-intune-controls) for the full list and for platform-specific behavior, especially around screen capture on iOS versus Android.
+Once enrolled and signed in, the App Protection Policy controls that you assigned to the Glean app take effect - for example, app PIN, copy and paste restrictions, save-as restrictions, jailbreak and root detection, and offline grace period. See [Supported Intune controls](#supported-intune-controls) for the full list and for platform-specific behavior, especially around screen capture on iOS versus Android.
 
 ## Conditional Access[​](#conditional-access "Direct link to Conditional Access")
 
@@ -143,7 +143,7 @@ You don't need to exclude Glean from the Conditional Access policy.
 
 ## Supported Intune controls[​](#supported-intune-controls "Direct link to Supported Intune controls")
 
-The Glean mobile app integrates with the official Microsoft Intune App SDK — [IntuneMAMSwift](https://github.com/microsoftconnect/ms-intune-app-sdk-ios) on iOS and the [Microsoft Intune App SDK for Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android) on Android — using the standard enrollment and policy-evaluation APIs. Glean doesn't override or filter App Protection Policy decisions made by the SDK.
+The Glean mobile app integrates with the official Microsoft Intune App SDK - [IntuneMAMSwift](https://github.com/microsoftconnect/ms-intune-app-sdk-ios) on iOS and the [Microsoft Intune App SDK for Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android) on Android - using the standard enrollment and policy-evaluation APIs. Glean doesn't override or filter App Protection Policy decisions made by the SDK.
 
 ### App Protection Policy controls[​](#app-protection-policy-controls "Direct link to App Protection Policy controls")
 
@@ -166,18 +166,18 @@ The following App Protection Policy controls are expected to apply to the Glean 
 | Data protection | Restrict "Receive data from other apps" | Supported | Supported | Enforced by the Intune App SDK. |
 | Data protection | Restrict third-party keyboards | Supported | Supported | Enforced by the Intune App SDK. |
 | Data protection | Encrypt org data | Supported | Supported | Enforced by the Intune App SDK. |
-| Data protection | Block screen capture | Not enforceable by third-party apps on iOS — see the platform note below | Supported | See the platform note below. |
+| Data protection | Block screen capture | Not enforceable by third-party apps on iOS - see the platform note below | Supported | See the platform note below. |
 | Data protection | Obscure app contents in the app switcher or task preview | Supported (when "Block screen capture" is enabled) | Supported | iOS uses task-switcher obfuscation in place of screenshot blocking. |
 
 **Platform note on screen capture.** Android allows the Intune App SDK to actively block screenshots of managed content when the corresponding policy setting is enabled, and Glean inherits this behavior. iOS doesn't allow third-party apps to fully block screenshots. When the corresponding policy setting is enabled, the SDK on iOS obscures Glean's screen in the app switcher and task preview, but can't block an active screenshot at the OS level. This is a platform limitation that applies to every third-party MAM-enabled iOS app, not a Glean limitation.
 
-For App Protection Policy controls not listed in the table above — including newer controls Microsoft releases over time and controls that require app-side custom integration — contact [Glean Support](https://support.glean.com) for the current support status before relying on them in a deployment plan.
+For App Protection Policy controls not listed in the table above - including newer controls Microsoft releases over time and controls that require app-side custom integration - contact [Glean Support](https://support.glean.com) for the current support status before relying on them in a deployment plan.
 
 For Microsoft's full list of settings, see [iOS and iPadOS App protection policy settings](https://learn.microsoft.com/en-us/mem/intune/apps/app-protection-policy-settings-ios) and [Android App protection policy settings](https://learn.microsoft.com/en-us/mem/intune/apps/app-protection-policy-settings-android).
 
 ### App Configuration[​](#app-configuration "Direct link to App Configuration")
 
-The Glean mobile app doesn't require Intune-managed App Configuration values for normal operation. The settings most commonly distributed through App Configuration in other apps — tenant URL and login hint — are handled by the Glean app itself (the user enters their work email at the sign-in screen).
+The Glean mobile app doesn't require Intune-managed App Configuration values for normal operation. The settings most commonly distributed through App Configuration in other apps - tenant URL and login hint - are handled by the Glean app itself (the user enters their work email at the sign-in screen).
 
 If your deployment plan depends on pushing specific App Configuration values to the Glean app from Intune, contact [Glean Support](https://support.glean.com) to discuss the use case before you configure them. The app may not read them today.
 
@@ -193,7 +193,7 @@ When the Glean mobile app is enrolled with Intune, it operates as a managed app 
 
 -   **App data on the device is governed by the assigned App Protection Policy.** This includes the data protection, access requirements, and conditional launch settings the administrator configured (see [Supported Intune controls](#supported-intune-controls)).
 -   **Glean doesn't retain a local copy of org content beyond what's needed for the app to function.** Search results, chat responses, and documents are fetched from Glean's servers on demand and rendered in the app. The app doesn't maintain an offline content store of organizational documents.
--   **Authentication tokens are stored in the platform's secure storage** — the iOS Keychain on iOS, and the equivalent secure storage on Android. They aren't written to general app storage.
+-   **Authentication tokens are stored in the platform's secure storage** - the iOS Keychain on iOS, and the equivalent secure storage on Android. They aren't written to general app storage.
 -   **Communication with Glean's servers uses HTTPS.** All requests to your Glean tenant are made over TLS.
 -   **Uninstalling the Glean app removes the app's sandbox data** (cached UI data and app preferences) and unenrolls the app instance from Intune. On iOS, certain platform-managed credential stores (for example, the iOS Keychain) may retain entries across reinstall, per Apple's platform behavior. On Android, app uninstall clears the Glean app's data.
 
@@ -234,7 +234,7 @@ Glean Support can't:
 
 -   Modify your Intune tenant, App Protection Policies, Conditional Access policies, or app assignments.
 -   Debug Microsoft sign-in, Microsoft Entra ID, or Microsoft Edge issues that occur before the Glean app is reached.
--   Provide root-cause analysis for behavior that's governed by the Intune App SDK or by Microsoft's platform — for example, why a specific App Protection Policy setting takes effect a certain way at the OS level. Glean Support can confirm whether the Glean app is enrolled, which Glean app version is running, and where the boundary lies between Glean and Microsoft. Microsoft Support owns the underlying platform behavior.
+-   Provide root-cause analysis for behavior that's governed by the Intune App SDK or by Microsoft's platform - for example, why a specific App Protection Policy setting takes effect a certain way at the OS level. Glean Support can confirm whether the Glean app is enrolled, which Glean app version is running, and where the boundary lies between Glean and Microsoft. Microsoft Support owns the underlying platform behavior.
 
 ## Frequently asked questions[​](#frequently-asked-questions "Direct link to Frequently asked questions")
 
@@ -280,5 +280,5 @@ Open a ticket at [Glean Support](https://support.glean.com).
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [iOS and Android](/administration/management/features/mobile) — deploy and manage the Glean mobile apps
--   [Glean Trust Portal](https://trust.glean.com) — Glean's data handling, certifications, and security posture
+-   [iOS and Android](/administration/management/features/mobile) - deploy and manage the Glean mobile apps
+-   [Glean Trust Portal](https://trust.glean.com) - Glean's data handling, certifications, and security posture

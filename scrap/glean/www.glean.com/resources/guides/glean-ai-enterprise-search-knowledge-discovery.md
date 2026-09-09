@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/glean-ai-enterprise-search-knowledge-discovery"
 canonical: "https://www.glean.com/resources/guides/glean-ai-enterprise-search-knowledge-discovery"
 title: "Glean: AI-powered enterprise search and knowledge discovery"
-description: "Glean is the workplace search and generative AI assistant that uses its deep understanding of all your company's content, employees, and activity to help workers find exactly what they need— across all applications, in every situation. With enterprise-grade permissions, data governance, and referenceability, Glean is the generative AI solution you can trust.‍Circumvent digital complexity, information overload, and SaaS sprawl with the market’s leading enterprise search and workplace AI assistant. Get a better picture by downloading the free two-pager!"
+description: "Glean is the workplace search and generative AI assistant that uses its deep understanding of all your company's content, employees, and activity to help workers find exactly what they need- across all applications, in every situation. With enterprise-grade permissions, data governance, and referenceability, Glean is the generative AI solution you can trust.‍Circumvent digital complexity, information overload, and SaaS sprawl with the market’s leading enterprise search and workplace AI assistant. Get a better picture by downloading the free two-pager!"
 fetched_at: "2026-09-01T13:27:07.840Z"
 ---
 ## Work AI that works.

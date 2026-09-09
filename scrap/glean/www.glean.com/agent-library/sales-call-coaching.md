@@ -36,17 +36,17 @@ Analyze recorded customer calls to evaluate how well reps follow your sales meth
 
 ## Example output
 
-### Feedback summary — Acme Corp discovery with Jordan Lee (Gong recording)
+### Feedback summary - Acme Corp discovery with Jordan Lee (Gong recording)
 
 #### Success criteria 
 
-**Point of view (value hypothesis): Present** — “Based on your expansion goals, Globex helps teams shift time from manual updates to selling by automating CRM hygiene and surfacing account context instantly.”**‍**
+**Point of view (value hypothesis): Present** - “Based on your expansion goals, Globex helps teams shift time from manual updates to selling by automating CRM hygiene and surfacing account context instantly.”**‍**
 
-**Positive business outcome: Partial** — Outcomes were described qualitatively.
+**Positive business outcome: Partial** - Outcomes were described qualitatively.
 
-**Customer references:** **Missing** — No specific customers cited.
+**Customer references:** **Missing** - No specific customers cited.
 
-**Executive alignment: Missing** — No explicit economic buyer identified or invited for next call.
+**Executive alignment: Missing** - No explicit economic buyer identified or invited for next call.
 
 #### Suggestions for the next meeting agenda
 
@@ -108,7 +108,7 @@ Reach out with confidence using personalized emails built on research your reps 
 
 #### Deal loss insights
 
-Get clarity on why you’re losing deals — and what to do about it.
+Get clarity on why you’re losing deals - and what to do about it.
 
 ](/agent-library/deal-loss-insights)
 

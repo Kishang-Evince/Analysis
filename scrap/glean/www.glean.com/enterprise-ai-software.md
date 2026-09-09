@@ -49,7 +49,7 @@ AI agents that assemble data, generate outputs, and take actions like creating t
 The right platform transforms how work gets done. Look for these five capabilities:
 
 1.  **Check for pre-built connectors and real-time data sync  
-    **Pre-built connectors to major SaaS tools mean faster setup. Support for structured and unstructured data — from internal documents to customer data — ensures nothing falls through the cracks. Real-time sync keeps AI answers current.
+    **Pre-built connectors to major SaaS tools mean faster setup. Support for structured and unstructured data - from internal documents to customer data - ensures nothing falls through the cracks. Real-time sync keeps AI answers current.
 2.  **Evaluate the knowledge graph and retrieval approach**  
     Vector search alone isn't enough. Advanced platforms maintain a knowledge graph that uses machine learning and AI models to understand entities and relationships. Hybrid retrieval blends keyword, semantic, and graph-based ranking to surface what matters most.
 3.  **Understand which models and reasoning methods the platform uses  
@@ -78,11 +78,11 @@ The right platform transforms how work gets done. Look for these five capabiliti
 
 Is an enterprise AI platform the same as an enterprise AI assistant?
 
-Not exactly. An enterprise AI assistant is a specific application (usually chat-based) that sits on top of a broader enterprise AI platform. The platform underneath handles connectors, retrieval, security, and orchestration; the assistant is one way users experience that capability. Glean offers both — a complete Work AI platform plus Assistant and Agents that use it.
+Not exactly. An enterprise AI assistant is a specific application (usually chat-based) that sits on top of a broader enterprise AI platform. The platform underneath handles connectors, retrieval, security, and orchestration; the assistant is one way users experience that capability. Glean offers both - a complete Work AI platform plus Assistant and Agents that use it.
 
 How are enterprise AI tools different from traditional analytics or BI tools?
 
-Analytics and BI tools are optimized for dashboards, reports, and structured data. Enterprise AI tools work with both structured and unstructured information, use generative AI to answer open-ended questions in natural language, and can summarize, write, and act — not just enable data-driven decision making. Glean combines search, analysis, and action in one platform.
+Analytics and BI tools are optimized for dashboards, reports, and structured data. Enterprise AI tools work with both structured and unstructured information, use generative AI to answer open-ended questions in natural language, and can summarize, write, and act - not just enable data-driven decision making. Glean combines search, analysis, and action in one platform.
 
 Do we need a centralized platform, or can we just add AI features to each app?
 
@@ -90,7 +90,7 @@ Adding AI to individual tools can be useful, but many organizations find it crea
 
 What skills do we need internally to be successful implementing enterprise AI?
 
-You don't need a research lab. You need owners for data, security, and governance. You need people who understand key business functions and workflows and can define good AI use cases. And you need the ability to iterate — testing agents and assistants against real tasks. Glean's natural language agent builder lets non-technical users create agents.
+You don't need a research lab. You need owners for data, security, and governance. You need people who understand key business functions and workflows and can define good AI use cases. And you need the ability to iterate - testing agents and assistants against real tasks. Glean's natural language agent builder lets non-technical users create agents.
 
 What's the general timeline for enterprise AI implementation?
 
@@ -110,7 +110,7 @@ RAG (Retrieval-Augmented Generation) pulls relevant context at query time and fe
 
 How do enterprise AI platforms handle data privacy and permissions?
 
-Advanced platforms enforce permissions at query time — users only see data they already have access to in source systems. They respect existing systems' access controls, sync permission changes in real time, and never expose data across permission boundaries, even when generating AI responses. Glean's permissions enforcement reflects source system changes immediately.
+Advanced platforms enforce permissions at query time - users only see data they already have access to in source systems. They respect existing systems' access controls, sync permission changes in real time, and never expose data across permission boundaries, even when generating AI responses. Glean's permissions enforcement reflects source system changes immediately.
 
 Can enterprise AI applications work with our existing security and compliance requirements?
 
@@ -118,4 +118,4 @@ Yes. Look for platforms with SOC 2 Type II, HIPAA, GDPR, and ISO 27001 certifica
 
 How do we measure ROI from an enterprise AI solution?
 
-Track time saved per employee or workflow. Measure improvements in resolution times, win rates, or onboarding speed. Calculate reduction in "AI tax" from consolidating fragmented tools. The strongest signal is whether usage grows organically after pilots — that indicates tangible business value, not just novelty. Glean customers see 93% adoption in just 2 years, and companies typically recover their investment in under 6 months.
+Track time saved per employee or workflow. Measure improvements in resolution times, win rates, or onboarding speed. Calculate reduction in "AI tax" from consolidating fragmented tools. The strongest signal is whether usage grows organically after pilots - that indicates tangible business value, not just novelty. Glean customers see 93% adoption in just 2 years, and companies typically recover their investment in under 6 months.

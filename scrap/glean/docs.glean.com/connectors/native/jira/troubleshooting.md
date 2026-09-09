@@ -96,7 +96,7 @@ All users see an error like `user is not in any doc type access group: JIRA:jira
 
 note
 
-When Jira credentials fail, all users lose access simultaneously because identity data stops syncing. Re-authenticating the connector restores access after the next successful identity crawl — typically within a few hours. If the issue persists after re-authentication, contact [Glean Support](https://support.glean.com).
+When Jira credentials fail, all users lose access simultaneously because identity data stops syncing. Re-authenticating the connector restores access after the next successful identity crawl - typically within a few hours. If the issue persists after re-authentication, contact [Glean Support](https://support.glean.com).
 
 A user can still see a Jira issue in Glean after being removed from the project
 
@@ -184,7 +184,7 @@ Jira links in Glean search results point to the wrong URL
 
 note
 
-On some Jira Data Center installations, the REST API endpoint and the user-facing UI are on different hosts. If updating the Base URL causes crawl errors, contact [Glean Support](https://support.glean.com) — your setup may require custom URL routing configuration.
+On some Jira Data Center installations, the REST API endpoint and the user-facing UI are on different hosts. If updating the Base URL causes crawl errors, contact [Glean Support](https://support.glean.com) - your setup may require custom URL routing configuration.
 
 The initial Jira Data Center crawl is taking an unexpectedly long time
 
@@ -224,7 +224,7 @@ Glean supports all actively maintained versions of Jira Data Center. Glean autom
 
 Does Glean support Jira Service Management?
 
-Yes. The Jira connector indexes Jira Service Management request types and forms in addition to standard Jira issues and projects. No separate connector configuration is needed — the same app installation covers both Jira Software and Jira Service Management. Request types must be assigned to a portal group in Jira to be indexed.
+Yes. The Jira connector indexes Jira Service Management request types and forms in addition to standard Jira issues and projects. No separate connector configuration is needed - the same app installation covers both Jira Software and Jira Service Management. Request types must be assigned to a portal group in Jira to be indexed.
 
 How does Glean handle Jira issue security schemes?
 

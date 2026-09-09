@@ -29,11 +29,11 @@
 | Git ADLC sync | Versioned agent repo | N/A | Doc-Verified |
 | MCP / custom execute actions | External tool definitions | Invoked as tools | Doc-Verified |
 | Auto sandboxed code execution | Platform-managed analysis runtime | Auto runtime only | Not user-authored Python/JS in canvas |
-| Custom code block in Workflow canvas | — | **No evidence** | Not supported |
+| Custom code block in Workflow canvas | - | **No evidence** | Not supported |
 
 ### Engineering observation (Doc-Verified)
 
-- Engineering teams extend agents via **API, headless files, MCP** — not embedded scripting inside Workflow steps.
+- Engineering teams extend agents via **API, headless files, MCP** - not embedded scripting inside Workflow steps.
 - Auto mode **sandboxed code execution** is platform-controlled analysis sandbox (PTC), not arbitrary user libraries in the builder.
 - Tenant baseline (NL Auto agent over Drive + Notion) needs **zero custom code**.
 

@@ -75,7 +75,7 @@ Generative AI (GenAI) refers to a subset of artificial intelligence algorithms t
 
 Some of the most prominent examples of GenAI include:
 
-These tools have demonstrated a remarkable ability to imitate human intelligence by discovering trends and patterns across diverse domains—from healthcare and finance to marketing and customer service. The rise of genAI can be attributed to several key technological advancements:
+These tools have demonstrated a remarkable ability to imitate human intelligence by discovering trends and patterns across diverse domains-from healthcare and finance to marketing and customer service. The rise of genAI can be attributed to several key technological advancements:
 
 As these technologies continue to mature, the potential applications of genAI in the enterprise are vast. From automating knowledge-intensive tasks like research and analysis to generating personalized content for marketing and customer support, GenAI has the power to transform how businesses operate and engage with their stakeholders.
 
@@ -135,7 +135,7 @@ Regular evaluation of GenAI's influence on the workforce is key to maintaining a
 
 Crafting forward-thinking policies and redefining workplace norms are crucial steps in facilitating workforce transitions. Establishing frameworks that promote equitable access to career development and reskilling opportunities ensures that all employees can benefit from technological advancements. Involving diverse stakeholders in the policy-making process can lead to more inclusive and effective solutions, aligning organizational practices with broader social objectives. This comprehensive approach positions organizations as leaders in the responsible and ethical implementation of GenAI technologies.
 
-As we stand on the precipice of a new era, the integration of genAI into corporate knowledge management systems presents both challenges and opportunities. By embracing a proactive, adaptive approach, organizations can harness the power of these technologies to drive innovation, efficiency, and growth. If you're ready to embark on this transformative journey, [request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) — together, we can shape the future of work.
+As we stand on the precipice of a new era, the integration of genAI into corporate knowledge management systems presents both challenges and opportunities. By embracing a proactive, adaptive approach, organizations can harness the power of these technologies to drive innovation, efficiency, and growth. If you're ready to embark on this transformative journey, [request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) - together, we can shape the future of work.
 
 [
 

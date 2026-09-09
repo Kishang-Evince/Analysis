@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:50.820Z"
 ---
 ### Overview
 
-Microsoft Outlook is widely used in business environments for email, calendaring, and contact management. Glean lets users search emails, tasks, contacts, and files — and take action directly. Send and forward messages, create calendar invites, update contacts, and pull event details into multi-step workflows without leaving Glean.
+Microsoft Outlook is widely used in business environments for email, calendaring, and contact management. Glean lets users search emails, tasks, contacts, and files - and take action directly. Send and forward messages, create calendar invites, update contacts, and pull event details into multi-step workflows without leaving Glean.
 
 ### Features
 

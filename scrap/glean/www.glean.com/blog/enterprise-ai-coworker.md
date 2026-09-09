@@ -85,7 +85,7 @@ Listen to article
 
 Most enterprises have made real bets on AI coworkers to drive employee productivity. However, AI simply doesn't stick for many knowledge workers even as they try to use it day to day. That’s because generic AI doesn’t drive productivity the way enterprise knowledge workers need, as it doesn't work with their company's data in any meaningful way. It’s simply a consumer-grade experience trying to be retrofitted into an enterprise use case, or it’s being forced into a legacy enterprise application.
 
-Generic AI coworkers can't participate in your meetings and keep your whole organization up to speed on critical projects and action items. They might be able to create a static dashboard or spreadsheet, but they can’t help teams collaborate with data and act faster. These approaches are not what knowledge workers need—at best, they help with simple tasks with limited impact rather than driving true productivity across actual workflows.
+Generic AI coworkers can't participate in your meetings and keep your whole organization up to speed on critical projects and action items. They might be able to create a static dashboard or spreadsheet, but they can’t help teams collaborate with data and act faster. These approaches are not what knowledge workers need-at best, they help with simple tasks with limited impact rather than driving true productivity across actual workflows.
 
 What enterprises need is an AI coworker that proactively surfaces personalized, high-priority tasks, executes multiple tasks simultaneously on your behalf, and is easy to collaborate with in the exact way that you want to work. All while providing the right governance and full enterprise context to do it right every time. 
 

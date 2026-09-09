@@ -86,7 +86,7 @@ Use the thumbs-up and thumbs-down controls on each analysis to provide feedback.
 
 ### Cost[​](#cost "Direct link to Cost")
 
-Severity analysis uses an LLM to perform classification — Gemini on GCP deployments and Claude on AWS deployments. For every unique document and policy pair with analyzable info types, a fixed amount of LLM tokens is consumed. Approximate costs are:
+Severity analysis uses an LLM to perform classification - Gemini on GCP deployments and Claude on AWS deployments. For every unique document and policy pair with analyzable info types, a fixed amount of LLM tokens is consumed. Approximate costs are:
 
 -   **GCP**: ~$12 per 10,000 documents
 -   **AWS**: ~$75 per 10,000 documents

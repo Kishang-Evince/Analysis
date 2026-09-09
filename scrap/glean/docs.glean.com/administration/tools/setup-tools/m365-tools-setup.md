@@ -149,10 +149,10 @@ Follow these steps to set up Microsoft 365 tools and Microsoft Teams, Excel, and
 
 If you want to integrate with other Microsoft services, you can reuse the same Azure app. Add the required scopes in both Azure and Glean:
 
--   **OneDrive** — `Files.ReadWrite.All`, `Sites.Read.All`, `offline_access`
--   **Teams** — `Channel.Create`, `Channel.ReadBasic.All`, `ChannelMessage.Read.All`, `ChannelMessage.ReadWrite`, `ChannelMessage.Send`, `ChannelSettings.ReadWrite.All`, `Chat.Create`, `Chat.Read`, `Chat.ReadBasic`, `Chat.ReadWrite`, `Chat.ReadWrite.All`, `ChatMessage.Read`, `ChatMessage.Send`, `Directory.ReadWrite.All`, `Group.ReadWrite.All`, `offline_access`, `People.Read.All`, `Presence.ReadWrite`, `Team.Create`, `Team.ReadBasic.All`, `TeamMember.ReadWrite.All`, `TeamsActivity.Read`, `TeamsActivity.Send`, `User.Read`, `OnlineMeetings.ReadWrite`
--   **SharePoint** — `Files.ReadWrite.All`, `Sites.Read.All`, `offline_access`
--   **Excel** — `Files.ReadWrite`, `Sites.ReadWrite.All`, `offline_access`, `User.Read`
+-   **OneDrive** - `Files.ReadWrite.All`, `Sites.Read.All`, `offline_access`
+-   **Teams** - `Channel.Create`, `Channel.ReadBasic.All`, `ChannelMessage.Read.All`, `ChannelMessage.ReadWrite`, `ChannelMessage.Send`, `ChannelSettings.ReadWrite.All`, `Chat.Create`, `Chat.Read`, `Chat.ReadBasic`, `Chat.ReadWrite`, `Chat.ReadWrite.All`, `ChatMessage.Read`, `ChatMessage.Send`, `Directory.ReadWrite.All`, `Group.ReadWrite.All`, `offline_access`, `People.Read.All`, `Presence.ReadWrite`, `Team.Create`, `Team.ReadBasic.All`, `TeamMember.ReadWrite.All`, `TeamsActivity.Read`, `TeamsActivity.Send`, `User.Read`, `OnlineMeetings.ReadWrite`
+-   **SharePoint** - `Files.ReadWrite.All`, `Sites.Read.All`, `offline_access`
+-   **Excel** - `Files.ReadWrite`, `Sites.ReadWrite.All`, `offline_access`, `User.Read`
 
 After scopes are added, you can configure additional auth configs in Glean for each service.
 

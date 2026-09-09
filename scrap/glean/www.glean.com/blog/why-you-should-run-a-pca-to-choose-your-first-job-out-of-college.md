@@ -83,11 +83,11 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-While I was in college, I had a blast interning at different big tech companies. But even though I was working on cool stuff with smart people, something about those experiences just felt *off*. That definitely wasn’t the way I’d want to feel about my first job after graduating. I wanted to feel excited to my core, like I wasn’t settling for anything less than achieving my dream—but I wasn’t sure how to get where I wanted to be. After juggling 1,000 factors and getting nowhere in my decision making, I decided to run a dimensionality reduction method—Principal Component Analysis (PCA)—on my life. I needed to think about which components mattered most to me as a soon-to-be new grad deciding between a big company and smaller startup. (Spoiler alert: I chose the startup.) Here were the five key things I thought about most:  
+While I was in college, I had a blast interning at different big tech companies. But even though I was working on cool stuff with smart people, something about those experiences just felt *off*. That definitely wasn’t the way I’d want to feel about my first job after graduating. I wanted to feel excited to my core, like I wasn’t settling for anything less than achieving my dream-but I wasn’t sure how to get where I wanted to be. After juggling 1,000 factors and getting nowhere in my decision making, I decided to run a dimensionality reduction method-Principal Component Analysis (PCA)-on my life. I needed to think about which components mattered most to me as a soon-to-be new grad deciding between a big company and smaller startup. (Spoiler alert: I chose the startup.) Here were the five key things I thought about most:  
 
 ## 1\. People
 
-The people you work with—so important, if not the most important. You interact with them every day. You learn from them, hang out with them, make mistakes with them, and grow a company with them. I now know from experience that it feels so good to care about everyone you work with. In a smaller startup where that’s the case, the mentorship opportunities for a new grad are unbeatable. Whatever you want to learn, you can just ask the person that does it. No bureaucracy, no weird dynamics. You want to be in a place where you can all work smart, together. 
+The people you work with-so important, if not the most important. You interact with them every day. You learn from them, hang out with them, make mistakes with them, and grow a company with them. I now know from experience that it feels so good to care about everyone you work with. In a smaller startup where that’s the case, the mentorship opportunities for a new grad are unbeatable. Whatever you want to learn, you can just ask the person that does it. No bureaucracy, no weird dynamics. You want to be in a place where you can all work smart, together. 
 
 ## 2\. Technical and career growth
 
@@ -103,7 +103,7 @@ It’s a no-brainer that you want to work at a growing company. You ride that gr
 
 It’s also a no-brainer that you should work on something that excites you every day. Right now, I’m working on search quality and intelligence, and this means applying the amazing NLP and ML techniques I’ve been raving about for years to something real in the way our product works. It’s unexplainably cool to see the stuff I’m working on getting deployed to all of our customers.
 
-Forget being a cog in a big company’s machine—you know, working on projects that are tiny, unused features or end up going nowhere. The stuff you can do at a smaller startup directly impacts your customers, and immediately. This is for everyone, new grads or not. You get to own your projects, your ideas, and your work. How powerful is that?
+Forget being a cog in a big company’s machine-you know, working on projects that are tiny, unused features or end up going nowhere. The stuff you can do at a smaller startup directly impacts your customers, and immediately. This is for everyone, new grads or not. You get to own your projects, your ideas, and your work. How powerful is that?
 
 ## 5\. Mission and culture
 
@@ -113,7 +113,7 @@ It’s important for me to feel grounded, to feel purpose. In my current role, I
 
 At the end of the day, it’s a lot to consider when choosing your first job out of college. It’s scary, I know! I was there, too. If you decide to join a startup, you’re taking a leap of faith. But this early on in your career, you have nothing to lose. Besides, if you want to try working for a startup, when else are you going to do it? Go for it now, while you have the energy and the ambition, and while you have the highest capacity to learn and grow. 
 
-After running this PCA on my life, I realized that [Glean](https://www.glean.com/) was going to give me everything I wanted in terms of professional and personal growth. I challenge you to run the same PCA and see if working at a startup—[maybe even our startup](https://www.glean.com/careers)—is right for you. I know I’m glad I did, because now I’m in good hands. If you make the same leap, then I think you will be, too.  
+After running this PCA on my life, I realized that [Glean](https://www.glean.com/) was going to give me everything I wanted in terms of professional and personal growth. I challenge you to run the same PCA and see if working at a startup-[maybe even our startup](https://www.glean.com/careers)-is right for you. I know I’m glad I did, because now I’m in good hands. If you make the same leap, then I think you will be, too.  
 
 [
 

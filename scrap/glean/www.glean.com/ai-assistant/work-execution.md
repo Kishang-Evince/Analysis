@@ -41,7 +41,7 @@ Write, explain, and refine code with grounded company context, helping engineeri
 
 Automate recurring work
 
-Use Skills, actions, and scheduled chats to automate repeatable work — from weekly updates to ticket triage to follow-through across teams.
+Use Skills, actions, and scheduled chats to automate repeatable work - from weekly updates to ticket triage to follow-through across teams.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6a8407490b895e304bf53554_icon-placeholder.svg)
 
@@ -61,7 +61,7 @@ Actions and MCP
 
 ## Get work done in connected apps.
 
-Draft emails, create tickets, update records, and automate work with native and MCP-based connections — right from Assistant.
+Draft emails, create tickets, update records, and automate work with native and MCP-based connections - right from Assistant.
 
 ![Work execution task management product visual](https://s3.amazonaws.com/webflow-prod-assets/6127a84dfe068e153ef20572/6a8ca72960e3150541c4fb41_Work%20Execution%20Task%20Management%20Desktop.png)
 

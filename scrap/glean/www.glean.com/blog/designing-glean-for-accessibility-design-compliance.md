@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/designing-glean-for-accessibility-design-compliance"
 canonical: "https://www.glean.com/blog/designing-glean-for-accessibility-design-compliance"
 title: "Designing Glean for accessibility – design system and compliance"
-description: "Sashank Gogula Sarah Ross | Snippet: Learn how we integrate accessibility directly into Glean through our design philosophy and perspectives—baking it into our tokens, components, patterns, and more."
+description: "Sashank Gogula Sarah Ross | Snippet: Learn how we integrate accessibility directly into Glean through our design philosophy and perspectives-baking it into our tokens, components, patterns, and more."
 fetched_at: "2026-09-01T13:26:32.862Z"
 ---
 Last updated Jan 22, 2026.
@@ -109,7 +109,7 @@ Listen to article
 
 Over the last couple of years, we’ve shared how Glean approaches [**focus management and keyboard shortcuts**](https://www.glean.com/blog/designing-glean-for-accessibility-focus-shortcuts), as well as [**screen readers, color, and responsive design**](https://www.glean.com/blog/designing-glean-for-accessibility-screen-reader-color-schemes-more). Those posts covered the philosophy and the technical underpinnings behind our accessibility work from an engineering perspective.
 
-We wanted to now follow up with a **design perspective**—showing how these changes mark a shift in how we build products. Instead of treating accessibility as a set of one‑off fixes, we’re baking it directly into our tokens, components, and patterns. That way, accessibility becomes the default for every new feature.
+We wanted to now follow up with a **design perspective**-showing how these changes mark a shift in how we build products. Instead of treating accessibility as a set of one‑off fixes, we’re baking it directly into our tokens, components, and patterns. That way, accessibility becomes the default for every new feature.
 
 With that, we’re excited to share two big milestones in our journey:
 
@@ -133,7 +133,7 @@ We used the migration as a chance to **reset the baseline**:
 -   Callers can still pass a style, but it’s limited to **layout‑centric tweaks** (like margin) rather than visual styling like colors or typography. This keeps individual screens flexible without letting them drift away from the system.
 -   In Figma, these same components are represented with a matching set of variants and states, so designers and engineers are truly working from the **same component, not just similar ones**.
 
-In practice, that means a component like Input behaves the same way everywhere—same label pattern, same error state, same focus treatment—no matter which team uses it. That consistency reduces cognitive load for users, prevents subtle accessibility regressions, and keeps teams from re‑implementing slightly different patterns that drift out of alignment over time.
+In practice, that means a component like Input behaves the same way everywhere-same label pattern, same error state, same focus treatment-no matter which team uses it. That consistency reduces cognitive load for users, prevents subtle accessibility regressions, and keeps teams from re‑implementing slightly different patterns that drift out of alignment over time.
 
 ### Standardizing tokens, not ad‑hoc CSS
 
@@ -141,7 +141,7 @@ We also standardized the **design tokens** that sit underneath those components.
 
 Historically, it was easy to drop in ad‑hoc CSS like margin: {number}px or a hex color directly into a component. Over hundreds of components, those small one‑offs add up. Layouts are harder to change, visual consistency drifts, and checking for contrast or spacing issues becomes more manual.
 
-Today, spacing, color, and typography all go through a **tokenized system**. Since we already use [vanilla‑extract](https://vanilla-extract.style/), we layered [sprinkles](https://vanilla-extract.style/documentation/packages/sprinkles/) on top to semi‑enforce those tokens in code—similar in spirit to how Tailwind encourages utility‑first, token‑driven styling.
+Today, spacing, color, and typography all go through a **tokenized system**. Since we already use [vanilla‑extract](https://vanilla-extract.style/), we layered [sprinkles](https://vanilla-extract.style/documentation/packages/sprinkles/) on top to semi‑enforce those tokens in code-similar in spirit to how Tailwind encourages utility‑first, token‑driven styling.
 
 -   Need spacing? You use a spacing token, not a raw pixel value.
 -   Need a text or background color? You choose from the semantic color tokens that are already vetted for contrast.
@@ -150,7 +150,7 @@ Today, spacing, color, and typography all go through a **tokenized system**. Sin
 This alignment between **components + tokens** does two things for accessibility:
 
 -   It makes it much harder to accidentally ship something with poor contrast or tiny hit‑areas, because the defaults are already **compliant and consistent**.
--   It makes it easier to **change things centrally**—for example, improving a focus ring or text contrast in one place and having that propagate across the product.
+-   It makes it easier to **change things centrally**-for example, improving a focus ring or text contrast in one place and having that propagate across the product.
 
 For examples, we used to have multiple ad-hoc versions of the Input component:
 
@@ -193,12 +193,12 @@ Previously, getting a component “just right” for screen readers could requir
 Migrating to Base UI gave us a more solid foundation here, and it also unlocked a bunch of screen‑reader wins that now come “for free” with our components:
 
 -   **Lower‑level interactive components expose the right state and roles.** Controls like switches, checkboxes, and radios now automatically surface the appropriate role along with state attributes like aria-label and aria-checked, so assistive technologies can correctly announce what the control is and whether it’s on or off. On the design side, we’ve standardized these controls with clear label, helper text, and error patterns, so teams don’t have to invent new visual treatments or wording for each use case.
--   **Popup‑based components advertise their relationship correctly.** Components that open a popup—like select menus, and autocomplete—now manage attributes such as aria-haspopup and aria-expanded on the trigger, and connect aria-controls so screen readers can tell which popup is being opened.
+-   **Popup‑based components advertise their relationship correctly.** Components that open a popup-like select menus, and autocomplete-now manage attributes such as aria-haspopup and aria-expanded on the trigger, and connect aria-controls so screen readers can tell which popup is being opened.
 -   **Listbox‑style widgets keep screen readers in sync with keyboard navigation.** For list‑based components (like menus and selects), keyboard focus and selection are reflected via the correct roles and selection attributes, so screen readers can announce which option is currently highlighted or selected as you move through the list.
 -   **Overlays describe themselves as dialogs.** Modals, popovers, and drawers expose the appropriate role="dialog" (or related roles where appropriate) and carry a label that describes their purpose, making it clearer when a new “layer” has appeared and what it’s for.
 -   **Important messages are announced via toasts, not hand‑rolled hacks.** We now route important status updates through a toast system that uses aria-live under the hood, rather than ad‑hoc patterns. This makes it much more reliable for screen reader users to hear confirmations, errors, and other key events.
 -   **Fewer nested interactive elements.** Our components now render a single, correctly typed interactive element (for example, a button or link), instead of nesting an anchor inside a button (or vice versa) just to get the right styling. This is both cleaner for screen readers and less confusing to navigate.
--   **Tooltips behave better with assistive tech.** Tooltips are notoriously tricky for accessibility due to because they often rely on hover-only behavior, are difficult to expose reliably to screen readers, and require careful keyboard focus management. In Glean, they now show up not just on mouse hover, but also when an element receives keyboard focus—so keyboard and screen reader users get the same hints as mouse users. We also make sure the text inside each tooltip is concise and helpful for screen readers, and avoid repeating information that’s already announced (for example, when an element already has its own accessible label).
+-   **Tooltips behave better with assistive tech.** Tooltips are notoriously tricky for accessibility due to because they often rely on hover-only behavior, are difficult to expose reliably to screen readers, and require careful keyboard focus management. In Glean, they now show up not just on mouse hover, but also when an element receives keyboard focus-so keyboard and screen reader users get the same hints as mouse users. We also make sure the text inside each tooltip is concise and helpful for screen readers, and avoid repeating information that’s already announced (for example, when an element already has its own accessible label).
 
 In practice, this means that when you use Glean with a screen reader, more of the UI “just works” out of the box: the right roles are exposed, the right relationships are wired up, and important state changes are announced without every feature team having to reinvent the same patterns.
 
@@ -208,7 +208,7 @@ In practice, this means that when you use Glean with a screen reader, more of th
 
 ## Better keyboard support and focus management
 
-In part one of this series, we highlighted how important **keyboard navigation and focus** are—not just for screen reader users, but for anyone who prefers or relies on the keyboard.
+In part one of this series, we highlighted how important **keyboard navigation and focus** are-not just for screen reader users, but for anyone who prefers or relies on the keyboard.
 
 Our new design system extends that work and make those behaviors even more reliable:
 
@@ -220,7 +220,7 @@ Put simply? Navigating Glean with a keyboard should now feel even more natural a
 
 ## Compliance
 
-Many customers, especially large enterprises, need confidence that the tools they rely on meet accessibility expectations. For software, that often requires providing a **VPAT**—a standardized document describing how a product supports specific accessibility criteria (like WCAG 2.2 A and AA).
+Many customers, especially large enterprises, need confidence that the tools they rely on meet accessibility expectations. For software, that often requires providing a **VPAT**-a standardized document describing how a product supports specific accessibility criteria (like WCAG 2.2 A and AA).
 
 We’re happy to share that Glean now has an **up‑to‑date Accessibility Conformance Report (ACR)**, based on the latest **VPAT® 2.5** format, covering **WCAG 2.0, 2.1, and 2.2** at **Levels A and AA.**
 
@@ -231,7 +231,7 @@ If your team needs to review Glean’s accessibility in depth as part of your ev
 Accessibility is never “done,” but our design system overhaul give us a much stronger foundation:
 
 -   Every new feature we ship is **more likely to be accessible from day one**, because it’s built on components that already handle a lot of the heavy lifting.
--   Our design system gives teams a **shared, opinionated starting point**—from colors and typography to complex components—so accessible choices are the default, not a separate checklist.
+-   Our design system gives teams a **shared, opinionated starting point**-from colors and typography to complex components-so accessible choices are the default, not a separate checklist.
 -   As we continue to evolve Glean’s look and feel, we’re treating accessibility as a **core design principle**, on the same level as clarity, consistency, and brand.
 -   Customers can **formally evaluate** how Glean meets their accessibility requirements.
 

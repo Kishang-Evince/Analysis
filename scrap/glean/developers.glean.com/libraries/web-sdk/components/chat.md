@@ -7,9 +7,9 @@ fetched_at: "2026-09-01T13:23:05.290Z"
 ---
 On this page
 
-Glean Chat delivers personalized answers grounded in your company's content, people, and activity — with citations back to the source. Responses are automatically tailored to what each signed-in user is allowed to see. A complete list of Glean Chat's capabilities can be found in our [Chat documentation](https://docs.glean.com/user-guide/assistant/glean-chat).
+Glean Chat delivers personalized answers grounded in your company's content, people, and activity - with citations back to the source. Responses are automatically tailored to what each signed-in user is allowed to see. A complete list of Glean Chat's capabilities can be found in our [Chat documentation](https://docs.glean.com/user-guide/assistant/glean-chat).
 
-PreviewLive — your instance
+PreviewLive - your instance
 
 portal.sample.internal/assistant
 
@@ -19,11 +19,11 @@ Who owns the payments service?Share
 
 The payments service is owned by the Payments Platform team.
 
-Priya Natarajan is the tech lead, and Marcus Webb is on call this week — the deploy and rollback runbook lives in the Engineering Wiki.
+Priya Natarajan is the tech lead, and Marcus Webb is on call this week - the deploy and rollback runbook lives in the Engineering Wiki.
 
 Ask a follow-up…
 
-Illustrative previewRendered with sample data — in your app, this component renders live against your organization's Glean instance. Try it live →
+Illustrative previewRendered with sample data - in your app, this component renders live against your organization's Glean instance. Try it live →
 
 ## Install the SDK[​](#install-the-sdk "Direct link to Install the SDK")
 
@@ -71,17 +71,17 @@ The most commonly used [`ChatOptions`](/libraries/web-sdk/reference/interfaces/C
 | `promptId` | `string` | Opens the widget with a saved Glean prompt. |
 | `customizations` | `ChatCustomizations` | Toggle individual UI features (agent library, prompt library, feedback, chat menu, and more). |
 
-All components also accept the common [`Options`](/libraries/web-sdk/reference/interfaces/Options) — `backend`, `authToken`, `theme`, `themeVariant`, `locale`, and more.
+All components also accept the common [`Options`](/libraries/web-sdk/reference/interfaces/Options) - `backend`, `authToken`, `theme`, `themeVariant`, `locale`, and more.
 
 info
 
-To chat with a specific [Glean Agent](/guides/agents/overview), pass its ID via the `agentId` chat option. The older `applicationId` parameter (for AI Applications built with the deprecated AI App Builder) is still accepted for existing apps, but new integrations should use `agentId` — apps were migrated to agents.
+To chat with a specific [Glean Agent](/guides/agents/overview), pass its ID via the `agentId` chat option. The older `applicationId` parameter (for AI Applications built with the deprecated AI App Builder) is still accepted for existing apps, but new integrations should use `agentId` - apps were migrated to agents.
 
 ## Examples[​](#examples "Direct link to Examples")
 
 ### Separate pages for chat and search[​](#separate-pages-for-chat-and-search "Direct link to Separate pages for chat and search")
 
-Dedicated routes for Search and Chat — a Search page with the Glean Search component, a Chat page with the Glean Chat component, and automatic redirection to the Chat page when starting a new conversation. View the complete demo in our [CodeSandbox example](https://codesandbox.io/s/github/askscio/glean-browser-api/tree/main/examples/search-chat-separate-routes).
+Dedicated routes for Search and Chat - a Search page with the Glean Search component, a Chat page with the Glean Chat component, and automatic redirection to the Chat page when starting a new conversation. View the complete demo in our [CodeSandbox example](https://codesandbox.io/s/github/askscio/glean-browser-api/tree/main/examples/search-chat-separate-routes).
 
 ### Unified page[​](#unified-page "Direct link to Unified page")
 

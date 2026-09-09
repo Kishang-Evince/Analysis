@@ -10,7 +10,7 @@ On this page
 The Glean Company Search Tool searches across company data. This tool calls the Glean search engine and can issue any query that you can issue against the Glean search engine, helping you query internal company knowledge. The Glean Company Search Tool:
 
 -   **Queries Across Company Data**: Provides a targeted search across various connectors within the company, including internal documents, databases, and content repositories.
--   **Adds Search Results to Agent’s Memory**: The results from these searches are loaded into the agent's memory for use in subsequent steps or analyses. This tool does not output anything to the user—you will need to follow it with a Respond step with instructions on how to summarize or extract information from the search results and format them for the user.
+-   **Adds Search Results to Agent’s Memory**: The results from these searches are loaded into the agent's memory for use in subsequent steps or analyses. This tool does not output anything to the user-you will need to follow it with a Respond step with instructions on how to summarize or extract information from the search results and format them for the user.
 -   **Supports Multiple Knowledge Sources**: Enables searches over multiple designated knowledge sources or repositories, such as specific folders or databases.
 
 ## Usage examples[​](#usage-examples "Direct link to Usage examples")

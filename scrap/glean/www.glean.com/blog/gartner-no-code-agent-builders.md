@@ -81,11 +81,11 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-This week, Gartner published new research on the emerging market for no-code agent builders, and [Glean was named a **Market Shaper**](https://www.glean.com/resources/guides/emerging-market-quadrant-no-code-agent-builders) in the 2026 Emerging Market Quadrant for No-Code Agent Builders — Startup Vendors.
+This week, Gartner published new research on the emerging market for no-code agent builders, and [Glean was named a **Market Shaper**](https://www.glean.com/resources/guides/emerging-market-quadrant-no-code-agent-builders) in the 2026 Emerging Market Quadrant for No-Code Agent Builders - Startup Vendors.
 
 We’re proud of that recognition. But what matters more is the shift it reflects: **agents are moving from experiments into governed systems that do real work**.
 
-No-code agent builders are becoming an important part of how enterprises operationalize AI. Organizations want agents that are useful, trustworthy, and capable of getting real work done. They also want the people closest to the work — from business technologists to IT teams to functional leaders — to help shape and deploy those agents without waiting on a custom engineering cycle. These platforms make that possible: business users can build, publish, and manage AI-powered agents without deep coding expertise.
+No-code agent builders are becoming an important part of how enterprises operationalize AI. Organizations want agents that are useful, trustworthy, and capable of getting real work done. They also want the people closest to the work - from business technologists to IT teams to functional leaders - to help shape and deploy those agents without waiting on a custom engineering cycle. These platforms make that possible: business users can build, publish, and manage AI-powered agents without deep coding expertise.
 
 The Gartner report defines the no-code agent builder (NCAB) market as SaaS-delivered products that offer an integrated design and runtime environment to build, publish and manage AI-powered agents without using coding. AI agents are autonomous or semiautonomous software entities that use AI techniques to perceive, make decisions, take actions and achieve goals in their digital or physical environments. NCABs are used to build agents that can be surfaced in the context of enterprise applications (CRM, ERP or digital workplace applications) and embedded in custom web and mobile apps. In some cases, these agents are invokable by popular AI assistants. 
 
@@ -99,9 +99,9 @@ A useful enterprise agent needs context, governance, and secure access to the sy
 
 **That’s where Glean is different.**
 
-Glean started with a simple but powerful insight: **the hardest part of enterprise AI isn’t generating text**. It’s understanding the full context of a company — its knowledge, its people, its permissions, its processes, and the relationships across all of them. That’s why we built Glean around the enterprise graph, connecting the apps, documents, conversations, and systems that make up the reality of work.
+Glean started with a simple but powerful insight: **the hardest part of enterprise AI isn’t generating text**. It’s understanding the full context of a company - its knowledge, its people, its permissions, its processes, and the relationships across all of them. That’s why we built Glean around the enterprise graph, connecting the apps, documents, conversations, and systems that make up the reality of work.
 
-When agents are grounded in that context, they can become more than generic assistants. They can find the right information, understand what matters, operate within the rules of the business, and take action across workflows. Picture a revenue ops manager who builds an agent to prep renewals: it watches contract dates, pulls account health from tickets and call notes, and drafts the outreach — all within the permissions that manager already has. **That’s the difference context makes.**
+When agents are grounded in that context, they can become more than generic assistants. They can find the right information, understand what matters, operate within the rules of the business, and take action across workflows. Picture a revenue ops manager who builds an agent to prep renewals: it watches contract dates, pulls account health from tickets and call notes, and drafts the outreach - all within the permissions that manager already has. **That’s the difference context makes.**
 
 No-code agents shouldn’t be treated like lightweight productivity toys. At their best, they’re a new operating layer for enterprise work. They help teams turn fragmented knowledge into action. They make it easier to automate processes that used to depend on manual follow-up. And they allow organizations to scale expertise by giving more people the ability to build and deploy AI into the flow of work.
 
@@ -113,19 +113,19 @@ That takes three things:
 -   Strong governance and security from day one
 -   Real actionability across business systems, workflows, and models
 
-Nor is the future code-first or no-code only — it’s flexible by design. The goal isn’t to force every workflow into one paradigm. It’s to give organizations a platform where agent building is accessible enough for business users to participate, while remaining powerful enough for IT and engineering teams to govern, extend, and trust at scale.
+Nor is the future code-first or no-code only - it’s flexible by design. The goal isn’t to force every workflow into one paradigm. It’s to give organizations a platform where agent building is accessible enough for business users to participate, while remaining powerful enough for IT and engineering teams to govern, extend, and trust at scale.
 
 In other words: **democratization without chaos**.
 
 So yes, we’re proud to see Glean recognized in this new Gartner research.
 
-But what excites us most is what we feel it represents: a market moving past isolated copilots toward systems that reason, act, and improve how work gets done across the business. The most valuable enterprise agents won’t be built in a vacuum. They’ll be built on deep enterprise context, with the right governance, where work already lives — and the platforms that win will make them useful from day one.
+But what excites us most is what we feel it represents: a market moving past isolated copilots toward systems that reason, act, and improve how work gets done across the business. The most valuable enterprise agents won’t be built in a vacuum. They’ll be built on deep enterprise context, with the right governance, where work already lives - and the platforms that win will make them useful from day one.
 
 [Request a demo](https://www.glean.com/get-a-demo) to see how Glean helps teams build, govern, and scale enterprise-ready agents grounded in company context.
 
 ‍
 
-***Source: Gartner Report,*** ***Emerging Market Quadrant for No-Code Agent Builders — Startup Vendors, By*** [***Jason Wong***](https://www.gartner.com/analyst/bcc103be7b)***,*** [***Kelli Smith***](https://www.gartner.com/analyst/b9c803bc7faf)***, etc., 11 June 2026.***
+***Source: Gartner Report,*** ***Emerging Market Quadrant for No-Code Agent Builders - Startup Vendors, By*** [***Jason Wong***](https://www.gartner.com/analyst/bcc103be7b)***,*** [***Kelli Smith***](https://www.gartner.com/analyst/b9c803bc7faf)***, etc., 11 June 2026.***
 
 *GARTNER is a trademark of Gartner, Inc. and/or its affiliates.*
 

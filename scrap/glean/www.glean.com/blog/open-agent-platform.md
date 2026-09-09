@@ -83,7 +83,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Glean is an open and extensible Work AI platform where enterprises bring their own cloud, LLM, security provider, and — available now — third-party agents. While Glean is a powerful platform for creating and orchestrating agents, it’s understandable that customers working in even the largest of Glean environments won’t be building all their agents in Glean. We firmly believe enterprises should be given a choice when building their agent tech stacks. We also believe that other agent frameworks benefit from Glean by gaining access to indexed enterprise data - data that’s indexed and secured only once -  and enabling agents built anywhere to be grounded in relevant, personalized context. 
+Glean is an open and extensible Work AI platform where enterprises bring their own cloud, LLM, security provider, and - available now - third-party agents. While Glean is a powerful platform for creating and orchestrating agents, it’s understandable that customers working in even the largest of Glean environments won’t be building all their agents in Glean. We firmly believe enterprises should be given a choice when building their agent tech stacks. We also believe that other agent frameworks benefit from Glean by gaining access to indexed enterprise data - data that’s indexed and secured only once -  and enabling agents built anywhere to be grounded in relevant, personalized context. 
 
 Glean flourishes when operating in a larger ecosystem, and fails when isolated in a walled garden. That’s why today I’m sharing Glean’s support for the latest universal standards of communication and open agent frameworks, including [Anthropic’s Model Context Protocol](https://developers.glean.com/agents/mcp) (MCP), [LangChain](https://developers.glean.com/agents/langchain), LangGraph, [Nvidia NIM](https://developers.glean.com/guides/agents/nvidia-example), OpenAI Agents SDK (via MCP), and many more to come in the future.
 
@@ -135,7 +135,7 @@ We see a future where Glean Agents work in concert with both tools and other age
 
 New protocols and developer frameworks for building agents have reinforced the need for orchestration across both first-party and third-party agents. They’ve also underscored the value of a horizontal AI platform like Glean in the enterprise.
 
-Our customers want to index their data just once — intelligently bringing context into agents rather than duplicating efforts across multiple solutions. Customers also want to secure, govern, and observe their agents in one go. Glean is designed to help users do just that — guaranteeing permissions awareness, access authentication, and enterprise data protection. 
+Our customers want to index their data just once - intelligently bringing context into agents rather than duplicating efforts across multiple solutions. Customers also want to secure, govern, and observe their agents in one go. Glean is designed to help users do just that - guaranteeing permissions awareness, access authentication, and enterprise data protection. 
 
 There’s value in the AI ecosystem - with its developer-friendly frameworks and standardized communication protocols - as well as in a unified platform that secures and indexes your data. Glean delivers both. 
 

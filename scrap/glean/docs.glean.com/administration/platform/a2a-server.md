@@ -2,12 +2,12 @@
 url: "https://docs.glean.com/administration/platform/a2a-server"
 canonical: "https://docs.glean.com/administration/platform/a2a-server"
 title: "Glean A2A server"
-description: "The Glean A2A server lets external AI platforms invoke Glean Assistant as a remote agent using the open Agent2Agent (A2A) protocol. Once an administrator turns it on, A2A-capable platforms such as Google Gemini Enterprise and Microsoft Copilot Studio can discover Glean Assistant and send it questions on behalf of your users — so people can ask Glean from whichever AI surface their organization standardizes on."
+description: "The Glean A2A server lets external AI platforms invoke Glean Assistant as a remote agent using the open Agent2Agent (A2A) protocol. Once an administrator turns it on, A2A-capable platforms such as Google Gemini Enterprise and Microsoft Copilot Studio can discover Glean Assistant and send it questions on behalf of your users - so people can ask Glean from whichever AI surface their organization standardizes on."
 fetched_at: "2026-09-01T13:29:10.518Z"
 ---
 On this page
 
-The Glean A2A server lets external AI platforms invoke **Glean Assistant** as a remote agent using the open [Agent2Agent (A2A) protocol](https://a2a-protocol.org/). Once an administrator turns it on, A2A-capable platforms such as Google Gemini Enterprise and Microsoft Copilot Studio can discover Glean Assistant and send it questions on behalf of your users — so people can ask Glean from whichever AI surface their organization standardizes on.
+The Glean A2A server lets external AI platforms invoke **Glean Assistant** as a remote agent using the open [Agent2Agent (A2A) protocol](https://a2a-protocol.org/). Once an administrator turns it on, A2A-capable platforms such as Google Gemini Enterprise and Microsoft Copilot Studio can discover Glean Assistant and send it questions on behalf of your users - so people can ask Glean from whichever AI surface their organization standardizes on.
 
 Every request runs as the individual user, under the same permissions and content controls that apply in Glean. A user asking Glean a question through Gemini gets a similar answer to the one they'd get in Glean itself.
 
@@ -44,7 +44,7 @@ You don't need to provision any additional credentials or service accounts in Gl
 
 ## Limitations[​](#limitations "Direct link to Limitations")
 
--   The A2A server exposes Glean Assistant as a single agent. To expose an individual Glean agent directly over A2A — with its own agent card and endpoint — see [Expose Glean agents over A2A](/administration/platform/expose-agents-over-a2a).
+-   The A2A server exposes Glean Assistant as a single agent. To expose an individual Glean agent directly over A2A - with its own agent card and endpoint - see [Expose Glean agents over A2A](/administration/platform/expose-agents-over-a2a).
 -   The A2A server endpoint is inbound only. To make outbound calls from a Glean Auto mode agent to an external agent, [configure the Glean A2A host](/administration/platform/configure-a2a-host).
 -   Only the text parts of an A2A message are used as the prompt. File and data attachments are currently ignored; support for them is planned for a future release.
 
@@ -56,7 +56,7 @@ The [Glean MCP server](/administration/platform/mcp/about) exposes Glean tools (
 
 ### Which external platforms are supported?
 
-Any A2A-compliant client can connect using the agent card. Google Gemini Enterprise is the primary example, and other A2A-capable platforms — such as Microsoft Copilot Studio, agent marketplaces, and custom A2A agents — can connect the same way.
+Any A2A-compliant client can connect using the agent card. Google Gemini Enterprise is the primary example, and other A2A-capable platforms - such as Microsoft Copilot Studio, agent marketplaces, and custom A2A agents - can connect the same way.
 
 ### Do answers respect document permissions?
 

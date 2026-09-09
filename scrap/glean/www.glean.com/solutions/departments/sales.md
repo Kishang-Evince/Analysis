@@ -2,7 +2,7 @@
 url: "https://www.glean.com/solutions/departments/sales"
 canonical: "https://www.glean.com/solutions/departments/sales"
 title: "AI for Sales: Automate Prospecting & Accelerate Deals"
-description: "Leverage AI for sales to automate prospecting, optimize customer interactions, empower teams, and close deals faster—all while putting customers first."
+description: "Leverage AI for sales to automate prospecting, optimize customer interactions, empower teams, and close deals faster-all while putting customers first."
 fetched_at: "2026-09-01T13:25:25.086Z"
 ---
 ![Web\_popup\_sales](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/68e8037b0f60d105c628a882_Web_popup_sales.webp)

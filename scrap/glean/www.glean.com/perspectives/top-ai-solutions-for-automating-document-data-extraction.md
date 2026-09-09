@@ -163,7 +163,7 @@ Prove the solution on your own documents before you buy. Measure ingestion-to-ou
 
 ## Industry applications for AI-powered document extraction
 
-AI-powered document extraction serves any industry that runs on paperwork — a market projected to reach [$24.33 billion by 2032](https://www.snsinsider.com/reports/intelligent-document-processing-market-2937) — and five feel the impact most: financial services, healthcare, legal, insurance, and human resources. Each processes high volumes of documents where speed and accuracy carry real consequences.
+AI-powered document extraction serves any industry that runs on paperwork - a market projected to reach [$24.33 billion by 2032](https://www.snsinsider.com/reports/intelligent-document-processing-market-2937) - and five feel the impact most: financial services, healthcare, legal, insurance, and human resources. Each processes high volumes of documents where speed and accuracy carry real consequences.
 
 ### Financial services
 

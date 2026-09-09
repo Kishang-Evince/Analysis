@@ -2,7 +2,7 @@
 url: "https://www.glean.com/platform"
 canonical: "https://www.glean.com/platform"
 title: "AI Platform for Work | Glean Enterprise AI"
-description: "Glean is an AI platform for work that unifies enterprise search, assistants, and agents on your company’s context—securely automating real work across every team."
+description: "Glean is an AI platform for work that unifies enterprise search, assistants, and agents on your company’s context-securely automating real work across every team."
 fetched_at: "2026-09-01T13:25:23.753Z"
 ---
 # The enterprise AI platform that puts company context to work.

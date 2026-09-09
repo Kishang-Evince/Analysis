@@ -150,7 +150,7 @@ Before you begin, make sure your identity provider (IdP) is configured to suppor
 
 1.  In Veeva Vault, go to **Admin** > **Settings** > **OAuth 2.0 / OpenID Connect Profiles**.
 2.  Create or select an OIDC profile for the Glean integration.
-3.  Note the **OIDC Profile ID** — you will need it when entering connection details in Glean.
+3.  Note the **OIDC Profile ID** - you will need it when entering connection details in Glean.
 
 #### Gather OAuth credentials[​](#gather-oauth-credentials "Direct link to Gather OAuth credentials")
 

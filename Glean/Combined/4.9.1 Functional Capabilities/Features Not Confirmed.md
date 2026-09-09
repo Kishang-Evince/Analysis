@@ -10,6 +10,7 @@
 **Out of scope for this eval:** Salesforce, Slack, Jira, Confluence, Snowflake/BigQuery/Databricks, GitHub, etc.  
 **Section overview:** [Overview.md](Overview.md)
 **Companion test guide:** [Features Not Confirmed.md](../../../test/Glean/4.9.1 Functional Capabilities/Features Not Confirmed.md)
+**Deep dive (V2):** 46-item marketing/vendor-disclosure re-verification of this field → [V2/Features Not Confirmed.md](V2/Features%20Not%20Confirmed.md)
 
 ---
 
@@ -18,7 +19,7 @@
 - **Vendor Claim:** Notion connector indexes workspace knowledge for search/agents.
 - **Prerequisites / Licensing:** Notion connector + internal integration token.
 - **Engineering Observation (Unconfirmed / Limitation):**
-  - *Failed / Limited Behavior:* Pages/databases **not** shared with the Glean Notion integration do not crawl — including “personal” pages left private to the user. Setup docs assume workspace admin + explicit share-to-integration; poor fit for personal-only Notion usage.
+  - *Failed / Limited Behavior:* Pages/databases **not** shared with the Glean Notion integration do not crawl - including “personal” pages left private to the user. Setup docs assume workspace admin + explicit share-to-integration; poor fit for personal-only Notion usage.
   - *Impact / Severity:* Medium for tenants expecting Drive-like “everything I own appears automatically.”
   - *Mitigation / Workaround:* Share each page/DB with Glean integration; use Live Mode + user OAuth for permission-aware retrieval.
 - **Risk & Cost Impact:** Risk: Medium | Cost: Process Overhead
@@ -28,7 +29,7 @@
 - **Verification Steps / Test Case:**
   1. Create Notion page **not** shared with Glean integration; keep private.
   2. Wait ≥ one Notion crawl cycle (~6h) or check connector activity.
-  3. Search exact unique page title in Glean — expect miss.
+  3. Search exact unique page title in Glean - expect miss.
   4. Share page with integration → after crawl → expect hit.
 
 ---
@@ -71,7 +72,7 @@
 - **Verification Steps / Test Case:**
   1. Host page with unique string only inside cross-origin `<iframe>`.
   2. Crawl parent page.
-  3. Search unique string — expect miss.
+  3. Search unique string - expect miss.
 
 ---
 
@@ -130,7 +131,7 @@
 - **Validation Date:** September 1, 2026
 - **Source URL / Verification Link:** [https://docs.glean.com/release-notes/sunset/migrating-prompts-apps](https://docs.glean.com/release-notes/sunset/migrating-prompts-apps)
 - **Verification Steps / Test Case:**
-  1. Check Admin for bulk migrate control — expect absent.
+  1. Check Admin for bulk migrate control - expect absent.
   2. Manually recreate one prompt as agent scoped to Google Drive + Notion.
 
 ---
@@ -151,8 +152,8 @@
 - **Source URL / Verification Link:** [https://docs.glean.com/connectors/native/onedrive/about](https://docs.glean.com/connectors/native/onedrive/about)
 - **Verification Steps / Test Case:**
   1. Upload unique private file to OneDrive (no share).
-  2. Immediately search exact filename as owner — often miss.
+  2. Immediately search exact filename as owner - often miss.
   3. Check connector last crawl / wait for incremental.
-  4. Re-search as owner — expect hit; User B still miss.
+  4. Re-search as owner - expect hit; User B still miss.
 
 ---

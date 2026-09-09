@@ -63,7 +63,7 @@ To bridge this gap, Duolingo built an internal search tool called Metasearch. Bu
 
 Glean connected to Duolingo’s existing tools, making information instantly searchable across the company. Employees could now:
 
--   Find answers instantly — no more switching between apps or digging through outdated files.
+-   Find answers instantly - no more switching between apps or digging through outdated files.
 -   Reduce duplicate work by surfacing relevant knowledge before teams started from scratch.
 -   Streamline collaboration by making knowledge easily accessible without relying on colleagues.
 
@@ -75,7 +75,7 @@ Glean Chat was a game-changer. As a conversational AI assistant, it gave employe
 
 ## The impact
 
-With Glean, Duolingo teams save 500+ hours every month — time that would have been wasted searching for information or duplicating work. That adds up to more than $1.1 million in yearly time savings, delivering a 5x return on investment from improved knowledge access.
+With Glean, Duolingo teams save 500+ hours every month - time that would have been wasted searching for information or duplicating work. That adds up to more than $1.1 million in yearly time savings, delivering a 5x return on investment from improved knowledge access.
 
 ‍
 
@@ -83,7 +83,7 @@ With Glean, Duolingo teams save 500+ hours every month — time that would have 
 
 ‍
 
-By cutting down on wasted time and frustration, Glean helps Duolingo employees focus on what they do best — building innovative ways for people to learn languages.
+By cutting down on wasted time and frustration, Glean helps Duolingo employees focus on what they do best - building innovative ways for people to learn languages.
 
 ## Explore more customer stories
 

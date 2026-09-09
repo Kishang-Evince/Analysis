@@ -27,7 +27,7 @@ Overview
 
 Share this customer story:
 
-Global telecommunications leader Ericsson is in the middle of a huge shift. Leadership is driving an AI‑first culture where everyone – from Engineers to HR — uses AI in their day‑to‑day work. The ambition is simple: move faster than the market, and shape the future of telecom.
+Global telecommunications leader Ericsson is in the middle of a huge shift. Leadership is driving an AI‑first culture where everyone – from Engineers to HR - uses AI in their day‑to‑day work. The ambition is simple: move faster than the market, and shape the future of telecom.
 
 ‍
 
@@ -35,7 +35,7 @@ For Global Chief Data Officer Joel Nygårds, this transformation comes with two 
 
 ## Driving Adoption and Literacy…
 
-For Ericsson, building an enterprise knowledge and AI platform at global scale required robust data protection, strict regional privacy and data residency compliance, and multilingual support. They were also looking for flexibility across many different use cases — from HR assistants to Engineering copilots that help troubleshoot.
+For Ericsson, building an enterprise knowledge and AI platform at global scale required robust data protection, strict regional privacy and data residency compliance, and multilingual support. They were also looking for flexibility across many different use cases - from HR assistants to Engineering copilots that help troubleshoot.
 
 ‍
 

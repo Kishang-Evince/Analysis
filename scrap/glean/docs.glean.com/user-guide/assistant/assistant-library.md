@@ -82,8 +82,8 @@ When you share content, you choose who can open it and whether people can discov
     
 4.  Under **General access**, choose one of the following:
     
-    -   **Restricted to only people with access** — only the groups, departments, and teammates you added can open the content.
-    -   **Anyone at \[company name\] can view** — anyone at your company can open the content.
+    -   **Restricted to only people with access** - only the groups, departments, and teammates you added can open the content.
+    -   **Anyone at \[company name\] can view** - anyone at your company can open the content.
     
     ![The General access menu in the Share dialog, expanded to show two options: Restricted to only people with access, and Anyone at your company can view.](/img/user-guide/assistant/share-general-access.png)
     

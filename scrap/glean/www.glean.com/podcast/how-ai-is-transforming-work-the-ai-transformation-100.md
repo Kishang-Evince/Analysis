@@ -38,7 +38,7 @@ AI is fundamentally changing the workplace, from redefining expertise to transfo
 -   How AI is shifting the balance between experts and novices in organizations
 -   The trade-offs between centralizing and decentralizing AI initiatives
 -   Why education and new roles are critical for successful AI adoption
--   How to move fast with AI—without breaking things
+-   How to move fast with AI-without breaking things
 
 ## Resources
 

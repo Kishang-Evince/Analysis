@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:29:36.321Z"
 ---
 ### Understand what's indexed versus per-user
 
-Setup does not offer a retrieval-mode switch: indexed search is always on, because providing indexing credentials is a required step of setup, not an optional toggle. On top of that, each teammate individually authorizes their own Notion account for Notion's read and write tools the first time they use one—that authorization is per user, not an admin-level setting.
+Setup does not offer a retrieval-mode switch: indexed search is always on, because providing indexing credentials is a required step of setup, not an optional toggle. On top of that, each teammate individually authorizes their own Notion account for Notion's read and write tools the first time they use one-that authorization is per user, not an admin-level setting.
 
 -   **Indexed search** covers whatever pages and databases you shared with the Glean integration during setup. It is not permission-aware: anything shared is visible to every Glean user who can access the connector.
 -   **Read and write tools** run per user, using each person's own Notion OAuth. Notion enforces that person's permissions on every call, so a teammate who hasn't authorized yet, or who lacks access in Notion, won't get tool results for that content.
@@ -61,7 +61,7 @@ Before concluding a page isn’t indexed, verify its status:
 
 **Issue:** A linked database view page doesn’t appear in search results even though you can see it in Notion.
 
-**Fix:** Share the underlying database with the Glean integration, not the view page. Notion’s API only returns pages and databases that are directly shared with the integration. Linked database views are separate objects—sharing a view doesn’t automatically share the underlying database.
+**Fix:** Share the underlying database with the Glean integration, not the view page. Notion’s API only returns pages and databases that are directly shared with the integration. Linked database views are separate objects-sharing a view doesn’t automatically share the underlying database.
 
 **Fallback:** If the linked view still isn’t indexed, use the directly shared database page in Glean search and Assistant queries.
 

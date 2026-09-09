@@ -107,7 +107,7 @@ During a Slack RTS upgrade, you may experience the following temporary effects:
 -   You may briefly see responses from two different Glean apps as the transition completes.
 -   Automated messages or Slack Actions from Glean Assistant or Agents may fail until the upgrade is finished.
 
-These effects are temporary and resolve automatically once the backend sync is complete. After the upgrade, use the **Glean** app for all `/glean` commands and `@Glean` mentions — not the background Enterprise Graph app.
+These effects are temporary and resolve automatically once the backend sync is complete. After the upgrade, use the **Glean** app for all `/glean` commands and `@Glean` mentions - not the background Enterprise Graph app.
 
 See [Upgrading to Slack RTS](/administration/platform/embedded-integrations/slackbot/getting-started/upgrading-to-slack-rts) for details.
 

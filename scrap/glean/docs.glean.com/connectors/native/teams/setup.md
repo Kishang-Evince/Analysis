@@ -14,9 +14,9 @@ This section covers setup requirements, permissions, and configuration for the M
 Have these in place before you configure the connector, so your IT or security team can approve everything in one request:
 
 -   **Global Administrator:** The person performing setup must be a [Microsoft 365 Global Administrator](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles) (to register the app and grant admin consent) and a **Glean admin** who can add and configure connectors.
--   **A Microsoft 365 tenant with Teams enabled** — plus the ability to register an application in Microsoft Entra ID (Azure Active Directory) with access to Microsoft Graph API v1.0.
--   **Authentication credentials** — a client certificate and PKCS#8 private key (recommended) or a client secret, plus your application (client) ID and directory (tenant) ID. Glean recommends certificate-based authentication because Microsoft is phasing out client-secret authentication for these APIs, though client secrets still work.
--   **Graph permissions approved in advance** — an admin must consent to a set of read-only Microsoft Graph application permissions. Share the [required permissions](#required-permissions) with your CISO or security team before you start. Optional features add scopes: **private and meeting chats** and **meeting transcripts** each need their own permissions, so decide which you want up front to avoid a second IT request.
+-   **A Microsoft 365 tenant with Teams enabled** - plus the ability to register an application in Microsoft Entra ID (Azure Active Directory) with access to Microsoft Graph API v1.0.
+-   **Authentication credentials** - a client certificate and PKCS#8 private key (recommended) or a client secret, plus your application (client) ID and directory (tenant) ID. Glean recommends certificate-based authentication because Microsoft is phasing out client-secret authentication for these APIs, though client secrets still work.
+-   **Graph permissions approved in advance** - an admin must consent to a set of read-only Microsoft Graph application permissions. Share the [required permissions](#required-permissions) with your CISO or security team before you start. Optional features add scopes: **private and meeting chats** and **meeting transcripts** each need their own permissions, so decide which you want up front to avoid a second IT request.
 
 ## Required permissions[​](#required-permissions "Direct link to Required permissions")
 
@@ -26,7 +26,7 @@ Grant admin consent for the following Microsoft Graph **application** permission
 
 The baseline permissions are always included. Select any extras below and the permission set updates instantly. Then copy it to hand to your IT or security team, so every scope is requested in one pass.
 
-Index Teams channels and messagesAlways includedReads channel messages, membership, and identity data for search indexing.Private and meeting chatsIndex private (direct) and meeting chat messages. Enable in connector settings under "Allow crawling Teams private chats" and "Allow crawling Teams meeting chats".Meeting transcriptsIndex Teams meeting transcripts. Requires an application access policy granted globally in Teams admin — see Meeting transcripts for setup details.
+Index Teams channels and messagesAlways includedReads channel messages, membership, and identity data for search indexing.Private and meeting chatsIndex private (direct) and meeting chat messages. Enable in connector settings under "Allow crawling Teams private chats" and "Allow crawling Teams meeting chats".Meeting transcriptsIndex Teams meeting transcripts. Requires an application access policy granted globally in Teams admin - see Meeting transcripts for setup details.
 
 Permissions to request from ITCopy request
 
@@ -116,7 +116,7 @@ Instead of a certificate, you can authenticate with a client secret:
 
 1.  After granting admin consent, go to **Manage → Certificates & secrets** and click **New client secret**. Enter a description, select **24 months** for expiry, then click **Add**.
     
-2.  Copy the **Value** (not the **Secret ID**) — it is shown only once.
+2.  Copy the **Value** (not the **Secret ID**) - it is shown only once.
     
 
 ### Configure Glean[​](#configure-glean "Direct link to Configure Glean")
@@ -136,8 +136,8 @@ Instead of a certificate, you can authenticate with a client secret:
 
 #### 3\. Configure optional crawl settings[​](#3-configure-optional-crawl-settings "Direct link to 3. Configure optional crawl settings")
 
--   **Allow crawling Teams private chats** — enables crawling of private (direct) messages.
--   **Allow crawling Teams meeting chats** — enables crawling of meeting chat messages.
+-   **Allow crawling Teams private chats** - enables crawling of private (direct) messages.
+-   **Allow crawling Teams meeting chats** - enables crawling of meeting chat messages.
 
 #### 4\. Save and start the initial crawl[​](#4-save-and-start-the-initial-crawl "Direct link to 4. Save and start the initial crawl")
 
@@ -179,7 +179,7 @@ The application access policy must be created with the **transcript app's** Appl
 
 -   **Full crawls** re-enumerate teams, channels, chats, and supported content.
 -   **Incremental crawls** fetch newly created and recently updated content since the last crawl.
--   **Real-time updates** — Glean subscribes to Microsoft Graph change notifications (webhooks) for near real-time channel content updates, subject to Microsoft subscription limits.
+-   **Real-time updates** - Glean subscribes to Microsoft Graph change notifications (webhooks) for near real-time channel content updates, subject to Microsoft subscription limits.
 
 ## Troubleshooting[​](#troubleshooting "Direct link to Troubleshooting")
 

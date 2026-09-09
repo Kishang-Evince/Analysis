@@ -105,7 +105,7 @@ The biggest offload happens before a case ever reaches a queue. AI reads the inc
 
 Route by content and context rather than keyword matches. A ticket that mentions "charge" could be a refund, a duplicate payment, or a pricing question, and reading the full context cuts the misrouted tickets that bounce between teams. When the case does reach a person, hand off a short summary: the issue, steps already taken, account details, and sources reviewed.
 
-[AI in customer service](https://www.glean.com/blog/ai-customer-service) pays off most when it removes invisible work — tagging, sorting, summarizing, and queue management — not just the visible replies customers see. Intercom notes that account credentials, the steps a customer has already tried, and specific error messages usually surface in the first few minutes of a conversation. AI can gather all of that at intake, so a rep opens the case already knowing what happened.
+[AI in customer service](https://www.glean.com/blog/ai-customer-service) pays off most when it removes invisible work - tagging, sorting, summarizing, and queue management - not just the visible replies customers see. Intercom notes that account credentials, the steps a customer has already tried, and specific error messages usually surface in the first few minutes of a conversation. AI can gather all of that at intake, so a rep opens the case already knowing what happened.
 
 ## 4\. Give customer service reps real-time agent assist inside their workflow
 

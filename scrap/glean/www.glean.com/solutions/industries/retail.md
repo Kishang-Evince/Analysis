@@ -77,7 +77,7 @@ of employees report Glean is valuable to their jobs
 
 See how retailers put AI to work
 
-Explore five high-impact ways that AI drivers faster service, smarter operations, and better results — and how a connected approach unlocks even more value for retailers.
+Explore five high-impact ways that AI drivers faster service, smarter operations, and better results - and how a connected approach unlocks even more value for retailers.
 
 [
 

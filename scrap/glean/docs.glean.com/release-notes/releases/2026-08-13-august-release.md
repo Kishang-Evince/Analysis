@@ -127,7 +127,7 @@ Insights
 
 #### Keep MCP moderation focused on Glean-hosted servers[​](#keep-mcp-moderation-focused-on-glean-hosted-servers "Direct link to Keep MCP moderation focused on Glean-hosted servers")
 
-MCP Server Moderators are now limited to administering Glean-hosted MCP servers and viewing MCP Insights. Managing third-party MCP connections—including creating, updating, deleting, refreshing, or repairing third-party hosts and accessing their templates—continues to require the existing tool-administration permissions. This keeps moderation responsibilities aligned with the surfaces they are intended to govern while preserving established controls for external connections.
+MCP Server Moderators are now limited to administering Glean-hosted MCP servers and viewing MCP Insights. Managing third-party MCP connections-including creating, updating, deleting, refreshing, or repairing third-party hosts and accessing their templates-continues to require the existing tool-administration permissions. This keeps moderation responsibilities aligned with the surfaces they are intended to govern while preserving established controls for external connections.
 
 **How to access:** MCP Server Moderators can use the Glean-hosted MCP administration and MCP Insights surfaces. Ask an administrator for tool-administration permissions when third-party MCP management is required.
 

@@ -13,7 +13,7 @@
 
 **Field definition:** Competitive consulting overlaps with other integrators selling the same platform.  
 **Prerequisites / Licensing:** Partner Finder search; regional healthcare SI landscape knowledge.  
-**Conflict assessment (Doc-Verified / inferred):** **High partner density** — open ecosystem, no published exclusivity; multiple SIs compete per region/vertical.  
+**Conflict assessment (Doc-Verified / inferred):** **High partner density** - open ecosystem, no published exclusivity; multiple SIs compete per region/vertical.  
 **Confidence Level:** **Medium** (density inferable; no conflict policy in public docs)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [Partner Finder](https://www.glean.com/partners/partner-finder) · [2026 Partner Award winners](https://www.glean.com/blog/2026-glean-partner-award-winners) · [Partners healthcare vertical](https://www.glean.com/partners)
@@ -31,13 +31,13 @@
 
 ### Engineering observation (Doc-Verified)
 
-- **Edge Solutions and Consulting** appears in Partner Finder — **not** Stratos Edge; name collision risk only.
-- Channel conflict resolution = **deal registration precedence**, not geographic lockout — register early.
+- **Edge Solutions and Consulting** appears in Partner Finder - **not** Stratos Edge; name collision risk only.
+- Channel conflict resolution = **deal registration precedence**, not geographic lockout - register early.
 - Stratos differentiation: Tier 3 eval methodology (this repo) + tenant-stack depth (Notion/M365) vs generic SI pitch.
 
 ### Verification steps / test case
 
-1. Partner Finder: filter US + consulting — count healthcare-capable partners in target states.
+1. Partner Finder: filter US + consulting - count healthcare-capable partners in target states.
 2. For active opportunity: check if another partner already registered (Field 3).
 3. Ask Glean channel: account conflict policy and co-sell vs compete rules.
 4. Document 3–5 direct competitor partners for Stratos battle cards.

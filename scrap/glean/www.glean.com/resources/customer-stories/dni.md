@@ -91,7 +91,7 @@ Product Team
 
 Pricing Agent
 
-Built for the finance team, this agent automates one of the most labor-intensive parts of the RFP process. It reads the requirements, builds a compliant pricing model with annual escalation factored in, and generates a formatted narrative — a workflow that previously required hours of manual effort.
+Built for the finance team, this agent automates one of the most labor-intensive parts of the RFP process. It reads the requirements, builds a compliant pricing model with annual escalation factored in, and generates a formatted narrative - a workflow that previously required hours of manual effort.
 
 Product Team
 
@@ -109,9 +109,9 @@ Designed for business development, this agent can ingest an RFP and produce a co
 
 ### Built-in security and compliance
 
-DNI established a Glean security policy that continuously scans its entire SharePoint environment and automatically flags any documents containing Controlled Unclassified Information (CUI) — a government designation for sensitive but unclassified data. Glean gave DNI's security team the visibility they needed to get ahead of sensitive data falling through the cracks and helped them remain compliant with government security requirements.
+DNI established a Glean security policy that continuously scans its entire SharePoint environment and automatically flags any documents containing Controlled Unclassified Information (CUI) - a government designation for sensitive but unclassified data. Glean gave DNI's security team the visibility they needed to get ahead of sensitive data falling through the cracks and helped them remain compliant with government security requirements.
 
-Glean gives us one point of reference. We don't have to go to five different places anymore—everything is at our disposal from one window.
+Glean gives us one point of reference. We don't have to go to five different places anymore-everything is at our disposal from one window.
 
 Matthew Thompson
 

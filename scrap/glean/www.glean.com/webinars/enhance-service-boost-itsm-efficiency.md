@@ -29,7 +29,7 @@ In this session, you’ll learn:
 
 -   How leading IT teams are reducing ticket volume, minimizing end-user friction, and breaking down knowledge silos.
 -   Real-world automation in action: see AI agents resolve tickets, surface answers in Slack and Teams, and streamline support workflows.
--   How organizations improved security and consistency—cutting manual work and saving costs—by automating complex processes with Glean agents.
+-   How organizations improved security and consistency-cutting manual work and saving costs-by automating complex processes with Glean agents.
 
 ![Enhance Service and Boost ITSM Efficiency With AI](https://cdn.prod.website-files.com/613513981b0efaf850830620/6889b111dbbadf2652e9cd94_Enhance%20Enhance%20Service%20and%20Boost%20ITSM%20Efficiency%20With%20AI.webp)
 

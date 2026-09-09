@@ -63,7 +63,7 @@ Share this article:
 
 # How do RAG models work? From indexing to generation, explained
 
-RAG models work by connecting a large language model (LLM) to external knowledge sources, retrieving relevant information before generating a response instead of relying only on training data. This architecture — retrieval-augmented generation (RAG) — grounds answers in current, domain-specific evidence rather than static parametric knowledge.
+RAG models work by connecting a large language model (LLM) to external knowledge sources, retrieving relevant information before generating a response instead of relying only on training data. This architecture - retrieval-augmented generation (RAG) - grounds answers in current, domain-specific evidence rather than static parametric knowledge.
 
 The process runs across four stages: indexing, retrieval, augmentation, and generation. Each stage solves a distinct problem in making AI outputs accurate and traceable.
 

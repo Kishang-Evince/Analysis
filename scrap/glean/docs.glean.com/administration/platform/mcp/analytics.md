@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:29:12.357Z"
 ---
 On this page
 
-This page describes how MCP server usage is tracked, what analytics are available today, and how to access usage data using alternative methods. For the interactive adoption dashboard, see [MCP insights](/administration/insights/mcp-insights). This page covers the measurement methods that live outside that dashboard—audit logs, activity logs, and event-log queries.
+This page describes how MCP server usage is tracked, what analytics are available today, and how to access usage data using alternative methods. For the interactive adoption dashboard, see [MCP insights](/administration/insights/mcp-insights). This page covers the measurement methods that live outside that dashboard-audit logs, activity logs, and event-log queries.
 
 ## MCP usage tracking[​](#mcp-usage-tracking "Direct link to MCP usage tracking")
 
@@ -88,7 +88,7 @@ Contact your account team to request these reports.
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [MCP Security, Data Flow, and Permissions](/administration/platform/mcp/security) — Monitoring and audit section
--   [MCP insights](/administration/insights/mcp-insights) — Interactive MCP adoption dashboard
--   [Glean Customer Event Logs](/administration/gce-logs/data-dictionary) — Full event log reference
--   [Insights Overview](/administration/insights/overview) — Admin Insights dashboard
+-   [MCP Security, Data Flow, and Permissions](/administration/platform/mcp/security) - Monitoring and audit section
+-   [MCP insights](/administration/insights/mcp-insights) - Interactive MCP adoption dashboard
+-   [Glean Customer Event Logs](/administration/gce-logs/data-dictionary) - Full event log reference
+-   [Insights Overview](/administration/insights/overview) - Admin Insights dashboard

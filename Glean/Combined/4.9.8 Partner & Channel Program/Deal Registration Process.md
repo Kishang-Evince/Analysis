@@ -14,7 +14,7 @@
 **Field definition:** Submission guidelines, lead protection windows, and approval timelines.  
 **Prerequisites / Licensing:** Approved partner status; Partner Portal access.  
 **Deal registration (Doc-Verified):** Portal-based **automated deal registration and partner protection**; referral eligibility ~**1 business day**.  
-**Protection window (Pending Contract):** _TBD — "defined validity window" not published as days_  
+**Protection window (Pending Contract):** _TBD - "defined validity window" not published as days_  
 **Confidence Level:** **Doc-Verified** (process exists) · **Pending Contract** (protection duration)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [Partner Portal blog 2025](https://www.glean.com/blog/glean-partner-portal-2025) · [Referral program](https://www.glean.com/partners/referral) · [Partners FAQ](https://www.glean.com/partners)
@@ -29,7 +29,7 @@
 | 4. Protection | "Defined validity window + confirmation" | Duration not public |
 | 5. Progress | Track in portal | Glean drives sales process |
 
-### Disqualifiers (Doc-Verified — referral)
+### Disqualifiers (Doc-Verified - referral)
 
 - Account already in Glean pipeline
 - Existing customer (expansion unless approved)
@@ -37,12 +37,12 @@
 
 ### Engineering observation (Doc-Verified)
 
-- SOW tier3 methodology cites **90-day** protection as example — **not confirmed** in Glean public docs; verify in portal agreement.
+- SOW tier3 methodology cites **90-day** protection as example - **not confirmed** in Glean public docs; verify in portal agreement.
 - Automated portal process reduces manual channel conflict vs email-based deal reg.
 
 ### Verification steps / test case
 
-1. Register test opportunity in portal (or referral flow) — record eligibility response time.
+1. Register test opportunity in portal (or referral flow) - record eligibility response time.
 2. Capture protection window days from approved agreement.
 3. Test duplicate registration rejection (account already in pipeline).
 4. Document escalation path for disputed attribution.

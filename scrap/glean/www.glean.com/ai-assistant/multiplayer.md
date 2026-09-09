@@ -153,7 +153,7 @@ Why Glean is the enterprise AI coworker for getting work done
 
 Customer Story
 
-Booking.com scales AI to 14,000 employees—and redefines work—with Glean
+Booking.com scales AI to 14,000 employees-and redefines work-with Glean
 
 
 

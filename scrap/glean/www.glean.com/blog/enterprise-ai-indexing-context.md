@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/enterprise-ai-indexing-context"
 canonical: "https://www.glean.com/blog/enterprise-ai-indexing-context"
 title: "Enterprise context starts with indexing, but it doesn’t end there"
-description: "Joel McKelvey  | Indexing improves accuracy, latency, and token efficiency. Learn what makes an enterprise index work — and why AI needs more than retrieval."
+description: "Joel McKelvey  | Indexing improves accuracy, latency, and token efficiency. Learn what makes an enterprise index work - and why AI needs more than retrieval."
 fetched_at: "2026-09-01T13:26:33.981Z"
 ---
 Last updated Jul 29, 2026.

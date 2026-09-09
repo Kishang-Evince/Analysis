@@ -1,4 +1,4 @@
-# Field 4 — Hidden Costs Identified
+# Field 4 - Hidden Costs Identified
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Hidden Costs Identified.md](../../../Glean/Combined/4.9.7 Pricing & TCO/Hidden Costs Identified.md)

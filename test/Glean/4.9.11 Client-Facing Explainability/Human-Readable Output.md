@@ -1,11 +1,11 @@
-# Field 3 — Human-Readable Output
+# Field 3 - Human-Readable Output
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Human-Readable Output.md](../../../Glean/Combined/4.9.11 Client-Facing Explainability/Human-Readable Output.md)
 
 ---
 
-**User B hat** — rate 1–5 (clarity, layout, citations useful):
+**User B hat** - rate 1–5 (clarity, layout, citations useful):
 
 | # | Surface | Task | Clarity | Layout | Citations |
 |---|---|---|---|---|---|

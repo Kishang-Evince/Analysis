@@ -95,7 +95,7 @@ Model agnosticism is also essential when each model on the market provides uniqu
 
 ## Get work done with Glean
 
-Enterprise AI has mostly lived in the world of questions and answers — find this document, summarize that thread, tell me what happened in the meeting. Now, we’re moving from simple querying to end-to-end workflows where an AI coworker can execute multiple tasks simultaneously and act on your behalf. 
+Enterprise AI has mostly lived in the world of questions and answers - find this document, summarize that thread, tell me what happened in the meeting. Now, we’re moving from simple querying to end-to-end workflows where an AI coworker can execute multiple tasks simultaneously and act on your behalf. 
 
 ### Manage tedious and repetitive tasks in enterprise systems like Jira and Gmail
 
@@ -113,11 +113,11 @@ Before Glean, answering a simple business question meant filing a ticket with th
 
 Now they just ask Glean directly. Anyone can query data across every connected system at once, structured and unstructured alike, and get back a synthesized view of what's actually happening. Under the hood, Glean securely pulls the right data, invokes agent sandbox to write and execute Python, and returns the exact aggregations and outputs grounded in real company context. The result is a more reliable, scalable analysis across enterprise systems, with the security controls enterprises expect: per-session isolation, permission-aware retrieval, no credentials in the sandbox, and allowlisted read-only tool access.
 
-Leaders who need deeper insights no longer have to wait on a data analyst or kick off multiple workstreams to consolidate and analyze data — they can find answers on their own, in seconds. Glean consolidates enterprise data across every system, analyzes it at scale, and surfaces accurate, data-backed answers that drive faster, more confident decisions.
+Leaders who need deeper insights no longer have to wait on a data analyst or kick off multiple workstreams to consolidate and analyze data - they can find answers on their own, in seconds. Glean consolidates enterprise data across every system, analyzes it at scale, and surfaces accurate, data-backed answers that drive faster, more confident decisions.
 
 ### Create personalized, high-quality first drafts 
 
-Preparing for a big prospect meeting used to take an enterprise seller several days. Outside research, internal proof points, customer stories, a tailored pitch deck — all of it stitched together by hand, with information sourced from across half a dozen tools.
+Preparing for a big prospect meeting used to take an enterprise seller several days. Outside research, internal proof points, customer stories, a tailored pitch deck - all of it stitched together by hand, with information sourced from across half a dozen tools.
 
 With Glean, that work happens in a single conversation. An account manager can pull a prospect's public priorities, pair them with the most relevant customer stories and internal proof points, and turn the whole thing into a polished, interactive page they can use live in the meeting and send the moment it ends. 
 

@@ -85,7 +85,7 @@ const example = {
   "field_name": "Features Confirmed",
   "technical_definition": "...",
   "evaluation_methodology": "...",
-  "section_doc_excerpt": "# 4.9.1 — Functional Capabilities\n\nGlean provides...",
+  "section_doc_excerpt": "# 4.9.1 - Functional Capabilities\n\nGlean provides...",
   "field_doc_excerpt": "# Features Confirmed\n\nThe validated list...",
   "core_data": {
     "field_status": "Confirmed",

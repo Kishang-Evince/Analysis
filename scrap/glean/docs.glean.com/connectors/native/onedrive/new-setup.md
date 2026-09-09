@@ -15,10 +15,10 @@ Connecting OneDrive runs a guided flow in the Microsoft 365 suite. You authorize
 -   **Permission-aware search.** Glean crawls your OneDrive files and folders into its index and mirrors OneDrive access controls, enforced at query time, so each user sees only the files they can open in OneDrive.
 -   **Real-time access.** OneDrive also supports fetching always-live results at query time, alongside the indexed search. See [Real-time access](/connectors/native/onedrive/real-time-access) for details.
 
-1.  Connect and authorize toolstoday — current step
-2.  Set up indexingtoday — current step
-3.  Crawl runs in the backgroundtoday — happens automatically
-4.  Permission-aware search switches ona few days — happens automatically
+1.  Connect and authorize toolstoday - current step
+2.  Set up indexingtoday - current step
+3.  Crawl runs in the backgroundtoday - happens automatically
+4.  Permission-aware search switches ona few days - happens automatically
 
 ## Feature availability after setup[​](#feature-availability-after-setup "Direct link to Feature availability after setup")
 

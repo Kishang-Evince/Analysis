@@ -27,7 +27,7 @@
 | **OIDC** | Yes (preferred) | Entra ID, Google Workspace, Okta | First config step per docs |
 | **SAML 2.0** | Yes | Okta, Generic SAML | |
 | **SCIM 2.0** | Yes | **Okta** (deprovisioning) | Base URL: `https://<tenant>-be.glean.com/instance/api/scim/v2` |
-| **MFA** | Via IdP | — | Recommended in deployment best practices |
+| **MFA** | Via IdP | - | Recommended in deployment best practices |
 | **Group sync** | SAML/SCIM near real-time; OIDC groups up to ~3h delay | [Group-based permissions](https://docs.glean.com/administration/identity/roles/group-based-permissions) | |
 
 ### Admin paths (tenant UI)
@@ -38,16 +38,16 @@
 
 ### Engineering observation (Doc-Verified)
 
-- Glean does **not** invent local users — identities from IdP/SSO/invites (consistent with 4.9.1 Admin Test Guide).
-- **SCIM breadth gap:** Entra ID SCIM guide not found in scrap — Okta SCIM is primary documented path; verify with Glean if Entra SCIM supported via generic SCIM.
-- Per-user OAuth for Google/Microsoft/Notion tools is **separate** from SSO — common sandbox friction.
+- Glean does **not** invent local users - identities from IdP/SSO/invites (consistent with 4.9.1 Admin Test Guide).
+- **SCIM breadth gap:** Entra ID SCIM guide not found in scrap - Okta SCIM is primary documented path; verify with Glean if Entra SCIM supported via generic SCIM.
+- Per-user OAuth for Google/Microsoft/Notion tools is **separate** from SSO - common sandbox friction.
 
 ### Verification steps / test case
 
-1. SSO login flow — confirm domain restriction + MFA via IdP.
-2. Deactivate User B in IdP — confirm Glean access blocked within documented sync window.
-3. If Okta: SCIM deactivate — verify `scim/v2` events.
-4. Map group → Glean role — test permission inheritance timing.
+1. SSO login flow - confirm domain restriction + MFA via IdP.
+2. Deactivate User B in IdP - confirm Glean access blocked within documented sync window.
+3. If Okta: SCIM deactivate - verify `scim/v2` events.
+4. Map group → Glean role - test permission inheritance timing.
 
 **Risk & Cost Impact:** Risk: Low (SSO) / Medium (SCIM gap on non-Okta IdP) | Cost: Native
 

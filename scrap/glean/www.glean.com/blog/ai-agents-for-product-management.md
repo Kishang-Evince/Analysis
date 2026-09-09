@@ -83,13 +83,13 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Every product team is responsible for connecting customer feedback, engineering progress, and market demand. But today, that context often lives across too many places — Jira tickets, Slack threads, and customer surveys. Product managers spend more time piecing information together than shaping strategy, and clarity gets lost in the process.
+Every product team is responsible for connecting customer feedback, engineering progress, and market demand. But today, that context often lives across too many places - Jira tickets, Slack threads, and customer surveys. Product managers spend more time piecing information together than shaping strategy, and clarity gets lost in the process.
 
 AI for product management helps bring that clarity back. Intelligent agents, grounded in enterprise context, help teams plan, build, and launch with greater focus and speed.
 
 ## **Understanding AI for product management**
 
-Product management depends on continuous context — the information that guides discovery, prioritization, and delivery. Traditional tools capture pieces of that story but rarely connect them. AI for product management bridges those gaps by bringing intelligence directly into the systems teams already use.
+Product management depends on continuous context - the information that guides discovery, prioritization, and delivery. Traditional tools capture pieces of that story but rarely connect them. AI for product management bridges those gaps by bringing intelligence directly into the systems teams already use.
 
 Unlike static dashboards or workflow automations, [AI agents](https://www.glean.com/product/ai-agents) can reason through complex, cross-functional inputs. They interpret unstructured data, uncover relationships between signals, and summarize the “why” behind every decision. That makes them ideal for work that depends on judgment, such as evaluating customer feedback to planning releases.
 
@@ -110,7 +110,7 @@ The most effective AI agents don’t just answer questions, they deliver results
 
 ## **How AI agents are transforming product workflows**
 
-AI agents give product teams a smarter way to work — one that reduces friction, automates repetitive tasks, and supports faster, more confident decisions. By grounding intelligence in a company’s real product data and documentation, agents can streamline complex workflows, highlight key insights, and keep information consistent across systems. They’re designed for the way modern product organizations operate: collaborative, fast-moving, and detail-oriented.
+AI agents give product teams a smarter way to work - one that reduces friction, automates repetitive tasks, and supports faster, more confident decisions. By grounding intelligence in a company’s real product data and documentation, agents can streamline complex workflows, highlight key insights, and keep information consistent across systems. They’re designed for the way modern product organizations operate: collaborative, fast-moving, and detail-oriented.
 
 Here are a few of the challenges agents can help solve:
 
@@ -120,7 +120,7 @@ Here are a few of the challenges agents can help solve:
 
 ## **6 strategic use cases for AI agents in product management**
 
-These six examples show what’s possible when product teams use Glean to build their own AI agents. Each one is designed to address a specific workflow challenge — helping teams shorten development cycles, make smarter prioritization decisions, and improve adoption across the product lifecycle.
+These six examples show what’s possible when product teams use Glean to build their own AI agents. Each one is designed to address a specific workflow challenge - helping teams shorten development cycles, make smarter prioritization decisions, and improve adoption across the product lifecycle.
 
 Use these examples as inspiration for how product management AI agents can securely connect your tools, understand context, and deliver meaningful results.
 
@@ -176,11 +176,11 @@ Helps teams measure adoption, monitor engagement, and guide continuous improveme
 
 Product AI agents automate specific workflows. Together with Search and Assistant, they create a single, connected system that helps teams find knowledge and act on it.
 
-‍[**Glean Search**](https://www.glean.com/product/workplace-search-ai) connects to every system product teams rely on — from Jira and Confluence to Figma, Drive, and Slack — so they can instantly find the right PRD, design file, or feedback thread without switching contexts.  
+‍[**Glean Search**](https://www.glean.com/product/workplace-search-ai) connects to every system product teams rely on - from Jira and Confluence to Figma, Drive, and Slack - so they can instantly find the right PRD, design file, or feedback thread without switching contexts.  
 
 [**Glean Assistant**](https://www.glean.com/product/assistant) makes that knowledge conversational, allowing teams to ask questions like “What’s the latest feedback on the mobile release?” and receive permission-aware answers grounded in real company data.
 
-Together, Search, Assistant, and Agents give product teams different ways to interact with the same trusted foundation — Glean’s Work AI platform. Each brings the company’s collective knowledge into focus, helping teams plan, build, and launch with speed and confidence.
+Together, Search, Assistant, and Agents give product teams different ways to interact with the same trusted foundation - Glean’s Work AI platform. Each brings the company’s collective knowledge into focus, helping teams plan, build, and launch with speed and confidence.
 
 ## **Why product teams choose Glean**
 
@@ -188,7 +188,7 @@ AI agents are only as effective as the data and context they’re built on. Glea
 
 **Enterprise-grade security:** Glean enforces existing data permissions and keeps information access tightly controlled across integrated tools.  
   
-**Fast time-to-value:** Glean integrates seamlessly with the tools product teams already use — enabling quick setup and measurable impact within weeks.
+**Fast time-to-value:** Glean integrates seamlessly with the tools product teams already use - enabling quick setup and measurable impact within weeks.
 
 ‍**Flexible AI infrastructure:** Glean’s architecture supports a variety of enterprise AI models and workflows, making it adaptable to product organizations of any size or complexity.
 

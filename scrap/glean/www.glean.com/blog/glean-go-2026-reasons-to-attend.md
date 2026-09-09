@@ -115,7 +115,7 @@ The “*Inside AI Transformation*” customer sessions will show how that work p
 -   **Dell**’s Director of AI Product Deployment and Management, Connor Bogin, will explain how the team sustained usage and connected adoption to outcomes like pipeline and attainment.
 -   **Howard Hughes**’ VP of Enterprise AI, Jonathan Goldberg, will trace how a 100-user pilot and a series of early wins led to an enterprise-wide mandate to fundamentally reshape its cost structure through AI-driven efficiency.
 
-This is the shift from metric disappointment to metric discipline — gathering enough evidence to decide what deserves more investment. Once a use case clears that bar, someone has to build it.
+This is the shift from metric disappointment to metric discipline - gathering enough evidence to decide what deserves more investment. Once a use case clears that bar, someone has to build it.
 
 ## 2\. Discover what it takes to get an agent into production
 

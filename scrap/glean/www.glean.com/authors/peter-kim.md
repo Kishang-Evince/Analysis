@@ -30,7 +30,7 @@ May 14, 2026
 
 ### AI tooling stack report for software engineers
 
-Field guide to the modern AI tooling stack for software engineering teams—how to unify context, improve onboarding, code changes, and incidents with Glean
+Field guide to the modern AI tooling stack for software engineering teams-how to unify context, improve onboarding, code changes, and incidents with Glean
 
 ![Peter Kim](https://cdn.prod.website-files.com/613513981b0efaf850830620/6866a548c0694bf8ce837d3b_Peter%20Kim.png)
 
@@ -100,7 +100,7 @@ August 8, 2025
 
 ### Transforming financial advisory practices through AI implementation
 
-With financial advisory firms faced with rising client expectations and fragmented data sources, tackling the knowledge problem is more important than ever—especially with AI solutions.
+With financial advisory firms faced with rising client expectations and fragmented data sources, tackling the knowledge problem is more important than ever-especially with AI solutions.
 
 ![Peter Kim](https://cdn.prod.website-files.com/613513981b0efaf850830620/6866a548c0694bf8ce837d3b_Peter%20Kim.png)
 

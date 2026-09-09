@@ -2,7 +2,7 @@
 url: "https://developers.glean.com/api-info/client/authentication/oauth"
 canonical: "https://developers.glean.com/api-info/client/authentication/oauth"
 title: "OAuth Authentication | Glean Developer"
-description: "Use OAuth access tokens with the Client API — from the Glean OAuth Authorization Server or your external identity provider"
+description: "Use OAuth access tokens with the Client API - from the Glean OAuth Authorization Server or your external identity provider"
 fetched_at: "2026-09-01T13:22:49.990Z"
 ---
 On this page
@@ -18,7 +18,7 @@ There are two sources for that token, and they behave slightly differently on th
 -   Authorization Code flow with PKCE
 -   Two registration modes: Dynamic Client Registration (DCR), subject to tenant policy, and admin-created static clients
 -   Glean-defined, fine-grained scopes
--   Recognized by issuer — **no extra header**
+-   Recognized by issuer - **no extra header**
 -   Powers the [remote MCP server](/guides/mcp)
 
 ### External Identity Provider
@@ -48,8 +48,8 @@ Whether you **also** need `X-Glean-Auth-Type: OAUTH` depends on who issued the t
 
 | Token source | `X-Glean-Auth-Type: OAUTH` |
 | --- | --- |
-| Glean OAuth Authorization Server (incl. Dynamic Client Registration) | Not required — Glean recognizes its own tokens by their issuer |
-| External identity provider (Google, Okta, Azure, etc.) | **Required** — without it the token is treated as a Glean API token and rejected with `401` |
+| Glean OAuth Authorization Server (incl. Dynamic Client Registration) | Not required - Glean recognizes its own tokens by their issuer |
+| External identity provider (Google, Okta, Azure, etc.) | **Required** - without it the token is treated as a Glean API token and rejected with `401` |
 
 Using an SDK?
 
@@ -84,7 +84,7 @@ Obtain a token
 
 Use the Authorization Code flow with **PKCE**. Discover endpoints from the server metadata document and exchange the authorization code for an access token. For a static client, follow the [static-client token example](https://docs.glean.com/administration/oauth/static-client-token-example). For DCR, the host or application registers itself, then completes the same token flow.
 
-Endpoints (replace `<instance>` — see [finding your server URL](/get-started/authentication#finding-your-server-url)):
+Endpoints (replace `<instance>` - see [finding your server URL](/get-started/authentication#finding-your-server-url)):
 
 | Purpose | URL |
 | --- | --- |
@@ -92,7 +92,7 @@ Endpoints (replace `<instance>` — see [finding your server URL](/get-started/a
 | Token | `https://<instance>-be.glean.com/oauth/token` |
 | Dynamic Client Registration (when advertised and allowed) | `https://<instance>-be.glean.com/oauth/register` |
 
-The metadata document is the authoritative source for endpoints — fetch it to discover the current authorization, token, registration, and any other endpoints rather than relying on the values listed above. A registration endpoint does not mean every application, redirect URI, or scope is permitted to use DCR.
+The metadata document is the authoritative source for endpoints - fetch it to discover the current authorization, token, registration, and any other endpoints rather than relying on the values listed above. A registration endpoint does not mean every application, redirect URI, or scope is permitted to use DCR.
 
 Tokens from the Glean Authorization Server are recognized by their issuer, so requests **do not** need the `X-Glean-Auth-Type` header.
 
@@ -177,13 +177,13 @@ If you are using the Glean OAuth Authorization Server and still see a missing-he
 ### Security[​](#security "Direct link to Security")
 
 -   **Use HTTPS** for all OAuth flows and API requests
--   **Use Authorization Code + PKCE** — it is required by OAuth 2.1 and by the Glean Authorization Server
--   **Store tokens securely** — never commit them to version control
+-   **Use Authorization Code + PKCE** - it is required by OAuth 2.1 and by the Glean Authorization Server
+-   **Store tokens securely** - never commit them to version control
 -   **Handle token refresh** gracefully using a standard OAuth library
 
 ### Production[​](#production "Direct link to Production")
 
--   **Use production OAuth applications** — don't ship development credentials
+-   **Use production OAuth applications** - don't ship development credentials
 -   **Reuse an access token until it expires** rather than requesting a new one per call, and refresh once it expires
 -   **Monitor authentication failures** through your issuer and Glean
 

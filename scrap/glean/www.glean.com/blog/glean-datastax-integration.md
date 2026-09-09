@@ -129,7 +129,7 @@ You can try this yourself with [Google Colab](https://colab.research.google.com/
 
 ## Sign up today
 
-Begin exploring how these tools can transform your data-driven projects and elevate your GenAI applications to new heights—register for Astra DB and [Glean](https://www.glean.com/get-a-demo) today.
+Begin exploring how these tools can transform your data-driven projects and elevate your GenAI applications to new heights-register for Astra DB and [Glean](https://www.glean.com/get-a-demo) today.
 
 [
 

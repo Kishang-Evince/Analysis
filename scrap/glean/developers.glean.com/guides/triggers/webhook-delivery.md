@@ -35,11 +35,11 @@ The signing secret is returned **only** when the trigger is created, and cannot 
 
 Delivery is **at least once**: the same event can arrive more than once with the same `webhook-id`, so make your handling idempotent.
 
-Glean retries connection failures, timeouts, `408`, `429` and `5xx`. Other non-2xx responses, including redirects, are terminal — the event is dropped rather than retried, so return a `2xx` as soon as you have accepted it, and do slow work afterwards.
+Glean retries connection failures, timeouts, `408`, `429` and `5xx`. Other non-2xx responses, including redirects, are terminal - the event is dropped rather than retried, so return a `2xx` as soon as you have accepted it, and do slow work afterwards.
 
 ## Authenticating Glean to your endpoint[​](#authenticating-glean-to-your-endpoint "Direct link to Authenticating Glean to your endpoint")
 
-If your receiver requires its own credential, set `delivery.auth` when creating the trigger. With `type: BEARER`, Glean sends it as `Authorization: Bearer <secret>` **in addition to** the HMAC signature — it does not replace it, and a receiver should check both.
+If your receiver requires its own credential, set `delivery.auth` when creating the trigger. With `type: BEARER`, Glean sends it as `Authorization: Bearer <secret>` **in addition to** the HMAC signature - it does not replace it, and a receiver should check both.
 
 The credential is write-only: it is never returned on any read, and omitting `auth` on an update preserves the stored value. Two consequences worth designing around:
 
@@ -48,5 +48,5 @@ The credential is write-only: it is never returned on any read, and omitting `au
 
 ## Notes[​](#notes "Direct link to Notes")
 
--   Use an `https://` webhook URL. The signature proves integrity and origin, not confidentiality — the payload itself is only protected by transport security.
+-   Use an `https://` webhook URL. The signature proves integrity and origin, not confidentiality - the payload itself is only protected by transport security.
 -   Deliveries are filtered per event against the subscribing user's document permissions, so a trigger never surfaces a document that user could not already open.

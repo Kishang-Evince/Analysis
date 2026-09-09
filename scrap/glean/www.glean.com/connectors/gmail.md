@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:45.595Z"
 ---
 ### Overview
 
-Gmail powers daily communication across teams and customers. Glean's integration lets users search email history with full enterprise context, then take action — draft and send replies, forward messages, create and apply labels, and move messages to trash. Threads, drafts, contacts, and labels are all accessible from one workflow.
+Gmail powers daily communication across teams and customers. Glean's integration lets users search email history with full enterprise context, then take action - draft and send replies, forward messages, create and apply labels, and move messages to trash. Threads, drafts, contacts, and labels are all accessible from one workflow.
 
 ### Features
 

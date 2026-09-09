@@ -63,29 +63,29 @@ Share this article:
 
 # How legal teams can evaluate AI sources for trustworthiness
 
-Legal teams operate under a standard that most other departments never face: every claim must trace back to a defensible source. When AI enters that workflow, the same expectation applies — fluent language alone does not satisfy the burden of proof, and a confident-sounding answer without verifiable backing is a liability, not an asset.
+Legal teams operate under a standard that most other departments never face: every claim must trace back to a defensible source. When AI enters that workflow, the same expectation applies - fluent language alone does not satisfy the burden of proof, and a confident-sounding answer without verifiable backing is a liability, not an asset.
 
-The rise of enterprise AI has made it possible to surface internal knowledge faster than ever. Yet speed without source control introduces risks that legal professionals cannot afford — from citing outdated policies to exposing privileged material to the wrong audience. The gap between "AI that generates answers" and "AI that grounds answers in approved, permission-aware sources" is where trust either forms or breaks down.
+The rise of enterprise AI has made it possible to surface internal knowledge faster than ever. Yet speed without source control introduces risks that legal professionals cannot afford - from citing outdated policies to exposing privileged material to the wrong audience. The gap between "AI that generates answers" and "AI that grounds answers in approved, permission-aware sources" is where trust either forms or breaks down.
 
 This guide provides a structured evaluation framework for in-house counsel, legal ops leaders, and compliance teams to assess whether an AI system meets the evidentiary and governance standards legal work demands. Each section builds on the last, moving from source definition through retrieval transparency, access controls, accuracy testing, explainability, measurement, and review workflows.
 
 ## What is AI source grounding for legal teams?
 
-AI source grounding is the practice of tying every AI-generated answer back to specific, approved, and reviewable documents within an organization's knowledge base. In legal work, this means the system does not just produce a well-written response — it proves which contracts, playbooks, policies, matter summaries, or compliance records support that response. The distinction matters because legal professionals are accountable for the accuracy and defensibility of every output they rely on, regardless of whether a person or a machine produced the first draft.
+AI source grounding is the practice of tying every AI-generated answer back to specific, approved, and reviewable documents within an organization's knowledge base. In legal work, this means the system does not just produce a well-written response - it proves which contracts, playbooks, policies, matter summaries, or compliance records support that response. The distinction matters because legal professionals are accountable for the accuracy and defensibility of every output they rely on, regardless of whether a person or a machine produced the first draft.
 
 A grounded system differs from a generic chatbot in several concrete ways:
 
-The technical foundation behind this capability relies on continuous indexing, knowledge graphs that map relationships between people, content, and activity, and retrieval architectures that rank the most relevant approved sources before any language model generates a word. Enterprise platforms like Glean use hybrid search — combining semantic understanding, lexical matching, and authority signals — to ensure that retrieval quality stays high across the heterogeneous data formats legal teams work with daily: short Slack threads, dense contract clauses, structured compliance checklists, and long-form memoranda.
+The technical foundation behind this capability relies on continuous indexing, knowledge graphs that map relationships between people, content, and activity, and retrieval architectures that rank the most relevant approved sources before any language model generates a word. Enterprise platforms like Glean use hybrid search - combining semantic understanding, lexical matching, and authority signals - to ensure that retrieval quality stays high across the heterogeneous data formats legal teams work with daily: short Slack threads, dense contract clauses, structured compliance checklists, and long-form memoranda.
 
-Source grounding also reframes how legal teams should evaluate AI tools. The critical question is not whether the underlying model is powerful enough to draft a persuasive paragraph. It is whether the full system — connectors, indexing, permissions, retrieval, citation, and governance — delivers answers that a lawyer can verify in minutes rather than hours. ABA Formal Opinion 512 reinforces this point: lawyers must apply "an appropriate degree of independent verification" to AI outputs, and that verification becomes practical only when the system shows its work. Without source grounding, every AI answer requires the same level of independent research the tool was supposed to reduce — defeating the purpose entirely.
+Source grounding also reframes how legal teams should evaluate AI tools. The critical question is not whether the underlying model is powerful enough to draft a persuasive paragraph. It is whether the full system - connectors, indexing, permissions, retrieval, citation, and governance - delivers answers that a lawyer can verify in minutes rather than hours. ABA Formal Opinion 512 reinforces this point: lawyers must apply "an appropriate degree of independent verification" to AI outputs, and that verification becomes practical only when the system shows its work. Without source grounding, every AI answer requires the same level of independent research the tool was supposed to reduce - defeating the purpose entirely.
 
 ## How can legal teams trust AI answers to be grounded in approved sources?
 
-Trust in legal AI is not a matter of polish. It comes from operational discipline — clear source boundaries, strong retrieval behavior, visible support for each answer, and controls that hold up under review.
+Trust in legal AI is not a matter of polish. It comes from operational discipline - clear source boundaries, strong retrieval behavior, visible support for each answer, and controls that hold up under review.
 
 That work begins before rollout and well before everyday prompting. Legal teams should examine the system as a governed workflow: which repositories feed it, which records stay off-limits, how relevance gets determined, and what evidence appears with the response. This framework gives in-house counsel, legal ops, compliance leaders, and adjacent stakeholders a repeatable way to assess legal AI on the factors that affect defensibility, not just usability.
 
-This approach matches how mature enterprise AI programs assess reliability in practice. Structured eval sets, recurring measurement, and system-level review create a better trust signal than model benchmarks alone because legal work depends on the full chain — source quality, retrieval behavior, access enforcement, and reviewer control.
+This approach matches how mature enterprise AI programs assess reliability in practice. Structured eval sets, recurring measurement, and system-level review create a better trust signal than model benchmarks alone because legal work depends on the full chain - source quality, retrieval behavior, access enforcement, and reviewer control.
 
 ## 1\. Define what counts as an approved source
 
@@ -143,7 +143,7 @@ Retrieval quality settles only part of the legal trust question. The harder test
 
 ### Enforce permissions from the source system
 
-The key issue is entitlement fidelity. Legal teams should verify that the assistant reads live access rules from the systems that already govern each repository — document management, contract storage, HR records, compliance archives, and matter folders — so a revoked right disappears from AI access at the same time it disappears from the source.
+The key issue is entitlement fidelity. Legal teams should verify that the assistant reads live access rules from the systems that already govern each repository - document management, contract storage, HR records, compliance archives, and matter folders - so a revoked right disappears from AI access at the same time it disappears from the source.
 
 ### Preserve confidentiality and make review possible
 
@@ -197,7 +197,7 @@ The benchmark should remain stable over time so results stay comparable. Re-run 
 
 Legal review depends on traceability, not just output quality. An AI system may retrieve the right records and still create friction if the reviewer cannot inspect how the response took shape in a format that matches legal work.
 
-That means explainability should look less like model diagnostics and more like a review packet. Counsel should see the basis for the response in familiar terms — source order, supporting text, source status, and any constraints that affected the result.
+That means explainability should look less like model diagnostics and more like a review packet. Counsel should see the basis for the response in familiar terms - source order, supporting text, source status, and any constraints that affected the result.
 
 ### Present the response as a review record
 
@@ -267,9 +267,9 @@ Those signals should feed into regular comparisons over time and into change-con
 
 ## 7\. Build review workflows that keep lawyers in charge
 
-Trust holds only when review rules live inside the legal team’s day-to-day process. The handoff from answer to action should sit in matter intake, queue routing, and approval policy — not in individual habit.
+Trust holds only when review rules live inside the legal team’s day-to-day process. The handoff from answer to action should sit in matter intake, queue routing, and approval policy - not in individual habit.
 
-That operating model should answer three practical questions every time: who owns review, what must pause for approval, and which evidence travels with the draft. Once those rules are explicit, the system stays in its proper role — a research and drafting layer under legal supervision.
+That operating model should answer three practical questions every time: who owns review, what must pause for approval, and which evidence travels with the draft. Once those rules are explicit, the system stays in its proper role - a research and drafting layer under legal supervision.
 
 ### Match review depth to matter risk
 
@@ -285,7 +285,7 @@ Review becomes faster once the order stays the same. The goal is not more steps;
 
 A practical sequence often works best in three passes:
 
-This sequence protects reviewers from a common waste pattern — polishing language before the underlying support and matter constraints are settled. It also creates a repeatable habit across attorneys, legal ops staff, and specialist reviewers.
+This sequence protects reviewers from a common waste pattern - polishing language before the underlying support and matter constraints are settled. It also creates a repeatable habit across attorneys, legal ops staff, and specialist reviewers.
 
 ### Add approval gates before anything leaves the system
 
@@ -295,7 +295,7 @@ That gate should include system-level controls, not just policy language:
 
 Structured prompts and approved templates help here because they narrow format and scope. They do not replace review; they make review easier to standardize.
 
-Exception handling needs the same level of rigor. When a draft slips past the right lane, pulls from the wrong repository, reflects an obsolete rule set, or follows the wrong release path, the team should record the event, assign remediation, and update the operating rule behind it — whether that means a source cleanup, a routing change, a permission fix, or a revised approval requirement.
+Exception handling needs the same level of rigor. When a draft slips past the right lane, pulls from the wrong repository, reflects an obsolete rule set, or follows the wrong release path, the team should record the event, assign remediation, and update the operating rule behind it - whether that means a source cleanup, a routing change, a permission fix, or a revised approval requirement.
 
 ## Tips on evaluating AI source trustworthiness for legal teams
 
@@ -305,7 +305,7 @@ The most useful evaluations feel less like a technology demo and more like a leg
 
 Choose a workflow where the legal team already knows what good looks like. A clause fallback check, a policy exception lookup, or an outside counsel guideline question works well because each task has a defined answer path, a known reviewer, and a clear business consequence when the answer goes wrong.
 
-The first pilot should use real work artifacts from closed matters or approved internal materials, not synthetic examples built for a demo. That gives the team a stable reference point and shows whether the system can handle the actual messiness of legal records — mixed formats, version history, duplicate titles, and partial context.
+The first pilot should use real work artifacts from closed matters or approved internal materials, not synthetic examples built for a demo. That gives the team a stable reference point and shows whether the system can handle the actual messiness of legal records - mixed formats, version history, duplicate titles, and partial context.
 
 ### 2\. Prefer source-first design over model-first promises
 
@@ -323,7 +323,7 @@ That operating model should include a lightweight process for change. New reposi
 
 When legal teams treat source trust as part of legal operations, review becomes more predictable, exception handling becomes cleaner, and the system stays aligned with the standards the department already applies to human work.
 
-Legal teams that treat AI source evaluation as an ongoing discipline — not a one-time checkbox — build the kind of trust that scales across workflows, jurisdictions, and risk levels. The frameworks, metrics, and review practices outlined here give your department a repeatable way to hold AI to the same evidentiary standard you already apply to human work product.
+Legal teams that treat AI source evaluation as an ongoing discipline - not a one-time checkbox - build the kind of trust that scales across workflows, jurisdictions, and risk levels. The frameworks, metrics, and review practices outlined here give your department a repeatable way to hold AI to the same evidentiary standard you already apply to human work product.
 
 If you're ready to see how an enterprise AI platform can meet that standard, [request a demo to explore how we can transform your workplace](https://www.glean.com/get-a-demo).
 

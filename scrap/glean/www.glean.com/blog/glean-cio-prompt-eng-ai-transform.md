@@ -81,17 +81,17 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-In the rapidly evolving landscape of AI, CIOs are at the forefront of driving transformation within their organizations. Integrating generative AI into enterprise environments presents immense opportunities and significant challenges. One of the critical skills that CIOs must understand to navigate this landscape effectively is prompt engineering — knowing how to implement prompts enables CIOs to position their organization to tackle AI transformation effectively. 
+In the rapidly evolving landscape of AI, CIOs are at the forefront of driving transformation within their organizations. Integrating generative AI into enterprise environments presents immense opportunities and significant challenges. One of the critical skills that CIOs must understand to navigate this landscape effectively is prompt engineering - knowing how to implement prompts enables CIOs to position their organization to tackle AI transformation effectively. 
 
 ## What’s prompt engineering? 
 
-Effective use of enterprise AI tools like Glean relies on clear and comprehensive instructions from the user. While AI platforms can assist in creating, discovering, organizing, summarizing, and accelerating workflows, well-crafted prompts are essential for achieving desired results. Prompts are conversational, natural language instructions that guide the AI to produce the intended outcome. Prompt engineering, the process of writing the perfect prompt, is an evolving skill — if you’re looking to ensure your AI assistant delivers the answers you need to perform your best work, get the right insights you need to get started in this [guide](https://www.glean.com/resources/guides/glean-ebook-prompting-101).
+Effective use of enterprise AI tools like Glean relies on clear and comprehensive instructions from the user. While AI platforms can assist in creating, discovering, organizing, summarizing, and accelerating workflows, well-crafted prompts are essential for achieving desired results. Prompts are conversational, natural language instructions that guide the AI to produce the intended outcome. Prompt engineering, the process of writing the perfect prompt, is an evolving skill - if you’re looking to ensure your AI assistant delivers the answers you need to perform your best work, get the right insights you need to get started in this [guide](https://www.glean.com/resources/guides/glean-ebook-prompting-101).
 
 ![Product Illustration](https://cdn.prod.website-files.com/613513981b0efaf850830620/671f6c2ee5db77dec1a7ffae_671f6ba6dbb4ea158f4c9ade_image1%2520\(2\).webp)
 
 ## The AI transformation wave and CIOs
 
-CIOs are uniquely positioned to lead AI transformation within their organizations. They are responsible for integrating new technologies, ensuring data security, and driving innovation — effectively seen as strategic drivers of business and workplace transformation. They must navigate uncharted waters to enable long-term success and strategic advantages, especially as generative AI stands to increase global GDP by nearly [7%](https://www.glean.com/resources/guides/cio-generative-ai) over a 10-year period and worker productivity by around [40%](https://www.glean.com/resources/guides/cio-generative-ai). 
+CIOs are uniquely positioned to lead AI transformation within their organizations. They are responsible for integrating new technologies, ensuring data security, and driving innovation - effectively seen as strategic drivers of business and workplace transformation. They must navigate uncharted waters to enable long-term success and strategic advantages, especially as generative AI stands to increase global GDP by nearly [7%](https://www.glean.com/resources/guides/cio-generative-ai) over a 10-year period and worker productivity by around [40%](https://www.glean.com/resources/guides/cio-generative-ai). 
 
 However, the key to understanding how to leverage generative AI lies in prompt engineering. Here are a few reasons why prompt engineering is important to keep in mind for CIOs:
 

@@ -215,10 +215,10 @@ In addition to indexing Workday content, Glean provides tools that let teammates
 
 The Request Time Off tool submits a time-off request to Workday on behalf of the teammate. The tool collects the following information:
 
--   **Start date** and **end date** — the date range for the request, in `YYYY-MM-DD` format.
--   **Time-off type** — the leave category, for example PTO, sick leave, or personal day.
--   **Daily quantity** — the number of units of time off requested per day. The unit can be hours or days, depending on the time-off type configured in Workday. Values such as `0.5`, `1.5`, or `7.5` are supported, so employees can request partial-day time off.
--   **Comment** — the reason for the time-off request.
+-   **Start date** and **end date** - the date range for the request, in `YYYY-MM-DD` format.
+-   **Time-off type** - the leave category, for example PTO, sick leave, or personal day.
+-   **Daily quantity** - the number of units of time off requested per day. The unit can be hours or days, depending on the time-off type configured in Workday. Values such as `0.5`, `1.5`, or `7.5` are supported, so employees can request partial-day time off.
+-   **Comment** - the reason for the time-off request.
 
 note
 

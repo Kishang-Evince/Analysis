@@ -110,7 +110,7 @@ Content and permissions are synced multiple times each day after initial indexin
 ## Limitations[​](#limitations "Direct link to Limitations")
 
 -   Creating or editing Sigma content from Glean is not supported
--   Natural-language querying of Sigma data is not part of the connector — see [Sigma in Assistant](/connectors/native/sigma/assistant) for natural-language data access
+-   Natural-language querying of Sigma data is not part of the connector - see [Sigma in Assistant](/connectors/native/sigma/assistant) for natural-language data access
 -   Dataset crawling is not included in this release
 -   Webhook-based freshness updates are not available
 

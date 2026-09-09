@@ -23,7 +23,7 @@ Get a complete view of any customer account in seconds.
 
 ## Overview
 
-The account snapshot agent pulls together key account details — like open opportunities, support tickets, and executive contacts — so team members can get up to speed in seconds. Designed for customer-facing teams and cross-functional collaborators, this agent ensures every customer interaction starts with full context.
+The account snapshot agent pulls together key account details - like open opportunities, support tickets, and executive contacts - so team members can get up to speed in seconds. Designed for customer-facing teams and cross-functional collaborators, this agent ensures every customer interaction starts with full context.
 
 ## See it in action
 
@@ -31,7 +31,7 @@ Watch how the account snapshot agent quickly compiles key account details into a
 
 ## Capabilities
 
-Makes it easy for anyone to prepare for a customer call — no manual prep required.Surfaces opportunities, tickets, contacts, and internal action items in a single view.Pulls in recent news and strategic updates to help you tailor your message.
+Makes it easy for anyone to prepare for a customer call - no manual prep required.Surfaces opportunities, tickets, contacts, and internal action items in a single view.Pulls in recent news and strategic updates to help you tailor your message.
 
 ## Example output
 
@@ -173,7 +173,7 @@ A real-time view of customer health, ready whenever you need it.
 
 #### Deal loss insights
 
-Get clarity on why you’re losing deals — and what to do about it.
+Get clarity on why you’re losing deals - and what to do about it.
 
 ](/agent-library/deal-loss-insights)
 

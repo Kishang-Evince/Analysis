@@ -83,7 +83,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Most enterprise AI teams optimize for the wrong thing. They’re focused on prompt hygiene — shorter instructions, less filler, compressed wording — when the real gains in token efficiency come from what happens before the model ever sees a prompt: retrieval quality, context selection, and orchestration design.
+Most enterprise AI teams optimize for the wrong thing. They’re focused on prompt hygiene - shorter instructions, less filler, compressed wording - when the real gains in token efficiency come from what happens before the model ever sees a prompt: retrieval quality, context selection, and orchestration design.
 
 Token efficiency in enterprise AI is the ability to get high-quality answers using the minimum necessary context and compute. In production systems, that means the biggest opportunities are usually not in the prompt itself, but in what gets retrieved, selected, and passed to the model in advance of generation.
 
@@ -120,7 +120,7 @@ Consider this common scenario: An AI assistant needs to answer an HR policy ques
 
 While a cleaner prompt can save some tokens, better retrieval can entirely change the economics and quality profile of an AI system. Imagine two adjustments to the same workflow: shortening a prompt by 15 percent, and reducing irrelevant retrieved context by 60 percent.
 
-The first helps a little. The second typically improves cost, latency, and answer quality simultaneously — because retrieval determines what the model has to read before it can think. Wrong documents, poorly scoped chunks, or weak ranking mean the model spends tokens processing context that contributes nothing to the answer. In some cases, that extra context makes the answer worse, pulling the model toward tangents, outdated material, or conflicting evidence.
+The first helps a little. The second typically improves cost, latency, and answer quality simultaneously - because retrieval determines what the model has to read before it can think. Wrong documents, poorly scoped chunks, or weak ranking mean the model spends tokens processing context that contributes nothing to the answer. In some cases, that extra context makes the answer worse, pulling the model toward tangents, outdated material, or conflicting evidence.
 
 For retrieval-augmented generation and agentic systems, the stakes are higher. Token waste compounds across steps. A bloated first retrieval step carries its costs into the next step, and the next. By the time the workflow completes, the system has paid for bad context many times over.
 
@@ -128,9 +128,9 @@ Enterprise teams should treat token optimization as a retrieval problem first, a
 
 ## What a well-designed enterprise AI system looks like
 
-Solving for token efficiency at scale requires a context layer that knows what your company knows — one that retrieves from live knowledge across tools, respects permissions accurately, and surfaces specific passages rather than whole documents.
+Solving for token efficiency at scale requires a context layer that knows what your company knows - one that retrieves from live knowledge across tools, respects permissions accurately, and surfaces specific passages rather than whole documents.
 
-Glean’s Work AI platform is built around Enterprise Context — a shared system of context that helps AI retrieve better evidence, respect permissions, and act on current company knowledge. Rather than treating every document as an isolated text blob, Glean connects retrieval to the relationships, permissions, and knowledge structures that already exist across an organization’s systems. The result is a foundation where retrieval quality improves first, and chunking, prompting, and orchestration decisions all start from better evidence.
+Glean’s Work AI platform is built around Enterprise Context - a shared system of context that helps AI retrieve better evidence, respect permissions, and act on current company knowledge. Rather than treating every document as an isolated text blob, Glean connects retrieval to the relationships, permissions, and knowledge structures that already exist across an organization’s systems. The result is a foundation where retrieval quality improves first, and chunking, prompting, and orchestration decisions all start from better evidence.
 
 ## The enterprise framework for token efficiency
 
@@ -138,9 +138,9 @@ The strongest enterprise AI teams optimize across the full stack. We can think a
 
 ### Layer 1: Retrieve less, but retrieve better
 
-Start with retrieval quality. The system should find the smallest set of evidence that can still support a strong answer — which means improving precision, not just recall. Better ranking and reranking are crucial here, as is narrowing the search space with metadata, permissions, ownership, recency, and task context.
+Start with retrieval quality. The system should find the smallest set of evidence that can still support a strong answer - which means improving precision, not just recall. Better ranking and reranking are crucial here, as is narrowing the search space with metadata, permissions, ownership, recency, and task context.
 
-Getting retrieval right requires a strong context layer. Systems need to know which content is relevant to the user, which version is current, which artifacts are connected, and which information the user is actually authorized to see. Glean grounds retrieval in live company knowledge, permissions, and cross-system relationships — so fewer irrelevant tokens ever reach the prompt.
+Getting retrieval right requires a strong context layer. Systems need to know which content is relevant to the user, which version is current, which artifacts are connected, and which information the user is actually authorized to see. Glean grounds retrieval in live company knowledge, permissions, and cross-system relationships - so fewer irrelevant tokens ever reach the prompt.
 
 ### Layer 2: Pass only the evidence that matters
 
@@ -168,7 +168,7 @@ Orchestration, handled well, becomes a practical performance enhancer. A system 
 
 ## How to measure token efficiency without sacrificing answer quality
 
-The wrong way to measure token efficiency is to optimize for minimum tokens alone. Cutting too aggressively — removing needed evidence, collapsing important context — produces answers that are cheaper and weaker at the same time. The better question is: what outcome are you getting per token?
+The wrong way to measure token efficiency is to optimize for minimum tokens alone. Cutting too aggressively - removing needed evidence, collapsing important context - produces answers that are cheaper and weaker at the same time. The better question is: what outcome are you getting per token?
 
 A practical set of evaluation metrics includes:
 
@@ -207,7 +207,7 @@ For a closer look at how enterprise AI teams improve answer quality and efficien
 
 ### What is the difference between token efficiency and context window size?
 
-Context window size is a model capability — how much text a model can technically receive and process. Token efficiency is a system design discipline — how much of that capacity you actually need to use to get a strong answer. A larger context window gives a system more room to work with, but it does not make the system more efficient. Teams that rely on large windows to absorb bad retrieval or redundant context are paying for space they should not need. The goal is to use the smallest window necessary to produce the right answer, not to fill the largest window available.
+Context window size is a model capability - how much text a model can technically receive and process. Token efficiency is a system design discipline - how much of that capacity you actually need to use to get a strong answer. A larger context window gives a system more room to work with, but it does not make the system more efficient. Teams that rely on large windows to absorb bad retrieval or redundant context are paying for space they should not need. The goal is to use the smallest window necessary to produce the right answer, not to fill the largest window available.
 
 ### What are the limitations of token optimization in enterprise AI?
 
@@ -215,11 +215,11 @@ Token optimization has a floor. Below a certain threshold, removing context star
 
 ### Why does retrieval quality affect token cost so much?
 
-Retrieval quality directly controls how much context reaches the model — which makes it one of the highest-leverage variables in any enterprise AI system. When retrieval is imprecise, the model receives more tokens than it needs: too many documents, poorly scoped chunks, or weakly ranked evidence that contributes nothing to the answer. In retrieval-augmented generation systems specifically, the problem compounds. A RAG pipeline that returns broad similarity matches rather than specific, permission-aware passages forces the model to process noise at every step. Treat retrieval precision as a first-order design constraint, not an afterthought, and token efficiency tends to follow.
+Retrieval quality directly controls how much context reaches the model - which makes it one of the highest-leverage variables in any enterprise AI system. When retrieval is imprecise, the model receives more tokens than it needs: too many documents, poorly scoped chunks, or weakly ranked evidence that contributes nothing to the answer. In retrieval-augmented generation systems specifically, the problem compounds. A RAG pipeline that returns broad similarity matches rather than specific, permission-aware passages forces the model to process noise at every step. Treat retrieval precision as a first-order design constraint, not an afterthought, and token efficiency tends to follow.
 
 ### How does enterprise search differ from standard RAG when it comes to token efficiency?
 
-Many basic RAG implementations rely heavily on similarity-based retrieval, while enterprise search layers in additional signals like permissions, recency, ownership, and cross-system relationships. Those additional signals allow enterprise search to narrow retrieval more precisely — returning fewer, more relevant passages rather than a broad similarity match. For token efficiency, that distinction matters significantly. Glean’s enterprise search is built around those layers, which is why it tends to reduce token waste at the retrieval stage rather than compensating for it downstream with larger prompts or wider context windows.
+Many basic RAG implementations rely heavily on similarity-based retrieval, while enterprise search layers in additional signals like permissions, recency, ownership, and cross-system relationships. Those additional signals allow enterprise search to narrow retrieval more precisely - returning fewer, more relevant passages rather than a broad similarity match. For token efficiency, that distinction matters significantly. Glean’s enterprise search is built around those layers, which is why it tends to reduce token waste at the retrieval stage rather than compensating for it downstream with larger prompts or wider context windows.
 
 ### How does Glean help reduce token waste in enterprise AI systems?
 

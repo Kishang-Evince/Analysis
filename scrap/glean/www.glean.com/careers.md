@@ -43,7 +43,7 @@ Most teams are in the office four days a week and work from home for the remaini
 
 ### Company events
 
-We’re driven and we enjoy the ride — with year-round team events.
+We’re driven and we enjoy the ride - with year-round team events.
 
 ### Flexible PTO
 

@@ -30,13 +30,13 @@
 | UC-05 | Operations, Finance, Program Mgmt | Executives (briefings) |
 | UC-06 | IT Service Desk, HR Shared Services | All employees (self-serve) |
 | UC-07 | Sales, Customer Success, Leadership | Anyone with heavy email load |
-| UC-08 | Quality, Compliance, Credentialing, Revenue Cycle ops | Clinical admin (policy only — not clinical chart) |
+| UC-08 | Quality, Compliance, Credentialing, Revenue Cycle ops | Clinical admin (policy only - not clinical chart) |
 
 ### Perimeter Healthcare relevance
 
 - **High:** UC-02, UC-03, UC-08 (internal policy/SOP/credentialing on Drive+Notion)
 - **Medium:** UC-01, UC-04, UC-06, UC-07
-- **EHR boundary:** No UC assumes Epic/Cerner access — internal knowledge only
+- **EHR boundary:** No UC assumes Epic/Cerner access - internal knowledge only
 
 ### Verification steps / test case
 

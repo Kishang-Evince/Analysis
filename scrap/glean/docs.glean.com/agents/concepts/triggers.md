@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:29:16.648Z"
 ---
 On this page
 
-In Glean Agents, a *trigger* is how you choose what starts an agent and what information it receives up front. Triggers define the experience for people running the agent—whether they type a message, fill in a form, or the agent runs on its own when something changes in a connected system.
+In Glean Agents, a *trigger* is how you choose what starts an agent and what information it receives up front. Triggers define the experience for people running the agent-whether they type a message, fill in a form, or the agent runs on its own when something changes in a connected system.
 
 ### Chat message trigger[​](#chat-message-trigger "Direct link to Chat message trigger")
 

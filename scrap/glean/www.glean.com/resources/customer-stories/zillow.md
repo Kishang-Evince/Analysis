@@ -43,7 +43,7 @@ across 7,000 employees
 
 Glean agents
 
-created within 6 weeks of launch—over 3,400 created in total
+created within 6 weeks of launch-over 3,400 created in total
 
 1.5+
 
@@ -57,13 +57,13 @@ Zillow is the leading residential real estate app in the U.S., providing million
 
 ‍
 
-By modernizing the real estate experience for everyone for over 20 years, Zillow has provided seamless solutions integrated within a centralized ecosystem—creating a better experience for renters, buyers, and sellers alike.
+By modernizing the real estate experience for everyone for over 20 years, Zillow has provided seamless solutions integrated within a centralized ecosystem-creating a better experience for renters, buyers, and sellers alike.
 
 ## Before Glean
 
 During Zillow's permanent shift to remote work early in the pandemic, working digitally through video conferencing, online authoring, and cloud data sharing created significant discoverability challenges. With information constantly scattered across multiple applications and workers, and without the informal office connections that previously facilitated knowledge sharing, employees struggled to find what they needed.
 
-Zillow needed a platform to unify its fragmented data landscape through better discoverability. They required a solution that provided a connected, single source of information that cut across silos and delivered relevant answers—for both search and AI—all across their vast, fast-moving real estate platform.
+Zillow needed a platform to unify its fragmented data landscape through better discoverability. They required a solution that provided a connected, single source of information that cut across silos and delivered relevant answers-for both search and AI-all across their vast, fast-moving real estate platform.
 
 **That’s why they chose Glean.**
 
@@ -107,9 +107,9 @@ Glean enables onboarding employees at Zillow to easily navigate new environments
 
 ‍
 
-New hires at Zillow are able to quickly deliver great customer experiences by leveraging Glean to research meeting participants, understand project context, and prepare for scheduled interactions—processes that previously required meetings, hallway conversations, and hours of search.
+New hires at Zillow are able to quickly deliver great customer experiences by leveraging Glean to research meeting participants, understand project context, and prepare for scheduled interactions-processes that previously required meetings, hallway conversations, and hours of search.
 
-Glean plays a critical role in uniting a distributed workforce here at Zillow. Best of all, it goes beyond just enterprise search—it’s a solution that fully lets us leverage all our data through the latest AI models. With an 80% adoption rate of Glean, it’s helping everyone work closer together than ever before.
+Glean plays a critical role in uniting a distributed workforce here at Zillow. Best of all, it goes beyond just enterprise search-it’s a solution that fully lets us leverage all our data through the latest AI models. With an 80% adoption rate of Glean, it’s helping everyone work closer together than ever before.
 
 Toby Roberts
 

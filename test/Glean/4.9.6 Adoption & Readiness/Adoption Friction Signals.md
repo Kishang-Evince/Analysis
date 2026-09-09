@@ -1,4 +1,4 @@
-# Field 2 — Adoption Friction Signals
+# Field 2 - Adoption Friction Signals
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Adoption Friction Signals.md](../../../Glean/Combined/4.9.6 Adoption & Readiness/Adoption Friction Signals.md)
@@ -20,6 +20,6 @@
 | A (extension) | Yes | | |
 | B (SSO only) | No | | |
 
-Submit one Assistant downvote — track admin notification + Assistant Insights downvote rate.
+Submit one Assistant downvote - track admin notification + Assistant Insights downvote rate.
 
 ---

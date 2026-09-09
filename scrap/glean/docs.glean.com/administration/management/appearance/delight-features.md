@@ -15,4 +15,4 @@ Delight features are turned on by default. If your organization prefers, admins 
 
 Delight features currently include:
 
--   **Celebrations and seasonal moments** — festive visuals that appear during holidays or special occasions.
+-   **Celebrations and seasonal moments** - festive visuals that appear during holidays or special occasions.

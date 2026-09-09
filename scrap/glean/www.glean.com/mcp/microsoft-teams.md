@@ -33,7 +33,7 @@ Get a complete view of your work by unifying Teams data with other workplace too
 
 ### Help new hires build AI skills from day one.
 
-Predefined prompts give new employees a simple, approachable way to start using generative AI — so it quickly becomes part of their everyday workflow.
+Predefined prompts give new employees a simple, approachable way to start using generative AI - so it quickly becomes part of their everyday workflow.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691d6476a20bf224ec716f86_Search%20company%20knowledge%20without%20leaving%20Teams..webp)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691d647522e5ae2a1297bde6_Help%20new%20hires%20build%20AI%20skills%20from%20day%20one..webp)![zig-zag section dotted bg](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/686d698e445d7f90e5868c09_zig-zag%20section%20dotted%20bg.svg)
 
@@ -45,7 +45,7 @@ Get a complete view of your work by unifying Teams data with other workplace too
 
 Help new hires build AI skills from day one.
 
-Predefined prompts give new employees a simple, approachable way to start using generative AI — so it quickly becomes part of their everyday workflow.
+Predefined prompts give new employees a simple, approachable way to start using generative AI - so it quickly becomes part of their everyday workflow.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691d647425847f4c7407543c_m-Help%20new%20hires%20build%20AI%20skills%20from%20day%20one..webp)
 

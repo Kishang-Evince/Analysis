@@ -13,10 +13,10 @@ This section covers setup requirements, permissions, and configuration for the V
 
 Have these in place before you configure the connector:
 
--   **Native Mode** — your Viva Engage instance must be running in [Native Mode](https://learn.microsoft.com/en-us/viva/engage/native-mode-guide). On-premises variants are not supported.
--   **A Verified Administrator account** — you need a [Viva Engage Verified Administrator](https://learn.microsoft.com/en-us/viva/engage/eac-key-admin-roles-permissions#verified-administrator) account, with permission to register applications in Microsoft Entra ID.
--   **An Azure AD app registration** — you'll register an app and obtain its client secret, application (client) ID, and directory (tenant) ID during setup.
--   **Delegated permissions** — the connector uses OAuth 2.0 delegated authentication. See [Required permissions](#required-permissions) for the exact scopes to grant.
+-   **Native Mode** - your Viva Engage instance must be running in [Native Mode](https://learn.microsoft.com/en-us/viva/engage/native-mode-guide). On-premises variants are not supported.
+-   **A Verified Administrator account** - you need a [Viva Engage Verified Administrator](https://learn.microsoft.com/en-us/viva/engage/eac-key-admin-roles-permissions#verified-administrator) account, with permission to register applications in Microsoft Entra ID.
+-   **An Azure AD app registration** - you'll register an app and obtain its client secret, application (client) ID, and directory (tenant) ID during setup.
+-   **Delegated permissions** - the connector uses OAuth 2.0 delegated authentication. See [Required permissions](#required-permissions) for the exact scopes to grant.
 
 ## Required permissions[​](#required-permissions "Direct link to Required permissions")
 
@@ -112,6 +112,6 @@ Upon successful authorization, Glean begins the initial crawl.
 
 ## Permissions and security[​](#permissions-and-security "Direct link to Permissions and security")
 
--   **Permission propagation.** The connector honors Viva Engage's permission model — community membership determines access, and users only see messages from communities they belong to.
+-   **Permission propagation.** The connector honors Viva Engage's permission model - community membership determines access, and users only see messages from communities they belong to.
 -   **Privileges.** The connector uses OAuth 2.0 delegated authentication and requests only the scopes it needs.
 -   **Data privacy.** Glean extracts data within your cloud environment, and all indexed data respects source-system permissions.

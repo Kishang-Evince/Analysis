@@ -2,7 +2,7 @@
 url: "https://developers.glean.com/api/platform-api/platform-triggers-events-search"
 canonical: "https://developers.glean.com/api/platform-api/platform-triggers-events-search"
 title: "Search events for a trigger | Glean Developer"
-description: "Search recent content events an existing trigger matches. Read-only — no webhook delivery is made. Covers the last seven days."
+description: "Search recent content events an existing trigger matches. Read-only - no webhook delivery is made. Covers the last seven days."
 fetched_at: "2026-09-01T13:22:58.926Z"
 ---
 # Search events for a trigger
@@ -15,7 +15,7 @@ experimental
 
 Expect changes and instability. Introduced on August 7, 2026. [Learn how experimental APIs work](/experimental/overview).
 
-Search recent content events an existing trigger matches. Read-only — no webhook delivery is made. Covers the last seven days.
+Search recent content events an existing trigger matches. Read-only - no webhook delivery is made. Covers the last seven days.
 
 ## Request[​](#request "Direct link to request")
 

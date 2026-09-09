@@ -63,7 +63,7 @@ Share this article:
 
 # How AI unifies advising, analytics, and engagement for student success
 
-Higher education institutions collect vast amounts of student data across multiple systems, yet most struggle to transform this information into actionable insights that improve outcomes. The disconnect between academic records, engagement metrics, and support services creates blind spots where at-risk students fall through the cracks — often discovered too late for meaningful intervention.
+Higher education institutions collect vast amounts of student data across multiple systems, yet most struggle to transform this information into actionable insights that improve outcomes. The disconnect between academic records, engagement metrics, and support services creates blind spots where at-risk students fall through the cracks - often discovered too late for meaningful intervention.
 
 Traditional approaches to student success rely on fragmented tools and reactive measures: advisors work from incomplete pictures, analytics remain trapped in departmental silos, and engagement efforts lack the personalization today's students expect. This fragmentation costs institutions millions in lost tuition revenue while failing the very students who need support most.
 
@@ -71,9 +71,9 @@ The convergence of artificial intelligence, cloud computing, and integrated data
 
 ## What is the student success layer?
 
-The student success layer represents a fundamental shift in how educational institutions approach student support — moving from isolated interventions to an interconnected ecosystem powered by artificial intelligence. At its core, this framework creates a unified data environment where information flows seamlessly between academic systems, support services, and engagement platforms, eliminating the traditional barriers that have long plagued higher education.
+The student success layer represents a fundamental shift in how educational institutions approach student support - moving from isolated interventions to an interconnected ecosystem powered by artificial intelligence. At its core, this framework creates a unified data environment where information flows seamlessly between academic systems, support services, and engagement platforms, eliminating the traditional barriers that have long plagued higher education.
 
-Unlike conventional approaches that treat advising, analytics, and engagement as separate functions, the student success layer acts as connective tissue that binds these critical components together. This integration enables institutions to maintain a comprehensive, real-time view of each student's academic journey, behavioral patterns, and support needs. When a student misses multiple classes, struggles with coursework, or disengages from campus activities, the system immediately recognizes these warning signs across all touchpoints — not just within individual departments.
+Unlike conventional approaches that treat advising, analytics, and engagement as separate functions, the student success layer acts as connective tissue that binds these critical components together. This integration enables institutions to maintain a comprehensive, real-time view of each student's academic journey, behavioral patterns, and support needs. When a student misses multiple classes, struggles with coursework, or disengages from campus activities, the system immediately recognizes these warning signs across all touchpoints - not just within individual departments.
 
 ### Key components of the student success layer
 
@@ -83,12 +83,12 @@ The architecture of an effective student success layer rests on three foundation
     
 -   **AI-powered intelligence engine**: Machine learning algorithms that continuously analyze student data to identify patterns, predict outcomes, and generate actionable insights. These models adapt to each institution's unique student population and success factors, becoming more accurate over time.
     
--   Integrated intervention framework: Automated workflows that trigger appropriate support mechanisms based on AI insights — from personalized nudges to students to alerts for advisors when human intervention is needed. Oklahoma State University's randomized controlled [trial](https://www.insidehighered.com/news/students/retention/2025/01/22/research-shows-academic-alerts-impact-grades-withdrawals) found that students receiving academic alerts were 30% less likely to withdraw from courses and 4% more likely to receive grades higher than C compared to control groups. The alerts were most effective when they included specific information about the concern, why it mattered, and concrete steps the student could take. This ensures timely, coordinated responses across all support services.
+-   Integrated intervention framework: Automated workflows that trigger appropriate support mechanisms based on AI insights - from personalized nudges to students to alerts for advisors when human intervention is needed. Oklahoma State University's randomized controlled [trial](https://www.insidehighered.com/news/students/retention/2025/01/22/research-shows-academic-alerts-impact-grades-withdrawals) found that students receiving academic alerts were 30% less likely to withdraw from courses and 4% more likely to receive grades higher than C compared to control groups. The alerts were most effective when they included specific information about the concern, why it mattered, and concrete steps the student could take. This ensures timely, coordinated responses across all support services.
     
 
 ### Breaking down institutional silos
 
-Traditional higher education structures often create information silos where valuable data remains trapped within individual departments. The registrar's office holds enrollment data, academic departments track grades and attendance, student affairs monitors engagement activities, and financial aid manages economic indicators — yet these systems rarely communicate effectively.
+Traditional higher education structures often create information silos where valuable data remains trapped within individual departments. The registrar's office holds enrollment data, academic departments track grades and attendance, student affairs monitors engagement activities, and financial aid manages economic indicators - yet these systems rarely communicate effectively.
 
 The student success layer dissolves these boundaries through sophisticated [API integrations](https://www.glean.com/blog/open-agent-platform) and data standardization protocols. When implemented effectively, it enables scenarios where:
 
@@ -121,7 +121,7 @@ Through continuous monitoring of academic and engagement metrics, institutions g
 
 ### Proactive strategies and targeted interventions
 
-AI offers innovative ways to enhance student engagement by delivering personalized experiences tailored to individual needs. By analyzing behaviors and preferences, AI crafts targeted messaging that resonates with students. For example, students with zero engagement touchpoints during Fall 2023 had a 78% retention rate to Fall 2024, while those with four or more engagements had a 92% retention rate—a 14 percentage point differential. At the University of Essex, systematic [engagement analytics](https://www.campusmind.org/student-engagement-analytics-participation-data-retention/) reduced withdrawal rates from 88% to 20% for students identified as having low engagement at week six. This approach fosters a deeper connection, making the educational journey more engaging.
+AI offers innovative ways to enhance student engagement by delivering personalized experiences tailored to individual needs. By analyzing behaviors and preferences, AI crafts targeted messaging that resonates with students. For example, students with zero engagement touchpoints during Fall 2023 had a 78% retention rate to Fall 2024, while those with four or more engagements had a 92% retention rate-a 14 percentage point differential. At the University of Essex, systematic [engagement analytics](https://www.campusmind.org/student-engagement-analytics-participation-data-retention/) reduced withdrawal rates from 88% to 20% for students identified as having low engagement at week six. This approach fosters a deeper connection, making the educational journey more engaging.
 
 ## Creating meaningful student engagement through AI
 
@@ -133,7 +133,7 @@ Advanced AI systems generate bespoke content, ensuring that each message aligns 
 
 ### Integrated multi-channel approach
 
-Engaging students requires reaching them on their preferred platforms. AI seamlessly coordinates outreach across multiple channels — including email, text, and app notifications — to ensure consistent and effective communication. This strategy enhances the overall student experience by providing timely and relevant touchpoints.
+Engaging students requires reaching them on their preferred platforms. AI seamlessly coordinates outreach across multiple channels - including email, text, and app notifications - to ensure consistent and effective communication. This strategy enhances the overall student experience by providing timely and relevant touchpoints.
 
 ## Implementation strategies for institutions
 

@@ -2,12 +2,12 @@
 url: "https://docs.glean.com/user-guide/assistant/query-databricks-data-in-glean-assistant"
 canonical: "https://docs.glean.com/user-guide/assistant/query-databricks-data-in-glean-assistant"
 title: "Query Databricks data in Glean Assistant"
-description: "Ask natural-language questions about your Databricks data in Assistant — Glean routes to the best Genie space and returns results in Assistant."
+description: "Ask natural-language questions about your Databricks data in Assistant - Glean routes to the best Genie space and returns results in Assistant."
 fetched_at: "2026-09-01T13:30:39.373Z"
 ---
 On this page
 
-Glean Assistant lets you query your Databricks data by asking natural-language questions directly in Assistant. When you ask a data question, Assistant automatically identifies the most relevant Databricks Genie space and sends your question to it. You get results — including tables and charts — without leaving Glean or writing SQL.
+Glean Assistant lets you query your Databricks data by asking natural-language questions directly in Assistant. When you ask a data question, Assistant automatically identifies the most relevant Databricks Genie space and sends your question to it. You get results - including tables and charts - without leaving Glean or writing SQL.
 
 Your organization controls which Databricks Genie spaces are available. All queries run with your own Databricks permissions, so you only see data you're authorized to access.
 
@@ -30,7 +30,7 @@ Example prompts:
 -   "Show the top 10 customers by usage growth this month."
 -   "Which product categories had the highest sales last week?"
 
-Assistant uses indexed Genie space metadata — including descriptions, sample questions, and table information — to match your question to the right space. Adding context like metric names, dimensions, or time ranges helps Assistant find the best match.
+Assistant uses indexed Genie space metadata - including descriptions, sample questions, and table information - to match your question to the right space. Adding context like metric names, dimensions, or time ranges helps Assistant find the best match.
 
 ### Run SQL queries directly[​](#run-sql-queries-directly "Direct link to Run SQL queries directly")
 
@@ -67,4 +67,4 @@ Databricks support in Assistant is a new feature. Even if your organization uses
 
 ### Assistant used the wrong Genie space
 
-Assistant selects a Genie space based on indexed metadata. Adding more detail to your question — such as specific metric names or dataset references — helps Assistant choose the right space.
+Assistant selects a Genie space based on indexed metadata. Adding more detail to your question - such as specific metric names or dataset references - helps Assistant choose the right space.

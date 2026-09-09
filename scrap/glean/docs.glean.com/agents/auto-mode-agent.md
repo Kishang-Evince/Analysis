@@ -120,7 +120,7 @@ After Builder Assistant creates a first draft, review the agent configuration in
 
 ### Instructions[​](#instructions "Direct link to Instructions")
 
-Use the **Instructions** tab to define how the agent should behave. The instructions editor is a markdown-first surface, so you can structure guidance with headings, lists, and emphasis. Instead of filling in rigid fields, write instructions the way you would write an SOP or operating guide for a teammate — for example, `# Goal`, `## Rules`, and `1. Check the request`.
+Use the **Instructions** tab to define how the agent should behave. The instructions editor is a markdown-first surface, so you can structure guidance with headings, lists, and emphasis. Instead of filling in rigid fields, write instructions the way you would write an SOP or operating guide for a teammate - for example, `# Goal`, `## Rules`, and `1. Check the request`.
 
 In most cases, the best instructions explain:
 

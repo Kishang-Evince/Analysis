@@ -32,7 +32,7 @@ With Code Search, Glean gives answers with code context and uses its understandi
 
 Code Search protects private repositories as it inherits the same security model as your code connectors.
 
-Glean respects your privacy and operates with high security guardrails so processing stays within your environment. **All data is stored in your cloud project—no data leaves your environment.** Glean also enforces user access permissions at query time, ensuring users only see data they are authorized to view.
+Glean respects your privacy and operates with high security guardrails so processing stays within your environment. **All data is stored in your cloud project-no data leaves your environment.** Glean also enforces user access permissions at query time, ensuring users only see data they are authorized to view.
 
 ## Usage examples[​](#usage-examples "Direct link to Usage examples")
 

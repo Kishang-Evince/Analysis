@@ -67,7 +67,7 @@ Operations teams face mounting pressure to track performance metrics across incr
 
 The shift toward AI-powered monitoring represents a fundamental change in how organizations approach performance management. By automating data collection, analysis, and alerting, AI transforms KPI tracking from a reactive process into a proactive strategic advantage that drives operational excellence.
 
-Forward-thinking enterprises recognize that real-time visibility into operational metrics is no longer optional — it's essential for maintaining competitive advantage. Inaccurate forecasting drives [$1.7 trillion](https://stockiqtech.com/blog/demand-forecasting-in-the-supply-chain/) in unnecessary stockouts and overstocking annually across global supply chains. AI makes this continuous monitoring both feasible and scalable, enabling teams to identify trends, predict issues, and optimize performance before problems impact business outcomes.
+Forward-thinking enterprises recognize that real-time visibility into operational metrics is no longer optional - it's essential for maintaining competitive advantage. Inaccurate forecasting drives [$1.7 trillion](https://stockiqtech.com/blog/demand-forecasting-in-the-supply-chain/) in unnecessary stockouts and overstocking annually across global supply chains. AI makes this continuous monitoring both feasible and scalable, enabling teams to identify trends, predict issues, and optimize performance before problems impact business outcomes.
 
 ## What is real-time KPI monitoring with AI?
 
@@ -147,7 +147,7 @@ Promote an environment where departments collaborate to integrate AI into daily 
 
 Stay proactive in understanding the evolving AI landscape. Engage with industry developments and leverage new tools to enhance KPI monitoring capabilities. Continuous learning ensures that your organization remains adaptable and ready to implement the latest advancements effectively.
 
-The journey to implementing AI-powered KPI monitoring doesn't have to be overwhelming — with the right approach and tools, operations teams can transform how they track, analyze, and act on performance data. By starting with targeted initiatives and building a foundation of reliable data practices, you'll create a system that delivers continuous insights and drives meaningful improvements across your organization.
+The journey to implementing AI-powered KPI monitoring doesn't have to be overwhelming - with the right approach and tools, operations teams can transform how they track, analyze, and act on performance data. By starting with targeted initiatives and building a foundation of reliable data practices, you'll create a system that delivers continuous insights and drives meaningful improvements across your organization.
 
 Ready to see how AI can revolutionize your operational monitoring? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo), and let us show you how we can help your team achieve real-time visibility into the metrics that matter most.
 

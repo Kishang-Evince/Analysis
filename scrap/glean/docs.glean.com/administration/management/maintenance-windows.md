@@ -29,7 +29,7 @@ The rest of this section applies only if your organization uses a custom Slack a
 
 If you access Glean in Slack through the Glean-managed Marketplace app, Glean handles **Event Subscriptions** for you and no admin action is needed after maintenance.
 
-Slack monitors event delivery to each app and automatically disables an app's **Event Subscriptions** when the delivery success rate stays below its [failure limit](https://docs.slack.dev/apis/events-api/#failure-limits). If a maintenance event causes enough failed deliveries, Slack can disable **Event Subscriptions** for your custom Glean app. When this happens, Slack emails the app's creator and owner, and Glean in Slack does not resume automatically after maintenance ends—a Slack admin must re-enable **Event Subscriptions** before Glean responds again.
+Slack monitors event delivery to each app and automatically disables an app's **Event Subscriptions** when the delivery success rate stays below its [failure limit](https://docs.slack.dev/apis/events-api/#failure-limits). If a maintenance event causes enough failed deliveries, Slack can disable **Event Subscriptions** for your custom Glean app. When this happens, Slack emails the app's creator and owner, and Glean in Slack does not resume automatically after maintenance ends-a Slack admin must re-enable **Event Subscriptions** before Glean responds again.
 
 #### Re-enable Glean in Slack after maintenance[​](#re-enable-glean-in-slack-after-maintenance "Direct link to Re-enable Glean in Slack after maintenance")
 

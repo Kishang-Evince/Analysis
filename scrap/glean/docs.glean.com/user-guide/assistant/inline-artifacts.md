@@ -24,7 +24,7 @@ If you don't see interactive widgets inline with your responses:
 
 ## How inline artifacts work[​](#how-inline-artifacts-work "Direct link to How inline artifacts work")
 
-Inline artifacts appear when you ask for a chart or a diagram — you don't need to switch modes or use a special command. Request the visual and Glean renders it directly in the response.
+Inline artifacts appear when you ask for a chart or a diagram - you don't need to switch modes or use a special command. Request the visual and Glean renders it directly in the response.
 
 1
 

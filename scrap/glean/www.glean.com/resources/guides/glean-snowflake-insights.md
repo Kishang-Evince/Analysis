@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/glean-snowflake-insights"
 canonical: "https://www.glean.com/resources/guides/glean-snowflake-insights"
 title: "Get instant answers across Snowflake and all your business tools, no expertise required"
-description: "Discover how Glean and Snowflake empower enterprises with secure, real-time access to structured and unstructured data—unlocking insights, visualizations, and faster decisions."
+description: "Discover how Glean and Snowflake empower enterprises with secure, real-time access to structured and unstructured data-unlocking insights, visualizations, and faster decisions."
 fetched_at: "2026-09-01T13:27:08.533Z"
 ---
 ## Work AI that works.

@@ -91,9 +91,9 @@ Together, Glean and Databricks integrate data and decisions into one AI experien
 
 Most organizations have already done the hard work of becoming data-driven. They've standardized on platforms such as Databricks, built governed pipelines, and invested in dashboards, models, and analytic workflows that the business depends on every day.
 
-But for most employees, getting from question to insight is still harder than it should be. Answering a routine question often requires SQL, the right dashboard, or a request to an already-stretched team. And when the answer arrives, the context around it — the rollout plan, the customer call, the support thread, the prior commitment — lives somewhere else entirely.
+But for most employees, getting from question to insight is still harder than it should be. Answering a routine question often requires SQL, the right dashboard, or a request to an already-stretched team. And when the answer arrives, the context around it - the rollout plan, the customer call, the support thread, the prior commitment - lives somewhere else entirely.
 
-That’s where Glean and Databricks comes in — helping teams bring together the numbers and the narratives needed to scale decisions and actions in the AI era. 
+That’s where Glean and Databricks comes in - helping teams bring together the numbers and the narratives needed to scale decisions and actions in the AI era. 
 
 ## Where governed data meets enterprise context
 

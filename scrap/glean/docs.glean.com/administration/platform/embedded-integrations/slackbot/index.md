@@ -80,11 +80,11 @@ Configure and manage these features for your organization.
 Gleanbot supports standard Slack workspaces and Slack Enterprise Grid organizations. For Slack RTS deployments, Glean in Slack uses both the Slack connector and the Slack RTS connector.
 
 -   **Slack connector:** Provides engagement signals and proactive experiences.
--   **Slack RTS connector:** A federated connector that retrieves live Slack messages at query time using Slack's Real-Time Search APIs. It does not index message content — results are fetched and processed in memory at the time of each search.
+-   **Slack RTS connector:** A federated connector that retrieves live Slack messages at query time using Slack's Real-Time Search APIs. It does not index message content - results are fetched and processed in memory at the time of each search.
 
 note
 
-Glean uses two separate Slack apps when RTS is enabled — one for Real-Time Search and one for personalization (engagement signals and proactive answers in channels where the bot isn't present). Both must be authorized by each user.
+Glean uses two separate Slack apps when RTS is enabled - one for Real-Time Search and one for personalization (engagement signals and proactive answers in channels where the bot isn't present). Both must be authorized by each user.
 
 For setup, migration, and detailed RTS behavior, refer to the [Slack connector documentation](/connectors/native/slack/) and [Slack connector changes: Gleanbot impacts and FAQ](/connectors/native/slack/about/gleanbot-impacts/).
 

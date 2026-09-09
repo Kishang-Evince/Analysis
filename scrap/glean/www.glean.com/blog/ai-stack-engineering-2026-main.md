@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/ai-stack-engineering-2026-main"
 canonical: "https://www.glean.com/blog/ai-stack-engineering-2026-main"
 title: "Why the AI stack for modern engineering teams requires both coding and context"
-description: "Melissa Albanes  | Bringing together the layer that understands the work with the layer that does the work is key to generating better code, faster—but it needs the right infrastructure to make it work."
+description: "Melissa Albanes  | Bringing together the layer that understands the work with the layer that does the work is key to generating better code, faster-but it needs the right infrastructure to make it work."
 fetched_at: "2026-09-01T13:26:28.356Z"
 ---
 Last updated Apr 16, 2026.
@@ -83,9 +83,9 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-As AI becomes a fundamental component of software engineering workflows, the way engineers work is shifting. With tools like GitHub Copilot now writing [half](https://medium.com/@reliabledataengineering/ai-is-writing-46-of-all-code-github-copilots-real-impact-on-15-million-developers-787d789fcfdc) of the average developer's code, raw coding output has become less important than ensuring that developers have the right information to move forward. Chasing context across GitHub, Jira, incident tools, wikis, logs, and Slack has become the real drag on productivity. It's also becoming increasingly clear that an open, composable, model-agnostic platform that can plug and play multiple assistants and agents is a necessity in today's landscape—filled with ever-evolving models, new and better tools, and changing preferences that vary by organization. 
+As AI becomes a fundamental component of software engineering workflows, the way engineers work is shifting. With tools like GitHub Copilot now writing [half](https://medium.com/@reliabledataengineering/ai-is-writing-46-of-all-code-github-copilots-real-impact-on-15-million-developers-787d789fcfdc) of the average developer's code, raw coding output has become less important than ensuring that developers have the right information to move forward. Chasing context across GitHub, Jira, incident tools, wikis, logs, and Slack has become the real drag on productivity. It's also becoming increasingly clear that an open, composable, model-agnostic platform that can plug and play multiple assistants and agents is a necessity in today's landscape-filled with ever-evolving models, new and better tools, and changing preferences that vary by organization. 
 
-These shifts have also led to more distributed systems, causing further incidents and security risks across each new surface. Combined with higher product expectations in an increasingly competitive market, along with the pressure to adopt more AI tools and workflows, most organizations are realizing that the bottleneck is no longer whether they have AI in the IDE—it’s whether their systems themselves can successfully support broad AI integration. It’ll require the right tooling stack capable of assembling the right context, guardrails, and workflows around code to ensure AI output is correct, safe, and aligned with the right architecture.
+These shifts have also led to more distributed systems, causing further incidents and security risks across each new surface. Combined with higher product expectations in an increasingly competitive market, along with the pressure to adopt more AI tools and workflows, most organizations are realizing that the bottleneck is no longer whether they have AI in the IDE-it’s whether their systems themselves can successfully support broad AI integration. It’ll require the right tooling stack capable of assembling the right context, guardrails, and workflows around code to ensure AI output is correct, safe, and aligned with the right architecture.
 
 ## Tackling pressures with the right tooling
 
@@ -101,7 +101,7 @@ Most engineering teams are building a portfolio with tools that fall into four b
     
 -   **General-purpose AI platforms and agent frameworks**: These tools include hosted LLMs and model hubs, agent building frameworks, orchestration runtimes, and no-code builders for internal assistants and workflows. They help teams centralize, monitor, and manage AI deployment usage. 
 
-All four of these categories are essential components of an engineer's AI toolkit. Most engineering teams will need elements of each—ideally combined into and supported by a shared, trusted layer that unifies enterprise context, governance, and architecture. 
+All four of these categories are essential components of an engineer's AI toolkit. Most engineering teams will need elements of each-ideally combined into and supported by a shared, trusted layer that unifies enterprise context, governance, and architecture. 
 
 ### The two-layer model: Bringing context & coding surfaces together
 
@@ -114,19 +114,19 @@ Across all the tools in the stack, two distinct sets emerge. The first set of to
 
 They're powerful tools that power productivity through automation and new workflows, but can't access existing enterprise context in isolation. 
 
-The other set focuses on **understanding the work**. They pull together code, tickets, incidents, docs, logs, and people into a coherent picture. This layer indexes and provides information across teams and repos, details like incidents, tickets, and design docs tied to changes, system ownership information, and more. They form the foundational context layer—a shared, trusted view of your engineering environment that the coding layer relies on to provide better, context-rich results for enterprise work. 
+The other set focuses on **understanding the work**. They pull together code, tickets, incidents, docs, logs, and people into a coherent picture. This layer indexes and provides information across teams and repos, details like incidents, tickets, and design docs tied to changes, system ownership information, and more. They form the foundational context layer-a shared, trusted view of your engineering environment that the coding layer relies on to provide better, context-rich results for enterprise work. 
 
 Layering guardrails and permissioning rules directly into the context layer enables the tools that understand your work to also understand the security and privacy policies your organization needs. This makes it possible to apply these policies at the foundational level when using a full AI tooling stack, which is essential to building trust and confidence in the AI tools engineering teams use daily. 
 
 ### Enterprise work requires a secure, open platform with deep context 
 
-Building an AI stack fit for today’s engineering needs requires a two-layer model—with a foundational context surface that also ensures compliance with security policies, and an open environment that enables long-term scalability and flexibility. For teams looking to move beyond simply increasing the AI footprint in the IDE to building a system that truly supports broader scalability, it's essential to keep these three trends in mind as they do so: 
+Building an AI stack fit for today’s engineering needs requires a two-layer model-with a foundational context surface that also ensures compliance with security policies, and an open environment that enables long-term scalability and flexibility. For teams looking to move beyond simply increasing the AI footprint in the IDE to building a system that truly supports broader scalability, it's essential to keep these three trends in mind as they do so: 
 
 -   **AI is moving from experiments to infrastructure:** Teams that standardize on a context layer and a small number of well-understood workflows will move faster than those running disconnected pilots in individual tools.
 -   **Strong stacks blend tools, not vendors:** Coding assistants, observability AI, and enterprise context platforms solve different problems. The winning pattern is a portfolio wired around shared context and governance, not a bet on a single product doing everything.
 -   **Security, governance, and explainability are now table stakes:** Where AI runs, what it can see, how it’s audited, and whether engineers can see *why* it gave a particular answer will matter as much as raw model quality.
 
-Learn more about what it takes to build your own two-layer model and what capabilities a complete context layer needs to have in our latest [guide](https://www.glean.com/resources/guides/eng-field-guide-ai-stack)—and sign up for a free Glean [demo](https://www.glean.com/get-a-demo) today.
+Learn more about what it takes to build your own two-layer model and what capabilities a complete context layer needs to have in our latest [guide](https://www.glean.com/resources/guides/eng-field-guide-ai-stack)-and sign up for a free Glean [demo](https://www.glean.com/get-a-demo) today.
 
 [
 

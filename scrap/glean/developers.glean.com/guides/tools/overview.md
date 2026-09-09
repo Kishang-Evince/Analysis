@@ -9,7 +9,7 @@ On this page
 
 info
 
-Tools were formerly called **Actions** — older material and URLs may still use that name.
+Tools were formerly called **Actions** - older material and URLs may still use that name.
 
 Tools can supercharge your Glean Chat and help automate a lot of your work!
 

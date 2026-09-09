@@ -91,7 +91,7 @@ That’s why, alongside the launch of [Glean Apps, Actions](https://www.glean.co
 
 Our multi-LLM approach ensures simplicity and speed of implementation while retaining product quality and customer security. That’s because all models work through Glean, which ensures security by design. Glean was built to follow modern security principles and beyond, including the zero trust security model, strong authentication practices, the principle of least privilege, and the shift-left approach to incorporating security into design, development, and operations. 
 
-Furthermore, users not only get their choice of model, but additional deployment options that enable data to remain within the customer’s cloud provider of choice. Regardless of what models emerge, and which you choose for work, results will always be grounded in Glean’s strict security framework and user-friendly options. Get started with the most comprehensive and secure generative AI platform for work—sign up for a [demo](https://www.glean.com/get-a-demo) today!
+Furthermore, users not only get their choice of model, but additional deployment options that enable data to remain within the customer’s cloud provider of choice. Regardless of what models emerge, and which you choose for work, results will always be grounded in Glean’s strict security framework and user-friendly options. Get started with the most comprehensive and secure generative AI platform for work-sign up for a [demo](https://www.glean.com/get-a-demo) today!
 
 [
 

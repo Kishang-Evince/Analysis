@@ -15,7 +15,7 @@
 **Field definition:** Verified third-party security audits (SOC 2 Type II, ISO 27001, ISO 42001, etc.).  
 **Prerequisites / Licensing:** Trust Portal NDA access via Glean account team.  
 **Certification claims (Doc-Verified / Vendor-Stated):** SOC 2 Type II, ISO/IEC 27001, ISO/IEC 42001:2023, HIPAA alignment, GDPR, TX-RAMP Level 2.  
-**Reports obtained (Pending Sandbox):** _TBD — download from trust.glean.com_  
+**Reports obtained (Pending Sandbox):** _TBD - download from trust.glean.com_  
 **Confidence Level:** **Vendor-Stated** (claims) · **Pending Sandbox** (report scope validation)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [Glean legal / certifications](https://www.glean.com/legal) · [Security index](https://docs.glean.com/security/) · [Protect overview](https://docs.glean.com/administration/protect/overview) · [Agent Sandbox PTC](https://docs.glean.com/security/agent-sandbox-ptc) · [Trust Portal](https://trust.glean.com)
@@ -33,7 +33,7 @@
 
 ### Engineering observation (Doc-Verified)
 
-- Product docs direct customers to **trust.glean.com** for SOC 2 reports and certifications — not embedded in scrap.
+- Product docs direct customers to **trust.glean.com** for SOC 2 reports and certifications - not embedded in scrap.
 - Agent Sandbox PTC lists compliance bundle: SOC 2, ISO 27001, ISO 42001, HIPAA, GDPR, TX-RAMP Level 2.
 - **Validate scope** covers your deployment model (Glean Hosted vs Customer Hosted) and connected apps in audit period.
 

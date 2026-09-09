@@ -29,7 +29,7 @@ Data analytics *FR-3195*
 
 #### Voice-to-text support is available for Glean mobile users on Android[​](#voice-to-text-support-is-available-for-glean-mobile-users-on-android "Direct link to Voice-to-text support is available for Glean mobile users on Android")
 
-Go hands-free with voice-to-text support for Android devices. The new speech-to-text feature lets you dictate questions and messages—no typing is required.
+Go hands-free with voice-to-text support for Android devices. The new speech-to-text feature lets you dictate questions and messages-no typing is required.
 
 Mobile *FR-3186*
 

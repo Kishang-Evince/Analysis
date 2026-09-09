@@ -9,8 +9,8 @@ On this page
 
 Glean handles content deletion through two primary mechanisms, depending on the capabilities of the source application:
 
--   **API and webhook deletion** — for sources that send deletion notifications through APIs or webhooks.
--   **Full crawl cleanup** — for sources without deletion notifications, or when a notification is missed.
+-   **API and webhook deletion** - for sources that send deletion notifications through APIs or webhooks.
+-   **Full crawl cleanup** - for sources without deletion notifications, or when a notification is missed.
 
 ## API and webhook deletion[​](#api-and-webhook-deletion "Direct link to API and webhook deletion")
 

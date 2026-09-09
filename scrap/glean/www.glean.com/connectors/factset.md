@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:45.240Z"
 ---
 ### Overview
 
-FactSet delivers financial data, market analytics, and company research to investment professionals across asset management, banking, and corporate strategy. With the FactSet connector in Glean, teams can query licensed financial intelligence directly — bringing market data and company research into the same context as internal knowledge.
+FactSet delivers financial data, market analytics, and company research to investment professionals across asset management, banking, and corporate strategy. With the FactSet connector in Glean, teams can query licensed financial intelligence directly - bringing market data and company research into the same context as internal knowledge.
 
 ### Features
 
@@ -15,7 +15,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-FactSet data is most useful when it's connected to what your team already knows. In Glean, licensed financial intelligence appears next to internal models, account data, and research within a governed workflow — so the full picture is always within reach.
+FactSet data is most useful when it's connected to what your team already knows. In Glean, licensed financial intelligence appears next to internal models, account data, and research within a governed workflow - so the full picture is always within reach.
 
 ## Work AI that works.
 

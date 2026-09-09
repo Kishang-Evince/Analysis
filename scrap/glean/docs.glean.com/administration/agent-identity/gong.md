@@ -29,7 +29,7 @@ Glean handles authentication automatically. The credential is stored encrypted, 
     
     Important
     
-    The **Access Key Secret** is shown only once. Copy it immediately and store it somewhere safe — Gong can't recover it later. If you lose it, you will have to generate a new key pair.
+    The **Access Key Secret** is shown only once. Copy it immediately and store it somewhere safe - Gong can't recover it later. If you lose it, you will have to generate a new key pair.
     
 3.  No additional scope configuration is needed. Gong API keys are workspace-scoped and grant access to all API endpoints available to your Gong account. If your organization also uses Gong's OAuth apps, those follow a separate authorization model with granular scopes. The API-key flow described here does not support scope selection.
     

@@ -85,7 +85,7 @@ Listen to article
 
 # ‍
 
-Enterprise AI chatbots almost always hit the same wall early on. Generic questions work fine. Then a question arrives that depends on last week’s ticket, a Slack thread from three months ago, and a policy doc no one can find — and it falls apart. The model isn’t the problem. The knowledge foundation underneath it is.
+Enterprise AI chatbots almost always hit the same wall early on. Generic questions work fine. Then a question arrives that depends on last week’s ticket, a Slack thread from three months ago, and a policy doc no one can find - and it falls apart. The model isn’t the problem. The knowledge foundation underneath it is.
 
 A real enterprise AI chatbot has to answer with trusted company knowledge, respect permissions, work across systems, and fit into the workflows your teams already use. If it can’t do those things, people will try it once, hit a bad answer or a permissions error, and move on. That loss of trust rarely reverses.
 
@@ -93,7 +93,7 @@ Conversely, when the foundation is right, enterprise chatbots don’t stay chatb
 
 ## **Why enterprise teams need more than a basic AI chatbot**
 
-Consumer-style bots are built for broad questions, but enterprise teams aren’t asking broad questions. They’re asking things like: What changed in this account last week? What’s the history behind this ticket? Which policy applies here? Can you draft a reply based on our internal guidance — and update the system once it’s resolved?
+Consumer-style bots are built for broad questions, but enterprise teams aren’t asking broad questions. They’re asking things like: What changed in this account last week? What’s the history behind this ticket? Which policy applies here? Can you draft a reply based on our internal guidance - and update the system once it’s resolved?
 
 Answering those questions depends on organizational context scattered across docs, chats, tickets, CRM records, drive folders, and knowledge bases. A generic chatbot can’t see that context. And even if you wire a few sources into a simple RAG stack, you still have to solve for permissions, freshness, workflow integration, and evaluation.
 
@@ -105,7 +105,7 @@ Before you think about tooling, it helps to pin down the essential requirements.
 
 ### **Trusted retrieval**
 
-Your chatbot’s answers should come from the systems your teams already use, not from what the model was trained on. This is the core promise of an enterprise RAG chatbot — retrieval-augmented generation that pulls from your actual company systems at query time, ranks results well, and shows citations so users can verify what they’re seeing. A RAG-based approach grounds answers in current, traceable internal knowledge, which makes citations possible and helps reduce hallucinations.
+Your chatbot’s answers should come from the systems your teams already use, not from what the model was trained on. This is the core promise of an enterprise RAG chatbot - retrieval-augmented generation that pulls from your actual company systems at query time, ranks results well, and shows citations so users can verify what they’re seeing. A RAG-based approach grounds answers in current, traceable internal knowledge, which makes citations possible and helps reduce hallucinations.
 
 ### **Permission awareness**
 
@@ -113,15 +113,15 @@ This is non-negotiable. Users should only see what they already have access to i
 
 ### **Multi-tool context**
 
-Most enterprise workflows touch more than one system. A support rep may need ticket history, internal product docs, and Slack context. A salesperson may need CRM records, meeting notes, and recent product updates. An internal help desk bot may need policies, forms, and service tickets. The best enterprise chatbot doesn’t sit inside one app — it sits across the systems where work already takes place.
+Most enterprise workflows touch more than one system. A support rep may need ticket history, internal product docs, and Slack context. A salesperson may need CRM records, meeting notes, and recent product updates. An internal help desk bot may need policies, forms, and service tickets. The best enterprise chatbot doesn’t sit inside one app - it sits across the systems where work already takes place.
 
 ### **Actions, not just answers**
 
-The step from “chatbot” to “assistant” happens when the system can do more than respond. Drafting, summarizing, routing, triggering, updating — this is where most of the enterprise value shows up. It’s also where the evaluation requirements get more serious: an agent that takes wrong actions at scale is worse than one that simply gives wrong answers.
+The step from “chatbot” to “assistant” happens when the system can do more than respond. Drafting, summarizing, routing, triggering, updating - this is where most of the enterprise value shows up. It’s also where the evaluation requirements get more serious: an agent that takes wrong actions at scale is worse than one that simply gives wrong answers.
 
 ### **Escalation paths**
 
-Even well-built chatbots will encounter questions they shouldn’t answer alone — sensitive cases, edge scenarios, high-stakes decisions. An enterprise-ready chatbot knows when to route to a human, and does it cleanly. Teams that overlook this design step wind up discovering it as a trust problem after launch.
+Even well-built chatbots will encounter questions they shouldn’t answer alone - sensitive cases, edge scenarios, high-stakes decisions. An enterprise-ready chatbot knows when to route to a human, and does it cleanly. Teams that overlook this design step wind up discovering it as a trust problem after launch.
 
 ### **Evaluation before scale**
 
@@ -129,11 +129,11 @@ A chatbot that looks sharp in a demo can still fall apart under real usage. Ente
 
 ## **How Glean helps teams build enterprise chatbots**
 
-Glean gives teams a practical path to building an internal AI chatbot that goes beyond the usual “LLM plus UI” pattern. The foundation is Glean’s system of context — a continuously updated understanding of your organization’s people, teams, content, and activity, built as Glean connects to the tools your teams already use. 
+Glean gives teams a practical path to building an internal AI chatbot that goes beyond the usual “LLM plus UI” pattern. The foundation is Glean’s system of context - a continuously updated understanding of your organization’s people, teams, content, and activity, built as Glean connects to the tools your teams already use. 
 
 Rather than treating company data as isolated text, Glean builds a structured understanding of your organization: who owns what, which documents support which workflows, and what's actually relevant to each individual. That foundation is what makes search accurate, answers trustworthy, and permissions enforceable without rebuilding access controls.
 
-This is also what distinguishes Glean from a generic enterprise RAG chatbot implementation. Unlike a basic document index, Glean retrieves from a structured understanding of your organization — with permissions, relationships, and usage signals built in.
+This is also what distinguishes Glean from a generic enterprise RAG chatbot implementation. Unlike a basic document index, Glean retrieves from a structured understanding of your organization - with permissions, relationships, and usage signals built in.
 
 On top of that foundation, Glean provides three interconnected ways to build:
 
@@ -141,7 +141,7 @@ On top of that foundation, Glean provides three interconnected ways to build:
 -   **Glean Agents** give business and ops teams a no-code or low-code path for building assistants that reason across indexed enterprise knowledge and take action across systems.
 -   **100+ connectors** reduce your integration burden by unifying enterprise knowledge in one shared layer, so your teams don’t rebuild the data plumbing for every new AI experience.
 
-Glean’s system of context compounds in value over time. When knowledge is indexed once and served through a consistent retrieval layer, every subsequent AI experience — a new agent, a new team workflow, a new embedded assistant — is easier to add, govern, and keep consistent. You build the foundation once, and then you build on it.
+Glean’s system of context compounds in value over time. When knowledge is indexed once and served through a consistent retrieval layer, every subsequent AI experience - a new agent, a new team workflow, a new embedded assistant - is easier to add, govern, and keep consistent. You build the foundation once, and then you build on it.
 
 ### **Step 1: Start with a specific team workflow**
 
@@ -153,13 +153,13 @@ The discipline is choosing one. A broad starting scope usually produces somethin
 
 ### **Step 2: Get the knowledge layer right before you build**
 
-Enterprise chatbot performance depends on source quality — and this step is where more projects run into trouble than any other.
+Enterprise chatbot performance depends on source quality - and this step is where more projects run into trouble than any other.
 
 If the workflow lives in Zendesk, Confluence, Slack, Salesforce, and Google Drive, those are the systems that need to be in scope. A separately maintained knowledge base seems like a controlled starting point, but it typically becomes stale fast and creates a parallel maintenance burden your team will eventually abandon.
 
-Glean connects to the tools where work already happens — 100+ app connectors, plus APIs for custom sources — and indexes that content in a way that preserves permissions, tracks freshness, and makes context available to search, chat, and agents from a single layer. The practical effect is that your chatbot starts from real, current enterprise knowledge rather than forcing your team to rebuild the data foundation from scratch.
+Glean connects to the tools where work already happens - 100+ app connectors, plus APIs for custom sources - and indexes that content in a way that preserves permissions, tracks freshness, and makes context available to search, chat, and agents from a single layer. The practical effect is that your chatbot starts from real, current enterprise knowledge rather than forcing your team to rebuild the data foundation from scratch.
 
-Many teams discover this problem at the worst possible moment — when an agent is already in production and returning inconsistent answers. That's when leadership confidence stalls and projects get quietly shelved. Getting the knowledge foundation right before you build makes every AI experience built on top of it accurate, trustworthy, and defensible when it matters.
+Many teams discover this problem at the worst possible moment - when an agent is already in production and returning inconsistent answers. That's when leadership confidence stalls and projects get quietly shelved. Getting the knowledge foundation right before you build makes every AI experience built on top of it accurate, trustworthy, and defensible when it matters.
 
 ### **Step 3: Choose the right build path and define your action scope**
 
@@ -174,11 +174,11 @@ Glean offers two main paths, suited to different teams and timelines.
 
 **Action scope**
 
-While you’re choosing your build path, define how far you want the chatbot to go. Answering questions is one level. Drafting responses for review is the next. Taking direct action — creating tickets, updating records, triggering downstream workflows — is a third, and it comes with higher requirements for governance and testing. Starting at the level that matches your current readiness is more important than starting at the most ambitious level.
+While you’re choosing your build path, define how far you want the chatbot to go. Answering questions is one level. Drafting responses for review is the next. Taking direct action - creating tickets, updating records, triggering downstream workflows - is a third, and it comes with higher requirements for governance and testing. Starting at the level that matches your current readiness is more important than starting at the most ambitious level.
 
 ### **Step 4: Test before you scale**
 
-Many chatbot guides skip evaluation. The problems show up anyway — just after rollout instead of before.
+Many chatbot guides skip evaluation. The problems show up anyway - just after rollout instead of before.
 
 If you want an enterprise chatbot that people trust, test it on real questions from real users, not hypothetical prompts or curated examples. Start with roughly 20 high-quality examples from subject matter experts, define a single north-star metric and break it into a few sub-metrics, and use binary scoring rather than fuzzy five-point scales.
 
@@ -194,11 +194,11 @@ These tests will separate a promising pilot from something teams will rely on, a
 
 ### **Step 5: Roll out by team, then expand**
 
-Start with one team and one workflow. Measure impact on the metric that matters for that use case — time saved, resolution time, search reduction, escalation rate, response quality, or onboarding speed.
+Start with one team and one workflow. Measure impact on the metric that matters for that use case - time saved, resolution time, search reduction, escalation rate, response quality, or onboarding speed.
 
 For support teams, this often looks like piloting ticket summarization and suggested next steps against a defined bottleneck, then measuring reduction in handle time or escalations before expanding. The same logic applies to internal help desks, sales enablement, and ops workflows. Start at the sharpest pain point, and prove the value is real. Then expand from a position of trust rather than hope.
 
-One pattern worth planning for early: as you add AI experiences across teams, the temptation is to stand up separate data connections and retrieval pipelines for each one. That doesn’t scale. A shared knowledge layer — indexed once, governed centrally, served consistently — is what makes the second and third AI experience dramatically faster to build and easier to trust than the first.
+One pattern worth planning for early: as you add AI experiences across teams, the temptation is to stand up separate data connections and retrieval pipelines for each one. That doesn’t scale. A shared knowledge layer - indexed once, governed centrally, served consistently - is what makes the second and third AI experience dramatically faster to build and easier to trust than the first.
 
 ## **Common mistakes teams make when building enterprise chatbots**
 
@@ -217,7 +217,7 @@ The strongest enterprise chatbots aren’t defined by the quality of the chat in
 
 When your knowledge layer is solid, your permissions are enforced, and your retrieval is trustworthy, every AI experience you build on top of it inherits those properties. When it isn’t, every experience you build carries the same fragility.
 
-Glean is designed to be that foundation — with permission-aware APIs, enterprise retrieval, conversational interfaces, no-code agent building, and connectors to the systems where your teams already work.
+Glean is designed to be that foundation - with permission-aware APIs, enterprise retrieval, conversational interfaces, no-code agent building, and connectors to the systems where your teams already work.
 
 To go deeper, explore [Glean APIs](https://www.glean.com/product/api), [Glean Agents](https://www.glean.com/product/ai-agents), [AI agents in the enterprise](https://www.glean.com/blog/ai-agents-enterprise), [How to build agents that actually work](https://www.glean.com/blog/enterprise-agent-evaluation-guide), and [4 ways to use AI agents to transform customer service workflows](https://www.glean.com/blog/ai-customer-service-transform).
 

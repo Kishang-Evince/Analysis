@@ -2,7 +2,7 @@
 url: "https://www.glean.com/solutions/departments/engineering"
 canonical: "https://www.glean.com/solutions/departments/engineering"
 title: "AI for Engineering: Drive Product Excellence & Speed"
-description: "Unlock enterprise insights with AI for engineering to enhance product quality and accelerate delivery. See how our solution boosts innovation—get a demo."
+description: "Unlock enterprise insights with AI for engineering to enhance product quality and accelerate delivery. See how our solution boosts innovation-get a demo."
 fetched_at: "2026-09-01T13:25:24.744Z"
 ---
 Departments

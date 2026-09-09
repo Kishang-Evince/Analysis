@@ -47,8 +47,8 @@ Glean supports two authentication paths. The path you choose determines which ad
 |  | **Admin PAT** (recommended) | **Non-admin PAT** |
 | --- | --- | --- |
 | **Token type** | [Personal access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) from a GitLab **admin** account | [Personal access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) from a **non-admin** account with access to the projects you want Glean to crawl |
-| **User-mapping CSV** | Not required — admin-scoped tokens return user emails from the GitLab API | **Required** — non-admin tokens do not return user emails, so a CSV mapping user IDs to emails must be uploaded |
-| **Project permissions CSV** | Not required — Glean reads project memberships directly from the API | **Required** — non-admin tokens may not see all project members (for example, members added through groups the token user cannot access) |
+| **User-mapping CSV** | Not required - admin-scoped tokens return user emails from the GitLab API | **Required** - non-admin tokens do not return user emails, so a CSV mapping user IDs to emails must be uploaded |
+| **Project permissions CSV** | Not required - Glean reads project memberships directly from the API | **Required** - non-admin tokens may not see all project members (for example, members added through groups the token user cannot access) |
 | **Webhooks** | Can be created automatically with the `api` scope, or manually with read-only scopes | Can be auto-created for projects where the token user has **Maintainer** access (requires `api` scope); other projects require manual webhook setup |
 
 info
@@ -77,7 +77,7 @@ You enter these in the Glean **Admin console** during [Configure in Glean](#conf
 
 ## Create webhooks and a system hook (read-only scopes only)[​](#create-webhooks-and-a-system-hook-read-only-scopes-only "Direct link to Create webhooks and a system hook (read-only scopes only)")
 
-Skip this step if your token has the `api` scope — Glean creates the webhooks for you.
+Skip this step if your token has the `api` scope - Glean creates the webhooks for you.
 
 If your token has only read-only scopes, create webhooks for the groups or projects you want Glean to receive change events for, plus one instance-wide system hook. Group webhooks apply to all projects in a group and its subgroups; project webhooks apply to a single project.
 
@@ -117,23 +117,23 @@ A system hook lets Glean receive certain instance-level repository events.
 
 warning
 
-These files are required **only** when the personal access token belongs to a **non-admin** GitLab user. If you use an admin token, skip this step — admin-scoped tokens return user emails and full membership from the GitLab API.
+These files are required **only** when the personal access token belongs to a **non-admin** GitLab user. If you use an admin token, skip this step - admin-scoped tokens return user emails and full membership from the GitLab API.
 
 ### User-mapping CSV[​](#user-mapping-csv "Direct link to User-mapping CSV")
 
 A non-admin token does not return user email addresses, so Glean needs a CSV that maps each GitLab user ID to the person's company (SSO) email.
 
 1.  Create a CSV with two columns in the order **user ID, email**. Column headers are not required.
-    -   The user ID is the numeric `id` from the GitLab API — not the username. Retrieve IDs with the [members API](https://docs.gitlab.com/ee/api/members.html#list-all-members-of-a-group-or-project).
+    -   The user ID is the numeric `id` from the GitLab API - not the username. Retrieve IDs with the [members API](https://docs.gitlab.com/ee/api/members.html#list-all-members-of-a-group-or-project).
     -   Example row:
         
         `12345,user1@example.com`📋
         
-2.  Keep the file — you upload it in the Glean **Admin console** during [Configure in Glean](#configure-in-glean).
+2.  Keep the file - you upload it in the Glean **Admin console** during [Configure in Glean](#configure-in-glean).
 
 ### Project permissions CSV[​](#project-permissions-csv "Direct link to Project permissions CSV")
 
-A non-admin token may return incomplete project membership — for example, members added through a group the token user cannot see. Upload a `project_permissions.csv` that maps projects to the users who should have access.
+A non-admin token may return incomplete project membership - for example, members added through a group the token user cannot see. Upload a `project_permissions.csv` that maps projects to the users who should have access.
 
 1.  Create a CSV with two columns in the order **project path, user ID**. Column headers are not required.
     -   The project path is the full namespace path, for example `my-group/my-project`.
@@ -141,7 +141,7 @@ A non-admin token may return incomplete project membership — for example, memb
         
         `my-group/my-project,12345`📋
         
-2.  Keep the file — you upload it in the Glean **Admin console** during [Configure in Glean](#configure-in-glean).
+2.  Keep the file - you upload it in the Glean **Admin console** during [Configure in Glean](#configure-in-glean).
 
 note
 
@@ -163,7 +163,7 @@ Enter your GitLab instance domain (for example, `https://gitlab.company.com`) an
 
 Paste the [personal access token](#2-create-a-personal-access-token) into the token field, then set the two token checkboxes to match the token you created:
 
--   **API token has admin privileges**: select this if the token belongs to a GitLab admin account. Clear it for a non-admin token — the CSV upload fields appear only when this checkbox is cleared.
+-   **API token has admin privileges**: select this if the token belongs to a GitLab admin account. Clear it for a non-admin token - the CSV upload fields appear only when this checkbox is cleared.
 -   **API token has write privileges**: select this if the token has the `api` scope, so Glean creates webhooks automatically. Leave it cleared for read-only scopes, and make sure you have [created webhooks and a system hook manually](#create-webhooks-and-a-system-hook-read-only-scopes-only).
 
 ### 4\. Enter the webhook secret token[​](#4-enter-the-webhook-secret-token "Direct link to 4. Enter the webhook secret token")
@@ -180,7 +180,7 @@ Both files are required with a non-admin token. Glean validates them when you sa
 
 Epics are controlled by a single setup toggle:
 
--   **Crawl epics**: index epics. Selected by default. Requires **GitLab 18.1 or later** — clear it if your instance is older or you don't want epics indexed.
+-   **Crawl epics**: index epics. Selected by default. Requires **GitLab 18.1 or later** - clear it if your instance is older or you don't want epics indexed.
 
 Merge requests (with comments and diffs), code, issues, and wikis are always indexed and have no per-object toggles. Code is made searchable through [Code Search](/user-guide/assistant/code-search), which is enabled by default after the connector is connected.
 
@@ -188,7 +188,7 @@ Merge requests (with comments and diffs), code, issues, and wikis are always ind
 
 Select **Save**. Glean validates the connection before saving it, then starts the initial crawl. Once the crawl completes, GitLab content appears in Glean search results for users who have access to it.
 
-If validation fails, the connector is not saved and the configuration is rolled back — fix the reported problem and select **Save** again.
+If validation fails, the connector is not saved and the configuration is rolled back - fix the reported problem and select **Save** again.
 
 With a non-admin token, validation checks both CSV files. A file fails if it is missing, empty, or unreadable, or if any row leaves a column blank, uses a user ID that is not a positive integer, or has a malformed email address. See [CSV\_1](/troubleshooting/error-codes/generic/csv-1) for the full troubleshooting steps.
 

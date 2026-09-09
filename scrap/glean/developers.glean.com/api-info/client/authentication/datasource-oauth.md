@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:22:49.810Z"
 ---
 On this page
 
-Some datasources — such as Slack and GitHub — require individual users to complete an OAuth authorization flow before Glean can access their data. The [`checkdatasourceauth`](/api/client-api/authentication/checkdatasourceauth) endpoint identifies which datasources still need authorization and provides the URLs to initiate those flows.
+Some datasources - such as Slack and GitHub - require individual users to complete an OAuth authorization flow before Glean can access their data. The [`checkdatasourceauth`](/api/client-api/authentication/checkdatasourceauth) endpoint identifies which datasources still need authorization and provides the URLs to initiate those flows.
 
 By default, after a user completes datasource OAuth, they are redirected to the Glean web application. For API-only or headless integrations that don't use the Glean UI, you can control where users land after authorization using the mechanisms described below.
 
@@ -45,9 +45,9 @@ This is useful when all OAuth flows across your integration should redirect to t
 
 The redirect destination is resolved in this order:
 
-1.  **`final_redirect_url` query parameter** — if provided on the `checkdatasourceauth` request
-2.  **`oauth.postAuthRedirectUrl` tenant config** — if set by an administrator
-3.  **Default Glean landing page** — the standard fallback
+1.  **`final_redirect_url` query parameter** - if provided on the `checkdatasourceauth` request
+2.  **`oauth.postAuthRedirectUrl` tenant config** - if set by an administrator
+3.  **Default Glean landing page** - the standard fallback
 
 * * *
 

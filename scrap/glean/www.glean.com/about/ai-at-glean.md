@@ -129,7 +129,7 @@ Link to post
 
 ](https://www.linkedin.com/posts/rbector_glean-aicoworker-enterpriseai-activity-7462923754856210432-fNVD)
 
-> “ I asked Glean to pull together my scratch notes, Slack threads, and an abandoned README — and it generated a polished, self-contained HTML guide.”
+> “ I asked Glean to pull together my scratch notes, Slack threads, and an abandoned README - and it generated a polished, self-contained HTML guide.”
 
 Rajeev Bector
 
@@ -145,7 +145,7 @@ Link to post
 
 ](https://www.linkedin.com/posts/kristian-vizcocho_recruiting-is-basically-one-long-chain-of-activity-7462181057145102337-FKTU)
 
-> “ My day starts with a self-refreshing recruiter briefing in my inbox — my interviews, role and candidate context, all before calls.”
+> “ My day starts with a self-refreshing recruiter briefing in my inbox - my interviews, role and candidate context, all before calls.”
 
 Kristian Vizcocho
 

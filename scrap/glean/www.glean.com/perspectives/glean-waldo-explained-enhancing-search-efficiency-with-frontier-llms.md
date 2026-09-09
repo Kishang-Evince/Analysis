@@ -63,27 +63,27 @@ Share this article:
 
 # Glean Waldo explained: enhancing search efficiency with frontier LLMs
 
-[Waldo](https://www.glean.com/blog/waldo-launch) is Glean's reinforcement learning model for enterprise search planning — by handling retrieval separately from reasoning, it cuts end-to-end latency by roughly 50% and reduces token consumption by about 25%, according to Glean's published benchmarks (April 2025). Most enterprise AI queries burn time and tokens because one model handles both finding information and reasoning over it, even though these are fundamentally different jobs.
+[Waldo](https://www.glean.com/blog/waldo-launch) is Glean's reinforcement learning model for enterprise search planning - by handling retrieval separately from reasoning, it cuts end-to-end latency by roughly 50% and reduces token consumption by about 25%, according to Glean's published benchmarks (April 2025). Most enterprise AI queries burn time and tokens because one model handles both finding information and reasoning over it, even though these are fundamentally different jobs.
 
-Waldo focuses exclusively on the information-gathering phase — identifying what to retrieve and how to query for it — before handing context to a frontier LLM for final answer generation. The result is faster responses at lower cost, with no regression in answer quality.
+Waldo focuses exclusively on the information-gathering phase - identifying what to retrieve and how to query for it - before handing context to a frontier LLM for final answer generation. The result is faster responses at lower cost, with no regression in answer quality.
 
 ## What is Waldo?
 
-Waldo is an agentic search model purpose-built for [enterprise AI search](https://www.glean.com/blog/enterprise-ai-search-rag). It handles one job — search planning and evidence gathering — then passes well-assembled context to a frontier LLM so the reasoning model can focus entirely on synthesis and response generation.
+Waldo is an agentic search model purpose-built for [enterprise AI search](https://www.glean.com/blog/enterprise-ai-search-rag). It handles one job - search planning and evidence gathering - then passes well-assembled context to a frontier LLM so the reasoning model can focus entirely on synthesis and response generation.
 
 Rather than repurposing a general-purpose model for retrieval, Waldo determines what information a query needs, formulates the right retrieval strategy, and gathers the relevant context before handing off to a frontier LLM. This approach reflects the broader shift toward [agentic retrieval](https://www.glean.com/blog/agentic-rag-explained), where AI systems actively plan and adapt their search strategies rather than relying on a single-pass lookup.
 
-The core insight behind Waldo is straightforward. Most enterprise AI tasks don't start with reasoning — they start with finding the right context scattered across documents, messages, and tools.
+The core insight behind Waldo is straightforward. Most enterprise AI tasks don't start with reasoning - they start with finding the right context scattered across documents, messages, and tools.
 
 Using a frontier model for both retrieval planning and answer generation is like hiring a senior analyst to pull files from a cabinet before doing the actual analysis. In Glean's benchmarks, Waldo handles the file-pulling at ~250 ms P50 latency per call, more than 10x faster than a default reasoning model would take for the same step.
 
-Glean built Waldo on NVIDIA's Nemotron 3 Nano open foundation model and post-trained it for search planning using reinforcement learning. The Nemotron 3 Nano architecture uses a hybrid mixture-of-experts design that activates only [3 billion of its 30 billion parameters](https://nvidianews.nvidia.com/news/nvidia-debuts-nemotron-3-family-of-open-models) per inference call, delivering up to 4x higher throughput than its predecessor. The RL training process shaped Waldo to improve retrieval planning rather than generate natural language answers — a deliberate constraint that keeps the model small, fast, and sharply focused on the task where speed matters most.
+Glean built Waldo on NVIDIA's Nemotron 3 Nano open foundation model and post-trained it for search planning using reinforcement learning. The Nemotron 3 Nano architecture uses a hybrid mixture-of-experts design that activates only [3 billion of its 30 billion parameters](https://nvidianews.nvidia.com/news/nvidia-debuts-nemotron-3-family-of-open-models) per inference call, delivering up to 4x higher throughput than its predecessor. The RL training process shaped Waldo to improve retrieval planning rather than generate natural language answers - a deliberate constraint that keeps the model small, fast, and sharply focused on the task where speed matters most.
 
 ## Why enterprise AI needs a dedicated search planning layer
 
 Most enterprise work begins with information retrieval. An engineer troubleshooting a production incident searches runbooks, Slack threads, and past postmortems. A sales rep preparing for a call pulls recent product updates, competitive intel, and account history from a dozen systems.
 
-A new hire hunts through wikis, onboarding docs, and recorded walkthroughs during their first weeks. In every case, the quality of the final output depends on finding the right context first. IDC research quantifies the drag: the average knowledge worker spends roughly [2.5 hours per day](https://www.synergissoftware.com/blog/workforce-efficiency-its-time-to-calculate-the-cost-of-opportunity-loss) — about 30% of the workday — just searching for information.
+A new hire hunts through wikis, onboarding docs, and recorded walkthroughs during their first weeks. In every case, the quality of the final output depends on finding the right context first. IDC research quantifies the drag: the average knowledge worker spends roughly [2.5 hours per day](https://www.synergissoftware.com/blog/workforce-efficiency-its-time-to-calculate-the-cost-of-opportunity-loss) - about 30% of the workday - just searching for information.
 
 When a single frontier model handles both the search planning and the reasoning, it allocates expensive compute to tasks that don't require deep inference. Decomposing a query into sub-questions, selecting which data sources to hit, and deciding when enough evidence has been gathered are procedural, latency-sensitive operations. They benefit from speed and precision, not from the broad world knowledge and nuanced generation capabilities that make frontier models valuable.
 
@@ -99,57 +99,57 @@ The interaction between Waldo and a frontier LLM follows a clear handoff pattern
 
 ### Search planning and query decomposition
 
-When a query arrives, Waldo breaks it into discrete sub-questions and determines which tools, connectors, and data sources to query for each. For a question like "What were the key takeaways from last quarter's product review, and how do they relate to this quarter's roadmap?" Waldo identifies that it needs to retrieve product review notes, roadmap documents, and potentially related meeting transcripts — each from different systems.
+When a query arrives, Waldo breaks it into discrete sub-questions and determines which tools, connectors, and data sources to query for each. For a question like "What were the key takeaways from last quarter's product review, and how do they relate to this quarter's roadmap?" Waldo identifies that it needs to retrieve product review notes, roadmap documents, and potentially related meeting transcripts - each from different systems.
 
 It issues targeted retrievals, evaluates the returned evidence, and decides whether sufficient context has been gathered or whether additional passes are needed. The iterative evidence-gathering loop operates at the sub-second latencies discussed earlier, keeping the retrieval phase fast even for multi-source queries.
 
 ### Handoff to frontier models for reasoning and synthesis
 
-Once Waldo determines it has assembled adequate context, it packages the retrieved evidence and passes it to a frontier LLM. At this point, the frontier model receives a focused context window containing the relevant documents, passages, and metadata — without having spent any tokens on figuring out where to look or what to retrieve.
+Once Waldo determines it has assembled adequate context, it packages the retrieved evidence and passes it to a frontier LLM. At this point, the frontier model receives a focused context window containing the relevant documents, passages, and metadata - without having spent any tokens on figuring out where to look or what to retrieve.
 
 The frontier model's full capacity goes toward the high-value work: synthesizing information across sources, drawing inferences, resolving contradictions, and generating a coherent response. Organizations pay frontier-model token costs only for the reasoning step, not for the retrieval orchestration that preceded it.
 
 ### Intelligent query routing
 
-Not every query requires the full retrieval-then-reasoning pipeline. In Glean's testing, roughly half of enterprise queries can be answered through a fast path with minimal reasoning — a straightforward factual lookup, a link to the right document, or a direct answer from a single authoritative source.
+Not every query requires the full retrieval-then-reasoning pipeline. In Glean's testing, roughly half of enterprise queries can be answered through a fast path with minimal reasoning - a straightforward factual lookup, a link to the right document, or a direct answer from a single authoritative source.
 
 Intelligent routing evaluates incoming queries and directs simple retrievals down a lightweight path, reserving the full Waldo-plus-frontier pipeline for complex, multi-step questions. This routing prevents unnecessary frontier-model invocations, reducing overall compute costs without affecting answer quality for queries that do require deep reasoning.
 
 ## Performance gains: latency, token cost, and quality
 
-Waldo's architecture — separating search planning from reasoning — produces measurable gains across three dimensions. In Glean's internal benchmarks, end-to-end latency drops by approximately 50%, because the retrieval phase runs on a model optimized for speed rather than a frontier model that carries overhead from capabilities irrelevant to search planning. Token consumption decreases by roughly 25%, since the frontier model receives pre-gathered context instead of generating tokens to plan and execute searches itself.
+Waldo's architecture - separating search planning from reasoning - produces measurable gains across three dimensions. In Glean's internal benchmarks, end-to-end latency drops by approximately 50%, because the retrieval phase runs on a model optimized for speed rather than a frontier model that carries overhead from capabilities irrelevant to search planning. Token consumption decreases by roughly 25%, since the frontier model receives pre-gathered context instead of generating tokens to plan and execute searches itself.
 
-Answer quality holds steady — there is no regression, because the reasoning step still runs on a full-capability frontier model working with the same (or better-prepared) evidence.
+Answer quality holds steady - there is no regression, because the reasoning step still runs on a full-capability frontier model working with the same (or better-prepared) evidence.
 
 These numbers matter more at scale than they might seem in isolation. An organization running thousands of AI-assisted queries per day across support, sales, and engineering teams compounds both the latency savings and the token cost reductions. With enterprise AI spending surging to [$37 billion in 2025](https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/) according to Menlo Ventures, the pressure to optimize inference costs is intensifying across every department.
 
-A 50% latency improvement means employees waiting one to two seconds instead of three to four for complex queries — a difference that determines whether people trust the tool enough to make it part of their default workflow. A 25% reduction in token consumption translates directly to lower infrastructure costs as usage scales. As Forrester analyst Rowan Curran noted, "There is an increasing appeal for these more directed models for tasks within overall agentic workflows and executions."
+A 50% latency improvement means employees waiting one to two seconds instead of three to four for complex queries - a difference that determines whether people trust the tool enough to make it part of their default workflow. A 25% reduction in token consumption translates directly to lower infrastructure costs as usage scales. As Forrester analyst Rowan Curran noted, "There is an increasing appeal for these more directed models for tasks within overall agentic workflows and executions."
 
 The training approach reinforces the privacy model. Glean post-trained Waldo using reinforcement learning to improve retrieval planning, and the training process used no customer document content. The model learns how to plan searches effectively, not what any specific organization's documents contain.
 
 ## What types of tasks benefit most from agentic search
 
-Retrieval-heavy workflows see the largest performance gains from Waldo's dedicated search planning layer. Support teams resolving tickets often need to pull information from [knowledge management](https://www.glean.com/blog/enterprise-knowledge-management-guide) systems, past tickets, product documentation, and internal engineering notes — all within a single interaction.
+Retrieval-heavy workflows see the largest performance gains from Waldo's dedicated search planning layer. Support teams resolving tickets often need to pull information from [knowledge management](https://www.glean.com/blog/enterprise-knowledge-management-guide) systems, past tickets, product documentation, and internal engineering notes - all within a single interaction.
 
 Sales teams preparing for calls need account history, recent product changes, competitive positioning, and relevant case studies assembled from different systems. New employees during [onboarding](https://www.glean.com/blog/building-the-foundations-of-employee-success) need to locate policies, process documentation, team norms, and tooling guides scattered across wikis, shared drives, and messaging channels. In each case, the bottleneck is gathering the right context from multiple sources, which is exactly the step Waldo accelerates.
 
-Cross-team knowledge discovery — finding expertise, decisions, or context that originated in a different department — is another area where multi-source evidence gathering provides clear advantages. These queries typically span organizational boundaries, requiring retrieval from systems the questioner may not even know to check. Because Glean Search connects to 100+ enterprise data sources through its [Enterprise Graph](https://www.glean.com/product/enterprise-graph), Waldo can identify relevant evidence across team boundaries without requiring the user to specify where to look.
+Cross-team knowledge discovery - finding expertise, decisions, or context that originated in a different department - is another area where multi-source evidence gathering provides clear advantages. These queries typically span organizational boundaries, requiring retrieval from systems the questioner may not even know to check. Because Glean Search connects to 100+ enterprise data sources through its [Enterprise Graph](https://www.glean.com/product/enterprise-graph), Waldo can identify relevant evidence across team boundaries without requiring the user to specify where to look.
 
-Simple lookups benefit less, which is where intelligent routing earns its value. When a query has a single, obvious answer in a known location, routing it through a lightweight path avoids the overhead of the full retrieval pipeline. The practical effect is that search planning becomes critical infrastructure primarily for the complex, multi-step queries that consume the most time and compute — the ones where faster, cheaper retrieval delivers the clearest return.
+Simple lookups benefit less, which is where intelligent routing earns its value. When a query has a single, obvious answer in a known location, routing it through a lightweight path avoids the overhead of the full retrieval pipeline. The practical effect is that search planning becomes critical infrastructure primarily for the complex, multi-step queries that consume the most time and compute - the ones where faster, cheaper retrieval delivers the clearest return.
 
 ## Frequently asked questions
 
 ### What is the difference between an agentic search model and a standard retrieval system?
 
-A standard retrieval system matches a query against an index and returns ranked results. An agentic search model actively plans the retrieval strategy — decomposing queries into sub-questions, selecting data sources, gathering evidence iteratively, and deciding when enough context has been collected before handing off to a reasoning model. For a deeper look at how these [AI agents](https://www.glean.com/blog/ai-agents-enterprise) operate in enterprise environments, see how organizations are applying them across departments.
+A standard retrieval system matches a query against an index and returns ranked results. An agentic search model actively plans the retrieval strategy - decomposing queries into sub-questions, selecting data sources, gathering evidence iteratively, and deciding when enough context has been collected before handing off to a reasoning model. For a deeper look at how these [AI agents](https://www.glean.com/blog/ai-agents-enterprise) operate in enterprise environments, see how organizations are applying them across departments.
 
 ### Does Waldo replace frontier LLMs?
 
-No — Waldo handles search planning and evidence gathering, then passes the assembled context to a frontier LLM for reasoning and response generation. The two models work in sequence, each operating in the phase where its design strengths apply.
+No - Waldo handles search planning and evidence gathering, then passes the assembled context to a frontier LLM for reasoning and response generation. The two models work in sequence, each operating in the phase where its design strengths apply.
 
 ### How does Waldo maintain enterprise data privacy?
 
-Glean post-trained Waldo using reinforcement learning to improve retrieval planning, and the training process used no customer document content. The model learns how to plan searches — it does not memorize the contents of any organization's documents, and all data access respects existing enterprise permissions.
+Glean post-trained Waldo using reinforcement learning to improve retrieval planning, and the training process used no customer document content. The model learns how to plan searches - it does not memorize the contents of any organization's documents, and all data access respects existing enterprise permissions.
 
 ### What kind of latency improvement can teams expect?
 
@@ -157,9 +157,9 @@ In Glean's internal benchmarks, end-to-end query latency drops by approximately 
 
 ### Can Waldo handle queries that require deep multi-step reasoning?
 
-Waldo handles the multi-step search planning portion — decomposing queries, retrieving evidence from multiple sources, and iterating until sufficient context is gathered. The frontier LLM then handles the deep reasoning: drawing inferences, synthesizing across sources, and resolving contradictions.
+Waldo handles the multi-step search planning portion - decomposing queries, retrieving evidence from multiple sources, and iterating until sufficient context is gathered. The frontier LLM then handles the deep reasoning: drawing inferences, synthesizing across sources, and resolving contradictions.
 
-A dedicated search planning layer addresses the most common bottleneck in enterprise AI workflows — finding the right context — while preserving frontier model capabilities for the reasoning work that justifies their cost. Waldo demonstrates what becomes possible when retrieval and reasoning each get a model designed for the job. [Request a demo](https://www.glean.com/get-a-demo) to explore how Glean and AI can transform your workplace.
+A dedicated search planning layer addresses the most common bottleneck in enterprise AI workflows - finding the right context - while preserving frontier model capabilities for the reasoning work that justifies their cost. Waldo demonstrates what becomes possible when retrieval and reasoning each get a model designed for the job. [Request a demo](https://www.glean.com/get-a-demo) to explore how Glean and AI can transform your workplace.
 
 [
 

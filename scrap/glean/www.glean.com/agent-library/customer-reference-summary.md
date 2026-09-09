@@ -23,7 +23,7 @@ Create polished, reusable customer reference summaries from scattered notes.
 
 ## Overview
 
-The customer reference summary agent compiles a clean, coherent customer reference from notes, emails, presentations, feature requests, and call transcripts. Starting from a single input — the customer’s name — the agent assembles the customer’s industry, teams involved, challenges they aimed to solve, how they adopted the solution, and the measurable outcomes they achieved. The result is a standardized, reference-ready narrative that marketing, sales, and leadership can reuse across decks, briefs, and customer-facing materials without digging through internal systems.
+The customer reference summary agent compiles a clean, coherent customer reference from notes, emails, presentations, feature requests, and call transcripts. Starting from a single input - the customer’s name - the agent assembles the customer’s industry, teams involved, challenges they aimed to solve, how they adopted the solution, and the measurable outcomes they achieved. The result is a standardized, reference-ready narrative that marketing, sales, and leadership can reuse across decks, briefs, and customer-facing materials without digging through internal systems.
 
 ## See it in action
 
@@ -35,7 +35,7 @@ The customer reference summary agent compiles a clean, coherent customer referen
 
 ## Example output
 
-### Customer reference summary — Acme Corp.
+### Customer reference summary - Acme Corp.
 
 **Industry vertical:** Industrial manufacturing and distribution
 
@@ -67,7 +67,7 @@ Acme faced several operational challenges:
 
 #### Summary
 
-Acme’s rollout shows how consolidating scattered knowledge into one workspace can speed responses, strengthen cross-team handoffs, and simplify onboarding — making Acme an ideal candidate for future customer references.
+Acme’s rollout shows how consolidating scattered knowledge into one workspace can speed responses, strengthen cross-team handoffs, and simplify onboarding - making Acme an ideal candidate for future customer references.
 
 ## Agent workflow
 

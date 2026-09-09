@@ -83,7 +83,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-In [Glean](https://www.glean.com/) search, we’re always trying to return the most relevant results. When we merge results from a variety of sources—from Slack threads to Jira bugs to O365 docs—there are many dimensions in which to experiment with our ranking functions.
+In [Glean](https://www.glean.com/) search, we’re always trying to return the most relevant results. When we merge results from a variety of sources-from Slack threads to Jira bugs to O365 docs-there are many dimensions in which to experiment with our ranking functions.
 
 To help build these features, we wanted frequent iterative releases for our ranking team. But rapid turn-around can be tricky in the context of a stateful service. Particularly, our main Index Servers need to preload significant amounts of index data into memory when they restart. In many cases, preloading this data could take 15+ minutes, which required either scheduled service downtime or somewhat involved mitigation.
 
@@ -102,7 +102,7 @@ How did we fix this problem, and move towards faster incremental deployment?
 
 We soon found the advantages of this approach:
 
--   More frequent, less disruptive releases: Since server restarts were no longer normally needed, we started rolling out ranking changes more frequently—nightly for internal deployment, and weekly for customers.
+-   More frequent, less disruptive releases: Since server restarts were no longer normally needed, we started rolling out ranking changes more frequently-nightly for internal deployment, and weekly for customers.
 -   Experimentation: We also started using this mechanism for developer experiments; rather than coordinating use of a development cluster and waiting for a server restart, they could just upload a Jar file and quickly see the results.
 -   Strong versioning: Errors could be associated with specific release tags, and different experiments were isolated from each other.
 -   Rolling back support: Rolling back a problematic release could be done instantly with an online configuration change.

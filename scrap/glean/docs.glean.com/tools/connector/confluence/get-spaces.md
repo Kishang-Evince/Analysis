@@ -9,7 +9,7 @@ On this page
 
 The *Confluence Get spaces* tool retrieves a paginated list of Confluence spaces. Use this read-only tool to discover available spaces and capture a space ID for follow-up tools like creating or updating content.
 
-This tool is commonly the first step in Confluence workflows—fetch the target space, then pass its ID into write tools such as Create page or Update page.
+This tool is commonly the first step in Confluence workflows-fetch the target space, then pass its ID into write tools such as Create page or Update page.
 
 ## Limitations[​](#limitations "Direct link to Limitations")
 

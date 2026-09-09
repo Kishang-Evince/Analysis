@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:23:02.075Z"
 ---
 On this page
 
-The Glean agent specification is a human-readable file system format for defining a Glean agent — its instructions, tools, knowledge sources, skills, and subagents — as a directory of files. It is the source format consumed by the Glean Agents MCP tools and the GitHub Action, so Glean agents can be authored and version-controlled outside the UI.
+The Glean agent specification is a human-readable file system format for defining a Glean agent - its instructions, tools, knowledge sources, skills, and subagents - as a directory of files. It is the source format consumed by the Glean Agents MCP tools and the GitHub Action, so Glean agents can be authored and version-controlled outside the UI.
 
 Once authored, pass the specification directory to the Glean Agents MCP tools or the GitHub Action to create or update agents in Glean.
 
@@ -82,8 +82,8 @@ The `model` block configures which agentic model the agent runs on and how hard 
 
 `mode` values:
 
--   `ADVANCED` — high reasoning effort. The default when `mode` is omitted.
--   `FAST` — low reasoning effort. This should be used only for simple tasks.
+-   `ADVANCED` - high reasoning effort. The default when `mode` is omitted.
+-   `FAST` - low reasoning effort. This should be used only for simple tasks.
 
 Example:
 
@@ -118,12 +118,12 @@ Each entry in `trigger.inputFields` accepts the following keys:
 
 | Key | Required | Type | Default | Description |
 | --- | --- | --- | --- | --- |
-| `displayName` | Yes | string | — | Human-readable label, and the identifier referenced from `instructions.md` as `[[displayName]]`. Must be unique within the agent. |
-| `description` | No | string | — | Helper text describing the field. |
-| `type` | Yes | enum | — | One of `TEXT`, `SELECT`, or `DATE`. |
+| `displayName` | Yes | string | - | Human-readable label, and the identifier referenced from `instructions.md` as `[[displayName]]`. Must be unique within the agent. |
+| `description` | No | string | - | Helper text describing the field. |
+| `type` | Yes | enum | - | One of `TEXT`, `SELECT`, or `DATE`. |
 | `optional` | No | boolean | `false` | When `true`, the field may be left empty. |
-| `defaultValue` | No | string | — | Pre-filled value. For `SELECT`, must match one of `options[*].value`. For `DATE`, use `YYYY-MM-DD`. |
-| `options` | For `SELECT` | list | — | List of `{ value: <choice> }` entries. Required when `type` is `SELECT`. |
+| `defaultValue` | No | string | - | Pre-filled value. For `SELECT`, must match one of `options[*].value`. For `DATE`, use `YYYY-MM-DD`. |
+| `options` | For `SELECT` | list | - | List of `{ value: <choice> }` entries. Required when `type` is `SELECT`. |
 
 Supported `type` values:
 

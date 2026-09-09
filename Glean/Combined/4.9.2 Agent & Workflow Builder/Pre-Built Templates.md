@@ -25,24 +25,24 @@
 | Template | Category | Tenant relevance |
 |---|---|---|
 | Daily action items | Personal productivity | Uses knowledge graph across connected apps |
-| Plan my day (Outlook) | Personal productivity | **Outlook Calendar via Microsoft Teams** — in-scope |
+| Plan my day (Outlook) | Personal productivity | **Outlook Calendar via Microsoft Teams** - in-scope |
 | Plan my day (Google) | Personal productivity | Out of scope if no Google Calendar |
 | Persona-based event messaging | Marketing | Needs event/calendar context |
 | + 4 more in templates.md | Various | Verify in tenant picker |
 
 ### Public Agent Library (Vendor-Stated inspiration)
 
-- **33** example agents on marketing site (meeting recap, ghostwriter, competitive brief, etc.) — reference designs, not necessarily pre-installed in tenant.
+- **33** example agents on marketing site (meeting recap, ghostwriter, competitive brief, etc.) - reference designs, not necessarily pre-installed in tenant.
 
 ### Engineering observation (Doc-Verified)
 
 - Templates organized by category: General, Engineering, HR, IT, Marketing, Sales, Support.
-- **Plan my day** explicitly documents Outlook vs Google Calendar variants — good fit for M365-only tenant.
+- **Plan my day** explicitly documents Outlook vs Google Calendar variants - good fit for M365-only tenant.
 - Customization expected: templates are starting points, not frozen SKUs.
 
 ### Verification steps / test case
 
-1. Agent Builder → Create → Templates — screenshot full category list.
+1. Agent Builder → Create → Templates - screenshot full category list.
 2. Clone **Plan my day (Outlook)**; run with Outlook Calendar connected.
 3. Count templates; rate customization friction 1–5.
 4. Compare one public Agent Library example vs in-product clone effort.

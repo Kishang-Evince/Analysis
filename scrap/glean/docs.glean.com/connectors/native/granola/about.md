@@ -25,7 +25,7 @@ To connect Granola to Glean, see [Setup](/connectors/native/granola/setup).
 
 ## What Glean crawls[​](#what-glean-crawls "Direct link to What Glean crawls")
 
-Glean indexes Granola meeting notes from your workspace's Team space, and — when users connect a personal API key — their personal (My Notes) content. For each note, Glean fetches:
+Glean indexes Granola meeting notes from your workspace's Team space, and - when users connect a personal API key - their personal (My Notes) content. For each note, Glean fetches:
 
 -   Note title (falls back to the calendar event title or "Meeting on {date}" if no title is set)
 -   AI-generated summary (markdown)
@@ -36,7 +36,7 @@ Glean indexes Granola meeting notes from your workspace's Team space, and — wh
 -   Folder membership
 -   Creation and last-modified timestamps
 
-Personal notes are deduplicated against Team space notes — if a note is already indexed via the Enterprise API key, it is not re-indexed via a user's personal token.
+Personal notes are deduplicated against Team space notes - if a note is already indexed via the Enterprise API key, it is not re-indexed via a user's personal token.
 
 ## How crawl and sync work[​](#how-crawl-and-sync-work "Direct link to How crawl and sync work")
 

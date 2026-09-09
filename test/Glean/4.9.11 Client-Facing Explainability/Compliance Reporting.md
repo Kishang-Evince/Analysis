@@ -1,4 +1,4 @@
-# Field 6 — Compliance Reporting
+# Field 6 - Compliance Reporting
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Compliance Reporting.md](../../../Glean/Combined/4.9.11 Client-Facing Explainability/Compliance Reporting.md)

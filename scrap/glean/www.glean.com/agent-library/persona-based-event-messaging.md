@@ -23,7 +23,7 @@ Build persona-specific event messaging grounded in real customer wins and partne
 
 ## Overview
 
-The persona-based event messaging agent prepares event and booth teams with clear, consistent messaging tailored to the audience and sponsored event. It reviews existing positioning frameworks, customer stories, and partner materials to craft a concise elevator pitch, top use cases, relevant proof points, and context about the event host. The output is a brief teams can skim before stepping on the floor — helping every conversation feel confident, relevant, and on message.
+The persona-based event messaging agent prepares event and booth teams with clear, consistent messaging tailored to the audience and sponsored event. It reviews existing positioning frameworks, customer stories, and partner materials to craft a concise elevator pitch, top use cases, relevant proof points, and context about the event host. The output is a brief teams can skim before stepping on the floor - helping every conversation feel confident, relevant, and on message.
 
 ## See it in action
 

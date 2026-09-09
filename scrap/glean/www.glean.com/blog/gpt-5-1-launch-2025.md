@@ -119,13 +119,13 @@ GPT-5.1 performed well on deep research, a structured, multi‑step workflow tha
 
 We saw that GPT-5.1 follows the deep research system prompts for comprehensiveness,  iterating and adapting its plan until it has fully answered the query. For insightfulness, it provides second-order analysis rather than simply regurgitating snippets of data it found. GPT‑5.1 picks up these nuances in the system instructions and adheres to them.  
   
-Taking our learnings from deep research, we applied GPT-5.1 to Fast Mode in Glean Assistant—a latency and token‑efficient mode for straightforward, information retrieval queries. Fast Mode has explicit instructions to make use of tools, and we found that GPT-5.1 with no reasoning set was actually better at following instructions than GPT-5 on minimal reasoning.
+Taking our learnings from deep research, we applied GPT-5.1 to Fast Mode in Glean Assistant-a latency and token‑efficient mode for straightforward, information retrieval queries. Fast Mode has explicit instructions to make use of tools, and we found that GPT-5.1 with no reasoning set was actually better at following instructions than GPT-5 on minimal reasoning.
 
-The combination of steerability and instruction following lets us shape GPT‑5.1’s behavior to the task at hand. For deep, multi‑step work, we can require exhaustive, cited synthesis. For quick lookups, Fast Mode in Assistant stays efficient and grounded—without skipping tools when they’re needed.
+The combination of steerability and instruction following lets us shape GPT‑5.1’s behavior to the task at hand. For deep, multi‑step work, we can require exhaustive, cited synthesis. For quick lookups, Fast Mode in Assistant stays efficient and grounded-without skipping tools when they’re needed.
 
 ## Faster, efficient token usage
 
-GPT‑5.1 is also a more efficient thinker. It avoids unnecessary reasoning and keeps internal thinking short on straightforward tasks. This is a behavior aligned with dynamic thinking—a new capability of GPT-5.1 where thinking is shorter for easier questions and longer for harder ones at the same reasoning effort. Dynamic thinking comes through in the user experience—one of our immediate takeaways from GPT-5.1 is that it’s just a snappier, more efficient model. When we evaluated GPT-5.1 on enterprise use cases, we found that it used significantly fewer reasoning tokens on average: 916, compared to 2,018 for GPT-5. 
+GPT‑5.1 is also a more efficient thinker. It avoids unnecessary reasoning and keeps internal thinking short on straightforward tasks. This is a behavior aligned with dynamic thinking-a new capability of GPT-5.1 where thinking is shorter for easier questions and longer for harder ones at the same reasoning effort. Dynamic thinking comes through in the user experience-one of our immediate takeaways from GPT-5.1 is that it’s just a snappier, more efficient model. When we evaluated GPT-5.1 on enterprise use cases, we found that it used significantly fewer reasoning tokens on average: 916, compared to 2,018 for GPT-5. 
 
 ## Speed and instruction following in the enterprise
 

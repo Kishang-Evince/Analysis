@@ -105,7 +105,7 @@ July 30, 2026
 
 ### Agent orchestration platforms compared
 
-Compare six agent orchestration platforms on workflow control, reliability, security, and observability — and see which enterprise buyer each one fits.
+Compare six agent orchestration platforms on workflow control, reliability, security, and observability - and see which enterprise buyer each one fits.
 
 ![Stephanie Baladi](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a7634c1b58711c20cfff205_Stephanie.png)
 
@@ -215,7 +215,7 @@ June 23, 2026
 
 ### AI has arrived at work. The organizational impact hasn't
 
-The Work AI Index reveals why widespread AI adoption still isn’t translating into business impact — and the hidden human labor behind the gap.
+The Work AI Index reveals why widespread AI adoption still isn’t translating into business impact - and the hidden human labor behind the gap.
 
 ![Stephanie Baladi](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a7634c1b58711c20cfff205_Stephanie.png)
 
@@ -349,7 +349,7 @@ July 1, 2025
 
 ### AI in life sciences: Practical use cases for research, regulatory, and clinical teams
 
-Explore how AI is helping life sciences teams accelerate research, streamline compliance, and reduce risk — with real use cases and examples from Glean.
+Explore how AI is helping life sciences teams accelerate research, streamline compliance, and reduce risk - with real use cases and examples from Glean.
 
 ![Stephanie Baladi](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a7634c1b58711c20cfff205_Stephanie.png)
 
@@ -397,7 +397,7 @@ June 25, 2025
 
 ### How AI is transforming healthcare payer operations
 
-Discover how AI is helping healthcare payers streamline operations, reduce costs, and improve compliance — with real-world use cases and practical adoption tips.
+Discover how AI is helping healthcare payers streamline operations, reduce costs, and improve compliance - with real-world use cases and practical adoption tips.
 
 ![Stephanie Baladi](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a7634c1b58711c20cfff205_Stephanie.png)
 
@@ -517,7 +517,7 @@ May 30, 2025
 
 ### 5 ways AI in retail helps teams save time and simplify work
 
-Discover five powerful ways AI is driving retail transformation — from customer service and omnichannel to employee enablement and operations.
+Discover five powerful ways AI is driving retail transformation - from customer service and omnichannel to employee enablement and operations.
 
 ![Stephanie Baladi](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a7634c1b58711c20cfff205_Stephanie.png)
 
@@ -539,7 +539,7 @@ May 1, 2025
 
 ### RAG vs. LLM fine-tuning: Which is the best approach?
 
-Explore the difference between RAG and LLM fine-tuning — and how combining both can deliver more accurate, personalized AI for enterprise use cases.
+Explore the difference between RAG and LLM fine-tuning - and how combining both can deliver more accurate, personalized AI for enterprise use cases.
 
 ![Stephanie Baladi](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a7634c1b58711c20cfff205_Stephanie.png)
 
@@ -591,7 +591,7 @@ April 24, 2025
 
 ### What are RAG models? A guide to enterprise AI in 2025
 
-RAG models combine real-time retrieval with generation, helping enterprise AI deliver more accurate, relevant answers — without constant retraining.
+RAG models combine real-time retrieval with generation, helping enterprise AI deliver more accurate, relevant answers - without constant retraining.
 
 ![Stephanie Baladi](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a7634c1b58711c20cfff205_Stephanie.png)
 
@@ -617,7 +617,7 @@ April 23, 2025
 
 ### Retrieval-augmented generation (RAG) for LLMs
 
-Learn how RAG enhances LLMs with real-time knowledge — improving accuracy, trust, and performance across enterprise teams without retraining your model.
+Learn how RAG enhances LLMs with real-time knowledge - improving accuracy, trust, and performance across enterprise teams without retraining your model.
 
 ![Stephanie Baladi](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a7634c1b58711c20cfff205_Stephanie.png)
 
@@ -667,7 +667,7 @@ April 15, 2025
 
 ### Agentic RAG explained: Smarter retrieval with AI agents
 
-Agentic RAG enhances traditional RAG with intelligent agents that adapt in real time — delivering more accurate, flexible answers at work.
+Agentic RAG enhances traditional RAG with intelligent agents that adapt in real time - delivering more accurate, flexible answers at work.
 
 ![Stephanie Baladi](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a7634c1b58711c20cfff205_Stephanie.png)
 
@@ -693,7 +693,7 @@ April 10, 2025
 
 ### What are AI solutions? 5 business applications explained
 
-Explore 5 AI solutions transforming business—automating work, analyzing data, and helping teams across departments make smarter, faster decisions.
+Explore 5 AI solutions transforming business-automating work, analyzing data, and helping teams across departments make smarter, faster decisions.
 
 ![Stephanie Baladi](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a7634c1b58711c20cfff205_Stephanie.png)
 
@@ -743,7 +743,7 @@ March 27, 2025
 
 ### AI agents in the enterprise: Key benefits and real-world applications
 
-Explore how AI agents are transforming enterprise work — streamlining operations, enhancing decision-making, and scaling productivity across every team.
+Explore how AI agents are transforming enterprise work - streamlining operations, enhancing decision-making, and scaling productivity across every team.
 
 ![Stephanie Baladi](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a7634c1b58711c20cfff205_Stephanie.png)
 

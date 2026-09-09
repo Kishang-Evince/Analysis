@@ -63,7 +63,7 @@ This proved invaluable for teams like those in the compliance department, which 
 
 ### Prioritizing focus and flow
 
-Before Glean, workers regularly had to interrupt their workflows and those of others to ask about the information they needed. This method of information discovery wasn’t just inefficient—it was actively detrimental to organizational productivity.
+Before Glean, workers regularly had to interrupt their workflows and those of others to ask about the information they needed. This method of information discovery wasn’t just inefficient-it was actively detrimental to organizational productivity.
 
 ‍
 
@@ -73,13 +73,13 @@ Now, with a centralized index of all their enterprise information, workers can s
 
 ### Enabling citizen-developers
 
-Glean enabled GCash to extend its citizen developer program to include AI—empowering employees to build their own applications through Glean Agent Builder.
+Glean enabled GCash to extend its citizen developer program to include AI-empowering employees to build their own applications through Glean Agent Builder.
 
 ‍
 
 Now capable of developing personalized business agents through just natural language, teams across GCash are increasingly integrating tailored agents into their workflows.
 
-In five to ten years, the way we work will radically change—all our teams will have their own Glean AI agents assisting them.”
+In five to ten years, the way we work will radically change-all our teams will have their own Glean AI agents assisting them.”
 
 Benson Tan
 

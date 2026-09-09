@@ -93,11 +93,11 @@ CEO
 
 Industry Insights
 
-[![Enterprise search is hard: why it’s so behind—and what it’ll take to catch up](https://cdn.prod.website-files.com/613513981b0efaf850830620/61e567297a956f36ac3d4d35_Glean-cloud2.png)
+[![Enterprise search is hard: why it’s so behind-and what it’ll take to catch up](https://cdn.prod.website-files.com/613513981b0efaf850830620/61e567297a956f36ac3d4d35_Glean-cloud2.png)
 
 October 4, 2021
 
-### Enterprise search is hard: why it’s so behind—and what it’ll take to catch up
+### Enterprise search is hard: why it’s so behind-and what it’ll take to catch up
 
 It takes a complex software to keep up with modern demands of enterprise search software. Glean offers reliable search for documents, applications, and more.
 

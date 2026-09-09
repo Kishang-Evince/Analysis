@@ -63,11 +63,11 @@ Share this article:
 
 # Which free AI workflow automation tools work best for small businesses?
 
-Free AI workflow automation tools let small businesses automate real work at no cost — sorting incoming leads, summarizing documents, and drafting customer follow-ups without anyone copying data between apps by hand.
+Free AI workflow automation tools let small businesses automate real work at no cost - sorting incoming leads, summarizing documents, and drafting customer follow-ups without anyone copying data between apps by hand.
 
 AI workflow automation uses AI to run repeatable business processes with little manual input. It reads unstructured information like emails and web forms, then decides what should happen next.
 
-That matters because manual last-mile tasks like triage, data entry, and report prep eat hours every week. Free tiers now put this capability within reach of teams that lack a big software budget — and adoption has followed, with [82% of small business employers](https://sbecouncil.org/2026/04/25/the-ai-tools-small-businesses-are-using/) now investing in AI tools. This post covers what to look for, five tool categories with free tiers, and how to compare them before you commit.
+That matters because manual last-mile tasks like triage, data entry, and report prep eat hours every week. Free tiers now put this capability within reach of teams that lack a big software budget - and adoption has followed, with [82% of small business employers](https://sbecouncil.org/2026/04/25/the-ai-tools-small-businesses-are-using/) now investing in AI tools. This post covers what to look for, five tool categories with free tiers, and how to compare them before you commit.
 
 ## What does AI workflow automation actually do?
 
@@ -79,7 +79,7 @@ The strongest platforms ground AI actions in your company's actual data instead 
 
 ## Why small businesses need AI workflow automation in 2026
 
-Small teams lose more hours per person to repetitive admin than large ones do. Data entry, inbox triage, report generation, and moving information between apps pull people away from the work that grows the business. Reclaiming that time adds up — small business workers save an average of [5.6 hours per week](https://www.business.com/articles/ai-usage-smb-workplace-study/) using AI.
+Small teams lose more hours per person to repetitive admin than large ones do. Data entry, inbox triage, report generation, and moving information between apps pull people away from the work that grows the business. Reclaiming that time adds up - small business workers save an average of [5.6 hours per week](https://www.business.com/articles/ai-usage-smb-workplace-study/) using AI.
 
 AI automation narrows the gap between a five-person team and a 50-person team by taking on judgment-heavy tasks that rule-based scripts cannot touch. It reads messy inputs, decides what to do, and acts, rather than following one fixed path. See how automation is reshaping roles across [the future of work](https://www.glean.com/perspectives/the-future-of-work-8-industries-benefiting-from-ai-automation).
 

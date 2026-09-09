@@ -148,7 +148,7 @@ As **Emrecan Dogan**, Head of Product at Glean, put it, the integration gives â€
 
 Glean also introduced its [new slide generation capability](https://docs.glean.com/user-guide/assistant/slide-generation) that turns a conversation in Glean Assistant into a draft presentation teams can refine using approved company templates. The result is a fully editable .pptx file that can be uploaded into Google Slides, helping teams move from idea to first draft faster while keeping people in control of the final narrative.  
 
-Both announcements reflect the same larger direction â€” **enterprise AI is becoming less about isolated prompts and more about helping people complete real work inside trusted systems.**
+Both announcements reflect the same larger direction - **enterprise AI is becoming less about isolated prompts and more about helping people complete real work inside trusted systems.**
 
 ## Why AI deployments still fail inside organizations
 

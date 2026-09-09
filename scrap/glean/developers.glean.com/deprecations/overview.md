@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:23:00.328Z"
 ---
 On this page
 
-We evolve our API through additive changes and predictable deprecations — not versioned URLs. This ensures your integrations remain stable while allowing us to improve the API.
+We evolve our API through additive changes and predictable deprecations - not versioned URLs. This ensures your integrations remain stable while allowing us to improve the API.
 
 * * *
 
@@ -57,7 +57,7 @@ The deprecated feature is removed only on a fixed date: **Jan 15**, **Apr 15**, 
 
 #### Example:[​](#example "Direct link to Example:")
 
-Consider a field deprecated on **2026-01-01**. The field will be removed on **2026-07-15** (a minimum of 6 months after deprecation, plus a short buffer, rounded up to the next quarterly removal date — removals only happen on **Jan 15, Apr 15, Jul 15, or Oct 15**)
+Consider a field deprecated on **2026-01-01**. The field will be removed on **2026-07-15** (a minimum of 6 months after deprecation, plus a short buffer, rounded up to the next quarterly removal date - removals only happen on **Jan 15, Apr 15, Jul 15, or Oct 15**)
 
 ```
         2026-01-01                                                    2026-07-15            │                                                              │            ▼                                                              ▼────────────●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━●────────────            │                                                              │ Deprecation Introduced                                         Deprecation Removed            ├──────────────────── Migration Period ────────────────────────┤

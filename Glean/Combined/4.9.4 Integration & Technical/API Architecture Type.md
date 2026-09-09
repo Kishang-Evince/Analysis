@@ -15,7 +15,7 @@
 
 **Field definition:** Framework type of vendor APIs (REST, GraphQL, gRPC, SOAP).  
 **Prerequisites / Licensing:** API token from Admin; Server URL from About Glean.  
-**Architecture classification (Doc-Verified):** **REST only** — three API families; no Glean-native GraphQL, gRPC, or SOAP documented.  
+**Architecture classification (Doc-Verified):** **REST only** - three API families; no Glean-native GraphQL, gRPC, or SOAP documented.  
 **Confidence Level:** **Doc-Verified** · **Pending Sandbox** (live traffic capture)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [Client API](https://developers.glean.com/api/client-api) · [Platform API getting started](https://developers.glean.com/api/platform-api/getting-started) · [Indexing API documents](https://developers.glean.com/api/indexing-api/documents-overview) · [API clients](https://developers.glean.com/libraries/api-clients)
@@ -32,13 +32,13 @@
 
 - SDK docs state: use Glean REST APIs with preferred HTTP library; official Python/TS SDKs wrap REST.
 - Errors use RFC 7807 `ProblemDetail` with stable `code` values ([developers.glean.com/errors](https://developers.glean.com/errors)).
-- Rate limits are token-bucket per endpoint ([rate-limits](https://developers.glean.com/get-started/rate-limits)) — documented in 4.9.1 Field 8.
+- Rate limits are token-bucket per endpoint ([rate-limits](https://developers.glean.com/get-started/rate-limits)) - documented in 4.9.1 Field 8.
 
 ### Verification steps / test case
 
-1. `curl -X POST https://<instance>-be.glean.com/rest/api/v1/search` with bearer token — confirm JSON REST response.
+1. `curl -X POST https://<instance>-be.glean.com/rest/api/v1/search` with bearer token - confirm JSON REST response.
 2. Repeat on `/api/search` (Platform API) if enabled for tenant.
-3. DevTools Network tab during Assistant use — confirm no GraphQL/gRPC to Glean backend.
+3. DevTools Network tab during Assistant use - confirm no GraphQL/gRPC to Glean backend.
 4. Optional: Indexing API `POST /api/index/v1/indexdocument` on test datasource.
 
 **Risk & Cost Impact:** Risk: Low | Cost: Native

@@ -33,7 +33,7 @@ August 18, 2025
 
 ### How enablement at Sigma democratizes content through Glean
 
-Discover how Sigma leverages Glean to simplify content management—democratizing knowledge, eliminating silos, and driving impact without the complexities of traditional CMS processes.
+Discover how Sigma leverages Glean to simplify content management-democratizing knowledge, eliminating silos, and driving impact without the complexities of traditional CMS processes.
 
 ![Jonas Taylor](https://cdn.prod.website-files.com/613513981b0efaf850830620/68a2d358f5be892365aeb204_Jonas%20Taylor.png)
 

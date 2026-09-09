@@ -59,7 +59,7 @@ SafetyCulture is a global technology company that empowers working teams to driv
 
 During a period of rapid growth at SafetyCulture, a 50% increase in engineering staff and the introduction of new tools led to organizational and productivity challenges. Looking to identify the problem, they issued an internal survey, which revealed knowledge search as the biggest culprit. Data was spread across multiple applications, knowledge was siloed, and there was a desire for more context to be surfaced as well.
 
-Although SafetyCulture first considered building an internal solution, they wanted to keep their engineers at work building their core product for frontline workers—not trying to innovate an enterprise search and work AI platform from scratch. They wanted an out-of-the-box tool that delivered trusted search results, accelerated workflows across the company, and a secure platform that unified AI tools across the organization.
+Although SafetyCulture first considered building an internal solution, they wanted to keep their engineers at work building their core product for frontline workers-not trying to innovate an enterprise search and work AI platform from scratch. They wanted an out-of-the-box tool that delivered trusted search results, accelerated workflows across the company, and a secure platform that unified AI tools across the organization.
 
 That’s why they turned to **Glean**.
 
@@ -117,7 +117,7 @@ This agent enabled GTM and support teams at SafetyCulture to move faster by quic
 
 ### Seamless and secure implementation
 
-Glean’s intuitive interface and hundreds of quality connectors made adoption a breeze—and simple to integrate into everyday workflows. A security-first approach regarding enterprise data, along with the ability to host Glean directly within their own cloud tenant, also made Glean an easy choice during the consideration process.
+Glean’s intuitive interface and hundreds of quality connectors made adoption a breeze-and simple to integrate into everyday workflows. A security-first approach regarding enterprise data, along with the ability to host Glean directly within their own cloud tenant, also made Glean an easy choice during the consideration process.
 
 Glean's changed how everyone works. It's the launchpad to all our information, and is helping us embrace AI into everything we do.
 

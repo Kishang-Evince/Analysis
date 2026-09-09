@@ -34,8 +34,8 @@
 
 ### Engineering observation (Doc-Verified)
 
-- UC-05/07/08 complexity spikes on **Notion ACL gap** and **OAuth** — not builder UI itself.
-- UC-08 **High** if client demands field-level PHI controls on Notion — may be **not viable** without Live Mode only.
+- UC-05/07/08 complexity spikes on **Notion ACL gap** and **OAuth** - not builder UI itself.
+- UC-08 **High** if client demands field-level PHI controls on Notion - may be **not viable** without Live Mode only.
 
 ### Verification steps / test case
 

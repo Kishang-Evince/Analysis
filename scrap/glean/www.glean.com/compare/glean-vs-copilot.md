@@ -41,7 +41,7 @@ Delivers personalized, source-backed answers grounded in your company data.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6900dcd91f42116b5a55fa06_warning-icon.svg)
 
-Relies on Microsoft Graph, which leverages semantic understanding of supported content type—not user-level data from Copilot connectors—resulting in less relevant, disjointed results outside the Microsoft ecosystem.
+Relies on Microsoft Graph, which leverages semantic understanding of supported content type-not user-level data from Copilot connectors-resulting in less relevant, disjointed results outside the Microsoft ecosystem.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6900dba68b8629c96a17e0e6_comparision-check.svg)
 
@@ -677,7 +677,7 @@ Microsoft OneDrive
 
 onedrive
 
-Integrate Microsoft OneDrive with Glean to securely search, access, and manage your OneDrive folders and documents—all in one place for enhanced productivity.
+Integrate Microsoft OneDrive with Glean to securely search, access, and manage your OneDrive folders and documents-all in one place for enhanced productivity.
 
 Glean retrieves context and executes actions across:
 

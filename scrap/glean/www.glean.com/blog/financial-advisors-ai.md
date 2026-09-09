@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/financial-advisors-ai"
 canonical: "https://www.glean.com/blog/financial-advisors-ai"
 title: "Transforming financial advisory practices through AI implementation"
-description: "Peter Kim  | With financial advisory firms faced with rising client expectations and fragmented data sources, tackling the knowledge problem is more important than ever—especially with AI solutions."
+description: "Peter Kim  | With financial advisory firms faced with rising client expectations and fragmented data sources, tackling the knowledge problem is more important than ever-especially with AI solutions."
 fetched_at: "2026-09-01T13:26:35.279Z"
 ---
 Last updated Aug 08, 2025.
@@ -89,9 +89,9 @@ However, this landscape is rapidly changing. AI is becoming most useful when it 
 
 ## Understanding the knowledge problem
 
-Nearly every financial advisory practice—whether part of a large integrated bank or an agile independent RIA—struggles with the same issue: the client, product, compliance, and service context advisors need is spread across too many systems and teams. 
+Nearly every financial advisory practice-whether part of a large integrated bank or an agile independent RIA-struggles with the same issue: the client, product, compliance, and service context advisors need is spread across too many systems and teams. 
 
-Advisors lose valuable time in “swivel-chair” workflows, toggling between applications, hunting for files, and reassembling context just to prepare for a meeting, answer a client question, or complete routine follow-through The numbers are stark—up to 60% of an advisor’s workweek is spent on repetitive administrative and operational tasks, time that could be spent providing strategic advice and deepening client relationships.
+Advisors lose valuable time in “swivel-chair” workflows, toggling between applications, hunting for files, and reassembling context just to prepare for a meeting, answer a client question, or complete routine follow-through The numbers are stark-up to 60% of an advisor’s workweek is spent on repetitive administrative and operational tasks, time that could be spent providing strategic advice and deepening client relationships.
 
 ## AI as a game changer
 
@@ -101,7 +101,7 @@ With a foundation of unified, accessible data, AI can automate low-value adminis
 
 ## Strategic client segmentation and growth
 
-Perhaps the most compelling benefit for advisory practices is the ability to systemically segment and prioritize clients. Many firms naturally focus on “top” clients, but lack the visibility or tools to analyze the bottom 80%—where “held-away” assets and growth opportunities abound.
+Perhaps the most compelling benefit for advisory practices is the ability to systemically segment and prioritize clients. Many firms naturally focus on “top” clients, but lack the visibility or tools to analyze the bottom 80%-where “held-away” assets and growth opportunities abound.
 
 With full context, advisors can identify growth opportunities, prioritize outreach and personalize the client experience.
 

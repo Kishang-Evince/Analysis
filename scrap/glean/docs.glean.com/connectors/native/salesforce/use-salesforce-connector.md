@@ -47,9 +47,9 @@ These tools:
 -   Typically require users to **authorize Salesforce** for tools via OAuth, which is separate from the connector’s service account authorization.
     
 
-Because Glean uses both Glean’s **connector‑mirrored permissions** and per‑user OAuth where applicable, answers are **record‑level permission‑aware**—users do not see records they cannot see in Salesforce.
+Because Glean uses both Glean’s **connector‑mirrored permissions** and per‑user OAuth where applicable, answers are **record‑level permission‑aware**-users do not see records they cannot see in Salesforce.
 
-For exhaustive enumeration in agents — for example, listing every opportunity closing this quarter — use [Search Salesforce with SOQL](/tools/connector/salesforce/search-salesforce-with-soql) rather than company search. See [Limits and exhaustive retrieval best practices](/agents/concepts/limits-and-best-practices) for guidance on choosing the right retrieval approach.
+For exhaustive enumeration in agents - for example, listing every opportunity closing this quarter - use [Search Salesforce with SOQL](/tools/connector/salesforce/search-salesforce-with-soql) rather than company search. See [Limits and exhaustive retrieval best practices](/agents/concepts/limits-and-best-practices) for guidance on choosing the right retrieval approach.
 
 ## Glean Agents and workflows[​](#glean-agents-and-workflows "Direct link to Glean Agents and workflows")
 

@@ -97,10 +97,10 @@ With these converging pressures, expanding capacity alone won’t be enough to m
 
 The fact is that most energy & utility companies aren’t suffering from a lack of data; they suffer from a lack of context. Critical information is siloed across multiple enterprise systems, and teams struggle to access the information they need. This fragmentation creates four recurring challenges:
 
-1.  **Limited visibility across operations:** Separate systems make it difficult to see the full picture across generation, transmission, production, and maintenance — slowing response times and extending downtime.
+1.  **Limited visibility across operations:** Separate systems make it difficult to see the full picture across generation, transmission, production, and maintenance - slowing response times and extending downtime.
 2.  **Inefficient planning and forecasting:** Capital-intensive decisions depend on unified views of geological data, production, load forecasts, and financials, but those inputs often live in disconnected silos.
 3.  **Disconnected customer and service experiences:** Legacy systems across billing, outages, and communications make it hard to deliver proactive, digital-first service when customers need it most.
-4.  **Compliance and knowledge risk:** Regulatory complexity is increasing, while institutional knowledge walks out the door as experienced workers retire — stretching compliance teams and making audits more painful.
+4.  **Compliance and knowledge risk:** Regulatory complexity is increasing, while institutional knowledge walks out the door as experienced workers retire - stretching compliance teams and making audits more painful.
 
 GenAI point solutions alone aren’t sufficient to overcome these challenges. Oftentimes, they simply replicate the same fragmentation issues across individual tools and applications. What’s needed is a horizontal approach that provides shared context without requiring organizations to rip and replace existing systems.
 
@@ -116,7 +116,7 @@ Unlike traditional tools that work in isolation, Work AI platforms like Glean co
 
 ## GenAI delivers impact from production to the grid
 
-Through every stage of the energy and utilities lifecycle, routine work depends on having the right information at the right moment — whether you’re planning new capacity, dispatching crews, preparing a rate case, or explaining an outage to customers. A horizontal Work AI platform like Glean enables teams to move from insights to action, grounded in the systems and documents you already use. That shared foundation is how Glean cuts across traditional silos and delivers value for planners, compliance teams, field operations, customer service, and training and workforce development.
+Through every stage of the energy and utilities lifecycle, routine work depends on having the right information at the right moment - whether you’re planning new capacity, dispatching crews, preparing a rate case, or explaining an outage to customers. A horizontal Work AI platform like Glean enables teams to move from insights to action, grounded in the systems and documents you already use. That shared foundation is how Glean cuts across traditional silos and delivers value for planners, compliance teams, field operations, customer service, and training and workforce development.
 
 ### GenAI for planning & forecasting
 
@@ -136,25 +136,25 @@ Customer and service operations benefit from the same connected context. By conn
 
 ### GenAI for training & onboarding
 
-Meanwhile, training and knowledge workflows ensure that institutional expertise doesn’t walk out the door as the workforce turns over. Organizations can accelerate onboarding with role-specific learnings drawn from real SOPs, incident responses, and troubleshooting logs. As teams become more comfortable using AI in these workflows, they can automate more of the routine steps, standardize best practices, and turn tribal knowledge into repeatable guidance at the point of work — on the line, in the field, in the control room, and in front of the customer.
+Meanwhile, training and knowledge workflows ensure that institutional expertise doesn’t walk out the door as the workforce turns over. Organizations can accelerate onboarding with role-specific learnings drawn from real SOPs, incident responses, and troubleshooting logs. As teams become more comfortable using AI in these workflows, they can automate more of the routine steps, standardize best practices, and turn tribal knowledge into repeatable guidance at the point of work - on the line, in the field, in the control room, and in front of the customer.
 
 ## Security that enables speed and value without compromises
 
 For energy and utilities leaders, GenAI can’t just be evaluated on ROI - but whether it can stand up to the same regulatory and operational scrutiny as the rest of your OT and IT stack. Glean is built on a modern, [zero‑trust, least‑privilege architecture](https://www.glean.com/blog/what-is-ai-security) that mirrors how highly regulated organizations already manage risk. Rather than introducing a parallel security model, Glean plugs into your existing identity provider and access controls, so authentication, SSO, and conditional access policies continue to work exactly as they do today.
 
-Just as important, Glean is fully permissions‑aware. It mirrors source‑system permissions in real time across 100+ connected applications, so users only see data they’re already allowed to access in systems like SCADA, EMS/DMS, document management, and productivity suites. As roles, groups, or project teams change, those updates are immediately reflected in what the assistant and agents can access or generate—preventing “AI side doors” that expose sensitive operational, customer, or regulatory content. Every query, action, and agent run is logged with rich metadata, giving security, audit, and compliance teams a detailed trail for investigations, attestations, and regulator reviews.
+Just as important, Glean is fully permissions‑aware. It mirrors source‑system permissions in real time across 100+ connected applications, so users only see data they’re already allowed to access in systems like SCADA, EMS/DMS, document management, and productivity suites. As roles, groups, or project teams change, those updates are immediately reflected in what the assistant and agents can access or generate-preventing “AI side doors” that expose sensitive operational, customer, or regulatory content. Every query, action, and agent run is logged with rich metadata, giving security, audit, and compliance teams a detailed trail for investigations, attestations, and regulator reviews.
 
-For organizations with stricter data residency or isolation requirements, Glean supports single‑tenant and private‑cloud deployment models, along with granular controls over what gets indexed in the first place. Active data and AI governance add another layer of protection on top of permissions: Glean can detect and automatically hide overshared sensitive content—such as customer PII, financials, or confidential project data—across your environment, and apply consistent policies for how that data is used by agents. The result is a Work AI platform that lets you give teams powerful GenAI capabilities while maintaining the same standard of [security](https://www.glean.com/security), privacy, and compliance you expect from any system touching grid operations, customer data, or regulated records.
+For organizations with stricter data residency or isolation requirements, Glean supports single‑tenant and private‑cloud deployment models, along with granular controls over what gets indexed in the first place. Active data and AI governance add another layer of protection on top of permissions: Glean can detect and automatically hide overshared sensitive content-such as customer PII, financials, or confidential project data-across your environment, and apply consistent policies for how that data is used by agents. The result is a Work AI platform that lets you give teams powerful GenAI capabilities while maintaining the same standard of [security](https://www.glean.com/security), privacy, and compliance you expect from any system touching grid operations, customer data, or regulated records.
 
 ## Powering the next era of energy
 
 Energy and utilities organizations already have much of the expertise, data, and operational context they need to meet this moment. The challenge is turning that fragmented context into faster decisions, cleaner coordination, and consistent execution across operations.
 
-A Work AI platform like Glean turns that knowledge into execution — connecting 110+ systems into a single, secure intelligence layer so every employee can move faster, safer, and with more confidence.
+A Work AI platform like Glean turns that knowledge into execution - connecting 110+ systems into a single, secure intelligence layer so every employee can move faster, safer, and with more confidence.
 
 Energy and utilities customers using Glean have seen measurable gains in reduced audit cycles, faster ticket resolution, improved uptime, and thousands of hours saved annually through automated quality and review workflows.
 
-As demand grows and expectations rise, organizations that leverage connected intelligence will find success — the ability to understand, decide, and act at the speed the future requires.
+As demand grows and expectations rise, organizations that leverage connected intelligence will find success - the ability to understand, decide, and act at the speed the future requires.
 
 Ready to see how Glean can help your team power smarter energy operations? Download the energy and utilities [whitepaper](https://www.glean.com/resources/guides/energy-whitepaper) or [request a demo](https://www.glean.com/demo) today.
 

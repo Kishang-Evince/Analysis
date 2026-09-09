@@ -109,7 +109,7 @@ I can't wait to see how customers apply Glean to different functions, industries
 
 If I could dream big, Gleaniverse would buzz with discussions, helpful content, and even more events within a year. In fact, I want to see our customers involved in more webinars, sharing their business challenges, amazing ideas, and successes. The Gleaniverse floor is really for them to have, so I hope they take that opportunity.
 
-What inspires me beyond work is seeing how quick and open people are to helping someone they've never met in communities I'm part of—whether that's my book club, local women's communities, or surfing groups. The same energy exists in our customer community, and it's incredibly heartwarming to see how enriching it is to hear different perspectives on the same challenges.
+What inspires me beyond work is seeing how quick and open people are to helping someone they've never met in communities I'm part of-whether that's my book club, local women's communities, or surfing groups. The same energy exists in our customer community, and it's incredibly heartwarming to see how enriching it is to hear different perspectives on the same challenges.
 
 My final message to our community as they dive into this new chapter with Glean? Just use it! Be the one to start a discussion, join the webinars, and get involved as much as you can. We have so many excellent contributors participating in the community webinars who will help you get more ideas and learn more about the platform. Leaning on this network for ideas, experiences, and just embracing the community is so much more valuable than any training session.
 

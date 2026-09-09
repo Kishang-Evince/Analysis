@@ -35,7 +35,7 @@ Glean connects to Klue with a single Admin API key. The key needs two scopes:
 -   `content:read` grants access to your Klue cards and battlecards.
 -   `scim:read` reads users and groups so Glean can apply Klue's document permissions.
 
-Glean checks both scopes and its connection to Klue when you save the connector. If a check fails — for example, the key is invalid, is missing a required scope, or Glean cannot reach Klue — the connector does not save.
+Glean checks both scopes and its connection to Klue when you save the connector. If a check fails - for example, the key is invalid, is missing a required scope, or Glean cannot reach Klue - the connector does not save.
 
 ## Set up the connector[​](#set-up-the-connector "Direct link to Set up the connector")
 

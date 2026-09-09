@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:28:59.509Z"
 ---
 On this page
 
-A Snowflake service credential lets a Glean agent query the Snowflake SQL API as a **service user** (`TYPE = SERVICE`) — not as any individual user. You register an RSA public key on the service user in Snowflake and store the account identifier, user, and matching private key in Glean.
+A Snowflake service credential lets a Glean agent query the Snowflake SQL API as a **service user** (`TYPE = SERVICE`) - not as any individual user. You register an RSA public key on the service user in Snowflake and store the account identifier, user, and matching private key in Glean.
 
 Glean mints a short-lived signed token from the private key on each request, so there is no token to expire and the agent never sees the key.
 

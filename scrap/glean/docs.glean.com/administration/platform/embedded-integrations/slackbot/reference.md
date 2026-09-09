@@ -10,7 +10,7 @@ On this page
 Glean uses two types of Slack connectors:
 
 -   **Standard Slack connector:** Connects your workspace or Enterprise Grid organization to Glean and provides engagement signals for search ranking and personalization.
--   **Slack RTS connector:** A federated connector that retrieves live Slack messages at query time using Slack's Real-Time Search APIs. Glean does not store or index Slack messages — when you search, Glean securely asks Slack for results in real time and only returns messages you already have access to.
+-   **Slack RTS connector:** A federated connector that retrieves live Slack messages at query time using Slack's Real-Time Search APIs. Glean does not store or index Slack messages - when you search, Glean securely asks Slack for results in real time and only returns messages you already have access to.
 
 When RTS is enabled, you have two Glean apps in your Slack workspace:
 

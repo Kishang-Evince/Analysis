@@ -81,7 +81,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Picture this: it’s the end of the quarter, and you’re juggling a dozen competing priorities. You’re analyzing budgets, ensuring compliance, forecasting revenue, and prepping reports for stakeholders—all while trying to stay ahead of emerging market trends. It’s a balancing act, and it often feels like there aren’t enough hours in the day.
+Picture this: it’s the end of the quarter, and you’re juggling a dozen competing priorities. You’re analyzing budgets, ensuring compliance, forecasting revenue, and prepping reports for stakeholders-all while trying to stay ahead of emerging market trends. It’s a balancing act, and it often feels like there aren’t enough hours in the day.
 
 Enter AI. By automating repetitive tasks and surfacing actionable insights, AI tools can help finance professionals save time, reduce errors, and focus on strategic decision-making. To help you get started, we’ve compiled 30 AI prompts tailored to streamline your work and supercharge your productivity.
 
@@ -1020,7 +1020,7 @@ Drive smarter decisions for your team with prompts that analyze cash flow, optim
 
 **What it does:** Simplifies loan management with a clear schedule.
 
-Introducing [Glean's prompt library](https://www.glean.com/prompt-library) — the ultimate solution for organizations looking to harness the power of AI! From marketing to HR, finance, sales, and operations, our library provides ready-to-use prompts tailored for every department. With Glean, you can streamline workflows, boost productivity, and make smarter decisions every day.
+Introducing [Glean's prompt library](https://www.glean.com/prompt-library) - the ultimate solution for organizations looking to harness the power of AI! From marketing to HR, finance, sales, and operations, our library provides ready-to-use prompts tailored for every department. With Glean, you can streamline workflows, boost productivity, and make smarter decisions every day.
 
 [
 

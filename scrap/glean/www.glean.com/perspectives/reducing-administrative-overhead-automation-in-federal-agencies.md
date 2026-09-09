@@ -63,7 +63,7 @@ Share this article:
 
 # Reducing administrative overhead: automation in federal agencies
 
-Manual workflows dominate federal operations, creating bottlenecks that delay critical services and frustrate both citizens and government employees. These inefficiencies stem from legacy IT systems, paper-based processes, and complex regulatory requirements that force skilled professionals to spend countless hours on repetitive tasks rather than mission-critical work. The human toll is evident: [65 percent](https://www.eaglehillconsulting.com/insights/government-employees-burnout/) of government employees report feeling burnt out—compared to 44 percent in the private sector—and nearly nine out of ten say a smaller workload would most reduce burnout.
+Manual workflows dominate federal operations, creating bottlenecks that delay critical services and frustrate both citizens and government employees. These inefficiencies stem from legacy IT systems, paper-based processes, and complex regulatory requirements that force skilled professionals to spend countless hours on repetitive tasks rather than mission-critical work. The human toll is evident: [65 percent](https://www.eaglehillconsulting.com/insights/government-employees-burnout/) of government employees report feeling burnt out-compared to 44 percent in the private sector-and nearly nine out of ten say a smaller workload would most reduce burnout.
 
 Manual workflows dominate federal operations, creating bottlenecks that delay critical services and frustrate both citizens and government employees. These inefficiencies stem from legacy IT systems, paper-based processes, and complex regulatory requirements that force skilled professionals to spend countless hours on repetitive tasks rather than mission-critical work.
 
@@ -71,17 +71,17 @@ The solution lies in intelligent automation technologies that transform how agen
 
 ## What is automation in federal agencies?
 
-Automation in federal agencies represents a fundamental shift from manual, paper-based processes to intelligent systems that execute tasks with minimal human intervention. This transformation extends far beyond simple digitization — while converting paper forms to PDFs merely changes the format, true automation leverages sophisticated technologies to complete entire workflows autonomously.
+Automation in federal agencies represents a fundamental shift from manual, paper-based processes to intelligent systems that execute tasks with minimal human intervention. This transformation extends far beyond simple digitization - while converting paper forms to PDFs merely changes the format, true automation leverages sophisticated technologies to complete entire workflows autonomously.
 
 At its core, federal automation employs several key technologies working in concert. Robotic Process Automation serves as the workhorse for high-volume, repetitive tasks: extracting data from thousands of forms, updating multiple databases simultaneously, and processing applications in minutes rather than days. These digital workers operate 24/7 without fatigue, maintaining perfect accuracy while handling workloads that would require dozens of human employees.
 
-Artificial intelligence elevates automation beyond simple task execution. Machine learning algorithms analyze patterns across millions of transactions to detect fraud, predict service demands, and support complex decision-making. For example, Treasury's Office of Payment Integrity prevented and recovered over [$4 billion](https://home.treasury.gov/news/press-releases/jy2650) in fraud and improper payments in fiscal year 2024 using machine learning AI, representing more than a six-fold increase from $652.7 million in fiscal year 2023. Natural language processing powers intelligent chatbots that answer citizen inquiries instantly, guide users through application processes, and provide multilingual support — capabilities that would require extensive call center operations.
+Artificial intelligence elevates automation beyond simple task execution. Machine learning algorithms analyze patterns across millions of transactions to detect fraud, predict service demands, and support complex decision-making. For example, Treasury's Office of Payment Integrity prevented and recovered over [$4 billion](https://home.treasury.gov/news/press-releases/jy2650) in fraud and improper payments in fiscal year 2024 using machine learning AI, representing more than a six-fold increase from $652.7 million in fiscal year 2023. Natural language processing powers intelligent chatbots that answer citizen inquiries instantly, guide users through application processes, and provide multilingual support - capabilities that would require extensive call center operations.
 
 ### Core automation technologies transforming federal operations
 
 -   **Workflow automation software**: Routes documents through approval chains automatically, tracks progress against deadlines, and maintains comprehensive audit trails. These systems ensure nothing falls through the cracks while providing real-time visibility into process status.
     
--   **Self-service portals**: Enable citizens to complete transactions independently — from renewing licenses to filing taxes — without visiting government offices or waiting on hold. These platforms integrate with backend systems to provide instant updates and confirmations.
+-   **Self-service portals**: Enable citizens to complete transactions independently - from renewing licenses to filing taxes - without visiting government offices or waiting on hold. These platforms integrate with backend systems to provide instant updates and confirmations.
     
 -   **Intelligent document processing**: Combines optical character recognition with AI to extract data from [unstructured documents](https://www.glean.com/blog/why-a-unified-document-model-is-essential-for-a-comprehensive-workplace-chatgpt), classify content automatically, and route information to appropriate systems without manual data entry.
     
@@ -217,7 +217,7 @@ By adhering to these best practices, federal agencies can effectively integrate 
 
 As federal agencies continue their digital transformation journey, the path forward requires intelligent automation solutions that can scale with evolving needs while maintaining security and compliance. The most successful implementations combine strategic planning with technologies that empower employees to focus on high-value work rather than administrative tasks.
 
-Ready to see how AI-powered automation can reduce administrative overhead in your organization? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) — we'll show you how to unlock efficiency across your entire operation.
+Ready to see how AI-powered automation can reduce administrative overhead in your organization? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) - we'll show you how to unlock efficiency across your entire operation.
 
 [
 

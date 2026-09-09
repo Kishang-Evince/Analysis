@@ -23,7 +23,7 @@ Facets follow standard Glean operator syntax and can be combined with other oper
 
 When `skipIndexing` is `false` (the default), metadata values participate in full-text search. A document tagged with `status: Approved` matches a free-text query for `Approved`.
 
-Setting `skipIndexing: true` keeps the value retrievable on the document but excludes it from full-text matching — useful for internal-only fields you don't want surfacing through generic queries.
+Setting `skipIndexing: true` keeps the value retrievable on the document but excludes it from full-text matching - useful for internal-only fields you don't want surfacing through generic queries.
 
 ## Fetching metadata via Get Documents[​](#fetching-metadata-via-get-documents "Direct link to Fetching metadata via Get Documents")
 
@@ -37,4 +37,4 @@ Custom metadata is returned in `Document.metadata.customData`, alongside any dat
 
 ## Co-existence with Custom Properties[​](#co-existence-with-custom-properties "Direct link to Co-existence with Custom Properties")
 
-A document can have both Custom Properties and Custom Metadata simultaneously. They appear alongside each other in faceted search and `getDocuments` responses, with independent lifecycles — re-indexing a document via the Indexing API does not affect its Custom Metadata. See [Custom Properties vs Custom Metadata](/api-info/indexing/custom-metadata/custom-properties-vs-custom-metadata) for a full comparison.
+A document can have both Custom Properties and Custom Metadata simultaneously. They appear alongside each other in faceted search and `getDocuments` responses, with independent lifecycles - re-indexing a document via the Indexing API does not affect its Custom Metadata. See [Custom Properties vs Custom Metadata](/api-info/indexing/custom-metadata/custom-properties-vs-custom-metadata) for a full comparison.

@@ -15,7 +15,7 @@
 **Field definition:** CCPA/GDPR aligned data protection clauses and sub-processor controls.  
 **Prerequisites / Licensing:** Legal team; DPA execution.  
 **DPA availability (Doc-Verified):** **DPA at `glean.com/legal/dpa`**; subprocessors list published; GDPR claimed.  
-**DPA executed (Pending Sandbox):** _TBD — legal_  
+**DPA executed (Pending Sandbox):** _TBD - legal_  
 **Confidence Level:** **Doc-Verified** (DPA/subprocessor transparency) · **Pending Contract** (CCPA-specific language)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [DPA](https://glean.com/legal/dpa) · [Subprocessors](https://www.glean.com/legal/subprocessors) · [Legal page](https://www.glean.com/legal) · [MCP security / DPA reference](https://docs.glean.com/administration/platform/mcp/security) · [Meeting transcription consent](https://docs.glean.com/user-guide/assistant/meeting-notes/transcription-and-consent)
@@ -27,12 +27,12 @@
 | Data Processing Addendum | `glean.com/legal/dpa` | Referenced in MCP + transcription docs |
 | Subprocessors list | `glean.com/legal/subprocessors` | Updated July 28, 2026 in scrap |
 | GDPR | Claimed on legal page | |
-| CCPA | Not explicit in product docs | Likely privacy policy / DPA — legal review |
+| CCPA | Not explicit in product docs | Likely privacy policy / DPA - legal review |
 | Subprocessor change notice | `privacy@glean.com` per subprocessors page | |
 
 ### Representative subprocessors (Vendor-Stated)
 
-AWS, Google, Microsoft (cloud/LLM), OpenAI, Anthropic, Palo Alto Networks (AI security) — customer can influence cloud/LLM location via deployment + BYOK choices.
+AWS, Google, Microsoft (cloud/LLM), OpenAI, Anthropic, Palo Alto Networks (AI security) - customer can influence cloud/LLM location via deployment + BYOK choices.
 
 ### Engineering observation (Doc-Verified)
 

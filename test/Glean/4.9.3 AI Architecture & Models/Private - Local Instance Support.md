@@ -1,4 +1,4 @@
-# Field 3 — Private / Local Instance Support
+# Field 3 - Private / Local Instance Support
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Private - Local Instance Support.md](../../../Glean/Combined/4.9.3 AI Architecture & Models/Private - Local Instance Support.md)

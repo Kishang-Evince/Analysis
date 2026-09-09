@@ -149,7 +149,7 @@ As a customer-first product – hearing from you. Over the last year, we’ve re
 > "The archival component of these tools is invaluable; new and old team members alike can discover information through Glean, which gives us aggregated search across all our tools and content."  
 >     **– Heidi Williams, Head of Engineering for Grammarly Business, Grammarly**
 
-> “Glean is starting to make the process of finding information at work as simple as Google does for the web—don't worry too much about keeping links or bookmarks around, just search!”  
+> “Glean is starting to make the process of finding information at work as simple as Google does for the web-don't worry too much about keeping links or bookmarks around, just search!”  
 >     **– Joseph Lisee, Staff Software Engineer, Aurora**
 
 > "Glean is my workplace superpower…a single search engine for everything I need."  

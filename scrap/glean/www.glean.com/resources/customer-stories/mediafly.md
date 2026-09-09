@@ -139,7 +139,7 @@ Former Manager, Knowledge Strategy & Technical Content, Mediafly
 
 ### What’s next for Mediafly
 
-With enterprise context and agent-building now second nature across sales, CX, support, and engineering, Mediafly is next looking to tighten the connection between its sales conversations and the systems that run the business. The team's current focus is building a closer link between Glean, sales calls, and Salesforce, using an agent to automate the information pulled from those calls, update Salesforce accordingly, and generate the follow-up content that comes after—kicking off an entire sales workflow at the click of a button.
+With enterprise context and agent-building now second nature across sales, CX, support, and engineering, Mediafly is next looking to tighten the connection between its sales conversations and the systems that run the business. The team's current focus is building a closer link between Glean, sales calls, and Salesforce, using an agent to automate the information pulled from those calls, update Salesforce accordingly, and generate the follow-up content that comes after-kicking off an entire sales workflow at the click of a button.
 
 ## Explore more customer stories
 

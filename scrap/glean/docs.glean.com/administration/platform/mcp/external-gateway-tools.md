@@ -2,12 +2,12 @@
 url: "https://docs.glean.com/administration/platform/mcp/external-gateway-tools"
 canonical: "https://docs.glean.com/administration/platform/mcp/external-gateway-tools"
 title: "Set up external tools with MCP Gateway"
-description: "The Glean MCP Gateway lets you securely expose external tools connected to Glean—custom tools, external MCP servers, and external connector tools—to AI clients like Cursor, Claude Code, ChatGPT, Claude Desktop, and more."
+description: "The Glean MCP Gateway lets you securely expose external tools connected to Glean-custom tools, external MCP servers, and external connector tools-to AI clients like Cursor, Claude Code, ChatGPT, Claude Desktop, and more."
 fetched_at: "2026-09-01T13:29:12.618Z"
 ---
 On this page
 
-The Glean MCP Gateway lets you securely expose external tools connected to Glean—custom tools, external MCP servers, and external connector tools—to AI clients like Cursor, Claude Code, ChatGPT, Claude Desktop, and more.
+The Glean MCP Gateway lets you securely expose external tools connected to Glean-custom tools, external MCP servers, and external connector tools-to AI clients like Cursor, Claude Code, ChatGPT, Claude Desktop, and more.
 
 ## Setup instructions[​](#setup-instructions "Direct link to Setup instructions")
 

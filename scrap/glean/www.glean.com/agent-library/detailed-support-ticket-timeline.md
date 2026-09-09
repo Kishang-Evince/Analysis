@@ -23,7 +23,7 @@ Generate a clear, end-to-end timeline of every support interaction.
 
 ## Overview
 
-The detailed support ticket timeline agent helps support teams quickly reconstruct the full history of a customer issue. It pulls updates from tickets, emails, chats, and notes to generate a comprehensive timeline — all in one place. This gives teams the full context they need to resolve issues faster and improve the customer experience.
+The detailed support ticket timeline agent helps support teams quickly reconstruct the full history of a customer issue. It pulls updates from tickets, emails, chats, and notes to generate a comprehensive timeline - all in one place. This gives teams the full context they need to resolve issues faster and improve the customer experience.
 
 ## See it in action
 
@@ -140,7 +140,7 @@ The agent reads through internal links and internal conversations mentioned in t
 
 ### Step 7: Compile full timeline
 
-It combines all collected data — ticket updates, conversations, escalations, and notes — into a single, structured timeline with timestamps and links.
+It combines all collected data - ticket updates, conversations, escalations, and notes - into a single, structured timeline with timestamps and links.
 
 ### Step 8: Generate final output
 

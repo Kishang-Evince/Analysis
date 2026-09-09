@@ -1,4 +1,4 @@
-# Field 5 — Displacement Scenarios
+# Field 5 - Displacement Scenarios
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Displacement Scenarios.md](../../../Glean/Combined/4.9.9 Competitive Positioning/Displacement Scenarios.md)
@@ -16,6 +16,6 @@
 | Legacy enterprise search (name: _____) | | |
 | Go Links spreadsheet | | |
 
-Pick **one** legacy pattern to retire in pilot — measure before/after.
+Pick **one** legacy pattern to retire in pilot - measure before/after.
 
 ---

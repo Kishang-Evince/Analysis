@@ -21,7 +21,7 @@ You can choose to create a custom tool from scratch, build a simple redirect too
 
 tip
 
-For common applications like Jira and Salesforce, Glean offers first-party, out-of-the-box tools that require no coding — select one of the available out-of-the-box tools (if enabled for you) instead of building from scratch. For other use cases, create a custom tool from scratch.
+For common applications like Jira and Salesforce, Glean offers first-party, out-of-the-box tools that require no coding - select one of the available out-of-the-box tools (if enabled for you) instead of building from scratch. For other use cases, create a custom tool from scratch.
 
 If you select creating a tool from scratch, these are the steps to create a tool:
 
@@ -44,7 +44,7 @@ Start by providing the essential details to identify your tool:
 
 Helps users perform operations in external apps. Can be either:
 
--   **Execution**: Runs inside Glean — Glean calls the external API directly
+-   **Execution**: Runs inside Glean - Glean calls the external API directly
 -   **Redirect**: Sends users to the appropriate external URL
 
 ### Read (retrieval)

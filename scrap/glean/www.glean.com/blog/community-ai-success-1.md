@@ -83,15 +83,15 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Hi! My name is Mark Dominguez, and I’m an AI Outcomes Manager (AIOM) at Glean. I was formerly an Enterprise Customer Success Manager here—that background informs a lot of how I approach bringing Glean to customers. My work is about unlocking value with Glean and ensuring people know how to use it. It’s a fun mix of getting into the technical weeds of how Glean works to achieve desired results and doing enablement with end users (which I think is a lot of fun!). 
+Hi! My name is Mark Dominguez, and I’m an AI Outcomes Manager (AIOM) at Glean. I was formerly an Enterprise Customer Success Manager here-that background informs a lot of how I approach bringing Glean to customers. My work is about unlocking value with Glean and ensuring people know how to use it. It’s a fun mix of getting into the technical weeds of how Glean works to achieve desired results and doing enablement with end users (which I think is a lot of fun!). 
 
-I interact with the customer community daily, maybe 6-10 customer meetings on average. Many involve strategic planning for launches (communications collateral, training schedules, etc.), but the priority is always creating connections across a company with AI use cases. This is especially true when talking with department leaders—they all share the key to true AI transformation. Thankfully, I also have a great team to help me out every day with that. 
+I interact with the customer community daily, maybe 6-10 customer meetings on average. Many involve strategic planning for launches (communications collateral, training schedules, etc.), but the priority is always creating connections across a company with AI use cases. This is especially true when talking with department leaders-they all share the key to true AI transformation. Thankfully, I also have a great team to help me out every day with that. 
 
-I’d say Mike Avotonomoff on our team is a guy who gets a “wow” out of me often—he’s also an AIOM who’s more focused on agent quality and technical troubleshooting. I’ve seen him unlock a lot of lightbulb moments for our customers. He can join a call with limited context and have a working Agent completed and near-production-ready by the end of it. He’s the LLM whisperer here at Glean, and I’m glad he’s on our team. 
+I’d say Mike Avotonomoff on our team is a guy who gets a “wow” out of me often-he’s also an AIOM who’s more focused on agent quality and technical troubleshooting. I’ve seen him unlock a lot of lightbulb moments for our customers. He can join a call with limited context and have a working Agent completed and near-production-ready by the end of it. He’s the LLM whisperer here at Glean, and I’m glad he’s on our team. 
 
 ## Learning how our customers use Glean
 
-I’m most excited recently about customers being able to truly stay in the loop with Glean by subscribing to updates through Gleaniverse—our community portal. Glean admins and users alike always want to see what’s coming next, and the Gleaniverse will give them direct access to those changes.
+I’m most excited recently about customers being able to truly stay in the loop with Glean by subscribing to updates through Gleaniverse-our community portal. Glean admins and users alike always want to see what’s coming next, and the Gleaniverse will give them direct access to those changes.
 
 From my perspective as an AIOM, I’m excited to understand how users are transforming their businesses with agents and what measurable value they’re getting from Glean. That’s why I closely follow these use cases, engage in dialogue, and answer questions where possible. Ultimately, my biggest hope is that the community creates a place where admins and end-users can interact and become force multipliers for their businesses. 
 

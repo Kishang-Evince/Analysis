@@ -2,7 +2,7 @@
 url: "https://www.glean.com/connectors/google-calendar"
 canonical: "https://www.glean.com/connectors/google-calendar"
 title: "Google Calendar integration with Glean | Glean Work AI"
-description: "Connect Google Calendar with Glean to seamlessly view and manage meetings, events, and company schedules—all in one place for better productivity."
+description: "Connect Google Calendar with Glean to seamlessly view and manage meetings, events, and company schedules-all in one place for better productivity."
 fetched_at: "2026-09-01T13:25:45.772Z"
 ---
 ### Overview

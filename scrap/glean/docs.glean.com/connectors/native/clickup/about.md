@@ -18,7 +18,7 @@ To connect ClickUp to Glean, see [Setup](/connectors/native/clickup/setup).
 ## Supported features[​](#supported-features "Direct link to Supported features")
 
 -   **Real-time data access:** This live-mode MCP connector queries ClickUp directly, providing the most up-to-date results without the need for crawl schedules or index management. Because results are fetched at request time, they always reflect the current state of your ClickUp workspace.
--   **Federated search & fetch:** Glean executes live searches against the ClickUp MCP server to retrieve tasks, docs, and other assets. When deep context is required—such as for Glean answers or rich previews—Glean fetches full task details, including comments and document page content, on demand.
+-   **Federated search & fetch:** Glean executes live searches against the ClickUp MCP server to retrieve tasks, docs, and other assets. When deep context is required-such as for Glean answers or rich previews-Glean fetches full task details, including comments and document page content, on demand.
 -   **Core module coverage:** The connector is optimized for ClickUp’s primary work management objects, providing deep support for the hierarchy of Spaces, Folders, and Lists, as well as Tasks and Docs.
 
 ## Supported objects[​](#supported-objects "Direct link to Supported objects")

@@ -97,7 +97,7 @@ Enterprise AI platforms are built around a different job: helping teams find tru
 
 The practical difference shows up fast. When a developer needs a unit test for a utility function, a repo-aware assistant is the right tool. When a developer needs to understand why a service was built a certain way, who approved the current architecture, and what rollout policy applies, the answer usually lives across a design doc, a Slack thread, a ticket, and a pull request. No amount of repository indexing surfaces that context.
 
-That distinction — code generation versus company-grounded reasoning — is the first real fork in AI for software development. Many buying mistakes happen when teams expect a coding assistant to act as a full engineering knowledge layer, or expect an enterprise platform to replace in-editor code completion. Each category earns its value in a different part of the workflow, and teams that try to [double developer productivity](https://www.glean.com/blog/ai-developer-productivity) with only one category often hit diminishing returns.
+That distinction - code generation versus company-grounded reasoning - is the first real fork in AI for software development. Many buying mistakes happen when teams expect a coding assistant to act as a full engineering knowledge layer, or expect an enterprise platform to replace in-editor code completion. Each category earns its value in a different part of the workflow, and teams that try to [double developer productivity](https://www.glean.com/blog/ai-developer-productivity) with only one category often hit diminishing returns.
 
 Glean's Agentic Engine is purpose-built for that second job. It reasons across connected systems to answer multi-step engineering questions, pulling from repositories, wikis, tickets, and chat in a single response rather than asking the developer to search each tool separately. That cross-system reasoning is what separates [generative AI for software engineers from code completion alone](https://www.glean.com/blog/generative-ai-for-software-engineers-is-more-than-code-completion).
 
@@ -119,7 +119,7 @@ Context scope is not a feature comparison. It is a category distinction. Coding 
 
 ## Compare the day-to-day developer workflows each tool improves
 
-Repo-aware coding assistants fit best in workflows that start and end inside the editor. The strongest use cases — from boilerplate generation and test drafting to bounded refactors, code explanations, and [AI prompting for software engineers](https://www.glean.com/blog/glean-ai-prompting-guide-engineers) — share a common trait: the relevant context already exists in the repository, and the developer needs faster execution, not broader understanding.
+Repo-aware coding assistants fit best in workflows that start and end inside the editor. The strongest use cases - from boilerplate generation and test drafting to bounded refactors, code explanations, and [AI prompting for software engineers](https://www.glean.com/blog/glean-ai-prompting-guide-engineers) - share a common trait: the relevant context already exists in the repository, and the developer needs faster execution, not broader understanding.
 
 Enterprise AI platforms fit best in workflows that span tools and teams. The strongest use cases include answering architecture questions, summarizing design history, finding the right service owner, locating runbooks during incidents, speeding up onboarding for new engineers, surfacing related past incidents, preparing release notes from scattered sources, and pulling together context before a change is made.
 
@@ -128,11 +128,11 @@ The divergence becomes clear in specific engineering moments:
 -   A developer says "write a test for this function" or "explain this class." A repo-aware assistant handles that well.
 -   A developer says "what services depend on this one," "who approved the current retry policy," or "what broke the last time we changed this config." That question crosses tool boundaries and requires enterprise-wide retrieval.
 
-When teams rely only on coding assistants, the code gets written quickly, but the surrounding work — finding the right context, confirming the right approach, and aligning with the right people — stays slow.
+When teams rely only on coding assistants, the code gets written quickly, but the surrounding work - finding the right context, confirming the right approach, and aligning with the right people - stays slow.
 
 Glean Assistant addresses that surrounding work directly. An engineer can ask a question in natural language and get a cited answer drawn from connected repositories, documents, tickets, and conversations, without leaving the flow of work. The answer includes source links, so the engineer can verify before acting. That workflow, question to verified answer to action, is the one enterprise platforms are built to shorten.
 
-Coding assistants speed up the writing itself, while enterprise platforms reduce the time spent on everything surrounding the code change — finding context, verifying decisions, and coordinating across teams.
+Coding assistants speed up the writing itself, while enterprise platforms reduce the time spent on everything surrounding the code change - finding context, verifying decisions, and coordinating across teams.
 
 ## Compare which tool is better for team collaboration in software development
 
@@ -142,7 +142,7 @@ Collaboration in engineering looks like this: onboarding a new hire who needs to
 
 These situations share a pattern. The bottleneck is not writing code. The bottleneck is finding, sharing, and reusing knowledge that already exists somewhere in the organization but is buried across tools, threads, and documents. Effective [knowledge management in software development](https://www.glean.com/blog/why-great-software-development-requires-great-knowledge-management) is what closes that gap.
 
-Enterprise AI platforms make that knowledge searchable and answerable from a single interface. Rather than pinging a colleague, searching three wikis, and scrolling through old Slack threads, an engineer can ask a question and get a grounded answer with sources — the core promise of [enterprise knowledge management](https://www.glean.com/blog/enterprise-knowledge-management-guide). The knowledge stays accessible whether the original author is on vacation, has left the company, or is asleep in another time zone.
+Enterprise AI platforms make that knowledge searchable and answerable from a single interface. Rather than pinging a colleague, searching three wikis, and scrolling through old Slack threads, an engineer can ask a question and get a grounded answer with sources - the core promise of [enterprise knowledge management](https://www.glean.com/blog/enterprise-knowledge-management-guide). The knowledge stays accessible whether the original author is on vacation, has left the company, or is asleep in another time zone.
 
 Glean's Enterprise Graph strengthens this pattern by mapping relationships between people, content, and activity across connected systems. When an engineer asks who owns a particular service, the answer draws from repository contributors, recent document authors, ticket assignees, and organizational data, not just a stale wiki page. That relationship-aware retrieval is what makes the answer trustworthy and current.
 
@@ -172,7 +172,7 @@ Enterprise AI platforms approach governance differently. They are built to respe
 
 The importance of [permission-aware AI retrieval](https://www.glean.com/blog/secure-generative-ai-for-the-enterprise-requires-the-right-permissions-structure) is especially clear in software engineering, where access boundaries are granular. The same engineer might have read access to a frontend repository but not the infrastructure repo, visibility into one team's incident thread but not another's, and access to a design document shared within their org but not a confidential roadmap shared only with leadership.
 
-Scale adds another layer. A system that works for one team and a handful of repositories must also work for hundreds of teams, thousands of repositories, and dozens of connected knowledge sources while remaining manageable for IT, security, and engineering leadership. Achieving [AI governance at scale](https://www.glean.com/blog/data-gov-product-blog) — with centralized admin controls, audit logs, and consistent policy enforcement across departments — is a requirement, not a feature.
+Scale adds another layer. A system that works for one team and a handful of repositories must also work for hundreds of teams, thousands of repositories, and dozens of connected knowledge sources while remaining manageable for IT, security, and engineering leadership. Achieving [AI governance at scale](https://www.glean.com/blog/data-gov-product-blog) - with centralized admin controls, audit logs, and consistent policy enforcement across departments - is a requirement, not a feature.
 
 Glean's permission-aware architecture enforces these boundaries by default. Every answer, every search result, and every agent action respects the access controls already configured in the source systems. There is no separate permission layer to maintain. That design reduces the operational burden on security teams and gives engineering leaders confidence that expanding AI access does not mean expanding data exposure.
 
@@ -182,7 +182,7 @@ If the primary challenge is safe, governed access to engineering knowledge and a
 
 The decision starts with the problem, not the tool. Match each category to the layer of engineering work it actually handles.
 
-Choose a repo-aware coding assistant when the primary goal is helping individual developers code faster inside their daily environment. Strong fits include writing boilerplate, generating tests, refactoring bounded code, explaining unfamiliar files, drafting PR summaries, and producing first-pass implementations. A randomized controlled trial across 4,800 Accenture developers measured a [75% reduction in PR cycle time](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-in-the-enterprise-with-accenture/) when using a coding assistant — evidence that for tasks where the context lives in the repository, the value comes from faster execution within the editor.
+Choose a repo-aware coding assistant when the primary goal is helping individual developers code faster inside their daily environment. Strong fits include writing boilerplate, generating tests, refactoring bounded code, explaining unfamiliar files, drafting PR summaries, and producing first-pass implementations. A randomized controlled trial across 4,800 Accenture developers measured a [75% reduction in PR cycle time](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-in-the-enterprise-with-accenture/) when using a coding assistant - evidence that for tasks where the context lives in the repository, the value comes from faster execution within the editor.
 
 Choose an enterprise AI platform when the primary goal is helping teams find answers, reduce interruptions, reuse existing knowledge, and automate work across tools. Strong fits include onboarding new engineers, investigating incidents across systems, answering architecture questions, looking up service ownership, coordinating releases, and executing multi-step workflows tied to trusted company context.
 
@@ -212,7 +212,7 @@ The biggest limitation is context scope. Repo-aware assistants are strongest whe
 
 Often, yes. Engineering work spans code execution and company context. A coding assistant speeds up implementation, while an enterprise platform supplies the trusted knowledge and workflow support needed before and after the code change. Teams get the strongest result when they match each tool to the layer of work it is actually built to handle, rather than expecting one category to cover both.
 
-The strongest engineering teams don't choose between faster code generation and better knowledge access — they invest in both. Repo-aware coding assistants handle the code-centric work, and an enterprise AI platform handles everything around it: finding the right context, verifying decisions, and automating cross-tool workflows. [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo).
+The strongest engineering teams don't choose between faster code generation and better knowledge access - they invest in both. Repo-aware coding assistants handle the code-centric work, and an enterprise AI platform handles everything around it: finding the right context, verifying decisions, and automating cross-tool workflows. [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo).
 
 [
 

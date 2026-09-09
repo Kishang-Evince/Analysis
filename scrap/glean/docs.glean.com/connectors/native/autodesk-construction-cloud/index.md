@@ -11,7 +11,7 @@ On this page
 
 # Make your Autodesk Construction Cloud content searchable in Glean
 
-Indexes RFIs, issues, submittals, sheets, and project content from ACC — so teams find project knowledge in search and use it in Assistant, scoped to each user's permissions.
+Indexes RFIs, issues, submittals, sheets, and project content from ACC - so teams find project knowledge in search and use it in Assistant, scoped to each user's permissions.
 
 Construction managementBetaAutodesk OAuthPermission-aware
 

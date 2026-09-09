@@ -84,7 +84,7 @@ Beyond regulatory awareness, AI compliance training focuses on developing agents
 -   **Documentation capabilities**: Ensuring AI systems can maintain proper audit trails and generate compliance reports for regulatory review
 -   **Error prevention mechanisms**: Building in safeguards that prevent AI agents from inadvertently violating compliance standards through hallucinations or misinterpretation
 
-The integration of [workflow automation](https://www.glean.com/product/agent-orchestration) enhances compliance training by providing structured pathways that guide AI agents through complex support interactions. These workflows act as guardrails, ensuring agents follow predetermined processes while maintaining flexibility to adapt responses based on customer needs and regulatory requirements. This approach proves particularly valuable in industries like financial services, where a single support interaction might involve multiple compliance checkpoints — from identity verification to transaction authorization protocols.
+The integration of [workflow automation](https://www.glean.com/product/agent-orchestration) enhances compliance training by providing structured pathways that guide AI agents through complex support interactions. These workflows act as guardrails, ensuring agents follow predetermined processes while maintaining flexibility to adapt responses based on customer needs and regulatory requirements. This approach proves particularly valuable in industries like financial services, where a single support interaction might involve multiple compliance checkpoints - from identity verification to transaction authorization protocols.
 
 ## How to train an AI agent to follow compliance guidelines during support?
 

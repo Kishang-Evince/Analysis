@@ -15,7 +15,7 @@ Higher Education
 
 # Smarter support for students, faculty, & staff
 
-Bring AI to every corner of your campus — connecting students, faculty, and staff to the knowledge and support they need to do their best work.
+Bring AI to every corner of your campus - connecting students, faculty, and staff to the knowledge and support they need to do their best work.
 
 [Get a demo](/get-a-demo)
 
@@ -35,7 +35,7 @@ B2C
 
 Smarter support for students, faculty, & staff
 
-Bring AI to every corner of your campus — connecting students, faculty, and staff to the knowledge and support they need to do their best work.
+Bring AI to every corner of your campus - connecting students, faculty, and staff to the knowledge and support they need to do their best work.
 
 [Get a demo](/get-a-demo)
 
@@ -63,7 +63,7 @@ Download the whitepaper
 
 ### Guide students with 24/7 support.
 
-Help students get answers on classes, policies, deadlines, and campus life — all in plain language and tailored to their needs.
+Help students get answers on classes, policies, deadlines, and campus life - all in plain language and tailored to their needs.
 
 ### Reduce faculty workload.
 
@@ -75,13 +75,13 @@ Connect siloed systems and reduce busywork. Glean helps staff move faster across
 
 ### Accelerate research and grant work.
 
-Empower researchers with quick access to grant data, literature, and internal documents — helping them move faster from idea to impact.
+Empower researchers with quick access to grant data, literature, and internal documents - helping them move faster from idea to impact.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69381ee5e96e5fa933101e87_Guide%20Students_Higher%20Education.avif)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69381ee586baefc82e24983b_Reduce%20Faculty_Higher%20Education.avif)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69381ee5f4ab96ae2bd37b5a_Streamline%20Academic_Higher%20Education.avif)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69381ee790b706aa6efb65ac_Accelerate%20research_Higher%20Education.avif)![zig-zag section dotted bg](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/686d698e445d7f90e5868c09_zig-zag%20section%20dotted%20bg.svg)
 
 Guide students with 24/7 support.
 
-Help students get answers on classes, policies, deadlines, and campus life — all in plain language and tailored to their needs.
+Help students get answers on classes, policies, deadlines, and campus life - all in plain language and tailored to their needs.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6938220e52b501732132bc1f_M-Guide%20Students_Higher%20Education.webp)
 
@@ -99,7 +99,7 @@ Connect siloed systems and reduce busywork. Glean helps staff move faster across
 
 Accelerate research and grant work.
 
-Empower researchers with quick access to grant data, literature, and internal documents — helping them move faster from idea to impact.
+Empower researchers with quick access to grant data, literature, and internal documents - helping them move faster from idea to impact.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6938220ef732c07e4900555f_M-Accelerate%20research_Higher%20Education.webp)
 

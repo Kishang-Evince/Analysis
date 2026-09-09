@@ -27,7 +27,7 @@ On this page
 **Decoupled setup**
 
 -   SSO and People Data are intentionally decoupled in product and setup; many tenants use separate apps/credentials and secrets for each.
--   If you configure SSO using OIDC and the IdP is also the directory, you often complete directory access as part of SSO—then you still need to enable that source under People Data in Admin Console.
+-   If you configure SSO using OIDC and the IdP is also the directory, you often complete directory access as part of SSO-then you still need to enable that source under People Data in Admin Console.
 
 ## Why login does not guarantee a visible profile[​](#why-login-does-not-guarantee-a-visible-profile "Direct link to Why login does not guarantee a visible profile")
 

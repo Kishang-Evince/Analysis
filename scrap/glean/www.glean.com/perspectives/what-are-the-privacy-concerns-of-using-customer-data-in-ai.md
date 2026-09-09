@@ -63,26 +63,26 @@ Share this article:
 
 # What are the privacy concerns of using customer data in AI?
 
-AI systems depend on customer data to function — and that dependency creates real privacy exposure. Personal information, behavioral patterns, financial records, and health data all feed into models that power everything from personalized recommendations to automated decision-making. The scale at which modern AI collects, processes, and stores this information has outpaced many of the data protection methods organizations still rely on.
+AI systems depend on customer data to function - and that dependency creates real privacy exposure. Personal information, behavioral patterns, financial records, and health data all feed into models that power everything from personalized recommendations to automated decision-making. The scale at which modern AI collects, processes, and stores this information has outpaced many of the data protection methods organizations still rely on.
 
 The core concern isn't whether organizations use customer data. It's whether they handle it responsibly, transparently, and with safeguards that match the sensitivity of what's at stake. Every AI model trained on real-world customer interactions carries the potential to expose, misuse, or permanently retain information in ways that traditional software never could.
 
-For enterprises in high-trust industries — financial services, life sciences, professional services — the stakes compound quickly. AI-powered experiences like hyper-personalized finance, regulated R&D workflows, and intelligent customer support all increase the volume of sensitive data in motion. That raises the bar for privacy-by-design, compliance readiness, and the kind of architectural discipline that prevents small oversights from turning into major liabilities.
+For enterprises in high-trust industries - financial services, life sciences, professional services - the stakes compound quickly. AI-powered experiences like hyper-personalized finance, regulated R&D workflows, and intelligent customer support all increase the volume of sensitive data in motion. That raises the bar for privacy-by-design, compliance readiness, and the kind of architectural discipline that prevents small oversights from turning into major liabilities.
 
 ## What are the privacy concerns of using customer data in AI?
 
-AI data privacy risks span the full lifecycle of customer information: collection, training, deployment, and ongoing monitoring. Unlike traditional software systems that process data in relatively predictable ways, AI models can memorize rare data points, infer sensitive attributes from seemingly innocuous inputs, and surface personal information through outputs that no one explicitly programmed. The sheer volume of data required to train and fine-tune these systems — often terabytes of text, images, transactions, and behavioral signals — means that sensitive information inevitably enters the pipeline, sometimes without adequate governance in place.
+AI data privacy risks span the full lifecycle of customer information: collection, training, deployment, and ongoing monitoring. Unlike traditional software systems that process data in relatively predictable ways, AI models can memorize rare data points, infer sensitive attributes from seemingly innocuous inputs, and surface personal information through outputs that no one explicitly programmed. The sheer volume of data required to train and fine-tune these systems - often terabytes of text, images, transactions, and behavioral signals - means that sensitive information inevitably enters the pipeline, sometimes without adequate governance in place.
 
 Three categories of risk deserve particular attention from enterprise teams.
 
--   **Over-collection and purpose creep**: Teams building AI systems often gather more customer data than strictly necessary, reasoning that larger datasets improve model performance. This "collect now, figure it out later" approach violates the principle of data minimization and dramatically expands the blast radius if something goes wrong. Equally dangerous is purpose creep — customer data collected for order fulfillment or support interactions quietly repurposed to train a new model, with no updated disclosure or consent. Under frameworks like GDPR, this kind of secondary use without a clear lawful basis creates direct legal exposure.
+-   **Over-collection and purpose creep**: Teams building AI systems often gather more customer data than strictly necessary, reasoning that larger datasets improve model performance. This "collect now, figure it out later" approach violates the principle of data minimization and dramatically expands the blast radius if something goes wrong. Equally dangerous is purpose creep - customer data collected for order fulfillment or support interactions quietly repurposed to train a new model, with no updated disclosure or consent. Under frameworks like GDPR, this kind of secondary use without a clear lawful basis creates direct legal exposure.
     
--   **Transparency gaps and diminished customer control**: Once customer data enters an AI pipeline, it becomes difficult for individuals to understand what was used, why, for how long, and with whom it was shared. Data subject rights — access, correction, deletion, objection — grow harder to honor when information is embedded in derived datasets, feature stores, or model weights. A customer who requests erasure under CCPA or GDPR may find that their data persists in ways the organization itself struggles to trace. This opacity erodes trust and complicates compliance at the same time.
+-   **Transparency gaps and diminished customer control**: Once customer data enters an AI pipeline, it becomes difficult for individuals to understand what was used, why, for how long, and with whom it was shared. Data subject rights - access, correction, deletion, objection - grow harder to honor when information is embedded in derived datasets, feature stores, or model weights. A customer who requests erasure under CCPA or GDPR may find that their data persists in ways the organization itself struggles to trace. This opacity erodes trust and complicates compliance at the same time.
     
--   **Model memorization and extraction vulnerabilities**: Research has demonstrated that large language models can inadvertently retain and reproduce verbatim training examples, especially rare or unique strings. Attackers can exploit this through carefully crafted prompts designed to extract sensitive content the model was never intended to reveal. Membership inference attacks — where an adversary determines whether a specific customer's record appeared in the training set — add another layer of risk. These are not theoretical concerns; they represent AI-specific threat vectors that sit outside the scope of conventional cybersecurity defenses.
+-   **Model memorization and extraction vulnerabilities**: Research has demonstrated that large language models can inadvertently retain and reproduce verbatim training examples, especially rare or unique strings. Attackers can exploit this through carefully crafted prompts designed to extract sensitive content the model was never intended to reveal. Membership inference attacks - where an adversary determines whether a specific customer's record appeared in the training set - add another layer of risk. These are not theoretical concerns; they represent AI-specific threat vectors that sit outside the scope of conventional cybersecurity defenses.
     
 
-In industries where AI powers customer-facing personalization or internal knowledge workflows, these risks intensify. A financial services team that deploys AI to analyze transaction patterns for retention and loyalty programs handles data that is both commercially valuable and deeply personal. A life sciences organization that applies AI to research workflows may process patient-adjacent information subject to strict regulatory controls. In both cases, the sensitivity of the data demands more than baseline protections — it requires purpose limitation, strong access controls, and architectural decisions that prevent sensitive information from leaking across system boundaries.
+In industries where AI powers customer-facing personalization or internal knowledge workflows, these risks intensify. A financial services team that deploys AI to analyze transaction patterns for retention and loyalty programs handles data that is both commercially valuable and deeply personal. A life sciences organization that applies AI to research workflows may process patient-adjacent information subject to strict regulatory controls. In both cases, the sensitivity of the data demands more than baseline protections - it requires purpose limitation, strong access controls, and architectural decisions that prevent sensitive information from leaking across system boundaries.
 
 The practical challenge for most enterprises is that AI data privacy risks don't announce themselves. A poorly scoped retrieval query, an insufficiently permissioned search index, or a training dataset that was never audited for sensitive content can each create exposure without any malicious intent. Customer data protection in AI is not a single decision; it's a continuous discipline that must evolve alongside the capabilities of the systems it governs.
 
@@ -122,7 +122,7 @@ High-impact enterprise use cases tend to pull the richest context, which also me
 
 ## What are the main AI data privacy risks organizations face?
 
-AI programs shift privacy risk from isolated systems to connected ecosystems: internal teams, external processors, and cross-border infrastructure all touch the same customer records. That shift increases exposure through everyday operations—data copies for testing, vendor handoffs, analytics exports, and long-lived backups.
+AI programs shift privacy risk from isolated systems to connected ecosystems: internal teams, external processors, and cross-border infrastructure all touch the same customer records. That shift increases exposure through everyday operations-data copies for testing, vendor handoffs, analytics exports, and long-lived backups.
 
 ### Sensitive data exposure and leakage
 
@@ -136,7 +136,7 @@ A few high-frequency leakage paths show up in practice:
 
 ### Unauthorized data collection and use without consent
 
-Data intake can drift into gray areas fast—especially when AI initiatives pull from sources that feel “available” rather than sources that match customer expectations and documented permissions. Public or semi-public content, partner feeds, and tracking-derived signals can enter a model pipeline without a clear story about notice, consent, and downstream use.
+Data intake can drift into gray areas fast-especially when AI initiatives pull from sources that feel “available” rather than sources that match customer expectations and documented permissions. Public or semi-public content, partner feeds, and tracking-derived signals can enter a model pipeline without a clear story about notice, consent, and downstream use.
 
 Common consent failures include:
 
@@ -158,30 +158,30 @@ Practical frameworks emphasize three layers at once: governance with clear owner
 
 ### Bias and AI surveillance concerns
 
-Customer data often mirrors unequal outcomes—disparate access to services, uneven enforcement, and biased historical decisions. When AI systems learn from that history, they can reproduce the same inequities at scale through automated scoring, eligibility decisions, identity checks, and prioritization logic.
+Customer data often mirrors unequal outcomes-disparate access to services, uneven enforcement, and biased historical decisions. When AI systems learn from that history, they can reproduce the same inequities at scale through automated scoring, eligibility decisions, identity checks, and prioritization logic.
 
-Surveillance risk rises when AI expands the use of behavioral monitoring beyond what customers understand or accept. Persistent tracking across devices, channels, and time can cross from service optimization into intrusive profiling—especially in sensitive domains such as health, employment, education, personal finance, and services used by children, where even lawful processing can cause disproportionate harm.
+Surveillance risk rises when AI expands the use of behavioral monitoring beyond what customers understand or accept. Persistent tracking across devices, channels, and time can cross from service optimization into intrusive profiling-especially in sensitive domains such as health, employment, education, personal finance, and services used by children, where even lawful processing can cause disproportionate harm.
 
 ## What regulations govern customer data use in AI?
 
-Most privacy law does not carve out a special rulebook for “AI.” It sets requirements for personal data, then holds AI features to the same standards—plus extra duties where automated systems raise risk, opacity, or scale. That combination pushes enterprises toward formal governance artifacts: assessments, contracts, technical documentation, and evidence that controls work as intended.
+Most privacy law does not carve out a special rulebook for “AI.” It sets requirements for personal data, then holds AI features to the same standards-plus extra duties where automated systems raise risk, opacity, or scale. That combination pushes enterprises toward formal governance artifacts: assessments, contracts, technical documentation, and evidence that controls work as intended.
 
 The current landscape blends long-standing privacy statutes with newer AI-specific rules. The practical implication: compliance work must cover both the data layer and the system layer, with documentation that can survive audits across regions.
 
 ### GDPR: accountability, assessments, and enforceable processor controls
 
-GDPR compliance for AI depends as much on operational discipline as on policy language. Regulators expect proof—records that show what data exists, who touches it, and which safeguards apply across each system that uses personal data.
+GDPR compliance for AI depends as much on operational discipline as on policy language. Regulators expect proof-records that show what data exists, who touches it, and which safeguards apply across each system that uses personal data.
 
 Areas that most often drive concrete requirements for AI programs include:
 
 -   **Accountability documentation**: Records of processing activities (Article 30) and internal control evidence that ties a dataset to an approved use case, a responsible owner, and a defined set of safeguards.
 -   **Impact assessment triggers**: Data Protection Impact Assessments (Article 35) for high-risk processing, with documented mitigations and residual risk evaluation that reflect real system behavior rather than generic templates.
--   **Controller–processor obligations**: Data Processing Agreements (Article 28) that constrain vendor use, subprocessor access, security measures, and audit rights—especially for model APIs, annotation services, and managed platforms.
+-   **Controller–processor obligations**: Data Processing Agreements (Article 28) that constrain vendor use, subprocessor access, security measures, and audit rights-especially for model APIs, annotation services, and managed platforms.
 -   **Security expectations with breach duties**: Appropriate technical and organizational measures (Article 32), plus breach notification duties (Articles 33–34) that require fast visibility into what data exposure occurred and which individuals face risk.
 
 ### EU AI Act: system governance for high-risk use, plus obligations for certain model providers
 
-The EU AI Act adds AI-specific duties that sit alongside GDPR. It focuses on how an AI system behaves in real use—risk controls, transparency, traceability, and structured oversight for specific categories of AI.
+The EU AI Act adds AI-specific duties that sit alongside GDPR. It focuses on how an AI system behaves in real use-risk controls, transparency, traceability, and structured oversight for specific categories of AI.
 
 For high-risk systems, the Act introduces requirements that resemble regulated product disciplines:
 
@@ -199,7 +199,7 @@ Outside state statutes, consumer protection authorities add a second axis of ris
 
 ### Cross-jurisdiction reality: adaptable compliance becomes a core capability
 
-Multinational operations must accommodate differences in legal definitions, notice standards, and enforcement posture without fragmenting controls by region. That demands a compliance framework that can absorb change—versioned policies, standardized vendor terms, consistent data classification, and audit-ready evidence that maps controls to each jurisdiction’s requirements.
+Multinational operations must accommodate differences in legal definitions, notice standards, and enforcement posture without fragmenting controls by region. That demands a compliance framework that can absorb change-versioned policies, standardized vendor terms, consistent data classification, and audit-ready evidence that maps controls to each jurisdiction’s requirements.
 
 Sector obligations can exceed general privacy law. In life sciences and other regulated environments, audit standards often require detailed documentation, strict access governance, and clear change control for systems that touch regulated datasets or patient-adjacent context.
 
@@ -207,7 +207,7 @@ Sector obligations can exceed general privacy law. In life sciences and other re
 
 Ethics starts where statutes stop. Regulations can demand specific disclosures, security measures, and paperwork; ethical practice demands restraint and care when customer data shapes outcomes that affect real lives.
 
-An AI feature can follow the letter of the law and still violate customer expectations. Ethical AI data use sets guardrails for what feels fair, what feels intrusive, and what deserves human oversight—especially when automated output influences pricing, access to service levels, or account treatment.
+An AI feature can follow the letter of the law and still violate customer expectations. Ethical AI data use sets guardrails for what feels fair, what feels intrusive, and what deserves human oversight-especially when automated output influences pricing, access to service levels, or account treatment.
 
 ### Fairness and proportionality in AI-driven outcomes
 
@@ -253,7 +253,7 @@ A workable accountability model includes:
 
 Customer data protection in AI depends on control points that sit close to the data itself: identity, access, context assembly, and downstream storage. Privacy teams can no longer rely on policy documents alone; they need enforceable rules inside pipelines and user experiences.
 
-The strongest programs treat AI as a data supply chain. Each handoff—collection, enrichment, labeling, feature creation, vendor processing, and production use—gets a defined owner, a bounded purpose, and a control that produces evidence.
+The strongest programs treat AI as a data supply chain. Each handoff-collection, enrichment, labeling, feature creation, vendor processing, and production use-gets a defined owner, a bounded purpose, and a control that produces evidence.
 
 ### Implement permissions-aware architecture from the start
 
@@ -309,7 +309,7 @@ Evidence that supports AI compliance issues:
 
 A privacy-first AI strategy scales when it treats customer data as a regulated supply chain, not a pile of useful inputs. Every new model feature creates new paths for inference, extraction, and unintended disclosure, so the strategy must hold under continuous change.
 
-Scale also demands repeatability. Teams need a way to ship new use cases without a new, bespoke privacy debate each time—while still meeting the expectations that regulators and customers now place on AI systems.
+Scale also demands repeatability. Teams need a way to ship new use cases without a new, bespoke privacy debate each time-while still meeting the expectations that regulators and customers now place on AI systems.
 
 ### Establish privacy as a design principle, not a constraint
 
@@ -329,18 +329,18 @@ Governance fails at scale when each team invents its own rules for datasets, mod
 
 ### Invest in infrastructure that enforces real-time permissions and boundaries
 
-Infrastructure should reduce privacy reliance on human judgment during incident response, rapid iteration, and broad rollout. AI introduces new risks at runtime—prompt injection, data exfiltration through outputs, and inference from repeated queries—so boundaries must hold under adversarial conditions.
+Infrastructure should reduce privacy reliance on human judgment during incident response, rapid iteration, and broad rollout. AI introduces new risks at runtime-prompt injection, data exfiltration through outputs, and inference from repeated queries-so boundaries must hold under adversarial conditions.
 
--   **Runtime isolation for sensitive inference**: Use hardened execution paths for the most sensitive workloads—network egress controls, confidential compute where appropriate, and strict separation between inference systems and general analytics environments.
+-   **Runtime isolation for sensitive inference**: Use hardened execution paths for the most sensitive workloads-network egress controls, confidential compute where appropriate, and strict separation between inference systems and general analytics environments.
 -   **Rate limits and anomaly detection for extraction patterns**: Monitor for repetitive probing that resembles membership inference or content reconstruction attempts; throttle and alert when query patterns match known extraction behaviors.
--   **Output risk controls as a first-class feature**: Apply structured output rules for sensitive workflows—redaction for regulated identifiers, refusal for prohibited requests, and constrained templates for high-impact communications such as denial notices or account restrictions.
+-   **Output risk controls as a first-class feature**: Apply structured output rules for sensitive workflows-redaction for regulated identifiers, refusal for prohibited requests, and constrained templates for high-impact communications such as denial notices or account restrictions.
 
 ### Create cross-functional accountability that matches technical reality
 
-Privacy outcomes depend on coordinated decisions across product, engineering, security, legal, and operations—plus external processors who handle data during labeling, hosting, or support. A scalable model assigns clear ownership for decisions that shape both data exposure and customer impact.
+Privacy outcomes depend on coordinated decisions across product, engineering, security, legal, and operations-plus external processors who handle data during labeling, hosting, or support. A scalable model assigns clear ownership for decisions that shape both data exposure and customer impact.
 
 -   **Single owner per AI capability, plus a standing review group**: One accountable owner makes day-to-day calls; a cross-functional group sets shared thresholds for risk and approves exceptions that affect sensitive categories or high-impact decisions.
--   **Operational playbooks for privacy incidents**: Define incident paths for AI-specific failure modes—prompt injection, unintended disclosure in outputs, vendor processing drift, and over-collection discovered after launch.
+-   **Operational playbooks for privacy incidents**: Define incident paths for AI-specific failure modes-prompt injection, unintended disclosure in outputs, vendor processing drift, and over-collection discovered after launch.
 -   **Decision records that capture tradeoffs**: Keep short, durable records that explain why a data class entered a use case, what mitigations exist, and what evidence supports the decision. This supports regulatory expectations for demonstrable accountability.
 
 ### Validate strategy in the deployments that move fastest
@@ -351,7 +351,7 @@ Validation should focus on measurable properties that map to research-backed ris
 
 -   **Leakage probes against real prompts and content**: Test with adversarial inputs that mimic customer-provided text, including hidden instructions and sensitive strings that can trigger prompt injection or disclosure.
 -   **Inference resilience checks**: Evaluate whether outputs allow attribute inference or membership inference under repeated querying, especially where the system reveals confidence signals or overly specific details.
--   **Third-party processing verification**: Confirm that service providers honor data handling terms in practice—no unapproved retention, no reuse outside scope, and clear deletion behavior across support and debugging workflows.
+-   **Third-party processing verification**: Confirm that service providers honor data handling terms in practice-no unapproved retention, no reuse outside scope, and clear deletion behavior across support and debugging workflows.
 
 ### Treat audit readiness as a scaling requirement in regulated environments
 
@@ -363,9 +363,9 @@ Audit readiness should include:
 -   **Tamper-evident event records for sensitive access**: Use immutable logs for access to high-risk datasets and for execution of high-impact AI actions, so investigations and audits rely on trustworthy evidence.
 -   **Regulatory mapping that stays current**: Maintain a living matrix that maps controls to obligations across GDPR, state privacy laws, and EU AI Act requirements for high-risk systems, including oversight processes and transparency commitments.
 
-Privacy isn't a checkbox you clear once — it's an ongoing discipline that evolves alongside every new model, dataset, and use case your organization deploys. The organizations that get this right treat customer data protection as a core capability, not a compliance afterthought, and they build systems that earn trust by design.
+Privacy isn't a checkbox you clear once - it's an ongoing discipline that evolves alongside every new model, dataset, and use case your organization deploys. The organizations that get this right treat customer data protection as a core capability, not a compliance afterthought, and they build systems that earn trust by design.
 
-We built our platform to help enterprises move fast without compromising on the privacy, permissions, and governance their customers expect. [Request a demo](https://www.glean.com/get-a-demo) to explore how we can help AI transform your workplace — with the safeguards that make it sustainable.
+We built our platform to help enterprises move fast without compromising on the privacy, permissions, and governance their customers expect. [Request a demo](https://www.glean.com/get-a-demo) to explore how we can help AI transform your workplace - with the safeguards that make it sustainable.
 
 [
 

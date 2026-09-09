@@ -65,12 +65,12 @@ This step resolves a common configuration gap where scopes are correct, but the 
     
 2.  On the **Setup** tab, provide:
     
-    -   **Name and icon** (optional) — How this connector appears to admins.
-    -   **Associated Google Drive instance** — Choose the Google Drive connector instance whose service account and delegation should be reused for Calendar.
+    -   **Name and icon** (optional) - How this connector appears to admins.
+    -   **Associated Google Drive instance** - Choose the Google Drive connector instance whose service account and delegation should be reused for Calendar.
 3.  Choose **data retrieval methods** (modes):
     
-    -   **Data crawling and indexing** — Recommended. Enables indexed meeting search, hero meeting cards, Meeting Summary agent, and Calendar Search tools.
-    -   **Data fetching** — On-demand federated queries to Google Calendar. Useful for lighter-weight access or complementary coverage.
+    -   **Data crawling and indexing** - Recommended. Enables indexed meeting search, hero meeting cards, Meeting Summary agent, and Calendar Search tools.
+    -   **Data fetching** - On-demand federated queries to Google Calendar. Useful for lighter-weight access or complementary coverage.
 4.  You can enable **both** modes for the best experience. The admin UI allows selecting one or both retrieval methods for the connector.
     
 5.  Confirm that the UI indicates **Google Drive** prerequisites are met. There are no additional credentials beyond those used for Google Drive.

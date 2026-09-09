@@ -139,7 +139,7 @@ Which LLM hosting providers you can configure depends on your deployment mode an
 -   **Glean Universal Model Key**: Glean manages connectivity to all supported providers regardless of your deployment's cloud environment.
 -   **Customer Key** (BYOK): Access to cloud-hosted providers is limited to your own cloud because cross-cloud access is not supported. Anthropic is the exception: you connect to it directly with your own API key, so it works from either cloud.
 
-| Hosting provider | Glean Universal Model Key | Customer Key — GCP-based deployment | Customer Key — AWS-based deployment |
+| Hosting provider | Glean Universal Model Key | Customer Key - GCP-based deployment | Customer Key - AWS-based deployment |
 | --- | --- | --- | --- |
 | OpenAI | ✅ | ✅ | ✅ |
 | Azure OpenAI | ✅ | ✅ | ✅ |

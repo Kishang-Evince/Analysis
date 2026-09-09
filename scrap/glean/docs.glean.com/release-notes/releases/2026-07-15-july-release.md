@@ -35,7 +35,7 @@ Assistant *\[ROAD-1537\]*
 
 #### Trigger agents by events[​](#trigger-agents-by-events "Direct link to Trigger agents by events")
 
-Automatically run Glean Agents in the background when content changes across your connected data sources — Gong, Jira, Salesforce, Google Calendar, email, and more — no manual intervention required. Use triggers to scale repetitive processes, ensure timely actions, and keep work moving: agents can send Slack notifications, generate summaries and kick off downstream workflows, all within your organization's existing guardrails and permissions. It is Generally Available and enabled by default for all users. Admins can scope access from the admin console and check out the Glean Docs for supported sources and setup.
+Automatically run Glean Agents in the background when content changes across your connected data sources - Gong, Jira, Salesforce, Google Calendar, email, and more - no manual intervention required. Use triggers to scale repetitive processes, ensure timely actions, and keep work moving: agents can send Slack notifications, generate summaries and kick off downstream workflows, all within your organization's existing guardrails and permissions. It is Generally Available and enabled by default for all users. Admins can scope access from the admin console and check out the Glean Docs for supported sources and setup.
 
 This feature may be subject to usage-based pricing. Learn more in Glean's Help Center.
 
@@ -73,7 +73,7 @@ Assistant *\[ROAD-1540\]*
 
 #### iOS shortcuts on home screen and lock screen[​](#ios-shortcuts-on-home-screen-and-lock-screen "Direct link to iOS shortcuts on home screen and lock screen")
 
-Launch a Glean Chat or Voice chat directly from your iPhone home screen or lock screen — one tap and you're live. Add the Glean Chat or Glean Voice widget, and on iOS 18, use the new Lock Screen and Control Center controls for even faster access. No app navigation required.
+Launch a Glean Chat or Voice chat directly from your iPhone home screen or lock screen - one tap and you're live. Add the Glean Chat or Glean Voice widget, and on iOS 18, use the new Lock Screen and Control Center controls for even faster access. No app navigation required.
 
 [Learn more](https://docs.glean.com/administration/management/features/mobile)
 

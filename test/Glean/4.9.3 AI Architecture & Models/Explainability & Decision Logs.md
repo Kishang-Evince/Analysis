@@ -1,4 +1,4 @@
-# Field 10 — Explainability & Decision Logs
+# Field 10 - Explainability & Decision Logs
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Explainability & Decision Logs.md](../../../Glean/Combined/4.9.3 AI Architecture & Models/Explainability & Decision Logs.md)

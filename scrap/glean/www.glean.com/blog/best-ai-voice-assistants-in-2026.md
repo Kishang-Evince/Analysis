@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/best-ai-voice-assistants-in-2026"
 canonical: "https://www.glean.com/blog/best-ai-voice-assistants-in-2026"
 title: "The 10 best AI voice assistants in 2026: A comprehensive guide"
-description: "Trevor Gile  | The best AI voice assistants of 2026, ranked and compared on accuracy, integrations, and pricing — find the right one for work or home."
+description: "Trevor Gile  | The best AI voice assistants of 2026, ranked and compared on accuracy, integrations, and pricing - find the right one for work or home."
 fetched_at: "2026-09-01T13:26:29.514Z"
 ---
 Last updated May 20, 2026.

@@ -38,7 +38,7 @@ Under **Permissions → Repository**, grant only what the agent needs to read, f
 
 ## Step 3: Generate a private key[​](#step-3-generate-a-private-key "Direct link to Step 3: Generate a private key")
 
-On the app's page, under **Private keys**, click **Generate a private key**. GitHub downloads a PEM file — keep it safe.
+On the app's page, under **Private keys**, click **Generate a private key**. GitHub downloads a PEM file - keep it safe.
 
 ## Step 4: Install the app[​](#step-4-install-the-app "Direct link to Step 4: Install the app")
 

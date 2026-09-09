@@ -120,8 +120,8 @@ To exercise these rights, contact: [privacy@glean.com](mailto:privacy@glean.com)
 | Category | Shared With |
 | --- | --- |
 | Identifiers (name, email, IP address, etc.) | Corporate affiliates; service providers |
-| California Customer Records (Cal. Civ. Code § 1798.80(e)) — primarily employment-related | Corporate affiliates; service providers |
-| Protected classification characteristics — employment-related only | Corporate affiliates; service providers |
+| California Customer Records (Cal. Civ. Code § 1798.80(e)) - primarily employment-related | Corporate affiliates; service providers |
+| Protected classification characteristics - employment-related only | Corporate affiliates; service providers |
 | Commercial information (purchase records, etc.) | Corporate affiliates |
 | Internet or network activity (browsing/search history, etc.) | Vendors; service providers |
 | Professional or employment-related information | Corporate affiliates; service providers |

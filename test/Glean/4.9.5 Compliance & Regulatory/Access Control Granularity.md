@@ -1,4 +1,4 @@
-# Field 6 — Access Control Granularity
+# Field 6 - Access Control Granularity
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Access Control Granularity.md](../../../Glean/Combined/4.9.5 Compliance & Regulatory/Access Control Granularity.md)

@@ -19,7 +19,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-Give every teammate conversational access to Amplitude—ask natural-language questions about usage, retention, experiments, and feedback, then see charts and context alongside docs, tickets, and messages in Glean.
+Give every teammate conversational access to Amplitude-ask natural-language questions about usage, retention, experiments, and feedback, then see charts and context alongside docs, tickets, and messages in Glean.
 
 ## Work AI that works.
 

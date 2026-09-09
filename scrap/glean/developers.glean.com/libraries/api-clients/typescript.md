@@ -97,7 +97,7 @@ const response = await client.client.chat.create(  { messages: [{ fragments: [{ 
 
 ### OAuth Access Tokens[​](#oauth-access-tokens "Direct link to OAuth Access Tokens")
 
-An OAuth access token is a bearer credential, so it goes in the same `apiToken` field — no separate option is needed:
+An OAuth access token is a bearer credential, so it goes in the same `apiToken` field - no separate option is needed:
 
 ```
 const client = new Glean({  apiToken: oauthAccessToken,  serverURL: "https://your-server-id-be.glean.com",});

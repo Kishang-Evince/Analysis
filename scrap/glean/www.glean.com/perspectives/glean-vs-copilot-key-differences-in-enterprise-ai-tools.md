@@ -154,7 +154,7 @@ Cost structures reflect the architectural differences. A cross-system platform c
 
 For a 1,000-person organization, the annual cost difference is significant. A cross-system platform runs roughly $600,000 to $780,000 per year depending on AI add-on adoption. A single-suite assistant costs roughly $360,000 per year.
 
-That gap narrows when you factor in the cost of point solutions needed to fill the single-suite's coverage gaps. Research shows that knowledge workers [toggle between apps 1,200 times per day](https://hbr.org/2022/08/how-much-time-and-energy-do-we-waste-toggling-between-applications), costing nearly four hours per week in lost productivity — and those context-switching losses add to the total cost of the narrower approach.
+That gap narrows when you factor in the cost of point solutions needed to fill the single-suite's coverage gaps. Research shows that knowledge workers [toggle between apps 1,200 times per day](https://hbr.org/2022/08/how-much-time-and-energy-do-we-waste-toggling-between-applications), costing nearly four hours per week in lost productivity - and those context-switching losses add to the total cost of the narrower approach.
 
 The ROI question is not cost per seat. It is whether the platform reduces time spent searching, duplicating work, and switching between applications enough to justify the investment. Organizations deploying AI across core operations report [20–60% productivity gains](https://ventionteams.com/solutions/ai/adoption-statistics) in year one, and those that measure outcomes like ticket deflection rates, onboarding ramp time, or hours saved per employee per week tend to find that the cross-system model pays for itself faster than the per-seat math suggests.
 

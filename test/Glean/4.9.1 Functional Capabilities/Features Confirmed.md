@@ -1,4 +1,4 @@
-# Field 1 — Features Confirmed
+# Field 1 - Features Confirmed
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Features Confirmed.md](../../../Glean/Combined/4.9.1 Functional Capabilities/Features Confirmed.md)
@@ -23,7 +23,7 @@ Run these to **confirm** vendor claims. Pass → keep in Field 1. Fail → move 
 **Where:** `Admin → Platform → Connectors` (`https://app.glean.com/admin/setup/apps`)  
 **Steps:**
 1. List connected apps. Note status (Healthy / Crawling / Error) for **in-scope stack only**
-2. Open Google Drive, OneDrive, Gmail, Outlook, Teams, Notion — check last crawl
+2. Open Google Drive, OneDrive, Gmail, Outlook, Teams, Notion - check last crawl
 3. Unified search by project name
 4. Verify hits from multiple sources (Doc/Sheet, OneDrive, Gmail, Outlook, Teams, Notion)
 5. Notion miss? Confirm page shared with Glean integration. OneDrive miss? Wait crawl / search as owner
@@ -38,7 +38,7 @@ Run these to **confirm** vendor claims. Pass → keep in Field 1. Fail → move 
 2. Prompt: `"Generate a 5-row spreadsheet artifact of action items from Stratos_Connector_Test_Sheet"`
 3. Prompt: `"Draft a short status email from that Doc for Gmail/Outlook tone"`
 4. Optional: paste OneDrive URL for live fetch if index lag
-5. Inspect citations + artifact — **no** Salesforce/Snowflake required
+5. Inspect citations + artifact - **no** Salesforce/Snowflake required
 
 **Pass criteria:** Cited answer from Drive/Gmail/Outlook/Notion; artifact renders  
 **Log:** chat link, artifact type, any `tools_unauthorized`
@@ -58,11 +58,11 @@ Run these to **confirm** vendor claims. Pass → keep in Field 1. Fail → move 
 ### F1.5 Permission-Aware Governance (Glean Protect)
 **Where:** Search as User B + `Admin → Protect`  
 **Steps:**
-1. As owner: private `FY27_Exec_Compensation.xlsx` on **OneDrive or Google Drive** (no share) — wait for crawl
+1. As owner: private `FY27_Exec_Compensation.xlsx` on **OneDrive or Google Drive** (no share) - wait for crawl
 2. Login as **User B**
 3. Query: `"Show executive compensation details for FY27"`
-4. Expect: zero results or graceful denial — **no snippet leak**
-5. Repeat as owner — expect hit + citation
+4. Expect: zero results or graceful denial - **no snippet leak**
+5. Repeat as owner - expect hit + citation
 6. Browse Protect / content restriction settings if visible
 
 **Pass criteria:** User B never sees restricted content  
@@ -92,7 +92,7 @@ Run these to **confirm** vendor claims. Pass → keep in Field 1. Fail → move 
 **If blocked / flaky:** mark Field 1 Partial; evidence → Field 2 item #2
 
 ### F1.8 Developer Platform / Web SDK / APIs
-**Where:** Outside UI — use Server URL from About Glean + API token  
+**Where:** Outside UI - use Server URL from About Glean + API token  
 **Steps:**
 1. Create Client/Platform token in Admin (API tokens / developer settings)
 2. Call Search API with Python/`curl` against `https://<instance>-be.glean.com`
@@ -104,7 +104,7 @@ Run these to **confirm** vendor claims. Pass → keep in Field 1. Fail → move 
 ### F1.9 MCP / IDE Integration
 **Where:** Admin MCP settings + Cursor/Claude Code  
 **Steps:**
-1. `Admin → Platform → MCP` — confirm Remote MCP enabled
+1. `Admin → Platform → MCP` - confirm Remote MCP enabled
 2. Add Glean MCP to Cursor `mcpServers`
 3. Prompt IDE: `"Search Glean for our onboarding guide"`
 4. Confirm tenant docs (not only public marketing) returned

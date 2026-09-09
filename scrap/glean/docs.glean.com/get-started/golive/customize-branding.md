@@ -9,7 +9,7 @@ On this page
 
 As your teammates start to use Glean, customize how Glean looks and feels to match your company's branding. You can change the logo and color palette, and upload a branded background image for the home page and new tab page that's available in the Glean browser extension.
 
-This task is optional — you can skip it during workspace setup and customize later from the **Admin console**.
+This task is optional - you can skip it during workspace setup and customize later from the **Admin console**.
 
 ## Open the appearance settings[​](#open-the-appearance-settings "Direct link to Open the appearance settings")
 
@@ -25,8 +25,8 @@ To open this task directly, go to **Customization → Appearance** in the **Admi
 
 From the Appearance page, you can:
 
--   Update the [company branding](/administration/management/appearance/branding) — company name, logo, and color theme.
--   Configure the [home page](/administration/management/appearance/home-page) — cards, quick actions, and default wallpapers for light and dark modes.
+-   Update the [company branding](/administration/management/appearance/branding) - company name, logo, and color theme.
+-   Configure the [home page](/administration/management/appearance/home-page) - cards, quick actions, and default wallpapers for light and dark modes.
 -   Adjust [feature enablement](/administration/management/appearance/delight-features) to turn individual Glean features on or off for your users.
 
 You must be assigned the **Admin** or **Super Admin** role to customize workspace appearance.

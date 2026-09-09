@@ -105,7 +105,7 @@ Glean in Microsoft Teams addresses this by bringing our AI-powered search direct
 
 Glean in Microsoft Teams is a powerful tool that brings all your company’s knowledge to where you work, minimizing context switching between apps and helping your teams work more efficiently.  
   
-To learn more, sign up for a free [demo](https://www.glean.com/get-a-demo) of Glean today — if you’re already a Glean customer, learn how Glean Admins can set up this embedded experience using instructions in our [help center](https://help.glean.com/en/articles/9867852-glean-in-microsoft-teams-user-guide)**.**
+To learn more, sign up for a free [demo](https://www.glean.com/get-a-demo) of Glean today - if you’re already a Glean customer, learn how Glean Admins can set up this embedded experience using instructions in our [help center](https://help.glean.com/en/articles/9867852-glean-in-microsoft-teams-user-guide)**.**
 
 [
 

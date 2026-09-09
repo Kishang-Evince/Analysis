@@ -319,7 +319,7 @@ MCP
 
 #### Add Skills tools to selected MCP servers[​](#add-skills-tools-to-selected-mcp-servers "Direct link to Add Skills tools to selected MCP servers")
 
-Administrators can add Glean’s Skill tools—`find_skills`, `read_skill_files`, and `run_tool`—to an MCP server. Connected MCP clients can then discover relevant skills on demand and run their underlying tools without loading the full catalog up front. The tools are opt-in per server and are not enabled automatically, giving administrators control over which clients can discover and execute skills through each MCP connection.
+Administrators can add Glean’s Skill tools-`find_skills`, `read_skill_files`, and `run_tool`-to an MCP server. Connected MCP clients can then discover relevant skills on demand and run their underlying tools without loading the full catalog up front. The tools are opt-in per server and are not enabled automatically, giving administrators control over which clients can discover and execute skills through each MCP connection.
 
 **How to access:** Open an MCP server in the Admin Console, choose the Skill tools pack from the tool catalog, and save the server configuration.
 

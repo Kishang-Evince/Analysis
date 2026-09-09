@@ -126,4 +126,4 @@ A BigQuery connection is not pinned to a single Google Cloud project, so there i
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [Google Cloud tools](/tools/connector/googlecloud) — a separate integration, configured under **Admin console** → **Tools**, that includes SQL and analytics tools for BigQuery.
+-   [Google Cloud tools](/tools/connector/googlecloud) - a separate integration, configured under **Admin console** → **Tools**, that includes SQL and analytics tools for BigQuery.

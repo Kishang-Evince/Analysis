@@ -52,7 +52,7 @@ When contacting Glean Support to apply this restriction, reference the config ke
 ### User Type
 
 -   This restriction cannot currently be applied in the Admin UI.
--   Only the Okta `userType` profile field is evaluated — other custom profile fields are not supported for restriction filtering.
+-   Only the Okta `userType` profile field is evaluated - other custom profile fields are not supported for restriction filtering.
 
 ## Apply restrictions[​](#apply-restrictions "Direct link to Apply restrictions")
 

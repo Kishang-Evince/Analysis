@@ -23,7 +23,7 @@ Write faster, more consistent replies to support tickets, automatically.
 
 ## Overview
 
-The support follow-up email agent helps customer support teams respond to support tickets more efficiently by generating tailored replies based on the ticket context. It reads the support ticket, follows the specified tone and formatting, and drafts a message ready for review or immediate use. With customizable outputs and consistent responses, it helps teams move faster — without sacrificing quality.
+The support follow-up email agent helps customer support teams respond to support tickets more efficiently by generating tailored replies based on the ticket context. It reads the support ticket, follows the specified tone and formatting, and drafts a message ready for review or immediate use. With customizable outputs and consistent responses, it helps teams move faster - without sacrificing quality.
 
 ## See it in action
 
@@ -35,7 +35,7 @@ Saves agents time by generating high-quality draft responses in seconds.Enables 
 
 Hi Morgan,
 
-Thanks for reaching out about Ticket #10572. I’m currently investigating your calendar sync issue. No action is needed on your end right now — I’ll follow up with an update within the next 2 hours.
+Thanks for reaching out about Ticket #10572. I’m currently investigating your calendar sync issue. No action is needed on your end right now - I’ll follow up with an update within the next 2 hours.
 
 Best,  
 Avery | Customer Support

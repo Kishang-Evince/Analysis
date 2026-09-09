@@ -186,7 +186,7 @@ We then dug into how Glean performed across different query classes. While searc
 -   Making decisions: Weighing options, comparing trade‑offs, recommending a course of action
 -   Drafting content: Writing or editing emails, docs, specs, and presentations
 -   Learning: Explaining, defining, and providing step‑by‑step walkthroughs
--   Finding information: Classic search—locating a specific document or resource
+-   Finding information: Classic search-locating a specific document or resource
 
 When we look at the distribution of queries where Glean was preferred, the wins are spread across these categories, reflecting the different ways enterprises actually use AI today.
 
@@ -303,7 +303,7 @@ This variant specifically calculates document X counts with a Y lookback period.
 
 ## Related Pipeline
 
-**corpus\_insights** runs on a different schedule - **twice monthly** — on the 1st and 16th at midnight UTC, with consecutive runs 15 days apart
+**corpus\_insights** runs on a different schedule - **twice monthly** - on the 1st and 16th at midnight UTC, with consecutive runs 15 days apart
 
 You can view the current pipeline execution schedules and job runs at go/xxx. Need help understanding why a specific corpus stats run failed or adjusting the frequency?
 
@@ -317,7 +317,7 @@ There's also a variant called corpus\_stats\_xxx\_only that runs on the same wee
 
 It's worth noting that the pipeline has a threshold check - it won't run if the most recent docs\_data is not fresh enough. The threshold is approximately 1 hour and 5 minutes.
 
-*Glean correctly identified the tiered schedule for running corpus stats, whereas Claude incorrectly inferred a single weekly cadence. Glean didn’t have to rely only on documents that might be out of date or inaccurate—it could also look directly at the code as the source of truth. By contrast, Claude search leaned heavily on Slack.*
+*Glean correctly identified the tiered schedule for running corpus stats, whereas Claude incorrectly inferred a single weekly cadence. Glean didn’t have to rely only on documents that might be out of date or inaccurate-it could also look directly at the code as the source of truth. By contrast, Claude search leaned heavily on Slack.*
 
 #### Losses
 
@@ -355,7 +355,7 @@ Would you like their contact info or the specific doc names referenced?
 
 ChatGPT
 
-The Juniper beta is being led by **Arvin Allworth** — he’s the PM/DRI for Project *Juniper* (announced in Slack and listed as PM in the R&D execution doc).
+The Juniper beta is being led by **Arvin Allworth** - he’s the PM/DRI for Project *Juniper* (announced in Slack and listed as PM in the R&D execution doc).
 
 *Glean provided a more complete response by listing all of the project leaders, whereas ChatGPT only mentioned the overall PM. Glean’s Enterprise Graph can identify the different types of project owners and understand what people are working on across the organization.*
 

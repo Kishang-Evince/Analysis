@@ -83,7 +83,7 @@ Top-level `citations[]` on the message remain unchanged and still hold document-
 
 ### Minimal Migration
 
-Stay compatible without UI changes—just update your types to tolerate the new fields
+Stay compatible without UI changes-just update your types to tolerate the new fields
 
 ### Full Migration
 
@@ -108,7 +108,7 @@ If your goal is to mirror the Glean UI behavior, you'll render hover cards that 
 
 1.  Render `fragments[].text` as you do today
 2.  For each `fragments[].citation`:
-    -   Always show the document-level citation pill (title, datasource, icon, etc.) based on `sourceDocument`—this is unchanged
+    -   Always show the document-level citation pill (title, datasource, icon, etc.) based on `sourceDocument`-this is unchanged
     -   If `referenceRanges[].snippets[]` is present, use those snippets to populate the **hover card / popover** with direct quotes and surrounding context
     -   Optionally show the `pageNumber` when present
 3.  Clicking the citation can continue to open `sourceDocument.url`
@@ -140,7 +140,7 @@ type Snippet = { text: string; pageNumber?: number }async function loadDocumentC
 
 ### When Users See Deep-Linked Snippets[​](#when-users-see-deep-linked-snippets "Direct link to When Users See Deep-Linked Snippets")
 
--   Not every citation pill will have snippet highlights—deep-linking only appears when the LLM confidently matches a snippet
+-   Not every citation pill will have snippet highlights-deep-linking only appears when the LLM confidently matches a snippet
 -   When present, the hover popover should:
     -   Highlight the **cited snippet** with emphasis (e.g., background color or bold)
     -   Show a few lines before and after for context
@@ -152,7 +152,7 @@ type Snippet = { text: string; pageNumber?: number }async function loadDocumentC
 | Limitation | Description |
 | --- | --- |
 | **Complex formatting** | Tables, spreadsheets, code blocks, and heavy HTML may render as plain text in the snippet preview, which can look noisy or hard to read |
-| **Source navigation** | Clicking a citation opens the underlying document. Jumping directly to the exact page/offset is not guaranteed for all sources—it's supported only in some cases (e.g., slide number for certain PPT sources, some page-number support for PDFs) and is still being expanded |
+| **Source navigation** | Clicking a citation opens the underlying document. Jumping directly to the exact page/offset is not guaranteed for all sources-it's supported only in some cases (e.g., slide number for certain PPT sources, some page-number support for PDFs) and is still being expanded |
 | **Coverage** | Deep-linked citations are not provided for world-knowledge or web-search-only answers. Some citations may intentionally fall back to document-level when matching is uncertain, to avoid misleading users |
 
 Design your UI to gracefully fall back to document-level behavior when no `referenceRanges` / `snippets` are present.

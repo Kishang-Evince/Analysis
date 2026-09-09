@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:29:25.794Z"
 ---
 On this page
 
-Dropbox is a cloud-based file storage and collaboration platform. The Dropbox connector for Glean allows organizations to index and search their Dropbox content—including team folders, private folders, and Dropbox Paper documents—while enforcing Dropbox permissions so users only see results they are authorized to access.
+Dropbox is a cloud-based file storage and collaboration platform. The Dropbox connector for Glean allows organizations to index and search their Dropbox content-including team folders, private folders, and Dropbox Paper documents-while enforcing Dropbox permissions so users only see results they are authorized to access.
 
 ## Supported features[​](#supported-features "Direct link to Supported features")
 

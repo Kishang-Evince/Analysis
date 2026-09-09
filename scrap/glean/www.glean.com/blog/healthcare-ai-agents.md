@@ -83,33 +83,33 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Healthcare AI agents are software agents that automate high-friction clinical and administrative work by acting on your organization’s knowledge inside the tools your teams already use. Healthcare teams are under more pressure than ever — from shrinking margins and staffing shortages to growing documentation demands. Too often, clinicians, coders, and operations staff are stuck toggling between systems, chasing down missing details, and wasting hours on work that should be instant.
+Healthcare AI agents are software agents that automate high-friction clinical and administrative work by acting on your organization’s knowledge inside the tools your teams already use. Healthcare teams are under more pressure than ever - from shrinking margins and staffing shortages to growing documentation demands. Too often, clinicians, coders, and operations staff are stuck toggling between systems, chasing down missing details, and wasting hours on work that should be instant.
 
 That’s where [AI agents](https://www.glean.com/ai-agents) come in. These agents help healthcare teams move work forward by handling high-friction tasks, bringing the right context into the workflow, and reducing the manual effort that slows care delivery and operations down.
 
-Glean’s Work AI platform makes this possible by connecting to the tools healthcare teams already rely on — tools like SharePoint, OneDrive, Outlook, Epic SharePoint sites, ServiceNow, and Salesforce Health Cloud. It builds a unified knowledge graph that respects existing permissions and keeps everything up to date. AI agents then use that context to automate repetitive work, reduce errors, and improve both efficiency and employee experience.
+Glean’s Work AI platform makes this possible by connecting to the tools healthcare teams already rely on - tools like SharePoint, OneDrive, Outlook, Epic SharePoint sites, ServiceNow, and Salesforce Health Cloud. It builds a unified knowledge graph that respects existing permissions and keeps everything up to date. AI agents then use that context to automate repetitive work, reduce errors, and improve both efficiency and employee experience.
 
 ## What are healthcare AI agents?
 
-Healthcare AI agents are a form of [agentic AI](https://www.glean.com/blog/ai-agents-how-they-work): digital assistants that automate routine tasks, support decision-making, and surface institutional knowledge in natural language. They combine large language models, semantic search, and retrieval-augmented generation to interpret unstructured content — as policies, forms, and analytics workbooks — and use that context within familiar interfaces like Microsoft Teams or Outlook.
+Healthcare AI agents are a form of [agentic AI](https://www.glean.com/blog/ai-agents-how-they-work): digital assistants that automate routine tasks, support decision-making, and surface institutional knowledge in natural language. They combine large language models, semantic search, and retrieval-augmented generation to interpret unstructured content - as policies, forms, and analytics workbooks - and use that context within familiar interfaces like Microsoft Teams or Outlook.
 
 Unlike standalone chatbots or generic copilots, Glean’s agents connect directly to your enterprise systems. They respect existing permissions, maintain audit trails, and enforce “minimum necessary” access for PHI. That means clinicians and staff see only what they’re entitled to, keeping data secure and compliance intact.
 
 ## Why AI agents matter in healthcare
 
-The pressure on healthcare teams isn’t letting up — but the right AI agents can help ease the load. By streamlining repetitive tasks and reducing friction in day-to-day workflows, AI agents make it easier for teams to focus on what really matters: delivering care, driving efficiency, and keeping operations running smoothly. [Gartner predicts](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027) that by 2028, 33% of enterprise software applications will include agentic AI, up from less than 1% in 2024.
+The pressure on healthcare teams isn’t letting up - but the right AI agents can help ease the load. By streamlining repetitive tasks and reducing friction in day-to-day workflows, AI agents make it easier for teams to focus on what really matters: delivering care, driving efficiency, and keeping operations running smoothly. [Gartner predicts](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027) that by 2028, 33% of enterprise software applications will include agentic AI, up from less than 1% in 2024.
 
 Here’s how AI agents are already making an impact:
 
 1.  Save time across the board: Agents handle time-consuming tasks like reviewing policies, assembling documentation, or preparing dashboards, giving teams more time for high-impact work.
-2.  Reduce errors before they escalate: By cross-checking codes, payer rules, and documentation automatically, agents catch inconsistencies early — helping teams avoid denials, rework, and compliance issues.
+2.  Reduce errors before they escalate: By cross-checking codes, payer rules, and documentation automatically, agents catch inconsistencies early - helping teams avoid denials, rework, and compliance issues.
 3.  Help teams move faster: Real-time access to checklists, dashboards, and next steps helps teams make decisions faster and follow through with less delay.
-4.  Improve financial performance: Agents make it easier to spot revenue leaks, track denial trends, and take early action — leading to stronger margins and lower administrative costs.
+4.  Improve financial performance: Agents make it easier to spot revenue leaks, track denial trends, and take early action - leading to stronger margins and lower administrative costs.
 5.  Create a better staff experience: Freeing teams from repetitive, frustrating tasks helps reduce burnout and turnover while improving job satisfaction.
 
 ## 10 strategic healthcare AI agent use cases
 
-These 10 AI agent examples illustrate what’s possible when healthcare teams build on Glean. They highlight how organizations can create agents that address real workflow challenges — from prior authorizations and chart gaps to registration and transport. Think of this as a starting point to imagine how agents could connect your systems, respond in natural language, and deliver meaningful results.
+These 10 AI agent examples illustrate what’s possible when healthcare teams build on Glean. They highlight how organizations can create agents that address real workflow challenges - from prior authorizations and chart gaps to registration and transport. Think of this as a starting point to imagine how agents could connect your systems, respond in natural language, and deliver meaningful results.
 
 ### 1\. Intelligent prior authorization assistant
 
@@ -141,7 +141,7 @@ Helps finance and revenue teams stay on top of performance without manual report
 
 -   Problem to solve: Building margin reports used to take days and delay action
 -   What it does: Gathers data from SharePoint and OneDrive, highlights denial and underpayment trends, and posts a daily Teams update with key insights
--   The impact: Analysts spend more time solving problems, not wrangling spreadsheets — leading to faster interventions
+-   The impact: Analysts spend more time solving problems, not wrangling spreadsheets - leading to faster interventions
 
 ### 5\. Policy navigator
 
@@ -165,7 +165,7 @@ Connects transport staff with real-time assignments to keep hospital flow moving
 
 -   Problem to solve: Coordinating patient transport involved calls, delays, and manual tracking
 -   What it does: Checks Teams presence, identifies the next available escort, and updates the whiteboard in real time
--   The impact: Imaging cycles are faster and bed capacity increases — contributing to annual margin impact
+-   The impact: Imaging cycles are faster and bed capacity increases - contributing to annual margin impact
 
 ### 8\. Birth-cert auto-prep
 
@@ -173,7 +173,7 @@ Takes the paperwork burden off birth recorders so families get certificates fast
 
 -   Problem to solve: Staff were re-keying information from discharge summaries into state systems, causing delays and occasional late filings
 -   What it does: Pulls parent details from discharge summaries in SharePoint and pre-fills the state’s birth certificate form, only flagging what needs human review
--   Why it matters: Cuts turnaround time and improves filing accuracy — while improving the parent experience with faster documentation
+-   Why it matters: Cuts turnaround time and improves filing accuracy - while improving the parent experience with faster documentation
 
 ### 9\. QuickClear registration assistant
 
@@ -214,7 +214,7 @@ Glean’s Work AI platform is purpose-built for complex, regulated environments 
 -   275+ native connectors: Connect to Microsoft 365, Google Workspace, Epic SharePoint, ServiceNow, Salesforce Health Cloud, Slack, and more without custom development.
 -   Permission-aware indexing: Agents follow your existing identity and access controls, maintaining HIPAA “minimum necessary” protections and logging every interaction for full auditability.
 -   No data migration: Content stays where it is. Glean indexes documents and metadata in place, so there’s no need to create separate repositories or move sensitive files.
--   Built-in compliance: Glean supports version control, deployment traceability, and secure hosting options that meet requirements like GxP and SOC 2 — without slowing you down.
+-   Built-in compliance: Glean supports version control, deployment traceability, and secure hosting options that meet requirements like GxP and SOC 2 - without slowing you down.
 -   Fast time to value: Agents can be configured in weeks. Prebuilt workflows and a self-serve interface make it easy to scale across departments and use cases.
 
 By turning fragmented knowledge into usable context and action, Glean helps healthcare teams reduce errors, move faster, and focus on what matters most: patient care.
@@ -223,14 +223,14 @@ By turning fragmented knowledge into usable context and action, Glean helps heal
 
 AI adoption in healthcare does not require sweeping overhauls. Follow these steps:
 
-1.  Identify high-friction workflows. Look for processes that are document-heavy, time-sensitive, and prone to errors — such as denials, prior authorizations, and chart completion.
+1.  Identify high-friction workflows. Look for processes that are document-heavy, time-sensitive, and prone to errors - such as denials, prior authorizations, and chart completion.
 2.  Pilot agents in one area. Choose a use case with clear KPIs and a willing team. Configure Glean agents to connect to your content sources, validate outputs, and support the workflow end to end.
 3.  Measure and expand. Track time saved, denial reduction, and revenue impact. Share success stories and onboard additional departments.
 4.  Ensure ongoing support. Provide training, collect feedback, and iterate on agent prompts to keep performance aligned with evolving needs.
 
 ## Bringing AI to the frontlines of healthcare work
 
-AI doesn’t have to overhaul everything to make a meaningful impact. Some of the biggest wins come from improving the workflows teams already use — the ones that quietly drain time, resources, and energy every day. That’s where AI agents deliver the most value.
+AI doesn’t have to overhaul everything to make a meaningful impact. Some of the biggest wins come from improving the workflows teams already use - the ones that quietly drain time, resources, and energy every day. That’s where AI agents deliver the most value.
 
 The future of healthcare work isn’t about replacing systems. It’s about helping teams work across them more intelligently, with the context, security, and trust healthcare requires. That’s what Glean is built for.
 

@@ -186,7 +186,7 @@ IDE
 
 info
 
-This list covers the hosts we've explicitly tested and documented. Glean also works with **any other MCP-compliant client** — in the MCP Configurator, choose **Custom** and use your Glean MCP server URL.
+This list covers the hosts we've explicitly tested and documented. Glean also works with **any other MCP-compliant client** - in the MCP Configurator, choose **Custom** and use your Glean MCP server URL.
 
 ## Choosing a host[​](#choosing-a-host "Direct link to Choosing a host")
 

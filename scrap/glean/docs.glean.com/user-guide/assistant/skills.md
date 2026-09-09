@@ -43,8 +43,8 @@ Skills that follow the Agent Skills standard can be imported directly into Glean
 
 Go to **Settings → Skills** in your Glean instance. You'll see two tabs:
 
--   **Personal** — Skills you've created.
--   **Shared** — Skills teammates or your organization have shared with you.
+-   **Personal** - Skills you've created.
+-   **Shared** - Skills teammates or your organization have shared with you.
 
 ### Uploading a Skill[​](#uploading-a-skill "Direct link to Uploading a Skill")
 
@@ -143,13 +143,13 @@ There are multiple ways to use Skills:
 
 From **Settings → Skills**, use the toggle and the three-dot menu on each Skill card to:
 
--   **Enable/Disable** — Toggle Skills on or off.
--   **Edit** — Update Skill instructions at any time.
--   **Share** — Share a Skill with teammates, departments, or groups. See [Sharing Skills](#sharing-skills).
--   **Replace** — Re-upload a Skill to update its contents.
--   **Refresh** — Check for updates from GitHub before the next daily refresh. This action appears only for Skills imported from GitHub.
--   **Delete** — Remove Skills you no longer need.
--   **Download** — Export any Skill as a `.zip` file for portability.
+-   **Enable/Disable** - Toggle Skills on or off.
+-   **Edit** - Update Skill instructions at any time.
+-   **Share** - Share a Skill with teammates, departments, or groups. See [Sharing Skills](#sharing-skills).
+-   **Replace** - Re-upload a Skill to update its contents.
+-   **Refresh** - Check for updates from GitHub before the next daily refresh. This action appears only for Skills imported from GitHub.
+-   **Delete** - Remove Skills you no longer need.
+-   **Download** - Export any Skill as a `.zip` file for portability.
 
 ### Admin controls[​](#admin-controls "Direct link to Admin controls")
 
@@ -191,8 +191,8 @@ Set a permission level
 
 Choose a permission level for each recipient:
 
--   **Viewer** — Can use the Skill.
--   **Editor** — Can use and edit the Skill.
+-   **Viewer** - Can use the Skill.
+-   **Editor** - Can use and edit the Skill.
 
 You are the Skill's **Owner** by default. Owner can't be assigned from the share dialog.
 
@@ -202,7 +202,7 @@ Optionally allow company-wide access
 
 Under **General access**, switch from **Restricted to people with access** to **Anyone at \[Company\] with the link can view** to let anyone in the organization find and use the Skill. This option requires admin permission.
 
-Recipients are notified by email when you share a Skill with them, and again when you update a Skill they've added — so they always have your latest version. Admins can publish Skills to the whole organization from the [Admin console](/administration/managing-skills/share-skills).
+Recipients are notified by email when you share a Skill with them, and again when you update a Skill they've added - so they always have your latest version. Admins can publish Skills to the whole organization from the [Admin console](/administration/managing-skills/share-skills).
 
 ### Use Skills shared with you[​](#use-skills-shared-with-you "Direct link to Use Skills shared with you")
 
@@ -243,7 +243,7 @@ Skills and Agents are complementary features. Here's how to think about when to 
 | **When to use** | When you want consistent, reusable expertise applied to a task on demand | When you want to automate a full process that runs autonomously |
 | **Example** | A market research Skill that applies consistent methodology every time | An agent that runs monthly, builds a market report using a Skill, and emails it to leadership |
 
-Skills are foundational building blocks that Agents (and Glean) can invoke. They work together — you don't have to choose one over the other.
+Skills are foundational building blocks that Agents (and Glean) can invoke. They work together - you don't have to choose one over the other.
 
 ## Permissions and data access[​](#permissions-and-data-access "Direct link to Permissions and data access")
 
@@ -296,7 +296,7 @@ Yes. A Skill can contain up to 100 files. The maximum upload size is 10 MB for `
 
 ### Can I import a Skill from GitHub?
 
-Yes. Go to **Settings → Skills**, click **\+ Add Skill**, and select **Import from GitHub**. Paste a supported URL — a repository root, a subtree path, or a direct SKILL.md link — and Glean imports the Skill with all bundled supporting files.
+Yes. Go to **Settings → Skills**, click **\+ Add Skill**, and select **Import from GitHub**. Paste a supported URL - a repository root, a subtree path, or a direct SKILL.md link - and Glean imports the Skill with all bundled supporting files.
 
 ### How does Glean keep imported Skills up to date?
 
@@ -316,7 +316,7 @@ No. Commit permalink URLs point to a fixed commit and can't stay in sync with up
 
 ### Does GitHub import replace admin governance for Skills?
 
-No. GitHub import is a way to bring Skills into Glean from a repository. Governance controls — including admin enablement, sharing, and publishing — remain separate and continue to apply to imported Skills.
+No. GitHub import is a way to bring Skills into Glean from a repository. Governance controls - including admin enablement, sharing, and publishing - remain separate and continue to apply to imported Skills.
 
 ### Can I import from a private GitHub repository?
 
@@ -332,4 +332,4 @@ Glean imports the Skills it can and skips the ones it can't, so one invalid Skil
 
 ### Will this affect my existing experience?
 
-For most users, no — Skills only run when they're relevant to your query, so non-Skill queries are unaffected. If your organization has a large number of Skills enabled, Assistant may take slightly longer to evaluate which Skill (if any) to apply, since it reads each Skill's name and description to decide. The impact is small in practice but scales with the number of Skills available.
+For most users, no - Skills only run when they're relevant to your query, so non-Skill queries are unaffected. If your organization has a large number of Skills enabled, Assistant may take slightly longer to evaluate which Skill (if any) to apply, since it reads each Skill's name and description to decide. The impact is small in practice but scales with the number of Skills available.

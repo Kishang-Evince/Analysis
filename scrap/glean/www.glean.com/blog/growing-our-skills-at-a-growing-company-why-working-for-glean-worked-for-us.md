@@ -91,7 +91,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Over the past three months, we learned a ton from our internships at [Glean](https://www.glean.com), and the company grew right along with us. As the third and fourth interns (both software engineering interns on the product engineering team) at Glean, we received incredible mentorship. We watched the number of employees at the company nearly double from around 70 to 130 people, and before our eyes, the company morphed into a [unicorn](https://www.glean.com/blog/series-c-announcement). That alone was pretty cool, but there were a lot of other reasons why our internships were so rewarding—and why interning at Glean might be a good fit for you.
+Over the past three months, we learned a ton from our internships at [Glean](https://www.glean.com), and the company grew right along with us. As the third and fourth interns (both software engineering interns on the product engineering team) at Glean, we received incredible mentorship. We watched the number of employees at the company nearly double from around 70 to 130 people, and before our eyes, the company morphed into a [unicorn](https://www.glean.com/blog/series-c-announcement). That alone was pretty cool, but there were a lot of other reasons why our internships were so rewarding-and why interning at Glean might be a good fit for you.
 
 ## Anyone can work on high-impact projects
 

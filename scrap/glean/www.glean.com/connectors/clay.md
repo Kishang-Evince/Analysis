@@ -2,7 +2,7 @@
 url: "https://www.glean.com/connectors/clay"
 canonical: "https://www.glean.com/connectors/clay"
 title: "Clay integration with Glean | Glean Work AI"
-description: "Turn Clay data into targeted outbound, account research, and contact lists—directly from Glean."
+description: "Turn Clay data into targeted outbound, account research, and contact lists-directly from Glean."
 fetched_at: "2026-09-01T13:25:43.201Z"
 ---
 ### Overview

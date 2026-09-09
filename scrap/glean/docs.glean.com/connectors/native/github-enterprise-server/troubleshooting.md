@@ -22,7 +22,7 @@ This page covers issues most often reported on the GitHub Enterprise Server conn
 | --- | --- |
 | **GitHub App not installed:** The GitHub App was created but not installed in any organization on your GitHub Enterprise Server instance, so Glean cannot list organizations or mint an installation token. | Install the GitHub App in at least one organization on your instance, then rerun validation. See [GITHUB\_9](/troubleshooting/error-codes/github/github-9) for the full troubleshooting steps. |
 | **Admin token scopes or ownership:** The admin classic personal access token is missing required scopes, or its owner lacks the privileges needed to read enterprise members and organizations. | Provide a classic personal access token owned by an enterprise owner with the `user:email`, `read:enterprise`, and `read:org` scopes, then rerun validation. See [GITHUB\_7](/troubleshooting/error-codes/github/github-7) for the full troubleshooting steps. |
-| **No readable resources:** Glean cannot fetch members, repositories, or issues from an organization — for example because the organization has no resources of a given type, or the App is not installed on it. | Confirm the organization contains at least one member, repository, and issue, and that the GitHub App is installed on it. See [GITHUB\_2](/troubleshooting/error-codes/github/github-2) for the full troubleshooting steps. |
+| **No readable resources:** Glean cannot fetch members, repositories, or issues from an organization - for example because the organization has no resources of a given type, or the App is not installed on it. | Confirm the organization contains at least one member, repository, and issue, and that the GitHub App is installed on it. See [GITHUB\_2](/troubleshooting/error-codes/github/github-2) for the full troubleshooting steps. |
 | **Credential mismatch:** The App credentials entered in Glean (App ID, private key, Client ID, or Client Secret) do not match the GitHub App on your instance. | Copy the correct values directly from the GitHub App's settings page and re-enter them in the Glean admin console. See [GITHUB\_5](/troubleshooting/error-codes/github/github-5) (Client ID or Secret) and [GITHUB\_9](/troubleshooting/error-codes/github/github-9) (App ID or private key) for the full troubleshooting steps. |
 
 **Still not resolved?** Contact Glean Support with your GitHub Enterprise Server instance domain and the exact text of the validation error.
@@ -101,7 +101,7 @@ GitHub Pages indexing supports only the legacy `gh-pages` branch workflow and on
 
 | Cause | Fix |
 | --- | --- |
-| **Webhook delivery blocked:** GitHub webhook events from your instance are not reaching Glean, so updates wait for the next incremental crawl. | Confirm your network allows webhook delivery from your GitHub Enterprise Server instance to Glean. Glean also picks up new and updated content through scheduled incremental and full crawls, so content still syncs without webhooks — just less quickly. |
+| **Webhook delivery blocked:** GitHub webhook events from your instance are not reaching Glean, so updates wait for the next incremental crawl. | Confirm your network allows webhook delivery from your GitHub Enterprise Server instance to Glean. Glean also picks up new and updated content through scheduled incremental and full crawls, so content still syncs without webhooks - just less quickly. |
 
 ## FAQs[​](#faqs "Direct link to FAQs")
 
@@ -109,9 +109,9 @@ GitHub Pages indexing supports only the legacy `gh-pages` branch workflow and on
 
 Glean provides separate connectors for different GitHub hosting models:
 
--   **GitHub** — for GitHub.com (Cloud), including GitHub Enterprise Cloud. An admin installs a GitHub App and each end user authorizes their own GitHub account through per-user OAuth.
--   **GitHub Enterprise Server** — for self-hosted GitHub Enterprise Server. It uses a GitHub App plus an admin-issued classic personal access token (with the `user:email`, `read:enterprise`, and `read:org` scopes) for enterprise- and organization-level reads, and supports multiple organizations.
--   **GitHub Server** — for a self-hosted GitHub instance scoped to a single organization. It uses a GitHub App with per-user OAuth and does not require an admin personal access token.
+-   **GitHub** - for GitHub.com (Cloud), including GitHub Enterprise Cloud. An admin installs a GitHub App and each end user authorizes their own GitHub account through per-user OAuth.
+-   **GitHub Enterprise Server** - for self-hosted GitHub Enterprise Server. It uses a GitHub App plus an admin-issued classic personal access token (with the `user:email`, `read:enterprise`, and `read:org` scopes) for enterprise- and organization-level reads, and supports multiple organizations.
+-   **GitHub Server** - for a self-hosted GitHub instance scoped to a single organization. It uses a GitHub App with per-user OAuth and does not require an admin personal access token.
 
 Choose the connector that matches your hosting model.
 
@@ -132,7 +132,7 @@ Yes. Each GitHub Enterprise Server instance is configured as its own connector i
 
 ### How does Glean handle files on non-default branches?
 
-Files on the default branch are indexed by the content crawl. Files on non-default branches, tags, or specific commits are fetched on demand using the requesting user's own GitHub access. Branches whose names contain a `/` cannot be fetched this way — reference the file by its commit SHA instead.
+Files on the default branch are indexed by the content crawl. Files on non-default branches, tags, or specific commits are fetched on demand using the requesting user's own GitHub access. Branches whose names contain a `/` cannot be fetched this way - reference the file by its commit SHA instead.
 
 ### How can I control which organizations, repositories, and content types Glean indexes?
 

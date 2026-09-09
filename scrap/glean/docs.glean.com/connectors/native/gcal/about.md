@@ -107,7 +107,7 @@ The Google Calendar connector is designed to maintain privacy and follow the pri
 -   **Permission enforcement**
     -   Glean does not invent its own access model. It mirrors Google Calendar’s.
     -   For each event, Glean determines visibility from the underlying Calendar ACLs + event visibility (default / public / private).
-    -   Users see only what they are allowed to see in Calendar — full details, free/busy only, or not at all.
+    -   Users see only what they are allowed to see in Calendar - full details, free/busy only, or not at all.
 -   **Deletion and revocation**
     -   Glean uses Calendar’s incremental crawl plus Google Workspace Audit / Reports APIs to detect deletions and permission changes and remove or update events accordingly.
     -   When events are deleted or a user loses access, the corresponding records in Glean are updated or removed on the next incremental or full reconciliation.

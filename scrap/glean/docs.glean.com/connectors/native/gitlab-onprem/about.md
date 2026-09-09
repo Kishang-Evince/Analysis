@@ -51,7 +51,7 @@ Glean indexes the following GitLab objects. Merge requests, code, issues, and wi
 
 ## Limitations[​](#limitations "Direct link to Limitations")
 
--   Merge requests (with comments and diffs), code, issues, and wikis cannot be selectively enabled or disabled — they are always indexed. Epics are the only object type with a setup toggle: the **Crawl epics** option on the connector setup page controls whether epics are indexed, and it is selected by default.
+-   Merge requests (with comments and diffs), code, issues, and wikis cannot be selectively enabled or disabled - they are always indexed. Epics are the only object type with a setup toggle: the **Crawl epics** option on the connector setup page controls whether epics are indexed, and it is selected by default.
 -   Only file content on the **default branch** is indexed for code and commit messages. Other branches are not crawled.
 -   Wiki indexing covers pages whose file body is `.md` or `.txt`; other file types in a wiki are not indexed.
 -   Epic crawling requires **GitLab 18.1 or later**.
@@ -75,7 +75,7 @@ See [Choose an authentication path](/connectors/native/gitlab-onprem/setup#1-cho
 
 ### Data access model[​](#data-access-model "Direct link to Data access model")
 
--   The connector is **read-only** — Glean never creates, modifies, or deletes content in GitLab.
+-   The connector is **read-only** - Glean never creates, modifies, or deletes content in GitLab.
 -   Authentication uses a personal access token sent as a bearer token over HTTPS.
 -   Content is indexed from the projects the token can access, subject to the token's scopes.
 
@@ -91,7 +91,7 @@ Between full crawls, Glean runs scheduled incremental crawls approximately **hou
 
 ### Webhook-driven updates[​](#webhook-driven-updates "Direct link to Webhook-driven updates")
 
-When the token has the `api` scope, Glean automatically registers webhooks in GitLab. With read-only scopes you create webhooks — and a system hook — manually to get near-real-time updates. See [Create webhooks and a system hook](/connectors/native/gitlab-onprem/setup#create-webhooks-and-a-system-hook-read-only-scopes-only).
+When the token has the `api` scope, Glean automatically registers webhooks in GitLab. With read-only scopes you create webhooks - and a system hook - manually to get near-real-time updates. See [Create webhooks and a system hook](/connectors/native/gitlab-onprem/setup#create-webhooks-and-a-system-hook-read-only-scopes-only).
 
 ### Identity crawls[​](#identity-crawls "Direct link to Identity crawls")
 

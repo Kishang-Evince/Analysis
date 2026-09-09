@@ -21,7 +21,7 @@ To browse connectors directly, go to the [Connectors Hub](/connectors/).
 
 ## Why add more connectors after launch[​](#why-add-more-connectors-after-launch "Direct link to Why add more connectors after launch")
 
-The connectors you set up during initial deployment cover the highest-value apps for most organizations — typically a document store, a chat platform, and a project tracker. After launch, expand to:
+The connectors you set up during initial deployment cover the highest-value apps for most organizations - typically a document store, a chat platform, and a project tracker. After launch, expand to:
 
 -   Apps that surface knowledge for specific teams. For example, Salesforce for go-to-market, GitHub for engineering, Zendesk for support.
 -   Specialized apps where employees ask repetitive questions, such as HRIS, finance, and IT service management.
@@ -31,13 +31,13 @@ Each connector you add deepens Glean's understanding of your organization and im
 
 ## Configure a new connector[​](#configure-a-new-connector "Direct link to Configure a new connector")
 
-To configure a new connector, follow the same flow as during initial setup—see [Add connectors](/get-started/setup/add-connectors) for the general process, then refer to the connector-specific setup guide for credentials and configuration details.
+To configure a new connector, follow the same flow as during initial setup-see [Add connectors](/get-started/setup/add-connectors) for the general process, then refer to the connector-specific setup guide for credentials and configuration details.
 
 ## See also[​](#see-also "Direct link to See also")
 
 -   [Add connectors](/get-started/setup/add-connectors): the general setup flow
 -   [Manage connectors](/connectors/monitoring): monitor sync progress and connector health
--   [Excluding content](/connectors/excluding-content) — apply inclusion (greenlist) and exclusion (redlist) rules to control what Glean crawls
--   [Connector settings and visibility](/connectors/connectors-settings-visibility) — use the **Manage data** tab and visibility settings on a per-connector basis
--   [Crawling FAQ](/connectors/crawling-faq) — common questions about crawl timing, restrictions, and behavior
--   [Crawling & learning process](/get-started/review/crawling-and-learning) — what happens after you start a crawl
+-   [Excluding content](/connectors/excluding-content) - apply inclusion (greenlist) and exclusion (redlist) rules to control what Glean crawls
+-   [Connector settings and visibility](/connectors/connectors-settings-visibility) - use the **Manage data** tab and visibility settings on a per-connector basis
+-   [Crawling FAQ](/connectors/crawling-faq) - common questions about crawl timing, restrictions, and behavior
+-   [Crawling & learning process](/get-started/review/crawling-and-learning) - what happens after you start a crawl

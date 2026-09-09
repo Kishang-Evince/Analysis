@@ -45,7 +45,7 @@ Critical customer signals live across support tickets, CRM records, product usag
 
 When that context is fragmented, support teams struggle to resolve issues quickly, and customer success teams struggle to spot risk, stay proactive, and see what’s really happening inside an account.
 
-Join Gainsight, Glean, and Flock for a practical conversation on how leading organizations are using AI to connect customer context across service, support, and success workflows — so teams can respond faster, reduce unnecessary escalations, identify risk earlier, and create a more consistent customer experience.
+Join Gainsight, Glean, and Flock for a practical conversation on how leading organizations are using AI to connect customer context across service, support, and success workflows - so teams can respond faster, reduce unnecessary escalations, identify risk earlier, and create a more consistent customer experience.
 
 You’ll hear how teams are bringing the right knowledge and signals into the flow of work, helping frontline teams resolve more with confidence while giving success teams a clearer, more complete view of the customer. We’ll also share how the new Glean x Gainsight integration fits into that model.
 

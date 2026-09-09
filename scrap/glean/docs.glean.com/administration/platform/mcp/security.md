@@ -312,7 +312,7 @@ Revoking a dynamic or static client affects existing connections. The revocation
 
 ### Signing out users from all sessions
 
-Admins can sign users out of all sessions — including MCP-originated sessions — via the Glean Admin Console. This invalidates the user's Glean-issued tokens across all MCP hosts. After revocation caches refresh (10 minutes by default), MCP hosts must re-authenticate the user before they can connect again.
+Admins can sign users out of all sessions - including MCP-originated sessions - via the Glean Admin Console. This invalidates the user's Glean-issued tokens across all MCP hosts. After revocation caches refresh (10 minutes by default), MCP hosts must re-authenticate the user before they can connect again.
 
 * * *
 
@@ -342,7 +342,7 @@ MCP connection and usage insights are available in the [MCP insights](/administr
 
 ### Q1. Does confidential data leave our cloud boundary when using the Glean remote MCP server?
 
-The Glean remote MCP server runs inside your Glean tenant (your dedicated cloud project/VPC). All indexing, query processing, and MCP tool execution occur within that environment. Tool responses are returned to the MCP host over TLS — the same data flow as any application consuming Glean's APIs. Once data reaches the host, it is subject to that host's data handling policies.
+The Glean remote MCP server runs inside your Glean tenant (your dedicated cloud project/VPC). All indexing, query processing, and MCP tool execution occur within that environment. Tool responses are returned to the MCP host over TLS - the same data flow as any application consuming Glean's APIs. Once data reaches the host, it is subject to that host's data handling policies.
 
 ### Q2. Does Glean MCP introduce any new permission model?
 

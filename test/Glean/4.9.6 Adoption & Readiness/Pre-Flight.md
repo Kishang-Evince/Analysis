@@ -1,4 +1,4 @@
-# 4.9.6 Admin Test Guide — Glean Adoption & Readiness
+# 4.9.6 Admin Test Guide - Glean Adoption & Readiness
 
 **Purpose:** Verify all 4 fields under `4.9.6 Adoption & Readiness`.  
 **Companion eval log:** `Glean/Combined/4.9.6 Adoption & Readiness/Overview.md`  
@@ -22,10 +22,10 @@
 
 ## Fields in this section
 
-- [Field 1 — Training Infrastructure](Training Infrastructure.md)
-- [Field 2 — Adoption Friction Signals](Adoption Friction Signals.md)
-- [Field 3 — Non-Technical User Experience](Non-Technical User Experience.md)
-- [Field 4 — Resistance & Failure Signals](Resistance & Failure Signals.md)
+- [Field 1 - Training Infrastructure](Training Infrastructure.md)
+- [Field 2 - Adoption Friction Signals](Adoption Friction Signals.md)
+- [Field 3 - Non-Technical User Experience](Non-Technical User Experience.md)
+- [Field 4 - Resistance & Failure Signals](Resistance & Failure Signals.md)
 
 ---
 
@@ -44,6 +44,6 @@ Update [`Glean/Combined/4.9.6 Adoption & Readiness/Pre-Flight.md`](../../../Glea
 
 ## Safety
 
-1. Pilot survey — no PHI in free-text responses.
-2. Notion over-share test — disposable content only; remove after test.
-3. People-data gap test — restore user record after probe.
+1. Pilot survey - no PHI in free-text responses.
+2. Notion over-share test - disposable content only; remove after test.
+3. People-data gap test - restore user record after probe.

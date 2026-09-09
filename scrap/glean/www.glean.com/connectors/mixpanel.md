@@ -2,7 +2,7 @@
 url: "https://www.glean.com/connectors/mixpanel"
 canonical: "https://www.glean.com/connectors/mixpanel"
 title: "Mixpanel integration with Glean | Glean Work AI"
-description: "Bring Mixpanel into Glean to explore dashboards, funnels, retention, and session replays with live MCP queries — alongside docs, tickets, and chats."
+description: "Bring Mixpanel into Glean to explore dashboards, funnels, retention, and session replays with live MCP queries - alongside docs, tickets, and chats."
 fetched_at: "2026-09-01T13:25:49.494Z"
 ---
 ### Overview

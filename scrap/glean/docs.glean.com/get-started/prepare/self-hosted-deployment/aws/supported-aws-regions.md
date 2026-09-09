@@ -56,7 +56,7 @@ When deciding on deployment region for your Glean deployment, you must ensure th
 
 note
 
-Glean uses [AWS VPC endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) to keep AWS API traffic internal within a VPC. **Default enabled** endpoints (DynamoDB, S3, SSM, SSM Messages, EC2 Messages) are always provisioned. **Opt-in** endpoints can be enabled upon request — note that VPC endpoints [incur additional cost](https://aws.amazon.com/privatelink/pricing/). Contact Glean if you would like to enable any optional endpoints or request support for a service not listed above.
+Glean uses [AWS VPC endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) to keep AWS API traffic internal within a VPC. **Default enabled** endpoints (DynamoDB, S3, SSM, SSM Messages, EC2 Messages) are always provisioned. **Opt-in** endpoints can be enabled upon request - note that VPC endpoints [incur additional cost](https://aws.amazon.com/privatelink/pricing/). Contact Glean if you would like to enable any optional endpoints or request support for a service not listed above.
 
 ### Amazon Bedrock[​](#amazon-bedrock "Direct link to Amazon Bedrock")
 

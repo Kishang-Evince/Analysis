@@ -385,7 +385,7 @@ July 30, 2026
 
 ### Agent orchestration platforms compared
 
-Compare six agent orchestration platforms on workflow control, reliability, security, and observability — and see which enterprise buyer each one fits.
+Compare six agent orchestration platforms on workflow control, reliability, security, and observability - and see which enterprise buyer each one fits.
 
 ![Stephanie Baladi](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a7634c1b58711c20cfff205_Stephanie.png)
 
@@ -507,7 +507,7 @@ July 29, 2026
 
 ### Enterprise context starts with indexing, but it doesn’t end there
 
-Indexing improves accuracy, latency, and token efficiency. Learn what makes an enterprise index work — and why AI needs more than retrieval.
+Indexing improves accuracy, latency, and token efficiency. Learn what makes an enterprise index work - and why AI needs more than retrieval.
 
 ![Joel McKelvey](https://cdn.prod.website-files.com/613513981b0efaf850830620/67e61f3a856f1cf6c78c5e5f_Joel%20McKelvey.jpg)
 
@@ -667,7 +667,7 @@ July 14, 2026
 
 ### Enterprise knowledge graph cases: 7 applications that deliver ROI
 
-Learn how enterprise knowledge graphs turn siloed data into a connected, queryable network—powering semantic search, GraphRAG, fraud detection, supply chain visibility, compliance, and more—with practical use cases, adoption roadmaps, and ROI benchmarks for mid-market and enterprise teams
+Learn how enterprise knowledge graphs turn siloed data into a connected, queryable network-powering semantic search, GraphRAG, fraud detection, supply chain visibility, compliance, and more-with practical use cases, adoption roadmaps, and ROI benchmarks for mid-market and enterprise teams
 
 ![Glean](https://cdn.prod.website-files.com/613513981b0efaf850830620/641443b7208e558a59f93731_glean-author-symbol.jpg)
 
@@ -957,7 +957,7 @@ June 30, 2026
 
 ### Buyer’s guide: what to look for in an enterprise AI platform for token-efficient deployment
 
-What to look for in an enterprise AI platform for token-efficient deployment — retrieval precision, model routing, orchestration, governance, and cost control.
+What to look for in an enterprise AI platform for token-efficient deployment - retrieval precision, model routing, orchestration, governance, and cost control.
 
 ![Julie Mills](https://cdn.prod.website-files.com/613513981b0efaf850830620/67dc54a473da648e54d4e7fb_Julie%20Headshot.jpeg)
 
@@ -1021,7 +1021,7 @@ June 23, 2026
 
 ### AI has arrived at work. The organizational impact hasn't
 
-The Work AI Index reveals why widespread AI adoption still isn’t translating into business impact — and the hidden human labor behind the gap.
+The Work AI Index reveals why widespread AI adoption still isn’t translating into business impact - and the hidden human labor behind the gap.
 
 ![Stephanie Baladi](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a7634c1b58711c20cfff205_Stephanie.png)
 
@@ -1451,7 +1451,7 @@ Data Analysis
 
 June 2, 2026
 
-### Introducing Snowflake in Glean Assistant — and Why Glean Was Named 2026 AMER Snowflake Product Innovation Partner of the Year
+### Introducing Snowflake in Glean Assistant - and Why Glean Was Named 2026 AMER Snowflake Product Innovation Partner of the Year
 
 Snowflake in Glean Assistant is now generally available, giving every employee natural-language access to governed Snowflake data, grounded in your full enterprise context.
 
@@ -1521,7 +1521,7 @@ May 20, 2026
 
 ### The 10 best AI voice assistants in 2026: A comprehensive guide
 
-The best AI voice assistants of 2026, ranked and compared on accuracy, integrations, and pricing — find the right one for work or home.
+The best AI voice assistants of 2026, ranked and compared on accuracy, integrations, and pricing - find the right one for work or home.
 
 ![Trevor Gile](https://cdn.prod.website-files.com/613513981b0efaf850830620/6941892e6f94516e5776d542_TGLEMJFFG-U0875PX48R3-7c01883b1a49-192.jpg)
 
@@ -1621,7 +1621,7 @@ May 14, 2026
 
 ### AI tooling stack report for software engineers
 
-Field guide to the modern AI tooling stack for software engineering teams—how to unify context, improve onboarding, code changes, and incidents with Glean
+Field guide to the modern AI tooling stack for software engineering teams-how to unify context, improve onboarding, code changes, and incidents with Glean
 
 ![Peter Kim](https://cdn.prod.website-files.com/613513981b0efaf850830620/6866a548c0694bf8ce837d3b_Peter%20Kim.png)
 
@@ -1787,7 +1787,7 @@ May 5, 2026
 
 ### Best AI tools for software engineers: how to build the right AI stack
 
-The best AI tools for software engineers in 2026 — coding assistants, code review, and testing tools compared to help you ship faster.
+The best AI tools for software engineers in 2026 - coding assistants, code review, and testing tools compared to help you ship faster.
 
 ![Glean](https://cdn.prod.website-files.com/613513981b0efaf850830620/641443b7208e558a59f93731_glean-author-symbol.jpg)
 
@@ -2039,7 +2039,7 @@ April 16, 2026
 
 ### Why the AI stack for modern engineering teams requires both coding and context
 
-Bringing together the layer that understands the work with the layer that does the work is key to generating better code, faster—but it needs the right infrastructure to make it work.
+Bringing together the layer that understands the work with the layer that does the work is key to generating better code, faster-but it needs the right infrastructure to make it work.
 
 ![Melissa Albanes](https://cdn.prod.website-files.com/613513981b0efaf850830620/69dfd1f85e2945ea454f97b9_melissa.jpeg)
 
@@ -2071,7 +2071,7 @@ April 10, 2026
 
 ### Execute work in Glean with MCP Apps in Assistant
 
-Glean Assistant is your partner for getting work done — and now it comes with the tools your team already relies on. With open MCP App support, Gamma, Asana, Hex, and Box work directly inside Glean, so you can go from insight to action without ever leaving.
+Glean Assistant is your partner for getting work done - and now it comes with the tools your team already relies on. With open MCP App support, Gamma, Asana, Hex, and Box work directly inside Glean, so you can go from insight to action without ever leaving.
 
 ![Mira Khanna](https://cdn.prod.website-files.com/613513981b0efaf850830620/68b80cb02ed92c2df7221c5e_Mira%20Khanna.webp)![ Zane Homsi](https://cdn.prod.website-files.com/613513981b0efaf850830620/6965fa6d727ba8b4712c657b_Zane%20Homsi.jpeg)
 
@@ -2205,7 +2205,7 @@ April 1, 2026
 
 ### 7 Core Components of an AI Agent Architecture Explained
 
-The 7 core components every AI agent architecture needs — from memory to tool use — explained with real examples for teams building AI agents.
+The 7 core components every AI agent architecture needs - from memory to tool use - explained with real examples for teams building AI agents.
 
 ![Glean](https://cdn.prod.website-files.com/613513981b0efaf850830620/641443b7208e558a59f93731_glean-author-symbol.jpg)
 
@@ -2357,7 +2357,7 @@ March 20, 2026
 
 ### Top 5 no‑code automation tools in 2026 (and why you also need AI agents with context)
 
-See the top 5 no-code automation tools for 2026, compared on features, pricing, and best use cases — pick the right one for your team in minutes.
+See the top 5 no-code automation tools for 2026, compared on features, pricing, and best use cases - pick the right one for your team in minutes.
 
 ![Emrecan Dogan](https://cdn.prod.website-files.com/613513981b0efaf850830620/65dee49587cf3c6a326a1d18_Emrecan.jpeg)
 
@@ -2897,7 +2897,7 @@ January 22, 2026
 
 ### Designing Glean for accessibility – design system and compliance
 
-Learn how we integrate accessibility directly into Glean through our design philosophy and perspectives—baking it into our tokens, components, patterns, and more.
+Learn how we integrate accessibility directly into Glean through our design philosophy and perspectives-baking it into our tokens, components, patterns, and more.
 
 ![Sashank Gogula](https://cdn.prod.website-files.com/613513981b0efaf850830620/697111e62be71be0fab1b262_sashank.jpeg)![Sarah Ross](https://cdn.prod.website-files.com/613513981b0efaf850830620/6971130d40c33560262941a7_sarah.jpeg)![Anojen Jeyapalan](https://cdn.prod.website-files.com/613513981b0efaf850830620/697114164dc844a56ff759a0_anojen.jpeg)![Anojen Jeyapalan](https://cdn.prod.website-files.com/613513981b0efaf850830620/650967fd55e4df9860ffac86_Tommy.png)
 
@@ -3019,7 +3019,7 @@ January 13, 2026
 
 ### Introducing Assistant updates: Search in Chat, autocomplete, and image generation
 
-Find what you need faster and generate images that fit seamlessly into the way you work—all in Assistant.
+Find what you need faster and generate images that fit seamlessly into the way you work-all in Assistant.
 
 ![Mira Khanna](https://cdn.prod.website-files.com/613513981b0efaf850830620/68b80cb02ed92c2df7221c5e_Mira%20Khanna.webp)![ Zane Homsi](https://cdn.prod.website-files.com/613513981b0efaf850830620/6965fa6d727ba8b4712c657b_Zane%20Homsi.jpeg)![Mayank Malhotra](https://cdn.prod.website-files.com/613513981b0efaf850830620/68e66555b555af0fc302ae2c_mayank-malhotra.jpg)
 
@@ -3089,9 +3089,9 @@ Knowledge Graphs
 
 January 7, 2026
 
-### Context is the next data platform—and why context graphs are key to understanding processes
+### Context is the next data platform-and why context graphs are key to understanding processes
 
-Everyone is suddenly talking about context graphs as AI’s next trillion‑dollar opportunity. At Glean, we’re excited — because it finally has a name.
+Everyone is suddenly talking about context graphs as AI’s next trillion‑dollar opportunity. At Glean, we’re excited - because it finally has a name.
 
 ![Arvind Jain](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a07483653e8ea8ef7c77930_arvind.png)
 

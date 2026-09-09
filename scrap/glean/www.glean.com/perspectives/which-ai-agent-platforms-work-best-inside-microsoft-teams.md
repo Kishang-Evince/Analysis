@@ -71,13 +71,13 @@ For IT leaders and operations teams evaluating AI solutions, the integration dep
 
 ## What are AI agents in Microsoft Teams?
 
-AI agents are autonomous systems that understand context, make decisions, and execute tasks within Microsoft Teams. Unlike traditional chatbots that follow rigid scripts, these agents perceive their digital environment through APIs and connectors, reason through complex scenarios using [large language models](https://www.glean.com/blog/enterprise-language-models-choosing-the-right-approach-for-your-business-needs), and take action across multiple integrated systems — from updating tickets in Zendesk to processing refunds in Shopify.
+AI agents are autonomous systems that understand context, make decisions, and execute tasks within Microsoft Teams. Unlike traditional chatbots that follow rigid scripts, these agents perceive their digital environment through APIs and connectors, reason through complex scenarios using [large language models](https://www.glean.com/blog/enterprise-language-models-choosing-the-right-approach-for-your-business-needs), and take action across multiple integrated systems - from updating tickets in Zendesk to processing refunds in Shopify.
 
 The sophistication of modern AI agents lies in their ability to combine natural language processing with organizational data. When an employee asks about a customer issue, the agent doesn't just search for keywords; it understands the query's intent, accesses relevant data across connected systems, and provides context-aware assistance. For instance, ClearFeed's AI agent can detect a support request in a Teams channel, search through knowledge bases in Confluence or Notion, generate a comprehensive response, and automatically create a ticket if the issue requires escalation.
 
 ### Core capabilities that define AI agents
 
-**Multi-step workflow execution**: AI agents excel at breaking down complex requests into actionable steps. When a support team member needs to resolve a customer complaint, the agent might first search the knowledge base for similar issues, check the customer's order history, draft a response using company-approved language, and update the CRM — all through a single conversational interface in Teams.
+**Multi-step workflow execution**: AI agents excel at breaking down complex requests into actionable steps. When a support team member needs to resolve a customer complaint, the agent might first search the knowledge base for similar issues, check the customer's order history, draft a response using company-approved language, and update the CRM - all through a single conversational interface in Teams.
 
 **Contextual understanding and memory**: Advanced agents maintain context across conversations and learn from past interactions. They recognize when a new request relates to an ongoing issue, understand team-specific terminology, and adapt their responses based on historical patterns. This contextual awareness enables them to provide increasingly accurate and relevant assistance over time.
 
@@ -91,9 +91,9 @@ The power of AI agents in Teams stems from their [integration architecture](http
 -   **Reasoning engine**: Processes information using large language models trained on enterprise data, applying business rules and logic to determine appropriate actions
 -   **Action layer**: Executes tasks across integrated systems, from simple responses to complex multi-system workflows
 
-This architecture enables agents to function as intelligent middleware, bridging the gap between Teams and the broader enterprise technology stack. For example, when Facilitator joins a Teams meeting, it doesn't just transcribe conversations — it identifies action items, assigns tasks, and updates project management tools, all while maintaining the context of the discussion.
+This architecture enables agents to function as intelligent middleware, bridging the gap between Teams and the broader enterprise technology stack. For example, when Facilitator joins a Teams meeting, it doesn't just transcribe conversations - it identifies action items, assigns tasks, and updates project management tools, all while maintaining the context of the discussion.
 
-The distinction between AI agents and simpler automation tools becomes clear in their handling of ambiguity and complexity. Traditional bots might struggle with a request like "help me with the Johnson account issue from last week." An AI agent, however, can identify the specific account, retrieve relevant historical data, understand the nature of the issue, and propose appropriate solutions — demonstrating true autonomous problem-solving within the Teams environment.
+The distinction between AI agents and simpler automation tools becomes clear in their handling of ambiguity and complexity. Traditional bots might struggle with a request like "help me with the Johnson account issue from last week." An AI agent, however, can identify the specific account, retrieve relevant historical data, understand the nature of the issue, and propose appropriate solutions - demonstrating true autonomous problem-solving within the Teams environment.
 
 ## Key features to look for in Microsoft Teams AI agents
 

@@ -213,16 +213,16 @@ For each object you configure, you provide:
 
 ### Determine whether your data is an object or a field[​](#determine-whether-your-data-is-an-object-or-a-field "Direct link to Determine whether your data is an object or a field")
 
-When you want Glean to index additional Salesforce data — for example, internal notes or fields synced from another system — the first step is to determine whether that data is a standalone Salesforce object or a field on an existing object. The configuration path in Glean depends on which one it is:
+When you want Glean to index additional Salesforce data - for example, internal notes or fields synced from another system - the first step is to determine whether that data is a standalone Salesforce object or a field on an existing object. The configuration path in Glean depends on which one it is:
 
--   **Standalone object** — appears as its own entry in Salesforce Object Manager (for example, a custom object like `Internal_Note__c`). You add it from the **Objects** tab in **Admin console** using its Salesforce object API name.
--   **Field on an existing object** — appears as a property under an existing object's **Fields & Relationships** (for example, a custom field `Jira_Link__c` on the Case object). It won't show up as a separate object to add. Instead, configure it as a field on the relevant existing object.
+-   **Standalone object** - appears as its own entry in Salesforce Object Manager (for example, a custom object like `Internal_Note__c`). You add it from the **Objects** tab in **Admin console** using its Salesforce object API name.
+-   **Field on an existing object** - appears as a property under an existing object's **Fields & Relationships** (for example, a custom field `Jira_Link__c` on the Case object). It won't show up as a separate object to add. Instead, configure it as a field on the relevant existing object.
 
 #### Verify in Salesforce[​](#verify-in-salesforce "Direct link to Verify in Salesforce")
 
-1.  **Check Object Manager** — in Salesforce, navigate to **Setup** → **Object Manager**. Search for the data you're looking for. If it appears as a top-level entry, it's a standalone object.
-2.  **Check Fields & Relationships** — if it doesn't appear as a top-level entry in Object Manager, navigate to the parent object (for example, Case or Account) → **Fields & Relationships**. If it appears there, it's a field on that object.
-3.  **Verify metadata flags** — for standalone objects, confirm that the object is marked as queryable and retrievable. In Object Manager, select the object → **Details** and check these flags. If the object isn't queryable, Glean won't show it in the object picker.
+1.  **Check Object Manager** - in Salesforce, navigate to **Setup** → **Object Manager**. Search for the data you're looking for. If it appears as a top-level entry, it's a standalone object.
+2.  **Check Fields & Relationships** - if it doesn't appear as a top-level entry in Object Manager, navigate to the parent object (for example, Case or Account) → **Fields & Relationships**. If it appears there, it's a field on that object.
+3.  **Verify metadata flags** - for standalone objects, confirm that the object is marked as queryable and retrievable. In Object Manager, select the object → **Details** and check these flags. If the object isn't queryable, Glean won't show it in the object picker.
 
 #### Add a custom object in Glean[​](#add-a-custom-object-in-glean "Direct link to Add a custom object in Glean")
 
@@ -278,7 +278,7 @@ For complex red‑listing patterns, Glean Support can help configure field‑lev
 
 ### Query filters[​](#query-filters "Direct link to Query filters")
 
-You can add query filters to limit which Salesforce records are indexed for a given object. Filters use SOQL WHERE-clause conditions — only records that match all specified filters are indexed by Glean.
+You can add query filters to limit which Salesforce records are indexed for a given object. Filters use SOQL WHERE-clause conditions - only records that match all specified filters are indexed by Glean.
 
 #### How to configure query filters[​](#how-to-configure-query-filters "Direct link to How to configure query filters")
 
@@ -311,11 +311,11 @@ You can add query filters to limit which Salesforce records are indexed for a gi
 
 #### Filter behavior[​](#filter-behavior "Direct link to Filter behavior")
 
--   When multiple filters are added, they are combined using **AND** logic — all conditions must be met for a record to be indexed.
+-   When multiple filters are added, they are combined using **AND** logic - all conditions must be met for a record to be indexed.
 -   Filters are applied during crawling. Records that do not match the filter conditions will not appear in Glean search results.
 -   Filters work with both standard and custom Salesforce objects.
 
-**Example — multiple filters on the Account object:**
+**Example - multiple filters on the Account object:**
 
 | Field name | Operator | Value |
 | --- | --- | --- |

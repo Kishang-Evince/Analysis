@@ -2,12 +2,12 @@
 url: "https://www.glean.com/ai-agents/agent-library"
 canonical: "https://www.glean.com/ai-agents/agent-library"
 title: "Glean AI Agent Library | Automate Workflows with AI Agents"
-description: "Discover Glean's AI Agent Library—prebuilt and customizable agents to automate tasks, boost productivity, and streamline workflows for every team."
+description: "Discover Glean's AI Agent Library-prebuilt and customizable agents to automate tasks, boost productivity, and streamline workflows for every team."
 fetched_at: "2026-09-01T13:25:27.238Z"
 ---
 # Agent Library
 
-Explore and discover **AI-powered agents** built to automate workflows — helping your team work smarter and faster every day.
+Explore and discover **AI-powered agents** built to automate workflows - helping your team work smarter and faster every day.
 
 [Get a demo](/get-a-demo)[Request an agent](#)
 
@@ -251,7 +251,7 @@ IT Operations
 
 Daily meeting action summary
 
-Get a clear summary of action items from every meeting — delivered automatically.
+Get a clear summary of action items from every meeting - delivered automatically.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/681e0895d0bf32f722bfeb6d_AL%20-%20Teams.svg)
 
@@ -283,7 +283,7 @@ Sales
 
 Deal loss insights
 
-Get clarity on why you’re losing deals — and what to do about it.
+Get clarity on why you’re losing deals - and what to do about it.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/681e07545109ccde0d586b23_AL%20-%20Sales.svg)
 

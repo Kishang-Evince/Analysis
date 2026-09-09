@@ -35,7 +35,7 @@ Glean gathers personal activity from 100+ data sources, drilling down to granula
 
 ### Content-specific personal style
 
-Work happens dynamically depending on the task at hand— especially the way we write. Glean’s personal graph categorizes your communication styles in up to 5 different profiles depending on content type and audience. The best profile is automatically fetched during any creative work, ensuring that the right rendition of your personal voice is included in any writing task.
+Work happens dynamically depending on the task at hand- especially the way we write. Glean’s personal graph categorizes your communication styles in up to 5 different profiles depending on content type and audience. The best profile is automatically fetched during any creative work, ensuring that the right rendition of your personal voice is included in any writing task.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/699613da405b864324ea6542_Content-specific.webp)![zig-zag section green bg](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/686d69902983b85e2d0ce178_zig-zag%20section%20green%20bg.svg)![](https://assets.glean.com/marketing/Assets/zig-zag%20section%20dotted%20bg.svg)
 

@@ -45,7 +45,7 @@ Knowledge Manager
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/67e11f9d8d24e4bf4bd8c8af_Upside.svg)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69df33da3217f02eee3cf6f4_cs-arrow.svg)
 
-With Glean, it doesn't matter the tenure, department, or seniority level — there is a use case for everyone.
+With Glean, it doesn't matter the tenure, department, or seniority level - there is a use case for everyone.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/69dfb64e6576014baf73512e_67dc5400b5f372cbca72d93f_Elizabeth%2520Vaggelatos.png)
 
@@ -281,7 +281,7 @@ No items found.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/69e0dc3cfa217adb96218230_69e0cb636147a522dea629ad_time.webp)
 
-TIME revives a century of archives—and boosts sales and research—with Glean.
+TIME revives a century of archives-and boosts sales and research-with Glean.
 
 Read case study
 
@@ -321,7 +321,7 @@ IT Operations
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/69e0dc3efa217adb9621826e_69e0cbe9be20df0e9c5fb2d8_booking.com.webp)
 
-Booking.com scales AI to 14,000 employees—and redefines work—with Glean
+Booking.com scales AI to 14,000 employees-and redefines work-with Glean
 
 Read case study
 

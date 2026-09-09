@@ -99,22 +99,22 @@ The connector uses the Freshdesk Representational State Transfer (REST) API to i
 
 -   **Tickets**
     
-    -   `GET /api/v2/tickets`—list tickets (paged, filtered by updated time / lookback).
-    -   `GET /api/v2/tickets/{id}`—fetch ticket details.
-    -   `GET /api/v2/tickets/{id}/conversations`—fetch conversation threads and replies.
+    -   `GET /api/v2/tickets`-list tickets (paged, filtered by updated time / lookback).
+    -   `GET /api/v2/tickets/{id}`-fetch ticket details.
+    -   `GET /api/v2/tickets/{id}/conversations`-fetch conversation threads and replies.
 -   **Solutions (knowledge base)**
     
-    -   `GET /api/v2/solutions/categories`—list solution categories.
-    -   `GET /api/v2/solutions/folders`—list folders within categories.
-    -   `GET /api/v2/solutions/folders/{folder_id}/articles`—list articles.
+    -   `GET /api/v2/solutions/categories`-list solution categories.
+    -   `GET /api/v2/solutions/folders`-list folders within categories.
+    -   `GET /api/v2/solutions/folders/{folder_id}/articles`-list articles.
 -   **Contacts and companies**
     
-    -   `GET /api/v2/contacts`—list contacts.
-    -   `GET /api/v2/companies`—list companies.
+    -   `GET /api/v2/contacts`-list contacts.
+    -   `GET /api/v2/companies`-list companies.
 -   **Identity and validation**
     
-    -   `GET /api/v2/agents/me`—validate global ticket scope for the integration user.
-    -   `GET /api/v2/groups`—validate group access and admin permissions.
-    -   `GET /api/v2/contacts` and `GET /api/v2/solutions/categories`—validate access to Customers and Solutions tabs.
+    -   `GET /api/v2/agents/me`-validate global ticket scope for the integration user.
+    -   `GET /api/v2/groups`-validate group access and admin permissions.
+    -   `GET /api/v2/contacts` and `GET /api/v2/solutions/categories`-validate access to Customers and Solutions tabs.
 
 Glean uses paginated requests (with `per_page` limits) and standard backoff on errors to respect Freshdesk rate limits. The connector is read‑only: it does not modify Freshdesk data.

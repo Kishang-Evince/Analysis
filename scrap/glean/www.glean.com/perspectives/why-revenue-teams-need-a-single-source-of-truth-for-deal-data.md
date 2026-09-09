@@ -67,7 +67,7 @@ A single source of truth for revenue teams is one trusted, unified view of deal 
 
 The concept is not a single tool or a mega-platform. It means each critical data type has one authoritative record, and every other system reads from that record instead of holding its own conflicting version.
 
-The stakes have grown because revenue teams increasingly run on a sprawling set of [disconnected tools](https://www.salesforce.com/news/stories/data-analytics-trends-2026/) — the average enterprise now uses 897 applications, and only 29% of them are connected. Without a shared data foundation, each function quietly builds its own version of reality, and coordination breaks down at exactly the moments that decide whether a deal closes.
+The stakes have grown because revenue teams increasingly run on a sprawling set of [disconnected tools](https://www.salesforce.com/news/stories/data-analytics-trends-2026/) - the average enterprise now uses 897 applications, and only 29% of them are connected. Without a shared data foundation, each function quietly builds its own version of reality, and coordination breaks down at exactly the moments that decide whether a deal closes.
 
 ## What a single source of truth means for revenue teams
 
@@ -83,11 +83,11 @@ This matters more now because the modern revenue stack keeps expanding. Glean Se
 
 Fragmented deal data breaks revenue execution by turning the leadership meeting into a debate about whose spreadsheet is right. Sales reports pipeline at one number, marketing attributes revenue differently, and finance reconciles a third figure, so the conversation never reaches strategy.
 
-Silos between the CRM, marketing automation, customer success platforms, and spreadsheets create [conflicting records](https://www.salesforce.com/news/stories/data-analytics-trends-2026/) — leaders estimate 19% of their company's data sits siloed or inaccessible, yet 70% believe their most valuable insights live there. A deal marked closed-won in one system may still show pending in another, and that gap erodes trust in every report that follows.
+Silos between the CRM, marketing automation, customer success platforms, and spreadsheets create [conflicting records](https://www.salesforce.com/news/stories/data-analytics-trends-2026/) - leaders estimate 19% of their company's data sits siloed or inaccessible, yet 70% believe their most valuable insights live there. A deal marked closed-won in one system may still show pending in another, and that gap erodes trust in every report that follows.
 
 The forecasting damage compounds fast. When deal data is incomplete or inconsistent, forecast accuracy drops and quota attainment gets harder to predict. The cost also shows up in wasted rep hours: according to Salesforce's 2026 State of Sales report, reps spend 60% of their time on non-selling tasks like manually entering customer data into the CRM, which leaves only 40% for selling.
 
-Fragmented data also drives revenue leakage at handoffs. Marketing passes a lead to sales without full context, or sales closes a deal and customer success inherits an account with no record of what was promised. Reps then lose selling time to [reconciliation](https://www.actian.com/blog/data-management/the-costly-consequences-of-poor-data-quality/) — employees spend up to 27% of their time correcting bad data — hunting for the right version of a document or updating the same field in three systems.
+Fragmented data also drives revenue leakage at handoffs. Marketing passes a lead to sales without full context, or sales closes a deal and customer success inherits an account with no record of what was promised. Reps then lose selling time to [reconciliation](https://www.actian.com/blog/data-management/the-costly-consequences-of-poor-data-quality/) - employees spend up to 27% of their time correcting bad data - hunting for the right version of a document or updating the same field in three systems.
 
 Glean Assistant reduces that drag by answering questions from across [connected tools](https://www.glean.com/blog/glean-ai-prompting-guide-sales) with citations back to the source document, so a rep can confirm a deal's status without cross-checking each platform by hand.
 

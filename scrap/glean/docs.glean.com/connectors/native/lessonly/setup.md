@@ -31,7 +31,7 @@ You'll do the setup in two places: Lessonly to generate the required values and 
 
 1.  Sign in to Lessonly as an administrator.
 2.  Follow [Lessonly's API documentation](https://intercom.help/lessonly/en/articles/2648392-seismic-learning-api) to create an API token.
-3.  Copy the token value — you will paste it into Glean later.
+3.  Copy the token value - you will paste it into Glean later.
 
 ## Step 2: Find your Lessonly subdomain[​](#step-2-find-your-lessonly-subdomain "Direct link to Step 2: Find your Lessonly subdomain")
 

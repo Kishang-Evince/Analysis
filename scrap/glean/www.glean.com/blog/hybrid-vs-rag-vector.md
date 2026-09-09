@@ -1,13 +1,13 @@
 ---
 url: "https://www.glean.com/blog/hybrid-vs-rag-vector"
 canonical: "https://www.glean.com/blog/hybrid-vs-rag-vector"
-title: "What sets great retrieval augmented generation apart — and why vector search isn’t enough for AI"
+title: "What sets great retrieval augmented generation apart - and why vector search isn’t enough for AI"
 description: "Arvind Jain  | Uncover the differences between Hybrid Search, Retrieval-Augmented Generation (RAG), and Vector Search. Learn which AI approach suits your business needs best."
 fetched_at: "2026-09-01T13:26:44.984Z"
 ---
 Last updated May 15, 2024.
 
-# What sets great retrieval augmented generation apart — and why vector search isn’t enough for AI
+# What sets great retrieval augmented generation apart - and why vector search isn’t enough for AI
 
 0
 
@@ -23,7 +23,7 @@ CEO
 
 ](/authors/arvind-jain)
 
-![What sets great retrieval augmented generation apart — and why vector search isn’t enough for AI](https://cdn.prod.website-files.com/613513981b0efaf850830620/6644a08882465fd80efd1082_image6-min.webp)
+![What sets great retrieval augmented generation apart - and why vector search isn’t enough for AI](https://cdn.prod.website-files.com/613513981b0efaf850830620/6644a08882465fd80efd1082_image6-min.webp)
 
 Listen to article
 
@@ -89,9 +89,9 @@ To address this, most have concluded that the answer lies in [retrieval augmente
 
 ### Vector or lexical search alone isn’t enough
 
-Now that enterprises understand that generative AI solutions require a separate retrieval solution, many ask—*why don’t we just put our content into a vector database and implement a simple RAG prompt?* The answer unfortunately isn’t so simple, particularly when it comes to delivering a truly enterprise-ready experience. 
+Now that enterprises understand that generative AI solutions require a separate retrieval solution, many ask-*why don’t we just put our content into a vector database and implement a simple RAG prompt?* The answer unfortunately isn’t so simple, particularly when it comes to delivering a truly enterprise-ready experience. 
 
-Let’s briefly explore how [vector search](https://www.glean.com/blog/guide-to-vector-search) and databases work for data indexing and retrieval. Embedding models effectively map specific text to a fixed vector of numbers—given a set of words, the model will assign a numerical value that represents it within the database. Then, given a query's text, the system can compute how 'close' the text in the query is to pre-indexed document texts in that vector space, which it then pulls to display in the results.
+Let’s briefly explore how [vector search](https://www.glean.com/blog/guide-to-vector-search) and databases work for data indexing and retrieval. Embedding models effectively map specific text to a fixed vector of numbers-given a set of words, the model will assign a numerical value that represents it within the database. Then, given a query's text, the system can compute how 'close' the text in the query is to pre-indexed document texts in that vector space, which it then pulls to display in the results.
 
 ![Product Illustration](https://cdn.prod.website-files.com/613513981b0efaf850830620/66c44e1d29ac786db74004d1_66449d60e0d1ce38ecec5e76_image2-min.webp)
 
@@ -105,7 +105,7 @@ This step should simply serve as the information retrieval process. LLMs are the
 
 Although improvements in vector search signal a fundamental shift in semantic understanding, it’s a small piece of the puzzle in delivering high-quality results for enterprise search. Alone, simple vector search is incapable of recognizing the more complex connections between all the content, people, and activity within an organization. 
 
-Even more dated are simple lexical search systems, which instead match query terms directly against document content and metadata terms. Although easy to implement, they’re only capable of utilizing exact matches of words or phrases in a database, which poses serious limitations—particularly in the face of human errors when providing queries. 
+Even more dated are simple lexical search systems, which instead match query terms directly against document content and metadata terms. Although easy to implement, they’re only capable of utilizing exact matches of words or phrases in a database, which poses serious limitations-particularly in the face of human errors when providing queries. 
 
 ### Improved results with hybrid search
 
@@ -162,13 +162,13 @@ Whether they’re responses delivered by generative AI, or results provided with
 
 *Proprietary data is key to fine-tuning and embedding scores*
 
-In the realm of enterprise search, it's also evident that relying solely on vector or semantic search may not always yield the most optimal results. This is particularly true in scenarios where there's a need for precision—such as when searching for specific terms, documents, or keywords. Vector search, with its inherent fuzziness, might not always align with the precision required in these instances.
+In the realm of enterprise search, it's also evident that relying solely on vector or semantic search may not always yield the most optimal results. This is particularly true in scenarios where there's a need for precision-such as when searching for specific terms, documents, or keywords. Vector search, with its inherent fuzziness, might not always align with the precision required in these instances.
 
 ![Product Illustration](https://cdn.prod.website-files.com/613513981b0efaf850830620/66c44e1d29ac786db74004ce_6644a06ab524eaf1bd93f81a_image4.webp)
 
 *It takes signals and anchors, not just raw data, for AI to deliver success*
 
-For Glean, our lexical search capabilities also stand out due to the robustness of our data. This strength allows us to not only match queries with high accuracy but also to personalize results amidst a plethora of potential matches. The hybrid search approach that Glean employs marries the best of both worlds, leveraging the precision of lexical search and the nuanced understanding of vector search—all powered by the additional context and nuance provided by the signals and anchors within our knowledge graph. 
+For Glean, our lexical search capabilities also stand out due to the robustness of our data. This strength allows us to not only match queries with high accuracy but also to personalize results amidst a plethora of potential matches. The hybrid search approach that Glean employs marries the best of both worlds, leveraging the precision of lexical search and the nuanced understanding of vector search-all powered by the additional context and nuance provided by the signals and anchors within our knowledge graph. 
 
 To top it off, Glean’s capability of linking LLMs with our proprietary search interface enables us to handle search and retrieval misses much more gracefully. LLMs integrated with our search interface handle search and retrieval misses much more eloquently. For example, most third-party solutions, when faced with a question they cannot adequately answer, often provide poor information that isn’t fresh or relevant. 
 

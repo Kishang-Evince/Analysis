@@ -13,7 +13,7 @@
 
 **Field definition:** Authorization status of Stratos Edge inside the vendor's channel program.  
 **Prerequisites / Licensing:** `partners.glean.com` login; Glean partner ops confirmation.  
-**Registration status (Pending internal):** _TBD — Stratos Edge not listed in Partner Finder_  
+**Registration status (Pending internal):** _TBD - Stratos Edge not listed in Partner Finder_  
 **Confidence Level:** **Pending internal**  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [Partner Finder](https://www.glean.com/partners/partner-finder) · [Partners application](https://partners.glean.com/) · [Partners onboarding FAQ](https://www.glean.com/partners)
@@ -34,7 +34,7 @@
 ### Engineering observation (Doc-Verified)
 
 - Application review: **1–2 weeks**; portal access immediate on approval.
-- 2,000+ accreditations ecosystem-wide (Vendor-Stated) — Stratos cert count is competitive signal for client proposals.
+- 2,000+ accreditations ecosystem-wide (Vendor-Stated) - Stratos cert count is competitive signal for client proposals.
 - Cross-ref 4.9.6 Field 1: Academy Agent Builder cert path for first advisor accreditation.
 
 ### Verification steps / test case

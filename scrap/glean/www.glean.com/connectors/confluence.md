@@ -2,7 +2,7 @@
 url: "https://www.glean.com/connectors/confluence"
 canonical: "https://www.glean.com/connectors/confluence"
 title: "Confluence integration with Glean | Glean Work AI"
-description: "Easily search, access, and organize Confluence content in Glean—find spaces, pages, blogs, and comments instantly with powerful enterprise search integration."
+description: "Easily search, access, and organize Confluence content in Glean-find spaces, pages, blogs, and comments instantly with powerful enterprise search integration."
 fetched_at: "2026-09-01T13:25:43.732Z"
 ---
 ### Overview

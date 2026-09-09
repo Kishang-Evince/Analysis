@@ -69,7 +69,7 @@ Finding the right AI assistant platform that seamlessly connects Salesforce and 
 
 Most organizations face a common scenario: sales and support teams work in Salesforce while development and product teams operate in Jira. This separation creates information silos, delayed responses, and frustrated customers waiting for technical issues to be resolved.
 
-The solution isn't forcing teams to abandon their preferred tools — it's connecting them intelligently.
+The solution isn't forcing teams to abandon their preferred tools - it's connecting them intelligently.
 
 ## Key features to evaluate
 
@@ -103,7 +103,7 @@ As AI capabilities advance, expect these platforms to offer increasingly sophist
 
 The key is choosing a platform that not only meets today's integration needs but can evolve with advancing AI capabilities and your organization's growing requirements.
 
-By connecting Salesforce and Jira through an intelligent AI layer, organizations can eliminate information silos, accelerate issue resolution, and deliver exceptional customer experiences — all while letting teams work in their preferred tools.
+By connecting Salesforce and Jira through an intelligent AI layer, organizations can eliminate information silos, accelerate issue resolution, and deliver exceptional customer experiences - all while letting teams work in their preferred tools.
 
 ## Why AI-powered integration matters for enterprise teams
 
@@ -219,7 +219,7 @@ Focus on configuring automation rules that target your primary workflow challeng
 
 As familiarity with AI-enhanced workflows increases, incrementally introduce advanced features to capitalize on the platform's full potential. This phased expansion allows teams to build confidence and competence, ensuring that the integration enhances productivity without overwhelming users. Regularly assess the adoption rate to ensure the technology meets user needs and that support systems are adequately addressing challenges. By fostering an adaptive learning environment, organizations can fully realize the transformative potential of AI integration.
 
-The right AI assistant platform can transform how your teams collaborate across Salesforce and Jira, turning disconnected workflows into seamless, intelligent processes. By choosing a solution that understands your unique context and automates routine tasks, you'll empower your teams to focus on what matters most — delivering exceptional customer experiences. Ready to see how AI can revolutionize your enterprise workflows? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo).
+The right AI assistant platform can transform how your teams collaborate across Salesforce and Jira, turning disconnected workflows into seamless, intelligent processes. By choosing a solution that understands your unique context and automates routine tasks, you'll empower your teams to focus on what matters most - delivering exceptional customer experiences. Ready to see how AI can revolutionize your enterprise workflows? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo).
 
 [
 

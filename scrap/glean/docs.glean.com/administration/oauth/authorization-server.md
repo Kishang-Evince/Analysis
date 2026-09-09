@@ -44,7 +44,7 @@ Once the Glean OAuth Authorization Server is enabled, you can start using it imm
 
 tip
 
-Admins who want to restrict which applications can connect via DCR (e.g. MCP host applications) can configure redirect URI restrictions—including blocking **all** dynamic registration while using only static clients. See [Dynamic Client Registration](/administration/oauth/dynamic-client-registration).
+Admins who want to restrict which applications can connect via DCR (e.g. MCP host applications) can configure redirect URI restrictions-including blocking **all** dynamic registration while using only static clients. See [Dynamic Client Registration](/administration/oauth/dynamic-client-registration).
 
 ## User authorized applications[​](#user-authorized-applications "Direct link to User authorized applications")
 
@@ -115,7 +115,7 @@ For MCP remote servers, the relevant scopes (particularly `MCP` and related reso
 | Frequent re‑authentication (every hour) | Access tokens are expiring and the refresh token flow is failing | Verify the OAuth client configuration (client ID/secret, token endpoint) and ensure the integration supports refresh token grants. Re‑authenticate from scratch to obtain a new refresh token. |
 | “Invalid redirect\_uri” from identity provider or Glean | Redirect URI configured in the OAuth client does not exactly match the URI used in the flow | Confirm the redirect URI in the OAuth client configuration matches the callback URL used by your integration, including scheme, hostname, path, and case. Update either the client or the integration so they match. |
 | Unknown client or authentication failure for an integration that used to work | Static client was deleted or had its secret rotated without updating the integration | In the Admin Console, verify that the static client still exists and is enabled. If the secret was regenerated, update the integration with the new client configuration or create a new static client. |
-| MCP host DCR fails with HTTP 500 `server_error`: "OAuth Dynamic Client Registration disabled." on `POST /oauth/register` | The Glean OAuth Authorization Server is disabled on the tenant. Enabling the MCP server alone does not enable DCR — the OAuth Authorization Server is a separate toggle. | In the Admin Console, go to **Settings → Third‑party access (OAuth)** and enable the Glean OAuth Authorization Server. See [Enable the Glean OAuth authorization server](#enable-the-glean-oauth-authorization-server). After enabling, retry the DCR flow from the MCP host. |
+| MCP host DCR fails with HTTP 500 `server_error`: "OAuth Dynamic Client Registration disabled." on `POST /oauth/register` | The Glean OAuth Authorization Server is disabled on the tenant. Enabling the MCP server alone does not enable DCR - the OAuth Authorization Server is a separate toggle. | In the Admin Console, go to **Settings → Third‑party access (OAuth)** and enable the Glean OAuth Authorization Server. See [Enable the Glean OAuth authorization server](#enable-the-glean-oauth-authorization-server). After enabling, retry the DCR flow from the MCP host. |
 
 ## See also[​](#see-also "Direct link to See also")
 

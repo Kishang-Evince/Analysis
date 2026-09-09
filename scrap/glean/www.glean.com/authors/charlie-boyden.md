@@ -80,7 +80,7 @@ October 7, 2025
 
 ### Bring trusted data to your Miro boards with Glean
 
-Collaborative work in Miro made easy with Glean’s all-new integration—find answers and context right in your boards without switching tools.
+Collaborative work in Miro made easy with Glean’s all-new integration-find answers and context right in your boards without switching tools.
 
 ![Charlie Boyden](https://cdn.prod.website-files.com/613513981b0efaf850830620/68f08309cd5a48fc576fc24e_Charlie.jpg)
 

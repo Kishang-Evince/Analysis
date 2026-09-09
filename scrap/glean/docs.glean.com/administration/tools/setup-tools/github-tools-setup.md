@@ -77,7 +77,7 @@ Fill in the following fields:
 
 note
 
-GitHub App names must be globally unique in GitHub. To avoid a *Name is already taken* error, do not use a generic name like *Glean Agents* — always append the name of your organization or a unique suffix.
+GitHub App names must be globally unique in GitHub. To avoid a *Name is already taken* error, do not use a generic name like *Glean Agents* - always append the name of your organization or a unique suffix.
 
 -   **GitHub App name**: Choose a globally unique name (for example, *Glean-MCP-your-company-name*).
 -   **Homepage URL**: `https://app.glean.com`
@@ -116,7 +116,7 @@ Click **Create GitHub App**.
 
 1.  On the app settings page, copy the **Client ID**.
 2.  Under **Client secrets**, click **Generate a new client secret**.
-3.  Copy the **client secret** — it is only shown once.
+3.  Copy the **client secret** - it is only shown once.
 4.  On the GitHub tools setup page in Glean, paste the **Client ID** and **client secret** into the corresponding fields.
 
 #### Step 7: Install the GitHub App[​](#step-7-install-the-github-app "Direct link to Step 7: Install the GitHub App")

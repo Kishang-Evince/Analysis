@@ -18,7 +18,7 @@ We're unable to fetch GitHub resources such as members, issues, or repositories 
 Ensure that the correct scopes have been granted as described in the documentation so that Glean can fetch the resources:
 
 -   **GitHub** and **GitHub Server:** confirm the [GitHub App scopes](/connectors/native/github-server/setup#step-1-create-a-github-app)
--   **GitHub Enterprise Server:** confirm both the [GitHub App permissions](/connectors/native/github-enterprise-server/setup#step-1-create-a-github-app) and the [required admin token scopes](/connectors/native/github-enterprise-server/setup#required-admin-token-scopes) — `user:email`, `read:enterprise`, and `read:org`
+-   **GitHub Enterprise Server:** confirm both the [GitHub App permissions](/connectors/native/github-enterprise-server/setup#step-1-create-a-github-app) and the [required admin token scopes](/connectors/native/github-enterprise-server/setup#required-admin-token-scopes) - `user:email`, `read:enterprise`, and `read:org`
 
 ### Verify resources in the GitHub organization[​](#verify-resources-in-the-github-organization "Direct link to Verify resources in the GitHub organization")
 

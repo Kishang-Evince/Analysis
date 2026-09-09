@@ -63,25 +63,25 @@ Share this article:
 
 # What is the benefit of personalized search in an enterprise knowledge base
 
-Most enterprise search tools treat every employee the same — return the same results for the same query, regardless of who typed it or why. That approach worked when organizations had a handful of shared drives and a small team. It breaks down fast in a modern enterprise with thousands of employees, hundreds of applications, and knowledge scattered across wikis, cloud storage, ticketing systems, and messaging platforms.
+Most enterprise search tools treat every employee the same - return the same results for the same query, regardless of who typed it or why. That approach worked when organizations had a handful of shared drives and a small team. It breaks down fast in a modern enterprise with thousands of employees, hundreds of applications, and knowledge scattered across wikis, cloud storage, ticketing systems, and messaging platforms.
 
-Personalized search changes the equation. Instead of static keyword matching, it adapts results to each individual based on their role, context, permissions, and behavior — delivering relevant answers rather than a generic list of documents. The difference is the gap between a search tool employees avoid and one they rely on every day.
+Personalized search changes the equation. Instead of static keyword matching, it adapts results to each individual based on their role, context, permissions, and behavior - delivering relevant answers rather than a generic list of documents. The difference is the gap between a search tool employees avoid and one they rely on every day.
 
 This guide explores what personalized search means in an enterprise knowledge base, why generic search falls short, and how AI-driven personalization improves productivity, engagement, and decision-making across the organization. Each section builds on the last to give a complete picture of the technology, its benefits, and what it takes to implement it well.
 
 ## What is personalized search in an enterprise knowledge base?
 
-Personalized search is the ability of an enterprise search system to tailor results to each employee based on their role, context, permissions, and usage patterns — rather than return the same generic list for every query. Unlike traditional keyword-matching tools, [search personalization](https://www.glean.com/blog/search-personalization) understands *who* is searching, *what* they're working on, and *what* information they're authorized to access.
+Personalized search is the ability of an enterprise search system to tailor results to each employee based on their role, context, permissions, and usage patterns - rather than return the same generic list for every query. Unlike traditional keyword-matching tools, [search personalization](https://www.glean.com/blog/search-personalization) understands *who* is searching, *what* they're working on, and *what* information they're authorized to access.
 
-The system goes well beyond simple filtering. It interprets the intent behind a query, even when the phrasing is vague or incomplete, and prioritizes the most relevant content for that specific person. An engineer who searches "onboarding" sees technical setup documentation; someone in HR sees new-hire policy guides — same query, entirely different results. That distinction is what separates personalized search from a basic search bar with a few role-based filters layered on top.
+The system goes well beyond simple filtering. It interprets the intent behind a query, even when the phrasing is vague or incomplete, and prioritizes the most relevant content for that specific person. An engineer who searches "onboarding" sees technical setup documentation; someone in HR sees new-hire policy guides - same query, entirely different results. That distinction is what separates personalized search from a basic search bar with a few role-based filters layered on top.
 
-Under the hood, effective personalization relies on a combination of user identity signals, organizational context, real-time access controls, and a knowledge graph that maps relationships between people, content, and activity across the enterprise. Deep integrations with workplace applications — from cloud storage and ticketing platforms to messaging tools and HR systems — ensure the search system indexes both structured and unstructured data from every source employees actually use. The result is a search experience that feels less like a database lookup and more like a knowledgeable colleague who already understands your work.
+Under the hood, effective personalization relies on a combination of user identity signals, organizational context, real-time access controls, and a knowledge graph that maps relationships between people, content, and activity across the enterprise. Deep integrations with workplace applications - from cloud storage and ticketing platforms to messaging tools and HR systems - ensure the search system indexes both structured and unstructured data from every source employees actually use. The result is a search experience that feels less like a database lookup and more like a knowledgeable colleague who already understands your work.
 
 ## Why generic enterprise search falls short
 
 Many older internal search systems were built as thin layers over other workplace tools. They depend on whatever search interface each application exposes, then stitch together partial matches with limited ranking logic. That model creates blind spots from the start: short chat messages rank poorly, recently updated content can disappear behind older files, and the system has no reliable way to account for who authored a document, which team trusts it, or whether it reflects the latest policy. As company knowledge expands, relevance gets worse, not better, because the engine lacks the signals needed to separate authoritative information from noise.
 
-Employees absorb that friction in small but costly ways. They open five tabs to verify one answer, check timestamps by hand, and message coworkers to confirm whether a page still applies to their region, product line, or function. A few poor results can break confidence fast — especially when search surfaces stale guidance or material with little practical value. In growing organizations, that pattern drives repeated questions, duplicate documentation, and decisions made without the strongest available context.
+Employees absorb that friction in small but costly ways. They open five tabs to verify one answer, check timestamps by hand, and message coworkers to confirm whether a page still applies to their region, product line, or function. A few poor results can break confidence fast - especially when search surfaces stale guidance or material with little practical value. In growing organizations, that pattern drives repeated questions, duplicate documentation, and decisions made without the strongest available context.
 
 ## How does personalized search improve employee productivity?
 
@@ -101,7 +101,7 @@ A useful knowledge base depends on more than access to content. Search quality c
 
 ### Understanding context and intent
 
-Strong personalized search handles the way employees actually ask for help — with shorthand, partial phrases, internal acronyms, and uneven wording. A request such as “doctor appointment leave” should surface the correct absence workflow, regional policy, and request form, even when those exact words never appear in the document title.
+Strong personalized search handles the way employees actually ask for help - with shorthand, partial phrases, internal acronyms, and uneven wording. A request such as “doctor appointment leave” should surface the correct absence workflow, regional policy, and request form, even when those exact words never appear in the document title.
 
 That requires semantic understanding tuned to enterprise language. The system has to recognize internal terminology, predict whether the query points to a policy, a procedure, a person, or a record, and rank results based on document type, freshness, and task relevance rather than term overlap alone.
 
@@ -119,7 +119,7 @@ The system also needs fast identity sync across job changes, team transfers, and
 
 ### Continuous learning
 
-Enterprise language shifts constantly — new product names, new team structures, new policy terms, new customer issues. Effective search adapts through aggregate signals such as result selection, source quality, document freshness, and repeated query reformulation, which helps the best answer rise without constant manual tuning.
+Enterprise language shifts constantly - new product names, new team structures, new policy terms, new customer issues. Effective search adapts through aggregate signals such as result selection, source quality, document freshness, and repeated query reformulation, which helps the best answer rise without constant manual tuning.
 
 That learning loop should stay privacy-aware. Relevance improves through organizational patterns and content signals, not invasive tracking of individual employees.
 
@@ -149,7 +149,7 @@ That approach also improves answer quality in fast-change environments. Product 
 
 ### Agentic reasoning for complex queries
 
-Some requests require more than retrieval. An agent can split a task into parts — inspect a ticket, locate policy, review past cases, check account context, then draft a response that fits the situation.
+Some requests require more than retrieval. An agent can split a task into parts - inspect a ticket, locate policy, review past cases, check account context, then draft a response that fits the situation.
 
 This model supports work that spans systems and steps. In practice, that can mean root-cause analysis for support, cross-source research for sales, or policy review across regions, with each action grounded in enterprise data rather than guesswork.
 
@@ -161,11 +161,11 @@ It also gives leaders a clearer view of how knowledge moves through the company.
 
 ## How to get started with personalized search in your organization
 
-Start with an inventory, not a rollout. Map the systems employees depend on most, identify the source of record for each content type, and flag gaps in metadata, ownership, and freshness before anything enters the index. In parallel, review access models across those systems so role mappings, group membership, and document controls match the current organization. Early deployment works best in teams with high query volume and tight response expectations — support operations, revenue teams, engineering, and internal service desks usually offer the clearest signal.
+Start with an inventory, not a rollout. Map the systems employees depend on most, identify the source of record for each content type, and flag gaps in metadata, ownership, and freshness before anything enters the index. In parallel, review access models across those systems so role mappings, group membership, and document controls match the current organization. Early deployment works best in teams with high query volume and tight response expectations - support operations, revenue teams, engineering, and internal service desks usually offer the clearest signal.
 
-From there, evaluate platforms on implementation detail rather than broad claims. Look for fast syncs, strong indexing quality, support for mixed content types, and accurate handling of source-level entitlements as content changes. Set measurement early: zero-result rate, repeated query reformulation, time to answer, self-service resolution, and content freshness all show where relevance holds up and where it slips. Personalized search improves through a regular operating rhythm — source tuning, taxonomy cleanup, archive review, and search log analysis — as business language, teams, and workflows shift.
+From there, evaluate platforms on implementation detail rather than broad claims. Look for fast syncs, strong indexing quality, support for mixed content types, and accurate handling of source-level entitlements as content changes. Set measurement early: zero-result rate, repeated query reformulation, time to answer, self-service resolution, and content freshness all show where relevance holds up and where it slips. Personalized search improves through a regular operating rhythm - source tuning, taxonomy cleanup, archive review, and search log analysis - as business language, teams, and workflows shift.
 
-Personalized search isn't a nice-to-have — it's the foundation for how modern enterprises will manage, share, and act on knowledge at scale. The organizations that invest in it now will compound those gains as their teams, content, and complexity grow. [Request a demo](https://www.glean.com/get-a-demo) to explore how we can help you bring AI-powered search and knowledge management to your workplace.
+Personalized search isn't a nice-to-have - it's the foundation for how modern enterprises will manage, share, and act on knowledge at scale. The organizations that invest in it now will compound those gains as their teams, content, and complexity grow. [Request a demo](https://www.glean.com/get-a-demo) to explore how we can help you bring AI-powered search and knowledge management to your workplace.
 
 [
 

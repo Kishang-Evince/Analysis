@@ -9,9 +9,9 @@ On this page
 
 This page documents which model providers and which Glean Assistant features are available depending on:
 
--   **Key type** — the **Glean Universal Model Key** (Glean-managed) or **Customer Key (BYOK)**, where you bring your own provider key.
--   **Cloud environment** — Glean Hosted or Customer Hosted on **GCP** or **AWS**.
--   **LLM provider** — OpenAI, Azure OpenAI, Google Vertex AI (Gemini and Claude), Amazon Bedrock (Claude and Amazon Nova), or Anthropic (Claude, with Customer Key only).
+-   **Key type** - the **Glean Universal Model Key** (Glean-managed) or **Customer Key (BYOK)**, where you bring your own provider key.
+-   **Cloud environment** - Glean Hosted or Customer Hosted on **GCP** or **AWS**.
+-   **LLM provider** - OpenAI, Azure OpenAI, Google Vertex AI (Gemini and Claude), Amazon Bedrock (Claude and Amazon Nova), or Anthropic (Claude, with Customer Key only).
 
 Use these matrices to understand what changes when you move from the Glean Universal Model Key to your own key, and to plan which models you need to enable for a given feature.
 
@@ -25,7 +25,7 @@ With the **Glean Universal Model Key**, Glean manages connectivity to all suppor
 
 Which LLM hosting providers you can configure depends on your deployment mode and key type.
 
-| Hosting provider | Glean Universal Model Key | Customer Key — GCP-based deployment | Customer Key — AWS-based deployment |
+| Hosting provider | Glean Universal Model Key | Customer Key - GCP-based deployment | Customer Key - AWS-based deployment |
 | --- | --- | --- | --- |
 | OpenAI | ✅ | ✅ | ✅ |
 | Azure OpenAI | ✅ | ✅ | ✅ |
@@ -79,7 +79,7 @@ The agentic engine that powers Glean Assistant runs on **GPT-5** or **Claude Son
 
 note
 
-For Glean Assistant on Customer Key, **Gemini Pro 3.1 is not available** — use **Gemini Pro Custom Tools 3.1** instead. Gemini Pro 3.1 remains available for Glean Assistant through the Glean Universal Model Key.
+For Glean Assistant on Customer Key, **Gemini Pro 3.1 is not available** - use **Gemini Pro Custom Tools 3.1** instead. Gemini Pro 3.1 remains available for Glean Assistant through the Glean Universal Model Key.
 
 * * *
 
@@ -93,10 +93,10 @@ For Glean Assistant on Customer Key, **Gemini Pro 3.1 is not available** — use
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [Supported LLMs](/administration/llms) — supported models, availability, and pricing.
--   [Configure LLMs in the Model Hub](/administration/configure-llms) — provider and model configuration.
--   [Real-time voice](/user-guide/assistant/real-time-voice) — setup and limitations.
--   [Image generation in Glean](/user-guide/assistant/image-generation) — supported image models and setup.
--   [Memory and personalization](/user-guide/assistant/memory-personalization) — admin configuration and known limitations.
--   [Agent Sandbox and Programmatic Tool Calling](/security/agent-sandbox-ptc) — setup and supported models.
--   [LLM Insights](/administration/insights/llm-insights) — monitoring for Customer Key (BYOK) deployments.
+-   [Supported LLMs](/administration/llms) - supported models, availability, and pricing.
+-   [Configure LLMs in the Model Hub](/administration/configure-llms) - provider and model configuration.
+-   [Real-time voice](/user-guide/assistant/real-time-voice) - setup and limitations.
+-   [Image generation in Glean](/user-guide/assistant/image-generation) - supported image models and setup.
+-   [Memory and personalization](/user-guide/assistant/memory-personalization) - admin configuration and known limitations.
+-   [Agent Sandbox and Programmatic Tool Calling](/security/agent-sandbox-ptc) - setup and supported models.
+-   [LLM Insights](/administration/insights/llm-insights) - monitoring for Customer Key (BYOK) deployments.

@@ -1,4 +1,4 @@
-# Field 3 — Webhook Support Quality
+# Field 3 - Webhook Support Quality
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Webhook Support Quality.md](../../../Glean/Combined/4.9.4 Integration & Technical/Webhook Support Quality.md)
@@ -13,7 +13,7 @@
 | Notion | Edit shared page | hours | crawl only |
 | OneDrive | Upload file | min–hours | Graph webhook |
 
-**Outbound (optional):** Platform Trigger → test endpoint — verify HMAC signature.
+**Outbound (optional):** Platform Trigger → test endpoint - verify HMAC signature.
 
 | Metric | Value |
 |---|---|

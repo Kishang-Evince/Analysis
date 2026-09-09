@@ -31,7 +31,7 @@ Peak memoryOne batch
 
 BaseAsyncStreamingDatasourceConnector
 
-Same as streaming, but your source client is async — httpx.AsyncClient, aiohttp.
+Same as streaming, but your source client is async - httpx.AsyncClient, aiohttp.
 
 Data client`BaseAsyncStreamingDataClient`
 
@@ -49,7 +49,7 @@ Produces`EmployeeInfoDefinition`
 
 Peak memoryWhole dataset
 
-If you're unsure, start with `BaseDatasourceConnector`. Switching to a streaming variant later means changing the base class and the return type of `get_source_data()` — `transform()` is unchanged.
+If you're unsure, start with `BaseDatasourceConnector`. Switching to a streaming variant later means changing the base class and the return type of `get_source_data()` - `transform()` is unchanged.
 
 ## In memory[​](#in-memory "Direct link to In memory")
 
@@ -59,7 +59,7 @@ If you're unsure, start with `BaseDatasourceConnector`. Switching to a streaming
 class WikiDataClient(BaseDataClient[WikiPage]):    def get_source_data(self, since=None, **kwargs):        return fetch_all_pages()class WikiConnector(BaseDatasourceConnector[WikiPage]):    configuration = CustomDatasourceConfig(name="wiki", display_name="Wiki")    def transform(self, data):        return [to_document(page) for page in data]
 ```
 
-Peak memory holds every source record **and** every transformed document at once. At a few hundred thousand documents that becomes the binding constraint — and the fix is a streaming connector, not a smaller batch size, because batching happens after transform.
+Peak memory holds every source record **and** every transformed document at once. At a few hundred thousand documents that becomes the binding constraint - and the fix is a streaming connector, not a smaller batch size, because batching happens after transform.
 
 ## Sync streaming[​](#sync-streaming "Direct link to Sync streaming")
 
@@ -69,7 +69,7 @@ Peak memory holds every source record **and** every transformed document at once
 from collections.abc import Generatorfrom glean.indexing.connectors import (    BaseStreamingDataClient,    BaseStreamingDatasourceConnector,)class ArticleDataClient(BaseStreamingDataClient[Article]):    def get_source_data(self, **kwargs) -> Generator[Article, None, None]:        page = 1        while True:            batch = fetch_page(page)            if not batch:                return            yield from batch            page += 1class ArticleConnector(BaseStreamingDatasourceConnector[Article]):    configuration = CustomDatasourceConfig(name="articles", display_name="Articles")    def transform(self, data):        return [to_document(article) for article in data]
 ```
 
-Note that `transform()` still receives a `Sequence` — the SDK slices the generator into batches for you. You never write batching logic. Full-mode batches form one replacement upload; incremental-mode batches use additive `index_documents()` calls.
+Note that `transform()` still receives a `Sequence` - the SDK slices the generator into batches for you. You never write batching logic. Full-mode batches form one replacement upload; incremental-mode batches use additive `index_documents()` calls.
 
 tip
 
@@ -101,7 +101,7 @@ Async connectors also expose the synchronous `index_data()`, which wraps the asy
 class EmployeeConnector(BasePeopleConnector[EmployeeRecord]):    configuration = CustomDatasourceConfig(name="hris", display_name="HRIS")    def transform(self, data):        return [to_employee(record) for record in data]
 ```
 
-Employee data feeds Glean's people directory and knowledge graph. It's distinct from the **datasource identities** (users, groups, memberships) that back document ACLs — see [Permissions](/libraries/indexing-sdk/permissions).
+Employee data feeds Glean's people directory and knowledge graph. It's distinct from the **datasource identities** (users, groups, memberships) that back document ACLs - see [Permissions](/libraries/indexing-sdk/permissions).
 
 ## Batch size[​](#batch-size "Direct link to Batch size")
 

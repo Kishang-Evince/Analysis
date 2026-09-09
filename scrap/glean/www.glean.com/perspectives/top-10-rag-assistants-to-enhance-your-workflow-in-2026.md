@@ -67,7 +67,7 @@ The best RAG assistants ground every answer in your organization's actual data, 
 
 Retrieval-augmented generation (RAG) pairs a retrieval layer with a large language model (LLM) so the model draws on verified sources instead of relying on training data alone. The result is an assistant that can answer questions about your company's policies, product specs, or customer history with the same confidence a tenured colleague would.
 
-Choosing the right RAG assistant matters because the gap between a mediocre and a well-built one shows up fast. Poor retrieval returns irrelevant context, which means the LLM generates plausible-sounding but wrong answers — and with enterprise losses from AI hallucinations reaching an estimated [$67.4 billion in 2024](https://korra.ai/the-67-billion-warning-how-ai-hallucinations-hurt-enterprises-and-how-to-stop-them/), the stakes are anything but theoretical. A strong RAG assistant, by contrast, retrieves the right documents, respects access controls, and cites its sources so you can verify every claim.
+Choosing the right RAG assistant matters because the gap between a mediocre and a well-built one shows up fast. Poor retrieval returns irrelevant context, which means the LLM generates plausible-sounding but wrong answers - and with enterprise losses from AI hallucinations reaching an estimated [$67.4 billion in 2024](https://korra.ai/the-67-billion-warning-how-ai-hallucinations-hurt-enterprises-and-how-to-stop-them/), the stakes are anything but theoretical. A strong RAG assistant, by contrast, retrieves the right documents, respects access controls, and cites its sources so you can verify every claim.
 
 ## What is a RAG assistant?
 
@@ -77,7 +77,7 @@ The model then generates a response grounded in real information, not parametric
 
 Three core components make RAG work. The retrieval layer converts your query into an embedding and matches it against indexed documents using vector similarity. The embedding model translates both queries and documents into numerical representations that capture meaning, not just keywords.
 
-The generation layer — the LLM — synthesizes the retrieved context into a coherent, natural-language answer. When these three components work together, you get responses that cite their sources, stay current with your latest data, and reflect the nuances of your specific business. For a deeper look at how retrieval transforms model output, see this guide to [RAG for LLMs](https://www.glean.com/blog/rag-for-llms).
+The generation layer - the LLM - synthesizes the retrieved context into a coherent, natural-language answer. When these three components work together, you get responses that cite their sources, stay current with your latest data, and reflect the nuances of your specific business. For a deeper look at how retrieval transforms model output, see this guide to [RAG for LLMs](https://www.glean.com/blog/rag-for-llms).
 
 What separates a basic RAG setup from an enterprise-grade one is the retrieval pipeline's depth. Techniques like hybrid search, which combines dense vector retrieval with traditional keyword matching, catch queries that pure semantic search misses. Understanding the tradeoffs between [hybrid search approaches](https://www.glean.com/blog/hybrid-vs-rag-vector) is key to choosing the right architecture.
 
@@ -89,11 +89,11 @@ Glean pairs its retrieval layer with permission-aware access controls and the En
 
 Standard large language models train on public data and freeze at a cutoff date. Ask one about your company's Q3 pipeline, a specific support runbook, or the latest pricing update, and the model either guesses or invents an answer. Without a retrieval layer, LLMs hallucinate on a significant portion of enterprise-specific questions because the model has no access to the underlying source material. Research shows that RAG can [reduce hallucination rates by approximately 71%](https://www.allaboutai.com/resources/ai-statistics/ai-hallucinations/) compared to standalone LLMs, making it the most effective automated mitigation strategy available.
 
-RAG assistants close that gap by injecting organization-specific context at query time. Instead of fine-tuning a model on proprietary data — a process that costs significant compute and goes stale within weeks — a RAG assistant retrieves relevant documents from your live knowledge base and passes them to the LLM as grounded context. The model generates its answer from those sources, not from memorized training data. For organizations weighing these two approaches, a detailed comparison of [RAG versus fine-tuning](https://www.glean.com/blog/retrieval-augemented-generation-vs-fine-tuning) can help clarify the tradeoffs.
+RAG assistants close that gap by injecting organization-specific context at query time. Instead of fine-tuning a model on proprietary data - a process that costs significant compute and goes stale within weeks - a RAG assistant retrieves relevant documents from your live knowledge base and passes them to the LLM as grounded context. The model generates its answer from those sources, not from memorized training data. For organizations weighing these two approaches, a detailed comparison of [RAG versus fine-tuning](https://www.glean.com/blog/retrieval-augemented-generation-vs-fine-tuning) can help clarify the tradeoffs.
 
 The practical advantages compound quickly. Every response can point back to the exact document, page, or message it drew from, so users can verify accuracy in seconds. Because retrieval pulls from live data sources, answers reflect changes made minutes ago rather than months ago.
 
-Organizations also avoid the expense and complexity of continual fine-tuning cycles. Glean's retrieval pipeline, built on the Enterprise Graph, connects hundreds of enterprise applications and delivers cited, permission-aware answers grounded in a company's own knowledge — without requiring a single fine-tuning job.
+Organizations also avoid the expense and complexity of continual fine-tuning cycles. Glean's retrieval pipeline, built on the Enterprise Graph, connects hundreds of enterprise applications and delivers cited, permission-aware answers grounded in a company's own knowledge - without requiring a single fine-tuning job.
 
 ## Key features to evaluate in a RAG assistant
 
@@ -103,15 +103,15 @@ Choosing a RAG assistant is less about the language model it uses and more about
 
 Retrieval quality is the single largest factor in answer accuracy. If the retrieval layer surfaces the wrong documents, even the strongest LLM will produce a confident, well-formatted wrong answer. In practice, improving retrieval precision has a larger effect on end-to-end answer quality than upgrading the LLM itself. Better retrieval means the model works with more relevant context, which reduces errors at the source rather than papering over them at the generation step.
 
-Strong RAG assistants go beyond basic vector search. Techniques like reranking — where a second model rescores initial results for relevance — and maximal marginal relevance (MMR) reduce redundancy in retrieved context. Recursive retrieval follows references across linked documents, so the system can trace a policy back to its source memo. The most advanced systems now use [agentic RAG](https://www.glean.com/blog/agentic-rag-explained), where intelligent agents adapt retrieval strategies in real time based on query complexity.
+Strong RAG assistants go beyond basic vector search. Techniques like reranking - where a second model rescores initial results for relevance - and maximal marginal relevance (MMR) reduce redundancy in retrieved context. Recursive retrieval follows references across linked documents, so the system can trace a policy back to its source memo. The most advanced systems now use [agentic RAG](https://www.glean.com/blog/agentic-rag-explained), where intelligent agents adapt retrieval strategies in real time based on query complexity.
 
 Metadata filtering lets users scope results by team, document type, or date range, which prevents stale or irrelevant content from reaching the LLM.
 
-Glean combines dense vector search with a custom lexical search algorithm and reranking in a single hybrid retrieval pipeline. Because Glean's self-learning language model adapts to each company's vocabulary over time, retrieval accuracy improves continuously — Glean reports a typical [20% improvement in search quality](https://www.glean.com/blog/agentic-reasoning-future-ai) within the first six months of deployment. Organizations evaluating [RAG capabilities](https://www.glean.com/perspectives/best-rag-features-in-enterprise-search) should test retrieval precision on their own data, not just on public benchmarks.
+Glean combines dense vector search with a custom lexical search algorithm and reranking in a single hybrid retrieval pipeline. Because Glean's self-learning language model adapts to each company's vocabulary over time, retrieval accuracy improves continuously - Glean reports a typical [20% improvement in search quality](https://www.glean.com/blog/agentic-reasoning-future-ai) within the first six months of deployment. Organizations evaluating [RAG capabilities](https://www.glean.com/perspectives/best-rag-features-in-enterprise-search) should test retrieval precision on their own data, not just on public benchmarks.
 
 ### Permission awareness and security
 
-Enterprise RAG must enforce access controls before content ever reaches the LLM. If a junior analyst's query returns a board-level financial memo, the problem is not the model's reasoning — the problem is the retrieval layer ignoring permissions. Bolted-on permission checks that filter results after generation create a race condition: the LLM may have already read and internalized restricted content. Building the right [permission structures](https://www.glean.com/blog/secure-generative-ai-for-the-enterprise-requires-the-right-permissions-structure) from the start is essential for secure enterprise AI.
+Enterprise RAG must enforce access controls before content ever reaches the LLM. If a junior analyst's query returns a board-level financial memo, the problem is not the model's reasoning - the problem is the retrieval layer ignoring permissions. Bolted-on permission checks that filter results after generation create a race condition: the LLM may have already read and internalized restricted content. Building the right [permission structures](https://www.glean.com/blog/secure-generative-ai-for-the-enterprise-requires-the-right-permissions-structure) from the start is essential for secure enterprise AI.
 
 Look for assistants that enforce permissions upstream of the generation step. That means the retrieval layer checks what the requesting user is allowed to see and passes only authorized documents to the model. Beyond access control, governance features matter: audit trails that log every query and response, data residency options for regulated industries, zero-day data retention agreements with LLM providers, and compliance certifications like SOC 2.
 
@@ -119,9 +119,9 @@ Glean's permission-aware architecture mirrors the access controls of each connec
 
 ### Connector breadth and data integration
 
-Enterprise knowledge lives across dozens of applications — ticketing systems, wikis, CRMs, code repositories, cloud drives, messaging platforms, and more. A RAG assistant that connects to only a handful of sources returns incomplete answers because it cannot see the full picture.
+Enterprise knowledge lives across dozens of applications - ticketing systems, wikis, CRMs, code repositories, cloud drives, messaging platforms, and more. A RAG assistant that connects to only a handful of sources returns incomplete answers because it cannot see the full picture.
 
-Native connectors reduce integration overhead compared to custom API work. But connector count alone is not enough. Incremental sync — where only changed content is re-indexed — keeps the knowledge base fresh without constant full crawls. Real-time indexing means a document updated five minutes ago shows up in the next query, not the next day.
+Native connectors reduce integration overhead compared to custom API work. But connector count alone is not enough. Incremental sync - where only changed content is re-indexed - keeps the knowledge base fresh without constant full crawls. Real-time indexing means a document updated five minutes ago shows up in the next query, not the next day.
 
 Glean offers [275+ connectors](https://www.glean.com/connectors) that ingest content, activity, and identity data across enterprise applications. Each connector preserves the source application's permission model, so adding a new data source does not create a new security gap.
 
@@ -129,9 +129,9 @@ Glean offers [275+ connectors](https://www.glean.com/connectors) that ingest con
 
 Two people asking the same question often need different answers. A support engineer asking "what changed in the latest release" needs a changelog and known issues list. A product manager asking the same question needs a feature summary and customer impact analysis. Generic RAG treats every user identically and misses the context that makes an answer useful.
 
-Strong personalization draws on two layers of signal. Organizational context — team structure, reporting lines, department — helps the system understand scope. Personal context — the user's role, recent documents, past queries, and active projects — shapes relevance ranking so the most pertinent results surface first.
+Strong personalization draws on two layers of signal. Organizational context - team structure, reporting lines, department - helps the system understand scope. Personal context - the user's role, recent documents, past queries, and active projects - shapes relevance ranking so the most pertinent results surface first.
 
-Glean's Personal Graph tracks individual work patterns, collaborators, and frequently accessed content. Combined with the Enterprise Graph's organizational knowledge, Glean's retrieval pipeline ranks results differently for each user. RAG personalization in this context is about work relevance — surfacing the right internal document for the right person — not engagement optimization.
+Glean's Personal Graph tracks individual work patterns, collaborators, and frequently accessed content. Combined with the Enterprise Graph's organizational knowledge, Glean's retrieval pipeline ranks results differently for each user. RAG personalization in this context is about work relevance - surfacing the right internal document for the right person - not engagement optimization.
 
 ## Common RAG use cases across teams
 
@@ -139,21 +139,21 @@ RAG assistants deliver the most value when they reduce the time between a questi
 
 ### IT support
 
-IT help desks handle a high volume of repetitive questions — password resets, VPN configuration, software provisioning — while also fielding complex troubleshooting requests. A RAG assistant can resolve common tickets by retrieving the correct runbook or knowledge base article and generating a step-by-step answer with citations.
+IT help desks handle a high volume of repetitive questions - password resets, VPN configuration, software provisioning - while also fielding complex troubleshooting requests. A RAG assistant can resolve common tickets by retrieving the correct runbook or knowledge base article and generating a step-by-step answer with citations.
 
 Glean Assistant lets IT teams surface answers from internal documentation, past tickets, and admin guides in a single conversational interface. When common questions are resolved instantly, mean time to resolution drops and senior engineers can focus on infrastructure work instead of answering the same onboarding question for the fifteenth time.
 
 ### Sales enablement
 
-Sales reps often spend significant time on non-selling activities, and information retrieval — hunting for competitive intel, pricing sheets, case studies, and product specs — is one of the biggest drains. Research shows that employees spend roughly [one in every five working hours](https://asana.com/resources/anatomy-of-work) searching for information they need to do their jobs — the equivalent of one full day per week.
+Sales reps often spend significant time on non-selling activities, and information retrieval - hunting for competitive intel, pricing sheets, case studies, and product specs - is one of the biggest drains. Research shows that employees spend roughly [one in every five working hours](https://asana.com/resources/anatomy-of-work) searching for information they need to do their jobs - the equivalent of one full day per week.
 
 A RAG assistant grounded in CRM data, deal history, and product documentation can answer questions like "what objections came up in similar deals last quarter" with cited, role-specific context. Glean Search connects to CRM systems, enablement platforms, and internal wikis so reps can find the latest approved messaging without switching between five tabs.
 
 ### Engineering
 
-Engineering teams generate and consume large volumes of technical documentation — architecture decision records, API specs, incident postmortem reports, and code review threads. Finding the right document often means searching across a code repository, a wiki, a messaging platform, and a project tracker.
+Engineering teams generate and consume large volumes of technical documentation - architecture decision records, API specs, incident postmortem reports, and code review threads. Finding the right document often means searching across a code repository, a wiki, a messaging platform, and a project tracker.
 
-A RAG assistant that indexes these sources can answer questions like "what was the root cause of the payments outage in March" by retrieving the postmortem, related Slack threads, and follow-up tickets. Glean Agents can go further by orchestrating multi-step queries — pulling incident data, cross-referencing with deployment logs, and summarizing the timeline — so engineers spend less time stitching context together.
+A RAG assistant that indexes these sources can answer questions like "what was the root cause of the payments outage in March" by retrieving the postmortem, related Slack threads, and follow-up tickets. Glean Agents can go further by orchestrating multi-step queries - pulling incident data, cross-referencing with deployment logs, and summarizing the timeline - so engineers spend less time stitching context together.
 
 ### HR and onboarding
 
@@ -163,11 +163,11 @@ A RAG assistant trained on HR policies, employee handbooks, and onboarding check
 
 ## How to evaluate RAG assistants: a practical framework
 
-Evaluating RAG assistants requires testing the full pipeline — retrieval, generation, and delivery — against your own data, not vendor-provided demos on curated datasets. A structured framework prevents teams from over-indexing on a single metric while missing critical gaps.
+Evaluating RAG assistants requires testing the full pipeline - retrieval, generation, and delivery - against your own data, not vendor-provided demos on curated datasets. A structured framework prevents teams from over-indexing on a single metric while missing critical gaps.
 
 Start with **retrieval accuracy**: give the system 50-100 representative questions drawn from real employee queries and measure how often the correct source documents appear in the top results. Precision at k=5 (the percentage of top-five results that are relevant) is a practical metric. If retrieval fails, answer quality cannot recover downstream.
 
-Next, measure **answer quality** through human evaluation. Have subject-matter experts rate a sample of generated answers on correctness, completeness, and citation accuracy. Automated metrics like RAGAS or UpTrain can supplement human review, but they should not replace it — especially for domain-specific content where automated scorers lack context.
+Next, measure **answer quality** through human evaluation. Have subject-matter experts rate a sample of generated answers on correctness, completeness, and citation accuracy. Automated metrics like RAGAS or UpTrain can supplement human review, but they should not replace it - especially for domain-specific content where automated scorers lack context.
 
 **Latency** matters more than benchmarks suggest. If the assistant takes 8 seconds to return an answer, adoption drops. Target sub-3-second response times for standard queries. Test with realistic query loads, not single-user conditions.
 
@@ -175,7 +175,7 @@ Next, measure **answer quality** through human evaluation. Have subject-matter e
 
 **Security posture** deserves its own evaluation track. Verify permission enforcement with test accounts at different access levels. Review data residency options, audit logging, and LLM provider agreements. Glean's permission-aware retrieval pipeline enforces access controls at the retrieval layer, before any content reaches the LLM, and maintains [SOC 2 and enterprise security](https://www.glean.com/security) certifications.
 
-Finally, assess **adoption and usability**. A technically strong assistant that no one uses delivers zero value. Look for integrations with the tools people already work in — Slack, Microsoft Teams, browsers — and measure active usage rates during a pilot, not just deployment completion. Glean is available as a browser extension, a Slack integration, a Teams app, and a standalone interface, so employees can access it without changing their workflow.
+Finally, assess **adoption and usability**. A technically strong assistant that no one uses delivers zero value. Look for integrations with the tools people already work in - Slack, Microsoft Teams, browsers - and measure active usage rates during a pilot, not just deployment completion. Glean is available as a browser extension, a Slack integration, a Teams app, and a standalone interface, so employees can access it without changing their workflow.
 
 ## How to implement a RAG assistant in your workflow
 
@@ -183,7 +183,7 @@ Rolling out a RAG assistant follows a predictable pattern, but teams that skip e
 
 ### 1\. Audit where your knowledge lives
 
-Before connecting any data source, map where your organization's knowledge is stored. Identify the applications, file types, and access patterns that matter most. Research shows that organizations with strong [knowledge management systems](https://cottrillresearch.com/various-survey-statistics-workers-spend-too-much-time-searching-for-information/) can reduce time lost to information search by up to 35% and boost overall productivity by 20–25% — which makes this audit a high-leverage first step. Many teams discover that critical knowledge is concentrated in a few high-traffic systems — a wiki, a ticketing platform, and a messaging tool — while long-tail sources can wait.
+Before connecting any data source, map where your organization's knowledge is stored. Identify the applications, file types, and access patterns that matter most. Research shows that organizations with strong [knowledge management systems](https://cottrillresearch.com/various-survey-statistics-workers-spend-too-much-time-searching-for-information/) can reduce time lost to information search by up to 35% and boost overall productivity by 20–25% - which makes this audit a high-leverage first step. Many teams discover that critical knowledge is concentrated in a few high-traffic systems - a wiki, a ticketing platform, and a messaging tool - while long-tail sources can wait.
 
 ### 2\. Connect highest-value data sources first
 
@@ -195,7 +195,7 @@ Decide what you are measuring before the pilot starts. Common metrics include qu
 
 ### 4\. Run a controlled pilot
 
-Select a team or department with a clear information retrieval pain point — IT help desk, sales operations, or engineering onboarding are common starting points. Run the pilot for four to six weeks with a defined user group, collect structured feedback, and compare results against your baseline metrics.
+Select a team or department with a clear information retrieval pain point - IT help desk, sales operations, or engineering onboarding are common starting points. Run the pilot for four to six weeks with a defined user group, collect structured feedback, and compare results against your baseline metrics.
 
 ### 5\. Scale with governance
 
@@ -217,7 +217,7 @@ RAG assistants struggle with queries that require reasoning across many document
 
 ### How much does it cost to implement a RAG assistant?
 
-Cost varies significantly based on approach. Framework-based implementations require engineering time for setup, maintenance, and infrastructure, which can exceed six figures annually for mid-size deployments. Platform-based solutions like Glean typically price per seat and include connectors, hosting, and updates. The total cost of ownership calculation should factor in engineering hours saved, ticket deflection rates, and time-to-answer improvements, not just the license fee. Notably, [Gartner predicts](https://www.gartner.com/en/newsroom/press-releases/2025-06-02-gartner-predicts-by-2028-80-percent-of-genai-business-apps-will-be-developed-on-existing-data-management-platforms) that by 2028, 80% of generative AI business applications will be built on existing data management platforms using RAG — a signal that platform-based approaches are becoming the industry standard.
+Cost varies significantly based on approach. Framework-based implementations require engineering time for setup, maintenance, and infrastructure, which can exceed six figures annually for mid-size deployments. Platform-based solutions like Glean typically price per seat and include connectors, hosting, and updates. The total cost of ownership calculation should factor in engineering hours saved, ticket deflection rates, and time-to-answer improvements, not just the license fee. Notably, [Gartner predicts](https://www.gartner.com/en/newsroom/press-releases/2025-06-02-gartner-predicts-by-2028-80-percent-of-genai-business-apps-will-be-developed-on-existing-data-management-platforms) that by 2028, 80% of generative AI business applications will be built on existing data management platforms using RAG - a signal that platform-based approaches are becoming the industry standard.
 
 ### Can a RAG assistant work with data it hasn't been trained on?
 

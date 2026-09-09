@@ -19,7 +19,7 @@ If another shortcut is already assigned to Command or Alt + J, or the Glean side
 
 1.  Go to `chrome://extensions/shortcuts`.
 2.  Edit **Activate the extension** under the Glean app.
-3.  Add the shortcut — **Cmd+J** on macOS or **Alt+J** on Windows (if already added, edit it and enter it again). You can also set a different shortcut or turn it off entirely here.
+3.  Add the shortcut - **Cmd+J** on macOS or **Alt+J** on Windows (if already added, edit it and enter it again). You can also set a different shortcut or turn it off entirely here.
 4.  Refresh the page and try.
 
 ## Shortcuts within Glean[​](#shortcuts-within-glean "Direct link to Shortcuts within Glean")

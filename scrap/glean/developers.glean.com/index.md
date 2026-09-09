@@ -10,7 +10,7 @@ Experimental
 
 ### Introducing Glean Platform APIs
 
-Build search experiences and run Glean agents in your applications with our new Platform APIs — now rolling out in experimental preview.
+Build search experiences and run Glean agents in your applications with our new Platform APIs - now rolling out in experimental preview.
 
 Explore Platform APIs](/api/platform-api)
 
@@ -24,25 +24,25 @@ Search API
 
 # Search your entire knowledge graph
 
-Enterprise search over 100+ connected sources — ranked, permission-aware, and fast, from one query.
+Enterprise search over 100+ connected sources - ranked, permission-aware, and fast, from one query.
 
 Agents
 
 # Build agents on your company's knowledge
 
-Plan, retrieve, and act across your tools — agents reason over the knowledge graph, not just a prompt window.
+Plan, retrieve, and act across your tools - agents reason over the knowledge graph, not just a prompt window.
 
 Web SDK
 
 # Embed Glean in your apps
 
-Drop permission-aware search and chat into the tools your team already uses — one npm package, two components.
+Drop permission-aware search and chat into the tools your team already uses - one npm package, two components.
 
 Indexing SDK
 
 # Bring any data into Glean
 
-Build a connector on the open-source indexing SDK — push documents from any source and make them searchable everywhere.
+Build a connector on the open-source indexing SDK - push documents from any source and make them searchable everywhere.
 
 [Start building](/guides/chat/overview)[API reference](/api/client-api/chat/overview)
 
@@ -135,7 +135,7 @@ Quickstart
 
 1.  1Prefer OAuth for per-user Client and Platform work in [Authentication](/get-started/authentication). Use a Glean-issued token for Indexing, global ActAs, or when no OAuth path exists.
 2.  2Install a [client library](/libraries/api-clients) for your language.
-3.  3Run your first query — results come back ranked and permission-aware.
+3.  3Run your first query - results come back ranked and permission-aware.
 
 PythonTypeScriptGoJavacURL
 
@@ -160,7 +160,7 @@ with Glean(
 
 ## Bring Glean into your IDE
 
-[Claude CodeInstall the Glean plugins and search company knowledge from your terminal.](/guides/mcp/claude-code) [CursorConnect the Glean MCP server to Cursor for context-aware coding.](/guides/mcp/cursor)[CodexCodexInstall the Glean plugin for Codex — enterprise knowledge in your terminal.](/guides/mcp/codex)
+[Claude CodeInstall the Glean plugins and search company knowledge from your terminal.](/guides/mcp/claude-code) [CursorConnect the Glean MCP server to Cursor for context-aware coding.](/guides/mcp/cursor)[CodexCodexInstall the Glean plugin for Codex - enterprise knowledge in your terminal.](/guides/mcp/codex)
 
 Plus GitHub Copilot, Goose, Windsurf, and [any MCP host](/guides/mcp/supported-hosts).
 
@@ -168,7 +168,7 @@ Agents
 
 ## Framework-agnostic by design
 
-The agent toolkit exposes Glean retrieval as tools for whatever you build with — the knowledge graph comes along regardless of framework.
+The agent toolkit exposes Glean retrieval as tools for whatever you build with - the knowledge graph comes along regardless of framework.
 
 LangChainOpenAI Agents SDKGoogle ADKMCP
 

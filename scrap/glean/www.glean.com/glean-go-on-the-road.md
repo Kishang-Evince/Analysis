@@ -26,21 +26,21 @@ Watch the recap
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/68550a354ed4e8be4c992a82_Not%20just%20talks%E2%80%94tools%2C%20training%2C%20and%20takeaways..webp)
 
-Not just talks—tools, training, and takeaways.
+Not just talks-tools, training, and takeaways.
 
-Unlock the next chapter of your AI journey with Glean:GO on the Road—a dynamic event series designed for those who couldn’t make it to our flagship conference in May, as well as Glean:GO alumni eager for even deeper engagement. Whether you’re new to Glean events or returning for another round, you’ll step into an environment curated for meaningful learning, community, and innovation.
+Unlock the next chapter of your AI journey with Glean:GO on the Road-a dynamic event series designed for those who couldn’t make it to our flagship conference in May, as well as Glean:GO alumni eager for even deeper engagement. Whether you’re new to Glean events or returning for another round, you’ll step into an environment curated for meaningful learning, community, and innovation.
 
 Explore Labs
 
-Join Glean experts for an interactive, guided session where you’ll build custom AI agents designed to solve real business problems. You’ll learn step-by-step how to create, customize, and manage agents using advanced AI capabilities—turning complex concepts into practical tools that drive business outcomes. Real-world examples, sophisticated query techniques, and support at every level ensure you leave empowered with skills you can put to work immediately.
+Join Glean experts for an interactive, guided session where you’ll build custom AI agents designed to solve real business problems. You’ll learn step-by-step how to create, customize, and manage agents using advanced AI capabilities-turning complex concepts into practical tools that drive business outcomes. Real-world examples, sophisticated query techniques, and support at every level ensure you leave empowered with skills you can put to work immediately.
 
 Expert Lounge
 
-Visit our dedicated Expert Lounge to engage directly with Glean’s technical specialists and product architects—whether you’re wrestling with big-picture challenges or seeking advice on specific implementations, you’ll get personalized guidance tailored to your goals. Network with peers transforming their workplaces with AI, and gain direct insights into how organizations like yours are turning emerging technology into real-world results.
+Visit our dedicated Expert Lounge to engage directly with Glean’s technical specialists and product architects-whether you’re wrestling with big-picture challenges or seeking advice on specific implementations, you’ll get personalized guidance tailored to your goals. Network with peers transforming their workplaces with AI, and gain direct insights into how organizations like yours are turning emerging technology into real-world results.
 
 ## The 16-city tour for work AI starts now
 
-Find an event in a city near you and join us on the road to unlock practical expertise, actionable insights, and make meaningful connections with industry leaders—all designed to put you at the forefront of workplace AI innovation.
+Find an event in a city near you and join us on the road to unlock practical expertise, actionable insights, and make meaningful connections with industry leaders-all designed to put you at the forefront of workplace AI innovation.
 
 Boston
 

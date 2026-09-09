@@ -63,7 +63,7 @@ Share this article:
 
 # How coding assistants and context platforms boost engineering team productivity
 
-Coding assistants and enterprise context platforms serve different roles in the engineering workflow, and teams that pair them see faster execution with fewer errors rooted in missing or outdated information. The coding assistant handles local code generation, modification, and review inside the IDE. The context platform retrieves the broader company knowledge — design docs, runbooks, ownership maps, and policy constraints — that makes that code correct and consistent.
+Coding assistants and enterprise context platforms serve different roles in the engineering workflow, and teams that pair them see faster execution with fewer errors rooted in missing or outdated information. The coding assistant handles local code generation, modification, and review inside the IDE. The context platform retrieves the broader company knowledge - design docs, runbooks, ownership maps, and policy constraints - that makes that code correct and consistent.
 
 The distinction matters because coding assistants trained on public code lack enterprise-specific context. They can autocomplete a function signature, but they can't tell you which internal service owns the upstream dependency or whether your data-handling approach violates a retention policy. This gap helps explain why, despite [84% developer adoption](https://uvik.net/blog/ai-coding-assistant-statistics/), only 29% of developers trust AI coding tool output to be accurate (Stack Overflow 2025). Context platforms fill that gap by connecting to the systems where institutional knowledge actually lives.
 
@@ -73,13 +73,13 @@ The sections below break down how the two tools complement each other, which wor
 
 Coding assistants handle code generation and iteration at the editor level, while context platforms retrieve the company knowledge needed to make that code correct, consistent, and safe. When paired, the context platform grounds the coding assistant's suggestions in real organizational data instead of generic public-code patterns.
 
-In practice, the workflow looks like this: an engineer asks a question or starts a coding task. The context platform queries across internal systems — wikis, design documents, incident postmortem databases, code repositories, and ticketing tools — and returns a grounded answer with source references and permissions intact.
+In practice, the workflow looks like this: an engineer asks a question or starts a coding task. The context platform queries across internal systems - wikis, design documents, incident postmortem databases, code repositories, and ticketing tools - and returns a grounded answer with source references and permissions intact.
 
 The coding assistant then uses that context to help draft, modify, review, or explain code. The engineer gets a suggestion that reflects how the team actually builds, not just how the internet builds.
 
 Consider a concrete example. A senior engineer needs to add a new API endpoint that touches a shared data model. The coding assistant can scaffold the handler and write tests, but it doesn't know that another team changed the schema last quarter or that a specific field requires encryption at rest per an internal compliance policy.
 
-A [context platform connected to the engineering AI stack](https://www.glean.com/blog/ai-stack-engineering-2026-main) retrieves those details — the schema change log, the compliance requirement, the owning team's contact — so the coding assistant produces code that accounts for all of them.
+A [context platform connected to the engineering AI stack](https://www.glean.com/blog/ai-stack-engineering-2026-main) retrieves those details - the schema change log, the compliance requirement, the owning team's contact - so the coding assistant produces code that accounts for all of them.
 
 The pairing works best when each layer stays focused on its job. The coding assistant should not become a stand-in for enterprise search, ownership mapping, or policy retrieval. The context platform should not try to replace the IDE.
 
@@ -87,7 +87,7 @@ Together, they reduce context switching across development tools and cut the tim
 
 Permission-aware retrieval becomes a core requirement at this stage. Engineers need to trust that the context surfaced to their coding assistant reflects only what they're authorized to see.
 
-Glean's Enterprise Graph connects to 100+ systems and enforces existing access controls on every query, returning cited answers grounded in company knowledge rather than unverified summaries. The context reaching the coding assistant has source visibility and respects data boundaries — two properties that build trust with engineering teams evaluating AI tooling.
+Glean's Enterprise Graph connects to 100+ systems and enforces existing access controls on every query, returning cited answers grounded in company knowledge rather than unverified summaries. The context reaching the coding assistant has source visibility and respects data boundaries - two properties that build trust with engineering teams evaluating AI tooling.
 
 The rest of this article follows the order that matches how teams evaluate and adopt these tools: define the roles clearly, connect the data layer, apply the pair to real engineering workflows, add governance guardrails, roll out across the team, and measure productivity with quality in view.
 
@@ -95,9 +95,9 @@ The rest of this article follows the order that matches how teams evaluate and a
 
 Coding assistants and enterprise context platforms perform best when each has a clear, non-overlapping role. The coding assistant operates at the editor level: generating boilerplate, suggesting refactors, explaining code paths, drafting tests, summarizing diffs, and accelerating repetitive tasks inside the development environment. The context platform operates at the organizational level: surfacing architecture decisions, coding standards, dependency documentation, prior incident writeups, ticket history, API references, and team ownership.
 
-The role split addresses a specific failure mode. When teams expect a coding assistant to know internal architecture on its own, it produces plausible output that misses hidden constraints — a function signature that calls a deprecated internal library, or a test that passes locally but violates a data-handling policy documented in a wiki three teams away.
+The role split addresses a specific failure mode. When teams expect a coding assistant to know internal architecture on its own, it produces plausible output that misses hidden constraints - a function signature that calls a deprecated internal library, or a test that passes locally but violates a data-handling policy documented in a wiki three teams away.
 
-The stronger model is context engineering — assembling the right company knowledge around the task instead of asking a model to infer everything from limited local files. Context engineering involves selecting, compressing, ordering, and formatting the most relevant information before it reaches the model.
+The stronger model is context engineering - assembling the right company knowledge around the task instead of asking a model to infer everything from limited local files. Context engineering involves selecting, compressing, ordering, and formatting the most relevant information before it reaches the model.
 
 Five core strategies drive this practice: selection (choosing which sources to include), compression (reducing noise), ordering (putting critical information where the model attends to it most), isolation (separating concerns across distinct context windows), and format optimization (structuring information so the model can parse it reliably).
 
@@ -105,17 +105,17 @@ Think of it as a clean handoff. The context platform answers why, where, who, an
 
 That division means engineers spend less time tab-switching to piece together the background they need before writing a single line of code.
 
-Enterprise context is also broader than codebase context. It includes documents, people, approvals, service maps, support learnings, postmortems, and workflows that shape software development but don't live in the repository — the kind of institutional context that strong [knowledge management practices](https://www.glean.com/blog/why-great-software-development-requires-great-knowledge-management) make retrievable. Glean's Enterprise Graph models these relationships — connecting people to content to activity across 100+ integrated systems — so the context an engineer receives reflects the full organizational picture, not just what's checked into version control.
+Enterprise context is also broader than codebase context. It includes documents, people, approvals, service maps, support learnings, postmortems, and workflows that shape software development but don't live in the repository - the kind of institutional context that strong [knowledge management practices](https://www.glean.com/blog/why-great-software-development-requires-great-knowledge-management) make retrievable. Glean's Enterprise Graph models these relationships - connecting people to content to activity across 100+ integrated systems - so the context an engineer receives reflects the full organizational picture, not just what's checked into version control.
 
 Productivity gains come from complementarity, not tool overlap. When each tool stays focused on its job, the combined output is more accurate and requires less manual correction than either tool working alone.
 
 ## Connect enterprise context to the places engineers already work
 
-The integration of AI tools matters more than adding another destination to an engineer's workflow. Engineers should access context where they already debug, review, triage, and ship — not in a separate application that requires its own login and mental model.
+The integration of AI tools matters more than adding another destination to an engineer's workflow. Engineers should access context where they already debug, review, triage, and ship - not in a separate application that requires its own login and mental model.
 
-A context layer that connects repositories, issue trackers, documentation, chat, knowledge bases, support systems, design tools, and internal portals lets answers draw from the full engineering environment. This is the practical expression of [enterprise knowledge management](https://www.glean.com/blog/enterprise-knowledge-management-guide) applied to engineering workflows. When a developer asks a question while reviewing a pull request, the answer should reflect what's in the repo, the design doc, the related incident history, and the Slack thread where the original trade-off was discussed — all at once.
+A context layer that connects repositories, issue trackers, documentation, chat, knowledge bases, support systems, design tools, and internal portals lets answers draw from the full engineering environment. This is the practical expression of [enterprise knowledge management](https://www.glean.com/blog/enterprise-knowledge-management-guide) applied to engineering workflows. When a developer asks a question while reviewing a pull request, the answer should reflect what's in the repo, the design doc, the related incident history, and the Slack thread where the original trade-off was discussed - all at once.
 
-A strong context platform does more than index files. It understands relationships between people, content, and activity so it can surface the most relevant answer for the task, not a ranked list of document links. If an engineer asks "who owns the payments service and what changed in the last quarter?" the answer should name the team, link to the relevant commits, and cite the architecture decision record — without requiring the engineer to run three separate searches.
+A strong context platform does more than index files. It understands relationships between people, content, and activity so it can surface the most relevant answer for the task, not a ranked list of document links. If an engineer asks "who owns the payments service and what changed in the last quarter?" the answer should name the team, link to the relevant commits, and cite the architecture decision record - without requiring the engineer to run three separate searches.
 
 Permission-aware retrieval is a core requirement in this setup. Engineering teams work with internal code, security procedures, customer escalations, and roadmaps that sit in separate systems with different access controls. The context surfaced to each engineer should reflect only what they're authorized to see.
 
@@ -123,11 +123,11 @@ Without that property, teams can't adopt context-aware tooling for sensitive wor
 
 Cited answers and source visibility build trust with engineers who are trained to verify before they ship. When an answer includes a direct link to the underlying design doc, issue, or code reference, engineers can validate the response themselves instead of accepting an unsupported summary.
 
-Glean Search uses the Enterprise Graph to model relationships between people, content, and activity across connected systems — so a single query like "who owns the payments service and what changed last quarter?" returns a grounded answer that draws from commits, design docs, and team channels at once. Source visibility is the difference between a tool engineers tolerate and one they actually use.
+Glean Search uses the Enterprise Graph to model relationships between people, content, and activity across connected systems - so a single query like "who owns the payments service and what changed last quarter?" returns a grounded answer that draws from commits, design docs, and team channels at once. Source visibility is the difference between a tool engineers tolerate and one they actually use.
 
-Integration goes beyond reading data. In more advanced setups, workflows can trigger actions — creating follow-up tasks, routing questions to the right team, or starting review processes after the right context is confirmed.
+Integration goes beyond reading data. In more advanced setups, workflows can trigger actions - creating follow-up tasks, routing questions to the right team, or starting review processes after the right context is confirmed.
 
-Glean works where engineers work — in the browser, in Slack, in Teams, and across business apps — positioning context as the connective tissue between code, knowledge, and action. For a broader view of how [engineering teams apply these capabilities](https://www.glean.com/solutions/engineering), the pattern is the same: meet engineers in their existing tools rather than pulling them into a new one.
+Glean works where engineers work - in the browser, in Slack, in Teams, and across business apps - positioning context as the connective tissue between code, knowledge, and action. For a broader view of how [engineering teams apply these capabilities](https://www.glean.com/solutions/engineering), the pattern is the same: meet engineers in their existing tools rather than pulling them into a new one.
 
 ## Apply both tools to the workflows where context gaps slow teams down most
 
@@ -141,15 +141,15 @@ Pairing coding assistants with enterprise context platforms pays off most in wor
 
 **Pull request review.** Reviewers use context to confirm whether a change matches architecture decisions and past patterns, not just local style guides. The assistant helps summarize diffs, generate review comments, and identify missing test coverage. Reviews become faster and more substantive when the reviewer has full background on the change.
 
-**Support-driven engineering.** Recurring product questions often reveal missing documentation or fragile workflows. Context platforms surface those patterns across tickets and chat. Coding assistants can then help turn the answer into code, automation, or documentation updates — closing the loop between customer feedback and engineering action.
+**Support-driven engineering.** Recurring product questions often reveal missing documentation or fragile workflows. Context platforms surface those patterns across tickets and chat. Coding assistants can then help turn the answer into code, automation, or documentation updates - closing the loop between customer feedback and engineering action.
 
 **Migration and refactoring.** Enterprise systems are full of hidden dependencies that live in design docs, Slack threads, and people's heads. Context makes those dependencies visible, while the assistant helps execute repetitive code changes with more consistency across files and services.
 
-Across all six workflows, Glean's cited, permission-aware retrieval means engineers start each task with verified background instead of assumptions. When teams evaluate [AI tools for software engineers](https://www.glean.com/blog/best-ai-tools-for-software-engineers), the most useful benchmark isn't raw code generation speed — it's how much context-gathering time disappears from the workflows where engineers spend the most effort.
+Across all six workflows, Glean's cited, permission-aware retrieval means engineers start each task with verified background instead of assumptions. When teams evaluate [AI tools for software engineers](https://www.glean.com/blog/best-ai-tools-for-software-engineers), the most useful benchmark isn't raw code generation speed - it's how much context-gathering time disappears from the workflows where engineers spend the most effort.
 
 ## Add guardrails so faster output doesn't create more review work
 
-The goal is better engineering throughput — less rework, fewer interruptions, more consistency, and faster access to reliable answers. Without guardrails, coding assistants can increase cleanup and review overhead rather than reducing it.
+The goal is better engineering throughput - less rework, fewer interruptions, more consistency, and faster access to reliable answers. Without guardrails, coding assistants can increase cleanup and review overhead rather than reducing it.
 
 Four categories of guardrails keep the pairing productive.
 
@@ -159,13 +159,13 @@ Four categories of guardrails keep the pairing productive.
 
 Enterprise teams should also evaluate audit log capabilities, data residency controls, and deployment model options before rolling out context-aware tooling to sensitive workflows. Knowing who queried what, where data is stored, and how access is enforced at the API level are baseline requirements for engineering organizations operating under compliance constraints.
 
-**Workflow guardrails.** Require human review for architecture changes, production-impacting edits, and sensitive workflows. Coding assistants accelerate work — they don't replace engineering judgment. Teams that skip review for AI-generated changes end up spending more time on post-merge fixes than they saved on pre-merge drafting.
+**Workflow guardrails.** Require human review for architecture changes, production-impacting edits, and sensitive workflows. Coding assistants accelerate work - they don't replace engineering judgment. Teams that skip review for AI-generated changes end up spending more time on post-merge fixes than they saved on pre-merge drafting.
 
-**Quality guardrails.** Pair AI output with tests, linting, code review, and release checks. Generated changes should be held to the same standard as any other contribution — especially given that [code churn has risen from 3.1% to 7.1%](https://larridin.com/developer-productivity-hub/developer-productivity-benchmarks-2026) since AI coding tools became widespread (GitClear/Larridin 2025). If a human-written change needs two approvals before merging, so does an AI-assisted one.
+**Quality guardrails.** Pair AI output with tests, linting, code review, and release checks. Generated changes should be held to the same standard as any other contribution - especially given that [code churn has risen from 3.1% to 7.1%](https://larridin.com/developer-productivity-hub/developer-productivity-benchmarks-2026) since AI coding tools became widespread (GitClear/Larridin 2025). If a human-written change needs two approvals before merging, so does an AI-assisted one.
 
-One challenge teams encounter is context overload. A [METR study](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) found that experienced developers were actually 19% slower with AI tools despite perceiving themselves as 20% faster — a gap that widens when context is noisy or missing. If every possible source feeds into every prompt, results get noisy and less actionable. The better approach is relevant context, not maximum context — selecting, compressing, and ordering information so the model receives what matters for the specific task.
+One challenge teams encounter is context overload. A [METR study](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) found that experienced developers were actually 19% slower with AI tools despite perceiving themselves as 20% faster - a gap that widens when context is noisy or missing. If every possible source feeds into every prompt, results get noisy and less actionable. The better approach is relevant context, not maximum context - selecting, compressing, and ordering information so the model receives what matters for the specific task.
 
-Another challenge is fragmented ownership. In most organizations, the real bottleneck isn't syntax or code generation speed — it's domain knowledge trapped in people's heads, scattered across wikis, chat threads, and tribal memory.
+Another challenge is fragmented ownership. In most organizations, the real bottleneck isn't syntax or code generation speed - it's domain knowledge trapped in people's heads, scattered across wikis, chat threads, and tribal memory.
 
 If standards live in one place, incident history in another, and system knowledge in individual engineers' memories, the platform must unify that context before the coding assistant can benefit from it.
 
@@ -177,13 +177,13 @@ Start with one or two workflows where context loss is expensive and measurable. 
 
 Capture a baseline before rollout. Measure how long engineers spend searching for answers, interrupting teammates, tracing ownership, or reconstructing prior decisions. Without a baseline, productivity gains stay anecdotal and hard to defend during budget reviews.
 
-Even rough measurements — a weekly time-tracking survey or sampling from Slack question frequency — create a useful comparison point.
+Even rough measurements - a weekly time-tracking survey or sampling from Slack question frequency - create a useful comparison point.
 
 Connect the highest-value systems first. For most engineering teams, that means repositories, issue tracking, documentation, chat, and incident records. These sources contain the bulk of context that shapes daily development.
 
 Adding more connectors later is straightforward. Getting the core systems right first builds early trust with the engineering team.
 
-Publish a small set of usage patterns that reflect how engineers already work. Examples: ask for a service overview before editing code, pull incident history before refactoring a dependency, or retrieve accepted patterns before writing a new integration. Thoughtworks noted in their February 2026 technology radar that configuration features like rules files help persist context across sessions — a pattern that applies here, too.
+Publish a small set of usage patterns that reflect how engineers already work. Examples: ask for a service overview before editing code, pull incident history before refactoring a dependency, or retrieve accepted patterns before writing a new integration. Thoughtworks noted in their February 2026 technology radar that configuration features like rules files help persist context across sessions - a pattern that applies here, too.
 
 Codify your team's best practices into [reusable prompts](https://www.glean.com/blog/glean-ai-prompting-guide-engineers) and retrieval templates rather than expecting every engineer to discover the right workflow independently.
 
@@ -191,7 +191,7 @@ Keep enablement practical. Engineers don't need a long training deck. They need 
 
 If the tool doesn't demonstrate value within the first three to five uses, adoption stalls.
 
-Expand after early proof. Once teams trust the answers and see lower friction in the initial workflows, extend the setup into broader workflows and more advanced automation. Glean's open platform — with 100+ connectors, APIs, and SDKs — supports this phased approach because teams add data sources incrementally rather than committing to a full deployment upfront.
+Expand after early proof. Once teams trust the answers and see lower friction in the initial workflows, extend the setup into broader workflows and more advanced automation. Glean's open platform - with 100+ connectors, APIs, and SDKs - supports this phased approach because teams add data sources incrementally rather than committing to a full deployment upfront.
 
 For engineering teams that want to build custom integrations, Glean exposes retrieval and search primitives through its API surface. Developers can embed context retrieval directly into internal tools, CI pipelines, or custom coding workflows. The Model Hub provides access to multiple foundation models, so teams can choose the right model for their use case without switching platforms.
 
@@ -211,15 +211,15 @@ Team-level signals matter, too. Strong context reduces interruptions to senior e
 
 Be precise about expected outcomes. The most credible gains are faster access to trusted knowledge, less context switching, fewer avoidable mistakes, and more consistent execution across complex codebases.
 
-Avoid inflated promises about autonomous delivery — the goal is better-informed engineering work, not engineering without engineers.
+Avoid inflated promises about autonomous delivery - the goal is better-informed engineering work, not engineering without engineers.
 
-Glean surfaces usage and adoption data through its analytics layer, so engineering leaders can track which queries are most common, where context gaps persist, and how answer quality correlates with the underlying data sources connected to the Enterprise Graph. Measurement works best when it's continuous and tied to the specific workflows the team prioritized during rollout — not aggregated into a single productivity score that obscures where gains actually come from.
+Glean surfaces usage and adoption data through its analytics layer, so engineering leaders can track which queries are most common, where context gaps persist, and how answer quality correlates with the underlying data sources connected to the Enterprise Graph. Measurement works best when it's continuous and tied to the specific workflows the team prioritized during rollout - not aggregated into a single productivity score that obscures where gains actually come from.
 
 ## Frequently asked questions
 
 ### How do coding assistants enhance the capabilities of enterprise context platforms?
 
-Coding assistants turn retrieved context into execution help. Once a platform like Glean surfaces the right architecture note, API contract, or incident history through its Enterprise Graph — powered by [knowledge graphs](https://www.glean.com/blog/knowledge-graph-agentic-engine) that model relationships between people, content, and activity — the coding assistant helps apply that information to code, tests, refactors, or reviews. The value is that engineers no longer have to manually carry knowledge from a search result into their editor.
+Coding assistants turn retrieved context into execution help. Once a platform like Glean surfaces the right architecture note, API contract, or incident history through its Enterprise Graph - powered by [knowledge graphs](https://www.glean.com/blog/knowledge-graph-agentic-engine) that model relationships between people, content, and activity - the coding assistant helps apply that information to code, tests, refactors, or reviews. The value is that engineers no longer have to manually carry knowledge from a search result into their editor.
 
 ### What workflows benefit most from using both tools together?
 
@@ -237,7 +237,7 @@ No. They speed up retrieval, drafting, and repetitive work, but engineers still 
 
 Start with reduced search time, fewer interruptions to senior engineers, faster onboarding, quicker pull request turnaround, and lower rework caused by missing context. Glean's analytics layer tracks these signals directly, so teams can verify improvement across real engineering workflows.
 
-Engineering teams that pair coding assistants with a strong context platform spend less time hunting for information and more time shipping work that's correct the first time. The combination works because it addresses both sides of the productivity equation — execution speed and decision quality — without asking engineers to change where or how they work. [Request a demo](https://www.glean.com/get-a-demo) to explore how Glean and AI can transform your workplace, and see how permission-aware, cited answers grounded in your company's knowledge fit into the workflows your team already runs.
+Engineering teams that pair coding assistants with a strong context platform spend less time hunting for information and more time shipping work that's correct the first time. The combination works because it addresses both sides of the productivity equation - execution speed and decision quality - without asking engineers to change where or how they work. [Request a demo](https://www.glean.com/get-a-demo) to explore how Glean and AI can transform your workplace, and see how permission-aware, cited answers grounded in your company's knowledge fit into the workflows your team already runs.
 
 [
 

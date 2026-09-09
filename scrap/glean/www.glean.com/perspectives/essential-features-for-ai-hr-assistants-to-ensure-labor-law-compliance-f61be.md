@@ -63,31 +63,31 @@ Share this article:
 
 # Essential features for AI HR assistants to ensure labor law compliance
 
-AI-powered HR assistants have moved well beyond simple chatbots and basic automation. Today's most capable tools use machine learning, natural language processing, and predictive analytics to screen candidates, answer employee questions, manage documentation, and surface workforce insights — all while connecting to the systems and data that HR teams already rely on.
+AI-powered HR assistants have moved well beyond simple chatbots and basic automation. Today's most capable tools use machine learning, natural language processing, and predictive analytics to screen candidates, answer employee questions, manage documentation, and surface workforce insights - all while connecting to the systems and data that HR teams already rely on.
 
 That expanded capability comes with expanded risk. Labor law compliance spans wage and hour regulations, anti-discrimination protections, data privacy requirements, and a fast-growing patchwork of AI-specific legislation at the state and local level. Non-compliance carries real consequences: substantial fines, class action exposure, reputational harm, and eroded employee trust.
 
-As AI transforms how HR teams operate, the priority isn't simply adoption — it's adoption done right. HR professionals, compliance officers, and business leaders need AI tools built with legal compliance at the core, not bolted on as an afterthought.
+As AI transforms how HR teams operate, the priority isn't simply adoption - it's adoption done right. HR professionals, compliance officers, and business leaders need AI tools built with legal compliance at the core, not bolted on as an afterthought.
 
-## What is an AI HR assistant — and why does compliance matter?
+## What is an AI HR assistant - and why does compliance matter?
 
-An AI HR assistant is a software tool that applies advanced computational techniques — machine learning, natural language processing, and predictive analytics — to support the daily work of HR teams. Rather than replace human judgment, these tools handle high-volume, repetitive tasks: screening resumes, responding to routine policy questions, tracking leave entitlements, generating reports, and flagging workforce trends that might otherwise go unnoticed. The best implementations go further, connecting people, policies, and permissions across an organization's existing systems to deliver responses grounded in authoritative internal knowledge rather than generic, free-form generation.
+An AI HR assistant is a software tool that applies advanced computational techniques - machine learning, natural language processing, and predictive analytics - to support the daily work of HR teams. Rather than replace human judgment, these tools handle high-volume, repetitive tasks: screening resumes, responding to routine policy questions, tracking leave entitlements, generating reports, and flagging workforce trends that might otherwise go unnoticed. The best implementations go further, connecting people, policies, and permissions across an organization's existing systems to deliver responses grounded in authoritative internal knowledge rather than generic, free-form generation.
 
 ### What separates a capable AI HR assistant from basic automation
 
-Traditional HR automation follows rigid, preprogrammed rules. An AI HR assistant, by contrast, understands organizational context. It can interpret a natural language question about parental leave policy, identify the correct policy document for the employee's jurisdiction and role, and deliver an answer that reflects the employee's actual entitlements — all while respecting the access controls that govern who can see what. This contextual awareness depends on a few critical architectural elements:
+Traditional HR automation follows rigid, preprogrammed rules. An AI HR assistant, by contrast, understands organizational context. It can interpret a natural language question about parental leave policy, identify the correct policy document for the employee's jurisdiction and role, and deliver an answer that reflects the employee's actual entitlements - all while respecting the access controls that govern who can see what. This contextual awareness depends on a few critical architectural elements:
 
 -   **A knowledge graph that maps relationships**: People, teams, policies, roles, and activity data are interconnected. The assistant uses these relationships to personalize responses without over-disclosing sensitive information.
--   **Retrieval-grounded generation**: Instead of relying solely on a large language model's training data, the assistant retrieves relevant internal documents and grounds its response in those sources. This approach — often called retrieval augmented generation, or RAG — reduces hallucination risk and makes outputs more defensible.
+-   **Retrieval-grounded generation**: Instead of relying solely on a large language model's training data, the assistant retrieves relevant internal documents and grounds its response in those sources. This approach - often called retrieval augmented generation, or RAG - reduces hallucination risk and makes outputs more defensible.
 -   **Real-time permission enforcement**: Every response is filtered through the same access controls that govern the underlying HR systems. An employee sees only what they're authorized to access; a manager sees team-level data; an HR professional sees what their role permits.
 
 ### Why compliance is a defining requirement, not an optional feature
 
-Labor law compliance is one of the highest-stakes domains in any organization. It covers federal protections under Title VII, the Americans with Disabilities Act, and the Fair Labor Standards Act. It includes state-level requirements that vary widely — from Illinois's mandate to notify applicants when AI is used in employment decisions, to New York City's requirement for independent bias audits before deploying AI-driven hiring tools. And it now extends to AI-specific legislation emerging in Colorado, California, Vermont, Washington, and beyond.
+Labor law compliance is one of the highest-stakes domains in any organization. It covers federal protections under Title VII, the Americans with Disabilities Act, and the Fair Labor Standards Act. It includes state-level requirements that vary widely - from Illinois's mandate to notify applicants when AI is used in employment decisions, to New York City's requirement for independent bias audits before deploying AI-driven hiring tools. And it now extends to AI-specific legislation emerging in Colorado, California, Vermont, Washington, and beyond.
 
-The consequences of getting compliance wrong are concrete and severe. Disparate impact claims under Title VII are almost inevitably class actions, and employers bear a heavy burden to prove that a challenged practice is job-related and consistent with business necessity. Wage and hour violations from AI-driven scheduling or productivity monitoring can trigger costly litigation. Data privacy breaches involving protected employee information — medical records, accommodation requests, compensation details — can result in regulatory penalties and lasting reputational damage.
+The consequences of getting compliance wrong are concrete and severe. Disparate impact claims under Title VII are almost inevitably class actions, and employers bear a heavy burden to prove that a challenged practice is job-related and consistent with business necessity. Wage and hour violations from AI-driven scheduling or productivity monitoring can trigger costly litigation. Data privacy breaches involving protected employee information - medical records, accommodation requests, compensation details - can result in regulatory penalties and lasting reputational damage.
 
-An AI HR assistant that improves efficiency but introduces new legal exposure defeats its own purpose. The tool must enforce permissions upstream of any language model interaction, maintain full audit trails, support bias detection and algorithmic auditing, and adapt to jurisdiction-specific disclosure and consent requirements. Compliance can't be a secondary consideration layered on after deployment — it must be embedded in the architecture from the start.
+An AI HR assistant that improves efficiency but introduces new legal exposure defeats its own purpose. The tool must enforce permissions upstream of any language model interaction, maintain full audit trails, support bias detection and algorithmic auditing, and adapt to jurisdiction-specific disclosure and consent requirements. Compliance can't be a secondary consideration layered on after deployment - it must be embedded in the architecture from the start.
 
 ## The evolving legal landscape for AI in HR
 
@@ -105,7 +105,7 @@ Some jurisdictions move beyond high-level principles and specify procedural step
 
 Proposals in other states point to where the bar moves next. California-style “algorithmic discrimination” frameworks emphasize impact assessments and governance programs; Vermont proposals define automated decision systems broadly; Washington proposals pair anti-discrimination duties with annual assessments and explicit notice obligations.
 
-### Federal protections still apply — and they overlap
+### Federal protections still apply - and they overlap
 
 Federal law shapes how employers must defend AI-assisted decisions, even when state and local AI statutes set additional procedural requirements. Two areas create common friction in real deployments:
 
@@ -118,7 +118,7 @@ These overlaps push HR teams toward controls that work across regimes: consisten
 
 As assistants take on multi-step execution across HR systems, the risk profile shifts from “incorrect advice” to “incorrect action.” A tool that drafts a response differs from a tool that also updates a case record, triggers a workflow step, or routes a candidate to rejection status.
 
-Agentic HR use cases need explicit action constraints, not only content guardrails. Practical patterns include: draft-only modes for sensitive steps, approval gates before any adverse action, scoped tool permissions tied to role and case context, and audit logs that capture the full chain of tool calls—what the assistant accessed, which systems it touched, and which human approved the change.
+Agentic HR use cases need explicit action constraints, not only content guardrails. Practical patterns include: draft-only modes for sensitive steps, approval gates before any adverse action, scoped tool permissions tied to role and case context, and audit logs that capture the full chain of tool calls-what the assistant accessed, which systems it touched, and which human approved the change.
 
 ## Permission-aware data access and employee data protection
 
@@ -173,7 +173,7 @@ Modern HR technology compliance also shifts from principle to process. Several U
 
 A compliant HR assistant should support structured measurement, documentation, and repeatable evidence, with clear ties to the decisions the system influences:
 
--   **Selection parity checks across funnel stages**: Measurement at each step the assistant affects—resume screening, assessment scoring, interview routing, promotion slate building—so disparities do not hide behind aggregate pass rates.
+-   **Selection parity checks across funnel stages**: Measurement at each step the assistant affects-resume screening, assessment scoring, interview routing, promotion slate building-so disparities do not hide behind aggregate pass rates.
 -   **Impact analysis by subgroup and intersection**: Reporting that covers protected characteristics as well as combined categories (for example, race × gender) where risk often concentrates, with thresholds aligned to common adverse impact heuristics such as the four-fifths rule.
 -   **Model behavior diagnostics, not only outcomes**: Checks for score calibration gaps, inconsistent error rates across groups, and drift in ranking behavior as applicant pools change.
 -   **Audit artifacts that stand on their own**: Immutable “audit packets” that include dataset snapshots, feature schema, scoring configuration fingerprints, and evaluation scripts so the same test run can be reproduced later.
@@ -181,7 +181,7 @@ A compliant HR assistant should support structured measurement, documentation, a
 
 ### Recurring evaluation after deployment, not a one-time gate
 
-Bias risk can shift with seasonality in recruiting, role changes, new assessment content, and updates to the underlying model. A strong system supports continuous monitoring that flags statistically meaningful movement early—before it becomes entrenched in downstream hiring or advancement decisions.
+Bias risk can shift with seasonality in recruiting, role changes, new assessment content, and updates to the underlying model. A strong system supports continuous monitoring that flags statistically meaningful movement early-before it becomes entrenched in downstream hiring or advancement decisions.
 
 This is where operational evaluation programs matter: standardized test sets, scheduled rechecks, and regression tests after any change in data sources, scoring logic, or prompt templates. Frameworks such as the NIST AI Risk Management Framework help teams define what “acceptable” looks like, then prove it stays true over time.
 
@@ -191,25 +191,25 @@ When a candidate or employee challenges an outcome, HR needs more than “the mo
 
 High-value explainability features include:
 
-1.  **Criterion-to-output traceability**: A structured rationale that ties each recommendation to defined competencies, required skills, and role expectations—no generic narratives or vague score summaries.
+1.  **Criterion-to-output traceability**: A structured rationale that ties each recommendation to defined competencies, required skills, and role expectations-no generic narratives or vague score summaries.
 2.  **Reason codes for rankings and flags**: Clear, stable factors that drove prioritization (skills match, certification presence, relevant experience type) plus explicit factors that had no role, which helps limit proxy creep.
 3.  **Configurable, role-specific scoring rubrics**: HR-owned controls that set permissible criteria and weights per job family, with locked fields for prohibited attributes and proxy-prone signals.
 4.  **Review-ready packets for HR and legal**: A single view that includes the inputs used, the transformations applied, the rubric version, and the human reviewer’s notes so oversight becomes consistent and auditable.
 
 ## Transparency, candidate notification, and human oversight
 
-Notice and oversight requirements now shape the design of AI HR assistants as much as accuracy does. Once AI influences screening, evaluation, or employee management, organizations need a reliable way to communicate that involvement and prove that people—not software—own the outcome.
+Notice and oversight requirements now shape the design of AI HR assistants as much as accuracy does. Once AI influences screening, evaluation, or employee management, organizations need a reliable way to communicate that involvement and prove that people-not software-own the outcome.
 
 ### Disclosure and consent workflows that match jurisdiction and channel
 
-A defensible approach depends on consistent disclosure across every touchpoint where HR uses AI: career sites, ATS portals, email sequences, assessments, and internal employee systems. The assistant should treat disclosure as a workflow artifact with its own logic, versioning, and proof of delivery—not as static text that drifts across templates.
+A defensible approach depends on consistent disclosure across every touchpoint where HR uses AI: career sites, ATS portals, email sequences, assessments, and internal employee systems. The assistant should treat disclosure as a workflow artifact with its own logic, versioning, and proof of delivery-not as static text that drifts across templates.
 
 A compliance-ready disclosure system should support:
 
 -   **Use-case specific notices**: Different language for resume screen support, interview transcription analysis, assessment scoring assistance, promotion support, and employee monitoring; each notice describes the AI’s role in that specific step.
 -   **Configurable consent gates**: Consent requests that appear only when the workflow and jurisdiction require them, plus revocation handling that stops the AI step without breaking the overall hiring process.
 -   **Proof of notice delivery**: Timestamped records that show what text appeared, which version applied, which channel delivered it, and whether the recipient acknowledged it; this record supports later disputes.
--   **Audience-aware disclosures**: Separate disclosure packs for candidates, employees, managers, and recruiters—each group needs different detail about what the AI does and what it cannot do.
+-   **Audience-aware disclosures**: Separate disclosure packs for candidates, employees, managers, and recruiters-each group needs different detail about what the AI does and what it cannot do.
 -   **Multi-language and accessibility support**: Notices available in the languages the workforce uses, in formats that meet accessibility standards, with consistent meaning across translations.
 
 ### Explanations that people can understand and HR can defend
@@ -219,7 +219,7 @@ Transparency works best when it distinguishes two things: the process the organi
 Effective explanation features include:
 
 -   **Input scope statements**: A clear list of input categories the system considered (application materials, structured assessment results, interview notes) and what it ignored by design (protected traits, off-limits personal attributes, unrelated online data).
--   **Decision boundary clarity**: A short, stable description of what the AI produced—summary, classification, highlight list, draft narrative—and where human judgment entered the process.
+-   **Decision boundary clarity**: A short, stable description of what the AI produced-summary, classification, highlight list, draft narrative-and where human judgment entered the process.
 -   **Error-aware language**: Explanations that note uncertainty when signals conflict or data is missing, rather than presenting confidence that the underlying evidence cannot support.
 -   **Consistent terminology**: Standard definitions for “recommendation,” “score,” “flag,” and “match,” so candidates and employees do not misinterpret an internal ranking as a final decision.
 
@@ -246,7 +246,7 @@ Policy content spreads across HR portals, shared drives, benefits admin tools, a
 An assistant built for compliance should apply context rules before it returns an answer:
 
 -   **Policy stewardship map**: The assistant routes each policy domain (leave, timekeeping, hiring, accommodations) to a named owner and a designated system of record; answers inherit that ownership.
--   **Applicability scoping**: The assistant selects the right policy layer—corporate baseline, state addendum, city requirement, union agreement—based on worker location, classification, and employment type.
+-   **Applicability scoping**: The assistant selects the right policy layer-corporate baseline, state addendum, city requirement, union agreement-based on worker location, classification, and employment type.
 -   **Conflict surfacing with escalation**: When two sources diverge, the assistant returns both with a discrepancy flag and an escalation path, rather than present a blended answer that no one can defend.
 -   **Terminology normalization**: The assistant reconciles “company dialect” across documents so “flex time,” “comp time,” and “make-up time” do not produce inconsistent guidance across teams.
 
@@ -256,7 +256,7 @@ Legal change creates a cascade: policy text updates, workflow configuration chan
 
 Key capabilities that support this workflow:
 
-1.  **Impact-based task generation**: The assistant converts a regulatory change into a structured checklist—policy edits, template updates, system rule updates, training content refresh—assigned to the right owners.
+1.  **Impact-based task generation**: The assistant converts a regulatory change into a structured checklist-policy edits, template updates, system rule updates, training content refresh-assigned to the right owners.
 2.  **Cross-document alignment checks**: The assistant scans HR artifacts that frequently drift (FAQs, offer letter templates, manager guides, intranet pages) and flags mismatched thresholds, dates, and eligibility rules.
 3.  **Audience-specific rollouts**: The assistant pushes updates to the affected populations only, with manager-specific guidance that reflects what managers can and cannot decide.
 4.  **Attestation capture**: The assistant records acknowledgments where required, tracks non-response, and creates an exception queue for workers without standard digital access.
@@ -267,32 +267,32 @@ Many compliance failures start as process drift: a scheduling practice that igno
 
 High-value operational checks include:
 
--   **Timecard integrity checks**: The assistant flags patterns that correlate with disputes—late approvals, repeated manual overrides, edits that shift hours across pay periods, and inconsistencies between scheduled and recorded time.
+-   **Timecard integrity checks**: The assistant flags patterns that correlate with disputes-late approvals, repeated manual overrides, edits that shift hours across pay periods, and inconsistencies between scheduled and recorded time.
 -   **Overtime and premium pay validation**: The assistant tests pay rules against worker type and jurisdiction, then highlights misapplied multipliers, missed premiums, or incorrect exemptions for human review.
--   **Leave process completeness**: The assistant verifies that statutory leave steps occur in the right order—eligibility cues, required notices, documentation requests, response timelines—so case files stay coherent.
+-   **Leave process completeness**: The assistant verifies that statutory leave steps occur in the right order-eligibility cues, required notices, documentation requests, response timelines-so case files stay coherent.
 -   **Schedule rule enforcement**: The assistant checks for maximum-hour constraints, required rest windows, and local scheduling requirements, then blocks or routes noncompliant assignments into an approval workflow with documented rationale.
 
 ### Compliance reporting that stands up to scrutiny
 
 A compliance report should do more than summarize activity; it should support a defensible narrative. The most useful output ties three elements together: the rule standard, the organization’s policy expression of that standard, and the observed operational behavior.
 
-This reporting layer can also reduce reactive work through signal detection. Repeated requests for the same exception type, clusters of similar employee concerns, or persistent confusion around one policy topic can indicate a control gap—policy language that lacks clarity, manager training that misses key steps, or a system configuration that fails to reflect current requirements.
+This reporting layer can also reduce reactive work through signal detection. Repeated requests for the same exception type, clusters of similar employee concerns, or persistent confusion around one policy topic can indicate a control gap-policy language that lacks clarity, manager training that misses key steps, or a system configuration that fails to reflect current requirements.
 
 ## Governance, vendor accountability, and risk assessment
 
-An HR AI assistant needs an operating model that treats it like regulated workflow infrastructure, with defined owners and repeatable checks. Without that discipline, process drift shows up first in edge cases—accommodations, adverse action disputes, cross-border transfers—then spreads into standard practice.
+An HR AI assistant needs an operating model that treats it like regulated workflow infrastructure, with defined owners and repeatable checks. Without that discipline, process drift shows up first in edge cases-accommodations, adverse action disputes, cross-border transfers-then spreads into standard practice.
 
 Governance should also absorb change as a constant: new state rules, vendor model updates, revised job architectures, and new data sources. The most resilient programs pair policy with release control, evidence capture, and incident handling so the organization can show what it knew, what it approved, and what it changed.
 
 ### A governance model that fits HR reality
 
-A workable structure assigns decision rights across HR, legal, IT, and security, with clear thresholds for escalation. The goal is predictable review depth—lightweight for low-impact assistance, rigorous for workflows that shape employment outcomes.
+A workable structure assigns decision rights across HR, legal, IT, and security, with clear thresholds for escalation. The goal is predictable review depth-lightweight for low-impact assistance, rigorous for workflows that shape employment outcomes.
 
 Core design elements:
 
 -   **A charter with explicit scope**: A written boundary for approved HR scenarios (policy answers, document drafts, case summarization, scheduling support) plus a prohibited set (any autonomous final decision on hiring, promotion, discipline, pay, or leave denial).
 -   **A release gate for production changes**: A formal review before any new data source, new prompt template, or new workflow action enters production, with sign-off that matches the risk class of the change.
--   **A regulator-ready evidence standard**: A defined “proof bundle” for each approved use case—what the tool does, what data it uses, what constraints apply, and what internal controls enforce those constraints.
+-   **A regulator-ready evidence standard**: A defined “proof bundle” for each approved use case-what the tool does, what data it uses, what constraints apply, and what internal controls enforce those constraints.
 -   **A cadence for executive review**: A quarterly checkpoint that covers new legal requirements by location, open incidents, vendor changes, and any drift in outcome quality.
 
 ### Vendor accountability that holds up in procurement and in court
@@ -302,20 +302,20 @@ Vendor diligence needs to extend past security questionnaires. HR use cases dema
 A vendor package should include:
 
 -   **Documentation that describes system limits**: A plain-language model card that defines supported use cases, known failure modes, and disallowed inputs, with update notices when the vendor changes core behavior.
--   **Independent assessment support**: Contract language that guarantees access to the artifacts an outside auditor needs under laws such as New York City’s AEDT rules—tool configuration records, scoring logic summaries, and the ability to reproduce results from the same inputs.
+-   **Independent assessment support**: Contract language that guarantees access to the artifacts an outside auditor needs under laws such as New York City’s AEDT rules-tool configuration records, scoring logic summaries, and the ability to reproduce results from the same inputs.
 -   **Processor-grade privacy terms**: Clear allocation of controller/processor roles, subprocessor disclosures, cross-border transfer mechanisms, and retention commitments that align with employee-data duties.
 -   **Remedies tied to compliance impact**: Service credits or termination rights when a change introduces a compliance failure, plus indemnity that covers claims tied to discriminatory outputs or unlawful data use.
 -   **Change notification requirements**: Advance notice for model swaps, major feature releases, or new subprocessors, with a customer right to pause rollout until internal review completes.
 
 ### Risk assessment as a repeatable discipline
 
-A risk assessment should translate legal exposure into operational choices—what the assistant may do, where it may operate, and what checks must occur before HR relies on its output. This work should occur per use case, not as a one-time enterprise statement, because employment-law exposure varies sharply by workflow.
+A risk assessment should translate legal exposure into operational choices-what the assistant may do, where it may operate, and what checks must occur before HR relies on its output. This work should occur per use case, not as a one-time enterprise statement, because employment-law exposure varies sharply by workflow.
 
 A usable assessment includes:
 
 1.  **Workforce and geography map**: Locations where the workflow applies, worker types covered, and the relevant statutes that govern AI use in those places.
 2.  **Decision impact grading**: A simple tier system (informational, advisory, consequential) that reflects whether the assistant can influence an employment decision, then sets required controls per tier.
-3.  **Data sensitivity inventory**: The precise categories of employee and candidate data the workflow touches—medical, biometric, compensation, discipline, protected leave—plus any legal duties that attach to those categories.
+3.  **Data sensitivity inventory**: The precise categories of employee and candidate data the workflow touches-medical, biometric, compensation, discipline, protected leave-plus any legal duties that attach to those categories.
 4.  **Reliability evidence from a pre-production pilot**: A structured test set that covers edge cases and a documented error budget that defines acceptable failure rates by tier.
 5.  **Risk financing review**: A check of employment practices liability coverage, privacy coverage, and contractual risk transfer from the vendor, with an internal owner for uncovered exposure.
 
@@ -335,7 +335,7 @@ A registry should track:
 
 ## How to evaluate an AI HR assistant for labor law readiness
 
-A labor-law-ready HR assistant needs evidence that stands up to audits, investigations, and internal controls. The evaluation should yield concrete deliverables—location-specific requirements, control test results, and operational runbooks that teams can reuse after each policy or model change.
+A labor-law-ready HR assistant needs evidence that stands up to audits, investigations, and internal controls. The evaluation should yield concrete deliverables-location-specific requirements, control test results, and operational runbooks that teams can reuse after each policy or model change.
 
 ### Build a jurisdiction-and-workflow requirements matrix
 
@@ -344,7 +344,7 @@ Start with a location-aware register that reflects how employment law and AI-spe
 A practical matrix structure:
 
 -   **Operational footprint**: hiring locations, employee locations, remote-work patterns, and worker types (employee vs contractor)
--   **Decision touchpoints**: where the assistant influences outcomes—screening, interview support, promotion support, discipline support, time and leave support
+-   **Decision touchpoints**: where the assistant influences outcomes-screening, interview support, promotion support, discipline support, time and leave support
 -   **Regulatory obligations**: AI notices and consent duties, adverse action steps where applicable, ADA accommodation triggers, wage/hour and leave requirements, privacy constraints on profiling and automated decisions
 -   **Internal control owner**: the role that owns compliance for each cell, plus the required review cadence when rules change
 
@@ -354,9 +354,9 @@ Ask for proof that the assistant pulls identity and authorization signals from y
 
 Evidence to request during review:
 
-1.  **Authorization parity tests**: controlled scenarios that show the assistant behaves exactly like the source systems—same records visible, same fields blocked, same exceptions honored
+1.  **Authorization parity tests**: controlled scenarios that show the assistant behaves exactly like the source systems-same records visible, same fields blocked, same exceptions honored
 2.  **Sensitive-data handling controls**: safeguards for medical and accommodation details, compensation data, disciplinary information, and biometric identifiers where applicable
-3.  **Forensic-grade logging**: logs that allow reconstruction of the interaction—who requested it, what data entered context, which systems returned results, and what the assistant returned to the user
+3.  **Forensic-grade logging**: logs that allow reconstruction of the interaction-who requested it, what data entered context, which systems returned results, and what the assistant returned to the user
 4.  **Data processing commitments**: contractual limits on data retention, strict subprocessor controls, and explicit terms that prevent customer HR data use for external model improvement
 
 ### Demand measurable quality, fairness support, and explainability
@@ -373,13 +373,13 @@ Minimum technical capabilities to validate:
 
 ### Validate disclosure, human review gates, and contest workflows in product
 
-Treat disclosure, consent, and recourse as product features that must work across channels—ATS, HR portal, email, and internal case systems. The assistant should support location-specific requirements without manual workarounds that break under scale.
+Treat disclosure, consent, and recourse as product features that must work across channels-ATS, HR portal, email, and internal case systems. The assistant should support location-specific requirements without manual workarounds that break under scale.
 
 Product behaviors to test in a controlled environment:
 
 1.  **Notice orchestration**: configurable disclosure content by location and use case, with proof that the right notice appears at the right step in the workflow
 2.  **Consent enforcement**: a built-in control that blocks AI analysis when consent is required but absent, with a documented path when an individual declines or withdraws consent
-3.  **Consequence-aware review controls**: mandatory human approval for actions that can materially affect employment—rejects, terminations, accommodation outcomes, promotions, compensation-impact changes
+3.  **Consequence-aware review controls**: mandatory human approval for actions that can materially affect employment-rejects, terminations, accommodation outcomes, promotions, compensation-impact changes
 4.  **Formal challenge handling**: a structured intake and routing process for disputes, with time stamps, assignment, resolution notes, and a human decision record
 
 ### Review vendor governance and contract terms as part of acceptance criteria
@@ -395,7 +395,7 @@ Key contract items that directly support HR compliance:
 
 ### Run a phased pilot that produces defensible artifacts
 
-Use a staged rollout that starts with non-consequential assistance, then expands only after the tool meets predefined control and quality thresholds. A safe first phase includes policy Q&A, time and leave guidance, and scheduling support—workflows where HR can validate outputs without immediate employment impact.
+Use a staged rollout that starts with non-consequential assistance, then expands only after the tool meets predefined control and quality thresholds. A safe first phase includes policy Q&A, time and leave guidance, and scheduling support-workflows where HR can validate outputs without immediate employment impact.
 
 Pilot design criteria that support a clean go/no-go decision:
 
@@ -403,7 +403,7 @@ Pilot design criteria that support a clean go/no-go decision:
 -   **Edge-case coverage**: accommodations, remote workers across jurisdictions, union rules where applicable, and cross-entity employee records
 -   **Operational accountability**: named reviewers, defect triage rules, and a change-control gate that prevents scope expansion into hiring or discipline decisions without documented approval criteria met
 
-The gap between "AI-enabled" and "AI-compliant" is where real organizational risk lives — and closing it requires deliberate architecture, not good intentions. Every feature discussed here exists to protect people, defend decisions, and keep your HR team on solid legal ground as regulations continue to evolve. [Request a demo](https://www.glean.com/get-a-demo) to explore how we can help you build AI into your HR workflows with the compliance rigor your organization demands.
+The gap between "AI-enabled" and "AI-compliant" is where real organizational risk lives - and closing it requires deliberate architecture, not good intentions. Every feature discussed here exists to protect people, defend decisions, and keep your HR team on solid legal ground as regulations continue to evolve. [Request a demo](https://www.glean.com/get-a-demo) to explore how we can help you build AI into your HR workflows with the compliance rigor your organization demands.
 
 [
 

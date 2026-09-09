@@ -23,7 +23,7 @@ AGENT ORCHESTRATION
 
 # AI agents, working together.
 
-Glean’s orchestration layer connects every agent and workflow — triggering agents and routing tasks across your ecosystem.
+Glean’s orchestration layer connects every agent and workflow - triggering agents and routing tasks across your ecosystem.
 
 [
 

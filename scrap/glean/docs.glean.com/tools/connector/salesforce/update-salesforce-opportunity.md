@@ -136,7 +136,7 @@ By default, write tools use a human-in-the-loop review flow. The agent displays 
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [Update Salesforce opportunities in Glean](/user-guide/assistant/update-salesforce-opportunities) — end-user guide for updating opportunities using natural language.
--   [Salesforce tools setup](/administration/tools/setup-tools/salesforce-tools-setup) — admin guide for enabling the Salesforce tools and configuring authentication.
--   [Create opportunity](/tools/connector/salesforce/create-opportunity) — tool reference for creating new opportunities.
--   [Search opportunities](/tools/connector/salesforce/search-opportunities) — tool reference for finding opportunities by name, account, stage, or other criteria.
+-   [Update Salesforce opportunities in Glean](/user-guide/assistant/update-salesforce-opportunities) - end-user guide for updating opportunities using natural language.
+-   [Salesforce tools setup](/administration/tools/setup-tools/salesforce-tools-setup) - admin guide for enabling the Salesforce tools and configuring authentication.
+-   [Create opportunity](/tools/connector/salesforce/create-opportunity) - tool reference for creating new opportunities.
+-   [Search opportunities](/tools/connector/salesforce/search-opportunities) - tool reference for finding opportunities by name, account, stage, or other criteria.

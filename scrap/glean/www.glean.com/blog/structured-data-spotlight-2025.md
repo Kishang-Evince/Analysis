@@ -99,13 +99,13 @@ Now, from a single Glean interface, users can tap into BigQuery either through a
 
 Get actionable insights from your data through direct to SQL, or natural language
 
-> "Customers have invested heavily in building a central source of truth with BigQuery, but the final mile—getting insights into the hands of decision-makers—has always been a challenge. Glean's structured query agents are a game-changer. By leveraging Google's Conversational Analytics API, Glean has built a seamless bridge that allows users to query petabyte-scale data in natural language, right in their flow of work. It’s the perfect synergy of Glean's user-centric AI platform and BigQuery's unmatched scale and performance."  
+> "Customers have invested heavily in building a central source of truth with BigQuery, but the final mile-getting insights into the hands of decision-makers-has always been a challenge. Glean's structured query agents are a game-changer. By leveraging Google's Conversational Analytics API, Glean has built a seamless bridge that allows users to query petabyte-scale data in natural language, right in their flow of work. It’s the perfect synergy of Glean's user-centric AI platform and BigQuery's unmatched scale and performance."  
 >   
-> — Yasmeen Ahmed, Managing Director, Data Cloud, Google Cloud 
+> - Yasmeen Ahmed, Managing Director, Data Cloud, Google Cloud 
 
 ## One interface, two ways to work with BigQuery
 
-In Glean, teams can choose the interface that fits their skills: power users can write SQL directly for exact query specification and familiarity, and non-technical users can ask questions in plain English via Google’s [Conversational Analytics API](https://cloud.google.com/gemini/docs/conversational-analytics-api/overview)—all within the same agent experience. Here’s how each structured query agent works:
+In Glean, teams can choose the interface that fits their skills: power users can write SQL directly for exact query specification and familiarity, and non-technical users can ask questions in plain English via Google’s [Conversational Analytics API](https://cloud.google.com/gemini/docs/conversational-analytics-api/overview)-all within the same agent experience. Here’s how each structured query agent works:
 
 ### Search BigQuery with SQL
 

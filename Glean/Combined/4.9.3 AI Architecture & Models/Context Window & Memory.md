@@ -16,10 +16,10 @@
 **Field definition:** Maximum token count supported and session-level context retention.  
 **Prerequisites / Licensing:** Memory requires **GCP + Universal Key** per feature matrix; BYOK may lack memory.  
 **Context handling (Doc-Verified):** Glean-managed per model; **GPT-4.1 1M token** leverage documented; agent memory log + `[[step]]` references; read-document trimming.  
-**Observed limits (Pending Sandbox):** _TBD — max Sheet/Doc size before truncate warning_  
+**Observed limits (Pending Sandbox):** _TBD - max Sheet/Doc size before truncate warning_  
 **Confidence Level:** **Doc-Verified** (mechanisms) · **Pending Sandbox** (numeric per-model caps)  
 **Validation Date:** September 3, 2026  
-**Source URLs:** [July 2025 release — 1M context](https://docs.glean.com/release-notes/releases/2025-07-16-july-release) · [How agents work — memory log](https://docs.glean.com/agents/how-agents-work) · [Read document tool](https://docs.glean.com/tools/glean/read-document) · [Memory personalization](https://docs.glean.com/administration/assistant/configuration/memory-personalization) · [LLM key feature availability](https://docs.glean.com/administration/llm-key-feature-availability)
+**Source URLs:** [July 2025 release - 1M context](https://docs.glean.com/release-notes/releases/2025-07-16-july-release) · [How agents work - memory log](https://docs.glean.com/agents/how-agents-work) · [Read document tool](https://docs.glean.com/tools/glean/read-document) · [Memory personalization](https://docs.glean.com/administration/assistant/configuration/memory-personalization) · [LLM key feature availability](https://docs.glean.com/administration/llm-key-feature-availability)
 
 ### Context and memory features
 
@@ -33,16 +33,16 @@
 
 ### Engineering observation (Doc-Verified)
 
-- Per-model context limits **not enumerated** in admin docs — Glean abstracts selection and trimming.
+- Per-model context limits **not enumerated** in admin docs - Glean abstracts selection and trimming.
 - Memory is **user-isolated**; does not grant document access beyond ACLs.
 - If tenant uses BYOK on non-GCP deployment, Memory UI may be absent.
 
 ### Verification steps / test case
 
-1. Attach large Drive PDF to agent — note partial-read warning threshold.
-2. Multi-turn chat: reference earlier message without re-pasting — confirm retention.
+1. Attach large Drive PDF to agent - note partial-read warning threshold.
+2. Multi-turn chat: reference earlier message without re-pasting - confirm retention.
 3. Check Settings → Personalization for Memory (if Universal Key + GCP).
-4. Paste huge `Stratos_Connector_Test_Sheet` — trigger truncate or `token_limit_exceeded`.
+4. Paste huge `Stratos_Connector_Test_Sheet` - trigger truncate or `token_limit_exceeded`.
 
 **Risk & Cost Impact:** Risk: Low | Cost: Metered on long-context models
 

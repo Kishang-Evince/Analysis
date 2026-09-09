@@ -92,7 +92,7 @@ Today, we’re pleased to announce that we’re launching our new Deep Research 
 Glean’s Deep Research agent was built to solve three problems we hear from teams: 
 
 -   **Manual research is painfully slow.** Knowledge workers spend hours jumping between systems, opening dozens of tabs, and manually piecing together scattered insights.
--   **Information is scattered.** Your product roadmap lives in one system, competitor intelligence in another, customer feedback in a third, and industry trends are scattered across the web. The connections between these data points—where the real insights hide—remain invisible.
+-   **Information is scattered.** Your product roadmap lives in one system, competitor intelligence in another, customer feedback in a third, and industry trends are scattered across the web. The connections between these data points-where the real insights hide-remain invisible.
 -   **Starting is the hardest part.** Even when you know research is needed, figuring out where to begin or which data points matter can be overwhelming. 
 
 Glean's Deep Research agent synthesizes, reasons, and understands internal and external data to provide comprehensive insights. Every Deep Research result also comes with a complete list of citations, so you can verify sources and dig deeper into the areas that matter most to your specific situation.
@@ -101,7 +101,7 @@ Glean's Deep Research agent synthesizes, reasons, and understands internal and e
 
 ## The Deep Research process
 
-Deep Research transforms each query into a systematic investigation, employing reasoning capabilities that distinguish it from traditional information systems. When you submit a query, Deep Research doesn't just search and summarize—it thinks. 
+Deep Research transforms each query into a systematic investigation, employing reasoning capabilities that distinguish it from traditional information systems. When you submit a query, Deep Research doesn't just search and summarize-it thinks. 
 
 -   **Research planning:** The system transforms your initial question into a comprehensive set of research objectives, identifying all relevant angles you might not have considered.
 -   **Task delegation:** A lead agent then creates a plan and spins up specialist sub-agents to tackle the work.

@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/glean-workramp-lms-connector"
 canonical: "https://www.glean.com/blog/glean-workramp-lms-connector"
 title: "Glean’s new WorkRamp connector: Smarter learning, seamless access"
-description: "Jassim Latif  | Glean in WorkRamp brings WorkRamp’s All-in-One Learning Platform directly Glean — making it easier for employees to upskill and excel in their roles."
+description: "Jassim Latif  | Glean in WorkRamp brings WorkRamp’s All-in-One Learning Platform directly Glean - making it easier for employees to upskill and excel in their roles."
 fetched_at: "2026-09-01T13:26:40.888Z"
 ---
 Last updated Mar 10, 2025.
@@ -87,7 +87,7 @@ Glean and WorkRamp are excited to announce a new integration designed to empower
 
 ## A more efficient way to access learning content
 
-With Glean and WorkRamp working together, organizations gain access to a streamlined search experience that allows employees to locate learning materials within WorkRamp instantly — without switching between applications. This integration enhances productivity by reducing the time spent searching for training content, so employees can focus on meaningful learning that helps them upskill and grow.
+With Glean and WorkRamp working together, organizations gain access to a streamlined search experience that allows employees to locate learning materials within WorkRamp instantly - without switching between applications. This integration enhances productivity by reducing the time spent searching for training content, so employees can focus on meaningful learning that helps them upskill and grow.
 
 Additionally, Glean respects WorkRamp’s access controls, ensuring that users only see the content they are authorized to view, creating a secure and seamless experience.
 
@@ -99,7 +99,7 @@ Ted Blosser, CEO & Co-Founder of WorkRamp, shared his thoughts on the integratio
 
 Jassim Latif, Head of Product Ecosystem at Glean shared his enthusiasm as well, “At Glean, our mission is to connect people with the knowledge they need to do their best work. We’re excited to partner with WorkRamp and enhance learning programs with AI-powered search that delivers instant access to critical training materials and empowers teams to upskill faster."
 
-By combining Glean’s AI-powered search with WorkRamp’s robust learning platform, this integration ensures employees receive the right knowledge at the right time — helping organizations foster a culture of continuous learning and development.
+By combining Glean’s AI-powered search with WorkRamp’s robust learning platform, this integration ensures employees receive the right knowledge at the right time - helping organizations foster a culture of continuous learning and development.
 
 ## See it in action
 

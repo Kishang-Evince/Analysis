@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/customer-stories/grammarly"
 canonical: "https://www.glean.com/resources/customer-stories/grammarly"
 title: "Grammarly customer story | Glean Work AI"
-description: "Grammarly’s support team uses Glean to instantly find answers across Confluence, Slack, Zendesk, and Google Drive — reducing search time and improving customer support efficiency."
+description: "Grammarly’s support team uses Glean to instantly find answers across Confluence, Slack, Zendesk, and Google Drive - reducing search time and improving customer support efficiency."
 fetched_at: "2026-09-01T13:25:33.974Z"
 ---
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69eef6f7f320d9f0f1e70a13_grammarly-bg.webp)
@@ -33,15 +33,15 @@ Grammarly’s customer support team assists users with complex writing and produ
 
 ## The solution
 
-With Glean, Grammarly’s support agents can instantly search across all their tools in one place — no more app-hopping or digging through old messages. Whether they need a past Slack conversation, a troubleshooting guide in Confluence, or a Zendesk ticket, Glean surfaces the most relevant information instantly.
+With Glean, Grammarly’s support agents can instantly search across all their tools in one place - no more app-hopping or digging through old messages. Whether they need a past Slack conversation, a troubleshooting guide in Confluence, or a Zendesk ticket, Glean surfaces the most relevant information instantly.
 
 -   **Everything in one search**: Agents quickly find answers from multiple platforms without breaking focus.
 -   **No wasted time**: Glean resurfaces relevant Slack discussions and documents that might otherwise get buried.
--   **Works with existing tools**: No need to migrate or duplicate content — Glean keeps Grammarly’s knowledge sources in sync automatically.
+-   **Works with existing tools**: No need to migrate or duplicate content - Glean keeps Grammarly’s knowledge sources in sync automatically.
 
 ## The impact
 
-With Glean, Grammarly’s support team spends less time searching and more time helping customers. Agents can confidently provide fast, accurate answers — reducing response times and improving customer satisfaction.
+With Glean, Grammarly’s support team spends less time searching and more time helping customers. Agents can confidently provide fast, accurate answers - reducing response times and improving customer satisfaction.
 
 With Glean, I found many more documents with important product information than I even knew existed within Grammarly. Glean helps speed up the search for troubleshooting information, especially when assisting customers with complex problems.
 

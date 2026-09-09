@@ -1,7 +1,7 @@
 ---
 url: "https://www.glean.com/press/100m-conversations-in-house-models-real-time-agents-how-abridge-built-healthcare-s-ai-layer"
 canonical: "https://www.glean.com/press/100m-conversations-in-house-models-real-time-agents-how-abridge-built-healthcare-s-ai-layer"
-title: "100M Conversations, In-House Models, Real-Time Agents — How Abridge Built Healthcare's AI Layer | Glean Press"
+title: "100M Conversations, In-House Models, Real-Time Agents - How Abridge Built Healthcare's AI Layer | Glean Press"
 fetched_at: "2026-09-01T13:26:11.906Z"
 ---
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/697780a68f0aaa59aa8c86e5_glean_live-wordmark-feb26.webp)

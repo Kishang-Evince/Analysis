@@ -15,10 +15,10 @@ This section covers setup requirements, permissions, and configuration specific 
 
 Have these ready before you configure the OneDrive indexing connector, so you don't hit mid-setup delays:
 
--   **Global (tenant) administrator** — a Microsoft 365 Global Admin must grant admin consent for all API permissions and configure the SharePoint REST API. This can't be completed with a lower-privileged role.
--   **Microsoft 365 parent connector already configured** — OneDrive inherits its app registration, client ID, tenant ID, and certificate from the [Microsoft 365](/connectors/native/microsoft365/) parent connector. Complete M365 setup first.
+-   **Global (tenant) administrator** - a Microsoft 365 Global Admin must grant admin consent for all API permissions and configure the SharePoint REST API. This can't be completed with a lower-privileged role.
+-   **Microsoft 365 parent connector already configured** - OneDrive inherits its app registration, client ID, tenant ID, and certificate from the [Microsoft 365](/connectors/native/microsoft365/) parent connector. Complete M365 setup first.
 -   **API permissions approved in advance.** The OneDrive-specific scope (`Files.ReadWrite.All`) and identity scopes shared with the M365 parent must be granted as application permissions with admin consent. Share the [permissions table](#required-permissions) with your Chief Information Security Officer (CISO) or security team before starting. `Files.ReadWrite.All` is required only to create webhook subscriptions. Glean never writes to your files.
--   **Time to allow** — plan for the Azure app configuration and Glean Admin console setup, followed by the initial crawl, which takes hours to days depending on corpus size.
+-   **Time to allow** - plan for the Azure app configuration and Glean Admin console setup, followed by the initial crawl, which takes hours to days depending on corpus size.
 
 ## Required permissions[​](#required-permissions "Direct link to Required permissions")
 
@@ -28,14 +28,14 @@ Grant all permissions as **application permissions** on the shared Microsoft 365
 
 The baseline permissions are always included. Select any extras below and the permission set updates instantly. Then copy it to hand to your IT or security team, so every scope is requested in one pass.
 
-Index OneDrive contentAlways includedCrawls and indexes OneDrive files, folders, and permissions with near-real-time webhook-driven freshness.OneNote page indexing (beta)Indexes OneNote page body content. Requires per-user OAuth consent — each user must individually connect their M365 account in Glean. Without this, only Notebook and Section objects are visible.
+Index OneDrive contentAlways includedCrawls and indexes OneDrive files, folders, and permissions with near-real-time webhook-driven freshness.OneNote page indexing (beta)Indexes OneNote page body content. Requires per-user OAuth consent - each user must individually connect their M365 account in Glean. Without this, only Notebook and Section objects are visible.
 
 Permissions to request from ITCopy request
 
 Microsoft Graph API Application
 
 -   `Files.ReadWrite.All`Creates and reauthorizes webhook subscriptions over OneDrive drives so changes appear in near-real-time. No files are written.
--   `Sites.FullControl.All`Required to pick up OneDrive permission changes (advanced features and granular security management); OneDrive drives are SharePoint-backed. Not enforced during setup validation — the connector still functions — but without it permissions can go stale. See the Microsoft Graph delta documentation on scanning permission hierarchies.
+-   `Sites.FullControl.All`Required to pick up OneDrive permission changes (advanced features and granular security management); OneDrive drives are SharePoint-backed. Not enforced during setup validation - the connector still functions - but without it permissions can go stale. See the Microsoft Graph delta documentation on scanning permission hierarchies.
 
 ## What gets indexed[​](#what-gets-indexed "Direct link to What gets indexed")
 
@@ -44,8 +44,8 @@ Microsoft Graph API Application
 | Documents (Word, Excel, PowerPoint, PDF, text) | Full | Files up to 64 MB are downloaded for indexing. Up to 16.875 MB of converted text content is indexed. Password-protected files are indexed as metadata only. |
 | Folders | Full | All personal folders by default. Scopeable to specific Azure AD groups. |
 | Document metadata | Full | Author, last modified, created date, and permissions. |
-| OneNote — Notebooks and Sections | Full | Indexed as folders and documents by default. |
-| OneNote — Pages (body content) | Limited beta | Requires `Notes.Read.All` plus OAuth for each user. See [OneNote setup](/connectors/native/onedrive/onenote). |
+| OneNote - Notebooks and Sections | Full | Indexed as folders and documents by default. |
+| OneNote - Pages (body content) | Limited beta | Requires `Notes.Read.All` plus OAuth for each user. See [OneNote setup](/connectors/native/onedrive/onenote). |
 | Images, videos, drawings | Metadata only | Not downloaded by default. Optical Character Recognition (OCR) off by default. Contact Support to discuss options. |
 | Files with generic or unrecognized content types | Metadata only by default | When a specific content type is configured for additional parsing, Glean attempts to detect the file’s actual format. Text and other supported formats may be indexed. Files that resolve to unsupported binary formats remain metadata-only. Contact Glean Support to discuss a specific file type. |
 | Files larger than 64 MB | Metadata only | Title, author, and permissions are indexed. Content is not. |

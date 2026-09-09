@@ -17,7 +17,7 @@ Glean adds the API key to outbound requests to the Atlassian MCP server, so the 
 
 note
 
-Only standard Atlassian Cloud is supported. Atlassian Government Cloud (AGC) and Data Center / Server are not supported. This template requires a service-account API key — personal API tokens (the `email:token` Basic-auth kind) are not supported.
+Only standard Atlassian Cloud is supported. Atlassian Government Cloud (AGC) and Data Center / Server are not supported. This template requires a service-account API key - personal API tokens (the `email:token` Basic-auth kind) are not supported.
 
 ## Prerequisites[​](#prerequisites "Direct link to Prerequisites")
 
@@ -34,32 +34,32 @@ API token authentication is off by default (OAuth is the default), so an org adm
 2.  Navigate to **Rovo → Rovo MCP server**.
 3.  In the **Authentication** section, toggle **API token** on.
 
-For API-token access, the domain allowlist doesn't apply — access is governed by your org's IP allowlist and the token's scopes.
+For API-token access, the domain allowlist doesn't apply - access is governed by your org's IP allowlist and the token's scopes.
 
 ## Step 2: Create the service account[​](#step-2-create-the-service-account "Direct link to Step 2: Create the service account")
 
-A service account is a non-human, admin-managed Atlassian account — the right identity for a shared MCP connection. Creating one requires Organization Admin privileges.
+A service account is a non-human, admin-managed Atlassian account - the right identity for a shared MCP connection. Creating one requires Organization Admin privileges.
 
 1.  In Atlassian Administration, go to **Directory → Service accounts → Create a service account**.
 2.  Name it something clearly identifiable, for example, "Glean Agent."
-3.  Under roles, assign the **User** role for the products it needs — **Jira → User** and/or **Confluence → User**. Use the User role, not an admin role.
+3.  Under roles, assign the **User** role for the products it needs - **Jira → User** and/or **Confluence → User**. Use the User role, not an admin role.
 4.  Select **Create**.
 
 Service accounts with product access don't count toward your user license.
 
 ## Step 3: Grant product and in-app access[​](#step-3-grant-product-and-in-app-access "Direct link to Step 3: Grant product and in-app access")
 
-A service account works like a regular user: its access is the intersection of product access, project/space permissions, and token scopes — all three must allow an action.
+A service account works like a regular user: its access is the intersection of product access, project/space permissions, and token scopes - all three must allow an action.
 
-1.  Add to groups — open the service account and add it to the `jira-users` and `confluence-users` groups.
-2.  Double-check access — confirm these groups grant the Jira/Confluence product role and also grant read + write to projects/spaces through the default permission scheme (the case on most sites):
-    -   Jira — the account can browse, create, and edit issues in the target projects.
-    -   Confluence — the account can view, and add/edit pages and comments in the target spaces.
+1.  Add to groups - open the service account and add it to the `jira-users` and `confluence-users` groups.
+2.  Double-check access - confirm these groups grant the Jira/Confluence product role and also grant read + write to projects/spaces through the default permission scheme (the case on most sites):
+    -   Jira - the account can browse, create, and edit issues in the target projects.
+    -   Confluence - the account can view, and add/edit pages and comments in the target spaces.
 3.  If a project or space is restricted (not covered by the default groups), grant access explicitly:
-    -   Jira — in the project's **Project settings → Access**, add the account (or its group) with a role that allows creating and editing issues.
-    -   Confluence — in the space's **Space settings → Space permissions**, add the account (or its group) and grant **View** (read) plus **Add** for pages, blog posts, comments, and attachments (write). View is required for any write to work.
+    -   Jira - in the project's **Project settings → Access**, add the account (or its group) with a role that allows creating and editing issues.
+    -   Confluence - in the space's **Space settings → Space permissions**, add the account (or its group) and grant **View** (read) plus **Add** for pages, blog posts, comments, and attachments (write). View is required for any write to work.
 
-Keep it to content read/write — no site-, org-, or space-admin roles.
+Keep it to content read/write - no site-, org-, or space-admin roles.
 
 ## Step 4: Generate the API key[​](#step-4-generate-the-api-key "Direct link to Step 4: Generate the API key")
 
@@ -79,7 +79,7 @@ Keep it to content read/write — no site-, org-, or space-admin roles.
     -   `write:confluence-content`
     -   `read:confluence-user`
     -   `search:confluence`
-3.  The key is shown only once — copy and store it securely. Keys expire after at most 365 days, so set a reminder to rotate it.
+3.  The key is shown only once - copy and store it securely. Keys expire after at most 365 days, so set a reminder to rotate it.
     
 
 ## Step 5: Create the service credential in Glean[​](#step-5-create-the-service-credential-in-glean "Direct link to Step 5: Create the service credential in Glean")
@@ -105,7 +105,7 @@ After the tools sync, enable the Atlassian actions for the intended agents.
 
 Cloud ID
 
-Agents must pass a `cloudId` identifying the Atlassian site when calling the tools. You can pass the site URL (for example, `your-site.atlassian.net`) directly as the `cloudId` — no need to pre-resolve it. To make this clear to agent builders, you can rename the MCP server to include that site URL.
+Agents must pass a `cloudId` identifying the Atlassian site when calling the tools. You can pass the site URL (for example, `your-site.atlassian.net`) directly as the `cloudId` - no need to pre-resolve it. To make this clear to agent builders, you can rename the MCP server to include that site URL.
 
 ## Verify it works[​](#verify-it-works "Direct link to Verify it works")
 
@@ -127,7 +127,7 @@ All actions are attributed to the service account, not the user who invoked the 
 ## Security and operational notes[​](#security-and-operational-notes "Direct link to Security and operational notes")
 
 -   Token-based auth: Glean stores the API key in the credential broker and injects it as a Bearer header into outbound requests. The agent runtime never receives the raw key.
--   Least privilege: grant the service account only the Jira project roles and Confluence space permissions the agent needs. Keep it to content read/write — no admin roles.
+-   Least privilege: grant the service account only the Jira project roles and Confluence space permissions the agent needs. Keep it to content read/write - no admin roles.
 -   Key rotation: API keys expire after at most 365 days. Set a reminder to rotate before expiry.
 -   Attributed actions: all Jira and Confluence activity appears under the service account's name, making it easy to audit agent behavior.
 -   Revocation: to cut off access, delete the API key in Atlassian or remove the Atlassian service credential in Glean.

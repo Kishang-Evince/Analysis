@@ -1,4 +1,4 @@
-# Field 2 — HIPAA Readiness & BAAs
+# Field 2 - HIPAA Readiness & BAAs
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [HIPAA Readiness & BAAs.md](../../../Glean/Combined/4.9.5 Compliance & Regulatory/HIPAA Readiness & BAAs.md)

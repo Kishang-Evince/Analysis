@@ -14,7 +14,7 @@ Glean could not authenticate to the Greenhouse Harvest (v1) API with the API key
 ## Resolution[​](#resolution "Direct link to Resolution")
 
 1.  In Greenhouse, go to **Dev Center → API Credential Management** and open the **Harvest API** key used for Glean (or create a new one).
-2.  Confirm the key is **enabled/active** and has not been revoked. If the key was rotated, or you no longer have its value, create a new Harvest API key — Greenhouse shows the key only once, when it is created, so save it securely.
+2.  Confirm the key is **enabled/active** and has not been revoked. If the key was rotated, or you no longer have its value, create a new Harvest API key - Greenhouse shows the key only once, when it is created, so save it securely.
 3.  Under **Manage Permissions** for the key, grant all permissions so Glean can read every job, candidate, and permission it needs for indexing. Then click **Save**.
 4.  In the Glean Admin Console, open the Greenhouse setup form and re-enter the **API key** exactly, making sure there are no extra spaces or truncated characters. Then click **Save**.
 

@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:43.812Z"
 ---
 ### Overview
 
-Crayon monitors competitors across web, news, product, and market signals — turning live intelligence into published battlecards and AI-generated Sparks analyses. By indexing that content, Glean makes competitive context searchable across every deal conversation.
+Crayon monitors competitors across web, news, product, and market signals - turning live intelligence into published battlecards and AI-generated Sparks analyses. By indexing that content, Glean makes competitive context searchable across every deal conversation.
 
 ### Features
 

@@ -1199,7 +1199,7 @@ Demos
 
 [
 
-![Let Work AI Drive Business Impact — Not Just Buzz](https://cdn.prod.website-files.com/613513981b0efaf850830620/6864f88b29e6d7b4d7fc8442_Webinar%20Background-25-min.png)
+![Let Work AI Drive Business Impact - Not Just Buzz](https://cdn.prod.website-files.com/613513981b0efaf850830620/6864f88b29e6d7b4d7fc8442_Webinar%20Background-25-min.png)
 
 This is some text inside of a div block.
 
@@ -1209,7 +1209,7 @@ This is some text inside of a div block.
 
 This is some text inside of a div block.
 
-### Let Work AI Drive Business Impact — Not Just Buzz
+### Let Work AI Drive Business Impact - Not Just Buzz
 
 ,
 

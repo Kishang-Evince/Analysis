@@ -15,9 +15,9 @@ Daily digest is not supported for Slack RTS-powered deployments.
 
 ## Key features[​](#key-features "Direct link to Key features")
 
--   Subscribe to channels, keywords, or topics — such as *competitor-news* or *product-launches* — to receive targeted daily digests in your Slack DM.
+-   Subscribe to channels, keywords, or topics - such as *competitor-news* or *product-launches* - to receive targeted daily digests in your Slack DM.
 -   Users can add up to 10 topics and 100 Slack channels.
--   With topic subscriptions, the digest aggregates updates from all enterprise connectors connected to Glean — not just Slack. This includes documents, emails, tickets, and meetings.
+-   With topic subscriptions, the digest aggregates updates from all enterprise connectors connected to Glean - not just Slack. This includes documents, emails, tickets, and meetings.
 -   Admins can deliver digests in *Slack Canvas* for a richer reading experience. See [Setting up Slack Canvas](#optional-setting-up-slack-canvas).
 -   Users can configure their preferred delivery time.
 

@@ -57,11 +57,11 @@ As Wealthsimple scaled, employees struggled to find the knowledge they needed to
 
 ‍
 
-For senior employees, the challenge was even greater. Experienced team members spent valuable time guiding colleagues to the right resources instead of focusing on strategic work. The company needed a way to make knowledge easily accessible — without overburdening its most tenured employees.
+For senior employees, the challenge was even greater. Experienced team members spent valuable time guiding colleagues to the right resources instead of focusing on strategic work. The company needed a way to make knowledge easily accessible - without overburdening its most tenured employees.
 
 ## The solution
 
-Glean created a single, unified search experience by connecting Wealthsimple’s core applications — Google Docs, Slack, GitHub, Jira, and more. Employees could now quickly surface answers without interrupting teammates.
+Glean created a single, unified search experience by connecting Wealthsimple’s core applications - Google Docs, Slack, GitHub, Jira, and more. Employees could now quickly surface answers without interrupting teammates.
 
 ‍
 

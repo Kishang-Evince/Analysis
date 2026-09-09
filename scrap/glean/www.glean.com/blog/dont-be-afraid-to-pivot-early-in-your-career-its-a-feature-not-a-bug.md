@@ -1,13 +1,13 @@
 ---
 url: "https://www.glean.com/blog/dont-be-afraid-to-pivot-early-in-your-career-its-a-feature-not-a-bug"
 canonical: "https://www.glean.com/blog/dont-be-afraid-to-pivot-early-in-your-career-its-a-feature-not-a-bug"
-title: "Don’t be afraid to pivot early in your career—it’s a feature, not a bug"
+title: "Don’t be afraid to pivot early in your career-it’s a feature, not a bug"
 description: "Joe Zhang  | If you want to broaden your skills and learn from some of the best, making the pivot to join a growth-stage startup is the perfect move. Read more in our blog!"
 fetched_at: "2026-09-01T13:26:33.157Z"
 ---
 Last updated Jan 05, 2022.
 
-# Don’t be afraid to pivot early in your career—it’s a feature, not a bug
+# Don’t be afraid to pivot early in your career-it’s a feature, not a bug
 
 0
 
@@ -23,7 +23,7 @@ Engineering
 
 ](/authors/joe-zhang)
 
-![Don’t be afraid to pivot early in your career—it’s a feature, not a bug](https://cdn.prod.website-files.com/613513981b0efaf850830620/61e5670535071f94a5060b86_Glean-blog_don%252527t-be-afraid-to-pivot.png)
+![Don’t be afraid to pivot early in your career-it’s a feature, not a bug](https://cdn.prod.website-files.com/613513981b0efaf850830620/61e5670535071f94a5060b86_Glean-blog_don%252527t-be-afraid-to-pivot.png)
 
 Listen to article
 

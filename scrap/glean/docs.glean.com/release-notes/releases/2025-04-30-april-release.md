@@ -11,7 +11,7 @@ On this page
 
 #### Glean is releasing updates to improve citation quality[​](#glean-is-releasing-updates-to-improve-citation-quality "Direct link to Glean is releasing updates to improve citation quality")
 
-Glean is introducing a new approach to citation generation using LLM-based citations. With this method, the same LLM that generates the response also provides citations for the claims it makes—ensuring that references are directly tied to the information presented. This update is designed to improve citation accuracy, clarity, and trustworthiness by aligning responses more closely with their original sources.
+Glean is introducing a new approach to citation generation using LLM-based citations. With this method, the same LLM that generates the response also provides citations for the claims it makes-ensuring that references are directly tied to the information presented. This update is designed to improve citation accuracy, clarity, and trustworthiness by aligning responses more closely with their original sources.
 
 Assistant *FR-2990*
 

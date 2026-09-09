@@ -13,7 +13,7 @@
 
 **Field definition:** Current execution status of the Stratos Edge partnership agreement with Glean.  
 **Prerequisites / Licensing:** Stratos legal / BD records.  
-**Agreement status (Pending internal):** _TBD — no Stratos Edge Glean partner agreement found in repo_  
+**Agreement status (Pending internal):** _TBD - no Stratos Edge Glean partner agreement found in repo_  
 **Confidence Level:** **Pending internal**  
 **Validation Date:** September 3, 2026  
 **Source URLs:** N/A (internal) · Glean requires **legal-approved referral agreement** before referral payouts ([referral program](https://www.glean.com/partners/referral))
@@ -30,14 +30,14 @@
 
 ### Engineering observation
 
-- Repo uses "Stratos" only as **evaluator / test tenant** label — not as registered Glean partner entity.
+- Repo uses "Stratos" only as **evaluator / test tenant** label - not as registered Glean partner entity.
 - Commercial track likely needs separate agreement beyond referral for implementation margin.
 
 ### Verification steps / test case
 
 1. Stratos legal: search for Glean partner agreement, NDA, SOW templates.
 2. BD: confirm status with Glean channel contact (Director, Channel Partnerships per portal blog).
-3. Update this field when agreement executed — status values: Under Legal Review / Executed / Active / Not Started.
+3. Update this field when agreement executed - status values: Under Legal Review / Executed / Active / Not Started.
 
 **Risk & Cost Impact:** Risk: **High** (no agreement = no protected deals or referral fees) | Cost: N/A
 

@@ -15,7 +15,7 @@
 
 **Field definition:** Quality of native sandboxes, loggers, step-tracers, and rollback environments.  
 **Prerequisites / Licensing:** Agent Builder edit access; sample Drive/Notion content for preview.  
-**Overall debug tooling rating (Doc-Verified):** **Strong** — Preview, Debug mode, re-run-from-step, golden sets, content-trigger sample events.  
+**Overall debug tooling rating (Doc-Verified):** **Strong** - Preview, Debug mode, re-run-from-step, golden sets, content-trigger sample events.  
 **Confidence Level:** **Doc-Verified** · **Pending Sandbox** (Azure-hosted limitation check)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [Debug agent](https://docs.glean.com/agents/create-agents/debug-agent) · [Re-run from step](https://docs.glean.com/agents/create-agents/re-run-from-step) · [Evaluate agent quality](https://docs.glean.com/agents/agent-development-lifecycle/evaluate-agent-quality) · [Content trigger testing](https://docs.glean.com/agents/concepts/content-trigger)

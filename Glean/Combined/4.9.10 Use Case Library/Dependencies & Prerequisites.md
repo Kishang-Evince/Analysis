@@ -47,7 +47,7 @@
 
 ### Verification steps / test case
 
-1. Pre-flight checklist per UC in Admin Test Guide — all deps green before Field 10 run.
+1. Pre-flight checklist per UC in Admin Test Guide - all deps green before Field 10 run.
 2. Document blockers: OAuth pending, Notion share incomplete, crawl lag.
 3. UC-08: legal sign-off on indexed folder list before enable.
 

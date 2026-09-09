@@ -91,11 +91,11 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Model Context Protocol (MCP) is built on a simple idea: connect your tools to AI. By putting the tools you need right where work happens, MCP effectively removes the need for context-switching—it’s the USB-C of AI, tackling part of the silo problem by providing the connection point.
+Model Context Protocol (MCP) is built on a simple idea: connect your tools to AI. By putting the tools you need right where work happens, MCP effectively removes the need for context-switching-it’s the USB-C of AI, tackling part of the silo problem by providing the connection point.
 
 However, finding the right context to code, fix bugs, write docs, and more is a separate challenge that is unsolved by MCP. SaaS silos mean users only see fragments of the picture, missing the cross-system context of how work actually gets done. 
 
-Here at Glean, we build indexes and knowledge graphs from 100+ data sources to bring together that context, so you have what you need to solve the task. Today, we’re sharing some creative ways engineers are using Glean’s remote MCP servers to ground AI and agents in all the context that matters—regardless of where they’re built. What’s possible with MCP depends on how you choose to use it, and we’d like to share ideas to get you started.
+Here at Glean, we build indexes and knowledge graphs from 100+ data sources to bring together that context, so you have what you need to solve the task. Today, we’re sharing some creative ways engineers are using Glean’s remote MCP servers to ground AI and agents in all the context that matters-regardless of where they’re built. What’s possible with MCP depends on how you choose to use it, and we’d like to share ideas to get you started.
 
 ## Terminal debugger
 

@@ -70,7 +70,7 @@ See the [Connector refresh rates](/connectors/crawling-refresh-rates) page for d
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [Crawl strategy](/connectors/crawling-frequency) — how Glean balances crawl freshness and API limits
--   [Connector refresh rates](/connectors/crawling-refresh-rates) — default crawl intervals by connector
--   [Crawl types](/connectors/crawling-types) — full, incremental, activity, and identity crawls
--   [Custom connector troubleshooting](/connectors/custom/troubleshooting) — debug endpoints for Push API connectors
+-   [Crawl strategy](/connectors/crawling-frequency) - how Glean balances crawl freshness and API limits
+-   [Connector refresh rates](/connectors/crawling-refresh-rates) - default crawl intervals by connector
+-   [Crawl types](/connectors/crawling-types) - full, incremental, activity, and identity crawls
+-   [Custom connector troubleshooting](/connectors/custom/troubleshooting) - debug endpoints for Push API connectors

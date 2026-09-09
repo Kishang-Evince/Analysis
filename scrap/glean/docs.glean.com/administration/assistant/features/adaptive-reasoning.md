@@ -19,7 +19,7 @@ In practice, Glean finds the right context first, then answers with that context
 
 note
 
-Adaptive reasoning and Waldo apply to **Glean Assistant** only. Waldo is a Glean model — in the **Admin console** and your billing dashboard, its usage appears under **Glean** as the provider, with **Waldo** as the model.
+Adaptive reasoning and Waldo apply to **Glean Assistant** only. Waldo is a Glean model - in the **Admin console** and your billing dashboard, its usage appears under **Glean** as the provider, with **Waldo** as the model.
 
 ## How adaptive reasoning works[​](#how-adaptive-reasoning-works "Direct link to How adaptive reasoning works")
 

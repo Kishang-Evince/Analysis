@@ -9,7 +9,7 @@ On this page
 
 Glean in Slack can respond to messages posted by Slack workflows, helping you automate triage and provide timely support in help channels.
 
-When this setting is enabled, Gleanbot will respond to messages from workflow bots in published channels — either privately or publicly depending on your AI app's visibility settings.
+When this setting is enabled, Gleanbot will respond to messages from workflow bots in published channels - either privately or publicly depending on your AI app's visibility settings.
 
 ## How to enable Glean in Slack workflow responses[​](#how-to-enable-glean-in-slack-workflow-responses "Direct link to How to enable Glean in Slack workflow responses")
 
@@ -26,7 +26,7 @@ To allow Gleanbot to respond to workflow messages:
 
 Glean in Slack identifies the requester as the first tagged user in the message. Example: "@jamie submitted a request" or "Escalation raised by @alex".
 
-If no user is tagged, Gleanbot can’t respond — update your workflow to mention the requester if needed.
+If no user is tagged, Gleanbot can’t respond - update your workflow to mention the requester if needed.
 
 ## How It Works[​](#how-it-works "Direct link to How It Works")
 
@@ -43,4 +43,4 @@ Learn more about [Glean app visibility and auto-sharing](/agents/concepts/publis
 
 -   Glean in Slack won’t respond if @glean is tagged in the workflow message.
 -   Glean in Slack can’t respond to workflow or bot messages that include attachments.
--   Messages must include a tagged user — Glean in Slack assumes the first tagged user is the requester.
+-   Messages must include a tagged user - Glean in Slack assumes the first tagged user is the requester.

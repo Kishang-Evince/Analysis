@@ -34,7 +34,7 @@ Per-client `max_items` limits are applied in Phase 3 too, but they only stop con
 
 ## What it returns[​](#what-it-returns "Direct link to What it returns")
 
-`run_end_to_end()` returns an `IndexingWaitResult`, or `None` if the connector uploaded no documents. Because indexing is asynchronous, an accepted upload is not yet a searchable document — the result reflects the indexing outcome, not just the HTTP response.
+`run_end_to_end()` returns an `IndexingWaitResult`, or `None` if the connector uploaded no documents. Because indexing is asynchronous, an accepted upload is not yet a searchable document - the result reflects the indexing outcome, not just the HTTP response.
 
 ```
 result = harness.run_end_to_end(    mode=IndexingMode.FULL,    confirm=True,    allow_destructive=True,    confirmed_target="https://test-company-be.glean.com",)if result is None:    raise AssertionError("connector uploaded nothing")
@@ -64,7 +64,7 @@ This is the one check only Phase 3 can make: query Glean as a restricted user an
 from glean.indexing.push import StatusClientstatus = StatusClient(datasource="companywiki")status.check_document_access(...)
 ```
 
-Then search as that user. Search results are the ground truth — an upload that succeeded with a correct-looking ACL can still be wrong if the identity graph is incomplete.
+Then search as that user. Search results are the ground truth - an upload that succeeded with a correct-looking ACL can still be wrong if the identity graph is incomplete.
 
 ## Cleaning up[​](#cleaning-up "Direct link to Cleaning up")
 
@@ -82,7 +82,7 @@ There is no API to delete a datasource *registration*. Deleting the test documen
 
 ## When to run it[​](#when-to-run-it "Direct link to When to run it")
 
-Phase 3 is slow, needs credentials, and mutates real state — so it doesn't belong in a per-commit pipeline. Run it:
+Phase 3 is slow, needs credentials, and mutates real state - so it doesn't belong in a per-commit pipeline. Run it:
 
 -   Before first deploying a new connector.
 -   After changing `transform()` or the permission model.

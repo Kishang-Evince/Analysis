@@ -33,7 +33,7 @@ January 22, 2026
 
 ### Designing Glean for accessibility – design system and compliance
 
-Learn how we integrate accessibility directly into Glean through our design philosophy and perspectives—baking it into our tokens, components, patterns, and more.
+Learn how we integrate accessibility directly into Glean through our design philosophy and perspectives-baking it into our tokens, components, patterns, and more.
 
 ![Sashank Gogula](https://cdn.prod.website-files.com/613513981b0efaf850830620/697111e62be71be0fab1b262_sashank.jpeg)
 

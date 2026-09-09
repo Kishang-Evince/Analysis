@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:23:05.895Z"
 ---
 ## Six components, one SDK
 
-The previews below are illustrative, rendered with sample data from a fictional engineering portal — in your app, each component renders live against your organization's Glean instance.
+The previews below are illustrative, rendered with sample data from a fictional engineering portal - in your app, each component renders live against your organization's Glean instance.
 
 [
 
@@ -17,7 +17,7 @@ Who owns the payments service?Share
 
 The payments service is owned by the Payments Platform team.
 
-Priya Natarajan is the tech lead, and Marcus Webb is on call this week — the deploy and rollback runbook lives in the Engineering Wiki.
+Priya Natarajan is the tech lead, and Marcus Webb is on call this week - the deploy and rollback runbook lives in the Engineering Wiki.
 
 Ask a follow-up…
 
@@ -27,7 +27,7 @@ Glean ChatA full AI assistant grounded in your company knowledge, with citations
 
 payments
 
-CPayments Service — Deploy & Rollback RunbookEngineering Wiki · Updated 2 days ago
+CPayments Service - Deploy & Rollback RunbookEngineering Wiki · Updated 2 days ago
 
 Gpayments-servicegit.internal/payments-service · 1mo ago
 
@@ -45,7 +45,7 @@ Sample CorpServicesRunbooksOn-call
 
 payments service runbook
 
-CPayments Service — Deploy & Rollback RunbookEngineering Wiki · Updated 2 days ago
+CPayments Service - Deploy & Rollback RunbookEngineering Wiki · Updated 2 days ago
 
 Gpayments-servicegit.internal/payments-service · 1mo ago
 
@@ -57,7 +57,7 @@ type:bug, document, message, etc.
 
 powered by Glean
 
-Modal SearchAttach a complete search overlay to any input on your page — one method call.attach(inputElement, options)
+Modal SearchAttach a complete search overlay to any input on your page - one method call.attach(inputElement, options)
 
 ](/libraries/web-sdk/components/modal-search)[
 
@@ -67,7 +67,7 @@ Recommended for this page
 
 C
 
-Checkout — On-call RunbookUpdated 4 days ago
+Checkout - On-call RunbookUpdated 4 days ago
 
 J
 
@@ -75,7 +75,7 @@ PAY-2114: Canary alarms during deployIn review
 
 P
 
-Priya Natarajan — Payments PlatformTech lead
+Priya Natarajan - Payments PlatformTech lead
 
 RecommendationsContextual suggestions for the current page, with a built-in search box.renderRecommendations(element, options)
 
@@ -117,9 +117,9 @@ Quickstart
 
 ## A search box in three steps
 
-1.  1Add the SDK — install `@gleanwork/web-sdk` from npm, or load the script tag from your Glean web app domain.
+1.  1Add the SDK - install `@gleanwork/web-sdk` from npm, or load the script tag from your Glean web app domain.
 2.  2Render a container element with `position: relative` and `display: block`.
-3.  3Call `renderSearchBox` — users sign in with your existing SSO, and every result respects their permissions. See [Authentication](/libraries/web-sdk/authentication/overview) for token-based options.
+3.  3Call `renderSearchBox` - users sign in with your existing SSO, and every result respects their permissions. See [Authentication](/libraries/web-sdk/authentication/overview) for token-based options.
 
 npmScript tag
 
@@ -144,4 +144,4 @@ Step-by-step guides for the platforms teams embed Glean into most.
 
 Widgets authenticate real users, so every search result and chat answer is scoped to what that person can already see.
 
-[SSO by defaultNo extra setup — users sign in with your existing identity provider the first time a widget loads.](/libraries/web-sdk/authentication/default-sso)[Server-to-server tokensMint short-lived user tokens on your backend and pass them to the SDK for a fully seamless session.](/libraries/web-sdk/authentication/server-to-server)[Third-party cookiesUnderstand how browser cookie policies affect embedded sessions, and how the SDK handles them.](/libraries/web-sdk/3rd-party-cookies)
+[SSO by defaultNo extra setup - users sign in with your existing identity provider the first time a widget loads.](/libraries/web-sdk/authentication/default-sso)[Server-to-server tokensMint short-lived user tokens on your backend and pass them to the SDK for a fully seamless session.](/libraries/web-sdk/authentication/server-to-server)[Third-party cookiesUnderstand how browser cookie policies affect embedded sessions, and how the SDK handles them.](/libraries/web-sdk/3rd-party-cookies)

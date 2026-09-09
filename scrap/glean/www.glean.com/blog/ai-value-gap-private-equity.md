@@ -99,7 +99,7 @@ In private equity, the debate isn’t whether AI matters. It’s why, despite so
 
 Part of the answer is timing. AI has moved quickly from experimentation to expectation. [McKinsey’s 2026 Global Private Equity Report](https://www.mckinsey.com/industries/private-capital/our-insights/global-private-markets-report/private-equity) found that **70% of GPs expect AI to deliver high impact** in their own operations in 3–5 years, yet **only 6% see it doing so today**. LPs are watching closely: 53% now rank a GP's AI value creation strategy among their top five criteria when selecting a manager. The patience for AI as a forward-looking promise is running out.
 
-Yet most portfolios aren't close to delivering. [Bain’s 2025 Global Private Equity Report](https://www.bain.com/insights/topics/global-private-equity-report/), which tracks roughly $3.2 trillion in AUM, found that **only 20% of portfolio companies have operationalized use cases that deliver measurable returns**. Many of the remaining 80% are trapped in "*pilot purgatory*" — experimenting in silos and duplicating costs without a shared playbook or economies of scale.
+Yet most portfolios aren't close to delivering. [Bain’s 2025 Global Private Equity Report](https://www.bain.com/insights/topics/global-private-equity-report/), which tracks roughly $3.2 trillion in AUM, found that **only 20% of portfolio companies have operationalized use cases that deliver measurable returns**. Many of the remaining 80% are trapped in "*pilot purgatory*" - experimenting in silos and duplicating costs without a shared playbook or economies of scale.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/69c64d431bf49ce2e51701ad_Private%20Equity%20Blog%204.webp)
 
@@ -113,7 +113,7 @@ Two recent Glean deployments show what measurable AI value can look like in prac
 
 ### Regulated knowledge 
 
-A healthcare technology PortCo rolled out a centralized AI platform across 1,800 employees in a complex, compliance-heavy environment. Within six months, **adoption reached 95%**, teams had built **more than 1,100** [**agents**](https://www.glean.com/product/ai-agents), and the PortCo was tracking a **2.4x ROI** from business process and IT architecture improvements alone and a ~**20x ROI** from just eight use cases — with a repeatable template now being applied to other regulated assets in the fund.
+A healthcare technology PortCo rolled out a centralized AI platform across 1,800 employees in a complex, compliance-heavy environment. Within six months, **adoption reached 95%**, teams had built **more than 1,100** [**agents**](https://www.glean.com/product/ai-agents), and the PortCo was tracking a **2.4x ROI** from business process and IT architecture improvements alone and a ~**20x ROI** from just eight use cases - with a repeatable template now being applied to other regulated assets in the fund.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/69c64d9d38f4d3a097d2d18b_Private%20Equity%20Blog%202.webp)
 
@@ -143,7 +143,7 @@ There’s some logic to that approach. A single vendor can offer privileged acce
 
 A **platform-first strategy** starts from a different premise. Instead of asking which model to anchor to, it asks which capabilities the fund wants to make repeatable across the portfolio.
 
-In practice, that means standardizing the operating layer — how AI connects to core systems, enforces permissions, and runs governed workflows, all on an architecture that can support different models over time. The model still matters, but it’s no longer the strategy. It’s a replaceable part inside a reusable operating layer.
+In practice, that means standardizing the operating layer - how AI connects to core systems, enforces permissions, and runs governed workflows, all on an architecture that can support different models over time. The model still matters, but it’s no longer the strategy. It’s a replaceable part inside a reusable operating layer.
 
 That’s the value of a model-agnostic approach. It gives sponsors the flexibility to swap the underlying model over time while keeping the workflows, context, and operating capability in place. At exit, that capability remains embedded in the portfolio company’s operating model as portable IP rather than tethered to a single third-party vendor.
 

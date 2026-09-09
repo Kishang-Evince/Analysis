@@ -1,4 +1,4 @@
-# Field 2 — API Depth & Writeback
+# Field 2 - API Depth & Writeback
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [API Depth & Writeback.md](../../../Glean/Combined/4.9.4 Integration & Technical/API Depth & Writeback.md)

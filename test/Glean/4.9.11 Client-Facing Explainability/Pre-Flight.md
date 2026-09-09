@@ -1,6 +1,6 @@
-# 4.9.11 Admin Test Guide — Glean Client-Facing Explainability
+# 4.9.11 Admin Test Guide - Glean Client-Facing Explainability
 
-**Purpose:** Validate all 6 explainability fields — citations, audit, readability, confidence gap, correction paths, compliance exports.  
+**Purpose:** Validate all 6 explainability fields - citations, audit, readability, confidence gap, correction paths, compliance exports.  
 **Companion eval log:** `Glean/Combined/4.9.11 Client-Facing Explainability/Overview.md`  
 **Depends on:** 4.9.1 (`Stratos_Connector_Test_*`), 4.9.5 (audit/Protect), 4.9.3 Field 10.
 
@@ -21,12 +21,12 @@
 
 ## Fields in this section
 
-- [Field 1 — Decision Explanation Capability](Decision Explanation Capability.md)
-- [Field 2 — Audit Trail for AI Actions](Audit Trail for AI Actions.md)
-- [Field 3 — Human-Readable Output](Human-Readable Output.md)
-- [Field 4 — Confidence Scoring](Confidence Scoring.md)
-- [Field 5 — Override & Correction Mechanism](Override & Correction Mechanism.md)
-- [Field 6 — Compliance Reporting](Compliance Reporting.md)
+- [Field 1 - Decision Explanation Capability](Decision Explanation Capability.md)
+- [Field 2 - Audit Trail for AI Actions](Audit Trail for AI Actions.md)
+- [Field 3 - Human-Readable Output](Human-Readable Output.md)
+- [Field 4 - Confidence Scoring](Confidence Scoring.md)
+- [Field 5 - Override & Correction Mechanism](Override & Correction Mechanism.md)
+- [Field 6 - Compliance Reporting](Compliance Reporting.md)
 
 ---
 
@@ -48,6 +48,6 @@ Update [`Glean/Combined/4.9.11 Client-Facing Explainability/Pre-Flight.md`](../.
 ## Safety
 
 1. No real PHI in injection or compliance tests.
-2. GCE exports may contain metadata — handle GUARDED.
+2. GCE exports may contain metadata - handle GUARDED.
 3. Azure-hosted: skip Agent Debug expectation.
-4. Do not claim numeric confidence scores in client deck — not product feature.
+4. Do not claim numeric confidence scores in client deck - not product feature.

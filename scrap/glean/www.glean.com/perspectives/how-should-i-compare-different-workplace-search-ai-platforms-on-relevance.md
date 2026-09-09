@@ -65,7 +65,7 @@ Share this article:
 
 Comparing workplace search AI platforms means testing each tool against your actual data, user roles, and evaluation questions before committing. The best approach uses a single, standardized rubric applied across vendors so you can measure relevance, latency, and security under identical conditions. It is a decision worth getting right: as worker [access to AI](https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html) scales rapidly across the enterprise, the platform you choose shapes how thousands of employees find information every day.
 
-These three criteria work as a system. A fast result that surfaces the wrong document wastes more time than a slow one — and with teams already losing roughly a [quarter of the workweek](https://www.atlassian.com/blog/state-of-teams-2025) searching for information, there is little margin for waste. A highly relevant answer delivered 30 seconds after someone's moved on goes unused. And a helpful answer that bypasses permissions or exposes sensitive content creates risk that outweighs any productivity gain.
+These three criteria work as a system. A fast result that surfaces the wrong document wastes more time than a slow one - and with teams already losing roughly a [quarter of the workweek](https://www.atlassian.com/blog/state-of-teams-2025) searching for information, there is little margin for waste. A highly relevant answer delivered 30 seconds after someone's moved on goes unused. And a helpful answer that bypasses permissions or exposes sensitive content creates risk that outweighs any productivity gain.
 
 Effective [enterprise search platform comparison](https://www.glean.com/blog/what-is-enterprise-search) requires you to test how each tool behaves with messy, real-world content: incomplete wiki pages, buried Slack threads, overlapping ticket systems, and files scattered across shared drives. Polished demos rarely reflect production reality.
 
@@ -243,7 +243,7 @@ Avoid these common pitfalls:
 
 Do not confuse a general chat experience with a true search foundation. Weak retrieval undermines every assistant or agent built on top. An impressive conversational interface means nothing if the underlying search returns irrelevant sources or misses the authoritative document.
 
-Choose the platform that stays relevant when data is messy, stays fast under real query volume, and stays safe when permissions change. Enterprise conditions expose weaknesses that demos conceal. A rigorous evaluation protects the investment and earns employee trust from day one — especially when most companies still struggle to turn AI into [measurable value](https://www.bcg.com/press/24october2024-ai-adoption-in-2024-74-of-companies-struggle-to-achieve-and-scale-value).
+Choose the platform that stays relevant when data is messy, stays fast under real query volume, and stays safe when permissions change. Enterprise conditions expose weaknesses that demos conceal. A rigorous evaluation protects the investment and earns employee trust from day one - especially when most companies still struggle to turn AI into [measurable value](https://www.bcg.com/press/24october2024-ai-adoption-in-2024-74-of-companies-struggle-to-achieve-and-scale-value).
 
 ## Frequently asked questions
 

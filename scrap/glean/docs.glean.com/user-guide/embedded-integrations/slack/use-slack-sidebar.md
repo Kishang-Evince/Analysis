@@ -11,9 +11,9 @@ Use the Glean sidebar in Slack to chat with Assistant or run agents without open
 
 From the sidebar, you can:
 
--   **Chat without leaving Slack** — interact with the assistant directly within your workspace to maintain your workflow.
--   **Browse and run agents** — use the agent picker to select and chat with specialized agents tailored to your tasks.
--   **Choose a response mode** — switch between **Fast** and **Thinking** modes for either speedy answers or more detailed, reasoned replies.
+-   **Chat without leaving Slack** - interact with the assistant directly within your workspace to maintain your workflow.
+-   **Browse and run agents** - use the agent picker to select and chat with specialized agents tailored to your tasks.
+-   **Choose a response mode** - switch between **Fast** and **Thinking** modes for either speedy answers or more detailed, reasoned replies.
 
 ## Before you begin[​](#before-you-begin "Direct link to Before you begin")
 
@@ -44,8 +44,8 @@ Chat with the Assistant directly within the Slack sidebar.
 
 Assistant supports two response modes:
 
--   **Fast** — returns a quicker response.
--   **Thinking** — spends more time reasoning through more complex or multi-step questions.
+-   **Fast** - returns a quicker response.
+-   **Thinking** - spends more time reasoning through more complex or multi-step questions.
 
 Thinking mode is the default. If you change modes, your selection remains active for the rest of the conversation.
 

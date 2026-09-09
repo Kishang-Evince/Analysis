@@ -251,7 +251,7 @@ In addition to direct user and group permissions, content can be shared by using
 | Anyone with the link | `anonymous` | Users in your organization |
 | People in `<org>` with the link | `organization` | Users in your organization who have the link |
 | Specific people | `users` | Only the named users or groups |
-| People with existing access | — | Existing permissions apply |
+| People with existing access | - | Existing permissions apply |
 
 -   Inherited links from a parent folder or site are not separately applied to child items. Glean uses the child item's own permissions.
 

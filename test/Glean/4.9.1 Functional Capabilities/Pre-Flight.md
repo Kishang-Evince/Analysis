@@ -1,8 +1,8 @@
-# 4.9.1 Admin Test Guide — Glean (`app.glean.com`)
+# 4.9.1 Admin Test Guide - Glean (`app.glean.com`)
 
 **Purpose:** Hands-on verification of all 8 fields under `4.9.1 Functional Capabilities` using Glean Admin credentials.  
 **Tenant entry:** `https://app.glean.com` → Admin Console  
-**Companion eval log:** `Glean/Combined/4.9.1 Functional Capabilities/Overview.md` (analysis deliverable — not in this folder)  
+**Companion eval log:** `Glean/Combined/4.9.1 Functional Capabilities/Overview.md` (analysis deliverable - not in this folder)  
 **Knowledge base:** `scrap/glean/glean_docs.md`  
 
 **Tenant test stack (in scope):** Notion, Microsoft Teams, Outlook, OneDrive, Gmail, Google Drive, Google Docs, Google Sheets.  
@@ -34,7 +34,7 @@ Glean does **not** invent local users. Identities come from IdP / SSO / invites.
 2. Confirm **Admin A** (you) has Admin or Super Admin
 3. **Invite teammates** (top-right) → invite **User B** / **User C** via Email or Teams (must already exist in company IdP/email)
 4. After signup: ⋮ → **Edit roles** → set User B = **Member** (restricted), User C = Member/power as needed
-5. For ACL tests: restrict User B in **source app** (Google Drive / OneDrive ACL) — Glean mirrors source permissions; Admin role alone does not grant file access
+5. For ACL tests: restrict User B in **source app** (Google Drive / OneDrive ACL) - Glean mirrors source permissions; Admin role alone does not grant file access
 
 | Alias | Glean role (User roles page) | Purpose |
 |---|---|---|
@@ -46,11 +46,11 @@ Glean does **not** invent local users. Identities come from IdP / SSO / invites.
 Prepare before Field 1:
 - Private OneDrive or Google Drive file (no share): `FY27_Exec_Compensation.xlsx` (Admin A / owner only)
 - Shared Drive folder: Google Doc `Stratos_Connector_Test_Doc`, Sheet `Stratos_Connector_Test_Sheet`, PDF `Exhibit_A_SOW_Stratos.pdf`
-- Notion page with same project name — **share page with Glean Notion integration**
+- Notion page with same project name - **share page with Glean Notion integration**
 - Gmail + Outlook messages with subject containing project name
 - Teams channel message referencing project name
 - Twin file on OneDrive (private owner-only for ACL; optional shared copy for multi-source search)
-- 1 HTML page with content inside `<iframe>` (Field 2 iframe test — optional)
+- 1 HTML page with content inside `<iframe>` (Field 2 iframe test - optional)
 
 ### 0.4 Scorecard (use every test)
 For each feature record:
@@ -65,26 +65,26 @@ Notes → paste into eval log
 
 ## Fields in this section
 
-- [Field 1 — Features Confirmed](Features Confirmed.md)
-- [Field 2 — Features Not Confirmed](Features Not Confirmed.md)
-- [Field 3 — Undocumented Features](Undocumented Features.md)
-- [Field 4 — Feature Maturity](Feature Maturity.md)
-- [Field 5 — UI/UX Quality](UI-UX Quality.md)
-- [Field 6 — Configuration Complexity](Configuration Complexity.md)
-- [Field 7 — Error Handling & Recovery](Error Handling & Recovery.md)
-- [Field 8 — Performance Under Load](Performance Under Load.md)
+- [Field 1 - Features Confirmed](Features Confirmed.md)
+- [Field 2 - Features Not Confirmed](Features Not Confirmed.md)
+- [Field 3 - Undocumented Features](Undocumented Features.md)
+- [Field 4 - Feature Maturity](Feature Maturity.md)
+- [Field 5 - UI/UX Quality](UI-UX Quality.md)
+- [Field 6 - Configuration Complexity](Configuration Complexity.md)
+- [Field 7 - Error Handling & Recovery](Error Handling & Recovery.md)
+- [Field 8 - Performance Under Load](Performance Under Load.md)
 
 ---
 
 ## Suggested 2-Day Schedule
 
-### Day 1 (Admin A) — Confirm + Config
+### Day 1 (Admin A) - Confirm + Config
 | Block | Focus |
 |---|---|
 | AM | Pre-flight + F1.1–F1.5 |
 | PM | F1.6–F1.10 + Field 6 timing log |
 
-### Day 2 — Negative + Scale + UX
+### Day 2 - Negative + Scale + UX
 | Block | Focus |
 |---|---|
 | AM | Field 2 negative tests + Field 3 API/SDK |
@@ -127,15 +127,15 @@ After each day: append findings to [`Glean/Combined/4.9.1 Functional Capabilitie
 | Agents | App → Agents / Agent Builder |
 | Search / Chat | App home |
 
-Exact sub-nav labels vary by tenant version — if missing, search Admin sidebar.
+Exact sub-nav labels vary by tenant version - if missing, search Admin sidebar.
 
 ---
 
 ## Safety Rules
 
-1. Do not share private ACL test files (OneDrive/Drive) beyond test owners — that breaks the negative test.
+1. Do not share private ACL test files (OneDrive/Drive) beyond test owners - that breaks the negative test.
 2. Do not blast load tests past first sustained `429`.
 3. Restricted-file tests: confirm User B has **no** Drive/OneDrive share before querying.
-4. Store API tokens in secrets manager — never commit.
-5. `X-Glean-ActAs` = privileged — treat like break-glass admin.
+4. Store API tokens in secrets manager - never commit.
+5. `X-Glean-ActAs` = privileged - treat like break-glass admin.
 6. Notion: only share intended test pages with Glean integration (avoid over-sharing personal Notion).

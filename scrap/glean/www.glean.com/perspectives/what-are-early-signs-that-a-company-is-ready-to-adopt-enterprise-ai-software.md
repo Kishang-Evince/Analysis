@@ -96,7 +96,7 @@ When these patterns are widespread and measurable, the organization has a clear 
 
 AI readiness does not require perfect data. It requires data that exists in systems you can connect to, with someone accountable for accuracy and freshness.
 
-Organizations often overestimate the data-quality bar. The real requirement is knowledge assets — documents, policies, tickets, project records — living in accessible repositories (not USB drives or personal inboxes) with clear ownership. You do not need pristine data governance. You need content that lives somewhere reachable, with someone who can answer "is this still accurate?"
+Organizations often overestimate the data-quality bar. The real requirement is knowledge assets - documents, policies, tickets, project records - living in accessible repositories (not USB drives or personal inboxes) with clear ownership. You do not need pristine data governance. You need content that lives somewhere reachable, with someone who can answer "is this still accurate?"
 
 **Signs of data readiness:**
 
@@ -105,13 +105,13 @@ Organizations often overestimate the data-quality bar. The real requirement is k
 -   Content is stored in systems with APIs or standard connectors, not locked legacy formats
 -   Permission structures exist, even if imperfect (RBAC, SSO, directory services)
 
-One nuance matters here: effective [enterprise AI search](https://www.glean.com/blog/enterprise-ai-search-rag) depends on respecting existing permissions and returning only what each user is authorized to see. No permission model at all is a gap to close first — a prerequisite for responsible AI, not a reason to avoid it.
+One nuance matters here: effective [enterprise AI search](https://www.glean.com/blog/enterprise-ai-search-rag) depends on respecting existing permissions and returning only what each user is authorized to see. No permission model at all is a gap to close first - a prerequisite for responsible AI, not a reason to avoid it.
 
 ## Leadership has aligned on a specific problem, not a vague ambition
 
 There is a material difference between "we should do something with AI" and "we want to reduce time-to-answer for our support team by 40%." The first is a sentiment. The second is a brief.
 
-Readiness requires a named business outcome — ticket deflection, faster onboarding, reduced context switching, improved sales prep — with a stakeholder who owns budget and accountability. Enthusiasm without ownership stalls at the pilot stage.
+Readiness requires a named business outcome - ticket deflection, faster onboarding, reduced context switching, improved sales prep - with a stakeholder who owns budget and accountability. Enthusiasm without ownership stalls at the pilot stage.
 
 **Signs of strategic alignment:**
 
@@ -151,7 +151,7 @@ You do not need a perfect security posture. You need the building blocks: identi
 -   Security leadership (CISO or equivalent) is engaged early, not as an afterthought
 -   A requirement exists that AI systems enforce zero-day data retention with model providers and never use enterprise data to train external models
 
-Most enterprises are not deploying fully autonomous agents. A Menlo Ventures December 2025 enterprise survey found only [16%](https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/) of enterprise AI deployments qualify as true autonomous agents — most are still built around prompt design and retrieval-augmented generation (RAG). Governed, grounded retrieval is where most organizations operate today, and governance readiness reflects that reality.
+Most enterprises are not deploying fully autonomous agents. A Menlo Ventures December 2025 enterprise survey found only [16%](https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/) of enterprise AI deployments qualify as true autonomous agents - most are still built around prompt design and retrieval-augmented generation (RAG). Governed, grounded retrieval is where most organizations operate today, and governance readiness reflects that reality.
 
 ## How to assess your organization's readiness today
 
@@ -185,7 +185,7 @@ Ready organizations show measurable search pain (employees losing time hunting f
 
 ### How can we assess our current data infrastructure for AI readiness?
 
-Start by mapping where knowledge lives: which systems store documents, policies, and project records. Identify who owns each source. Check whether those systems have APIs or standard connectors. Review your permission model — RBAC, SSO, directory services — to confirm access controls exist. Perfect data quality is not required; accessible, owned data is.
+Start by mapping where knowledge lives: which systems store documents, policies, and project records. Identify who owns each source. Check whether those systems have APIs or standard connectors. Review your permission model - RBAC, SSO, directory services - to confirm access controls exist. Perfect data quality is not required; accessible, owned data is.
 
 ### What are the common challenges faced during AI adoption?
 
@@ -193,13 +193,13 @@ Most challenges are organizational, not technical. Leadership misalignment on go
 
 ### How does enterprise AI improve knowledge search capabilities?
 
-Enterprise AI uses natural-language processing, semantic understanding, and [retrieval-augmented generation](https://www.glean.com/blog/rag-retrieval-augmented-generation) to interpret intent — not just match keywords. Platforms like Glean connect to hundreds of enterprise systems, enforce permission-aware access, and return cited, grounded answers instead of a list of links. Teams shift from "hunt and stitch" to "ask and act."
+Enterprise AI uses natural-language processing, semantic understanding, and [retrieval-augmented generation](https://www.glean.com/blog/rag-retrieval-augmented-generation) to interpret intent - not just match keywords. Platforms like Glean connect to hundreds of enterprise systems, enforce permission-aware access, and return cited, grounded answers instead of a list of links. Teams shift from "hunt and stitch" to "ask and act."
 
 ### What organizational factors influence readiness for enterprise AI?
 
-Culture matters as much as infrastructure. Leadership that models AI usage, teams open to workflow change, and governance treated as an enabler rather than a blocker all accelerate adoption. Organizations with tolerance for iterative improvement — willing to learn from early feedback and expand based on evidence — succeed where perfectionist cultures stall.
+Culture matters as much as infrastructure. Leadership that models AI usage, teams open to workflow change, and governance treated as an enabler rather than a blocker all accelerate adoption. Organizations with tolerance for iterative improvement - willing to learn from early feedback and expand based on evidence - succeed where perfectionist cultures stall.
 
-When fragmented search, clean data foundations, leadership buy-in, workflow flexibility, and governance infrastructure are already in place, you're not preparing for enterprise AI — you're ready for it. We connect your company's knowledge across [more than 250 tools](https://www.glean.com/connectors), delivering permission-aware answers and automating work where your teams already operate. [Request a demo](https://www.glean.com/get-a-demo) to see how AI grounded in your own data changes the way your organization finds and acts on information.
+When fragmented search, clean data foundations, leadership buy-in, workflow flexibility, and governance infrastructure are already in place, you're not preparing for enterprise AI - you're ready for it. We connect your company's knowledge across [more than 250 tools](https://www.glean.com/connectors), delivering permission-aware answers and automating work where your teams already operate. [Request a demo](https://www.glean.com/get-a-demo) to see how AI grounded in your own data changes the way your organization finds and acts on information.
 
 [
 

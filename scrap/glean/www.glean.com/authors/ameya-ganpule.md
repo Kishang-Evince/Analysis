@@ -79,7 +79,7 @@ October 13, 2025
 
 ### The enterprise AI coworker for supply chain teams
 
-AI for supply chain turns scattered data into shared context — speeding onboarding, reducing risk, and keeping production on track.
+AI for supply chain turns scattered data into shared context - speeding onboarding, reducing risk, and keeping production on track.
 
 ![Ameya Ganpule](https://cdn.prod.website-files.com/613513981b0efaf850830620/68ed51a3cee6baa28834d0ef_TGLEMJFFG-U096DFC0S2C-5d990b6dce15-512.jpg)
 

@@ -63,35 +63,35 @@ Share this article:
 
 # Implementing AI in Banking: Key Steps for Workflow Integration
 
-Implementing AI in banking workflows starts with permission-aware search to connect fragmented knowledge, then AI assistants to turn that knowledge into cited answers and drafts — with AI agents automating bounded tasks across systems once governance controls are defined.
+Implementing AI in banking workflows starts with permission-aware search to connect fragmented knowledge, then AI assistants to turn that knowledge into cited answers and drafts - with AI agents automating bounded tasks across systems once governance controls are defined.
 
 Banking operations run on scattered knowledge. Policies live in document management systems, customer histories sit in CRM platforms, compliance guidance spans regulatory databases and internal wikis, and operational playbooks are buried across dozens of tools. With AI spending in financial services [projected to grow from $38.36 billion to $190.33 billion by 2030](https://www.finastra.com/viewpoints/articles/future-of-ai-in-financial-services-2026), connecting that knowledge is no longer optional. A connected [enterprise search](https://www.glean.com/product/workplace-search-ai) layer is the prerequisite for any of these AI capabilities to work reliably.
 
-When a relationship manager prepares for a client review or a compliance analyst traces a regulatory change, the real bottleneck is not the decision itself — it is assembling the context needed to make it.
+When a relationship manager prepares for a client review or a compliance analyst traces a regulatory change, the real bottleneck is not the decision itself - it is assembling the context needed to make it.
 
 Integrating AI into banking workflows means connecting these layers in sequence. Search retrieves the right policy, case history, or operational context with role-based permissions intact, and assistants turn that context into cited summaries and drafted responses. Agents then execute approved multi-step tasks like assembling audit packets or routing review requests once the workflow is well-defined enough to automate.
 
 ## What is AI in banking workflow integration?
 
-AI in banking workflow integration is the practical use of enterprise search, AI assistants, and agents to connect fragmented knowledge, answer operational questions, and automate repeatable work inside existing banking systems — while keeping permissions, oversight, and auditability intact. With banking institutions alone allocating [$31.3 billion in AI spending in 2024](https://www.statista.com/topics/7083/artificial-intelligence-ai-in-finance/), this approach layers capabilities on top of each other so that each step builds on the one before it.
+AI in banking workflow integration is the practical use of enterprise search, AI assistants, and agents to connect fragmented knowledge, answer operational questions, and automate repeatable work inside existing banking systems - while keeping permissions, oversight, and auditability intact. With banking institutions alone allocating [$31.3 billion in AI spending in 2024](https://www.statista.com/topics/7083/artificial-intelligence-ai-in-finance/), this approach layers capabilities on top of each other so that each step builds on the one before it.
 
-The first layer is search. In a typical banking environment, a loan officer reviewing an application might need to check the credit policy manual, pull previous underwriting decisions on similar profiles, and confirm the latest regulatory guidance — across three or four separate systems.
+The first layer is search. In a typical banking environment, a loan officer reviewing an application might need to check the credit policy manual, pull previous underwriting decisions on similar profiles, and confirm the latest regulatory guidance - across three or four separate systems.
 
-Permission-aware enterprise search, such as [Glean Search](https://www.glean.com/product/workplace-search-ai), uses hybrid retrieval (combining exact-term matching with semantic understanding) to surface relevant documents from 100+ connected tools while enforcing the same access controls that govern each source system. The Enterprise Graph — Glean's model of organizational relationships, roles, content freshness, and team activity — ranks results by what is most relevant to a specific person in a specific role.
+Permission-aware enterprise search, such as [Glean Search](https://www.glean.com/product/workplace-search-ai), uses hybrid retrieval (combining exact-term matching with semantic understanding) to surface relevant documents from 100+ connected tools while enforcing the same access controls that govern each source system. The Enterprise Graph - Glean's model of organizational relationships, roles, content freshness, and team activity - ranks results by what is most relevant to a specific person in a specific role.
 
 The second layer is assistants. Once search retrieves the right context, an AI assistant turns it into something actionable: a summary of how similar loan exceptions were handled in the past quarter, or a drafted response to a compliance inquiry with citations pointing back to the source documents.
 
-The third layer is agents, which take approved actions across systems when the workflow is well-defined enough to automate. A KYC refresh workflow, for example, might involve gathering updated customer documentation from multiple repositories, flagging discrepancies against stored records, and routing the assembled packet to a reviewer — a sequence an agent can handle end to end with approval checkpoints at each handoff, driving [operational efficiency in financial services](https://www.glean.com/blog/agentic-ops-financial-services).
+The third layer is agents, which take approved actions across systems when the workflow is well-defined enough to automate. A KYC refresh workflow, for example, might involve gathering updated customer documentation from multiple repositories, flagging discrepancies against stored records, and routing the assembled packet to a reviewer - a sequence an agent can handle end to end with approval checkpoints at each handoff, driving [operational efficiency in financial services](https://www.glean.com/blog/agentic-ops-financial-services).
 
-In banking, these layers matter most in workflows with heavy information retrieval, frequent handoffs between teams, and strict regulatory controls — exactly the areas where manual work is slowest and errors carry the highest cost.
+In banking, these layers matter most in workflows with heavy information retrieval, frequent handoffs between teams, and strict regulatory controls - exactly the areas where manual work is slowest and errors carry the highest cost.
 
 ## How to implement AI in banking: key steps for workflow integration
 
-The difference between a successful banking AI program and an abandoned pilot usually comes down to sequencing. Banks that start with a specific workflow problem — not a technology evaluation — deploy faster and measure results sooner.
+The difference between a successful banking AI program and an abandoned pilot usually comes down to sequencing. Banks that start with a specific workflow problem - not a technology evaluation - deploy faster and measure results sooner.
 
 A 2024 Gartner forecast projects that by 2028, 33% of enterprise software applications will include agentic AI, up from less than 1% in 2024. Institutions that build the operational foundation now will absorb those capabilities without scrambling to retrofit governance later.
 
-The sequence matters because each layer depends on the one before it: search connects fragmented knowledge and enforces permissions, and assistants turn that knowledge into cited and actionable answers. Agents then execute bounded tasks with approval checkpoints. Skipping straight to agents — or deploying an assistant without a reliable search layer underneath — produces unreliable outputs in exactly the environments where reliability is non-negotiable.
+The sequence matters because each layer depends on the one before it: search connects fragmented knowledge and enforces permissions, and assistants turn that knowledge into cited and actionable answers. Agents then execute bounded tasks with approval checkpoints. Skipping straight to agents - or deploying an assistant without a reliable search layer underneath - produces unreliable outputs in exactly the environments where reliability is non-negotiable.
 
 Five steps define the practical path:
 
@@ -107,7 +107,7 @@ Each step is independently valuable, and the cumulative effect changes how daily
 
 Not every banking process benefits equally from AI integration. The workflows worth targeting share two defining traits: the information is scattered across multiple systems, and the steps are repeatable enough to standardize.
 
-Loan file review prep, for example, requires pulling credit policies, prior underwriting decisions, and borrower documentation from separate repositories before an analyst can even begin the review. That retrieval step often takes longer than the substantive review itself — and according to PwC Strategy& analysis, banks that fully embrace AI across these workflows could drive up to a [15-percentage-point improvement](https://www.pwc.com/us/en/industries/financial-services/library/how-ai-is-reshaping-banking.html) in their efficiency ratio.
+Loan file review prep, for example, requires pulling credit policies, prior underwriting decisions, and borrower documentation from separate repositories before an analyst can even begin the review. That retrieval step often takes longer than the substantive review itself - and according to PwC Strategy& analysis, banks that fully embrace AI across these workflows could drive up to a [15-percentage-point improvement](https://www.pwc.com/us/en/industries/financial-services/library/how-ai-is-reshaping-banking.html) in their efficiency ratio.
 
 A practical scoring model helps prioritize candidates. Rate each workflow against five factors:
 
@@ -125,7 +125,7 @@ A compliance analyst researching a regulatory change and a branch manager lookin
 
 Building the search foundation means connecting the systems teams already depend on: document repositories, intranet pages, ticketing platforms, CRM records, case management tools, policy libraries, operational runbooks, and collaboration threads. Effective [enterprise knowledge management](https://www.glean.com/blog/enterprise-knowledge-management-guide) requires treating these sources as a single connected layer rather than isolated silos.
 
-The goal is one query path instead of four or five separate application searches. An [enterprise AI search](https://www.glean.com/blog/enterprise-ai-search-rag) approach using hybrid retrieval — combining exact-term matching for precision with semantic understanding for natural-language questions — handles the range of queries banking teams actually ask.
+The goal is one query path instead of four or five separate application searches. An [enterprise AI search](https://www.glean.com/blog/enterprise-ai-search-rag) approach using hybrid retrieval - combining exact-term matching for precision with semantic understanding for natural-language questions - handles the range of queries banking teams actually ask.
 
 A fraud investigator searching for "SAR filing requirements Q1 2026" needs exact matches. A service representative asking "how do we handle fee disputes on business accounts" needs intent-based results.
 
@@ -139,11 +139,11 @@ In practice, a connected search layer produces immediate operational gains. Team
 
 Once the search layer reliably retrieves permission-aware results, an assistant can turn that context into something a banker acts on directly: a summary of how similar exceptions were handled last quarter, or a drafted response to an internal inquiry with citations pointing back to the source documents. The assistant removes the research step that precedes the banker's judgment, leaving the decision itself to the person who owns it.
 
-The strongest assistant use cases in banking are knowledge-intensive but human-led. Service teams resolve routine questions faster when the assistant pulls current policies and prior case context into a single cited answer — Glean reports that search quality typically improves by 20% within the first six months of deployment as the Enterprise Graph learns organizational patterns (Glean internal data, 2024).
+The strongest assistant use cases in banking are knowledge-intensive but human-led. Service teams resolve routine questions faster when the assistant pulls current policies and prior case context into a single cited answer - Glean reports that search quality typically improves by 20% within the first six months of deployment as the Enterprise Graph learns organizational patterns (Glean internal data, 2024).
 
-Lending operations summarize borrower files and flag missing documentation before manual review begins. Risk and compliance teams compare control language across regulatory updates and draft internal notes with sourced references. Relationship managers walk into client meetings with current account, product, and issue history assembled in one view instead of tabbing through six applications — a shift that is already transforming [financial advisory practices](https://www.glean.com/blog/financial-advisors-ai) across the industry.
+Lending operations summarize borrower files and flag missing documentation before manual review begins. Risk and compliance teams compare control language across regulatory updates and draft internal notes with sourced references. Relationship managers walk into client meetings with current account, product, and issue history assembled in one view instead of tabbing through six applications - a shift that is already transforming [financial advisory practices](https://www.glean.com/blog/financial-advisors-ai) across the industry.
 
-Adoption depends on placement: assistants embedded inside the tools bankers already use — email, case management systems, internal portals — get used. Building a successful [enterprise AI assistant](https://www.glean.com/blog/how-to-build-an-ai-assistant-for-the-enterprise) means meeting users where they already work rather than asking them to open a separate application.
+Adoption depends on placement: assistants embedded inside the tools bankers already use - email, case management systems, internal portals - get used. Building a successful [enterprise AI assistant](https://www.glean.com/blog/how-to-build-an-ai-assistant-for-the-enterprise) means meeting users where they already work rather than asking them to open a separate application.
 
 Glean Assistant operates as a conversational interface grounded in enterprise search, surfacing cited answers within existing workflows rather than pulling people out of them. Every response includes source citations, which matters in regulated environments where "the system told me" is not an acceptable audit trail.
 
@@ -159,7 +159,7 @@ The most practical early agent use cases are multi-step tasks that are repetitiv
 
 Each step follows a defined sequence with clear inputs and outputs. An agent orchestrates that sequence end to end, with approval checkpoints at each handoff.
 
-Other strong candidates include routing service requests to the right queue based on case attributes, assembling audit evidence packets from scattered systems, and preparing regulatory reporting inputs from operational data. These are exactly the kinds of [AI agents for finance workflows](https://www.glean.com/blog/8-finance-ai-agents) that deliver measurable results. [Glean Agents](https://www.glean.com/blog/ai-agents-financial-services) plan, adapt, and act with enterprise context and governance — breaking work into stages where the system retrieves context, applies workflow logic, and escalates exceptions with full context attached.
+Other strong candidates include routing service requests to the right queue based on case attributes, assembling audit evidence packets from scattered systems, and preparing regulatory reporting inputs from operational data. These are exactly the kinds of [AI agents for finance workflows](https://www.glean.com/blog/8-finance-ai-agents) that deliver measurable results. [Glean Agents](https://www.glean.com/blog/ai-agents-financial-services) plan, adapt, and act with enterprise context and governance - breaking work into stages where the system retrieves context, applies workflow logic, and escalates exceptions with full context attached.
 
 Keep humans in the loop for higher-risk tasks: suspicious activity escalations, underwriting exceptions, fee reversals outside policy, or any action that changes customer outcomes without straightforward rules. Good agent behavior in banking is disciplined automation where the system knows when to act and when to stop.
 
@@ -167,17 +167,17 @@ Keep humans in the loop for higher-risk tasks: suspicious activity escalations, 
 
 In banking, trust comes from control. Before broad deployment, define role-based access, approval thresholds, redaction policies, monitoring rules, and audit logging for every AI-enabled workflow. A robust [permissions structure](https://www.glean.com/blog/secure-generative-ai-for-the-enterprise-requires-the-right-permissions-structure) is the foundation that makes secure generative AI possible in complex enterprise environments.
 
-The governance model should cover two access tiers first: search-only access for finding trusted information and assistant support for answers and drafts. The third tier — action-enabled agents for bounded workflows — requires approval checkpoints and exception handling defined before deployment.
+The governance model should cover two access tiers first: search-only access for finding trusted information and assistant support for answers and drafts. The third tier - action-enabled agents for bounded workflows - requires approval checkpoints and exception handling defined before deployment.
 
 Testing must use real banking questions and workflows, not synthetic prompts alone. Evaluation should cover permission enforcement, citation quality, answer completeness, handling of ambiguous queries, and whether the system avoids overconfident answers when source information is missing or contradictory. With the [EU AI Act](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) becoming fully applicable in August 2026, institutions deploying AI must also align their governance frameworks with emerging global regulatory standards.
 
-Glean's permission-aware architecture enforces source-level access controls at every layer — search, assistant, and agent — so that the same governance model applies whether someone is retrieving a document or triggering an automated workflow.
+Glean's permission-aware architecture enforces source-level access controls at every layer - search, assistant, and agent - so that the same governance model applies whether someone is retrieving a document or triggering an automated workflow.
 
 Rollout sequencing should match the institution's risk tolerance. A practical order is knowledge access first, assistant support second, and action-oriented agents third.
 
-Each phase should prove accuracy against real operational scenarios and permission integrity across roles and teams before the next phase begins. Pair every launch with enablement — prompt guidance, review standards, and clear examples of when to trust the output and when to override it.
+Each phase should prove accuracy against real operational scenarios and permission integrity across roles and teams before the next phase begins. Pair every launch with enablement - prompt guidance, review standards, and clear examples of when to trust the output and when to override it.
 
-A 2023 McKinsey analysis of AI programs in financial services found that cross-functional governance — not model sophistication — was the top differentiator between pilots that scaled and pilots that stalled (McKinsey, "The state of AI in 2023," August 2023). Alignment across IT, security, operations, compliance, and business teams follows the same pattern.
+A 2023 McKinsey analysis of AI programs in financial services found that cross-functional governance - not model sophistication - was the top differentiator between pilots that scaled and pilots that stalled (McKinsey, "The state of AI in 2023," August 2023). Alignment across IT, security, operations, compliance, and business teams follows the same pattern.
 
 AI programs in banking fail when they have technical sponsorship without workflow ownership, or workflow ownership without governance. Track outcomes that matter to regulated operations: faster first-response times, fewer manual handoffs, better policy lookup accuracy, and cleaner audit preparation with stronger evidence trails.
 
@@ -197,11 +197,11 @@ Glean Search respects existing role-based permissions without requiring a separa
 
 ### Can AI tools connect to core banking systems and legacy platforms?
 
-Enterprise search platforms connect to the knowledge and collaboration tools that surround core banking systems — document repositories, case management, CRM, policy libraries, ticketing platforms, internal wikis, and communication tools. Direct integration with core transaction systems is typically handled through existing middleware or API layers rather than direct AI-to-core connections, which preserves the security boundaries that banking architecture teams require.
+Enterprise search platforms connect to the knowledge and collaboration tools that surround core banking systems - document repositories, case management, CRM, policy libraries, ticketing platforms, internal wikis, and communication tools. Direct integration with core transaction systems is typically handled through existing middleware or API layers rather than direct AI-to-core connections, which preserves the security boundaries that banking architecture teams require.
 
 ### How do you enforce role-based access control with AI-generated answers?
 
-Every answer inherits the permission model of its source documents. If a policy manual is restricted to compliance staff, the assistant will not surface that content to a branch operations team member — even if the question is relevant.
+Every answer inherits the permission model of its source documents. If a policy manual is restricted to compliance staff, the assistant will not surface that content to a branch operations team member - even if the question is relevant.
 
 The Enterprise Graph maps organizational roles, team membership, and document-level permissions so that access enforcement happens before content is retrieved, not after it is generated.
 
@@ -209,7 +209,7 @@ The Enterprise Graph maps organizational roles, team membership, and document-le
 
 The fastest wins come from search and assistant use cases in high-volume knowledge work. The search layer removes the cross-system lookup step from each task, which is where the most time is typically spent in knowledge-intensive roles.
 
-Banking teams that start with the search foundation and then layer assistants and agents in sequence create a path where each capability strengthens the next — and where governance is built in from the start. The result is faster access to trusted knowledge and fewer manual steps in high-volume workflows. [Request a demo to explore how Glean and AI can transform your workplace.](https://www.glean.com/get-a-demo)
+Banking teams that start with the search foundation and then layer assistants and agents in sequence create a path where each capability strengthens the next - and where governance is built in from the start. The result is faster access to trusted knowledge and fewer manual steps in high-volume workflows. [Request a demo to explore how Glean and AI can transform your workplace.](https://www.glean.com/get-a-demo)
 
 [
 

@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/how-we-migrated-150-cloud-sql-instances-using-gcp-dms"
 canonical: "https://www.glean.com/blog/how-we-migrated-150-cloud-sql-instances-using-gcp-dms"
 title: "How we migrated 150 Cloud SQL instances using GCP DMS"
-description: "Satyam Shanker  | We migrated our Cloud SQL instances— a central part of the Glean index building architecture— to MySQL8. Read more about how we did it here."
+description: "Satyam Shanker  | We migrated our Cloud SQL instances- a central part of the Glean index building architecture- to MySQL8. Read more about how we did it here."
 fetched_at: "2026-09-01T13:26:44.642Z"
 ---
 Last updated Aug 24, 2022.

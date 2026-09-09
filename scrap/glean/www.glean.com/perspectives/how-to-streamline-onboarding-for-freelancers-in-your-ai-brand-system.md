@@ -65,21 +65,21 @@ Share this article:
 
 The fastest way to onboard freelancers to an AI brand system is to centralize your brand knowledge in one searchable.
 
-Most organizations still onboard freelancers with a shared folder, a kickoff call, and a hope that everything clicks. That approach is increasingly risky: Upwork's Future Workforce Index found that [one in four U.S. skilled knowledge workers](https://investors.upwork.com/news-releases/news-release-details/upwork-study-finds-1-4-us-skilled-knowledge-workers-now-work) now works independently, which means the volume of external collaborators needing brand context is growing fast. The problem is not talent — it's context. Brand standards live in dozens of tools, style guides go stale, and no one knows which version of the messaging doc is current. An [AI brand system](https://www.glean.com/ai-agent-builder) solves this by connecting approved knowledge sources and surfacing the right answer at the moment a freelancer needs it.
+Most organizations still onboard freelancers with a shared folder, a kickoff call, and a hope that everything clicks. That approach is increasingly risky: Upwork's Future Workforce Index found that [one in four U.S. skilled knowledge workers](https://investors.upwork.com/news-releases/news-release-details/upwork-study-finds-1-4-us-skilled-knowledge-workers-now-work) now works independently, which means the volume of external collaborators needing brand context is growing fast. The problem is not talent - it's context. Brand standards live in dozens of tools, style guides go stale, and no one knows which version of the messaging doc is current. An [AI brand system](https://www.glean.com/ai-agent-builder) solves this by connecting approved knowledge sources and surfacing the right answer at the moment a freelancer needs it.
 
 This article walks through a practical onboarding workflow for agencies and freelancers: what to include, which steps to automate, and how to set guardrails that protect brand consistency without slowing people down.
 
 ## What is onboarding freelancers and agencies to your AI brand system?
 
-Onboarding freelancers to your AI brand system means giving external collaborators scoped access to the knowledge, workflows, and tools they need to produce on-brand work — with role-based permissions and clear guardrails so every contractor knows where to find guidance without waiting on a manager. The goal is fast ramp, not broad access.
+Onboarding freelancers to your AI brand system means giving external collaborators scoped access to the knowledge, workflows, and tools they need to produce on-brand work - with role-based permissions and clear guardrails so every contractor knows where to find guidance without waiting on a manager. The goal is fast ramp, not broad access.
 
-The process rests on three pillars: trusted brand knowledge, role-based permissions, and automation for repetitive tasks. The payoff for getting these right is significant — SHRM research shows that organizations with [structured onboarding see 52% better retention and 60% higher productivity](https://www.devlinpeck.com/content/employee-onboarding-statistics) among new hires. Trusted brand knowledge means a single source of truth — your approved messaging, style guide, product positioning, and past examples — all indexed and searchable.
+The process rests on three pillars: trusted brand knowledge, role-based permissions, and automation for repetitive tasks. The payoff for getting these right is significant - SHRM research shows that organizations with [structured onboarding see 52% better retention and 60% higher productivity](https://www.devlinpeck.com/content/employee-onboarding-statistics) among new hires. Trusted brand knowledge means a single source of truth - your approved messaging, style guide, product positioning, and past examples - all indexed and searchable.
 
 Role-based permissions control what each freelancer can see and do, so a copywriter working on blog content does not accidentally access internal pricing models or board decks. Automation handles the repeatable steps: sending welcome resources, granting tool access, assigning onboarding checklists, and answering the same "where do I find X?" questions that eat up your team's time.
 
-Here is the part most onboarding playbooks miss: freelancer quality issues are almost always context issues, not skill issues. A Paychex survey underscores the stakes — [80% of employees who feel undertrained](https://www.paychex.com/articles/human-resources/the-onboarding-crisis) after onboarding plan to quit soon, compared to just 7% of those who feel well-prepared. A senior agency writer who delivers off-brand copy probably never saw your latest positioning update because it was buried in a Slack thread from three months ago.
+Here is the part most onboarding playbooks miss: freelancer quality issues are almost always context issues, not skill issues. A Paychex survey underscores the stakes - [80% of employees who feel undertrained](https://www.paychex.com/articles/human-resources/the-onboarding-crisis) after onboarding plan to quit soon, compared to just 7% of those who feel well-prepared. A senior agency writer who delivers off-brand copy probably never saw your latest positioning update because it was buried in a Slack thread from three months ago.
 
-When you connect your brand knowledge to a tool like Glean's AI agent builder, freelancers can ask plain-language questions — "What's the approved tone for customer case studies?" or "Show me the latest product one-pager" — and get cited, permission-aware answers grounded in your company's knowledge through Glean Assistant. For agency integration, this single shift — making brand context self-serve instead of gated — removes the guesswork that causes most first-draft misses.
+When you connect your brand knowledge to a tool like Glean's AI agent builder, freelancers can ask plain-language questions - "What's the approved tone for customer case studies?" or "Show me the latest product one-pager" - and get cited, permission-aware answers grounded in your company's knowledge through Glean Assistant. For agency integration, this single shift - making brand context self-serve instead of gated - removes the guesswork that causes most first-draft misses.
 
 ## How to streamline onboarding for freelancers in your AI brand system
 
@@ -98,23 +98,23 @@ Before adding any tooling, map where your current onboarding breaks down. Most g
 
 ## 1\. Define roles, access, and success before you send the first invite
 
-Separate collaborators by work type — writer, designer, strategist, analyst — rather than contract label. A freelance writer and an agency writer need the same brand knowledge, style references, and review process. Grouping them by what they produce, not how they're paid, keeps your onboarding paths clean and reusable.
+Separate collaborators by work type - writer, designer, strategist, analyst - rather than contract label. A freelance writer and an agency writer need the same brand knowledge, style references, and review process. Grouping them by what they produce, not how they're paid, keeps your onboarding paths clean and reusable.
 
 For each role, document what that person must know within the first 30 days: which brand guidelines apply, which audiences they'll write for, what approval steps look like, and where to find source materials.
 
-Then define your authoritative sources and flag anything outdated. Freelancers should never have to guess whether a style guide is current — mark retired docs explicitly or remove them from the searchable index entirely.
+Then define your authoritative sources and flag anything outdated. Freelancers should never have to guess whether a style guide is current - mark retired docs explicitly or remove them from the searchable index entirely.
 
-Set permission boundaries before you send a single invite. A blog writer does not need access to internal pricing decks or product roadmaps. Scoping permissions up front protects sensitive information and reduces noise — freelancers see only what's relevant to their assignments, which speeds up search and reduces decision fatigue.
+Set permission boundaries before you send a single invite. A blog writer does not need access to internal pricing decks or product roadmaps. Scoping permissions up front protects sensitive information and reduces noise - freelancers see only what's relevant to their assignments, which speeds up search and reduces decision fatigue.
 
 Finally, decide on success metrics early. Time to first approved asset, revision rate on initial deliverables, number of clarification questions per assignment, and adherence to brand guidelines on the first draft all give you concrete signals. The gap is real: Gallup found that only [12% of employees rate their onboarding as good](https://www.strongdm.com/blog/employee-onboarding-statistics), yet those who do report exceptional onboarding are 2.6 times more satisfied at work.
 
-Teams that set clear success criteria before onboarding begins have a baseline to measure against — and a way to spot process gaps before they become patterns. Glean Search lets you track which resources freelancers access during their first week, so you can see whether your knowledge base is reaching the people who need it or sitting untouched.
+Teams that set clear success criteria before onboarding begins have a baseline to measure against - and a way to spot process gaps before they become patterns. Glean Search lets you track which resources freelancers access during their first week, so you can see whether your knowledge base is reaching the people who need it or sitting untouched.
 
 ## 2\. Centralize approved brand knowledge in one place
 
 Your brand knowledge probably lives in a dozen tools right now: positioning docs in Google Drive, tone guidelines in Notion, approved examples in a shared folder, audience definitions in a strategy deck.
 
-Organize that knowledge by task, not by department. A freelancer writing a product comparison page needs positioning, competitive context, approved claims, and sample content — they do not need to know which team created each document.
+Organize that knowledge by task, not by department. A freelancer writing a product comparison page needs positioning, competitive context, approved claims, and sample content - they do not need to know which team created each document.
 
 Structure your knowledge base so someone can start from "I'm writing X for audience Y" and reach the right materials in under a minute.
 
@@ -122,43 +122,43 @@ Pair every guideline with an example. Showing a freelancer what "on-brand" looks
 
 ## 3\. Automate intake, provisioning, and repetitive setup tasks
 
-Every new freelancer engagement starts with the same set of steps: collect contact details, determine scope, provision tool access, send guidelines, and schedule a check-in. When this runs manually, it takes hours of coordination across multiple people — and someone always forgets a step. Research from Digitate shows that [automating onboarding tasks can cut ramp time by five full days](https://www.devlinpeck.com/content/employee-onboarding-statistics), turning that coordination overhead into a repeatable flow that runs the same way every time.
+Every new freelancer engagement starts with the same set of steps: collect contact details, determine scope, provision tool access, send guidelines, and schedule a check-in. When this runs manually, it takes hours of coordination across multiple people - and someone always forgets a step. Research from Digitate shows that [automating onboarding tasks can cut ramp time by five full days](https://www.devlinpeck.com/content/employee-onboarding-statistics), turning that coordination overhead into a repeatable flow that runs the same way every time.
 
 Start with a standard intake form that captures enough context to drive both permissions and training. Role, project scope, expected deliverables, and team affiliation tell you which access tier to grant and which knowledge modules to surface.
 
 Replace generic welcome emails with task-specific onboarding messages. A message that says "Here's your login, here's the brand guide, and here's your first assignment brief" gives a freelancer a clear starting point. A message that says "Welcome to the team!" does not. Specificity at the welcome stage sets the tone for everything that follows.
 
-For the questions that come up in every onboarding — "Where's the logo file?" "What's the review turnaround?" "Who approves final assets?" — Glean Agents can deliver real-time answers drawn from your approved documentation, without a teammate needing to stop their own work to respond. Context-aware reminders can follow up based on role and progress: if a freelancer hasn't accessed the brand guidelines two days after provisioning, a nudge with a direct link keeps onboarding on track without manual follow-up.
+For the questions that come up in every onboarding - "Where's the logo file?" "What's the review turnaround?" "Who approves final assets?" - Glean Agents can deliver real-time answers drawn from your approved documentation, without a teammate needing to stop their own work to respond. Context-aware reminders can follow up based on role and progress: if a freelancer hasn't accessed the brand guidelines two days after provisioning, a nudge with a direct link keeps onboarding on track without manual follow-up.
 
 ## 4\. Train freelancers and agencies inside the system, not around it
 
-Most freelancer training happens outside the tools where work actually gets done: a kickoff call, a PDF handbook, maybe a recorded walkthrough. The problem is that this front-loaded approach asks people to absorb everything at once and then recall it days or weeks later in a completely different environment. Training works better when it's embedded in the workflow — available the moment a freelancer needs it, not front-loaded into a single kickoff call.
+Most freelancer training happens outside the tools where work actually gets done: a kickoff call, a PDF handbook, maybe a recorded walkthrough. The problem is that this front-loaded approach asks people to absorb everything at once and then recall it days or weeks later in a completely different environment. Training works better when it's embedded in the workflow - available the moment a freelancer needs it, not front-loaded into a single kickoff call.
 
 Layer your training instead of dumping it all at once. Start with a core module that every collaborator completes: brand voice, terminology, approval process, and where to find things.
 
-Then branch into role-specific guidance. A writer needs deep context on messaging frameworks and audience definitions. A designer needs asset specifications, color systems, and layout standards — serving only what's relevant to each role keeps training focused and completion rates high.
+Then branch into role-specific guidance. A writer needs deep context on messaging frameworks and audience definitions. A designer needs asset specifications, color systems, and layout standards - serving only what's relevant to each role keeps training focused and completion rates high.
 
-Make training interactive. A freelancer should be able to ask questions in natural language — "How do we describe the product for mid-market buyers?" — and get a cited response pulled from your actual brand materials.
+Make training interactive. A freelancer should be able to ask questions in natural language - "How do we describe the product for mid-market buyers?" - and get a cited response pulled from your actual brand materials.
 
 Glean Assistant handles this by grounding every response in your company's indexed knowledge, so freelancers can compare messaging approaches against your approved positioning or pull examples of past work that matched the brief. The answers reflect your guidelines rather than generic suggestions.
 
 Build mini playbooks for common assignments. A playbook for "write a product comparison blog post" should include the brief template, relevant audience definitions, approved claims, competitive positioning notes, and a checklist for self-review before submission.
 
-When training and process live in the same place, freelancers reference them while working rather than trying to remember a kickoff call from two weeks ago. Feed completed assignment feedback — reviewer comments, common revision patterns, recurring errors — back into these playbooks so they improve over time.
+When training and process live in the same place, freelancers reference them while working rather than trying to remember a kickoff call from two weeks ago. Feed completed assignment feedback - reviewer comments, common revision patterns, recurring errors - back into these playbooks so they improve over time.
 
 ## 5\. Launch with a controlled first assignment and clear approval paths
 
-Access does not equal onboarding complete. A freelancer might have every tool login, every document link, and every style guide bookmarked — and still produce work that misses the mark on the first try. The real test is a controlled first assignment: a task scoped tightly enough to correct quickly, but representative enough to reveal whether the onboarding process actually transferred the right context.
+Access does not equal onboarding complete. A freelancer might have every tool login, every document link, and every style guide bookmarked - and still produce work that misses the mark on the first try. The real test is a controlled first assignment: a task scoped tightly enough to correct quickly, but representative enough to reveal whether the onboarding process actually transferred the right context.
 
 Choose a pilot task that reflects the freelancer's ongoing responsibilities without putting a high-stakes deliverable at risk. For a writer, that could be a short blog post or a product description.
 
 For a designer, a single social asset or email header. For an analyst, a data summary with a defined template. The goal is to create a feedback loop early, while the stakes are low and adjustments are fast.
 
-Attach full context to the assignment itself: the creative brief, target audience, goals, approved source materials, relevant examples, deadline, output format, and the name of the reviewer. When context travels with the task, freelancers spend less time hunting for information and more time doing the work. Glean Agents can assemble this context package automatically by pulling the relevant documents, audience profiles, and templates based on the assignment type — turning what used to be a manual briefing process into a structured handoff.
+Attach full context to the assignment itself: the creative brief, target audience, goals, approved source materials, relevant examples, deadline, output format, and the name of the reviewer. When context travels with the task, freelancers spend less time hunting for information and more time doing the work. Glean Agents can assemble this context package automatically by pulling the relevant documents, audience profiles, and templates based on the assignment type - turning what used to be a manual briefing process into a structured handoff.
 
-Define which actions are self-serve and which require approval. A freelancer might have permission to draft and format content independently but need sign-off before publishing or sending to a client. Guided workflows — where the system routes a draft to the right reviewer based on content type and project — reduce confusion about next steps.
+Define which actions are self-serve and which require approval. A freelancer might have permission to draft and format content independently but need sign-off before publishing or sending to a client. Guided workflows - where the system routes a draft to the right reviewer based on content type and project - reduce confusion about next steps.
 
-After the first assignment, collect structured feedback: what went well, where the freelancer got stuck, and what context was missing. In most cases, the root cause of a weak first deliverable is not talent quality — it is missing context that the onboarding process should have provided.
+After the first assignment, collect structured feedback: what went well, where the freelancer got stuck, and what context was missing. In most cases, the root cause of a weak first deliverable is not talent quality - it is missing context that the onboarding process should have provided.
 
 ## 6\. Measure ramp time, answer quality, and workflow adoption
 
@@ -172,7 +172,7 @@ Quality metrics tell you whether the knowledge transfer worked. Revision rate on
 
 When revision rates on initial assignments stay high, the root cause is more often missing examples or unclear guidelines than freelancer skill. Track these by role and project type to spot patterns.
 
-Adoption metrics tell you whether freelancers are actually using the system you built. Glean Search usage — how often freelancers query the knowledge base, which topics they search for, and which results they click — reveals whether your onboarding materials are reaching people during real work.
+Adoption metrics tell you whether freelancers are actually using the system you built. Glean Search usage - how often freelancers query the knowledge base, which topics they search for, and which results they click - reveals whether your onboarding materials are reaching people during real work.
 
 Template usage, workflow engagement, and time spent in guided processes show whether the structured paths you created are useful or ignored. Review the most-asked questions across freelancer cohorts as an improvement roadmap: every recurring question is a gap in your documentation or training that you can close.
 
@@ -200,7 +200,7 @@ The most common challenges are scattered source materials, unclear permission bo
 
 Track operational metrics (time to access, time to first deliverable), quality metrics (revision rate, off-brand errors), and adoption metrics (search usage, template engagement). A declining revision rate and shorter ramp time across cohorts indicate the onboarding process is transferring context effectively.
 
-A structured onboarding process gives freelancers and agencies the context they need to produce on-brand work from the first assignment — without the back-and-forth that slows teams down. When you centralize knowledge, automate setup, and measure results, every new collaborator ramps faster and stays aligned longer. [Request a demo](https://www.glean.com/get-a-demo) to explore how Glean and AI can transform your workplace.
+A structured onboarding process gives freelancers and agencies the context they need to produce on-brand work from the first assignment - without the back-and-forth that slows teams down. When you centralize knowledge, automate setup, and measure results, every new collaborator ramps faster and stays aligned longer. [Request a demo](https://www.glean.com/get-a-demo) to explore how Glean and AI can transform your workplace.
 
 [
 

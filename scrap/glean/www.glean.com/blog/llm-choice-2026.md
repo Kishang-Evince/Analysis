@@ -101,7 +101,7 @@ This flexibility isn’t just about having more options. It’s about driving be
 
 ## Flexibility paired with enterprise oversight and compliance
 
-We built LLM choice with both end users and enterprise administrators in mind. For any task, users can experiment with different models on real workloads, directly comparing outputs and performance without leaving Glean. This makes model evaluation practical and grounded in real work. Behind the scenes, Glean continuously tracks live usage patterns and evaluations to keep recommended “best model” defaults accurate over time. As models evolve, Glean adapts — so customers don’t have to constantly re-evaluate the landscape on their own.
+We built LLM choice with both end users and enterprise administrators in mind. For any task, users can experiment with different models on real workloads, directly comparing outputs and performance without leaving Glean. This makes model evaluation practical and grounded in real work. Behind the scenes, Glean continuously tracks live usage patterns and evaluations to keep recommended “best model” defaults accurate over time. As models evolve, Glean adapts - so customers don’t have to constantly re-evaluate the landscape on their own.
 
 At the same time, administrators maintain full control over model usage and choice. From the admin console, they can curate which model families are available, define usage policies, and govern access across the organization. Teams can access the latest large language models instantly, without waiting for system-wide updates or switching between tools. This enables thoughtful, strategic model governance of the latest models. Teams gain flexibility, while enterprises retain oversight and compliance.
 

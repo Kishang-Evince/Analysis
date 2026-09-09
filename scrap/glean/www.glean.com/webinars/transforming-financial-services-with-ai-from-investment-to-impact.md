@@ -32,7 +32,7 @@ Head of Industry and Departmental Solutions, Glean
 
 ## Overview
 
-AI is everywhere in financial services—but is it delivering real value for your firm? While AI spending is projected to grow by 30% annually, many organizations still struggle to translate their AI investments into measurable impact.
+AI is everywhere in financial services-but is it delivering real value for your firm? While AI spending is projected to grow by 30% annually, many organizations still struggle to translate their AI investments into measurable impact.
 
 This session will address a range of real-world use cases for AI in financial services organizations, including banking, investment, wealth management, and insurance. You’ll walk away with practical steps to drive a successful AI adoption, avoid common pitfalls, and deploy enterprise AI solutions that deliver real ROI.
 

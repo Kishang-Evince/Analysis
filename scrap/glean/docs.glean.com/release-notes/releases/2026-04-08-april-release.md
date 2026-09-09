@@ -47,7 +47,7 @@ Assistant *ROAD-1153-MR*
 
 #### Viewing generated visual media within Glean Canvas[​](#viewing-generated-visual-media-within-glean-canvas "Direct link to Viewing generated visual media within Glean Canvas")
 
-Users can now view AI-generated slides and images inline in Canvas, staying in flow as they scroll through decks, zoom into visuals, and quickly sanity-check content without downloading files or opening other apps. When they're ready to share or polish, they can still export to PowerPoint, Google Slides, PDF, or image files — making fast in-product review the default and export an explicit follow-up step.
+Users can now view AI-generated slides and images inline in Canvas, staying in flow as they scroll through decks, zoom into visuals, and quickly sanity-check content without downloading files or opening other apps. When they're ready to share or polish, they can still export to PowerPoint, Google Slides, PDF, or image files - making fast in-product review the default and export an explicit follow-up step.
 
 [Learn more](https://docs.glean.com/user-guide/assistant/image-generation#image-generation-in-glean-assistant)
 
@@ -115,7 +115,7 @@ Assistant *ROAD-1203*
 
 #### Agent sandbox and programmatic tool calling in Assistant \[Glean Key and Glean Hosted Only\][​](#agent-sandbox-and-programmatic-tool-calling-in-assistant-glean-key-and-glean-hosted-only "Direct link to Agent sandbox and programmatic tool calling in Assistant [Glean Key and Glean Hosted Only]")
 
-Glean Assistant can now use a secure sandboxed environment in Thinking mode to handle more complex analysis and research tasks. This helps Assistant work through large result sets across connected systems, run code to analyze data, and return richer outputs like summaries, charts, and CSVs — without requiring any extra setup from end users. It's especially useful for multi-step analytical questions that would otherwise exceed a model's context window and executing skills (currently in beta).
+Glean Assistant can now use a secure sandboxed environment in Thinking mode to handle more complex analysis and research tasks. This helps Assistant work through large result sets across connected systems, run code to analyze data, and return richer outputs like summaries, charts, and CSVs - without requiring any extra setup from end users. It's especially useful for multi-step analytical questions that would otherwise exceed a model's context window and executing skills (currently in beta).
 
 **How to access:** Available for Glean Key and Glean-hosted customers in Assistant Thinking mode. Agent Sandbox activates automatically when a query benefits from code execution, exhaustive retrieval, or cross-system analytics, so users don't need to enable or configure anything. Customer-hosted deployments are not included in this launch.
 
@@ -173,7 +173,7 @@ Connectors *ROAD-930*
 
 * * *
 
-#### Glean in Slack — UI refresh and interaction design improvements[​](#glean-in-slack--ui-refresh-and-interaction-design-improvements "Direct link to Glean in Slack — UI refresh and interaction design improvements")
+#### Glean in Slack - UI refresh and interaction design improvements[​](#glean-in-slack--ui-refresh-and-interaction-design-improvements "Direct link to Glean in Slack - UI refresh and interaction design improvements")
 
 Glean has refreshed the visual design and interaction flows for Glean in Slack. Updates include redesigned feedback buttons, improved loading/latency indicators, cleaner citation and source attribution, proper table rendering in DMs, and streamlined button layouts. These improvements make the Slack experience more polished, intuitive, and consistent for end users.
 
@@ -213,7 +213,7 @@ Admin Capabilities *ROAD-1251*
 
 Linear is moving from long-lived access tokens to short-lived access tokens with refresh token support. This is a security improvement on Linear's side, and requires a quick update before April 1, 2026 to ensure your Glean-Linear connector continues to work properly.
 
-**How to access:** The process should only take a few minutes. If you'd like any guidance or run into issues, don't hesitate to reach out to your Glean support team — we're here to help.
+**How to access:** The process should only take a few minutes. If you'd like any guidance or run into issues, don't hesitate to reach out to your Glean support team - we're here to help.
 
 1.  In your Linear OAuth2 application settings, modify specifically the OAuth application you have used to authenticate in Glean (most likely with the application name being "Glean Application") to enable refresh token support.
 2.  Once that's done, re-authenticate the Linear connector in your Glean admin console.

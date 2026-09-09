@@ -15,7 +15,7 @@ To connect Asana to Glean, see [Setup](/connectors/native/asana/setup).
 
 -   Glean's Asana connector helps you ingest key information for unified enterprise search.
 -   The connector pulls content from your Asana instance, supports user-level permission controls, and offers redlisting capabilities to exclude specific projects from search.
--   The Glean connector does not modify or write any data to Asana—read-only data and access is strictly enforced.
+-   The Glean connector does not modify or write any data to Asana-read-only data and access is strictly enforced.
 
 ## Supported objects[​](#supported-objects "Direct link to Supported objects")
 

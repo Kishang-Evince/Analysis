@@ -23,7 +23,7 @@ Get instant meeting summaries with key takeaways, action items, and stakeholder 
 
 ## Overview
 
-The single meeting summarizer helps you stay aligned without the hassle of manual notes. It pulls from meeting transcripts to summarize key points, decisions, and action items — then surfaces suggested owners and related content to keep work moving. Whether you missed the meeting or need a quick refresh, this agent delivers the context you need, fast.
+The single meeting summarizer helps you stay aligned without the hassle of manual notes. It pulls from meeting transcripts to summarize key points, decisions, and action items - then surfaces suggested owners and related content to keep work moving. Whether you missed the meeting or need a quick refresh, this agent delivers the context you need, fast.
 
 ## See it in action
 
@@ -37,7 +37,7 @@ Quickly understand what was discussed and decided with a clear, structured summa
 
 **Meeting notes**
 
-Workshop planning sync — Acme Corp  
+Workshop planning sync - Acme Corp  
 2025-04-28 11:30:00
 
 **Attendees:**
@@ -142,7 +142,7 @@ Zoom V2
 
 #### Daily meeting action summary
 
-Get a clear summary of action items from every meeting — delivered automatically.
+Get a clear summary of action items from every meeting - delivered automatically.
 
 ](/agent-library/daily-meeting-action-summary)
 

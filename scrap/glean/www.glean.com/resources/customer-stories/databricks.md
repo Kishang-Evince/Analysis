@@ -45,7 +45,7 @@ Glean gave Databricks a unified search experience that delivers the right inform
 
 ‍
 
-“With Glean, we built a simple, intuitive intranet where employees can find what they need right away,” Zutshi shared. “That was the biggest benefit — an internal search that actually works.”
+“With Glean, we built a simple, intuitive intranet where employees can find what they need right away,” Zutshi shared. “That was the biggest benefit - an internal search that actually works.”
 
 ‍
 

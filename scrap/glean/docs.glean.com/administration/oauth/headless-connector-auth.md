@@ -19,7 +19,7 @@ Use this mapping to decide which option to implement based on how your users acc
 | **B** | Users interact with Glean through an embedded Web SDK experience | [Option 2: Web SDK settings component](#option-2-web-sdk-settings-component) | Available now |
 | **C** | Users interact with Glean entirely through your own custom UI built on the Client API | [Option 3: checkdatasourceauth API](#option-3-checkdatasourceauth-api) | Available now |
 
-All three options drive the same underlying per-user OAuth state. You can mix them as needed—for example, using Option 1 for admins who are comfortable in the Glean web app and Option 3 for a fully custom "Connect apps" page in your product.
+All three options drive the same underlying per-user OAuth state. You can mix them as needed-for example, using Option 1 for admins who are comfortable in the Glean web app and Option 3 for a fully custom "Connect apps" page in your product.
 
 ## Option 1: Glean UI connectors page[​](#option-1-glean-ui-connectors-page "Direct link to Option 1: Glean UI connectors page")
 
@@ -121,7 +121,7 @@ Once a source is authorized, search, chat, and other Client API calls for that u
 
 For most connectors, OAuth is effectively "set it and forget it": Glean receives a long-lived refresh token and uses it to keep access tokens up to date automatically. Users only need to reauthorize if the provider revokes or expires the refresh token (for example, they revoke the app, their org rotates apps, or the provider enforces a new consent).
 
-When that happens, Glean surfaces the source as needing authorization—in the connectors settings UI (Options 1 and 2) or via the `checkdatasourceauth` endpoint (Option 3)—so you can prompt users to reconnect.
+When that happens, Glean surfaces the source as needing authorization-in the connectors settings UI (Options 1 and 2) or via the `checkdatasourceauth` endpoint (Option 3)-so you can prompt users to reconnect.
 
 ## See also[​](#see-also "Direct link to See also")
 

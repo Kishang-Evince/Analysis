@@ -32,9 +32,9 @@
 
 ### Engineering observation (Doc-Verified)
 
-- Customer Hosted is **not** DIY patching — Glean operates integrated architecture inside your cloud boundary.
+- Customer Hosted is **not** DIY patching - Glean operates integrated architecture inside your cloud boundary.
 - **Universal Model Key** marketed as ZDR-compliant with no training on enterprise data.
-- Tenant sandbox (`app.glean.com`) is likely Glean Hosted — Cloud-Prem not verifiable without separate contract.
+- Tenant sandbox (`app.glean.com`) is likely Glean Hosted - Cloud-Prem not verifiable without separate contract.
 
 ### Verification steps / test case
 

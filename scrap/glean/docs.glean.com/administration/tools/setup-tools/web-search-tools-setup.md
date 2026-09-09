@@ -86,7 +86,7 @@ We recommend that you use OpenAI with any cloud provider and Gemini search withi
 
 ### How should I compare the performance of Google enterprise search versus consumer search?
 
-Google Enterprise Search is the only web provider currently supported by Glean with zero data retention, though it has a slightly longer content refresh delay—typically every few hours. If you are latency sensitive, running searches or agents that examine the most recent industry news, then we recommend using Google consumer search.
+Google Enterprise Search is the only web provider currently supported by Glean with zero data retention, though it has a slightly longer content refresh delay-typically every few hours. If you are latency sensitive, running searches or agents that examine the most recent industry news, then we recommend using Google consumer search.
 
 ### What data is sent to a web search provider? What data is retained by a web search provider?
 

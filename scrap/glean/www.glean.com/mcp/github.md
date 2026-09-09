@@ -9,7 +9,7 @@ fetched_at: "2026-09-01T13:25:26.368Z"
 
 The software engineer's field guide to the AI stack
 
-AI coding assistants are everywhere — but most engineering teams are still struggling. Chasing context across GitHub, Jira, logs, and Slack is the real drag on productivity. This field guide maps today's AI tooling landscape, introduces a two-layer model that leading teams are adopting, and gives you a practical framework to evaluate what belongs in your stack.
+AI coding assistants are everywhere - but most engineering teams are still struggling. Chasing context across GitHub, Jira, logs, and Slack is the real drag on productivity. This field guide maps today's AI tooling landscape, introduces a two-layer model that leading teams are adopting, and gives you a practical framework to evaluate what belongs in your stack.
 
 [
 

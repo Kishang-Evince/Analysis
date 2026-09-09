@@ -41,7 +41,7 @@ important
 
 Leave the **High Fives only** option **unchecked** so the connector can read both Priorities and High Fives.
 
-2.  Copy the generated token — you'll paste it into Glean in step 4.
+2.  Copy the generated token - you'll paste it into Glean in step 4.
 
 ## Step 3: Find your 15Five subdomain[​](#step-3-find-your-15five-subdomain "Direct link to Step 3: Find your 15Five subdomain")
 

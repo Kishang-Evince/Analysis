@@ -85,7 +85,7 @@ Listen to article
 
 Hi! I’m Trevor Gile, and I’m a member of the Solutions Architect team here at Glean. In my role, I work directly with customers on their most complex technical challenges, helping them build a deep understanding of their enterprise systems, and then implement Glean as effectively and efficiently as possible. I also spend time writing documentation for the community, explaining how the Glean platform works and how to build on top of it.
 
-Outside of work, I disconnect from the online world and gravitate towards tight-knit, activity-driven communities — beach volleyball, CrossFit, strategy board games, and my family. I would love to form an in-person community in San Diego’s North County to get together for coffee on a regular basis and chat about AI technologies.
+Outside of work, I disconnect from the online world and gravitate towards tight-knit, activity-driven communities - beach volleyball, CrossFit, strategy board games, and my family. I would love to form an in-person community in San Diego’s North County to get together for coffee on a regular basis and chat about AI technologies.
 
 ## Working closely with customers and the community
 
@@ -109,7 +109,7 @@ One of the biggest lessons I’ve learned is that empathy and self-reflection ma
 
 As our Gleaniverse community grows, I hope we learn about the hidden, non-obvious opportunities. I want to hear from customers using Glean in completely unexpected ways, and those who failed fabulously trying to build something new on top of Glean’s platform. These are the stories that often inspire some of the most creative solutions.
 
-I hope the Gleaniverse contains an unmatched breadth and depth of experiences — a community that’s highly engaged, supportive, and full of practical wisdom for making AI get real work done.
+I hope the Gleaniverse contains an unmatched breadth and depth of experiences - a community that’s highly engaged, supportive, and full of practical wisdom for making AI get real work done.
 
 # Continuing the conversation together
 

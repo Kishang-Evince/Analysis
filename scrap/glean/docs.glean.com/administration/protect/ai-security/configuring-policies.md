@@ -16,7 +16,7 @@ To understand what each policy covers and see examples of flagged versus allowed
 
 ## How policies are enforced[​](#how-policies-are-enforced "Direct link to How policies are enforced")
 
-The enforcement rules you define determine what happens when an AI agent's behavior violates a policy. The severity of a violation—whether it's high or low—is a key factor in how the rule is applied.
+The enforcement rules you define determine what happens when an AI agent's behavior violates a policy. The severity of a violation-whether it's high or low-is a key factor in how the rule is applied.
 
 -   **Block and fail** only high-severity violations: If a prompt or a generated response is flagged as a high-severity threat, the agent's run is immediately stopped and the tool is blocked. Lower-severity issues, however, are simply flagged for your review in the Findings tab, allowing the agent to complete its task without interruption.
 -   **Flag for review**: Marks the run for review in the "Findings" tab without stopping the process. This is useful for monitoring potential threats without disrupting agent workflows.

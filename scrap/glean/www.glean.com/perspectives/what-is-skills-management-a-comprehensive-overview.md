@@ -73,7 +73,7 @@ Artificial intelligence emerges as the catalyst for this transformation, offerin
 
 Skills management represents the systematic approach to identifying, organizing, developing, and optimizing the competencies that drive organizational success. Unlike traditional HR practices that focus on job titles and hierarchical structures, skills management creates a dynamic, real-time map of workforce capabilities that evolves with business needs and market demands.
 
-At its core, skills management involves three interconnected processes: **skills identification**, which discovers and catalogs the competencies present within an organization; **skills assessment**, which measures proficiency levels and tracks progression over time; and **skills optimization**, which aligns individual capabilities with strategic business objectives through targeted development and deployment. This comprehensive framework enables organizations to understand not just what roles employees fill, but what they can actually accomplish — and what they could achieve with the right development opportunities.
+At its core, skills management involves three interconnected processes: **skills identification**, which discovers and catalogs the competencies present within an organization; **skills assessment**, which measures proficiency levels and tracks progression over time; and **skills optimization**, which aligns individual capabilities with strategic business objectives through targeted development and deployment. This comprehensive framework enables organizations to understand not just what roles employees fill, but what they can actually accomplish - and what they could achieve with the right development opportunities.
 
 The modern approach to skills management extends far beyond simple competency tracking. It encompasses the entire talent lifecycle, from initial recruitment through ongoing performance management and succession planning. Organizations implementing effective skills management systems gain visibility into:
 
@@ -157,7 +157,7 @@ Seamless integration of AI insights into existing HR workflows is crucial for su
 
 Address resistance to AI adoption through proactive change management. Develop pathways that accommodate diverse career aspirations, moving beyond traditional roles and supporting varied growth opportunities. This approach encourages employees to embrace innovation and continuous learning.
 
-The future of work demands a sophisticated approach to skills management that only AI can deliver — one that transforms static job descriptions into dynamic capability frameworks that evolve with your business. By embracing AI-powered skills management today, you position your organization to thrive in tomorrow's rapidly changing landscape, where adaptability and continuous learning define success.
+The future of work demands a sophisticated approach to skills management that only AI can deliver - one that transforms static job descriptions into dynamic capability frameworks that evolve with your business. By embracing AI-powered skills management today, you position your organization to thrive in tomorrow's rapidly changing landscape, where adaptability and continuous learning define success.
 
 Ready to unlock the full potential of your workforce? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) and see how we can help you build a more agile, skilled, and future-ready organization.
 

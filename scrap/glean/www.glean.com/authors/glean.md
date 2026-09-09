@@ -68,7 +68,7 @@ July 14, 2026
 
 ### Enterprise knowledge graph cases: 7 applications that deliver ROI
 
-Learn how enterprise knowledge graphs turn siloed data into a connected, queryable network—powering semantic search, GraphRAG, fraud detection, supply chain visibility, compliance, and more—with practical use cases, adoption roadmaps, and ROI benchmarks for mid-market and enterprise teams
+Learn how enterprise knowledge graphs turn siloed data into a connected, queryable network-powering semantic search, GraphRAG, fraud detection, supply chain visibility, compliance, and more-with practical use cases, adoption roadmaps, and ROI benchmarks for mid-market and enterprise teams
 
 ![Glean](https://cdn.prod.website-files.com/613513981b0efaf850830620/641443b7208e558a59f93731_glean-author-symbol.jpg)
 
@@ -168,7 +168,7 @@ May 5, 2026
 
 ### Best AI tools for software engineers: how to build the right AI stack
 
-The best AI tools for software engineers in 2026 — coding assistants, code review, and testing tools compared to help you ship faster.
+The best AI tools for software engineers in 2026 - coding assistants, code review, and testing tools compared to help you ship faster.
 
 ![Glean](https://cdn.prod.website-files.com/613513981b0efaf850830620/641443b7208e558a59f93731_glean-author-symbol.jpg)
 
@@ -288,7 +288,7 @@ April 1, 2026
 
 ### 7 Core Components of an AI Agent Architecture Explained
 
-The 7 core components every AI agent architecture needs — from memory to tool use — explained with real examples for teams building AI agents.
+The 7 core components every AI agent architecture needs - from memory to tool use - explained with real examples for teams building AI agents.
 
 ![Glean](https://cdn.prod.website-files.com/613513981b0efaf850830620/641443b7208e558a59f93731_glean-author-symbol.jpg)
 
@@ -368,7 +368,7 @@ November 23, 2025
 
 ### 10 AI‑powered collaboration platforms every enterprise should evaluate
 
-10 AI-powered collaboration platforms enterprises should evaluate in 2026 — compared on features, security, and fit for large teams.
+10 AI-powered collaboration platforms enterprises should evaluate in 2026 - compared on features, security, and fit for large teams.
 
 ![Glean](https://cdn.prod.website-files.com/613513981b0efaf850830620/641443b7208e558a59f93731_glean-author-symbol.jpg)
 
@@ -866,7 +866,7 @@ June 28, 2024
 
 ### A comprehensive guide to information retrieval
 
-Information retrieval is essential to helping organizations stay better-informed and ahead of the competition. Thanks to AI and machine learning, it’s a rapidly developing field—discover what you need to know for 2024.
+Information retrieval is essential to helping organizations stay better-informed and ahead of the competition. Thanks to AI and machine learning, it’s a rapidly developing field-discover what you need to know for 2024.
 
 ![Glean](https://cdn.prod.website-files.com/613513981b0efaf850830620/641443b7208e558a59f93731_glean-author-symbol.jpg)
 

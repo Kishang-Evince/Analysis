@@ -93,9 +93,9 @@ Enterprises don’t just need a search bar or a chatbot. They need a Work AI pla
 
 We’ve seen customers bring Glean into more of their everyday workflows as they look to do more with AI. To support that momentum, we invested in our platform to match the growing range of what they wanted to accomplish. 
 
-Glean connects to the tools teams already use and learns from the relationships between people and content. This intelligence is captured in our [Enterprise Graph](https://www.glean.com/product/enterprise-graph) — a combination of a company-wide knowledge graph and each individual’s [personal graph](https://www.glean.com/product/personal-graph). It brings together projects, experts, and company knowledge in a permission-aware way. This context is what lets Assistant and [Glean Agents](https://www.glean.com/product/ai-agents) respond and take action in a way that feels highly personal, relevant, and accurate responses.
+Glean connects to the tools teams already use and learns from the relationships between people and content. This intelligence is captured in our [Enterprise Graph](https://www.glean.com/product/enterprise-graph) - a combination of a company-wide knowledge graph and each individual’s [personal graph](https://www.glean.com/product/personal-graph). It brings together projects, experts, and company knowledge in a permission-aware way. This context is what lets Assistant and [Glean Agents](https://www.glean.com/product/ai-agents) respond and take action in a way that feels highly personal, relevant, and accurate responses.
 
-That foundation powers improvements across the product, including a more advanced [Glean Assistant](https://www.glean.com/product/assistant). Assistant now offers two modes — Fast and Thinking — that let users choose the right balance of speed and depth. It also surfaces relevant snippets, citations and images drawn directly from Enterprise Graph context, helping people work with more clarity.
+That foundation powers improvements across the product, including a more advanced [Glean Assistant](https://www.glean.com/product/assistant). Assistant now offers two modes - Fast and Thinking - that let users choose the right balance of speed and depth. It also surfaces relevant snippets, citations and images drawn directly from Enterprise Graph context, helping people work with more clarity.
 
 ## Agents that can handle real work
 
@@ -103,7 +103,7 @@ Many organizations are experimenting with AI agents. The hard part is putting ag
 
 That’s why we’ve focused on making Glean Agents something anyone can use and build. Glean’s [unified agent builder](https://www.glean.com/product/agent-builder) gives teams one place to turn ideas into working agents, using natural language to describe goals and shape how agents should behave. Powered by our [Agentic Engine 2](https://www.glean.com/product/agentic-engine), Fast and Thinking modes let agents handle everything from quick, repetitive tasks to complex multi step work that demands deeper reasoning.
 
-We are democratizing access to agents across the enterprise. With governance controls built in, any team — from Legal to HR to Engineering — can bring AI into their day-to-day work with confidence.
+We are democratizing access to agents across the enterprise. With governance controls built in, any team - from Legal to HR to Engineering - can bring AI into their day-to-day work with confidence.
 
 ## Connected to the tools and data customers already use
 

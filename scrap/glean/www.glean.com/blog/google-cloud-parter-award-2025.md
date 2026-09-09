@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/google-cloud-parter-award-2025"
 canonical: "https://www.glean.com/blog/google-cloud-parter-award-2025"
 title: "Glean named 2025 Google Cloud Technology Partner of the Year for Marketplace-Business Applications"
-description: "Leena Kamath  | Glean is honored to receive Google’s 2025 Cloud Technology Partner of the Year Award — and bolster our growing partnership to better serve customers through Google Cloud Marketplace."
+description: "Leena Kamath  | Glean is honored to receive Google’s 2025 Cloud Technology Partner of the Year Award - and bolster our growing partnership to better serve customers through Google Cloud Marketplace."
 fetched_at: "2026-09-01T13:26:41.385Z"
 ---
 Last updated Apr 08, 2025.
@@ -99,8 +99,8 @@ This award highlights both the accomplishment of delivering the workplace search
 
 2025 has been a milestone year for Glean, marked by significant achievements:
 
--   Expanded our customer base, welcoming many new enterprises to the Glean family — including customers like Deutsche Telecom, Reddit, Instacart, and Booking.com
--   Strengthened our integration with Google Cloud while extending the choice of LLMs on our platform — we’re excited to support Google’s Gemini models as one of our native models on Glean
+-   Expanded our customer base, welcoming many new enterprises to the Glean family - including customers like Deutsche Telecom, Reddit, Instacart, and Booking.com
+-   Strengthened our integration with Google Cloud while extending the choice of LLMs on our platform - we’re excited to support Google’s Gemini models as one of our native models on Glean
 -   Launched innovative features that further enhance our platform’s capabilities:  
     -   **Glean Agents** enable users to build, deploy, orchestrate, and govern AI agents across the enterprise using natural language
     -   **Universal knowledge** enables users to seamlessly integrate and leverage both real-time web and internal enterprise data in their queries

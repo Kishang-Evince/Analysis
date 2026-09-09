@@ -11,7 +11,7 @@ On this page
 
 You encounter the `ACTIONS_MISSING_REQUIRED_PARAMS` error when Glean is unable to run a tool because one or more required fields are not provided. The request is rejected before being sent to the external application.
 
-This error can occur with any tool in Glean whether you are using Glean, workflows, static agents, or custom integrations—regardless of the specific tool type or external application.
+This error can occur with any tool in Glean whether you are using Glean, workflows, static agents, or custom integrations-regardless of the specific tool type or external application.
 
 ## Possible reasons[​](#possible-reasons "Direct link to Possible reasons")
 

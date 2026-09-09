@@ -63,35 +63,35 @@ Share this article:
 
 # What is AI knowledge management software and how is it different from a simple wiki or intranet?
 
-AI knowledge management software connects your company's documents, messages, tickets, and tools into a single searchable layer — then answers questions in plain language with cited sources. Unlike a wiki or intranet, it doesn't wait for someone to write a page. It reads what already exists and delivers knowledge where people work.
+AI knowledge management software connects your company's documents, messages, tickets, and tools into a single searchable layer - then answers questions in plain language with cited sources. Unlike a wiki or intranet, it doesn't wait for someone to write a page. It reads what already exists and delivers knowledge where people work.
 
-The gap between what your organization knows and what employees can actually find is expensive. People spend [significant time searching](https://ir.coveo.com/en/news-events/press-releases/detail/236/fruitless-searching-irrelevant-information-inefficient) for information — an average of 3.6 hours a day, according to Coveo — often recreating answers that already exist somewhere else. Traditional search returns links; AI knowledge management returns the answer.
+The gap between what your organization knows and what employees can actually find is expensive. People spend [significant time searching](https://ir.coveo.com/en/news-events/press-releases/detail/236/fruitless-searching-irrelevant-information-inefficient) for information - an average of 3.6 hours a day, according to Coveo - often recreating answers that already exist somewhere else. Traditional search returns links; AI knowledge management returns the answer.
 
 This guide explains what [AI-driven knowledge management solutions](https://www.glean.com/perspectives/best-ai-driven-knowledge-management-solutions) do, how they differ from wikis and intranets, and how to evaluate whether your organization needs one.
 
 ## What does AI knowledge management software do?
 
-AI knowledge management software is a platform that uses semantic search, retrieval-augmented generation (RAG), and contextual understanding to connect, surface, and deliver enterprise knowledge — not just store it. It reads across your tools and answers questions with sources employees can verify.
+AI knowledge management software is a platform that uses semantic search, retrieval-augmented generation (RAG), and contextual understanding to connect, surface, and deliver enterprise knowledge - not just store it. It reads across your tools and answers questions with sources employees can verify.
 
 Unlike static repositories, these platforms understand relationships between people, content, and interactions. They build a living graph of enterprise context that learns from organizational signals like who created a document, how often it's accessed, and which subject-matter experts reference it. The result is search that knows what you mean, not just what you typed.
 
-The "AI" distinction isn't a feature bolted onto a wiki. It refers to a fundamentally different architecture. The system indexes content from [more than 250 connected sources](https://www.glean.com/connectors) — document stores, messaging apps, ticketing systems, CRMs, code repositories — and reasons across all of them to return permission-aware answers. Every response cites its sources, and every answer respects the access controls you already have in place.
+The "AI" distinction isn't a feature bolted onto a wiki. It refers to a fundamentally different architecture. The system indexes content from [more than 250 connected sources](https://www.glean.com/connectors) - document stores, messaging apps, ticketing systems, CRMs, code repositories - and reasons across all of them to return permission-aware answers. Every response cites its sources, and every answer respects the access controls you already have in place.
 
 Most AI knowledge management platforms include three layers that work together:
 
 -   **Unified search** connects all enterprise tools and surfaces answers from across the organization in one query. It indexes content from more than 250 apps while preserving each user's existing permissions.
--   [**Conversational assistant**](https://www.glean.com/product/assistant) lets employees ask questions in natural language and receive synthesized, cited answers grounded in company knowledge — not generic internet responses. The system learns from organizational signals to rank results by relevance to each person.
+-   [**Conversational assistant**](https://www.glean.com/product/assistant) lets employees ask questions in natural language and receive synthesized, cited answers grounded in company knowledge - not generic internet responses. The system learns from organizational signals to rank results by relevance to each person.
 -   **Agents** automate knowledge workflows. They draft responses, update records, triage tickets, or orchestrate multi-step processes with enterprise governance. This moves teams from "search and read" to "ask and act."
 
-AI knowledge management software solves a structural problem that wikis cannot. Wikis only search what's been manually written inside them. AI knowledge management connects everything — conversations, tickets, emails, documentation — and makes it all retrievable through a single interface.
+AI knowledge management software solves a structural problem that wikis cannot. Wikis only search what's been manually written inside them. AI knowledge management connects everything - conversations, tickets, emails, documentation - and makes it all retrievable through a single interface.
 
 ## Why do traditional wikis and intranets fall short?
 
-Wikis are collaborative authoring tools designed for manual documentation. Employees write pages, organize them into hierarchies, and hope others can find what they need — yet [47% of digital workers](https://www.gartner.com/en/newsroom/press-releases/2023-05-10-gartner-survey-reveals-47-percent-of-digital-workers-struggle-to-find-the-information-needed-to-effectively-perform-their-jobs) struggle to find the information they need to do their jobs. The approach works when your company has a few dozen contributors. It breaks down as organizations scale into the hundreds of employees, when no one can track what exists or where it lives.
+Wikis are collaborative authoring tools designed for manual documentation. Employees write pages, organize them into hierarchies, and hope others can find what they need - yet [47% of digital workers](https://www.gartner.com/en/newsroom/press-releases/2023-05-10-gartner-survey-reveals-47-percent-of-digital-workers-struggle-to-find-the-information-needed-to-effectively-perform-their-jobs) struggle to find the information they need to do their jobs. The approach works when your company has a few dozen contributors. It breaks down as organizations scale into the hundreds of employees, when no one can track what exists or where it lives.
 
 The structural problem is simple: wikis rely on the searcher already knowing what to look for. Their keyword-based search returns lists of pages, not answers. There's no awareness of who is searching or what they're authorized to see. Content decays silently with no ownership model, verification workflow, or staleness detection. And knowledge lives only in what someone explicitly wrote down, missing everything that happens in conversations, tickets, emails, and Slack threads.
 
-Intranets share the same retrieval weakness. They serve a broader purpose (news feeds, employee directories, HR portals) but remain portals people visit rather than systems that deliver knowledge where work happens. Both wikis and intranets create information silos by design. They house only manually added content while the rest of the organization's knowledge stays [scattered across](https://www.gartner.com/en/newsroom/press-releases/2023-05-10-gartner-survey-reveals-47-percent-of-digital-workers-struggle-to-find-the-information-needed-to-effectively-perform-their-jobs) dozens to hundreds of other tools — the average worker now juggles 11 applications, up from six in 2019. A wiki that only searches itself is structurally insufficient.
+Intranets share the same retrieval weakness. They serve a broader purpose (news feeds, employee directories, HR portals) but remain portals people visit rather than systems that deliver knowledge where work happens. Both wikis and intranets create information silos by design. They house only manually added content while the rest of the organization's knowledge stays [scattered across](https://www.gartner.com/en/newsroom/press-releases/2023-05-10-gartner-survey-reveals-47-percent-of-digital-workers-struggle-to-find-the-information-needed-to-effectively-perform-their-jobs) dozens to hundreds of other tools - the average worker now juggles 11 applications, up from six in 2019. A wiki that only searches itself is structurally insufficient.
 
 ## How does AI knowledge management improve information retrieval?
 
@@ -141,7 +141,7 @@ AI knowledge management delivers the most value when information is scattered, t
 
 Start with how employees actually find information today.
 
-**How much time goes to searching?** If employees lose meaningful time hunting for answers across disconnected tools, the productivity case for change is already clear. Track how often people re-ask the same questions or [recreate work that already exists](https://www.apqc.org/blog/km-makes-knowledge-workers-more-productive-and-less-stressed-out) — APQC found knowledge workers lose about two hours a week doing exactly that.
+**How much time goes to searching?** If employees lose meaningful time hunting for answers across disconnected tools, the productivity case for change is already clear. Track how often people re-ask the same questions or [recreate work that already exists](https://www.apqc.org/blog/km-makes-knowledge-workers-more-productive-and-less-stressed-out) - APQC found knowledge workers lose about two hours a week doing exactly that.
 
 **Does your current wiki surface answers or just links?** If employees get a list of pages and still have to read, compare, and synthesize, the tool is creating friction, not removing it.
 

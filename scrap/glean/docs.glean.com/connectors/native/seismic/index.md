@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:29:40.245Z"
 ---
 On this page
 
-The Seismic connector indexes published content profiles so people can search them in Glean. Permissions are enforced at query time down to the record level, so results match what each user may access in Seismic. The connector uses Seismic’s **Reporting API** and only surfaces published library content—not workspace or unpublished files.
+The Seismic connector indexes published content profiles so people can search them in Glean. Permissions are enforced at query time down to the record level, so results match what each user may access in Seismic. The connector uses Seismic’s **Reporting API** and only surfaces published library content-not workspace or unpublished files.
 
 ## Supported features and limitations[​](#supported-features-and-limitations "Direct link to Supported features and limitations")
 
@@ -103,7 +103,7 @@ To obtain the client ID and client secret in your Seismic tenant:
     
     1.  In the **Authentication** tab, select **OAuth2 - Authorization Code Flow**.
         
-    2.  On the **OAuth2 Information** page, set the redirect URL to your tenant URL (for example `https://yourtenant.seismic.com/`). The client ID is generated automatically. Generate the **Client secret** (it is hidden at first—show and copy it when ready).
+    2.  On the **OAuth2 Information** page, set the redirect URL to your tenant URL (for example `https://yourtenant.seismic.com/`). The client ID is generated automatically. Generate the **Client secret** (it is hidden at first-show and copy it when ready).
         
     3.  Under scopes, select exactly:
         

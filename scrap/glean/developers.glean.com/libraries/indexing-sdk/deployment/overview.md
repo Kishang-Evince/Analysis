@@ -49,7 +49,7 @@ gcloud container clusters describe "$CLUSTER_NAME" \  --location "$GKE_LOCATION"
 
 `region` in `glean_deployment.yaml` is the GKE **location** accepted by `gcloud ... --location`; it may be a region such as `us-central1` or a zone such as `us-central1-a`.
 
-For a private-only cluster with a GKE DNS control-plane endpoint, set `cluster_endpoint` to its bare `*.gke.goog` hostname—no `https://`, port, path, or trailing slash. The generated Kubernetes provider uses system trust for an explicit DNS endpoint and the cluster CA for the auto-discovered IP endpoint. The machine running Terraform must still have network access to the selected endpoint.
+For a private-only cluster with a GKE DNS control-plane endpoint, set `cluster_endpoint` to its bare `*.gke.goog` hostname-no `https://`, port, path, or trailing slash. The generated Kubernetes provider uses system trust for an explicit DNS endpoint and the cluster CA for the auto-discovered IP endpoint. The machine running Terraform must still have network access to the selected endpoint.
 
 ### AWS prerequisites[​](#aws-prerequisites "Direct link to AWS prerequisites")
 
@@ -169,7 +169,7 @@ glean-idx deploy runglean-idx deploy statusglean-idx deploy logs --followglean-i
 
 The generated workload can access only the secret names recorded by the latest successful `secrets upload`. GCP receives one secret-level IAM member per key; AWS resolves and grants the exact secret ARNs. The workload cannot enumerate secrets. Missing declared secrets fail startup.
 
-`GLEAN_SERVER_URL` and `GLEAN_INDEXING_API_TOKEN` are always required. Add every source credential read by your factory—for example `WIKI_API_TOKEN`—to `.env` as well. Never commit `.env`, copy it into the image, put secret values in YAML, or pass them as Terraform variables.
+`GLEAN_SERVER_URL` and `GLEAN_INDEXING_API_TOKEN` are always required. Add every source credential read by your factory-for example `WIKI_API_TOKEN`-to `.env` as well. Never commit `.env`, copy it into the image, put secret values in YAML, or pass them as Terraform variables.
 
 ## Teardown and retained resources[​](#teardown-and-retained-resources "Direct link to Teardown and retained resources")
 

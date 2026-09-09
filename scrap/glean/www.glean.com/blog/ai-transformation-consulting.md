@@ -89,7 +89,7 @@ But this shift is doing more than creating demand. It is also putting pressure o
 
 However, firms are experiencing real friction that AI can solve for. Partners are still stitching together proposals and executive narratives from fragmented context. Engagement managers are losing hours every week to status updates, prior deliverables, and workstream coordination. Associates are still spending large parts of their day searching for slides, definitions, examples, and subject-matter expertise instead of moving the work forward.
 
-That is why getting AI transformation right matters so much for consulting right now. Not as another isolated chatbot, and not as a novelty layered on top of old workflows. The real opportunity is to turn a firm’s proprietary knowledge, delivery history, client context, and internal expertise into a usable system of action — one that helps teams sell better, deliver faster, prove value more clearly, and scale what they know across the business.
+That is why getting AI transformation right matters so much for consulting right now. Not as another isolated chatbot, and not as a novelty layered on top of old workflows. The real opportunity is to turn a firm’s proprietary knowledge, delivery history, client context, and internal expertise into a usable system of action - one that helps teams sell better, deliver faster, prove value more clearly, and scale what they know across the business.
 
 ## What exactly is GenAI for consulting?
 
@@ -141,7 +141,7 @@ Together, these use cases map directly to the firm outcomes that matter most: **
 
 ## What to look for in an AI platform for consulting
 
-A capable AI platform for consulting workflows needs more than strong models—they need the right operating layer with these components:
+A capable AI platform for consulting workflows needs more than strong models-they need the right operating layer with these components:
 
 -   A platform that can unify enterprise knowledge across connected applications and make it easy to retrieve relevant context without forcing a rip-and-replace of the existing stack.
 -   A centralized repository with assistants and agents in one plane, so teams can move from finding information to taking action without bouncing between disconnected tools.
@@ -162,15 +162,15 @@ phData offers a strong example of how AI can create value inside a technical ser
 
 That matters because the challenge is not just finding documents faster. It is helping technical teams get up to speed quickly when they are onboarding, starting a sprint, understanding a codebase, or catching up on past customer conversations. By connecting context across systems, phData can make the knowledge behind delivery work easier to access and easier to act on.
 
-phData is also using Glean to bring AI more directly into day-to-day engineering workflows. Instead of forcing teams to piece together context across tools, Glean helps them move from question to action inside the systems they already use — whether that means surfacing the right information, generating code, or helping kick off follow-on work in tools like Jira and GitHub. The result is less friction, less tool switching, and a smoother path from understanding to execution.
+phData is also using Glean to bring AI more directly into day-to-day engineering workflows. Instead of forcing teams to piece together context across tools, Glean helps them move from question to action inside the systems they already use - whether that means surfacing the right information, generating code, or helping kick off follow-on work in tools like Jira and GitHub. The result is less friction, less tool switching, and a smoother path from understanding to execution.
 
-That impact shows up in customer-facing work too. phData has used Glean to reduce the time engineers spend on research and providing solutions to customers from days to hours — a strong example of how better access to enterprise context can improve both internal productivity and external delivery. For consulting and technical services firms, that is the bigger lesson: the value of AI is not just faster output. It is giving teams the context they need to move faster, work with more confidence, and deliver better outcomes for customers.
+That impact shows up in customer-facing work too. phData has used Glean to reduce the time engineers spend on research and providing solutions to customers from days to hours - a strong example of how better access to enterprise context can improve both internal productivity and external delivery. For consulting and technical services firms, that is the bigger lesson: the value of AI is not just faster output. It is giving teams the context they need to move faster, work with more confidence, and deliver better outcomes for customers.
 
 ## From time and materials to measurable outcomes
 
 The consulting firms that win in the next phase of AI adoption will be the ones that redesign work around shared context, human judgment, and measurable impact.
 
-In practice, that means more than making consultants faster at producing deliverables. It means enabling teams with an AI coworker that can operationalize what they already know — turning past proposals, case studies, client context, and delivery knowledge into an advantage teams can actually use. The result is better-informed junior consultants, engagement leaders with clearer visibility into delivery risk and staffing, and go-to-market teams that can respond faster with more repeatable, higher-quality work.
+In practice, that means more than making consultants faster at producing deliverables. It means enabling teams with an AI coworker that can operationalize what they already know - turning past proposals, case studies, client context, and delivery knowledge into an advantage teams can actually use. The result is better-informed junior consultants, engagement leaders with clearer visibility into delivery risk and staffing, and go-to-market teams that can respond faster with more repeatable, higher-quality work.
 
 That is where AI becomes strategically valuable for consulting firms: not as a point tool for isolated productivity gains, but as a way to make expertise more accessible, execution more consistent, and outcomes more measurable across the lifecycle of an engagement.
 

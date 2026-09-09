@@ -11,7 +11,7 @@ Glean uses [GCP service account impersonation](https://cloud.google.com/iam/docs
 
 ## How it works[​](#how-it-works "Direct link to How it works")
 
-When a Glean engineer requires elevated access to your GCP project — for example, to investigate an infrastructure issue or perform a maintenance operation — the following flow is used:
+When a Glean engineer requires elevated access to your GCP project - for example, to investigate an infrastructure issue or perform a maintenance operation - the following flow is used:
 
 1.  The engineer submits an access request through Glean's internal access-management system.
 2.  The request is reviewed and approved by Glean management or on-call leadership.
@@ -30,7 +30,7 @@ This model provides several security improvements:
 -   **No static keys**: Glean does not hold or store any long-lived service account keys for elevated access. Short-lived credentials are generated on demand and expire automatically.
 -   **Identity-preserving audit trail**: Every API call made through impersonation records the identity of the individual Glean engineer in your [GCP audit logs](https://cloud.google.com/logging/docs/audit). This replaces the previous model where actions appeared under a shared service account identity.
 -   **Time-bound access**: Impersonation grants are short-lived and automatically revoked. Engineers cannot retain elevated access beyond the approved window.
--   **Centralized access control** — All impersonation grants are managed through Glean's internal access-management system, which enforces approval workflows and logs all requests.
+-   **Centralized access control** - All impersonation grants are managed through Glean's internal access-management system, which enforces approval workflows and logs all requests.
 
 ## Audit log visibility[​](#audit-log-visibility "Direct link to Audit log visibility")
 
@@ -60,6 +60,6 @@ Restricting Glean's access to your environment may impact Glean's ability to dep
 
 ## Related resources[​](#related-resources "Direct link to Related resources")
 
--   [Managing the GCP service account with Owner role](/security/cloud-prem/gcp/owner-role) — Details on the service account used for initial deployment and ongoing maintenance.
+-   [Managing the GCP service account with Owner role](/security/cloud-prem/gcp/owner-role) - Details on the service account used for initial deployment and ongoing maintenance.
 -   [GCP service account impersonation (Google documentation)](https://cloud.google.com/iam/docs/service-account-impersonation)
 -   [Monitoring service account usage patterns (Google documentation)](https://cloud.google.com/iam/docs/service-account-monitoring)

@@ -2,7 +2,7 @@
 url: "https://www.glean.com/content-hub"
 canonical: "https://www.glean.com/content-hub"
 title: "Enterprise AI content hub: guides & studies | Glean Work AI"
-description: "Explore Glean's content hub for enterprise AI resources — blogs, guides, videos, webinars, and news on AI assistants, agents, and knowledge management."
+description: "Explore Glean's content hub for enterprise AI resources - blogs, guides, videos, webinars, and news on AI assistants, agents, and knowledge management."
 fetched_at: "2026-09-01T13:25:40.229Z"
 ---
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6a79b6603b3a40ad1851f142_e23f283b8b42c1eabf362e323a03c463_cb-mobile-herobg.webp)
@@ -1419,7 +1419,7 @@ Integrations
 
 Data Analysis
 
-### Introducing Snowflake in Glean Assistant — and Why Glean Was Named 2026 AMER Snowflake Product Innovation Partner of the Year
+### Introducing Snowflake in Glean Assistant - and Why Glean Was Named 2026 AMER Snowflake Product Innovation Partner of the Year
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a0ae02225a70d46713e5d4f_Kelly%20Huang.webp)
 
@@ -2915,7 +2915,7 @@ AI Assistant
 
 Knowledge Graphs
 
-### Context is the next data platform—and why context graphs are key to understanding processes
+### Context is the next data platform-and why context graphs are key to understanding processes
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a07483653e8ea8ef7c77930_arvind.png)
 

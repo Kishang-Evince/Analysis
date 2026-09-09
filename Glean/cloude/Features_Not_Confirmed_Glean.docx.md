@@ -1,5 +1,5 @@
 **Glean Tier 3 Advanced Evaluation**  
-**Features Not Confirmed — Full List**
+**Features Not Confirmed - Full List**
 
 *Every Glean capability that could not be independently verified \- either a marketing claim without documentary backing, or a fact that requires vendor disclosure or hands-on tenant access (Section 4.10.1, "Features Not Confirmed")*
 

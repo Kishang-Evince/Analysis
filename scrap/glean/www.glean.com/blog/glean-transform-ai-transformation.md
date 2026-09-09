@@ -91,13 +91,13 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Every company is spending more on AI, but few of them can prove it's working. That's not really an AI problem. It's that most companies don't have an accurate, current picture of how work happens inside their own walls — so when they try to fix something, they can't tell you what actually changed.
+Every company is spending more on AI, but few of them can prove it's working. That's not really an AI problem. It's that most companies don't have an accurate, current picture of how work happens inside their own walls - so when they try to fix something, they can't tell you what actually changed.
 
-That's the gap Glean Transform is built to close. Glean Transform is a software solution that maps how work actually happens across your company, recommends what to change, and measures whether the change worked. It's built on the same enterprise activity graph — every doc, message, call, and CRM update — that already powers Glean's [assistant](https://www.glean.com/blog/best-ai-assistants-productivity) and agents. Instead of taking the old approach to understanding company processes by hiring a consultant to interview a sample of employees and extrapolating from there, Transform mines what people are actually doing to understand how work *really* gets done.
+That's the gap Glean Transform is built to close. Glean Transform is a software solution that maps how work actually happens across your company, recommends what to change, and measures whether the change worked. It's built on the same enterprise activity graph - every doc, message, call, and CRM update - that already powers Glean's [assistant](https://www.glean.com/blog/best-ai-assistants-productivity) and agents. Instead of taking the old approach to understanding company processes by hiring a consultant to interview a sample of employees and extrapolating from there, Transform mines what people are actually doing to understand how work *really* gets done.
 
 ### Seeing how work actually happens
 
-Glean already builds an individual activity map for every employee — what projects you're working on, what you've touched to move them forward, and what's still open. This is pulled directly from your calendar, Slack, docs, and more, all without you having to tell Glean yourself. Transform takes that same signal and aggregates it, anonymized, by job family, across an entire function.
+Glean already builds an individual activity map for every employee - what projects you're working on, what you've touched to move them forward, and what's still open. This is pulled directly from your calendar, Slack, docs, and more, all without you having to tell Glean yourself. Transform takes that same signal and aggregates it, anonymized, by job family, across an entire function.
 
 Point it at a Sales team, and it surfaces the workflows eating the most time across every seller, like discovery work and use case scoping. Transform identifies the roles involved (account executives and business development folks), breaks the process into steps and sub-steps, and estimates the time spent on each, based on session duration, call length, and document activity.
 

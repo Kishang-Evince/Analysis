@@ -30,7 +30,7 @@ Use a dedicated Egnyte service account instead of a personal admin account. Serv
 
 ## Authorize additional admin accounts[​](#authorize-additional-admin-accounts "Direct link to Authorize additional admin accounts")
 
-Large Egnyte deployments can hit per-token API rate limits, making full crawls and incremental crawls slow and unpredictable. By authorizing multiple Egnyte admin accounts, Glean spreads crawl traffic across tokens, indexing content faster and keeping your data fresher. Permissions are unaffected — Glean continues to enforce Egnyte's native user and group-level access controls regardless of how many admin accounts are authorized.
+Large Egnyte deployments can hit per-token API rate limits, making full crawls and incremental crawls slow and unpredictable. By authorizing multiple Egnyte admin accounts, Glean spreads crawl traffic across tokens, indexing content faster and keeping your data fresher. Permissions are unaffected - Glean continues to enforce Egnyte's native user and group-level access controls regardless of how many admin accounts are authorized.
 
 1.  In the Glean Admin console, go to **Connectors > Egnyte > Setup**.
 2.  Click **Authorize additional admin**.

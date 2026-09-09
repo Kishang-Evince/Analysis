@@ -19,7 +19,7 @@ Any query that specifies `app:onedrive`, or search results explicitly filtered f
 
 ### Assistant and agents[​](#assistant-and-agents "Direct link to Assistant and agents")
 
-When Assistant or an agent is highly confident that a query is about OneDrive — for example, when the user mentions OneDrive or includes a link — it adds real-time search results from that source to the chat context.
+When Assistant or an agent is highly confident that a query is about OneDrive - for example, when the user mentions OneDrive or includes a link - it adds real-time search results from that source to the chat context.
 
 Explicitly specifying `app:onedrive` in a query or agent run also triggers real-time results. Assistant and agents can also scope real-time results to a specific OneDrive folder.
 

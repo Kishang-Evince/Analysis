@@ -33,9 +33,9 @@ Begins execution timing and assigns a `run_id` for the run.
 
 2
 
-Identity crawl — `get_identities()`Your code
+Identity crawl - `get_identities()`Your code
 
-Users are bulk-indexed first. If groups are returned, memberships must be too — otherwise the SDK raises `InconsistentDataError`, because groups without memberships produce ACLs that can never match anyone.
+Users are bulk-indexed first. If groups are returned, memberships must be too - otherwise the SDK raises `InconsistentDataError`, because groups without memberships produce ACLs that can never match anyone.
 
 3
 
@@ -45,13 +45,13 @@ On an incremental crawl, calls `_get_last_crawl_timestamp()`. The base implement
 
 4
 
-Content crawl — `get_data()`Your code
+Content crawl - `get_data()`Your code
 
 Delegates to your data client’s `get_source_data()`.
 
 5
 
-Transform — `transform()`Your code
+Transform - `transform()`Your code
 
 Your mapping from source records to Glean entity definitions.
 
@@ -87,7 +87,7 @@ Every SDK exception derives from `GleanError` and carries a `fix_suggestion` and
 GleanError├── GleanConfigurationError (also a ValueError)│   ├── MissingEnvironmentVariableError│   └── InvalidDatasourceConfigError└── GleanValidationError (also a ValueError)    ├── InvalidPropertyError    ├── InconsistentDataError    └── UnsupportedConnectorTypeError
 ```
 
-Both branches subclass `ValueError`, so existing `except ValueError` handlers keep working. See [Error handling](/libraries/indexing-sdk/push/error-handling) for what to catch and — more importantly — what never to swallow.
+Both branches subclass `ValueError`, so existing `except ValueError` handlers keep working. See [Error handling](/libraries/indexing-sdk/push/error-handling) for what to catch and - more importantly - what never to swallow.
 
 ## Configuration[​](#configuration "Direct link to Configuration")
 

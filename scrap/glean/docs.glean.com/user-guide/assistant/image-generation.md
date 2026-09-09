@@ -76,7 +76,7 @@ Click the image or link to open it in full size, then download it, paste it into
 
 -   *"Search for my scope and what I work on. Then generate an image that describes it visually."*
 
-This lets the assistant ground the image in your recent work—projects, artifacts, and topics tied to your account.
+This lets the assistant ground the image in your recent work-projects, artifacts, and topics tied to your account.
 
 **Purely creative:**
 

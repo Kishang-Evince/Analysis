@@ -11,7 +11,7 @@ On this page
 
 # Make your GitLab Cloud projects searchable in Glean
 
-Indexes merge requests, code, issues, wikis, and epics from GitLab.com for permission-aware search — so engineers find the code, reviews, and decisions they need without leaving Glean.
+Indexes merge requests, code, issues, wikis, and epics from GitLab.com for permission-aware search - so engineers find the code, reviews, and decisions they need without leaving Glean.
 
 Version controlIndexed by defaultAccess tokenPermission-aware
 

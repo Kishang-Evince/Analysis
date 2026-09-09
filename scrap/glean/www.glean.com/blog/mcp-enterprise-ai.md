@@ -87,7 +87,7 @@ Last week, Charles Chen published “[MCP is Dead; Long Live MCP!](https://chrls
 
 For a lot of local, single-user workflows, the argument is fair. If you’re building on your own machine, working with a small set of tools, and controlling the full environment yourself, MCP can add structure you don’t need.
 
-But, the problem is different at the company scale. You are not just trying to help one model call one tool on one laptop. You are trying to  roll out AI safely and consistently across an entire organization. When you zoom out to what it takes to run AI as a governed, observable service for thousands of people — that’s where MCP starts to matter.
+But, the problem is different at the company scale. You are not just trying to help one model call one tool on one laptop. You are trying to  roll out AI safely and consistently across an entire organization. When you zoom out to what it takes to run AI as a governed, observable service for thousands of people - that’s where MCP starts to matter.
 
 The useful question isn’t whether or not MCP is dead. It’s **when does MCP add unnecessary complexity, and when is it doing real work for you?**
 
@@ -148,7 +148,7 @@ In a 10,000‑person company with five AI tools in play, “just give the agent 
 
 A remote MCP server naturally fits into this role: the server holds the secrets; users and hosts authenticate to the server; the server fans out to underlying APIs.
 
-From Glean’s perspective, this is exactly why we paired remote MCP servers with centralized OAuth and Glean Protect — so customers can turn tools on and off in one place and have permissions enforced end‑to‑end.
+From Glean’s perspective, this is exactly why we paired remote MCP servers with centralized OAuth and Glean Protect - so customers can turn tools on and off in one place and have permissions enforced end‑to‑end.
 
 ### 2\. Org‑wide telemetry and observability
 

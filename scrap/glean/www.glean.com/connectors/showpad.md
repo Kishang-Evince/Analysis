@@ -20,7 +20,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-The right deck, playbook, or case study shouldn't take three tabs to find. Showpad in Glean puts approved enablement content where reps are already working — with the account context that makes it useful.
+The right deck, playbook, or case study shouldn't take three tabs to find. Showpad in Glean puts approved enablement content where reps are already working - with the account context that makes it useful.
 
 ## Work AI that works.
 

@@ -2,7 +2,7 @@
 url: "https://docs.glean.com/connectors/native/box/"
 canonical: "https://docs.glean.com/connectors/native/box/"
 title: "Box"
-description: "Make your Box content searchable in Glean — folders, files, Box Notes, and comments, scoped to each user's permissions."
+description: "Make your Box content searchable in Glean - folders, files, Box Notes, and comments, scoped to each user's permissions."
 fetched_at: "2026-09-01T13:29:23.350Z"
 ---
 On this page

@@ -65,7 +65,7 @@ Share this article:
 
 To connect an AI assistant to your live chat support system, integrate it with your help desk and CRM through native connectors. Ground it in your approved knowledge sources, then set rules that route complex conversations to human agents.
 
-An AI assistant for live chat reads customer intent, pulls the right answer from your knowledge base, and responds in real time across web, chat, and messaging channels. Done well, it deflects repetitive tickets and speeds first response without trapping customers in an automated loop — and [51% of consumers](https://www.zendesk.com/blog/customer-service/satisfaction/customer-service-statistics/) say they prefer interacting with a bot over a human when they want immediate service.
+An AI assistant for live chat reads customer intent, pulls the right answer from your knowledge base, and responds in real time across web, chat, and messaging channels. Done well, it deflects repetitive tickets and speeds first response without trapping customers in an automated loop - and [51% of consumers](https://www.zendesk.com/blog/customer-service/satisfaction/customer-service-statistics/) say they prefer interacting with a bot over a human when they want immediate service.
 
 The bar keeps rising. In its 2025 CX Trends report, Zendesk found that 61% of consumers expect more personalized service now that AI can analyze their interactions, which puts pressure on every support team to answer faster and more accurately.
 
@@ -73,7 +73,7 @@ The bar keeps rising. In its 2025 CX Trends report, Zendesk found that 61% of co
 
 Start by deciding what role [an AI assistant](https://www.glean.com/ai-assistant) will play. It can support customers directly in the chat window, work behind the scenes to draft replies and surface context for human agents, or do both in separate workflows. That decision shapes every setting that follows.
 
-Frame the project around outcomes you can measure: faster first response, fewer repetitive tickets, cleaner agent handoffs, and quick access to customer context. The stakes are real — Medallia found that CX leaders are [26x more likely](https://www.medallia.com/wp-content/uploads/pdf/resources/Medallia-The-New-Customer-Expectations-for-the-Contact-Center-Report.pdf) than laggards to see year-over-year revenue growth of 20% or more. A full rollout moves through a few stages:
+Frame the project around outcomes you can measure: faster first response, fewer repetitive tickets, cleaner agent handoffs, and quick access to customer context. The stakes are real - Medallia found that CX leaders are [26x more likely](https://www.medallia.com/wp-content/uploads/pdf/resources/Medallia-The-New-Customer-Expectations-for-the-Contact-Center-Report.pdf) than laggards to see year-over-year revenue growth of 20% or more. A full rollout moves through a few stages:
 
 -   Define the use case and the ticket types you want the assistant to handle.
 -   Connect your help desk, CRM, and knowledge sources so the assistant pulls real-time context.
@@ -85,7 +85,7 @@ The payoff is measurable. In March 2025, Gartner predicted that agentic AI combi
 
 ## 1\. Define the support jobs the assistant should handle
 
-Start by listing the requests your team handles most, then decide which ones the assistant should own. High-volume, low-risk questions make the best first targets: order status, account access, policy questions, appointment changes, and simple troubleshooting. These repeat daily, follow clear patterns, and rarely need human judgment — and [nearly four in five](https://www.intercom.com/blog/meeting-customer-support-expectations/) people say chatbots and online chat can be preferable to other channels in some situations.
+Start by listing the requests your team handles most, then decide which ones the assistant should own. High-volume, low-risk questions make the best first targets: order status, account access, policy questions, appointment changes, and simple troubleshooting. These repeat daily, follow clear patterns, and rarely need human judgment - and [nearly four in five](https://www.intercom.com/blog/meeting-customer-support-expectations/) people say chatbots and online chat can be preferable to other channels in some situations.
 
 Sort the work into three groups. First, answer only, where the assistant retrieves and explains. Second, answer and take action, where it also updates a record or creates a ticket. Third, escalate, where a person takes over. This split keeps early [customer support automation](https://www.glean.com/blog/ai-customer-service-value) focused and easy to measure.
 

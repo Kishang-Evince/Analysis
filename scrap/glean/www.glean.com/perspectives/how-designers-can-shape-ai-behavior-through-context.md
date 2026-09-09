@@ -65,7 +65,7 @@ Share this article:
 
 The rise of AI in enterprise environments has fundamentally shifted how designers approach user experience, moving beyond traditional interface design to shape the very behavior of intelligent systems. Rather than simply crafting [prompts](https://www.glean.com/blog/what-is-an-ai-prompt) or commands, today's designers must create contextual frameworks that guide AI to understand not just what users ask, but what they truly need within their specific work environment.
 
-Context has emerged as the critical bridge between human intention and AI capability, transforming static interactions into dynamic, adaptive experiences. When AI systems understand the full scope of a user's situation—their role, current task, organizational knowledge, and workflow patterns—they can deliver responses that feel intuitive rather than mechanical.
+Context has emerged as the critical bridge between human intention and AI capability, transforming static interactions into dynamic, adaptive experiences. When AI systems understand the full scope of a user's situation-their role, current task, organizational knowledge, and workflow patterns-they can deliver responses that feel intuitive rather than mechanical.
 
 This evolution demands a new design paradigm: one where UX flows become the primary mechanism for teaching AI how to behave appropriately across diverse enterprise scenarios. By embedding contextual understanding into every interaction point, designers can create AI systems that adapt to users' needs rather than forcing users to adapt to the technology.
 
@@ -73,7 +73,7 @@ This evolution demands a new design paradigm: one where UX flows become the prim
 
 Context in AI design represents the foundational layer that transforms generic AI capabilities into tailored enterprise solutions. At its core, context encompasses the rich tapestry of information surrounding each user interaction: the user's department, their current project phase, historical patterns of information access, team dynamics, and even temporal factors like deadlines or quarterly cycles. This multidimensional understanding enables AI to move beyond surface-level responses to deliver genuinely helpful insights.
 
-The implementation of contextual AI design relies heavily on sophisticated data structures like [knowledge graphs](https://www.glean.com/blog/knowledge-graph-agentic-engine), which map relationships between people, documents, projects, and processes across an organization. These graphs enable multi-hop reasoning—allowing AI to connect disparate pieces of information that might seem unrelated but hold critical relevance for a specific user's query. For instance, when a sales representative asks about a client proposal, the AI can traverse the knowledge graph to understand not just the proposal document itself, but also recent email exchanges, similar successful proposals from the team, relevant product updates, and even the client's interaction history.
+The implementation of contextual AI design relies heavily on sophisticated data structures like [knowledge graphs](https://www.glean.com/blog/knowledge-graph-agentic-engine), which map relationships between people, documents, projects, and processes across an organization. These graphs enable multi-hop reasoning-allowing AI to connect disparate pieces of information that might seem unrelated but hold critical relevance for a specific user's query. For instance, when a sales representative asks about a client proposal, the AI can traverse the knowledge graph to understand not just the proposal document itself, but also recent email exchanges, similar successful proposals from the team, relevant product updates, and even the client's interaction history.
 
 ### Building contextual intelligence
 
@@ -83,14 +83,14 @@ Creating truly contextual AI requires three fundamental components: While Google
     
 -   **Historical patterns**: By analyzing past interactions and behaviors, AI systems can anticipate needs and preferences. This includes understanding communication styles, frequently accessed resources, and typical workflow sequences that vary by role and individual.
     
--   **Organizational knowledge**: The AI needs access to the collective intelligence of the enterprise—from formal documentation and policies to informal knowledge captured in conversations and collaborative work. This broader context ensures responses align with company standards and leverage institutional wisdom.
+-   **Organizational knowledge**: The AI needs access to the collective intelligence of the enterprise-from formal documentation and policies to informal knowledge captured in conversations and collaborative work. This broader context ensures responses align with company standards and leverage institutional wisdom.
     
 
 ### The role of agentic reasoning
 
 Agentic reasoning represents the next evolution in contextual AI design, where systems don't just respond to queries but actively reason through complex scenarios. This capability allows AI to decompose intricate business problems into manageable steps, considering context at each decision point. For example, when an HR professional needs to create a new employee onboarding plan, an agentic AI system can break this down into subtasks: reviewing current policies, identifying role-specific requirements, checking compliance regulations, and suggesting a timeline based on past successful onboardings. Companies that excel in three key AI adoption areas are [32 times](https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/agentic-ai-operating-model) more likely to achieve top-tier business performance than those with minimal implementation. 95% of employees in organizations with the highest levels of agentic AI use report improved job satisfaction.
 
-The power of [agentic reasoning](https://www.glean.com/blog/a-complete-guide-to-agentic-reasoning) lies in its ability to maintain context across these multiple steps, ensuring each action builds coherently toward the ultimate goal. This approach mirrors how experienced professionals tackle complex tasks—by understanding the full context, breaking down the problem, and systematically working through solutions while adapting to new information along the way.
+The power of [agentic reasoning](https://www.glean.com/blog/a-complete-guide-to-agentic-reasoning) lies in its ability to maintain context across these multiple steps, ensuring each action builds coherently toward the ultimate goal. This approach mirrors how experienced professionals tackle complex tasks-by understanding the full context, breaking down the problem, and systematically working through solutions while adapting to new information along the way.
 
 ## Why designers need to focus on UX flows
 

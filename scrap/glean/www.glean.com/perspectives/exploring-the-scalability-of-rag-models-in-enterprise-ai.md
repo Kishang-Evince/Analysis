@@ -63,7 +63,7 @@ Share this article:
 
 # How do RAG models scale in enterprise AI?
 
-RAG models scale in enterprise AI by separating the knowledge base from the model itself, so organizations can add new data sources, teams, and use cases without retraining the underlying LLM — keeping answers current, cited, and permission-controlled as usage grows.
+RAG models scale in enterprise AI by separating the knowledge base from the model itself, so organizations can add new data sources, teams, and use cases without retraining the underlying LLM - keeping answers current, cited, and permission-controlled as usage grows.
 
 Retrieval-augmented generation (RAG) connects a large language model (LLM) to your external knowledge sources at the moment of the query. Instead of answering only from patterns baked into its training weights, the model retrieves relevant company information first, then generates a response grounded in that material. If you want a deeper primer, start with [what RAG models are](https://www.glean.com/blog/rag-models-enterprise-ai).
 

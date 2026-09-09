@@ -13,7 +13,7 @@ This page describes what the monitoring probe does, what traffic patterns to exp
 
 ## Purpose[​](#purpose "Direct link to Purpose")
 
-The monitoring probe continuously validates that the chat file upload pipeline — which handles file attachments in Glean Assistant conversations — is healthy end to end. Each probe cycle uploads a small synthetic test file, verifies that it reaches a terminal processing state, and then deletes it. No customer data is read, modified, or retained by the probe.
+The monitoring probe continuously validates that the chat file upload pipeline - which handles file attachments in Glean Assistant conversations - is healthy end to end. Each probe cycle uploads a small synthetic test file, verifies that it reaches a terminal processing state, and then deletes it. No customer data is read, modified, or retained by the probe.
 
 ## Request patterns[​](#request-patterns "Direct link to Request patterns")
 
@@ -92,4 +92,4 @@ Turning off the monitoring probe reduces Glean's ability to proactively detect a
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [Glean IP Ranges](/security/networking/glean-ip-ranges) — IP ranges to allowlist for Glean connectivity
+-   [Glean IP Ranges](/security/networking/glean-ip-ranges) - IP ranges to allowlist for Glean connectivity

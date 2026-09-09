@@ -2,7 +2,7 @@
 url: "https://www.glean.com/connectors/databricks"
 canonical: "https://www.glean.com/connectors/databricks"
 title: "Databricks integration with Glean | Glean Work AI"
-description: "Ask Databricks questions in natural language from Glean. Search Genie, AI/BI dashboards, and prepared SQL — with full business context behind the data."
+description: "Ask Databricks questions in natural language from Glean. Search Genie, AI/BI dashboards, and prepared SQL - with full business context behind the data."
 fetched_at: "2026-09-01T13:25:44.210Z"
 ---
 ### Overview

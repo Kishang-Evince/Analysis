@@ -36,7 +36,7 @@ Create a complete overview for every new customer so teams begin with the same c
 
 ## Example output
 
-### New customer overview — Acme Corp. (sample)
+### New customer overview - Acme Corp. (sample)
 
 ‍
 
@@ -64,19 +64,19 @@ Relational: Executive sponsor for adoption reviews not named
 
 **Action items**
 
-High: Finalize mutual action plan and success measures with Jordan Lee and Priya Shah — owner: CSM; due: Dec 6
+High: Finalize mutual action plan and success measures with Jordan Lee and Priya Shah - owner: CSM; due: Dec 6
 
-High: Admin enablement for priority workflows — owner: SE + CSM; due: Dec 8
+High: Admin enablement for priority workflows - owner: SE + CSM; due: Dec 8
 
-Medium: Define pilot cohort and reporting cadence — owner: Customer admin; due: Dec 12
+Medium: Define pilot cohort and reporting cadence - owner: Customer admin; due: Dec 12
 
 ‍
 
 **Stakeholders**
 
-Jordan Lee — CIO; champion/decider; high influence; last contacted Nov 18; sentiment positive
+Jordan Lee - CIO; champion/decider; high influence; last contacted Nov 18; sentiment positive
 
-Priya Shah — VP Engineering; evaluator; medium influence; last contacted Nov 12; sentiment neutral  
+Priya Shah - VP Engineering; evaluator; medium influence; last contacted Nov 12; sentiment neutral  
 
 ‍
 

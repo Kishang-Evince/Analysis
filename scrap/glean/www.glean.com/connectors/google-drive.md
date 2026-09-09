@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:46.238Z"
 ---
 ### Overview
 
-Glean's integration with Google Drive lets users search files alongside company knowledge, then take action — create and update Docs with context-rich outlines, build and format Sheets from tables and lists, and export content directly without manual copy-paste. All grounded in permissions-aware enterprise context.
+Glean's integration with Google Drive lets users search files alongside company knowledge, then take action - create and update Docs with context-rich outlines, build and format Sheets from tables and lists, and export content directly without manual copy-paste. All grounded in permissions-aware enterprise context.
 
 ### Features
 

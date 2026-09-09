@@ -19,7 +19,7 @@ By default Glean will capture the following content:
 -   All workspaces a user has access to
 -   Public boards in open workspaces
 
-In addition, each user can choose to authorize Glean to index private boards, shareable boards, and public boards in closed workspaces they have access to—this needs to be enabled on a per-user basis.
+In addition, each user can choose to authorize Glean to index private boards, shareable boards, and public boards in closed workspaces they have access to-this needs to be enabled on a per-user basis.
 
 Over time, Glean may add support for docs, dashboards, items, and other Monday.com objects.
 

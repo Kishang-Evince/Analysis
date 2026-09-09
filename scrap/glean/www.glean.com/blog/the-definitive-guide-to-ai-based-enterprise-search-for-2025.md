@@ -89,7 +89,7 @@ Modern organizations generate vast amounts of information across dozens of appli
 
 ### What is AI-based enterprise search?
 
-AI-based enterprise search is a technology that leverages artificial intelligence to index, retrieve, and contextualize business information from across all apps, databases, communications, and documentation—increasing accuracy and business value over traditional search. Unlike legacy systems that rely on simple keyword matching, AI-powered platforms use large language models and semantic understanding to interpret user intent and deliver personalized, relevant results.
+AI-based enterprise search is a technology that leverages artificial intelligence to index, retrieve, and contextualize business information from across all apps, databases, communications, and documentation-increasing accuracy and business value over traditional search. Unlike legacy systems that rely on simple keyword matching, AI-powered platforms use large language models and semantic understanding to interpret user intent and deliver personalized, relevant results.
 
 The technology addresses critical business challenges by connecting disparate data sources through intelligent indexing and relationship mapping. Organizations typically see immediate benefits in knowledge management, employee onboarding, customer support, and decision-making processes. AI enterprise search platforms can process and understand content from email systems, project management tools, code repositories, documentation platforms, and customer relationship management systems simultaneously.
 

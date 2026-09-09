@@ -38,16 +38,16 @@
 
 ### Engineering observation (Doc-Verified)
 
-- Base **Glean Protect** included in seat; **Protect+** is separate — common "hidden" upsell for regulated clients.
-- FlexCredit rate card publishes **units per feature**, not dollars — must map credits to $ via contract.
-- Usage dashboards support alerts at thresholds — operational control, not cost elimination.
+- Base **Glean Protect** included in seat; **Protect+** is separate - common "hidden" upsell for regulated clients.
+- FlexCredit rate card publishes **units per feature**, not dollars - must map credits to $ via contract.
+- Usage dashboards support alerts at thresholds - operational control, not cost elimination.
 
 ### Verification steps / test case
 
 1. Contract line-item review: Protect+, Premium Support, base FlexCredit pool size, overage $/credit.
-2. Admin → Usage — 30-day burn rate extrapolated to annual overage.
+2. Admin → Usage - 30-day burn rate extrapolated to annual overage.
 3. Confirm MCP and Client API consumption appearing in FlexCredits dashboard.
-4. Compare Premium Support flat fee vs 12% legacy sample — whichever applies.
+4. Compare Premium Support flat fee vs 12% legacy sample - whichever applies.
 
 **Risk & Cost Impact:** Risk: **High** (Protect+ + Premium Support + overage stack) | Cost: Often +15–30% above seat line (estimate until quote)
 

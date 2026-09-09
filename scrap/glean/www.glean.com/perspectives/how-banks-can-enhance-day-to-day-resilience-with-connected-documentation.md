@@ -63,7 +63,7 @@ Share this article:
 
 # How banks can enhance day-to-day resilience with connected documentation
 
-Banks strengthen operational resilience by connecting system documentation, project history, and operational context across the tools their teams already use — then applying that shared context to service mapping, change management, incident response, and continuous testing.
+Banks strengthen operational resilience by connecting system documentation, project history, and operational context across the tools their teams already use - then applying that shared context to service mapping, change management, incident response, and continuous testing.
 
 [Operational resilience in banking](https://www.glean.com/blog/ai-in-financial-services) goes beyond disaster recovery plans and annual continuity exercises. It is the day-to-day ability to keep important services running, recover quickly from routine disruptions, and learn from every change without losing control of risk.
 
@@ -71,37 +71,37 @@ Two ideas make that possible. [Connected system documentation](https://www.glean
 
 ## How to improve day-to-day resilience using connected system documentation and project history
 
-Banks improve resilience when they stop treating documentation as a compliance artifact and start treating it as [operational infrastructure](https://www.glean.com/blog/enterprise-knowledge-management-guide). The practical sequence is straightforward: identify what must stay running, connect the evidence around it, standardize how knowledge is captured, use project history to reduce repeat failures, and turn the whole system into a daily operating practice. Each step builds on the one before it, and the payoff compounds — faster incident response, cleaner handoffs, fewer repeated mistakes, and more reliable business impact analysis.
+Banks improve resilience when they stop treating documentation as a compliance artifact and start treating it as [operational infrastructure](https://www.glean.com/blog/enterprise-knowledge-management-guide). The practical sequence is straightforward: identify what must stay running, connect the evidence around it, standardize how knowledge is captured, use project history to reduce repeat failures, and turn the whole system into a daily operating practice. Each step builds on the one before it, and the payoff compounds - faster incident response, cleaner handoffs, fewer repeated mistakes, and more reliable business impact analysis.
 
 Consider a common scenario. A payment processing service slows during peak hours. The on-call engineer opens a ticket, but the runbook lives in one wiki, the architecture diagram sits in a different tool, the last change approval is buried in an email thread, and the prior incident report from six months ago is in a third system.
 
-Reconstructing that context can easily take 30 minutes or more before the real troubleshooting even starts. When documentation is connected — when the runbook links to the architecture record, the change history, and the prior incident — that same engineer can reach the right context in minutes, not an hour. **Glean Search** connects existing sources across tools without forcing teams to migrate content, preserving permissions and surfacing cited answers so responders can verify what they find.
+Reconstructing that context can easily take 30 minutes or more before the real troubleshooting even starts. When documentation is connected - when the runbook links to the architecture record, the change history, and the prior incident - that same engineer can reach the right context in minutes, not an hour. **Glean Search** connects existing sources across tools without forcing teams to migrate content, preserving permissions and surfacing cited answers so responders can verify what they find.
 
-The strongest resilience frameworks support ordinary work: answering dependency questions during a change window, routing an incident to the right owner, or pulling together evidence for an audit. Documentation that reflects how your bank actually runs today — not how it looked at the last annual review — is what turns resilience from a program into a practice.
+The strongest resilience frameworks support ordinary work: answering dependency questions during a change window, routing an incident to the right owner, or pulling together evidence for an audit. Documentation that reflects how your bank actually runs today - not how it looked at the last annual review - is what turns resilience from a program into a practice.
 
-Digital transformation in banking has increased system interdependence, third-party risk, and the pace of change. When documentation is fragmented, even [small issues take longer to diagnose](https://www.atlassian.com/incident-management/kpis/cost-of-downtime) — research from Gartner and the Ponemon Institute estimates the average cost of IT downtime at nearly $9,000 per minute, with banking among the highest-risk industries — which increases both operational and customer impact.
+Digital transformation in banking has increased system interdependence, third-party risk, and the pace of change. When documentation is fragmented, even [small issues take longer to diagnose](https://www.atlassian.com/incident-management/kpis/cost-of-downtime) - research from Gartner and the Ponemon Institute estimates the average cost of IT downtime at nearly $9,000 per minute, with banking among the highest-risk industries - which increases both operational and customer impact.
 
 ## 1\. Identify important business services and map the systems, people, and vendors behind them
 
-Resilience starts with knowing what must keep running. That means naming your most critical services — payments, deposits, lending operations, account access, fraud review, and treasury workflows — and mapping every dependency behind each one: applications, data feeds, third-party providers, manual workarounds, business owners, and escalation paths. Without that map, a single vendor outage or feed delay can [cascade across teams](https://trilio.io/resources/cost-of-downtime/) who had no idea they shared a dependency — and with 80% of data center operators reporting at least one outage in the past three years, these disruptions are routine, not exceptional.
+Resilience starts with knowing what must keep running. That means naming your most critical services - payments, deposits, lending operations, account access, fraud review, and treasury workflows - and mapping every dependency behind each one: applications, data feeds, third-party providers, manual workarounds, business owners, and escalation paths. Without that map, a single vendor outage or feed delay can [cascade across teams](https://trilio.io/resources/cost-of-downtime/) who had no idea they shared a dependency - and with 80% of data center operators reporting at least one outage in the past three years, these disruptions are routine, not exceptional.
 
-The Bank of England's operational resilience framework asks firms to set "impact tolerances" for each important business service — the maximum disruption a service can absorb before customers or markets are harmed. Building those tolerances into your service maps, rather than tracking them in a separate spreadsheet, gives teams a single reference point during incidents.
+The Bank of England's operational resilience framework asks firms to set "impact tolerances" for each important business service - the maximum disruption a service can absorb before customers or markets are harmed. Building those tolerances into your service maps, rather than tracking them in a separate spreadsheet, gives teams a single reference point during incidents.
 
 For example, if your card-processing service has a two-hour tolerance, your map should show every upstream feed, queue, and approval chain that could push recovery past that window. That kind of business impact analysis becomes practical only when it lives alongside architecture diagrams, control points, known failure modes, and current owners.
 
 A common gap is the space between teams. Most banks know their own systems well, but few have clear visibility into the handoff points where infrastructure, application, vendor, and operations boundaries overlap. Those boundaries are exactly where incidents stall.
 
-**Glean Search** closes that gap by connecting service maps, runbooks, vendor records, and change notes across your existing tools — giving teams cited, permission-aware answers about what failed, what depends on it, and what action is safe, all within one search. When every dependency is mapped and every record is linked, the time between "something is wrong" and "here is what we do" shrinks from hours to minutes.
+**Glean Search** closes that gap by connecting service maps, runbooks, vendor records, and change notes across your existing tools - giving teams cited, permission-aware answers about what failed, what depends on it, and what action is safe, all within one search. When every dependency is mapped and every record is linked, the time between "something is wrong" and "here is what we do" shrinks from hours to minutes.
 
 ## 2\. Connect documentation across tickets, runbooks, architecture records, controls, and communications
 
 After mapping important services, the next step is connecting the records that explain how those services actually work. That includes architecture pages, incident tickets, change requests, policy documents, vendor procedures, support threads, and project trackers.
 
-During an outage or a high-risk change window, teams rarely need just one document. They need the architecture note, the prior incident, the open risk exception, the vendor dependency, and the rollback steps — all at once.
+During an outage or a high-risk change window, teams rarely need just one document. They need the architecture note, the prior incident, the open risk exception, the vendor dependency, and the rollback steps - all at once.
 
 A practical design principle makes this manageable: leave content in the systems where teams already maintain it, then index and connect those sources with permission-aware access. A 2023 McKinsey survey found that knowledge workers spend nearly 20% of their time searching for internal information.
 
-In a bank with thousands of runbooks, architecture records, and policy documents spread across wikis, ticketing systems, and shared drives, that search tax compounds during incidents when speed matters most. Connecting documentation across those tools — rather than migrating everything into a single repository — lowers adoption risk and keeps existing workflows intact.
+In a bank with thousands of runbooks, architecture records, and policy documents spread across wikis, ticketing systems, and shared drives, that search tax compounds during incidents when speed matters most. Connecting documentation across those tools - rather than migrating everything into a single repository - lowers adoption risk and keeps existing workflows intact.
 
 **Glean Assistant** fits here: grounded in your bank's approved internal sources, it helps teams retrieve [cited answers about banking operations](https://www.glean.com/resources/guides/banking-whitepaper), summarize relevant history, and surface related incidents without bypassing governance or permissions.
 
@@ -120,7 +120,7 @@ These habits make connected documentation trustworthy, not just fast.
 
 Connected knowledge only helps if the [underlying records are usable](https://www.glean.com/blog/what-is-knowledge-management). When a team retires a data feed, changes a reconciliation job, or adds a vendor dependency, the rationale behind that decision is often the most valuable piece of information for the next person who touches that service. Standardizing how your bank captures those decisions turns scattered notes into reliable operational records.
 
-Lightweight templates do the work. For architecture changes, incident reviews, vendor updates, and major releases, a consistent set of fields — service name, dependency affected, reason for change, decision owner, approval date, rollback path, customer impact risk, and links to related incidents — gives future teams what they need without adding unnecessary overhead.
+Lightweight templates do the work. For architecture changes, incident reviews, vendor updates, and major releases, a consistent set of fields - service name, dependency affected, reason for change, decision owner, approval date, rollback path, customer impact risk, and links to related incidents - gives future teams what they need without adding unnecessary overhead.
 
 The goal is not more documentation. The goal is better documentation: connected, current, and verifiable records that reduce ambiguity during normal operations and during disruption. **Glean Search**, for instance, can surface these standardized records across systems the moment a team member asks a question about a specific service or change, provided the records follow consistent naming and tagging conventions.
 
@@ -128,7 +128,7 @@ Risk mitigation strategies benefit directly from this consistency. When decision
 
 Consider the difference between a weak change record ("Updated the payment queue configuration") and a strong one ("Increased payment queue thread count from eight to 16 to address latency during month-end peak; rollback: revert to prior config and restart service; related incidents: INC-4412, INC-4501"). The second version gives a future responder real context.
 
-Banks that can show regulators how they identify important services, track dependencies, and capture remediation decisions are also in a stronger compliance posture — whether for [SOC 2 audits, ISO 27001 reviews, or SOX controls](https://www.eba.europa.eu/regulation-and-policy/operational-resilience). Frameworks like the EU's Digital Operational Resilience Act (DORA) now make ICT risk management, incident reporting, and third-party oversight mandatory for financial institutions. The advantage comes not from writing more, but from making what you wrote findable and linked.
+Banks that can show regulators how they identify important services, track dependencies, and capture remediation decisions are also in a stronger compliance posture - whether for [SOC 2 audits, ISO 27001 reviews, or SOX controls](https://www.eba.europa.eu/regulation-and-policy/operational-resilience). Frameworks like the EU's Digital Operational Resilience Act (DORA) now make ICT risk management, incident reporting, and third-party oversight mandatory for financial institutions. The advantage comes not from writing more, but from making what you wrote findable and linked.
 
 ## 4\. Turn project history into an operational memory that teams can use during change and incidents
 
@@ -136,29 +136,29 @@ Project history management is more than archiving old tickets. It means preservi
 
 The types of history that matter most in banking continuity planning include change requests, implementation notes, deployment records, incident timelines, post-incident reviews, vendor escalations, policy exceptions, and prior resilience test results. When a payment flow slows down or a reconciliation job fails, the first question responders ask is whether this has happened before.
 
-If the answer lives in a buried Slack thread or an archived email chain, reconstruction can take longer than the fix itself. Real [banking resilience](https://www.bankingexchange.com/news-feed/item/8048-three-ways-technology-can-make-banks-more-resilient) comes from learning quickly from prior changes and disruptions — not from assuming the same failure will not recur.
+If the answer lives in a buried Slack thread or an archived email chain, reconstruction can take longer than the fix itself. Real [banking resilience](https://www.bankingexchange.com/news-feed/item/8048-three-ways-technology-can-make-banks-more-resilient) comes from learning quickly from prior changes and disruptions - not from assuming the same failure will not recur.
 
 Connect history to the current state of each service. A runbook without project history tells teams what should happen. A runbook linked to decisions, incidents, and past fixes tells them what actually happens in production.
 
 That distinction matters during shift handoffs, root-cause analysis, maintenance planning, vendor reviews, and control testing. [Institutional memory](https://www.glean.com/blog/company-knowledge-base) should not live only in the heads of a few experienced engineers or in scattered chat threads.
 
-It should be discoverable, tied to the systems it describes, and governed by the same permissions that protect the rest of your operational data. **Glean Search** surfaces that history across connected sources — tickets, wikis, change records, communications — so teams can ask a question about a service and get cited answers drawn from the full trail of decisions and incidents behind it.
+It should be discoverable, tied to the systems it describes, and governed by the same permissions that protect the rest of your operational data. **Glean Search** surfaces that history across connected sources - tickets, wikis, change records, communications - so teams can ask a question about a service and get cited answers drawn from the full trail of decisions and incidents behind it.
 
 ## 5\. Use connected knowledge in daily workflows, testing, and continuous improvement
 
-Connected documentation and project history deliver value only when they appear in the work itself — change reviews, incident channels, service handoffs, vendor assessments, audit preparation, and frontline support. The difference between a documentation program and an operational discipline is whether teams reach for that knowledge during their daily work or only during a crisis.
+Connected documentation and project history deliver value only when they appear in the work itself - change reviews, incident channels, service handoffs, vendor assessments, audit preparation, and frontline support. The difference between a documentation program and an operational discipline is whether teams reach for that knowledge during their daily work or only during a crisis.
 
 A practical workflow pattern ties the system together. Before a release, teams review linked dependencies, prior incident history, and rollback guidance. During an incident, responders pull the latest runbook, architecture context, owner list, and similar past cases.
 
 After recovery, the post-incident review updates the service record and feeds remediation tracking. Each cycle strengthens the next one.
 
-Resilience frameworks for banks reinforce this point: [operational resilience is not a once-a-year exercise](https://www.iif.com/portals/0/Files/content/Regulatory/32370132_iif_staff_paper_operational_resilience_december_2024_final.pdf). It is the discipline of preventing, adapting, responding, recovering, and learning during ordinary operations — not just during major disruptions. A 2024 staff paper from the Institute of International Finance underscores the importance of international interoperability across resilience frameworks, given the global nature of risk events.
+Resilience frameworks for banks reinforce this point: [operational resilience is not a once-a-year exercise](https://www.iif.com/portals/0/Files/content/Regulatory/32370132_iif_staff_paper_operational_resilience_december_2024_final.pdf). It is the discipline of preventing, adapting, responding, recovering, and learning during ordinary operations - not just during major disruptions. A 2024 staff paper from the Institute of International Finance underscores the importance of international interoperability across resilience frameworks, given the global nature of risk events.
 
 Testing makes the model credible. Run scenario exercises against your most important business services using real documentation paths. Validate whether teams can find the right runbook, whether listed owners are still current, whether impact tolerances are understood, and whether third-party procedures reflect today's vendor landscape.
 
-Track metrics that show whether the system is working: time to identify a service owner, time to find the correct runbook, percentage of critical services with linked dependency maps, repeat incident rate, and remediation closure time. **Glean Agents** can automate recurring steps in this cycle — pulling dependency data before a release, flagging stale runbooks, or routing post-incident updates to the right service records — so the [operational discipline scales](https://www.glean.com/blog/agentic-ops-financial-services) without adding manual overhead to every team.
+Track metrics that show whether the system is working: time to identify a service owner, time to find the correct runbook, percentage of critical services with linked dependency maps, repeat incident rate, and remediation closure time. **Glean Agents** can automate recurring steps in this cycle - pulling dependency data before a release, flagging stale runbooks, or routing post-incident updates to the right service records - so the [operational discipline scales](https://www.glean.com/blog/agentic-ops-financial-services) without adding manual overhead to every team.
 
-When knowledge moves with the workflow — when teams no longer need to stop and hunt across disconnected systems — response quality stays high at the moments when clarity matters most.
+When knowledge moves with the workflow - when teams no longer need to stop and hunt across disconnected systems - response quality stays high at the moments when clarity matters most.
 
 ## How can banks improve day-to-day resilience using connected system documentation and project history: frequently asked questions
 
@@ -172,7 +172,7 @@ Connected documentation shortens the path from question to action. Teams can fin
 
 ### What role does project history play in improving day-to-day operations?
 
-Project history gives teams operational memory — what changed, why the decision was made, what risks were accepted, and what happened after implementation. That context directly improves incident response, change planning, onboarding, shift handoffs, and root-cause analysis by reducing the time spent reconstructing decisions from scattered systems.
+Project history gives teams operational memory - what changed, why the decision was made, what risks were accepted, and what happened after implementation. That context directly improves incident response, change planning, onboarding, shift handoffs, and root-cause analysis by reducing the time spent reconstructing decisions from scattered systems.
 
 ### What are the best practices for managing system documentation in banks?
 
@@ -180,9 +180,9 @@ Keep documentation close to the teams that maintain it, but connect it across th
 
 ### How can banks effectively mitigate risks associated with operational disruptions?
 
-Assume disruptions will happen and design for fast recovery. Map dependencies, set service tolerances, test severe but plausible scenarios, review third-party dependencies regularly, and capture lessons from every incident and major change. The strongest risk mitigation strategies combine governance with usable, connected context so teams can make sound decisions under pressure — not just document them after the fact.
+Assume disruptions will happen and design for fast recovery. Map dependencies, set service tolerances, test severe but plausible scenarios, review third-party dependencies regularly, and capture lessons from every incident and major change. The strongest risk mitigation strategies combine governance with usable, connected context so teams can make sound decisions under pressure - not just document them after the fact.
 
-Operational resilience in banking improves when your teams can find trusted answers, trace decisions back to their source, and act on connected context without leaving the tools where work already happens. The banks that build this discipline into daily operations — not just annual reviews — are the ones that recover faster, make fewer repeat mistakes, and keep critical services running within tolerance.
+Operational resilience in banking improves when your teams can find trusted answers, trace decisions back to their source, and act on connected context without leaving the tools where work already happens. The banks that build this discipline into daily operations - not just annual reviews - are the ones that recover faster, make fewer repeat mistakes, and keep critical services running within tolerance.
 
 [Request a demo](https://www.glean.com/get-a-demo) to explore how Glean and AI can transform your workplace.
 

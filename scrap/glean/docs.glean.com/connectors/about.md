@@ -110,7 +110,7 @@ Exact behavior varies by connector and source. For how retrieved data is used at
 
 ## Connector data access modes[​](#connector-data-access-modes "Direct link to Connector data access modes")
 
-Glean can use connector data in more than one way — indexed (crawled ahead of time), live (fetched at query time), or hybrid (a mix of both). The mode used depends on the connector, the feature, and your configuration. For a full breakdown with examples, see [How connectors power the Glean experience](/connectors/connectors-power-glean#connector-data-access-modes).
+Glean can use connector data in more than one way - indexed (crawled ahead of time), live (fetched at query time), or hybrid (a mix of both). The mode used depends on the connector, the feature, and your configuration. For a full breakdown with examples, see [How connectors power the Glean experience](/connectors/connectors-power-glean#connector-data-access-modes).
 
 ### Indexed access[​](#indexed-access "Direct link to Indexed access")
 
@@ -124,7 +124,7 @@ Some connectors require individual end users to authenticate before live access 
 
 ### Hybrid access[​](#hybrid-access "Direct link to Hybrid access")
 
-Hybrid access combines indexed data with one or more live calls—for example using the index for broad recall and the API for recent rows, long-tail objects, or attributes that are not stored in the index. Connectors that support hybrid behavior document when each path is used and any security or compliance caveats.
+Hybrid access combines indexed data with one or more live calls-for example using the index for broad recall and the API for recent rows, long-tail objects, or attributes that are not stored in the index. Connectors that support hybrid behavior document when each path is used and any security or compliance caveats.
 
 note
 
@@ -136,7 +136,7 @@ Exact behavior varies by connector. Some connectors rely mainly on scheduled cra
 -   **Permission enforcement**: Glean connectors fetch each source's permissions map, so search results only show a user what they're already allowed to see in the source application.
 -   **Data security**: Connectors route all fetched data to your isolated Glean tenant. Data is end-to-end encrypted in transit and only written to disk once it reaches your tenant. Within your tenant, indexed data is encrypted at rest and remains within your tenant boundaries.
 -   **Real-time updates**: Connectors capture changes to your data as quickly as possible, either via webhooks or incremental crawling. The Glean team continuously works with technology partners to keep connectors updated with feature enhancements and API changes.
--   **Flexible configuration**: Each connector supports a range of configuration options — including content inclusion and exclusion filters, authentication modes, and crawl scope settings — so you can tailor what Glean indexes to your organization's needs.
--   **Relevance ranking**: Connectors collect activity signals — such as views, edits, and shares — that Glean uses to rank search results by relevance, surfacing the most useful content for each user.
+-   **Flexible configuration**: Each connector supports a range of configuration options - including content inclusion and exclusion filters, authentication modes, and crawl scope settings - so you can tailor what Glean indexes to your organization's needs.
+-   **Relevance ranking**: Connectors collect activity signals - such as views, edits, and shares - that Glean uses to rank search results by relevance, surfacing the most useful content for each user.
 
 You can configure tools directly from the connector setup, allowing Glean Assistant and Glean Agents to securely take action in those applications. This enhancement introduces a faster, single point of setup, allowing administrators to manage native tools and Model Context Protocol (MCP) tools while they are already configuring the connector.

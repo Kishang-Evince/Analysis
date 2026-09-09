@@ -63,11 +63,11 @@ Share this article:
 
 # How legal teams can leverage AI for faster operations without risk
 
-Legal teams sit at the center of every major business decision — and the pressure to move faster has never been higher. Rising matter volumes, tighter budgets, and expanding regulatory complexity all demand that in-house counsel deliver faster turnaround on intake, reviews, approvals, research, and policy questions without sacrificing the control that protects the organization.
+Legal teams sit at the center of every major business decision - and the pressure to move faster has never been higher. Rising matter volumes, tighter budgets, and expanding regulatory complexity all demand that in-house counsel deliver faster turnaround on intake, reviews, approvals, research, and policy questions without sacrificing the control that protects the organization.
 
-AI in legal operations offers a practical path forward, not by replacing legal judgment, but by eliminating the manual work that delays it. The most effective implementations connect secure, permission-aware AI systems to the company knowledge that already exists across contracts, policies, matter trackers, and business tools — then use that context to summarize, retrieve, draft, and route work with speed and precision.
+AI in legal operations offers a practical path forward, not by replacing legal judgment, but by eliminating the manual work that delays it. The most effective implementations connect secure, permission-aware AI systems to the company knowledge that already exists across contracts, policies, matter trackers, and business tools - then use that context to summarize, retrieve, draft, and route work with speed and precision.
 
-Risk management is not a phase that comes after rollout. It is part of the operating model from day one, built into access controls, source governance, auditability, and clear human decision points. This article walks through a step-by-step approach to AI efficiency for legal teams: how to build the right foundation, select the right workflows, apply the right guardrails, and scale based on evidence — all grounded in what actually works inside enterprise environments.
+Risk management is not a phase that comes after rollout. It is part of the operating model from day one, built into access controls, source governance, auditability, and clear human decision points. This article walks through a step-by-step approach to AI efficiency for legal teams: how to build the right foundation, select the right workflows, apply the right guardrails, and scale based on evidence - all grounded in what actually works inside enterprise environments.
 
 ## What is AI in legal operations?
 
@@ -77,22 +77,22 @@ The goal is straightforward: reduce the friction that sits between a legal team 
 
 ### Where AI creates the most practical value for legal teams
 
-The use cases that deliver the fastest return tend to share three traits — they are frequent, time-consuming, and operationally important, but they do not require autonomous final judgment. The most common include:
+The use cases that deliver the fastest return tend to share three traits - they are frequent, time-consuming, and operationally important, but they do not require autonomous final judgment. The most common include:
 
--   **Matter intake and triage**: AI extracts key facts from incoming requests, identifies the issue type and urgency, flags missing information, and routes the matter to the right legal owner with a usable summary — all before a lawyer has to read a single email thread.
+-   **Matter intake and triage**: AI extracts key facts from incoming requests, identifies the issue type and urgency, flags missing information, and routes the matter to the right legal owner with a usable summary - all before a lawyer has to read a single email thread.
 -   **Contract and policy summarization**: Rather than manually reviewing a 40-page vendor agreement or a revised data privacy policy, legal teams use AI to surface key clauses, obligations, deadlines, and deviations from standard terms in seconds.
--   **Internal question answering**: Employees across sales, HR, procurement, and engineering frequently ask the same policy and process questions. A governed AI assistant can respond with accurate, cited answers drawn from authoritative legal guidance — and escalate anything outside its scope.
+-   **Internal question answering**: Employees across sales, HR, procurement, and engineering frequently ask the same policy and process questions. A governed AI assistant can respond with accurate, cited answers drawn from authoritative legal guidance - and escalate anything outside its scope.
 -   **Regulatory tracking and compliance support**: AI can compare policy versions, summarize new regulatory guidance, and surface which teams or documents may need updates, which supports both compliance monitoring and internal governance.
 -   **Drafting support**: First drafts of NDAs, internal memos, matter recaps, and response templates can be generated from approved source material, with lawyers reviewing and refining rather than starting from a blank page.
--   **Workflow automation for repeatable tasks**: Routing approvals, collecting signatures, logging matters, sending reminders, and preparing review packages — administrative steps that consume hours each week — can be handled through governed automation.
+-   **Workflow automation for repeatable tasks**: Routing approvals, collecting signatures, logging matters, sending reminders, and preparing review packages - administrative steps that consume hours each week - can be handled through governed automation.
 
 ### Why governance is not optional
 
 The best results come from AI systems that understand company context, preserve source permissions, and make every answer traceable. That means the system must enforce the same access controls as the underlying applications: a junior associate should not see privileged board materials just because AI retrieved them, and a business partner should not receive contract details outside their scope.
 
-Audit logs, citation requirements, approved data sources, and clear escalation paths are not add-ons for later. They are structural requirements that determine whether a legal team can trust the output enough to act on it. When these controls are built into the foundation — rather than bolted on after adoption — legal teams avoid the pattern that stalls so many AI rollouts: early enthusiasm followed by a compliance review that shuts everything down.
+Audit logs, citation requirements, approved data sources, and clear escalation paths are not add-ons for later. They are structural requirements that determine whether a legal team can trust the output enough to act on it. When these controls are built into the foundation - rather than bolted on after adoption - legal teams avoid the pattern that stalls so many AI rollouts: early enthusiasm followed by a compliance review that shuts everything down.
 
-This mirrors what regulated industries like financial services, life sciences, and healthcare have already learned. AI adoption is strongest when it is built on secure, compliant access to enterprise knowledge, with governance woven into the retrieval layer itself. Legal departments operate under similar constraints — privileged communications, personal data, regulated content, sensitive commercial terms — and the same principle applies. The safe path and the fast path need to be the same path.
+This mirrors what regulated industries like financial services, life sciences, and healthcare have already learned. AI adoption is strongest when it is built on secure, compliant access to enterprise knowledge, with governance woven into the retrieval layer itself. Legal departments operate under similar constraints - privileged communications, personal data, regulated content, sensitive commercial terms - and the same principle applies. The safe path and the fast path need to be the same path.
 
 ## How can legal teams move faster with AI without increasing risk?
 
@@ -118,11 +118,11 @@ A useful foundation gives legal teams one operating surface for two jobs. It let
 
 The non-negotiables look less like model features and more like legal operations controls:
 
--   **Native permission inheritance**: Access should follow the source system exactly — matter-by-matter, folder-by-folder, group-by-group. This matters most for privileged files, investigation records, employee data, and deal documents with restricted circulation.
+-   **Native permission inheritance**: Access should follow the source system exactly - matter-by-matter, folder-by-folder, group-by-group. This matters most for privileged files, investigation records, employee data, and deal documents with restricted circulation.
 -   **System-level connectors with security review**: The AI layer should connect to the repositories legal already relies on, not depend on manual uploads or copied text. That reduces version drift and avoids side channels for sensitive information.
 -   **Event and usage records**: Teams need a durable record of who asked what, what sources the system used, and where the answer went. That supports internal review, incident response, and policy enforcement.
 -   **Source-linked output**: For many legal tasks, the answer should show the underlying clause, policy section, or matter note that supports it. Review moves faster when counsel can inspect the basis of the response instead of re-running the research.
--   **Content boundaries by class**: Not every document should sit in scope. Legal should separate approved knowledge, restricted knowledge, privileged material, personal data, and external-facing content — then apply different rules to each class.
+-   **Content boundaries by class**: Not every document should sit in scope. Legal should separate approved knowledge, restricted knowledge, privileged material, personal data, and external-facing content - then apply different rules to each class.
 
 These controls make both search and generation more dependable. Search can surface the latest playbook fallback, the signed version of an agreement, or the current policy text; generation can then assemble a comparison, digest, or draft package from those retrieved materials rather than from generic pattern-matching.
 
@@ -132,14 +132,14 @@ Legal teams also need a clear hierarchy of authority. A document management syst
 
 This is where AI governance in legal turns into concrete operating rules:
 
-1.  **Name the approved repositories**: Decide which systems can support AI output for each use case — policy questions, contract support, matter summaries, invoice review, and so on.
+1.  **Name the approved repositories**: Decide which systems can support AI output for each use case - policy questions, contract support, matter summaries, invoice review, and so on.
 2.  **Mark the authoritative records**: Define which content takes precedence when sources conflict. That may include executed agreements over drafts, final policy publications over email guidance, and designated playbooks over ad hoc edits.
 3.  **Set citation thresholds**: Some outputs can remain internal notes; others should require links or quoted source text before a lawyer shares them with the business.
 4.  **Define escalation cases**: Privileged assessments, external advice, regulated filings, and sensitive employee matters should trigger stricter review paths than routine intake or internal process questions.
 
 That upfront discipline reduces review load later. When the system already knows which sources count, which records outrank others, and which responses require traceability, legal teams do not need to rebuild those checks every time someone asks for a summary or draft.
 
--   **Operational value**: A governed base improves document automation in law because clause libraries, template language, fallback positions, prior approvals, and policy text become available in one controlled flow — which makes reuse more consistent across teams and matters.
+-   **Operational value**: A governed base improves document automation in law because clause libraries, template language, fallback positions, prior approvals, and policy text become available in one controlled flow - which makes reuse more consistent across teams and matters.
 
 This is also the point where many AI compliance strategies break. Teams often start with a fast pilot, then discover that access rules, retention expectations, privilege handling, and source precedence were never defined. At that stage, every new use case creates another exception process. Adoption slows; confidence drops; the system gains a reputation for speed without control.
 
@@ -149,7 +149,7 @@ Highly regulated sectors offer a useful model here. Healthcare and life sciences
 
 Once the knowledge layer is dependable, workflow selection matters more than feature breadth. Legal teams usually get faster results from work that already follows a pattern, creates visible delay, and shows up often enough to justify tight measurement.
 
-That profile appears in operating tasks such as request qualification, billing guideline checks, clause deviation review, policy change analysis, outside counsel follow-up, recurring internal templates, and matter recap prep. These workflows carry real business weight, yet they still leave the final legal position with counsel — which makes them strong early candidates for AI in legal operations.
+That profile appears in operating tasks such as request qualification, billing guideline checks, clause deviation review, policy change analysis, outside counsel follow-up, recurring internal templates, and matter recap prep. These workflows carry real business weight, yet they still leave the final legal position with counsel - which makes them strong early candidates for AI in legal operations.
 
 ### Choose work with clear boundaries
 
@@ -193,17 +193,17 @@ A credible pilot starts with operating clarity. Legal, legal ops, security, and 
 
 For each pilot, define five elements before anything goes live:
 
-1.  **Source set**: Which records the workflow can use — for example, matter fields, billing guidelines, clause libraries, policy documents, prior approvals, or request forms.
-2.  **Deliverable shape**: What the workflow must produce — such as an exception report, a structured summary, a comparison table, a draft package, or a routed request with required metadata.
+1.  **Source set**: Which records the workflow can use - for example, matter fields, billing guidelines, clause libraries, policy documents, prior approvals, or request forms.
+2.  **Deliverable shape**: What the workflow must produce - such as an exception report, a structured summary, a comparison table, a draft package, or a routed request with required metadata.
 3.  **Accountable reviewer**: Which role owns review, and which outputs can proceed without review because they stay administrative and low impact.
-4.  **Stop conditions**: Which cases force the workflow to pause and escalate — missing facts, conflicting records, privileged material, unsupported issue types, or high-sensitivity content.
-5.  **Scorecard**: Which measures determine whether the workflow deserves expansion — turnaround time, rework rate, exception precision, handoff quality, queue reduction, or consistency across reviewers.
+4.  **Stop conditions**: Which cases force the workflow to pause and escalate - missing facts, conflicting records, privileged material, unsupported issue types, or high-sensitivity content.
+5.  **Scorecard**: Which measures determine whether the workflow deserves expansion - turnaround time, rework rate, exception precision, handoff quality, queue reduction, or consistency across reviewers.
 
 Teams that work this way tend to earn confidence faster inside the department. The value is visible, the boundaries are understandable, and nobody has to pretend that the system can do more than the workflow allows.
 
 ## 3\. Connect AI to the systems where legal work already happens
 
-Once a legal team has a reliable foundation and a short list of bounded workflows, the next constraint is context assembly. Most legal work depends on details that sit outside the legal department’s core tools — commercial terms in a CRM record, vendor history in a procurement system, exception notes in a security ticket, approval timing in email, and spend signals in finance platforms.
+Once a legal team has a reliable foundation and a short list of bounded workflows, the next constraint is context assembly. Most legal work depends on details that sit outside the legal department’s core tools - commercial terms in a CRM record, vendor history in a procurement system, exception notes in a security ticket, approval timing in email, and spend signals in finance platforms.
 
 That cross-system view is what turns AI from a drafting aid into an operational tool. A legal request about a renewal, an indemnity carveout, or a privacy obligation often depends less on one document than on the chain of decisions around it: who approved the last exception, which product line is involved, whether security accepted a compensating control, and whether a similar issue already surfaced in another matter.
 
@@ -211,31 +211,31 @@ That cross-system view is what turns AI from a drafting aid into an operational 
 
 The most useful legal answers come from a mix of legal records and business metadata. The source map usually includes:
 
--   **Commercial and procurement systems**: CRM records, intake forms, vendor profiles, renewal calendars, and sourcing workflows add deal value, business owner, timing pressure, and counterparty history — details that shape legal priority and negotiation posture.
+-   **Commercial and procurement systems**: CRM records, intake forms, vendor profiles, renewal calendars, and sourcing workflows add deal value, business owner, timing pressure, and counterparty history - details that shape legal priority and negotiation posture.
 -   **Contract and policy systems**: agreement repositories, clause libraries, obligation trackers, policy portals, and negotiation standards provide the operative text, fallback language, and internal rules that define what legal can approve.
 -   **Operational systems**: ticketing platforms, security reviews, finance records, HR tools, email threads, and internal knowledge bases supply the supporting facts behind exceptions, escalations, approvals, and prior outcomes.
 
-This matters because legal teams rarely need a generic answer. They need one that reflects the actual state of the business at that moment — the live request, the active stakeholders, the open blockers, and the approved path forward.
+This matters because legal teams rarely need a generic answer. They need one that reflects the actual state of the business at that moment - the live request, the active stakeholders, the open blockers, and the approved path forward.
 
 ### Better connection improves both speed and coordination
 
 Integrated context changes how work moves across functions. Instead of waiting for someone to forward the latest attachment, restate the issue, or explain why an exception exists, legal can start from a structured record that already captures the business request and the surrounding facts.
 
 -   **Shared status across teams**: procurement can see where legal review sits, security can surface unresolved controls, finance can confirm payment or risk thresholds, and legal can respond without a round of manual fact collection.
--   **Stronger intake packages**: AI can turn an inbound email, form submission, or ticket into a usable matter packet — named parties, business owner, jurisdiction, deadline, linked files, and prior related activity — before counsel opens the file.
+-   **Stronger intake packages**: AI can turn an inbound email, form submission, or ticket into a usable matter packet - named parties, business owner, jurisdiction, deadline, linked files, and prior related activity - before counsel opens the file.
 -   **Faster change analysis**: when a regulation shifts or an internal policy changes, AI can compare versions, summarize the practical delta, and point to the templates, workflows, or business groups that need attention first.
 
 This is one reason isolated AI tools tend to plateau. They may produce clean prose, but they do not remove the hidden work that slows legal down: status reconciliation, duplicate explanation, manual routing, and background gathering across disconnected systems.
 
 ### Connection should deepen context, not expand access
 
-A connected AI layer still has to respect matter boundaries, ethical walls, regional restrictions, and source-level entitlements. When the system assembles an answer from several applications, it should stitch together only the records that the user’s role already permits — not expose adjacent documents just because they sit in the same workflow.
+A connected AI layer still has to respect matter boundaries, ethical walls, regional restrictions, and source-level entitlements. When the system assembles an answer from several applications, it should stitch together only the records that the user’s role already permits - not expose adjacent documents just because they sit in the same workflow.
 
 Teams that treat AI as part of broader legal tech modernization usually see more durable gains because they improve the plumbing behind the output. They align connectors, metadata, review paths, and system boundaries across the tools the department already depends on; that makes the response more useful for the lawyer and more workable for the rest of the business.
 
 ## 4\. Put controls around the riskiest points, not every single step
 
-As legal teams extend AI from search and summarization into drafting and workflow execution, oversight needs more precision. A uniform approval model sends low-exposure work through the same queue as privilege analysis, regulatory submissions, and externally shared advice — which wastes attorney time and slows the department where speed should be easiest to gain.
+As legal teams extend AI from search and summarization into drafting and workflow execution, oversight needs more precision. A uniform approval model sends low-exposure work through the same queue as privilege analysis, regulatory submissions, and externally shared advice - which wastes attorney time and slows the department where speed should be easiest to gain.
 
 Blanket restrictions also create avoidable leakage into unsanctioned behavior. When approved systems add too much friction to routine tasks, employees fall back to copy-paste workflows, side spreadsheets, long email threads, or public AI tools. The better model places scrutiny at the moments that carry real legal consequence: release, reliance, and record.
 
@@ -245,9 +245,9 @@ A practical governance model starts with three variables: consequence of error, 
 
 -   **Low-risk workflows**: Policy lookups, chronology extraction, matter snapshots, and internal knowledge answers should show the supporting source, preserve a session record, and stay inside the approved environment. These tasks do not need multi-step approval; they need fast verification.
 -   **Medium-risk workflows**: Playbook-based redlines, draft guidance notes, issue-spot memos, and summaries for outside counsel coordination should route to a named reviewer before release. The review should check alignment with approved language, current policy, and matter-specific context.
--   **High-risk workflows**: Privilege determinations, formal legal advice, regulator-facing materials, board packages, and filings should follow a tighter path — restricted source sets, matter-level approvers, expanded logging, and no autonomous release.
+-   **High-risk workflows**: Privilege determinations, formal legal advice, regulator-facing materials, board packages, and filings should follow a tighter path - restricted source sets, matter-level approvers, expanded logging, and no autonomous release.
 
-This model should not stay fixed. As teams move from passive assistance into action-taking workflows — matter creation, stakeholder reminders, draft packet assembly, or routing decisions — the review standard should move with that change in scope.
+This model should not stay fixed. As teams move from passive assistance into action-taking workflows - matter creation, stakeholder reminders, draft packet assembly, or routing decisions - the review standard should move with that change in scope.
 
 ### Define controls that legal teams can operate day to day
 
@@ -256,13 +256,13 @@ Governance works only when it lives inside the operating model. Legal teams need
 A durable control set usually includes:
 
 -   **An approved workflow list**: Name the tasks AI may support today, the tasks that need attorney release, and the tasks that remain out of bounds.
--   **A trusted content map**: Specify which repositories count as valid input for each use case — for example, current policy libraries for employee guidance, executed templates for drafting support, and matter systems for status summaries.
+-   **A trusted content map**: Specify which repositories count as valid input for each use case - for example, current policy libraries for employee guidance, executed templates for drafting support, and matter systems for status summaries.
 -   **Release rules by output type**: Set clear thresholds for when a result may stay internal, when it may move to another department, and when only designated counsel may approve distribution.
 -   **Handling rules for restricted material**: Define separate treatment for privileged communications, personal data, litigation records, M&A content, employment files, and other high-sensitivity classes.
 -   **Exception management**: Create a visible path for stale sources, conflicting authorities, unsupported requests, and unclear ownership.
 -   **Retention and audit requirements**: Decide what activity records to keep, how long to keep them, and what evidence should be available for internal review, investigations, or regulatory inquiry.
 
-Traceability matters because it cuts verification time without weakening legal discipline. An answer should carry its evidence trail — document title, clause location, version date, and source system — so a lawyer can confirm the basis of the output in seconds rather than reconstruct it by hand.
+Traceability matters because it cuts verification time without weakening legal discipline. An answer should carry its evidence trail - document title, clause location, version date, and source system - so a lawyer can confirm the basis of the output in seconds rather than reconstruct it by hand.
 
 ### Evaluate substance, not polish
 
@@ -270,19 +270,19 @@ Legal teams should test outputs for supportability, completeness, and source fit
 
 That is why review should focus on grounding. Did the system use the current source? Did it pull from the right matter, policy, or playbook? Did it surface the material exception, or flatten nuance into a generic summary? Those checks matter more than tone, especially in workflows that shape advice, contract position, or compliance posture.
 
-In practice, legal teams can implement AI without compromising compliance when four things stay true at once: the system enforces source-level access, the output draws from approved enterprise content, activity remains auditable, and review intensity matches the legal weight of the task. Human involvement belongs at the points where interpretation, external communication, or material exposure enters the process — not at every administrative step before that.
+In practice, legal teams can implement AI without compromising compliance when four things stay true at once: the system enforces source-level access, the output draws from approved enterprise content, activity remains auditable, and review intensity matches the legal weight of the task. Human involvement belongs at the points where interpretation, external communication, or material exposure enters the process - not at every administrative step before that.
 
 This is also where shadow AI becomes easier to understand. It grows when approved tools feel detached from the pace of real work. Strong governance does not depend on more friction; it depends on a workflow that gives people a faster, sanctioned way to get the right answer and move the work forward.
 
 ## 5\. Use AI to improve legal intake, coordination, and response quality
 
-Once a team has search, access, and review controls in place, the next constraint is coordination. Legal work often slows when a request changes hands — from a business requester to legal ops, from counsel to compliance, from privacy to procurement — and each person has to rebuild the situation from fragments.
+Once a team has search, access, and review controls in place, the next constraint is coordination. Legal work often slows when a request changes hands - from a business requester to legal ops, from counsel to compliance, from privacy to procurement - and each person has to rebuild the situation from fragments.
 
 AI helps by packaging a request into a clearer operating record before substantive review starts. Rather than treat intake as a pile of messages, it can assemble the request history, highlight open questions, pull related approvals or prior exceptions, and suggest the next operational step. In functions with high ticket volume and strict process requirements, this kind of preparation reduces resolution time and training overhead; legal teams benefit from the same discipline.
 
 ### Make each request usable on first review
 
--   **Map the request to the department’s intake standard**: AI can classify the matter against the legal team’s own categories — procurement review, employment issue, privacy inquiry, policy exception, marketing claim — then organize the submission around the fields that matter for that type of work.
+-   **Map the request to the department’s intake standard**: AI can classify the matter against the legal team’s own categories - procurement review, employment issue, privacy inquiry, policy exception, marketing claim - then organize the submission around the fields that matter for that type of work.
 -   **Bring in adjacent business context**: A legal question rarely lives in one document. Useful intake packets can include approval history, counterparty details, related tickets, prior negotiation notes, recent internal commentary, and linked policies so the reviewer sees the broader business frame.
 -   **Call out decision blockers early**: Instead of leaving a lawyer to discover the issue halfway through review, the system can flag unresolved approvals, unsigned versions, unclear ownership, absent jurisdiction details, or conflicting dates at the start.
 -   **Recommend the next procedural move**: Based on department rules, AI can suggest whether the request needs immediate review, standard review, specialist review, or a return to the requester for additional material.
@@ -291,7 +291,7 @@ This changes the tone of the exchange with internal partners. Legal no longer sp
 
 ### Improve handoffs across legal and business teams
 
-Coordination quality often decides whether a matter moves in hours or in days. When an issue passes from legal ops to counsel, then to privacy, compliance, procurement, or outside advisors, each transfer can introduce drift — a different summary, a missing attachment, a deadline that exists only in someone’s notes.
+Coordination quality often decides whether a matter moves in hours or in days. When an issue passes from legal ops to counsel, then to privacy, compliance, procurement, or outside advisors, each transfer can introduce drift - a different summary, a missing attachment, a deadline that exists only in someone’s notes.
 
 AI can reduce that drift by creating role-specific briefs as work moves. A privacy reviewer may need data categories, jurisdictions, and retention implications; procurement may need fallback terms and vendor history; outside counsel may need a short chronology, key documents, and the precise question to answer. The same underlying record supports each brief, which cuts rework without flattening the nuance each stakeholder needs.
 
@@ -301,9 +301,9 @@ That same approach improves routine response quality. Status updates, matter sna
 
 Many inbound legal requests are not novel legal problems. They are recurring operational questions: which contract path applies, whether a policy exception needs approval, what language sales can use, how a recruiter should handle a candidate request, or which procurement step comes before signature. These questions still need consistency, but they do not all require a lawyer to draft a bespoke answer.
 
-A governed assistant can handle this layer well when the team gives it clear response patterns, approved prompts, and a limited set of trusted internal materials. Shared training and curated [enterprise ai resources](https://www.glean.com/resources) help departments standardize how people use the system, which reduces answer drift across offices and practice areas. When the question falls outside the approved lane — privileged analysis, external advice, unusual deal terms, or high-risk employment matters — the system should direct it to the right legal specialist rather than improvise.
+A governed assistant can handle this layer well when the team gives it clear response patterns, approved prompts, and a limited set of trusted internal materials. Shared training and curated [enterprise ai resources](https://www.glean.com/resources) help departments standardize how people use the system, which reduces answer drift across offices and practice areas. When the question falls outside the approved lane - privileged analysis, external advice, unusual deal terms, or high-risk employment matters - the system should direct it to the right legal specialist rather than improvise.
 
-This has a direct effect on legal team productivity. Better intake packets, cleaner transfers, and more consistent responses reduce the invisible work around each matter — not the legal judgment itself, but the coordination load that keeps judgment from happening fast enough.
+This has a direct effect on legal team productivity. Better intake packets, cleaner transfers, and more consistent responses reduce the invisible work around each matter - not the legal judgment itself, but the coordination load that keeps judgment from happening fast enough.
 
 ## 6\. Measure the right outcomes and scale deliberately
 
@@ -320,7 +320,7 @@ A legal AI scorecard needs a second lane for control. Faster turnaround means li
 -   **Permission exception count**: Monitor blocked retrievals, manual overrides, and any case where access rules create friction or require intervention.
 -   **Escalation precision**: Review whether the system pushes the right matters to counsel at the right moment instead of over-routing routine work or missing edge cases.
 -   **Reviewer acceptance rate**: Compare draft outputs against legal review and record how often they move forward with minor edits versus substantial rework.
--   **Audit record integrity**: Confirm that each task retains a complete history — user, source set, output, review action, and final disposition.
+-   **Audit record integrity**: Confirm that each task retains a complete history - user, source set, output, review action, and final disposition.
 
 Behavioral signals deserve equal weight. Legal leaders should examine whether business teams submit cleaner requests, whether lawyers stick with the approved workflow for live matters, and whether repeat policy questions drop across email and chat. Those changes show that the operating model has improved, not just the interface.
 
@@ -420,9 +420,9 @@ The most effective governance models include a small set of living artifacts:
 -   **Evaluation plan**: A repeatable method for sampling outputs, checking source fidelity, and tracking error patterns over time.
 -   **Change log**: A record of prompt updates, workflow edits, source additions, and policy changes that affect output behavior.
 
-The strongest teams review these artifacts on a regular cadence — especially after they expand from assistance into automation. That is where regulated organizations tend to outperform: they treat AI governance as operational maintenance with named owners, measurable controls, and workflow-by-workflow accountability.
+The strongest teams review these artifacts on a regular cadence - especially after they expand from assistance into automation. That is where regulated organizations tend to outperform: they treat AI governance as operational maintenance with named owners, measurable controls, and workflow-by-workflow accountability.
 
-Legal teams that build on governed sources, start with bounded workflows, and scale based on evidence will consistently outperform those waiting for a perfect moment to begin. The gap between fast and careful is smaller than most departments assume — when the foundation is right, speed and control reinforce each other.
+Legal teams that build on governed sources, start with bounded workflows, and scale based on evidence will consistently outperform those waiting for a perfect moment to begin. The gap between fast and careful is smaller than most departments assume - when the foundation is right, speed and control reinforce each other.
 
 If you're ready to see how this works in practice, [request a demo](https://www.glean.com/get-a-demo) to explore how we can help your team move faster without trading away the rigor that makes legal work defensible.
 

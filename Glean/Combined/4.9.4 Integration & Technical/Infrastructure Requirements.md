@@ -24,7 +24,7 @@
 
 | Requirement | Glean Hosted (`app.glean.com`) | Customer Hosted |
 |---|---|---|
-| Customer cloud account | No | Yes — dedicated AWS or GCP |
+| Customer cloud account | No | Yes - dedicated AWS or GCP |
 | Core services | Glean-operated | EKS, RDS, S3, ElastiCache, ALB, Lambda, etc. (AWS) or GCP equivalents |
 | Networking | Outbound HTTPS to Glean + OAuth IdPs | Allowlist Glean Central IPs + 3 tenant-specific IPs |
 | Patching / upgrades | Glean-managed | Glean-managed (customer cannot alter architecture) |
@@ -33,8 +33,8 @@
 
 ### Tenant sandbox (`app.glean.com`) implication
 
-- Stratos eval tenant is likely **Glean Hosted** — no VPC, no EKS, no Customer Hosted bootstrap required for baseline.
-- Client enterprises with strict residency may need **Customer Hosted** quote — materially different infra project.
+- Stratos eval tenant is likely **Glean Hosted** - no VPC, no EKS, no Customer Hosted bootstrap required for baseline.
+- Client enterprises with strict residency may need **Customer Hosted** quote - materially different infra project.
 
 ### Verification steps / test case
 

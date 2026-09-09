@@ -85,19 +85,19 @@ Listen to article
 
 The financial services industry is operating under more pressure than ever. Regulatory requirements are shifting. Customer expectations are rising. Competition is increasing. And the cost of inefficiency keeps climbing.
 
-To keep up, many firms have invested heavily in AI — building data lakes, piloting chatbots, and testing new tools. But for all the momentum, one challenge remains: turning those investments into meaningful operational impact.
+To keep up, many firms have invested heavily in AI - building data lakes, piloting chatbots, and testing new tools. But for all the momentum, one challenge remains: turning those investments into meaningful operational impact.
 
 That's where AI agents come in.
 
-[AI agents](https://www.glean.com/product/ai-agents) don't just respond to questions. They retrieve information, reason through it, and take action — helping employees streamline everyday work, from onboarding and claims processing to audits and deal prep.
+[AI agents](https://www.glean.com/product/ai-agents) don't just respond to questions. They retrieve information, reason through it, and take action - helping employees streamline everyday work, from onboarding and claims processing to audits and deal prep.
 
 The time savings are measurable. Workers say AI saves them 11 hours a week, according to the [Glean Work AI Index 2026](https://www.glean.com/work-ai-institute/work-ai-index).
 
-In this blog, we'll explore how agents are transforming real workflows across banking, insurance, asset management, and more. You'll see why the right agent, in the right workflow, can make a measurable difference — today.
+In this blog, we'll explore how agents are transforming real workflows across banking, insurance, asset management, and more. You'll see why the right agent, in the right workflow, can make a measurable difference - today.
 
 ## What is an AI agent?
 
-An AI agent is more than a chatbot. It's a task-oriented assistant that can retrieve information, reason over it, and take action — all grounded in your company's knowledge, data, and systems.
+An AI agent is more than a chatbot. It's a task-oriented assistant that can retrieve information, reason over it, and take action - all grounded in your company's knowledge, data, and systems.
 
 Here's what an AI agent can do in practice:
 
@@ -116,7 +116,7 @@ Crucially, they also:
 
 -   Respect governance policies and role-based access controls
 -   Adhere to industry regulations and internal compliance frameworks
--   Act on institutional knowledge — not just surface-level information
+-   Act on institutional knowledge - not just surface-level information
 -   Improve decision-making across front-, middle-, and back-office teams
 
 Here's the mechanism behind that governance. Glean enforces permission-aware access at retrieval, so an agent only uses the data each user is already allowed to see. Every answer comes with citations, so reviewers can trace a claim back to its source and verify it. That keeps sensitive information governed without slowing teams down.
@@ -127,7 +127,7 @@ Where large-scale AI initiatives can take years to deliver results, agents offer
 
 These examples reflect real challenges financial institutions face every day, and how AI agents can help solve them with speed, consistency, and context. They show what's possible when firms build agents on a secure, flexible [platform](https://www.glean.com/product/overview) like Glean.
 
-Each one is a starting point to imagine how you might streamline workflows, reduce risk, or improve customer experiences — by putting the right information in the right hands, instantly.
+Each one is a starting point to imagine how you might streamline workflows, reduce risk, or improve customer experiences - by putting the right information in the right hands, instantly.
 
 ### Retail and commercial banking
 
@@ -136,7 +136,7 @@ Each one is a starting point to imagine how you might streamline workflows, redu
 *Instantly delivers up-to-date forms, policies, and product information.*
 
 -   **Problem to solve:** Onboarding teams waste time searching for the latest versions of forms, disclosures, and product details across disconnected systems.
--   **What it does:** Retrieves relevant content — such as fee schedules, account terms, and documentation workflows — from tools like SharePoint and Confluence.
+-   **What it does:** Retrieves relevant content - such as fee schedules, account terms, and documentation workflows - from tools like SharePoint and Confluence.
 -   **The impact:** Speeds up onboarding, ensures consistency across branches, and reduces compliance risk.
 
 **Cross-sell guide for branch associates**
@@ -144,7 +144,7 @@ Each one is a starting point to imagine how you might streamline workflows, redu
 *Surfaces personalized product recommendations in real time during customer conversations.*
 
 -   **Problem to solve:** Associates lack context about customers' financial goals and past interactions, leading to missed opportunities.
--   **What it does:** Combines data from CRMs, account histories, and interaction logs to suggest relevant services or products — along with supporting collateral.
+-   **What it does:** Combines data from CRMs, account histories, and interaction logs to suggest relevant services or products - along with supporting collateral.
 -   **The impact:** Improves customer lifetime value, increases adoption of bank services, and boosts associate productivity.
 
 ### Corporate and investment banking
@@ -210,7 +210,7 @@ In regulated finance, compliance is where AI agents deliver the most value. Beca
 *Detects oversharing or at-risk data across systems.*
 
 -   **Problem to solve:** Teams lack real-time visibility into where sensitive data lives or how it's being accessed.
--   **What it does:** Scans connected tools — like Box, SharePoint, and Jira — for access violations, expired permissions, or data exposure.
+-   **What it does:** Scans connected tools - like Box, SharePoint, and Jira - for access violations, expired permissions, or data exposure.
 -   **The impact:** Strengthens governance, reduces regulatory risk, and simplifies compliance reporting.
 
 **Audit prep assistant**
@@ -223,7 +223,7 @@ In regulated finance, compliance is where AI agents deliver the most value. Beca
 
 ## What makes Glean the right platform for AI agents in financial services
 
-Glean's Work AI platform is purpose-built for complex, regulated environments like financial services. Whether you're launching your first agent or scaling across departments, Glean gives you the tools to move quickly — without compromising on control, security, or accuracy. Explore [Glean for financial services](https://www.glean.com/solutions/finance) to see how it fits regulated workflows.
+Glean's Work AI platform is purpose-built for complex, regulated environments like financial services. Whether you're launching your first agent or scaling across departments, Glean gives you the tools to move quickly - without compromising on control, security, or accuracy. Explore [Glean for financial services](https://www.glean.com/solutions/finance) to see how it fits regulated workflows.
 
 Key capabilities include:
 
@@ -233,7 +233,7 @@ Key capabilities include:
 -   **Agent templates and libraries:** Accelerate time-to-value with prebuilt workflows designed for financial services
 -   **Custom actions and extensions:** Configure agents to reflect your firm's exact processes, data flows, and approval paths
 
-What sets Glean apart is its ability to unify knowledge, context, and execution in one platform. That means agents can go beyond answering questions — they help teams take the next step.
+What sets Glean apart is its ability to unify knowledge, context, and execution in one platform. That means agents can go beyond answering questions - they help teams take the next step.
 
 ## A smarter path to AI adoption
 
@@ -241,7 +241,7 @@ In financial services, adopting AI can't come at the expense of security, accura
 
 AI agents offer a practical way to start small and scale fast. From onboarding and audits to deal prep and claims management, they're already helping firms reduce costs, improve decisions, and deliver better service.
 
-And with Glean, it's easy to get started — without disrupting the systems or safeguards you already trust.
+And with Glean, it's easy to get started - without disrupting the systems or safeguards you already trust.
 
 Download the [financial services whitepaper](https://www.glean.com/resources/guides/glean-ai-transformation-finserv) or [get a demo](https://www.glean.com/get-a-demo) to see what's possible.
 

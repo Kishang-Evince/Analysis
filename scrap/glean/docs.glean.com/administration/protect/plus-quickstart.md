@@ -23,7 +23,7 @@ To verify that Protect+ is fully provisioned:
     -   **Sensitive Findings** (with access to dashboards, policies, and findings)
     -   **AI Security** (with access to AI guardrails policies)
 
-If, instead, you see only an onboarding or upsell screen describing Protect+ capabilities — and no **Sensitive Findings** or **AI Security** tabs — provisioning has not yet been completed for your tenant. In that case:
+If, instead, you see only an onboarding or upsell screen describing Protect+ capabilities - and no **Sensitive Findings** or **AI Security** tabs - provisioning has not yet been completed for your tenant. In that case:
 
 -   Open a ticket with [Glean Support](https://support.glean.com/) and reference your Protect+ entitlement.
 -   Glean will complete the provisioning, then ask a Super Admin to recheck the Admin Console to confirm that the **Sensitive Findings** and **AI Security** tabs are visible.

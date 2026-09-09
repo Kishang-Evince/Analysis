@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/healthcare-whitepaper"
 canonical: "https://www.glean.com/resources/guides/healthcare-whitepaper"
 title: "Healthcare is evolving. Unified knowledge is the key to moving faster."
-description: "Enterprise AI is reshaping how healthcare organizations work — across providers, payers, and life sciences teams. But realizing the full value of AI takes more than task automation. This whitepaper explores seven high-impact areas where connected AI empowers teams to improve care delivery, accelerate operations, and make smarter decisions with confidence."
+description: "Enterprise AI is reshaping how healthcare organizations work - across providers, payers, and life sciences teams. But realizing the full value of AI takes more than task automation. This whitepaper explores seven high-impact areas where connected AI empowers teams to improve care delivery, accelerate operations, and make smarter decisions with confidence."
 fetched_at: "2026-09-01T13:27:08.890Z"
 ---
 ## Work AI that works.

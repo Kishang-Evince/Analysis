@@ -20,7 +20,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-Surface what was said, what was decided, and what needs to happen next — without digging through separate meeting tools. Otter.ai in Glean makes meeting knowledge searchable alongside the rest of your company's context.
+Surface what was said, what was decided, and what needs to happen next - without digging through separate meeting tools. Otter.ai in Glean makes meeting knowledge searchable alongside the rest of your company's context.
 
 ## Work AI that works.
 

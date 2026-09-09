@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:52.253Z"
 ---
 ### Overview
 
-Salesforce is a leading customer relationship managament platform. Connecting Salesforce with Glean brings live CRM data into your daily workflow. Look up records and prep accounts with full context, update deals or cases directly, and automate GTM and support routines — all from Glean, while Salesforce remains your system of record.
+Salesforce is a leading customer relationship managament platform. Connecting Salesforce with Glean brings live CRM data into your daily workflow. Look up records and prep accounts with full context, update deals or cases directly, and automate GTM and support routines - all from Glean, while Salesforce remains your system of record.
 
 ### Features
 

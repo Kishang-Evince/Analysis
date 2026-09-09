@@ -61,7 +61,7 @@ Consider a user with the following role assignments:
 
 | Source | Primary Role | Secondary Roles |
 | --- | --- | --- |
-| Direct assignment | Admin | — |
+| Direct assignment | Admin | - |
 | Group: IT-Admins | Setup Admin | API Token Creator |
 | Group: Content-Team | Member | Answers Moderator |
 
@@ -185,7 +185,7 @@ Map your IT Admins group to the Admin role so that all IT team members automatic
 
 | Group | Primary Role | Secondary Roles |
 | --- | --- | --- |
-| [IT-Admins@company.com](mailto:IT-Admins@company.com) | Admin | — |
+| [IT-Admins@company.com](mailto:IT-Admins@company.com) | Admin | - |
 
 ### Example 2: Glean Pilot Group[​](#example-2-glean-pilot-group "Direct link to Example 2: Glean Pilot Group")
 
@@ -193,7 +193,7 @@ Grant Glean access to a pilot group of early adopters:
 
 | Group | Primary Role | Secondary Roles |
 | --- | --- | --- |
-| [Glean-Pilot@company.com](mailto:Glean-Pilot@company.com) | Member | — |
+| [Glean-Pilot@company.com](mailto:Glean-Pilot@company.com) | Member | - |
 
 Then configure Glean access to include this group in the test group settings.
 

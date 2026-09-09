@@ -67,23 +67,23 @@ AI agents now handle a growing share of customer support interactions across fin
 
 The stakes are high. Healthcare data breaches involving improperly trained AI systems cost an average of $7.42 million per incident, and regulatory penalties for non-compliant customer interactions continue to rise across industries.
 
-A structured approach to AI compliance training bridges the gap between speed and safety. The methods, tools, and techniques that make this possible go well beyond prompt engineering — they require a system-level commitment to trusted knowledge, permission-aware access, and continuous evaluation.
+A structured approach to AI compliance training bridges the gap between speed and safety. The methods, tools, and techniques that make this possible go well beyond prompt engineering - they require a system-level commitment to trusted knowledge, permission-aware access, and continuous evaluation.
 
 ## What is AI compliance training for support?
 
 AI compliance training for support is the process of teaching an AI agent to answer, act, and escalate within the legal, regulatory, and company-specific rules that govern customer interactions. Unlike general-purpose model fine-tuning, this discipline addresses the full scope of agent behavior: what the agent can see, which tools it can invoke, which actions it may take, and the precise conditions under which it must hand work to a person.
 
-A strong compliance training program ties the agent to approved company knowledge, current policies, and source-level permissions rather than broad internet knowledge or static prompts alone. This distinction matters. Large language models on their own are prone to hallucination, data leakage, and irrelevant responses. Enterprise-ready AI compliance training wraps the model in a retrieval layer — often built on Retrieval Augmented Generation (RAG) — that grounds every response in verified, permissioned content. Platforms like Glean reinforce this approach by combining enterprise search, a knowledge graph, and strict permission enforcement so the agent only surfaces information a given user is authorized to access.
+A strong compliance training program ties the agent to approved company knowledge, current policies, and source-level permissions rather than broad internet knowledge or static prompts alone. This distinction matters. Large language models on their own are prone to hallucination, data leakage, and irrelevant responses. Enterprise-ready AI compliance training wraps the model in a retrieval layer - often built on Retrieval Augmented Generation (RAG) - that grounds every response in verified, permissioned content. Platforms like Glean reinforce this approach by combining enterprise search, a knowledge graph, and strict permission enforcement so the agent only surfaces information a given user is authorized to access.
 
 The goal is practical and measurable across three dimensions:
 
--   **Accuracy and grounding**: Every agent response should trace back to an approved source — a policy document, a knowledge base article, a product specification. Unsupported generation is the fastest path to compliance failure.
--   **Appropriate escalation and action boundaries**: The agent needs clear rules about when to resolve, when to escalate, and when to refuse. Compliance covers not just language but also system actions — account changes, refund processing, data disclosure — each of which carries its own risk profile.
+-   **Accuracy and grounding**: Every agent response should trace back to an approved source - a policy document, a knowledge base article, a product specification. Unsupported generation is the fastest path to compliance failure.
+-   **Appropriate escalation and action boundaries**: The agent needs clear rules about when to resolve, when to escalate, and when to refuse. Compliance covers not just language but also system actions - account changes, refund processing, data disclosure - each of which carries its own risk profile.
 -   **Auditability and ongoing evaluation**: Compliance cannot be assumed; it must be demonstrated. That requires logging, citation of sources, structured evaluation frameworks, and regular review cycles that compare agent behavior against current policy.
 
-Permission-aware retrieval sits at the center of this architecture. Traditional support tools often treat access control as an afterthought, bolting permissions onto the response layer after the model has already processed sensitive data. A compliance-first design enforces permissions upstream — during retrieval — so the model never encounters information the end user or agent should not access. This approach addresses data leakage at the architectural level rather than relying on post-generation filters.
+Permission-aware retrieval sits at the center of this architecture. Traditional support tools often treat access control as an afterthought, bolting permissions onto the response layer after the model has already processed sensitive data. A compliance-first design enforces permissions upstream - during retrieval - so the model never encounters information the end user or agent should not access. This approach addresses data leakage at the architectural level rather than relying on post-generation filters.
 
-The compliance surface in support is broader than most teams initially expect. A single customer interaction might involve identity verification, account data lookup, policy interpretation, a system action, and a disclosure requirement — each governed by different rules. AI compliance training must account for all of these moments, not just the final text the customer reads. The agent's internal reasoning, tool selection, and data access patterns all fall within the compliance boundary, and each layer needs its own controls, tests, and audit trail.
+The compliance surface in support is broader than most teams initially expect. A single customer interaction might involve identity verification, account data lookup, policy interpretation, a system action, and a disclosure requirement - each governed by different rules. AI compliance training must account for all of these moments, not just the final text the customer reads. The agent's internal reasoning, tool selection, and data access patterns all fall within the compliance boundary, and each layer needs its own controls, tests, and audit trail.
 
 ## How to train an AI agent to follow compliance guidelines during support
 
@@ -135,14 +135,14 @@ Teams usually reach this stage once the first pilot shows promise and the operat
 
 ### 1\. What are the best practices for training AI agents on compliance?
 
-The best programs train people and systems at the same time. That means role-based instruction for support leads, compliance teams, IT, security, and workflow owners — not just a generic module for everyone who touches AI in customer support.
+The best programs train people and systems at the same time. That means role-based instruction for support leads, compliance teams, IT, security, and workflow owners - not just a generic module for everyone who touches AI in customer support.
 
 A mature program also uses realistic practice instead of policy review alone. Scenario-based exercises, short refreshers, and tabletop simulations help teams apply compliance standards for AI under pressure, especially when a customer asks for an exception, disputes a decision, or presents incomplete information.
 
 The most durable practices tend to look like this:
 
 -   **Role-based learning paths**: Support managers need policy enforcement and escalation judgment; administrators need configuration discipline; compliance leads need documentation and review methods.
--   **Scenario training tied to live support patterns**: Exercises should reflect the actual queue — disputed charges, identity-sensitive requests, regulated disclosures, service outages, and account recovery.
+-   **Scenario training tied to live support patterns**: Exercises should reflect the actual queue - disputed charges, identity-sensitive requests, regulated disclosures, service outages, and account recovery.
 -   **Frequent refresh cycles**: Quarterly updates work better than annual awareness sessions because policy, tooling, and risk change quickly.
 -   **Attestations and comprehension checks**: Short assessments, signed acknowledgments, and role certifications give teams a record that training happened and that key concepts were understood.
 -   **Cross-functional ownership**: Compliance works better when support, legal, security, and operations share one review rhythm instead of separate checklists and separate vocabularies.
@@ -155,7 +155,7 @@ This also helps with policy change management. A revised retention rule, disclos
 
 A useful integration model includes three layers:
 
-1.  **Policy mapping**: Break large policies into specific obligations by support event — identity checks, cancellations, benefit inquiries, sensitive record access, or refund disputes.
+1.  **Policy mapping**: Break large policies into specific obligations by support event - identity checks, cancellations, benefit inquiries, sensitive record access, or refund disputes.
 2.  **Training delivery**: Assign those obligations through an LMS or internal learning system by role, risk level, and system access.
 3.  **Operational reinforcement**: Pair each training topic with job aids, exception guides, and manager review routines so staff can apply the rule consistently after the lesson ends.
 
@@ -178,7 +178,7 @@ The real value comes from coordination across those layers. A support lead shoul
 
 ### 4\. What challenges might arise when training AI for compliance?
 
-One of the hardest problems is regulatory drift. Rules change, internal policies change, and support content changes — but many organizations fail to update training, review criteria, and operational guidance at the same pace. The result is not a dramatic system failure; it is a slow mismatch between what the organization thinks the agent should do and what teams actually enforce.
+One of the hardest problems is regulatory drift. Rules change, internal policies change, and support content changes - but many organizations fail to update training, review criteria, and operational guidance at the same pace. The result is not a dramatic system failure; it is a slow mismatch between what the organization thinks the agent should do and what teams actually enforce.
 
 Another frequent challenge is ownership ambiguity. Support may assume legal owns the rules, legal may assume IT owns implementation, and security may focus only on technical controls. When no one owns the full training lifecycle, gaps appear in refresh schedules, exception handling, and incident follow-up.
 
@@ -202,11 +202,11 @@ A useful approach is to keep one enterprise framework, then layer industry modul
 
 -   **Core enterprise module**: common operating rules, review expectations, incident paths, and documentation practices
 -   **Industry module**: sector-specific duties, restricted data types, disclosure language, and retention rules
--   **Use-case module**: the exact support environment — benefits support, account servicing, claims intake, patient communications, student services, or regulated product support
+-   **Use-case module**: the exact support environment - benefits support, account servicing, claims intake, patient communications, student services, or regulated product support
 
 That structure supports regulatory compliance AI without forcing every team into the same rulebook. The common framework creates consistency; the industry layer keeps the training accurate enough to hold up in real operations.
 
-The difference between a compliant AI support program and a risky one is rarely a single decision — it is the sum of hundreds of small operational choices made consistently over time. The organizations that get this right treat compliance training as a living system with clear ownership, measurable review cycles, and architecture that enforces rules where the work actually happens.
+The difference between a compliant AI support program and a risky one is rarely a single decision - it is the sum of hundreds of small operational choices made consistently over time. The organizations that get this right treat compliance training as a living system with clear ownership, measurable review cycles, and architecture that enforces rules where the work actually happens.
 
 If you're ready to see how that kind of system comes together, [request a demo to explore how we can help AI transform your workplace](https://www.glean.com/get-a-demo).
 

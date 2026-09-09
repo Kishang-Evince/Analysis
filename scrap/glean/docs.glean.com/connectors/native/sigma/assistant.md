@@ -25,11 +25,11 @@ After you add the Sigma MCP server in Glean, Glean links it to a Sigma connector
 
 The available tools include:
 
--   **Begin Session** — start a new Sigma MCP session.
--   **Describe** — retrieve detailed metadata about a Sigma resource.
--   **List Documents** — discover available Sigma documents.
--   **Query** — run a natural-language query against Sigma data.
--   **Search** — search across Sigma content.
+-   **Begin Session** - start a new Sigma MCP session.
+-   **Describe** - retrieve detailed metadata about a Sigma resource.
+-   **List Documents** - discover available Sigma documents.
+-   **Query** - run a natural-language query against Sigma data.
+-   **Search** - search across Sigma content.
 
 ## Requirements[​](#requirements "Direct link to Requirements")
 

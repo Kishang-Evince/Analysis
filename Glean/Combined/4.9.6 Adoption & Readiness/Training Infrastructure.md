@@ -27,18 +27,18 @@
 | **Official docs** | 6-stage admin lifecycle; 100+ user-guide articles; developers.glean.com API docs | Admin + end-user + developer | Primary reference |
 | **Partner certifications** | Structured learning paths for implementation partners | SI/consulting partners | Stratos Edge enablement path |
 | **Rollout collateral** | Survey templates, kickoff/office-hours agendas, email templates, Prompting 101 eBook | Change champions | Non-technical enablement |
-| **End-user certification** | **Not documented** | — | Gap vs Salesforce-style cert programs |
+| **End-user certification** | **Not documented** | - | Gap vs Salesforce-style cert programs |
 | **In-product onboarding** | Populate-content (Answers, Go Links), extension deploy guides | Business users | Reduces blank-slate friction |
 
 ### Engineering observation (Doc-Verified)
 
-- Academy Agent Builder course linked from agent docs — aligns with 4.9.2 builder eval.
+- Academy Agent Builder course linked from agent docs - aligns with 4.9.2 builder eval.
 - Developer training is API/SDK focused; business-user training is user-guide + eBook + rollout playbook, not formal LMS with completion badges for employees.
-- Gleaniverse Support Center requires **separate account** — not SSO-integrated with tenant by default (adoption friction in Field 2).
+- Gleaniverse Support Center requires **separate account** - not SSO-integrated with tenant by default (adoption friction in Field 2).
 
 ### Verification steps / test case
 
-1. Enroll pilot admin in Glean Academy Agent Builder — confirm course access + completion tracking.
+1. Enroll pilot admin in Glean Academy Agent Builder - confirm course access + completion tracking.
 2. Walk business user through search user-guide + Assistant best practices with Notion/OneDrive query.
 3. Inventory rollout collateral available from account team (surveys, email templates).
 4. Confirm whether Stratos partner cert path is active (4.9.8 cross-ref).

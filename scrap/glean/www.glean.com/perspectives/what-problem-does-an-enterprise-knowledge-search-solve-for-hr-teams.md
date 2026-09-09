@@ -63,33 +63,33 @@ Share this article:
 
 # What problems does enterprise knowledge search solve for HR teams?
 
-HR teams are drowning in data. Between managing employee records, navigating compliance requirements, and fielding endless policy questions, the modern HR professional spends nearly a third of their day just searching for information. This isn't just inefficient—it's unsustainable.
+HR teams are drowning in data. Between managing employee records, navigating compliance requirements, and fielding endless policy questions, the modern HR professional spends nearly a third of their day just searching for information. This isn't just inefficient-it's unsustainable.
 
-Enterprise knowledge search offers a lifeline. By unifying scattered HR information into a single, intelligent search experience, this technology transforms how HR teams work, how employees find answers, and how organizations manage their most valuable asset: their people. In a team of 50 employees, 8,320 hours are lost annually to information searching—equivalent to having four full-time employees doing nothing but searching for information the organization already possesses. Additionally, 73% of companies remain unaware that enterprise search solutions exist.
+Enterprise knowledge search offers a lifeline. By unifying scattered HR information into a single, intelligent search experience, this technology transforms how HR teams work, how employees find answers, and how organizations manage their most valuable asset: their people. In a team of 50 employees, 8,320 hours are lost annually to information searching-equivalent to having four full-time employees doing nothing but searching for information the organization already possesses. Additionally, 73% of companies remain unaware that enterprise search solutions exist.
 
 ## What is enterprise knowledge search for HR?
 
-Enterprise knowledge search is a unified system that enables HR teams to instantly find information across all their dispersed data sources—from employee databases and policy documents to training materials and compliance records. Think of it as having a brilliant assistant who knows exactly where every piece of HR information lives and can retrieve it in seconds.
+Enterprise knowledge search is a unified system that enables HR teams to instantly find information across all their dispersed data sources-from employee databases and policy documents to training materials and compliance records. Think of it as having a brilliant assistant who knows exactly where every piece of HR information lives and can retrieve it in seconds.
 
 Unlike traditional search methods that require accessing multiple systems separately, [enterprise knowledge management](https://www.glean.com/blog/enterprise-knowledge-management-guide) creates a single point of access for all HR-related information. Instead of logging into your HRIS for employee data, then switching to your document management system for policies, then checking your LMS for training records, you search once and find everything.
 
-This technology uses AI to understand context and deliver precise answers, not just document links, making it especially valuable for HR teams who manage vast amounts of sensitive employee data. When an employee asks about parental leave, the system doesn't just return a 50-page benefits document—it extracts and presents the specific policy details they need.
+This technology uses AI to understand context and deliver precise answers, not just document links, making it especially valuable for HR teams who manage vast amounts of sensitive employee data. When an employee asks about parental leave, the system doesn't just return a 50-page benefits document-it extracts and presents the specific policy details they need.
 
 Modern [enterprise search](https://www.glean.com/blog/what-is-enterprise-search) goes beyond simple keyword matching to understand the intent behind queries, whether an HR professional is looking for a specific policy, employee record, or compliance requirement. It learns your organization's unique language, understanding that "time off" and "PTO" mean the same thing in your company context.
 
 ## The hidden cost of information fragmentation in HR
 
-Studies show HR professionals spend up to 2.5 hours per day searching for information—that's over 30% of their workday lost to hunting down data. Imagine what your HR team could accomplish with an extra 12 hours per week focused on strategic initiatives rather than information retrieval. The average large business utilizes [367](https://www.ciodive.com/news/IT-spending-enterprise-applications/638145/) software applications and systems to conduct daily operations. Companies with disconnected and inefficient work methods face a 24% drop in productivity.
+Studies show HR professionals spend up to 2.5 hours per day searching for information-that's over 30% of their workday lost to hunting down data. Imagine what your HR team could accomplish with an extra 12 hours per week focused on strategic initiatives rather than information retrieval. The average large business utilizes [367](https://www.ciodive.com/news/IT-spending-enterprise-applications/638145/) software applications and systems to conduct daily operations. Companies with disconnected and inefficient work methods face a 24% drop in productivity.
 
-Studies show HR professionals spend up to 2.5 hours per day searching for information—that's over 30% of their workday lost to hunting down data. Across industries, employees spend [1.8 hours](https://cottrillresearch.com/various-survey-statistics-workers-spend-too-much-time-searching-for-information/) every day searching and gathering information—so much so that businesses effectively hire five employees but only four contribute productive value, as the fifth spends their entire time searching for answers without contributing meaningful work output. Imagine what your HR team could accomplish with an extra 12 hours per week focused on strategic initiatives rather than information retrieval.
+Studies show HR professionals spend up to 2.5 hours per day searching for information-that's over 30% of their workday lost to hunting down data. Across industries, employees spend [1.8 hours](https://cottrillresearch.com/various-survey-statistics-workers-spend-too-much-time-searching-for-information/) every day searching and gathering information-so much so that businesses effectively hire five employees but only four contribute productive value, as the fifth spends their entire time searching for answers without contributing meaningful work output. Imagine what your HR team could accomplish with an extra 12 hours per week focused on strategic initiatives rather than information retrieval.
 
-Studies show HR professionals spend up to 2.5 hours per day [searching for information](https://www.glean.com/blog/finding-what-you-need-at-work-shouldnt-be-so-hard)—that's over 30% of their workday lost to hunting down data. Imagine what your HR team could accomplish with an extra 12 hours per week focused on strategic initiatives rather than information retrieval.
+Studies show HR professionals spend up to 2.5 hours per day [searching for information](https://www.glean.com/blog/finding-what-you-need-at-work-shouldnt-be-so-hard)-that's over 30% of their workday lost to hunting down data. Imagine what your HR team could accomplish with an extra 12 hours per week focused on strategic initiatives rather than information retrieval.
 
 Enterprise search transforms onboarding by providing new hires instant access to all necessary information through a single search interface. [70%](https://www.yomly.com/employee-onboarding-statistics/) of new hires decide within the first month whether their job represents a good fit, while 20% of employees quit within the first 45 days of joining new positions, and effective onboarding programs can improve employee retention by 52% and productivity by 60%. No more overwhelming orientation packets or forgotten login credentials for multiple systems.
 
 Without unified search capabilities, HR teams risk providing outdated information, missing critical compliance deadlines, or delivering conflicting answers to employee questions. One HR manager might reference an old vacation policy saved on their desktop, while another quotes the updated version from the intranet.
 
-The average enterprise has 93 different applications, creating information silos that prevent HR from having a complete view of employee data and organizational knowledge. These silos don't just waste time—they create risk, reduce employee satisfaction, and prevent HR from operating strategically.
+The average enterprise has 93 different applications, creating information silos that prevent HR from having a complete view of employee data and organizational knowledge. These silos don't just waste time-they create risk, reduce employee satisfaction, and prevent HR from operating strategically.
 
 ## Accelerating employee onboarding and time-to-productivity
 
@@ -105,7 +105,7 @@ Managers save an average of 8 hours per new hire when onboarding materials, chec
 
 ## Streamlining policy access and compliance management
 
-Enterprise search ensures all employees access the most current version of policies, eliminating confusion from outdated documents circulating via email. When policies update, everyone immediately sees the latest version—no more tracking down who has which version.
+Enterprise search ensures all employees access the most current version of policies, eliminating confusion from outdated documents circulating via email. When policies update, everyone immediately sees the latest version-no more tracking down who has which version.
 
 HR teams can track which policies employees have accessed and when, creating an audit trail for compliance purposes. This visibility proves invaluable during audits or legal reviews, demonstrating that required information was available and accessed.
 
@@ -131,11 +131,11 @@ Analytics show which questions employees ask most frequently, helping HR proacti
 
 Enterprise search integrates with existing HR tools like Workday, BambooHR, ADP, and others to create a unified knowledge environment. Your investment in specialized systems remains valuable while gaining the benefits of unified access.
 
-Cross-system search eliminates the need for HR staff to log into multiple platforms to compile employee information. Preparing for a performance review no longer requires gathering data from five different systems—one search surfaces everything needed.
+Cross-system search eliminates the need for HR staff to log into multiple platforms to compile employee information. Preparing for a performance review no longer requires gathering data from five different systems-one search surfaces everything needed.
 
 Unified search maintains security permissions, ensuring sensitive data remains protected while still being discoverable by authorized users. Salary information remains confidential while policy documents stay publicly accessible, all managed automatically.
 
-Integration capabilities mean HR can keep using their preferred tools while gaining the benefits of centralized search. There's no need to migrate data or change workflows—the search layer sits on top of existing systems.
+Integration capabilities mean HR can keep using their preferred tools while gaining the benefits of centralized search. There's no need to migrate data or change workflows-the search layer sits on top of existing systems.
 
 Real-time syncing ensures information stays current across all connected systems without manual updates. When an employee's status changes in the HRIS, it's immediately reflected in search results across all integrated platforms.
 
@@ -165,13 +165,13 @@ ROI metrics demonstrate reduced HR ticket volume, faster issue resolution, and i
 
 ## The future of HR is unified knowledge
 
-Enterprise knowledge search isn't just another HR technology—it's a fundamental shift in how organizations manage and share human resources information. By breaking down information silos, enabling self-service, and providing instant access to critical knowledge, it transforms HR from a reactive support function to a proactive strategic partner.
+Enterprise knowledge search isn't just another HR technology-it's a fundamental shift in how organizations manage and share human resources information. By breaking down information silos, enabling self-service, and providing instant access to critical knowledge, it transforms HR from a reactive support function to a proactive strategic partner.
 
 The benefits extend far beyond time savings. When employees can find answers instantly, when HR teams can focus on strategic work, and when compliance becomes automatic rather than manual, the entire organization operates more effectively.
 
-For HR teams drowning in data and requests, enterprise search offers more than efficiency—it offers transformation. The question isn't whether to implement enterprise search, but how quickly you can bring this capability to your organization.
+For HR teams drowning in data and requests, enterprise search offers more than efficiency-it offers transformation. The question isn't whether to implement enterprise search, but how quickly you can bring this capability to your organization.
 
-The future of HR isn't about managing more systems—it's about making all your systems work together seamlessly. When your HR team can focus on people instead of searching for information, and when employees can find answers as quickly as they think of questions, that's when real transformation happens.
+The future of HR isn't about managing more systems-it's about making all your systems work together seamlessly. When your HR team can focus on people instead of searching for information, and when employees can find answers as quickly as they think of questions, that's when real transformation happens.
 
 Ready to see what unified knowledge search can do for your HR team? [Request a demo to explore how we can transform your workplace](https://www.glean.com/get-a-demo).
 

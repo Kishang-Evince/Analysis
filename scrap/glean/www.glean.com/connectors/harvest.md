@@ -17,7 +17,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-Get time-tracking insights in context with Glean—ask “How much time did I spend on Project X?” or combine time data with docs and tickets to understand effort for features or projects.
+Get time-tracking insights in context with Glean-ask “How much time did I spend on Project X?” or combine time data with docs and tickets to understand effort for features or projects.
 
 ## Work AI that works.
 

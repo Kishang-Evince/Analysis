@@ -31,25 +31,25 @@
 | **Outlook** | Indexed batch + optional federated fetch | Incremental | Moderate |
 | **Notion** | **Scheduled crawl only** (no webhooks) | Full crawl ~6 hours | Weak |
 
-- General doc pattern: most connectors support webhooks processed in **1–5 minutes** with **24-hour incremental crawl** safety net — but Notion/Gmail deviate.
+- General doc pattern: most connectors support webhooks processed in **1–5 minutes** with **24-hour incremental crawl** safety net - but Notion/Gmail deviate.
 
 ### Outbound (Glean → customer endpoint)
 
 - **Platform Triggers API:** subscribe to presets (e.g., calendar events, reviews); delivers Standard Webhooks signed HMAC-SHA256; scoped to subscriber permissions.
-- Marked **experimental** — requires `X-Glean-Include-Experimental: true`.
+- Marked **experimental** - requires `X-Glean-Include-Experimental: true`.
 - Distinct from agent **content triggers** (4.9.2 Field 10) which run agents, not arbitrary webhook URLs.
 
 ### Networking
 
-- Each tenant gets dedicated **inbound webhook IP** plus crawler egress and load balancer IPs — request from Glean Support for allowlisting.
+- Each tenant gets dedicated **inbound webhook IP** plus crawler egress and load balancer IPs - request from Glean Support for allowlisting.
 
 ### Verification steps / test case
 
-1. Edit Teams channel message — search Glean within 5 min.
-2. Upload Drive doc — measure index appearance time.
-3. Edit Notion page — measure crawl lag (expect up to ~6h) vs Live Mode fetch.
-4. Platform Trigger: create preset → test endpoint — verify signature + payload.
-5. Log Gmail thread change — note polling delay vs Drive webhook speed.
+1. Edit Teams channel message - search Glean within 5 min.
+2. Upload Drive doc - measure index appearance time.
+3. Edit Notion page - measure crawl lag (expect up to ~6h) vs Live Mode fetch.
+4. Platform Trigger: create preset → test endpoint - verify signature + payload.
+5. Log Gmail thread change - note polling delay vs Drive webhook speed.
 
 **Risk & Cost Impact:** Risk: Medium (Notion/Gmail staleness) | Cost: Native
 

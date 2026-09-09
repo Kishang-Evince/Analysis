@@ -93,7 +93,7 @@ By leveraging Glean, support teams can improve first contact resolution rates, f
 
 ## Supercharging everyday work
 
-Whether you’re looking to accelerate onboarding for new agents, get the customer context you need to deliver a personalized resolution, or triage inbound tickets more effectively, enterprise AI assistants like Glean are transforming the way support teams operate. Make it easier to manage information, collaborate across functions, and deliver exceptional customer service with Glean today — check out our full [eBook](/resources/guides/support-glean-ebook) to learn more!
+Whether you’re looking to accelerate onboarding for new agents, get the customer context you need to deliver a personalized resolution, or triage inbound tickets more effectively, enterprise AI assistants like Glean are transforming the way support teams operate. Make it easier to manage information, collaborate across functions, and deliver exceptional customer service with Glean today - check out our full [eBook](/resources/guides/support-glean-ebook) to learn more!
 
 [
 

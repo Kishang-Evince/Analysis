@@ -13,7 +13,7 @@ Beta
 
 `renderSettings` is marked experimental in the SDK's type definitions and may change at any time.
 
-PreviewLive — your instance
+PreviewLive - your instance
 
 portal.sample.internal/settings
 
@@ -31,7 +31,7 @@ SSlackConnect
 
 CConfluenceConnect
 
-Illustrative previewRendered with sample data — in your app, this component renders live against your organization's Glean instance. Try it live →
+Illustrative previewRendered with sample data - in your app, this component renders live against your organization's Glean instance. Try it live →
 
 ## Install the SDK[​](#install-the-sdk "Direct link to Install the SDK")
 
@@ -54,7 +54,7 @@ The Glean web app domain differs from your company's Glean backend domain (find 
 
 ## Render settings[​](#render-settings "Direct link to Render settings")
 
-1.  Create a container element with `position: relative`, `display: block`, and a defined size — at least 800px wide and 600px tall is recommended.
+1.  Create a container element with `position: relative`, `display: block`, and a defined size - at least 800px wide and 600px tall is recommended.
     
 2.  Render the settings widget into your container:
     
@@ -65,7 +65,7 @@ import GleanWebSDK from '@gleanwork/web-sdk';GleanWebSDK.renderSettings(document
 
 note
 
-Unlike the other components, `renderSettings` is not exported individually — call it on the SDK's default export (or on `window.GleanWebSDK` when using the script tag).
+Unlike the other components, `renderSettings` is not exported individually - call it on the SDK's default export (or on `window.GleanWebSDK` when using the script tag).
 
 For the full surface, see the [renderSettings API documentation](/libraries/web-sdk/reference/interfaces/GleanWebSDK#rendersettings).
 
@@ -77,7 +77,7 @@ For the full surface, see the [renderSettings API documentation](/libraries/web-
 | --- | --- | --- |
 | `hideUnconfigurableDatasources` | `boolean` | Hide admin-managed datasources that the user cannot configure themselves. |
 
-All components also accept the common [`Options`](/libraries/web-sdk/reference/interfaces/Options) — `backend`, `authToken`, `theme`, `themeVariant`, `locale`, and more.
+All components also accept the common [`Options`](/libraries/web-sdk/reference/interfaces/Options) - `backend`, `authToken`, `theme`, `themeVariant`, `locale`, and more.
 
 warning
 

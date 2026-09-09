@@ -1,4 +1,4 @@
-# Field 7 — Error Handling & Recovery
+# Field 7 - Error Handling & Recovery
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Error Handling & Recovery.md](../../../Glean/Combined/4.9.1 Functional Capabilities/Error Handling & Recovery.md)

@@ -46,7 +46,7 @@ Before you enable transcripts, verify the following:
 
 ## Permission requirements[​](#permission-requirements "Direct link to Permission requirements")
 
-Transcripts use a **separate Entra ID app registration** from the messaging connector, with its own **Application (client) ID**. The transcript app uses the **same certificate and private key** as the messaging app — upload the certificate to this app registration too — and you enter its client ID separately in Glean.
+Transcripts use a **separate Entra ID app registration** from the messaging connector, with its own **Application (client) ID**. The transcript app uses the **same certificate and private key** as the messaging app - upload the certificate to this app registration too - and you enter its client ID separately in Glean.
 
 Grant admin consent for the following Microsoft Graph **application** permissions on the transcript app:
 
@@ -127,9 +127,9 @@ If **Microsoft Graph access** is off, Glean can't fetch transcripts, regardless 
 
 In the Microsoft Teams connector setup, complete the transcript section:
 
--   **Directory (tenant) ID** — the same tenant ID as the messaging connector.
--   **Transcript Application (client) ID** — the client ID of the transcript app registration.
--   **Client certificate** and **private key** — the same certificate and PKCS#8 private key pair used for the messaging app. (Legacy client-secret deployments enter a separate transcript client secret instead.)
+-   **Directory (tenant) ID** - the same tenant ID as the messaging connector.
+-   **Transcript Application (client) ID** - the client ID of the transcript app registration.
+-   **Client certificate** and **private key** - the same certificate and PKCS#8 private key pair used for the messaging app. (Legacy client-secret deployments enter a separate transcript client secret instead.)
 -   Glean crawls transcript content eagerly by default. To fetch transcripts on demand instead, turn off **crawl transcript content eagerly**.
 
 Glean automatically enables meeting crawling when transcripts are turned on.
@@ -151,7 +151,7 @@ Glean automatically enables meeting crawling when transcripts are turned on.
 
 ### Transcripts are not appearing (TEAMS-2)
 
-Transcripts require an application access policy granted globally. Verify that the policy references the **transcript app's** Application (client) ID and was granted with `Grant-CsApplicationAccessPolicy -Global`. Allow 30 minutes — and in some cases 24–48 hours — for the policy to propagate. See the [TEAMS-2 error reference](/troubleshooting/error-codes/microsoft/teams/teams-2).
+Transcripts require an application access policy granted globally. Verify that the policy references the **transcript app's** Application (client) ID and was granted with `Grant-CsApplicationAccessPolicy -Global`. Allow 30 minutes - and in some cases 24–48 hours - for the policy to propagate. See the [TEAMS-2 error reference](/troubleshooting/error-codes/microsoft/teams/teams-2).
 
 ### Transcript crawling is being throttled
 
@@ -173,11 +173,11 @@ Eager crawling (the default) fetches transcript content for all accessible meeti
 
 ### Does the transcript app use a separate certificate?
 
-No. The transcript app uses the **same certificate and private key** as the messaging connector — upload the same certificate to the transcript app registration. Only the Application (client) ID differs. Legacy client-secret deployments use a separate transcript client secret.
+No. The transcript app uses the **same certificate and private key** as the messaging connector - upload the same certificate to the transcript app registration. Only the Application (client) ID differs. Legacy client-secret deployments use a separate transcript client secret.
 
 ### Why does setup use a separate app for transcripts?
 
-Transcripts require a distinct set of Microsoft Graph permissions and an application access policy scoped to a specific app. Keeping transcripts in their own app registration lets you grant only the transcript scopes — and apply the access policy — without affecting the messaging connector. It also makes a transcripts-and-meetings-only setup possible.
+Transcripts require a distinct set of Microsoft Graph permissions and an application access policy scoped to a specific app. Keeping transcripts in their own app registration lets you grant only the transcript scopes - and apply the access policy - without affecting the messaging connector. It also makes a transcripts-and-meetings-only setup possible.
 
 ### Can I index transcripts without crawling Teams messages?
 

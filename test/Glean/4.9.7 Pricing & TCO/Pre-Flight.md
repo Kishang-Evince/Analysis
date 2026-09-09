@@ -1,4 +1,4 @@
-# 4.9.7 Admin Test Guide — Glean Pricing & TCO
+# 4.9.7 Admin Test Guide - Glean Pricing & TCO
 
 **Purpose:** Gather contract + usage data for all 5 fields under `4.9.7 Pricing & TCO`.  
 **Companion eval log:** `Glean/Combined/4.9.7 Pricing & TCO/Overview.md`  
@@ -21,11 +21,11 @@
 
 ## Fields in this section
 
-- [Field 1 — Actual Partner Pricing](Actual Partner Pricing.md)
-- [Field 2 — License Structure Details](License Structure Details.md)
-- [Field 3 — Implementation Costs](Implementation Costs.md)
-- [Field 4 — Hidden Costs Identified](Hidden Costs Identified.md)
-- [Field 5 — 3-Year Projected TCO](3-Year Projected TCO.md)
+- [Field 1 - Actual Partner Pricing](Actual Partner Pricing.md)
+- [Field 2 - License Structure Details](License Structure Details.md)
+- [Field 3 - Implementation Costs](Implementation Costs.md)
+- [Field 4 - Hidden Costs Identified](Hidden Costs Identified.md)
+- [Field 5 - 3-Year Projected TCO](3-Year Projected TCO.md)
 
 ---
 
@@ -45,5 +45,5 @@ Update [`Glean/Combined/4.9.7 Pricing & TCO/Pre-Flight.md`](../../../Glean/Combi
 
 ## Safety
 
-1. Quote and contract docs **GUARDED** — do not commit to repo.
+1. Quote and contract docs **GUARDED** - do not commit to repo.
 2. Store pricing in secure folder; eval log gets rounded figures only if client-facing.

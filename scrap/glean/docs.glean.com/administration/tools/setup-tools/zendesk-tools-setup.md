@@ -79,7 +79,7 @@ Use this option if you require a customer-owned Zendesk OAuth client.
 #### Step 2: Copy the client credentials[​](#step-2-copy-the-client-credentials "Direct link to Step 2: Copy the client credentials")
 
 1.  Copy the **Client ID** (also called Unique Identifier).
-2.  Copy the **Client Secret**. Store it securely — Zendesk shows it only once.
+2.  Copy the **Client Secret**. Store it securely - Zendesk shows it only once.
 
 #### Step 3: Enter credentials in Glean and generate the callback URL[​](#step-3-enter-credentials-in-glean-and-generate-the-callback-url "Direct link to Step 3: Enter credentials in Glean and generate the callback URL")
 

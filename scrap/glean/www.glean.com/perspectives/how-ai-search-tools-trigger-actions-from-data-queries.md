@@ -67,7 +67,7 @@ An AI search tool triggers actions from data queries by reading a question or a 
 
 That next step can be updating a record, routing a task, opening a ticket, or starting a multi-step workflow. The difference from ordinary search is direction: instead of returning links for you to act on, the tool combines retrieval, reasoning, workflow rules, and execution in one flow.
 
-This matters because most teams already own the data they need, but it sits in different apps, formats, and owners — and knowledge workers still lose about [one day each work week](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier) searching for and gathering it. Ticket triage, sales follow-up, onboarding, and policy-based approvals all stall in the gap between finding an insight and acting on it, and closing that gap is where these tools earn their keep.
+This matters because most teams already own the data they need, but it sits in different apps, formats, and owners - and knowledge workers still lose about [one day each work week](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier) searching for and gathering it. Ticket triage, sales follow-up, onboarding, and policy-based approvals all stall in the gap between finding an insight and acting on it, and closing that gap is where these tools earn their keep.
 
 ## How can an AI search tool trigger actions based on data queries?
 
@@ -79,7 +79,7 @@ Trust sets the boundary for both. An action should respect the permissions on it
 
 ## Connect the right data sources and actions first
 
-Start where questions and work already live: documents, chat, tickets, CRM records, HR systems, project tools, and internal knowledge bases — when that knowledge stays scattered, teams waste about [25 percent](https://www.atlassian.com/blog/state-of-teams-2025) of their week just searching for answers. Each read path needs a matching write path. If the tool can find a ticket but cannot assign, comment on, or escalate it, the workflow breaks at the handoff.
+Start where questions and work already live: documents, chat, tickets, CRM records, HR systems, project tools, and internal knowledge bases - when that knowledge stays scattered, teams waste about [25 percent](https://www.atlassian.com/blog/state-of-teams-2025) of their week just searching for answers. Each read path needs a matching write path. If the tool can find a ticket but cannot assign, comment on, or escalate it, the workflow breaks at the handoff.
 
 Normalize source metadata so the system understands owners, dates, status fields, and how objects relate across apps. Keep permissions intact from the source, so answers and actions reflect only what a person is already allowed to see and do. Native connectors help here. A [connector ecosystem](https://www.glean.com/product/workplace-search-ai) spanning 100+ enterprise applications ingests content, activity, and identity data while aligning with each application's own access controls.
 
@@ -116,7 +116,7 @@ Every action should log the triggering query, the supporting sources, the rule t
 
 ## Orchestrate actions across systems and keep humans in the loop
 
-The best use cases rarely end in one application. An onboarding flow might read a new hire's role from an HR record, pull the right setup documentation, open provisioning tickets in IT, and post a checklist to the manager, all from a single request. The orchestration layer bridges answers and work by coordinating those steps, handling dependencies, and passing context from one to the next — exactly the multi-step work that helps explain why McKinsey estimates today's AI could automate activities absorbing [60 to 70 percent](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier) of employees' time.
+The best use cases rarely end in one application. An onboarding flow might read a new hire's role from an HR record, pull the right setup documentation, open provisioning tickets in IT, and post a checklist to the manager, all from a single request. The orchestration layer bridges answers and work by coordinating those steps, handling dependencies, and passing context from one to the next - exactly the multi-step work that helps explain why McKinsey estimates today's AI could automate activities absorbing [60 to 70 percent](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier) of employees' time.
 
 Assistants and agents play different parts. An assistant helps a person review and approve each step. [Agents](https://www.glean.com/blog/ai-agents-enterprise), such as those built on Glean Agents and its Agentic Engine, carry out repeatable steps once rules, permissions, and boundaries are set. Agents plan, adapt, and act with enterprise context and oversight, not without it. When the system hits missing data, conflicting signals, or a sensitive action, it should pause, explain, and ask for confirmation.
 
@@ -134,7 +134,7 @@ Measurement closes the loop, because automation without feedback drifts into noi
 
 Then watch the precision of the triggers themselves: how often the right rule fired, how often users accepted or overrode an action, how often the system lacked evidence, and how many duplicate or low-value actions it prevented. Trust signals round out the picture, including citation usage, audit completeness, permission exceptions avoided, and user feedback on whether an action was relevant.
 
-Use that data to improve the loop. Review failed queries, refine source mappings, tighten thresholds, add missing connectors, and update action policies. A staged rollout keeps quality visible: start with one narrow use case, set a manual baseline, compare results after automation, and expand only when action quality stays stable — a discipline that matters when, across organizations, [no more than 10 percent](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) report scaling AI agents in any given business function.
+Use that data to improve the loop. Review failed queries, refine source mappings, tighten thresholds, add missing connectors, and update action policies. A staged rollout keeps quality visible: start with one narrow use case, set a manual baseline, compare results after automation, and expand only when action quality stays stable - a discipline that matters when, across organizations, [no more than 10 percent](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) report scaling AI agents in any given business function.
 
 ## Frequently asked questions
 

@@ -11,7 +11,7 @@ On this page
 
 # Make your self-managed GitLab searchable in Glean
 
-Indexes merge requests, code, issues, wikis, and epics from your self-managed GitLab instance for permission-aware search — so engineers find the code, reviews, and decisions they need without leaving Glean.
+Indexes merge requests, code, issues, wikis, and epics from your self-managed GitLab instance for permission-aware search - so engineers find the code, reviews, and decisions they need without leaving Glean.
 
 Version controlSelf-managedPersonal access tokenPermission-aware
 

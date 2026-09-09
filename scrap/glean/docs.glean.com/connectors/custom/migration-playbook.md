@@ -34,10 +34,10 @@ Because of this namespace separation, agents, saved searches, app filters, and p
     
     Users and admins need to update any artifacts that reference the native connector to point at the new custom connector. There's no automatic carry-over for these items:
     
-    -   **Agents** — update any agents that filter by or reference the native connector.
-    -   **Saved searches** — re-create or update saved searches to scope to the new connector name.
-    -   **App filters** — update any preconfigured app filters in the **Admin console**.
-    -   **Pinned results** — re-pin results from the new custom connector if you've pinned native connector results.
+    -   **Agents** - update any agents that filter by or reference the native connector.
+    -   **Saved searches** - re-create or update saved searches to scope to the new connector name.
+    -   **App filters** - update any preconfigured app filters in the **Admin console**.
+    -   **Pinned results** - re-pin results from the new custom connector if you've pinned native connector results.
 3.  **Deactivate the native connector**
     
     Only deactivate the native connector after you've confirmed that the custom connector is fully populated and all user-facing artifacts point to it.

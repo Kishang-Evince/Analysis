@@ -2,12 +2,12 @@
 url: "https://docs.glean.com/connectors/custom/deployment"
 canonical: "https://docs.glean.com/connectors/custom/deployment"
 title: "Choose a deployment model"
-description: "Compare the two ways to run a custom connector — Glean-hosted or self-hosted in your own cloud — and decide which fits your environment."
+description: "Compare the two ways to run a custom connector - Glean-hosted or self-hosted in your own cloud - and decide which fits your environment."
 fetched_at: "2026-09-01T13:29:20.291Z"
 ---
 On this page
 
-Glean places no constraints on where a custom connector runs — there's no required runtime or hosting pattern. You can use Glean's managed, containerized option, or run your own job or service and push data through the [Indexing API](https://developers.glean.com/). Choose where it runs **before you build**, because it determines how secrets, scheduling, and networking are handled.
+Glean places no constraints on where a custom connector runs - there's no required runtime or hosting pattern. You can use Glean's managed, containerized option, or run your own job or service and push data through the [Indexing API](https://developers.glean.com/). Choose where it runs **before you build**, because it determines how secrets, scheduling, and networking are handled.
 
 There are two deployment models:
 
@@ -40,7 +40,7 @@ On a Glean instance, the connector is packaged as a Docker image and configured 
 
 -   **Secrets** are managed in the Glean cloud project.
 -   The connector is **deployed and scheduled like a native connector**, so crawls run automatically.
--   Glean manages the runtime — you don't operate any infrastructure.
+-   Glean manages the runtime - you don't operate any infrastructure.
 
 This is the simplest option when you don't have a specific requirement to keep the connector inside your own cloud.
 

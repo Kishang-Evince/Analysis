@@ -98,7 +98,7 @@ At the core of AI's effectiveness in sales is the concept of prompting. Prompts 
 
 While leveraging AI for work may initially seem daunting, writing clear and comprehensive prompts is critical to ensuring effective results. By following the best practices outlined above, sales teams can harness the full potential of AI prompting to enhance their workflows and productivity.
 
-Glean's next-generation prompting suite offers endless possibilities for customization and sharing, making it an invaluable tool for sales agents looking to improve their work processes. Explore the full capabilities of AI prompting and more details on building prompts by checking out our latest [eBook](https://www.glean.com/resources/guides/glean-prompting-ebook-sales) — and sign up for a free [demo](https://www.glean.com/get-a-demo) today to learn more about Glean!
+Glean's next-generation prompting suite offers endless possibilities for customization and sharing, making it an invaluable tool for sales agents looking to improve their work processes. Explore the full capabilities of AI prompting and more details on building prompts by checking out our latest [eBook](https://www.glean.com/resources/guides/glean-prompting-ebook-sales) - and sign up for a free [demo](https://www.glean.com/get-a-demo) today to learn more about Glean!
 
 [
 

@@ -36,7 +36,7 @@ note
 
 The **Agents**, **Assistant**, and **Glean MCP Server** sections are configured independently. Disabling a tool in one section doesn't automatically disable it in the others. For more on this distinction, see [Enabling tools for Assistant vs Agents](/administration/tools/managing-tools/tools-chat-vs-agents).
 
-## Read vs. write tools — recommended starting point[​](#read-vs-write-tools--recommended-starting-point "Direct link to Read vs. write tools — recommended starting point")
+## Read vs. write tools - recommended starting point[​](#read-vs-write-tools--recommended-starting-point "Direct link to Read vs. write tools - recommended starting point")
 
 | Tool type | Examples | Recommended default |
 | --- | --- | --- |
@@ -46,7 +46,7 @@ The **Agents**, **Assistant**, and **Glean MCP Server** sections are configured 
 
 ## Changes take effect immediately[​](#changes-take-effect-immediately "Direct link to Changes take effect immediately")
 
-Enabling or disabling an individual tool takes effect immediately — No re-crawl, restart, or re-authentication is needed. Active agent runs that have already started a step complete it; the change applies to new invocations only.
+Enabling or disabling an individual tool takes effect immediately - No re-crawl, restart, or re-authentication is needed. Active agent runs that have already started a step complete it; the change applies to new invocations only.
 
 ## Difference from tools-level enable/disable[​](#difference-from-tools-level-enabledisable "Direct link to Difference from tools-level enable/disable")
 

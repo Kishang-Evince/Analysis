@@ -11,7 +11,7 @@ On this page
 
 # Find Sigma dashboards and ask natural-language questions about Sigma data in Glean
 
-Search for Sigma workbooks, pages, and elements through the indexed connector — then add Glean Assistant to let users ask natural-language questions about Sigma data. Always scoped to each user's Sigma permissions.
+Search for Sigma workbooks, pages, and elements through the indexed connector - then add Glean Assistant to let users ask natural-language questions about Sigma data. Always scoped to each user's Sigma permissions.
 
 Indexed by defaultNatural-language queriesAPI key authPermission-aware
 
@@ -77,7 +77,7 @@ Enable Sigma data access in Glean Assistant so users can ask natural-language qu
 
 ### Use Sigma in Glean
 
-Learn what you can do with Sigma content in Glean — from finding dashboards to asking natural-language questions about your data.
+Learn what you can do with Sigma content in Glean - from finding dashboards to asking natural-language questions about your data.
 
 
 

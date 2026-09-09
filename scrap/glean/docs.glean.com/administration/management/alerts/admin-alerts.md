@@ -26,7 +26,7 @@ When an alert triggers, recipients receive an email notification with the follow
 
 ## Supported alert types[​](#supported-alert-types "Direct link to Supported alert types")
 
-Glean continuously monitors the health of your instance. Admin alerts cover the subset of issues that need your attention because Glean can't resolve them on its own — for example, expired connector credentials or LLM provider errors. Glean introduces new alert types over time as it expands this coverage. The alerts available to you depend on your deployment configuration — for example, some alerts appear only if you use an LLM provider, single sign-on (SSO), or a specific cloud platform.
+Glean continuously monitors the health of your instance. Admin alerts cover the subset of issues that need your attention because Glean can't resolve them on its own - for example, expired connector credentials or LLM provider errors. Glean introduces new alert types over time as it expands this coverage. The alerts available to you depend on your deployment configuration - for example, some alerts appear only if you use an LLM provider, single sign-on (SSO), or a specific cloud platform.
 
 All admin alerts are mandatory. To ensure system reliability and optimal performance, you can't turn them off, but you can [choose who receives them](#configure-admin-alerts).
 

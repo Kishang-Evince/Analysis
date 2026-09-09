@@ -31,14 +31,14 @@
 
 ### Not versioned (Doc-Verified)
 
-- Permissions, sharing settings, publishing options — changes apply immediately outside version history.
+- Permissions, sharing settings, publishing options - changes apply immediately outside version history.
 
 ### Verification steps / test case
 
 1. Publish v1; edit draft to v2; publish.
 2. Version history → Restore v1 as draft → re-publish.
 3. Confirm end-user run matches restored behavior.
-4. Change sharing scope — confirm not in version diff.
+4. Change sharing scope - confirm not in version diff.
 
 **Risk & Cost Impact:** Risk: Low | Cost: Native
 

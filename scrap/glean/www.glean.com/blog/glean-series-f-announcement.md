@@ -85,7 +85,7 @@ Listen to article
 
 ## Glean raises over $150M series F funding at a $7.2B valuation
 
-Today, Glean announces $150M in Series F funding at a $7.2B valuation—accelerating our mission to transform how enterprises unlock their collective knowledge through AI.
+Today, Glean announces $150M in Series F funding at a $7.2B valuation-accelerating our mission to transform how enterprises unlock their collective knowledge through AI.
 
 The round was led by Wellington Management, with participation from new investors including Khosla Ventures, Bicycle Capital, Geodesic Capital, and Archerman Capital; and existing investors including Altimeter, Capital One Ventures, Citi, Coatue, DST Global, General Catalyst, ICONIQ, IVP, Kleiner Perkins, Latitude Capital, Lightspeed Venture Partners, Sapphire Ventures, and Sequoia Capital.
 
@@ -95,13 +95,13 @@ Since our Series E in September, we have surpassed [$100M in ARR](https://www.gl
 
 With this foundation in place, we’re channeling this new capital into three key areas:
 
--   Deepening product innovation—driving innovation on all fronts across AI security, enterprise search, and agentic AI.
--   Growing our partner ecosystem—enabling seamless integrations and new GTM partnerships so businesses can unlock the full value of their AI stack.
--   Scaling internationally—bringing the Glean platform to new markets and new customers ready to lead in the AI era.
+-   Deepening product innovation-driving innovation on all fronts across AI security, enterprise search, and agentic AI.
+-   Growing our partner ecosystem-enabling seamless integrations and new GTM partnerships so businesses can unlock the full value of their AI stack.
+-   Scaling internationally-bringing the Glean platform to new markets and new customers ready to lead in the AI era.
 
 As AI tools rapidly increase in capability and orchestrate more critical business processes, keeping them secure becomes more urgent than ever - security remains Glean’s top priority. From day one, Glean’s platform was designed so that every action is fully authenticated, respects underlying data permissions, and is governed by enterprise guardrails.  We’ve further expanded our security and governance capabilities with the recent introduction of [Glean Protect](https://www.glean.com/security), offering proactive defense of customers’ data, AI and agents.
 
-This security-first foundation enables us to confidently support a broad, open ecosystem of integrations and partners. Our platform links seamlessly with more than 100 SaaS applications and enterprise data repositories., Data is contextualized via our knowledge graph to understand how data, people, and processes come together in an organization to get work done. Importantly, customers always retain complete control over their information—Glean never locks-in data or creates walled gardens. Instead, our platform, via open APIs, enables customers to export context and insight to all the AI initiatives across the business.
+This security-first foundation enables us to confidently support a broad, open ecosystem of integrations and partners. Our platform links seamlessly with more than 100 SaaS applications and enterprise data repositories., Data is contextualized via our knowledge graph to understand how data, people, and processes come together in an organization to get work done. Importantly, customers always retain complete control over their information-Glean never locks-in data or creates walled gardens. Instead, our platform, via open APIs, enables customers to export context and insight to all the AI initiatives across the business.
 
 As Glean increasingly partners with the largest global enterprises, we must continue to build the organization to support customers everywhere they work. That’s why we’re excited to continue our expansion into new markets, bringing Glean’s platform and expertise to customers and partners across the globe to accelerate innovation and set the standard for what’s possible in AI-powered work.
 
@@ -109,7 +109,7 @@ This funding round wasn’t driven by necessity, but by our ambition to accelera
 
 Glean’s momentum is driven by customer trust and real results, with organizations like [TIME](https://youtu.be/dUu84p-pRok) and [Booking.com](http://booking.com) accelerating AI innovation using our platform. Recent recognition from [Fast Company](https://www.glean.com/press/glean-worlds-most-innovative-companies-2025), [Gartner](https://www.glean.com/press/gartner-report-reinforces-gleans-momentum-and-advancement-of-generative-ai), and [CNBC](https://www.cnbc.com/2025/06/10/glean-cnbc-disruptor-50.html) highlights how Glean is setting the standard for agentic AI in the enterprise.. 
 
-Thank you to our customers, partners, investors, community, and everyone at team Glean—you’ve all helped us reach this milestone and your commitment to Glean drives our joint success.
+Thank you to our customers, partners, investors, community, and everyone at team Glean-you’ve all helped us reach this milestone and your commitment to Glean drives our joint success.
 
 Back to building and shipping,  
 Arvind and the Glean team

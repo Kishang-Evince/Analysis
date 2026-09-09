@@ -85,7 +85,7 @@ Listen to article
 
 To build the right generative AI stack for software engineering, treat AI as a layered system: use coding assistants for local code work, add a shared context layer that connects code to tickets, incidents, docs, and ownership, and plug in incident and agent tooling around that foundation.
 
-Software engineering teams are no longer deciding whether to use AI. They’re deciding how to make it useful in production. Generative AI technologies like GitHub Copilot have pushed AI into daily workflows, but helping engineers write code faster doesn’t solve the harder problem — getting the right context, guardrails, and workflow support around the code so teams can ship safely and reliably.
+Software engineering teams are no longer deciding whether to use AI. They’re deciding how to make it useful in production. Generative AI technologies like GitHub Copilot have pushed AI into daily workflows, but helping engineers write code faster doesn’t solve the harder problem - getting the right context, guardrails, and workflow support around the code so teams can ship safely and reliably.
 
 The real bottleneck for most teams is context reconstruction. Engineers still lose hours chasing design docs, Jira tickets, incident history, ownership records, Slack threads, and runbooks across systems that don’t naturally talk to one another. A stack that closes that gap is worth building. One that adds another disconnected tab isn’t.
 
@@ -95,7 +95,7 @@ The best generative AI stack for software engineers combines coding assistants, 
 
 Engineering managers typically see three recurring gaps when adopting generative AI technologies through coding assistants:
 
-**Outcome** – AI feels faster, but creates downstream rework. In a [METR randomized controlled trial](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) of experienced open-source software developers, tasks completed with AI took 19% longer — even though participants expected to be 24% faster and still believed afterward that AI had helped.
+**Outcome** – AI feels faster, but creates downstream rework. In a [METR randomized controlled trial](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) of experienced open-source software developers, tasks completed with AI took 19% longer - even though participants expected to be 24% faster and still believed afterward that AI had helped.
 
 **Trust** – Suggestions land close enough to look right, but still need heavy verification. In the [2025 Stack Overflow Developer Survey](https://survey.stackoverflow.co/2025/ai), more developers actively distrusted AI accuracy than trusted it, and 66% cited code that was “almost right, but not quite” as their biggest frustration.
 
@@ -115,7 +115,7 @@ Where they fall short is visibility into the surrounding system. A coding assist
 
 ### 2\. A context platform that understands engineering work
 
-A context platform connects the artifacts and people behind the code. It links code hosts, work tracking, docs, chat, incidents, and observability trails into a shared, permission-aware view of the engineering environment — so an engineer can ask “What broke the last time this alert fired?” or “Who owns this endpoint now?” and get a grounded answer built from real artifacts instead of a plausible guess.
+A context platform connects the artifacts and people behind the code. It links code hosts, work tracking, docs, chat, incidents, and observability trails into a shared, permission-aware view of the engineering environment - so an engineer can ask “What broke the last time this alert fired?” or “Who owns this endpoint now?” and get a grounded answer built from real artifacts instead of a plausible guess.
 
 This is the layer many companies discover they need once generative AI in software development moves from experiment to daily use. In Atlassian’s [State of Developer Experience Report](https://www.atlassian.com/software/compass/resources/state-of-developer-2024), 62% of developers said reconstructing context across multiple tools slows them down.
 
@@ -123,13 +123,13 @@ This is the layer many companies discover they need once generative AI in softwa
 
 ### 3\. Observability AI for incident signals
 
-Observability AI knows what the metrics say. It can summarize alerts, traces, and logs, group related signals, and highlight likely regressions — all of which helps improve developer productivity and reduce mean time to resolution. What it can‘t tell you is which Jira ticket changed the service, what the design doc specified, who approved the rollout, or how a similar incident was resolved six months ago. Pairing incident tools with a context platform fills those gaps and turns triage from a log-reading exercise into a cross-system investigation.
+Observability AI knows what the metrics say. It can summarize alerts, traces, and logs, group related signals, and highlight likely regressions - all of which helps improve developer productivity and reduce mean time to resolution. What it can‘t tell you is which Jira ticket changed the service, what the design doc specified, who approved the rollout, or how a similar incident was resolved six months ago. Pairing incident tools with a context platform fills those gaps and turns triage from a log-reading exercise into a cross-system investigation.
 
 ### 4\. Agent platforms and model hubs
 
-General-purpose AI platforms and agent frameworks — including large language model providers and orchestration runtimes — give teams model choice, agent runtime support, and workflow orchestration. They make it easier to prototype assistants and connect them to other technologies in the stack.
+General-purpose AI platforms and agent frameworks - including large language model providers and orchestration runtimes - give teams model choice, agent runtime support, and workflow orchestration. They make it easier to prototype assistants and connect them to other technologies in the stack.
 
-What they don’t provide on their own is shared engineering context: integrations across code, tickets, incidents, and docs, plus a consistent, permission-aware view across systems. Agent platforms are only as useful as the data, structure, and governance you plug into them — which is why they work best when they can call into a shared context layer rather than each rebuilding its own partial view.
+What they don’t provide on their own is shared engineering context: integrations across code, tickets, incidents, and docs, plus a consistent, permission-aware view across systems. Agent platforms are only as useful as the data, structure, and governance you plug into them - which is why they work best when they can call into a shared context layer rather than each rebuilding its own partial view.
 
 ## From four tool categories to two architectural layers
 
@@ -158,15 +158,15 @@ The entire AI stack involves fast-evolving technologies. Before adding another G
 
 ### How is trust earned, not assumed?
 
-Engineers trust systems that show their work — answers that are grounded in real artifacts, linked back to sources, and easy to verify. If people still have to redo the investigation to confirm the answer, adoption stalls and code quality gains disappear. Glean grounds every response in your own code, tickets, docs, and discussions, with source links so engineers can inspect the evidence directly.
+Engineers trust systems that show their work - answers that are grounded in real artifacts, linked back to sources, and easy to verify. If people still have to redo the investigation to confirm the answer, adoption stalls and code quality gains disappear. Glean grounds every response in your own code, tickets, docs, and discussions, with source links so engineers can inspect the evidence directly.
 
 ### Where does your data go, and who can act on it?
 
-Once AI can read source code, incidents, and tickets — and especially once it can take action — you’re making a security and governance decision. That means understanding where indexes live, whether permissions are inherited from source systems, how auditing works, and whether the tool operates inside the controls your security team requires. Glean supports single-tenant deployment options across AWS, Azure, or GCP, with strict permission enforcement and auditability built in.
+Once AI can read source code, incidents, and tickets - and especially once it can take action - you’re making a security and governance decision. That means understanding where indexes live, whether permissions are inherited from source systems, how auditing works, and whether the tool operates inside the controls your security team requires. Glean supports single-tenant deployment options across AWS, Azure, or GCP, with strict permission enforcement and auditability built in.
 
 ### Does it fit the way your teams already work?
 
-The strongest tools fit inside existing workflows, not alongside them. A practical stack should integrate cleanly with GitHub or GitLab, Jira, Slack or Teams, observability tools, the IDE — and let you start with one development team‘s specific needs before expanding.
+The strongest tools fit inside existing workflows, not alongside them. A practical stack should integrate cleanly with GitHub or GitLab, Jira, Slack or Teams, observability tools, the IDE - and let you start with one development team‘s specific needs before expanding.
 
 ## Design the stack around real workflows
 
@@ -176,17 +176,17 @@ A good engineering architecture is much easier to evaluate when you look at comm
 
 New engineers rarely struggle because there’s no code. They struggle because the code is surrounded by scattered history: the design doc is in one wiki, the service owner changed twice, the last incident is buried in Slack, and the Jira trail is incomplete. According to [GitLab research](https://about.gitlab.com/the-source/platform/how-to-accelerate-developer-onboarding-and-why-it-matters/), nearly half (44%) of organizations say onboarding new software developers takes more than two months.
 
-This is the problem a context layer solves. When the stack connects service ownership, docs, incidents, and code history, onboarding becomes faster and less dependent on tribal knowledge. GitLab also found that 43% of developers using AI for software development reduced onboarding time to less than a month. With Glean, for example, a new engineer can ask for an overview of a service and get back the relevant design docs, recent incidents, current owners, and related tickets — assembled from real artifacts and documentation, not a summary someone remembered to update.
+This is the problem a context layer solves. When the stack connects service ownership, docs, incidents, and code history, onboarding becomes faster and less dependent on tribal knowledge. GitLab also found that 43% of developers using AI for software development reduced onboarding time to less than a month. With Glean, for example, a new engineer can ask for an overview of a service and get back the relevant design docs, recent incidents, current owners, and related tickets - assembled from real artifacts and documentation, not a summary someone remembered to update.
 
 ### Routine changes should use AI with guardrails
 
 Generative AI already handles repetitive, low-scope software engineering tasks well: config tweaks, test case generation, documentation updates, simple bug fixes, incremental refactors. But even routine changes need the surrounding requirements and constraints.
 
-Mature teams focus on defining clear change classes where AI is allowed to propose edits — log-level changes, certain config updates, non-behavioral refactors, documentation and tests — and treat linked tickets, design docs, and comments from shared context as guardrails. The coding assistant writes the patch; the context layer acts as a quality assurance check, confirming the patch lines up with the ticket, the service constraints, and the code quality expectations for that code path.
+Mature teams focus on defining clear change classes where AI is allowed to propose edits - log-level changes, certain config updates, non-behavioral refactors, documentation and tests - and treat linked tickets, design docs, and comments from shared context as guardrails. The coding assistant writes the patch; the context layer acts as a quality assurance check, confirming the patch lines up with the ticket, the service constraints, and the code quality expectations for that code path.
 
 ### Incident response should combine signals with cross-system context
 
-During an incident, the three urgent questions are: what changed, what is failing, and who needs to be involved? Observability AI can summarize the signals. A context platform connects those signals to recent code changes, related tickets, owners, prior incidents, and relevant docs — so the team isn’t rebuilding the story from scratch during an outage.
+During an incident, the three urgent questions are: what changed, what is failing, and who needs to be involved? Observability AI can summarize the signals. A context platform connects those signals to recent code changes, related tickets, owners, prior incidents, and relevant docs - so the team isn’t rebuilding the story from scratch during an outage.
 
 LinkedIn built a Glean-powered threat-bot agent for exactly this kind of cross-system triage and saved $2.4M in annual engineering time. Uber engineering saw a 20% reduction in time to ship code after adopting Glean as their context platform.
 
@@ -194,11 +194,11 @@ LinkedIn built a Glean-powered threat-bot agent for exactly this kind of cross-s
 
 Glean fits into this picture as the [shared context layer](https://www.glean.com/product/overview) that helps the rest of the AI-powered stack work from the same set of facts.
 
-Glean connects engineering data sources — code hosts, Jira, docs and wikis, chat, incidents, observability-adjacent systems — and builds a shared system of context, using its Enterprise Graph to connect people, content, and work. Engineers can search and reason across the real stack instead of bouncing between disconnected tools. Coding assistants can pull that context into the editor through MCP, so suggestions are grounded in the broader system, not just the open file.
+Glean connects engineering data sources - code hosts, Jira, docs and wikis, chat, incidents, observability-adjacent systems - and builds a shared system of context, using its Enterprise Graph to connect people, content, and work. Engineers can search and reason across the real stack instead of bouncing between disconnected tools. Coding assistants can pull that context into the editor through MCP, so suggestions are grounded in the broader system, not just the open file.
 
 That approach is already proving out. Two of the three largest coding-assistant organizations already rely on Glean to power the context layer behind their engineering platforms.
 
-The generative AI stack will keep changing. Teams will swap coding assistants, test new models, and cycle through workflow technologies. A stable, governed context layer underneath those shifts is what keeps your stack from fragmenting every time something new ships — and gives future tools the same trusted foundation from day one. Glean is designed for that role: model-agnostic, open to the coding assistants and agent frameworks your architecture already includes, and built so you index once and reuse that context across every surface.
+The generative AI stack will keep changing. Teams will swap coding assistants, test new models, and cycle through workflow technologies. A stable, governed context layer underneath those shifts is what keeps your stack from fragmenting every time something new ships - and gives future tools the same trusted foundation from day one. Glean is designed for that role: model-agnostic, open to the coding assistants and agent frameworks your architecture already includes, and built so you index once and reuse that context across every surface.
 
 ## Build the stack deliberately, not tool by tool
 
@@ -214,7 +214,7 @@ For the complete tooling landscape, a detailed look at the two-layer model, real
 
 ### What is MCP and how does it connect coding assistants to a context layer?
 
-MCP (Model Context Protocol) is an open standard that lets AI-powered tools, including large language model-based coding assistants, call into external data sources during a session. A coding assistant like Cursor or Claude Code can query a context platform mid-task — pulling in tickets, incidents, ownership, or design docs — without leaving the editor. Glean supports MCP so compatible assistants can call into the same shared context layer that powers Glean search, Assistant, and agents.
+MCP (Model Context Protocol) is an open standard that lets AI-powered tools, including large language model-based coding assistants, call into external data sources during a session. A coding assistant like Cursor or Claude Code can query a context platform mid-task - pulling in tickets, incidents, ownership, or design docs - without leaving the editor. Glean supports MCP so compatible assistants can call into the same shared context layer that powers Glean search, Assistant, and agents.
 
 ### How do I keep source code and internal data secure when using AI coding tools?
 
@@ -230,11 +230,11 @@ A basic RAG pipeline gets you semantic search over a subset of your data. What i
 
 ### How do I measure whether an engineering AI stack is actually working?
 
-Measure cycle time, rework rate, onboarding time, mean time to resolution, and context-switching frequency — not just adoption counts. Senior engineers and team leads should track these against a baseline. If cycle time drops but rework rises, the stack is producing code faster without the right guardrails. If onboarding time drops and teams are still shipping high quality code, the context layer is working. The goal is faster, safer delivery across the full workflow, not just faster output on repetitive tasks.
+Measure cycle time, rework rate, onboarding time, mean time to resolution, and context-switching frequency - not just adoption counts. Senior engineers and team leads should track these against a baseline. If cycle time drops but rework rises, the stack is producing code faster without the right guardrails. If onboarding time drops and teams are still shipping high quality code, the context layer is working. The goal is faster, safer delivery across the full workflow, not just faster output on repetitive tasks.
 
 ### How long does it take to connect Glean to an existing engineering stack?
 
-Glean’s [connectors](https://www.glean.com/connectors) cover the most common engineering platforms — including GitHub, GitLab, Jira, Confluence, Slack, Teams, PagerDuty, and Datadog — with inherited permissions and real-time sync across systems. Most organizations start with one workflow or team and expand from there.
+Glean’s [connectors](https://www.glean.com/connectors) cover the most common engineering platforms - including GitHub, GitLab, Jira, Confluence, Slack, Teams, PagerDuty, and Datadog - with inherited permissions and real-time sync across systems. Most organizations start with one workflow or team and expand from there.
 
 [
 

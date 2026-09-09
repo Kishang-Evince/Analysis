@@ -95,21 +95,21 @@ AI for private equity and venture capital is delivering more than automation. It
 
 The impact spans every corner of the firm:
 
--   **Faster deal execution:** AI can summarize diligence documents, analyze prior investments, and even auto-draft DDQ responses — cutting hours of manual work down to minutes.
+-   **Faster deal execution:** AI can summarize diligence documents, analyze prior investments, and even auto-draft DDQ responses - cutting hours of manual work down to minutes.
 -   **Smarter sourcing:** By scanning public and internal data, firms can identify high-potential opportunities that align with their investment theses before competitors spot them.
 -   **Stronger portfolio oversight:** With real-time insight into financial performance, team structure, and operational risks, investment teams can act proactively, not reactively.
 -   **More responsive investor relations:** AI makes it easy to surface deal notes, performance data, and historical updates so teams can prep for LP calls or draft letters with confidence.
 -   **Efficiency across internal functions:** Legal, IT, HR, and ops teams can self-serve information instantly, reducing dependence on centralized support and keeping lean teams focused on high-impact work.
 
-The biggest advantage comes from being able to work across the unstructured reality of private markets — contracts, decks, emails, call notes, legal docs, and internal memos — without slowing teams down. Firms that embed AI into these workflows are not just speeding up research. They’re transforming how they operate, setting a new standard for performance and value creation in private markets
+The biggest advantage comes from being able to work across the unstructured reality of private markets - contracts, decks, emails, call notes, legal docs, and internal memos - without slowing teams down. Firms that embed AI into these workflows are not just speeding up research. They’re transforming how they operate, setting a new standard for performance and value creation in private markets
 
 ## Four critical areas where AI is delivering impact
 
-AI is reshaping how investment teams operate — unlocking efficiency gains, increasing deal velocity, and enabling sharper decision-making. While the opportunities span every corner of a firm, four areas consistently see the highest return on AI investment.
+AI is reshaping how investment teams operate - unlocking efficiency gains, increasing deal velocity, and enabling sharper decision-making. While the opportunities span every corner of a firm, four areas consistently see the highest return on AI investment.
 
 ### 1\. Accelerating deal sourcing
 
-Traditional sourcing often relies on referrals, analyst outreach, and networks. While effective, this approach can miss early indicators or niche opportunities — especially in sectors where timing and precision matter.
+Traditional sourcing often relies on referrals, analyst outreach, and networks. While effective, this approach can miss early indicators or niche opportunities - especially in sectors where timing and precision matter.
 
 AI expands sourcing reach by scanning both internal and external datasets - public filings, market news, proprietary notes, and past deal documentation - giving teams better context on which opportunities are aligned with the firm’s thesis.
 
@@ -151,7 +151,7 @@ The result is more proactive portfolio support, faster ramp-up for internal team
 
 ### 4\. Improving investor relations and reporting
 
-Investor relations (IR) teams are responsible for more than just updates — they’re expected to deliver insight, clarity, and responsiveness. But as firms scale, institutional knowledge becomes harder to access, and preparing for LP meetings can require hours of back-and-forth across teams.
+Investor relations (IR) teams are responsible for more than just updates - they’re expected to deliver insight, clarity, and responsiveness. But as firms scale, institutional knowledge becomes harder to access, and preparing for LP meetings can require hours of back-and-forth across teams.
 
 AI helps IR teams work from the firm's full context - including deal notes, prior LP questions, performance updates, and internal memos - without restarting the process each time. That makes it easier to prepare for meetings, draft updates, and respond to investor questions with the right historical and financial context.
 
@@ -167,7 +167,7 @@ This does more than reduce workload. It helps firms show up to investors with sh
 
 Adopting AI across a firm and its portfolio requires more than experimentation. It requires trust, strong governance, and a practical way to fit into how teams already work. That’s why firms are looking for platforms that can connect across their existing systems and support real workflows from day one.
 
-Glean is the Work AI platform designed for enterprise complexity. It connects to the systems PE and VC firms rely on most — deal CRMs, shared drives, analytics platforms, and collaboration tools — and layers intelligence on top to help teams find, synthesize, and act on knowledge instantly.
+Glean is the Work AI platform designed for enterprise complexity. It connects to the systems PE and VC firms rely on most - deal CRMs, shared drives, analytics platforms, and collaboration tools - and layers intelligence on top to help teams find, synthesize, and act on knowledge instantly.
 
 For firms evaluating where to standardize, maturity matters. They need a platform that can support real operational use, not just isolated experiments.
 

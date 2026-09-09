@@ -97,7 +97,7 @@ There is limited support for complex sheets with merged cells, hierarchical tabl
 
 Model performance
 
-Analytical accuracy on structured files — counts, filters, totals, and cohort analysis — is strongest in thinking mode. Fast mode uses a restricted toolset and may not reliably invoke Data Analysis for these operations.
+Analytical accuracy on structured files - counts, filters, totals, and cohort analysis - is strongest in thinking mode. Fast mode uses a restricted toolset and may not reliably invoke Data Analysis for these operations.
 
 5
 
@@ -120,11 +120,11 @@ Choose a [reasoning mode](/user-guide/assistant/glean-chat/#reasoning-modes) in 
 
 ### Upload files directly when possible[​](#upload-files-directly-when-possible "Direct link to Upload files directly when possible")
 
-Uploading a CSV, XLSX, or JSON file directly in the composer gives Assistant access to the full raw file within the [per-file size limits](/user-guide/assistant/file-upload#upload-limits). Tagging an indexed link from a connected source — such as SharePoint or OneDrive — uses the indexed version of the file, which can be truncated for large or wide spreadsheets. This may lead to partial or inconsistent results when the analysis depends on data beyond what was indexed.
+Uploading a CSV, XLSX, or JSON file directly in the composer gives Assistant access to the full raw file within the [per-file size limits](/user-guide/assistant/file-upload#upload-limits). Tagging an indexed link from a connected source - such as SharePoint or OneDrive - uses the indexed version of the file, which can be truncated for large or wide spreadsheets. This may lead to partial or inconsistent results when the analysis depends on data beyond what was indexed.
 
 **When to upload vs. tag an indexed link:**
 
--   **Upload** for analytical questions — counts, sums, filters, joins, and trends — especially on larger or wider spreadsheets.
+-   **Upload** for analytical questions - counts, sums, filters, joins, and trends - especially on larger or wider spreadsheets.
 -   **Tag an indexed link** for lightweight lookups, summaries, or when the file is small and well-structured.
 
 ### Troubleshoot inconsistent results[​](#troubleshoot-inconsistent-results "Direct link to Troubleshoot inconsistent results")

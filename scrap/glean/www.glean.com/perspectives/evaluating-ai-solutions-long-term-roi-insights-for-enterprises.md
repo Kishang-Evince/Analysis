@@ -63,7 +63,7 @@ Share this article:
 
 # Evaluating AI Solutions: Long-Term ROI Insights for Enterprises
 
-The long-term ROI of enterprise AI depends less on the technology you choose and more on how you measure value as it compounds over time. Most organizations expect two to four years to see satisfactory returns on a typical AI use case — roughly double the payback period of traditional technology investments — yet the majority still evaluate AI platforms using short-cycle cost-savings math designed for legacy software.
+The long-term ROI of enterprise AI depends less on the technology you choose and more on how you measure value as it compounds over time. Most organizations expect two to four years to see satisfactory returns on a typical AI use case - roughly double the payback period of traditional technology investments - yet the majority still evaluate AI platforms using short-cycle cost-savings math designed for legacy software.
 
 That mismatch between AI's value curve and the frameworks used to measure it explains why [75% to 95% of enterprise AI pilots](https://www.glean.com/perspectives/proving-roi-on-genai-investments) fail to deliver measurable P&L impact, according to MIT and Deloitte research. The problem is rarely the AI itself. It is fragmented data, disconnected workflows, and ROI models that declare failure before compounding gains have time to materialize.
 
@@ -71,33 +71,33 @@ This article breaks down what long-term AI ROI actually looks like for enterpris
 
 ## What does long-term ROI actually mean for enterprise AI adoption?
 
-Long-term ROI for enterprise AI is a compounding return that builds over years, not a single payback number. Early investments in data infrastructure and governance produce modest gains. As workflows integrate and adoption deepens, returns accelerate and become difficult for competitors to replicate. The right measurement framework tracks trajectory — capacity reallocation, cost of delay, and ROAI — not just cost savings.
+Long-term ROI for enterprise AI is a compounding return that builds over years, not a single payback number. Early investments in data infrastructure and governance produce modest gains. As workflows integrate and adoption deepens, returns accelerate and become difficult for competitors to replicate. The right measurement framework tracks trajectory - capacity reallocation, cost of delay, and ROAI - not just cost savings.
 
-Enterprise AI ROI is a compounding curve, not a single number calculated at the end of a pilot. While an IDC study found that companies average [$3.70 in return for every $1](https://liorant.com/blog/ai-roi-measurement-framework/) invested in generative AI, those returns are unevenly distributed — early investments in data infrastructure, governance, and adoption produce modest returns. Mid-stage deployments — where workflows are integrated and employees actively use AI tools — generate accelerating value that becomes difficult for competitors to replicate.
+Enterprise AI ROI is a compounding curve, not a single number calculated at the end of a pilot. While an IDC study found that companies average [$3.70 in return for every $1](https://liorant.com/blog/ai-roi-measurement-framework/) invested in generative AI, those returns are unevenly distributed - early investments in data infrastructure, governance, and adoption produce modest returns. Mid-stage deployments - where workflows are integrated and employees actively use AI tools - generate accelerating value that becomes difficult for competitors to replicate.
 
-Deloitte's 2025 survey of 1,854 executives found that only 6% of organizations report payback in under a year, while 85% increased their AI investment anyway. Leaders understand the trajectory even when the spreadsheet hasn't caught up — and with enterprise AI now a [$37 billion market](https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/) growing faster than any software category in history, the stakes of measuring correctly have never been higher.
+Deloitte's 2025 survey of 1,854 executives found that only 6% of organizations report payback in under a year, while 85% increased their AI investment anyway. Leaders understand the trajectory even when the spreadsheet hasn't caught up - and with enterprise AI now a [$37 billion market](https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/) growing faster than any software category in history, the stakes of measuring correctly have never been higher.
 
 The distinction matters because platforms that treat ROI as a static, one-time calculation will consistently undervalue AI investments that are actually on track. Consider the difference between measuring a support team's ticket deflection rate at month three versus month 18.
 
-At month three, you might see a 10% reduction — modest, and easy to dismiss. By month 18, after Glean Search has ingested more organizational knowledge, employees have built habits around it, and workflows have been restructured, that same investment may be deflecting 40% of tickets. The freed capacity shifts to higher-value customer success work.
+At month three, you might see a 10% reduction - modest, and easy to dismiss. By month 18, after Glean Search has ingested more organizational knowledge, employees have built habits around it, and workflows have been restructured, that same investment may be deflecting 40% of tickets. The freed capacity shifts to higher-value customer success work.
 
-The right framework measures trajectory across three dimensions: capacity reallocation value (the economic difference between routine tasks and the strategic work those freed hours now fund), cost of delay (the financial impact of delivering outcomes sooner), and return on AI investment, or ROAI (revenue attribution plus cost savings plus risk mitigation, divided by total AI spend). Organizations that map their AI programs to these metrics — and revisit them quarterly rather than annually — are far more likely to land in the 20% that Deloitte classifies as true AI ROI leaders.
+The right framework measures trajectory across three dimensions: capacity reallocation value (the economic difference between routine tasks and the strategic work those freed hours now fund), cost of delay (the financial impact of delivering outcomes sooner), and return on AI investment, or ROAI (revenue attribution plus cost savings plus risk mitigation, divided by total AI spend). Organizations that map their AI programs to these metrics - and revisit them quarterly rather than annually - are far more likely to land in the 20% that Deloitte classifies as true AI ROI leaders.
 
 ## Why most enterprise AI investments fail to deliver expected returns
 
-Most enterprise AI pilots — 75% to 95%, according to MIT and Deloitte research — never produce measurable P&L impact. The cause is almost never a bad model. It is fragmented systems, siloed data stores, and operational architectures that were built for a pre-AI world.
+Most enterprise AI pilots - 75% to 95%, according to MIT and Deloitte research - never produce measurable P&L impact. The cause is almost never a bad model. It is fragmented systems, siloed data stores, and operational architectures that were built for a pre-AI world.
 
 When a pilot runs on clean data in a sandbox, it looks promising. When it meets the reality of 15 disconnected knowledge repositories, inconsistent permissions, and workflows that span six tools, it stalls.
 
 Five factors explain why the gap between pilot results and production value persists:
 
 -   **Intangible benefits go unmeasured.** A sales rep who finds the right competitive brief in 30 seconds instead of 20 minutes generates real value, but most ROI models don't capture it.
--   **Siloed data and poor data quality undermine AI accuracy.** If a platform like Glean Search can only see a fraction of company knowledge, its answers will reflect that fraction — which is why breadth of connectivity matters from day one.
--   **Technology evolves faster than metrics.** McKinsey's State of AI 2025 found that 88% of organizations use AI but [only 6% qualify as high performers](https://liorant.com/blog/ai-roi-measurement-framework/) with meaningful EBIT impact — in part because finance teams end up scoring generative AI with spreadsheets built for SaaS licenses.
--   **The human factor.** Adoption depends on trust, habit change, and manager reinforcement — none of which appear on a Gantt chart.
+-   **Siloed data and poor data quality undermine AI accuracy.** If a platform like Glean Search can only see a fraction of company knowledge, its answers will reflect that fraction - which is why breadth of connectivity matters from day one.
+-   **Technology evolves faster than metrics.** McKinsey's State of AI 2025 found that 88% of organizations use AI but [only 6% qualify as high performers](https://liorant.com/blog/ai-roi-measurement-framework/) with meaningful EBIT impact - in part because finance teams end up scoring generative AI with spreadsheets built for SaaS licenses.
+-   **The human factor.** Adoption depends on trust, habit change, and manager reinforcement - none of which appear on a Gantt chart.
 -   **AI is entangled with broader transformation.** AI is often rolled out alongside CRM migrations or process redesigns, making it nearly impossible to isolate its specific contribution.
 
-The organizations that clear these hurdles tend to share one trait. They treat AI as an infrastructure decision — connected to every system, governed from day one, and measured with metrics that account for compounding — rather than a feature bolted onto an existing stack.
+The organizations that clear these hurdles tend to share one trait. They treat AI as an infrastructure decision - connected to every system, governed from day one, and measured with metrics that account for compounding - rather than a feature bolted onto an existing stack.
 
 ## What factors determine whether an AI platform delivers sustainable value?
 
@@ -107,19 +107,19 @@ Platform selection determines more of the long-term ROI outcome than most procur
 
 ### System of context and data connectivity
 
-The strongest predictor of long-term enterprise AI ROI is whether the platform connects to the full breadth of an organization's knowledge. A platform that indexes email and documents but ignores Jira tickets, Salesforce records, Slack threads, and internal wikis will produce answers that are technically correct but operationally incomplete. [Glean's architecture](https://www.glean.com/product) addresses this through 100+ native connectors that unify content across tools while preserving permission-aware access — so a support engineer sees only what they're authorized to see, and an executive gets answers drawn from across every relevant system.
+The strongest predictor of long-term enterprise AI ROI is whether the platform connects to the full breadth of an organization's knowledge. A platform that indexes email and documents but ignores Jira tickets, Salesforce records, Slack threads, and internal wikis will produce answers that are technically correct but operationally incomplete. [Glean's architecture](https://www.glean.com/product) addresses this through 100+ native connectors that unify content across tools while preserving permission-aware access - so a support engineer sees only what they're authorized to see, and an executive gets answers drawn from across every relevant system.
 
-Depth of connectivity — the foundation of effective [enterprise AI search](https://www.glean.com/blog/enterprise-ai-search-rag) — also determines how quickly value compounds. When an AI platform can connect a product requirements document in Confluence to a related customer escalation in Zendesk and a design spec in Figma, the answers it generates reflect real organizational context. Platforms limited to a handful of integrations force users back to manual search-and-stitch workflows within weeks.
+Depth of connectivity - the foundation of effective [enterprise AI search](https://www.glean.com/blog/enterprise-ai-search-rag) - also determines how quickly value compounds. When an AI platform can connect a product requirements document in Confluence to a related customer escalation in Zendesk and a design spec in Figma, the answers it generates reflect real organizational context. Platforms limited to a handful of integrations force users back to manual search-and-stitch workflows within weeks.
 
 ### Enterprise Graph and personalization
 
-A second architectural differentiator is whether the platform builds persistent organizational understanding. Glean's Enterprise Graph maps relationships between people, teams, projects, documents, and decisions — creating a layer of context that makes every interaction more relevant. Personalization signals compound over time: the system learns which sources a user trusts, which projects they contribute to, and which colleagues' work is most relevant to their role.
+A second architectural differentiator is whether the platform builds persistent organizational understanding. Glean's Enterprise Graph maps relationships between people, teams, projects, documents, and decisions - creating a layer of context that makes every interaction more relevant. Personalization signals compound over time: the system learns which sources a user trusts, which projects they contribute to, and which colleagues' work is most relevant to their role.
 
 This compounding effect is difficult to replicate. A new entrant would need months of interaction data and organizational mapping to match the contextual accuracy of a system that has been learning an organization's structure since day one. For finance leaders building a multi-year business case, that accumulating advantage is a form of competitive moat.
 
 ### Security and governance by design
 
-Enterprise AI platforms that treat security as an add-on eventually hit a wall. When governance is retrofitted — permissions bolted on after deployment, audit trails added as an afterthought, data residency configured project by project — every new use case requires a fresh compliance review. That friction slows rollout and erodes the adoption rates that drive ROI.
+Enterprise AI platforms that treat security as an add-on eventually hit a wall. When governance is retrofitted - permissions bolted on after deployment, audit trails added as an afterthought, data residency configured project by project - every new use case requires a fresh compliance review. That friction slows rollout and erodes the adoption rates that drive ROI.
 
 Platforms built with security as foundational architecture avoid this drag. Permission enforcement inherited from source systems, continuous audit trails, data residency controls, and zero-day data retention with LLM providers mean that expanding from 500 users to 50,000 doesn't require renegotiating the security posture. For CISOs evaluating AI investments, understanding [AI security](https://www.glean.com/blog/what-is-ai-security) means the question isn't whether a platform has a security checklist. It is whether security scales with adoption or becomes a bottleneck.
 
@@ -129,15 +129,15 @@ AI value follows a predictable arc, and the right metrics shift at each stage. O
 
 ### Foundation phase (0-6 months): establish baselines and contain risk
 
-In the first six months, the primary value is cost avoidance. Shadow AI — employees using consumer-grade tools like ChatGPT with company data — is a governance liability that a managed platform with permission-aware architecture, like Glean's, eliminates by design. Measuring shadow AI discovery (how many unsanctioned tools were replaced) and baseline adoption rates (weekly active users, queries per user) gives leadership a realistic starting point. Cost avoidance won't impress a CFO on its own, but it reframes the investment from "new spend" to "risk mitigation plus a foundation for growth."
+In the first six months, the primary value is cost avoidance. Shadow AI - employees using consumer-grade tools like ChatGPT with company data - is a governance liability that a managed platform with permission-aware architecture, like Glean's, eliminates by design. Measuring shadow AI discovery (how many unsanctioned tools were replaced) and baseline adoption rates (weekly active users, queries per user) gives leadership a realistic starting point. Cost avoidance won't impress a CFO on its own, but it reframes the investment from "new spend" to "risk mitigation plus a foundation for growth."
 
 Concrete early signals matter. Track how many [support tickets are deflected](https://www.glean.com/blog/ai-customer-service-value) by AI-generated answers, how much time new hires save during onboarding by finding answers without scheduling meetings, and how quickly the platform reaches the adoption threshold where network effects begin.
 
 ### Acceleration phase (6-18 months): measure what freed capacity produces
 
-The acceleration phase is where most [AI tools driving business impact](https://www.glean.com/perspectives/which-ai-tools-actually-drive-real-business-impact) begin to show measurable returns. The key metric shifts from cost avoidance to capacity reallocation value — the economic difference between the routine work employees used to do and the higher-value strategic work they now spend that time on. A legal team that reclaims 12 hours per week from contract review and redirects it to deal structuring generates value far beyond the hourly labor savings.
+The acceleration phase is where most [AI tools driving business impact](https://www.glean.com/perspectives/which-ai-tools-actually-drive-real-business-impact) begin to show measurable returns. The key metric shifts from cost avoidance to capacity reallocation value - the economic difference between the routine work employees used to do and the higher-value strategic work they now spend that time on. A legal team that reclaims 12 hours per week from contract review and redirects it to deal structuring generates value far beyond the hourly labor savings.
 
-Two other metrics become critical. Cost of delay quantifies the financial impact of delivering outcomes sooner — an engineering team that ships a feature two weeks earlier because developers can find relevant code and documentation instantly. And the engagement gap between power users and average users — Deloitte's 2025 survey found that top-quintile organizations report significantly higher adoption rates and faster time-to-value than peers — reveals where targeted enablement can unlock the next wave of adoption.
+Two other metrics become critical. Cost of delay quantifies the financial impact of delivering outcomes sooner - an engineering team that ships a feature two weeks earlier because developers can find relevant code and documentation instantly. And the engagement gap between power users and average users - Deloitte's 2025 survey found that top-quintile organizations report significantly higher adoption rates and faster time-to-value than peers - reveals where targeted enablement can unlock the next wave of adoption.
 
 ### Maturity phase (18+ months): capture competitive separation
 
@@ -145,21 +145,21 @@ At maturity, the ROI conversation shifts from efficiency to revenue and competit
 
 Sales teams close faster because Glean Assistant surfaces competitive intelligence and customer history instantly. Product teams make better roadmap decisions because customer feedback is synthesized automatically. Support teams resolve issues in minutes instead of hours using cited, permission-aware answers from Glean Search.
 
-The most telling metric at this stage is competitive separation: the gap between what your organization can do with its accumulated AI context and what a competitor starting from scratch would need to replicate. Proprietary knowledge advantages — years of indexed conversations, decisions, and outcomes — become a durable asset that no vendor switch can instantly recreate.
+The most telling metric at this stage is competitive separation: the gap between what your organization can do with its accumulated AI context and what a competitor starting from scratch would need to replicate. Proprietary knowledge advantages - years of indexed conversations, decisions, and outcomes - become a durable asset that no vendor switch can instantly recreate.
 
 ## What separates AI platforms that scale from those stuck in pilot
 
-Six organizational practices — not technology choices — separate the roughly 20% of organizations achieving real AI ROI from the 80% stuck in pilot cycles. Leaders treat AI as enterprise transformation, fund it as a strategic priority, and pair platform investment with executive sponsorship, change management, and AI fluency programs.
+Six organizational practices - not technology choices - separate the roughly 20% of organizations achieving real AI ROI from the 80% stuck in pilot cycles. Leaders treat AI as enterprise transformation, fund it as a strategic priority, and pair platform investment with executive sponsorship, change management, and AI fluency programs.
 
 According to Deloitte's AI ROI Performance Index, only about 20% of organizations qualify as AI ROI leaders. The remaining 80% are stuck in a cycle of promising pilots that never reach production scale. The difference isn't budget or technical talent alone. It is six specific organizational practices that leaders adopt and laggards skip.
 
-Leaders treat AI as enterprise transformation, not a technology upgrade — meaning AI strategy reports to a C-suite sponsor, not a department head running experiments. They fund accordingly: 95% of leaders allocate more than 10% of their technology budget to AI, while laggards spread thin across dozens of small bets.
+Leaders treat AI as enterprise transformation, not a technology upgrade - meaning AI strategy reports to a C-suite sponsor, not a department head running experiments. They fund accordingly: 95% of leaders allocate more than 10% of their technology budget to AI, while laggards spread thin across dozens of small bets.
 
 They position AI as a complement to human work, not a replacement, which changes how employees engage with the tools. They elevate ownership to corporate strategy with a named executive accountable for outcomes.
 
-They measure differently, using distinct ROI frameworks and timeframes for different AI capabilities rather than applying a single payback calculation. And they mandate AI fluency as a core competency — consistent with BCG's finding that [70% of AI value comes from people and process](https://liorant.com/blog/ai-roi-measurement-framework/) — investing in training that goes beyond "how to use the tool" to "how to rethink your workflow."
+They measure differently, using distinct ROI frameworks and timeframes for different AI capabilities rather than applying a single payback calculation. And they mandate AI fluency as a core competency - consistent with BCG's finding that [70% of AI value comes from people and process](https://liorant.com/blog/ai-roi-measurement-framework/) - investing in training that goes beyond "how to use the tool" to "how to rethink your workflow."
 
-The practical implication: before evaluating platform features, evaluate whether your organization has the governance structure to scale any platform beyond a pilot. Glean Agents, for example, can automate multi-step workflows — but only if the organizational structure supports broad adoption across teams.
+The practical implication: before evaluating platform features, evaluate whether your organization has the governance structure to scale any platform beyond a pilot. Glean Agents, for example, can automate multi-step workflows - but only if the organizational structure supports broad adoption across teams.
 
 A $2 million platform investment without executive sponsorship, dedicated change management, and a measurement framework designed for compounding returns will underperform a $500,000 investment with all three.
 
@@ -169,19 +169,19 @@ Even organizations with strong initial deployments can watch their returns decay
 
 Expecting payback in year one creates a framing problem. When leadership sets a 12-month ROI target for a capability that Deloitte's research shows takes two to four years to mature, the project gets defunded just as compounding gains would have started. Reframe the first year as a foundation investment, not a payback period.
 
-Benchmarking against industry averages means benchmarking against failure. When 75% to 95% of pilots fail, the average outcome is a failed outcome. Leaders benchmark against the top 20% — organizations that treat AI as transformation — and set targets accordingly. PwC's 2026 AI Predictions reinforce this, finding that companies achieving results adopt an [enterprise-wide strategy](https://www.pwc.com/us/en/tech-effect/ai-analytics/ai-predictions.html) centered on a top-down program rather than crowdsourcing initiatives.
+Benchmarking against industry averages means benchmarking against failure. When 75% to 95% of pilots fail, the average outcome is a failed outcome. Leaders benchmark against the top 20% - organizations that treat AI as transformation - and set targets accordingly. PwC's 2026 AI Predictions reinforce this, finding that companies achieving results adopt an [enterprise-wide strategy](https://www.pwc.com/us/en/tech-effect/ai-analytics/ai-predictions.html) centered on a top-down program rather than crowdsourcing initiatives.
 
 Ignoring [integration debt](https://www.glean.com/blog/understanding-the-ai-tax-how-to-avoid-the-hidden-cost-of-ai) is a silent ROI killer. Every point-to-point connection between systems adds maintenance cost and fragility. Fifty-nine percent of organizations struggle with integration complexity, and two-thirds run multiple integration platforms simultaneously, according to the State of Integration & AI 2026 report.
 
-An AI platform that reduces integration debt by unifying access — Glean Search connects to 100+ enterprise apps through native connectors — delivers compounding savings that manual integrations never will.
+An AI platform that reduces integration debt by unifying access - Glean Search connects to 100+ enterprise apps through native connectors - delivers compounding savings that manual integrations never will.
 
 Deploying AI on broken workflows adds a layer of complexity to processes that were already underperforming. If your customer support workflow requires three handoffs and two system logins before a ticket reaches the right person, adding AI to that workflow accelerates a bad process. Fix the workflow first. Then apply AI to the streamlined version.
 
-Measuring once and moving on misses the defining characteristic of AI value: it compounds. A quarterly review cadence — not annual — captures the trajectory that separates a stalled project from one that's building toward maturity-phase returns.
+Measuring once and moving on misses the defining characteristic of AI value: it compounds. A quarterly review cadence - not annual - captures the trajectory that separates a stalled project from one that's building toward maturity-phase returns.
 
 ## How to evaluate which AI platform will deliver better long-term ROI
 
-Evaluate AI platforms against six criteria that predict long-term value: depth of organizational context, breadth of system connectivity, answer quality with citations, automation capability, security architecture, and speed to value. Test each vendor's ability to swap underlying models without disrupting your deployment — platforms coupled to a single model create lock-in risk.
+Evaluate AI platforms against six criteria that predict long-term value: depth of organizational context, breadth of system connectivity, answer quality with citations, automation capability, security architecture, and speed to value. Test each vendor's ability to swap underlying models without disrupting your deployment - platforms coupled to a single model create lock-in risk.
 
 Start with the problem, not the technology. The most common procurement mistake is evaluating AI platforms against a feature checklist rather than against the specific workflows and knowledge gaps that cost your organization money. A platform that scores well on a feature matrix but can't connect to your core systems or enforce your permission model will underperform within months.
 
@@ -191,17 +191,17 @@ Evaluate against six criteria that predict long-term value:
 
 Request evidence, not promises. Ask vendors for named customer examples at your organization's scale, in your industry, with your integration complexity. Generic case studies with unnamed companies and unverified metrics are marketing, not proof.
 
-Finally, test the "model swap" question. Ask each vendor: if a better foundation model launches next quarter, how quickly can your platform adopt it without disrupting our deployment? Platforms tightly coupled to a single model create lock-in risk. Platforms that sit above the model layer — orchestrating retrieval, context, permissions, and actions independently — protect your investment regardless of how fast the underlying AI evolves. [Glean achieves AI ROI](https://www.glean.com/press/glean-achieves-100m-arr-in-three-years-delivering-true-ai-roi-to-the-enterprise) in part because its architecture is model-agnostic, allowing organizations to benefit from improvements without re-architecting their deployment.
+Finally, test the "model swap" question. Ask each vendor: if a better foundation model launches next quarter, how quickly can your platform adopt it without disrupting our deployment? Platforms tightly coupled to a single model create lock-in risk. Platforms that sit above the model layer - orchestrating retrieval, context, permissions, and actions independently - protect your investment regardless of how fast the underlying AI evolves. [Glean achieves AI ROI](https://www.glean.com/press/glean-achieves-100m-arr-in-three-years-delivering-true-ai-roi-to-the-enterprise) in part because its architecture is model-agnostic, allowing organizations to benefit from improvements without re-architecting their deployment.
 
 ## How to build a financial case for multi-year AI investment
 
-Build the financial case around three metrics — capacity reallocation value, cost of delay, and ROAI — framed by adoption phase rather than a single payback period. Connect the case to competitive position: organizations that invest early and reinvest freed capacity build a compounding operational advantage that late movers cannot close.
+Build the financial case around three metrics - capacity reallocation value, cost of delay, and ROAI - framed by adoption phase rather than a single payback period. Connect the case to competitive position: organizations that invest early and reinvest freed capacity build a compounding operational advantage that late movers cannot close.
 
 The financial case for enterprise AI fails when it relies on a single ROI number projected over three years. CFOs and boards have seen too many technology projections that assume linear adoption and ignore organizational friction. A credible case uses three metrics, frames value by phase, and connects directly to competitive position.
 
-Start with the three metrics that capture AI's actual value pattern. Capacity reallocation value quantifies what happens when freed hours shift to higher-value work — not just the labor cost saved, but the revenue impact of that redeployed effort.
+Start with the three metrics that capture AI's actual value pattern. Capacity reallocation value quantifies what happens when freed hours shift to higher-value work - not just the labor cost saved, but the revenue impact of that redeployed effort.
 
-A sales enablement team that reclaims 15 hours per week from content searching — using Glean Assistant to surface competitive briefs and customer history instantly — and redirects it to deal support generates measurable pipeline impact. Cost of delay calculates the financial benefit of speed: how much is it worth to onboard new employees two weeks faster, resolve customer issues in minutes instead of hours, or ship product updates ahead of a competitor?
+A sales enablement team that reclaims 15 hours per week from content searching - using Glean Assistant to surface competitive briefs and customer history instantly - and redirects it to deal support generates measurable pipeline impact. Cost of delay calculates the financial benefit of speed: how much is it worth to onboard new employees two weeks faster, resolve customer issues in minutes instead of hours, or ship product updates ahead of a competitor?
 
 ROAI (return on AI investment) provides the composite picture: revenue attribution plus cost savings plus risk mitigation value, divided by total AI spend across infrastructure, licensing, and change management.
 
@@ -209,13 +209,13 @@ Frame the narrative by adoption phase, not by calendar year. Foundation phase (m
 
 Maturity phase (18 months and beyond): revenue from AI-amplified capabilities, proprietary knowledge advantages, and competitive separation that's difficult for late movers to close. This phased framing sets realistic expectations and gives leadership clear milestones instead of a single distant target.
 
-Connect the case to competitive position and reinvestment. Forty percent of organizations report they would reinvest freed capacity into accelerating AI adoption — creating a compounding loop where early efficiency gains fund deeper automation, which frees more capacity, which funds the next wave. This automation flywheel is the strongest argument for multi-year commitment: organizations that invest early and reinvest consistently build an operational advantage that compounds while competitors are still debating their first pilot.
+Connect the case to competitive position and reinvestment. Forty percent of organizations report they would reinvest freed capacity into accelerating AI adoption - creating a compounding loop where early efficiency gains fund deeper automation, which frees more capacity, which funds the next wave. This automation flywheel is the strongest argument for multi-year commitment: organizations that invest early and reinvest consistently build an operational advantage that compounds while competitors are still debating their first pilot.
 
 ## Frequently asked questions
 
 ### What metrics should enterprises use to measure AI ROI over time?
 
-Three metrics capture the full picture: capacity reallocation value (the economic gain from shifting freed hours to higher-value work), cost of delay (the financial benefit of delivering outcomes faster), and ROAI — revenue attribution plus cost savings plus risk mitigation divided by total AI investment. Revisit these quarterly, not annually, to capture AI's compounding value curve.
+Three metrics capture the full picture: capacity reallocation value (the economic gain from shifting freed hours to higher-value work), cost of delay (the financial benefit of delivering outcomes faster), and ROAI - revenue attribution plus cost savings plus risk mitigation divided by total AI investment. Revisit these quarterly, not annually, to capture AI's compounding value curve.
 
 ### How long does it typically take to see ROI from enterprise AI?
 
@@ -223,17 +223,17 @@ Most organizations need two to four years for satisfactory returns on a typical 
 
 ### What is the biggest risk to long-term AI ROI?
 
-Integration debt. Fifty-nine percent of organizations struggle with integration complexity, and platforms that connect to only a fraction of company knowledge produce incomplete answers that erode trust and adoption. A platform's breadth of native connectivity — and its ability to preserve permissions across all connected systems — is among the strongest predictors of whether value will compound or plateau.
+Integration debt. Fifty-nine percent of organizations struggle with integration complexity, and platforms that connect to only a fraction of company knowledge produce incomplete answers that erode trust and adoption. A platform's breadth of native connectivity - and its ability to preserve permissions across all connected systems - is among the strongest predictors of whether value will compound or plateau.
 
 ### How do generative AI and agentic AI differ in ROI timelines?
 
-Generative AI delivers measurable productivity gains within months — content creation, research acceleration, and reduced manual work. Fifteen percent of organizations already report significant ROI. Agentic AI involves greater complexity but enables [end-to-end process automation](https://www.glean.com/blog/ai-agents-enterprise). Only 10% currently see significant ROI from agentic capabilities, with most expecting returns within one to five years as orchestration and governance mature.
+Generative AI delivers measurable productivity gains within months - content creation, research acceleration, and reduced manual work. Fifteen percent of organizations already report significant ROI. Agentic AI involves greater complexity but enables [end-to-end process automation](https://www.glean.com/blog/ai-agents-enterprise). Only 10% currently see significant ROI from agentic capabilities, with most expecting returns within one to five years as orchestration and governance mature.
 
 ### Can enterprises achieve AI ROI without large-scale organizational change?
 
 No. Technology alone doesn't produce returns. Deloitte's research shows that AI ROI leaders consistently pair platform investment with executive sponsorship, dedicated change management, and workforce AI fluency programs. Organizations that skip organizational change cap their returns at the pilot stage, regardless of how capable the platform is.
 
-Enterprise AI ROI isn't a number you calculate once — it's a trajectory you build over quarters and years by connecting the right platform to the knowledge, workflows, and people that drive your business. The organizations pulling ahead are the ones that invested early, measured with compounding in mind, and committed to the organizational change that turns a promising pilot into a durable advantage. [Request a demo](https://www.glean.com/get-a-demo) to explore how we can help you build that trajectory with AI grounded in your company's knowledge.
+Enterprise AI ROI isn't a number you calculate once - it's a trajectory you build over quarters and years by connecting the right platform to the knowledge, workflows, and people that drive your business. The organizations pulling ahead are the ones that invested early, measured with compounding in mind, and committed to the organizational change that turns a promising pilot into a durable advantage. [Request a demo](https://www.glean.com/get-a-demo) to explore how we can help you build that trajectory with AI grounded in your company's knowledge.
 
 [
 

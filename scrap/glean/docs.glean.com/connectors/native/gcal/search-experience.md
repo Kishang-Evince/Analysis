@@ -32,12 +32,12 @@ This makes it easy to go from a question (“What did we decide for Gcal setup c
 
 Users can narrow calendar results with standard operators. Supported operators include (among others):
 
--   `app:googlecalendar` — Restrict results to Google Calendar events
--   `updated:` — Search based on the meeting start time (as “updated” field)
--   `type:` — Filter by event type (currently a single event type is supported)
--   `organizer:` — Filter by organizer
--   `participants:` — Filter by invited participants
--   `before:` / `after:` — Time-bounded search for meetings before or after a date/time
+-   `app:googlecalendar` - Restrict results to Google Calendar events
+-   `updated:` - Search based on the meeting start time (as “updated” field)
+-   `type:` - Filter by event type (currently a single event type is supported)
+-   `organizer:` - Filter by organizer
+-   `participants:` - Filter by invited participants
+-   `before:` / `after:` - Time-bounded search for meetings before or after a date/time
 
 Example:
 

@@ -63,17 +63,17 @@ Share this article:
 
 # Navigating information sprawl: A guide for enterprises
 
-Information sprawl has become one of the most pressing challenges facing modern enterprises. As organizations generate data at unprecedented rates—with the global datasphere expected to more than double from 2022 to 2026—the ability to manage, secure, and leverage this information effectively has never been more critical.
+Information sprawl has become one of the most pressing challenges facing modern enterprises. As organizations generate data at unprecedented rates-with the global datasphere expected to more than double from 2022 to 2026-the ability to manage, secure, and leverage this information effectively has never been more critical.
 
 ## What is information sprawl?
 
 Information sprawl is the uncontrolled expansion of data across various systems and platforms within an organization. This phenomenon leads to challenges in data management, security, and productivity as information becomes scattered and difficult to manage effectively. The global datasphere is projected to explode from 45 zettabytes in 2019 to [175 zettabytes](https://www.seagate.com/files/www-content/our-story/trends/files/dataage-idc-report-final.pdf) by 2025. This represents a nearly fourfold increase in just six years, with enterprise data growing twice as fast as consumer data.
 
-Think of it as the digital equivalent of a cluttered office that's expanded across multiple buildings. Documents exist in filing cabinets, servers, corporate intranets, emails, and countless SaaS applications. Each department might use different tools, store data in different formats, and follow different protocols—creating a labyrinth of information that's increasingly difficult to navigate.
+Think of it as the digital equivalent of a cluttered office that's expanded across multiple buildings. Documents exist in filing cabinets, servers, corporate intranets, emails, and countless SaaS applications. Each department might use different tools, store data in different formats, and follow different protocols-creating a labyrinth of information that's increasingly difficult to navigate.
 
-This isn't just about volume—it's about complexity and risk. When one in five enterprise cloud environments with internet-facing databases contains sensitive data like PII, PHI, or PCI information, the stakes couldn't be higher. Organizations averaged [802,000](https://betanews.com/2023/02/23/business-data-at-risk-from-oversharing/) files at risk due to oversharing in 2022, a 60% increase from earlier in the year, and the number of at-risk files per employee jumped from 251 in 2021 to 402 in 2022.
+This isn't just about volume-it's about complexity and risk. When one in five enterprise cloud environments with internet-facing databases contains sensitive data like PII, PHI, or PCI information, the stakes couldn't be higher. Organizations averaged [802,000](https://betanews.com/2023/02/23/business-data-at-risk-from-oversharing/) files at risk due to oversharing in 2022, a 60% increase from earlier in the year, and the number of at-risk files per employee jumped from 251 in 2021 to 402 in 2022.
 
-This isn't just about volume—it's about complexity and risk. When one in five enterprise cloud environments with internet-facing databases contains sensitive data like PII, PHI, or PCI information, the stakes couldn't be higher.
+This isn't just about volume-it's about complexity and risk. When one in five enterprise cloud environments with internet-facing databases contains sensitive data like PII, PHI, or PCI information, the stakes couldn't be higher.
 
 ## How to navigate information sprawl
 
@@ -81,7 +81,7 @@ Understanding information sprawl requires recognizing both its causes and implic
 
 The foundation of managing information sprawl is centralization. This doesn't mean forcing all data into a single repository, but rather creating a unified approach to data management across your organization. This is increasingly critical given that [65%](https://www.zluri.com/blog/shadow-it-statistics-key-facts-to-learn-in-2024) of all Software-as-a-Service applications used in organizations are unsanctioned by IT departments, and organizations maintain an average of 975 unknown cloud services compared to only 108 officially known services.
 
-Consider how remote work amplifies this challenge. Employees generate data across personal devices, cloud storage services, and collaboration platforms. Without proper oversight, this shadow IT creates shadow data—information that exists outside organizational control and visibility.
+Consider how remote work amplifies this challenge. Employees generate data across personal devices, cloud storage services, and collaboration platforms. Without proper oversight, this shadow IT creates shadow data-information that exists outside organizational control and visibility.
 
 ## Step 1: Centralize data management
 
@@ -89,7 +89,7 @@ The foundation of managing information sprawl is centralization. This doesn't me
 
 Start by implementing centralized data storage solutions that can accommodate both structured and unstructured data. Cloud storage platforms offer the scalability and accessibility needed for modern enterprises, providing a single source of truth while maintaining the flexibility teams require.
 
-[Enterprise search capabilities](https://www.glean.com/product/workplace-search-ai) are essential here. Modern search platforms can index content across 100+ connectors, crawling every part of your data landscape—from document titles and body copy to metadata and comments. This comprehensive indexing makes information discoverable regardless of where it lives, effectively creating a unified view of scattered data.
+[Enterprise search capabilities](https://www.glean.com/product/workplace-search-ai) are essential here. Modern search platforms can index content across 100+ connectors, crawling every part of your data landscape-from document titles and body copy to metadata and comments. This comprehensive indexing makes information discoverable regardless of where it lives, effectively creating a unified view of scattered data.
 
 Data Security Posture Management (DSPM) solutions provide continuous visibility into where sensitive data lives and who can access it. DSPM is the fastest-growing security category, with [75%](https://www.cybersecurity-insiders.com/the-2024-dspm-adoption-report/) of organizations expected to adopt it by mid-2025; currently, [87%](https://www.cybersecurity-insiders.com/the-2024-dspm-adoption-report/) of enterprises find their data discovery and classification solutions lacking. These tools can automatically discover and classify data across cloud environments, tracking movement and managing access across distributed systems. When 90% of business-critical documents are shared outside the C-suite, and over 15% of critical files are at risk from oversharing, automated governance becomes essential.
 
@@ -97,7 +97,7 @@ Data Security Posture Management (DSPM) solutions provide continuous visibility 
 
 With data scattered across multiple platforms, security becomes exponentially more complex. Each system represents a potential vulnerability, and traditional perimeter-based security models simply don't work when there's no clear perimeter to defend.
 
-Robust data security protocols must adapt to this distributed reality. Start with the principle of least privilege—users should only access the data they need for their specific roles. Modern platforms enforce these permissions automatically, respecting the access controls of source documents without requiring manual configuration.
+Robust data security protocols must adapt to this distributed reality. Start with the principle of least privilege-users should only access the data they need for their specific roles. Modern platforms enforce these permissions automatically, respecting the access controls of source documents without requiring manual configuration.
 
 [Data Security Posture Management](https://www.glean.com/security) (DSPM) solutions provide continuous visibility into where sensitive data lives and who can access it. These tools can automatically discover and classify data across cloud environments, tracking movement and managing access across distributed systems. When 90% of business-critical documents are shared outside the C-suite, and over 15% of critical files are at risk from oversharing, automated governance becomes essential.
 
@@ -105,13 +105,13 @@ Regular security updates are non-negotiable. As data sprawl expands your attack 
 
 ## Step 3: Foster a culture of data responsibility
 
-Promote efficient information discovery. When employees can quickly find what they need through enterprise search—reducing the average 2 hours per day spent looking for information—they're less likely to create duplicates or store data in unauthorized locations. In fact, [43%](https://www.hcamag.com/us/specialization/employee-engagement/employees-waste-at-least-two-hours-a-day-searching-for-what-they-need-to-work/324737) of employees would consider leaving their job if there wasn't an efficient way to access needed information, rising to 51% for ages 18-34 and 57% for ages 35-44. Make finding information as easy as using Google, and watch sprawl naturally decrease.
+Promote efficient information discovery. When employees can quickly find what they need through enterprise search-reducing the average 2 hours per day spent looking for information-they're less likely to create duplicates or store data in unauthorized locations. In fact, [43%](https://www.hcamag.com/us/specialization/employee-engagement/employees-waste-at-least-two-hours-a-day-searching-for-what-they-need-to-work/324737) of employees would consider leaving their job if there wasn't an efficient way to access needed information, rising to 51% for ages 18-34 and 57% for ages 35-44. Make finding information as easy as using Google, and watch sprawl naturally decrease.
 
 Education is the starting point. Many employees don't realize the risks their data practices create. When someone shares a spreadsheet containing client details on public cloud storage or uses an unapproved app for sensitive work, they're contributing to sprawl and creating security vulnerabilities. Regular training helps teams understand these risks and their role in preventing them.
 
 Encourage the use of approved tools by making them easily accessible and user-friendly. The rise of shadow IT often stems from employees trying to work more efficiently. If your approved platforms don't meet their needs, they'll find alternatives. By providing comprehensive, intuitive tools and simplifying approval processes for new applications, you reduce the incentive for workarounds.
 
-Promote efficient information discovery. When employees can quickly find what they need through enterprise search—reducing the average 2 hours per day spent looking for information—they're less likely to create duplicates or store data in unauthorized locations. On average, knowledge workers spend [1.8 hours](https://cottrillresearch.com/various-survey-statistics-workers-spend-too-much-time-searching-for-information/) every day (25% of their work week) searching for information rather than creating value—effectively meaning businesses hire five employees but only get productive output from four. Make finding information as easy as using Google, and watch sprawl naturally decrease.
+Promote efficient information discovery. When employees can quickly find what they need through enterprise search-reducing the average 2 hours per day spent looking for information-they're less likely to create duplicates or store data in unauthorized locations. On average, knowledge workers spend [1.8 hours](https://cottrillresearch.com/various-survey-statistics-workers-spend-too-much-time-searching-for-information/) every day (25% of their work week) searching for information rather than creating value-effectively meaning businesses hire five employees but only get productive output from four. Make finding information as easy as using Google, and watch sprawl naturally decrease.
 
 ## Step 4: Leverage technology to reduce complexity
 
@@ -121,7 +121,7 @@ Automated data classification uses machine learning to scan and categorize infor
 
 Visibility solutions, powered by a [knowledge graph](https://www.glean.com/product/knowledge-graph), provide real-time insights into your data landscape. Modern platforms create comprehensive maps of data locations, access patterns, and risk levels. They can track data lineage, showing how information moves through your organization and identifying potential exposure points. This visibility enables proactive management rather than reactive scrambling when issues arise.
 
-Information architecture brings order to chaos. By implementing systematic organization principles—clear naming conventions, logical folder structures, standardized metadata—you make data more discoverable and manageable. Think of it as urban planning for your digital environment, creating clear pathways and zones that make navigation intuitive.
+Information architecture brings order to chaos. By implementing systematic organization principles-clear naming conventions, logical folder structures, standardized metadata-you make data more discoverable and manageable. Think of it as urban planning for your digital environment, creating clear pathways and zones that make navigation intuitive.
 
 ## Tips on managing information sprawl
 
@@ -143,11 +143,11 @@ Promoting cooperation among departments can significantly streamline data manage
 
 Additionally, interdepartmental cooperation provides a broader perspective on the organization's data ecosystem. Collaborative efforts allow teams to identify shared challenges and develop comprehensive solutions that benefit the entire enterprise. This unified approach not only strengthens data governance but also empowers employees to actively participate in managing information sprawl, creating a more cohesive and efficient data environment.
 
-The journey to conquering information sprawl starts with understanding that it's not just a technical challenge—it's an organizational transformation. By implementing the strategies we've outlined, you can turn your scattered data landscape into a strategic asset that drives productivity and innovation.
+The journey to conquering information sprawl starts with understanding that it's not just a technical challenge-it's an organizational transformation. By implementing the strategies we've outlined, you can turn your scattered data landscape into a strategic asset that drives productivity and innovation.
 
 ## The path forward
 
-Information sprawl isn't going away—if anything, it will accelerate as organizations generate more data through AI, IoT, and digital transformation initiatives. The key is transforming this challenge into an opportunity.
+Information sprawl isn't going away-if anything, it will accelerate as organizations generate more data through AI, IoT, and digital transformation initiatives. The key is transforming this challenge into an opportunity.
 
 Organizations that successfully navigate information sprawl gain significant competitive advantages. They make better decisions based on comprehensive data insights. They respond faster to opportunities and threats. They maintain stronger security postures and ensure regulatory compliance. Most importantly, they empower employees to focus on meaningful work rather than hunting for information.
 

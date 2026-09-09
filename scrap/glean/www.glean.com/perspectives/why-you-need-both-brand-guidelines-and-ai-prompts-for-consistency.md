@@ -63,7 +63,7 @@ Share this article:
 
 # Why you need both brand guidelines and AI prompts for consistency
 
-Brand guidelines and [AI prompts](https://www.glean.com/blog/what-is-an-ai-prompt) solve different halves of the same problem — guidelines give your team the strategic reasoning behind your voice, while prompts give AI tools the explicit instructions they need to execute it. Without both, you get either inconsistent machine output or undocumented human intuition.
+Brand guidelines and [AI prompts](https://www.glean.com/blog/what-is-an-ai-prompt) solve different halves of the same problem - guidelines give your team the strategic reasoning behind your voice, while prompts give AI tools the explicit instructions they need to execute it. Without both, you get either inconsistent machine output or undocumented human intuition.
 
 Most organizations already have [brand guidelines](https://www.glean.com/resources/product-videos/working-ai-build-vs-buy-glean-for-work-ai) that define tone, visual identity, and messaging principles. But these documents were written for people who can read between the lines. When a style guide says "sound confident but not arrogant," a seasoned copywriter adjusts sentence length, word choice, and cadence instinctively. A language model doesn't.
 
@@ -71,13 +71,13 @@ That gap is widening fast. With [85% of marketing professionals now using AI too
 
 ## What brand guidelines and AI prompts each do (and where they fall short alone)
 
-Brand guidelines define your voice, visual identity, and values for human teams. They work through shared context — a creative director reads "convey authenticity" and draws on years of brand experience to make the right calls. The guidelines explain *why* the brand sounds a certain way, which helps writers make judgment calls in ambiguous situations like responding to a PR crisis or adapting copy for a new audience segment.
+Brand guidelines define your voice, visual identity, and values for human teams. They work through shared context - a creative director reads "convey authenticity" and draws on years of brand experience to make the right calls. The guidelines explain *why* the brand sounds a certain way, which helps writers make judgment calls in ambiguous situations like responding to a PR crisis or adapting copy for a new audience segment.
 
-AI prompts do something fundamentally different. They are structured, explicit instructions that tell a language model exactly how to behave — specifying tone, banned vocabulary, sentence structure, formatting rules, and output constraints.
+AI prompts do something fundamentally different. They are structured, explicit instructions that tell a language model exactly how to behave - specifying tone, banned vocabulary, sentence structure, formatting rules, and output constraints.
 
 A prompt doesn't assume prior context or cultural fluency. It replaces interpretation with instruction: instead of "our tone is warm and approachable," an effective prompt says "use contractions, keep sentences under 20 words, and open with second-person address."
 
-Each layer breaks down without the other. Research from [Demand Metric shows that 60% of marketing materials don't conform to brand guidelines](https://www.demandmetric.com/content/impact-brand-consistency) even when those guidelines exist — and traditional guidelines alone leave AI tools guessing because the model has no behavioral anchor for adjectives like "friendly and professional."
+Each layer breaks down without the other. Research from [Demand Metric shows that 60% of marketing materials don't conform to brand guidelines](https://www.demandmetric.com/content/impact-brand-consistency) even when those guidelines exist - and traditional guidelines alone leave AI tools guessing because the model has no behavioral anchor for adjectives like "friendly and professional."
 
 A Glean customer running content operations across departments, for example, can store brand rules in a centralized knowledge base and use Glean Assistant to surface the right guidelines in context. But the prompt layer is what converts those rules into consistent, repeatable outputs.
 
@@ -85,85 +85,85 @@ AI prompts without guidelines produce technically compliant content that lacks p
 
 ## Why traditional brand guidelines don't translate directly to AI tools
 
-Human writers learn brand voice the way new employees learn office culture — through exposure, repetition, and hundreds of small corrections over time. A copywriter who has spent six months on your team can read a brief that says "keep it professional but human" and produce something that sounds right on the first draft. They've absorbed sentence rhythm, vocabulary preferences, and the subtle difference between your brand's version of "friendly" and a competitor's.
+Human writers learn brand voice the way new employees learn office culture - through exposure, repetition, and hundreds of small corrections over time. A copywriter who has spent six months on your team can read a brief that says "keep it professional but human" and produce something that sounds right on the first draft. They've absorbed sentence rhythm, vocabulary preferences, and the subtle difference between your brand's version of "friendly" and a competitor's.
 
 AI models start every session from zero. They carry no institutional memory, no history of editorial feedback, and no understanding of what your last campaign sounded like.
 
 When a prompt says "convey authenticity," the model has no baseline for what authentic means *to your brand specifically*. The result is output that technically follows the instruction but drifts from the voice your audience recognizes.
 
-The problem compounds at scale. A single writer who misinterprets "conversational" might get a note from an editor. But when 15 teams across four regions are generating content through AI tools, ambiguous guidelines produce 15 different interpretations — none of them wrong, but none of them consistent either.
+The problem compounds at scale. A single writer who misinterprets "conversational" might get a note from an editor. But when 15 teams across four regions are generating content through AI tools, ambiguous guidelines produce 15 different interpretations - none of them wrong, but none of them consistent either.
 
 The financial stakes are significant: a [Lucidpress study found that consistent brand presentation increases revenue by 23–33%](https://www.prnewswire.com/news-releases/study-finds-companies-with-consistent-branding-can-see-up-to-33-increase-in-revenue-300967219.html), which means every inconsistent output carries a real cost.
 
 Specificity is the fix. A machine-readable brand guideline replaces "our voice is conversational" with actionable constraints: "use contractions, keep sentences under 20 words, avoid passive voice, never use 'utilize' or 'leverage.'" That level of precision removes the guesswork a language model can't resolve on its own.
 
-Organizations using Glean can centralize these explicit rules inside their [Enterprise Graph](https://www.glean.com/blog/enterprise-ai-knowledge-graph) — the layer that maps relationships across documents, messages, tools, and people. When a team member or an AI agent needs to reference voice guidelines, Glean Search retrieves the current version from wherever it lives, whether that's a Google Doc, a Confluence page, or a Notion database. The rules stay in one place; access stays consistent.
+Organizations using Glean can centralize these explicit rules inside their [Enterprise Graph](https://www.glean.com/blog/enterprise-ai-knowledge-graph) - the layer that maps relationships across documents, messages, tools, and people. When a team member or an AI agent needs to reference voice guidelines, Glean Search retrieves the current version from wherever it lives, whether that's a Google Doc, a Confluence page, or a Notion database. The rules stay in one place; access stays consistent.
 
 ## How to make brand guidelines machine-readable
 
-Translating a brand style guide for AI consumption is an editing exercise, not a creative one. You're converting intent into instruction — taking what your creative director means and writing it in a format a language model can follow without interpretation.
+Translating a brand style guide for AI consumption is an editing exercise, not a creative one. You're converting intent into instruction - taking what your creative director means and writing it in a format a language model can follow without interpretation.
 
 ### Convert subjective descriptions into explicit rules
 
 Start with your voice attributes. If your guide says "our tone is confident," rewrite it as a set of behavioral instructions: "Use active voice. Lead with the verb. State claims with evidence rather than adjectives. Banned phrases: 'industry-leading,' 'best-in-class,' and similar hype adjectives."
 
-Build "do this, not that" comparison tables for every voice attribute. AI tools learn fastest from concrete side-by-side examples. A table that shows an off-brand sentence next to its on-brand rewrite gives the model a pattern it can replicate — not just a concept it has to guess at.
+Build "do this, not that" comparison tables for every voice attribute. AI tools learn fastest from concrete side-by-side examples. A table that shows an off-brand sentence next to its on-brand rewrite gives the model a pattern it can replicate - not just a concept it has to guess at.
 
 Define tone by scenario, not just by brand. Your voice in a product launch email is different from your voice in a support article. Map each content type to its own tone profile with specific instructions: formality level, sentence length range, whether humor is acceptable, and which vocabulary shifts apply.
 
 ### Structure formatting and vocabulary as quantified constraints
 
-Specify the mechanics your brand cares about: sentence length ranges (e.g., 8–20 words for body copy), punctuation preferences (Oxford comma yes or no), header casing rules, and whether contractions are acceptable. These details are invisible to most human writers — they follow them by instinct — but a language model needs every one stated explicitly.
+Specify the mechanics your brand cares about: sentence length ranges (e.g., 8–20 words for body copy), punctuation preferences (Oxford comma yes or no), header casing rules, and whether contractions are acceptable. These details are invisible to most human writers - they follow them by instinct - but a language model needs every one stated explicitly.
 
 Build preferred vs. forbidden term lists as simple key-value mappings. "Say 'use,' not 'utilize.' Say 'help,' not inflated hype verbs. Say 'start,' not 'embark.'" These lists are easy to maintain, easy to version-control, and easy to inject into any prompt template.
 
-Document content structure rules as formulas. If your blog posts always open with a direct answer, follow with a context paragraph, and close with a CTA, write that pattern as a numbered sequence. Glean Agents can reference these structure templates when generating or reviewing content — they pull the rules from your connected knowledge sources through the Enterprise Graph and apply them step by step, with cited references to the source document.
+Document content structure rules as formulas. If your blog posts always open with a direct answer, follow with a context paragraph, and close with a CTA, write that pattern as a numbered sequence. Glean Agents can reference these structure templates when generating or reviewing content - they pull the rules from your connected knowledge sources through the Enterprise Graph and apply them step by step, with cited references to the source document.
 
 ## What an AI brand style guide should include that traditional guidelines skip
 
-A standard brand guide covers voice, visual identity, and messaging pillars. An AI-ready version adds six categories that most traditional documents leave out entirely — and each one directly affects output quality when a language model generates content on your behalf.
+A standard brand guide covers voice, visual identity, and messaging pillars. An AI-ready version adds six categories that most traditional documents leave out entirely - and each one directly affects output quality when a language model generates content on your behalf.
 
 **Core voice attributes with behavioral definitions.** Don't stop at adjectives. For each attribute (e.g., "approachable"), define what it looks like in practice: contractions allowed, average sentence length under 18 words, first-person plural for company statements, second person for reader address.
 
-**A brand persona description.** Give the AI a character to inhabit. "You are a knowledgeable colleague — a product marketer explaining enterprise technology to a peer. You're authoritative but not boastful. You inform, you don't impress." This framing anchors tone decisions the model makes throughout the session.
+**A brand persona description.** Give the AI a character to inhabit. "You are a knowledgeable colleague - a product marketer explaining enterprise technology to a peer. You're authoritative but not boastful. You inform, you don't impress." This framing anchors tone decisions the model makes throughout the session.
 
-**Hard boundaries — a "never do this" list.** Banned vocabulary, prohibited claims, off-limits topics, and formatting violations. Models are better at avoiding specific behaviors than embodying abstract qualities. A list of 30 forbidden words does more for consistency than a paragraph about brand values.
+**Hard boundaries - a "never do this" list.** Banned vocabulary, prohibited claims, off-limits topics, and formatting violations. Models are better at avoiding specific behaviors than embodying abstract qualities. A list of 30 forbidden words does more for consistency than a paragraph about brand values.
 
-**Full comparison examples.** On-brand vs. off-brand sentence pairs for each voice attribute and each content type. These examples serve as few-shot training data inside a prompt — the model pattern-matches against them, which produces tighter adherence than instructions alone.
+**Full comparison examples.** On-brand vs. off-brand sentence pairs for each voice attribute and each content type. These examples serve as few-shot training data inside a prompt - the model pattern-matches against them, which produces tighter adherence than instructions alone.
 
 **Audience context beyond demographics.** Instead of "our audience is enterprise decision-makers," describe what they already know, what they're skeptical about, what vocabulary they use, and what motivates their decisions. This shapes the depth, proof points, and framing a model selects.
 
-**A reusable prompt library.** Pair every guideline category with tested, scenario-specific prompts. Glean's [AI prompt library](https://www.glean.com/prompt-library) shows how this works in practice — teams store prompt templates alongside their knowledge base, and Glean Assistant surfaces the right template based on the task, the audience, and the content type. The prompt becomes the delivery mechanism for the guideline.
+**A reusable prompt library.** Pair every guideline category with tested, scenario-specific prompts. Glean's [AI prompt library](https://www.glean.com/prompt-library) shows how this works in practice - teams store prompt templates alongside their knowledge base, and Glean Assistant surfaces the right template based on the task, the audience, and the content type. The prompt becomes the delivery mechanism for the guideline.
 
 ## How AI prompts enhance brand consistency at scale
 
-Prompts are where brand guidelines stop being reference material and start becoming operational infrastructure. A well-structured prompt encodes your voice rules, vocabulary constraints, and structural requirements into every content generation session — regardless of who triggers it or which team they belong to.
+Prompts are where brand guidelines stop being reference material and start becoming operational infrastructure. A well-structured prompt encodes your voice rules, vocabulary constraints, and structural requirements into every content generation session - regardless of who triggers it or which team they belong to.
 
 Think of a [prompt template](https://www.glean.com/blog/glean-ai-prompting-guide) as an automated quality floor. Without one, output quality depends entirely on whoever is writing the prompt at that moment.
 
-With one, every session starts from the same baseline: the right tone, the right vocabulary boundaries, the right content structure. Individual creativity still matters — prompts set the floor, not the ceiling.
+With one, every session starts from the same baseline: the right tone, the right vocabulary boundaries, the right content structure. Individual creativity still matters - prompts set the floor, not the ceiling.
 
-Scenario-specific templates multiply this effect. A prompt for customer-facing emails enforces a different formality level, CTA structure, and sentence rhythm than a prompt for internal knowledge base articles. When you build templates by channel and content type, you eliminate the judgment calls that cause drift — the model doesn't have to decide how formal to be, because the template already specifies it.
+Scenario-specific templates multiply this effect. A prompt for customer-facing emails enforces a different formality level, CTA structure, and sentence rhythm than a prompt for internal knowledge base articles. When you build templates by channel and content type, you eliminate the judgment calls that cause drift - the model doesn't have to decide how formal to be, because the template already specifies it.
 
-AI prompts also make brand governance measurable in a way traditional guidelines never could. When your rules are encoded as explicit constraints, you can test outputs programmatically — checking for banned words, sentence length violations, and missing CTAs.
+AI prompts also make brand governance measurable in a way traditional guidelines never could. When your rules are encoded as explicit constraints, you can test outputs programmatically - checking for banned words, sentence length violations, and missing CTAs.
 
-These checks are critical given that [only 27% of organizations systematically review AI-generated content](https://sopro.io/resources/blog/ai-sales-and-marketing-statistics/) before publishing — turning brand compliance from a subjective editorial review into a repeatable audit.
+These checks are critical given that [only 27% of organizations systematically review AI-generated content](https://sopro.io/resources/blog/ai-sales-and-marketing-statistics/) before publishing - turning brand compliance from a subjective editorial review into a repeatable audit.
 
-When your guidelines update — a new product name, a revised tone for a specific audience, a banned phrase added to the list — you update the prompt library once. Every downstream session that references those templates reflects the change immediately. No retraining, no all-hands email, no hoping everyone reads the updated PDF.
+When your guidelines update - a new product name, a revised tone for a specific audience, a banned phrase added to the list - you update the prompt library once. Every downstream session that references those templates reflects the change immediately. No retraining, no all-hands email, no hoping everyone reads the updated PDF.
 
-[Glean Agents](https://www.glean.com/product/ai-agents) take this a step further. Because they pull context from your Enterprise Graph — the connected layer across your documents, tools, and people — they can reference the latest version of your prompt templates and brand rules without manual updates. An agent generating a quarterly report pulls the current style guide, the current prompt template, and the current data sources in a single workflow, with cited references back to each source.
+[Glean Agents](https://www.glean.com/product/ai-agents) take this a step further. Because they pull context from your Enterprise Graph - the connected layer across your documents, tools, and people - they can reference the latest version of your prompt templates and brand rules without manual updates. An agent generating a quarterly report pulls the current style guide, the current prompt template, and the current data sources in a single workflow, with cited references back to each source.
 
 ## Building dual documentation: one system for humans, one for machines
 
-The most effective brand programs maintain two companion documents generated from the same source of truth — one written for people, one structured for AI tools. They cover identical ground but serve different readers with different needs.
+The most effective brand programs maintain two companion documents generated from the same source of truth - one written for people, one structured for AI tools. They cover identical ground but serve different readers with different needs.
 
 The human-facing guide explains *why*. It includes the strategic rationale behind voice decisions, annotated examples with editorial commentary, and narrative explanations that help writers exercise judgment in ambiguous situations. It's the document you hand a new hire on day one or share with a freelance agency before a campaign.
 
 The machine-facing guide specifies *what*. It strips away narrative and delivers rules as structured instructions: term lists, sentence length constraints, tone parameters by content type, banned vocabulary, required formatting, and output templates. This is the document you inject into a prompt or feed to an agent as a reference file.
 
-Both documents must stay synchronized. When your human guide adds a new section on product launch messaging, the machine guide needs a corresponding set of rules and a prompt template. Version-controlling both together — with a shared changelog and review process — prevents the drift that happens when one document updates and the other doesn't.
+Both documents must stay synchronized. When your human guide adds a new section on product launch messaging, the machine guide needs a corresponding set of rules and a prompt template. Version-controlling both together - with a shared changelog and review process - prevents the drift that happens when one document updates and the other doesn't.
 
-A practical structure: keep the source of truth in a single location (a wiki, a shared drive, a knowledge base), and generate both versions from it. The Glean [work AI blog](https://www.glean.com/blog) has covered how teams centralize knowledge this way. With Canvas — Glean's collaborative workspace — teams can draft, review, and update both versions in one place, with the Enterprise Graph keeping connected documents in sync across tools.
+A practical structure: keep the source of truth in a single location (a wiki, a shared drive, a knowledge base), and generate both versions from it. The Glean [work AI blog](https://www.glean.com/blog) has covered how teams centralize knowledge this way. With Canvas - Glean's collaborative workspace - teams can draft, review, and update both versions in one place, with the Enterprise Graph keeping connected documents in sync across tools.
 
 This dual approach also simplifies onboarding. New writers read the human guide to understand the brand's thinking. AI tools consume the machine guide to execute on it.
 
@@ -173,13 +173,13 @@ Neither document tries to do both jobs, which makes each one shorter, clearer, a
 
 ### Start with a pilot: low-risk content, high learning
 
-Pick one content type with high volume and low stakes — internal newsletters, help center articles, or social media captions. Build a machine-readable guideline set and a prompt template specifically for that format. Run 20–30 pieces through your AI tool with the template active, then compare the output against your brand standards.
+Pick one content type with high volume and low stakes - internal newsletters, help center articles, or social media captions. Build a machine-readable guideline set and a prompt template specifically for that format. Run 20–30 pieces through your AI tool with the template active, then compare the output against your brand standards.
 
-This pilot gives you two things: a baseline measurement of how well your current guidelines translate to AI output, and a concrete list of where the gaps are. You'll discover which rules the model follows easily (banned vocabulary, sentence length caps) and which ones it struggles with (tone nuance, appropriate humor, knowing when to cite a source). Glean Assistant can support this pilot by surfacing relevant brand rules from your knowledge base directly in the workflow — so the person reviewing outputs has the guidelines alongside the generated content, not in a separate tab.
+This pilot gives you two things: a baseline measurement of how well your current guidelines translate to AI output, and a concrete list of where the gaps are. You'll discover which rules the model follows easily (banned vocabulary, sentence length caps) and which ones it struggles with (tone nuance, appropriate humor, knowing when to cite a source). Glean Assistant can support this pilot by surfacing relevant brand rules from your knowledge base directly in the workflow - so the person reviewing outputs has the guidelines alongside the generated content, not in a separate tab.
 
 ### Build a feedback loop between human review and prompt refinement
 
-Every editorial correction is a data point. When a human editor changes an AI-generated draft — removing a hedging phrase, adding a missing CTA, adjusting formality — that correction should feed back into your machine-facing guide as a new rule or an updated example.
+Every editorial correction is a data point. When a human editor changes an AI-generated draft - removing a hedging phrase, adding a missing CTA, adjusting formality - that correction should feed back into your machine-facing guide as a new rule or an updated example.
 
 Track the patterns. If editors consistently rewrite openings to be more direct, add a rule: "First sentence of every section must be a declarative statement. No dependent clauses."
 
@@ -187,15 +187,15 @@ If they keep cutting qualifiers, add those qualifiers to your banned terms list.
 
 ### Scale intentionally across teams and channels
 
-Once your pilot content type produces consistent, on-brand output with minimal editorial corrections, expand to the next content type. Don't roll out to all channels simultaneously — each content type needs its own tone profile, structure template, and prompt configuration.
+Once your pilot content type produces consistent, on-brand output with minimal editorial corrections, expand to the next content type. Don't roll out to all channels simultaneously - each content type needs its own tone profile, structure template, and prompt configuration.
 
-As you scale, Glean Agents can automate the distribution layer. An agent assigned to content review can pull the latest prompt template, generate a first draft, check it against your machine-readable rules, and flag sections that need human attention — all within a single workflow grounded in your Enterprise Graph. The human editor's role shifts from writing and rewriting to reviewing and refining.
+As you scale, Glean Agents can automate the distribution layer. An agent assigned to content review can pull the latest prompt template, generate a first draft, check it against your machine-readable rules, and flag sections that need human attention - all within a single workflow grounded in your Enterprise Graph. The human editor's role shifts from writing and rewriting to reviewing and refining.
 
 ## Frequently asked questions
 
 ### What are the key differences between traditional brand guidelines and AI prompts?
 
-Traditional brand guidelines explain voice, values, and visual identity through narrative descriptions and annotated examples — they're built for human interpretation. AI prompts convert those same principles into explicit, structured instructions (sentence length limits, banned terms, output templates) that a language model follows literally. Guidelines provide the *why*; prompts provide the *how*.
+Traditional brand guidelines explain voice, values, and visual identity through narrative descriptions and annotated examples - they're built for human interpretation. AI prompts convert those same principles into explicit, structured instructions (sentence length limits, banned terms, output templates) that a language model follows literally. Guidelines provide the *why*; prompts provide the *how*.
 
 ### What specific features should brand guidelines include for AI applications?
 
@@ -203,17 +203,17 @@ Beyond standard voice and visual sections, AI-ready guidelines need behavioral d
 
 ### How do AI prompts impact brand consistency and identity?
 
-Prompts set an automated quality floor across every content generation session. They enforce vocabulary, tone, structure, and formatting rules consistently — regardless of who triggers the generation or which department they belong to. With [37% of marketers concerned that audiences will distrust AI-generated content](https://www.iab.com/insights/ai-adoption-is-surging-in-advertising-but-is-the-industry-prepared-for-responsible-ai/), this makes brand consistency measurable and auditable rather than dependent on individual writer judgment.
+Prompts set an automated quality floor across every content generation session. They enforce vocabulary, tone, structure, and formatting rules consistently - regardless of who triggers the generation or which department they belong to. With [37% of marketers concerned that audiences will distrust AI-generated content](https://www.iab.com/insights/ai-adoption-is-surging-in-advertising-but-is-the-industry-prepared-for-responsible-ai/), this makes brand consistency measurable and auditable rather than dependent on individual writer judgment.
 
 ### Can I create brand guidelines using AI?
 
-Yes. You can use AI tools to draft initial guidelines by analyzing existing on-brand content for patterns in tone, sentence structure, vocabulary, and formatting. Glean Assistant, for example, can surface patterns across your company's published content by searching your connected knowledge sources. But the strategic decisions — which voice attributes define your brand, what your hard boundaries are, how tone shifts by audience — still require human judgment and sign-off.
+Yes. You can use AI tools to draft initial guidelines by analyzing existing on-brand content for patterns in tone, sentence structure, vocabulary, and formatting. Glean Assistant, for example, can surface patterns across your company's published content by searching your connected knowledge sources. But the strategic decisions - which voice attributes define your brand, what your hard boundaries are, how tone shifts by audience - still require human judgment and sign-off.
 
 ### Why is it important to have both brand guidelines and AI prompts?
 
-Guidelines without prompts leave AI tools guessing — subjective descriptions like "sound confident" produce inconsistent output. Prompts without guidelines produce technically correct content that lacks strategic grounding and brand personality. The combination gives you consistent execution (through prompts) backed by consistent intent (through guidelines), which is the only way to maintain brand identity when content production spans multiple teams, tools, and channels.
+Guidelines without prompts leave AI tools guessing - subjective descriptions like "sound confident" produce inconsistent output. Prompts without guidelines produce technically correct content that lacks strategic grounding and brand personality. The combination gives you consistent execution (through prompts) backed by consistent intent (through guidelines), which is the only way to maintain brand identity when content production spans multiple teams, tools, and channels.
 
-The teams that scale content production successfully don't choose between guidelines and prompts — they build both, keep them synchronized, and update one whenever the other changes. That dual system is what closes the gap between what your brand means and what your content actually sounds like.
+The teams that scale content production successfully don't choose between guidelines and prompts - they build both, keep them synchronized, and update one whenever the other changes. That dual system is what closes the gap between what your brand means and what your content actually sounds like.
 
 [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo). We'll show you how teams centralize brand knowledge, build prompt libraries, and scale on-brand content production with Glean Assistant and Glean Agents.
 

@@ -366,7 +366,7 @@ MCP
 
 #### Add Skills tools to selected MCP servers
 
-Administrators can add Glean’s Skill tools—`find_skills`, `read_skill_files`, and `run_tool`—to an MCP server. Connected MCP clients can then discover relevant skills on demand and run their underlying tools without loading the full catalog up front. The tools are opt-in per server and are not enabled automatically, giving administrators control over which clients can discover and execute skills through each MCP connection.
+Administrators can add Glean’s Skill tools-`find_skills`, `read_skill_files`, and `run_tool`-to an MCP server. Connected MCP clients can then discover relevant skills on demand and run their underlying tools without loading the full catalog up front. The tools are opt-in per server and are not enabled automatically, giving administrators control over which clients can discover and execute skills through each MCP connection.
 
 **How to access:** Open an MCP server in the Admin Console, choose the Skill tools pack from the tool catalog, and save the server configuration.
 
@@ -590,7 +590,7 @@ Insights
 
 #### Keep MCP moderation focused on Glean-hosted servers
 
-MCP Server Moderators are now limited to administering Glean-hosted MCP servers and viewing MCP Insights. Managing third-party MCP connections—including creating, updating, deleting, refreshing, or repairing third-party hosts and accessing their templates—continues to require the existing tool-administration permissions. This keeps moderation responsibilities aligned with the surfaces they are intended to govern while preserving established controls for external connections.
+MCP Server Moderators are now limited to administering Glean-hosted MCP servers and viewing MCP Insights. Managing third-party MCP connections-including creating, updating, deleting, refreshing, or repairing third-party hosts and accessing their templates-continues to require the existing tool-administration permissions. This keeps moderation responsibilities aligned with the surfaces they are intended to govern while preserving established controls for external connections.
 
 **How to access:** MCP Server Moderators can use the Glean-hosted MCP administration and MCP Insights surfaces. Ask an administrator for tool-administration permissions when third-party MCP management is required.
 
@@ -759,7 +759,7 @@ Meeting Notes *\[ROAD-769\]*
 
 Adaptive Mode, Fast Mode, and Search in Chat now use GPT-5.4-mini as their default model, delivering faster, more efficient responses in these modes.
 
-**How to access:** No action needed — these modes use the new default model automatically.
+**How to access:** No action needed - these modes use the new default model automatically.
 
 Assistant
 
@@ -825,7 +825,7 @@ Agents and Model Administration
 
 For searches performed with a Knowledge Profile, private and department-scoped pinned results are no longer shown as suggested results; only company-wide pins appear. This keeps pinned suggestions aligned with content that is broadly visible across your organization.
 
-**How to access:** No action needed — this applies automatically. If you previously relied on private or department-scoped pins appearing under a Knowledge Profile, note that only company-wide pins will now surface.
+**How to access:** No action needed - this applies automatically. If you previously relied on private or department-scoped pins appearing under a Knowledge Profile, note that only company-wide pins will now surface.
 
 Search
 
@@ -933,7 +933,7 @@ Models
 
 Meeting titles now stay in sync across chat, transcripts, Notes, and Summaries after you rename a meeting or generate a Summary, so you see the same title everywhere.
 
-**How to access:** No action needed — titles stay consistent automatically.
+**How to access:** No action needed - titles stay consistent automatically.
 
 Meetings
 
@@ -941,7 +941,7 @@ Meetings
 
 Refreshing data in a Canvas artifact is now faster and skips an unnecessary agent interaction when the artifact supports deterministic refresh.
 
-**How to access:** No action needed — refresh is faster automatically for supported artifacts.
+**How to access:** No action needed - refresh is faster automatically for supported artifacts.
 
 Artifacts
 
@@ -949,7 +949,7 @@ Artifacts
 
 Conversations that hit an error before finishing now show an error indicator in the left navigation, making it easier to find chats that may need to be retried or reviewed.
 
-**How to access:** No action needed — the indicator appears automatically next to affected chats.
+**How to access:** No action needed - the indicator appears automatically next to affected chats.
 
 Assistant
 
@@ -1013,7 +1013,7 @@ MCP
 
 Glean's MCP servers now support the 2026-07-28 revision of the Model Context Protocol specification. Clients that speak the newer revision negotiate it automatically, and clients on earlier revisions continue to work unchanged.
 
-**How to access:** No action needed — supported clients negotiate the new revision automatically.
+**How to access:** No action needed - supported clients negotiate the new revision automatically.
 
 MCP
 
@@ -1021,7 +1021,7 @@ MCP
 
 Slack tools used by Assistant, voice, and agents are now more resilient when many requests run at once. Glean no longer opens a new Slack connection for every skill lookup and tool dispatch, so Slack per-account connection rate limits no longer reject requests mid-turn and cause an assistant or scheduled agent to abandon its remaining steps.
 
-**How to access:** No action needed — this reliability improvement applies automatically.
+**How to access:** No action needed - this reliability improvement applies automatically.
 
 Slack
 
@@ -1187,7 +1187,7 @@ Customer Event Logs
 
 Fixed a rare crawling issue in OneDrive and SharePoint where a failure between fetching an update and storing it could result in a permanently missed update. Updates are now stored before the crawl position advances, so changes are no longer lost.
 
-**How to access:** No action needed — the fix applies automatically.
+**How to access:** No action needed - the fix applies automatically.
 
 Connectors
 
@@ -1195,7 +1195,7 @@ Connectors
 
 Fixed an issue that prevented some OneDrive documents from being indexed. OneDrive documents are now processed correctly, with SharePoint handling unchanged.
 
-**How to access:** No action needed — the fix applies automatically.
+**How to access:** No action needed - the fix applies automatically.
 
 Connectors
 
@@ -1203,7 +1203,7 @@ Connectors
 
 Fixed an issue where Glean Chat could fail with a "Something went wrong" error on follow-up turns when the underlying AI provider could not decrypt a prior reasoning context. Glean now clears the invalid context and recovers the conversation turn.
 
-**How to access:** No action needed — the fix applies automatically.
+**How to access:** No action needed - the fix applies automatically.
 
 Assistant
 
@@ -1211,7 +1211,7 @@ Assistant
 
 Zoom meeting recording search results now link directly to the recording's share URL with the play passcode included, so the recording opens without a separate passcode prompt. Links to the older recording details page continue to resolve to the same result.
 
-**How to access:** No action needed — recording links open directly.
+**How to access:** No action needed - recording links open directly.
 
 Zoom
 
@@ -1219,7 +1219,7 @@ Zoom
 
 Fixed an issue where Slack direct messages found through federated search could be missing from results on deployments that index Slack but exclude private messages from native search.
 
-**How to access:** No action needed — the fix applies automatically.
+**How to access:** No action needed - the fix applies automatically.
 
 Slack
 

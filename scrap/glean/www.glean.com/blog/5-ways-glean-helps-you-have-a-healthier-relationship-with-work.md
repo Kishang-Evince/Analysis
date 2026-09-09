@@ -99,7 +99,7 @@ Besides, finding the necessary information on a mobile device can be difficult, 
 
 ## 3\. Spend less time on work about work.
 
-**‍**Fewer distractions and interruptions mean more time spent on your most important tasks—and less time spent on work about work. This extends even to your own output. You may remember the content of something you worked on two years ago that would solve your problem, but you can’t quite remember where you saved it. Glean’s enterprise search makes it easier for you to find your past work, so you don’t have to duplicate your efforts or spend hours trying to track down a memory. 
+**‍**Fewer distractions and interruptions mean more time spent on your most important tasks-and less time spent on work about work. This extends even to your own output. You may remember the content of something you worked on two years ago that would solve your problem, but you can’t quite remember where you saved it. Glean’s enterprise search makes it easier for you to find your past work, so you don’t have to duplicate your efforts or spend hours trying to track down a memory. 
 
 ## 4\. Don’t start from scratch.
 

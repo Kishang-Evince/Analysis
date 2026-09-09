@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/sigma-content-management"
 canonical: "https://www.glean.com/blog/sigma-content-management"
 title: "How enablement at Sigma democratizes content through Glean"
-description: "Jonas Taylor  | Discover how Sigma leverages Glean to simplify content management—democratizing knowledge, eliminating silos, and driving impact without the complexities of traditional CMS processes."
+description: "Jonas Taylor  | Discover how Sigma leverages Glean to simplify content management-democratizing knowledge, eliminating silos, and driving impact without the complexities of traditional CMS processes."
 fetched_at: "2026-09-01T13:26:52.684Z"
 ---
 Last updated Aug 18, 2025.
@@ -83,9 +83,9 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-If you skim through recent 'State of Sales Enablement' reports, you'll notice an alarming amount of Enablement leaders labeling 'Content Management' as a strategic priority for the year. You'd think we'd have solved this by now, but most organizations are still stuck in their old ways-—with knowledge, assets, and data siloed across hundreds of SaaS applications.
+If you skim through recent 'State of Sales Enablement' reports, you'll notice an alarming amount of Enablement leaders labeling 'Content Management' as a strategic priority for the year. You'd think we'd have solved this by now, but most organizations are still stuck in their old ways--with knowledge, assets, and data siloed across hundreds of SaaS applications.
 
-At Sigma, we don't view Content Management as a silver bullet for building best-in-class enablement, but rather a force multiplier as you move up the maturity curve. It's essential that this system has the modern tools to tackle the complexity of democratizing company knowledge without sacrificing content governance. That's why, rather than relying on separate offerings that create enablement bottlenecks, extra processes for content creators, and outdated mechanisms for organizing content, we've moved into using Glean to unlock the value of our content. This way, GTM teams stop spending hours searching and focus on what truly matters—driving real impact.
+At Sigma, we don't view Content Management as a silver bullet for building best-in-class enablement, but rather a force multiplier as you move up the maturity curve. It's essential that this system has the modern tools to tackle the complexity of democratizing company knowledge without sacrificing content governance. That's why, rather than relying on separate offerings that create enablement bottlenecks, extra processes for content creators, and outdated mechanisms for organizing content, we've moved into using Glean to unlock the value of our content. This way, GTM teams stop spending hours searching and focus on what truly matters-driving real impact.
 
 ## A fresh approach to old problems
 
@@ -93,7 +93,7 @@ As LLMs and Al tools continuously improve, SaaS verticals like Business Intellig
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/68a2d42d3b72d0cb9f0080b7_Frame%202083935991.svg)
 
-These very same questions led the Sigma Sales Enablement team to ask ourselves: "Assuming that Al will continue to improve, what facet of Enablement can yield more ROI with Al?" That's how we landed on GTM Content Management—a necessary but often troublesome task in the enablement process filled with outdated approaches and tool stacks.
+These very same questions led the Sigma Sales Enablement team to ask ourselves: "Assuming that Al will continue to improve, what facet of Enablement can yield more ROI with Al?" That's how we landed on GTM Content Management-a necessary but often troublesome task in the enablement process filled with outdated approaches and tool stacks.
 
 ## The great knowledge-sharing disconnect
 
@@ -113,7 +113,7 @@ Here's how Sigma leverages Glean to deliver better results and experiences for o
 
 ### 1\. Reduced learning curve for end-users
 
-A traditional CMS typically forces your end-users to learn folder hierarchies, unique naming conventions, and a new UI/UX. Glean meets them where they already work—-particularly if they spend a lot of time using chat-based or search bar interfaces. From a content discovery perspective, end-users can search in Slack, via a Chrome extension, or a web app with federated search, browse, and a chat interface. It's a streamlined, comprehensive experience that anyone can pick up instantly.
+A traditional CMS typically forces your end-users to learn folder hierarchies, unique naming conventions, and a new UI/UX. Glean meets them where they already work--particularly if they spend a lot of time using chat-based or search bar interfaces. From a content discovery perspective, end-users can search in Slack, via a Chrome extension, or a web app with federated search, browse, and a chat interface. It's a streamlined, comprehensive experience that anyone can pick up instantly.
 
 ### 2\. Reduces disruption for content creators
 

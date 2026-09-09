@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:49.219Z"
 ---
 ### Overview
 
-Microsoft Teams is a workspace for chat, video conferencing, file storage, and application integration. Glean's integration lets users search public conversations and shared files with permissions strictly enforced. Teams can also send messages, create group chats, post to channels, and add members — bringing communication and action into one workflow.
+Microsoft Teams is a workspace for chat, video conferencing, file storage, and application integration. Glean's integration lets users search public conversations and shared files with permissions strictly enforced. Teams can also send messages, create group chats, post to channels, and add members - bringing communication and action into one workflow.
 
 ### Features
 

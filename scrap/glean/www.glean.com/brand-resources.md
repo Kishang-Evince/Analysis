@@ -41,7 +41,7 @@ fetched_at: "2026-09-01T13:25:25.374Z"
 
 01
 
-The Glean wordmark is our brand’s anchor. It signs off everything—from product UI to global campaigns.  
+The Glean wordmark is our brand’s anchor. It signs off everything-from product UI to global campaigns.  
   
 Look closely and you’ll see a search icon and a smile, nods to what drives us: curiosity, clarity, and delight. Simple on the surface, thoughtful by design.  
 
@@ -80,7 +80,7 @@ As a general rule we use the inner counter of the ‘g’ to define our clear sp
 
 ## Trademark Usage
 
-Use the ™ symbol on first or prominent mentions of “Glean” in written text—such as documentation, legal disclaimers, or footers.  
+Use the ™ symbol on first or prominent mentions of “Glean” in written text-such as documentation, legal disclaimers, or footers.  
   
 Do **not** add ™ directly to the Glean logo itself. Like Apple and other leading brands, we keep our logo clean and unobstructed in all visual applications.  
 

@@ -13,7 +13,7 @@ On this page
     
 -   To extract content from Google‑native files, Glean calls the **Drive export API** (for example, `drive.files.export`). Google counts these automated reads as **Download** events, even though no one is manually downloading files.
     
--   Access is **read‑only** and always **respects Drive ACLs**—Glean only indexes content users already have permission to access.
+-   Access is **read‑only** and always **respects Drive ACLs**-Glean only indexes content users already have permission to access.
     
 
 ## What’s not happening[​](#whats-not-happening "Direct link to What’s not happening")

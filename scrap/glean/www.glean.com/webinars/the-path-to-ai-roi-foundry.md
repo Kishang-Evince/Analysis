@@ -35,11 +35,11 @@ Head of IT, Apollo.io
 
 ## Overview
 
-The era of speculative AI is over. Senior IT leaders overwhelmingly agree that enterprise AI is a strategic imperative, and nearly all plan to expand adoption in the next 12 months. Yet most organizations still struggle to turn pilots into measurable business outcomes due to tool sprawl, data silos, and governance gaps. In this session, Glean and Apollo.io unpack the real obstacles to operationalizing AI and share how a platform-led approach accelerates time to value — without sacrificing privacy, security, or model choice.
+The era of speculative AI is over. Senior IT leaders overwhelmingly agree that enterprise AI is a strategic imperative, and nearly all plan to expand adoption in the next 12 months. Yet most organizations still struggle to turn pilots into measurable business outcomes due to tool sprawl, data silos, and governance gaps. In this session, Glean and Apollo.io unpack the real obstacles to operationalizing AI and share how a platform-led approach accelerates time to value - without sacrificing privacy, security, or model choice.
 
 **What you’ll learn about:**
 
--   **The enterprise AI paradox**: 91% of senior IT leaders see AI as strategic, and 93% plan broader adoption — but many remain stuck in pilots due to the “AI tax.”
+-   **The enterprise AI paradox**: 91% of senior IT leaders see AI as strategic, and 93% plan broader adoption - but many remain stuck in pilots due to the “AI tax.”
 -   **The platform advantage**: Why companies that choose a flexible, secure AI platform see faster, easier ROI and scale value across multiple use cases, teams, and functions.
 -   **Moving from adoption to outcomes**: How to measure ROI beyond time saved, including ticket deflection, decision quality, and user productivity.
 -   **Grassroots meets governance**: How to enable safe bottom‑up experimentation while maintaining privacy, security, and control to avoid shadow IT.

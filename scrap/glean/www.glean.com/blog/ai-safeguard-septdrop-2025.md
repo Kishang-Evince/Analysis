@@ -107,11 +107,11 @@ In this blog, we'll dig into how we arrived at these results, developed the indu
 
 ## Multi-layered approach to AI security
 
-By design, AI models aim to be as helpful as possible. They’ll explore multiple paths to achieve a user’s goal, even when that goal has malicious intent—unless security controls prevent it.
+By design, AI models aim to be as helpful as possible. They’ll explore multiple paths to achieve a user’s goal, even when that goal has malicious intent-unless security controls prevent it.
 
 Many commercial and open-source models now include these AI security controls. However, in a multi-model world where models cross-collaborate on complex work, those guardrails alone are not enough. They require an additional protective layer over prompts and agents to block prompt injections, malicious code, and toxic content. 
 
-Glean’s AI security models, generally available today, provide those capabilities—taking a layered security approach to keep enterprises safe. From day one, Glean introduced permissions-enforced data connectors and access controls to prevent prompt injection attempts from causing data leakage or unauthorized actions. Now, we’re adding a new AI security layer to preserve model integrity and reliability: dedicated security models that inspect and validate chat sessions and agent execution steps.
+Glean’s AI security models, generally available today, provide those capabilities-taking a layered security approach to keep enterprises safe. From day one, Glean introduced permissions-enforced data connectors and access controls to prevent prompt injection attempts from causing data leakage or unauthorized actions. Now, we’re adding a new AI security layer to preserve model integrity and reliability: dedicated security models that inspect and validate chat sessions and agent execution steps.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/68baa725a499b6709b856110_image6-min.jpg)
 
@@ -119,7 +119,7 @@ Glean’s AI security models, generally available today, provide those capabilit
 
 Not all AI security models are equal; quality and staying current with evolving threats matter. We found out-of-the-box models don't fully protect enterprise scenarios so we developed models specifically for the enterprise AI threat landscape. 
 
-By fine-tuning using publicly available datasets relevant to enterprise scenarios, our models are better equipped to identify and mitigate enterprise-specific risks—avoiding the high false positive rates and missed threats common with generic solutions. Additionally, we employ a combination model strategy to validate initial results and further reduce false positives.
+By fine-tuning using publicly available datasets relevant to enterprise scenarios, our models are better equipped to identify and mitigate enterprise-specific risks-avoiding the high false positive rates and missed threats common with generic solutions. Additionally, we employ a combination model strategy to validate initial results and further reduce false positives.
 
 We’re sharing performance benchmarks showing how our security models stack up against leading open source LLM safety models, observability solutions, and cloud provider offerings. Glean achieves 97.8% accuracy on prompt injection detection, 93.5% accuracy on toxic content detection, and 94.3% accuracy on malicious code detection on leading benchmarks. 
 
@@ -134,8 +134,8 @@ We’re sharing performance benchmarks showing how our security models stack up 
 | Prompt injection | Toxic content | Malicious code |
 | --- | --- | --- |
 | Do Anything Now (custom): Curated variant of DAN that to make it a single-turn, input-only benchmark. | OpenAI Moderation Dataset: Human‑labeled dataset from real transactions, commonly used to benchmark harmful/toxic content detection.\* | Malware Plaintext:  Glean‑built set of real snippets from viruses, exploits, and post‑exploitation tools, each paired with a standardized “analyze or execute” prompt in clear text to test detection of actual malicious code. |
-| Do Anything Now (benign): Control set of safe sentences that use trigger words from DAN including “prompt injection,” jailbreak”, “do anything now” and “dan” to measure false positives. | HarmfulQ:  A small, harmful‑only set centered on bias and social‑context harms—excellent for stress‑testing pure blocking recall.\* | Malware Benign:  Control set of 5,000 benign code snippets from a code‑translation benchmark, paired with the same “analyze or execute” prompt, intended to measure false positives. |
-|  | XSTest: human‑written mix of safe and unsafe prompts that evaluates calibration—blocking harm without overblocking - making it ideal for testing helpfulness‑vs‑harmlessness trade‑offs.\* |  |
+| Do Anything Now (benign): Control set of safe sentences that use trigger words from DAN including “prompt injection,” jailbreak”, “do anything now” and “dan” to measure false positives. | HarmfulQ:  A small, harmful‑only set centered on bias and social‑context harms-excellent for stress‑testing pure blocking recall.\* | Malware Benign:  Control set of 5,000 benign code snippets from a code‑translation benchmark, paired with the same “analyze or execute” prompt, intended to measure false positives. |
+|  | XSTest: human‑written mix of safe and unsafe prompts that evaluates calibration-blocking harm without overblocking - making it ideal for testing helpfulness‑vs‑harmlessness trade‑offs.\* |  |
 
 *\*Benchmarks taken from* [*Guardbench.*](https://github.com/AmenRa/GuardBench)
 

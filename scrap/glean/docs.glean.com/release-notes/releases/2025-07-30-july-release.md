@@ -43,7 +43,7 @@ Agents *FR-3789*
 
 #### Answer boards are migrating to collections[​](#answer-boards-are-migrating-to-collections "Direct link to Answer boards are migrating to collections")
 
-All existing answer boards will be migrated to collections using the same name. Your answers—and their permissions—will be fully preserved in the new collection. We will no longer be supporting answer boards moving forward.
+All existing answer boards will be migrated to collections using the same name. Your answers-and their permissions-will be fully preserved in the new collection. We will no longer be supporting answer boards moving forward.
 
 [Learn more](/user-guide/knowledge/answers/answer-boards-migration)
 
@@ -219,7 +219,7 @@ Platform Capabilities *FR-3687*
 
 #### Manage hidden content in a centralized dashboard[​](#manage-hidden-content-in-a-centralized-dashboard "Direct link to Manage hidden content in a centralized dashboard")
 
-Content hiding in Glean allows users to manage document visibility by hiding specific documents—manually or via CSV—so they are excluded from search. Glean is now adding the capability to track, review, and unhide content through a centralized interface.
+Content hiding in Glean allows users to manage document visibility by hiding specific documents-manually or via CSV-so they are excluded from search. Glean is now adding the capability to track, review, and unhide content through a centralized interface.
 
 **How to access:** Available only to sensitive content moderator or superadmin role.
 

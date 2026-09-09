@@ -85,7 +85,7 @@ Modern HR departments are overwhelmed by information scattered across various sy
 
 ## What is enterprise search for HR teams:
 
-Enterprise search for HR teams is specialized software that enables employees and HR professionals to efficiently locate data, files, and content across all internal systems and repositories using a unified, intelligent interface. Unlike traditional search tools that work within individual applications, enterprise search breaks down silos by indexing and connecting information from disparate HR systems—including payroll platforms, performance management tools, policy databases, and collaboration applications.
+Enterprise search for HR teams is specialized software that enables employees and HR professionals to efficiently locate data, files, and content across all internal systems and repositories using a unified, intelligent interface. Unlike traditional search tools that work within individual applications, enterprise search breaks down silos by indexing and connecting information from disparate HR systems-including payroll platforms, performance management tools, policy databases, and collaboration applications.
 
 At its core, enterprise search transforms how HR departments manage and access their vast knowledge repositories. The technology harnesses artificial intelligence and natural language processing to understand user intent, delivering contextually relevant results regardless of where the information originally resides. This means an HR manager searching for "remote work policy updates" can instantly access the latest guidelines, related communications, and implementation resources without manually checking multiple systems.
 
@@ -107,7 +107,7 @@ This fragmentation creates significant operational challenges:
 
 The growing complexity of modern HR technology stacks compounds these challenges. As organizations adopt specialized tools for recruiting, onboarding, performance management, and employee engagement, the number of data silos multiplies. Remote and hybrid work environments further complicate information access, as traditional methods of knowledge sharing through hallway conversations or physical document sharing become impractical.
 
-These information management challenges aren't just operational inconveniences—they directly impact HR's ability to deliver strategic value to the organization. When HR teams are bogged down in administrative searches, they have less capacity for talent development, culture building, and workforce planning initiatives that drive business results.
+These information management challenges aren't just operational inconveniences-they directly impact HR's ability to deliver strategic value to the organization. When HR teams are bogged down in administrative searches, they have less capacity for talent development, culture building, and workforce planning initiatives that drive business results.
 
 ## How enterprise search solves HR's biggest problems:
 
@@ -119,7 +119,7 @@ This approach tackles HR's core challenges through several key mechanisms: break
 
 ### Breaking down knowledge silos in HR systems:
 
-Knowledge silos represent one of the most significant barriers to HR efficiency. These isolated pools of information exist when data remains trapped within individual applications—employee profiles in the HRIS, performance data in review systems, learning records in training platforms, and policy documents in content management systems. Each silo requires separate access, different search methods, and distinct navigation patterns.
+Knowledge silos represent one of the most significant barriers to HR efficiency. These isolated pools of information exist when data remains trapped within individual applications-employee profiles in the HRIS, performance data in review systems, learning records in training platforms, and policy documents in content management systems. Each silo requires separate access, different search methods, and distinct navigation patterns.
 
 AI-powered enterprise search eliminates these barriers by creating a unified index that spans all HR systems. Employees and HR professionals can access comprehensive information from a single interface, regardless of where data originally resides. Glean unifies data from over 100 applications, breaking down data silos with AI search, enabling seamless information discovery across previously disconnected systems.
 

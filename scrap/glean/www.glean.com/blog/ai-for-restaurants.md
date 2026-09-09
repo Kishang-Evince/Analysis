@@ -110,7 +110,7 @@ AI in restaurants is no longer an experiment. It’s a strategic investment, and
 
 **Yum! Brands** is also [expanding AI](https://www.qsrmagazine.com/story/yum-brands-byte-platform-rewrites-playbook-for-restaurant-technology/) across both customer-facing and operational workflows, including voice ordering and AI-powered restaurant coaching, with a focus on improving consistency, easing team-member task load, and helping operators run stores more efficiently.
 
-These examples show that AI is already reshaping the customer journey, employee experience, and franchise operations. Early adopters aren’t waiting to see what’s possible — they’re building it now.
+These examples show that AI is already reshaping the customer journey, employee experience, and franchise operations. Early adopters aren’t waiting to see what’s possible - they’re building it now.
 
 ## Why leading QSRs are turning to Glean
 
@@ -130,9 +130,9 @@ Downtime in restaurants can quickly impact revenue and customer trust. Glean sur
 
 ## The future of restaurant operations is AI-powered
 
-Quick service restaurants aren’t waiting for the future of AI — they’re building it into their operations now. From resolving customer issues faster to optimizing inventory decisions and enabling self-serve onboarding, AI is helping leading brands move faster, cut costs, and scale smarter.
+Quick service restaurants aren’t waiting for the future of AI - they’re building it into their operations now. From resolving customer issues faster to optimizing inventory decisions and enabling self-serve onboarding, AI is helping leading brands move faster, cut costs, and scale smarter.
 
-But success doesn’t come from AI alone. It comes from integrating it into the way your teams already work. That’s what makes Glean different. By connecting context across your systems and delivering it in the moment of need, Glean empowers every employee to do their job better — with less friction and more focus.
+But success doesn’t come from AI alone. It comes from integrating it into the way your teams already work. That’s what makes Glean different. By connecting context across your systems and delivering it in the moment of need, Glean empowers every employee to do their job better - with less friction and more focus.
 
 Ready to see how Glean can help your team cut costs and keep operations moving? [Request a demo](https://www.glean.com/get-a-demo) and discover what Glean can do for your restaurant business.
 

@@ -45,7 +45,7 @@ Assistant *ROAD-1272*
 
 #### View changes between versions of your documents, emails, and messages[​](#view-changes-between-versions-of-your-documents-emails-and-messages "Direct link to View changes between versions of your documents, emails, and messages")
 
-You can now see exactly what changed between versions of a document, email, or message generated in Glean Assistant. When you ask the assistant to revise an artifact, the diff view highlights additions, deletions, and edits inline — so you can review changes at a glance instead of re-reading the whole thing. Whether you are iterating on a customer email, refining a proposal, or editing a team update, diffs make every revision transparent and easy to approve.
+You can now see exactly what changed between versions of a document, email, or message generated in Glean Assistant. When you ask the assistant to revise an artifact, the diff view highlights additions, deletions, and edits inline - so you can review changes at a glance instead of re-reading the whole thing. Whether you are iterating on a customer email, refining a proposal, or editing a team update, diffs make every revision transparent and easy to approve.
 
 [Learn more](https://docs.glean.com/user-guide/assistant/glean-chat/canvas)
 
@@ -81,7 +81,7 @@ Assistant *ROAD-1269*
 
 You can now bring your favorite applications right into Glean with MCP App Extensions. Glean acts as an MCP app host, so when an MCP server returns a UI resource, the app can render directly inside the chat experience as an interactive widget.
 
-That means users can interact with dashboards, forms, approval flows, and data visualizations natively in Glean—without switching tools or opening a separate window. All third-party UI runs in a secure, sandboxed environment with enforced content security policies, so you get a seamless experience without compromising safety. This feature may be subject to usage-based pricing. Learn more in Glean's Help Center.
+That means users can interact with dashboards, forms, approval flows, and data visualizations natively in Glean-without switching tools or opening a separate window. All third-party UI runs in a secure, sandboxed environment with enforced content security policies, so you get a seamless experience without compromising safety. This feature may be subject to usage-based pricing. Learn more in Glean's Help Center.
 
 [Learn more](https://docs.glean.com/administration/actions/connect-remote-mcp-servers-to-glean)
 
@@ -151,7 +151,7 @@ Glean supports real-time search across Microsoft OneDrive and SharePoint, includ
 
 **How to access:** Admins can turn on the feature in the Glean Admin Console. For OneDrive and SharePoint, setup requires registering an app in Azure, granting the necessary application permissions (including Sites.FullControl.All and Files.ReadWrite.All), and completing the configuration in Glean. Once enabled, users can paste OneDrive or SharePoint links into Assistant to fetch and interact with documents, provided they have access rights. For detailed setup steps, refer to the Glean Help Center documentation for OneDrive and SharePoint connectors.
 
-[Learn more — OneDrive](/connectors/native/onedrive/real-time-access) | [Learn more — SharePoint](/connectors/native/sharepoint/real-time-access)
+[Learn more - OneDrive](/connectors/native/onedrive/real-time-access) | [Learn more - SharePoint](/connectors/native/sharepoint/real-time-access)
 
 Connectors *ROAD-1141*
 
@@ -181,7 +181,7 @@ Developer Experience *ROAD-1205*
 
 #### Restricted topics policies (acceptable use policies / topic guardrails) on user prompt for Assistant compliance[​](#restricted-topics-policies-acceptable-use-policies--topic-guardrails-on-user-prompt-for-assistant-compliance "Direct link to Restricted topics policies (acceptable use policies / topic guardrails) on user prompt for Assistant compliance")
 
-Glean now enables organizations to enforce Acceptable Use Policies (AUP) at the user query level in Glean Assistant and Agents. Admins can define and centrally manage topic-based guardrails to block or flag user prompts on sensitive topics—such as performance reviews, disciplinary actions, compensation, and other HR-sensitive areas—ensuring compliance with internal policies and regulatory requirements. This feature helps reduce the risk of information leakage, supports adoption in regulated industries, and builds trust by preventing prohibited queries from being processed or answered, regardless of underlying data source permissions.
+Glean now enables organizations to enforce Acceptable Use Policies (AUP) at the user query level in Glean Assistant and Agents. Admins can define and centrally manage topic-based guardrails to block or flag user prompts on sensitive topics-such as performance reviews, disciplinary actions, compensation, and other HR-sensitive areas-ensuring compliance with internal policies and regulatory requirements. This feature helps reduce the risk of information leakage, supports adoption in regulated industries, and builds trust by preventing prohibited queries from being processed or answered, regardless of underlying data source permissions.
 
 [Learn more](https://docs.glean.com/administration/protect/ai-security/restricted-topics)
 

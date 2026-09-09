@@ -1,7 +1,7 @@
 ---
 url: "https://www.glean.com/press/the-enterprise-ai-land-grab-is-on-glean-is-building-the-layer-beneath-the-interface"
 canonical: "https://www.glean.com/press/the-enterprise-ai-land-grab-is-on-glean-is-building-the-layer-beneath-the-interface"
-title: "The enterprise AI land grab is on — Glean is building the layer beneath the interface | Glean Press"
+title: "The enterprise AI land grab is on - Glean is building the layer beneath the interface | Glean Press"
 fetched_at: "2026-09-01T13:26:20.969Z"
 ---
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/697780a68f0aaa59aa8c86e5_glean_live-wordmark-feb26.webp)

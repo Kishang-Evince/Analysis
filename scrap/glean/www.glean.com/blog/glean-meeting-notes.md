@@ -101,7 +101,7 @@ Listen to article
 
 Meetings are the operational layer of the enterprise, but are one of the most broken parts of work. Critical context is created, but most of it is lost once the meeting ends. Teams leave with undocumented decisions, action items that live only in someone's head, and follow-up context that’s buried across chat threads and docs. When notes are siloed and fragmented, teams get misaligned, projects stall, and productivity declines.
 
-Although disconnected note-taking apps help capture transcripts, that critical context is trapped in another siloed tool. We built Glean meeting notes to solve this. It transcribes conversations as they happen, gives users a place to take notes alongside the transcript, and generates a clear post-meeting summary focused on key decisions and action items — all built directly into Glean. 
+Although disconnected note-taking apps help capture transcripts, that critical context is trapped in another siloed tool. We built Glean meeting notes to solve this. It transcribes conversations as they happen, gives users a place to take notes alongside the transcript, and generates a clear post-meeting summary focused on key decisions and action items - all built directly into Glean. 
 
 The biggest difference between Glean and other meeting transcription tools is that Glean doesn’t just record a meeting and generate a summary. It becomes searchable and referenceable alongside your docs, messages, tickets, CRM records, and the rest of your enterprise context. 
 

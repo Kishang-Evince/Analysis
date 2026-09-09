@@ -68,7 +68,7 @@ At a high level: Google Drive labels define which documents are sensitive, and G
 
 warning
 
-Drive labels have their own read permissions, separate from the documents they mark. Glean reads a file's labels as the file's owner during crawling. If a file's owner cannot view the label, Glean never sees the label and does not exclude the file — even when its label choice identifier appears in the exclusion list, and even after a full crawl completes. To make label-based exclusion work across all files, make the label readable to everyone in your organization. Granting view access is sufficient. Crawling does not require permissions to apply or edit label values.
+Drive labels have their own read permissions, separate from the documents they mark. Glean reads a file's labels as the file's owner during crawling. If a file's owner cannot view the label, Glean never sees the label and does not exclude the file - even when its label choice identifier appears in the exclusion list, and even after a full crawl completes. To make label-based exclusion work across all files, make the label readable to everyone in your organization. Granting view access is sufficient. Crawling does not require permissions to apply or edit label values.
 
 ### Glean[​](#glean "Direct link to Glean")
 

@@ -2,12 +2,12 @@
 url: "https://www.glean.com/connectors/supabase"
 canonical: "https://www.glean.com/connectors/supabase"
 title: "Supabase integration with Glean | Glean Work AI"
-description: "Query Supabase data and manage projects — right in Glean."
+description: "Query Supabase data and manage projects - right in Glean."
 fetched_at: "2026-09-01T13:25:53.915Z"
 ---
 ### Overview
 
-Supabase is the open-source development platform teams use to build and ship applications on Postgres. The Supabase MCP integration in Glean gives developers direct access to live project context — running queries, inspecting schemas, retrieving logs, and managing resources — without leaving their workflow.
+Supabase is the open-source development platform teams use to build and ship applications on Postgres. The Supabase MCP integration in Glean gives developers direct access to live project context - running queries, inspecting schemas, retrieving logs, and managing resources - without leaving their workflow.
 
 ### Features
 

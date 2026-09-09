@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/agentic-reasoning-future-ai"
 canonical: "https://www.glean.com/blog/agentic-reasoning-future-ai"
 title: "Agentic reasoning: The future of Work AI"
-description: "Arvind Jain  | The future of AI in the workplace requires agentic reasoning to match growing expectations. Discover how we’re building Glean’s agentic reasoning capabilities to drive the work you do — better and faster."
+description: "Arvind Jain  | The future of AI in the workplace requires agentic reasoning to match growing expectations. Discover how we’re building Glean’s agentic reasoning capabilities to drive the work you do - better and faster."
 fetched_at: "2026-09-01T13:26:25.104Z"
 ---
 Last updated Nov 19, 2024.
@@ -85,7 +85,7 @@ Listen to article
 
 When we started Glean in 2019, our goal was to make finding answers at work as easy as using Google. At my previous company, Rubrik, we hit a productivity wall after growing to 2,000 employees in under four years because no one could find the information or experts they needed. When I failed to find a solution to this productivity challenge, I set out to build it. 
 
-Since then, Glean has not only built the world’s most advanced AI-powered enterprise search, but has also become the AI assistant employees rely on to do their everyday work. How did we get here? With the launch of ChatGPT in 2022, companies quickly saw the potential of large language models (LLMs) to transform work. But these models had a major flaw: they lacked company-specific context and often hallucinated. That’s when Retrieval Augmented Generation (RAG) emerged— using search to ground LLMs in reliable knowledge.
+Since then, Glean has not only built the world’s most advanced AI-powered enterprise search, but has also become the AI assistant employees rely on to do their everyday work. How did we get here? With the launch of ChatGPT in 2022, companies quickly saw the potential of large language models (LLMs) to transform work. But these models had a major flaw: they lacked company-specific context and often hallucinated. That’s when Retrieval Augmented Generation (RAG) emerged- using search to ground LLMs in reliable knowledge.
 
 While assistants can help with simple queries and tasks, they’ve struggled with complex workflows. The latest advancements in LLMs, combined with insights into optimizing these models for specific tasks, have enhanced the capabilities of assistants to be more like agents. Agents are able to plan, execute, evaluate, and take actions to achieve goals, continuously adapting based on feedback. These agents expand the potential of AI to get work done, allowing it to resolve customer support tickets, help engineers debug production issues, and adapt tone of voice for corporate communications.
 
@@ -199,7 +199,7 @@ When we built our agentic reasoning architecture, we considered several agent ar
 -   **Tool use agents (medium generalization)**: These agents use mid-level actions that balance flexibility and efficiency, handling tasks like workflow automation and data processing.
 -   **Specialized agents (low generalization)**: These orchestrator agents coordinate specialized sub-agents, each optimized for specific tasks like customer support, contract drafting, and engineering debugging.
 
-At Glean, we decided to use tool-based agents because they offer a nice tradeoff between task breadth and complexity. I like to think of tools as a Swiss Army knife—they’re versatile, multi-functional, and can accomplish a wide range of tasks. 
+At Glean, we decided to use tool-based agents because they offer a nice tradeoff between task breadth and complexity. I like to think of tools as a Swiss Army knife-they’re versatile, multi-functional, and can accomplish a wide range of tasks. 
 
 We’ve also invested in multi-specialized agents, partnering with customers to understand their repetitive workflows across company departments. Specialized agents are trained on the nuances of their task and plug in the right set of tools to get the job done. 
 
@@ -209,9 +209,9 @@ There are different flavors of responses, from a natural language chat response 
 
 ## Reimagining Work AI
 
-Reimagining Work AI is an ongoing journey that builds on Glean’s foundational technologies. We began with search and advanced to RAG; now we're progressing from RAG to agentic reasoning. We’ve always employed the latest technological advancements at the time— whether that was BERT, LLMs, or agents— and our culture of experimentation enabled us to develop a proprietary self-learning language model and lexical search algorithm, and now an agentic reasoning architecture. 
+Reimagining Work AI is an ongoing journey that builds on Glean’s foundational technologies. We began with search and advanced to RAG; now we're progressing from RAG to agentic reasoning. We’ve always employed the latest technological advancements at the time- whether that was BERT, LLMs, or agents- and our culture of experimentation enabled us to develop a proprietary self-learning language model and lexical search algorithm, and now an agentic reasoning architecture. 
 
-At Glean, we believe that AI transformation begins with employees— the people at work. Our vision is to deliver Work AI for all, helping everyone in the organization find information, generate answers, and automate work. We're proud to see our customers progress from simple search queries to automating complex workflows, and we remain committed to pushing the boundaries of continuous innovation and practical application, which go hand in hand to transform the future of work.
+At Glean, we believe that AI transformation begins with employees- the people at work. Our vision is to deliver Work AI for all, helping everyone in the organization find information, generate answers, and automate work. We're proud to see our customers progress from simple search queries to automating complex workflows, and we remain committed to pushing the boundaries of continuous innovation and practical application, which go hand in hand to transform the future of work.
 
 [
 

@@ -29,9 +29,9 @@ The **Manage** tab lists all Skills shared at the organization level, with searc
 
 Admins can validate Skills with a small group of teammates before rolling them out organization-wide. Under **Skills in Assistant** in the **Setup** tab, choose one of three rollout states:
 
--   **Disabled** — Skills in Assistant aren't available to anyone in your organization.
--   **Enabled for test group only** — Only teammates in the test group can use Skills in Assistant. Use this state to pilot Skills with a small audience before a broader rollout.
--   **Enabled for all teammates** — Skills in Assistant are available to everyone in your organization.
+-   **Disabled** - Skills in Assistant aren't available to anyone in your organization.
+-   **Enabled for test group only** - Only teammates in the test group can use Skills in Assistant. Use this state to pilot Skills with a small audience before a broader rollout.
+-   **Enabled for all teammates** - Skills in Assistant are available to everyone in your organization.
 
 ### Add teammates to the test group[​](#add-teammates-to-the-test-group "Direct link to Add teammates to the test group")
 
@@ -88,10 +88,10 @@ Admins control what default users (teammates without an assigned moderator role)
 1.  Navigate to **Admin console → User roles**.
 2.  Select **Default Member permissions**.
 3.  Under **Can share skills**, configure the following options for default users. All toggles default to **Off**:
-    -   **With teammates** — share with named individuals.
-    -   **With departments** — share with departments configured in your workspace.
-    -   **With identity provider groups** — share with groups from your identity provider. This toggle only appears when external groups are configured for your workspace.
-    -   **With entire company** — share company-wide.
+    -   **With teammates** - share with named individuals.
+    -   **With departments** - share with departments configured in your workspace.
+    -   **With identity provider groups** - share with groups from your identity provider. This toggle only appears when external groups are configured for your workspace.
+    -   **With entire company** - share company-wide.
 
 These settings set the baseline for default users. Teammates with the Skills Moderator role can share within their scope regardless of these defaults. Changes can take up to 15 minutes to take effect.
 

@@ -7,16 +7,16 @@ fetched_at: "2026-09-01T13:29:37.134Z"
 ---
 On this page
 
-Glean's OneNote capability extends your existing OneDrive and SharePoint connectors to index OneNote notebooks, sections, and page content for permission-aware search. It reuses the same Microsoft Graph app registration and OAuth configuration as those connectors — there's no separate OneNote connector tile in the Admin console, and it shares all app registration, permissions, and security settings with your OneDrive/SharePoint setup.
+Glean's OneNote capability extends your existing OneDrive and SharePoint connectors to index OneNote notebooks, sections, and page content for permission-aware search. It reuses the same Microsoft Graph app registration and OAuth configuration as those connectors - there's no separate OneNote connector tile in the Admin console, and it shares all app registration, permissions, and security settings with your OneDrive/SharePoint setup.
 
 ## Before you start[​](#before-you-start "Direct link to Before you start")
 
 Have these in place before you enable OneNote, so your IT or security team can approve everything in one request:
 
--   **An existing OneDrive and/or SharePoint connector** — OneNote rides on top of these connectors. Configure OneDrive (for personal notebooks) and/or SharePoint (for team notebooks) first.
--   **The same Microsoft 365 app registration** — OneNote reuses the app already used by OneDrive/SharePoint. You add **one delegated scope** (`Notes.Read.All`); no new app registration is required.
--   **A Microsoft Entra (Azure AD) tenant administrator** — to add the delegated scope and grant admin consent, and a **Glean admin** to enable OneNote on the connectors.
--   **Per-user authentication** — page-level OneNote content uses delegated, per-user OAuth. Each user who wants OneNote results must connect Microsoft 365 in Glean; admin configuration alone is not sufficient.
+-   **An existing OneDrive and/or SharePoint connector** - OneNote rides on top of these connectors. Configure OneDrive (for personal notebooks) and/or SharePoint (for team notebooks) first.
+-   **The same Microsoft 365 app registration** - OneNote reuses the app already used by OneDrive/SharePoint. You add **one delegated scope** (`Notes.Read.All`); no new app registration is required.
+-   **A Microsoft Entra (Azure AD) tenant administrator** - to add the delegated scope and grant admin consent, and a **Glean admin** to enable OneNote on the connectors.
+-   **Per-user authentication** - page-level OneNote content uses delegated, per-user OAuth. Each user who wants OneNote results must connect Microsoft 365 in Glean; admin configuration alone is not sufficient.
 
 ## Required permissions[​](#required-permissions "Direct link to Required permissions")
 
@@ -64,14 +64,14 @@ OneNote uses the Microsoft 365 app registration that already serves your OneDriv
 Add the OneNote delegated scope to your existing app
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) as a tenant administrator and go to **Microsoft Entra ID** → **App registrations**.
-2.  Select the existing app registration used by your Glean OneDrive/SharePoint connectors. (OneDrive and SharePoint must share a single Microsoft 365 app — confirm the **Application (client) ID** and **Directory (tenant) ID** match on both connectors in Glean.)
+2.  Select the existing app registration used by your Glean OneDrive/SharePoint connectors. (OneDrive and SharePoint must share a single Microsoft 365 app - confirm the **Application (client) ID** and **Directory (tenant) ID** match on both connectors in Glean.)
 3.  Go to **API permissions** → **Add a permission** → **Microsoft Graph** → **Delegated permissions** and add:
     -   `User.Read`
     -   `offline_access`
     -   `Notes.Read.All`
 4.  Click **Grant admin consent** for your tenant.
 
-If this app is already used for OneDrive/SharePoint data fetching, you typically only need to add `Notes.Read.All` — the OAuth redirect URI is already configured. Otherwise, under **Authentication** → **Platform configurations**, add a **Web** platform with the redirect URI shown in the Glean Admin console for the OneDrive and SharePoint connectors (these should match).
+If this app is already used for OneDrive/SharePoint data fetching, you typically only need to add `Notes.Read.All` - the OAuth redirect URI is already configured. Otherwise, under **Authentication** → **Platform configurations**, add a **Web** platform with the redirect URI shown in the Glean Admin console for the OneDrive and SharePoint connectors (these should match).
 
 2
 
@@ -81,8 +81,8 @@ In the **Glean Admin console**, open each connector under **Platform** → **Con
 
 Repeat for:
 
--   **OneDrive** — for notebooks stored in users' OneDrive folders.
--   **SharePoint** — for notebooks stored in SharePoint team sites.
+-   **OneDrive** - for notebooks stored in users' OneDrive folders.
+-   **SharePoint** - for notebooks stored in SharePoint team sites.
 
 3
 
@@ -100,8 +100,8 @@ After connecting, Glean retrieves the OneNote content that user is authorized to
 
 Many organizations store notebooks in both OneDrive and SharePoint:
 
--   **OneDrive** — personal notebooks stored under each user's OneDrive ("my notes" scenarios).
--   **SharePoint** — team notebooks in SharePoint-backed team sites, and project- or department-wide notebooks attached to Microsoft 365 groups.
+-   **OneDrive** - personal notebooks stored under each user's OneDrive ("my notes" scenarios).
+-   **SharePoint** - team notebooks in SharePoint-backed team sites, and project- or department-wide notebooks attached to Microsoft 365 groups.
 
 Enable OneNote on both connectors for comprehensive coverage. If you start small, begin with OneDrive for personal notebooks and add SharePoint once you're ready to include team notebooks.
 

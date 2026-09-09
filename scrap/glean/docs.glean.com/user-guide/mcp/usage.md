@@ -17,7 +17,7 @@ The Model Context Protocol (MCP) lets AI apps ("hosts" like Cursor, Claude, Chat
 
 ## Glean tools available through MCP[​](#glean-tools-available-through-mcp "Direct link to Glean tools available through MCP")
 
-Once connected, a host can call Glean's built-in tools — including search, chat, document retrieval, code search, and people lookup — as well as Glean agents and external tools brought in through the [Glean MCP Gateway](/administration/platform/mcp/mcp-gateway). The exact set of tools available depends on your Glean configuration and the connecting host.
+Once connected, a host can call Glean's built-in tools - including search, chat, document retrieval, code search, and people lookup - as well as Glean agents and external tools brought in through the [Glean MCP Gateway](/administration/platform/mcp/mcp-gateway). The exact set of tools available depends on your Glean configuration and the connecting host.
 
 ## Use skills through MCP[​](#use-skills-through-mcp "Direct link to Use skills through MCP")
 

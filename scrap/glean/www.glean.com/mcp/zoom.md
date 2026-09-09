@@ -29,7 +29,7 @@ Read the whitepaper
 
 ### Be prepared for every meeting.
 
-Whether you're reviewing Jira tickets, catching up on notes, or tracking action items, Glean helps every team — from Product to HR — join their meetings with more context.
+Whether you're reviewing Jira tickets, catching up on notes, or tracking action items, Glean helps every team - from Product to HR - join their meetings with more context.
 
 ### Get instant answers in the moment.
 
@@ -37,13 +37,13 @@ Glean combines Slack conversations with insights from your other enterprise tool
 
 ### Chat with full context.
 
-Ask a question in Zoom Team Chat and get instant answers from Glean — like surfacing Salesforce deal updates, finding an intro deck in Google Drive, or summarizing project feedback from Docs.
+Ask a question in Zoom Team Chat and get instant answers from Glean - like surfacing Salesforce deal updates, finding an intro deck in Google Drive, or summarizing project feedback from Docs.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691d91d2ab41432393c88d78_Be%20prepared%20for%20every%20meeting..webp)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691d91d243ce1420a757fd6a_Get%20instant%20answers%20in%20the%20moment..webp)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691d91d216b9f53bb46bdd9f_Chat%20with%20full%20context..webp)![zig-zag section dotted bg](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/686d698e445d7f90e5868c09_zig-zag%20section%20dotted%20bg.svg)
 
 Be prepared for every meeting.
 
-Whether you're reviewing Jira tickets, catching up on notes, or tracking action items, Glean helps every team — from Product to HR — join their meetings with more context.
+Whether you're reviewing Jira tickets, catching up on notes, or tracking action items, Glean helps every team - from Product to HR - join their meetings with more context.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691d91d1ef35b8aefc933340_m-Be%20prepared%20for%20every%20meeting..webp)
 
@@ -55,7 +55,7 @@ Glean combines Slack conversations with insights from your other enterprise tool
 
 Chat with full context.
 
-Ask a question in Zoom Team Chat and get instant answers from Glean — like surfacing Salesforce deal updates, finding an intro deck in Google Drive, or summarizing project feedback from Docs.
+Ask a question in Zoom Team Chat and get instant answers from Glean - like surfacing Salesforce deal updates, finding an intro deck in Google Drive, or summarizing project feedback from Docs.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/691d91d1a3d14ffa7b276f65_m-Chat%20with%20full%20context..webp)
 

@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:32.956Z"
 ---
 # The AI security library for the agentic era
 
-Explore a brand new security framework, expert conversations, and product demos to help you and your organization govern AI agents at scale — without slowing innovation down.
+Explore a brand new security framework, expert conversations, and product demos to help you and your organization govern AI agents at scale - without slowing innovation down.
 
 Watch the full recording from our March 12 virtual event to hear about the AWARE framework, learn how information and security leaders are balancing innovation and risk, and how Glean Protect capabilities keep enterprise AI agents governed, safe, and ready to scale.
 
@@ -19,7 +19,7 @@ Govern AI agents with the AWARE framework
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69b1fd49d15be5f7aea451bb_aware_book-image.webp)
 
-A practical governance framework from the Work AI Institute — co-authored with Databricks and Palo Alto Networks — that gives CIOs and CISOs a shared language for assessing AI agent risk.
+A practical governance framework from the Work AI Institute - co-authored with Databricks and Palo Alto Networks - that gives CIOs and CISOs a shared language for assessing AI agent risk.
 
 [
 

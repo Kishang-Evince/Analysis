@@ -195,7 +195,7 @@ Provide actionable feedback from my last meeting.
 
 The cheat code for enterprise generative AI.
 
-Empower everyone in your company to create and deploy no-code and low-code AI apps, agents, assistants, and chatbots that automate repetitive tasks and proactively engage in everyday work— with the confidence that everything is grounded in the enterprise-grade connectivity, retrieval, and analysis capabilities of the Glean platform.
+Empower everyone in your company to create and deploy no-code and low-code AI apps, agents, assistants, and chatbots that automate repetitive tasks and proactively engage in everyday work- with the confidence that everything is grounded in the enterprise-grade connectivity, retrieval, and analysis capabilities of the Glean platform.
 
 ## 451 Research explores Glean’s agentic platform
 
@@ -205,7 +205,7 @@ Empower everyone in your company to create and deploy no-code and low-code AI ap
 
 ## Create no-code custom generative AI agents.
 
-Build custom Glean Apps with natural language — no coding required.
+Build custom Glean Apps with natural language - no coding required.
 
 Create AI topic experts by specifying knowledge sources for apps, backed by the power of Glean's enterprise knowledge graph.
 

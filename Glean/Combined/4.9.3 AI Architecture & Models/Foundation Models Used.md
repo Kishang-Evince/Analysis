@@ -16,7 +16,7 @@
 **Field definition:** Specific large language or machine learning models driving generative intelligence.  
 **Prerequisites / Licensing:** Admin → Platform → Models (Model Hub); Enterprise Flex or Core Suite with model tier entitlements.  
 **Model catalog summary (Doc-Verified):** **40+ models** across OpenAI, Google (Gemini), Anthropic (Claude), Amazon (Nova), Glean (Waldo), Fireworks/Baseten (GLM, Nemotron).  
-**Tenant-enabled set (Pending Sandbox):** _TBD — screenshot Model Hub enabled list_  
+**Tenant-enabled set (Pending Sandbox):** _TBD - screenshot Model Hub enabled list_  
 **Confidence Level:** **Doc-Verified** (catalog) · **Pending Sandbox** (tenant enablement)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [Supported LLMs / Model Hub](https://docs.glean.com/administration/llms) · [Configure LLMs](https://docs.glean.com/administration/configure-llms) · [Enterprise Flex pricing tiers](https://docs.glean.com/glean-enterprise-flex-pricing) · [Adaptive reasoning / Waldo](https://docs.glean.com/administration/assistant/features/adaptive-reasoning)
@@ -34,15 +34,15 @@
 
 ### Engineering observation (Doc-Verified)
 
-- Model Hub is curated catalog — admins enable/disable per Assistant and Agents.
-- **Waldo** is Glean's proprietary agentic retrieval model; runs on Glean-managed Vertex/SageMaker in deployment region — not a third-party chat endpoint.
+- Model Hub is curated catalog - admins enable/disable per Assistant and Agents.
+- **Waldo** is Glean's proprietary agentic retrieval model; runs on Glean-managed Vertex/SageMaker in deployment region - not a third-party chat endpoint.
 - Flex pricing maps models to **Basic / Standard / Premium** credit tiers; tier per model can change per contract.
 
 ### Verification steps / test case
 
-1. Admin → **Platform → Models** — export enabled model list with tier badges.
+1. Admin → **Platform → Models** - export enabled model list with tier badges.
 2. Assistant: select GPT, Claude, Gemini in separate sessions; note picker availability.
-3. Thinking/Fast mode — confirm Waldo or frontier routing in usage logs (`LLM_CALL` event).
+3. Thinking/Fast mode - confirm Waldo or frontier routing in usage logs (`LLM_CALL` event).
 4. Record tenant-enabled set in Pending Sandbox column.
 
 **Risk & Cost Impact:** Risk: Low | Cost: FlexCredits tier-dependent

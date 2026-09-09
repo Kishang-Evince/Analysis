@@ -63,7 +63,7 @@ Share this article:
 
 # How AI agents are automating client reporting for marketing agencies
 
-Marketing agencies spend countless hours each month compiling performance data, creating visualizations, and crafting narratives that demonstrate campaign value to clients. The traditional approach — manually extracting metrics from dozens of platforms, reconciling conflicting data points, and building custom presentations — consumes resources that could drive [strategic innovation](https://www.glean.com/blog/ai-agents-enterprise).
+Marketing agencies spend countless hours each month compiling performance data, creating visualizations, and crafting narratives that demonstrate campaign value to clients. The traditional approach - manually extracting metrics from dozens of platforms, reconciling conflicting data points, and building custom presentations - consumes resources that could drive [strategic innovation](https://www.glean.com/blog/ai-agents-enterprise).
 
 AI agents now automate these labor-intensive workflows, transforming raw marketing data into polished, insight-rich reports within minutes rather than days. These intelligent systems connect directly to advertising platforms, analytics tools, and CRM systems to extract performance metrics, identify trends, and generate client-ready presentations that highlight what matters most. Reflecting this broader adoption, [88%](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) of organizations now report regular AI use in at least one business function, representing substantial growth from just 78% in the previous year, and IT and marketing consistently rank as the business functions most likely to employ AI.
 
@@ -73,7 +73,7 @@ The shift from manual reporting to AI-powered automation represents more than op
 
 AI agents reshape client reporting by creating an intelligent layer between data sources and final deliverables. Unlike basic automation tools that simply pull predefined metrics, these agents understand context, adapt to changing data structures, and learn from user feedback to continuously improve report quality and relevance.
 
-The transformation begins with how agencies collect and process data. AI agents simultaneously monitor multiple advertising platforms — from social media channels to programmatic display networks — extracting performance metrics in real-time. They automatically [reconcile discrepancies](https://www.glean.com/blog/8-finance-ai-agents) between platforms, standardize naming conventions, and flag anomalies that might indicate tracking issues or campaign problems. This eliminates hours of manual data cleaning while improving accuracy.
+The transformation begins with how agencies collect and process data. AI agents simultaneously monitor multiple advertising platforms - from social media channels to programmatic display networks - extracting performance metrics in real-time. They automatically [reconcile discrepancies](https://www.glean.com/blog/8-finance-ai-agents) between platforms, standardize naming conventions, and flag anomalies that might indicate tracking issues or campaign problems. This eliminates hours of manual data cleaning while improving accuracy.
 
 ### Real-world impact on agency operations
 
@@ -111,7 +111,7 @@ While AI enhances efficiency, expert involvement remains essential. This ensures
 
 Integrating AI agents requires careful strategy and execution. By starting with focused projects and maintaining expert involvement, agencies can harness AI's potential, transforming client reporting into a strategic advantage.
 
-The transformation of client reporting through AI agents represents a fundamental shift in how marketing agencies deliver value — moving from time-consuming manual processes to intelligent, automated workflows that generate deeper insights and stronger client relationships. By implementing these AI-powered approaches, you can reclaim hundreds of hours annually while delivering reports that are more accurate, timely, and strategically valuable than ever before. Ready to see how AI can revolutionize your agency's reporting capabilities? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo).
+The transformation of client reporting through AI agents represents a fundamental shift in how marketing agencies deliver value - moving from time-consuming manual processes to intelligent, automated workflows that generate deeper insights and stronger client relationships. By implementing these AI-powered approaches, you can reclaim hundreds of hours annually while delivering reports that are more accurate, timely, and strategically valuable than ever before. Ready to see how AI can revolutionize your agency's reporting capabilities? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo).
 
 [
 

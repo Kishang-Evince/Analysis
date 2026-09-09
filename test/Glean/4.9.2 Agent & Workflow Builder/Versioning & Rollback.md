@@ -1,4 +1,4 @@
-# Field 8 — Versioning & Rollback
+# Field 8 - Versioning & Rollback
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Versioning & Rollback.md](../../../Glean/Combined/4.9.2 Agent & Workflow Builder/Versioning & Rollback.md)

@@ -11,7 +11,7 @@ Before your connector pushes any documents, create it in Glean. The connector is
 
 Prerequisite
 
-Decide where your connector will run first — see [Choose a deployment model](/connectors/custom/deployment). Setup is driven by environment variables in both models.
+Decide where your connector will run first - see [Choose a deployment model](/connectors/custom/deployment). Setup is driven by environment variables in both models.
 
 ## Create a connector[​](#create-a-connector "Direct link to Create a connector")
 
@@ -37,9 +37,9 @@ Give the connector a name and identifier, and configure the core metadata that c
 
 When you define the connector, set the metadata that controls how each document is displayed and ranked:
 
--   **Title, URL, and icon** — what users see in results and how they click through to the source.
--   **Rendering behavior** — the category and how documents are presented in the results list.
--   **Permissions model** — whether documents are permission-aware (per-user ACLs pushed with each document) or visible to everyone in the org.
+-   **Title, URL, and icon** - what users see in results and how they click through to the source.
+-   **Rendering behavior** - the category and how documents are presented in the results list.
+-   **Permissions model** - whether documents are permission-aware (per-user ACLs pushed with each document) or visible to everyone in the org.
 
 Advanced settings
 
@@ -83,9 +83,9 @@ Index a single public sample document and confirm it appears in search. Then ind
 
 The admin console creates and configures the connector; pushing documents is done through the Indexing API. For request formats, SDKs, and code samples:
 
--   [Glean developer docs — set up a datasource](https://glean-developer-site.vercel.app/api-info/indexing/getting-started/setup-datasource)
+-   [Glean developer docs - set up a datasource](https://glean-developer-site.vercel.app/api-info/indexing/getting-started/setup-datasource)
 -   [Glean Developer Community](https://community.glean.com)
--   [Glean REST APIs](/connectors/custom/glean-apis) — the Indexing and Client APIs and the tokens each uses.
+-   [Glean REST APIs](/connectors/custom/glean-apis) - the Indexing and Client APIs and the tokens each uses.
 
 If you run into issues during setup, see [Troubleshooting](/connectors/custom/troubleshooting) or [contact Glean support](https://support.glean.com/hc/en-us/requests/new).
 

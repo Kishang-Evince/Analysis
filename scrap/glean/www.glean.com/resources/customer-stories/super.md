@@ -49,7 +49,7 @@ search time saved per employee, weekly
 
 ## The challenge
 
-As Super.com grew, knowledge became scattered across multiple platforms, making it harder for employees to find the information they needed. Early on, meetings were the primary way to share knowledge, but as the company scaled, this became inefficient. To promote transparency and efficiency, Super.com introduced a written culture — encouraging employees to document information rather than rely on meetings.
+As Super.com grew, knowledge became scattered across multiple platforms, making it harder for employees to find the information they needed. Early on, meetings were the primary way to share knowledge, but as the company scaled, this became inefficient. To promote transparency and efficiency, Super.com introduced a written culture - encouraging employees to document information rather than rely on meetings.
 
 ‍
 

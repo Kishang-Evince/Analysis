@@ -35,11 +35,11 @@ Snowflake in Glean Assistant lets anyone ask business questions in natural langu
 
 ### See the full picture with enterprise context
 
-Get a unified view of your business by combining Snowflake insights with documents, messages, tickets, and knowledge across your enterprise systems — so every answer includes the surrounding narrative, decisions, and operational context.
+Get a unified view of your business by combining Snowflake insights with documents, messages, tickets, and knowledge across your enterprise systems - so every answer includes the surrounding narrative, decisions, and operational context.
 
 ### Turn answers into action without the handoffs
 
-Free up data teams for higher-value work by giving business users self-serve access to Snowflake insights in the flow of work — and enabling teams to operationalize those insights through Glean Agents, workflows, and shareable outputs.
+Free up data teams for higher-value work by giving business users self-serve access to Snowflake insights in the flow of work - and enabling teams to operationalize those insights through Glean Agents, workflows, and shareable outputs.
 
 ## Work AI that works.
 

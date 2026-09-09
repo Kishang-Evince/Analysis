@@ -36,12 +36,12 @@
 ### Stratos tenant-stack pilot profile
 
 - **Valid pilot:** Notion (governed) + M365 + GWS, ACL-sensitive content in Drive/OneDrive, agents for doc triage/summarization.
-- **Stretch:** Healthcare PHI in Notion without segmentation — **not best fit** without remediation.
+- **Stretch:** Healthcare PHI in Notion without segmentation - **not best fit** without remediation.
 
 ### Verification steps / test case
 
 1. Score prospect against attribute table (0–2 per row; ≥12/16 = strong fit).
-2. Confirm hybrid stack in discovery — single-suite = redirect to Copilot/Workspace AI.
+2. Confirm hybrid stack in discovery - single-suite = redirect to Copilot/Workspace AI.
 3. Verify BAA + Protect+ budget for regulated prospects.
 4. Document best-fit narrative for Perimeter Healthcare-type clients (knowledge layer, EHR remains SoR).
 

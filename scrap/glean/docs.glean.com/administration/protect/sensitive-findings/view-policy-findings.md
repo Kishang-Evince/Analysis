@@ -73,7 +73,7 @@ Use the toolbar above the dashboard to narrow the list of issues to a focused se
 -   **Assigned to**: Filter by the user assigned to the issue.
 -   **Created**: Filter by when the issue was created.
 
-Filters compose with each other and with the search box, so you can stack them to focus on exactly the slice of issues you need — for example, every `OPEN`, high-severity issue from one connector assigned to a specific reviewer.
+Filters compose with each other and with the search box, so you can stack them to focus on exactly the slice of issues you need - for example, every `OPEN`, high-severity issue from one connector assigned to a specific reviewer.
 
 #### Issue statuses[​](#issue-statuses "Direct link to Issue statuses")
 

@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:29:50.766Z"
 ---
 On this page
 
-Once your crawls are in progress, Glean kicks off the machine learning pipelines that build your company's knowledge graph. The **Prepare your company's knowledge graph** task is automatic — no admin action is required.
+Once your crawls are in progress, Glean kicks off the machine learning pipelines that build your company's knowledge graph. The **Prepare your company's knowledge graph** task is automatic - no admin action is required.
 
 ## What you'll see[​](#what-youll-see "Direct link to What you'll see")
 

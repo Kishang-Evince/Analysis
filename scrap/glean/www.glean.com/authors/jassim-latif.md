@@ -33,7 +33,7 @@ March 10, 2025
 
 ### Glean’s new WorkRamp connector: Smarter learning, seamless access
 
-Glean in WorkRamp brings WorkRamp’s All-in-One Learning Platform directly Glean — making it easier for employees to upskill and excel in their roles.
+Glean in WorkRamp brings WorkRamp’s All-in-One Learning Platform directly Glean - making it easier for employees to upskill and excel in their roles.
 
 ![Jassim Latif](https://cdn.prod.website-files.com/613513981b0efaf850830620/6704b3f74533cc2160e1f818_Jassim.webp)
 

@@ -87,7 +87,7 @@ Six years ago, Glean made an early bet on a different way to build enterprise AI
 
 Those beliefs drove Glean’s product decisions from the beginning. Glean was built to bring AI into the flow of work, grounded in enterprise context, security, governance, and the systems teams depend on every day. We innovated by building solutions that fit the way organizations actually operate. It is gratifying to see more of the market moving in that direction. Announcements like Anthropic’s Claude Tag are strong validation of an approach Glean believed in early and has continued to invest in over time.
 
-Today, we are continuing with that same pace of innovation by introducing independent agents—AI coworkers built on top of Glean’s context layer that work alongside every team to proactively manage and execute work. They infer what needs to happen based on their memory and context, and work across surfaces—not just in Slack—so you can engage the same agent in enterprise apps like Jira, Slack, and Teams and have context carry seamlessly across them.
+Today, we are continuing with that same pace of innovation by introducing independent agents-AI coworkers built on top of Glean’s context layer that work alongside every team to proactively manage and execute work. They infer what needs to happen based on their memory and context, and work across surfaces-not just in Slack-so you can engage the same agent in enterprise apps like Jira, Slack, and Teams and have context carry seamlessly across them.
 
 ### **Independent agents who act as your teams’ AI coworkers**
 
@@ -103,7 +103,7 @@ Each independent agent operates with its own identity, with specifically provisi
 
 **Memory**
 
-Agents start by learning standard operating procedures from the company data and documentation that they have access to. They can extract key runbooks, and develop an initial picture of how to answer questions, unblock, or execute next steps. After that, they will learn from every interaction they have — like any other teammate — extracting best practices and ensuring that they don't make the same mistake twice.
+Agents start by learning standard operating procedures from the company data and documentation that they have access to. They can extract key runbooks, and develop an initial picture of how to answer questions, unblock, or execute next steps. After that, they will learn from every interaction they have - like any other teammate - extracting best practices and ensuring that they don't make the same mistake twice.
 
 **Proactivity**
 

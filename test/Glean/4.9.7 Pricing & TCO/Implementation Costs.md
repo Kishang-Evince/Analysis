@@ -1,4 +1,4 @@
-# Field 3 — Implementation Costs
+# Field 3 - Implementation Costs
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Implementation Costs.md](../../../Glean/Combined/4.9.7 Pricing & TCO/Implementation Costs.md)

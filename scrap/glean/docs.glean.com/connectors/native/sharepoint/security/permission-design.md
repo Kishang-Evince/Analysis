@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:29:41.348Z"
 ---
 On this page
 
-At Glean, we are committed to maintaining the highest standards of data security and privacy in all our integrations. A cornerstone of our security philosophy is strict adherence to the principle of least privilege—requesting only the minimum permission scopes absolutely necessary to perform required data retrieval functions from our integration partners.
+At Glean, we are committed to maintaining the highest standards of data security and privacy in all our integrations. A cornerstone of our security philosophy is strict adherence to the principle of least privilege-requesting only the minimum permission scopes absolutely necessary to perform required data retrieval functions from our integration partners.
 
 This datasheet outlines our approach to permission management across our various integrations, with special attention to certain Microsoft services where we face unique challenges due to the design choices of the Graph API and SharePoint REST API.
 

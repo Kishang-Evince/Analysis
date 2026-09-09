@@ -121,7 +121,7 @@ The CA-RAG framework's 26% token reduction and 34% latency improvement illustrat
 
 A cost-aware routing utility function formalizes this decision. The function combines a quality prior, estimated from query characteristics and historical outcomes, with normalized penalties for latency and total billed tokens. The system selects the highest-scoring strategy from the candidate set, and adjusting the penalty weights shifts the operating point without changing the strategy catalog.
 
-A well-designed router exercises the full catalog of available strategies rather than collapsing to a near-fixed policy. If your routing logs show that 95% of queries hit the same strategy, the router is not routing — it has become a static pipeline with extra overhead. Effective routing produces a distribution of strategy selections that reflects the actual diversity of incoming queries. In practice, [between 70% and 80% of production enterprise workloads](https://www.swfte.com/blog/ai-api-pricing-trends-2026) run identically on mid-tier or budget-tier models as they do on premium, which means a well-tuned router can divert the majority of traffic to cheaper models without quality loss.
+A well-designed router exercises the full catalog of available strategies rather than collapsing to a near-fixed policy. If your routing logs show that 95% of queries hit the same strategy, the router is not routing - it has become a static pipeline with extra overhead. Effective routing produces a distribution of strategy selections that reflects the actual diversity of incoming queries. In practice, [between 70% and 80% of production enterprise workloads](https://www.swfte.com/blog/ai-api-pricing-trends-2026) run identically on mid-tier or budget-tier models as they do on premium, which means a well-tuned router can divert the majority of traffic to cheaper models without quality loss.
 
 Glean's query planning step rewrites each query with enterprise-specific knowledge before routing it. The system understands which data sources are available, how they can be queried, and what enterprise-specific terms mean in context. That rewriting step gives the router better signal for classification, because a query rewritten with the right internal terminology is easier to classify accurately than a raw user question full of ambiguous shorthand.
 
@@ -133,7 +133,7 @@ Retrieval and routing operate at the single-query level. Orchestration governs w
 
 Each step in an agentic workflow adds its output to the running context. A research step might contribute 2,000 tokens of retrieved passages, an analysis step adds its intermediate conclusions, and a drafting step includes the accumulated context plus its own generation. Without active management, context grows linearly with each step.
 
-The compounding problem extends beyond cost. When an earlier step retrieves irrelevant context or produces a weak intermediate answer, every downstream step inherits that noise. The later model calls spend tokens processing information that actively degrades their output — not just wasted cost, but negative value.
+The compounding problem extends beyond cost. When an earlier step retrieves irrelevant context or produces a weak intermediate answer, every downstream step inherits that noise. The later model calls spend tokens processing information that actively degrades their output - not just wasted cost, but negative value.
 
 Orchestration decisions determine whether context growth stays bounded or runs away. Summarizing intermediate results between steps compresses the context window while preserving essential information. Discarding intermediate state entirely after extraction removes noise, and checkpointing allows a workflow to restart from a clean state at a known-good step rather than rerunning from the beginning.
 
@@ -159,7 +159,7 @@ Cost per resolved task captures this dynamic better than cost per query. A task 
 
 The same strategy catalog can support multiple operating points through weight adjustment in the routing utility function. You do not need a different architecture for cost-sensitive batch processing and latency-sensitive user-facing queries. You need different weights on the same function.
 
-Glean uses an LLM-based evaluation system to grade both retrieval quality and generation quality. The system assesses whether the retrieved documents are relevant to the user's question and whether the generated response accurately extracts information from those documents. [Internal testing](https://www.glean.com/blog/agentic-reasoning-future-ai) showed that human graders agreed with each other only 79% of the time, while the AI-based evaluation system reached 74% agreement — demonstrating near-human consistency for automated quality monitoring at scale.
+Glean uses an LLM-based evaluation system to grade both retrieval quality and generation quality. The system assesses whether the retrieved documents are relevant to the user's question and whether the generated response accurately extracts information from those documents. [Internal testing](https://www.glean.com/blog/agentic-reasoning-future-ai) showed that human graders agreed with each other only 79% of the time, while the AI-based evaluation system reached 74% agreement - demonstrating near-human consistency for automated quality monitoring at scale.
 
 ## Practical techniques to optimize token efficiency across all three layers
 
@@ -173,7 +173,7 @@ Use token-aware chunking to process high-value sections of documents first. Head
 
 ### Routing-layer techniques
 
-Follow the "start small, then escalate" pattern. Route every query to the smallest effective model and shallowest retrieval depth first, and escalate to a larger model or deeper retrieval only when the initial response does not meet quality thresholds. One mid-market firm applied this approach and saw its monthly AI bill [drop from $42K to $11K](https://www.swfte.com/blog/ai-api-pricing-trends-2026) — a 74% reduction — by routing 80% of traffic to budget-tier models while reserving premium models for complex reasoning.
+Follow the "start small, then escalate" pattern. Route every query to the smallest effective model and shallowest retrieval depth first, and escalate to a larger model or deeper retrieval only when the initial response does not meet quality thresholds. One mid-market firm applied this approach and saw its monthly AI bill [drop from $42K to $11K](https://www.swfte.com/blog/ai-api-pricing-trends-2026) - a 74% reduction - by routing 80% of traffic to budget-tier models while reserving premium models for complex reasoning.
 
 Separate workloads by latency profile. User-facing queries need fast responses and benefit from aggressive routing to smaller models, while batch processing tasks can tolerate higher latency and deeper retrieval. Routing these workloads through separate paths avoids forcing one profile's constraints onto the other.
 
@@ -181,11 +181,11 @@ Log every routing decision and monitor for drift. A router that made good decisi
 
 ### Orchestration-layer techniques
 
-Summarize conversation history into compact state between workflow steps. Intelligent context management — selectively extracting and retaining key facts rather than carrying full transcripts — can reduce token usage dramatically. The key is compressing at natural breakpoints rather than at arbitrary token limits.
+Summarize conversation history into compact state between workflow steps. Intelligent context management - selectively extracting and retaining key facts rather than carrying full transcripts - can reduce token usage dramatically. The key is compressing at natural breakpoints rather than at arbitrary token limits.
 
 Use selective context passing between workflow steps. Each sub-task in a multi-step workflow should receive only the context it needs, not the full accumulated history. Define explicit input contracts for each step that specify exactly which fields, facts, or constraints it requires from upstream steps.
 
-Set explicit token budgets with guardrails for each workflow step. A budget without enforcement is a suggestion, and guardrails that truncate or summarize context when it exceeds the step's budget prevent any single step from consuming the token allocation intended for later steps. For high-repetition workloads, [semantic caching can cut API costs by up to 73%](https://redis.io/blog/llm-token-optimization-speed-up-apps/) by storing query embeddings and serving cached answers for semantically similar requests — eliminating the LLM call entirely on cache hits.
+Set explicit token budgets with guardrails for each workflow step. A budget without enforcement is a suggestion, and guardrails that truncate or summarize context when it exceeds the step's budget prevent any single step from consuming the token allocation intended for later steps. For high-repetition workloads, [semantic caching can cut API costs by up to 73%](https://redis.io/blog/llm-token-optimization-speed-up-apps/) by storing query embeddings and serving cached answers for semantically similar requests - eliminating the LLM call entirely on cache hits.
 
 Glean's [connector ecosystem](https://www.glean.com/connectors) ingests and indexes content across enterprise applications like Salesforce, Jira, Confluence, and Slack, which means the retrieval layer has broad coverage without requiring redundant tool calls during orchestration. The data is already indexed and permission-aware, so the orchestration layer retrieves from a unified index rather than making separate API calls to each source system and processing their raw responses.
 
@@ -211,7 +211,7 @@ Yes. A routing utility function with adjustable weights lets you shift between c
 
 Setting an explicit context budget per query and enforcing it during retrieval. Retrieved context is the largest variable component of billed tokens, and most over-spending comes from retrieving more passages than the query actually needs. A hard token budget with reranking to prioritize the most relevant passages within that budget addresses the biggest cost driver directly.
 
-The architecture decisions you make around retrieval depth, query routing, and orchestration directly shape whether your AI deployment scales efficiently or becomes a runaway cost center. Getting these three layers right is not a one-time exercise — it requires ongoing measurement, routing adjustments, and context management as your workloads evolve. [Request a demo](https://www.glean.com/get-a-demo) to explore how we can help you build AI systems that deliver grounded answers without burning through your token budget.
+The architecture decisions you make around retrieval depth, query routing, and orchestration directly shape whether your AI deployment scales efficiently or becomes a runaway cost center. Getting these three layers right is not a one-time exercise - it requires ongoing measurement, routing adjustments, and context management as your workloads evolve. [Request a demo](https://www.glean.com/get-a-demo) to explore how we can help you build AI systems that deliver grounded answers without burning through your token budget.
 
 [
 

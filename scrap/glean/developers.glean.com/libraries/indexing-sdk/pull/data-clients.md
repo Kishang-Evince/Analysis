@@ -23,14 +23,14 @@ That's fine for small sources. For a paginated HTTP API, the SDK gives you a bas
 from glean.indexing.recipes.pull import BasePullHttpStreamingDataClient, PullOptionsclass ArticleDataClient(BasePullHttpStreamingDataClient[Article]):    def __init__(self, token: str):        super().__init__(            base_url="https://api.example.com/v2",            path="/articles",            items_key="items",            pagination="link",            page_size=100,            headers={"Authorization": f"Bearer {token}"},            options=PullOptions(timeout_seconds=30.0),        )
 ```
 
-It subclasses `BaseStreamingDataClient`, so it belongs with `BaseStreamingDatasourceConnector` — see [Connector types](/libraries/indexing-sdk/concepts/connector-types).
+It subclasses `BaseStreamingDataClient`, so it belongs with `BaseStreamingDatasourceConnector` - see [Connector types](/libraries/indexing-sdk/concepts/connector-types).
 
 ## Constructor reference[​](#constructor-reference "Direct link to Constructor reference")
 
 | Argument | Default | Purpose |
 | --- | --- | --- |
-| `base_url` | — | Base URL for relative paths. |
-| `path` | — | Endpoint path to fetch. |
+| `base_url` | - | Base URL for relative paths. |
+| `path` | - | Endpoint path to fetch. |
 | `items_key` | `"items"` | Key holding the record array. Set to `None` if the body *is* the array. |
 | `pagination` | `"link"` | One of `"link"`, `"offset"`, `"cursor"`, `"none"`. |
 | `params` | `None` | Static query parameters sent on every request. |
@@ -57,7 +57,7 @@ Invalid combinations fail at construction, not mid-crawl: offset pagination with
 # {"items": [...]}          → items_key="items"  (default)# [...]                     → items_key=None# {"data": {"records": []}} → override get_source_data
 ```
 
-If the value at `items_key` isn't a list, the client raises `TypeError` naming the key and the type it actually found — a fast failure when a source changes its envelope.
+If the value at `items_key` isn't a list, the client raises `TypeError` naming the key and the type it actually found - a fast failure when a source changes its envelope.
 
 ## Customizing[​](#customizing "Direct link to Customizing")
 
@@ -67,7 +67,7 @@ Everything above is a starting point. Override `get_source_data()` when your sou
 class ArticleDataClient(BasePullHttpStreamingDataClient[Article]):    def get_source_data(self, **kwargs):        for article in super().get_source_data(**kwargs):            detail = self.http.get(f"/articles/{article['id']}")            yield {**article, "body": detail.json_dict()["body"]}
 ```
 
-That pattern — list endpoint for discovery, detail endpoint for content — is common, and the N+1 request cost is exactly why you want a [rate limiter](/libraries/indexing-sdk/pull/rate-limiting) configured.
+That pattern - list endpoint for discovery, detail endpoint for content - is common, and the N+1 request cost is exactly why you want a [rate limiter](/libraries/indexing-sdk/pull/rate-limiting) configured.
 
 ## Cleaning up[​](#cleaning-up "Direct link to Cleaning up")
 

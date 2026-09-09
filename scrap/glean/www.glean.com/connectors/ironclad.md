@@ -19,7 +19,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-Instantly find the right contracts, workflows, and entities, and get deep clause‑level insights—from Ironclad and all your other business applications—so you always have full context on every agreement and counterparty.
+Instantly find the right contracts, workflows, and entities, and get deep clause‑level insights-from Ironclad and all your other business applications-so you always have full context on every agreement and counterparty.
 
 ## Work AI that works.
 

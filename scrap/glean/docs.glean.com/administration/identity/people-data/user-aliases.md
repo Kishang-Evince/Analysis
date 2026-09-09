@@ -13,7 +13,7 @@ This page describes which IdP attributes Glean uses to build aliases, how to saf
 
 ## How identity stitching works[​](#how-identity-stitching-works "Direct link to How identity stitching works")
 
-Glean creates one person record per primary email. When the same user appears in a connector under a different email — for example, an employee whose account exists in two Entra ID tenants, or a user signing in to a SaaS app with a secondary address — Glean uses aliases to attribute that activity to the correct person.
+Glean creates one person record per primary email. When the same user appears in a connector under a different email - for example, an employee whose account exists in two Entra ID tenants, or a user signing in to a SaaS app with a secondary address - Glean uses aliases to attribute that activity to the correct person.
 
 If a connector account's email matches a person's primary email or any of their aliases, Glean links that account to the same person. If no match exists, the connector account does not link to the user, and content shared with the connector account does not appear in the user's search results.
 
@@ -65,7 +65,7 @@ This attribute is not a native Okta default profile property. It is populated by
 
 If you need to alias additional addresses for your users, prefer `proxyAddresses`. It's populated by your Okta administrators and isn't editable by end users.
 
-To turn on `secondEmail` aliasing in Okta, contact Glean support. `proxyAddresses` doesn't require a config change — populate the attribute on the Okta profile and Glean picks it up on the next identity crawl.
+To turn on `secondEmail` aliasing in Okta, contact Glean support. `proxyAddresses` doesn't require a config change - populate the attribute on the Okta profile and Glean picks it up on the next identity crawl.
 
 ## Recommended pattern for cross-tenant and multi-domain users[​](#recommended-pattern-for-cross-tenant-and-multi-domain-users "Direct link to Recommended pattern for cross-tenant and multi-domain users")
 
@@ -78,11 +78,11 @@ After a merger, acquisition, or domain migration, the same person often has iden
 
 tip
 
-If you're investigating a stitching issue, check the affected user's `proxyAddresses` (or other configured alias attribute) in your IdP first. If the expected address isn't there, the fix is to update the IdP — not to add the alias in Glean.
+If you're investigating a stitching issue, check the affected user's `proxyAddresses` (or other configured alias attribute) in your IdP first. If the expected address isn't there, the fix is to update the IdP - not to add the alias in Glean.
 
 ## Fallback: manual alias upload[​](#fallback-manual-alias-upload "Direct link to Fallback: manual alias upload")
 
-If your IdP can't carry the aliases you need — for example, because you don't have write access to the relevant user attributes, or you're stitching identities for accounts that predate your current IdP — Glean supports a manual alias mapping as a fallback. Contact Glean support to upload a CSV mapping primary emails to aliases.
+If your IdP can't carry the aliases you need - for example, because you don't have write access to the relevant user attributes, or you're stitching identities for accounts that predate your current IdP - Glean supports a manual alias mapping as a fallback. Contact Glean support to upload a CSV mapping primary emails to aliases.
 
 Manual aliases are static. They don't sync with your IdP, so you'll need to re-upload the mapping whenever you add or change users. Prefer IdP-driven aliasing whenever it's an option.
 

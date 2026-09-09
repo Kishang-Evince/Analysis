@@ -83,9 +83,9 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-The landscape of data analysis has transformed dramatically over the past few decades—from requiring deep technical expertise to becoming increasingly accessible to everyone. In the past, you had to know exactly where and how data was stored and how to access it through SQL. Without this knowledge and these skillsets, you were dependent on technical experts and their bandwidth to access and analyze data.
+The landscape of data analysis has transformed dramatically over the past few decades-from requiring deep technical expertise to becoming increasingly accessible to everyone. In the past, you had to know exactly where and how data was stored and how to access it through SQL. Without this knowledge and these skillsets, you were dependent on technical experts and their bandwidth to access and analyze data.
 
-Over time, many analytics tools have broadened access by making data dashboards and reports more accessible to business users outside of data engineering departments. Despite this, most employees and organizations remain bottlenecked by the data skills gap, unable to move beyond pre-configured views to become truly data driven. From spreadsheet manipulation to data visualization—users continue seeking ways to fully leverage available information sources, understand metadata nuances, and make informed decisions.
+Over time, many analytics tools have broadened access by making data dashboards and reports more accessible to business users outside of data engineering departments. Despite this, most employees and organizations remain bottlenecked by the data skills gap, unable to move beyond pre-configured views to become truly data driven. From spreadsheet manipulation to data visualization-users continue seeking ways to fully leverage available information sources, understand metadata nuances, and make informed decisions.
 
 AI agents and LLMs are transforming the enterprise data landscape by enabling users to both find and analyze information through natural language interactions, and to iterate on data questions as their hypotheses grow. While LLMs can interpret basic data schemas, they often struggle to make meaningful connections between disparate data sources and formats without additional context and specialized tooling.
 
@@ -93,7 +93,7 @@ Today, we are excited to announce the next wave of data-driven product innovatio
 
 ## Democratizing data-driven success
 
-Enterprise companies often hire data-driven employees and build data-centric processes to better inform critical business decisions. However, they are limited by the time it takes to find, access, and analyze it—which is problematic when immediate access to accurate, real-time, and comprehensive data is crucial. Businesses need this data to invest and compete, build customer-first products, and optimize their supply chain. At an individual level, sales managers need to easily track performance metrics, marketing managers want to consistently iterate and improve a digital ad campaign, and data analysts strive to extract insights from complex datasets.
+Enterprise companies often hire data-driven employees and build data-centric processes to better inform critical business decisions. However, they are limited by the time it takes to find, access, and analyze it-which is problematic when immediate access to accurate, real-time, and comprehensive data is crucial. Businesses need this data to invest and compete, build customer-first products, and optimize their supply chain. At an individual level, sales managers need to easily track performance metrics, marketing managers want to consistently iterate and improve a digital ad campaign, and data analysts strive to extract insights from complex datasets.
 
 The power to query data through simple conversation transforms how businesses run and individuals work. Instead of wrestling with SQL commands or complex data tools, anyone can ask questions with natural language, making data-driven decisions accessible to everyone.
 
@@ -131,7 +131,7 @@ A Product Manager can analyze product gaps based on customer requests in Glean b
 
 **Analyze mission-critical data from Databricks**
 
-Glean brings Databricks-hosted data to every business user in the enterprise, enabling them to use natural language to get data insights directly from the Databricks Data Intelligence Platform. By querying Databricks AI/BI Genie from Glean Assistant, all users can get their data questions answered, aggregate information, identify trends, and generate reports—complete with clear explanations of the underlying metrics.  Future integration will also index and enable natural language queries of pre-built Databricks dashboards for direct access to the most deterministic business data.
+Glean brings Databricks-hosted data to every business user in the enterprise, enabling them to use natural language to get data insights directly from the Databricks Data Intelligence Platform. By querying Databricks AI/BI Genie from Glean Assistant, all users can get their data questions answered, aggregate information, identify trends, and generate reports-complete with clear explanations of the underlying metrics.  Future integration will also index and enable natural language queries of pre-built Databricks dashboards for direct access to the most deterministic business data.
 
 A Product Manager can track feature launch results in Glean by:
 
@@ -140,7 +140,7 @@ A Product Manager can track feature launch results in Glean by:
 
 ## Drive your data analysis through AI
 
-By enabling real-time data analysis through natural language queries, Glean eliminates data bottlenecks and silos that slow down business decisions. Teams can now move at the speed of market opportunities, with both technical and non-technical employees accessing comprehensive insights across Salesforce, Jira, Databricks, and other enterprise data sources—all from a single, secure interface. We are excited to see how our users will leverage these new capabilities to drive their business forward. To start using structured data queries from Salesforce, Jira, and Databricks, simply log in to your Glean account and explore the new features.
+By enabling real-time data analysis through natural language queries, Glean eliminates data bottlenecks and silos that slow down business decisions. Teams can now move at the speed of market opportunities, with both technical and non-technical employees accessing comprehensive insights across Salesforce, Jira, Databricks, and other enterprise data sources-all from a single, secure interface. We are excited to see how our users will leverage these new capabilities to drive their business forward. To start using structured data queries from Salesforce, Jira, and Databricks, simply log in to your Glean account and explore the new features.
 
 At Glean, we are dedicated to continuously improving our platform to meet the evolving needs of our users. Want to discover more about how structured data analytics enables Glean to deliver the market’s most comprehensive work AI platform? Watch the [Glean Live: Winter ‘25 launch event](https://www.glean.com/glean-live)! Looking to learn more about transforming your enterprise workflows through AI? Sign up for a free [demo](https://www.glean.com/get-a-demo) of Glean today! 
 

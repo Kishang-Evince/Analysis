@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/hr"
 canonical: "https://www.glean.com/resources/guides/hr"
 title: "How HR teams can cut busywork and put culture first"
-description: "HR leaders can’t afford to spend most of their day on repetitive tasks — they need time for strategy, culture, and employee support. AI helps close the gap by automating onboarding, simplifying compliance, and delivering instant answers at scale. This two-pager highlights practical ways HR teams can reduce errors, improve compliance, and keep employees engaged."
+description: "HR leaders can’t afford to spend most of their day on repetitive tasks - they need time for strategy, culture, and employee support. AI helps close the gap by automating onboarding, simplifying compliance, and delivering instant answers at scale. This two-pager highlights practical ways HR teams can reduce errors, improve compliance, and keep employees engaged."
 fetched_at: "2026-09-01T13:27:09.313Z"
 ---
 ## Work AI that works.

@@ -67,7 +67,7 @@ In today's fast-paced business environment, meetings are essential for collabora
 
 ## Understanding AI-powered meeting summarization
 
-AI meeting assistants use advanced natural language processing (NLP) and machine learning to automatically transcribe, analyze, and summarize meeting conversations. These tools go beyond simple transcription—they understand context, identify speakers, and extract the most important information from hours of discussion.
+AI meeting assistants use advanced natural language processing (NLP) and machine learning to automatically transcribe, analyze, and summarize meeting conversations. These tools go beyond simple transcription-they understand context, identify speakers, and extract the most important information from hours of discussion.
 
 The process typically involves several key components:
 

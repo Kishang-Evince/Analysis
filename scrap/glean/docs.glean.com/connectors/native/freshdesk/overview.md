@@ -2,12 +2,12 @@
 url: "https://docs.glean.com/connectors/native/freshdesk/overview"
 canonical: "https://docs.glean.com/connectors/native/freshdesk/overview"
 title: "Freshdesk overview"
-description: "The Freshdesk connector integrates Freshdesk—a cloud-based customer support platform—with Glean. This integration allows support, IT, and operations teams to search tickets, solution articles, contacts, and companies alongside their other enterprise knowledge."
+description: "The Freshdesk connector integrates Freshdesk-a cloud-based customer support platform-with Glean. This integration allows support, IT, and operations teams to search tickets, solution articles, contacts, and companies alongside their other enterprise knowledge."
 fetched_at: "2026-09-01T13:29:26.440Z"
 ---
 On this page
 
-The Freshdesk connector integrates Freshdesk—a cloud-based customer support platform—with Glean. This integration allows support, IT, and operations teams to search tickets, solution articles, contacts, and companies alongside their other enterprise knowledge. The connector mirrors Freshdesk's role‑based permissions and ticket visibility so users only see content they are allowed to access in Freshdesk.
+The Freshdesk connector integrates Freshdesk-a cloud-based customer support platform-with Glean. This integration allows support, IT, and operations teams to search tickets, solution articles, contacts, and companies alongside their other enterprise knowledge. The connector mirrors Freshdesk's role‑based permissions and ticket visibility so users only see content they are allowed to access in Freshdesk.
 
 note
 

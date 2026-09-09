@@ -2,7 +2,7 @@
 url: "https://docs.glean.com/connectors/native/notion/about"
 canonical: "https://docs.glean.com/connectors/native/notion/about"
 title: "Notion overview"
-description: "How the Notion connector works — supported features, objects, crawling strategy, permissions, limitations, and requirements."
+description: "How the Notion connector works - supported features, objects, crawling strategy, permissions, limitations, and requirements."
 fetched_at: "2026-09-01T13:29:35.951Z"
 ---
 On this page
@@ -105,7 +105,7 @@ Glean will crawl the Notion workspace and index all pages and their child pages 
 
 Crawled content is made searchable
 
-Glean indexes the crawled content and makes it searchable for all Glean users who can access the Notion connector. Because Notion’s crawl APIs do not expose document‑level permission lists in a way Glean can project into its index, this indexed corpus is not permission‑aware—any content shared with the integration is visible in Glean to all such users.
+Glean indexes the crawled content and makes it searchable for all Glean users who can access the Notion connector. Because Notion’s crawl APIs do not expose document‑level permission lists in a way Glean can project into its index, this indexed corpus is not permission‑aware-any content shared with the integration is visible in Glean to all such users.
 
 4
 

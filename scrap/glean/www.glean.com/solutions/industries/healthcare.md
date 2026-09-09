@@ -2,7 +2,7 @@
 url: "https://www.glean.com/solutions/industries/healthcare"
 canonical: "https://www.glean.com/solutions/industries/healthcare"
 title: "AI for Healthcare Workflows: Streamline Operations with Glean"
-description: "Transform healthcare workflows with AI. Glean connects teams, automates processes, and ensures compliance—improving efficiency and patient outcomes."
+description: "Transform healthcare workflows with AI. Glean connects teams, automates processes, and ensures compliance-improving efficiency and patient outcomes."
 fetched_at: "2026-09-01T13:25:28.620Z"
 ---
 Industries

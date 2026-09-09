@@ -27,7 +27,7 @@ connector.index_data(mode=IndexingMode.FULL)print(connector.observability.get_me
 | `documents_indexed` | Documents handed to the uploader. |
 | `indexing_errors` | Incremented when the run raises. |
 
-Separate stage timings are the main diagnostic tool for a slow connector — see [Batching and throughput](/libraries/indexing-sdk/push/batching).
+Separate stage timings are the main diagnostic tool for a slow connector - see [Batching and throughput](/libraries/indexing-sdk/push/batching).
 
 The uploader and the pull HTTP client add more when wired up: upload batch sizes, throughput, API request latency and counts, retries, and crawl success/failure.
 
@@ -37,11 +37,11 @@ The uploader and the pull HTTP client add more when wired up: upload batch sizes
 from glean.indexing.observability import setup_connector_loggingsetup_connector_logging("companywiki", log_level="INFO")
 ```
 
-Structured JSON logging is on by default, which is what makes logs queryable once shipped to an aggregator — "show me every event for document `page_123`" needs fields, not prose.
+Structured JSON logging is on by default, which is what makes logs queryable once shipped to an aggregator - "show me every event for document `page_123`" needs fields, not prose.
 
 | Argument | Default | Purpose |
 | --- | --- | --- |
-| `connector_name` | — | Identifies the connector in every record. |
+| `connector_name` | - | Identifies the connector in every record. |
 | `log_level` | `"INFO"` | Standard level name. |
 | `log_format` | `None` | Custom format string; overrides structured logging. |
 | `use_structured_logging` | `True` | Emit JSON. |
@@ -53,7 +53,7 @@ Structured JSON logging is on by default, which is what makes logs queryable onc
 
 ## Metrics providers[​](#metrics-providers "Direct link to Metrics providers")
 
-`MetricsProvider` is the extension point. The default is `NoOpMetricsProvider` — metrics are recorded in-process for `get_metrics_summary()` but not exported.
+`MetricsProvider` is the extension point. The default is `NoOpMetricsProvider` - metrics are recorded in-process for `get_metrics_summary()` but not exported.
 
 ```
 from glean.indexing.observability import ConnectorObservability, InMemoryMetricsProviderobservability = ConnectorObservability(    connector_name="companywiki",    datasource="companywiki",    crawl_mode="full",    metrics_provider=InMemoryMetricsProvider(),)
@@ -92,7 +92,7 @@ from glean.indexing.observability.plugins.gcp import (    CloudLoggingProvider, 
 
 info
 
-The plugin packages import lazily. If the extra isn't installed, importing the plugin module emits a `UserWarning` naming the missing extra rather than raising — so a misconfigured deployment degrades to no telemetry instead of crashing. Check for that warning if metrics stop appearing.
+The plugin packages import lazily. If the extra isn't installed, importing the plugin module emits a `UserWarning` naming the missing extra rather than raising - so a misconfigured deployment degrades to no telemetry instead of crashing. Check for that warning if metrics stop appearing.
 
 warning
 
@@ -118,12 +118,12 @@ obs = connector.observabilityobs.start_timer("enrichment")enrich(documents)obs.e
 
 info
 
-Custom fields passed to structured logging cannot collide with reserved `LogRecord` attribute names — `ConnectorObservability` raises `ValueError` listing the conflicts rather than producing corrupted records.
+Custom fields passed to structured logging cannot collide with reserved `LogRecord` attribute names - `ConnectorObservability` raises `ValueError` listing the conflicts rather than producing corrupted records.
 
 ## What to alert on[​](#what-to-alert-on "Direct link to What to alert on")
 
 -   `indexing_errors` above zero, or a non-zero process exit.
 -   A crawl that hasn't succeeded within its expected window.
--   `documents_indexed` dropping sharply run over run — the signal for a partial crawl that's about to delete documents as stale.
+-   `documents_indexed` dropping sharply run over run - the signal for a partial crawl that's about to delete documents as stale.
 
 That last one is the alert worth having. See [Indexing modes](/libraries/indexing-sdk/concepts/indexing-modes).

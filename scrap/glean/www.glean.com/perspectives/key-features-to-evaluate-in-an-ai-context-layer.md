@@ -104,7 +104,7 @@ When you evaluate a context layer, ask a pointed question: when two documents di
 
 ## What permission-aware context delivery actually requires
 
-Permission enforcement is the capability most likely to be underbuilt and most dangerous to get wrong. [Gartner predicts](https://www.gartner.com/en/newsroom/press-releases/2025-02-17-gartner-predicts-forty-percent-of-ai-data-breaches-will-arise-from-cross-border-genai-misuse-by-2027) that by 2027, more than 40% of AI-related data breaches will stem from improper generative AI use — underscoring why permissions must be enforced upstream of the model, at retrieval time, not as a guardrail on the output.
+Permission enforcement is the capability most likely to be underbuilt and most dangerous to get wrong. [Gartner predicts](https://www.gartner.com/en/newsroom/press-releases/2025-02-17-gartner-predicts-forty-percent-of-ai-data-breaches-will-arise-from-cross-border-genai-misuse-by-2027) that by 2027, more than 40% of AI-related data breaches will stem from improper generative AI use - underscoring why permissions must be enforced upstream of the model, at retrieval time, not as a guardrail on the output.
 
 Upstream enforcement means the context layer syncs permissions continuously from every connected source system. Identity providers, document repositories, CRMs, ticketing platforms, and collaboration tools each maintain their own access controls.
 
@@ -130,7 +130,7 @@ The [Enterprise Graph in Glean](https://www.glean.com/blog/agentic-reasoning-fut
 
 Security in a context layer goes beyond who can see what. It covers what happens to enterprise data after it leaves your environment, where it is stored, how it is encrypted, and what contractual protections exist with model providers.
 
-Governance that gets bolted on after deployment creates gaps. It needs to be part of the architecture from the start — and [active data and AI governance](https://www.glean.com/blog/data-gov-product-blog) that flags and remediates overshared sensitive data is what separates production-ready platforms from proof-of-concept deployments.
+Governance that gets bolted on after deployment creates gaps. It needs to be part of the architecture from the start - and [active data and AI governance](https://www.glean.com/blog/data-gov-product-blog) that flags and remediates overshared sensitive data is what separates production-ready platforms from proof-of-concept deployments.
 
 The table below outlines the capabilities to evaluate:
 
@@ -162,7 +162,7 @@ Next, test deduplication. Upload two versions of a policy document to different 
 
 Permission enforcement deserves its own test. Remove a user's access to a specific document or folder, then immediately query for information contained in that resource. If the model still returns that content, permissions are not syncing in real time.
 
-Check audit logs as a separate step. Verify that every query, retrieval event, and generated response is logged with enough detail for a security review. [Forrester and Anaconda 2026 data](https://www.digitalapplied.com/blog/ai-agent-adoption-2026-enterprise-data-points) show that 88% of AI agent pilots fail to reach production, with governance friction cited as one of the top three blockers — making this kind of hands-on evaluation essential before committing to a platform.
+Check audit logs as a separate step. Verify that every query, retrieval event, and generated response is logged with enough detail for a security review. [Forrester and Anaconda 2026 data](https://www.digitalapplied.com/blog/ai-agent-adoption-2026-enterprise-data-points) show that 88% of AI agent pilots fail to reach production, with governance friction cited as one of the top three blockers - making this kind of hands-on evaluation essential before committing to a platform.
 
 A vendor that cannot show you this level of auditability during evaluation is unlikely to provide it in production.
 

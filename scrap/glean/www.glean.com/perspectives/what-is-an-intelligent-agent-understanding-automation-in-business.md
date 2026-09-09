@@ -65,7 +65,7 @@ Share this article:
 
 An intelligent agent is an AI-based software system that observes its environment, reasons through a goal, and takes actions across connected systems to complete complex tasks with minimal human oversight. It pairs a language model for reasoning with tools and integrations, so it can carry out real work rather than only produce a text reply.
 
-This matters because most business work spans multiple steps and multiple systems, and adoption is climbing fast — [88% of organizations](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) now use AI in at least one business function. An agent can gather the data, weigh the options, and carry out the next action, so people spend less time stitching information together by hand.
+This matters because most business work spans multiple steps and multiple systems, and adoption is climbing fast - [88% of organizations](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) now use AI in at least one business function. An agent can gather the data, weigh the options, and carry out the next action, so people spend less time stitching information together by hand.
 
 At a high level, an agent runs a repeating loop. It collects information from the tools and data around it, uses a model to decide what to do, then acts through APIs and integrations, learning from each pass to improve the next one.
 
@@ -111,7 +111,7 @@ These features work as a system, not a menu. An agent that connects to many tool
 
 ## Where intelligent agents deliver measurable business value
 
-Intelligent agents deliver measurable value where work is repetitive, spans multiple systems, and depends on scattered knowledge — and two-thirds of companies adopting agents already report [measurable productivity gains](https://www.pwc.com/us/en/tech-effect/ai-analytics/ai-agent-survey.html). Four functions show clear returns today, each backed by outcomes analysts have documented.
+Intelligent agents deliver measurable value where work is repetitive, spans multiple systems, and depends on scattered knowledge - and two-thirds of companies adopting agents already report [measurable productivity gains](https://www.pwc.com/us/en/tech-effect/ai-analytics/ai-agent-survey.html). Four functions show clear returns today, each backed by outcomes analysts have documented.
 
 ### Support and service operations
 
@@ -131,7 +131,7 @@ IT teams field a constant stream of tickets and alerts. An agent triages incomin
 
 ## What to consider before deploying intelligent agents
 
-Before you deploy intelligent agents, weigh five factors that decide whether a pilot turns into lasting value — governance especially, since just [one in five companies](https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html) has a mature model for governing autonomous agents. Skipping any of them tends to surface later as unreliable output or stalled adoption.
+Before you deploy intelligent agents, weigh five factors that decide whether a pilot turns into lasting value - governance especially, since just [one in five companies](https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html) has a mature model for governing autonomous agents. Skipping any of them tends to surface later as unreliable output or stalled adoption.
 
 -   Start with a high-impact, measurable use case. Pick something with a number you can move, such as ticket deflection rate or time-to-answer, so you can prove the return.
 -   Ensure your data is clean, accessible, and unified. An agent that can't reach reliable, current information can't make reliable decisions.

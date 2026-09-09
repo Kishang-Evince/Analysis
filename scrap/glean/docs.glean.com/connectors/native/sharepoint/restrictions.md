@@ -81,9 +81,9 @@ This setting does not apply to classic site pages with a published version and a
 
 Glean treats a SharePoint page, list item, or drive item as draft when **any** of these conditions is true:
 
--   **Minor version** — The item's latest version is a minor (draft) version (for example, 1.1 or 0.3).
--   **Checked out** — The item is currently checked out by a user for editing.
--   **Pending moderation** — The item has a non-approved moderation status (for example, pending or rejected) in a list or library that has content approval enabled.
+-   **Minor version** - The item's latest version is a minor (draft) version (for example, 1.1 or 0.3).
+-   **Checked out** - The item is currently checked out by a user for editing.
+-   **Pending moderation** - The item has a non-approved moderation status (for example, pending or rejected) in a list or library that has content approval enabled.
 
 Items that have never been published (version below 1.0) are excluded entirely and are not indexed.
 
@@ -91,8 +91,8 @@ Items that have never been published (version below 1.0) are excluded entirely a
 
 If a SharePoint page or list item does not appear in Glean, verify its status in SharePoint:
 
-1.  **Publish the item** — If the item is in a draft or minor version, publish a major version.
-2.  **Check in the item** — If the item is checked out, check it back in so the published version is available. An admin can also cancel the checkout if another user checked the item out.
-3.  **Approve pending moderation** — If the list or library uses content approval, approve the item so it moves to an approved state.
+1.  **Publish the item** - If the item is in a draft or minor version, publish a major version.
+2.  **Check in the item** - If the item is checked out, check it back in so the published version is available. An admin can also cancel the checkout if another user checked the item out.
+3.  **Approve pending moderation** - If the list or library uses content approval, approve the item so it moves to an approved state.
 
 After you resolve the draft condition, Glean indexes the item during the next crawl cycle. If you want Glean to index the latest published version while newer edits are in progress, contact [Glean support](https://support.glean.com). Classic site pages remain subject to the limitation described above.

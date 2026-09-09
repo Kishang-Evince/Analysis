@@ -37,7 +37,7 @@ Delivers a real-time view of customer sentiment so support agents can respond wi
 
 **Neutral**. Minor support concerns, with steady product engagement.
 
--   **Recent issues:** The account has opened two tickets in the past month—one regarding integration setup delays and another about login timeouts. Both were resolved within SLA and received positive CSAT scores.
+-   **Recent issues:** The account has opened two tickets in the past month-one regarding integration setup delays and another about login timeouts. Both were resolved within SLA and received positive CSAT scores.
 -   **Revenue considerations:** Account is in good standing with no upcoming renewals or expansion discussions. Current plan is stable, and no risks have been flagged by sales.
 -   **Product usage:** Activity levels are consistent with previous months. Daily active users have held steady, and feature adoption has improved for shared workflows.
 

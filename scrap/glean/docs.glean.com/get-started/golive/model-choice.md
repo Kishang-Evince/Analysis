@@ -14,7 +14,7 @@ If your organization uses Glean Universal Model Key, you can set a default model
 Model choice lets you:
 
 -   Select a specific model for a given Glean Assistant conversation.
--   Use **Auto** (the default) — Glean selects the best model for each chat on your behalf.
+-   Use **Auto** (the default) - Glean selects the best model for each chat on your behalf.
 -   Experiment with multiple leading models on your own company data, within Glean's governed enterprise environment.
 
 ## (Recommended) Use Auto[​](#recommended-use-auto "Direct link to (Recommended) Use Auto")

@@ -81,7 +81,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Generative AI tools have emerged as powerful solutions that can drive efficiency across various functions—whether it's customer service, development, HR, or finance. These tools not only automate routine tasks but also provide valuable insights and enable better decision-making. This article explores the top 9 generative AI tools that are transforming businesses today.
+Generative AI tools have emerged as powerful solutions that can drive efficiency across various functions-whether it's customer service, development, HR, or finance. These tools not only automate routine tasks but also provide valuable insights and enable better decision-making. This article explores the top 9 generative AI tools that are transforming businesses today.
 
 ## 9 best enterprise generative AI tools
 

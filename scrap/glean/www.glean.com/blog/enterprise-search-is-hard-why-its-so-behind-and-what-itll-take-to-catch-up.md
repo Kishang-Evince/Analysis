@@ -1,13 +1,13 @@
 ---
 url: "https://www.glean.com/blog/enterprise-search-is-hard-why-its-so-behind-and-what-itll-take-to-catch-up"
 canonical: "https://www.glean.com/blog/enterprise-search-is-hard-why-its-so-behind-and-what-itll-take-to-catch-up"
-title: "Enterprise search is hard: why it’s so behind—and what it’ll take to catch up"
+title: "Enterprise search is hard: why it’s so behind-and what it’ll take to catch up"
 description: "Eddie Zhou Mrinal Mohit | It takes a complex software to keep up with modern demands of enterprise search software. Glean offers reliable search for documents, applications, and more."
 fetched_at: "2026-09-01T13:26:34.813Z"
 ---
 Last updated Oct 04, 2021.
 
-# Enterprise search is hard: why it’s so behind—and what it’ll take to catch up
+# Enterprise search is hard: why it’s so behind-and what it’ll take to catch up
 
 0
 
@@ -31,7 +31,7 @@ Engineering
 
 ](/authors/mrinal-mohit)
 
-![Enterprise search is hard: why it’s so behind—and what it’ll take to catch up](https://cdn.prod.website-files.com/613513981b0efaf850830620/61e567297a956f36ac3d4d35_Glean-cloud2.png)
+![Enterprise search is hard: why it’s so behind-and what it’ll take to catch up](https://cdn.prod.website-files.com/613513981b0efaf850830620/61e567297a956f36ac3d4d35_Glean-cloud2.png)
 
 Listen to article
 
@@ -93,7 +93,7 @@ Listen to article
 
 All too often, we take search for granted.   
 
-Google works amazingly well—so much so that it’s painfully obvious where enterprise search software has fallen behind. Trying to find something in our day-to-day work just isn’t as seamless as trying to find something on the Internet.   
+Google works amazingly well-so much so that it’s painfully obvious where enterprise search software has fallen behind. Trying to find something in our day-to-day work just isn’t as seamless as trying to find something on the Internet.   
 
 Why is that? Simply put, [enterprise search](https://www.glean.com/blog/what-is-enterprise-search) is hard. Each company’s content is unique to that organization, unlike the shared web that billions of people search daily. Within a company, employees are usually looking for specific, unrepeated information, rather than the millions of pages on the web which might answer the same question. And all this content is usually comprehensible only by those working at the company, making it hard to learn from usage patterns and feedback.  
 
@@ -111,9 +111,9 @@ All of this should exist in one unified interface across all apps, with no manua
 
 ## Understand your company’s language
 
-Typing in keywords and hoping for a match has been the dominant paradigm for search. But often, that’s not enough. Sometimes you might remember what a document talked about, but not how it was worded. Enterprise search software should come with built-in semantic search, so you can look for information the way you remembered it—even if you replace “what’s the wifi password” with “where are the internet settings.”  
+Typing in keywords and hoping for a match has been the dominant paradigm for search. But often, that’s not enough. Sometimes you might remember what a document talked about, but not how it was worded. Enterprise search software should come with built-in semantic search, so you can look for information the way you remembered it-even if you replace “what’s the wifi password” with “where are the internet settings.”  
 
-Of course, how you communicate within your company could differ very wildly from other companies. Depending on if you build software or grow fruit, “apple” could refer to a few different concepts. An effective enterprise search system needs custom deep learning models to help it understand your company’s specific language. These models not only drive semantic search, but also learn what words you and your colleagues use as synonyms—whether it's that project that got renamed, or the clever acronym you created for it. The amount of data in a company is usually many orders of magnitude smaller than the web or public datasources, so robust domain adaptation on such low volume requires careful, nuanced application of transfer learning.
+Of course, how you communicate within your company could differ very wildly from other companies. Depending on if you build software or grow fruit, “apple” could refer to a few different concepts. An effective enterprise search system needs custom deep learning models to help it understand your company’s specific language. These models not only drive semantic search, but also learn what words you and your colleagues use as synonyms-whether it's that project that got renamed, or the clever acronym you created for it. The amount of data in a company is usually many orders of magnitude smaller than the web or public datasources, so robust domain adaptation on such low volume requires careful, nuanced application of transfer learning.
 
 {{richtext-banner-component}}  
 
@@ -121,7 +121,7 @@ Of course, how you communicate within your company could differ very wildly from
 
 Your company is unique. [Different teams](https://www.glean.com/solutions/all-teams) work on different documents, talk about varied projects, and use an assortment of software in their own idiosyncratic ways. None of that is shared by other companies, yet understanding all of that is critical to a search experience that *just works.* Constantly building a knowledge graph of all the buzzing activity within your company enables search to surface the most important, relevant and fresh content, for every query. Graph learning techniques also enable an understanding of how all documents, people, and concepts within the company relate to each other.  
 
-Aggregated data from various sources should provide a 360-degree view of all your employees—who they are, what they work on, who they work closely with, and what they’ve been up to. A similar view for customers should help teams track leads and opportunities in one unified interface.  
+Aggregated data from various sources should provide a 360-degree view of all your employees-who they are, what they work on, who they work closely with, and what they’ve been up to. A similar view for customers should help teams track leads and opportunities in one unified interface.  
 
 ## Understand how you work
 

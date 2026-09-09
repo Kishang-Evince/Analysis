@@ -28,10 +28,10 @@ Glean can detect questions in Slack channels and offer AI-generated answers draw
 
 After Glean generates an answer, you can use the following controls:
 
--   **Feedback buttons** — select the thumbs-up or thumbs-down icon to rate the response.
--   **Delete** — select the trash icon to remove the response.
--   **View sources** — open a modal to inspect the sources cited in the answer.
--   **Open in Glean** — continue the conversation in the Glean web app for a richer experience.
+-   **Feedback buttons** - select the thumbs-up or thumbs-down icon to rate the response.
+-   **Delete** - select the trash icon to remove the response.
+-   **View sources** - open a modal to inspect the sources cited in the answer.
+-   **Open in Glean** - continue the conversation in the Glean web app for a richer experience.
 
 ## Emoji reactions[​](#emoji-reactions "Direct link to Emoji reactions")
 
@@ -54,9 +54,9 @@ Follow these guidelines to get the most accurate and helpful responses from Glea
 
 ### Key guidelines[​](#key-guidelines "Direct link to Key guidelines")
 
--   **Be specific** — frame your question with clear, precise details that provide necessary context.
--   **Use complete sentences** — structure your questions as full, grammatically complete sentences.
--   **Focus on one topic** — address one subject per question to ensure clear and targeted responses.
+-   **Be specific** - frame your question with clear, precise details that provide necessary context.
+-   **Use complete sentences** - structure your questions as full, grammatically complete sentences.
+-   **Focus on one topic** - address one subject per question to ensure clear and targeted responses.
 
 ### Example questions that work well[​](#example-questions-that-work-well "Direct link to Example questions that work well")
 

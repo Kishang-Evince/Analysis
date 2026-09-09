@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/engineering-agents-feb-drop-2026"
 canonical: "https://www.glean.com/blog/engineering-agents-feb-drop-2026"
 title: "8 AI agents to help software engineering teams ship and fix faster"
-description: "Harshi Murthy Sharad Jain | Discover how Glean’s new AI agents streamline software engineering workflows—from PR reviews to onboarding—by leveraging context across your existing tools."
+description: "Harshi Murthy Sharad Jain | Discover how Glean’s new AI agents streamline software engineering workflows-from PR reviews to onboarding-by leveraging context across your existing tools."
 fetched_at: "2026-09-01T13:26:33.516Z"
 ---
 Last updated Feb 20, 2026.
@@ -133,7 +133,7 @@ Performance reviews and self-evaluations introduce another layer of friction. En
 
 ## **AI agents for the work that slows engineering teams down** 
 
-Glean accelerates software engineering workflows with context-aware agents that work across the systems engineers already use — repositories, tickets, documents, and communication tools. The following eight agents target high-friction areas where teams consistently lose time and clarity.
+Glean accelerates software engineering workflows with context-aware agents that work across the systems engineers already use - repositories, tickets, documents, and communication tools. The following eight agents target high-friction areas where teams consistently lose time and clarity.
 
 1.  **Pull request review**
 

@@ -37,7 +37,7 @@ This unified model depends on several synchronization functions:
 
 -   **Metadata ingestion**: Connectors extract fields beyond plain text where the source exposes them, such as last modified time, owners, version or status fields, and app-specific attributes. That supports ranking, filters, and graph-like relationships.
 -   **Identity resolution**: Glean aligns identities across systems (for example, recognizing that identifiers or display names in different apps refer to the same person when connector and directory data support that mapping).
--   **Permission mirroring**: Connectors sync access control information from sources (for example, ACLs or equivalent models) so retrieval respects source visibility. If a user cannot access an item in the source, they should not see it in Glean—assuming the connector and configuration are correct.
+-   **Permission mirroring**: Connectors sync access control information from sources (for example, ACLs or equivalent models) so retrieval respects source visibility. If a user cannot access an item in the source, they should not see it in Glean-assuming the connector and configuration are correct.
 
 ## Contextual search: from retrieval to answers[​](#contextual-search-from-retrieval-to-answers "Direct link to Contextual search: from retrieval to answers")
 
@@ -79,7 +79,7 @@ That applies to indexed connector content and related metadata used for search a
 
 Generative features and models
 
-**Chat**, **Assistant**, and **Agents** use retrieved context from your tenant plus language models. Depending on your deployment and settings, prompts or subsets of content may be processed by model providers under your agreed architecture (for example, Glean-managed or customer-controlled keys). For authoritative detail on security, data flow, and subprocessors, see [Security & Architecture](/security/) and your contractual documentation—not only this overview.
+**Chat**, **Assistant**, and **Agents** use retrieved context from your tenant plus language models. Depending on your deployment and settings, prompts or subsets of content may be processed by model providers under your agreed architecture (for example, Glean-managed or customer-controlled keys). For authoritative detail on security, data flow, and subprocessors, see [Security & Architecture](/security/) and your contractual documentation-not only this overview.
 
 ## Grounding AI with Glean Chat[​](#grounding-ai-with-glean-chat "Direct link to Grounding AI with Glean Chat")
 
@@ -169,7 +169,7 @@ Glean balances coverage, freshness, latency, and cost using per-connector and pe
 
 **Freshness mechanisms**: Indexed connectors often use incremental crawls and sometimes webhooks or push APIs so the index approaches real time without requiring every query to hit the source. Those mechanisms implement how the index stays current; they are not a separate column in the table above.
 
-In practice, one answer can combine modes—for example:
+In practice, one answer can combine modes-for example:
 
 -   Indexed docs and tickets for policies and runbooks.
 -   Live retrieval for calendar for today’s sessions.

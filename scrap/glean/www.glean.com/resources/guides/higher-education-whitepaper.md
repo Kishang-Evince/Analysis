@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/higher-education-whitepaper"
 canonical: "https://www.glean.com/resources/guides/higher-education-whitepaper"
 title: "AI is already reshaping higher education. Here’s how to make it work for your institution."
-description: "From personalized learning to streamlined operations, AI is transforming how colleges and universities work. But true transformation takes more than isolated tools. This whitepaper explores seven ways institutions can apply AI across departments to improve student outcomes, ease faculty workloads, and unlock institution-wide efficiency — while staying aligned with core academic values."
+description: "From personalized learning to streamlined operations, AI is transforming how colleges and universities work. But true transformation takes more than isolated tools. This whitepaper explores seven ways institutions can apply AI across departments to improve student outcomes, ease faculty workloads, and unlock institution-wide efficiency - while staying aligned with core academic values."
 fetched_at: "2026-09-01T13:27:09.102Z"
 ---
 ## Work AI that works.

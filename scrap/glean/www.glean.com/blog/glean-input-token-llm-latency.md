@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/glean-input-token-llm-latency"
 canonical: "https://www.glean.com/blog/glean-input-token-llm-latency"
 title: "How input token count impacts the latency of AI chat tools"
-description: "Veraj Paruthi  | Ever wonder what the impact of input token count is on the responsiveness of AI chat tools? We did—after some testing, here’s what we discovered regarding the correlation between input counts and time to first token."
+description: "Veraj Paruthi  | Ever wonder what the impact of input token count is on the responsiveness of AI chat tools? We did-after some testing, here’s what we discovered regarding the correlation between input counts and time to first token."
 fetched_at: "2026-09-01T13:26:38.323Z"
 ---
 Last updated Jul 02, 2024.
@@ -91,15 +91,15 @@ Curious to know the answer, we conducted a few tests to discover exactly how inp
 
 The first correlation we wanted to investigate was between the volume of input tokens and time to first token. Before diving into the empirical data, here’s a quick explanation of what we expected to observe. 
 
-Generating the **first** completion token from an LLM at a *high* level consists of tokenizing the incoming prompt, and running the token tensor through the Transformer network—typically called the *initiation* phase. To generate subsequent tokens, the latest token is appended to the prompt and the process is repeated—this is commonly referred to as the *decoding* phase. Tokenizing is generally a linear time operation, but running the initial prompt through the transformer is *not.* In fact, it’s a quadratic time operation. 
+Generating the **first** completion token from an LLM at a *high* level consists of tokenizing the incoming prompt, and running the token tensor through the Transformer network-typically called the *initiation* phase. To generate subsequent tokens, the latest token is appended to the prompt and the process is repeated-this is commonly referred to as the *decoding* phase. Tokenizing is generally a linear time operation, but running the initial prompt through the transformer is *not.* In fact, it’s a quadratic time operation. 
 
-Why is this the case? The short answer is, computing [attention scores](https://www.youtube.com/watch?v=eMlx5fFNoYc&ab_channel=3Blue1Brown) within a Transformer involves doing matrix multiplications, and multiplying a matrix of shape (n, p), with another matrix (p, m), involves approximately 2\*m\*n\*p operations. In the case of the of the attention layer, m and n are both equal to the size of the context window, w, meaning the cost of this operation becomes 2\*p\*w^2—a **quadratic** relation. The subtlety here is that the relation is with respect to the context window size, and *not* the number of incoming tokens. 
+Why is this the case? The short answer is, computing [attention scores](https://www.youtube.com/watch?v=eMlx5fFNoYc&ab_channel=3Blue1Brown) within a Transformer involves doing matrix multiplications, and multiplying a matrix of shape (n, p), with another matrix (p, m), involves approximately 2\*m\*n\*p operations. In the case of the of the attention layer, m and n are both equal to the size of the context window, w, meaning the cost of this operation becomes 2\*p\*w^2-a **quadratic** relation. The subtlety here is that the relation is with respect to the context window size, and *not* the number of incoming tokens. 
 
 ### Testing the correlation
 
 Below we can see the empirical data of running such an experiment. Here we plot the TTFT P95 for GPT-4 Turbo versus the number of prompt tokens. For each data point, 25 LLM calls were run. 
 
-As a small, yet important aside, these tests were run using Azure’s provisioned throughput unit ([PTU](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/provisioned-throughput)) model deployments. PTUs are a way to obtain reserved processing capacity just for you—unlocking predictable performance and mitigating the latency swings seen via their pay-a-you-go services. This ensures that our data isn't being muddled due to data center loads.
+As a small, yet important aside, these tests were run using Azure’s provisioned throughput unit ([PTU](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/provisioned-throughput)) model deployments. PTUs are a way to obtain reserved processing capacity just for you-unlocking predictable performance and mitigating the latency swings seen via their pay-a-you-go services. This ensures that our data isn't being muddled due to data center loads.
 
 ![Product Illustration](https://cdn.prod.website-files.com/613513981b0efaf850830620/66c44e1ca2fb4d7e8eace5fa_66840930acbbbd44b189903b_image3-min.webp)
 
@@ -126,7 +126,7 @@ Finally, I’d like to emphasize that 0.24ms might seem like a negligible amount
 
 We’ll keep these results in mind as we continue to build and improve Glean Assistant to deliver a better, speedier service for our users. If you’re interested in learning more about topics like speeding up embedding calls, or the correlation between latency and output tokens, stay turned for new blogs coming up in the near future! 
 
-Looking to learn more about Glean? Get a free demo today—or check out our [careers](https://www.glean.com/careers) page if you’re interested in helping us build the future of enterprise AI yourself!
+Looking to learn more about Glean? Get a free demo today-or check out our [careers](https://www.glean.com/careers) page if you’re interested in helping us build the future of enterprise AI yourself!
 
 [
 

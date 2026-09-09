@@ -150,7 +150,7 @@ Most enterprises land on a hybrid model: chatbots for the conversational layer, 
 
 ## How to evaluate enterprise AI agents before deploying
 
-The gap between a demo and a production system comes down to five factors — and it shows up in returns, with Deloitte finding that only 10% of organizations using agentic AI currently realize [significant ROI](https://www.deloitte.com/global/en/issues/ai/ai-roi-the-paradox-of-rising-investment-and-elusive-returns.html). Score any candidate against each factor before you commit.
+The gap between a demo and a production system comes down to five factors - and it shows up in returns, with Deloitte finding that only 10% of organizations using agentic AI currently realize [significant ROI](https://www.deloitte.com/global/en/issues/ai/ai-roi-the-paradox-of-rising-investment-and-elusive-returns.html). Score any candidate against each factor before you commit.
 
 -   Permission awareness: does the agent respect [existing access controls](https://www.glean.com/blog/secure-generative-ai-for-the-enterprise-requires-the-right-permissions-structure) and return results based only on what the user is allowed to see?
 -   Enterprise context depth: does it understand your organizational structure, content relationships, and individual preferences, or treat every request as isolated?
@@ -176,7 +176,7 @@ Agents outperform chatbots when a task needs cross-system coordination, context-
 
 ### How can enterprises use agentic AI for better outcomes?
 
-Start with high-value processes where employees spend time gathering information and doing repetitive multi-step work. Deploy agents with strong permission controls, deep enterprise context, and human oversight. Measure success by task completion rate and resolution time, not by how conversational the interface feels — a discipline that pays off, given that 92% of leaders expect agentic AI to deliver [measurable ROI within two years](https://newsroom.ibm.com/2025-10-28-Two-thirds-of-surveyed-enterprises-in-EMEA-report-significant-productivity-gains-from-AI,-finds-new-IBM-study).
+Start with high-value processes where employees spend time gathering information and doing repetitive multi-step work. Deploy agents with strong permission controls, deep enterprise context, and human oversight. Measure success by task completion rate and resolution time, not by how conversational the interface feels - a discipline that pays off, given that 92% of leaders expect agentic AI to deliver [measurable ROI within two years](https://newsroom.ibm.com/2025-10-28-Two-thirds-of-surveyed-enterprises-in-EMEA-report-significant-productivity-gains-from-AI,-finds-new-IBM-study).
 
 ### Can chatbots and AI agents work together?
 

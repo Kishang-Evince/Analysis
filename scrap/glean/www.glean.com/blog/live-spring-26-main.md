@@ -87,7 +87,7 @@ We’re entering a new era of work defined by individual autonomy and flexibilit
 
 However, most companies lack the right tools to support employee and organizational AI transformation. Simply deploying AI tools into Google and Microsoft suites doesn’t guarantee value or broad adoption. In Gartner’s 2025 Global Labor Market Survey, 72% of IT leaders driving Copilot integrations said users have trouble bringing it into their daily workflows. Over half reported growing frustration due to unmet value and declining engagement. 
 
-Instead, closing the adoption gap requires a tool that consistently surfaces the right answers, freeing workers to progress without having to chase down information or make uninformed decisions. Glean’s Enterprise Graph supports Assistant to do just that—enabling AI to succeed in enterprise environments by connecting to all of the tools, systems, apps, and data that power your business. Assistant maps relationships across all these disparate sources and makes insights instantly accessible. It’s your deeply knowledgeable, personalized, and proactive daily partner. 
+Instead, closing the adoption gap requires a tool that consistently surfaces the right answers, freeing workers to progress without having to chase down information or make uninformed decisions. Glean’s Enterprise Graph supports Assistant to do just that-enabling AI to succeed in enterprise environments by connecting to all of the tools, systems, apps, and data that power your business. Assistant maps relationships across all these disparate sources and makes insights instantly accessible. It’s your deeply knowledgeable, personalized, and proactive daily partner. 
 
 Built on Glean’s context platform, Assistant brings the power of a team of specialized agents into a single experience, helping every individual amplify their strengths and tackle work that once felt out of reach. New features like content generation, improved analytics capabilities with agent sandbox, canvas updates, real-time voice support, task management agent templates, and better personalization make Glean Assistant more powerful than ever before. 
 
@@ -115,7 +115,7 @@ The agent sandbox gives every team data-backed decisions across all their contex
 
 ## Personalization tailored to your preferences
 
-Glean Assistant knows you, the work you do, and who you work with. This enables Glean to create a personal graph for you—a customized map of your interactions. Glean’s personal graphs infer your role and responsibilities, projects you work on, goals, and writing preferences from activities, chats, and searches happening across all your workplace apps. It also samples and learns from your existing work products like emails, published content, Q&A, collaborative content, and authoritative wikis—not just what you type into a chat window. 
+Glean Assistant knows you, the work you do, and who you work with. This enables Glean to create a personal graph for you-a customized map of your interactions. Glean’s personal graphs infer your role and responsibilities, projects you work on, goals, and writing preferences from activities, chats, and searches happening across all your workplace apps. It also samples and learns from your existing work products like emails, published content, Q&A, collaborative content, and authoritative wikis-not just what you type into a chat window. 
 
 Updates to personalization now enable users to **view their personal graph** and review, edit, and delete details at any point. Assistant remembers these changes and applies your preferences, so that each interaction is better tailored to you. For example, you can highlight an upcoming product launch as a priority project so that Assistant surfaces relevant decks, docs, and tasks first when you ask for updates or draft communications. 
 
@@ -133,7 +133,7 @@ Last year, we launched [**canvas**](https://www.glean.com/product/canvas), a bra
 
 *Leverage Assistant to build on-brand content created in seconds*
 
-Assistant now also has **real-time voice capabilities**. Talk to Glean Assistant like you would to a colleague—naturally, hands-free, and without waiting. Get briefed on a project when driving to the office. Ask Glean to summarize a 50-page deck or a customer engagement spread across multiple touchpoints before heading into a meeting. 
+Assistant now also has **real-time voice capabilities**. Talk to Glean Assistant like you would to a colleague-naturally, hands-free, and without waiting. Get briefed on a project when driving to the office. Ask Glean to summarize a 50-page deck or a customer engagement spread across multiple touchpoints before heading into a meeting. 
 
 Finally, with agent routing and all-new **task management agent templates**, users can proactively route to other agents or receive action items and reminders that accelerate daily work. Based on a comprehensive understanding of your unique work patterns, Glean Agents can deliver powerful, actionable recommendations that drive productivity.
 
@@ -145,9 +145,9 @@ Proactively organize your tasks and loop Assistant back in to help you schedule 
 
 ### Empowering employees to excel
 
-Glean enables your organization to evolve from AI-literate to AI-first to AI-amplified, growing alongside your business as people and AI work hand in hand to deliver great results. Assistant provides your employees with the confidence they need to tackle new and complex challenges. Organizations gain the flexibility to reconfigure as needed to align skill sets with customer and business needs. This confidence and flexibility are key to true workplace transformation—when humans and AI partner to unlock new skills and systems that change how entire organizations run. 
+Glean enables your organization to evolve from AI-literate to AI-first to AI-amplified, growing alongside your business as people and AI work hand in hand to deliver great results. Assistant provides your employees with the confidence they need to tackle new and complex challenges. Organizations gain the flexibility to reconfigure as needed to align skill sets with customer and business needs. This confidence and flexibility are key to true workplace transformation-when humans and AI partner to unlock new skills and systems that change how entire organizations run. 
 
-Learn more about how Glean Assistant can transform your organization to work hand in hand with AI [here](http://glean.com/glean-live)—and sign up for a free [demo](https://www.glean.com/get-a-demo) today. 
+Learn more about how Glean Assistant can transform your organization to work hand in hand with AI [here](http://glean.com/glean-live)-and sign up for a free [demo](https://www.glean.com/get-a-demo) today. 
 
 Availability: 
 

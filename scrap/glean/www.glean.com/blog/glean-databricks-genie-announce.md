@@ -111,7 +111,7 @@ Finally, Sarah checks Glean to see if the marketing team has previously sent any
 
 We understand that getting the right answers regarding enterprise knowledge takes a horizontal approach to information search. Since the day we launched Glean Assistant, providing our users with the capability to interact with and analyze structured, tabular data has been a priority for us.
 
-Soon, with the power of Glean's enterprise-ready platform combined with [Databricks AI/BI Genie](https://www.databricks.com/product/ai-bi/genie)’s structured data capabilities, users can interact with a simple interface to chat with all company data—structured or unstructured—regardless of where it lives. 
+Soon, with the power of Glean's enterprise-ready platform combined with [Databricks AI/BI Genie](https://www.databricks.com/product/ai-bi/genie)’s structured data capabilities, users can interact with a simple interface to chat with all company data-structured or unstructured-regardless of where it lives. 
 
 "Glean is excited about the release of Databricks AI/BI Genie, and the potential to integrate Genie as a native knowledge source within Glean," said Arvind Jain, Co-founder and CEO of Glean. "Integration of Glean and Genie will allow users to chat with the breadth of their enterprise data, uniting structured and unstructured data like never before while maintaining permissions and security." 
 

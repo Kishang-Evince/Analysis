@@ -51,7 +51,7 @@ If you're not seeing citations when you expect them, try these steps:
 
 -   **Check your source toggles.** Make sure **Use company sources** is turned on in the composer settings. If you also want web results, turn on **Search the web**.
 -   **Switch to thinking mode.** Thinking mode spends more time planning and uses more tools, which produces more reliable citations. Fast mode prioritizes speed and may skip retrieval steps for queries it considers straightforward.
--   **Be specific in your query.** Rephrase your question to anchor it to company-specific knowledge. Add or tag relevant documentation URLs — for example, "According to our FY25 strategy doc…"
+-   **Be specific in your query.** Rephrase your question to anchor it to company-specific knowledge. Add or tag relevant documentation URLs - for example, "According to our FY25 strategy doc…"
 -   **Explicitly request a search.** Prompting Assistant to search (for example, "Use Glean search to answer this") can improve citation coverage.
 -   **Add custom instructions.** You can add a custom instruction such as: *"For every question, first check the company's internal knowledge and answer based on it. If the information is not found, then use web search and clearly distinguish external sources."* This helps guide Assistant to prioritize company knowledge.
 

@@ -31,12 +31,12 @@ Admins can share Skills from the **Admin console** management interface.
     **General access:**
     
     -   Choose from the dropdown:
-        -   **Restricted to people with access** — only the people, departments, and groups in **People with access** can use the Skill.
-        -   **Anyone at \[Company\] with the link can view** — anyone in the organization can find and use the Skill.
+        -   **Restricted to people with access** - only the people, departments, and groups in **People with access** can use the Skill.
+        -   **Anyone at \[Company\] with the link can view** - anyone in the organization can find and use the Skill.
     
     **Advanced settings (admins and Skills Moderators only):**
     
-    -   **Auto-enable** — when checked, Assistant automatically triggers this Skill when relevant. Teammates can turn it off anytime.
+    -   **Auto-enable** - when checked, Assistant automatically triggers this Skill when relevant. Teammates can turn it off anytime.
 6.  Click **Save**.
     
 
@@ -50,8 +50,8 @@ Admins can also enable or disable **Auto-enable** for any Skill directly from th
 
 When sharing a Skill, you assign an access level to each recipient or group:
 
--   **Viewer** — can use the Skill.
--   **Editor** — can use and edit the Skill.
+-   **Viewer** - can use the Skill.
+-   **Editor** - can use and edit the Skill.
 
 The Skill creator is the **Owner**. Owner is set automatically and can't be assigned from the share dialog.
 

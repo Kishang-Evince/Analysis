@@ -59,7 +59,7 @@ S3 ACLs and bucket policies are **not** replayed inside Glean. Indexed documents
 ### Security notes[​](#security-notes "Direct link to Security notes")
 
 -   Access uses a cross-account IAM role (AWS-hosted) or federated web identity (GCP-hosted), with read-only scope to listed buckets.
--   After content is indexed, Glean does not re-check S3 ACLs on every search—plan what you put in the allowlist accordingly.
+-   After content is indexed, Glean does not re-check S3 ACLs on every search-plan what you put in the allowlist accordingly.
 
 ### Additional limitations[​](#additional-limitations "Direct link to Additional limitations")
 

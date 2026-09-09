@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:28:59.641Z"
 ---
 On this page
 
-Deep Research is an AI agent that generates detailed, citation-rich reports by synthesizing information from your internal enterprise systems and the web. It's built for complex, multi-source questions—such as strategic planning, competitive analysis, and research—rather than quick fact lookups. This page covers how to turn Deep Research on or off and the key details admins should know. For end-user instructions, see [Deep Research](/user-guide/assistant/deep-research).
+Deep Research is an AI agent that generates detailed, citation-rich reports by synthesizing information from your internal enterprise systems and the web. It's built for complex, multi-source questions-such as strategic planning, competitive analysis, and research-rather than quick fact lookups. This page covers how to turn Deep Research on or off and the key details admins should know. For end-user instructions, see [Deep Research](/user-guide/assistant/deep-research).
 
 ## Enable or disable Deep Research[​](#enable-or-disable-deep-research "Direct link to Enable or disable Deep Research")
 

@@ -99,7 +99,7 @@ March 20, 2026
 
 ### Top 5 no‑code automation tools in 2026 (and why you also need AI agents with context)
 
-See the top 5 no-code automation tools for 2026, compared on features, pricing, and best use cases — pick the right one for your team in minutes.
+See the top 5 no-code automation tools for 2026, compared on features, pricing, and best use cases - pick the right one for your team in minutes.
 
 ![Emrecan Dogan](https://cdn.prod.website-files.com/613513981b0efaf850830620/65dee49587cf3c6a326a1d18_Emrecan.jpeg)
 

@@ -15,7 +15,7 @@
 
 **Field definition:** Primary design model of the editor (Visual Drag-and-Drop, Code-First, Natural Language Directives, Hybrid).  
 **Prerequisites / Licensing:** Agent Builder access; Auto + Workflow modes enabled in tenant.  
-**Overall builder classification (Doc-Verified):** **Hybrid** — NL-first with optional visual Workflow canvas; code/headless path for Auto agents only.  
+**Overall builder classification (Doc-Verified):** **Hybrid** - NL-first with optional visual Workflow canvas; code/headless path for Auto agents only.  
 **Confidence Level:** **Doc-Verified** · **Pending Sandbox** (tenant mode availability)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [Agent Builder concepts](https://docs.glean.com/agents/concepts/agent-builder) · [Create your first agent](https://docs.glean.com/agents/create-agents/create-your-first-agent) · [Auto mode](https://docs.glean.com/agents/auto-mode-agent) · [Headless builder](https://docs.glean.com/agents/create-agents/create-agent-via-headless-builder)

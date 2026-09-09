@@ -56,7 +56,7 @@ Explore new agents
 
 Coming later this week
 
-Generate cleaner drafts and clearer messaging — with less busywork.
+Generate cleaner drafts and clearer messaging - with less busywork.
 
 
 

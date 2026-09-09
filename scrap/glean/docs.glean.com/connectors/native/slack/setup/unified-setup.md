@@ -11,10 +11,10 @@ You're reading the **new setup**[Already have Slack connected? →](/connectors/
 
 Connect Slack to Glean through a single guided flow in the Glean admin console. You enter your workspace details, connect Slack, and set up sync.
 
-1.  Workspace detailstoday — current step
-2.  Connect Slacktoday — current step
-3.  Set up synctoday — current step
-4.  Identity crawl and search switch ona few days — happens automatically
+1.  Workspace detailstoday - current step
+2.  Connect Slacktoday - current step
+3.  Set up synctoday - current step
+4.  Identity crawl and search switch ona few days - happens automatically
 
 ### Prerequisites[​](#prerequisites "Direct link to Prerequisites")
 

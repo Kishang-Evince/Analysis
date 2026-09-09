@@ -43,7 +43,7 @@ You want to update a weekly product update blog post with new information and ma
 
 *Instruction to an agent:*
 
-"Find the Confluence blog post titled **Weekly product update — December 5** in the **Engineering** space. Update the title to add **(Revised)** and expand the Features section to include the new dashboard widgets feature. Mark this as a minor edit with the version message 'Added dashboard widgets info'."
+"Find the Confluence blog post titled **Weekly product update - December 5** in the **Engineering** space. Update the title to add **(Revised)** and expand the Features section to include the new dashboard widgets feature. Mark this as a minor edit with the version message 'Added dashboard widgets info'."
 
 *Resulting behavior:*
 
@@ -55,7 +55,7 @@ You want to update a weekly product update blog post with new information and ma
         
     -   `Space ID` set to the Engineering space ID.
         
-    -   `Title` updated to `Weekly product update — December 5 (Revised)`.
+    -   `Title` updated to `Weekly product update - December 5 (Revised)`.
         
     -   `Body content` updated with the expanded Features section including dashboard widgets.
         

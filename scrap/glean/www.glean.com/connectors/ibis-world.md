@@ -2,12 +2,12 @@
 url: "https://www.glean.com/connectors/ibis-world"
 canonical: "https://www.glean.com/connectors/ibis-world"
 title: "IBISWorld integration with Glean | Glean Work AI"
-description: "Get to the right IBISWorld industry report in Glean — no report codes required."
+description: "Get to the right IBISWorld industry report in Glean - no report codes required."
 fetched_at: "2026-09-01T13:25:47.104Z"
 ---
 ### Overview
 
-IBISWorld publishes analyst-verified industry research across thousands of markets worldwide — covering performance trends, competitive landscapes, and five-year forecasts. By connecting to IBISWorld, Glean makes that research queryable in natural language, so teams can pull market context into their work without hunting through a report library.
+IBISWorld publishes analyst-verified industry research across thousands of markets worldwide - covering performance trends, competitive landscapes, and five-year forecasts. By connecting to IBISWorld, Glean makes that research queryable in natural language, so teams can pull market context into their work without hunting through a report library.
 
 ### Features
 
@@ -19,7 +19,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-Industry research that used to mean navigating a report library now starts with a question. IBISWorld in Glean puts analyst-verified market intelligence within reach of the governed workflows teams already rely on — integrated with the internal account data and company context that gives it meaning.
+Industry research that used to mean navigating a report library now starts with a question. IBISWorld in Glean puts analyst-verified market intelligence within reach of the governed workflows teams already rely on - integrated with the internal account data and company context that gives it meaning.
 
 ## Work AI that works.
 

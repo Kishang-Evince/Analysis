@@ -21,7 +21,7 @@ Glean provides helpful, AI-generated answers directly in Slack channels, either 
     
     ![View prompt shown before the private answer is generated](/img/administration/platform/embed-integrate/view-prompt-latency-pattern.png)
     
-5.  **Generate the response:** After the user clicks **View**, they can select **Generate** to have Glean prepare the response. Glean then displays a private *Only visible to you — Generating your answer…* message while it prepares the response.
+5.  **Generate the response:** After the user clicks **View**, they can select **Generate** to have Glean prepare the response. Glean then displays a private *Only visible to you - Generating your answer…* message while it prepares the response.
     
     -   **Enforce permissions:** Like Glean Search and Chat, the final response respects individual content permissions. This ensures the answer includes only data the user is authorized to access.
     

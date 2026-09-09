@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:29:00.858Z"
 ---
 On this page
 
-Glean Assistant and Glean Agents interactions run as workflows. The `WorkflowRun` event type in Glean Customer Event Logs captures each top-level workflow invocation as a single, well-structured entry, giving you comprehensive visibility into usage across Glean AI products — including agents, AI Answers, Summarization, Deep Research, Daily Digests, and more.
+Glean Assistant and Glean Agents interactions run as workflows. The `WorkflowRun` event type in Glean Customer Event Logs captures each top-level workflow invocation as a single, well-structured entry, giving you comprehensive visibility into usage across Glean AI products - including agents, AI Answers, Summarization, Deep Research, Daily Digests, and more.
 
 Because it consolidates all relevant execution data in one place, `WorkflowRun` makes analysis of assistant usage, agent activity, and AI-driven features simpler, more reliable, and more performant.
 
@@ -80,7 +80,7 @@ No. `WorkflowRun` contains only data generated after it replaced the `Workflow` 
 
 Filter on `initiator = 'USER'`. The `feature`, `namespace`, or `workflow_id` fields can further segment by workflow type.
 
-### Some workflow\_ids look like names, others are random strings—why?
+### Some workflow\_ids look like names, others are random strings-why?
 
 Named IDs are Glean-provided or default workflows. Random-appearing IDs are custom or user-defined.
 

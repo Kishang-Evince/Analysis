@@ -115,11 +115,11 @@ The Enterprise ADLC provides a single lifecycle that every agent builder can fol
 
 **Context** – Identify the minimum set of permission‑aware data sources, tools, examples, and feedback signals the agent needs to do its job and to be evaluated fairly. This includes which systems it can read from, which actions it is allowed to take, and what telemetry you will use to understand how it’s performing.
 
-**Develop** – Turn the design into a reliable agent. Choose the right execution model (for example, a structured workflow versus more flexible auto‑mode), then test against golden examples, run it in parallel with the existing process, and pilot with design partners until the agent behaves predictably—not just on a hand‑picked demo set.
+**Develop** – Turn the design into a reliable agent. Choose the right execution model (for example, a structured workflow versus more flexible auto‑mode), then test against golden examples, run it in parallel with the existing process, and pilot with design partners until the agent behaves predictably-not just on a hand‑picked demo set.
 
 **Launch** – Treat rollout as a change‑management exercise, not a switch flip. Decide who will see the agent first, how it will show up in their workflow, what training and communication they need, and which guardrails, SLOs, and kill switches must be in place before you broaden access.
 
-**Monitor & Improve** – Operate the agent like any other critical system. Use dashboards, alerts, and runbooks to track impact and quality over time, handle incidents, and feed real‑world signals—user feedback, overrides, drift in key metrics—back into earlier stages of the lifecycle so the agent keeps improving.
+**Monitor & Improve** – Operate the agent like any other critical system. Use dashboards, alerts, and runbooks to track impact and quality over time, handle incidents, and feed real‑world signals-user feedback, overrides, drift in key metrics-back into earlier stages of the lifecycle so the agent keeps improving.
 
 This step is not a one-time stage but is actually an ongoing process as agents are maintained, monitored, upgraded, and eventually sunset as business needs change.  
 
@@ -152,13 +152,13 @@ The next wave of enterprise AI won’t be won by the teams with the most agent d
 
 Our new Agent features reflect a broader shift in how enterprises need to approach agents: as systems that must be designed, governed, and improved over time.
 
-Because in the enterprise, success won’t come from shipping the most agents. It will come from building agents that are trustworthy, governable, and genuinely useful—the kind organizations can improve over time and scale with confidence.
+Because in the enterprise, success won’t come from shipping the most agents. It will come from building agents that are trustworthy, governable, and genuinely useful-the kind organizations can improve over time and scale with confidence.
 
 ‍
 
 ## **Ready to go inside the ADLC?**
 
-We have captured these ideas—and many detailed examples—in our new eBook, ***The CIO’s Guide to Enterprise AI Agents***, which introduces the ADLC, walks through concrete agent examples across Support, Sales, and Engineering, and shows how to measure ROI in a way your CFO will trust.
+We have captured these ideas-and many detailed examples-in our new eBook, ***The CIO’s Guide to Enterprise AI Agents***, which introduces the ADLC, walks through concrete agent examples across Support, Sales, and Engineering, and shows how to measure ROI in a way your CFO will trust.
 
 {{richtext-banner-component}}
 

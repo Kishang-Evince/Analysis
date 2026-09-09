@@ -33,15 +33,15 @@
 
 ### Engineering observation (Doc-Verified)
 
-- Marketplace co-sell aligns with 4.9.7 Field 1 procurement channels — same deal may route AWS/Azure/GCP committed spend.
-- Healthcare vertical explicitly supported — joint GTM with Perimeter-type clients plausible via Services partner track.
+- Marketplace co-sell aligns with 4.9.7 Field 1 procurement channels - same deal may route AWS/Azure/GCP committed spend.
+- Healthcare vertical explicitly supported - joint GTM with Perimeter-type clients plausible via Services partner track.
 - No published MDF dollar amounts or eligibility thresholds.
 
 ### Verification steps / test case
 
 1. Validate marketplace listing URLs (AWS/Azure/GCP) are active.
 2. Ask partner manager for MDF eligibility and application process.
-3. Request co-sell registration for one target account — document field team assignment.
+3. Request co-sell registration for one target account - document field team assignment.
 4. Confirm whether formal target-account list exists for healthcare mid-market.
 
 **Risk & Cost Impact:** Risk: Low | Cost: MDF may require matched spend

@@ -77,7 +77,7 @@ System prompts and tool definitions can add hundreds to thousands of hidden toke
 
 Three silent multipliers inflate token consumption beyond the obvious per-request charges. First, [retrieval noise](https://arxiv.org/abs/2401.14887): a [retrieval-augmented generation (RAG)](https://www.glean.com/blog/rag-for-llms) pipeline that sends pages of marginally relevant content forces the model to sift through context it doesn't need, generating longer, less precise outputs at that higher output-token price.
 
-Second, extended reasoning chains: when the model lacks the right context, it hedges, qualifies, and produces verbose responses that consume more output tokens without improving accuracy. Third, retry loops: poor initial answers trigger follow-up calls for clarification or correction, each carrying its own token cost. In agentic workflows, these three multipliers don't add up linearly — they compound.
+Second, extended reasoning chains: when the model lacks the right context, it hedges, qualifies, and produces verbose responses that consume more output tokens without improving accuracy. Third, retry loops: poor initial answers trigger follow-up calls for clarification or correction, each carrying its own token cost. In agentic workflows, these three multipliers don't add up linearly - they compound.
 
 A multi-step [agent chain](https://www.glean.com/blog/ai-agents-enterprise) can cost many times more than a single call because each step accumulates the context of every previous step. Agentic tasks routinely consume far more tokens than a single chat exchange, and that cost swings significantly based on how well the input context is grounded.
 
@@ -100,11 +100,11 @@ Each of these failures inflates the token tax by forcing the model to process co
 
 ## The economic implications of token usage at enterprise scale
 
-The pattern follows [Jevons paradox](https://news.northeastern.edu/2025/02/07/jevons-paradox-ai-future/), a principle from 19th-century economics: when a resource becomes cheaper per unit, consumption grows faster than the unit price drops. Enterprise AI is following the same curve — as per-token costs have fallen, organizations scaling agentic workflows have seen total token consumption grow far faster.
+The pattern follows [Jevons paradox](https://news.northeastern.edu/2025/02/07/jevons-paradox-ai-future/), a principle from 19th-century economics: when a resource becomes cheaper per unit, consumption grows faster than the unit price drops. Enterprise AI is following the same curve - as per-token costs have fallen, organizations scaling agentic workflows have seen total token consumption grow far faster.
 
-As organizations deploy more agentic workflows, per-step token volume grows, and the [monthly bill](https://usmsystems.com/ai-software-cost/) follows — even when per-token rates hold steady.
+As organizations deploy more agentic workflows, per-step token volume grows, and the [monthly bill](https://usmsystems.com/ai-software-cost/) follows - even when per-token rates hold steady.
 
-Because agentic workflows chain calls together — each step carrying its own retrieval payload and accumulating context from prior steps — even small increases in per-step token waste multiply across the chain. The problem accelerates as organizations move from isolated chatbot interactions to multi-step agent workflows operating across their full knowledge base.
+Because agentic workflows chain calls together - each step carrying its own retrieval payload and accumulating context from prior steps - even small increases in per-step token waste multiply across the chain. The problem accelerates as organizations move from isolated chatbot interactions to multi-step agent workflows operating across their full knowledge base.
 
 The missing metric in most enterprise AI budgets is Cost Per Defensible Output. A defensible output is a response accurate enough to act on without additional human verification.
 
@@ -158,7 +158,7 @@ When a model lacks sufficient grounded context for a query, it fills gaps with p
 
 ### Can switching to a cheaper model solve the token tax problem?
 
-No. A cheaper model reduces the per-token rate but does not address the volume problem. If retrieval noise sends excessive context to the model, a lower-cost model will still process all of it — and less capable models often handle noisy context worse, producing longer outputs that increase total consumption.
+No. A cheaper model reduces the per-token rate but does not address the volume problem. If retrieval noise sends excessive context to the model, a lower-cost model will still process all of it - and less capable models often handle noisy context worse, producing longer outputs that increase total consumption.
 
 ### Why do enterprise AI pilots succeed but production deployments stall?
 

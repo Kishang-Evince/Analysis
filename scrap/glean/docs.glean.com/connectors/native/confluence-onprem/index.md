@@ -25,7 +25,7 @@ The Glean connector for Confluence Data Center indexes Confluence pages, blog po
 
 ## Indexed content and data[​](#indexed-content-and-data "Direct link to Indexed content and data")
 
-The Glean Confluence connector crawls three distinct types of data—Content, Identity, and Activity—to ensure a fast, comprehensive, and securely managed index.
+The Glean Confluence connector crawls three distinct types of data-Content, Identity, and Activity-to ensure a fast, comprehensive, and securely managed index.
 
 ### Content[​](#content "Direct link to Content")
 

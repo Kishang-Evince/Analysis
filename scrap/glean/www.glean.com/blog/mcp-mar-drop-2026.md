@@ -145,7 +145,7 @@ Because MCP connects AI agents to real systems and data, it must be treated as a
 
 Inputs and outputs flowing through MCP are scanned for prompt injection, malicious code, hidden instructions, and other adversarial patterns. Attempts to override system policies, manipulate the agent’s reasoning, or insert instructions that alter downstream action behavior are blocked before they can propagate.
 
-By combining centralized governance, least-privilege execution, runtime safety protections, and continuous inspection of action interactions, Glean allows organizations to adopt MCP without sacrificing security or control. The result is a platform where agents can interact with enterprise systems confidently—while enterprises retain full visibility, authority, and protection over how those interactions occur.
+By combining centralized governance, least-privilege execution, runtime safety protections, and continuous inspection of action interactions, Glean allows organizations to adopt MCP without sacrificing security or control. The result is a platform where agents can interact with enterprise systems confidently-while enterprises retain full visibility, authority, and protection over how those interactions occur.
 
 ## Bringing MCP to the enterprise reliably and safely
 

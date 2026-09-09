@@ -65,7 +65,7 @@ Share this article:
 
 Chatbots keep answers consistent across customer service teams by pulling every response from one [centralized knowledge source](https://www.glean.com/blog/enterprise-knowledge-management-guide), not from what each agent happens to remember. That shared foundation is what makes chatbot consistency in customer service achievable at scale.
 
-Chatbot consistency in customer service means customers get the same accurate answer to a question, whether over chat or email or at any hour — and [68%](https://www.zendesk.com/blog/ai-customer-service-statistics/) of consumers expect chatbots to match the expertise of highly skilled human agents. Standardized responses strip out the variation that creeps in when different agents interpret the same policy in different ways.
+Chatbot consistency in customer service means customers get the same accurate answer to a question, whether over chat or email or at any hour - and [68%](https://www.zendesk.com/blog/ai-customer-service-statistics/) of consumers expect chatbots to match the expertise of highly skilled human agents. Standardized responses strip out the variation that creeps in when different agents interpret the same policy in different ways.
 
 That reliability shapes how customers judge a brand, and conflicting answers quickly erode it. Customers who get contradictory answers from different agents lose trust in the brand and escalate, turning a simple question into a drawn-out complaint. That trust is already fragile: just [30%](https://www.pwc.com/us/en/library/trust-in-business-survey.html) of consumers say they highly trust the companies they do business with.
 
@@ -117,7 +117,7 @@ RAG also keeps pace with change. When a document updates, the new version enters
 
 A standalone large language model behaves differently. It produces fluent text from patterns in its training data, so the same question can return different answers across sessions, none of them tied to a verifiable source.
 
-Enterprise implementations build on this foundation. Glean's three-stage retrieval architecture — plan, retrieve, and generate — enforces permissions upstream of the language model, so the system retrieves only what a user is authorized to see before it writes a word.
+Enterprise implementations build on this foundation. Glean's three-stage retrieval architecture - plan, retrieve, and generate - enforces permissions upstream of the language model, so the system retrieves only what a user is authorized to see before it writes a word.
 
 ## How to implement chatbots for uniform customer service across channels
 

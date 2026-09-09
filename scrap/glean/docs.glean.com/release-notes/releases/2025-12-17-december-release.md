@@ -11,7 +11,7 @@ On this page
 
 #### Company search improvements in Agents[​](#company-search-improvements-in-agents "Direct link to Company search improvements in Agents")
 
-Company Search is now easier to configure and debug in Agents. Glean now surfaces a clearer view of the underlying query and highlights key operators (such as app and date filters) so you can quickly verify the scope and behavior. You can inspect what actually ran during a preview, copy the query, and adjust it if needed—reducing guesswork and making it faster to tune agents that depend on company-wide search.
+Company Search is now easier to configure and debug in Agents. Glean now surfaces a clearer view of the underlying query and highlights key operators (such as app and date filters) so you can quickly verify the scope and behavior. You can inspect what actually ran during a preview, copy the query, and adjust it if needed-reducing guesswork and making it faster to tune agents that depend on company-wide search.
 
 **How to access:** Available to all Agent Builders.
 
@@ -25,7 +25,7 @@ Actions *ROAD-1045-MR*
 
 Glean Assistant will retire two features: the ability to filter specific sources in chat and the option to remove sources from existing Assistant responses. These features are being removed to streamline the user experience and because the latest generation of Glean Assistant, powered by advanced LLMs like GPT-5 and Claude Sonnet 4.5, now provides more accurate, context-aware answers without requiring manual source selection.
 
-With improvements in Assistant, users can simply describe what they need in natural language—including whether it should focus on or exclude a specific data source—and Assistant will automatically execute. Users can continue to filter specific sources in search.
+With improvements in Assistant, users can simply describe what they need in natural language-including whether it should focus on or exclude a specific data source-and Assistant will automatically execute. Users can continue to filter specific sources in search.
 
 Change date: December 4, 2025 Learn more @ /release-notes/sunset/assistant
 
@@ -123,7 +123,7 @@ Assistant *ROAD-772*
 
 #### Improved freshness for Gong calls[​](#improved-freshness-for-gong-calls "Direct link to Improved freshness for Gong calls")
 
-Glean now uses incremental crawls for the Gong connector so new calls become searchable in Glean within minutes after Gong finishes processing them, instead of hours or even days on large deployments. This greatly improves workflows that depend on recent calls—like post‑call follow‑ups or content‑triggered agents—so teams can act on the latest conversations much sooner. End‑to‑end freshness still depends on Gong’s own processing time (typically 10–60 minutes after a call ends). Manually uploaded, very long, or deleted calls may still take longer because they rely on periodic full crawls.
+Glean now uses incremental crawls for the Gong connector so new calls become searchable in Glean within minutes after Gong finishes processing them, instead of hours or even days on large deployments. This greatly improves workflows that depend on recent calls-like post‑call follow‑ups or content‑triggered agents-so teams can act on the latest conversations much sooner. End‑to‑end freshness still depends on Gong’s own processing time (typically 10–60 minutes after a call ends). Manually uploaded, very long, or deleted calls may still take longer because they rely on periodic full crawls.
 
 **How to access:** No action needed
 
@@ -135,7 +135,7 @@ Connectors *ROAD-1065*
 
 #### GitHub Enterprise - multiple GitHub Enterprise Server instances[​](#github-enterprise---multiple-github-enterprise-server-instances "Direct link to GitHub Enterprise - multiple GitHub Enterprise Server instances")
 
-Organizations can now connect and manage multiple GitHub Enterprise Server instances within Glean. This enhancement allows teams with separate production, development, or geographically distributed GitHub Enterprise environments to index, search, and enforce permissions across all their instances—without workarounds or manual configuration. The update streamlines onboarding for complex organizations and supports more flexible, scalable GitHub integrations.
+Organizations can now connect and manage multiple GitHub Enterprise Server instances within Glean. This enhancement allows teams with separate production, development, or geographically distributed GitHub Enterprise environments to index, search, and enforce permissions across all their instances-without workarounds or manual configuration. The update streamlines onboarding for complex organizations and supports more flexible, scalable GitHub integrations.
 
 [Learn more](/connectors/native/github-enterprise-server/)
 

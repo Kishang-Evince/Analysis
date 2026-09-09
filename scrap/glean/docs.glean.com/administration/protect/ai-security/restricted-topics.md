@@ -28,8 +28,8 @@ You can test Protect+ initially using a Super Admin account, but it's recommende
 1.  In the Admin Console, navigate to **Glean Protect → AI Security Guardrails**.
 2.  Select the **Restricted Topics** guardrail.
 3.  Create and enable custom topics, or enable out-of-the-box (OOB) topics, and configure:
-    -   **Scope** — which users, groups, or agents the policy applies to
-    -   **Enforcement** — Flag for review, Redact Response, or Block
+    -   **Scope** - which users, groups, or agents the policy applies to
+    -   **Enforcement** - Flag for review, Redact Response, or Block
 
 ## Out-of-the-box topics[​](#out-of-the-box-topics "Direct link to Out-of-the-box topics")
 
@@ -43,7 +43,7 @@ These topics provide enterprises with readily available, compliant policies and 
 
 Important
 
-OOB topics are read-only — you can enable or disable them, but you can't edit or delete them.
+OOB topics are read-only - you can enable or disable them, but you can't edit or delete them.
 
 ## Custom topics[​](#custom-topics "Direct link to Custom topics")
 
@@ -54,9 +54,9 @@ Custom topics appear under the **Created by You** section.
 1.  In the Admin Console, navigate to **Glean Protect → AI Security → Policies → Restricted Topics**.
 2.  Click **Add**.
 3.  Configure the topic:
-    -   **Name** — a clear, concise label (3–50 characters).
-    -   **Description** — briefly describe what should and shouldn't be covered (10–900 characters).
-    -   **Activities** — add examples that clarify intent and boundaries:
+    -   **Name** - a clear, concise label (3–50 characters).
+    -   **Description** - briefly describe what should and shouldn't be covered (10–900 characters).
+    -   **Activities** - add examples that clarify intent and boundaries:
         -   Define at least two **UNSAFE** activities under **Detect** (max 150 characters each). These activities are detected and disallowed.
         -   Define at least two **SAFE** activities under **Exclude** (max 150 characters each). **SAFE** activities are excluded from restriction and are allowed.
         -   You can define up to five **SAFE** and five **UNSAFE** activities per topic.
@@ -127,7 +127,7 @@ Use the Test panel in Restricted Topics to validate how your topics behave befor
 2.  Ensure the topics you want to evaluate are enabled (checked).
 3.  Enter a sample query in the Test Panel, or choose from the sample list.
 4.  Click **Run test**.
-5.  Review the results — for each enabled topic, the test shows:
+5.  Review the results - for each enabled topic, the test shows:
     -   Match confidence level (Low, Medium, High)
     -   Reasoning for the classification
 
@@ -145,9 +145,9 @@ Enforcement controls what happens when a restricted topic is detected.
 
 Use **Target** to choose where the policy is applied. You can select one or more:
 
--   **Glean (Chat)** — applies to all messages in the main Glean chat surface.
--   **Interactive agents** — applies to interactive (chat-based) agents.
--   **Automatically triggered agents** — applies to scheduled or content-triggered agents.
+-   **Glean (Chat)** - applies to all messages in the main Glean chat surface.
+-   **Interactive agents** - applies to interactive (chat-based) agents.
+-   **Automatically triggered agents** - applies to scheduled or content-triggered agents.
 
 If at least one topic is selected, you must also select at least one target.
 

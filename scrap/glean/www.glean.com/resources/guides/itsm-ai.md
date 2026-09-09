@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/itsm-ai"
 canonical: "https://www.glean.com/resources/guides/itsm-ai"
 title: "How the role of AI is evolving in IT service"
-description: "ITSM organizations face rising delivery pressures and metrics scrutiny amidst limited budget growth and evolving talent needs. Generative AI provides a perfect way to tackle these challenges—but it takes a measured, thoughtful approach to integrate it effectively into ITSM workflows."
+description: "ITSM organizations face rising delivery pressures and metrics scrutiny amidst limited budget growth and evolving talent needs. Generative AI provides a perfect way to tackle these challenges-but it takes a measured, thoughtful approach to integrate it effectively into ITSM workflows."
 fetched_at: "2026-09-01T13:27:09.822Z"
 ---
 ## Work AI that works.

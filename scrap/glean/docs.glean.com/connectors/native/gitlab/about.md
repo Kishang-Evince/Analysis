@@ -23,7 +23,7 @@ To index more than one top-level group, add a separate GitLab Cloud connector fo
 
 Existing connectors
 
-If your connector was set up before the top-level group field existed, validation keeps passing while the field is empty—the top-level group check only runs once a group has been recorded. Glean records one for you as soon as the token resolves to exactly one top-level group, so no action is needed. If the token reaches several top-level groups, scope it down to one and add a separate connector for each remaining group.
+If your connector was set up before the top-level group field existed, validation keeps passing while the field is empty-the top-level group check only runs once a group has been recorded. Glean records one for you as soon as the token resolves to exactly one top-level group, so no action is needed. If the token reaches several top-level groups, scope it down to one and add a separate connector for each remaining group.
 
 ## Supported objects[​](#supported-objects "Direct link to Supported objects")
 
@@ -59,7 +59,7 @@ Glean indexes the following GitLab objects. Merge requests, code, issues, and wi
 ## Limitations[​](#limitations "Direct link to Limitations")
 
 -   Each connector indexes a single **top-level group**. Indexing more than one requires a separate GitLab Cloud connector per group. See [Top-level group scope](#top-level-group-scope).
--   Merge requests (with comments and diffs), code, issues, and wikis cannot be selectively enabled or disabled — they are always indexed. Epics are the only object type with a setup toggle: the **Crawl Group Epics** option on the connector setup page controls whether epics are indexed, and it is selected by default.
+-   Merge requests (with comments and diffs), code, issues, and wikis cannot be selectively enabled or disabled - they are always indexed. Epics are the only object type with a setup toggle: the **Crawl Group Epics** option on the connector setup page controls whether epics are indexed, and it is selected by default.
 -   Only file content on the **default branch** is indexed for code and commit messages. Other branches are not crawled.
 -   Wiki indexing covers pages whose file body is `.md` or `.txt`; other file types in a wiki are not indexed.
 -   **Snippets** and **standalone milestones** are not supported.
@@ -78,7 +78,7 @@ The GitLab REST API does not expose user email addresses, so Glean cannot automa
 
 ### Data access model[​](#data-access-model "Direct link to Data access model")
 
--   The connector is **read-only** — Glean never creates, modifies, or deletes content in GitLab.
+-   The connector is **read-only** - Glean never creates, modifies, or deletes content in GitLab.
 -   Authentication uses a group access token or a service account access token, sent as a bearer token over HTTPS.
 -   Content is indexed from the projects in the top-level group that the token can access, subject to the token's scopes.
 

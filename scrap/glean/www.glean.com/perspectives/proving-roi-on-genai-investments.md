@@ -83,11 +83,11 @@ The pressure to demonstrate value has intensified as AI moves from experimental 
 
 Measuring generative AI ROI requires a nuanced understanding of both hard and soft returns. Hard ROI encompasses tangible financial impacts: cost savings through automation, revenue increases from enhanced customer experiences, and operational efficiency gains. Manufacturing companies using AI-powered quality control systems, for instance, report 15-20% reductions in defect rates, translating directly to bottom-line improvements.
 
-Perhaps most critically, the inability to demonstrate ROI creates a credibility gap that threatens future AI investments. In fact, approximately [70%](https://www.bcg.com/press/24october2024-ai-adoption-in-2024-74-of-companies-struggle-to-achieve-and-scale-value) of AI implementation challenges stem from people and process issues, 20% relate to technology problems, and only 10% involve AI algorithms—despite algorithms consuming disproportionate organizational attention. As one Fortune 500 CIO noted in a recent Gartner survey: "Our board approved our initial AI budget based on industry hype. Next year, they want proof, not promises."
+Perhaps most critically, the inability to demonstrate ROI creates a credibility gap that threatens future AI investments. In fact, approximately [70%](https://www.bcg.com/press/24october2024-ai-adoption-in-2024-74-of-companies-struggle-to-achieve-and-scale-value) of AI implementation challenges stem from people and process issues, 20% relate to technology problems, and only 10% involve AI algorithms-despite algorithms consuming disproportionate organizational attention. As one Fortune 500 CIO noted in a recent Gartner survey: "Our board approved our initial AI budget based on industry hype. Next year, they want proof, not promises."
 
 ### The cost of measurement gaps
 
-Organizations that fail to measure AI ROI face cascading challenges. Without clear metrics, AI initiatives risk becoming "random acts of automation" — disconnected projects that consume resources without advancing strategic objectives. This fragmentation leads to several critical issues:
+Organizations that fail to measure AI ROI face cascading challenges. Without clear metrics, AI initiatives risk becoming "random acts of automation" - disconnected projects that consume resources without advancing strategic objectives. This fragmentation leads to several critical issues:
 
 Investment prioritization becomes guesswork rather than data-driven decision-making. Teams cannot distinguish between high-impact use cases and resource-draining experiments. The absence of success metrics also undermines change management efforts; employees resist AI adoption when they cannot see tangible benefits or understand how the technology enhances their work.
 
@@ -139,7 +139,7 @@ Evaluating AI's impact requires a blend of diverse metrics, capturing a full spe
 
 Maintaining the effectiveness of AI initiatives relies on an adaptive mindset. Continuous evaluation and refinement ensure ongoing success:
 
-The path to demonstrating generative AI ROI becomes clearer when you have the right framework, metrics, and tools in place. By following these practical steps and maintaining a disciplined approach to measurement, you can transform AI investments from experimental costs into strategic assets that deliver quantifiable business value. Ready to accelerate your AI journey? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) — we'll show you how to unlock measurable results across your organization.
+The path to demonstrating generative AI ROI becomes clearer when you have the right framework, metrics, and tools in place. By following these practical steps and maintaining a disciplined approach to measurement, you can transform AI investments from experimental costs into strategic assets that deliver quantifiable business value. Ready to accelerate your AI journey? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) - we'll show you how to unlock measurable results across your organization.
 
 [
 

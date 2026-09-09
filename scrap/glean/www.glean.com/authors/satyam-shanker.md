@@ -30,7 +30,7 @@ August 24, 2022
 
 ### How we migrated 150 Cloud SQL instances using GCP DMS
 
-We migrated our Cloud SQL instances— a central part of the Glean index building architecture— to MySQL8. Here’s how we did it.
+We migrated our Cloud SQL instances- a central part of the Glean index building architecture- to MySQL8. Here’s how we did it.
 
 ![Satyam Shanker](https://cdn.prod.website-files.com/613513981b0efaf850830620/641443b7208e558a59f93731_glean-author-symbol.jpg)
 

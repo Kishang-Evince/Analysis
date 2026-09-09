@@ -83,7 +83,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-At Glean, we believe in the power of evolution. Branding is more than just a logo or a color palette—it's a reflection of our mission, values, and the people we serve. Over the years, Glean has evolved from being an enterprise search tool to an AI work assistant and platform, and it was time for our brand to evolve alongside that. 
+At Glean, we believe in the power of evolution. Branding is more than just a logo or a color palette-it's a reflection of our mission, values, and the people we serve. Over the years, Glean has evolved from being an enterprise search tool to an AI work assistant and platform, and it was time for our brand to evolve alongside that. 
 
 We partnered with [Kallan & Co.](https://www.kallan.co/) on our new branding and gathered customer feedback on the various concepts we explored. One of our customers noted that ‘using Glean is elegantly simplifying the chaos and complexity of today’s work’, a statement that’s helped us focus on what was important to display during our rebranding journey. 
 

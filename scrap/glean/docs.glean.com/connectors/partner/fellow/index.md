@@ -18,7 +18,7 @@ The Fellow connector in Glean automatically syncs meeting agendas, notes and AI 
 
 ## Benefits[​](#benefits "Direct link to Benefits")
 
-Make all Fellow meeting data—including notes, action items, and decisions—instantly searchable and secure within Glean, streamlining knowledge discovery.
+Make all Fellow meeting data-including notes, action items, and decisions-instantly searchable and secure within Glean, streamlining knowledge discovery.
 
 ## Pre-installation considerations[​](#pre-installation-considerations "Direct link to Pre-installation considerations")
 

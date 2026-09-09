@@ -288,7 +288,7 @@ Start by mapping every stage.
   
   awareness → consideration → first purchase → onboarding → retention →  re-engagement.  
   
-Each stage calls for different messaging—welcome emails shouldn’t read like a sales pitch, and re-engagement campaigns shouldn’t pretend a customer never bought from you.
+Each stage calls for different messaging-welcome emails shouldn’t read like a sales pitch, and re-engagement campaigns shouldn’t pretend a customer never bought from you.
 
 In practice, this means pulling from CRM notes, support tickets, product usage data, and past campaign reports, often across five different platforms.  
   
@@ -302,12 +302,12 @@ In practice, this means pulling from CRM notes, support tickets, product usage d
 
 Triggers are the engine. Common ones to configure:
 
--   **Form submissions** — subscribe, download, free trial sign-up
--   **Website visits** — pricing page, product page, specific category
--   **Purchase events** — order placed, specific product bought
--   **Cart events** — item added, checkout started, cart abandoned
--   **Time-based** — days since last purchase or sign-up
--   **Engagement signals** — opened, clicked, or went inactive
+-   **Form submissions** - subscribe, download, free trial sign-up
+-   **Website visits** - pricing page, product page, specific category
+-   **Purchase events** - order placed, specific product bought
+-   **Cart events** - item added, checkout started, cart abandoned
+-   **Time-based** - days since last purchase or sign-up
+-   **Engagement signals** - opened, clicked, or went inactive
 
 Before opening your automation platform, write out the full logic: trigger → condition → action → wait → next action. This makes workflows faster to build, easier to edit, and simpler to hand off.
 
@@ -315,13 +315,13 @@ Before opening your automation platform, write out the full logic: trigger → c
 
 **Automated email campaigns for ecommerce**
 
-Nearly 70% of online carts are abandoned before checkout ([Baymard Institute, 2025](https://baymard.com/lists/cart-abandonment-rate))—making cart recovery the single highest-ROI automation to implement first:
+Nearly 70% of online carts are abandoned before checkout ([Baymard Institute, 2025](https://baymard.com/lists/cart-abandonment-rate))-making cart recovery the single highest-ROI automation to implement first:
 
--   **Cart abandonment** — fire within 1 hour for best recovery rates
--   **Browse abandonment** — viewed a product but didn’t add to cart
--   **Post-purchase** — starts the onboarding process immediately after order confirmation
--   **Winback** — triggered after 60–90 days of no purchase activity
--   **Low inventory alert** — wishlisted item running low  
+-   **Cart abandonment** - fire within 1 hour for best recovery rates
+-   **Browse abandonment** - viewed a product but didn’t add to cart
+-   **Post-purchase** - starts the onboarding process immediately after order confirmation
+-   **Winback** - triggered after 60–90 days of no purchase activity
+-   **Low inventory alert** - wishlisted item running low  
       
     
 
@@ -371,13 +371,13 @@ Transactional emails, receipts, and shipping notifications have 60–80% open ra
      <tr class="rich-text-table\_row">  
        <td class="rich-text-table\_cell">Email 3: The proof</td>  
        <td class="rich-text-table\_cell">Day 7</td>  
-       <td class="rich-text-table\_cell">Social proof—reviews, testimonials, customer story.</td>  
+       <td class="rich-text-table\_cell">Social proof-reviews, testimonials, customer story.</td>  
        <td class="rich-text-table\_cell">Send on Day 7 after initial sign-up.</td>  
      </tr>  
      <tr class="rich-text-table\_row">  
        <td class="rich-text-table\_cell">Email 4: The offer</td>  
        <td class="rich-text-table\_cell">Day 14</td>  
-       <td class="rich-text-table\_cell">First purchase incentive—discount, free shipping, or trial upgrade.</td>  
+       <td class="rich-text-table\_cell">First purchase incentive-discount, free shipping, or trial upgrade.</td>  
        <td class="rich-text-table\_cell">Send on Day 14 after initial sign-up.</td>  
      </tr>  
      <tr class="rich-text-table\_row">  
@@ -421,7 +421,7 @@ Transactional emails, receipts, and shipping notifications have 60–80% open ra
        <td class="rich-text-table\_cell">Cart abandoned</td>  
        <td class="rich-text-table\_cell">Checkout started, session ends without purchase</td>  
        <td class="rich-text-table\_cell">Email 1</td>  
-       <td class="rich-text-table\_cell">1 hour – Soft reminder—product image, price, one CTA back to cart</td>  
+       <td class="rich-text-table\_cell">1 hour – Soft reminder-product image, price, one CTA back to cart</td>  
      </tr>  
      <tr class="rich-text-table\_row">  
        <td class="rich-text-table\_cell">Check</td>  
@@ -432,7 +432,7 @@ Transactional emails, receipts, and shipping notifications have 60–80% open ra
      <tr class="rich-text-table\_row">  
        <td class="rich-text-table\_cell">Email 2</td>  
        <td class="rich-text-table\_cell">24 hours</td>  
-       <td class="rich-text-table\_cell">Address objections—FAQ, returns policy, trust signals</td>  
+       <td class="rich-text-table\_cell">Address objections-FAQ, returns policy, trust signals</td>  
        <td class="rich-text-table\_cell">Send if cart not recovered at 24 hours</td>  
      </tr>  
      <tr class="rich-text-table\_row">  
@@ -508,9 +508,9 @@ Transactional emails, receipts, and shipping notifications have 60–80% open ra
 
 ### **Re-engagement sequence**
 
--   **Day 0: The check-in** — “We miss you—here’s what’s new.” Highlights recent products or content.
--   **Day 7: The incentive** — Discount or exclusive offer to drive a return purchase.
--   **Day 14: The honest ask** — “Should we keep in touch?” Clear opt-out. Protects deliverability.
+-   **Day 0: The check-in** - “We miss you-here’s what’s new.” Highlights recent products or content.
+-   **Day 7: The incentive** - Discount or exclusive offer to drive a return purchase.
+-   **Day 14: The honest ask** - “Should we keep in touch?” Clear opt-out. Protects deliverability.
 
 ### **Five-step educational drip**
 
@@ -528,7 +528,7 @@ If you’re producing 4–6 emails per sequence across multiple segments, consis
 
 ### **The email automation stack**
 
--   **ESP:** Klaviyo, ActiveCampaign, or HubSpot—your core automation engine
+-   **ESP:** Klaviyo, ActiveCampaign, or HubSpot-your core automation engine
 -   **CRM:** HubSpot, Salesforce, or your ESP’s built-in CRM
 -   **Landing pages:** Unbounce, Leadpages, or your ESP’s native builder
 -   **Analytics:** GA4 + ESP-native reporting
@@ -622,7 +622,7 @@ At 5,000 contacts, one person knows where everything is. At 30,000 with a team o
 
 Disorganized workflows at scale mean duplicate sequences, wrong drip assignments, and no one knowing which version is live. Fix this early:
 
--   **Naming convention:** \[Type\] — \[Audience\] — \[Trigger\] — \[Version\]. Example: Drip — New Subscribers — Form Submission — v2
+-   **Naming convention:** \[Type\] - \[Audience\] - \[Trigger\] - \[Version\]. Example: Drip - New Subscribers - Form Submission - v2
 -   Maintain a master workflow doc with trigger, goal, owner, and last-reviewed date
 -   Archive (don’t delete) old versions before launching updates
 -   Require peer review before activating any new workflow

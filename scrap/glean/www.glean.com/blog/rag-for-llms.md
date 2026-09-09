@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/rag-for-llms"
 canonical: "https://www.glean.com/blog/rag-for-llms"
 title: "Retrieval-augmented generation (RAG) for LLMs"
-description: "Stephanie Baladi  | Learn how RAG enhances LLMs with real-time knowledge — improving accuracy, trust, and performance across enterprise teams without retraining your model."
+description: "Stephanie Baladi  | Learn how RAG enhances LLMs with real-time knowledge - improving accuracy, trust, and performance across enterprise teams without retraining your model."
 fetched_at: "2026-09-01T13:26:50.673Z"
 ---
 Last updated Apr 23, 2025.
@@ -91,7 +91,7 @@ That’s where [retrieval-augmented generation](https://www.glean.com/resources/
 
 ## What is retrieval-augmented generation?
 
-Retrieval-augmented generation is a framework that improves how LLMs generate responses. It does this by adding a retrieval step before generation. Instead of answering based solely on what the model “remembers” from its training data, the model first retrieves relevant context from external sources — like internal documentation, knowledge bases, or databases — then uses that information to generate a response.
+Retrieval-augmented generation is a framework that improves how LLMs generate responses. It does this by adding a retrieval step before generation. Instead of answering based solely on what the model “remembers” from its training data, the model first retrieves relevant context from external sources - like internal documentation, knowledge bases, or databases - then uses that information to generate a response.
 
 This process allows the model to incorporate current and authoritative knowledge, improving both factual accuracy and contextual relevance.
 
@@ -170,7 +170,7 @@ Then, structure those materials for retrieval: chunk them, embed them, and store
 
 ## Why Glean uses RAG
 
-At Glean, we use retrieval-augmented generation to ensure our AI answers are grounded in your company’s data — so you can trust the results.
+At Glean, we use retrieval-augmented generation to ensure our AI answers are grounded in your company’s data - so you can trust the results.
 
 Whether an engineer is searching for onboarding docs or a support rep needs policy context mid-ticket, Glean retrieves the right information in real time and uses it to generate helpful, accurate answers. All while respecting access controls and permissions.
 
@@ -188,7 +188,7 @@ As more companies explore how to scale AI across teams, the difference between h
 
 RAG helps turn LLMs into enterprise-ready tools. And Glean makes it easy to get started.
 
-If you're exploring ways to bring trustworthy, context-aware AI to your organization, [**request a demo**](https://www.glean.com/get-a-demo) to see how Glean uses retrieval-augmented generation to connect your teams with the knowledge they need — fast.
+If you're exploring ways to bring trustworthy, context-aware AI to your organization, [**request a demo**](https://www.glean.com/get-a-demo) to see how Glean uses retrieval-augmented generation to connect your teams with the knowledge they need - fast.
 
 [
 

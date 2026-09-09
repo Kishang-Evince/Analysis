@@ -202,7 +202,7 @@ One platform. Every team.
 
 ## Transforming every department with Enterprise AI.
 
-From engineering to sales to support to HR — Glean helps every department move faster with trusted AI.
+From engineering to sales to support to HR - Glean helps every department move faster with trusted AI.
 
 [See customer stories](/resources/customer-stories)
 
@@ -324,7 +324,7 @@ Read customer story
 
 Glean helps you get work done, rather than just find information. The moment we launched Glean, there was so much positivity.”
 
-"Glean plays a critical role in uniting a distributed workforce here at Zillow. Best of all, it goes beyond just enterprise search—it’s a solution that fully lets us leverage all our data through the latest AI models. With an 80% adoption rate of Glean, it’s helping everyone work closer together than ever before."
+"Glean plays a critical role in uniting a distributed workforce here at Zillow. Best of all, it goes beyond just enterprise search-it’s a solution that fully lets us leverage all our data through the latest AI models. With an 80% adoption rate of Glean, it’s helping everyone work closer together than ever before."
 
 Toby Roberts
 
@@ -380,7 +380,7 @@ Sharon Milz | CIO
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a6b68d36035ea08d5270505_zillow-white.svg)
 
-"Glean plays a critical role in uniting a distributed workforce here at Zillow. Best of all, it goes beyond just enterprise search—it’s a solution that fully lets us leverage all our data through the latest AI models. With an 80% adoption rate of Glean, it’s helping everyone work closer together than ever before."
+"Glean plays a critical role in uniting a distributed workforce here at Zillow. Best of all, it goes beyond just enterprise search-it’s a solution that fully lets us leverage all our data through the latest AI models. With an 80% adoption rate of Glean, it’s helping everyone work closer together than ever before."
 
 Toby Roberts | Senior VP of Engineering, Zillow
 

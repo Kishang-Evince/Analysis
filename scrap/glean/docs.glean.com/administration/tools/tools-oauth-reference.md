@@ -17,12 +17,12 @@ When you set up tools, most connectors offer two authentication options: **centr
 
 | Factor | Central OAuth | Custom OAuth |
 | --- | --- | --- |
-| **Setup effort** | Lower — Glean manages the OAuth app registration and maintenance | Higher — you register, configure, and maintain the OAuth app in your identity provider |
+| **Setup effort** | Lower - Glean manages the OAuth app registration and maintenance | Higher - you register, configure, and maintain the OAuth app in your identity provider |
 | **Token routing** | Tokens are managed through Glean's central infrastructure | Tokens are managed through your deployment |
-| **Scope updates** | Automatic — when Glean adds new tool capabilities, the central app's scopes are updated for you | Manual — you must add new scopes to your OAuth app and re-authorize |
+| **Scope updates** | Automatic - when Glean adds new tool capabilities, the central app's scopes are updated for you | Manual - you must add new scopes to your OAuth app and re-authorize |
 | **Consent screen branding** | Glean-branded consent screen | Your organization's branding |
-| **Conditional Access compatibility** | Shared app — may require allowlisting in your identity provider's policies | Full control — the app is registered in your tenant and subject to your own policies |
-| **Isolation from other customers** | Shared infrastructure | Fully independent — your tokens and app are isolated |
+| **Conditional Access compatibility** | Shared app - may require allowlisting in your identity provider's policies | Full control - the app is registered in your tenant and subject to your own policies |
+| **Isolation from other customers** | Shared infrastructure | Fully independent - your tokens and app are isolated |
 | **Availability** | Most connectors (not all) | All connectors that support OAuth |
 
 ### When to use central OAuth[​](#when-to-use-central-oauth "Direct link to When to use central OAuth")
@@ -63,13 +63,13 @@ For setup instructions, see the connector-specific pages under [Set up tools](/a
 
 ## Expected token lifetimes[​](#expected-token-lifetimes "Direct link to Expected token lifetimes")
 
-The table below lists the default token lifetimes for each provider. Organization-level policies — such as Conditional Access in Microsoft Entra or session controls in Google Workspace — can shorten these defaults.
+The table below lists the default token lifetimes for each provider. Organization-level policies - such as Conditional Access in Microsoft Entra or session controls in Google Workspace - can shorten these defaults.
 
 | Provider | Access token lifetime | Refresh token lifetime | Notes |
 | --- | --- | --- | --- |
 | **Microsoft Entra** (Microsoft 365) | ~1 hour | 90 days (default) | Conditional Access policies (sign-in frequency, device compliance, location restrictions) can shorten the refresh token lifetime or require re-authentication sooner. Review session controls under **Entra ID → Security → Conditional Access**. |
-| **Google** | ~1 hour | Until revoked (default) | Expires after 6 months of inactivity. Apps in *Testing* mode issue refresh tokens that expire after 7 days — set the consent screen to *Internal* or *Production*. |
-| **Atlassian** (Jira, Confluence) | ~1 hour | ~90 days (rotating) | Atlassian uses rotating refresh tokens — each refresh returns a new refresh token, so the 90-day window resets with each use. |
+| **Google** | ~1 hour | Until revoked (default) | Expires after 6 months of inactivity. Apps in *Testing* mode issue refresh tokens that expire after 7 days - set the consent screen to *Internal* or *Production*. |
+| **Atlassian** (Jira, Confluence) | ~1 hour | ~90 days (rotating) | Atlassian uses rotating refresh tokens - each refresh returns a new refresh token, so the 90-day window resets with each use. |
 | **Salesforce** | ~1 hour | Until revoked (default) | Admins can configure refresh token policies in Salesforce Setup. Connected app policies may override the default. |
 | **Slack** | Doesn't expire | Doesn't expire (default) | Tokens persist unless the app is uninstalled or token rotation is enabled in the Slack app configuration. |
 | **Zendesk** | ~2 hours | Until revoked | Tokens persist unless the OAuth client is deleted or the user's access is removed. |

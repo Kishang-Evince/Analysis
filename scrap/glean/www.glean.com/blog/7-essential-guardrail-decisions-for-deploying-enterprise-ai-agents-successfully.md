@@ -81,11 +81,11 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Deploying AI agents at scale can transform enterprise productivity—but only if done with the right guardrails in place. From model selection to cost governance, each design decision defines how secure, compliant, and effective your deployment becomes. The seven guardrail domains below provide a structured framework for deploying enterprise AI systems that are safe, auditable, and financially sustainable.
+Deploying AI agents at scale can transform enterprise productivity-but only if done with the right guardrails in place. From model selection to cost governance, each design decision defines how secure, compliant, and effective your deployment becomes. The seven guardrail domains below provide a structured framework for deploying enterprise AI systems that are safe, auditable, and financially sustainable.
 
 ## **1\. Model choice and hosting**
 
-Choosing the right model and hosting setup determines what your AI agents can do—and how safely they can do it. Frontier language models offer cutting-edge performance, while open-source models provide transparency and customization. Businesses can further tailor open models through fine-tuning or by applying retrieval-augmented generation (RAG), which supplements an LLM with real-time retrieval from proprietary enterprise data for more accurate, contextual answers.
+Choosing the right model and hosting setup determines what your AI agents can do-and how safely they can do it. Frontier language models offer cutting-edge performance, while open-source models provide transparency and customization. Businesses can further tailor open models through fine-tuning or by applying retrieval-augmented generation (RAG), which supplements an LLM with real-time retrieval from proprietary enterprise data for more accurate, contextual answers.
 
 Deployment environments vary in oversight and control. Managed API hosting offers simplicity but can raise data residency or compliance concerns. Private cloud or on-premises hosting enhances control and security but demands greater operational expertise. The key is aligning your model architecture with enterprise governance goals and data protection policies.
 
@@ -122,7 +122,7 @@ Deployment environments vary in oversight and control. Managed API hosting offer
  </table>  
 </div>
 
-Comparing factors like context window size, reasoning transparency, and data locality ensures your selected model both performs and complies. Tools such as [Glean’s enterprise search platform](https://www.glean.com/)—designed with strict permissioning and context preservation—demonstrate how retrieval-augmented answers can remain secure and relevant across varied hosting models.
+Comparing factors like context window size, reasoning transparency, and data locality ensures your selected model both performs and complies. Tools such as [Glean’s enterprise search platform](https://www.glean.com/)-designed with strict permissioning and context preservation-demonstrate how retrieval-augmented answers can remain secure and relevant across varied hosting models.
 
 ‍
 
@@ -130,13 +130,13 @@ Comparing factors like context window size, reasoning transparency, and data loc
 
 The structure of your agent’s reasoning pipeline defines its reliability. Decision architecture governs how agents plan, break down problems, and orchestrate tools. A robust enterprise setup typically includes five key layers: Intelligence (understanding user intent), Decision (planning), Execution (action routing), Action (tool use), and Learned (feedback-driven improvement).
 
-Integrating retrieval-augmented generation strengthens reproducibility and reduces hallucinations by grounding outputs in verified internal knowledge. Building control mechanisms—like stepwise tool orchestration and layered validation—adds defense-in-depth across input, reasoning, and output stages. Documenting these flows makes troubleshooting and audits far easier, reinforcing transparency from design to deployment. Platforms such as Glean embed this kind of structured retrieval into everyday workflows, ensuring responses are both context-aware and governed by existing permissions.
+Integrating retrieval-augmented generation strengthens reproducibility and reduces hallucinations by grounding outputs in verified internal knowledge. Building control mechanisms-like stepwise tool orchestration and layered validation-adds defense-in-depth across input, reasoning, and output stages. Documenting these flows makes troubleshooting and audits far easier, reinforcing transparency from design to deployment. Platforms such as Glean embed this kind of structured retrieval into everyday workflows, ensuring responses are both context-aware and governed by existing permissions.
 
 ‍
 
 ## **3\. Tool permissions and role-based access control**
 
-AI agents should never have more power than necessary. Role-Based Access Control (RBAC) ensures agents and tools only perform approved actions, following least-privilege principles. In practice, every external or internal tool integration should follow a “default deny” rule—explicitly granting access only where required.
+AI agents should never have more power than necessary. Role-Based Access Control (RBAC) ensures agents and tools only perform approved actions, following least-privilege principles. In practice, every external or internal tool integration should follow a “default deny” rule-explicitly granting access only where required.
 
 Credential scoping and API key segmentation prevent privilege creep and isolate risk. Periodic access reviews are equally important, especially for agents with sensitive permissions such as database write access. By enforcing fine-grained RBAC, enterprises reduce exposure to both accidental misuse and malicious requests. Glean’s permission-aware search and AI work assistant model adheres to these same safeguards, surfacing only the information each user is authorized to access.
 
@@ -179,7 +179,7 @@ Human oversight remains essential for trust and compliance. A human-in-the-loop 
 
 ‍
 
-Starting with shadow or supervised operations and progressing toward gradual autonomy enables agents to earn trust over time while meeting regulatory and operational standards. Systems like Glean show how human insight and AI-driven results can work together—maintaining confidence while accelerating routine decision-making.
+Starting with shadow or supervised operations and progressing toward gradual autonomy enables agents to earn trust over time while meeting regulatory and operational standards. Systems like Glean show how human insight and AI-driven results can work together-maintaining confidence while accelerating routine decision-making.
 
 ‍
 
@@ -187,7 +187,7 @@ Starting with shadow or supervised operations and progressing toward gradual aut
 
 Observability is the foundation of AI governance. It’s the ability to monitor, trace, and explain an agent’s reasoning and actions. Logging every prompt, retrieval, and tool call allows for effective debugging and ensures compliance with internal and external regulations.
 
-Instrumentation frameworks such as OpenTelemetry make it possible to unify observability across AI and traditional systems. Continuous audit logs, along with regular human review, turn every AI interaction into an accountable event—a must-have for finance, healthcare, and other regulated sectors. Glean’s context-tracking and search transparency follow the same principle: visibility builds trust.
+Instrumentation frameworks such as OpenTelemetry make it possible to unify observability across AI and traditional systems. Continuous audit logs, along with regular human review, turn every AI interaction into an accountable event-a must-have for finance, healthcare, and other regulated sectors. Glean’s context-tracking and search transparency follow the same principle: visibility builds trust.
 
 ‍
 
@@ -201,7 +201,7 @@ A layered safety approach may combine rule-based filters with machine learning c
 
 ## **7\. Cost controls and financial operations**
 
-Without financial guardrails, even the best AI systems can quickly overspend. FinOps—a discipline blending financial management and technical operations—helps monitor and optimize costs across AI workloads.
+Without financial guardrails, even the best AI systems can quickly overspend. FinOps-a discipline blending financial management and technical operations-helps monitor and optimize costs across AI workloads.
 
 Set per-session and per-agent budgets, define dynamic usage ceilings, and configure circuit breakers to prevent runaway loops or excessive model calls. Many organizations also switch dynamically between models for cost efficiency based on context or accuracy needs. Clear FinOps practices not only improve ROI but also maintain predictability, ensuring AI scales sustainably across teams.
 
@@ -238,7 +238,7 @@ Measure success by tracking accuracy, automation ROI, and compliance rates, then
 
 ‍
 
-By structuring enterprise AI around these seven guardrail decisions—spanning models, architecture, permissions, human oversight, observability, content safety, and costs—organizations can deploy agents that are as trustworthy as they are powerful, grounded in secure, contextual knowledge accessible through solutions such as Glean.
+By structuring enterprise AI around these seven guardrail decisions-spanning models, architecture, permissions, human oversight, observability, content safety, and costs-organizations can deploy agents that are as trustworthy as they are powerful, grounded in secure, contextual knowledge accessible through solutions such as Glean.
 
 ‍
 

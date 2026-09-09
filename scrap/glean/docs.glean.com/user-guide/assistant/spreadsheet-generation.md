@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:30:39.633Z"
 ---
 On this page
 
-Glean can turn a chat prompt into a spreadsheet, or take a spreadsheet you already have and work with it in Canvas. Iterate on the rows and columns with Glean in Canvas, then export to Excel, Google Sheets, or CSV — or copy the table straight into another tool.
+Glean can turn a chat prompt into a spreadsheet, or take a spreadsheet you already have and work with it in Canvas. Iterate on the rows and columns with Glean in Canvas, then export to Excel, Google Sheets, or CSV - or copy the table straight into another tool.
 
 ## Prerequisites[​](#prerequisites "Direct link to Prerequisites")
 
@@ -42,10 +42,10 @@ Export the spreadsheet
 
 Use the export control in Canvas and choose your format:
 
--   **Excel** — downloads a `.xlsx` file you can open in Excel or any compatible application.
--   **Google Sheets** — exports the spreadsheet directly to your Google Drive.
--   **CSV** — downloads a plain `.csv` file for use in any tool that accepts CSV input.
--   **Copy to clipboard** — copies the table contents so you can paste into another spreadsheet, doc, or message.
+-   **Excel** - downloads a `.xlsx` file you can open in Excel or any compatible application.
+-   **Google Sheets** - exports the spreadsheet directly to your Google Drive.
+-   **CSV** - downloads a plain `.csv` file for use in any tool that accepts CSV input.
+-   **Copy to clipboard** - copies the table contents so you can paste into another spreadsheet, doc, or message.
 
 4
 
@@ -55,36 +55,36 @@ Open the exported file in Excel, Google Sheets, or your tool of choice to contin
 
 ### Start from an existing Canvas[​](#start-from-an-existing-canvas "Direct link to Start from an existing Canvas")
 
-If you already have a Canvas open — for example, a brainstorm or research summary — you can ask Glean to turn the relevant content into a spreadsheet from the same Canvas without starting a new conversation.
+If you already have a Canvas open - for example, a brainstorm or research summary - you can ask Glean to turn the relevant content into a spreadsheet from the same Canvas without starting a new conversation.
 
 ### Start from an existing spreadsheet[​](#start-from-an-existing-spreadsheet "Direct link to Start from an existing spreadsheet")
 
-You can also bring an existing spreadsheet into Glean. Upload a file in chat and ask Glean what you want to do with it — for example, summarize it, restructure it, or pull additional data into new columns. Glean opens the spreadsheet in Canvas so you can iterate with follow-up prompts and then export the result.
+You can also bring an existing spreadsheet into Glean. Upload a file in chat and ask Glean what you want to do with it - for example, summarize it, restructure it, or pull additional data into new columns. Glean opens the spreadsheet in Canvas so you can iterate with follow-up prompts and then export the result.
 
 ## What Glean generates[​](#what-glean-generates "Direct link to What Glean generates")
 
 When you generate a spreadsheet, Glean produces:
 
 -   A structured table with column headers and rows based on the prompts you've given Glean.
--   Content drawn from the company knowledge and sources referenced in your chat — for example, documents, tickets, and search results that Glean used to answer your prompt.
+-   Content drawn from the company knowledge and sources referenced in your chat - for example, documents, tickets, and search results that Glean used to answer your prompt.
 -   A Canvas representation you can keep iterating on with Glean before exporting.
 
 ## Use cases[​](#use-cases "Direct link to Use cases")
 
 Spreadsheet generation is designed to help with common tabular tasks, including:
 
--   **Competitive comparison tables** — compare vendors, products, or features across consistent attributes.
--   **Project trackers** — compile status, owners, and dates from project tools and chat into a single sheet.
--   **Metric roll-ups** — aggregate numbers referenced across multiple documents or reports into one view.
--   **Catalog and inventory extraction** — pull structured lists out of long-form documents or search results.
--   **Tool-item tables** — turn meeting notes or decisions into a tracked list of follow-ups.
+-   **Competitive comparison tables** - compare vendors, products, or features across consistent attributes.
+-   **Project trackers** - compile status, owners, and dates from project tools and chat into a single sheet.
+-   **Metric roll-ups** - aggregate numbers referenced across multiple documents or reports into one view.
+-   **Catalog and inventory extraction** - pull structured lists out of long-form documents or search results.
+-   **Tool-item tables** - turn meeting notes or decisions into a tracked list of follow-ups.
 
 ## Tips for better results[​](#tips-for-better-results "Direct link to Tips for better results")
 
 -   **Describe the columns you want.** Naming the columns up front (e.g., "columns for vendor, pricing tier, region, contract end date") gives Glean a clearer target.
 -   **Iterate with follow-up prompts.** Ask Glean to adjust columns, filter rows, or pull in additional sources until the spreadsheet looks right before you export.
 -   **Reference internal sources.** Ask Glean to pull from specific documents, projects, or teams so the rows are grounded in real data.
--   **Review after exporting.** Treat the exported file as a starting point — verify cells against source-of-truth systems before sharing widely.
+-   **Review after exporting.** Treat the exported file as a starting point - verify cells against source-of-truth systems before sharing widely.
 
 ## Frequently asked questions[​](#frequently-asked-questions "Direct link to Frequently asked questions")
 

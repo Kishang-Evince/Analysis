@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/glean-prompting-ebook-sales"
 canonical: "https://www.glean.com/resources/guides/glean-prompting-ebook-sales"
 title: "The starter’s guide to AI prompting for sales teams"
-description: "AI is a promising tool for unlocking the value of your organization's knowledge and maximizing the potential of your sales teams. However, results often rely upon prompts—clear and comprehensive directions written out by the user."
+description: "AI is a promising tool for unlocking the value of your organization's knowledge and maximizing the potential of your sales teams. However, results often rely upon prompts-clear and comprehensive directions written out by the user."
 fetched_at: "2026-09-01T13:27:08.217Z"
 ---
 ## Work AI that works.

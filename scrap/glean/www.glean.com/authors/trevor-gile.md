@@ -96,7 +96,7 @@ May 20, 2026
 
 ### The 10 best AI voice assistants in 2026: A comprehensive guide
 
-The best AI voice assistants of 2026, ranked and compared on accuracy, integrations, and pricing — find the right one for work or home.
+The best AI voice assistants of 2026, ranked and compared on accuracy, integrations, and pricing - find the right one for work or home.
 
 ![Trevor Gile](https://cdn.prod.website-files.com/613513981b0efaf850830620/6941892e6f94516e5776d542_TGLEMJFFG-U0875PX48R3-7c01883b1a49-192.jpg)
 

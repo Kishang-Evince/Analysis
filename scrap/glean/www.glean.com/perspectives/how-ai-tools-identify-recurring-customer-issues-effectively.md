@@ -90,7 +90,7 @@ AI for identifying recurring customer issues only works when it can read every p
 
 Feed internal knowledge into the same view. Release notes, known bug lists, policy changes, troubleshooting guides, and postmortems tell the AI why a complaint spiked and whether a fix already exists. A cluster of "payment failed" tickets means something different the week after a billing migration.
 
-Most teams analyze surveys in one platform and tickets in another, so a trend that appears in both never gets connected — and Zendesk's 2026 CX Trends survey found [74%](https://www.zendesk.com/newsroom/articles/ai-ushers-in-era-of-contextual-intelligence-redefining-customer-experience-in-2026/) of consumers find it frustrating to repeat their story across agents and channels. Make permission-awareness part of setup, not an afterthought. A support leader needs visibility across every queue, while an individual agent should see only the accounts and cases they already have access to.
+Most teams analyze surveys in one platform and tickets in another, so a trend that appears in both never gets connected - and Zendesk's 2026 CX Trends survey found [74%](https://www.zendesk.com/newsroom/articles/ai-ushers-in-era-of-contextual-intelligence-redefining-customer-experience-in-2026/) of consumers find it frustrating to repeat their story across agents and channels. Make permission-awareness part of setup, not an afterthought. A support leader needs visibility across every queue, while an individual agent should see only the accounts and cases they already have access to.
 
 ## 2\. Normalize different customer language into shared issue themes
 
@@ -114,7 +114,7 @@ The most common complaint is not always the most important one to fix. Rank recu
 
 Layer business impact on top of those operational signals. Weight issues that touch high-value accounts, upcoming renewals, first-week onboarding, or regulated workflows where a mistake carries compliance risk. [Predictive analytics in customer service](https://www.glean.com/blog/how-to-reduce-support-ticket-backlogs) adds a forward view, flagging emerging patterns while they are still small enough to fix before they become your top ticket driver.
 
-The output should be short and defensible: a ranked list of what to fix first, what to keep monitoring, and what is a candidate for automation. That analysis now moves fast — Zendesk's 2026 CX Trends survey reports [82%](https://www.zendesk.com/newsroom/articles/ai-ushers-in-era-of-contextual-intelligence-redefining-customer-experience-in-2026/) of CX leaders say AI analytics surface insights in seconds that once took analysts weeks. AI-driven customer insights are only useful when they end in a decision someone can defend to a VP.
+The output should be short and defensible: a ranked list of what to fix first, what to keep monitoring, and what is a candidate for automation. That analysis now moves fast - Zendesk's 2026 CX Trends survey reports [82%](https://www.zendesk.com/newsroom/articles/ai-ushers-in-era-of-contextual-intelligence-redefining-customer-experience-in-2026/) of CX leaders say AI analytics surface insights in seconds that once took analysts weeks. AI-driven customer insights are only useful when they end in a decision someone can defend to a VP.
 
 ## 5\. Turn issue patterns into routed action and faster resolution
 

@@ -43,7 +43,7 @@ To create the service account and token:
 7.  Give the token a descriptive name, for example, "Glean Agent Token."
 8.  Set an expiration if your organization requires it, or leave it as "No expiration" if permitted.
 9.  Click **Generate token**.
-10.  Copy the token value — you'll need it when creating the service credential in Glean.
+10.  Copy the token value - you'll need it when creating the service credential in Glean.
 
 caution
 

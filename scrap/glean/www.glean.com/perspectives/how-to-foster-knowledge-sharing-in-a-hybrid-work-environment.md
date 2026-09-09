@@ -63,15 +63,15 @@ Share this article:
 
 # Creating a knowledge-sharing culture in a hybrid workplace
 
-The shift to hybrid work has fundamentally changed how teams connect, collaborate, and share what they know. Fully remote workers are the most likely to be [engaged](https://www.gallup.com/workplace/660236/remote-work-paradox-engaged-distressed.aspx) at work (31%), compared with hybrid (23%), on-site remote-capable (23%) and on-site non-remote-capable (19%). However, they are less likely to be thriving in their lives overall (36%) than hybrid workers (42%). While digital tools have made it easier than ever to find information across an organization, many companies still struggle with getting employees to actively share their expertise—especially when some team members are in the office while others work remotely.
+The shift to hybrid work has fundamentally changed how teams connect, collaborate, and share what they know. Fully remote workers are the most likely to be [engaged](https://www.gallup.com/workplace/660236/remote-work-paradox-engaged-distressed.aspx) at work (31%), compared with hybrid (23%), on-site remote-capable (23%) and on-site non-remote-capable (19%). However, they are less likely to be thriving in their lives overall (36%) than hybrid workers (42%). While digital tools have made it easier than ever to find information across an organization, many companies still struggle with getting employees to actively share their expertise-especially when some team members are in the office while others work remotely.
 
-The shift to hybrid work has fundamentally changed how teams connect, collaborate, and share what they know. Recent [Stanford research](https://news.stanford.edu/stories/2024/06/hybrid-work-is-a-win-win-win-for-companies-workers) found that hybrid workers perform just as well as their fully in-office peers and are 33% less likely to quit; the six-month study of 1,612 employees highlights hybrid work as a win-win-win for productivity, performance, and retention. While digital tools have made it easier than ever to find information across an organization, many companies still struggle with getting employees to actively share their expertise—especially when some team members are in the office while others work remotely.
+The shift to hybrid work has fundamentally changed how teams connect, collaborate, and share what they know. Recent [Stanford research](https://news.stanford.edu/stories/2024/06/hybrid-work-is-a-win-win-win-for-companies-workers) found that hybrid workers perform just as well as their fully in-office peers and are 33% less likely to quit; the six-month study of 1,612 employees highlights hybrid work as a win-win-win for productivity, performance, and retention. While digital tools have made it easier than ever to find information across an organization, many companies still struggle with getting employees to actively share their expertise-especially when some team members are in the office while others work remotely.
 
 Building a thriving knowledge-sharing culture isn't just about having the right technology. It's about creating an environment where sharing insights feels natural, valuable, and rewarding for everyone involved.
 
 ## What is a knowledge-sharing culture?
 
-A knowledge-sharing culture is an environment where employees actively exchange information, insights, and expertise as part of their daily work. It's more than just documenting processes—it's about creating connections between people and ideas across the organization.
+A knowledge-sharing culture is an environment where employees actively exchange information, insights, and expertise as part of their daily work. It's more than just documenting processes-it's about creating connections between people and ideas across the organization.
 
 In hybrid workplaces, this culture becomes the bridge between remote and in-office staff. When knowledge flows freely, location becomes irrelevant. Teams stay aligned, [new employees](https://www.glean.com/blog/building-the-foundations-of-employee-success) ramp up faster, and innovative solutions emerge from unexpected collaborations.
 
@@ -127,7 +127,7 @@ Establishing a culture of knowledge sharing in a hybrid workplace involves delib
 
 The focus should be on embedding these practices into the organizational values, ensuring knowledge sharing becomes an intuitive process. By nurturing a culture of recognition and inclusivity, organizations can develop a workforce that is both adaptable and committed. This approach supports individual development while propelling the organization toward its strategic objectives.
 
-The journey to creating a knowledge-sharing culture in your hybrid workplace starts with understanding that technology and human connection must work hand in hand. When you combine the right tools with intentional culture-building practices, knowledge flows naturally across your organization—regardless of where your team members work.
+The journey to creating a knowledge-sharing culture in your hybrid workplace starts with understanding that technology and human connection must work hand in hand. When you combine the right tools with intentional culture-building practices, knowledge flows naturally across your organization-regardless of where your team members work.
 
 Ready to see how AI can accelerate knowledge sharing in your organization? [Request a demo to explore how Glean and AI can transform your workplace](https://www.glean.com/get-a-demo) and discover how we can help you build a more connected, collaborative future.
 

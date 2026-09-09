@@ -124,11 +124,11 @@ In Glean, enter your GitHub instance domain name.
 
 After setup, you can configure what content Glean crawls from the **Manage Data** tab in the admin console (**Admin console → Connectors → GitHub Enterprise Server → Manage Data**). Options include:
 
--   **Organization allow and block lists** — restrict crawling to specific organizations, or block organizations you don't want indexed
--   **Repository inclusion and exclusion lists** — control which repositories are crawled
--   **GitHub Pages repository inclusion and exclusion lists** — control which repositories have their Pages content crawled
--   **Content type toggles** — turn crawling on or off for wikis, issues, and pull request diffs
--   **Code file extensions** — control which extensions have their full file body indexed
+-   **Organization allow and block lists** - restrict crawling to specific organizations, or block organizations you don't want indexed
+-   **Repository inclusion and exclusion lists** - control which repositories are crawled
+-   **GitHub Pages repository inclusion and exclusion lists** - control which repositories have their Pages content crawled
+-   **Content type toggles** - turn crawling on or off for wikis, issues, and pull request diffs
+-   **Code file extensions** - control which extensions have their full file body indexed
 
 ## Per-user OAuth[​](#per-user-oauth "Direct link to Per-user OAuth")
 

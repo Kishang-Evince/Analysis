@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/retail-ai-guide"
 canonical: "https://www.glean.com/resources/guides/retail-ai-guide"
 title: "Retail is moving fast. AI is helping teams get ahead."
-description: "When retail teams are spending too much time tracking down information, switching between systems, or responding to repeat questions, it slows everything down — from diversifying their supply chain, to customer service and inventory management. That’s where AI comes in."
+description: "When retail teams are spending too much time tracking down information, switching between systems, or responding to repeat questions, it slows everything down - from diversifying their supply chain, to customer service and inventory management. That’s where AI comes in."
 fetched_at: "2026-09-01T13:27:10.658Z"
 ---
 ## Work AI that works.

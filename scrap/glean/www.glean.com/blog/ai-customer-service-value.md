@@ -105,9 +105,9 @@ Glean provides this instant knowledge discovery and access, enabling companies l
 
 ## Improving customer satisfaction through quick, omnichannel support 
 
-Effectively reducing churn and building stronger customer loyalty starts with meeting the high expectations of today’s customers. They expect fast, accurate, always-available support across channels—a challenge when critical context is scattered across systems and teams. By streamlining this flow of information, your team can resolve issues faster and ensure a superior support experience.
+Effectively reducing churn and building stronger customer loyalty starts with meeting the high expectations of today’s customers. They expect fast, accurate, always-available support across channels-a challenge when critical context is scattered across systems and teams. By streamlining this flow of information, your team can resolve issues faster and ensure a superior support experience.
 
-Leading organizations across industries are turning to Glean for customer service to seamlessly connect information from tools like Zendesk, Service Cloud, and ServiceNow CSM. This empowers support agents with actionable recommendations—such as next steps for open tickets, draft customer communications, and suggested experts for quick escalation. This unified approach not only helps agents resolve issues faster, but also delivers measurable impact: teams using Glean have seen up to a 20% reduction in ticket resolution times and save over an hour per day per agent. 
+Leading organizations across industries are turning to Glean for customer service to seamlessly connect information from tools like Zendesk, Service Cloud, and ServiceNow CSM. This empowers support agents with actionable recommendations-such as next steps for open tickets, draft customer communications, and suggested experts for quick escalation. This unified approach not only helps agents resolve issues faster, but also delivers measurable impact: teams using Glean have seen up to a 20% reduction in ticket resolution times and save over an hour per day per agent. 
 
 ## Delivering better service through improved customer and employee experiences
 

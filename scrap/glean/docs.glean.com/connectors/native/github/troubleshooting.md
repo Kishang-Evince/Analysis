@@ -110,7 +110,7 @@ GitHub Pages crawling is disabled by default. When it's enabled, only sites usin
 | Cause | Fix |
 | --- | --- |
 | **Auxiliary data processing queue:** Associated GitHub metadata is queued behind the parent entity. | Elements like PR diffs, reviews, and comments are indexed sequentially after the primary document surfaces. Allow time for the connector to finish crawling this auxiliary content. |
-| **Flat document count metrics:** Granular updates modify existing document parts rather than creating new records. | Because diffs, reviews, and comments are nested parts of a top-level document, a PR can update with rich text and metadata—improving search completeness—without increasing the overall document count metric. |
+| **Flat document count metrics:** Granular updates modify existing document parts rather than creating new records. | Because diffs, reviews, and comments are nested parts of a top-level document, a PR can update with rich text and metadata-improving search completeness-without increasing the overall document count metric. |
 
 ### A user account with service-account-like terms in its name or email can't see GitHub content[​](#a-user-account-with-service-account-like-terms-in-its-name-or-email-cant-see-github-content "Direct link to A user account with service-account-like terms in its name or email can't see GitHub content")
 
@@ -159,8 +159,8 @@ GitHub Pages crawling is disabled by default. When it's enabled, only sites usin
 
 Yes. Glean provides separate connectors for different GitHub hosting models:
 
--   **GitHub** — for GitHub.com (Cloud), including GitHub Enterprise Cloud. An admin installs a GitHub App (Glean's central app, or your own custom GitHub App), and each end user authorizes their own GitHub account through per-user OAuth.
--   **GitHub Enterprise Server** — for self-hosted GitHub Enterprise Server. It also uses a GitHub App, and additionally requires an admin-issued classic personal access token (with the `user:email`, `read:enterprise`, and `read:org` scopes) for enterprise- and org-level reads.
+-   **GitHub** - for GitHub.com (Cloud), including GitHub Enterprise Cloud. An admin installs a GitHub App (Glean's central app, or your own custom GitHub App), and each end user authorizes their own GitHub account through per-user OAuth.
+-   **GitHub Enterprise Server** - for self-hosted GitHub Enterprise Server. It also uses a GitHub App, and additionally requires an admin-issued classic personal access token (with the `user:email`, `read:enterprise`, and `read:org` scopes) for enterprise- and org-level reads.
 
 Choose the connector that matches your hosting model.
 
@@ -196,7 +196,7 @@ By default, the connector indexes:
 The following are **not** indexed by default:
 
 -   Wikis.
--   GitHub Pages content (and when Pages crawling is enabled, only sites using GitHub's branch-based build are indexed — not sites built with custom GitHub Actions workflows).
+-   GitHub Pages content (and when Pages crawling is enabled, only sites using GitHub's branch-based build are indexed - not sites built with custom GitHub Actions workflows).
 
 ### How do webhooks, OAuth, and network access work for the GitHub connector?
 

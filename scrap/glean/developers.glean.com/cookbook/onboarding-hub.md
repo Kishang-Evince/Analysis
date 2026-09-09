@@ -21,17 +21,17 @@ A first-week checklist where every step can answer itself.
 
 Problem
 
-New hires land on day one with a dozen tasks spread across HR, IT, and their team — and no single place to see what's done, what's left, and where to get help. The Onboarding Hub solves that: a gamified checklist with progress tracking, milestone badges, and contextual Glean chat on every step.
+New hires land on day one with a dozen tasks spread across HR, IT, and their team - and no single place to see what's done, what's left, and where to get help. The Onboarding Hub solves that: a gamified checklist with progress tracking, milestone badges, and contextual Glean chat on every step.
 
-This recipe builds the hub two ways so you can pick the trade-off that fits your portal — Web SDK for fastest SSO integration, Platform Chat when you need full UI control.
+This recipe builds the hub two ways so you can pick the trade-off that fits your portal - Web SDK for fastest SSO integration, Platform Chat when you need full UI control.
 
 Architecture
 
 Onboarding Hubchecklist + progress + chat
 
-Path A: Web SDKrenderChat — Glean owns chat UI
+Path A: Web SDKrenderChat - Glean owns chat UI
 
-Path B: Platform Chatglean.chat.create — you own the UI
+Path B: Platform Chatglean.chat.create - you own the UI
 
 Gleanpermission-aware cited answers
 
@@ -192,7 +192,7 @@ Returns a cited answer from your own IT documentation.
 
 **What's our PTO policy?**
 
-Returns a cited answer respecting the asker's permissions — the same question from two people with different access should not return content either of them can't see.
+Returns a cited answer respecting the asker's permissions - the same question from two people with different access should not return content either of them can't see.
 
 **Ask about a step your docs don't cover**
 

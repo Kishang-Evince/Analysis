@@ -17,7 +17,7 @@ Glean adds the Access Token to outbound requests to the Intercom MCP server, so 
 
 How access works
 
-An Intercom Access Token is workspace-wide and its data access is governed entirely by the app's scopes — it is not scoped to a teammate's inbox or team the way a human seat is. There is no "add the app to this inbox" step. If you want an agent to read a conversation, you grant the **Read conversations** scope on the app, and the token can then read any conversation in the workspace.
+An Intercom Access Token is workspace-wide and its data access is governed entirely by the app's scopes - it is not scoped to a teammate's inbox or team the way a human seat is. There is no "add the app to this inbox" step. If you want an agent to read a conversation, you grant the **Read conversations** scope on the app, and the token can then read any conversation in the workspace.
 
 The trade-off: this token sees everything its scopes allow, workspace-wide. Treat it like a workspace-level credential and grant the fewest scopes your agents need.
 
@@ -37,7 +37,7 @@ Intercom's MCP server is US-hosted workspaces only. EU/AU-region workspaces must
 1.  Sign in to Intercom as a workspace admin and open the **Developer Hub → Your apps → New app**.
 2.  Give it a clear name (for example, "Glean"), select the workspace the agents should act on, and create it.
 
-This is an internal app for your own workspace — not the OAuth flow used by public apps.
+This is an internal app for your own workspace - not the OAuth flow used by public apps.
 
 ## Step 2: Set the app's scopes[​](#step-2-set-the-apps-scopes "Direct link to Step 2: Set the app's scopes")
 
@@ -45,20 +45,20 @@ Scopes are how you control what the agent can reach. Open the app → **Configur
 
 Intercom auto-grants a read baseline that cannot be deselected:
 
--   **Read and list users and companies** — contacts/companies
--   **Read conversations** — conversations and conversation parts
--   **Read admins** — teammates (for example, resolving an admin ID to a name)
+-   **Read and list users and companies** - contacts/companies
+-   **Read conversations** - conversations and conversation parts
+-   **Read admins** - teammates (for example, resolving an admin ID to a name)
 -   **Gather App data**
 
-For a read-only support or insights agent, that baseline is already enough — you don't need to add anything.
+For a read-only support or insights agent, that baseline is already enough - you don't need to add anything.
 
-Add scopes only if your agents must take actions or read extra objects (least privilege — every scope applies workspace-wide):
+Add scopes only if your agents must take actions or read extra objects (least privilege - every scope applies workspace-wide):
 
--   **Write conversations** — reply to, snooze, assign, and close conversations. Add this only if the agent should act on conversations, not just read them.
--   **Read and write users / Write users and companies** — create/update contacts and companies.
--   **Read tags / Write tags** — read or manage tags.
--   **Read events / Write events** — read or submit user events.
--   **Read Tickets** — include tickets (optional; the tools skip tickets if not granted).
+-   **Write conversations** - reply to, snooze, assign, and close conversations. Add this only if the agent should act on conversations, not just read them.
+-   **Read and write users / Write users and companies** - create/update contacts and companies.
+-   **Read tags / Write tags** - read or manage tags.
+-   **Read events / Write events** - read or submit user events.
+-   **Read Tickets** - include tickets (optional; the tools skip tickets if not granted).
 
 Select **Save**. Scopes take effect immediately for the workspace Access Token.
 
@@ -66,7 +66,7 @@ Select **Save**. Scopes take effect immediately for the workspace Access Token.
 
 Still under **Configure → Authentication** (also shown on **Test & Publish → Your Workspaces**), copy the **Access Token**.
 
-Store it securely. Intercom Access Tokens don't expire on a schedule and there is no refresh token — the token stays valid until the app is uninstalled or the token is regenerated. Rotate it by regenerating it here if it's ever exposed.
+Store it securely. Intercom Access Tokens don't expire on a schedule and there is no refresh token - the token stays valid until the app is uninstalled or the token is regenerated. Rotate it by regenerating it here if it's ever exposed.
 
 ## Step 4: Create the service credential in Glean[​](#step-4-create-the-service-credential-in-glean "Direct link to Step 4: Create the service credential in Glean")
 

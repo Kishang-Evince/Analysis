@@ -23,8 +23,8 @@ Every URL in a response is checked against the trust rules you configure. A URL 
 
 Any URL that doesn't clear these checks is treated as **untrusted** and handled according to your enforcement setting. Untrusted URLs fall into two groups:
 
--   **Fabricated** — the link doesn't appear in any tool output or the conversation, so the model invented it
--   **Untrusted source** — the link is real but came from a tool or source you haven't trusted
+-   **Fabricated** - the link doesn't appear in any tool output or the conversation, so the model invented it
+-   **Untrusted source** - the link is real but came from a tool or source you haven't trusted
 
 ## Apply this policy to[​](#apply-this-policy-to "Direct link to Apply this policy to")
 
@@ -55,20 +55,20 @@ Trusted URLs are never flagged or redacted. Use the **Trusted URLs** section to 
 
 Enable **URLs returned in tool output** to trust links that a tool surfaced to the model rather than treating them as fabricated. URLs from trusted tool output are never redacted. You can scope this trust:
 
--   **All tools** — links from any tool's output are trusted, except tools you exclude
--   **Specific tools** — only links from the tools you select are trusted
+-   **All tools** - links from any tool's output are trusted, except tools you exclude
+-   **Specific tools** - only links from the tools you select are trusted
 
 Use the **Match by** dropdown to control how strictly a trusted tool's links are matched:
 
--   **Match by full URL** — only the exact link the tool returned is trusted. A modified link (for example, with added query parameters) is treated as untrusted. This is the strictest option and helps prevent data exfiltration through parameter padding.
--   **Match by domain** — any link on the same domain as one the tool returned is trusted, including paths the tool never surfaced.
+-   **Match by full URL** - only the exact link the tool returned is trusted. A modified link (for example, with added query parameters) is treated as untrusted. This is the strictest option and helps prevent data exfiltration through parameter padding.
+-   **Match by domain** - any link on the same domain as one the tool returned is trusted, including paths the tool never surfaced.
 
 ### Domain-wide URLs[​](#domain-wide-urls "Direct link to Domain-wide URLs")
 
 Enable **Domain-wide URLs** to always keep links on domains you trust, even when the model fabricates a link on them. Matching covers the exact host and any subdomain (for example, `glean.com` also covers `app.glean.com`).
 
--   **Glean recommended domains** — a curated set of well-known, enterprise-safe domains that Glean maintains for you. Enable it to trust these domains without listing them yourself.
--   **Custom domains** — domains you trust on top of the recommended list. Add your own, or add the domains detected from your connectors with one click. Wildcards (`*`) are supported, for example `*.example.com`.
+-   **Glean recommended domains** - a curated set of well-known, enterprise-safe domains that Glean maintains for you. Enable it to trust these domains without listing them yourself.
+-   **Custom domains** - domains you trust on top of the recommended list. Add your own, or add the domains detected from your connectors with one click. Wildcards (`*`) are supported, for example `*.example.com`.
 
 ## URLs that are always safe[​](#urls-that-are-always-safe "Direct link to URLs that are always safe")
 

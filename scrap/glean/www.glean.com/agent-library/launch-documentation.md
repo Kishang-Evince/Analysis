@@ -27,11 +27,11 @@ The launch documentation agent helps product, engineering, and marketing teams s
 
 ## See it in action
 
-Watch how this agent scans completed Jira tickets, summarizes key features, and publishes polished launch notes — ready for review and release.
+Watch how this agent scans completed Jira tickets, summarizes key features, and publishes polished launch notes - ready for review and release.
 
 ## Capabilities
 
-Never miss a feature—every completed Jira ticket is surfaced and summarized for you.Save hours each release cycle by eliminating manual formatting, editing, and compiling.Deliver polished, professional launch notes that maintain consistency across teams and sprints.Work faster and stay in flow by managing everything inside Glean, from draft to pull request.
+Never miss a feature-every completed Jira ticket is surfaced and summarized for you.Save hours each release cycle by eliminating manual formatting, editing, and compiling.Deliver polished, professional launch notes that maintain consistency across teams and sprints.Work faster and stay in flow by managing everything inside Glean, from draft to pull request.
 
 ## Example output
 
@@ -41,15 +41,15 @@ Audience: End users and admins
 
 **End user features**
 
--   Quick links dashboard — Added a centralized dashboard for saved links to improve navigation
--   Session timeout alert — Users now receive a pop-up before session expiration to reduce lost work
--   Mobile experience — Refined mobile layout for smoother document previews on smaller screens
+-   Quick links dashboard - Added a centralized dashboard for saved links to improve navigation
+-   Session timeout alert - Users now receive a pop-up before session expiration to reduce lost work
+-   Mobile experience - Refined mobile layout for smoother document previews on smaller screens
 
 **Admin updates**
 
--   User management — Introduced bulk user import via CSV
--   Permissions schema — Simplified role configuration settings for workspace admins
--   Audit log filters — Added advanced filtering options for exportable audit logs
+-   User management - Introduced bulk user import via CSV
+-   Permissions schema - Simplified role configuration settings for workspace admins
+-   Audit log filters - Added advanced filtering options for exportable audit logs
 
 *These updates are now live across all customer environments. To learn more, view the full changelog in our documentation hub.*
 

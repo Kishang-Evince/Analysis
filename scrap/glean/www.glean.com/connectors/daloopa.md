@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:44.278Z"
 ---
 ### Overview
 
-Daloopa structures and source-links financial data for 5,500+ public companies — from fundamentals and operating KPIs to SEC filings and earnings materials. The Daloopa MCP connector gives analysts direct access to that data layer in Glean, so every figure in a model or answer traces back to the original filing.
+Daloopa structures and source-links financial data for 5,500+ public companies - from fundamentals and operating KPIs to SEC filings and earnings materials. The Daloopa MCP connector gives analysts direct access to that data layer in Glean, so every figure in a model or answer traces back to the original filing.
 
 ### Features
 

@@ -27,7 +27,7 @@ from glean.indexing.testing import TestConfig, TestHarnessharness = TestHarness(
 harness = TestHarness(    connector=my_connector,    clients={        "data_client": articles_client,        "comments_client": comments_client,    },)
 ```
 
-Each key must name a real attribute on the connector; a typo raises `AttributeError` rather than silently skipping that client. Clients you don't register are left untouched — they'll hit the real API on every run without being recorded.
+Each key must name a real attribute on the connector; a typo raises `AttributeError` rather than silently skipping that client. Clients you don't register are left untouched - they'll hit the real API on every run without being recorded.
 
 ## Configuration[​](#configuration "Direct link to Configuration")
 
@@ -70,7 +70,7 @@ Recorded fixtures contain **real data from your source**. Review them before com
 
 ## Keeping fixtures small[​](#keeping-fixtures-small "Direct link to Keeping fixtures small")
 
-`max_items` defaults to 5 per client — deliberately small. The point of Phase 2 is validating response *shape*, not volume, and small fixtures stay reviewable and cheap to commit.
+`max_items` defaults to 5 per client - deliberately small. The point of Phase 2 is validating response *shape*, not volume, and small fixtures stay reviewable and cheap to commit.
 
 Raise it for a client whose pagination you specifically want to exercise:
 
@@ -94,7 +94,7 @@ from glean.indexing.testing import extract_permission_refsresult = harness.run_i
 
 ## In CI[​](#in-ci "Direct link to In CI")
 
-Commit the fixtures and CI replays them — no source credentials in CI, deterministic runs. If you'd rather not commit real data, run Phase 2 locally only and keep CI on Phase 1.
+Commit the fixtures and CI replays them - no source credentials in CI, deterministic runs. If you'd rather not commit real data, run Phase 2 locally only and keep CI on Phase 1.
 
 ## What to test here[​](#what-to-test-here "Direct link to What to test here")
 

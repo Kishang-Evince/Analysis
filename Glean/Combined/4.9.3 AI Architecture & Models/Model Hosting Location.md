@@ -15,8 +15,8 @@
 
 **Field definition:** Confirmed physical/cloud hosting location for model inference.  
 **Prerequisites / Licensing:** Know deployment type (Glean Hosted vs Customer Hosted); BYOK provider contracts if applicable.  
-**Hosting classification (Doc-Verified):** **Cloud SaaS** — Glean Hosted (GCP) or Customer Hosted (customer GCP/AWS account); frontier models via provider endpoints in aligned region.  
-**Tenant deployment (Pending Sandbox):** _TBD — confirm Hosted vs Cloud-Prem + region from About Glean / contract_  
+**Hosting classification (Doc-Verified):** **Cloud SaaS** - Glean Hosted (GCP) or Customer Hosted (customer GCP/AWS account); frontier models via provider endpoints in aligned region.  
+**Tenant deployment (Pending Sandbox):** _TBD - confirm Hosted vs Cloud-Prem + region from About Glean / contract_  
 **Confidence Level:** **Doc-Verified** (architecture) · **Pending Sandbox** (exact tenant region + BYOK endpoint map)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [About deployment](https://docs.glean.com/get-started/prepare/about-deployment) · [Cloud-Prem security](https://docs.glean.com/security/cloud-prem/) · [LLMs availability by environment](https://docs.glean.com/administration/llms#availability-by-hosting-environment-and-provider) · [Adaptive reasoning regional inference](https://docs.glean.com/administration/assistant/features/adaptive-reasoning)
@@ -32,9 +32,9 @@
 
 ### Engineering observation (Doc-Verified)
 
-- No on-prem appliance documented — Customer Hosted is **managed SaaS in customer cloud**, not self-operated VMs.
+- No on-prem appliance documented - Customer Hosted is **managed SaaS in customer cloud**, not self-operated VMs.
 - BYOK gives contractual control over provider region via your Azure/Vertex/Bedrock deployment names.
-- Exact frontier-model region per Universal Key call is **opaque** without contract addendum — log network egress in sandbox if HIPAA residency is hard requirement.
+- Exact frontier-model region per Universal Key call is **opaque** without contract addendum - log network egress in sandbox if HIPAA residency is hard requirement.
 
 ### Verification steps / test case
 

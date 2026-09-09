@@ -15,9 +15,9 @@ Connecting Outlook runs a multi-step flow in the Glean Admin console. You **conn
 -   **Two read-only modes.** Data crawling and indexing (native) is the default path for search, and data fetching (federated) is also available for live results. Both are read-only.
 -   **Read-only indexing.** The certificate-based Microsoft Graph app that powers indexing uses only read-only permissions (`Mail.Read`, `Calendars.Read`, `User.Read.All`, and `GroupMember.Read.All`). Glean never writes to, sends, or modifies anything in Outlook through this app.
 
-1.  Connect and set up indexingtoday — current step
-2.  Review and begintoday — current step
-3.  Permission-aware search switches ona few days — happens automatically
+1.  Connect and set up indexingtoday - current step
+2.  Review and begintoday - current step
+3.  Permission-aware search switches ona few days - happens automatically
 
 ## Feature availability after setup[​](#feature-availability-after-setup "Direct link to Feature availability after setup")
 

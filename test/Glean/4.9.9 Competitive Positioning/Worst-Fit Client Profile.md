@@ -1,4 +1,4 @@
-# Field 4 — Worst-Fit Client Profile
+# Field 4 - Worst-Fit Client Profile
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Worst-Fit Client Profile.md](../../../Glean/Combined/4.9.9 Competitive Positioning/Worst-Fit Client Profile.md)

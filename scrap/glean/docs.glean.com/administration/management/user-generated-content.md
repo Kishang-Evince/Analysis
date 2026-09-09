@@ -23,8 +23,8 @@ This table describes what you can manage for each content type:
 
 | Content type | What you can manage | Notes | Learn more |
 | --- | --- | --- | --- |
-| **Answers** | View, create, edit, and delete Answers across the organization. | — | [What Are Answers And How Do They Work?](/user-guide/knowledge/answers/what-are-answers-and-how-do-they-work) |
-| **Announcements** | View, create, edit, and delete announcements, including their audience and schedule. | — | [How announcements work](/user-guide/knowledge/announcements/how-announcements-work) |
+| **Answers** | View, create, edit, and delete Answers across the organization. | - | [What Are Answers And How Do They Work?](/user-guide/knowledge/answers/what-are-answers-and-how-do-they-work) |
+| **Announcements** | View, create, edit, and delete announcements, including their audience and schedule. | - | [How announcements work](/user-guide/knowledge/announcements/how-announcements-work) |
 | **Collections** | View, create, edit, and delete Collections and their contents. | [Projects](/user-guide/knowledge/projects/how-projects-work) are replacing Collections. Existing Collections migrate automatically with their content and permissions preserved. | [How Collections work](/user-guide/knowledge/collections/how-collections-work) |
 | **Go Links** | View, create, edit, and delete Go Links, and filter the list by creator, department, and type (Unlisted, Public, or Variable). | As a moderator, you can edit a Go Link even when its creator limited editing to themselves. | [How Go Links Work](/user-guide/knowledge/go-links/how-go-links-work) |
 | **Pins** | View, edit, and delete public Pins. | You create a Pin from a search result, so this tab has no **New pin** button. | [How Pins Work](/user-guide/knowledge/pins/how-pins-work) |
@@ -33,6 +33,6 @@ Use these tabs to manage content, not measure it. For usage metrics such as your
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [User Roles](/administration/identity/roles/user-roles) — Member and Moderator permissions that control who can manage each content type
--   [Announcements](/administration/insights/announcements) — Enable announcement authoring, grant creation access, and troubleshoot the Announcements page
--   [DNS-based Go Links](/administration/management/features/dns-go-links) — Serve Go Links without the browser extension
+-   [User Roles](/administration/identity/roles/user-roles) - Member and Moderator permissions that control who can manage each content type
+-   [Announcements](/administration/insights/announcements) - Enable announcement authoring, grant creation access, and troubleshoot the Announcements page
+-   [DNS-based Go Links](/administration/management/features/dns-go-links) - Serve Go Links without the browser extension

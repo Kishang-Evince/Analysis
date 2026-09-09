@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/work-ai-index-productivity-paradox"
 canonical: "https://www.glean.com/blog/work-ai-index-productivity-paradox"
 title: "AI has arrived at work. The organizational impact hasn't"
-description: "Stephanie Baladi  | The Work AI Index reveals why widespread AI adoption still isn’t translating into business impact — and the hidden human labor behind the gap."
+description: "Stephanie Baladi  | The Work AI Index reveals why widespread AI adoption still isn’t translating into business impact - and the hidden human labor behind the gap."
 fetched_at: "2026-09-01T13:26:58.045Z"
 ---
 Last updated Jun 23, 2026.
@@ -143,7 +143,7 @@ Botsitting wears people down, fatigue leads to botshitting, and unverified work 
 
 ## What the 13% of companies getting this right do differently
 
-The companies closing the gap aren’t necessarily the ones using the most AI. They’re the ones building the judgment, habits, and systems that make AI dependable as adoption grows — the human infrastructure of AI. They’re building it at three levels:
+The companies closing the gap aren’t necessarily the ones using the most AI. They’re the ones building the judgment, habits, and systems that make AI dependable as adoption grows - the human infrastructure of AI. They’re building it at three levels:
 
 ### Individuals apply judgment.
 

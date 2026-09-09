@@ -14,10 +14,10 @@ Connecting Gmail takes one authorization. Authorize Google Tools and your setup 
 -   **Read and write tools** work right away. Glean and Glean agents can search email threads, read messages, and draft emails and manage labels. Every tool runs as the person asking, using their own Google authorization, so it respects that user's Gmail permissions.
 -   **Permission-aware search** is available when you turn on data crawling and indexing. Glean builds a search index of your email that respects Gmail's permission model, so each person searches their own mailbox content.
 
-1.  Connect and authorizetoday — current step
-2.  Use read and write toolstoday — current step
-3.  Indexing runs in the backgroundtoday — happens automatically
-4.  Permission-aware search switches ontomorrow — happens automatically
+1.  Connect and authorizetoday - current step
+2.  Use read and write toolstoday - current step
+3.  Indexing runs in the backgroundtoday - happens automatically
+4.  Permission-aware search switches ontomorrow - happens automatically
 
 ## Feature availability after setup[​](#feature-availability-after-setup "Direct link to Feature availability after setup")
 
@@ -65,7 +65,7 @@ Review who can use the connector and any data access rules, then finish setup. C
 
 ## Manage tools[​](#manage-tools "Direct link to Manage tools")
 
-Connecting Gmail makes its tools available. You can see all available tools on the **Tools** tab of your connector and edit permissions through **Advanced settings**. Gmail's write tools create drafts and manage labels — there is no tool that sends email on a user's behalf.
+Connecting Gmail makes its tools available. You can see all available tools on the **Tools** tab of your connector and edit permissions through **Advanced settings**. Gmail's write tools create drafts and manage labels - there is no tool that sends email on a user's behalf.
 
 ### Tool settings you can change afterwards[​](#tool-settings-you-can-change-afterwards "Direct link to Tool settings you can change afterwards")
 

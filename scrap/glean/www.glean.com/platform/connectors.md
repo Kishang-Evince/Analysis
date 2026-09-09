@@ -21,7 +21,7 @@ Glean analyzes content, activity, and people to understand how you work. All dat
 
 ### Real-time data sync across billions of documents 
 
-Data updates as soon as it changes in the source application — including permissioning rules, which are reflected immediately in results.
+Data updates as soon as it changes in the source application - including permissioning rules, which are reflected immediately in results.
 
 ![Connectors Graphic](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69326503d6902a66494dd1d1_Connectors%20Graphic.webp)
 
@@ -39,7 +39,7 @@ Glean analyzes content, activity, and people to understand how you work. All dat
 
 ### Real-time data sync across billions of documents
 
-Data updates as soon as it changes in the source application — including permissioning rules, which are reflected immediately in results.
+Data updates as soon as it changes in the source application - including permissioning rules, which are reflected immediately in results.
 
 Actions
 

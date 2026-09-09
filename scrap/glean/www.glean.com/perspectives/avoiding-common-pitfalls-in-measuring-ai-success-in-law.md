@@ -63,21 +63,21 @@ Share this article:
 
 # Avoiding common pitfalls in measuring AI success in law
 
-Legal teams across industries have adopted AI tools at a remarkable pace—96% of in-house departments now use AI in some capacity—yet only 31% have moved beyond pilot programs into scaled implementation. The gap between adoption and proven value is where most legal organizations stall, unable to articulate whether their AI investments deliver measurable business results or simply make work feel faster.
+Legal teams across industries have adopted AI tools at a remarkable pace-96% of in-house departments now use AI in some capacity-yet only 31% have moved beyond pilot programs into scaled implementation. The gap between adoption and proven value is where most legal organizations stall, unable to articulate whether their AI investments deliver measurable business results or simply make work feel faster.
 
-The root cause is a measurement problem, not a technology problem. Only 5% of law firms currently track legal tech ROI, according to Bloomberg's Legal Ops and Tech Survey, and 82% of AI leaders at law firms say assessing ROI remains a significant hurdle to wider adoption. Without concrete success criteria, legal departments default to anecdotal impressions—"the team seems more productive"—that fail to satisfy general counsel, CFOs, or increasingly sophisticated clients.
+The root cause is a measurement problem, not a technology problem. Only 5% of law firms currently track legal tech ROI, according to Bloomberg's Legal Ops and Tech Survey, and 82% of AI leaders at law firms say assessing ROI remains a significant hurdle to wider adoption. Without concrete success criteria, legal departments default to anecdotal impressions-"the team seems more productive"-that fail to satisfy general counsel, CFOs, or increasingly sophisticated clients.
 
 This article breaks down the specific pitfalls that undermine AI measurement in legal settings and offers a practical framework for defining, tracking, and reporting metrics that connect AI usage to outcomes leadership actually cares about. The goal: replace vague productivity claims with defensible evidence of impact.
 
 ## What does it mean to measure AI success in legal teams?
 
-AI success measurement in legal operations is the practice of evaluating whether AI tools deliver concrete, quantifiable value—not just anecdotal impressions of speed or convenience. It requires legal teams to define what "good" looks like for each workflow, track performance against that standard, and report results in terms that resonate with both legal leadership and the broader business.
+AI success measurement in legal operations is the practice of evaluating whether AI tools deliver concrete, quantifiable value-not just anecdotal impressions of speed or convenience. It requires legal teams to define what "good" looks like for each workflow, track performance against that standard, and report results in terms that resonate with both legal leadership and the broader business.
 
 This distinction matters because "we're faster" is not a success criterion. A legal team that cuts contract review time by 30% has achieved an efficiency gain, but that gain only qualifies as success if the team can also demonstrate one or more downstream outcomes: reduced cost per matter, lower outside counsel spend, higher capacity without added headcount, or measurable quality improvements that reduce rework and malpractice exposure. The difference between a productivity claim and a success metric is the presence of a defined outcome tied to a business objective.
 
 ### Why legal teams face a unique measurement challenge
 
-Legal work resists the simple before-and-after comparisons that work in other departments. A customer support team can measure ticket deflection rates and average resolution time with relative ease. Legal work, by contrast, is high-stakes, variable in complexity, and deeply dependent on professional judgment. A contract negotiation, a regulatory filing, and a litigation research memo each demand different skills, carry different risk profiles, and produce different types of value. Generic AI metrics imported from other functions—queries per day, average response time, user satisfaction scores—miss the nuances that determine whether AI actually helps attorneys do better work.
+Legal work resists the simple before-and-after comparisons that work in other departments. A customer support team can measure ticket deflection rates and average resolution time with relative ease. Legal work, by contrast, is high-stakes, variable in complexity, and deeply dependent on professional judgment. A contract negotiation, a regulatory filing, and a litigation research memo each demand different skills, carry different risk profiles, and produce different types of value. Generic AI metrics imported from other functions-queries per day, average response time, user satisfaction scores-miss the nuances that determine whether AI actually helps attorneys do better work.
 
 This variability demands a use-case-specific approach to measurement. Strong [AI evaluation frameworks](https://www.glean.com/blog/enterprise-agent-evaluation-guide) group legal workflows by task type and assess success criteria differently for each:
 
@@ -86,37 +86,37 @@ This variability demands a use-case-specific approach to measurement. Strong [AI
 -   **Document review**: Error rate per document, turnaround time from assignment to completion, and the ratio of AI-flagged issues to issues caught only by human reviewers.
 -   **Issue resolution and triage**: Time from intake to disposition, escalation frequency, and whether AI-assisted triage routes matters to the right attorney or team on the first pass.
 
-Each of these categories requires its own rubric—a set of quality dimensions such as accuracy, coherence, helpfulness, citation quality, and policy compliance—rather than a single generic score applied across the department.
+Each of these categories requires its own rubric-a set of quality dimensions such as accuracy, coherence, helpfulness, citation quality, and policy compliance-rather than a single generic score applied across the department.
 
 ### Measuring the process, not just the output
 
 One underappreciated aspect of legal AI evaluation: the final output is only part of what matters. A well-drafted memo that relies on a hallucinated citation is worse than a slower memo built on verified authorities. A contract summary that omits a key indemnification clause may read well but create real liability.
 
-Effective measurement therefore covers both end results and the quality of intermediate workflow steps. Did the AI retrieve the right source documents? Did it summarize facts accurately before generating a recommendation? Did it respect permission boundaries and surface only materials the attorney was authorized to access? These step-level metrics—retrieval quality, citation validity, summarization fidelity—give legal teams [diagnostic power](https://www.glean.com/blog/glean-ai-evaluator). When something goes wrong, tracing where the process failed makes it far easier to improve performance than simply scoring the final document and hoping for better results next time.
+Effective measurement therefore covers both end results and the quality of intermediate workflow steps. Did the AI retrieve the right source documents? Did it summarize facts accurately before generating a recommendation? Did it respect permission boundaries and surface only materials the attorney was authorized to access? These step-level metrics-retrieval quality, citation validity, summarization fidelity-give legal teams [diagnostic power](https://www.glean.com/blog/glean-ai-evaluator). When something goes wrong, tracing where the process failed makes it far easier to improve performance than simply scoring the final document and hoping for better results next time.
 
 This layered approach to measurement is what separates legal teams that can defend their AI investments from those still relying on "it feels like it's helping." The former can point to specific, repeatable evidence across defined workflows. The latter will struggle to justify continued spend when leadership or clients press for proof.
 
 ## Why vague productivity claims fail legal teams
 
-Legal departments rarely struggle to produce examples of AI use. They struggle to prove that those examples matter. Most teams still report AI in the language of convenience—faster first drafts, quicker summaries, less manual search—but legal leaders need evidence that reaches matter economics, client service, and risk posture.
+Legal departments rarely struggle to produce examples of AI use. They struggle to prove that those examples matter. Most teams still report AI in the language of convenience-faster first drafts, quicker summaries, less manual search-but legal leaders need evidence that reaches matter economics, client service, and risk posture.
 
-That disconnect sits at the center of the pilot problem. Research across legal operations shows strong adoption interest, modest measured gains, and very little hard ROI discipline: a [2025 survey of over 2,800 legal professionals](https://www.fedbar.org/blog/the-legal-industry-report-2025/) found that while 31% personally use generative AI at work, only 21% of firms have adopted it at the organizational level — and only a small fraction formally assess legal tech ROI. In practice, that means AI survives on enthusiasm longer than it survives on numbers.
+That disconnect sits at the center of the pilot problem. Research across legal operations shows strong adoption interest, modest measured gains, and very little hard ROI discipline: a [2025 survey of over 2,800 legal professionals](https://www.fedbar.org/blog/the-legal-industry-report-2025/) found that while 31% personally use generative AI at work, only 21% of firms have adopted it at the organizational level - and only a small fraction formally assess legal tech ROI. In practice, that means AI survives on enthusiasm longer than it survives on numbers.
 
 ### The problem with "30% faster"
 
-Speed metrics appeal because they look clean. A team can say a review step took two hours instead of three, or that a draft arrived in the same afternoon rather than the next morning — and in well-structured pilots, the numbers can be real: [one eight-week pilot across 28 legal teams](https://www.axiomlaw.com/blog/ai-contract-review-and-analysis-what-legal-teams-need-to-know) showed 40–60% time savings on routine contract review. Legal work, though, does not earn value at the moment a clock stops; value shows up later—when a matter closes at lower cost, a lawyer takes on more substantive work, or a client receives better service without an increase in fees.
+Speed metrics appeal because they look clean. A team can say a review step took two hours instead of three, or that a draft arrived in the same afternoon rather than the next morning - and in well-structured pilots, the numbers can be real: [one eight-week pilot across 28 legal teams](https://www.axiomlaw.com/blog/ai-contract-review-and-analysis-what-legal-teams-need-to-know) showed 40–60% time savings on routine contract review. Legal work, though, does not earn value at the moment a clock stops; value shows up later-when a matter closes at lower cost, a lawyer takes on more substantive work, or a client receives better service without an increase in fees.
 
 That is why productivity claims often collapse in front of finance or legal leadership. A faster first pass may still produce the same spend profile if partner review expands, if rework rises, or if the output cannot support client-facing delivery without extensive cleanup. In law, elapsed time is a weak proxy unless it sits next to a second layer of proof: margin improvement, lower external spend, stronger throughput on comparable matters, or a drop in avoidable quality defects.
 
 ### The activity trap distorts real performance
 
-Another common mistake: teams report system activity as though it were business impact. Dashboards fill with usage counts, prompt volume, session totals, and feature adoption. Those indicators help answer one narrow question—did people touch the tool—but they do not answer the one that matters: did the tool improve legal work in a way the business can verify.
+Another common mistake: teams report system activity as though it were business impact. Dashboards fill with usage counts, prompt volume, session totals, and feature adoption. Those indicators help answer one narrow question-did people touch the tool-but they do not answer the one that matters: did the tool improve legal work in a way the business can verify.
 
 Better evaluation practice shifts attention from interface behavior to completed work. For legal teams, that means measurement should center on whether AI helped produce a usable result inside a real workflow, and where the workflow broke when it did not. The strongest programs watch three layers at once:
 
 -   **Task completion**: whether the matter step reached a usable end state, not just a draft or suggestion.
 -   **Quality under review**: whether attorneys accepted the output with limited correction, or had to rebuild it before use.
--   **Failure visibility**: whether the team can see where performance fell apart—source selection, citation support, routing, factual extraction, or escalation.
+-   **Failure visibility**: whether the team can see where performance fell apart-source selection, citation support, routing, factual extraction, or escalation.
 
 This matters because surface activity can rise while legal value stays flat. A department may record heavy usage across a quarter and still fail to reduce cycle time on live matters, still rely on outside counsel for routine work, and still carry the same review burden at senior levels. Without evaluated outcomes, the dashboard becomes a distraction.
 
@@ -132,7 +132,7 @@ Weak measurement also leads to a quieter problem: accumulation. When legal teams
 
 That creates a real operational drag:
 
--   **Budget leakage**: spend rises across tools that solve similar problems but never prove distinct value — a pattern made worse when [only 35% of enterprise AI tools](https://zapier.com/blog/ai-sprawl-survey/) go through proper approval channels.
+-   **Budget leakage**: spend rises across tools that solve similar problems but never prove distinct value - a pattern made worse when [only 35% of enterprise AI tools](https://zapier.com/blog/ai-sprawl-survey/) go through proper approval channels.
 -   **Workflow fragmentation**: attorneys switch between disconnected systems for research, drafting, review, and knowledge access.
 -   **Control overhead**: each product adds another layer of access review, policy review, vendor management, and support work.
 -   **Attribution gaps**: no one can say which platform improved results because no one measured the workflow in a comparable way.
@@ -141,7 +141,7 @@ The result is an AI program that costs more to manage than leadership expected, 
 
 ## Which metrics actually quantify AI impact in law
 
-Legal departments need metrics that hold up in budget reviews, client conversations, and partner meetings. That means numbers with a clear formula, a clear owner, and a clear link to matter economics or legal quality—not a dashboard full of interaction counts.
+Legal departments need metrics that hold up in budget reviews, client conversations, and partner meetings. That means numbers with a clear formula, a clear owner, and a clear link to matter economics or legal quality-not a dashboard full of interaction counts.
 
 A practical legal AI scorecard should cover three categories at once: operational movement inside the workflow, financial effect outside the workflow, and output quality at the attorney-review stage. Each category answers a different question, and none should stand on its own.
 
@@ -162,14 +162,14 @@ Financial metrics convert workflow change into something leadership can fund, ch
 
 -   **Billing realization rate**: Divide actual billed amounts by total billable time. In firms, this metric tests whether improved speed and consistency strengthen client acceptance of billed value rather than increase write-downs. A faster draft that still triggers discount pressure has limited financial impact.
 -   **Outside counsel spend reduction**: Track whether internal teams use AI to keep routine research, drafting, review, or intake work in-house instead of sending it to external firms. This is one of the clearest budget measures for corporate legal teams because the savings appear in spend records, not just in attorney impressions.
--   **ROI per tool**: Subtract total annual AI spend from annual savings or incremental revenue, then divide by total AI investment. This is the strongest renewal metric because it forces the team to count the full cost base—licenses, implementation time, training, support, governance reviews, and maintenance.
+-   **ROI per tool**: Subtract total annual AI spend from annual savings or incremental revenue, then divide by total AI investment. This is the strongest renewal metric because it forces the team to count the full cost base-licenses, implementation time, training, support, governance reviews, and maintenance.
 -   **Decision-linked business impact**: Measure the business outcome that follows the AI-assisted task. For legal work, that may mean shorter contract cycle times, fewer low-risk matters sent for escalation, faster policy approvals, or more profitable fixed-fee work. The important distinction: measure the decision the legal work supports, not just the document the system helps produce.
 
 This is also where legal teams need to account for tool sprawl. A department may see a positive result from one contract tool and another from one research tool, yet still lose ground once duplicated subscriptions, fragmented workflows, and compliance overhead enter the calculation. Financial measurement has to reflect the net effect of the stack, not the best-looking result from an isolated pilot.
 
 ### Quality and strategic metrics
 
-Legal AI only creates durable value when the output reduces attorney effort without lowering professional standards. Quality and strategic metrics show whether that standard holds—and whether the time gained flows into work the business actually values.
+Legal AI only creates durable value when the output reduces attorney effort without lowering professional standards. Quality and strategic metrics show whether that standard holds-and whether the time gained flows into work the business actually values.
 
 -   **Accuracy of AI-assisted outputs**: Track the share of drafts, summaries, or research responses that move through senior review without substantive edits. This is a better signal than generic user satisfaction because it measures whether the output stands up in actual legal use.
 -   **Time reallocated to strategic work**: Measure hours shifted away from repetitive tasks such as first-pass review, standard research, or document sorting and toward negotiation, advisory support, risk analysis, or client counseling. This is the metric that shows whether AI changes the role of the lawyer, not just the speed of the task.
@@ -233,7 +233,7 @@ A stronger baseline starts at the workflow level. Capture one line for NDA revie
 
 ## What common measurement mistakes look like in practice
 
-Even teams with the right scorecard can misread the results. The most common errors show up after rollout—when dashboards fill up, pilot reviews start, and leadership asks whether the tool changed anything that matters.
+Even teams with the right scorecard can misread the results. The most common errors show up after rollout-when dashboards fill up, pilot reviews start, and leadership asks whether the tool changed anything that matters.
 
 ### Measuring adoption instead of outcomes
 
@@ -241,7 +241,7 @@ Legal departments often treat usage reports as proof because usage data arrives 
 
 This mistake has become common enough to show up in industry data. Bloomberg's legal ops survey found that very few firms track legal tech ROI, even though many can report utilization. That gap matters. A tool can attract broad participation and still fail every business test that a general counsel or CFO will apply at renewal time.
 
-Adoption belongs on the scorecard, but only as an entry condition — and even encouraging early data, like [survey findings](https://www.fedbar.org/blog/the-legal-industry-report-2025/) showing 65% of AI-using legal professionals save one to five hours per week, cannot substitute for outcome measurement. Once a team reaches enough consistent use, the question changes: did the tool lower review hours on standard agreements, reduce external invoices on routine work, or help the team close more matters with the same staff?
+Adoption belongs on the scorecard, but only as an entry condition - and even encouraging early data, like [survey findings](https://www.fedbar.org/blog/the-legal-industry-report-2025/) showing 65% of AI-using legal professionals save one to five hours per week, cannot substitute for outcome measurement. Once a team reaches enough consistent use, the question changes: did the tool lower review hours on standard agreements, reduce external invoices on routine work, or help the team close more matters with the same staff?
 
 ### Ignoring quality in favor of speed
 
@@ -270,7 +270,7 @@ A better method starts with comparable matter groups. Measure similar agreements
 
 Early data often reflects caution, duplicate checks, and uneven habits rather than mature performance. Attorneys test edge cases, compare output to old methods, and keep extra review steps in place until trust catches up with policy. A team that judges value too early may end up measuring adjustment cost instead of steady-state benefit.
 
-This is why short pilot windows can mislead decision-makers. A 45-day review often captures setup friction, not the outcome that appears after [prompt libraries](https://www.glean.com/blog/glean-ai-prompting-guide) settle, review norms tighten, and the right matters route into the tool. A more defensible pattern uses a ramp period—often 90 days—followed by comparison across at least two quarters of similar matters.
+This is why short pilot windows can mislead decision-makers. A 45-day review often captures setup friction, not the outcome that appears after [prompt libraries](https://www.glean.com/blog/glean-ai-prompting-guide) settle, review norms tighten, and the right matters route into the tool. A more defensible pattern uses a ramp period-often 90 days-followed by comparison across at least two quarters of similar matters.
 
 Another mistake sits below the surface: teams inspect only the final answer and never check where the workflow broke. Poor results may come from bad source selection, weak matter routing, incomplete context, or a missed handoff to a human reviewer. Without that operational trace, a legal team may blame the wrong part of the system and spend months fixing the wrong problem.
 
@@ -295,7 +295,7 @@ A trusted system needs a named operator. In most departments, that role sits bes
 
 That owner should run a monthly cycle with clear tasks:
 
--   **Collect**: pull the same fields each month from the same systems—matter type, internal hours, external spend, cycle time, revision counts, and any client or internal feedback.
+-   **Collect**: pull the same fields each month from the same systems-matter type, internal hours, external spend, cycle time, revision counts, and any client or internal feedback.
 -   **Review**: flag anomalies, separate one-off matters from true pattern shifts, and note where missing data weakens the readout.
 -   **Report**: issue a short scorecard that leadership can scan in minutes, with one view in hours and another in money.
 
@@ -303,7 +303,7 @@ This cadence matters because legal teams often wait for quarterly steering meeti
 
 ### Use dashboards that match how legal leaders make decisions
 
-A measurement framework gains credibility when it fits into forums that already exist—budget reviews, practice leader check-ins, vendor reviews, and matter postmortems. That is where leaders compare tradeoffs, not in a separate AI update deck.
+A measurement framework gains credibility when it fits into forums that already exist-budget reviews, practice leader check-ins, vendor reviews, and matter postmortems. That is where leaders compare tradeoffs, not in a separate AI update deck.
 
 The dashboard itself should stay simple. Show one row for operational change, one for financial effect, one for service level, and one for quality control. Partners and finance leaders will look for margin, avoided external spend, and matter throughput; attorneys and team leads will look for hours returned, review burden, and turnaround stability. Present both views side by side so the same result reads clearly to both groups.
 
@@ -346,7 +346,7 @@ Client conversations tend to turn on three questions: did the work move sooner, 
 A stronger reporting pattern looks like this:
 
 -   **Service-level improvement**: Show how AI changed delivery against a client-relevant benchmark such as first draft availability, redline turnaround against a counterparty deadline, or response time on routine advisory requests.
--   **Commercial effect**: Connect those service gains to something the client tracks already—fewer days in contract cycle, less low-complexity work sent to outside counsel, or tighter budget performance on repeat matters.
+-   **Commercial effect**: Connect those service gains to something the client tracks already-fewer days in contract cycle, less low-complexity work sent to outside counsel, or tighter budget performance on repeat matters.
 -   **Risk containment**: Show that the work met the same or better internal review standard after AI support entered the workflow, especially on citation fidelity, clause extraction, escalation decisions, or issue spotting.
 
 This approach works better than a generic "AI helped us save time" claim because it mirrors how clients buy legal services. They judge responsiveness, predictability, and quality under pressure. The legal team that can quantify those shifts has a stronger position in renewal meetings, outside counsel reviews, and procurement scrutiny.
@@ -355,14 +355,14 @@ This approach works better than a generic "AI helped us save time" claim because
 
 Pricing teams and legal leaders need a clearer answer than "the tool seems useful." They need to know whether AI changes delivery economics enough to support a pricing decision, a staffing model, or a larger technology commitment.
 
-That is where matter-level ROI becomes practical. For recurring work—commercial contracts, routine employment advice, standard regulatory review, first-pass diligence—legal teams can compare pre-AI and post-AI effort against the same type of matter and then apply that evidence to fixed-fee or portfolio pricing. A contract review that dropped from 40 attorney hours to 25 with stable approval rates and no rise in issue escalation changes margin math in a way leadership can act on.
+That is where matter-level ROI becomes practical. For recurring work-commercial contracts, routine employment advice, standard regulatory review, first-pass diligence-legal teams can compare pre-AI and post-AI effort against the same type of matter and then apply that evidence to fixed-fee or portfolio pricing. A contract review that dropped from 40 attorney hours to 25 with stable approval rates and no rise in issue escalation changes margin math in a way leadership can act on.
 
 It also creates discipline around investment. A useful scorecard for leadership should show not just gains, but net gains after the full operating cost of AI:
 
 1.  **License and platform cost**: The direct spend on the tool itself.
 2.  **Implementation cost**: Setup, integration, security review, and enablement effort.
 3.  **Maintenance cost**: Ongoing admin work, prompt library upkeep, workflow tuning, and user support.
-4.  **Replacement value**: What spend disappeared or shrank as a result—outside counsel work, overtime, low-value review hours, or duplicate software.
+4.  **Replacement value**: What spend disappeared or shrank as a result-outside counsel work, overtime, low-value review hours, or duplicate software.
 
 This matters because many legal teams now face tool sprawl. Nearly half of in-house leaders in one survey cited the sheer number of AI providers as a barrier to adoption. Reported savings will not stand up in front of a CFO if they exclude duplicated subscriptions, parallel pilots, and the internal cost to govern them.
 

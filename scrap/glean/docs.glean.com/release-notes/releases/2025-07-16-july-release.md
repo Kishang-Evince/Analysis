@@ -73,7 +73,7 @@ Assistant *FR-3648*
 
 #### Keep track of what you’ve accomplished and prepare performance self-evaluations in Glean Assistant[​](#keep-track-of-what-youve-accomplished-and-prepare-performance-self-evaluations-in-glean-assistant "Direct link to Keep track of what you’ve accomplished and prepare performance self-evaluations in Glean Assistant")
 
-Ask Glean Assistant questions like “What did I work on last week?” or “Help me prepare for my upcoming performance review,” and you’ll get an AI-generated summary of your key accomplishments—drawing from the Glean Personal Knowledge Graph, which connects your daily activities to higher-level tasks and initiatives.
+Ask Glean Assistant questions like “What did I work on last week?” or “Help me prepare for my upcoming performance review,” and you’ll get an AI-generated summary of your key accomplishments-drawing from the Glean Personal Knowledge Graph, which connects your daily activities to higher-level tasks and initiatives.
 
 [Learn more](/security/knowledge-graph)
 

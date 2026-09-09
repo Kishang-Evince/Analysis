@@ -261,7 +261,7 @@ No items found.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/69e0dc3cfa217adb96218230_69e0cb636147a522dea629ad_time.webp)
 
-TIME revives a century of archives—and boosts sales and research—with Glean.
+TIME revives a century of archives-and boosts sales and research-with Glean.
 
 Read case study
 
@@ -301,7 +301,7 @@ IT Operations
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/69e0dc3efa217adb9621826e_69e0cbe9be20df0e9c5fb2d8_booking.com.webp)
 
-Booking.com scales AI to 14,000 employees—and redefines work—with Glean
+Booking.com scales AI to 14,000 employees-and redefines work-with Glean
 
 Read case study
 

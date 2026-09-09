@@ -30,11 +30,11 @@
 | UC-05 | All | Avoid summarizing PHI without DLP review |
 | UC-06 | All | IT/HR deflection universal |
 | UC-07 | Sales-led B2B, Professional services | Payer/provider account mgmt |
-| UC-08 | **Healthcare (high)**, Life sciences, Financial services | Maps to Glean healthcare "credentialing & compliance" claim — **internal docs only** |
+| UC-08 | **Healthcare (high)**, Life sciences, Financial services | Maps to Glean healthcare "credentialing & compliance" claim - **internal docs only** |
 
 ### Compliance boundary (Doc-Verified)
 
-- Glean markets claims/appeals and member inquiry use cases — **require connectors not in tenant stack** (claims systems, Zendesk).
+- Glean markets claims/appeals and member inquiry use cases - **require connectors not in tenant stack** (claims systems, Zendesk).
 - Tenant-evaluable healthcare value = **administrative knowledge** (SOPs, policies, training, credentialing packets on Drive/Notion).
 
 ### Verification steps / test case

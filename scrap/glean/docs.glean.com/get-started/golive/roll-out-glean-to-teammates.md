@@ -29,7 +29,7 @@ The **Attention required** tab surfaces profiles with missing required fields su
 
 Go to **Admin console → Users and permissions → User roles** to adjust roles and permissions for individual teammates. From the same page, you can also modify the **default Member permissions** that apply to everyone in your organization.
 
-The **Member** role is the standard role for end users. Default Member permissions determine which Glean features — search, Assistant, agents, and so on — are available to your teammates out of the box. See [Manage users](/administration/identity/roles/manage-users) and [User roles](/administration/identity/roles/user-roles) for details.
+The **Member** role is the standard role for end users. Default Member permissions determine which Glean features - search, Assistant, agents, and so on - are available to your teammates out of the box. See [Manage users](/administration/identity/roles/manage-users) and [User roles](/administration/identity/roles/user-roles) for details.
 
 ## In your SSO provider, assign Glean to the appropriate users in your organization[​](#in-your-sso-provider-assign-glean-to-the-appropriate-users-in-your-organization "Direct link to In your SSO provider, assign Glean to the appropriate users in your organization")
 
@@ -45,7 +45,7 @@ For provider-specific guidance, see the [Single sign-on (SSO) configuration](/ad
 
 Go to **Admin console → Users and permissions → User roles** and select **Invite teammates** to notify your teammates that Glean is available.
 
-Glean sends an invitation email with a link to sign in. You can also announce the rollout through your usual internal channels — see [Rollout strategy](/get-started/golive/launch-preparation) for email templates, kickoff session ideas, and communication best practices.
+Glean sends an invitation email with a link to sign in. You can also announce the rollout through your usual internal channels - see [Rollout strategy](/get-started/golive/launch-preparation) for email templates, kickoff session ideas, and communication best practices.
 
 ## Activate the Glean extension[​](#activate-the-glean-extension "Direct link to Activate the Glean extension")
 

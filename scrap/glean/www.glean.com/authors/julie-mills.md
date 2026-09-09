@@ -90,7 +90,7 @@ June 30, 2026
 
 ### Buyer’s guide: what to look for in an enterprise AI platform for token-efficient deployment
 
-What to look for in an enterprise AI platform for token-efficient deployment — retrieval precision, model routing, orchestration, governance, and cost control.
+What to look for in an enterprise AI platform for token-efficient deployment - retrieval precision, model routing, orchestration, governance, and cost control.
 
 ![Julie Mills](https://cdn.prod.website-files.com/613513981b0efaf850830620/67dc54a473da648e54d4e7fb_Julie%20Headshot.jpeg)
 
@@ -274,11 +274,11 @@ Customers + Partners
 
 Industry Insights
 
-[![Glean joins the Slack Marketplace, making it easy to get all your enterprise context in Slack—and bring your Slack data into Glean](https://cdn.prod.website-files.com/613513981b0efaf850830620/68dd2e74a5a5194615d40d70_Slack%20MarketPlace%20-%20Blog%20-%206%20\(1\).webp)
+[![Glean joins the Slack Marketplace, making it easy to get all your enterprise context in Slack-and bring your Slack data into Glean](https://cdn.prod.website-files.com/613513981b0efaf850830620/68dd2e74a5a5194615d40d70_Slack%20MarketPlace%20-%20Blog%20-%206%20\(1\).webp)
 
 October 1, 2025
 
-### Glean joins the Slack Marketplace, making it easy to get all your enterprise context in Slack—and bring your Slack data into Glean
+### Glean joins the Slack Marketplace, making it easy to get all your enterprise context in Slack-and bring your Slack data into Glean
 
 Glean is excited to be an official application in the Slack Marketplace so enterprises can access trusted, permission‑aware data right where they chat - in Slack.
 
@@ -424,7 +424,7 @@ June 12, 2025
 
 ### Is MCP + federated search killing the index?
 
-New connectors from OpenAI, Google Agentspace, and open protocols like MCP, federated search is having a resurgence. Do LLMs still need indexes—or has federated search made them obsolete?
+New connectors from OpenAI, Google Agentspace, and open protocols like MCP, federated search is having a resurgence. Do LLMs still need indexes-or has federated search made them obsolete?
 
 ![James Simonsen](https://cdn.prod.website-files.com/613513981b0efaf850830620/61e567e9fbe8c15f0ccd4a61_16-James.png)
 
@@ -446,11 +446,11 @@ PMM
 
 Industry Insights
 
-[![So, your AI vendor is building enterprise connectors — here are 9 questions to differentiate real enterprise AI systems](https://cdn.prod.website-files.com/613513981b0efaf850830620/67dc5316d044bc388d75f40e_image1%20\(11\).webp)
+[![So, your AI vendor is building enterprise connectors - here are 9 questions to differentiate real enterprise AI systems](https://cdn.prod.website-files.com/613513981b0efaf850830620/67dc5316d044bc388d75f40e_image1%20\(11\).webp)
 
 March 20, 2025
 
-### So, your AI vendor is building enterprise connectors — here are 9 questions to differentiate real enterprise AI systems
+### So, your AI vendor is building enterprise connectors - here are 9 questions to differentiate real enterprise AI systems
 
 Data connectors are essential to the quality and security of enterprise AI, but they're not all built the same. Here are 9 questions you should consider before selecting the right AI vendor.
 

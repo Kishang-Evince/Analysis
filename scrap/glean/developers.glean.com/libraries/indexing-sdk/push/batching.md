@@ -11,7 +11,7 @@ The defaults work for most connectors. Reach for these knobs when a crawl is tim
 
 | Knob | Where | Default | Reach for it when… |
 | --- | --- | --- | --- |
-| `connector.batch_size` | Connector attribute | `1000` | Batches time out — **lower** it. |
+| `connector.batch_size` | Connector attribute | `1000` | Batches time out - **lower** it. |
 | `document_batch_size_bytes` | `ConnectorOptions` | `5 MiB` | Tune the serialized byte cap for connector-managed uploads; `None` disables the byte cap. |
 | `max_batch_bytes` | `PushUploader` argument | `5 MiB` | The equivalent cap for direct uploader calls. |
 | `upload_timeout_ms` | `ConnectorOptions` | client default | Large batches hit timeouts. |
@@ -28,7 +28,7 @@ connector.index_data(mode=IndexingMode.FULL)print(connector.observability.get_me
 | Dominant stage | Likely fix |
 | --- | --- |
 | `data_fetch` | Source API is slow or rate-limited. Tune [rate limiting](/libraries/indexing-sdk/pull/rate-limiting), reduce N+1 detail calls, or use a streaming connector to overlap work. |
-| `data_transform` | Expensive work in `transform()` — HTML parsing, regex, per-document network calls. Move network calls into the data client. |
+| `data_transform` | Expensive work in `transform()` - HTML parsing, regex, per-document network calls. Move network calls into the data client. |
 | `data_upload` | Tune the knobs below. |
 
 Tuning upload concurrency when 90% of wall-clock is `data_fetch` accomplishes nothing. See [Observability](/libraries/indexing-sdk/observability).
@@ -51,7 +51,7 @@ The connector forwards that value to byte-aware batching for in-memory, sync str
 
 Lower `batch_size` when your documents are large. A connector indexing full page bodies will hit the 5 MiB byte cap long before 1000 documents, so the count limit is doing nothing and you're paying serialization cost to discover that each time. Setting `batch_size` closer to what actually fits makes batching cheaper and upload sizes more predictable.
 
-Raising `batch_size` above 1000 is rarely useful — the byte cap almost always binds first.
+Raising `batch_size` above 1000 is rarely useful - the byte cap almost always binds first.
 
 ## Timeouts[​](#timeouts "Direct link to Timeouts")
 
@@ -71,10 +71,10 @@ Smaller batches are usually the better answer. They fail cheaper, retry faster, 
 connector.index_data(options=ConnectorOptions(upload_max_workers=10))
 ```
 
-The first and last pages are always sequential — the first opens the upload session, the last closes it and triggers stale-document deletion.
+The first and last pages are always sequential - the first opens the upload session, the last closes it and triggers stale-document deletion.
 
 Concurrency helps when you're latency-bound: many small batches, each spending most of its time waiting on the network. It doesn't help when you're bandwidth-bound or when the source is the bottleneck. Set it to `1` to serialize uploads while debugging.
 
 ## Memory[​](#memory "Direct link to Memory")
 
-For in-memory connectors, peak memory holds every source record and every transformed document simultaneously. If a full crawl gets OOM-killed, the fix isn't a smaller batch size — batching happens after transform. Switch to a [streaming connector](/libraries/indexing-sdk/concepts/connector-types), which transforms and uploads one batch at a time and keeps memory bounded regardless of total document count.
+For in-memory connectors, peak memory holds every source record and every transformed document simultaneously. If a full crawl gets OOM-killed, the fix isn't a smaller batch size - batching happens after transform. Switch to a [streaming connector](/libraries/indexing-sdk/concepts/connector-types), which transforms and uploads one batch at a time and keeps memory bounded regardless of total document count.

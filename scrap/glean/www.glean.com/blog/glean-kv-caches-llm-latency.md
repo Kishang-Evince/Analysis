@@ -94,7 +94,7 @@ Caching these values has the following implications:
 1.  The initiation phase, which we learned in the [previous blog](https://www.glean.com/blog/glean-input-token-llm-latency) refers to generating the first token, is unaffected by the KV caching strategy since there are no previous steps. This phase now populates the KV cache for subsequent stages.
 2.  For the decoding phase we no longer use the whole sequence as input but only the last generated token and the KV cache.
 
-So, how does attention computation scale now? As we discussed in the last blog, computing [attention scores](https://www.youtube.com/watch?v=eMlx5fFNoYc&ab_channel=3Blue1Brown) within a Transformer involves doing matrix multiplications and multiplying a matrix of shape (n, p), with another matrix (p, m), involves approximately 2\*m\*n\*p operations. In the case of the of the attention layer, m and n are both equal to the size of the context window, w, meaning the cost of this operation becomes 2\*p\*w^2—a **quadratic** relation. However, since the query for subsequent generations is now a single token, the computation is **linear** (2\*p\*1^2).
+So, how does attention computation scale now? As we discussed in the last blog, computing [attention scores](https://www.youtube.com/watch?v=eMlx5fFNoYc&ab_channel=3Blue1Brown) within a Transformer involves doing matrix multiplications and multiplying a matrix of shape (n, p), with another matrix (p, m), involves approximately 2\*m\*n\*p operations. In the case of the of the attention layer, m and n are both equal to the size of the context window, w, meaning the cost of this operation becomes 2\*p\*w^2-a **quadratic** relation. However, since the query for subsequent generations is now a single token, the computation is **linear** (2\*p\*1^2).
 
 This explains how completions within a *single* LLM call benefit from caching, but if this cache is persisted, it can be used *across* LLM calls. Two *possible* ways this can be taken advantage of are:  
 
@@ -114,7 +114,7 @@ Luckily for us, Azure’s KV cache can persist these computations *across* LLM c
 
 The data of using this cache across requests can be seen below. Each data point was obtained via 25 GPT4 Turbo calls using Azure’s provisioned throughput units (PTU). Cached calls had the *exact* same prompt over the 25 calls. Meanwhile, the uncached runs had the current request time as a prefix in each prompt, invalidating the prefix cache. 
 
-To note here again, in case you missed our [first latency blog](https://www.glean.com/blog/glean-input-token-llm-latency), we used Azure’s PTU model deployments to run these tests. PTUs are a way to obtain reserved processing capacity just for you—unlocking predictable performance and mitigating the latency swings seen via their pay-a-you-go services. This ensures that our data isn't being muddled due to data center loads.
+To note here again, in case you missed our [first latency blog](https://www.glean.com/blog/glean-input-token-llm-latency), we used Azure’s PTU model deployments to run these tests. PTUs are a way to obtain reserved processing capacity just for you-unlocking predictable performance and mitigating the latency swings seen via their pay-a-you-go services. This ensures that our data isn't being muddled due to data center loads.
 
 ![The plot below zooms into the bottom left corner for better readability. ](https://cdn.prod.website-files.com/613513981b0efaf850830620/66c44e1b9b6e6c28cfd4b76a_669fdabd019df3f792ecebc0_image4-min.webp)
 
@@ -130,7 +130,7 @@ This shows us that each cached input token saves ~0.15ms, the difference between
 
 When it comes to user experiences, we know that even a few milliseconds can make or break a satisfactory session. We’ll keep these results in mind as we continue to build and improve Glean Assistant to deliver a better, speedier service for our users. 
 
-Looking to learn more about Glean? Get a free [demo](https://www.glean.com/get-a-demo) today—or check out our [careers](https://www.glean.com/careers) page if you’re interested in helping us build the future of enterprise AI yourself! 
+Looking to learn more about Glean? Get a free [demo](https://www.glean.com/get-a-demo) today-or check out our [careers](https://www.glean.com/careers) page if you’re interested in helping us build the future of enterprise AI yourself! 
 
 [
 

@@ -100,7 +100,7 @@ Click **"Add API token"** and configure:
 -   **Token Name**: Descriptive name for tracking
 -   **Global Permissions**: Full indexing API access
 -   **App Permissions**: Limit to specific datasources (optional)
--   **Expires On**: Expiration date (**required**) — the Admin Console validates this field before creating the token
+-   **Expires On**: Expiration date (**required**) - the Admin Console validates this field before creating the token
 -   **IP Restrictions**: Optional IP range limitations
 -   **Rotation Settings**: Optional automated rotation
 

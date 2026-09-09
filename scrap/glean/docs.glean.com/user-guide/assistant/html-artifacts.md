@@ -71,7 +71,7 @@ When you're satisfied, select **Share > General access > Anyone at <Organization
 
 ## Permissions and sharing[​](#permissions-and-sharing "Direct link to Permissions and sharing")
 
-Interactive artifacts follow Glean's existing permissions model. Sharing is coupled with [Chat Sharing](/administration/assistant/features/chat-sharing) — when Chat Sharing is turned off, the **Share** option for interactive artifacts is unavailable.
+Interactive artifacts follow Glean's existing permissions model. Sharing is coupled with [Chat Sharing](/administration/assistant/features/chat-sharing) - when Chat Sharing is turned off, the **Share** option for interactive artifacts is unavailable.
 
 -   **Share within Glean only**
     

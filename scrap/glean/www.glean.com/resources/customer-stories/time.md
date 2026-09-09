@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/customer-stories/time"
 canonical: "https://www.glean.com/resources/customer-stories/time"
 title: "TIME customer story | Glean Enterprise AI"
-description: "How AI made 100 years of journalism instantly searchable—accelerating sales, research, and insight across TIME"
+description: "How AI made 100 years of journalism instantly searchable-accelerating sales, research, and insight across TIME"
 fetched_at: "2026-09-01T13:25:35.145Z"
 ---
 ![Background Image](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/68ad5ae782bc084cc5450951_time-bg.webp)
@@ -11,7 +11,7 @@ fetched_at: "2026-09-01T13:25:35.145Z"
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69b7bc737210db702f3c887b_5467dc709e89d6c1a341a6e06425160e_glean-logo.svg)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69b7bcde9f42089ab56b87a6_line.svg)![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69f0a38f4b85bd4c25e3ec2f_time-logo-white.svg)
 
-# TIME revives a century of archives—and boosts sales and research—with Glean.
+# TIME revives a century of archives-and boosts sales and research-with Glean.
 
 [
 
@@ -37,13 +37,13 @@ TIME magazine has been a pillar of American journalism since it was first publis
 
 ‍
 
-With now a website, a magazine, a social media footprint of over 51 million, live events, along with a television and video studio, TIME continues to provide trusted coverage across various media—making it an indispensable resource for understanding human history.
+With now a website, a magazine, a social media footprint of over 51 million, live events, along with a television and video studio, TIME continues to provide trusted coverage across various media-making it an indispensable resource for understanding human history.
 
 ## Before Glean
 
 **Historical data into working knowledge**
 
-With over a century of historical articles stored across everything from typewritten pages to scattered digital systems, finding the right information—whether for research or a sales pitch—had become increasingly complex. TIME needed a centralized way to index, understand, and surface all of their content —making it searchable and useful for today’s work.
+With over a century of historical articles stored across everything from typewritten pages to scattered digital systems, finding the right information-whether for research or a sales pitch-had become increasingly complex. TIME needed a centralized way to index, understand, and surface all of their content -making it searchable and useful for today’s work.
 
 **That’s why they chose Glean.**
 
@@ -97,7 +97,7 @@ With Glean centralizing and indexing data from over 100 years of articles, TIME 
 
 ‍
 
-Moving forward, TIME is looking to use AI to improve research processes for the TIME 100 or Person of the Year—potentially leveraging Glean to better discover the world's most influential and important people.
+Moving forward, TIME is looking to use AI to improve research processes for the TIME 100 or Person of the Year-potentially leveraging Glean to better discover the world's most influential and important people.
 
 ## Explore more customer stories
 

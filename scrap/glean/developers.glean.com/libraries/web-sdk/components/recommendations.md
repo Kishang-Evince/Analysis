@@ -9,7 +9,7 @@ On this page
 
 The Recommendations component surfaces intelligent, context-aware suggestions for the page the user is currently viewing, with a built-in Glean search box for manual searches.
 
-PreviewLive — your instance
+PreviewLive - your instance
 
 portal.sample.internal/runbooks/payments
 
@@ -19,7 +19,7 @@ Recommended for this page
 
 C
 
-Checkout — On-call RunbookUpdated 4 days ago
+Checkout - On-call RunbookUpdated 4 days ago
 
 J
 
@@ -27,9 +27,9 @@ PAY-2114: Canary alarms during deployIn review
 
 P
 
-Priya Natarajan — Payments PlatformTech lead
+Priya Natarajan - Payments PlatformTech lead
 
-Illustrative previewRendered with sample data — in your app, this component renders live against your organization's Glean instance. Try it live →
+Illustrative previewRendered with sample data - in your app, this component renders live against your organization's Glean instance. Try it live →
 
 ## Install the SDK[​](#install-the-sdk "Direct link to Install the SDK")
 
@@ -52,7 +52,7 @@ The Glean web app domain differs from your company's Glean backend domain (find 
 
 ## Render recommendations[​](#render-recommendations "Direct link to Render recommendations")
 
-1.  Create a container element with `position: relative`, `display: block`, and a defined width (800px maximum recommended — the widget adjusts to its container).
+1.  Create a container element with `position: relative`, `display: block`, and a defined width (800px maximum recommended - the widget adjusts to its container).
     
 2.  Render the widget into your container:
     
@@ -73,8 +73,8 @@ The most commonly used [`RecommendationsOptions`](/libraries/web-sdk/reference/i
 | `onSearch` | `(query) => void` | Invoked when the user performs a search from the built-in box. |
 | `datasourcesFilter` | `string[]` | Restrict results to specific datasources, e.g. `['jira', 'confluence']`. |
 
-All components also accept the common [`Options`](/libraries/web-sdk/reference/interfaces/Options) — `backend`, `authToken`, `theme`, `themeVariant`, `locale`, and more.
+All components also accept the common [`Options`](/libraries/web-sdk/reference/interfaces/Options) - `backend`, `authToken`, `theme`, `themeVariant`, `locale`, and more.
 
 note
 
-When adding a `boxShadow`, provide enough `verticalMargin` and `horizontalMargin` for it to be visible — margin values must be positive and apply to both sides of the component.
+When adding a `boxShadow`, provide enough `verticalMargin` and `horizontalMargin` for it to be visible - margin values must be positive and apply to both sides of the component.

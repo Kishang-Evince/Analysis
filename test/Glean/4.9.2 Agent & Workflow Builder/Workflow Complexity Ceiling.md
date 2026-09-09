@@ -1,4 +1,4 @@
-# Field 3 — Workflow Complexity Ceiling
+# Field 3 - Workflow Complexity Ceiling
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Workflow Complexity Ceiling.md](../../../Glean/Combined/4.9.2 Agent & Workflow Builder/Workflow Complexity Ceiling.md)

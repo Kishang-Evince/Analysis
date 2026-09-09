@@ -141,6 +141,6 @@ A single admin-level credential covers indexing and permissions. Users don't aut
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [About connectors](/connectors/about) — how Glean's data access modes (indexed, live, and hybrid) relate to authentication
--   [Crawl and index connectors](/connectors/crawling-indexing) — how connectors crawl and refresh content
--   [Manage connectors](/connectors/monitoring) — monitor connector status and health after setup
+-   [About connectors](/connectors/about) - how Glean's data access modes (indexed, live, and hybrid) relate to authentication
+-   [Crawl and index connectors](/connectors/crawling-indexing) - how connectors crawl and refresh content
+-   [Manage connectors](/connectors/monitoring) - monitor connector status and health after setup

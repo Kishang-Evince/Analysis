@@ -107,7 +107,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Engineering teams operate in environments defined by complexity, high stakes, and constant pressure to move quickly without compromising quality. To navigate these challenges, they must collaborate across code, documentation, conversations, and tickets—never working in isolation. Yet when debugging a production issue or understanding a complex system, engineers are forced to search these silos separately, losing critical context that connects them. Momentum inevitably slips when developers have to:
+Engineering teams operate in environments defined by complexity, high stakes, and constant pressure to move quickly without compromising quality. To navigate these challenges, they must collaborate across code, documentation, conversations, and tickets-never working in isolation. Yet when debugging a production issue or understanding a complex system, engineers are forced to search these silos separately, losing critical context that connects them. Momentum inevitably slips when developers have to:
 
 -   Search across repositories to locate relevant patterns, configs, or historical fixes
 -   Re-create boilerplate, tests, or refactors that already exist elsewhere
@@ -115,7 +115,7 @@ Engineering teams operate in environments defined by complexity, high stakes, an
 -   Piece together context scattered across Jira, Slack, design documents and change lists
 -   Spin up local environments for small changes that could follow established templates and guardrails
 
-These tasks matter, but they siphon time and energy from engineering teams. For most teams, this manifests as extra steps, work friction, and slower cycle times. Thankfully, this high-frequency work—debugging, small fixes, refactors, and reviews— is where targeted AI support, grounded in real context and fitting naturally into existing workflows, shines most.
+These tasks matter, but they siphon time and energy from engineering teams. For most teams, this manifests as extra steps, work friction, and slower cycle times. Thankfully, this high-frequency work-debugging, small fixes, refactors, and reviews- is where targeted AI support, grounded in real context and fitting naturally into existing workflows, shines most.
 
 ## Actions built into the workflow
 

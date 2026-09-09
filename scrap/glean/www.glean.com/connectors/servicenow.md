@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:52.476Z"
 ---
 ### Overview
 
-ServiceNow powers digital workflows for IT, HR, and other internal services. By connecting it to Glean, you can find and stay current on ServiceNow articles and requests using natural language—accelerating IT operations for both employees and support staff alike
+ServiceNow powers digital workflows for IT, HR, and other internal services. By connecting it to Glean, you can find and stay current on ServiceNow articles and requests using natural language-accelerating IT operations for both employees and support staff alike
 
 ### Features
 
@@ -18,7 +18,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-Glean joins ServiceNow’s IT and HR knowledge, tickets, and workflows with the rest of your company’s knowledge — so you can find answers and resolve issues faster.
+Glean joins ServiceNow’s IT and HR knowledge, tickets, and workflows with the rest of your company’s knowledge - so you can find answers and resolve issues faster.
 
 ## Work AI that works.
 

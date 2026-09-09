@@ -23,7 +23,7 @@ Identify the high-intent keywords hidden inside your sales call transcripts.
 
 ## Overview
 
-The SEO keyword research from sales calls agent analyzes sales call transcripts for a specific industry to surface the recurring challenges, themes, and language prospects use most. It helps marketing teams validate content ideas, refine messaging, and build keyword strategies grounded in real customer conversations — not guesswork. By blending qualitative insights with SEO direction, it ensures teams focus on topics that truly matter to buyers.
+The SEO keyword research from sales calls agent analyzes sales call transcripts for a specific industry to surface the recurring challenges, themes, and language prospects use most. It helps marketing teams validate content ideas, refine messaging, and build keyword strategies grounded in real customer conversations - not guesswork. By blending qualitative insights with SEO direction, it ensures teams focus on topics that truly matter to buyers.
 
 ## See it in action
 
@@ -64,7 +64,7 @@ After reviewing a broad set of sales call transcripts from the manufacturing ind
 -   “Slow handoffs between teams”
 -   “Hard to onboard new engineers quickly”
 
-These themes reflect consistent patterns across manufacturers — from industrial equipment makers to specialty goods producers — highlighting where prospects face friction and what language they use when describing their challenges.
+These themes reflect consistent patterns across manufacturers - from industrial equipment makers to specialty goods producers - highlighting where prospects face friction and what language they use when describing their challenges.
 
 ## Agent workflow
 

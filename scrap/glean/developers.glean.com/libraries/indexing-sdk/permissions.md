@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:23:04.715Z"
 ---
 On this page
 
-Glean enforces permissions at query time. A document is only returned to a user who is allowed to see it — which means your connector has to tell Glean two things, and both are required.
+Glean enforces permissions at query time. A document is only returned to a user who is allowed to see it - which means your connector has to tell Glean two things, and both are required.
 
 Source ACLsWho can see what, at the source
 
@@ -87,7 +87,7 @@ from glean.indexing.testing import assert_negative_identities_absent, extract_pe
 
 `extract_permission_refs()` walks `allowed_users`, `allowed_groups`, and `allowed_group_intersections`, returning the deduplicated `user_ids` and `group_ids` your documents actually reference. It's also useful for indexing *only* the identities your crawl needs, rather than the whole directory.
 
-Finally, confirm end to end against a real instance and search as a restricted user. If they can see a document they shouldn't, the ACL or the identity graph is wrong — the search result is the ground truth, not the upload response.
+Finally, confirm end to end against a real instance and search as a restricted user. If they can see a document they shouldn't, the ACL or the identity graph is wrong - the search result is the ground truth, not the upload response.
 
 ## Related[​](#related "Direct link to Related")
 

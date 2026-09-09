@@ -87,7 +87,7 @@ Listen to article
 
 Ever since AI started catching on, the operating model in most enterprises has been to experiment, test new tools, and get as many people using AI as fast as possible. While teams celebrated tokenmaxxing as a sign of innovation, adoption, and a new way of working, CIOs still worried they weren’t moving fast enough. 
 
-In 2026, the conversation changed. Discussions shifted from adoption and experimentation to blown-through budgets, rogue behavior, and questions about how to achieve the same business goals while AI costs ballooned. These surprising costs and the inability to control them caused enterprises to hold back AI transformation—not because the technology wasn’t ready, but because the governance wasn't. Since many companies unintentionally overspent, they became more cautious about acquiring, implementing, and deploying AI tools at scale. 
+In 2026, the conversation changed. Discussions shifted from adoption and experimentation to blown-through budgets, rogue behavior, and questions about how to achieve the same business goals while AI costs ballooned. These surprising costs and the inability to control them caused enterprises to hold back AI transformation-not because the technology wasn’t ready, but because the governance wasn't. Since many companies unintentionally overspent, they became more cautious about acquiring, implementing, and deploying AI tools at scale. 
 
 Glean makes affordable scalability and accelerated transformation possible through AI cost governance that provides teams with the oversight they need to move with confidence. Get comprehensive visibility paired with granular controls to minimize unexpected costs and scale AI more effectively.
 
@@ -117,7 +117,7 @@ Understanding how AI is used within your organization gives you a stronger abili
 
 ## The structural problem no single provider can solve
 
-We built Glean’s AI usage controls around the same principle—that managing AI costs requires a control layer beneath the tools employees use, not another dashboard inside each one. In Glean, admins can see what drives spend and set limits across the organization, users, agents, teams, and models. But enterprise AI usage expands beyond Glean, and into other AI surfaces—each with its own models, controls, and bill.
+We built Glean’s AI usage controls around the same principle-that managing AI costs requires a control layer beneath the tools employees use, not another dashboard inside each one. In Glean, admins can see what drives spend and set limits across the organization, users, agents, teams, and models. But enterprise AI usage expands beyond Glean, and into other AI surfaces-each with its own models, controls, and bill.
 
 That is why we expanded the same cost-governance foundation through [Glean AI Gateway](https://www.glean.com/platform/ai-gateway). AI Gateway sits between those AI surfaces and the models they use, bringing model access, token usage, attribution, and spend controls into one governed layer, regardless of which front door an employee walks through.
 

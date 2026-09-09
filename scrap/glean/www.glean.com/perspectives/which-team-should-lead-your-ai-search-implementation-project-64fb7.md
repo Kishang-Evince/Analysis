@@ -63,26 +63,26 @@ Share this article:
 
 # Which team should lead your AI search implementation project
 
-AI search implementation sits at the intersection of technology, organizational knowledge, and daily workflows. It demands more than a software rollout — it requires a deliberate team structure, clear ownership, and alignment across departments that rarely share a project plan.
+AI search implementation sits at the intersection of technology, organizational knowledge, and daily workflows. It demands more than a software rollout - it requires a deliberate team structure, clear ownership, and alignment across departments that rarely share a project plan.
 
-The difference between a successful deployment and a stalled initiative almost always comes down to people, not platforms. Organizations that treat AI search as a cross-functional capability — rather than an IT-only project — consistently see faster adoption, stronger relevance, and measurable productivity gains.
+The difference between a successful deployment and a stalled initiative almost always comes down to people, not platforms. Organizations that treat AI search as a cross-functional capability - rather than an IT-only project - consistently see faster adoption, stronger relevance, and measurable productivity gains.
 
 This guide breaks down the roles, team structures, and skills that drive successful AI search implementations. It also covers the common failure points that derail projects and the long-term practices that keep enterprise search sharp as organizations evolve.
 
 ## What is an AI search implementation project?
 
-An AI search implementation project deploys intelligent search capabilities across an organization's tools, data, and workflows. Unlike traditional keyword-based search, AI search relies on machine learning, natural language processing (NLP), and knowledge graphs to deliver contextual, permission-aware results that reflect how employees actually look for information. The goal is not just retrieval — it's surfacing the right answer, from the right source, for the right person, at the right moment.
+An AI search implementation project deploys intelligent search capabilities across an organization's tools, data, and workflows. Unlike traditional keyword-based search, AI search relies on machine learning, natural language processing (NLP), and knowledge graphs to deliver contextual, permission-aware results that reflect how employees actually look for information. The goal is not just retrieval - it's surfacing the right answer, from the right source, for the right person, at the right moment.
 
-These projects touch every department. Engineering teams need access to documentation and code repositories. Sales teams search for competitive intelligence and deal history. HR teams look up policies and onboarding materials. Customer support teams pull from knowledge bases and past ticket resolutions. Because AI search connects to the systems everyone uses daily — documents, wikis, messaging platforms, ticketing tools, CRMs — the scope of implementation is inherently broad. Data integration, model configuration, security enforcement, and ongoing optimization all fall within the project boundary.
+These projects touch every department. Engineering teams need access to documentation and code repositories. Sales teams search for competitive intelligence and deal history. HR teams look up policies and onboarding materials. Customer support teams pull from knowledge bases and past ticket resolutions. Because AI search connects to the systems everyone uses daily - documents, wikis, messaging platforms, ticketing tools, CRMs - the scope of implementation is inherently broad. Data integration, model configuration, security enforcement, and ongoing optimization all fall within the project boundary.
 
 What separates AI search from a simple search bar upgrade is the depth of the underlying architecture. A well-designed system combines several layers:
 
--   **Hybrid search architecture**: Semantic search models understand the meaning behind a query, while lexical search handles exact-match needs like document titles or product codes. Together, they cover the full range of how people search — from broad exploratory questions to precise lookups.
--   **Knowledge graphs**: These map relationships between people, content, teams, and activity data. A knowledge graph helps the system understand that a query about "Q3 revenue targets" should prioritize results from the finance team's most recent planning documents — not a two-year-old slide deck with similar keywords.
+-   **Hybrid search architecture**: Semantic search models understand the meaning behind a query, while lexical search handles exact-match needs like document titles or product codes. Together, they cover the full range of how people search - from broad exploratory questions to precise lookups.
+-   **Knowledge graphs**: These map relationships between people, content, teams, and activity data. A knowledge graph helps the system understand that a query about "Q3 revenue targets" should prioritize results from the finance team's most recent planning documents - not a two-year-old slide deck with similar keywords.
 -   **Permission-aware retrieval**: Enterprise search must respect existing access controls. Every result a user sees should align with the permissions already set in the source application. This is a foundational requirement, not a feature toggle.
--   **Retrieval-augmented generation (RAG)**: Many modern AI search implementations pair search with large language models to generate direct answers grounded in company data. RAG pipelines plan a query, retrieve relevant documents with strict permission enforcement, and then generate a response with citations — a process that demands tight coordination between search infrastructure and language model behavior.
+-   **Retrieval-augmented generation (RAG)**: Many modern AI search implementations pair search with large language models to generate direct answers grounded in company data. RAG pipelines plan a query, retrieve relevant documents with strict permission enforcement, and then generate a response with citations - a process that demands tight coordination between search infrastructure and language model behavior.
 
-The scope of an AI search project also extends beyond the initial launch. Connector quality — how well the system ingests and indexes content from each integrated application — directly affects result freshness, metadata fidelity, and overall trust. Teams must plan for continuous tuning, new data source onboarding, and evolving security requirements as the organization grows. Getting the team structure right from the start is one of the most critical [AI search strategies](https://www.glean.com/ai-search-strategies) an organization can adopt, because every downstream decision — from relevance tuning to governance — depends on who owns it.
+The scope of an AI search project also extends beyond the initial launch. Connector quality - how well the system ingests and indexes content from each integrated application - directly affects result freshness, metadata fidelity, and overall trust. Teams must plan for continuous tuning, new data source onboarding, and evolving security requirements as the organization grows. Getting the team structure right from the start is one of the most critical [AI search strategies](https://www.glean.com/ai-search-strategies) an organization can adopt, because every downstream decision - from relevance tuning to governance - depends on who owns it.
 
 ## Why the wrong team structure causes AI search projects to fail
 
@@ -90,7 +90,7 @@ The scope of an AI search project also extends beyond the initial launch. Connec
 
 Recent enterprise AI research points to the same pattern again and again: programs stall when leadership treats them as technical deployments instead of operating-model changes. Search sits inside that pattern. It reshapes how people verify answers, where teams look for authoritative information, and how work moves across systems; without a single accountable owner, those shifts never receive consistent direction.
 
-That gap shows up early. One group prioritizes launch speed, another pushes for broader source coverage, and a third raises risk concerns after core decisions have already been made. The project then slips into committee mode — lots of input, little authority, no durable tradeoff framework. Search quality becomes harder to improve because nobody owns the full chain of decisions around source prioritization, rollout scope, user trust, and business impact.
+That gap shows up early. One group prioritizes launch speed, another pushes for broader source coverage, and a third raises risk concerns after core decisions have already been made. The project then slips into committee mode - lots of input, little authority, no durable tradeoff framework. Search quality becomes harder to improve because nobody owns the full chain of decisions around source prioritization, rollout scope, user trust, and business impact.
 
 A strategy tied to business outcomes changes that dynamic. A project scoped around support deflection, faster onboarding, lower time-to-answer, or stronger policy compliance has a clear basis for decision-making. A project framed as a general AI initiative rarely gets that discipline; it accumulates ambition faster than it builds accountability.
 
@@ -114,7 +114,7 @@ The same problem grows sharper as search expands into richer AI experiences. Sys
 
 Role design shapes the outcome before the first connector goes live. AI search reaches across systems, policy, and everyday work, so the leadership bench must match that scope.
 
-The best implementations pair senior sponsorship with operators who can move fast and specialists who can protect quality. Each role below covers a separate risk area — strategy drift, execution slippage, weak source coverage, access mistakes, or poor fit with real work.
+The best implementations pair senior sponsorship with operators who can move fast and specialists who can protect quality. Each role below covers a separate risk area - strategy drift, execution slippage, weak source coverage, access mistakes, or poor fit with real work.
 
 ### Executive sponsor
 
@@ -134,7 +134,7 @@ The AI project lead runs the operating rhythm of the implementation. This person
 
 The role needs a rare mix of judgment and range. Technical literacy matters because the lead must understand source coverage, ranking quality, sync behavior, and access controls well enough to challenge assumptions. Strong communication matters just as much because the same person must explain tradeoffs to engineers, legal teams, executives, and department heads in plain language.
 
-A capable project lead also keeps decision velocity high. They maintain the backlog, track dependencies, and close routine questions without constant escalation. AI support can reduce administrative drag here — weekly readouts, risk digests, stakeholder notes, and action trackers all become easier to maintain — but the lead still owns prioritization, sequence, and release readiness.
+A capable project lead also keeps decision velocity high. They maintain the backlog, track dependencies, and close routine questions without constant escalation. AI support can reduce administrative drag here - weekly readouts, risk digests, stakeholder notes, and action trackers all become easier to maintain - but the lead still owns prioritization, sequence, and release readiness.
 
 ### Data and infrastructure engineers
 
@@ -172,7 +172,7 @@ This role works best as a rotating group tied to major phases such as source onb
 
 ## How to structure a cross-functional AI search team
 
-A strong team design starts with the business problem, not the org chart. Pick one workflow with clear value — policy lookup, technical documentation access, or case deflection — then assign a compact team with authority to make tradeoffs fast.
+A strong team design starts with the business problem, not the org chart. Pick one workflow with clear value - policy lookup, technical documentation access, or case deflection - then assign a compact team with authority to make tradeoffs fast.
 
 That structure should reflect how enterprise AI search actually ships. Product ownership sits at the center; technical ownership stays close to identity, data, and evaluation; business stakeholders step in where workflow knowledge matters most.
 
@@ -224,11 +224,11 @@ Each phase should end with a go-or-no-go review tied to metrics, not enthusiasm.
 
 The right team does more than cover job titles. It brings the judgment to make sound tradeoffs when relevance, latency, governance, and usability pull in different directions.
 
-That skill mix matters because AI search rarely fails in obvious ways. More often, it drifts — results feel slightly off, trusted sources lose visibility, access edge cases appear, and rollout momentum slows because no one can diagnose the full chain of issues with confidence.
+That skill mix matters because AI search rarely fails in obvious ways. More often, it drifts - results feel slightly off, trusted sources lose visibility, access edge cases appear, and rollout momentum slows because no one can diagnose the full chain of issues with confidence.
 
 ### Technical and system-level skills
 
-Teams need practical fluency across the mechanics of enterprise AI, not just familiarity with AI terms. Search quality depends on dozens of small decisions — how queries get interpreted, how enterprise language maps to source content, how retrieval gets tuned, and how answer generation stays grounded under real usage conditions.
+Teams need practical fluency across the mechanics of enterprise AI, not just familiarity with AI terms. Search quality depends on dozens of small decisions - how queries get interpreted, how enterprise language maps to source content, how retrieval gets tuned, and how answer generation stays grounded under real usage conditions.
 
 -   **Technical fluency**: Team members should understand how ranking signals, embeddings, prompt design, orchestration logic, and model selection affect enterprise search behavior. That includes the ability to reason through tradeoffs such as fast responses versus deeper retrieval, or broad recall versus tighter precision.
 -   **Systems thinking**: Strong practitioners can trace a failure from symptom to root cause. They know when a weak answer points to bad chunking, poor entity resolution, thin metadata, noisy prompts, or weak test design rather than a vague “AI problem.”
@@ -243,9 +243,9 @@ Successful teams treat rollout as an operating discipline, not a launch event. T
 
 -   **Change management**: Teams should know how to design role-based enablement, set realistic expectations, and introduce the system through concrete use cases instead of abstract AI messaging. Adoption improves when each group sees the feature in the context of its own work patterns, escalation paths, and decision points.
 -   **Communication across functions**: The team needs people who can write clear briefs, run efficient review meetings, document tradeoffs, and resolve disagreements without endless escalation. In practice, that means crisp language, decision logs, and a habit of translating technical findings into operational impact.
--   **AI-assisted project execution**: Project leads can use AI to compress coordination work — draft meeting recaps, extract open issues from notes, convert stakeholder feedback into task lists, and maintain rollout documentation with less manual effort. Used well, that support improves project cadence without adding process overhead.
+-   **AI-assisted project execution**: Project leads can use AI to compress coordination work - draft meeting recaps, extract open issues from notes, convert stakeholder feedback into task lists, and maintain rollout documentation with less manual effort. Used well, that support improves project cadence without adding process overhead.
 
-This is where many teams separate into two groups: those that keep momentum and those that lose it. The difference usually comes from execution discipline — how well the team communicates progress, captures decisions, and adjusts rollout plans as real usage reveals new constraints.
+This is where many teams separate into two groups: those that keep momentum and those that lose it. The difference usually comes from execution discipline - how well the team communicates progress, captures decisions, and adjusts rollout plans as real usage reveals new constraints.
 
 ### Judgment, trust, and responsible use
 
@@ -253,7 +253,7 @@ Enterprise AI search shapes attention. It influences which sources gain visibili
 
 -   **Ethical judgment**: Teams should recognize when system behavior can create uneven outcomes, expose sensitive context, or overstate certainty. That requires clear thinking about privacy boundaries, escalation policies, and the difference between a plausible response and a dependable one.
 -   **Evaluation discipline**: High-performing teams build structured test sets, compare outputs against business expectations, and review failure patterns by scenario rather than anecdote. They measure whether the system performs well for the queries that matter most, not just for generic benchmark cases.
--   **Collaboration and domain fluency**: Teams need people who can absorb the language of each function quickly and turn that understanding into better tuning, testing, and rollout choices. In practice, that means recognizing where one team relies on acronyms, another on ticket IDs, and another on policy language — then shaping the experience accordingly.
+-   **Collaboration and domain fluency**: Teams need people who can absorb the language of each function quickly and turn that understanding into better tuning, testing, and rollout choices. In practice, that means recognizing where one team relies on acronyms, another on ticket IDs, and another on policy language - then shaping the experience accordingly.
 
 The teams that stand out are rarely the ones with the most specialists on paper. They are the ones with enough technical range, operational discipline, and contextual judgment to improve the system in ways employees can feel.
 
@@ -265,7 +265,7 @@ Once a project moves from planning to execution, a different class of problems a
 
 Many projects begin with broad executive support and still stall in day-to-day execution. The problem often sits in the gray areas: who approves sensitive repositories, who resolves duplicate source conflicts, who decides when a department-specific complaint requires a relevance change, and who owns the backlog after launch. A steering committee can approve strategy, but it rarely handles operational tradeoffs well.
 
-This gap creates friction long after kickoff. Access exceptions move to one team, content issues to another, search complaints to a third, and no one owns the full incident from report to fix. That pattern does more than slow work — it makes the system feel unreliable because users never know where problems go or how quickly they will get resolved.
+This gap creates friction long after kickoff. Access exceptions move to one team, content issues to another, search complaints to a third, and no one owns the full incident from report to fix. That pattern does more than slow work - it makes the system feel unreliable because users never know where problems go or how quickly they will get resolved.
 
 ### Data complexity appears fast
 
@@ -286,7 +286,7 @@ Usage boundaries matter just as much. In high-stakes workflows such as HR policy
 
 ### Scope expands faster than teams expect
 
-Early success tends to attract more requests than the team can absorb. Departments ask for custom ranking logic, separate rollout plans, new source connections, workflow-specific prompts, and tailored analytics. The risk is not ambition itself — it is loss of focus before the core operating model proves stable.
+Early success tends to attract more requests than the team can absorb. Departments ask for custom ranking logic, separate rollout plans, new source connections, workflow-specific prompts, and tailored analytics. The risk is not ambition itself - it is loss of focus before the core operating model proves stable.
 
 The strongest teams use a narrow filter for what enters the next phase:
 
@@ -298,7 +298,7 @@ That sequence reduces noise, keeps the backlog sane, and gives the team cleaner 
 
 ### Weak evaluation hides real problems
 
-Many teams test AI search with curated queries from project members and subject matter experts. Those tests help at first, but they rarely reflect messy real-world traffic — short queries, internal shorthand, acronyms, half-formed requests, and edge cases tied to access controls. A system can look strong in a demo and still fail under normal employee use.
+Many teams test AI search with curated queries from project members and subject matter experts. Those tests help at first, but they rarely reflect messy real-world traffic - short queries, internal shorthand, acronyms, half-formed requests, and edge cases tied to access controls. A system can look strong in a demo and still fail under normal employee use.
 
 A stronger review process looks at production behavior, not just lab results. The most useful checks tend to include:
 
@@ -323,7 +323,7 @@ A durable model starts with explicit ownership artifacts, not informal handoffs.
 That operating file should answer a few questions with precision:
 
 -   **Who owns each source after it goes live**: Every indexed system needs a business steward and a technical steward. One owns content value and source relevance; the other owns sync reliability, schema mapping, and issue response.
--   **What qualifies a source for inclusion**: New repositories should meet entry criteria before indexing starts — a clear business use case, identifiable source ownership, stable metadata, and testable access rules.
+-   **What qualifies a source for inclusion**: New repositories should meet entry criteria before indexing starts - a clear business use case, identifiable source ownership, stable metadata, and testable access rules.
 -   **What service levels apply**: Teams should define thresholds for source freshness, incident response, and search issue resolution. Without those standards, quality problems sit in a queue until users stop trusting the system.
 -   **What gates apply to major changes**: Ranking updates, prompt changes, answer formatting changes, and source expansions need release notes, test plans, and rollback paths.
 
@@ -354,9 +354,9 @@ The best teams build that capability with a deliberate skills matrix:
 -   **Workflow design**: As search matures into assistants or agentic flows, teams need people who can map task sequences, handoff points, and approval requirements across departments.
 -   **Program resilience**: Mature teams plan for role coverage, succession, and knowledge transfer so that search quality does not depend on one engineer, one admin, or one enthusiastic sponsor.
 
-Expansion should follow readiness gates, not enthusiasm. Teams that move into assistants, direct answers, or multi-step automation too early usually expose weaknesses that basic search had masked — poor source ownership, inconsistent content hygiene, weak test coverage, or unclear approval logic. A mature team expands only after it can prove that the underlying service is stable, measurable, and well understood across the business.
+Expansion should follow readiness gates, not enthusiasm. Teams that move into assistants, direct answers, or multi-step automation too early usually expose weaknesses that basic search had masked - poor source ownership, inconsistent content hygiene, weak test coverage, or unclear approval logic. A mature team expands only after it can prove that the underlying service is stable, measurable, and well understood across the business.
 
-The team you build around AI search matters more than the technology you select. Every decision about source quality, access rules, rollout sequence, and long-term ownership flows through the people you put in charge — and the operating discipline they bring to the work.
+The team you build around AI search matters more than the technology you select. Every decision about source quality, access rules, rollout sequence, and long-term ownership flows through the people you put in charge - and the operating discipline they bring to the work.
 
 If you're ready to see how the right platform can support your team from day one, [request a demo to explore how we can help transform your workplace](https://www.glean.com/get-a-demo).
 

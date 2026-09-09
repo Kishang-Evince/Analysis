@@ -63,7 +63,7 @@ Share this article:
 
 # How unified search enhances sales and marketing collaboration
 
-Sales and marketing teams rely on the same customer information to plan campaigns, prioritize accounts, and close deals. Yet that information almost always lives in separate systems — CRM platforms, marketing automation tools, email threads, call recordings, support tickets, and shared drives — each with its own search experience and its own blind spots.
+Sales and marketing teams rely on the same customer information to plan campaigns, prioritize accounts, and close deals. Yet that information almost always lives in separate systems - CRM platforms, marketing automation tools, email threads, call recordings, support tickets, and shared drives - each with its own search experience and its own blind spots.
 
 Unified search changes this dynamic by connecting those fragmented sources into a single retrieval layer. Rather than force teams to remember where a document lives or which platform holds the latest account context, it brings relevant results together while preserving the access controls already in place.
 
@@ -71,19 +71,19 @@ The result is a shared foundation for data-driven decision making across revenue
 
 ## What is unified search for sales and marketing collaboration?
 
-Unified search is a single interface that retrieves customer context across the systems revenue teams already use every day: CRM records, marketing automation data, emails, call notes, documents, support tickets, and chat. Instead of routing people into separate tools — each with its own query logic and its own gaps — it connects trusted sources and returns relevant results in one place. The core promise is straightforward: cut the time spent hunting for basic account and contact details so teams can focus on the work that actually moves pipeline.
+Unified search is a single interface that retrieves customer context across the systems revenue teams already use every day: CRM records, marketing automation data, emails, call notes, documents, support tickets, and chat. Instead of routing people into separate tools - each with its own query logic and its own gaps - it connects trusted sources and returns relevant results in one place. The core promise is straightforward: cut the time spent hunting for basic account and contact details so teams can focus on the work that actually moves pipeline.
 
-This matters because the information that shapes sales and marketing decisions is split across two very different categories. Structured data — deal stages, lead scores, campaign metrics, revenue figures — lives in systems of record. Unstructured data — Slack threads, meeting transcripts, email exchanges, internal wikis — is where important nuance often hides: why a deal stalled, what objection a prospect raised, which messaging resonated during a demo. Unified search supports customer data integration across both categories, which is how teams move from partial context to a complete picture of the buyer journey.
+This matters because the information that shapes sales and marketing decisions is split across two very different categories. Structured data - deal stages, lead scores, campaign metrics, revenue figures - lives in systems of record. Unstructured data - Slack threads, meeting transcripts, email exchanges, internal wikis - is where important nuance often hides: why a deal stalled, what objection a prospect raised, which messaging resonated during a demo. Unified search supports customer data integration across both categories, which is how teams move from partial context to a complete picture of the buyer journey.
 
 ### What makes unified search effective at the enterprise level
 
 Not all search experiences deliver the same value. The difference between a basic keyword lookup and a genuinely useful enterprise search layer comes down to a few critical capabilities:
 
--   **Relevance and ranking**: Results must surface the most authoritative, recent, and role-appropriate content first. A sales rep researching an account before a call needs different results than a demand gen marketer analyzing campaign performance — even when both search for the same company name.
+-   **Relevance and ranking**: Results must surface the most authoritative, recent, and role-appropriate content first. A sales rep researching an account before a call needs different results than a demand gen marketer analyzing campaign performance - even when both search for the same company name.
 -   **Semantic understanding**: Enterprise teams describe the same concepts in different language. A support engineer might reference a "bug," while a customer success manager calls it a "known issue," and a sales rep logs it as a "blocker." Semantic search interprets the intent and meaning behind a query rather than match only exact keywords, which closes the vocabulary gap between departments.
--   **Knowledge graph connectivity**: An enterprise knowledge graph links people, content, accounts, campaigns, and activity data across tools. This network of relationships helps surface connections that keyword search alone would miss — for example, tying a recently closed support ticket to an upcoming renewal conversation.
--   **Indexing and freshness**: Search quality degrades fast when results pull from stale or incomplete indexes. Continuous crawling and indexing across connected applications, such as the approach we use at Glean, ensures that the information teams retrieve reflects the current state of their business — not a snapshot from last quarter.
--   **Permissions and trust**: Data accessibility improves only when users trust the results. Unified search must preserve the permission model of each connected source so that every person sees exactly what they are authorized to access — nothing more, nothing less.
+-   **Knowledge graph connectivity**: An enterprise knowledge graph links people, content, accounts, campaigns, and activity data across tools. This network of relationships helps surface connections that keyword search alone would miss - for example, tying a recently closed support ticket to an upcoming renewal conversation.
+-   **Indexing and freshness**: Search quality degrades fast when results pull from stale or incomplete indexes. Continuous crawling and indexing across connected applications, such as the approach we use at Glean, ensures that the information teams retrieve reflects the current state of their business - not a snapshot from last quarter.
+-   **Permissions and trust**: Data accessibility improves only when users trust the results. Unified search must preserve the permission model of each connected source so that every person sees exactly what they are authorized to access - nothing more, nothing less.
 
 These capabilities give sales and marketing the same starting point for planning, outreach, and reporting. When both teams can verify facts against the same source-backed context, alignment stops depending on manual syncs and starts operating as a natural byproduct of how people already work.
 
@@ -115,7 +115,7 @@ Search adoption improves when the first use cases solve visible friction. Revenu
 
 Begin with a short list of workflows where missing context creates delays or inconsistent decisions:
 
-1.  **Campaign follow-up**: Reps should see what a buyer engaged with before outreach starts — event attendance, downloaded content, recent email interaction, and any account activity that changes the message.
+1.  **Campaign follow-up**: Reps should see what a buyer engaged with before outreach starts - event attendance, downloaded content, recent email interaction, and any account activity that changes the message.
 2.  **Pre-meeting preparation**: Account teams need a compact view of recent touchpoints, known issues, internal discussions, and relevant proof points before customer conversations.
 3.  **Asset selection inside an active deal**: When sales looks for an ROI deck, industry case study, or objection-handling document, the most current approved version should appear first.
 4.  **Quarterly business reviews and pipeline checks**: Shared access to the same underlying account details reduces time spent reconciling spreadsheets and debating which report is current.
@@ -124,7 +124,7 @@ This approach ties search directly to sales enablement strategies and customer j
 
 ### 3\. Tune retrieval for revenue language
 
-Search quality depends on how well the system handles the language that sales and marketing use in practice. Revenue teams often describe the same customer issue in different terms — for example, "late-stage risk," "competitive pressure," "stalled opportunity," or "no decision." Query understanding needs to account for those variations so people can retrieve the right material even when they do not use the official label.
+Search quality depends on how well the system handles the language that sales and marketing use in practice. Revenue teams often describe the same customer issue in different terms - for example, "late-stage risk," "competitive pressure," "stalled opportunity," or "no decision." Query understanding needs to account for those variations so people can retrieve the right material even when they do not use the official label.
 
 Result order also needs to reflect business context. A regional seller, a product marketer, and a demand generation manager may all search for the same account but need different evidence at the top of the page. That is where personalization improves data accessibility: results should reflect role, team priorities, and prior activity while still following source-level access rules.
 
@@ -132,7 +132,7 @@ Three implementation details have an outsized effect here:
 
 -   **Update speed**: Search should reflect recent note edits, campaign changes, and ticket updates quickly enough to support live revenue work
 -   **Field discipline**: Consistent account names, campaign tags, industry labels, and content metadata improve retrieval accuracy across systems
--   **Result ordering**: Search should prioritize the item most useful for the task at hand — not simply the oldest document with the closest text match
+-   **Result ordering**: Search should prioritize the item most useful for the task at hand - not simply the oldest document with the closest text match
 
 Without this tuning, teams may still search in one place but continue to second-guess what they find.
 
@@ -189,13 +189,13 @@ When teams evaluate platforms, a few capabilities matter more than a long featur
 
 ### 4\. Can unified search enhance collaboration between sales and marketing?
 
-Yes — especially in planning cycles that usually suffer from partial information. Account-based programs become easier to coordinate when both teams can inspect the same sequence of touches, see which assets reached the buying group, and spot gaps before outreach starts. The conversation shifts from opinion to evidence.
+Yes - especially in planning cycles that usually suffer from partial information. Account-based programs become easier to coordinate when both teams can inspect the same sequence of touches, see which assets reached the buying group, and spot gaps before outreach starts. The conversation shifts from opinion to evidence.
 
 It also strengthens the feedback loop after launch. Marketing can see which materials sales actually uses in live deals, which searches produce weak results, and which buyer questions lack a clear answer in existing content. Sales, in turn, gets fresher enablement because content updates reflect real objections and real deal friction rather than assumptions from a quarterly survey.
 
 ### 5\. What are some best practices for implementing unified search in an organization?
 
-The best rollouts stay narrow at the start and precise in execution. Pick a few workflows with visible friction — campaign follow-up, account research before executive meetings, late-stage content selection, or renewal planning — then tune search around those moments before wider expansion.
+The best rollouts stay narrow at the start and precise in execution. Pick a few workflows with visible friction - campaign follow-up, account research before executive meetings, late-stage content selection, or renewal planning - then tune search around those moments before wider expansion.
 
 A durable implementation usually includes a few operating rules:
 
@@ -205,7 +205,7 @@ A durable implementation usually includes a few operating rules:
 -   **Establish freshness standards**: Different sources need different update windows. CRM changes may need near-real-time sync; campaign assets may tolerate a slower cadence.
 -   **Pilot with mixed users**: Include field sellers, demand generation, product marketing, and customer-facing managers in testing. Each group uses different language, and those differences expose retrieval gaps early.
 
-When sales and marketing share the same retrieval layer, alignment stops being a process problem and becomes a structural advantage. The information is already there — scattered across your tools, conversations, and campaigns. The work is connecting it so both teams can act on the same truth at the same time.
+When sales and marketing share the same retrieval layer, alignment stops being a process problem and becomes a structural advantage. The information is already there - scattered across your tools, conversations, and campaigns. The work is connecting it so both teams can act on the same truth at the same time.
 
 If you're ready to see how a unified, AI-powered approach can bring your revenue teams together, [request a demo to explore how we can help transform your workplace](https://www.glean.com/get-a-demo).
 

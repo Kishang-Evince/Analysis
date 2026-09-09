@@ -83,7 +83,7 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-In March 2024, a significant [security breach targeted thousands of servers](https://arstechnica.com/security/2024/03/thousands-of-servers-hacked-in-ongoing-attack-targeting-ray-ai-framework/?utm_source=chatgpt.com) running AI workloads by exploiting a vulnerability in the Ray computing framework — a tool used by companies like OpenAI, Uber, and Amazon. Attackers compromised these servers, tampered with the AI models, and accessed sensitive data.
+In March 2024, a significant [security breach targeted thousands of servers](https://arstechnica.com/security/2024/03/thousands-of-servers-hacked-in-ongoing-attack-targeting-ray-ai-framework/?utm_source=chatgpt.com) running AI workloads by exploiting a vulnerability in the Ray computing framework - a tool used by companies like OpenAI, Uber, and Amazon. Attackers compromised these servers, tampered with the AI models, and accessed sensitive data.
 
 This incident underscores the critical importance of AI security in modern enterprises. As AI systems take on a central role in business operations, they also present new avenues for cyber threats. A single vulnerability can result in financial losses and damage an organization's reputation.
 
@@ -93,7 +93,7 @@ To safeguard these vital assets, enterprises must:
 -   **Implement robust security measures**: Apply comprehensive protections throughout the AI lifecycle, from development to deployment.
 -   **Stay informed about emerging threats**: Understand the latest cyber threats targeting AI systems to proactively defend against them.
 
-It's no longer a matter of whether attackers will target AI systems —it's only a matter of when.
+It's no longer a matter of whether attackers will target AI systems -it's only a matter of when.
 
 ## Why AI security is critical for enterprises
 
@@ -103,13 +103,13 @@ The stakes for [AI security](https://www.glean.com/blog/cio-integrating-genai-ag
 
 ### Increasing attacks on AI systems
 
-Attackers are increasingly leveraging AI to launch sophisticated, targeted attacks. They exploit weaknesses in AI models through methods like data poisoning, where malicious data subtly alters outcomes or prompts injection attacks, which manipulate inputs to drive unintended behaviors. These threats are particularly concerning because of their scale—when an AI system is compromised, it can ripple through thousands of decisions or interactions before anyone notices. As enterprises adopt AI more broadly, these systems have become prime targets, underscoring the urgent need for strong protections to stay ahead of bad actors.
+Attackers are increasingly leveraging AI to launch sophisticated, targeted attacks. They exploit weaknesses in AI models through methods like data poisoning, where malicious data subtly alters outcomes or prompts injection attacks, which manipulate inputs to drive unintended behaviors. These threats are particularly concerning because of their scale-when an AI system is compromised, it can ripple through thousands of decisions or interactions before anyone notices. As enterprises adopt AI more broadly, these systems have become prime targets, underscoring the urgent need for strong protections to stay ahead of bad actors.
 
 ### The rising costs of AI security breaches
 
 Breaches involving AI systems can have staggering financial and operational impacts. When these systems are compromised, organizations face immediate and long-term consequences, including direct costs like remediation and legal expenses, as well as indirect costs such as reputational damage and lost customer trust. 
 
-The financial toll goes beyond the breach itself. Organizations may need to retrain or rebuild compromised models, address potential regulatory violations, and navigate disruptions as systems are taken offline for verification. Protecting AI systems isn't just a technical necessity — it's a critical step to safeguarding business continuity and trust.
+The financial toll goes beyond the breach itself. Organizations may need to retrain or rebuild compromised models, address potential regulatory violations, and navigate disruptions as systems are taken offline for verification. Protecting AI systems isn't just a technical necessity - it's a critical step to safeguarding business continuity and trust.
 
 ### Regulatory compliance and AI security
 
@@ -127,11 +127,11 @@ Data poisoning is one of the biggest threats to AI systems, where attackers mani
 -   **Biased information**: Subtly shifting the model’s outputs to favor specific outcomes, often in ways that benefit attackers.
 -   **Mislabeled data**: Misleading the model by labeling malicious inputs as benign, creating vulnerabilities that can be exploited later.
 
-The impact is profound — AI systems trained on poisoned data may produce biased, inaccurate, or unreliable results, leading to missed fraud patterns or faulty decision-making. The effects might go unnoticed for months, allowing the damage to compound over time. Think of data poisoning as contaminating the water supply for an AI system. Once the training data is tainted, every decision or action the model takes can be compromised.
+The impact is profound - AI systems trained on poisoned data may produce biased, inaccurate, or unreliable results, leading to missed fraud patterns or faulty decision-making. The effects might go unnoticed for months, allowing the damage to compound over time. Think of data poisoning as contaminating the water supply for an AI system. Once the training data is tainted, every decision or action the model takes can be compromised.
 
 ### Lack of transparency
 
-Lack of transparency in AI systems — often called the "[black box](https://www.ibm.com/think/topics/black-box-ai)” problem — creates significant challenges for security and trust. Think of it like trying to diagnose car problems without being able to look under the hood. Without transparency, organizations face challenges such as:
+Lack of transparency in AI systems - often called the "[black box](https://www.ibm.com/think/topics/black-box-ai)” problem - creates significant challenges for security and trust. Think of it like trying to diagnose car problems without being able to look under the hood. Without transparency, organizations face challenges such as:
 
 -   **Detecting subtle manipulations:** Small changes in inputs or outputs can go unnoticed, allowing attackers to exploit vulnerabilities.
 -   **Auditing decision-making processes:** It’s hard to determine whether a model is behaving as intended or if it’s been compromised.
@@ -206,7 +206,7 @@ Key components include:
 -   **Role-based accountability:** Assign responsibilities to specific individuals or teams, ensuring oversight and adherence to governance practices.
 -   **Regular assessments:** Conduct routine evaluations to identify vulnerabilities, measure model performance, and ensure compliance with organizational standards.
 
-Good AI governance is like running a well-organized kitchen—clear rules, defined roles, and regular checks create a secure and efficient environment where systems can operate reliably.
+Good AI governance is like running a well-organized kitchen-clear rules, defined roles, and regular checks create a secure and efficient environment where systems can operate reliably.
 
 ### Regular model audits and validation
 
@@ -289,9 +289,9 @@ These innovations will help organizations stay one step ahead, ensuring that AI 
 
 ## Securing AI in an evolving threat landscape
 
-As AI systems continue to redefine industries, their security must keep pace with the speed of innovation. From generative AI risks to adversarial attacks, the threats targeting these systems are evolving daily. The challenge isn't just securing AI today — it's building adaptable defenses that anticipate tomorrow's vulnerabilities.
+As AI systems continue to redefine industries, their security must keep pace with the speed of innovation. From generative AI risks to adversarial attacks, the threats targeting these systems are evolving daily. The challenge isn't just securing AI today - it's building adaptable defenses that anticipate tomorrow's vulnerabilities.
 
-To succeed, enterprises must view AI security as a long-term commitment, investing in robust frameworks, continuous monitoring, and governance practices that evolve alongside the technology. The organizations that prioritize securing their AI systems won’t just be safeguarding data — they’ll be ensuring the future of trust and innovation in a world increasingly powered by AI.
+To succeed, enterprises must view AI security as a long-term commitment, investing in robust frameworks, continuous monitoring, and governance practices that evolve alongside the technology. The organizations that prioritize securing their AI systems won’t just be safeguarding data - they’ll be ensuring the future of trust and innovation in a world increasingly powered by AI.
 
 At Glean, we prioritize enterprise-grade security, adhering to the highest standards to ensure your data stays protected. With our Work AI platform, you can safely leverage the power of AI to find information, enhance collaboration, and unlock productivity across your organization.
 

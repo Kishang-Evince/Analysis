@@ -33,16 +33,16 @@
 
 ### Engineering observation (Doc-Verified)
 
-- Platform docs note **no logging of individual user query/response content** at infrastructure level — metadata events only (privacy vs explainability tradeoff).
-- Debug mode **not supported on Azure-hosted Glean** — confirm tenant host type.
+- Platform docs note **no logging of individual user query/response content** at infrastructure level - metadata events only (privacy vs explainability tradeoff).
+- Debug mode **not supported on Azure-hosted Glean** - confirm tenant host type.
 - Not a full "model decision log" with reasoning text for every Assistant query.
 
 ### Verification steps / test case
 
-1. Run agent with Debug — export step trace for Drive→Notion workflow.
+1. Run agent with Debug - export step trace for Drive→Notion workflow.
 2. Query GCE for `LLM_CALL` + `CHAT_CITATIONS` after known Assistant question.
-3. Change Model Hub setting — confirm admin audit entry.
-4. Trigger Protect+ policy — verify Findings row.
+3. Change Model Hub setting - confirm admin audit entry.
+4. Trigger Protect+ policy - verify Findings row.
 
 **Risk & Cost Impact:** Risk: Low | Cost: SIEM export if required
 

@@ -7,9 +7,9 @@ fetched_at: "2026-09-01T13:29:11.881Z"
 ---
 On this page
 
-Public Mode allows Glean to share answers directly in Slack channel threads. When enabled, Glean's responses — whether triggered by a direct mention or detected proactively — are visible to all members of the channel. This ensures that high-value information is accessible to the entire team, reducing repetitive questions and centralizing knowledge.
+Public Mode allows Glean to share answers directly in Slack channel threads. When enabled, Glean's responses - whether triggered by a direct mention or detected proactively - are visible to all members of the channel. This ensures that high-value information is accessible to the entire team, reducing repetitive questions and centralizing knowledge.
 
-Public Mode is on by default. When Glean in Slack is enabled, public replies are turned on automatically — but only in the channels allowed by your [rollout configuration](#enable-public-mode-for-glean-in-slack), never in channels you have excluded. You can review, restrict, or turn off Public Mode at any time using the steps below.
+Public Mode is on by default. When Glean in Slack is enabled, public replies are turned on automatically - but only in the channels allowed by your [rollout configuration](#enable-public-mode-for-glean-in-slack), never in channels you have excluded. You can review, restrict, or turn off Public Mode at any time using the steps below.
 
 ![Public mode](/img/administration/platform/embed-integrate/public-mode1.png)
 
@@ -69,7 +69,7 @@ Public Mode also restricts some other capabilities. MCP and most federated sourc
 
 ### Connectors that can contribute to public replies by default[​](#connectors-that-can-contribute-to-public-replies "Direct link to Connectors that can contribute to public replies by default")
 
-By default, the following connectors can contribute to public replies. Admins can adjust which sources are included — see [Choose which connectors public replies can use](#choose-which-connectors-public-replies-can-use).
+By default, the following connectors can contribute to public replies. Admins can adjust which sources are included - see [Choose which connectors public replies can use](#choose-which-connectors-public-replies-can-use).
 
 | Connector | Content that can be used for public replies |
 | --- | --- |
@@ -184,7 +184,7 @@ This list is not exhaustive. What qualifies depends on how content is shared in 
 
 ## Choose which connectors public replies can use[​](#choose-which-connectors-public-replies-can-use "Direct link to Choose which connectors public replies can use")
 
-By default, public replies only use content that everyone in your organization can already see — content shared with your whole domain, public GitHub repositories, and content users have shared with all members.
+By default, public replies only use content that everyone in your organization can already see - content shared with your whole domain, public GitHub repositories, and content users have shared with all members.
 
 To review or change this set, open the **Glean in Channels** tab and find **Allow public replies in channels**:
 
@@ -197,7 +197,7 @@ To review or change this set, open the **Glean in Channels** tab and find **Allo
     
     ![configure connector](/img/administration/platform/embed-integrate/choose-ds.png)
 
-Public replies always use only broadly shared content — never link-only, restricted, or private content, even when an admin enables a source. For details, see [What content Public Mode can use.](#what-content-public-mode-can-use)
+Public replies always use only broadly shared content - never link-only, restricted, or private content, even when an admin enables a source. For details, see [What content Public Mode can use.](#what-content-public-mode-can-use)
 
 ## Find more information in private sources[​](#find-more-information-in-private-sources "Direct link to Find more information in private sources")
 

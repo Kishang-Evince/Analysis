@@ -23,7 +23,7 @@ Turn your internal event brief and sales resources into an on-brand event descri
 
 ## Overview
 
-Event marketers often juggle scattered documents — briefs, agendas, audience notes, internal resources — before writing a single sentence of event copy. The marketing event description agent brings everything together. It reads the event brief, identifies key logistics, determines who the event is for, and generates multiple description options. Then it refines the strongest version into a polished, ready-to-use description that fits your tone and highlights why the event matters.
+Event marketers often juggle scattered documents - briefs, agendas, audience notes, internal resources - before writing a single sentence of event copy. The marketing event description agent brings everything together. It reads the event brief, identifies key logistics, determines who the event is for, and generates multiple description options. Then it refines the strongest version into a polished, ready-to-use description that fits your tone and highlights why the event matters.
 
 ## See it in action
 
@@ -37,7 +37,7 @@ Event marketers often juggle scattered documents — briefs, agendas, audience n
 
 #### AI for real-world teams: A candid conversation and breakfast
 
-If you’re navigating how AI can support real work — without the noise — join us for a small-group breakfast with operations leaders from across the Bay Area. We’ll meet on Thu, Dec 5 at 9 am at The Elm Room in downtown Springfield.
+If you’re navigating how AI can support real work - without the noise - join us for a small-group breakfast with operations leaders from across the Bay Area. We’ll meet on Thu, Dec 5 at 9 am at The Elm Room in downtown Springfield.
 
 Expect a practical conversation about where teams are seeing impact, what still feels murky, and how leaders are setting expectations inside their orgs. Light breakfast included. Space is limited to keep the discussion focused and useful.
 

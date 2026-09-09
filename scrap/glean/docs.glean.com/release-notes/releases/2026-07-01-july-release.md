@@ -125,9 +125,9 @@ Assistant *\[ROAD-1467\]*
 
 * * *
 
-#### Take actions through real-time voice — send emails, post messages, create events, and more[​](#take-actions-through-real-time-voice--send-emails-post-messages-create-events-and-more "Direct link to Take actions through real-time voice — send emails, post messages, create events, and more")
+#### Take actions through real-time voice - send emails, post messages, create events, and more[​](#take-actions-through-real-time-voice--send-emails-post-messages-create-events-and-more "Direct link to Take actions through real-time voice - send emails, post messages, create events, and more")
 
-You can now take actions directly through real-time voice — send emails, post Slack messages, create calendar events, file Jira tickets, and more, all by speaking. Say what you want to do, confirm with your voice, and Glean handles the rest. Voice actions work with all the same tools and integrations you already use in chat, so there's nothing new to set up.
+You can now take actions directly through real-time voice - send emails, post Slack messages, create calendar events, file Jira tickets, and more, all by speaking. Say what you want to do, confirm with your voice, and Glean handles the rest. Voice actions work with all the same tools and integrations you already use in chat, so there's nothing new to set up.
 
 This feature may be subject to usage-based pricing. Learn more in Glean's Help Center.
 

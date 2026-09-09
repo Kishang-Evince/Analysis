@@ -83,15 +83,15 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-For every successful enterprise AI implementation story I see lately, I encounter one where a company is struggling. We’ve stepped into an agentic era focused on business transformation, but many companies experience significant barriers in operationalizing agents at scale due to fragmented enterprise systems and mounting security concerns. Agents also need sufficient context, consistent access to essential enterprise data, and predictable performance—factors required to guarantee the reliability of agentic execution and a cohesive, scalable AI system capable of transforming business operations.
+For every successful enterprise AI implementation story I see lately, I encounter one where a company is struggling. We’ve stepped into an agentic era focused on business transformation, but many companies experience significant barriers in operationalizing agents at scale due to fragmented enterprise systems and mounting security concerns. Agents also need sufficient context, consistent access to essential enterprise data, and predictable performance-factors required to guarantee the reliability of agentic execution and a cohesive, scalable AI system capable of transforming business operations.
 
-Data fragmentation of critical information is one of the biggest hurdles facing companies today, resulting in operational inefficiencies and stalled innovation. As companies have moved to SaaS-based systems with enterprise data like internal messages, emails, CRM records, and code repositories, it has become nearly impossible to manage and comprehend new forms of data en masse. However, for enterprise AI to be effective, it needs to understand all this data—otherwise, insights get lost within systems and are often left untapped. 
+Data fragmentation of critical information is one of the biggest hurdles facing companies today, resulting in operational inefficiencies and stalled innovation. As companies have moved to SaaS-based systems with enterprise data like internal messages, emails, CRM records, and code repositories, it has become nearly impossible to manage and comprehend new forms of data en masse. However, for enterprise AI to be effective, it needs to understand all this data-otherwise, insights get lost within systems and are often left untapped. 
 
-That’s why Glean has developed a **system of context**—a horizontal, AI-powered index of enterprise knowledge—that enables companies to maximize value and utilize insights from their data, activity, conversations, processes, and agents, no matter where they live. By building this system of context, both employees and agents can act based on their company’s collective context, greatly increasing their effectiveness. 
+That’s why Glean has developed a **system of context**-a horizontal, AI-powered index of enterprise knowledge-that enables companies to maximize value and utilize insights from their data, activity, conversations, processes, and agents, no matter where they live. By building this system of context, both employees and agents can act based on their company’s collective context, greatly increasing their effectiveness. 
 
-Through this system, Glean is now making powerful, context-aware agents—our users are already on pace to complete over 100 million agent actions annually. It’s profound to hear how Glean Agents impact our customers and their businesses in ways they previously thought impossible, while making transformative operational change possible. 
+Through this system, Glean is now making powerful, context-aware agents-our users are already on pace to complete over 100 million agent actions annually. It’s profound to hear how Glean Agents impact our customers and their businesses in ways they previously thought impossible, while making transformative operational change possible. 
 
--   **Booking.com** wanted to integrate user insights more deeply into product decisions. They created a Glean agent that provided prompt, relevant answers regarding user feedback from their research program—a trove of reports, survey data, and external market research that was historically difficult to sift through. 
+-   **Booking.com** wanted to integrate user insights more deeply into product decisions. They created a Glean agent that provided prompt, relevant answers regarding user feedback from their research program-a trove of reports, survey data, and external market research that was historically difficult to sift through. 
 -   **A leading social network** regularly supports over a billion users and 67 million companies, making risk reduction and vulnerability detection critical. They used Glean to create a security agent that enabled infosec partners to build a consistent, comprehensive threat model in just one day, resulting in a **97%** reduction in build time and saving tens of thousands of dollars per model. 
 
 Today, Glean is helping enterprises make agents a reality by introducing an open, horizontal platform and dozens of agents ready to be deployed. With prebuilt quickstart agents and the ability to build your own, bringing Glean Agents into production enables everyone to confidently build, deploy, orchestrate, and govern agents across any workflow. With every agent in your enterprise now centralized, grounded in enterprise context, fully secured, and built to scale, Glean makes moving agents from experimentation to production an out-of-the-box reality.
@@ -106,13 +106,13 @@ Glean Agents provides unparalleled enterprise agent creation, customization, dep
 
 The agent builder's **per-step model selection** capabilities let you define which model an agent should use to execute each step in its process without requiring extensive engineering resources or technical expertise. Based on the agent, you can experiment with different models and optimize for performance or expertise. Integrate your customizations and further improve your daily work or your company’s business processes. 
 
-Users building agents through Glean can also choose between three **“temperature” settings**—factual, balanced, and creative—to suit various business needs. This setting ensures responses align with each agent's intended purpose (such as strictly factual answers for legal, or more creative ones for marketing).
+Users building agents through Glean can also choose between three **“temperature” settings**-factual, balanced, and creative-to suit various business needs. This setting ensures responses align with each agent's intended purpose (such as strictly factual answers for legal, or more creative ones for marketing).
 
 Our new **model hub** provides users with broad and secure access to model innovation from the entire ecosystem, including models hosted on Amazon Bedrock, Google Vertex AI, and Azure OpenAI. Customers can use our universal model key, which unlocks access to 15 pre-procured and centrally managed models. This eliminates the complexity and cost of individually obtaining keys and using models across different providers. It also allows you to mix and match models at every stage of your agentic workflow while optimizing for performance, cost-efficiency, or specific expertise. Furthermore, our agreements with model hosting providers ensure your enterprise data is secure and never used for model training. 
 
 ![Glean Agents Features](https://cdn.prod.website-files.com/613513981b0efaf850830620/682c2952f5f67906c6b4fd36_image3%20\(5\).webp)
 
-With enterprises starting to build more agents throughout multiple systems, they'll need a complete understanding of context and enterprise data to work across systems horizontally. However, indexing your data repeatedly in each application island is not practical. Instead, index and secure all your data in one pass through Glean—creating a unified enterprise system of context shared across all AI implementations. 
+With enterprises starting to build more agents throughout multiple systems, they'll need a complete understanding of context and enterprise data to work across systems horizontally. However, indexing your data repeatedly in each application island is not practical. Instead, index and secure all your data in one pass through Glean-creating a unified enterprise system of context shared across all AI implementations. 
 
 With Glean’s developer experience, you can build agents into custom applications, collaborate with vertical agents, access the latest developer platforms, and use MCP-enabled IDEs and apps. Glean Agents offers flexible agent-building options, allowing users to create agents using either natural language or through code with the **Agents API**, which follows the LangChain Agent Protocol (AP), and provides the fundamental components for programmatic agent creation within a preferred development framework. To facilitate this, API client libraries are available in TypeScript, Go, Java, and Python, ensuring a straightforward interaction with the Agents API. 
 
@@ -122,7 +122,7 @@ Glean is also releasing a **hosted MCP server** for secure agent interoperabilit
 
 These new capabilities drive Glean Agents' open and accessible enterprise agent creation, customization, and deployment capabilities, enabling everyone in any enterprise to freely experiment with and embed AI agents across their business workflows. 
 
-## Agents—now ready for enterprise work
+## Agents-now ready for enterprise work
 
 Glean has always helped organizations transform enterprise context into reliable outcomes, and we’re making that process easier than ever with Glean Agents. We're rolling out **dozens of ready-to-use, quickstart agents** for individuals and companies looking to accelerate adoption and deliver instant value across business-critical and personal workflows. 
 
@@ -134,7 +134,7 @@ In addition to personal productivity agents, Glean provides individualized agent
 
 -   A **deep research agent** that helps employees tackle complex questions by combining company and world knowledge. Get started and consolidate in-depth answers without full context on a topic, and achieve faster time to insights thanks to reduced time spent on gathering and synthesizing data. Receive thorough, citation-backed research with detailed analysis and flexible depth based on user needs. 
 -   **Structured query agent for Snowflake Cortex Analyst,** a new integration with Snowflake Cortex Analyst enables users and Glean agents to query data stored in Snowflake using natural language, combining real-time analytics with enterprise knowledge to drive faster, more confident decisions.
--   **Glean companion** **and sidebar** enable users to ask contextual questions, find documents and insights, summarize text, and get writing help—all directly from within their application or document. 
+-   **Glean companion** **and sidebar** enable users to ask contextual questions, find documents and insights, summarize text, and get writing help-all directly from within their application or document. 
 
 ![Glean Agents Features](https://cdn.prod.website-files.com/613513981b0efaf850830620/682c29e2a8031957c1cb3fff_image1%20\(12\).webp)
 
@@ -152,7 +152,7 @@ At Glean, we believe that governance doesn’t have to slow down innovation when
 
 Glean Protect applies relevant safeguards at each stage of the agent lifecycle, depending on the type of work being performed. During the building process, the focus is on guardrails that enable safe operation within defined parameters for every environment. Glean Protect regulates who can build and edit agents, aligns the intended purpose of the agent with organizational use policies, and follows strict permission rules to regulate how agents are shared across the organization. 
 
-When an agent accesses enterprise data, the emphasis shifts to data security—enforcing permission models, excluding sensitive content, and grounding responses to reduce hallucinations. When executing actions, Glean Protect shifts to considering and verifying how the agent assumes the identity of the user it represents before issuing authorization. 
+When an agent accesses enterprise data, the emphasis shifts to data security-enforcing permission models, excluding sensitive content, and grounding responses to reduce hallucinations. When executing actions, Glean Protect shifts to considering and verifying how the agent assumes the identity of the user it represents before issuing authorization. 
 
 ![Glean Agents Features](https://cdn.prod.website-files.com/613513981b0efaf850830620/682c2a3c2d708ae810e551a9_image2%20\(8\).webp)
 

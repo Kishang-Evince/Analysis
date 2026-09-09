@@ -115,11 +115,11 @@ Product Marketing Manager
 
 No items found.
 
-[![Introducing Snowflake in Glean Assistant — and Why Glean Was Named 2026 AMER Snowflake Product Innovation Partner of the Year](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a1e503ed7ddcc88bb9475be_6998943b-6d15-423e-8e43-4266f96649ed.png)
+[![Introducing Snowflake in Glean Assistant - and Why Glean Was Named 2026 AMER Snowflake Product Innovation Partner of the Year](https://cdn.prod.website-files.com/613513981b0efaf850830620/6a1e503ed7ddcc88bb9475be_6998943b-6d15-423e-8e43-4266f96649ed.png)
 
 June 2, 2026
 
-### Introducing Snowflake in Glean Assistant — and Why Glean Was Named 2026 AMER Snowflake Product Innovation Partner of the Year
+### Introducing Snowflake in Glean Assistant - and Why Glean Was Named 2026 AMER Snowflake Product Innovation Partner of the Year
 
 Snowflake in Glean Assistant is now generally available, giving every employee natural-language access to governed Snowflake data, grounded in your full enterprise context.
 

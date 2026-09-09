@@ -14,10 +14,10 @@ Connecting Google Calendar takes one authorization. Authorize Google Calendar's 
 -   **Read and write calendar tools** work right away. Glean and Glean agents can find, create, update, and respond to meetings, list calendars, and suggest times. Every tool runs as the person asking, using their own Google authorization, so it respects that user's Calendar permissions.
 -   **Permission-aware search** is available when you turn on data crawling and indexing. Glean indexes your Google Calendar events so meetings appear in search and power calendar agents. Glean enforces Calendar permissions at query time, and private events surface as free or busy only.
 
-1.  Connect and authorizetoday — current step
-2.  Use read and write toolstoday — current step
-3.  Indexing runs in the backgroundtoday — happens automatically
-4.  Permission-aware search switches ontomorrow — happens automatically
+1.  Connect and authorizetoday - current step
+2.  Use read and write toolstoday - current step
+3.  Indexing runs in the backgroundtoday - happens automatically
+4.  Permission-aware search switches ontomorrow - happens automatically
 
 ## Feature availability after setup[​](#feature-availability-after-setup "Direct link to Feature availability after setup")
 

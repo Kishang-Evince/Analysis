@@ -43,7 +43,7 @@ Admins can create categories. For an agent moderator to create categories, they 
 
 ## Plan your categories[​](#plan-your-categories "Direct link to Plan your categories")
 
-Categories are the main way to organize the Library for different parts of your company. They appear as filters or navigation in the Library and group related agents together—for example:
+Categories are the main way to organize the Library for different parts of your company. They appear as filters or navigation in the Library and group related agents together-for example:
 
 -   Sales
 -   Marketing
@@ -151,7 +151,7 @@ Consider verifying and branding an agent if it:
 -   The agent is reviewed for accuracy, safety, and data access.
 -   Needs to appear prominently in categories like *All (Company)*.
 
-Admins can also choose to keep some agents **unbranded** even when they are in categories—for example, experimental agents or workflows still in testing.
+Admins can also choose to keep some agents **unbranded** even when they are in categories-for example, experimental agents or workflows still in testing.
 
 ### Verify an agent from agent settings[​](#verify-an-agent-from-agent-settings "Direct link to Verify an agent from agent settings")
 
@@ -188,7 +188,7 @@ You can control who sees a category and the agents inside it. Audience scoping h
 
 Typical scoping options include:
 
--   **Department** — such as Sales, Support, Marketing, or Engineering. Scope a category to one or more departments so only members of those departments see it in the Library.
+-   **Department** - such as Sales, Support, Marketing, or Engineering. Scope a category to one or more departments so only members of those departments see it in the Library.
 
 When you scope a category to specific departments, users outside those departments don't see the category, even if they have access to individual agents inside it. A category left unscoped is visible to all audiences that can otherwise access the Library.
 

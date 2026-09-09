@@ -21,7 +21,7 @@ Assistant *ROAD-743-MR*
 
 #### Allow pinning of Search and Chat at a user level[​](#allow-pinning-of-search-and-chat-at-a-user-level "Direct link to Allow pinning of Search and Chat at a user level")
 
-You can now pin your preferred default between Search and Chat on the Glean Home Page. This lets you choose which experience—Search or Chat—appears first when you open Glean, making it easier to start your workflow the way you like. Pinning is available at the individual user level, so everyone can personalize their own experience for faster access to the tools they use most.
+You can now pin your preferred default between Search and Chat on the Glean Home Page. This lets you choose which experience-Search or Chat-appears first when you open Glean, making it easier to start your workflow the way you like. Pinning is available at the individual user level, so everyone can personalize their own experience for faster access to the tools they use most.
 
 [Learn more](/user-guide/advanced/customizing-home-page)
 
@@ -99,7 +99,7 @@ Assistant *ROAD-786*
 
 #### Assistant adapts to your unique, personalized writing style[​](#assistant-adapts-to-your-unique-personalized-writing-style "Direct link to Assistant adapts to your unique, personalized writing style")
 
-Glean Assistant now automatically adapts to your unique writing style using your existing written content across your apps. Without any setup, Assistant learns your tone, structure, and expression patterns to generate content that sounds authentically like you. Whether drafting emails, documents, or other content, Assistant mirrors your individual writing characteristics while maintaining professional quality—transforming AI assistance into a personalized writing partner that preserves your authentic voice.
+Glean Assistant now automatically adapts to your unique writing style using your existing written content across your apps. Without any setup, Assistant learns your tone, structure, and expression patterns to generate content that sounds authentically like you. Whether drafting emails, documents, or other content, Assistant mirrors your individual writing characteristics while maintaining professional quality-transforming AI assistance into a personalized writing partner that preserves your authentic voice.
 
 [Learn more](https://www.glean.com/product/personal-graph)
 
@@ -109,7 +109,7 @@ Assistant *ROAD-744*
 
 #### Configure actions during data source setup[​](#configure-actions-during-data-source-setup "Direct link to Configure actions during data source setup")
 
-Access and configure actions directly from the data source setup flow via clear “Go to setup” links. This new experience introduces an optional Actions step in the datasource setup UI, making it easier for admins to discover and enable relevant pre-built actions and (soon) MCP tools for select apps—all while configuring the datasource, without context switching. This streamlines the admin experience, providing a faster, single point of setup for both data connections and platform actions.
+Access and configure actions directly from the data source setup flow via clear “Go to setup” links. This new experience introduces an optional Actions step in the datasource setup UI, making it easier for admins to discover and enable relevant pre-built actions and (soon) MCP tools for select apps-all while configuring the datasource, without context switching. This streamlines the admin experience, providing a faster, single point of setup for both data connections and platform actions.
 
 [Learn more](/connectors/configure-tools-in-connector/config-tools-mcp-from-connector)
 

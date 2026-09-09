@@ -63,13 +63,13 @@ Share this article:
 
 # Key considerations for selecting an enterprise search tool
 
-Enterprise search tools are sophisticated systems that enable organizations to find information across their entire digital ecosystem. Unlike consumer search engines that crawl the web, enterprise search focuses on your internal data—documents, emails, databases, cloud platforms, and communication tools—making it all searchable from a single interface. Workers require up to [eight searches](https://cottrillresearch.com/various-survey-statistics-workers-spend-too-much-time-searching-for-information/) to locate the correct document and information, significantly amplifying the time investment for information retrieval.
+Enterprise search tools are sophisticated systems that enable organizations to find information across their entire digital ecosystem. Unlike consumer search engines that crawl the web, enterprise search focuses on your internal data-documents, emails, databases, cloud platforms, and communication tools-making it all searchable from a single interface. Workers require up to [eight searches](https://cottrillresearch.com/various-survey-statistics-workers-spend-too-much-time-searching-for-information/) to locate the correct document and information, significantly amplifying the time investment for information retrieval.
 
 Finding the right information at the right time has become a critical challenge for modern organizations. Research reveals that [19.8%](https://cottrillresearch.com/various-survey-statistics-workers-spend-too-much-time-searching-for-information/) of business time is wasted by employees searching for information, equivalent to one full day per working week. With employees spending up to three hours daily searching for information across disconnected systems, the need for effective enterprise search has never been clearer. Selecting the right enterprise search tool can transform how your organization accesses and uses its collective knowledge.
 
 ## What is an enterprise search tool?
 
-Enterprise search tools are sophisticated systems that enable organizations to find information across their entire digital ecosystem. Employees spend an average of [1.8 hours](https://cottrillresearch.com/various-survey-statistics-workers-spend-too-much-time-searching-for-information/) every day searching for information, equivalent to 9.3 hours per week dedicated solely to information retrieval activities. Unlike consumer search engines that crawl the web, enterprise search focuses on your internal data—documents, emails, databases, cloud platforms, and communication tools—making it all searchable from a single interface.
+Enterprise search tools are sophisticated systems that enable organizations to find information across their entire digital ecosystem. Employees spend an average of [1.8 hours](https://cottrillresearch.com/various-survey-statistics-workers-spend-too-much-time-searching-for-information/) every day searching for information, equivalent to 9.3 hours per week dedicated solely to information retrieval activities. Unlike consumer search engines that crawl the web, enterprise search focuses on your internal data-documents, emails, databases, cloud platforms, and communication tools-making it all searchable from a single interface.
 
 Modern enterprise search goes beyond simple keyword matching. These AI-powered search solutions understand context, learn from user behavior, and deliver [personalized results](https://www.glean.com/blog/search-personalization) based on who's searching and what they need. They connect disparate data sources while respecting security permissions, ensuring employees find relevant information quickly without compromising sensitive data.
 
@@ -79,7 +79,7 @@ The best [enterprise search software](https://www.glean.com/blog/top-enterprise-
 
 ### 1\. Identify your organizational requirements
 
-Start by understanding your specific challenges. Are employees struggling to find information across multiple SaaS applications? Do teams duplicate work because they can't locate existing resources? Map out your current data landscape—from CRM systems to document repositories—and identify where information gets stuck.
+Start by understanding your specific challenges. Are employees struggling to find information across multiple SaaS applications? Do teams duplicate work because they can't locate existing resources? Map out your current data landscape-from CRM systems to document repositories-and identify where information gets stuck.
 
 Consider who will use the search tool and how. Engineers need different information than sales teams, and your enterprise search solution should adapt accordingly. Think about your data volume, the number of users, and how both might grow. This foundation helps you evaluate solutions against your actual needs, not just impressive feature lists.
 
@@ -87,11 +87,11 @@ Consider who will use the search tool and how. Engineers need different informat
 
 The core of any enterprise search platform lies in its search capabilities. Look for solutions that offer:
 
-**AI-powered search** that understands natural language queries and user intent. When someone searches for "customer feedback on new feature," the system should understand they want survey results, support tickets, and product reviews—not just documents with those exact words.
+**AI-powered search** that understands natural language queries and user intent. When someone searches for "customer feedback on new feature," the system should understand they want survey results, support tickets, and product reviews-not just documents with those exact words.
 
 **Real-time data indexing** ensures search results stay current. Traditional platforms that update indexes hourly or daily leave users working with outdated information. Modern solutions index continuously, so the latest Slack conversation or just-uploaded document appears immediately in search results.
 
-**Personalization** that goes beyond basic filters. The best platforms automatically learn from user behavior, surfacing engineering documentation for developers and sales materials for account executives—without manual configuration.
+**Personalization** that goes beyond basic filters. The best platforms automatically learn from user behavior, surfacing engineering documentation for developers and sales materials for account executives-without manual configuration.
 
 ### 3\. Consider integration capabilities
 

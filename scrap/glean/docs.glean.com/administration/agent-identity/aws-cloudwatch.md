@@ -89,7 +89,7 @@ Replace `<OAUTH2_CLIENT_ID>` with the numeric value from Step 3.
 
 For more detail, see the AWS documentation on [creating a role for web identity federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp.html).
 
-Copy the role Amazon Resource Name (ARN)—you enter it when you create the credential in Glean:
+Copy the role Amazon Resource Name (ARN)-you enter it when you create the credential in Glean:
 
 ```
 arn:aws:iam::<AWS_ACCOUNT_ID>:role/glean-cloudwatch-reader
@@ -111,7 +111,7 @@ Use the narrowest permissions and log-group scope that supports the agent's use 
 2.  Click **Add**.
 3.  Select **AWS CloudWatch Logs** under **Service credentials**.
 4.  Fill in these fields:
-    -   **Credential name:** A human-readable name for the credential, such as `CloudWatch Logs — Production`.
+    -   **Credential name:** A human-readable name for the credential, such as `CloudWatch Logs - Production`.
     -   **Description:** A short description of what this credential is used for.
     -   **IAM role ARN:** The full ARN of the AWS IAM role from Step 4.
     -   **AWS region:** The AWS region that contains the CloudWatch Logs data, such as `us-east-1`.

@@ -43,7 +43,7 @@ Build agents directly on the Glean app or use MCP servers to develop on Bedrock 
 
 ### **Get started quickly with Glean on Amazon Marketplace.**
 
-Streamline procurement and burn down your enterprise commitments with Glean on Amazon Marketplace. Go live on AI agents in less than 3 weeks and realize the benefit — up to 110 hours saved per employee per year.
+Streamline procurement and burn down your enterprise commitments with Glean on Amazon Marketplace. Go live on AI agents in less than 3 weeks and realize the benefit - up to 110 hours saved per employee per year.
 
 ## Trusted by leading companies
 

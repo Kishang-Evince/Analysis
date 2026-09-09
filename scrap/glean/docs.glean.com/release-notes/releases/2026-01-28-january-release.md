@@ -23,7 +23,7 @@ Actions *ROAD-1103-MR*
 
 Chat in Assistant now surfaces a short set of top search results within your conversation for keyword and search-like queries. This enables you to navigate to relevant documents directly in chat conversations quickly, so you don’t have to switch to the search setting or wait for a full chat response. You’ll get to the information you need faster, improving productivity and reducing context switching.
 
-**How to access:** No setup is required—this feature is available to all users in Assistant. When you enter a keyword or search-like query in a chat conversation, you’ll see top search results appear directly in the chat window. Click any result to open the document, or continue your conversation as usual. For more details on using chat and search, visit the Glean Help Center.
+**How to access:** No setup is required-this feature is available to all users in Assistant. When you enter a keyword or search-like query in a chat conversation, you’ll see top search results appear directly in the chat window. Click any result to open the document, or continue your conversation as usual. For more details on using chat and search, visit the Glean Help Center.
 
 Release plan:
 
@@ -40,7 +40,7 @@ Assistant *ROAD-1025-MR*
 
 #### Custom actions defaulted to run in scheduled and interactive agents without user confirmation[​](#custom-actions-defaulted-to-run-in-scheduled-and-interactive-agents-without-user-confirmation "Direct link to Custom actions defaulted to run in scheduled and interactive agents without user confirmation")
 
-Configure custom actions to run automatically—without user confirmation—in both interactive and scheduled agents, while giving admins full control over which actions are allowed to run this way. This lets teams safely automate more work while maintaining admin control.
+Configure custom actions to run automatically-without user confirmation-in both interactive and scheduled agents, while giving admins full control over which actions are allowed to run this way. This lets teams safely automate more work while maintaining admin control.
 
 **How to access:** Administrators must enable for your organization. In the Admin Console, go to Actions, select the relevant custom action, and enable the option to run without user confirmation for agents. This setting determines which actions are eligible to run automatically in both interactive and scheduled agents. In Agent workflow builder, when creating or editing an agent, add the custom action as a step and ensure the “run without confirmation” option is enabled for that step. For scheduled agents, only actions configured for auto-run will be available.
 
@@ -120,7 +120,7 @@ Actions *ROAD-1095*
 
 #### Update to admins on Adaptive Planning in Agents[​](#update-to-admins-on-adaptive-planning-in-agents "Direct link to Update to admins on Adaptive Planning in Agents")
 
-Adaptive Planning is now available for Glean Agents, enhancing agent workflows with improved reasoning and flexibility. Starting with the January 20, 2026 release, all agents using the Plan & Execute step were automatically upgraded from Basic to Thinking mode, enabling deeper, more iterative problem-solving. Agents will continue to use the best available model within their configured model family, and those previously set to "Same as Assistant" will now use "Best," ensuring optimal performance for each request. No customer action is required—this upgrade ensures agents benefit from the latest planning and reasoning capabilities while preserving existing model preferences.
+Adaptive Planning is now available for Glean Agents, enhancing agent workflows with improved reasoning and flexibility. Starting with the January 20, 2026 release, all agents using the Plan & Execute step were automatically upgraded from Basic to Thinking mode, enabling deeper, more iterative problem-solving. Agents will continue to use the best available model within their configured model family, and those previously set to "Same as Assistant" will now use "Best," ensuring optimal performance for each request. No customer action is required-this upgrade ensures agents benefit from the latest planning and reasoning capabilities while preserving existing model preferences.
 
 This feature may use credits. Learn more in Glean's Help Center.
 
@@ -146,7 +146,7 @@ Assistant *ROAD-1102*
 
 #### Make your writing shine with Editing Shortcuts within Canvas[​](#make-your-writing-shine-with-editing-shortcuts-within-canvas "Direct link to Make your writing shine with Editing Shortcuts within Canvas")
 
-The Editing Shortcuts feature in Glean Canvas lets you apply common rewrites—like fix grammar, make concise, or change tone—with a single click instead of re-prompting in chat. When you highlight text and hit the shortcut button, a small menu of actions (Polish, Length, Tone) appears; choosing one sends a hidden, tuned prompt to the model and replaces just that selection with the improved version. This turns repetitive editing prompts into fast, in‑place adjustments so you can quickly polish, resize, and retune your writing without leaving the document.
+The Editing Shortcuts feature in Glean Canvas lets you apply common rewrites-like fix grammar, make concise, or change tone-with a single click instead of re-prompting in chat. When you highlight text and hit the shortcut button, a small menu of actions (Polish, Length, Tone) appears; choosing one sends a hidden, tuned prompt to the model and replaces just that selection with the improved version. This turns repetitive editing prompts into fast, in‑place adjustments so you can quickly polish, resize, and retune your writing without leaving the document.
 
 [Learn more](/user-guide/assistant/glean-chat/canvas)
 
@@ -214,7 +214,7 @@ Connectors *ROAD-880*
 
 #### Redlist content in Microsoft O365 SharePoint and OneDrive with sensitivity labels[​](#redlist-content-in-microsoft-o365-sharepoint-and-onedrive-with-sensitivity-labels "Direct link to Redlist content in Microsoft O365 SharePoint and OneDrive with sensitivity labels")
 
-Glean now supports redlisting content using Microsoft Purview sensitivity labels for SharePoint and OneDrive. This ensures that items tagged with selected labels are not surfaced in search, chat, and agent experiences. Admins can configure which sensitivity labels to redlist, and updates to these labels are propagated rapidly—typically within a few hours.
+Glean now supports redlisting content using Microsoft Purview sensitivity labels for SharePoint and OneDrive. This ensures that items tagged with selected labels are not surfaced in search, chat, and agent experiences. Admins can configure which sensitivity labels to redlist, and updates to these labels are propagated rapidly-typically within a few hours.
 
 **How to access:** This feature is not currently self-service and cannot be configured directly from the Glean Admin Console. Configuration must be completed with assistance from Glean. To enable redlisting of content via Microsoft Purview sensitivity labels for SharePoint and OneDrive, an admin must: In Azure, locate the app registration connected to your SharePoint/OneDrive instance. Add the SensitivityLabels.Read.All Graph API application permissions and grant admin consent. Provide your Glean representative with the list of sensitivity label priority numbers, specifying which labels should be redlisted for SharePoint and OneDrive.
 

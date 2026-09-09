@@ -20,7 +20,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-Find the right engineering standard, product spec, or technical report faster. Search authoritative Windchill documents alongside the rest of your company knowledge—so engineers can design, troubleshoot, and make decisions with confidence.
+Find the right engineering standard, product spec, or technical report faster. Search authoritative Windchill documents alongside the rest of your company knowledge-so engineers can design, troubleshoot, and make decisions with confidence.
 
 ## Work AI that works.
 

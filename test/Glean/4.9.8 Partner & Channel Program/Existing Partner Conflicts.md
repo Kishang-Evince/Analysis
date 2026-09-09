@@ -1,4 +1,4 @@
-# Field 6 — Existing Partner Conflicts
+# Field 6 - Existing Partner Conflicts
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Existing Partner Conflicts.md](../../../Glean/Combined/4.9.8 Partner & Channel Program/Existing Partner Conflicts.md)

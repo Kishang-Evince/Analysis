@@ -85,7 +85,7 @@ Listen to article
 
 ## Introduction
 
-Financial institutions are under increasing pressure to innovate and adapt. From meeting strict regulatory requirements to providing personalized customer experiences in an increasingly competitive market, the challenges are significant — and just adopting AI is no longer enough. The challenge is making AI useful across regulated workflows where teams need the full picture before they act. By bringing together context scattered across client records, policies, market research, and internal knowledge an AI coworker can help teams serve clients better and manage risk more effectively.
+Financial institutions are under increasing pressure to innovate and adapt. From meeting strict regulatory requirements to providing personalized customer experiences in an increasingly competitive market, the challenges are significant - and just adopting AI is no longer enough. The challenge is making AI useful across regulated workflows where teams need the full picture before they act. By bringing together context scattered across client records, policies, market research, and internal knowledge an AI coworker can help teams serve clients better and manage risk more effectively.
 
 In this post, we explore how AI is helping financial instititutions strengthen client relationships, reduce operational friction, and support better decision-making across the business. 
 

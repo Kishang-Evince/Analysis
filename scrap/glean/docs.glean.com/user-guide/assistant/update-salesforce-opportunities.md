@@ -74,6 +74,6 @@ Common standard fields include:
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [Update Salesforce opportunity](/tools/connector/salesforce/update-salesforce-opportunity) — tool reference for agent builders, including supported parameters and troubleshooting.
--   [Salesforce tools setup](/administration/tools/setup-tools/salesforce-tools-setup) — admin guide for enabling the Salesforce tools and configuring authentication.
--   [Salesforce tools](/tools/connector/salesforce/sf-index) — full list of available Salesforce tools.
+-   [Update Salesforce opportunity](/tools/connector/salesforce/update-salesforce-opportunity) - tool reference for agent builders, including supported parameters and troubleshooting.
+-   [Salesforce tools setup](/administration/tools/setup-tools/salesforce-tools-setup) - admin guide for enabling the Salesforce tools and configuring authentication.
+-   [Salesforce tools](/tools/connector/salesforce/sf-index) - full list of available Salesforce tools.

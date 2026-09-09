@@ -96,7 +96,7 @@ You can preview generated slides and images directly inside Canvas without downl
 
 ### Spreadsheets[​](#spreadsheets "Direct link to Spreadsheets")
 
-Canvas is also the working surface for spreadsheet generation. Iterate on rows and columns with Glean in Canvas and then export to Excel, Google Sheets, or CSV — or copy the table to your clipboard. See [Spreadsheet generation](/user-guide/assistant/spreadsheet-generation) for the full workflow.
+Canvas is also the working surface for spreadsheet generation. Iterate on rows and columns with Glean in Canvas and then export to Excel, Google Sheets, or CSV - or copy the table to your clipboard. See [Spreadsheet generation](/user-guide/assistant/spreadsheet-generation) for the full workflow.
 
 ## Canvas content types[​](#canvas-content-types "Direct link to Canvas content types")
 

@@ -7,8 +7,8 @@ Skills teach Cursor agents this repo’s architecture and coding rules. Canonica
 | Skill                           | When to use                                                                                       |
 | ------------------------------- | ------------------------------------------------------------------------------------------------- |
 | **evince-nest-module**          | **Read first** when implementing or extending a feature module                                    |
-| **evince-nest-validate-module** | **Run before done** — audit module against architecture-validation-rule §1–11                     |
-| **evince-nest-development**     | Any feature work under `libs/@evince` or `src/modules` — layers, imports, permissions, env        |
+| **evince-nest-validate-module** | **Run before done** - audit module against architecture-validation-rule §1–11                     |
+| **evince-nest-development**     | Any feature work under `libs/@evince` or `src/modules` - layers, imports, permissions, env        |
 | **evince-dto-and-api**          | DTOs, validators, controllers, services, `AppResponse`, search APIs, Swagger                      |
 | **evince-api-flow-diagrams**    | API flow docs in `docs/api-flowdiagram/`, user stories, ASCII journeys, Mermaid verification      |
 | **evince-repositories-tenancy** | Repositories, `Repository<T>`, facade pattern, query-builder aliases                              |
@@ -19,8 +19,8 @@ Skills teach Cursor agents this repo’s architecture and coding rules. Canonica
 
 ## Always-on Cursor rules
 
-- `.cursor/rules/evince-module-standards.mdc` — file placement, interfaces, completion gate
-- `.cursor/rules/no-over-engineering.mdc` — minimal scope (interfaces/DTOs exempt where required)
+- `.cursor/rules/evince-module-standards.mdc` - file placement, interfaces, completion gate
+- `.cursor/rules/no-over-engineering.mdc` - minimal scope (interfaces/DTOs exempt where required)
 
 ## Source documentation
 
@@ -32,7 +32,7 @@ Skills teach Cursor agents this repo’s architecture and coding rules. Canonica
 - `libs/@evince/documents/developer-guideline/example-user-module.md`
 - `libs/@evince/documents/developer-guideline/master-module-prompt.md`
 - `libs/@evince/documents/migrations.md`
-- `docs/api-flowdiagram/` — portal API flow diagrams (admin / customer)
+- `docs/api-flowdiagram/` - portal API flow diagrams (admin / customer)
 
 ## Installing for the team
 

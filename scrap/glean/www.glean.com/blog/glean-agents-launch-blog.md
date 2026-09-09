@@ -91,7 +91,7 @@ At Glean, we’re already seeing agentic AI impact the way we scale our company.
 -   Our engineers to automatically review and document PRs
 -   Our sales teams to arrive at customer meetings with a better understanding of the customer and industry, and can answer questions and solve problems in the moment, making the most of the customer’s time. 
 
-There are many more examples, but the gist stays the same—agentic AI, when knowledgably directed by our employees, enables Glean to achieve strategic business impact rather than just incremental time savings.  
+There are many more examples, but the gist stays the same-agentic AI, when knowledgably directed by our employees, enables Glean to achieve strategic business impact rather than just incremental time savings.  
 
 Despite much industry talk of replacing humans with AI agents, I’ve seen firsthand with both our customers and employees that AI is at its best when assisting humans. For example, our customers at:  
 
@@ -101,7 +101,7 @@ Despite much industry talk of replacing humans with AI agents, I’ve seen first
 
 This is just a small sliver of the 50M+ agentic actions that customers have executed across their organizations in the past year with Glean. 
 
-Today, we’re proud to be taking one step further into the agentic era with the launch of Glean Agents— Glean’s horizontal agent environment for building, deploying, orchestrating, and governing agents at work. With Glean Agents, everyone can easily build and use agents, and companies can manage and govern thousands of agents, helping enterprises embrace AI in a compliant, secure way at scale. We’re also introducing several new platform capabilities integrated into Glean Agents:
+Today, we’re proud to be taking one step further into the agentic era with the launch of Glean Agents- Glean’s horizontal agent environment for building, deploying, orchestrating, and governing agents at work. With Glean Agents, everyone can easily build and use agents, and companies can manage and govern thousands of agents, helping enterprises embrace AI in a compliant, secure way at scale. We’re also introducing several new platform capabilities integrated into Glean Agents:
 
 -   **Universal knowledge** accesses data from both company apps and databases, as well as information from the web and LLM data, to research, analyze insights, make decisions, and automate work
 -   **Structured data analysis** enables everyone to make data-driven decisions by querying live data from structured data applications, such as Salesforce, Databricks, and Jira, using natural language **‍**
@@ -109,9 +109,9 @@ Today, we’re proud to be taking one step further into the agentic era with the
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/67ac89b15f7b0f3e4b81bb4c_AI%20Agents.png)
 
-## Glean Agents — build and use agents using natural language
+## Glean Agents - build and use agents using natural language
 
-Glean Agents is the horizontal environment for everyone to create, use, and share agents. We don’t relegate agents just to developers with backgrounds in AI and the skills to integrate agents with databases, APIs, and other enterprise platforms. We see the most gains from agents when users can create them in minutes, or when they’re automatically triggered based on the user’s query. Agents are also best built by the users themselves—those closest to understanding specific business processes are best fit to capture and automate them. 
+Glean Agents is the horizontal environment for everyone to create, use, and share agents. We don’t relegate agents just to developers with backgrounds in AI and the skills to integrate agents with databases, APIs, and other enterprise platforms. We see the most gains from agents when users can create them in minutes, or when they’re automatically triggered based on the user’s query. Agents are also best built by the users themselves-those closest to understanding specific business processes are best fit to capture and automate them. 
 
 With this approach in mind, we built Glean Agents to scale across the enterprise. Agents are powered by Glean’s LLM-agnostic agentic reasoning engine and have access to enterprise and world knowledge and a suite of orchestrated actions. 
 
@@ -119,19 +119,19 @@ Glean Assistant provides an out-of-the-box, company-wide agent experience that e
 
 Once created, agents can be saved, scheduled, or triggered based on a wide range of conditions. They can be shared with the wider organization through Glean’s agent library, enabling users to explore and experiment with agentic AI. Glean will also proactively recommend agents to users based on their interactions with Glean Assistant, integrating agents into the way they already use Glean every day. 
 
-Today, most enterprises have hundreds of SaaS applications. I see enterprises deploying 10x or 100x that number of agents tomorrow. You’ll need the tools to orchestrate at scale, giving agents the feedback to improve and putting in place the guardrails to keep your agents compliant. This is where the value of Glean Agents emerges for companies—making it easy to both create and govern agents at scale in the enterprise. 
+Today, most enterprises have hundreds of SaaS applications. I see enterprises deploying 10x or 100x that number of agents tomorrow. You’ll need the tools to orchestrate at scale, giving agents the feedback to improve and putting in place the guardrails to keep your agents compliant. This is where the value of Glean Agents emerges for companies-making it easy to both create and govern agents at scale in the enterprise. 
 
 *Read more about Glean Agents and how to get started with creating an agent in this* [*blog*](https://www.glean.com/blog/agents-product-blog)*.*
 
-## Universal knowledge—broad, real-time data access for Work AI
+## Universal knowledge-broad, real-time data access for Work AI
 
 At work, we often switch between using internal and external data. For example, creating a sales campaign requires using customer data and external information on prospects and industry trends. Similarly, designing an engineering feature requires considering the tech stack and best practices from other developers. While automating most business processes use internal tools and data, strategy and insights come from both internal and external data.
 
-That’s what makes the launch of universal knowledge so useful for customers—Glean can now provide the broadest and most comprehensive set of knowledge for work AI. Users can combine enterprise data with internet data, enabling the integration of online information such as real-time industry insights and current market conversations directly into Glean queries. Users looking to learn more about a subject beyond the response provided can also explore deeper or wider, regardless of source, using citations to the source material. 
+That’s what makes the launch of universal knowledge so useful for customers-Glean can now provide the broadest and most comprehensive set of knowledge for work AI. Users can combine enterprise data with internet data, enabling the integration of online information such as real-time industry insights and current market conversations directly into Glean queries. Users looking to learn more about a subject beyond the response provided can also explore deeper or wider, regardless of source, using citations to the source material. 
 
 ‍*Read more about Glean’s universal knowledge capabilities and how to integrate it into everyday workflows in this* [*blog*](https://www.glean.com/blog/univ-knowledge-product-blog)*.*
 
-## Structured data analysis—democratizing access to data insights
+## Structured data analysis-democratizing access to data insights
 
 When it comes to leveraging all the data in the enterprise, however, structured data is a piece of the puzzle that most AI solutions have yet to crack. Although generative AI unlocked access to unstructured data within companies (context and meaning from words), these models were not designed for structured data that contains predefined schemas, relationships between columns and rows, as well as understanding interconnectedness between underlying tables and materialized views. 
 
@@ -139,13 +139,13 @@ With this release, Glean’s universal knowledge capabilities are now compatible
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/67ac8acf1079e200e79cc444_glean_salesForceSlack_Final%20\(1\).gif)
 
-When people think of agents, they usually focus first on task or business process automation and forget the role they play in democratizing data insights across the enterprise. Data analysis is a key for agents to reshape business processes, making it simpler for both people and agents to access the data needed to make better data-driven decisions. With universal knowledge, we also help bring all data—enterprise and internet, historical and real-time, structured and unstructured—into every decision, ending a multi-decade long journey to data accessibility.
+When people think of agents, they usually focus first on task or business process automation and forget the role they play in democratizing data insights across the enterprise. Data analysis is a key for agents to reshape business processes, making it simpler for both people and agents to access the data needed to make better data-driven decisions. With universal knowledge, we also help bring all data-enterprise and internet, historical and real-time, structured and unstructured-into every decision, ending a multi-decade long journey to data accessibility.
 
 ‍*Read more about Glean’s structured data analysis capabilities in this* [*blog*](https://www.glean.com/blog/data-analysis-product-blog)*.*
 
-## Active data and AI governance—proactive flagging of overshared data
+## Active data and AI governance-proactive flagging of overshared data
 
-To maximize AI's potential, agents rely on broad access to enterprise data and the ability to take actions across business applications. However, broad data access introduces significant risks that must be carefully managed. Even with stringent security measures, their effectiveness is directly set by permissions set by the users themselves. Therefore, while enforcing permissions is crucial, it is not sufficient on its own—the platform itself must be capable of detecting permission errors that lead to over-shared content and automatically block or remediate these issues.
+To maximize AI's potential, agents rely on broad access to enterprise data and the ability to take actions across business applications. However, broad data access introduces significant risks that must be carefully managed. Even with stringent security measures, their effectiveness is directly set by permissions set by the users themselves. Therefore, while enforcing permissions is crucial, it is not sufficient on its own-the platform itself must be capable of detecting permission errors that lead to over-shared content and automatically block or remediate these issues.
 
 To tackle this, we’re introducing a new layer of governance, active data and AI governance, which proactively protects enterprises against new and emerging risks when bringing agents into the enterprise.
 
@@ -163,7 +163,7 @@ We’ll be working differently in the age of agents, but that change has to happ
 
 Today, the launch of Glean Agents, universal knowledge, structured data analysis, and active data and AI governance gives every employee and every organization the ability to use, share, manage and govern agents at scale. By infusing Glean Agents into our product experience, we’re providing the many users who query Glean ~5x a day an easy way to directly experiment with and integrate agents into their everyday work. 
 
-You can discover more about Glean Agents and our new platform capabilities, at [Glean Live: Winter ‘25 launch event](https://www.glean.com/glean-live). I’ll be onstage along with Toby Roberts of Zillow, Adam Conway of Databricks, our very own Tamar Yehoshua and many more for live demos and fireside chats—I hope you’ll join us.
+You can discover more about Glean Agents and our new platform capabilities, at [Glean Live: Winter ‘25 launch event](https://www.glean.com/glean-live). I’ll be onstage along with Toby Roberts of Zillow, Adam Conway of Databricks, our very own Tamar Yehoshua and many more for live demos and fireside chats-I hope you’ll join us.
 
 [
 

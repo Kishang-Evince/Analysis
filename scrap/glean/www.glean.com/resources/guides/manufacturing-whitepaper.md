@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/manufacturing-whitepaper"
 canonical: "https://www.glean.com/resources/guides/manufacturing-whitepaper"
 title: "Unify knowledge across teams to power Industry 4.0"
-description: "Manufacturers don’t need more data — they need a trusted layer of context to make it actionable."
+description: "Manufacturers don’t need more data - they need a trusted layer of context to make it actionable."
 fetched_at: "2026-09-01T13:27:10.140Z"
 ---
 ## Work AI that works.

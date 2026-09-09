@@ -37,11 +37,11 @@ Projects are private by default. You can share a project with specific people or
 
 You can add the following types of content to a project:
 
--   **Chats** — keep related Glean Assistant conversations together.
--   **Documents** — add documents from any connected workplace app.
--   **Interactive content** — include generated content like canvases, slide decks, and spreadsheets.
--   **Files** — upload files directly to the project.
--   **URLs** — add links to external content that isn't indexed in Glean.
+-   **Chats** - keep related Glean Assistant conversations together.
+-   **Documents** - add documents from any connected workplace app.
+-   **Interactive content** - include generated content like canvases, slide decks, and spreadsheets.
+-   **Files** - upload files directly to the project.
+-   **URLs** - add links to external content that isn't indexed in Glean.
 
 * * *
 

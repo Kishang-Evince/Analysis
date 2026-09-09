@@ -22,7 +22,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-Turn NetSuite’s system‑of‑record data into discoverable, usable context for everyone at work—so you get faster answers to finance questions, better visibility into revenue, and streamlined back‑office workflows.
+Turn NetSuite’s system‑of‑record data into discoverable, usable context for everyone at work-so you get faster answers to finance questions, better visibility into revenue, and streamlined back‑office workflows.
 
 ## Work AI that works.
 

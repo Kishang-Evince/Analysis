@@ -1,4 +1,4 @@
-# Field 6 — RAG Implementation Quality
+# Field 6 - RAG Implementation Quality
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [RAG Implementation Quality.md](../../../Glean/Combined/4.9.3 AI Architecture & Models/RAG Implementation Quality.md)
@@ -15,6 +15,6 @@
 | 4 | Teams message | Posted term | | | |
 | 5 | OneDrive file | Filename match | | | |
 
-Extra: Toggle company sources off — note ungrounded behavior. Thinking vs Fast citation count.
+Extra: Toggle company sources off - note ungrounded behavior. Thinking vs Fast citation count.
 
 ---

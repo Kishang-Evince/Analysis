@@ -1,11 +1,11 @@
-# Field 3 — Non-Technical User Experience
+# Field 3 - Non-Technical User Experience
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Non-Technical User Experience.md](../../../Glean/Combined/4.9.6 Adoption & Readiness/Non-Technical User Experience.md)
 
 ---
 
-**User B hat** — non-admin business user, stopwatch each:
+**User B hat** - non-admin business user, stopwatch each:
 
 | # | Surface | Task | Sec | Layout 1–5 | Friction 1–5 |
 |---|---|---|---|---|---|

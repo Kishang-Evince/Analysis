@@ -2,7 +2,7 @@
 url: "https://www.glean.com/connectors/granola"
 canonical: "https://www.glean.com/connectors/granola"
 title: "Granola integration with Glean | Glean Work AI"
-description: "Find decisions, action items, and meeting context from Granola — all in Glean."
+description: "Find decisions, action items, and meeting context from Granola - all in Glean."
 fetched_at: "2026-09-01T13:25:46.184Z"
 ---
 ### Overview
@@ -20,7 +20,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-Recover meeting context fast — no replaying calls, no digging through folders. Understand how positions shifted, what was agreed, and where threads were left open by searching Granola notes and transcripts alongside docs, tickets, CRM data, and chats.
+Recover meeting context fast - no replaying calls, no digging through folders. Understand how positions shifted, what was agreed, and where threads were left open by searching Granola notes and transcripts alongside docs, tickets, CRM data, and chats.
 
 ## Work AI that works.
 

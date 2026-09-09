@@ -19,7 +19,7 @@ Glean sends email alerts when connector issues require admin action. Glean enabl
 
 ### Connector failure alerts[​](#connector-failure-alerts "Direct link to Connector failure alerts")
 
-Glean monitors connectors for failures such as expired credentials, failed plugin installations, or invalid domains. These alerts are mandatory and cannot be disabled — delayed fixes risk stale content, outdated search results, and permission gaps that could expose users to content they should not access.
+Glean monitors connectors for failures such as expired credentials, failed plugin installations, or invalid domains. These alerts are mandatory and cannot be disabled - delayed fixes risk stale content, outdated search results, and permission gaps that could expose users to content they should not access.
 
 For full details, see [Connector failure alerts](/administration/management/alerts/connector-failure-alerts).
 
@@ -51,9 +51,9 @@ If a connector looks healthy in the Admin console but specific content is missin
 
 In **Admin console → Platform → Connectors**, check the connector's:
 
--   **Status** — `Active` means the connector is enabled, not that the most recent crawl succeeded. Look for `Attention required` or any connector failure alert.
--   **Items synced** — should grow steadily during initial sync. If it stops growing for 24 hours or more, treat it as a stall.
--   **Crawl rate** (during initial sync) and **Change rate** (after initial sync) — a sustained value of zero when activity is expected indicates that webhooks or incremental crawls are not flowing.
+-   **Status** - `Active` means the connector is enabled, not that the most recent crawl succeeded. Look for `Attention required` or any connector failure alert.
+-   **Items synced** - should grow steadily during initial sync. If it stops growing for 24 hours or more, treat it as a stall.
+-   **Crawl rate** (during initial sync) and **Change rate** (after initial sync) - a sustained value of zero when activity is expected indicates that webhooks or incremental crawls are not flowing.
 
 For metric definitions and sync phases, see [Sync progress](/connectors/connectors-monitoring).
 
@@ -61,7 +61,7 @@ For metric definitions and sync phases, see [Sync progress](/connectors/connecto
 
 Most `data not ingested` and `insufficient permissions` tickets are caused by a service account or app registration that is missing one or more required scopes, or that has had a scope downgraded on the source side. Confirm the service account, app, or integration user has the scopes documented for the connector before re-authorizing or escalating.
 
-For the authoritative scope list and required source-side permissions, see the connector page for your connector—for example:
+For the authoritative scope list and required source-side permissions, see the connector page for your connector-for example:
 
 -   [SharePoint](/connectors/native/sharepoint/about) and [OneDrive](/connectors/native/onedrive/)
 -   [Microsoft 365](/connectors/native/microsoft365/)

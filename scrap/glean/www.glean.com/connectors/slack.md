@@ -2,12 +2,12 @@
 url: "https://www.glean.com/connectors/slack"
 canonical: "https://www.glean.com/connectors/slack"
 title: "Slack integration with Glean | Glean Work AI"
-description: "Unlock powerful Slack integration with Glean—search Slack messages, share results, and access company knowledge across channels and DMs without leaving Slack."
+description: "Unlock powerful Slack integration with Glean-search Slack messages, share results, and access company knowledge across channels and DMs without leaving Slack."
 fetched_at: "2026-09-01T13:25:52.871Z"
 ---
 ### Overview
 
-Slack is where your team communicates. Glean's integration lets users search messages and files across public channels, private channels, and DMs — with permissions enforced — and act on what they find. Send and schedule messages, create channels, invite teammates, set reminders, and update statuses without switching tools.
+Slack is where your team communicates. Glean's integration lets users search messages and files across public channels, private channels, and DMs - with permissions enforced - and act on what they find. Send and schedule messages, create channels, invite teammates, set reminders, and update statuses without switching tools.
 
 ### Features
 
@@ -27,7 +27,7 @@ Glean executes actions across:
 
 ### Benefits
 
-Find Slack threads alongside project docs, tickets, and wikis. Send messages, schedule updates, and manage channels from AI workflows — so product knowledge, customer context, and team decisions stay connected instead of buried in conversation history.
+Find Slack threads alongside project docs, tickets, and wikis. Send messages, schedule updates, and manage channels from AI workflows - so product knowledge, customer context, and team decisions stay connected instead of buried in conversation history.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/66aa0ef4453d6693bba5947a_63ef5917e8b959a6e5e76d3b_image2.png)
 

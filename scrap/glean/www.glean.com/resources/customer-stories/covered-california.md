@@ -126,11 +126,11 @@ Glean was initially rolled out as a 50-person pilot program at Covered Californi
 
 ‍
 
-Glean's intuitive interface, open platform with model choice, and vast offering of native connectors and MCP offerings helped employees to leverage AI where they already worked in a multiplayer fashion—enabling anyone to seamlessly integrate AI into their workflows and see results right away.
+Glean's intuitive interface, open platform with model choice, and vast offering of native connectors and MCP offerings helped employees to leverage AI where they already worked in a multiplayer fashion-enabling anyone to seamlessly integrate AI into their workflows and see results right away.
 
 ‍
 
-“Rolling out Glean enterprise-wide was a very hands-on and collaborative experience. We didn’t just roll out a tool—we built the support and training around it so staff could feel comfortable using it while also understanding how to use it responsibly. We started with a pilot, learned from it, and scaled intentionally. A big part of the rollout was meeting staff where they were, addressing concerns about AI, gathering employee feedback, and ensuring the training matched what people actually needed. I worked closely with Glean's AIOM team, and they were very easy to work with. They were flexible, responsive, and adjusted the rollout schedule and training approach to fit our culture, our readiness, and what the staff needed,” said Pa Vue, AI Solution Evangelist.
+“Rolling out Glean enterprise-wide was a very hands-on and collaborative experience. We didn’t just roll out a tool-we built the support and training around it so staff could feel comfortable using it while also understanding how to use it responsibly. We started with a pilot, learned from it, and scaled intentionally. A big part of the rollout was meeting staff where they were, addressing concerns about AI, gathering employee feedback, and ensuring the training matched what people actually needed. I worked closely with Glean's AIOM team, and they were very easy to work with. They were flexible, responsive, and adjusted the rollout schedule and training approach to fit our culture, our readiness, and what the staff needed,” said Pa Vue, AI Solution Evangelist.
 
 “The enduring value of AI isn’t making information easier to find, but making organizational wisdom easier to access. Good decisions are rarely limited by intelligence, they are limited by context.”
 
@@ -188,7 +188,7 @@ Covered California’s rollout from a 50-person pilot to an enterprise-wide depl
 
 ‍
 
-Their teams also started by focusing on sets of high-value agents for division-by-division rollouts—proving use cases and the model in its most sensitive, frequent workflows before scaling safely. Covered California is also building agent-creation skills across the organization, and supporting hands-on use case workshops and champion programs all tied to measurable, monitored adoption goals. 
+Their teams also started by focusing on sets of high-value agents for division-by-division rollouts-proving use cases and the model in its most sensitive, frequent workflows before scaling safely. Covered California is also building agent-creation skills across the organization, and supporting hands-on use case workshops and champion programs all tied to measurable, monitored adoption goals. 
 
 ‍
 

@@ -49,7 +49,7 @@ Create a dedicated integration user rather than using a personal admin account. 
     -   **Connected App Name**: for example, *Glean Agent*.
     -   **Contact Email**: your admin email.
 4.  Under **API (Enable OAuth Settings)**, select **Enable OAuth Settings** and configure:
-    -   **Callback URL**: `https://localhost/callback` (a dummy value — it isn't used for the Client Credentials flow, but Salesforce requires it).
+    -   **Callback URL**: `https://localhost/callback` (a dummy value - it isn't used for the Client Credentials flow, but Salesforce requires it).
     -   **OAuth Scopes**: add **Manage user data via APIs (api)** and **Perform requests at any time (refresh\_token, offline\_access)**.
 5.  Under **Flow Enablement**, select **Enable Client Credentials Flow**.
 6.  Select **Save**.
@@ -102,7 +102,7 @@ Your Salesforce instance URL has the form `https://<your-domain>.my.salesforce.c
 2.  Click **Add**.
 3.  Select **Salesforce** under **Service credentials**.
 4.  Fill in these fields:
-    -   **Credential name**: A human-readable name for the credential, for example, "Salesforce — Production org".
+    -   **Credential name**: A human-readable name for the credential, for example, "Salesforce - Production org".
     -   **Description**: A brief description of what this credential is used for.
     -   **Instance name**: Your Salesforce My Domain name, for example, `mycompany`.
     -   **Client ID**: The consumer key from Step 4.

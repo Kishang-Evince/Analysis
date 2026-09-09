@@ -87,7 +87,7 @@ Work today is noisy and fragmented. People burn hours chasing context, jumping a
 
 High‑performing teams cut through that noise with shared, trustworthy context and clear next steps, right where collaboration happens. When the right information is at your fingertips, conversations become sharper and outcomes get delivered faster, leaving more time for focused execution.
 
-That’s why Glean is bringing powerful, contextual answers and instant enterprise insights into Webex with the AI Assistant, combining Glean’s intelligent, company‑wide search with day‑to‑day assistance that keeps work moving. With Glean, teams can securely connect to 100+ business systems — from project tools and cloud drives to email, intranet, and customer data — so every interaction becomes more informed and effective.
+That’s why Glean is bringing powerful, contextual answers and instant enterprise insights into Webex with the AI Assistant, combining Glean’s intelligent, company‑wide search with day‑to‑day assistance that keeps work moving. With Glean, teams can securely connect to 100+ business systems - from project tools and cloud drives to email, intranet, and customer data - so every interaction becomes more informed and effective.
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/6917c9da03a779d762ab2747_Glean%20integration.gif)
 
@@ -107,7 +107,7 @@ When every team can tap enterprise knowledge instantly, they stop searching and 
 
 ## Seamless in Webex, powerful across your stack
 
-Glean brings personalized, secure insights into the flow of work across Webex Meetings, Webex Messaging, and more — so you get fast, accurate answers from multiple sources without switching apps or breaking focus. 
+Glean brings personalized, secure insights into the flow of work across Webex Meetings, Webex Messaging, and more - so you get fast, accurate answers from multiple sources without switching apps or breaking focus. 
 
 Just open the AI Assistant panel, select Glean, and ask your question.
 

@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/customer-stories/confluent"
 canonical: "https://www.glean.com/resources/customer-stories/confluent"
 title: "Confluent customer story | Glean Work AI"
-description: "Discover how Glean helps Confluent’s teams find answers fast — saving 15,000+ hours a month and boosting employee satisfaction by 13%."
+description: "Discover how Glean helps Confluent’s teams find answers fast - saving 15,000+ hours a month and boosting employee satisfaction by 13%."
 fetched_at: "2026-09-01T13:25:34.493Z"
 ---
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/69eef82d20401608f14544d1_confluent-bg.webp)
@@ -61,11 +61,11 @@ An internal survey confirmed the issue: employees struggled to find the informat
 
 ‍
 
-"We had a lot of sand in our gears when it came to finding information," said Manu Narayan, Chief of Staff at Confluent. "Our challenge wasn’t having too many duplicative tools — it was that knowledge was spread across best-of-breed systems."
+"We had a lot of sand in our gears when it came to finding information," said Manu Narayan, Chief of Staff at Confluent. "Our challenge wasn’t having too many duplicative tools - it was that knowledge was spread across best-of-breed systems."
 
 ## The solution
 
-Confluent adopted Glean’s AI-powered search to give employees instant access to the information they needed. Instead of spending time searching across multiple apps, teams could surface relevant documents, past deal cycles, help articles, and even Slack messages — all in one place.
+Confluent adopted Glean’s AI-powered search to give employees instant access to the information they needed. Instead of spending time searching across multiple apps, teams could surface relevant documents, past deal cycles, help articles, and even Slack messages - all in one place.
 
 ‍
 
@@ -81,7 +81,7 @@ Glean indexed Confluent’s [20+ tools](https://www.glean.com/connectors), inclu
 
 ‍
 
-Today, **more than 70% of Confluent employees** actively use Glean — a higher adoption rate than many other internal SaaS tools.
+Today, **more than 70% of Confluent employees** actively use Glean - a higher adoption rate than many other internal SaaS tools.
 
 ## The solution
 
@@ -91,7 +91,7 @@ features like Announcements, Collections, and [Answers](https://www.glean.com/pr
 
 ‍
 
-"The challenge we had around information sprawl — something that could have taken years or months for a massive wiki reorganization and data governance to solve — was at least 80% solved by introducing Glean’s search tool," said Shahan Parshad.
+"The challenge we had around information sprawl - something that could have taken years or months for a massive wiki reorganization and data governance to solve - was at least 80% solved by introducing Glean’s search tool," said Shahan Parshad.
 
 ## About Confluent
 

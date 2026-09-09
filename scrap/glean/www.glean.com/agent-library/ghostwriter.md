@@ -23,7 +23,7 @@ Drafts content in your voice or someone else’s using past work and shared cont
 
 ## Overview
 
-Need to send a follow-up from your VP? Draft a proposal in your manager’s style? The ghostwriter agent makes it easy. Just say what you need written and whose voice you want it in — and the agent will take it from there. It pulls from past messages to emulate tone, adds relevant context, and delivers a polished draft you can send or edit.
+Need to send a follow-up from your VP? Draft a proposal in your manager’s style? The ghostwriter agent makes it easy. Just say what you need written and whose voice you want it in - and the agent will take it from there. It pulls from past messages to emulate tone, adds relevant context, and delivers a polished draft you can send or edit.
 
 ## See it in action
 

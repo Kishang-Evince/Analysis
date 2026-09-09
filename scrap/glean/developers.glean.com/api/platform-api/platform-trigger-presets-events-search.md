@@ -2,7 +2,7 @@
 url: "https://developers.glean.com/api/platform-api/platform-trigger-presets-events-search"
 canonical: "https://developers.glean.com/api/platform-api/platform-trigger-presets-events-search"
 title: "Search events for a trigger preset | Glean Developer"
-description: "Search recent content events an unsaved trigger built from this preset would match, to preview it before creating the trigger. Read-only — no trigger is created and no webhook delivery is made. Covers the last seven days."
+description: "Search recent content events an unsaved trigger built from this preset would match, to preview it before creating the trigger. Read-only - no trigger is created and no webhook delivery is made. Covers the last seven days."
 fetched_at: "2026-09-01T13:22:58.659Z"
 ---
 # Search events for a trigger preset
@@ -15,7 +15,7 @@ experimental
 
 Expect changes and instability. Introduced on August 12, 2026. [Learn how experimental APIs work](/experimental/overview).
 
-Search recent content events an unsaved trigger built from this preset would match, to preview it before creating the trigger. Read-only — no trigger is created and no webhook delivery is made. Covers the last seven days.
+Search recent content events an unsaved trigger built from this preset would match, to preview it before creating the trigger. Read-only - no trigger is created and no webhook delivery is made. Covers the last seven days.
 
 ## Request[​](#request "Direct link to request")
 

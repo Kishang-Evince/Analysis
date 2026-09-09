@@ -35,7 +35,7 @@ Agents *ROAD-1008*
 
 #### Share agents with permissions groups[​](#share-agents-with-permissions-groups "Direct link to Share agents with permissions groups")
 
-Share Glean agents with user groups from your connected identity provider (Azure Active Directory via O365 or Google Groups), not just with individuals or departments. This makes it easier for organizations—especially at enterprise scale—to manage who can access specific agents, speed up agent rollout, and give the right teams or communities instant access. Admins and Agent Moderators can share agents with any group from the configured IdP system. Default Members—if group sharing is enabled—can share with groups they're part of. When an agent is shared with a group, all group members get the assigned permissions (view, edit, or owner) for that agent, and group membership changes are automatically reflected in agent access.
+Share Glean agents with user groups from your connected identity provider (Azure Active Directory via O365 or Google Groups), not just with individuals or departments. This makes it easier for organizations-especially at enterprise scale-to manage who can access specific agents, speed up agent rollout, and give the right teams or communities instant access. Admins and Agent Moderators can share agents with any group from the configured IdP system. Default Members-if group sharing is enabled-can share with groups they're part of. When an agent is shared with a group, all group members get the assigned permissions (view, edit, or owner) for that agent, and group membership changes are automatically reflected in agent access.
 
 **How to access:** Administrators must enable for your organization. Admins can enable sharing agents with IdP groups by navigating to the Admin Console, clicking the "Agents" tab, and configuring the data source to be used for sharing agents with groups.
 
@@ -65,7 +65,7 @@ Agents *ROAD-1200*
 
 #### Use of Nano Banana 2 in Assistant and Agents[​](#use-of-nano-banana-2-in-assistant-and-agents "Direct link to Use of Nano Banana 2 in Assistant and Agents")
 
-Glean now uses Nano Banana 2 as the default image generation model in Assistant and Agents, delivering faster image generation with comparable or improved visual quality over Nano Banana Pro. The upgraded model offers significantly better capacity and throughput, reducing rate-limiting errors during peak usage. All existing image generation workflows—including inline images in Assistant, the Image Creation node in Agent Builder, and image actions in Plan & Execute agents—work seamlessly with the new model.
+Glean now uses Nano Banana 2 as the default image generation model in Assistant and Agents, delivering faster image generation with comparable or improved visual quality over Nano Banana Pro. The upgraded model offers significantly better capacity and throughput, reducing rate-limiting errors during peak usage. All existing image generation workflows-including inline images in Assistant, the Image Creation node in Agent Builder, and image actions in Plan & Execute agents-work seamlessly with the new model.
 
 This feature may use credits. Learn more in Glean's Help Center.
 
@@ -105,7 +105,7 @@ Assistant *ROAD-1186*
 
 #### Search now can filter by Google Drive labels[​](#search-now-can-filter-by-google-drive-labels "Direct link to Search now can filter by Google Drive labels")
 
-Users can now filter and refine search results in Glean based on Google Drive document labels. When this feature is enabled, a "Labels" filter appears in the search experience—making it easier to find specific documents by their assigned Google Drive labels. This enhancement helps users quickly identify and differentiate internal, client-shareable, or otherwise labeled documents, streamlining information access and supporting better information governance. Search by label improves accuracy and efficiency for teams who use Google Drive labels for classification and visibility.
+Users can now filter and refine search results in Glean based on Google Drive document labels. When this feature is enabled, a "Labels" filter appears in the search experience-making it easier to find specific documents by their assigned Google Drive labels. This enhancement helps users quickly identify and differentiate internal, client-shareable, or otherwise labeled documents, streamlining information access and supporting better information governance. Search by label improves accuracy and efficiency for teams who use Google Drive labels for classification and visibility.
 
 **How to access:** Administrators must enable for your organization. Admins must enable via Admin Console → Data sources → Google Drive → Setup and turn on Drive labels / Enable Google Drive labels.
 
@@ -131,9 +131,9 @@ We've made some updates to Admin settings to make navigation clearer and help yo
 
 We've introduced a few new categories in Admin that replace Settings including:
 
-User and permissions — includes User management (formerly Teammates), Networking, Single sign-on, Third-party access, and Audit logs Customization — includes Appearance Notifications- includes alerts and email settings What's new — includes Feature rollouts and Admin updates We hope this update makes Admin feel more intuitive and easier to navigate as your use of Glean grows.
+User and permissions - includes User management (formerly Teammates), Networking, Single sign-on, Third-party access, and Audit logs Customization - includes Appearance Notifications- includes alerts and email settings What's new - includes Feature rollouts and Admin updates We hope this update makes Admin feel more intuitive and easier to navigate as your use of Glean grows.
 
-**How to access:** This update applies automatically in the Glean Admin Console — no additional setup is required. Admins will see the new left nav structure the next time they sign in and can continue using all existing settings and controls as before. If you need help locating a specific page, use the Admin Console search or refer to the Admin Guide in the Help Center.
+**How to access:** This update applies automatically in the Glean Admin Console - no additional setup is required. Admins will see the new left nav structure the next time they sign in and can continue using all existing settings and controls as before. If you need help locating a specific page, use the Admin Console search or refer to the Admin Guide in the Help Center.
 
 [Learn more](https://docs.glean.com/administration/about)
 
@@ -173,7 +173,7 @@ Connectors *ROAD-760*
 
 #### Create static OAuth clients to connect apps to Glean[​](#create-static-oauth-clients-to-connect-apps-to-glean "Direct link to Create static OAuth clients to connect apps to Glean")
 
-Glean now lets admins create static OAuth clients in the Admin Console, making it easier to connect trusted applications—like internal tools or third-party apps such as Zoom—to Glean on behalf of users. By using Glean as the OAuth authorization server instead of relying on your identity provider for every integration, you can reduce setup friction between IdP and Glean admins and prepare for finer-grained, Glean-defined scopes in future Client API integrations. This update is especially valuable for organizations and partners that want a standard, secure way to obtain Glean access tokens for MCP hosts and other OAuth-capable apps.
+Glean now lets admins create static OAuth clients in the Admin Console, making it easier to connect trusted applications-like internal tools or third-party apps such as Zoom-to Glean on behalf of users. By using Glean as the OAuth authorization server instead of relying on your identity provider for every integration, you can reduce setup friction between IdP and Glean admins and prepare for finer-grained, Glean-defined scopes in future Client API integrations. This update is especially valuable for organizations and partners that want a standard, secure way to obtain Glean access tokens for MCP hosts and other OAuth-capable apps.
 
 **How to access:** To use static OAuth clients, first enable the Glean OAuth Authorization Server by going to the Admin Console and navigating to Settings → Third-party access (OAuth), then turning on the Glean OAuth Authorization Server. Once enabled, you can create and manage OAuth clients from this area, configuring redirect URIs and scopes according to the requirements of your internal or third-party applications. For MCP remote servers and other OAuth-enabled apps, point the client to Glean's Authorization and Token endpoints and complete a standard Authorization Code with PKCE flow to obtain access tokens.
 

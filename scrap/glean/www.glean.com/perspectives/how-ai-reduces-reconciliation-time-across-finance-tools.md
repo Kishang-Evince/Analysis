@@ -67,7 +67,7 @@ AI can reduce reconciliation time across finance tools by connecting scattered d
 
 Reconciliation in most organizations still runs on manual processes: spreadsheet-based matching, sample reviews, and after-the-fact variance analysis. A [CFO Connect report](https://www.cfoconnect.eu/resources/reports/state-of-ai-in-finance-2026/) found that while 56% of finance leaders now use AI, only 17% have embedded it in core workflows. ([AI for finance teams](https://www.glean.com/solutions/finance) is changing that picture.) As transaction volumes grow and data streams multiply, these workflows break down. Month-end close drags past day 15, and teams end up reporting October performance in mid-November.
 
-AI moves finance teams from manual execution to oversight, analysis, and judgment — by removing the lookup work that fills most of the close cycle. With [58% of finance functions](https://the-cfo.io/2024/09/11/58-of-finance-functions-using-ai-in-2024-gartner-research/) already using AI according to Gartner, the shift is accelerating. That shift frees people to focus on the exceptions and insights that actually require expertise.
+AI moves finance teams from manual execution to oversight, analysis, and judgment - by removing the lookup work that fills most of the close cycle. With [58% of finance functions](https://the-cfo.io/2024/09/11/58-of-finance-functions-using-ai-in-2024-gartner-research/) already using AI according to Gartner, the shift is accelerating. That shift frees people to focus on the exceptions and insights that actually require expertise.
 
 ## How to reduce reconciliation time across finance tools with AI
 
@@ -75,11 +75,11 @@ AI reduces reconciliation time by connecting finance inputs across systems, retr
 
 The practical outcome is fewer manual lookups, faster exception review, clearer audit trails, and more time for analysis instead of document chasing. To get there, the process follows a repeatable sequence: connect sources, normalize context, ground answers in evidence, automate exception handling, and govern the workflow. Teams looking for practical starting points can explore specific [AI agents for finance workflows](https://www.glean.com/blog/8-finance-ai-agents) that address each of these steps.
 
-When an invoice amount does not match the contract value, an AI system connected to your CRM, contract repository, and communication tools can surface the specific amendment, the sales call where the change was discussed, and the approval thread — in seconds rather than hours.
+When an invoice amount does not match the contract value, an AI system connected to your CRM, contract repository, and communication tools can surface the specific amendment, the sales call where the change was discussed, and the approval thread - in seconds rather than hours.
 
 A critical requirement for AI in finance workflows is respecting existing permissions, so each user only sees data they are already authorized to access. Glean's Enterprise Graph makes this possible by indexing company knowledge across 100+ connectors while enforcing permission-aware access at every query.
 
-Reducing reconciliation time requires a system grounded in company data, permissions, and workflows — generic text summarization cannot get you there. According to [McKinsey's 2012 report on knowledge worker productivity](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy), employees spend nearly 20% of their workweek searching for internal information or tracking down colleagues. For finance teams during close, that percentage climbs higher when reconciliation requires cross-referencing five or six systems for a single variance.
+Reducing reconciliation time requires a system grounded in company data, permissions, and workflows - generic text summarization cannot get you there. According to [McKinsey's 2012 report on knowledge worker productivity](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy), employees spend nearly 20% of their workweek searching for internal information or tracking down colleagues. For finance teams during close, that percentage climbs higher when reconciliation requires cross-referencing five or six systems for a single variance.
 
 ## 1\. Connect the systems that hold finance inputs
 
@@ -97,11 +97,11 @@ The same customer, deal, or cost center often appears differently across tools. 
 
 Normalization means matching account names, mapping IDs across systems, aligning date logic (contract effective date versus revenue recognition start date), and resolving subsidiary relationships.
 
-Consider commission inputs: they can differ from booked revenue because the opportunity owner changed late in the quarter and the CRM snapshot captured a different rep than the one compensation uses. Or vendor spend looks wrong because the approval thread in Slack references a project code that does not match the one in the ERP. The root cause is a context gap, not a calculation error. This is where [agentic AI in financial services](https://www.glean.com/blog/agentic-ops-financial-services) delivers outsized value — by autonomously tracing connections across systems that manual processes miss.
+Consider commission inputs: they can differ from booked revenue because the opportunity owner changed late in the quarter and the CRM snapshot captured a different rep than the one compensation uses. Or vendor spend looks wrong because the approval thread in Slack references a project code that does not match the one in the ERP. The root cause is a context gap, not a calculation error. This is where [agentic AI in financial services](https://www.glean.com/blog/agentic-ops-financial-services) delivers outsized value - by autonomously tracing connections across systems that manual processes miss.
 
 Glean's Enterprise Graph addresses normalization by understanding relationships between people, content, workflows, and records. It connects a contract clause to the CRM opportunity it references and then to the spreadsheet line item that tracks the same deal, grounding answers in source metadata and historical context rather than guessing.
 
-Once that shared context layer exists, finance teams stop repeating the same manual cross-checks every close. Building this layer is fundamentally an [enterprise knowledge management](https://www.glean.com/blog/enterprise-knowledge-management-guide) challenge — connecting scattered institutional knowledge into a unified, searchable resource. A practical guardrail: when definitions differ across teams, document the preferred finance definition and configure your AI to use it as the default reference point.
+Once that shared context layer exists, finance teams stop repeating the same manual cross-checks every close. Building this layer is fundamentally an [enterprise knowledge management](https://www.glean.com/blog/enterprise-knowledge-management-guide) challenge - connecting scattered institutional knowledge into a unified, searchable resource. A practical guardrail: when definitions differ across teams, document the preferred finance definition and configure your AI to use it as the default reference point.
 
 ## 3\. Ask the AI to retrieve evidence and explain mismatches
 

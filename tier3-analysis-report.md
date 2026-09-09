@@ -2,7 +2,7 @@
 
 Field inventory for the Tier 3 vendor analysis report, with definitions and evaluation methodology, organised by SOW section.
 
-## 4.9.1 — Functional Capabilities
+## 4.9.1 - Functional Capabilities
 
 | # | Field Name | Technical Definition | Evaluation Methodology (How to Verify in Sandbox) |
 |---|---|---|---|
@@ -15,7 +15,7 @@ Field inventory for the Tier 3 vendor analysis report, with definitions and eval
 | 7 | Error Handling & Recovery | System behavior during API timeouts, invalid inputs, or network drops. | Trigger simulated server/endpoint drops mid-workflow (TEST-03) and log system state capture and clarity of diagnostic errors. |
 | 8 | Performance Under Load | System latency, concurrency, and compute consumption when handling concurrent tasks. | Load test endpoints with standard tooling. Track response latency degradation curve as concurrent connections scale up. |
 
-## 4.9.2 — Agent & Workflow Builder
+## 4.9.2 - Agent & Workflow Builder
 
 | # | Field Name | Technical Definition | Evaluation Methodology (How to Verify in Sandbox) |
 |---|---|---|---|
@@ -30,7 +30,7 @@ Field inventory for the Tier 3 vendor analysis report, with definitions and eval
 | 9 | Human-in-the-Loop Design | Handoff efficiency, pausing, and clinician/operator approval checkpoints. | Deploy automated approval checkpoints. Verify state survival during human-in-the-loop pauses. |
 | 10 | Trigger Types Supported | Supported event bindings (e.g., schedules, API calls, webhooks, data shifts). | Verify active event listeners. Test webhook callback latency and triggers across external database changes. |
 
-## 4.9.3 — AI Architecture & Models
+## 4.9.3 - AI Architecture & Models
 
 | # | Field Name | Technical Definition | Evaluation Methodology (How to Verify in Sandbox) |
 |---|---|---|---|
@@ -47,7 +47,7 @@ Field inventory for the Tier 3 vendor analysis report, with definitions and eval
 | 11 | Data Leakage Protections | Privacy controls preventing tenant data from entering general vendor model training loops. | Review legal DPAs and system agreements. Verify if opt-out clauses for training are enabled and contractually bound. |
 | 12 | Model Versioning Freeze | Option to pin specific API model releases to protect against downstream behavior shifts. | Confirm admin control to lock an exact model version (e.g., GPT-4o-2024-05-13) rather than auto-floating on updates. |
 
-## 4.9.4 — Integration & Technical
+## 4.9.4 - Integration & Technical
 
 | # | Field Name | Technical Definition | Evaluation Methodology (How to Verify in Sandbox) |
 |---|---|---|---|
@@ -60,7 +60,7 @@ Field inventory for the Tier 3 vendor analysis report, with definitions and eval
 | 7 | Native Connectors | List of pre-built, out-of-the-box integrations supported directly by the vendor. | Audit the integrations catalog. Test native connection setup times and reliability across standard tools. |
 | 8 | Infrastructure Requirements | Minimum cloud infrastructure, security networks, or local compute required to run the platform. | Review prerequisite hardware/software requirements, VPC configs, and network tunnel setups in deployment documentation. |
 
-## 4.9.5 — Compliance & Regulatory
+## 4.9.5 - Compliance & Regulatory
 
 | # | Field Name | Technical Definition | Evaluation Methodology (How to Verify in Sandbox) |
 |---|---|---|---|
@@ -74,7 +74,7 @@ Field inventory for the Tier 3 vendor analysis report, with definitions and eval
 | 8 | Data Processing Agreements | CCPA/GDPR aligned standard data protection clauses and sub-processor controls. | Audit standard DPAs. Verify presence of clear data-transfer protections and sub-processor security rules. |
 | 9 | AI-Specific Governance | Bias mitigation controls, prompt injection shields, and toxic input/output filtering. | Inject prompt attacks. Verify if safety layers automatically deflect toxic or unauthorized prompts. |
 
-## 4.9.6 — Adoption & Readiness
+## 4.9.6 - Adoption & Readiness
 
 | # | Field Name | Technical Definition | Evaluation Methodology (How to Verify in Sandbox) |
 |---|---|---|---|
@@ -83,7 +83,7 @@ Field inventory for the Tier 3 vendor analysis report, with definitions and eval
 | 3 | Non-Technical User Experience | Intuitive ease of onboarding and daily usage for non-technical business employees. | Conduct usability tests with non-technical business staff. Rate portal interface, navigation, and learning curve. |
 | 4 | Resistance & Failure Signals | Identified system bottlenecks or user-adoption failures that could trigger project termination. | Identify critical workflow friction points, lack of cultural fit, or slow page-load speeds that lead to abandonment. |
 
-## 4.9.7 — Pricing & TCO
+## 4.9.7 - Pricing & TCO
 
 | # | Field Name | Technical Definition | Evaluation Methodology (How to Verify in Sandbox) |
 |---|---|---|---|
@@ -93,7 +93,7 @@ Field inventory for the Tier 3 vendor analysis report, with definitions and eval
 | 4 | Hidden Costs Identified | Unpublicized fees, mandatory support tier overheads, API overage charges, and hardware costs. | Identify additional mandatory charges (e.g., 10% support fees, custom connector developer overhead). |
 | 5 | 3-Year Projected TCO | Estimated total cost of ownership over a standard 3-year enterprise horizon. | Model 3-year TCO for a standard 100-seat baseline deploy, combining license, setup, and support fees. |
 
-## 4.9.8 — Partner & Channel Program
+## 4.9.8 - Partner & Channel Program
 
 | # | Field Name | Technical Definition | Evaluation Methodology (How to Verify in Sandbox) |
 |---|---|---|---|
@@ -106,7 +106,7 @@ Field inventory for the Tier 3 vendor analysis report, with definitions and eval
 | 7 | Partner Agreement Status | Current execution status of the Stratos Edge partnership agreement. | Document contract execution milestones (e.g., Executed, Under Legal Review, Active). |
 | 8 | Stratos Edge Registration Status | Authorization status of Stratos Edge inside the vendor's channel program. | Verify current registered tier and certified advisor counts in the vendor database. |
 
-## 4.9.9 — Competitive Positioning
+## 4.9.9 - Competitive Positioning
 
 | # | Field Name | Technical Definition | Evaluation Methodology (How to Verify in Sandbox) |
 |---|---|---|---|
@@ -118,7 +118,7 @@ Field inventory for the Tier 3 vendor analysis report, with definitions and eval
 | 6 | Coexistence Scenarios | Standard enterprise tools this system operates alongside without duplication of value. | Map operational boundaries. Confirm how this platform runs next to CRM/EHR databases without conflict. |
 | 7 | Switching Cost Assessment | Friction, re-architecting fees, and developer re-training required to migrate off this platform. | Calculate engineering migration difficulty and vendor lock-in risk (custom code vs. native setups). |
 
-## 4.9.10 — Use Case Library
+## 4.9.10 - Use Case Library
 
 | # | Field Name | Technical Definition | Evaluation Methodology (How to Verify in Sandbox) |
 |---|---|---|---|
@@ -133,7 +133,7 @@ Field inventory for the Tier 3 vendor analysis report, with definitions and eval
 | 9 | Dependencies & Prerequisites | Required software licenses, external database APIs, or security networks. | List all third-party systems or software agreements required prior to activation. |
 | 10 | Validated Through Testing | A flag indicating if this use case was physically built and verified in the sandbox. | Assert if the test case was successfully simulated and completed without unhandled errors (YES/NO). |
 
-## 4.9.11 — Client-Facing Explainability
+## 4.9.11 - Client-Facing Explainability
 
 | # | Field Name | Technical Definition | Evaluation Methodology (How to Verify in Sandbox) |
 |---|---|---|---|

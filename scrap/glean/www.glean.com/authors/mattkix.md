@@ -57,7 +57,7 @@ June 18, 2025
 
 ### Glean:GO 2025 recap: What we launched and learned
 
-Relive the highlights from Glean:GO 2025 — new product launches, real customer stories, and insights on scaling AI across the enterprise.
+Relive the highlights from Glean:GO 2025 - new product launches, real customer stories, and insights on scaling AI across the enterprise.
 
 ![Matt Kixmoeller](https://cdn.prod.website-files.com/613513981b0efaf850830620/673edcbae4f9620a5f277248_Group%201982250565.jpg)
 

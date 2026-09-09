@@ -61,7 +61,7 @@ Watch the on-demand session
 
 ### Help frontline teams respond with confidence.
 
-Help frontline teams quickly find the latest internal policies, SOPs, and procedures to resolve resident questions accurately. Glean searches across email, Google Drive, and more — and every answer includes source links and respects permissions.
+Help frontline teams quickly find the latest internal policies, SOPs, and procedures to resolve resident questions accurately. Glean searches across email, Google Drive, and more - and every answer includes source links and respects permissions.
 
 ### Resolve constituent and citizen inquiries.
 
@@ -69,7 +69,7 @@ Help staff respond to questions about zoning, permits, or public asset maintenan
 
 ### Get answers grounded in institutional knowledge.
 
-Help staff find institutional knowledge faster — from archived documents and org charts to policy memos and shared folders. Glean connects your systems and returns source-linked answers so teams can take action without chasing files or escalating requests.
+Help staff find institutional knowledge faster - from archived documents and org charts to policy memos and shared folders. Glean connects your systems and returns source-linked answers so teams can take action without chasing files or escalating requests.
 
 ### Understand legislative history and context.
 
@@ -84,7 +84,7 @@ audit-ready.
 
 Help frontline teams respond with confidence.
 
-Help frontline teams quickly find the latest internal policies, SOPs, and procedures to resolve resident questions accurately. Glean searches across email, Google Drive, and more — and every answer includes source links and respects permissions.
+Help frontline teams quickly find the latest internal policies, SOPs, and procedures to resolve resident questions accurately. Glean searches across email, Google Drive, and more - and every answer includes source links and respects permissions.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6938b977847f0613411e03c2_M-HelpFrontline_Government.avif)
 
@@ -96,7 +96,7 @@ Help staff respond to questions about zoning, permits, or public asset maintenan
 
 Get answers grounded in institutional knowledge.
 
-Help staff find institutional knowledge faster — from archived documents and org charts to policy memos and shared folders. Glean connects your systems and returns source-linked answers so teams can take action without chasing files or escalating requests.
+Help staff find institutional knowledge faster - from archived documents and org charts to policy memos and shared folders. Glean connects your systems and returns source-linked answers so teams can take action without chasing files or escalating requests.
 
 ![](https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/6938b9779f0ffd2e4d045349_M-GetAnswers.avif)
 

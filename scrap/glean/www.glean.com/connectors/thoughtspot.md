@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:25:53.859Z"
 ---
 ### Overview
 
-ThoughtSpot is a modern analytics platform. In Glean, users can ask natural‑language questions on ThoughtSpot data to retrieve structured answers and relevant follow‑up questions—and when they want a new Liveboard, they can create it just by asking.
+ThoughtSpot is a modern analytics platform. In Glean, users can ask natural‑language questions on ThoughtSpot data to retrieve structured answers and relevant follow‑up questions-and when they want a new Liveboard, they can create it just by asking.
 
 ### Features
 

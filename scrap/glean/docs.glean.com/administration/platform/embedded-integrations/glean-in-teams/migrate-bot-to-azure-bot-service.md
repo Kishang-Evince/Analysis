@@ -7,7 +7,7 @@ fetched_at: "2026-09-01T13:29:11.406Z"
 ---
 On this page
 
-The [Glean in Teams setup guide](/administration/platform/embedded-integrations/glean-in-teams/glean-in-microsoft-teams--admin-guide) registers the bot through the [Teams Developer Portal](hhttps://dev.teams.cloud.microsoft/home) and [Bot Framework Portal](https://dev.botframework.com/bots). Bots registered this way have their app type locked to Multi tenant — a limitation of the Bot Framework Portal that cannot be changed from within it. In Single tenant environments, this can cause 401 authentication errors when users try to interact with the bot.
+The [Glean in Teams setup guide](/administration/platform/embedded-integrations/glean-in-teams/glean-in-microsoft-teams--admin-guide) registers the bot through the [Teams Developer Portal](hhttps://dev.teams.cloud.microsoft/home) and [Bot Framework Portal](https://dev.botframework.com/bots). Bots registered this way have their app type locked to Multi tenant - a limitation of the Bot Framework Portal that cannot be changed from within it. In Single tenant environments, this can cause 401 authentication errors when users try to interact with the bot.
 
 This guide walks you through migrating your existing bot registration to [Azure Bot Service](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-overview?view=azure-bot-service-4.0), where you can switch the bot to Single tenant mode and resolve the authentication errors.
 

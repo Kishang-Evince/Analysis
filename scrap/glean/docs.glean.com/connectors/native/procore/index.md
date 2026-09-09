@@ -11,7 +11,7 @@ On this page
 
 # Make your Procore construction data searchable in Glean
 
-Indexes RFIs, submittals, drawings, specifications, daily logs, and projects for permission-aware search — so project teams, field staff, and back-office users find the latest project status without leaving Glean.
+Indexes RFIs, submittals, drawings, specifications, daily logs, and projects for permission-aware search - so project teams, field staff, and back-office users find the latest project status without leaving Glean.
 
 Construction managementIndexed by defaultOAuth 2.0Permission-aware
 

@@ -259,7 +259,7 @@ Use these options to control how the crawler behaves:
 
 ### Alternative approaches for unsupported sites[​](#alternative-approaches-for-unsupported-sites "Direct link to Alternative approaches for unsupported sites")
 
-If the Website connector can't index your site — for example, because it's a JavaScript-rendered single-page application (SPA) that requires authentication, or it's behind SSO or VPN — try one of these alternatives:
+If the Website connector can't index your site - for example, because it's a JavaScript-rendered single-page application (SPA) that requires authentication, or it's behind SSO or VPN - try one of these alternatives:
 
 -   **Use a custom connector with the Indexing API.** Push content to Glean programmatically instead of relying on a crawler. This works well for authenticated SPAs, sites behind VPN, and other environments where automated crawling isn't possible. To get started, see [Custom connectors](/connectors/custom/about).
     

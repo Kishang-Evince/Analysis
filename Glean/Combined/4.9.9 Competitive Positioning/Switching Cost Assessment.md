@@ -48,8 +48,8 @@
 
 ### Lock-in paradox (honest)
 
-- Glean **reduces LLM vendor lock-in** vs Copilot (Azure/OpenAI) or ChatGPT Enterprise (OpenAI-only) — Model Hub + BYOK (4.9.3).
-- Glean **increases platform/context lock-in** — index, agents, credits, Protect are Glean-specific.
+- Glean **reduces LLM vendor lock-in** vs Copilot (Azure/OpenAI) or ChatGPT Enterprise (OpenAI-only) - Model Hub + BYOK (4.9.3).
+- Glean **increases platform/context lock-in** - index, agents, credits, Protect are Glean-specific.
 - Vendor claim "no lock-in" is **true for models**, **false for platform** at production depth.
 
 ### Verification steps / test case

@@ -1,4 +1,4 @@
-# Field 9 — Human-in-the-Loop Design
+# Field 9 - Human-in-the-Loop Design
 
 **Section pre-flight & reference:** [Pre-Flight.md](Pre-Flight.md)
 **Companion eval log:** [Human-in-the-Loop Design.md](../../../Glean/Combined/4.9.2 Agent & Workflow Builder/Human-in-the-Loop Design.md)

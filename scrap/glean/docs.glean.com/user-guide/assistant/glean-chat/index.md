@@ -23,12 +23,12 @@ You can use Glean to:
     
 -   **Create content:** Draft, refine, and export documents using these tools:
     
-    -   [Canvas](/user-guide/assistant/glean-chat/canvas) — draft and refine documents
-    -   [Slide generation](/user-guide/assistant/slide-generation) — export documents as slides
-    -   [Spreadsheet generation](/user-guide/assistant/spreadsheet-generation) — export documents as spreadsheets
-    -   [HTML artifacts](/user-guide/assistant/html-artifacts) — export documents as interactive artifacts
-    -   [Podcast artifacts](/user-guide/assistant/podcast-artifacts) — create podcasts
-    -   [Image generation](/user-guide/assistant/image-generation) — generate images from natural-language prompts
+    -   [Canvas](/user-guide/assistant/glean-chat/canvas) - draft and refine documents
+    -   [Slide generation](/user-guide/assistant/slide-generation) - export documents as slides
+    -   [Spreadsheet generation](/user-guide/assistant/spreadsheet-generation) - export documents as spreadsheets
+    -   [HTML artifacts](/user-guide/assistant/html-artifacts) - export documents as interactive artifacts
+    -   [Podcast artifacts](/user-guide/assistant/podcast-artifacts) - create podcasts
+    -   [Image generation](/user-guide/assistant/image-generation) - generate images from natural-language prompts
 -   **Work with code:** [Search across repositories](/user-guide/assistant/code-search) and [generate code](/user-guide/assistant/code-generation) with draft pull requests grounded in your organization's codebase.
     
 -   **Query data:** Ask natural-language questions against [Databricks](/user-guide/assistant/query-databricks-data-in-glean-assistant) and [Snowflake](/user-guide/assistant/query-snowflake-data-in-glean-assistant) datasets without writing SQL.

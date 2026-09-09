@@ -105,7 +105,7 @@ Second, scaling personalized support is nearly impossible with traditional metho
 
 Finally, proving the ROI of enablement programs remains a persistent hurdle. It’s difficult to connect the dots between a training session and a closed deal. Without clear data on content usage, skill adoption, and impact on sales metrics, enablement can be wrongly perceived as a cost center rather than the revenue-driving force multiplier it is.
 
-## Glean—Work AI that actively scales and accelerates enablement
+## Glean-Work AI that actively scales and accelerates enablement
 
 Glean’s work AI platform is designed to solve these core challenges by connecting and understanding all of your company’s knowledge. By creating a secure, intelligent foundation, Glean empowers enablement leaders to build the dynamic, scalable, and measurable programs that modern sales teams need.
 

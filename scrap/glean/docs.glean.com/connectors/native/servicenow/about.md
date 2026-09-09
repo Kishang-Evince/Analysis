@@ -116,9 +116,9 @@ Glean uses a role-based permission model to control who can see the following Se
 
 Access to these records is controlled in two ways:
 
-1.  **By ServiceNow role** — Administrators configure which ServiceNow roles grant access to each record type. Each record type has its own role configuration. For example, users with the `itil` role can be granted access to all Incidents, while a different set of roles can be configured for Requests or Customer Service Cases. All users with a configured role will see all records of that type — access is not filtered per record.
+1.  **By ServiceNow role** - Administrators configure which ServiceNow roles grant access to each record type. Each record type has its own role configuration. For example, users with the `itil` role can be granted access to all Incidents, while a different set of roles can be configured for Requests or Customer Service Cases. All users with a configured role will see all records of that type - access is not filtered per record.
     
-2.  **By record assignment (ITSM only)** — For Incidents, Requests, Request Items, and Interactions, access can also be granted based on user fields on the record, such as the assigned user, the person who opened it, or the caller. This ensures that individuals directly involved with a record can always find it in Glean, even if they don't hold one of the configured roles.
+2.  **By record assignment (ITSM only)** - For Incidents, Requests, Request Items, and Interactions, access can also be granted based on user fields on the record, such as the assigned user, the person who opened it, or the caller. This ensures that individuals directly involved with a record can always find it in Glean, even if they don't hold one of the configured roles.
     
 
 ###### Why this approach?[​](#why-this-approach "Direct link to Why this approach?")

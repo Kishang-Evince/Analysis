@@ -81,23 +81,23 @@ Listen to article
 
 0.5x 1x 1.5x 2x
 
-Looking for bigger and better ways to integrate generative AI platforms into your workplace, but overwhelmed with the options — or just where to get started? With so many challenges and requirements to consider when it comes down to picking the right solution for your organization, it’s easy to get lost in thought. 
+Looking for bigger and better ways to integrate generative AI platforms into your workplace, but overwhelmed with the options - or just where to get started? With so many challenges and requirements to consider when it comes down to picking the right solution for your organization, it’s easy to get lost in thought. 
 
 Our latest guide for CIOs details exactly what it takes for generative AI to succeed in enterprise environments. We’ve listed some of the most important insights in the checklist below, but download the full [eBook](https://www.glean.com/resources/guides/cio-buyers-guide-genai-workplace) for free to get the full picture of what you’ll need from an enterprise-ready solution. 
 
 ## Considerations for the CIO 
 
-Implementation of any tool is a difficult process, and seeing real returns and benefits from a solution can take time. Not only that — ensuring that it’s airtight from security breaches, as well as readily adopted by its users, is another matter entirely. 
+Implementation of any tool is a difficult process, and seeing real returns and benefits from a solution can take time. Not only that - ensuring that it’s airtight from security breaches, as well as readily adopted by its users, is another matter entirely. 
 
 Looking to circumvent these problematic complexities? Here’s a quick checklist we’ve compiled to help you start looking for a truly enterprise-ready solution:
 
--   **Solutions that reduces cost and wasted time — not balloon it.**‍
+-   **Solutions that reduces cost and wasted time - not balloon it.**‍
     -   Most organizations, especially enterprises, are utilizing hundreds of SaaS solutions and applications without realizing it. Onboarding the right generative AI solution that’s built for enterprise work is the key to driving better efficiency and productivity without integrating processes that feel forced.**‍**
--   **Mitigate risk moving forward — not open up to more.**‍
+-   **Mitigate risk moving forward - not open up to more.**‍
     -   Great solutions need to be airtight, have zero trust security, strong authentication practices, follow the principle of least privilege, and always be permissions-aware. Better yet, it should be capable of scaling this security to all integrations and applications moving forward, so you can grow your organization and tech stack without fear of mounting risks. **‍**
--   **Something that employees beg you for — not the other way around.**‍
+-   **Something that employees beg you for - not the other way around.**‍
     -   Onboard a solution that’s need-to-have, rather than nice-to-have. Ease of implementation and adoption are critical for maintaining change momentum. The more intuitive the product, with less need for tedious, lengthy manual tuning, the easier it is for workers to realize value from it.
--   ‍**Ready out of the box — now, not later.** ‍
+-   ‍**Ready out of the box - now, not later.** ‍
     -   Ready to go within hours, out-of-the-box. Highly customizable to fit enterprise needs, and semantic models learn from queries. No time-consuming manual training or expensive professional services required.
 
 ## Ahead of the curve

@@ -2,7 +2,7 @@
 url: "https://www.glean.com/authors/haohan-tang"
 canonical: "https://www.glean.com/authors/haohan-tang"
 title: "Haohan Tang | Glean"
-description: "Haohan Tang is an engineer with a strong foundation in computer science and software development, bringing expertise in C++, data, programming, development engineering, and Alexa technologies. A University of Southern California computer science graduate, Haohan combines technical depth with experience in managing data, teaching, and building software—reflected in projects such as KOG (King of GPU) and an NFT minting course starter project. Their career and interests span innovative technology, developer tools, and emerging digital experiences, offering a thoughtful, hands-on perspective on how technology can reduce friction and unlock meaningful possibilities."
+description: "Haohan Tang is an engineer with a strong foundation in computer science and software development, bringing expertise in C++, data, programming, development engineering, and Alexa technologies. A University of Southern California computer science graduate, Haohan combines technical depth with experience in managing data, teaching, and building software-reflected in projects such as KOG (King of GPU) and an NFT minting course starter project. Their career and interests span innovative technology, developer tools, and emerging digital experiences, offering a thoughtful, hands-on perspective on how technology can reduce friction and unlock meaningful possibilities."
 fetched_at: "2026-09-01T13:26:00.423Z"
 ---
 # Haohan Tang
@@ -15,7 +15,7 @@ Software Engineer
 
 ## Haohan Tang
 
-Haohan Tang is an engineer with a strong foundation in computer science and software development, bringing expertise in C++, data, programming, development engineering, and Alexa technologies. A University of Southern California computer science graduate, Haohan combines technical depth with experience in managing data, teaching, and building software—reflected in projects such as KOG (King of GPU) and an NFT minting course starter project. Their career and interests span innovative technology, developer tools, and emerging digital experiences, offering a thoughtful, hands-on perspective on how technology can reduce friction and unlock meaningful possibilities.
+Haohan Tang is an engineer with a strong foundation in computer science and software development, bringing expertise in C++, data, programming, development engineering, and Alexa technologies. A University of Southern California computer science graduate, Haohan combines technical depth with experience in managing data, teaching, and building software-reflected in projects such as KOG (King of GPU) and an NFT minting course starter project. Their career and interests span innovative technology, developer tools, and emerging digital experiences, offering a thoughtful, hands-on perspective on how technology can reduce friction and unlock meaningful possibilities.
 
 ## Connect with
 

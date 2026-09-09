@@ -23,7 +23,7 @@ Reach out with confidence using personalized emails built on research your reps 
 
 ## Overview
 
-The prospect outreach email agent helps AEs and BDRs connect faster — with less manual work. It researches a target account, surfaces key insights and proof points, and drafts a personalized first-touch email in one seamless flow. Sales teams can scale thoughtful, high-impact outreach without sacrificing relevance, even across a large volume of accounts.
+The prospect outreach email agent helps AEs and BDRs connect faster - with less manual work. It researches a target account, surfaces key insights and proof points, and drafts a personalized first-touch email in one seamless flow. Sales teams can scale thoughtful, high-impact outreach without sacrificing relevance, even across a large volume of accounts.
 
 ## See it in action
 
@@ -31,7 +31,7 @@ Watch how this agent researches a prospect and drafts a personalized email in ju
 
 ## Capabilities
 
-Drives more personalized outreach by combining deep research with your team’s messaging.Saves time by automatically gathering company insights, news, and decision-maker context.Highlights relevant customer examples to build trust and strengthen your pitch.Helps you go deeper on more accounts — even when resources are limited.
+Drives more personalized outreach by combining deep research with your team’s messaging.Saves time by automatically gathering company insights, news, and decision-maker context.Highlights relevant customer examples to build trust and strengthen your pitch.Helps you go deeper on more accounts - even when resources are limited.
 
 ## Example output
 
@@ -68,7 +68,7 @@ Hi Acme Corp team,
 
 I came across your recent investments in dispatch automation and platform expansion, and I’d love to connect on how we can support those initiatives.
 
-Companies like Tranzgo and FlexShip have unified insights across teams and tools to help their leaders move faster — without spending time chasing down information manually. I’d be happy to walk through how we could do something similar at Acme.
+Companies like Tranzgo and FlexShip have unified insights across teams and tools to help their leaders move faster - without spending time chasing down information manually. I’d be happy to walk through how we could do something similar at Acme.
 
 Best,  
 Jordan Miles  
@@ -82,7 +82,7 @@ The workflow begins when a user enters a company name (available now) or when a 
 
 ### Step 2: Gather account insights
 
-The agent searches online sources for key company details — industry, revenue, recent announcements, earnings reports, and competitors.
+The agent searches online sources for key company details - industry, revenue, recent announcements, earnings reports, and competitors.
 
 ### Step 3: Identify key stakeholders
 
@@ -94,7 +94,7 @@ The agent scans internal documents and past deal data to find accounts with simi
 
 ### Step 5: Pull supporting context
 
-It collects supporting details from internal resources — like case studies, win stories, or internal notes — to include trusted, relevant proof points.
+It collects supporting details from internal resources - like case studies, win stories, or internal notes - to include trusted, relevant proof points.
 
 ### Step 6: Draft personalized emails
 
@@ -148,7 +148,7 @@ Get a complete view of any customer account in seconds.
 
 #### Deal loss insights
 
-Get clarity on why you’re losing deals — and what to do about it.
+Get clarity on why you’re losing deals - and what to do about it.
 
 ](/agent-library/deal-loss-insights)
 

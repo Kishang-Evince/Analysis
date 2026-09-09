@@ -21,7 +21,7 @@ Glean retrieves context and executes actions across:
 
 ### Benefits
 
-Empower customer teams to streamline InSided management with full visibility across communities from within Glean.Enable go-to-market and customer success teams with a unified view of every account — including ARR, renewal dates, health signals, CTAs, tasks, and timeline activities — alongside the rest of your company knowledge. Build stronger relationships, guide customers through escalations and EBRs, and help them realize more value from your software.
+Empower customer teams to streamline InSided management with full visibility across communities from within Glean.Enable go-to-market and customer success teams with a unified view of every account - including ARR, renewal dates, health signals, CTAs, tasks, and timeline activities - alongside the rest of your company knowledge. Build stronger relationships, guide customers through escalations and EBRs, and help them realize more value from your software.
 
 ## Work AI that works.
 

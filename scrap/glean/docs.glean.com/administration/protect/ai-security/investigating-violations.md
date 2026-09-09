@@ -70,47 +70,47 @@ bq query --use_legacy_sql=false --format=prettyjson 'SELECT ...'
 
 These fields are present on each exported log row and give resource / ingestion context:
 
--   `logName` — Log stream name.
--   `resource.type` — GCP resource type (e.g., `k8s_container`).
--   `resource.labels.pod_name` — Pod name (k8s).
--   `resource.labels.location` — Region / zone.
--   `resource.labels.namespace_name` — K8s namespace.
--   `resource.labels.cluster_name` — Cluster name.
--   `resource.labels.project_id` — GCP project id.
--   `timestamp` — Event timestamp (when it occurred).
--   `receiveTimestamp` — When the log was ingested.
--   `insertId` — Unique insert id (dedupe).
--   `labels.commit_hash`, `labels.branch`, `labels.full_version` — Build/version metadata.
+-   `logName` - Log stream name.
+-   `resource.type` - GCP resource type (e.g., `k8s_container`).
+-   `resource.labels.pod_name` - Pod name (k8s).
+-   `resource.labels.location` - Region / zone.
+-   `resource.labels.namespace_name` - K8s namespace.
+-   `resource.labels.cluster_name` - Cluster name.
+-   `resource.labels.project_id` - GCP project id.
+-   `timestamp` - Event timestamp (when it occurred).
+-   `receiveTimestamp` - When the log was ingested.
+-   `insertId` - Unique insert id (dedupe).
+-   `labels.commit_hash`, `labels.branch`, `labels.full_version` - Build/version metadata.
 
 ## Payload structure (*jsonPayload.ai\_security*)[​](#payload-structure-jsonpayloadai_security "Direct link to payload-structure-jsonpayloadai_security")
 
 `jsonPayload.ai_security` contains a JSON representation of the `AiSecurityLogEntry` proto. Important fields and their meaning:
 
--   `event_id` (string) — globally unique event ID.
+-   `event_id` (string) - globally unique event ID.
     
--   `event_type` (enum) — e.g., `VIOLATION`.
+-   `event_type` (enum) - e.g., `VIOLATION`.
     
--   `event_description` (string) — human-readable description.
+-   `event_description` (string) - human-readable description.
     
--   `user_id` (string) — hashed identifier of the user that triggered the event.
+-   `user_id` (string) - hashed identifier of the user that triggered the event.
     
--   `user_email` (string) — plaintext SSO email of the user that triggered the event. Emitted only to the raw `ai-security` log (for SIEM correlation, e.g. matching against Okta) and **excluded** from the scrubbed BigQuery export. Populated on `VIOLATION` and `MONITOR_QUEUE` events; omitted for anonymous / external-search identities.
+-   `user_email` (string) - plaintext SSO email of the user that triggered the event. Emitted only to the raw `ai-security` log (for SIEM correlation, e.g. matching against Okta) and **excluded** from the scrubbed BigQuery export. Populated on `VIOLATION` and `MONITOR_QUEUE` events; omitted for anonymous / external-search identities.
     
--   `session_info` — object with `tab_id` and `session_tracking_token`.
+-   `session_info` - object with `tab_id` and `session_tracking_token`.
     
--   `action` (enum) — enforcement taken (`BLOCK_REQUEST` / `ALLOW_REQUEST`).
+-   `action` (enum) - enforcement taken (`BLOCK_REQUEST` / `ALLOW_REQUEST`).
     
--   `content_raw` (string) — raw content that caused the event (user prompt or retrieved content).
+-   `content_raw` (string) - raw content that caused the event (user prompt or retrieved content).
     
--   `content_metadata` (repeated `{key,value}`) — context keys such as:
+-   `content_metadata` (repeated `{key,value}`) - context keys such as:
     
     -   `RESOURCE_NAME`, `RESOURCE_ID`, `RESOURCE_URL`,
         
     -   `AGENT_NAME`, `RUN_ID`, `CHAT_SESSION_ID`, `AGENT_ID`, `SOURCE`
         
--   `validation_metadata` (repeated `{key,value}`) — model prediction / validation debugging key-values.
+-   `validation_metadata` (repeated `{key,value}`) - model prediction / validation debugging key-values.
     
--   (other context fields may exist — e.g., workflow entries, LLM call details, agent spans)
+-   (other context fields may exist - e.g., workflow entries, LLM call details, agent spans)
     
 
 This JSON mirrors the following structure:

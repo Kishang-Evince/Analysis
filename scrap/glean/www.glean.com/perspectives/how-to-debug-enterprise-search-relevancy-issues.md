@@ -63,39 +63,39 @@ Share this article:
 
 # How to debug enterprise search relevancy issues
 
-Enterprise search relevancy debugging is the systematic process of identifying why the right document, answer, or expert fails to surface—or ranks too low to be useful—when employees run real queries. It goes beyond surface-level tuning; it requires tracing failures through multiple interdependent layers, from content ingestion and permissions to query interpretation and ranking signals.
+Enterprise search relevancy debugging is the systematic process of identifying why the right document, answer, or expert fails to surface-or ranks too low to be useful-when employees run real queries. It goes beyond surface-level tuning; it requires tracing failures through multiple interdependent layers, from content ingestion and permissions to query interpretation and ranking signals.
 
-Most relevancy complaints sound vague at first: "search feels broken" or "I can never find anything." But behind every vague complaint sits a specific, diagnosable root cause—a stale connector, a misconfigured field boost, a permission mismatch, or a synonym rule that expanded too aggressively. The discipline of debugging turns subjective frustration into repeatable, evidence-based fixes.
+Most relevancy complaints sound vague at first: "search feels broken" or "I can never find anything." But behind every vague complaint sits a specific, diagnosable root cause-a stale connector, a misconfigured field boost, a permission mismatch, or a synonym rule that expanded too aggressively. The discipline of debugging turns subjective frustration into repeatable, evidence-based fixes.
 
 The stakes are real. Poor search relevancy erodes trust, slows decision-making, and pushes employees toward workarounds that fragment knowledge even further. A structured debugging practice protects both productivity and the long-term adoption of enterprise search as a critical workflow tool.
 
 ## What is enterprise search relevancy debugging?
 
-Enterprise search relevancy debugging is the practical work of discovering why "the right thing" doesn't rank—or doesn't appear at all—for a real employee query, and then resolving the issue without destabilizing results for everyone else. The goal extends well beyond improving click-through rates on a single query. It's about fewer dead-ends, faster answers, and results that people trust enough to act on without second-guessing.
+Enterprise search relevancy debugging is the practical work of discovering why "the right thing" doesn't rank-or doesn't appear at all-for a real employee query, and then resolving the issue without destabilizing results for everyone else. The goal extends well beyond improving click-through rates on a single query. It's about fewer dead-ends, faster answers, and results that people trust enough to act on without second-guessing.
 
 Relevancy bugs rarely live in a single place. They tend to sit across one or more layers of the search stack, and each layer has its own failure modes:
 
 -   **Content and permissions**: The expected document may not be indexed, may be stale, or may be invisible to the user due to access control misalignment. In enterprise environments with hundreds of SaaS applications and strict security trimming, "missing result" often means "permission issue," not "bad ranking."
--   **Indexing and schema**: Fields may be misconfigured—titles stored as non-searchable keywords, metadata inconsistently populated, or attachments excluded from ingestion entirely. These shape problems silently degrade relevance long before any ranking logic runs.
+-   **Indexing and schema**: Fields may be misconfigured-titles stored as non-searchable keywords, metadata inconsistently populated, or attachments excluded from ingestion entirely. These shape problems silently degrade relevance long before any ranking logic runs.
 -   **Query interpretation**: Acronyms collide (an internal project name shares initials with a job title), stopwords strip meaning from short queries, or aggressive stemming distorts domain-specific terms. The query the system actually executes can differ significantly from what the user typed.
 -   **Ranking signals**: Field boosts, freshness weights, authority scores, popularity signals, and hybrid fusion between lexical and semantic matching all interact. An over-tuned recency boost can push a new but irrelevant document above a canonical policy page. A vector search layer can surface "semantically close but practically wrong" results when embeddings don't capture internal jargon.
 -   **Evaluation gaps**: Without a maintained set of labeled queries and measurable baselines, teams fix one query and unknowingly break ten others. Relevancy work without an evaluation loop is guesswork.
 
-What makes enterprise search uniquely difficult—compared to consumer web search—is the sheer diversity of content types, the inconsistency of metadata across applications, and the non-negotiable requirement for permission-aware results. A consumer search engine can rely on link graphs and massive click signals. Enterprise search must account for org charts, team relationships, document authority, and personalization context. Relevancy, in this environment, is inseparable from connectors, permissions, and the knowledge graph that ties people, content, and activity together.
+What makes enterprise search uniquely difficult-compared to consumer web search-is the sheer diversity of content types, the inconsistency of metadata across applications, and the non-negotiable requirement for permission-aware results. A consumer search engine can rely on link graphs and massive click signals. Enterprise search must account for org charts, team relationships, document authority, and personalization context. Relevancy, in this environment, is inseparable from connectors, permissions, and the knowledge graph that ties people, content, and activity together.
 
-A good debugging workflow is repeatable, not heroic. It follows a consistent pattern: capture the failure with enough detail to reproduce it, isolate variables layer by layer, validate data coverage and access controls, and only then adjust ranking—with measurable tests that protect against regression. That discipline is what separates teams that continuously improve search quality from teams that chase individual complaints in circles.
+A good debugging workflow is repeatable, not heroic. It follows a consistent pattern: capture the failure with enough detail to reproduce it, isolate variables layer by layer, validate data coverage and access controls, and only then adjust ranking-with measurable tests that protect against regression. That discipline is what separates teams that continuously improve search quality from teams that chase individual complaints in circles.
 
 ## How to debug issues in enterprise search relevancy?
 
 Relevancy work moves fastest when the team treats each complaint like a production defect: capture the full request, preserve the execution trace, and form a testable hypothesis before any parameter change. That approach prevents “quick fixes” that look good in one screenshot but drift under real load, mixed content types, and uneven metadata.
 
-Focus on failure clusters, not single reports. A change should improve an entire class of intent—policy lookups, incident IDs, customer escalations, people lookups—while two invariants stay intact: strict security trimming and stable rank order even when employees type shorthand, aliases, or partial titles.
+Focus on failure clusters, not single reports. A change should improve an entire class of intent-policy lookups, incident IDs, customer escalations, people lookups-while two invariants stay intact: strict security trimming and stable rank order even when employees type shorthand, aliases, or partial titles.
 
 ### Build a relevancy case file before any tuning
 
 A strong case file includes artifacts that expose what the system *actually* did, not what the UI implied. This file becomes the shared ground truth across search owners, IT, and engineering.
 
-Capture these items per incident:- **Raw request trace**: request ID, timestamp, query text, locale, and the full set of applied filters. Include any rewrite output—spell correction, synonym expansion, query expansion, or intent routing.  
+Capture these items per incident:- **Raw request trace**: request ID, timestamp, query text, locale, and the full set of applied filters. Include any rewrite output-spell correction, synonym expansion, query expansion, or intent routing.  
 \- **Analyzer output**: token list for the query plus token lists for the target field types (title, headings, IDs, tags). Token mismatch explains many “I typed it exactly” reports, especially for short queries and internal identifiers.  
 \- **Score explanation for two docs**: one “should win” document and one “should not show up” document; record term matches, field weights, and any function-based boosts (freshness, authority, engagement).  
 \- **Execution profile**: per-clause timing, cache hits, and any fallback path triggers (timeouts, reduced recall mode, rescoring skip). Latency-driven fallbacks can change rank order in ways that mimic relevancy drift.  
@@ -104,10 +104,10 @@ Capture these items per incident:- **Raw request trace**: request ID, timestamp,
 
 ### Isolate the broken layer with control tests
 
-Control tests should isolate one variable at a time and force a concrete diagnosis. The goal: identify which stage introduces the error—analysis, retrieval candidate set, scoring, fusion, personalization, or presentation.
+Control tests should isolate one variable at a time and force a concrete diagnosis. The goal: identify which stage introduces the error-analysis, retrieval candidate set, scoring, fusion, personalization, or presentation.
 
 Use a small set of deterministic probes:1. **Analyzer probe**: run the query through the same analyzer chain as the index fields; compare tokens to expected tokens for IDs, product names, and short labels. A single tokenizer rule can erase meaning in two-word queries.  
-2\. **Field coverage probe**: run a query that targets a single field at a time (title-only, body-only, tags-only, identifier-only). This reveals accidental field dominance—footers, boilerplate, or chat signatures that over-contribute to scores.  
+2\. **Field coverage probe**: run a query that targets a single field at a time (title-only, body-only, tags-only, identifier-only). This reveals accidental field dominance-footers, boilerplate, or chat signatures that over-contribute to scores.  
 3\. **Boost neutralization probe**: run the same query with function boosts disabled (freshness, popularity, authority) to see whether “business signals” overpower text relevance. A canonical policy page should not lose to a new but off-topic note due to time decay.  
 4\. **Lexical vs semantic split**: run lexical-only retrieval, semantic-only retrieval, then hybrid fusion. This triage pinpoints whether the candidate set quality degrades in the semantic path or whether fusion weights distort the final order.  
 5\. **Vector recall sanity check**: compare approximate nearest-neighbor results against an exact similarity run on a small sample index. Large gaps indicate index parameter issues, quantization loss, or over-aggressive filtering before vector retrieval.  
@@ -157,7 +157,7 @@ Ship changes only after a measurable check:- **Offline relevance set**: a mainta
 -   **Index lag and coverage skew**: time from source update to searchable availability by source system and content type; uneven lag can create the impression of inconsistent relevance across departments.
 -   **For answer experiences**: citation usage rate and unsupported-claim rate from automated grading; these metrics isolate retrieval defects from answer fluency without relying on user click behavior.
 
-Enterprise search relevancy debugging isn't a one-time project — it's an ongoing discipline that compounds in value every time you close the loop between a user complaint and a measurable fix. The teams that treat relevancy as a system, not a series of one-off tweaks, build search experiences that employees actually trust and rely on daily.
+Enterprise search relevancy debugging isn't a one-time project - it's an ongoing discipline that compounds in value every time you close the loop between a user complaint and a measurable fix. The teams that treat relevancy as a system, not a series of one-off tweaks, build search experiences that employees actually trust and rely on daily.
 
 If you're ready to move beyond patchwork fixes and see how we approach relevancy at scale, [request a demo to explore how our AI-powered platform can transform your workplace](https://www.glean.com/get-a-demo).
 

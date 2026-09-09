@@ -87,7 +87,7 @@ Most people who use AI at work say it makes them more productive, and they’re 
 
 The harder question to answer is, where are those 11 hours going? On average, more than half of that time comes back in another form.
 
-The [Work AI Index 2026](https://www.glean.com/work-ai-institute/reports/work-ai-index-report), from Glean’s [Work AI Institute](https://www.glean.com/work-ai-institute), looked beneath the time savings at the human labor required to make AI useful. We surveyed 6,000 full-time digital workers — people who do most of their work on a computer or digital tools — across the United States, the United Kingdom, and Australia, spoke with dozens of AI leaders, and analyzed anonymized, aggregated workplace AI interactions from the Glean Work AI [platform](https://www.glean.com/product/overview).
+The [Work AI Index 2026](https://www.glean.com/work-ai-institute/reports/work-ai-index-report), from Glean’s [Work AI Institute](https://www.glean.com/work-ai-institute), looked beneath the time savings at the human labor required to make AI useful. We surveyed 6,000 full-time digital workers - people who do most of their work on a computer or digital tools - across the United States, the United Kingdom, and Australia, spoke with dozens of AI leaders, and analyzed anonymized, aggregated workplace AI interactions from the Glean Work AI [platform](https://www.glean.com/product/overview).
 
 What we found is that the time AI gives back is absorbed by the work of making AI usable. And when that work goes unrecognized, it changes how people use AI in ways most organizations never see.
 
@@ -121,7 +121,7 @@ Workers say they spend an average of 2.3 hours a week supplying AI with the cont
 
 Before an AI tool can produce something useful, the worker may need to identify the latest file, explain the audience, define an internal acronym, clarify whether “Q3” means the fiscal or calendar quarter, or specify which source should take priority.
 
-This requires more than giving AI access to information. The tool may be able to retrieve several forecasts without knowing which one is final, or read a process document without understanding the workaround the team really uses. That meaning lives in the organization's relationships, norms, and tacit knowledge — and often with the employee doing the work. Until AI can access and interpret that context, employees remain responsible for filling in the gaps.
+This requires more than giving AI access to information. The tool may be able to retrieve several forecasts without knowing which one is final, or read a process document without understanding the workaround the team really uses. That meaning lives in the organization's relationships, norms, and tacit knowledge - and often with the employee doing the work. Until AI can access and interpret that context, employees remain responsible for filling in the gaps.
 
 Adding more information doesn’t necessarily solve the problem. When AI can’t distinguish what is relevant, current, or authoritative, more context can make the answer less focused rather than more reliable.
 

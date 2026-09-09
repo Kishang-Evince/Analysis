@@ -94,7 +94,7 @@ The data store where prompts and completions are stored is logically separated b
 
 If validation fails or Glean can't connect to your Azure OpenAI resource, check the following:
 
--   **Deployment name mismatch (404 error):** The deployment name you enter in Glean must match the deployment name in your Azure Portal exactly. Go to your Azure OpenAI resource, select **Model deployments > Manage Deployments**, and copy the deployment name. The deployment name is not the same as the model name — for example, you might deploy `gpt-5.1` with a deployment name like `gpt-51-prod`.
+-   **Deployment name mismatch (404 error):** The deployment name you enter in Glean must match the deployment name in your Azure Portal exactly. Go to your Azure OpenAI resource, select **Model deployments > Manage Deployments**, and copy the deployment name. The deployment name is not the same as the model name - for example, you might deploy `gpt-5.1` with a deployment name like `gpt-51-prod`.
 -   **Invalid API key (401 error):** Confirm your Azure OpenAI key is still active in the Azure Portal under **Keys and Endpoints**. If the key was rotated, update it in Glean.
 -   **Rate limit exceeded (429 error):** Compare your Azure OpenAI quota against the [capacity requirements](#request-additional-capacity-from-azure) above for your number of users. Request a quota increase in the Azure Portal if needed.
 -   **Region doesn't support the Responses API:** The [Azure OpenAI Responses API](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/responses?tabs=python-secure#responses-api) isn't available in all regions. If you see validation errors, confirm your Azure OpenAI resource is in a supported region.

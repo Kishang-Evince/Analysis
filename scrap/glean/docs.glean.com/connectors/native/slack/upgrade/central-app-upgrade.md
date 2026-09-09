@@ -58,7 +58,7 @@ During this window, admins and users may notice:
 
 > **Note:** This behavior is expected during the upgrade window and does not affect your data or long-term search functionality.
 
-> **Important:** Once you start the RTS upgrade, do not modify or uninstall your legacy Slack app. The legacy app is responsible for inviting the new RTS bot into your channels—a process that is rate-limited by Slack. Removing or changing the legacy app too early will interrupt this sync and may leave the new bot missing from your channels. Wait until Glean confirms the upgrade is complete before making any changes to the old app.
+> **Important:** Once you start the RTS upgrade, do not modify or uninstall your legacy Slack app. The legacy app is responsible for inviting the new RTS bot into your channels-a process that is rate-limited by Slack. Removing or changing the legacy app too early will interrupt this sync and may leave the new bot missing from your channels. Wait until Glean confirms the upgrade is complete before making any changes to the old app.
 
 ## Before upgrading to Slack Real Time Search (RTS)[​](#before-upgrading-to-slack-real-time-search-rts "Direct link to Before upgrading to Slack Real Time Search (RTS)")
 

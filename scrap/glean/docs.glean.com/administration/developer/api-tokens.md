@@ -22,7 +22,7 @@ important
 
 Indexing API tokens require an expiration date.
 
-For the full token creation reference — including IP restrictions, token rotation, and the roles required to create each token type — see [Indexing API authentication](https://developers.glean.com/api-info/indexing/authentication/overview) and [Client API authentication](https://developers.glean.com/api-info/client/authentication/overview) in the developer documentation.
+For the full token creation reference - including IP restrictions, token rotation, and the roles required to create each token type - see [Indexing API authentication](https://developers.glean.com/api-info/indexing/authentication/overview) and [Client API authentication](https://developers.glean.com/api-info/client/authentication/overview) in the developer documentation.
 
 ## Client API tokens for specific agents[​](#client-api-tokens-for-specific-agents "Direct link to Client API tokens for specific agents")
 

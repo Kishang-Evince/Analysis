@@ -99,7 +99,7 @@ Instead of walking in blind, you enter the conversation armed with the knowledge
 
 ## Answer questions on the spot with AI sales research
 
-Sales calls often come with unexpected questions — technical details, pricing comparisons, or security concerns. Instead of scrambling to find answers after the call, Glean enables you to:
+Sales calls often come with unexpected questions - technical details, pricing comparisons, or security concerns. Instead of scrambling to find answers after the call, Glean enables you to:
 
 -   **Instantly search past answers** from Slack discussions, emails, knowledge bases, and company wikis.
 -   Use real-time AI assistance to **surface relevant documentation** mid-conversation.
@@ -119,7 +119,7 @@ With these insights at your fingertips, you can handle objections with confidenc
 
 ## Collaborate with the right experts instantly
 
-Sometimes, preparing for a sales call requires input from other teams — whether it’s product, engineering, or customer success. Instead of tracking down the right person manually, Glean helps you:
+Sometimes, preparing for a sales call requires input from other teams - whether it’s product, engineering, or customer success. Instead of tracking down the right person manually, Glean helps you:
 
 -   **Identify subject matter experts** within your company based on their past contributions.
 -   **Access relevant materials** and past conversations for additional context.
@@ -139,9 +139,9 @@ With structured follow-ups, you can close deals faster and ensure no action item
 
 ## Conclusion
 
-The best sales teams don’t just rely on instinct — they leverage data and AI-driven insights to stay ahead. Success in sales isn’t just about showing up; it’s about showing up prepared, confident, and ready to engage.
+The best sales teams don’t just rely on instinct - they leverage data and AI-driven insights to stay ahead. Success in sales isn’t just about showing up; it’s about showing up prepared, confident, and ready to engage.
 
-With Glean, every sales call becomes an opportunity to build trust, handle objections, and move deals forward. The right information at the right time isn’t just an advantage — it’s the key to closing more deals, faster.
+With Glean, every sales call becomes an opportunity to build trust, handle objections, and move deals forward. The right information at the right time isn’t just an advantage - it’s the key to closing more deals, faster.
 
 **Ready to transform your sales calls?** [Book a demo](https://www.glean.com/get-a-demo) and see how Glean gives your team the edge they need.
 

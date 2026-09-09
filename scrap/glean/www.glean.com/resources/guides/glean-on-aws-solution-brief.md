@@ -2,7 +2,7 @@
 url: "https://www.glean.com/resources/guides/glean-on-aws-solution-brief"
 canonical: "https://www.glean.com/resources/guides/glean-on-aws-solution-brief"
 title: "Scale AI agents in the enterprise with Glean on AWS"
-description: "Glean is the Work AI platform that connects and understands enterprise data, to generate answers and automate work with AI. Hundreds of enterprises — including Hubspot, Pinterest, Rivian, and SoFi — choose Glean on AWS to securely scale their AI."
+description: "Glean is the Work AI platform that connects and understands enterprise data, to generate answers and automate work with AI. Hundreds of enterprises - including Hubspot, Pinterest, Rivian, and SoFi - choose Glean on AWS to securely scale their AI."
 fetched_at: "2026-09-01T13:27:08.470Z"
 ---
 ## Work AI that works.

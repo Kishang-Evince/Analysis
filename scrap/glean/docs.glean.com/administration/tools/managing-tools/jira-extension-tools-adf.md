@@ -92,7 +92,7 @@ For standard Jira plain text fields (data type: `string`), ADF is bypassed. The 
 4.  Complete OAuth authentication using a Jira Cloud admin account.
 5.  Under **Edit settings**, enable the specific tools you need for **Agents** and/or **Assistant**.
 
-For multi-instance setups (more than one Jira Cloud org), add a separate Jira Extension Tools instance for each Jira instance and name them clearly, for example, "Jira Extension — Engineering" and "Jira Extension — Support".
+For multi-instance setups (more than one Jira Cloud org), add a separate Jira Extension Tools instance for each Jira instance and name them clearly, for example, "Jira Extension - Engineering" and "Jira Extension - Support".
 
 ## Troubleshooting[​](#troubleshooting "Direct link to Troubleshooting")
 
@@ -108,7 +108,7 @@ For example, `@john.doe` shows as text instead of a real mention.
 
 **Cause:** A plain text string was sent to a REST API v3 rich text field.
 
-**Fix:** Confirm the Jira Extension Tools are enabled. If the error persists, check whether the target field is a custom field of type `string` — those require plain text and reject ADF.
+**Fix:** Confirm the Jira Extension Tools are enabled. If the error persists, check whether the target field is a custom field of type `string` - those require plain text and reject ADF.
 
 ### Jira connector instance doesn't appear when you add tools
 

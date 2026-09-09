@@ -62,7 +62,7 @@ This is a one-time step. After you connect your account, Code Writer works autom
 
 ## See also[​](#see-also "Direct link to See also")
 
--   [Code Writer overview](/administration/assistant/features/code-writer) — capabilities and security considerations.
--   [Set up Code Writer tools](/administration/tools/setup-tools/code-writer-tools-setup) — admin configuration for Code Writer.
--   [Code Writer in Agent Builder](/tools/glean/code-writer) — how to add Code Writer to agents.
--   [Code generation in Assistant](/user-guide/assistant/code-generation) — end-user guide for code generation in chat.
+-   [Code Writer overview](/administration/assistant/features/code-writer) - capabilities and security considerations.
+-   [Set up Code Writer tools](/administration/tools/setup-tools/code-writer-tools-setup) - admin configuration for Code Writer.
+-   [Code Writer in Agent Builder](/tools/glean/code-writer) - how to add Code Writer to agents.
+-   [Code generation in Assistant](/user-guide/assistant/code-generation) - end-user guide for code generation in chat.

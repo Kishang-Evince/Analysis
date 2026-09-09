@@ -2,7 +2,7 @@
 url: "https://www.glean.com/connectors/onedrive"
 canonical: "https://www.glean.com/connectors/onedrive"
 title: "Microsoft OneDrive integration with Glean | Glean Work AI"
-description: "Integrate Microsoft OneDrive with Glean to securely search, access, and manage your OneDrive folders and documents—all in one place for enhanced productivity."
+description: "Integrate Microsoft OneDrive with Glean to securely search, access, and manage your OneDrive folders and documents-all in one place for enhanced productivity."
 fetched_at: "2026-09-01T13:25:50.114Z"
 ---
 ### Overview

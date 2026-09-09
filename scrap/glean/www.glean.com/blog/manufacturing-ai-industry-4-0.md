@@ -91,7 +91,7 @@ In recent years, a variety of shocks have caused unprecedented disruptions to ma
 
 However, three obstacles make this transition difficult to execute:
 
--   **Siloed data** spread across disconnected systems prevents teams from anticipating risks from equipment, plants & supply chains—jeopardizing production planning
+-   **Siloed data** spread across disconnected systems prevents teams from anticipating risks from equipment, plants & supply chains-jeopardizing production planning
 -   **Rising costs** accumulating from tariffs, inflation, and increasing wages weigh on margins and necessary capital investments
 -   **Labor shortages** leave manufacturers at risk of losing critical institutional knowledge as aging workforces get ready to retire without a pipeline of skilled replacements
 
@@ -124,7 +124,7 @@ An AI coworker allows teams to go beyond asking questions and start executing re
 
 ## What to look for in a Work AI platform
 
-Many leading vendors are developing robust AI point solutions. While these are important in optimizing specific use cases, companies can unlock significant value through integrating them within a horizontal platform. A Work AI layer that sits above your stack—with strict security & governance policies—can synchronize outputs into cohesive workflows. The platform approach can drive effective AI adoption across the organization:
+Many leading vendors are developing robust AI point solutions. While these are important in optimizing specific use cases, companies can unlock significant value through integrating them within a horizontal platform. A Work AI layer that sits above your stack-with strict security & governance policies-can synchronize outputs into cohesive workflows. The platform approach can drive effective AI adoption across the organization:
 
 <div class="overflow-scroll">  
  <table class="rich-text-table\_component">  
@@ -197,7 +197,7 @@ Many leading vendors are developing robust AI point solutions. While these are i
 
 ## Addressing the tough questions: integration, build vs. buy, ROI
 
--   **Integration with legacy stacks:** Choose platforms that enforce permission‑aware answers, version control for procedures, and governance workflows—so only approved knowledge surfaces on the line.
+-   **Integration with legacy stacks:** Choose platforms that enforce permission‑aware answers, version control for procedures, and governance workflows-so only approved knowledge surfaces on the line.
 -   **Build or buy:** In‑house efforts often stall on fragmented data, scarce talent, and shifting security posture. A horizontal Work AI layer de‑risks governance and scale while preserving room for extensions.
 -   **ROI:** Start with high‑leverage journeys (frontline onboarding, IT/OT incident response, customer escalations) to prove value quickly, then layer agentic workflows to automate checks and handoffs.
 
@@ -205,7 +205,7 @@ Many leading vendors are developing robust AI point solutions. While these are i
 
 -   **Pick a flagship line or program:** Connect core content systems first to deliver immediate answer value; then add live signal integrations.
 -   **Standardize “golden” procedures:** Assign owners, review cycles, and version control so only current SOPs appear at the point of work.
--   **Automate the handoffs:** Use agents to draft escalations, route exceptions, and notify owners—reducing MTTR and rework.
+-   **Automate the handoffs:** Use agents to draft escalations, route exceptions, and notify owners-reducing MTTR and rework.
 -   **Measure and improve:** Track time‑to‑proficiency, self‑service deflection, MTTR, and content freshness; close knowledge gaps with analytics.
 
 ## Turn context into execution

@@ -26,7 +26,7 @@ The Confluence (Cloud) connector for Glean allows Glean to fetch and index conte
 
 ## **Indexed content and data**[​](#indexed-content-and-data "Direct link to indexed-content-and-data")
 
-The Glean Confluence connector crawls three distinct types of data—Content, Identity, and Activity—to ensure a fast, comprehensive, and securely managed index.
+The Glean Confluence connector crawls three distinct types of data-Content, Identity, and Activity-to ensure a fast, comprehensive, and securely managed index.
 
 ### **Content**[​](#content "Direct link to content")
 

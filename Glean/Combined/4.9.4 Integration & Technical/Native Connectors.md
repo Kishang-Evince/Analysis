@@ -15,7 +15,7 @@
 
 **Field definition:** Pre-built out-of-the-box integrations; setup time and reliability.  
 **Prerequisites / Licensing:** Admin connector consent; Notion workspace integration token + page share.  
-**In-scope connector rating (Doc-Verified):** **All 7 surfaces have native connectors** — maturity varies (Notion share model, Gmail/Notion crawl lag).  
+**In-scope connector rating (Doc-Verified):** **All 7 surfaces have native connectors** - maturity varies (Notion share model, Gmail/Notion crawl lag).  
 **Confidence Level:** **Doc-Verified** · **Pending Sandbox** (setup minutes per connector)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [Connectors catalog](https://www.glean.com/platform/connectors) · Per-connector: [Notion](https://docs.glean.com/connectors/native/notion/about), [Teams](https://docs.glean.com/connectors/native/teams/about), [Outlook](https://docs.glean.com/connectors/native/outlook/about), [OneDrive](https://docs.glean.com/connectors/native/onedrive/about), [Gmail](https://docs.glean.com/connectors/native/gmail/about), [GDrive](https://docs.glean.com/connectors/native/gdrive/about)
@@ -33,14 +33,14 @@
 
 ### Engineering observation (Doc-Verified + tested in 4.9.1)
 
-- Green connector check **≠** immediately searchable — crawl lag documented (OneDrive ~hourly incremental; Notion ~6h).
+- Green connector check **≠** immediately searchable - crawl lag documented (OneDrive ~hourly incremental; Notion ~6h).
 - Notion personal-account path poorly fits enterprise setup docs.
-- Teams transcript indexing may need extra admin setup — verify in tenant.
+- Teams transcript indexing may need extra admin setup - verify in tenant.
 
 ### Verification steps / test case
 
-1. Admin → Connectors — confirm green health for all six connector families.
-2. Create `Stratos_Connector_Test_*` artifacts across each source — unified search test (4.9.1 F1.2).
+1. Admin → Connectors - confirm green health for all six connector families.
+2. Create `Stratos_Connector_Test_*` artifacts across each source - unified search test (4.9.1 F1.2).
 3. Time connector setup from Admin Test Guide Field 6 checklist.
 4. Log any source still missing after crawl wait → Field 2 limitations.
 

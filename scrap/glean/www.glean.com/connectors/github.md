@@ -2,7 +2,7 @@
 url: "https://www.glean.com/connectors/github"
 canonical: "https://www.glean.com/connectors/github"
 title: "GitHub integration with Glean | Glean Work AI"
-description: "Easily find GitHub content—PRs, issues, repos, docs—using Glean’s GitHub integration. Surface relevant code and collaborate securely with enforced permissions."
+description: "Easily find GitHub content-PRs, issues, repos, docs-using Glean’s GitHub integration. Surface relevant code and collaborate securely with enforced permissions."
 fetched_at: "2026-09-01T13:25:45.453Z"
 ---
 ### Overview

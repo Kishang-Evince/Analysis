@@ -21,7 +21,7 @@ fetched_at: "2026-09-01T13:27:01.286Z"
 
 ## Overview
 
-Join Glean's Solution Architect, Shivam Trivedi, as he shares a demo of Glean — workplace search with generative AI you can trust.
+Join Glean's Solution Architect, Shivam Trivedi, as he shares a demo of Glean - workplace search with generative AI you can trust.
 
 ![Predict 2024: The Dawning of the Age of AI](https://cdn.prod.website-files.com/613513981b0efaf850830620/6864fa26a2a732ae3c073de4_Webinar%20Background-27-min.png)
 

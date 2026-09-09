@@ -13,7 +13,7 @@ Glean in Gemini connects your organization’s permission-aware enterprise knowl
 
 ![Gemini chat answering a work question with grounded citations from Glean](/img/administration/platform/embed-integrate/glean-in-gemini-chat/intro.png)
 
-With the recommended default tool set, this integration is read-only — it can search and synthesize company knowledge but does not create, update, or delete records in connected systems. If you enable write-capable tools on the selected MCP server path, Gemini can surface those actions as well.
+With the recommended default tool set, this integration is read-only - it can search and synthesize company knowledge but does not create, update, or delete records in connected systems. If you enable write-capable tools on the selected MCP server path, Gemini can surface those actions as well.
 
 ## What users get[​](#what-users-get "Direct link to What users get")
 
@@ -40,7 +40,7 @@ Gemini chat ──▶ Custom MCP Server connector ──▶ Glean MCP server    
 | Capability | What it does | Visibility |
 | --- | --- | --- |
 | **Grounded answers** | Gemini answers work questions using company knowledge retrieved from Glean. | Each answer is generated for the asking user and reflects their Glean permissions. |
-| **Citations** | Answers include links to the underlying internal sources in Glean-connected systems. | Citations are personalized — each user only sees sources they can already access. |
+| **Citations** | Answers include links to the underlying internal sources in Glean-connected systems. | Citations are personalized - each user only sees sources they can already access. |
 | **Tool invocation** | Glean tools enabled on the selected MCP server path are exposed as Gemini actions (for example, `search`, `read_document`, `chat`, `code_search`, `employee_search`, `user_activity`, and `memory`). | Tools run on behalf of the signed-in user and respect Glean permissions. |
 | **Permission-aware authentication** | Each user authorizes Glean via OAuth from inside Gemini. | Each user authorizes individually; every response respects that user's Glean permissions. |
 
@@ -84,9 +84,9 @@ This setup involves two admin personas and one end-user persona.
 
 ## Requirements[​](#requirements "Direct link to Requirements")
 
--   Glean admin access — to locate the MCP server URL and create an OAuth client.
--   Google Cloud or Gemini Enterprise admin access — to create the data store, enable tools, and publish the app.
--   A Google Cloud project — Gemini Enterprise resources are created inside a project you own.
--   Your Glean backend URL (`<tenant_id>-be.glean.com`) — used to build the server, authorization, and token URLs. Find it in **[About Glean](https://app.glean.com/admin/about-glean)** under **Server instance (QE)**.
+-   Glean admin access - to locate the MCP server URL and create an OAuth client.
+-   Google Cloud or Gemini Enterprise admin access - to create the data store, enable tools, and publish the app.
+-   A Google Cloud project - Gemini Enterprise resources are created inside a project you own.
+-   Your Glean backend URL (`<tenant_id>-be.glean.com`) - used to build the server, authorization, and token URLs. Find it in **[About Glean](https://app.glean.com/admin/about-glean)** under **Server instance (QE)**.
 
 For the full list, including details you will collect during setup, see [Prerequisites](/administration/platform/embedded-integrations/glean-in-gemini-chat/prerequisites).

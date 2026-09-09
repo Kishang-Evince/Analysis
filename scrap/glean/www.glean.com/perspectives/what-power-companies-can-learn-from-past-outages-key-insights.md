@@ -71,7 +71,7 @@ This matters because outages are costly and common. In 2024, U.S. electricity cu
 
 ## Why historical power outage analysis falls short at most utilities
 
-Most utilities lose the value of their outage data — their hard-won [institutional knowledge](https://www.glean.com/blog/what-is-knowledge-management) — because the lessons never leave the report. A post-incident review produces a document that circulates among leadership, gets acknowledged, and then sits untouched until the next crisis. Field crews, dispatchers, and customer service teams rarely see the findings that would help them respond better.
+Most utilities lose the value of their outage data - their hard-won [institutional knowledge](https://www.glean.com/blog/what-is-knowledge-management) - because the lessons never leave the report. A post-incident review produces a document that circulates among leadership, gets acknowledged, and then sits untouched until the next crisis. Field crews, dispatchers, and customer service teams rarely see the findings that would help them respond better.
 
 Two problems make this worse. First, much of the response knowledge lives in the heads of experienced employees, and the industry faces an accelerating wave of retirements. Capturing [retiring employee knowledge](https://www.glean.com/perspectives/how-utilities-can-capture-retiring-employee-knowledge) before it walks out the door is one of the highest-leverage moves a utility can make. Second, the data is fragmented: outage management systems, GIS platforms, customer information systems, and field service apps each hold one piece of the picture.
 
@@ -130,7 +130,7 @@ With major power outages costing U.S. electricity customers an average of [$67 b
 
 -   **Grid hardening based on failure data.** Replace wooden poles with composite or steel in high-wind corridors, underground lines in flood-prone areas, and upgrade aging transformers identified through failure trend analysis.
 -   **Smart grid technology.** Automated switches, sensors, and SCADA systems isolate damaged sections and reroute power to unaffected areas without waiting for a crew on site. Utilities that deployed these systems before a major storm can shorten outage durations by rerouting around damage automatically.
--   **Targeted vegetation management.** When a utility's own records show that a large share of storm-related outages — say, 40% in a given territory — trace back to tree contact, focused trimming and removal deliver outsized returns.
+-   **Targeted vegetation management.** When a utility's own records show that a large share of storm-related outages - say, 40% in a given territory - trace back to tree contact, focused trimming and removal deliver outsized returns.
 
 Predictive approaches are gaining ground. By combining weather forecasts, equipment age, historical outage records, and terrain data, utilities can model which circuits are most likely to fail and pre-stage resources accordingly. Work on [predicting power outages](https://www.youtube.com/watch?v=gz4Hwp8uCzg) shows how data-driven models improve preparedness beyond what field experience alone provides.
 
@@ -147,7 +147,7 @@ Outage lessons become lasting improvements when a utility assigns ownership, mak
 
 ### What are the most common causes of large-scale power outages?
 
-Severe weather causes the majority of widespread outages — [80% of major U.S. outages](https://www.climatecentral.org/climate-matters/weather-related-power-outages-rising) from 2000 to 2023 were weather-related — including hurricanes, ice storms, high winds, and flooding. Equipment failure, vegetation contact, wildlife interference, and vehicle accidents account for most localized outages.
+Severe weather causes the majority of widespread outages - [80% of major U.S. outages](https://www.climatecentral.org/climate-matters/weather-related-power-outages-rising) from 2000 to 2023 were weather-related - including hurricanes, ice storms, high winds, and flooding. Equipment failure, vegetation contact, wildlife interference, and vehicle accidents account for most localized outages.
 
 ### How do power companies decide which areas to restore first?
 

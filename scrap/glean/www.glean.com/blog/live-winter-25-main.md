@@ -2,7 +2,7 @@
 url: "https://www.glean.com/blog/live-winter-25-main"
 canonical: "https://www.glean.com/blog/live-winter-25-main"
 title: "Glean Autonomous Agents: Self-evaluating with the context and security you need to automate at scale"
-description: "Arvind Jain  | For agents to deliver real value in the enterprise, they need to be able to plan, self-evaluate, and act—all of which require reliable, relevant context, and secure guardrails that enable confident scalability."
+description: "Arvind Jain  | For agents to deliver real value in the enterprise, they need to be able to plan, self-evaluate, and act-all of which require reliable, relevant context, and secure guardrails that enable confident scalability."
 fetched_at: "2026-09-01T13:26:47.578Z"
 ---
 Last updated Dec 10, 2025.
@@ -85,12 +85,12 @@ Listen to article
 
 ‍[Seventy-five percent](https://docs.google.com/presentation/d/1W9GXgTMG3BviAE-LiXQZRD_LmNttapRWbcE4mq_fLf0/edit?slide=id.g36abf3d5d15_0_19#slide=id.g36abf3d5d15_0_19) of global businesses plan to implement AI and agents org-wide within the next year. There are high expectations for agents to improve operational efficiency, revenue growth, risk management, customer satisfaction, and more. However, as many companies have discovered, successful implementation isn’t straightforward. Glean’s work through the [Work AI Institute](http://glean.com/work-ai-institute) discovered many leaders peg the failure rate for AI initiatives at around [80%](http://glean.com/resources/ai-100-report). 
 
-Businesses are discovering that achieving the ROI they're looking for from AI and offsetting implementation costs takes time—time to build individual agents specific to high-value use cases, drive AI-adoption and education, manage agent sprawl and quality control, and deal with constantly changing business environments that need to be accurately reflected in AI output. 
+Businesses are discovering that achieving the ROI they're looking for from AI and offsetting implementation costs takes time-time to build individual agents specific to high-value use cases, drive AI-adoption and education, manage agent sprawl and quality control, and deal with constantly changing business environments that need to be accurately reflected in AI output. 
 
-Today, Glean is releasing a suite of new and updated features that make this entire process scalable, secure, and tailored to each organization's unique needs. We’re releasing the world’s first autonomous agents built on full enterprise context—powerful, self-planning, secure AI that understands how to get work done in your enterprise, thanks to maximal context and guardrails they need to be successful. 
+Today, Glean is releasing a suite of new and updated features that make this entire process scalable, secure, and tailored to each organization's unique needs. We’re releasing the world’s first autonomous agents built on full enterprise context-powerful, self-planning, secure AI that understands how to get work done in your enterprise, thanks to maximal context and guardrails they need to be successful. 
 
 -   New **autonomous agents** enable anyone to quickly build intelligent, independent agents capable of planning, thinking for themselves, self-evaluation, and solving complex, ambiguous problems. 
--   **Expanded Glean Enterprise Context** is the most comprehensive foundation for enterprise context—joining together memory, connectors, indexes, personal and enterprise graphs to deliver agents that can reliably automate work. 
+-   **Expanded Glean Enterprise Context** is the most comprehensive foundation for enterprise context-joining together memory, connectors, indexes, personal and enterprise graphs to deliver agents that can reliably automate work. 
 -   **New Glean** **Protect capabilities for agents** guard the boundaries of AI, delivering fine-grained access controls for who can build and run agents, alignment models that keep agents in scope, and added protection for sensitive data. 
 
 Together, these new features provide the security and necessary context to automate agents confidently, at scale. It makes the path from AI implementation to real ROI possible for every industry, business, team, and individual. 
@@ -103,35 +103,35 @@ In the past, you needed to know and define the exact steps you wanted an agent t
 
 As we evolved the [Agentic Engine](https://www.glean.com/blog/live-fall-25-agentic-engine2-performance), we created an entirely new class of agents differentiated by their ability to leverage Glean’s adaptive planning capabilities. By using the Agentic Engine, they’re capable of finding the best path forward even when given simple instructions in plain, natural language. We refer to these new agents as **autonomous agents**. They’re self-directed, intelligent, and capable of understanding how to work in your company across your apps, coworkers, and unique workflows. 
 
-Autonomous agents are highly adaptive—interpreting plain-language procedures in the context of enterprise information, iterating in real-time according to changing enterprise context, dynamically applying business logic, proactively asking for clarification when necessary, and transparently sharing thought processes so users and administrators can trust outcomes. These autonomous capabilities enable agents to tackle more complex, ambiguous work, reliably executing and automating work at 10% higher completeness and 12% higher consistency than prior generations of agents. Users can now ask agents to handle workflows end-to-end, and trust that they’ll deliver the same caliber of work every time. 
+Autonomous agents are highly adaptive-interpreting plain-language procedures in the context of enterprise information, iterating in real-time according to changing enterprise context, dynamically applying business logic, proactively asking for clarification when necessary, and transparently sharing thought processes so users and administrators can trust outcomes. These autonomous capabilities enable agents to tackle more complex, ambiguous work, reliably executing and automating work at 10% higher completeness and 12% higher consistency than prior generations of agents. Users can now ask agents to handle workflows end-to-end, and trust that they’ll deliver the same caliber of work every time. 
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/693934a158e81c2af2bdafc9_image2%20\(14\).webp)
 
 *Autonomous agents show marked improvements in response completeness and consistency.*
 
-Importantly, Glean’s new autonomous agents allow anyone to get value from agents right away—complex agents can be defined and executed in minutes by anyone, regardless of technical know-how. Glean’s new auto mode builder makes it easy to define your workflows, set permitted knowledge sources, and define allowed actions for autonomous agents without any code, accelerating the creation and delivery of high-quality agents within the enterprise. 
+Importantly, Glean’s new autonomous agents allow anyone to get value from agents right away-complex agents can be defined and executed in minutes by anyone, regardless of technical know-how. Glean’s new auto mode builder makes it easy to define your workflows, set permitted knowledge sources, and define allowed actions for autonomous agents without any code, accelerating the creation and delivery of high-quality agents within the enterprise. 
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/693934c02988ceeeefb2bba8_image1%20\(18\).webp)
 
 *Set up secure, comprehensive autonomous agents aligned with your needs and guidelines in minutes*
 
-Builders can also use 100+ native Glean actions across their most popular apps including Confluence, GitHub, Google Workspace, Jira, Microsoft 365, Salesforce, and more. Hand off end-to-end tasks to agents grounded in complete enterprise context, without needing to jump between apps. And because automation only works when the right actions are chosen, Glean’s enterprise memory and tool search capabilities determine which actions to call—and how to sequence them—to match your enterprise processes. 
+Builders can also use 100+ native Glean actions across their most popular apps including Confluence, GitHub, Google Workspace, Jira, Microsoft 365, Salesforce, and more. Hand off end-to-end tasks to agents grounded in complete enterprise context, without needing to jump between apps. And because automation only works when the right actions are chosen, Glean’s enterprise memory and tool search capabilities determine which actions to call-and how to sequence them-to match your enterprise processes. 
 
 ## Glean Enterprise Context: Reliable context application across all automation
 
-The enterprise context powering autonomous agents is sourced through **Glean Enterprise Context**—a network of connectors, indexes, graphs, and memory shaping a complete understanding of your enterprise. It’s the bridge between knowledge, reasoning, and action, ensuring that every agent is equipped with the context to take on real, complex work and automate it end-to-end to completion. 
+The enterprise context powering autonomous agents is sourced through **Glean Enterprise Context**-a network of connectors, indexes, graphs, and memory shaping a complete understanding of your enterprise. It’s the bridge between knowledge, reasoning, and action, ensuring that every agent is equipped with the context to take on real, complex work and automate it end-to-end to completion. 
 
 ![](https://cdn.prod.website-files.com/613513981b0efaf850830620/693934ed295690c706630a8e_image3%20\(10\).webp)
 
 *Glean Enterprise Context comes together through a combined network of graphs, memory, and indexes.*
 
-With autonomous agents independently handling larger volumes of work to completion, they need access to deep context in order to deliver true enterprise reliability—agents that don’t hallucinate, are capable of following instructions, take complex tasks all the way to completion, and even match your style and preferences. And what we’re finding is that the more complex the work gets, the more context you actually need.  
+With autonomous agents independently handling larger volumes of work to completion, they need access to deep context in order to deliver true enterprise reliability-agents that don’t hallucinate, are capable of following instructions, take complex tasks all the way to completion, and even match your style and preferences. And what we’re finding is that the more complex the work gets, the more context you actually need.  
   
 Delivering this level of knowledge, process understanding, and personalization takes a suite of technologies all coming together in unison: 
 
 -   **Connectors:** Connectors to all your enterprise applications that bring in more than just content but also signals like views, edits, comments, authorship, and sharing that give a powerful view into how your organization works. 
 -   **Indexes:** Indexes let us store and quickly retrieve data. We’ve introduced a number of indexes to support calendar search, code search, expert search, to tackle a wide range of enterprise use cases.  
--   **Graphs:**  Graphs mine data to surface higher-level entities—customers, projects, products, and more—and map them across the company. 
+-   **Graphs:**  Graphs mine data to surface higher-level entities-customers, projects, products, and more-and map them across the company. 
 -   **Memory:** Memory is about learning how to use tools and the ideal process flow of a task. 
 -   **Tool search:** Another type of index that pinpoints the right set of tools to use across hundreds of possibilities, including both native and MCP-enabled tools. 
 
@@ -141,13 +141,13 @@ These capabilities of **Glean Enterprise Context** are all required to deliver a
 
 *Each step taken by autonomous agents are backed by enterprise context, intelligent adaptation, and analysis.*
 
-It starts with a **goal‑first understanding** of the task—beginning from the outcome (“update my opps based on today’s calls”) and working backward to decide which data, tools, and steps are needed, rather than following a rigid, pre-defined workflow. 
+It starts with a **goal‑first understanding** of the task-beginning from the outcome (“update my opps based on today’s calls”) and working backward to decide which data, tools, and steps are needed, rather than following a rigid, pre-defined workflow. 
 
 It then uses **Enterprise Memory**, Glean’s store of proven, natural‑language playbooks, to apply company‑specific best practices. For example, only moving an opportunity to Stage 3 after confirming all MEDDIC fields are populated and filling in any missing details first. 
 
 Next, it taps the **Enterprise Graph**, Glean’s understanding of relationships, to identify the list of customers an account executive owns, runs a calendar search to find customer meetings from the last 24 hours, and pulls insights from systems like Gong and Gmail. From there, it iterates through the right Salesforce opportunities, analyzes meeting notes to determine which fields need changes, and updates amount, close date, metrics, and decision criteria in parallel before moving the opportunity stage forward. 
 
-Finally, it evaluates the results and feeds those learnings back into **Enterprise Memory**—capturing which tools and strategies worked best—so future autonomous agents can learn over time, refining their expertise in enterprise tasks.
+Finally, it evaluates the results and feeds those learnings back into **Enterprise Memory**-capturing which tools and strategies worked best-so future autonomous agents can learn over time, refining their expertise in enterprise tasks.
 
 Read more about Glean Enterprise Context and its components in our [dedicated blog](https://www.glean.com/blog/context-for-ai).
 
@@ -166,9 +166,9 @@ Glean Protect’s multi-layered approach to getting data AI ready, keeping AI mo
 
 ## Confident automation at scale
 
-Every organization works differently, and so should its agents. The different individuals, data, and processes that reflect each company’s strategy and working motions should be reflected in the way their agents think, adapt, and deliver results. Glean’s autonomous agents enable every company to deploy scalable, enterprise-specific AI —with the security and context to achieve transform operations at scale. 
+Every organization works differently, and so should its agents. The different individuals, data, and processes that reflect each company’s strategy and working motions should be reflected in the way their agents think, adapt, and deliver results. Glean’s autonomous agents enable every company to deploy scalable, enterprise-specific AI -with the security and context to achieve transform operations at scale. 
 
-Learn more about autonomous agents and all our newly released features [here](http://glean.com/glean-live)—or sign up for a free [demo](https://www.glean.com/get-a-demo) today. 
+Learn more about autonomous agents and all our newly released features [here](http://glean.com/glean-live)-or sign up for a free [demo](https://www.glean.com/get-a-demo) today. 
 
 ***Availability***
 

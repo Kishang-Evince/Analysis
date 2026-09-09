@@ -15,7 +15,7 @@
 
 **Field definition:** Immutable logging of LLM system prompts, reasoning paths, and actions taken by automated agents.  
 **Prerequisites / Licensing:** GCE log export (account team); Protect+ for security findings; Super Admin / SCM roles.  
-**Audit completeness rating (Doc-Verified):** **Moderate** — rich **metadata** events; **not** full prompt/response content in standard logs; **not** one immutable unified trail.  
+**Audit completeness rating (Doc-Verified):** **Moderate** - rich **metadata** events; **not** full prompt/response content in standard logs; **not** one immutable unified trail.  
 **Confidence Level:** **Doc-Verified** · **Pending Sandbox** (GCE export provisioned?)  
 **Validation Date:** September 3, 2026  
 **Source URLs:** [Admin audit logs](https://docs.glean.com/administration/management/audit-logs/admin-audit-logs) · [GCE data dictionary](https://docs.glean.com/administration/gce-logs/data-dictionary) · [Security principles](https://docs.glean.com/security/security-principles) · [Debug agent](https://docs.glean.com/agents/create-agents/debug-agent) · Cross-ref [4.9.5 Field 3](../4.9.5%20Compliance%20&%20Regulatory/Overview.md)
@@ -29,24 +29,24 @@
 | **GCE `CHAT_CITATIONS`** | Citation metadata per chat | Reasoning text | Per export |
 | **GCE `LLM_CALL`** | Model, provider, token counts | System prompt body | Per export |
 | **GCE `WORKFLOW_RUN`** | Agent execution events | Full step payloads in all tenants | Per export |
-| **GCE `MCP_USAGE`** | MCP tool invocations | — | Per export |
-| **Protect+ Findings** | Blocked injection/toxic events; sensitive content | — | Dashboard + API |
+| **GCE `MCP_USAGE`** | MCP tool invocations | - | Per export |
+| **Protect+ Findings** | Blocked injection/toxic events; sensitive content | - | Dashboard + API |
 | **Agent Debug (Preview)** | Step I/O, spans, model metadata | Production user runs | Session only |
 
 ### Engineering observation (Doc-Verified)
 
-- Platform docs: **no logging of individual user query/response content** at infrastructure level — privacy vs audit tradeoff.
+- Platform docs: **no logging of individual user query/response content** at infrastructure level - privacy vs audit tradeoff.
 - Disabling chat history does **not** stop GCE `CHAT` metadata events.
-- Debug mode **not supported on Azure-hosted** deployments — confirm tenant host.
-- **Immutable** chain-of-custody for every Assistant turn: **not documented** — SIEM export is best-effort assembly.
+- Debug mode **not supported on Azure-hosted** deployments - confirm tenant host.
+- **Immutable** chain-of-custody for every Assistant turn: **not documented** - SIEM export is best-effort assembly.
 
 ### Verification steps / test case
 
-1. Change Outlook connector setting — verify Admin audit CSV entry within 30-day window.
-2. Run Assistant query — if GCE export live, query `CHAT` + `CHAT_CITATIONS` for session ID.
-3. Run published agent — check `WORKFLOW_RUN` event (if export provisioned).
-4. Trigger Protect+ jailbreak test — verify Finding row with triggering text context.
-5. Confirm whether full system prompts retrievable — expect **metadata only**.
+1. Change Outlook connector setting - verify Admin audit CSV entry within 30-day window.
+2. Run Assistant query - if GCE export live, query `CHAT` + `CHAT_CITATIONS` for session ID.
+3. Run published agent - check `WORKFLOW_RUN` event (if export provisioned).
+4. Trigger Protect+ jailbreak test - verify Finding row with triggering text context.
+5. Confirm whether full system prompts retrievable - expect **metadata only**.
 
 **Risk & Cost Impact:** Risk: **High** for regulated clients needing verbatim AI action logs | Cost: SIEM/GCE export setup
 

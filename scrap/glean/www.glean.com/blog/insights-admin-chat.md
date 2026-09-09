@@ -123,7 +123,7 @@ With admin chat, we want AI to help you get set up quickly and handle basic trou
 
 ## Using AI to administer AI itself
 
-Together, insights chat and admin chat point to the future we see for AI at work: a world where AI doesn’t just help your teams do their jobs—it also helps you understand, manage, and continuously improve your use of AI itself. 
+Together, insights chat and admin chat point to the future we see for AI at work: a world where AI doesn’t just help your teams do their jobs-it also helps you understand, manage, and continuously improve your use of AI itself. 
 
 Learn more about how Glean can help your organization do its best work with AI by signing up for a [demo](https://www.glean.com/get-a-demo), and check out our February drop page for our latest feature releases.
 

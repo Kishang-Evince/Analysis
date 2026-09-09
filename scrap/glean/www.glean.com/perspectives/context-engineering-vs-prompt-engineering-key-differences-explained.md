@@ -65,15 +65,15 @@ Share this article:
 
 The rise of large language models has fundamentally changed how enterprises interact with AI systems. What started as simple question-and-answer exchanges has evolved into complex, multi-step workflows that demand a more sophisticated approach to AI interaction.
 
-Early AI implementations focused heavily on crafting the perfect prompt — a practice that dominated discussions in tech circles throughout 2023. However, as organizations deploy AI for mission-critical tasks like customer support automation, code debugging, and financial analysis, they're discovering that success depends less on clever wording and more on the information ecosystem surrounding each interaction.
+Early AI implementations focused heavily on crafting the perfect prompt - a practice that dominated discussions in tech circles throughout 2023. However, as organizations deploy AI for mission-critical tasks like customer support automation, code debugging, and financial analysis, they're discovering that success depends less on clever wording and more on the information ecosystem surrounding each interaction.
 
-This shift from prompt optimization to comprehensive information management represents a critical evolution in enterprise AI strategy. Notably, a randomized controlled trial found that developers took [19%](https://typedef.ai/resources/real-time-context-engineering-statistics) longer to complete complex tasks when using AI tools, yet believed AI sped them up by 20%—revealing a significant perception-reality gap. Context engineering emerges as the discipline that transforms AI from an experimental tool into a reliable business asset capable of handling complex, real-world challenges.
+This shift from prompt optimization to comprehensive information management represents a critical evolution in enterprise AI strategy. Notably, a randomized controlled trial found that developers took [19%](https://typedef.ai/resources/real-time-context-engineering-statistics) longer to complete complex tasks when using AI tools, yet believed AI sped them up by 20%-revealing a significant perception-reality gap. Context engineering emerges as the discipline that transforms AI from an experimental tool into a reliable business asset capable of handling complex, real-world challenges.
 
 ## What is context engineering?
 
 Context engineering is the systematic design and management of the information environment surrounding AI models. Unlike [prompt engineering](https://www.glean.com/blog/glean-cio-prompt-eng-ai-transform), which focuses on crafting the perfect question or instruction, context engineering addresses the foundational challenge: ensuring the model has access to the right knowledge, tools, and historical information before it even begins to respond.
 
-Think of context engineering as architecting the entire workspace for AI success. Just as Andrej Karpathy, former co-founder of OpenAI, described it: "The LLM is like the CPU, and its context window is like RAM, representing a 'working memory' for the model." This analogy captures the essence of the discipline — determining what information to load into that working memory at each step of an AI interaction.
+Think of context engineering as architecting the entire workspace for AI success. Just as Andrej Karpathy, former co-founder of OpenAI, described it: "The LLM is like the CPU, and its context window is like RAM, representing a 'working memory' for the model." This analogy captures the essence of the discipline - determining what information to load into that working memory at each step of an AI interaction.
 
 The scope of context engineering extends far beyond simple data provision. It encompasses:
 
@@ -85,7 +85,7 @@ The scope of context engineering extends far beyond simple data provision. It en
 
 As enterprise AI applications mature from single-turn queries to complex, multi-step processes, context engineering becomes the differentiator between systems that merely respond and those that truly understand and assist. Organizations implementing AI for [customer service](https://www.glean.com/blog/ai-customer-service) find that a well-engineered context allows their systems to maintain coherent conversations across dozens of interactions, pulling relevant ticket history, product documentation, and user preferences seamlessly into each response.
 
-The evolution toward context engineering reflects a fundamental truth about enterprise AI: the model itself is just one component of a larger system. Success depends on how effectively that system manages, organizes, and delivers information to the model — transforming raw computational power into practical business value.
+The evolution toward context engineering reflects a fundamental truth about enterprise AI: the model itself is just one component of a larger system. Success depends on how effectively that system manages, organizes, and delivers information to the model - transforming raw computational power into practical business value.
 
 ## How context engineering differs from prompt engineering
 
