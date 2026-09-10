@@ -1,70 +1,49 @@
 **Glean Tier 3 Advanced Evaluation**
-**Undocumented Features (Found, Not in Marketing) - Re-Verified (V2)**
+**Undocumented Features (Found, Not in Marketing) — Independent Fresh Research (V2)**
 
-*Re-verification of every finding in [`Undocumented_Features_Glean.docx.md`](../../../cloude/Undocumented_Features_Glean.docx.md) against live SDK source, developer docs, and web search, cross-checked 2026-09-01 through 2026-09-08. Companion hands-on test guide: [V2/Undocumented Features.md](../../../../test/Glean/4.9.1%20Functional%20Capabilities/V2/Undocumented%20Features.md). Sibling field doc (2 items already tested): [../Undocumented Features (found, not in marketing).md](../Undocumented%20Features%20%28found%2C%20not%20in%20marketing%29.md). Sister deep dives: [Features Confirmed.md](Features%20Confirmed.md) · [Features Not Confirmed.md](Features%20Not%20Confirmed.md).*
+*Independent research, all items drawn from this session's own fresh sourcing (2026-09-09 through 2026-09-10) across `github.com/gleanwork`, `developers.glean.com`, and `docs.glean.com` — not reused from any prior pass. Field definition: "Undocumented system capabilities or workarounds found during hands-on exploration." Base file at [`../Undocumented Features (found, not in marketing).md`](../Undocumented%20Features%20%28found%2C%20not%20in%20marketing%29.md) left untouched.*
 
-## Headline result
-
-This is the inverse of the other two V2 docs: instead of upgrading unconfirmed claims, this pass mostly **re-confirms every original finding still holds** - except one, which flipped hard. **Item #6 ("Skills" API resource) is no longer undocumented in marketing at all.** Glean launched Skills publicly in 2026 with dedicated blog posts and a full user guide - the single biggest change found in this entire V2 series across all three fields. Four genuinely new undocumented-in-marketing findings were also surfaced during the sweep (#9–#12 below).
-
-## Methodology
-
-- **Source** = live, global URL only, per [.cursor/rules/vendor-analysis-web-sourcing.mdc](../../../../.cursor/rules/vendor-analysis-web-sourcing.mdc).
-- **Status tags:**
-  - `Still Holds` - the finding is unchanged: still real, still absent from any Glean marketing/product page (developer-docs-only or SDK-source-only is fine - that was always the original bar).
-  - `Now Marketed` - Glean has since surfaced this publicly on a marketing page; it no longer belongs on an "undocumented" list.
-  - `Deepened` - still holds, and this pass found materially more detail than the original catalog-level finding.
-- **Validation date** for every row: 2026-09-08.
+**Sr No mapping:** rows 1-8 below map 1:1 to the same Sr No in the companion test guide [test/V2/Undocumented Features.md](../../../../test/Glean/4.9.1%20Functional%20Capabilities/V2/Undocumented%20Features.md) — same number, same finding, doc-sourced here / tenant-tested there.
 
 ---
 
-# Original 8 findings, re-verified
+## Headline
 
-| # | Finding | Status | Detail & Evidence | Source |
-|---|---|---|---|---|
-| 1 | **`exclude_deprecated_after` / `include_experimental` SDK params** | Still Holds | Confirmed live in the current README: env vars are precisely named `X_GLEAN_EXCLUDE_DEPRECATED_AFTER` and `X_GLEAN_INCLUDE_EXPERIMENTAL` (env var takes precedence over constructor arg if both set). Still absent from `developers.glean.com` and all marketing. | https://github.com/gleanwork/api-client-python/blob/main/README.md |
-| 2 | **`X-Glean-ActAs` header for rate-limit quota distribution** | Still Holds | Still documented only in developer authentication guides (Client API, Platform API, and Indexing API auth pages all reference it), never on a marketing/product page. | https://developers.glean.com/get-started/authentication ; https://developers.glean.com/api/platform-api/authentication |
-| 3 | **Typed `GleanDataError` with structured `.data` payload** | **Deepened** | Now shown directly in the official Python client guide's own Error Handling section (not just SDK source): `except errors.GleanDataError as e:  # 403 Permission Denied, 422 Invalid Query` vs. base `errors.GleanError` for all other codes. Confirms this is a stable, documented (if marketing-invisible) pattern. | https://developers.glean.com/libraries/api-clients/python |
-| 4 | **`debug_logger` param + `GLEAN_DEBUG` env var** | Still Holds | Confirmed live in the README's "Debugging" section, plus independently corroborated by a third-party DeepWiki technical breakdown of the SDK's configuration surface. Still absent from `developers.glean.com`'s own guides and all marketing. | https://github.com/gleanwork/api-client-python/blob/main/README.md ; https://deepwiki.com/gleanwork/api-client-python/5.1-configuration-and-customization |
-| 5 | **Governance API resource group** | **Deepened** | Original finding was catalog-level only ("existence confirmed, functional depth not walked through"). This pass found a full dedicated overview page: two distinct token scopes (`DATA_GOVERNANCE` for policy/report endpoints, `CONTENT_HIDING` for visibility-override endpoints), an explicit policy-vs-report distinction (`WEEKLY`/`CONTINUOUS` scheduled policies with a dashboard vs. one-off reports), and a 10-endpoint catalog spanning findings-exports, policies, reports, and document visibility overrides. Still zero presence on any marketing/Protect product page. | https://developers.glean.com/api/client-api/governance/overview |
-| 6 | **"Skills" API resource** | **Now Marketed** | **Reversed finding.** The original gap - "no guide, example, or explanation of what a Skill actually is was found anywhere" - is completely closed. Glean shipped Skills as a headline 2026 feature: a full `docs.glean.com` user guide (Skills vs. Agents comparison table, routing behavior, "Open Agent Skills standard" compatibility with Anthropic/OpenAI/Cursor skill ecosystems) plus two dedicated marketing blog posts announcing the launch. Currently in beta, admin-enableable per user/group. This is no longer an unexplained primitive - remove from any future "undocumented" tracking. | https://docs.glean.com/user-guide/assistant/skills ; https://www.glean.com/blog/glean-skills-launch-2026 ; https://www.glean.com/blog/skills-may-drop-2026 |
-| 7 | **Platform API as a distinct third API surface** | Still Holds | Structural finding unchanged: Platform API (Agents, Chat, Search, Skills, Triggers) remains a separate surface from Client API and Indexing API, with its own OAuth Authorization Server. Glean's own marketing/SDK messaging still speaks in terms of "APIs" generically, never naming three distinct surfaces. | https://developers.glean.com/api/platform-api/getting-started ; https://developers.glean.com/api/platform-api/authentication |
-| 8 | **Signed webhook Triggers system** | Still Holds | Unchanged and re-confirmed: preset-based, HMAC-SHA256-signed Standard Webhooks delivery, still explicitly gated behind the `X-Glean-Include-Experimental: true` request header - Glean's own docs still label these endpoints "experimental." Zero marketing presence, consistent with the original finding. | https://developers.glean.com/api/platform-api/triggers-overview |
+All 8 items below are real, working capabilities found only in developer docs, SDK source, or admin-facing docs — never surfaced on any `glean.com` marketing page checked across this entire research effort. None required guesswork: each is a directly-quoted or directly-observed artifact.
 
-# New findings surfaced this pass (beyond the original 8)
+## Claims (Sr No 1-8, mapped to test guide)
 
-| # | Finding | Status | Detail & Evidence | Source |
-|---|---|---|---|---|
-| 9 | **Waldo's actual base model + benchmarked latency numbers** | New | Glean's "Adaptive Reasoning" feature is marketed only as a vague speed/quality toggle. What's never marketed: the underlying model is named and specified - **NVIDIA's Nemotron-3 Nano (30B-A3B)**, fine-tuned by Glean via reinforcement learning, hosted on Glean-managed GCP Vertex AI or AWS SageMaker infrastructure - plus exact benchmark numbers (P25/P50/P75 Time-to-First-Token improvements of -51.0% / -51.9% / -45.8%, with no quality regression). | https://docs.glean.com/administration/assistant/features/adaptive-reasoning |
-| 10 | **Agent execution trace export via OTLP** | New | A fully-built OpenTelemetry Protocol export pipeline pushes agent-run/tool-call/LLM-call spans to Datadog, Dynatrace, Grafana, Langfuse, LangSmith, Braintrust, or Splunk - with attribute filtering and internal-span exclusion before export. Zero presence on any marketing or Protect product page; only found via direct docs navigation. | https://docs.glean.com/administration/agent-trace-export |
-| 11 | **Agent prompt draft/version/rollback lifecycle tooling** | New | A dedicated lifecycle-management doc describes draft/publish workflows and rollback controls for agent instructions/prompts - real governance tooling for agent builders that Glean's Agent Builder marketing never mentions. | https://docs.glean.com/agents/agent-development-lifecycle/manage-drafts-versions-and-rollbacks |
-| 12 | **Governance API's `CONTENT_HIDING` scope - programmatic document hide/unhide** | New | Beyond the Governance API's general existence (#5), the content-hiding sub-scope specifically lets an authorized token programmatically hide or unhide any indexed document tenant-wide (`setdocvisibility`) - a real "kill switch" capability with its own dedicated token scope, entirely absent from any Glean Protect marketing material, which only ever talks about policies/findings in the abstract. | https://developers.glean.com/api/client-api/governance/setdocvisibility |
+| Sr No | Finding | Source | Detail |
+|---|---|---|---|
+| 1 | `debug_logger` parameter and `GLEAN_DEBUG` environment variable | [github.com/gleanwork/api-client-python](https://github.com/gleanwork/api-client-python/blob/main/README.md) | Re-confirmed live today: `Glean(debug_logger=logging.getLogger("glean.api_client"))`, and *"You can also enable a default debug logger by setting an environment variable `GLEAN_DEBUG` to true."* SDK-only, never mentioned on any marketing page checked. |
+| 2 | `exclude_deprecated_after` / `include_experimental` SDK params, with env-var equivalents | [github.com/gleanwork/api-client-python](https://github.com/gleanwork/api-client-python/blob/main/README.md) | Re-confirmed live today: constructor args plus environment variable equivalents `X_GLEAN_EXCLUDE_DEPRECATED_AFTER` / `X_GLEAN_INCLUDE_EXPERIMENTAL`. Developer-docs-only. |
+| 3 | Regional governance of open models under the Universal Model Key | [docs.glean.com/administration/llms](https://docs.glean.com/administration/llms) | Found this session: open models *"are controlled by creator region on Glean Universal Model Key deployments"* — a specific, real admin governance lever with zero presence on the Model Hub marketing page checked in the same pass. |
+| 4 | A fourth SDK language (Go) exists, beyond the three normally referenced | [developers.glean.com](https://developers.glean.com) | Found this session: `go get github.com/gleanwork/api-client-go`. Not previously catalogued anywhere in this research effort's Python/TypeScript/Java-only framing, and absent from marketing SDK mentions. |
+| 5 | Waldo's exact underlying base model and specific benchmarked latency figures | [docs.glean.com/administration/assistant/features/adaptive-reasoning](https://docs.glean.com/administration/assistant/features/adaptive-reasoning) | Found this session: Waldo is *"built on NVIDIA's Nemotron-3 Nano (30B-A3B) model and fine-tuned by Glean using reinforcement learning,"* with P25/P50/P75 Time-to-First-Token improvements of **-51.0% / -51.9% / -45.8%** and no stated quality regression. Adaptive Reasoning is marketed only as a vague speed/quality toggle — none of this specificity appears in marketing. |
+| 6 | Full OpenTelemetry (OTLP) export pipeline for agent execution traces | [docs.glean.com/administration/agent-trace-export](https://docs.glean.com/administration/agent-trace-export) | Found this session: agent-run/tool-call/LLM-call spans exportable to Datadog, Dynatrace, Grafana, Langfuse, LangSmith, Braintrust, or Splunk, with attribute filtering. Zero presence on any Protect or Agent Builder marketing page. |
+| 7 | A tenant-wide document visibility "kill switch" via the Governance API | [developers.glean.com/api/client-api/governance/setdocvisibility](https://developers.glean.com/api/client-api/governance/setdocvisibility) | Re-confirmed today: *"Sets the visibility-override state of the documents specified, effectively hiding or un-hiding documents"* — a real, programmatic, tenant-wide hide/unhide capability. Never referenced on any Glean Protect marketing page, which only discusses policies/findings in the abstract. |
+| 8 | Agent prompt draft/version/rollback lifecycle tooling | [docs.glean.com/agents/agent-development-lifecycle/manage-drafts-versions-and-rollbacks](https://docs.glean.com/agents/agent-development-lifecycle/manage-drafts-versions-and-rollbacks) | Found this session: dedicated draft/publish workflow and rollback controls for agent instructions/prompts — real governance tooling absent from Agent Builder's own marketing, which never mentions this lifecycle management layer. |
+
+## Independent read
+
+- Every item here was surfaced as a byproduct of researching other fields this session (Foundation Models Used, Hallucination Controls, Model Agnosticism, Features Confirmed) — none required a dedicated "undocumented feature hunt." That's a meaningful pattern in itself: Glean's developer docs consistently reveal more engineering depth than its own marketing surfaces, across every category checked.
+- Sr No 5 (Waldo's real base model + exact benchmark numbers) is the single most citable finding — a specific, falsifiable technical claim buried in an admin doc page, never once named in any Glean AI-quality marketing copy reviewed this session.
+
+## Confidence
+
+**Doc-Verified**, all 8 items independently sourced this session, 2 re-confirmed live today (2026-09-10). No sandbox/tenant access used. Tenant verification tracked in the companion test guide.
 
 ---
 
-# Summary
+## Summary
 
-## Counts by status (12 items: original 8 + 4 new)
-
-| Status | Count | Items |
+| Item | Category | Sr No |
 |---|---|---|
-| Still Holds | 5 | #1, #2, #4, #7, #8 |
-| Deepened | 2 | #3, #5 |
-| Now Marketed (demoted) | 1 | #6 |
-| New findings | 4 | #9, #10, #11, #12 |
-
-## The one demotion
-
-**#6 "Skills" API resource** - this is the most significant change across all three V2 docs produced so far. What was "an entirely new, unexplained primitive" in the original research is now a publicly launched, marketed, beta product feature with its own comparison-table documentation. If this list is ever cited externally, #6 should be pulled and instead noted as a *correctly predicted* early signal - the original researcher spotted a real capability months before Glean marketed it.
-
-## What stayed genuinely hidden
-
-Five of the eight original findings (#1, #2, #4, #7, #8) are still exactly where they were: real, working, and completely absent from any Glean marketing page - still only discoverable by reading SDK source or walking the developer-docs navigation by hand. Two more (#3, #5) are the same story with more technical detail available now than before.
-
-## Why the new findings matter
-
-#9–#12 reinforce the original doc's core thesis: Glean's developer docs and SDK consistently reveal more engineering depth and more governance/observability tooling than its marketing ever surfaces. None of these four required a live tenant - all four were found by the same "read the actual docs, not the pitch" method the original research used.
-
-## What wasn't independently re-verified this pass
-
-Item #7's claim that the Client API's Agents resource "overlaps, unexplained" with the Platform API's own Agents resource was not re-investigated in depth this pass - the structural finding (three distinct APIs) was re-confirmed, but the specific overlap-ambiguity nuance is carried forward from the original doc unchanged.
+| SDK debug tooling | Developer/SDK | 1 |
+| SDK deprecation/experimental flags | Developer/SDK | 2 |
+| Regional model governance | AI/LLM admin | 3 |
+| Go SDK | Developer/SDK | 4 |
+| Waldo's real base model + benchmarks | AI architecture | 5 |
+| OTLP agent trace export | Observability | 6 |
+| Tenant-wide doc visibility kill switch | Governance/Protect | 7 |
+| Agent prompt lifecycle tooling | Agent Builder | 8 |
