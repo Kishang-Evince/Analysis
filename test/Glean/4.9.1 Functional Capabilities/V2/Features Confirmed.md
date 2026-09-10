@@ -1,162 +1,121 @@
-# 4.9.1 Features Confirmed - SDK Deep Dive Admin Test Guide
+# 4.9.1 Features Confirmed — Independent Research Test Guide
 
-**Purpose:** Hands-on tenant/API verification for all 65 re-verified features in the companion research doc [V2/Features Confirmed.md](../../../../Glean/Combined/4.9.1%20Functional%20Capabilities/V2/Features%20Confirmed.md). This guide upgrades any `Confirmed-Local-Only`, `Confirmed-Live-Only`, or `Unverifiable` item to fully `Tested` against a live tenant, and re-confirms everything else.
+**Purpose:** Hands-on tenant verification of every claim in the companion research doc [V2/Features Confirmed.md](../../../../Glean/Combined/4.9.1%20Functional%20Capabilities/V2/Features%20Confirmed.md). All 49 claims there are doc-sourced only, publicly readable, no login — this guide upgrades each to `Tested` against a live tenant. Written so someone with no prior context on this project can pick it up and run it.
 
-**Tenant entry:** `https://app.glean.com` → Admin Console
+**Tenant entry:** `https://app.glean.com` (regular use) · Admin Console for anything under Security/AI-LLM/Architecture sections
 **Companion research doc:** [V2/Features Confirmed.md](../../../../Glean/Combined/4.9.1%20Functional%20Capabilities/V2/Features%20Confirmed.md)
-**Related guide (broader Field 1 sweep):** [../Features Confirmed.md](../Features%20Confirmed.md) · **Section pre-flight:** [../Pre-Flight.md](../Pre-Flight.md) · **Sister deep dives:** [Features Not Confirmed.md](Features%20Not%20Confirmed.md) · [Undocumented Features.md](Undocumented%20Features.md)
+**Base field doc (untouched, original):** [../Features Confirmed.md](../../../../Glean/Combined/4.9.1%20Functional%20Capabilities/Features%20Confirmed.md) · **Section pre-flight:** [../Pre-Flight.md](../Pre-Flight.md)
 
-**Tenant test stack (in scope):** Notion, Microsoft Teams, Outlook, OneDrive, Gmail, Google Drive, Google Docs, Google Sheets.
-**Out of scope for UI walkthroughs (API/SDK-only checks still apply where noted):** Salesforce, Slack, Jira, Confluence, Snowflake/BigQuery, GitHub.
+**Prerequisites (what you need before starting):**
+- Normal Glean Chat/Search access for Sr No 1-19.
+- Admin access to the Admin Console (Models, Connectors, Glean Protect, Security) for Sr No 9-14, 28-49.
+- A terminal with `curl`/Python and an API token for Sr No 20-27 (developer-platform checks).
+- Two test documents in different source systems for Sr No 6, 30, 38 (permission/sync checks).
 
----
+**Sr No mapping:** Sr No 1-49 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Features Confirmed.md](../../../../Glean/Combined/4.9.1%20Functional%20Capabilities/V2/Features%20Confirmed.md#search--retrieval--sr-no-1-8) — same number, same feature, doc-sourced there / tenant-tested here.
 
-## 0. Pre-Flight (do once - same setup as the main Admin Test Guide)
+**How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes on exactly what you observed. "Pass" means you personally saw it happen in your own tenant — not that the docs say so.
 
-1. Login `https://app.glean.com` → Admin Console. Confirm access to **Platform**, **Assistant**, **Users & permissions**, **Glean Protect**, **Management**, **About Glean**.
-2. Copy **Server instance URL** from **Admin Console → About Glean** (e.g. `https://<instance>-be.glean.com`) - needed for every API/curl step below.
-3. Generate a **user-scoped API token** (Admin → developer/API settings) and, separately, a **Glean-issued (service) token** for `X-Glean-ActAs` tests.
-4. Identities: **Admin A** (Super Admin), **User B** (Member, no special access - permission-negative tests), **User C** (Member, optional).
-5. Test content pack (reuse from main guide, add items marked *new for this guide*):
-   - Private OneDrive/Drive file, owner-only: `FY27_Exec_Compensation.xlsx`
-   - Shared: `Stratos_Connector_Test_Doc` (Google Doc), `Stratos_Connector_Test_Sheet` (Sheet), `Exhibit_A_SOW_Stratos.pdf`
-   - Notion page shared with Glean integration, same project name
-   - Gmail + Outlook messages, Teams channel message referencing the project name
-   - *New:* a second Notion page **not yet shared** with the integration (for #5/#9 federated vs. indexed contrast, and #2/#42 MCP checks)
-   - *New:* a Jira or Salesforce sandbox login if available (Actions/action-pack checks, #44) - otherwise mark those steps `Blocked (no sandbox)`
-
-**Scorecard for every row below:** `Pass | Fail | Partial | Blocked` + latency/trace-ID + notes → paste into the research doc's per-item Confidence column (upgrade to `Tested`).
+**Effort column:** each row lists an estimated time to complete plus a difficulty tag — `Easy` (routine UI/search use, quick to judge) or `Hard` (needs terminal/API work, admin access, or multi-step setup) — so you can plan which rows to tackle first.
 
 ---
 
-## Section 1 - Search & Retrieval (items #1–#9)
+## Section 1 — Search & Retrieval — Sr No 1-8
 
-| # | Feature | Test Step | Result | Notes |
-|---|---|---|---|---|
-| 1 | Hybrid search (semantic+BM25) | Search an exact phrase from `Stratos_Connector_Test_Doc`, then search a paraphrase/synonym of the same phrase. Both should return the doc. | | Exact-match-only = keyword-only, not hybrid |
-| 2 | AI-powered relevance ranking | Search a common term appearing in 3+ test docs; confirm the most-recently-edited/most-relevant one ranks first, not just alphabetical/oldest | | |
-| 3 | Faceted filtering | In Search UI, apply a source/app filter (e.g. "Google Drive only") and a date filter; confirm result set narrows correctly | | Or via API: `facet_filters` on `app`/`type`/`last_updated_at` |
-| 4 | Autocomplete / search suggestions | Type first 4–5 characters of a test doc title into the search bar; confirm suggestion dropdown appears before pressing Enter | | Or `curl .../autocomplete` |
-| 5 | Federated search (multi-instance) | **API-only:** call `search.query()` against two different `server_url`s (prod + sandbox instance, if a second tenant exists) with the same query; confirm both return independently. If only one tenant available, mark `Blocked (single-tenant)` and instead verify the code path compiles against the SDK sample. | | See research doc #5 caveat on overloaded term |
-| 6 | Click-feedback loop | Run a search, click a result, then `POST /rest/api/v1/feedback` with that result's `tracking_token` and `event: CLICK` via curl/SDK; confirm `200 OK` | | |
-| 7 | Permission-aware retrieval | As **User B** (no access to `FY27_Exec_Compensation.xlsx`), search its unique content string - expect zero hits. As owner, same search - expect a hit. | | Core ACL test - do not skip |
-| 8 | Knowledge Graph | Open **People** page, search a known colleague; confirm related docs/activity/expertise surface (not just a directory entry) | | |
-| 9 | Real-time / Live Mode indexing | Edit a test doc, then immediately re-search the new content. Note the lag. For O365 connectors, check **Admin → Connectors → SharePoint/OneDrive → Live Mode** toggle state. | | Live Mode ≠ instant for all connectors - record actual lag |
+| Sr No | Feature | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 1 | Relevance ranking | Search a common term appearing in 3+ documents; confirm the most relevant/recent one ranks first, not just alphabetical order. | Most-relevant result ranks first. | | | ~10 min, Easy |
+| 2 | Faceted filtering | In Search UI, apply a source/date filter and confirm the result set narrows correctly. | Filtered results match the chosen facet. | | | ~10 min, Easy |
+| 3 | Autocomplete | Type the first 4-5 characters of a known document title into the search bar. | Suggestion dropdown appears before pressing Enter. | | | ~5 min, Easy |
+| 4 | Federated search (multi-instance) | If a second Glean instance/tenant is available, run the same query against both and confirm both return independently. Otherwise mark `Blocked (single-tenant)`. | Both instances return results independently. | | | ~15 min, Hard (needs a second tenant) |
+| 5 | Click-feedback loop | Click a search result, then check (via API/trace if visible) that a feedback event was recorded against its `trackingToken`. | A feedback/click event is recorded. | | | ~15 min, Hard (needs API/trace visibility) |
+| 6 | Permission-aware retrieval | As a user with no access to a private test document, search its unique content — expect zero hits; as the owner, same search — expect a hit. | Non-owner gets no hits, owner does. | | Core ACL test — don't skip | ~15 min, Easy |
+| 7 | Cursor-based pagination | Call search with a small page size across 3+ pages using the returned cursor; confirm no duplicate/skipped results. | Clean pagination, no dupes/gaps. | | | ~15 min, Hard (needs API access) |
+| 8 | Rate-limit handling | Fire a burst of requests exceeding the documented rate limit; confirm a `429` with retry-friendly behavior, not a crash. | Graceful `429`, not an unhandled failure. | | Stop after confirming one `429` — don't sustain the burst | ~15 min, Hard (needs API access) |
 
-## Section 2 - AI / LLM Capabilities (items #10–#19)
+## Section 2 — AI / LLM Capabilities — Sr No 9-14
 
-| # | Feature | Test Step | Result | Notes |
-|---|---|---|---|---|
-| 10 | Multi-model support | **Admin → Platform → Models (Model Hub)** - list all enabled providers/models; confirm ≥2 distinct providers (e.g. OpenAI + Anthropic or + Gemini) present | | |
-| 11 | Model Hub / LLM routing (existence) | Run a trivial chat (`"What is today's date?"`) and a complex chat (long SOW analysis); check usage/token dashboard for which model served each | | Routing *logic* itself stays unconfirmed if dashboard doesn't expose it |
-| 12 | Guardrails | In **Admin → Glean Protect**, locate topic-restriction/content policy settings; attempt a chat prompt that should trip a configured policy (if any is enabled) and confirm a block/warning | | |
-| 13 | Citation generation / grounding | Ask Assistant to summarize `Stratos_Connector_Test_Doc`; confirm inline citation links back to the exact source doc | | |
-| 14 | Tool calling / function calling | Trigger an agent/chat action that calls an external tool (e.g. "create a Google Doc from this summary"); confirm a tool-call step is visible in the trace | | |
-| 15 | RAG implementation | Same as #13 - confirm the answer text is grounded in retrieved content, not a hallucinated summary (spot-check one fact against the source doc) | | |
-| 16 | Workflow engine (agent-side) | In Agent Builder, create a Workflow-mode agent with 2+ ordered steps; run it; confirm steps execute in order | | |
-| 17 | Explainability (citation-based) | Same as #13 - confirm this is the extent of "explainability" (no separate decision-log UI should be expected) | | |
-| 18 | Streaming chat responses | Call `/rest/api/v1/chat/stream` (or SDK `create_stream`) via curl/SDK; confirm chunked/SSE response instead of single blocking reply | | |
-| 19 | Agent memory (session-level) | Send 2 chat messages with the same `chat_id`; confirm the 2nd response references context from the 1st (e.g. "as I mentioned above"). Then start a **new** chat_id and confirm no memory carries over. | | Confirms session-only, not long-term |
+| Sr No | Feature | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 9 | Model Hub multi-model support | **Admin Console → Platform → Models** — confirm multiple providers (OpenAI, Google, Anthropic, Amazon) are listed. | 2+ distinct providers present. | | | ~10 min, Easy |
+| 10 | Universal Key vs. BYOK | Confirm which key type your tenant uses, and that the setting is visible/configurable in Model Hub settings. | Key type is identifiable in the admin UI. | | | ~10 min, Easy |
+| 11 | Regional governance of open models | Look for a region-based control on open-model availability under Universal Key settings. | Region control is present (Universal Key tenants only). | | Mark `Blocked` if on Customer Key | ~15 min, Hard |
+| 12 | Protect / Protect+ tiers | Confirm which tier (Protect vs Protect+) your tenant has under **Admin Console → Glean Protect**. | Tier is identifiable. | | | ~10 min, Easy |
+| 13 | Multiple model categories | Confirm at least one text model and one image-generation model both appear in Model Hub. | Both categories present. | | | ~10 min, Easy |
+| 14 | Glean's own model in the catalog | Confirm Glean's proprietary model appears as a normal Model Hub entry, not a separate screen. | Listed alongside third-party models. | | | ~5 min, Easy |
 
-## Section 3 - Agents & Automation (items #20–#26)
+## Section 3 — Agents & Automation — Sr No 15-19
 
-| # | Feature | Test Step | Result | Notes |
-|---|---|---|---|---|
-| 20 | No-code Agent Builder UI | Open **Agents → Agent Builder**; create a simple agent purely through UI forms (no code) | | |
-| 21 | Code-based Agents API | Via curl/SDK: `create_agent`, `get_agent`, `edit_agent` (draft), `search_agents` - confirm each returns expected status codes | | |
-| 22 | Cross-framework Agent Toolkit | `pip install glean-agent-toolkit[langchain]` (or `[crewai]`/`[openai]`) in a scratch venv; import `search.as_langchain_tool()`; confirm no import errors | | |
-| 23 | Direct API Integration path | Build a minimal custom script calling Agents API directly (no toolkit/framework) to run an existing agent | | |
-| 24 | NVIDIA NIM integration example | Read-through check only (no NIM sandbox expected): confirm the official example guide's code is internally consistent/runnable against the current SDK version | | Mark `Blocked (no NIM env)` if no infra |
-| 25 | Formal Agent Specification | Draft one agent's instructions following the spec guide's conventions (role statement, ordered steps); confirm Agent Builder accepts it without validation errors | | |
-| 26 | Webhook / Triggers system | Call `platform-trigger-presets-list` with header `X-Glean-Include-Experimental: true`; confirm preset list returns. Retry **without** the header; confirm it 404s/is hidden. | | Confirms experimental-flag gating |
+| Sr No | Feature | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 15 | No-code Agent Builder | Create a simple agent purely through UI forms, no code. | Agent created without writing code. | | | ~15 min, Easy |
+| 16 | Direct API Integration | Via curl/SDK, call the Agents API directly to create/run a minimal agent, no framework. | Succeeds without any framework installed. | | | ~20 min, Hard |
+| 17 | LangChain integration | `pip install glean-agent-toolkit[langchain]`; import and invoke as a LangChain tool. | No import errors, real results returned. | | | ~20 min, Hard |
+| 18 | MCP integration | Add Glean's MCP server to Cursor/Claude Desktop; ask a tenant-specific question. | Tenant-grounded answer returned. | | | ~20 min, Hard |
+| 19 | Agent Toolkit cross-framework | Repeat Sr No 17 with `[crewai]` or `[openai]` instead of `[langchain]`. | Same tool works under the second framework. | | | ~15 min, Hard |
 
-## Section 4 - APIs & Developer Platform (items #27–#35)
+## Section 4 — APIs & Developer Platform — Sr No 20-27
 
-| # | Feature | Test Step | Result | Notes |
-|---|---|---|---|---|
-| 27 | Three REST APIs | Call one endpoint each from Client API (`/rest/api/v1/search`), Platform API (`/api/agents/search`), and Indexing API (`/api/index/v1/...`); confirm all three respond (even if 401 without proper token - proves the surface exists) | | |
-| 28 | "Skills" API resource | Call `platform-skills-list`; confirm a (possibly empty) skills array returns, not a 404 | | |
-| 29 | OAuth2 + API key auth | Call the same endpoint once with a Glean-issued API token, once via OAuth bearer token; confirm both succeed | | |
-| 30 | Documented rate limiting | Fire ~35 requests/minute at `/search` (exceeding the 30 qpm doc'd limit) from a scratch script; confirm a `429` appears with backoff-friendly headers | | Stop on sustained 429 - see Safety Rules |
-| 31 | Typed error handling | Force a `422` (e.g. call an agent tool requiring OAuth the test user hasn't granted) via SDK; confirm the exception object exposes `.status_code` / `.raw_response`, not just a generic string | | |
-| 32 | Bulk indexing endpoints | Call the Indexing API's bulk-index/bulk-shortcut endpoint with 2–3 dummy documents against a test datasource; confirm batch acceptance | | Use a disposable custom datasource - do not touch prod indices |
-| 33 | Pagination (cursor-based) | Call `search.query()` with `page_size=1` across 3+ pages using the returned `cursor`; confirm no duplicate/skipped results | | |
-| 34 | Deprecation policy + changelog | Call an endpoint with `include_experimental`/`exclude_deprecated_after` params set; confirm behavior changes vs. the default call | | |
-| 35 | SDK release cadence | `pip install --upgrade glean-api-client` in a scratch venv; confirm the installed version matches the latest PyPI release found live (re-check exact version against [pypi.org/project/glean-api-client](https://pypi.org/project/glean-api-client/)) | | Note beta status - pin in real projects |
+| Sr No | Feature | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 20 | Three REST API surfaces | Call one endpoint each from Client, Platform, and Indexing APIs; confirm all three respond (even a 401 proves the surface exists). | All 3 surfaces respond. | | | ~20 min, Hard |
+| 21 | Python SDK | `pip install glean-api-client` in a scratch venv; confirm it installs and imports cleanly. | Clean install/import. | | | ~10 min, Hard |
+| 22 | TypeScript/JS SDK | `npm install @gleanwork/api-client`; confirm clean install. | Clean install. | | | ~10 min, Hard |
+| 23 | Java SDK | Add `com.glean.api-client` to a scratch Maven/Gradle project; confirm it resolves. | Dependency resolves. | | | ~15 min, Hard |
+| 24 | **Go SDK (newly found)** | `go get github.com/gleanwork/api-client-go` in a scratch module; confirm it resolves. | Module resolves cleanly. | | This SDK wasn't in earlier catalogues — worth confirming it's genuinely usable, not just listed | ~15 min, Hard |
+| 25 | Web SDK | Install `@gleanwork/web-sdk` in a scratch frontend app; mount a search box component. | Component renders and queries. | | | ~20 min, Hard |
+| 26 | Indexing SDK | Walk through the Indexing SDK quickstart; push one dummy document to a disposable custom datasource. | Document indexed successfully. | | Use a disposable datasource — don't touch prod indices | ~25 min, Hard |
+| 27 | Remote MCP server for coding assistants | Add Glean's MCP server to Cursor/Claude Code; confirm it connects and answers a tenant-specific query. | Tenant-grounded answer via MCP. | | Same underlying capability as Sr No 18 — reuse if already tested | ~15 min, Hard (or ~0 min if reused) |
 
-## Section 5 - Connectors & Integrations (items #36–#44)
+## Section 5 — Connectors & Integrations — Sr No 28-30
 
-| # | Feature | Test Step | Result | Notes |
-|---|---|---|---|---|
-| 36 | 275+ connectors (current) | **Admin → Platform → Connectors → Add connector** - open the full catalog list and spot-count/scroll to confirm the catalog is materially larger than 100 (rough visual confirmation, not exact count) | | Research doc already confirms 275+ live; this is a tenant-side sanity check |
-| 37 | Salesforce/M365/Teams/Outlook/Google Workspace/Slack | Confirm each in-scope connector (Teams, Outlook, OneDrive, Gmail, Drive) shows **Healthy** status; for out-of-scope (Salesforce/Slack) just confirm they exist in the catalog list even if not connected | | |
-| 38 | Jira/Confluence/GitHub/Zendesk/ServiceNow | Confirm presence in connector catalog (existence only - out of tenant test-stack scope for a live connect) | | |
-| 39 | Snowflake/Databricks/Box/Dropbox/Notion | Confirm Notion connector **Healthy**; confirm others present in catalog | | |
-| 40 | Open-source Indexing SDK | `pip install glean-indexing-sdk` (or equivalent) in a scratch venv; walk through the quickstart to push one dummy document to a disposable custom datasource | | |
-| 41 | MCP client (gateway, ~178 servers) | **Admin → Platform → MCP → External MCP servers** - open the supported-servers picker; confirm the live count roughly matches the ~176–178 range found in research, and spot-connect one (e.g. Atlassian or GitHub) via the gateway | | |
-| 42 | MCP server (Glean hosts its own) | Add Glean's MCP server URL to Cursor/Claude Desktop `mcpServers` config; prompt `"Search Glean for our onboarding guide"`; confirm tenant-grounded (not generic) answer returns | | Dual-direction MCP: this tests the "Glean as MCP server" half; #41 tests "Glean as MCP client" half |
-| 43 | LangChain integration | Same as Section 3 #22 - reuse that test; additionally confirm the Agents API's LangChain Agent Protocol compatibility by pointing a generic LangChain-protocol client at `/rest/api/v1/agents` | | |
-| 44 | 12 first-party action packs | **Admin → Platform → Actions** - list all configured action packs; count and compare against the "first-party 12" list (Jira, Confluence, Salesforce, Slack, GitHub, Zendesk, Google Workspace, Microsoft 365, Snowflake, Databricks, Calendar Search, Code Writer) vs. the full catalog (which research found is larger). Enable one write action (e.g. Google Docs) end-to-end: ask Assistant to draft a doc, confirm human-in-the-loop confirmation prompt appears before it executes. | | Confirms both the count caveat AND the write-confirmation UX from the research doc's "newly-found" section |
+| Sr No | Feature | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 28 | 275+ connectors | **Admin Console → Platform → Connectors → Add connector** — scroll/count to confirm the catalog is materially larger than 100. | Catalog visibly much larger than 100. | | Rough visual confirmation, not exact count | ~10 min, Easy |
+| 29 | Named connector breadth | Confirm at least 3 of the named example connectors (e.g. GitHub, Gong, Asana) actually appear in the catalog. | 3+ named examples found. | | | ~10 min, Easy |
+| 30 | Real-time sync + inherited permissions | Add/edit a test document in a connected source; confirm it appears in Glean search within the documented sync window, with the same permissions as the source. | Document appears, permissions match source. | | | ~20 min, Hard (needs a live connector + wait for sync) |
 
-## Section 6 - Security, Compliance & Governance (items #45–#58)
+## Section 6 — Security, Compliance & Governance — Sr No 31-45
 
-| # | Feature | Test Step | Result | Notes |
-|---|---|---|---|---|
-| 45 | SOC 2 Type II | Request the SOC 2 report via `trust.glean.com` (Trust Portal, requires NDA) - log whether access was grantable within the engagement, not the report contents | | Cannot be tenant-tested; procurement/legal action item |
-| 46 | ISO 27001 | Same Trust Portal request pattern as #45 | | |
-| 47 | ISO 42001 (AI Management) | Same Trust Portal request pattern as #45 | | |
-| 48 | HIPAA + BAA availability | Ask Glean account team directly for a BAA draft; log whether one was produced | | Procurement action item, not a UI test |
-| 49 | FedRAMP (in progress) vs. TX-RAMP | **Do not** rely on marketing claims - ask the Glean account team directly: "What is your current FedRAMP status, and is TX-RAMP Level 2 your only current government-adjacent certification?" Log the verbatim answer. | | Research doc found TX-RAMP ≠ FedRAMP - verify this distinction is understood by the sales/security team you're working with |
-| 50 | GDPR / PCI DSS | Ask account team to confirm PCI DSS status explicitly (research found no public PCI DSS badge - likely N/A for a non-payment-processing product, but get it in writing) | | |
-| 51 | Encryption at rest & in transit | Ask Trust Portal / security team for the specific encryption standards (e.g. AES-256, TLS 1.2+) in writing | | |
-| 52 | RBAC | **Admin → Users & permissions → User roles** - confirm at least 2 distinct roles exist (Admin, Member) and that a Member cannot access Admin Console pages | | |
-| 53 | SSO support | **Admin → Users & permissions → SSO** - confirm Okta or SAML config screen is present and (if you have a test IdP) walk through one login | | |
-| 54 | SIEM integration, DLP | **Admin → Management → Audit logs** - confirm CSV export works and check for a SIEM-streaming config option. For DLP: check **Admin → Glean Protect → Sensitive findings** for any populated findings | | |
-| 55 | Data residency options | Ask account team which region(s) your tenant is hosted in and whether alternate regions are available | | |
-| 56 | Customer-managed encryption keys | Ask account team if CMEK is available for your deployment tier/plan | | Often Enterprise-tier-only |
-| 57 | Zero Trust architecture | **Downgraded in research** - do not accept "Zero Trust" as a Glean-branded term. Instead verify the three actual named principles (permission mirroring, centralized administration, traceability) via a live walkthrough: confirm #7's ACL test, confirm Admin Console is the single control plane, confirm audit logs capture the actions taken during this test session. | | |
-| 58 | Glean Protect / AWARE framework | **Admin → Glean Protect** - walk through sensitive-content findings, topic restrictions, and agent guardrail settings screens; confirm they are live, configurable pages (not "coming soon" placeholders) | | |
+| Sr No | Feature | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 31 | SOC 2 Type II | Request the report via Trust Portal (NDA likely required) — confirm whether access was grantable. | Report requestable/grantable. | | Procurement action item, not a UI test | ~15 min, Hard (external process) |
+| 32 | ISO 27001 | Same Trust Portal request pattern as Sr No 31. | Same as above. | | | ~10 min, Hard |
+| 33 | ISO 42001 | Same Trust Portal request pattern. | Same as above. | | | ~10 min, Hard |
+| 34 | HIPAA | Ask account team for a BAA draft; confirm one is produced. | BAA draft produced. | | | ~15 min, Hard (external process) |
+| 35 | GDPR | Confirm GDPR badge/statement on the public security page and ask account team to confirm applicability to your region. | Confirmed on page + by account team. | | | ~10 min, Easy |
+| 36 | TX-RAMP Level 2 | Confirm badge on public security page; ask account team whether this (not FedRAMP) is the current government-adjacent cert. | Confirmed TX-RAMP, not FedRAMP. | | | ~10 min, Easy |
+| 37 | SSO-based identity verification | **Admin Console → Users & permissions → SSO** — confirm an SSO provider is configured and test one login. | Login via SSO succeeds. | | | ~15 min, Easy |
+| 38 | Source-system permission enforcement | Same as Sr No 6 — reuse that result. | Same as Sr No 6. | | | ~0 min (reused) |
+| 39 | Sensitive-content detection | **Admin Console → Glean Protect → Sensitive findings** — confirm the page is live/configurable, not a placeholder. | Live, configurable screen. | | | ~10 min, Easy |
+| 40 | Topic restrictions | Same section — confirm a topic-restriction policy can be created. | Policy creation succeeds. | | | ~15 min, Easy |
+| 41 | Runtime threat protection | Confirm the AI security policy category exists for prompt injection/malicious code/harmful content. | Category present. | | | ~10 min, Easy |
+| 42 | Action alignment | Look for a policy or setting checking agent actions against user intent/authority, distinct from a plain permission check. | Distinct control found. | | | ~15 min, Hard |
+| 43 | Prompt injection detection accuracy | Cross-check the 96.9% figure on the live security page — confirm it matches. | Figure matches exactly. | | Same check as Prompt Engineering Access field Sr No 7 — reuse if done | ~10 min, Easy (or ~0 min if reused) |
+| 44 | Always-on audit logging | **Admin Console → Management → Audit logs** — confirm logs capture the actions taken during this test session. | Your own test actions appear in the log. | | | ~15 min, Easy |
+| 45 | "Zero Trust" absence check | Search the security-principles page for "Zero Trust" in body copy (not meta/SEO tags). | Term absent from body copy. | | Confirms the finding rather than contradicts it | ~10 min, Easy |
 
-## Section 7 - Architecture & Infrastructure (items #59–#65)
+## Section 7 — Architecture & Infrastructure — Sr No 46-49
 
-| # | Feature | Test Step | Result | Notes |
-|---|---|---|---|---|
-| 59 | Documented end-to-end architecture | Documentation review only - no tenant UI exposes internal pipeline. Confirm the security architecture doc tree (ingestion/processing/query) is still live at `docs.glean.com/security/architecture/`. | | |
-| 60 | Connector framework | Documentation review - confirm `developers.glean.com` Indexing SDK's architecture/connector-types pages are still live | | |
-| 61 | Inference infra (AWS Bedrock path) | Ask account team if your specific deployment uses AWS Bedrock, and whether a current (non-2023) architecture reference exists | | Flagged as dated in research - worth a direct question |
-| 62 | Document processing pipeline (OCR/multimodal) | Upload a scanned-image PDF and a native PDF with the same text to a test connector; search for unique text; confirm whether OCR extraction actually works (this is the specific unconfirmed sub-claim) | | This directly tests the still-open gap noted in research |
-| 63 | Caching layer | Run the identical search query twice in quick succession; compare latency (2nd call should be faster if server-side caching exists) - note this only tests observable behavior, not internals | | |
-| 64 | Multi/single-tenant/customer-hosted options | Ask account team to confirm which deployment model your contract uses, and whether alternates were offered during procurement | | |
-| 65 | SSO & identity (Okta, Microsoft) | Same as #53 - additionally confirm SAML config screen explicitly supports Microsoft Entra ID/ADFS metadata upload | | |
+| Sr No | Feature | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 46 | Documented 3-stage pipeline | Confirm the ingestion/processing/query architecture doc tree is live at `docs.glean.com/security/architecture/`. | Doc tree live and matches the 3 stages. | | | ~10 min, Easy |
+| 47 | MCP context provisioning is "upcoming," not live | Ask your account team directly whether MCP-based context provisioning (as an ingestion path) is available today in your tenant. | Account team confirms it's not yet available. | | | ~10 min active + wait for reply, Easy |
+| 48 | **Correction: no structured warehouse ingestion** | Ask your account team to confirm in writing whether Snowflake/Databricks data is ever ingested/indexed as structured data, or only accessed via action-pack/tool calls. | Account team confirms no structured-data indexing occurs. | | This directly tests the correction found in research — get it in writing | ~10 min active + wait for reply, Easy |
+| 49 | Per-tenant dedicated cloud project | Ask your account team to confirm connectors run in your tenant's own dedicated cloud project, not a shared one. | Confirmed dedicated, not shared. | | | ~10 min active + wait for reply, Easy |
 
 ---
 
 ## Result Rollup
 
-After completing all sections, copy the Pass/Fail/Partial/Blocked tally back into [V2/Features Confirmed.md](../../../../Glean/Combined/4.9.1%20Functional%20Capabilities/V2/Features%20Confirmed.md) by upgrading each row's Confidence tag:
-
-- `Pass` → append `+ Tested (tenant, 2026-XX-XX)` to the existing tag
-- `Fail` → move the item to a new "Regressed on live tenant" note; do not silently delete from the 65-count
-- `Partial`/`Blocked` → keep existing tag, add the blocker reason (e.g. "no NIM sandbox", "Trust Portal NDA required")
+Once every row above has a Result filled in, copy the Pass/Fail/Partial/Blocked counts back into the companion research doc [V2/Features Confirmed.md](../../../../Glean/Combined/4.9.1%20Functional%20Capabilities/V2/Features%20Confirmed.md): for each `Pass` row, append `+ Tested (tenant, 2026-XX-XX)` to that row's Confirmation Detail cell; for anything else, add a short note on what blocked it or what actually happened instead.
 
 | Section | Items | Pass | Fail | Partial | Blocked |
 |---|---|---|---|---|---|
-| 1. Search & Retrieval | 9 | | | | |
-| 2. AI/LLM | 10 | | | | |
-| 3. Agents & Automation | 7 | | | | |
-| 4. APIs & Dev Platform | 9 | | | | |
-| 5. Connectors & Integrations | 9 | | | | |
-| 6. Security/Compliance/Governance | 14 | | | | |
-| 7. Architecture & Infrastructure | 7 | | | | |
-| **Total** | **65** | | | | |
-
----
-
-## Safety Rules
-
-1. Do not exceed the documented rate limit (30 qpm search token-bucket) intentionally beyond one controlled 429-trigger test (#30) - stop on first sustained 429.
-2. Use disposable custom datasources for bulk-indexing tests (#32, #40) - never point at production indices.
-3. Do not share the private ACL test file (`FY27_Exec_Compensation.xlsx`) beyond the intended owner - this breaks #7 and #57's negative test.
-4. `X-Glean-ActAs` and Glean-issued service tokens are break-glass credentials - store in a secrets manager, never commit.
-5. Security/compliance items #45–#51, #55–#56, #61, #64 are **procurement/account-team questions**, not self-serve UI tests - route them accordingly and log the answers as evidence, not as a UI pass/fail.
-6. Section 6 items requiring Trust Portal access need an NDA - confirm this is in place before the engagement, or expect those rows to stay `Blocked`.
+| 1. Search & Retrieval | 8 | | | | |
+| 2. AI / LLM Capabilities | 6 | | | | |
+| 3. Agents & Automation | 5 | | | | |
+| 4. APIs & Developer Platform | 8 | | | | |
+| 5. Connectors & Integrations | 3 | | | | |
+| 6. Security, Compliance & Governance | 15 | | | | |
+| 7. Architecture & Infrastructure | 4 | | | | |
