@@ -3,7 +3,7 @@
 
 *Independent research, sources picked and read fresh this pass, cross-checked 2026-09-09 against `docs.glean.com`. Field definition: "Ability to restrict access down to row, document, or field levels, inheriting source permissions." Base file at [`../Access Control Granularity.md`](../Access%20Control%20Granularity.md) left untouched — this is a standalone V2 doc, not an edit of it.*
 
-**Sr No mapping:** rows 1-7 below map 1:1 to the same Sr No in the companion test guide [test/V2/Access Control Granularity.md](../../../../test/Glean/4.9.5%20Compliance%20&%20Regulatory/V2/Access%20Control%20Granularity.md) — same number, same claim, doc-sourced here / tenant-tested there.
+**Sr No mapping:** rows 1-10 below map 1:1 to the same Sr No in the companion test guide [test/V2/Access Control Granularity.md](../../../../test/Glean/4.9.5%20Compliance%20&%20Regulatory/V2/Access%20Control%20Granularity.md) — same number, same claim, doc-sourced here / tenant-tested there. Rows 8-10 added 2026-09-14 — found via a full-corpus sweep of this project's local Glean documentation crawl, never cited by this field's original research pass (see scrap/GLEAN_RESEARCH_MEMORY.md).
 
 ---
 
@@ -11,7 +11,7 @@
 
 The field's own definition names three granularity levels — row, document, field — and the honest answer splits sharply between them. **Row/document-level** permission inheritance is comprehensive and well-documented (Salesforce's full sharing-construct stack is mirrored). **Field-level** is explicitly, currently **not enforced** — a direct vendor admission: *"Today, FLS is not enforced at query time"* — meaning field-restricted content can leak into Glean search/AI answers for any user who has record-level access, unless an admin proactively excludes those fields from indexing.
 
-## Claims (Sr No 1-7, mapped to test guide)
+## Claims (Sr No 1-10, mapped to test guide)
 
 | Sr No | Claim | Source | Detail |
 |---|---|---|---|
@@ -22,6 +22,9 @@ The field's own definition names three granularity levels — row, document, fie
 | 5 | Row/document-level and field-level granularity are not uniformly supported — the field's own three-way definition (row, document, field) does not get one uniform answer | Synthesis of claims 1-3 | Row/document: strong, comprehensive, automatic. Field: explicitly not automatic, requires manual admin mitigation. A flat "yes, Glean supports granular access control" answer would materially overstate the field-level half of this capability. |
 | 6 | Even row/document-level permission enforcement is not instantaneous — dynamic enforcement has real-world latency, cross-referenced from this project's own prior connector research | Cross-referenced from this project's own Native Connectors V2 research, not re-derived fresh this pass | Refresh/crawl rates vary by connector, from `<5m` (webhook-driven, e.g. Jira, Slack) to `1h`+ (e.g. Teams, Zoom) — a permission change at the source doesn't instantly propagate to Glean's index; there is a real, connector-dependent lag before newly-restricted (or newly-granted) content is correctly reflected in search results. |
 | 7 | It is not confirmed whether the same field-level-security gap found for Salesforce applies to other connectors with similarly tiered field-security models (e.g. SharePoint, ServiceNow) — this specific finding is Salesforce-scoped only | Absence checked — no equivalent statement found for other connectors this pass | The FLS admission (claims 2-3) was found specifically on the Salesforce connector's own documentation page. No parallel statement was found (or specifically searched exhaustively) for other connectors this pass — a buyer relying on field-level security in a different source system should ask Glean directly whether the same caveat applies there, rather than assuming it's Salesforce-specific or universal. |
+| 8 | Glean provides a dedicated admin "Document lookup" tool that directly answers "can user X see document Y" — a real, purpose-built permission-testing capability, distinct from and complementary to the FLS gap already documented | [docs.glean.com/administration/search/access-verification](https://docs.glean.com/administration/search/access-verification) | Verbatim: "Use Document lookup to check whether Glean has indexed a document and whether a teammate can access it." Returns four fields per lookup: Last crawled, Last indexed, Document visibility on Glean, Document access (for the selected user). A real, actionable tool a healthcare admin could use to spot-check the Salesforce FLS gap (claim 2) on a document-by-document basis — worth cross-referencing directly in this field's FLS section. |
+| 9 | Beyond the programmatic Governance API kill switch (documented elsewhere in this project's Undocumented Features field), Glean has a separate admin-UI content-hiding mechanism supporting bulk CSV-based hiding of up to 500,000 documents with three distinct visibility modes and its own audit trail | [docs.glean.com/administration/search/hiding-content](https://docs.glean.com/administration/search/hiding-content) | Verbatim: "Up to 500,000 documents can be specified in a single CSV file. The hiding process takes approximately one hour." Three modes: HIDE_ALL, HIDE_ALL_EXCEPT_OWNER, HIDE_FROM_GROUPS. Explicitly scoped: "Content hiding only affects visibility in Glean's search results and Glean responses. Source permissions remain unchanged" and "does not apply to data fetched live via federated fetch APIs (such as Slack Real-Time Search)" — important limitation for a healthcare buyer (hiding is not the same as revoking source access, and doesn't cover real-time federated surfaces). Includes a full audit trail ("All Hidden Documents" tab) this project's already-documented Governance API kill switch does not have. |
+| 10 | Glean's RBAC has a strict permission ratchet: Admins cannot create, assign, or downgrade the Super Admin role, and the Super Admin role itself requires written CISO/security-officer authorization to first provision | [docs.glean.com/administration/identity/roles/admin-roles](https://docs.glean.com/administration/identity/roles/admin-roles) and [docs.glean.com/administration/identity/roles/faq](https://docs.glean.com/administration/identity/roles/faq) | Verbatim: "Admins cannot downgrade or remove Super Admin permissions from users or groups. Only a Super Admin can modify Super Admin role assignments." And: "This role requires written authorization from your company's CISO or Security Manager due to its access to sensitive content" — first-time grant requires email approval from "a CxO role or VP and above" and takes 1-2 business days via Glean Support. Full permission matrix documents 4 distinct roles (Setup Admin, Admin, Super Admin, Sensitive Content Moderator) across 20 named capabilities, plus a separate granular Moderator layer (Insights Moderator, Billing Moderator, MCP Server Moderator, Action Creator, etc.). Maps well onto a HIPAA Security Rule Sec164.308 access-authorization expectation for documented, authorized privileged-access provisioning. |
 
 ## Independent read
 
@@ -32,6 +35,8 @@ The field's own definition names three granularity levels — row, document, fie
 ## Confidence
 
 **Doc-Verified, highest tier** for claims 1-4 (direct, verbatim vendor admission, not inferred). **Analytical synthesis** for claim 5. **Cross-referenced** for claim 6. **Absence explicitly flagged as unconfirmed, not assumed** for claim 7. Validation date 2026-09-09. Tenant/hands-on verification tracked in the companion test guide.
+
+**Addendum, 2026-09-14 (crawl-sourced 2026-09-01, not live-reverified):** Claims 8-10 add three new access-governance mechanics found via a full-corpus sweep of this project's local Glean documentation crawl — Doc-Verified, direct vendor documentation, crawl-sourced 2026-09-01. None of these were cited by this field's original research pass. Tenant/hands-on verification tracked in the companion test guide, Sr No 8-10.
 
 ---
 
@@ -46,3 +51,6 @@ The field's own definition names three granularity levels — row, document, fie
 | Uniform answer across row/document/field? | No — splits sharply, field-level is the weak point | 5 |
 | Permission-change propagation speed | Connector-dependent, not instant (<5min to 1h+) | 6 |
 | Does the FLS gap apply beyond Salesforce? | Unconfirmed — Salesforce-specific finding only | 7 |
+| Document lookup admin tool | Real, purpose-built permission-testing tool — complements the FLS gap | 8 |
+| Bulk content-hiding mechanism | Real, CSV-based, up to 500K docs, 3 visibility modes, own audit trail | 9 |
+| Super Admin role provisioning | Strict ratchet — requires written CISO/security-officer authorization | 10 |

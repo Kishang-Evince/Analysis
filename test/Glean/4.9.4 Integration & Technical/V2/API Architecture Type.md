@@ -45,6 +45,14 @@
 |---|---|---|---|---|---|---|
 | 6 | Connecting to Glean's MCP server uses a stateful JSON-RPC session, not stateless REST calls - a genuinely different wire protocol | 1. Open Cursor or Claude Desktop with Glean's MCP server configured.<br>2. If your tool has a network/debug inspector, watch the connection being established and the messages exchanged.<br>3. Note whether it behaves like a persistent session (one connection, multiple back-and-forth messages) versus separate stateless REST calls each time. | You observe a persistent, session-based exchange of JSON-RPC-style request/response/notification messages - distinct in character from the stateless REST calls tested in Sr No 1-3. | | If you can't inspect raw traffic, at minimum confirm functionally that one MCP connection handles multiple tool calls without re-authenticating each time (evidence of statefulness) | ~20 min, Hard (needs MCP app configured, ideally with traffic inspection) |
 
+## Section 5 - Confirming the A2A protocol works as a genuinely separate integration surface - Sr No 7
+
+*Added 2026-09-14 after a full-corpus sweep of this project's local Glean documentation crawl surfaced the A2A protocol pages, never cited by any field's original research pass.*
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 7 | Glean can act as an A2A host (calling an external A2A-compliant agent from a Glean Auto-mode agent) and/or as an A2A server (an external A2A client reaching Glean Assistant) | 1. In Admin Console, locate the A2A configuration screens (host and/or server, per this tenant's setup).<br>2. If configured as a host: build or use a Glean agent that calls an external A2A agent, and confirm the call succeeds.<br>3. If configured as a server: connect an external A2A-compliant client to Glean Assistant and confirm it can converse with Glean as a remote agent. | At least one direction (host or server) is confirmed working, with responses scoped to the authenticated end user's own permissions - not a blanket service-account-style connection. | | Mark `Blocked (A2A not yet configured on this tenant)` if neither is set up | ~30 min, Hard (needs an external A2A-compliant counterpart configured) |
+
 ---
 
 ## Result Rollup
@@ -57,3 +65,4 @@ Once every row above has a Result filled in, copy the Pass/Fail/Partial/Blocked 
 | 2. OpenAPI specs are real and loadable | 1 | | | | |
 | 3. No GraphQL/gRPC/SOAP found | 1 | | | | |
 | 4. MCP is a distinct stateful JSON-RPC surface | 1 | | | | |
+| 5. A2A protocol works as a separate surface (NEW, 2026-09-14) | 1 | | | | |

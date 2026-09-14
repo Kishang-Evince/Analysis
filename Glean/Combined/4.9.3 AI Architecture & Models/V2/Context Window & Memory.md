@@ -3,7 +3,7 @@
 
 *Independent research, sources picked and read fresh this pass, cross-checked 2026-09-09 against `docs.glean.com`. Field definition: "The maximum token count supported and session-level context retention." Base file at [`../Context Window & Memory.md`](../Context%20Window%20&%20Memory.md) left untouched - this is a standalone V2 doc, not an edit of it.*
 
-**Sr No mapping:** rows 1-9 below map 1:1 to the same Sr No in the companion test guide [test/V2/Context Window & Memory.md](../../../../test/Glean/4.9.3%20AI%20Architecture%20&%20Models/V2/Context%20Window%20&%20Memory.md) - same number, same claim, doc-sourced here / tenant-tested there.
+**Sr No mapping:** rows 1-14 below map 1:1 to the same Sr No in the companion test guide [test/V2/Context Window & Memory.md](../../../../test/Glean/4.9.3%20AI%20Architecture%20&%20Models/V2/Context%20Window%20&%20Memory.md) - same number, same claim, doc-sourced here / tenant-tested there. Rows 10-14 added 2026-09-14 (see note in Confidence section) — a genuinely distinct, end-user-facing persistent memory/personalization layer, separate from the agent-step memory covered in rows 1-9.
 
 ---
 
@@ -11,7 +11,7 @@
 
 Memory is a well-documented, deliberately-scoped, configurable system with a hard **2-hour ceiling** regardless of settings. Context window size, by contrast, is **not one number** - it varies by model, changes automatically for some models, and the exact chat-turn token cap is never publicly disclosed. Truncation happens silently in at least one documented case, with no stated end-user warning mechanism.
 
-## Claims (Sr No 1-9, mapped to test guide)
+## Claims (Sr No 1-14, mapped to test guide)
 
 | Sr No | Claim | Source | Detail |
 |---|---|---|---|
@@ -24,6 +24,11 @@ Memory is a well-documented, deliberately-scoped, configurable system with a har
 | 7 | Context window size is not a single fixed number - it varies by model, and for at least one model Glean automatically expands it beyond the provider's own default | [docs.glean.com/release-notes/releases/2025-07-16-july-release](https://docs.glean.com/release-notes/releases/2025-07-16-july-release) | Verbatim: *"Glean fully leverages the larger 1 million token context window of GPT 4.1 model as opposed to being restricted to 128K tokens"* - applied automatically *"when necessary for improved quality,"* not a manual toggle. **Scope caveat:** the release note frames this specifically for *"customers utilizing the Glean key"* (Universal Key) - behavior for Customer Key (BYOK) deployments on GPT-4.1 was not confirmed in this note. |
 | 8 | Context window size can also shrink over time due to a provider-side change, not just grow - a real, dated precedent exists | [docs.glean.com/release-notes/releases/2026-05-06-may-release](https://docs.glean.com/release-notes/releases/2026-05-06-may-release) | Verbatim (re-confirmed from the Model Agnosticism field's research, directly relevant here too): *"Anthropic is retiring the 1M token context window beta for Claude Sonnet 4.5 and Claude Sonnet 4 on April 30, 2026... requests exceeding the standard 200k-token context window will return an error."* Proves context window is a live, moving spec per model, not a static platform-level number. |
 | 9 | Industry-wide, by 2026 most frontier models (not specific to Glean) have converged around a roughly 1-million-token context window as a baseline - useful external context, but not itself a Glean-specific claim | Third-party market analysis (non-Glean source) | Broader market observation: *"All three models converged on roughly the same 1 million token context window... a genuine differentiator as recently as 2025 and is now table stakes."* Cited here only as background for interpreting claims 7-8 - this is not a Glean documentation source and should not be attributed to Glean. |
+| 10 | Glean has a separate, persistent cross-session user-level memory/personalization system, distinct from the 2-hour agent-step memory documented in claims 1-4 above — this is a genuine correction/addition to any "no long-term memory" framing | [docs.glean.com/user-guide/assistant/memory-personalization](https://docs.glean.com/user-guide/assistant/memory-personalization) | Verbatim: *"Memory is a persistent, privacy-safe continuity layer that enables Glean to remember your preferences, work context, and ongoing projects."* Retention: *"Glean persists saved memories until you delete them. Glean maintains and updates extracted memories as living records... rather than deleting extracted memories on a fixed schedule."* This directly contradicts a blanket "Glean has no persistent memory" framing — it does, but scoped to user-level facts/preferences, not document content or cross-user sharing. |
+| 11 | Two memory types exist: user-controlled "saved memories" (explicit) and auto-generated "extracted memories" (from chat/activity), organized into 9 named categories | [docs.glean.com/user-guide/assistant/memory-personalization](https://docs.glean.com/user-guide/assistant/memory-personalization) | Verbatim: *"Saved memories: Explicit, user-controlled information you tell Glean to remember... Extracted memories: Insights Glean learns automatically from your chats and your broader work activity."* Categories include role/responsibilities, work style, active projects, goals, collaborators, domain knowledge, standing instructions, recent context. |
+| 12 | Memory is scoped strictly to facts/preferences and never grants document access — an important safety/access-control boundary, relevant to a HIPAA/PHI-adjacent governance question | [docs.glean.com/user-guide/assistant/memory-personalization](https://docs.glean.com/user-guide/assistant/memory-personalization) | Verbatim: *"Memory does not grant Glean access to documents you cannot access. Memory only stores user-level facts and preferences."* Also: *"There is no cross-user memory sharing."* Admins cannot view individual user memories (FAQ verbatim: *"No. Memories are private to each user, and your admin cannot view individual user memories."*). |
+| 13 | Deployment availability is currently limited — GCP + Glean Universal Key only; admins cannot org-wide disable it on supported deployments | [docs.glean.com/user-guide/assistant/memory-personalization](https://docs.glean.com/user-guide/assistant/memory-personalization) | Verbatim: *"Memory is available for GCP deployments that use Glean Universal Key. Support for additional cloud environments is coming in future releases."* And: *"Memory is on by default for every organization on a supported deployment, and admins don't have an organization-level control to turn it off."* A real limitation/risk for a client evaluating BYOK/non-GCP or Customer Key deployment — memory may simply not be available, or may be on-by-default with no org kill switch. |
+| 14 | Memories can be imported cross-tool from other AI assistants (ChatGPT, Cursor, Copilot, Claude) and manipulated via MCP by third-party coding tools | [docs.glean.com/user-guide/assistant/memory-personalization](https://docs.glean.com/user-guide/assistant/memory-personalization) | Verbatim: *"MCP-connected tools such as ChatGPT, Claude, Cursor, VS Code, and Copilot can add, update, and delete your Glean memories directly."* Also a manual "Import memories" flow via a copy-paste prompt round-trip. |
 
 ## Independent read
 
@@ -33,7 +38,7 @@ Memory is a well-documented, deliberately-scoped, configurable system with a har
 
 ## Confidence
 
-**Doc-Verified**, 3 independent first-party sources (one absence-confirmed - the token cap), validation date 2026-09-09. Claim 9 explicitly marked as non-Glean market context, not a vendor claim. No sandbox/tenant access used - everything above is publicly readable without login. Tenant verification (including an actual overflow test) tracked in the companion test guide.
+**Doc-Verified**, 3 independent first-party sources (one absence-confirmed - the token cap), validation date 2026-09-09. Claim 9 explicitly marked as non-Glean market context, not a vendor claim. **Claims 10-14 added 2026-09-14** after a full-corpus sweep of this project's local Glean documentation crawl (see `scrap/GLEAN_RESEARCH_MEMORY.md`) surfaced `memory-personalization.md`, a page never cited by any field's original claim-driven research pass; live re-confirmed via WebFetch 2026-09-14, verbatim match to the crawl. No sandbox/tenant access used - everything above is publicly readable without login. Tenant verification (including an actual overflow test, and a check of whether Memory is enabled on this tenant's actual deployment type) tracked in the companion test guide.
 
 ---
 
@@ -50,3 +55,8 @@ Memory is a well-documented, deliberately-scoped, configurable system with a har
 | Context window per model | Varies; GPT-4.1 auto-expanded to 1M (Universal Key) | 7 |
 | Context window can shrink | Yes - Claude Sonnet 1M beta retiring 2026-04-30 | 8 |
 | Industry baseline (non-Glean) | ~1M tokens now common across frontier models | 9 |
+| Persistent cross-session memory (NEW) | Real, distinct from agent-step memory; user-level facts only | 10 |
+| Memory types | Saved (explicit) vs. Extracted (auto), 9 categories | 11 |
+| Memory access boundary | Never grants document access; no cross-user sharing; admin cannot view | 12 |
+| Memory deployment availability | GCP + Universal Key only today; on by default, no org kill switch | 13 |
+| Memory cross-tool portability | Import/read/write via MCP from ChatGPT, Claude, Cursor, Copilot | 14 |

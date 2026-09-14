@@ -61,6 +61,14 @@
 |---|---|---|---|---|---|---|
 | 11 | There is no single admin dashboard/report that clearly lists "this exact model is currently live for this exact feature" across the whole tenant - you'd have to check each feature's settings individually | 1. Look through the entire Admin Console for anything resembling a single consolidated view of "active model per feature."<br>2. If you find nothing consolidated, instead check 3-4 different features individually (e.g. Chat, Agent Builder, Deep Research) and note whether each requires a separate settings screen to see its current model. | Either you confirm no single consolidated view exists (matching the research finding), or you find one (which would contradict the research finding - note exactly where it is and what it's called if so). | | | ~20 min, Easy (thorough click-through, no special setup) |
 
+## Section 7 - Is GPT-6 Astra actually available in this tenant? (NEW, added 2026-09-14) - Sr No 12
+
+*Added after a full-corpus sweep of this project's local Glean documentation crawl found the Sept 8, 2026 release notes, never cited by this field's original research pass.*
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 12 | GPT-6 Astra appears as a selectable model in Glean Assistant/Agents for this tenant | 1. Go to Model Hub (or Chat/Agent Builder model picker) and search for "Astra" or "GPT-6".<br>2. If found, confirm it's selectable for at least one feature (Chat or an Agent step).<br>3. If this tenant uses Azure OpenAI specifically, note that Azure support was "coming soon" as of the Sept 2026 release notes - check whether it has since landed. | GPT-6 Astra appears as a real, selectable model option (or its absence is explained by this tenant's key type/deployment not yet supporting it). | | Mark `Blocked (model not yet rolled out to this tenant)` if absent | ~10 min, Easy |
+
 ---
 
 ## Result Rollup
@@ -75,3 +83,4 @@ Once every row above has a Result filled in, copy the Pass/Fail/Partial/Blocked 
 | 4. Feature-to-model pinning | 2 | | | | |
 | 5. Admin control over end-user visibility | 1 | | | | |
 | 6. Consolidated view gap | 1 | | | | |
+| 7. GPT-6 Astra availability (NEW, 2026-09-14) | 1 | | | | |

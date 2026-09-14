@@ -11,7 +11,7 @@
 - Admin access to Usage/Billing dashboards.
 - Knowledge of whether your organization piloted or contracted with Glean before or after April 1, 2026, for the grace-period check.
 
-**Sr No mapping:** Sr No 1-10 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Hidden Costs Identified.md](../../../../Glean/Combined/4.9.7%20Pricing%20&%20TCO/V2/Hidden%20Costs%20Identified.md#claims-sr-no-1-10-mapped-to-test-guide) — same number, same claim, doc-sourced there / tenant-tested here.
+**Sr No mapping:** Sr No 1-12 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Hidden Costs Identified.md](../../../../Glean/Combined/4.9.7%20Pricing%20&%20TCO/V2/Hidden%20Costs%20Identified.md#claims-sr-no-1-12-mapped-to-test-guide) — same number, same claim, doc-sourced there / tenant-tested here. Rows 11-12 added 2026-09-14.
 
 **How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes on exactly what you found. "Pass" means you personally confirmed it against your own contract/console — not that the docs say so.
 
@@ -53,6 +53,13 @@
 |---|---|---|---|---|---|---|
 | 10 | The dollar price of an additional FlexCredit pack is quote-only — get a real number for your organization before you need it urgently | Ask your Glean account team, in writing, for current FlexCredit pack pricing so you have it on hand before your base pool runs low (rather than negotiating under time pressure). | You get a real, current price, removing this as a surprise if/when you need to buy more. | | | ~10 min active + wait for reply, Hard |
 
+## Section 6 — Confirming the two Cost Controls roadmap items are not yet available — Sr No 11-12
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 11 | The in-product "request additional usage" self-service feature is not yet available — confirm it's still "coming soon" in your own tenant | 1. In Admin Console → Usage/Billing (or wherever your tenant shows usage-limit warnings), check whether an option to request additional usage directly in-product exists.<br>2. If not found, ask your account team to confirm it remains unshipped. | You confirm the feature is not yet available in your tenant, matching Glean's own "coming soon" label. | | | ~10 min, Easy |
+| 12 | The spend-forecasting feature for admins is not yet available — confirm it's still "coming soon" in your own tenant | 1. In Admin Console → Usage/Billing, look for any forecast/projected-spend view.<br>2. If not found, ask your account team to confirm it remains unshipped. | You confirm the feature is not yet available in your tenant, matching Glean's own "coming soon" label. | | | ~10 min, Easy |
+
 ---
 
 ## Result Rollup
@@ -66,3 +73,4 @@ Once every row above has a Result filled in, copy the Pass/Fail/Partial/Blocked 
 | 3. Uptime SLA + response-time confirmation | 2 | | | | |
 | 4. AWS cost avoidance + Protect/Protect+ split | 2 | | | | |
 | 5. Overage-pack pricing | 1 | | | | |
+| 6. Cost Controls roadmap items (self-service usage requests, spend forecasting) | 2 | | | | |

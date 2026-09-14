@@ -10,7 +10,7 @@
 - Sandbox access with a "User B" (non-admin) test account, per this project's established convention.
 - Test content in Drive/OneDrive/Gmail/Outlook/Notion with known, deliberately restricted sharing.
 
-**Sr No mapping:** Sr No 1-8 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Honest Strengths.md](../../../../Glean/Combined/4.9.9%20Competitive%20Positioning/V2/Honest%20Strengths.md#claims-sr-no-1-8-mapped-to-test-guide) — same number, same claim, doc-sourced there / tenant-tested here.
+**Sr No mapping:** Sr No 1-9 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Honest Strengths.md](../../../../Glean/Combined/4.9.9%20Competitive%20Positioning/V2/Honest%20Strengths.md#claims-sr-no-1-9-mapped-to-test-guide) — same number, same claim, doc-sourced there / tenant-tested here. Row 9 added 2026-09-14.
 
 **How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes on exactly what you observed. "Pass" means you personally saw it happen — not that the docs say so.
 
@@ -46,6 +46,12 @@
 | 7 | The "106 SaaS apps" industry statistic is real, general context — confirm its source is accurately described as industry data, not Glean-specific | Confirm the statistic's phrasing on the perspectives article and note it as general industry context in any client material, not a Glean-specific claim. | You confirm the correct attribution. | | | ~5 min, Easy |
 | 8 | The Copilot-comparison perspective article is clearly Glean-authored marketing content — make sure any citation of it says so | Confirm the article's authorship/byline and framing. | You confirm it should be cited as vendor-authored content, not neutral analysis. | | | ~5 min, Easy |
 
+## Section 5 — Confirming the Claude Cowork benchmark figures and flagging them as unverified marketing claims — Sr No 9
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 9 | Glean's self-reported Claude Cowork benchmark (78% win rate, 81% lower cost per task, 70% higher token efficiency, 31% lower blended cost/token) is real, vendor-published marketing content with no disclosed methodology | Open `glean.com/platform/intelligence` and `glean.com/platform/ai-gateway` and confirm the exact figures quoted. Look for any methodology disclosure (sample size, evaluation criteria, date) on either page. | You confirm the figures appear as stated, and confirm no independent methodology is disclosed — meaning this should be presented to the client as an unverified vendor marketing claim, not a validated strength. | | Do not let this figure be cited without the "vendor-run, methodology-undisclosed" caveat | ~10 min, Easy |
+
 ---
 
 ## Result Rollup
@@ -58,3 +64,4 @@ Once every row above has a Result filled in, copy the Pass/Fail/Partial/Blocked 
 | 2. Connector count + benchmark attribution | 2 | | | | |
 | 3. Zillow/Ericsson agent-count figures | 2 | | | | |
 | 4. Tested vs. vendor-stated permission claims | 3 | | | | |
+| 5. Claude Cowork benchmark verification | 1 | | | | |

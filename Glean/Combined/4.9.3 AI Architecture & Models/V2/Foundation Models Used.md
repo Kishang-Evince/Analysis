@@ -3,7 +3,7 @@
 
 *Independent research, sources picked and read fresh this pass, cross-checked 2026-09-09 against `docs.glean.com` and `www.glean.com`. Field definition: "The specific large language or machine learning models driving the generative intelligence." Base file at [`../Foundation Models Used.md`](../Foundation%20Models%20Used.md) left untouched - this is a standalone V2 doc, not an edit of it.*
 
-**Sr No mapping:** rows 1-11 below map 1:1 to the same Sr No in the companion test guide [test/V2/Foundation Models Used.md](../../../../test/Glean/4.9.3%20AI%20Architecture%20&%20Models/V2/Foundation%20Models%20Used.md) - same number, same claim, doc-sourced here / tenant-tested there.
+**Sr No mapping:** rows 1-12 below map 1:1 to the same Sr No in the companion test guide [test/V2/Foundation Models Used.md](../../../../test/Glean/4.9.3%20AI%20Architecture%20&%20Models/V2/Foundation%20Models%20Used.md) - same number, same claim, doc-sourced here / tenant-tested there. Row 12 added 2026-09-14 (see Confidence note) - a model shipped after this field's original research pass.
 
 ---
 
@@ -11,7 +11,7 @@
 
 Glean is **multi-provider and multi-model by design**, mixing third-party frontier models with its own proprietary model, but exact naming/availability is a moving target the docs explicitly warn about - and there's no documented single admin screen that shows "here is the exact model currently serving each feature right now."
 
-## Claims (Sr No 1-11, mapped to test guide)
+## Claims (Sr No 1-12, mapped to test guide)
 
 | Sr No | Claim | Source | Detail |
 |---|---|---|---|
@@ -26,6 +26,7 @@ Glean is **multi-provider and multi-model by design**, mixing third-party fronti
 | 9 | Customer Key deployments must keep 4 model-role defaults on one single provider | [docs.glean.com/administration/llm-key-feature-availability](https://docs.glean.com/administration/llm-key-feature-availability) | Verbatim: *"For Customer Key deployments, the large, small, agentic, and fast agentic model defaults must come from the same provider."* Universal Key customers aren't bound by this - a real deployment-model tradeoff. |
 | 10 | Admins can restrict which models are exposed to end users, including keeping some in limited rollout | [docs.glean.com/get-started/golive/model-choice](https://docs.glean.com/get-started/golive/model-choice) | *"Decide which models are available for users in Glean Chat and Builder Assistant"*; can *"keep some models in beta or limited rollout, and set Auto for everyone else."* |
 | 11 | No documented single admin view shows exactly which model is live for each feature right now, and model availability is stated to shift over time | [docs.glean.com/get-started/golive/model-choice](https://docs.glean.com/get-started/golive/model-choice) | Verbatim: *"Model names and availability can change over time as providers release new versions or retire older ones."* No dedicated "current active model per feature" dashboard/report described anywhere found this pass - a real transparency gap for a buyer wanting a stable, auditable answer to "what model runs my agent." |
+| 12 | Glean added a new frontier OpenAI model, GPT-6 Astra, to Assistant and Agents - not present in any prior model inventory in this project, confirming claim 11's point that the catalog genuinely shifts over time | [docs.glean.com/release-notes/releases/2026-09-08-september-release](https://docs.glean.com/release-notes/releases/2026-09-08-september-release) | Verbatim: "You can now use GPT-6 Astra in Glean Assistant and Agents. Astra is strongest on long-running artifact workflows and complex reasoning, coding, and agentic work." Involves latency/input-token cost tradeoffs; available to Enterprise Flex, Core Suite, and Enterprise (Customer Key), with Azure support "coming soon." Post-dates claim 2's OpenAI model list (which topped out at GPT-5.6). |
 
 ## Independent read
 
@@ -35,7 +36,7 @@ Glean is **multi-provider and multi-model by design**, mixing third-party fronti
 
 ## Confidence
 
-**Doc-Verified**, 4 independent sources, validation date 2026-09-09. No sandbox/tenant access used - everything above is publicly readable without login. Tenant verification of all 11 claims tracked in the companion test guide.
+**Doc-Verified**, 4 independent sources, validation date 2026-09-09. **Claim 12 added 2026-09-14**, live-refetched the same day (Sept 8, 2026 release notes) - source is dated after this field's original research pass, confirming claim 11's live-catalog-drift point directly. No sandbox/tenant access used - everything above is publicly readable without login. Tenant verification of all 12 claims tracked in the companion test guide.
 
 ---
 
@@ -50,3 +51,4 @@ Glean is **multi-provider and multi-model by design**, mixing third-party fronti
 | Customer Key constraint | 4 model-role defaults must share one provider | 9 |
 | Admin control | Can restrict/beta-gate models per deployment | 10 |
 | Transparency gap | No documented live "current model per feature" admin view; catalog explicitly stated to shift over time | 11 |
+| GPT-6 Astra added (NEW) | Sept 8, 2026 release, not in prior inventory; Azure support coming soon | 12 |

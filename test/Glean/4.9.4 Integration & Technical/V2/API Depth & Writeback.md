@@ -12,7 +12,7 @@
 - For Sr No 1 only (testing Glean's own index directly, not a connected app): an Indexing API token and a disposable test datasource - this one genuinely needs a terminal and developer/admin access. If you don't have that, ask a developer colleague to run this row and share the result with you, or mark it `Blocked (no API access available)`.
 - A stopwatch or your phone's timer app, for the latency measurement in Sr No 6.
 
-**Sr No mapping:** Sr No 1-7 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/API Depth & Writeback.md](../../../../Glean/Combined/4.9.4%20Integration%20&%20Technical/V2/API%20Depth%20&%20Writeback.md#claims-sr-no-1-7-mapped-to-test-guide) - same number, same claim, doc-sourced there / tenant-tested here.
+**Sr No mapping:** Sr No 1-8 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/API Depth & Writeback.md](../../../../Glean/Combined/4.9.4%20Integration%20&%20Technical/V2/API%20Depth%20&%20Writeback.md#claims-sr-no-1-8-mapped-to-test-guide) - same number, same claim, doc-sourced there / tenant-tested here. Row 8 added 2026-09-14.
 
 **How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes on exactly what you observed. "Pass" means you personally saw it happen - not that the docs say so.
 
@@ -52,6 +52,12 @@
 |---|---|---|---|---|---|---|
 | 7 | Glean's action catalog is genuinely larger than the "12 first-party core" figure found in earlier research - currently 85+ per Glean's own marketing | 1. Open `glean.com/blog/85-new-actions-in-agents` yourself and confirm the "85+" figure.<br>2. In your own tenant's **Admin Console → Platform → Actions**, count how many action packs/templates are actually available to enable (not necessarily all enabled). | You confirm the 85+ figure on Glean's site, and you get a sense of how many are actually available in your own tenant's catalog (which may be a subset). | | | ~15 min, Easy |
 
+## Section 6 - Confirming the MCP server directory growth and previously-uncited March-drop concepts - Sr No 8
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 8 | Glean's MCP server directory grew from 17 preloaded servers (March 2026) to 48 total (31 new vendor templates added by the September 2026 release), and "tool search"/"SKILL.md" concepts from the March drop were never previously cited in this project | 1. Open `docs.glean.com/release-notes/releases/2026-09-08-september-release` and confirm the "31 new vendor templates" figure.<br>2. In your own tenant's MCP server directory (Admin Console or Agent Builder), count the total servers available and compare against 48.<br>3. Separately, ask your account team or check `glean.com/blog/mcp-mar-drop-2026` for the "tool search" and "SKILL.md" concepts and confirm whether they're live features in your tenant today. | You confirm the growth figures and get a tenant-specific answer on whether tool search / Skills are actually usable today. | | New row added 2026-09-14 | ~15 min, Easy |
+
 ---
 
 ## Result Rollup
@@ -65,3 +71,4 @@ Once every row above has a Result filled in, copy the Pass/Fail/Partial/Blocked 
 | 3. Per-user identity + confirmation can't be bypassed | 2 | | | | |
 | 4. Writeback latency measurement | 1 | | | | |
 | 5. Current action-catalog size | 1 | | | | |
+| 6. MCP server directory growth + Skills/tool search | 1 | | | | |

@@ -11,7 +11,7 @@
 - Admin access to Glean Protect for Sr No 2 and 5.
 - A few bias-probing test prompts prepared in advance (see Sr No 1) — nothing sensitive, just prompts designed to reveal whether the system treats different demographic framings differently.
 
-**Sr No mapping:** Sr No 1-8 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/AI-Specific Governance.md](../../../../Glean/Combined/4.9.5%20Compliance%20&%20Regulatory/V2/AI-Specific%20Governance.md#claims-sr-no-1-8-mapped-to-test-guide) — same number, same claim, doc-sourced there / tenant-tested here.
+**Sr No mapping:** Sr No 1-15 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/AI-Specific Governance.md](../../../../Glean/Combined/4.9.5%20Compliance%20&%20Regulatory/V2/AI-Specific%20Governance.md#claims-sr-no-1-15-mapped-to-test-guide) — same number, same claim, doc-sourced there / tenant-tested here. Sr No 9-15 added 2026-09-14 — new AI-security guardrail mechanics found via a full-corpus sweep of this project's local Glean documentation crawl, never previously tested (see scrap/GLEAN_RESEARCH_MEMORY.md).
 
 **How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes on exactly what you observed. "Pass" means you personally saw it happen — not that the docs say so.
 
@@ -52,6 +52,48 @@
 |---|---|---|---|---|---|---|
 | 8 | Glean's sensitive-data-exposure scanning (across connected SaaS apps) is a data-governance feature, not a bias/fairness-in-output feature — confirm they're genuinely separate | 1. In Admin Console → Glean Protect, find the sensitive-findings/data-governance feature.<br>2. Confirm what it actually scans for (sensitive data patterns, not AI-output fairness).<br>3. Confirm it's a completely separate configuration area from any output-quality/guardrail settings. | You confirm these are two distinct features that shouldn't be described as the same capability in a summary. | | Sanity-check row to prevent a write-up mistake, not a capability test | ~10 min, Easy |
 
+## Section 6 — Confirming Untrusted URL monitoring — Sr No 9
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 9 | Untrusted URL monitoring detects and redacts fabricated or attacker-sourced links before they reach users | 1. Go to **Admin Console → Glean Protect → AI security → Untrusted URL Monitoring**.<br>2. Confirm the Flag/Redact enforcement modes and the trust model (trusted tools, domain allowlists with wildcard support, user-pasted-domain trust) are configurable.<br>3. If safe to do so, test with an agent flow that would fabricate a URL and confirm it's flagged or redacted. | You confirm the policy exists with both enforcement modes and the documented trust model; ideally you observe a fabricated URL actually get flagged/redacted. | | | ~20 min, Easy-Hard depending on whether you run the live fabrication test |
+
+## Section 7 — Confirming sensitive-content-in-user-prompt scanning scope — Sr No 10
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 10 | This policy scans user prompts only — it does not scan AI-generated responses or retrieved data | 1. Go to **Admin Console → Glean Protect → AI security → Sensitive Content (User Prompt)**.<br>2. Confirm the pre-built templates (Credentials & Secrets, PII, Financial Data, Government IDs) and limits (10 pattern groups/policy, 10 patterns/group, 500-char regex).<br>3. Enter a sensitive pattern in a **prompt** — confirm it's caught. Then have the AI **respond** with a similarly-patterned string (e.g. via a document it retrieves) — confirm it is NOT caught, proving the one-directional scope. | The prompt-side test is caught; the response/retrieved-content-side test is not — confirming the documented one-directional scope, which matters for PHI-in-output risk. | | Important for a healthcare client worried about PHI appearing in retrieved documents or AI output | ~20 min, Easy |
+
+## Section 8 — Confirming the Restricted Topics guardrail — Sr No 11
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 11 | Restricted Topics is an LLM-judged (not keyword) topic-blocking guardrail with 3 out-of-the-box regulated-industry topics and a "High confidence only" violation threshold | 1. Go to **Admin Console → Glean Protect → AI security → Restricted Topics**.<br>2. Confirm the 3 OOB topics (Compensation & Pay Discussions, Personal Financial & Investment Advice, Performance and Personnel Decisions) and the Flag/Redact/Block enforcement options.<br>3. Use the built-in Test panel to try a prompt against one topic and confirm the confidence-based (not keyword) judgment. | You confirm the 3 OOB topics exist, enforcement modes work, and the Test panel demonstrates confidence-based topic matching rather than simple keyword matching. | | | ~20 min, Easy |
+
+## Section 9 — Confirming the PANW AIRS integration — Sr No 12
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 12 | Glean integrates with Palo Alto Networks' AI Runtime Security (AIRS) as an additive third-party security provider for agent guardrails | 1. Go to **Admin Console → Glean Protect → AI security → PANW configuration** (or equivalent) and confirm the API key + profile name configuration fields exist.<br>2. If your organization has a PANW AIRS account, confirm the recommended profile settings (Prompt Injection, Toxic Content, Malicious Code/URL Detection) can be independently toggled.<br>3. If you do not have PANW, mark this row Blocked and note that the config screen itself is visible/not visible. | You confirm the configuration screen exists in your tenant; full end-to-end verification requires an actual PANW AIRS account, which may not be available — Blocked is an acceptable result if so, as long as the config screen's presence is confirmed. | | Likely Blocked for tenants without an existing PANW relationship — that's fine, record it as such | ~15 min, Easy (screen check) / Hard (full integration test) |
+
+## Section 10 — Confirming the BigQuery violation export — Sr No 13
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 13 | AI-security violation data can be exported to the customer's own GCP BigQuery, with a plaintext user_email field kept out of the scrubbed export | 1. Go to **Admin Console → Glean Protect → AI security → Investigating Violations / BigQuery export configuration**.<br>2. Confirm the export can be pointed at your own GCP BigQuery project.<br>3. Ask your Glean account team, in writing, to confirm the user_email field's raw-log-only, excluded-from-scrubbed-export behavior described in research. | You confirm the BigQuery export configuration exists, and get written confirmation of the privacy-by-design raw-log vs. scrubbed-export split. | | Relevant to a HIPAA-context audit-trail evaluation | ~20 min active + wait for account-team reply, Hard |
+
+## Section 11 — Confirming the Findings dashboard JSONL export — Sr No 14
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 14 | The Findings dashboard supports JSONL export of violations, gated to Sensitive Content Moderator/Super Admin roles, with a 1-week download expiry | 1. As a Sensitive Content Moderator or Super Admin, go to **Admin Console → Glean Protect → Findings dashboard**.<br>2. Trigger an export and confirm the output is JSONL with the documented fields (e.g. rawContent, reasoning, detectedTopics).<br>3. As a non-moderator admin, confirm the export option is unavailable or blocked.<br>4. Note the stated 1-week download expiry (no need to wait a week to confirm — just confirm the stated policy is shown in the UI). | The export works for a moderator/super admin, is blocked for a lesser role, and the 1-week expiry is stated in the UI. | | | ~20 min, Easy |
+
+## Section 12 — Confirming the agent access policy test workflow — Sr No 15
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 15 | Agent access policies include a pre-production test workflow that validates a rule against real captured tool-call JSON before enforcement | 1. Go to **Admin Console → Glean Protect → AI security → Agent access policies**.<br>2. Capture a real tool call in Preview/Debug mode (or use a sample) and paste its input/output JSON into the policy's test panel.<br>3. Confirm the panel shows whether the rule's condition would fire, without actually enforcing it yet. | You confirm the test panel exists and correctly evaluates a real captured tool call against a draft rule before it's hard-enforced. | | | ~20 min, Easy-Hard depending on whether you have an existing agent tool call to capture |
+
 ---
 
 ## Result Rollup
@@ -65,3 +107,10 @@ Once every row above has a Result filled in, copy the Pass/Fail/Partial/Blocked 
 | 3. Injection/toxicity cross-check | 3 | | | | |
 | 4. Direct account-team answers on bias | 2 | | | | |
 | 5. Sensitive-data scanning vs. bias mitigation | 1 | | | | |
+| 6. Untrusted URL monitoring | 1 | | | | |
+| 7. Sensitive-content-in-user-prompt scanning scope | 1 | | | | |
+| 8. Restricted Topics guardrail | 1 | | | | |
+| 9. PANW AIRS integration | 1 | | | | |
+| 10. BigQuery violation export | 1 | | | | |
+| 11. Findings dashboard JSONL export | 1 | | | | |
+| 12. Agent access policy test workflow | 1 | | | | |

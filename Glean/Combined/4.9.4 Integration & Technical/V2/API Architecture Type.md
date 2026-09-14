@@ -3,7 +3,7 @@
 
 *Independent research, sources picked and read fresh this pass, cross-checked 2026-09-09 against `developers.glean.com` and `docs.glean.com`. Field definition: "The framework type of the vendor's APIs (e.g., REST, GraphQL, gRPC, SOAP)." Base file at [`../API Architecture Type.md`](../API%20Architecture%20Type.md) left untouched - this is a standalone V2 doc, not an edit of it.*
 
-**Sr No mapping:** rows 1-6 below map 1:1 to the same Sr No in the companion test guide [test/V2/API Architecture Type.md](../../../../test/Glean/4.9.4%20Integration%20&%20Technical/V2/API%20Architecture%20Type.md) - same number, same claim, doc-sourced here / tenant-tested there.
+**Sr No mapping:** rows 1-7 below map 1:1 to the same Sr No in the companion test guide [test/V2/API Architecture Type.md](../../../../test/Glean/4.9.4%20Integration%20&%20Technical/V2/API%20Architecture%20Type.md) - same number, same claim, doc-sourced here / tenant-tested there. Row 7 added 2026-09-14 (see Confidence note) - a fifth, additional integration surface beyond REST and MCP.
 
 ---
 
@@ -11,7 +11,7 @@
 
 **REST**, confirmed across all three named API surfaces, each with a published OpenAPI spec - but that is not the complete picture. Glean also exposes a fourth, architecturally distinct surface for AI-agent/tool consumption: an MCP server built on stateful **JSON-RPC 2.0**, not REST. A "REST-only" answer to this field would be technically incomplete.
 
-## Claims (Sr No 1-6, mapped to test guide)
+## Claims (Sr No 1-7, mapped to test guide)
 
 | Sr No | Claim | Source | Detail |
 |---|---|---|---|
@@ -21,6 +21,7 @@
 | 4 | All three REST surfaces have formally published, machine-readable OpenAPI specifications - not just prose documentation | [developers.glean.com/api/client-api](https://developers.glean.com/api/client-api) | Confirmed live: `developers.glean.com/oas/client`, plus the homepage separately references `/oas/platform` and `/oas/indexing` for the other two surfaces. |
 | 5 | No GraphQL, gRPC, or SOAP surface was found anywhere in Glean's developer documentation or in general web search | Absence checked across [developers.glean.com](https://developers.glean.com), all API overview pages fetched (claims 1-3), and a dedicated web search | Search specifically for Glean + GraphQL/gRPC/SOAP returned no Glean-specific results - only generic educational content about those protocols in general. Consistent, repeated absence across every source checked. |
 | 6 | Beyond the three REST APIs, Glean exposes a fourth, architecturally distinct surface: an MCP server built on stateful JSON-RPC 2.0 - a genuinely different protocol paradigm, not another REST endpoint group | [docs.glean.com/administration/platform/mcp/about](https://docs.glean.com/administration/platform/mcp/about) ; [developers.glean.com/guides/mcp/](https://developers.glean.com/guides/mcp/) | MCP *"uses stateful JSON-RPC 2.0, with a session established per connection and maintained for its duration"* - request/response and notification messages, not stateless REST calls. Glean's MCP server exposes *"search, chat, document retrieval, code search, and people lookup"* plus agents and Gateway-connected external tools, to AI hosts (Cursor, Claude Desktop, ChatGPT, etc.) - a different consumer (AI agents/IDEs) and different transport paradigm than the REST APIs' typical consumers (custom apps, indexing jobs). |
+| 7 | A fifth, additional integration surface exists: Glean supports Google's open Agent2Agent (A2A) protocol in three distinct patterns - as a host (Glean agent to external agent), as a server (external platform to Glean Assistant), and per-agent exposure (external client to one specific Glean agent) - a genuinely separate interoperability standard from both REST and MCP | [docs.glean.com/administration/platform/a2a-host](https://docs.glean.com/administration/platform/a2a-host) ; [docs.glean.com/administration/platform/a2a-server](https://docs.glean.com/administration/platform/a2a-server) | Verbatim table: "A2A host: Glean Auto mode agent to third-party agent... Glean A2A server: External A2A client to Glean Assistant... Per-agent A2A endpoint: External A2A client to individual Glean agent." Glean's own FAQ distinguishes it from MCP: "The Glean MCP server exposes Glean tools (such as search and chat) to MCP hosts like IDEs and AI assistants using the Model Context Protocol. The A2A server exposes Glean Assistant as a remote agent to platforms that speak the A2A protocol, such as agent marketplaces and multi-agent runtimes." Real constraints: v0.3 protocol only, text-only messages (no file/data attachments), OAuth-authorization-code-flow only (no API keys or client-credentials); every request is permission-scoped to the authenticated end user, non-transitive ("Authorization by an administrator does not authorize other people"). |
 
 ## Independent read
 
@@ -31,7 +32,7 @@
 
 ## Confidence
 
-**Doc-Verified**, 4 independent first-party sources plus one explicit absence-check, validation date 2026-09-09. No sandbox/tenant access used - everything above is publicly readable without login. Tenant/hands-on verification (actual network-traffic inspection) tracked in the companion test guide.
+**Doc-Verified**, 4 independent first-party sources plus one explicit absence-check, validation date 2026-09-09. **Claim 7 added 2026-09-14** after a full-corpus sweep of this project's local Glean documentation crawl (see scrap/GLEAN_RESEARCH_MEMORY.md) surfaced the A2A protocol pages, never cited by any field's original claim-driven research pass; live re-confirmed via WebFetch 2026-09-14, verbatim match to the crawl. No sandbox/tenant access used - everything above is publicly readable without login. Tenant/hands-on verification (actual network-traffic inspection) tracked in the companion test guide.
 
 ---
 
@@ -45,3 +46,4 @@
 | OpenAPI specs | Published for all 3 REST surfaces | 4 |
 | GraphQL / gRPC / SOAP | Not found anywhere | 5 |
 | MCP server (4th surface) | JSON-RPC 2.0, stateful - architecturally distinct from REST | 6 |
+| A2A protocol (5th surface, NEW) | Google's Agent2Agent standard - host, server, and per-agent patterns; separate from MCP | 7 |

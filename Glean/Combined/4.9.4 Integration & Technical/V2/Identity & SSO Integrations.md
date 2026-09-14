@@ -3,7 +3,7 @@
 
 *Independent research, sources picked and read fresh this pass, cross-checked 2026-09-09 against `docs.glean.com`. Field definition: "Support for SAML, OIDC, SCIM directory syncs, and multi-factor authentication." Base file at [`../Identity & SSO Integrations.md`](../Identity%20&%20SSO%20Integrations.md) left untouched - this is a standalone V2 doc, not an edit of it.*
 
-**Sr No mapping:** rows 1-7 below map 1:1 to the same Sr No in the companion test guide [test/V2/Identity & SSO Integrations.md](../../../../test/Glean/4.9.4%20Integration%20&%20Technical/V2/Identity%20&%20SSO%20Integrations.md) - same number, same claim, doc-sourced here / tenant-tested there.
+**Sr No mapping:** rows 1-9 below map 1:1 to the same Sr No in the companion test guide [test/V2/Identity & SSO Integrations.md](../../../../test/Glean/4.9.4%20Integration%20&%20Technical/V2/Identity%20&%20SSO%20Integrations.md) - same number, same claim, doc-sourced here / tenant-tested there. Rows 8-9 added 2026-09-14 — found via a full-corpus sweep of this project's local Glean documentation crawl, never cited by this field's original research pass (see scrap/GLEAN_RESEARCH_MEMORY.md).
 
 ---
 
@@ -11,7 +11,7 @@
 
 Both SAML and OIDC are real, with named-IdP configuration guides for the major providers. But there's a genuine tension worth surfacing plainly: Glean's own docs **recommend OIDC** for better permission control, while separately documenting that **OIDC-only directory sync is slower** (up to 3 hours) than SAML+SCIM (near real-time). MFA is entirely delegated to the IdP - Glean has no MFA of its own.
 
-## Claims (Sr No 1-7, mapped to test guide)
+## Claims (Sr No 1-9, mapped to test guide)
 
 | Sr No | Claim | Source | Detail |
 |---|---|---|---|
@@ -22,6 +22,8 @@ Both SAML and OIDC are real, with named-IdP configuration guides for the major p
 | 5 | An on-demand override exists to bypass the standard sync delay when needed | [docs.glean.com/administration/identity/roles/group-based-permissions](https://docs.glean.com/administration/identity/roles/group-based-permissions) | An admin control exists to *"refresh group membership immediately"* - a manual mitigation for the OIDC sync-delay gap in claim 4. |
 | 6 | Glean's relationship to IdP group data is strictly read-only - it does not sync back, modify, or independently enforce IdP-side permission rules | [docs.glean.com/administration/identity/roles/group-based-permissions](https://docs.glean.com/administration/identity/roles/group-based-permissions) | Verbatim: *"Glean only reads group membership information from your identity provider. It does not sync, modify, or enforce IdP permission rules."* Glean-side role/permission logic is a downstream consumer of IdP group data, not a bidirectional sync. |
 | 7 | The authentication flow includes a concrete domain-matching safety check before issuing a session | Search-corroborated, consistent with [docs.glean.com/administration/identity/sso/about](https://docs.glean.com/administration/identity/sso/about) area | After the IdP confirms authentication, *"Glean further ensures that the user's email domain matches the expected customer domain before issuing a login cookie"* - a specific, concrete anti-cross-tenant-leakage check in the login flow. |
+| 8 | Glean reconciles the same human across multiple IdP tenants/connector identities via an "alias" system derived from specific, named IdP directory attributes - critical for M&A or multi-domain healthcare-network scenarios | [docs.glean.com/administration/identity/people-data/user-aliases](https://docs.glean.com/administration/identity/people-data/user-aliases) | Verbatim: "When a user appears in multiple connectors or across multiple identity provider (IdP) tenants, Glean stitches those separate accounts into a single person record using aliases." For Entra ID: proxyAddresses (admin-controlled, recommended) vs. otherMails (user-editable, opt-in only, off by default due to spoofing risk). For Okta: proxyAddresses (recommended) vs. secondEmail (opt-in, same spoofing risk). Direct vendor rationale: "If Glean treated those entries as aliases by default, a user could add a colleague's email and inherit access to documents shared with that colleague." A manual CSV-upload fallback exists for accounts predating the current IdP. |
+| 9 | SSO and People Data are architecturally decoupled systems - a user can authenticate successfully via SSO yet be entirely invisible in the org chart/directory/search-ranking signals, and vice versa; this refines the existing OIDC-vs-SAML finding (claim 4) by identifying a more basic dependency | [docs.glean.com/administration/identity/people-data/troubleshooting/sso-vs-people-data](https://docs.glean.com/administration/identity/people-data/troubleshooting/sso-vs-people-data) | Verbatim: "it is possible to have people data entries for users who cannot log in, or to allow login for users who are hidden from search/directory." SAML-only SSO in particular "does not carry the identity attributes Glean needs" - people data must come from a separate OIDC-scoped sync, CSV, or Indexing API. First sync takes 2-4 hours; updates ~1 hour thereafter. This identifies a second, more basic dependency than the sync-speed issue already documented in claim 4: SAML deployments may need a wholly separate people-data pipeline just to populate profiles/org chart at all. |
 
 ## Independent read
 
@@ -33,6 +35,8 @@ Both SAML and OIDC are real, with named-IdP configuration guides for the major p
 ## Confidence
 
 **Doc-Verified** for claims 1, 3-7 (2 sources fetched directly, cross-checked). **Partially confirmed, needs live check** for the OneLogin portion of claim 2. Validation date 2026-09-09. No sandbox/tenant access used - everything above is publicly readable without login. Tenant/hands-on SSO configuration verification tracked in the companion test guide.
+
+**Addendum, 2026-09-14 (crawl-sourced 2026-09-01, not live-reverified):** Claims 8-9 add two new identity-reconciliation findings found via a full-corpus sweep of this project's local Glean documentation crawl - Doc-Verified, direct vendor documentation, crawl-sourced 2026-09-01. Neither was cited by this field's original research pass. Tenant/hands-on verification tracked in the companion test guide, Sr No 8-9.
 
 ---
 
@@ -47,3 +51,5 @@ Both SAML and OIDC are real, with named-IdP configuration guides for the major p
 | Manual override for sync delay | Yes - "refresh group membership immediately" | 5 |
 | Glean's role in IdP group data | Read-only consumer, no enforcement/sync-back | 6 |
 | Login-flow safety check | Email-domain match required before session issued | 7 |
+| Cross-tenant identity reconciliation | Real "alias" system, named IdP attributes, spoofing-risk-aware defaults | 8 |
+| SSO vs. People Data dependency | Architecturally decoupled - SAML-only SSO needs a separate people-data pipeline | 9 |

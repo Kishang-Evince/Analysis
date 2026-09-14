@@ -8,7 +8,7 @@
 
 **Prerequisites (what you need before starting):** Admin access to Agent Builder.
 
-**Sr No mapping:** Sr No 1-4 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Implementation Complexity.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Implementation%20Complexity.md#claims-sr-no-1-4-mapped-to-test-guide) — same number, same claim, doc-sourced there / tenant-tested here.
+**Sr No mapping:** Sr No 1-5 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Implementation Complexity.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Implementation%20Complexity.md#claims-sr-no-1-5-mapped-to-test-guide) — same number, same claim, doc-sourced there / tenant-tested here. Row 5 added 2026-09-14 — found via a full-corpus sweep of this project's local Glean documentation crawl, never cited by this field's original research pass (see scrap/GLEAN_RESEARCH_MEMORY.md).
 
 **How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes.
 
@@ -23,6 +23,12 @@
 | 3 | Notion ACL / OAuth complexity drivers are accurately characterized | Cross-check against the 4.9.5 and 4.9.1 fields' own test results. | Confirmed. | | | ~10 min, Easy |
 | 4 | UC-08 may not be achievable at all under strict per-user Notion ACL compliance requirements without Live Mode | If Perimeter Healthcare's compliance requirement is strict, confirm this constraint directly with your compliance/legal team before committing to UC-08 in its standard form. | A clear, documented decision on whether UC-08 proceeds via Live Mode, standard indexing with governance mitigation, or is deferred. | | | ~30 min discussion, Easy |
 
+## Section 2 — Confirming the Agent Identity integration roster and per-app auth mechanisms — Sr No 5
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 5 | Agent Identity covers at least 19 named integrations, each with a distinct authentication mechanism (not one generic service account) — specifically confirm the Outlook and Teams mechanisms since both are in this evaluation's tenant stack | 1. Open `docs.glean.com/administration/agent-identity/overview` and confirm the full integration roster.<br>2. Open `docs.glean.com/administration/agent-identity/outlook` and `docs.glean.com/administration/agent-identity/teams` and confirm both use Microsoft Entra application identity (OAuth 2.0 client credentials), independent of any individual user.<br>3. If you have Admin Console access, confirm each configured Agent Identity credential is independently visible/revocable per app (not a single shared identity). | You confirm the roster and the Outlook/Teams mechanism, and (if applicable) that the Admin Console shows independently revocable per-app credentials. | | Only 3 of ~19 integration mechanism pages were read in depth during research (Outlook, Teams, AWS CloudWatch) — the rest of the roster is confirmed by name only and should be spot-checked if those integrations are in scope | ~20 min, Easy (doc read) + ~10 min if checking Admin Console |
+
 ---
 
 ## Result Rollup
@@ -30,3 +36,4 @@
 | Section | Items | Pass | Fail | Partial | Blocked |
 |---|---|---|---|---|---|
 | 1. Agent Identity test + real hours logged | 4 | | | | |
+| 2. Agent Identity integration roster + per-app mechanisms | 1 | | | | |

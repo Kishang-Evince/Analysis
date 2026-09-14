@@ -3,7 +3,7 @@
 
 *Independent research, sources picked and read fresh this pass, cross-checked 2026-09-09 against `docs.glean.com` and `developers.glean.com`. Field definition: "Scope of data mutations supported (e.g., Read-Only vs. bidirectional CRUD)." Base file at [`../API Depth & Writeback.md`](../API%20Depth%20&%20Writeback.md) left untouched - this is a standalone V2 doc, not an edit of it.*
 
-**Sr No mapping:** rows 1-7 below map 1:1 to the same Sr No in the companion test guide [test/V2/API Depth & Writeback.md](../../../../test/Glean/4.9.4%20Integration%20&%20Technical/V2/API%20Depth%20&%20Writeback.md) - same number, same claim, doc-sourced here / tenant-tested there.
+**Sr No mapping:** rows 1-8 below map 1:1 to the same Sr No in the companion test guide [test/V2/API Depth & Writeback.md](../../../../test/Glean/4.9.4%20Integration%20&%20Technical/V2/API%20Depth%20&%20Writeback.md) - same number, same claim, doc-sourced here / tenant-tested there. Row 8 added 2026-09-14 — found via a full-corpus sweep of this project's local Glean documentation crawl plus a live post-crawl web check, never cited by this field's original research pass (see scrap/GLEAN_RESEARCH_MEMORY.md).
 
 ---
 
@@ -11,7 +11,7 @@
 
 There are two genuinely separate "writeback" surfaces, and they have different depth. **Into Glean's own index**, the Indexing API supports real CRUD (create/update/delete, plus permission updates). **Into connected third-party systems** (Salesforce, Jira, Confluence, Google Docs), every action pack checked supports Create and Update - but **no Delete operation was found anywhere**. "Bidirectional CRUD," as literally defined in this field, does not appear to be accurate for the third-party writeback layer; "Create + Update, no Delete" is the more precise claim.
 
-## Claims (Sr No 1-7, mapped to test guide)
+## Claims (Sr No 1-8, mapped to test guide)
 
 | Sr No | Claim | Source | Detail |
 |---|---|---|---|
@@ -22,6 +22,7 @@ There are two genuinely separate "writeback" surfaces, and they have different d
 | 5 | Every connector write action requires human-in-the-loop confirmation by default, and this cannot be silently bypassed - even by an aggressive automation client | Search-corroborated - [docs.glean.com/administration/managing-actions/allowing-in-line-execution-of-write-actions](https://docs.glean.com/administration/managing-actions/allowing-in-line-execution-of-write-actions) ; [docs.glean.com/tools/human-in-the-loop-experience-for-tools](https://docs.glean.com/tools/human-in-the-loop-experience-for-tools) | *"All connector write tools require user confirmation by default... Glean continues to ask for confirmation even when Claude Code runs in auto mode or with permissions bypassed."* Admins can opt specific actions out per the *"inline execution of write tools"* mechanism (already independently confirmed in the Agent Autonomy Level field), but the default and the floor is confirmation-required. |
 | 6 | No documentation found states writeback latency - how long the confirmation panel is expected to sit before timing out, or whether the actual write executes synchronously immediately after approval | [docs.glean.com/tools/human-in-the-loop-experience-for-tools](https://docs.glean.com/tools/human-in-the-loop-experience-for-tools) | Page describes what the confirmation panel *shows* (target app, specific record, description of the planned change) but nothing about timing, timeout behavior, or synchronous-vs-async execution after approval - a direct, checkable gap against this field's own evaluation methodology, which explicitly asks to "document writeback latency." |
 | 7 | The actual action catalog is materially larger than the "12 first-party core" figure established in earlier research - Glean's own marketing now states over 85 actions | [glean.com/blog/85-new-actions-in-agents](https://www.glean.com/blog/85-new-actions-in-agents) | Verbatim: *"over 85 new actions."* No published breakdown of how many are read vs. write. This refines (doesn't contradict) the earlier Features Confirmed V2 finding that "12" was a narrower first-party-core subset, not the full catalog - the full catalog is confirmed materially larger, now with a specific current number. |
+| 8 | Glean's MCP server directory grew materially between drops — 17 preloaded servers in March 2026, 31 more vendor templates added by the September 2026 release (48 total) — and the March drop's own "tool search" and "SKILL.md"/Skills concepts were never cited anywhere in this project | [docs.glean.com/release-notes/releases/2026-09-08-september-release](https://docs.glean.com/release-notes/releases/2026-09-08-september-release) ; [glean.com/blog/mcp-mar-drop-2026](https://www.glean.com/blog/mcp-mar-drop-2026) | Verbatim (Sept release): *"The Glean MCP server directory now includes 31 new vendor templates, so your teams can bring more third-party tools directly into Assistant and Agents"* — new additions include ClickHouse Cloud, ServiceNow, Adobe products, and MuleSoft, mostly via per-user OAuth. Verbatim (March drop, previously uncited): *"Glean makes it easy to get started with MCP through its directory, which features 17 preloaded servers from Amplitude, Asana, Atlassian Rovo, Box, Canva, ClickUp, GitHub, HubSpot, Intercom, Linear, Lucid, Monday, Notion, PagerDuty, ThoughtSpot, Udemy, and WisdomAI."* Also previously uncited: *"Skills model the task itself... as a markdown spec... These SKILL.md files are executable specifications that the agent engine can load and run"* and *"Glean solves this with tool search. Instead of reasoning over all the tools available, agents retrieve a small, targeted subset."* (MCP count LIVE-VERIFIED 2026-09-14; March-drop detail crawl-only) |
 
 ## Independent read
 
@@ -32,6 +33,8 @@ There are two genuinely separate "writeback" surfaces, and they have different d
 ## Confidence
 
 **Doc-Verified**, 5 independent first-party sources (one confirming an absence - latency data), validation date 2026-09-09. No sandbox/tenant access used - everything above is publicly readable without login. Tenant/hands-on verification (including an actual timed writeback test and a direct search for any delete action) tracked in the companion test guide.
+
+Row 8 added 2026-09-14: MCP server directory growth (17 → 48 total, 31 new vendor templates) LIVE-VERIFIED 2026-09-14 against `docs.glean.com/release-notes/releases/2026-09-08-september-release`. The March-2026 drop detail (17 preloaded servers, tool search, SKILL.md/Skills) is crawl-only (2026-09-01), not independently re-fetched live this pass.
 
 ---
 
@@ -46,3 +49,4 @@ There are two genuinely separate "writeback" surfaces, and they have different d
 | Confirmation requirement | Default-on, cannot be silently bypassed even by automation clients | 5 |
 | Writeback latency data | Not published anywhere - genuine gap | 6 |
 | Action catalog size | 85+ (updated from earlier "12 core" finding) | 7 |
+| MCP server directory growth | 17 (March 2026) → 48 total (31 added by Sept 2026); tool search / SKILL.md never previously cited | 8 |

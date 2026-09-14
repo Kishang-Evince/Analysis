@@ -3,7 +3,7 @@
 
 *Independent research, sources fetched fresh this pass, checked 2026-09-09 against `glean.com/compare/*` and `glean.com/perspectives/*` pages, cross-referenced against this project's own prior hands-on V2 findings from 4.9.1, 4.9.3, 4.9.4, and 4.9.5. Field definition: "Proven technical or functional advantages where the platform leads competitors." Base file at [`../Honest Strengths.md`](../Honest%20Strengths.md) left untouched — this is a standalone V2 doc, not an edit of it.*
 
-**Sr No mapping:** rows 1-8 below map 1:1 to the same Sr No in the companion test guide [test/V2/Honest Strengths.md](../../../../test/Glean/4.9.9%20Competitive%20Positioning/V2/Honest%20Strengths.md) — same number, same claim, doc-sourced here / tenant-tested there.
+**Sr No mapping:** rows 1-9 below map 1:1 to the same Sr No in the companion test guide [test/V2/Honest Strengths.md](../../../../test/Glean/4.9.9%20Competitive%20Positioning/V2/Honest%20Strengths.md) — same number, same claim, doc-sourced here / tenant-tested there. Row 9 added 2026-09-14 — found via a full-corpus sweep of this project's local Glean documentation crawl plus a live post-crawl web check, never cited by this field's original research pass (see scrap/GLEAN_RESEARCH_MEMORY.md).
 
 ---
 
@@ -11,7 +11,7 @@
 
 The genuinely strongest claims in this field are the ones this project already hands-on tested elsewhere (cross-app permission-aware search, native multi-suite connector coverage) — those deserve top billing over vendor-stated benchmarks. This pass corrects one figure (275+ connectors, not 250+, matching this project's own 4.9.4 finding) and one attribution error (the "1.9x preference" and specific connector-count-vs-competitor figures live specifically on the Glean-vs-ChatGPT-Enterprise compare page, not the Copilot one, which is more qualitative). Zillow's 3,400+ agent claim is reconfirmed with a real, specific business-outcome figure attached (a 7% increase in employee review participation); Ericsson's frequently-cited "2,700+ agents" figure could not be found or reconfirmed anywhere this pass and should be treated as unconfirmed until re-sourced directly.
 
-## Claims (Sr No 1-8, mapped to test guide)
+## Claims (Sr No 1-9, mapped to test guide)
 
 | Sr No | Claim | Source | Detail |
 |---|---|---|---|
@@ -23,6 +23,7 @@ The genuinely strongest claims in this field are the ones this project already h
 | 6 | Glean's own Copilot-comparison perspective article makes a specific, real-time permission-enforcement claim — but this is a vendor-stated technical claim distinct from, and more specific than, the general ACL-boundary tests this project has actually run | [glean.com/perspectives/glean-vs-copilot-key-differences-in-enterprise-ai-tools](https://www.glean.com/perspectives/glean-vs-copilot-key-differences-in-enterprise-ai-tools) | Verbatim: *"Permission enforcement syncs in real time, so a revoked SharePoint permission is reflected immediately in search results."* This project's own hands-on ACL testing (4.9.1, 4.9.5) confirmed permission boundaries hold for Drive/OneDrive/Gmail/Outlook — but did NOT specifically test the real-time revocation-propagation-speed claim for SharePoint. These are related but distinct claims, and only the boundary-holds claim should be labeled "Tested" — the revocation-speed claim remains vendor-stated until specifically tested. |
 | 7 | The same perspective article names a real, useful contextual statistic for making the multi-app-coverage argument: the average enterprise now uses 106 SaaS applications | [glean.com/perspectives/glean-vs-copilot-key-differences-in-enterprise-ai-tools](https://www.glean.com/perspectives/glean-vs-copilot-key-differences-in-enterprise-ai-tools) | Verbatim: *"The average company now uses 106 SaaS applications."* This is search-corroborated industry context (not specifically about Glean), useful as supporting color for the hybrid-M365+GWS coverage strength, but should be attributed as general industry data, not a Glean-specific claim. |
 | 8 | The article itself is explicitly Glean-authored competitive-positioning content, not an independent comparison — this framing should be stated plainly whenever this source is cited | [glean.com/perspectives/glean-vs-copilot-key-differences-in-enterprise-ai-tools](https://www.glean.com/perspectives/glean-vs-copilot-key-differences-in-enterprise-ai-tools) | This pass's own fetch explicitly noted: *"This comparison article is authored by Glean and appears designed to position their platform favorably against Copilot."* Worth stating directly in any summary rather than presenting vendor-authored comparison content with the same neutrality as independently-tested findings. |
+| 9 | Glean publishes a self-reported head-to-head benchmark against Claude Cowork (78% win rate, 81% lower cost per task, 70% higher token efficiency, 31% lower blended cost/token) — this must be flagged explicitly as an unverified, vendor-run, methodology-undisclosed marketing claim, not accepted at face value | [glean.com/platform/intelligence](https://www.glean.com/platform/intelligence) ; [glean.com/platform/ai-gateway](https://www.glean.com/platform/ai-gateway) | Verbatim: *"78% Win rate compared to Claude Cowork,"* *"81% Lower cost per task compared to Claude Cowork,"* *"70% Higher token efficiency"*; separately, *"In head-to-head evaluations, Glean was preferred 78% of the time versus Claude Cowork and saved 81% on token costs."* Vendor-run, vendor-published comparative benchmark (methodology not detailed on these pages) — real, citable, previously-uncaptured competitive data point, but must be framed as a marketing claim requiring independent verification. |
 
 ## Independent read
 
@@ -34,6 +35,8 @@ The genuinely strongest claims in this field are the ones this project already h
 ## Confidence
 
 **Tested, highest tier** for claim 1 (this project's own hands-on sandbox work). **Doc-Verified** for claims 2, 3, 6, 7, 8 (direct fresh fetches, verbatim quotes). **Search-corroborated** for claim 4. **Absence-check, explicitly flagged** for claim 5. Validation date 2026-09-09. Tenant/hands-on re-verification (a fresh ACL negative test, a cross-app query test) tracked in the companion test guide.
+
+Row 9 added 2026-09-14: the Claude Cowork benchmark figures (78% win rate, 81% lower cost, 70% higher token efficiency, 31% lower blended cost/token) are crawl-only (2026-09-01), not independently re-fetched live this pass — vendor-published, methodology-undisclosed, and must be presented as an unverified marketing claim requiring independent verification, not a validated strength.
 
 ---
 
@@ -49,3 +52,4 @@ The genuinely strongest claims in this field are the ones this project already h
 | Real-time SharePoint permission revocation | Vendor-stated, distinct from this project's own tested ACL-boundary finding | 6 |
 | "106 SaaS apps" industry stat | Real, but general industry data, not Glean-specific | 7 |
 | Comparison article authorship | Explicitly Glean-authored — state this plainly when citing it | 8 |
+| Claude Cowork benchmark (78% win rate, 81% lower cost) | Vendor-run, methodology-undisclosed — flag as unverified marketing claim | 9 |

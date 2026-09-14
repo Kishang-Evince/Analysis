@@ -1,6 +1,6 @@
 # 4.9.1 Features Confirmed — Independent Research Test Guide
 
-**Purpose:** Hands-on tenant verification of every claim in the companion research doc [V2/Features Confirmed.md](../../../../Glean/Combined/4.9.1%20Functional%20Capabilities/V2/Features%20Confirmed.md). All 49 claims there are doc-sourced only, publicly readable, no login — this guide upgrades each to `Tested` against a live tenant, using the real in-scope test stack so any tester can reproduce every step exactly. Written so someone with no prior context on this project can pick it up and run it.
+**Purpose:** Hands-on tenant verification of every claim in the companion research doc [V2/Features Confirmed.md](../../../../Glean/Combined/4.9.1%20Functional%20Capabilities/V2/Features%20Confirmed.md). All 62 claims there are doc-sourced only, publicly readable, no login — this guide upgrades each to `Tested` against a live tenant, using the real in-scope test stack so any tester can reproduce every step exactly. Written so someone with no prior context on this project can pick it up and run it. Rows 50-52 (Knowledge Management: Projects replacing Collections) added 2026-09-14. Rows 53-61 (Assistant Chat Surface Extensions) also added 2026-09-14. Row 62 (Admin Console & Platform Features) also added 2026-09-14.
 
 **Tenant entry:** `https://app.glean.com` (regular use) · Admin Console for anything under Security/AI-LLM/Architecture sections · a terminal with `curl`/Python and an API token for developer-platform checks
 **Companion research doc:** [V2/Features Confirmed.md](../../../../Glean/Combined/4.9.1%20Functional%20Capabilities/V2/Features%20Confirmed.md)
@@ -23,7 +23,7 @@
 - A Glean API token + terminal (Python or `curl`) for Sr No 5, 7-8, 16, 20-27.
 - Python 3.10+ scratch venv for Sr No 17, 19, 21, 26.
 
-**Sr No mapping:** Sr No 1-49 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Features Confirmed.md](../../../../Glean/Combined/4.9.1%20Functional%20Capabilities/V2/Features%20Confirmed.md#search--retrieval--sr-no-1-8).
+**Sr No mapping:** Sr No 1-62 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Features Confirmed.md](../../../../Glean/Combined/4.9.1%20Functional%20Capabilities/V2/Features%20Confirmed.md#search--retrieval--sr-no-1-8). Rows 50-52 (Knowledge Management) added 2026-09-14. Rows 53-61 (Assistant Chat Surface Extensions) also added 2026-09-14. Row 62 (Admin Console & Platform Features) added 2026-09-14.
 
 **How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes on exactly what you observed in your own tenant — not that the public docs say so.
 
@@ -143,6 +143,40 @@
 | 49    | Per-tenant dedicated cloud project                | 1. Ask your account team to confirm your tenant's connectors (Notion, Teams, Outlook, OneDrive, Gmail, Drive, Docs, Sheets) run inside a cloud project dedicated to your tenant, not a project shared with other Glean customers.                                                     | Confirmed dedicated, not shared.                                                                       |        |                                                                          | ~10 min active + wait for reply, Easy |
 
 
+## Section 8 — Knowledge Management — Sr No 50-52
+
+
+| Sr No | Feature | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+| ----- | ------- | ------------------ | ------------------------- | ------ | ----- | ------ |
+| 50 | Projects is replacing Collections | 1. In `app.glean.com`, check whether a **Projects** entry point appears in the left nav alongside or instead of **Collections**. 2. Create a test project, adding a chat, a document, and an external URL to it, confirming all three content types can coexist in one project. | Projects is visible in this tenant (or confirmed not-yet-enabled if feature-flagged off) and, if enabled, a project can hold a chat + document + URL together. | | If Projects isn't enabled yet in this tenant, mark Blocked and note the feature-flag status from your account team | ~15 min, Easy (or Blocked if not yet enabled) |
+| 51 | Existing Collections auto-migrate to Projects with permissions preserved | 1. Open an existing Collection (if any exist in this tenant) and confirm whether it now displays as a Project or carries a "Deprecated" banner. 2. Confirm the same members/permissions that were on the Collection are still present. | Existing Collection content appears as a Project (or a clear Deprecated notice), with the same access controls intact. | | | ~15 min, Easy (needs a pre-existing Collection to test) |
+| 52 | Projects default to private, unlike Collections' company-wide default | 1. Create a new test project and, without sharing it, have a second test user (User B) attempt to find or open it. 2. Confirm User B cannot see it until explicitly shared. | User B cannot access the unshared project — confirming the private-by-default model, in contrast to Collections' company-wide visibility. | | | ~15 min, Easy |
+
+
+## Section 9 — Assistant Chat Surface Extensions — Sr No 53-61
+
+
+| Sr No | Feature | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+| ----- | ------- | ------------------ | ------------------------- | ------ | ----- | ------ |
+| 53 | AI Answers is distinct from curated Answers | 1. Ask Assistant a question that should trigger an AI Answer at the top of search results. 2. Confirm it carries citations back to source documents, and compare it against an admin-authored Answers entry (if one exists) to confirm the two surfaces are visually/functionally distinct. | AI Answers appears with citations, distinct in behavior from a human-curated Answers entry. | | | ~15 min, Easy |
+| 54 | Chat sharing re-evaluates permissions per recipient | 1. As Admin A, have a chat that cites `FY27_Exec_Compensation.xlsx`. 2. Share the chat link with User B (no access to that file). 3. Confirm User B sees a redacted placeholder instead of that citation's content. | User B sees a redacted placeholder, not the actual cited content. | | | ~15 min, Easy |
+| 55 | Contextual images appear in chat, permission-gated | 1. Ask Assistant a question sourced from a document containing an image/diagram (e.g. in Google Drive or SharePoint). 2. Confirm the image renders inline for a user with access, and does not render (or errors) for a user without access to the source document. | Image renders only for users with underlying document access. | | | ~15 min, Easy |
+| 56 | Real-time voice is available and its default matches your key type | 1. Check whether real-time voice is available on web/desktop/mobile in your tenant. 2. Confirm with your admin whether it's on by default (Universal Key) or required explicit setup (Customer Key), matching your tenant's deployment type. | Voice availability and default state match the deployment-type rule found in research. | | | ~15 min, Easy |
+| 57 | Browser history search results are private to the individual | 1. Install the Glean browser extension and visit a page in one of the ~25 named apps (e.g. Trello, Workday). 2. Search for that page's title in Glean as yourself, then as a second test user. 3. Confirm only you see that browser-history result. | Only the visiting user sees their own browser-history result; the second user does not. | | | ~15 min, Easy |
+| 58 | Glean Companion only reads highlighted text | 1. Enable Companion on an in-scope domain (e.g. Google Docs). 2. Without highlighting anything, confirm Companion takes no automatic action. 3. Highlight a sentence and invoke Summarize, confirming it only acts on the highlighted text. | Companion is inert until text is explicitly highlighted and a function invoked. | | | ~15 min, Easy |
+| 59 | Desktop Quick Chat is a separate floating window with screenshot attach | 1. In the Glean desktop app, trigger Quick Chat via Cmd+Shift+J / Ctrl+Shift+J. 2. Confirm it floats above other apps. 3. Use "Take screenshot" to attach a screenshot to a message and confirm Glean references it as context. | Quick Chat floats independently of the main app, and a screenshot can be attached and used as context. | | | ~15 min, Easy (macOS may prompt for Screen Recording permission) |
+| 60 | Toggling off Company/Web knowledge removes citations | 1. In Assistant settings, toggle off both Company knowledge and Web knowledge sources. 2. Ask a question and confirm the response carries no citations, relying only on the LLM's pre-trained knowledge. | Response has no citations when both toggles are off. | | | ~10 min, Easy |
+| 61 | People/org-chart search filter syntax works | 1. In Glean Search, try a filter like `reportsto:"<a real manager's name>"` or `level:ic`. 2. Confirm the result set narrows to matching people. | Filtered people-search results correctly narrow by the org-chart attribute. | | | ~10 min, Easy |
+
+
+## Section 10 — Admin Console & Platform Features — Sr No 62
+
+
+| Sr No | Feature | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+| ----- | ------- | ------------------ | ------------------------- | ------ | ----- | ------ |
+| 62 | Insights chat and Admin chat exist as natural-language features in the admin console | 1. Log into the Admin Console as Admin A. 2. Look for an "Insights chat" or similar natural-language analytics entry point and ask it a plain-English question about deployment adoption (e.g. "how many users searched this week?"). 3. Separately, look for an "Admin chat" entry point and ask it a how-to question about managing the deployment. | Both features are found in the admin console, and each returns a real, natural-language answer grounded in your own tenant's usage data (Insights chat) or Glean's documentation/Gleaniverse content (Admin chat). | | If not yet enabled in this tenant, mark Blocked and note the rollout status from your account team | ~15 min, Easy (or Blocked if not yet enabled) |
+
+
 ---
 
 
@@ -161,5 +195,8 @@ Once every row above has a Result filled in, copy the Pass/Fail/Partial/Blocked 
 | 5. Connectors & Integrations         | 3     |      |      |         |         |
 | 6. Security, Compliance & Governance | 15    |      |      |         |         |
 | 7. Architecture & Infrastructure     | 4     |      |      |         |         |
+| 8. Knowledge Management              | 3     |      |      |         |         |
+| 9. Assistant Chat Surface Extensions | 9     |      |      |         |         |
+| 10. Admin Console & Platform Features | 1    |      |      |         |         |
 
 

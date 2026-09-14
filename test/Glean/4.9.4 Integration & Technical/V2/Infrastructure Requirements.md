@@ -11,7 +11,7 @@
 - If you're on Customer Hosted: access to whoever on your team manages that cloud account (they'll know VPC ranges, Transit Gateway/VPN setup, etc). If that's not you, this entire guide should be handed to them, or you should interview them for the answers.
 - If you're on standard SaaS: most of this guide won't apply directly to you - mark those rows `Blocked (standard SaaS, not applicable)` and focus on Sr No 7 (asking your account team what, if anything, they can share).
 
-**Sr No mapping:** Sr No 1-7 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Infrastructure Requirements.md](../../../../Glean/Combined/4.9.4%20Integration%20&%20Technical/V2/Infrastructure%20Requirements.md#claims-sr-no-1-7-mapped-to-test-guide) - same number, same claim, doc-sourced there / tenant-tested here.
+**Sr No mapping:** Sr No 1-16 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Infrastructure Requirements.md](../../../../Glean/Combined/4.9.4%20Integration%20&%20Technical/V2/Infrastructure%20Requirements.md#claims-sr-no-1-16-mapped-to-test-guide) - same number, same claim, doc-sourced there / tenant-tested here. Rows 8-16 added 2026-09-14 — found via a full-corpus sweep of this project's local Glean documentation crawl, never cited by this field's original research pass (see scrap/GLEAN_RESEARCH_MEMORY.md).
 
 **How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes on exactly what you found or what answer you got. "Pass" means you personally confirmed it - not that the docs say so.
 
@@ -53,6 +53,57 @@
 
 ---
 
+## Section 6 - Confirming the mandatory admin alerting system - Sr No 8
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 8 | Glean's admin alerts (7 categories) are on by default and cannot be disabled - only the recipient list can be customized | 1. Open `docs.glean.com/administration/management/alerts/admin-alerts` and confirm the 7 alert categories and the "mandatory, can't be turned off" language.<br>2. If you have Glean admin access, check the Admin Console alerts settings page to confirm there is no disable toggle, only a recipient-list field. | You confirm both the published wording and (if you have admin access) that the console itself offers no disable option. | | | ~15 min, Easy (doc read) + ~10 min if checking admin console |
+
+## Section 7 - Confirming connector-failure alerting scope and framing - Sr No 9
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 9 | Connector-failure alerts cover 8 named connectors, fire daily per failing connector, and are framed around permissions/compliance risk, not just staleness | 1. Open `docs.glean.com/administration/management/alerts/connector-failure-alerts` and confirm the connector list (Slack, OneDrive, SharePoint, Google Drive, GitHub, Teams, Jira, Workday) and the permissions-risk language.<br>2. If your org has any connectors in this list, ask your admin whether they've received these alerts and how frequently. | You confirm the connector list and framing match the docs, and get real-world confirmation of alert frequency if applicable. | | | ~15 min, Easy (doc read) + optional follow-up |
+
+## Section 8 - Confirming LLM-provider-outage alerting and its BYO-LLM relevance - Sr No 10
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 10 | LLM-provider-outage alerts are real-time, cover Azure OpenAI/OpenAI/Vertex AI/Bedrock, and document specific HTTP status codes (401, 403, 404, 429, 500, timeout) mapped to causes | 1. Open `docs.glean.com/administration/management/alerts/llm-provider-alerts` and confirm the status-code table and provider list.<br>2. If your organization uses BYO-LLM/BAA architecture, ask your infra team whether this alerting has been relevant to their own outage diagnosis. | You confirm the status-code table exists as documented, and (if applicable) get a real-world relevance check from your infra team. | | Directly relevant to this evaluation's BYO-LLM/BAA architecture questions | ~15 min, Easy (doc read) + optional follow-up |
+
+## Section 9 - Confirming the maintenance-window SLA and the Slack side effect - Sr No 11-12
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 11 | Glean's default maintenance window (Saturday 12:00-01:30pm UTC) can cause up to 90 minutes of Query Endpoint downtime, with no availability guarantee and no customer notification | 1. Open `docs.glean.com/administration/management/maintenance-windows` and confirm the window, downtime figures, and "no notification" language.<br>2. Ask your Glean account team directly: *"Has this maintenance window or downtime ever affected our tenant, and were we notified in advance?"* | You confirm the documented window/downtime figures, and get a real answer on whether your organization has experienced or been notified about this. | | Directly relevant given the client's 24/7 clinical-operations context | ~15 min, Easy (doc read) + ~10 min active/wait for account-team reply |
+| 12 | If your organization uses a custom (non-Marketplace) Slack app integration, a maintenance event can silently disable Slack Event Subscriptions, requiring manual admin re-enablement | 1. Confirm whether your organization's Glean-Slack integration is a custom app install or a Marketplace install.<br>2. If custom, ask your Slack/Glean admin whether they're aware of this failure mode and have a process to check/re-enable Event Subscriptions after maintenance windows. | You determine your integration type, and if custom, confirm awareness of this risk and whether a monitoring process exists. | | Only applies to self-managed (non-Marketplace) Slack app installs | ~10 min, Easy |
+
+## Section 10 - Confirming macOS desktop deployment path and PPPC profile - Sr No 13
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 13 | The Mac App Store build of Glean for Desktop is deprecated for new installs; enterprise deployment requires the PKG/MDM path with a documented PPPC profile (bundle ID com.glean.desktop, Team ID 877XN49FUQ) | 1. Open `docs.glean.com/administration/management/features/glean-for-desktop` and `docs.glean.com/administration/management/features/desktop/macos-deployment` and confirm the deprecation notice and PPPC profile details.<br>2. If your organization deploys Glean Desktop to Mac users via MDM (Jamf/Kandji), confirm with your device-management team that they used this PKG/PPPC path rather than the App Store. | You confirm the deprecation notice and PPPC details match the docs, and (if applicable) that your organization's actual Mac deployment used the documented path. | | | ~15 min, Easy (doc read) + optional MDM-team follow-up |
+
+## Section 11 - Confirming Windows desktop per-user install requirement - Sr No 14
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 14 | Windows deployment via Intune must use per-user install context (not system context), with architecture-specific installers and a documented silent-install flag (`/S`) | 1. Open `docs.glean.com/administration/management/features/desktop/windows-deployment` and confirm the per-user requirement and silent-install syntax.<br>2. If your organization deploys Glean Desktop to Windows users via Intune, confirm with your device-management team that the deployment is configured in per-user (not system) context. | You confirm the documented requirement, and (if applicable) that your organization's Intune configuration matches it. | | | ~15 min, Easy (doc read) + optional follow-up |
+
+## Section 12 - Confirming mobile Intune MAM support and the missing kill-switch gap - Sr No 15
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 15 | Glean mobile supports Microsoft Intune MAM (App Protection Policies) without requiring MDM enrollment, but there is no Admin Console toggle to disable mobile access org-wide | 1. Open `docs.glean.com/administration/management/features/mobile-intune-mam` and `docs.glean.com/administration/management/features/mobile` and confirm the MAM feature list and the "no org-level toggle" gap.<br>2. If your organization wants to control or block mobile access, ask your Glean admin whether they've had to configure this at the IdP/MDM layer instead of in Glean itself. | You confirm the MAM feature set and the documented gap, and (if applicable) confirm how your organization currently handles mobile-access control. | | Real gap worth flagging if a blanket mobile kill-switch is a requirement | ~15 min, Easy (doc read) + optional follow-up |
+
+## Section 13 - Confirming tiered/partial language support - Sr No 16
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 16 | Full Assistant/Chat GA language support is limited to English, German, and Japanese; cross-lingual Q&A is early-access/bilingual-only; UI localization (~20 languages) does not cover help docs or admin workspace setup | 1. Open `docs.glean.com/administration/management/features/glean-language-support` and confirm the GA language list, the cross-lingual Q&A limitation, and the UI-vs-content localization gap.<br>2. If your organization has non-English-speaking staff or non-English source documents, confirm with your Glean admin whether this limitation has come up in practice. | You confirm the documented tiering, and (if applicable) whether this has been a real consideration for your organization. | | Relevant if this client has any non-English-speaking staff or documents | ~15 min, Easy (doc read) + optional follow-up |
+
+---
+
 ## Result Rollup
 
 Once every row above has a Result filled in, copy the Pass/Fail/Partial/Blocked counts back into the companion research doc [V2/Infrastructure Requirements.md](../../../../Glean/Combined/4.9.4%20Integration%20&%20Technical/V2/Infrastructure%20Requirements.md), and specifically record the outcome of Sr No 3 (closes a flagged gap) and Sr No 7 (whatever your account team actually provides).
@@ -64,3 +115,11 @@ Once every row above has a Result filled in, copy the Pass/Fail/Partial/Blocked 
 | 3. Compute-spec disclosure gaps (AWS vs. GCP) | 2 | | | | |
 | 4. Security defaults + permanent region decision | 1 | | | | |
 | 5. Real, complete infra document for your tenant | 1 | | | | |
+| 6. Mandatory admin alerting system | 1 | | | | |
+| 7. Connector-failure alerting scope and framing | 1 | | | | |
+| 8. LLM-provider-outage alerting (BYO-LLM relevance) | 1 | | | | |
+| 9. Maintenance-window SLA + Slack side effect | 2 | | | | |
+| 10. macOS desktop deployment path + PPPC profile | 1 | | | | |
+| 11. Windows desktop per-user install requirement | 1 | | | | |
+| 12. Mobile Intune MAM + missing kill-switch gap | 1 | | | | |
+| 13. Tiered/partial language support | 1 | | | | |

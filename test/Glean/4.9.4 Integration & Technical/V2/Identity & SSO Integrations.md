@@ -11,7 +11,7 @@
 - Admin access to your organization's actual identity provider (whichever one you use - Okta, Microsoft Entra ID, and Google Workspace all have dedicated Glean guides; any other SAML-compliant IdP works via the generic SAML path).
 - One test user account you can add to/remove from a group in your IdP, to test sync timing without disrupting real users.
 
-**Sr No mapping:** Sr No 1-7 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Identity & SSO Integrations.md](../../../../Glean/Combined/4.9.4%20Integration%20&%20Technical/V2/Identity%20&%20SSO%20Integrations.md#claims-sr-no-1-7-mapped-to-test-guide) - same number, same claim, doc-sourced there / tenant-tested here.
+**Sr No mapping:** Sr No 1-9 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Identity & SSO Integrations.md](../../../../Glean/Combined/4.9.4%20Integration%20&%20Technical/V2/Identity%20&%20SSO%20Integrations.md#claims-sr-no-1-9-mapped-to-test-guide) - same number, same claim, doc-sourced there / tenant-tested here. Sr No 8-9 added 2026-09-14 - new identity-reconciliation findings found via a full-corpus sweep of this project's local Glean documentation crawl, never previously tested (see scrap/GLEAN_RESEARCH_MEMORY.md).
 
 **How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes on exactly what you observed. "Pass" means you personally confirmed it - not that the docs say so.
 
@@ -56,6 +56,18 @@
 |---|---|---|---|---|---|---|
 | 7 | Glean checks that the authenticating user's email domain matches your organization's expected domain before issuing a session, as an extra safety layer beyond the IdP's own check | 1. If you have access to a test account with an email domain that does **not** match your organization's primary domain (e.g. a personal or unrelated test account authenticated through the same IdP setup), attempt to log in.<br>2. Observe whether Glean rejects the session despite successful IdP authentication, due to the domain mismatch. | Glean rejects or blocks the session when the email domain doesn't match, even though the IdP itself authenticated the user successfully - confirming this is a real, additional check Glean performs. | | This is a safety-sensitive test - only attempt with an account you're authorized to use for testing, and expect it to fail (that failure is the pass condition) | ~15 min, Easy |
 
+## Section 7 - Confirming cross-tenant identity reconciliation via aliases - Sr No 8
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 8 | Glean stitches a user's separate accounts (across multiple connectors or IdP tenants) into one person record using aliases derived from named IdP attributes (proxyAddresses, otherMails/secondEmail) | 1. Go to **Admin Console → Identity → People data → User aliases** (or equivalent).<br>2. Pick a test user who exists in more than one connector or has multiple email addresses in your IdP (e.g. via proxyAddresses in Entra ID/Okta).<br>3. Confirm Glean has merged these into a single person record, and confirm which attribute (proxyAddresses vs. otherMails/secondEmail) is driving the merge, and whether the opt-in/spoofing-risk-aware defaults match documentation. | You confirm a real multi-identity user is correctly merged into one person record, and that the alias source attribute and its default (off unless enabled) match the documented behavior. | | Relevant for M&A or multi-domain healthcare-network scenarios | ~20 min, Easy-Hard depending on whether a suitable multi-identity test user exists |
+
+## Section 8 - Confirming the SSO vs. People Data dependency - Sr No 9
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 9 | SSO and People Data are decoupled - a user can log in via SSO yet be invisible in the org chart/directory, especially under SAML-only setups, unless a separate people-data pipeline (OIDC-scoped sync, CSV, or Indexing API) is configured | 1. Confirm which protocol your tenant uses for SSO (from Sr No 1).<br>2. If SAML-only, check whether a separate people-data sync (OIDC-scoped, CSV upload, or Indexing API) is configured in **Admin Console → Identity → People data**.<br>3. Pick a recently-onboarded user and confirm whether they can log in successfully but are missing from the org chart/directory search (or vice versa), consistent with the documented decoupling. | You confirm whether your tenant's SSO protocol requires a separate people-data pipeline, and find (or rule out) at least one real example of a user visible in one system but not the other. | | Refines claim 4's sync-speed finding by identifying a more basic dependency | ~20 min, Easy |
+
 ---
 
 ## Result Rollup
@@ -70,3 +82,5 @@ Once every row above has a Result filled in, copy the Pass/Fail/Partial/Blocked 
 | 4. Real sync-speed measurement + manual override | 2 | | | | |
 | 5. No independent IdP-rule enforcement | 1 | | | | |
 | 6. Domain-match safety check | 1 | | | | |
+| 7. Cross-tenant identity reconciliation (aliases) | 1 | | | | |
+| 8. SSO vs. People Data dependency | 1 | | | | |

@@ -35,6 +35,8 @@ Two items in this pass are corrections against a prior pass's more favorable rea
 
 **Doc-Verified** for claims 1-4, 6-7, 9; **Doc-Verified (correction)** for claim 5; **Unverified, third-party, flagged for bias** for claim 8. 6 independent sources, validation date 2026-09-10. Tenant verification tracked in the companion test guide.
 
+**Correction note, added 2026-09-14:** if a "Glean has no persistent memory" framing has been used anywhere in client-facing summaries drawing on this project's research, it needs correcting — Glean has a real, persistent, cross-session user-level memory/personalization system (`docs.glean.com/user-guide/assistant/memory-personalization`), distinct from the 2-hour agent-step memory this project documented in `4.9.3/V2/Context Window & Memory.md` claims 1-4. See that file's claims 10-14 for the full finding. Source: full-corpus sweep of this project's local Glean documentation crawl, tracked in `scrap/GLEAN_RESEARCH_MEMORY.md`.
+
 ---
 
 ## Summary

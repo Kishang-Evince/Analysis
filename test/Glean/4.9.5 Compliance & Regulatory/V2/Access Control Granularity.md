@@ -12,7 +12,7 @@
 - Two Salesforce users: one with full field visibility, one with a specific field restricted via FLS but with record-level (row) access to the same record.
 - If your organization doesn't use Salesforce: this guide's Section 2 (the extension check) lets you test the same question against Jira, SharePoint, or another connector with field/column-level security instead — see Sr No 5.
 
-**Sr No mapping:** Sr No 1-7 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Access Control Granularity.md](../../../../Glean/Combined/4.9.5%20Compliance%20&%20Regulatory/V2/Access%20Control%20Granularity.md#claims-sr-no-1-7-mapped-to-test-guide) — same number, same claim, doc-sourced there / tenant-tested here.
+**Sr No mapping:** Sr No 1-10 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Access Control Granularity.md](../../../../Glean/Combined/4.9.5%20Compliance%20&%20Regulatory/V2/Access%20Control%20Granularity.md#claims-sr-no-1-10-mapped-to-test-guide) — same number, same claim, doc-sourced there / tenant-tested here. Sr No 8-10 added 2026-09-14 — new access-governance mechanics found via a full-corpus sweep of this project's local Glean documentation crawl, never previously tested (see scrap/GLEAN_RESEARCH_MEMORY.md).
 
 **How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes on exactly what you observed. "Pass" means you personally saw it happen — not that the docs say so.
 
@@ -52,6 +52,24 @@
 |---|---|---|---|---|---|---|
 | 7 | Row/document-level and field-level access control should be reported as two separate findings, not one blended answer | 1. Re-read your own Sr No 1-6 results together.<br>2. Draft a one-paragraph summary of this field for a client that correctly states: row/document-level = strong, field-level = a real documented gap requiring manual mitigation.<br>3. Have a colleague read it and confirm they come away understanding both halves distinctly. | Your colleague understands both the strength (row/document) and the specific limitation (field-level) as two separate facts, not blurred into one vague "access control works well" or "access control has issues" statement. | | Communication/write-up quality check | ~15 min, Easy |
 
+## Section 6 — Confirming the Document lookup admin tool — Sr No 8
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 8 | The Document lookup tool directly answers "can user X see document Y," and can be used to spot-check the Salesforce FLS gap on a document-by-document basis | 1. Go to **Admin Console → Search → Document lookup** (or equivalent path).<br>2. Look up a document and a specific user, and confirm the four returned fields: Last crawled, Last indexed, Document visibility on Glean, Document access (for the selected user).<br>3. If you ran the FLS gap test in Section 2 (Sr No 2), use Document lookup on that same record/user pair and confirm it reports the access outcome consistently. | Document lookup returns all four documented fields correctly, and — if cross-checked against the Sr No 2 FLS test — reports an access outcome consistent with what you directly observed. | | Ties directly back to Section 2's FLS gap test | ~15 min, Easy |
+
+## Section 7 — Confirming the bulk content-hiding mechanism — Sr No 9
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 9 | Glean's admin-UI content-hiding mechanism supports bulk CSV-based hiding (up to 500,000 documents) with three visibility modes and its own audit trail, and does not affect source permissions or federated live-fetch surfaces | 1. Go to the content-hiding admin area, prepare a small test CSV listing a handful of harmless test documents.<br>2. Apply one of the three modes (HIDE_ALL, HIDE_ALL_EXCEPT_OWNER, or HIDE_FROM_GROUPS) and confirm the hide takes effect (~1 hour) and appears in the "All Hidden Documents" audit tab.<br>3. Confirm the underlying source permissions are unchanged (the document is still fully accessible at the source system).<br>4. If your tenant uses a federated live-fetch source (e.g. Slack Real-Time Search), confirm hidden content still appears there, matching the documented scope limitation. | The hide takes effect in Glean search/AI answers, is logged in the audit tab, source permissions remain untouched, and (if tested) federated live-fetch results are unaffected by the hide — all matching documented behavior. | | Use only harmless test documents — this is a real content-visibility change | ~1 hr 15 min (includes propagation wait), Hard |
+
+## Section 8 — Confirming the Super Admin permission ratchet — Sr No 10
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 10 | Admins cannot create, assign, or downgrade the Super Admin role, and first-time provisioning requires written CISO/security-officer authorization | 1. As a regular Admin (not Super Admin), attempt to assign or modify the Super Admin role for another user in **Admin Console → Identity → Roles**.<br>2. Confirm the action is blocked or unavailable to a non-Super-Admin.<br>3. Ask your Glean account team, in writing, to confirm the written-authorization requirement (CxO/VP-level approval, 1-2 business day turnaround) for first-time Super Admin provisioning at your organization. | The Admin-level attempt to modify Super Admin role assignment is blocked, and your account team confirms the written-authorization provisioning process in writing. | | Maps to HIPAA Security Rule Sec164.308 access-authorization expectations | ~20 min active + wait for account-team reply, Hard |
+
 ---
 
 ## Result Rollup
@@ -65,3 +83,6 @@ Once every row above has a Result filled in, copy the Pass/Fail/Partial/Blocked 
 | 3. Extension to other connectors checked | 1 | | | | |
 | 4. Permission-change propagation delay measured | 1 | | | | |
 | 5. Accurate write-up framing | 1 | | | | |
+| 6. Document lookup admin tool | 1 | | | | |
+| 7. Bulk content-hiding mechanism | 1 | | | | |
+| 8. Super Admin permission ratchet | 1 | | | | |
