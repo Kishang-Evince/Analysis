@@ -15,16 +15,19 @@
  * from that file's styles.xml) minus the "Tool" column — this workbook is
  * single-tool, so the tool name lives in the filename instead of a column.
  *
- * Per field table columns: Sr No | <label> | Source | Detail | Test Guide Notes | Physical Test Required
+ * Per field table columns (renamed 2026-09-14 for client clarity, each header also carries an
+ * Excel cell-comment description on hover — see HEADER_NOTES below):
+ *   Sr No | <label> | Source | Confirmation Detail | Confirmation Notes | Check Required
  *   - <label> is whatever that field's own doc calls column 2 (Claim/Feature/Finding/etc.) — read
  *     dynamically per file, not assumed.
- *   - Test Guide Notes = the "Notes" cell from the SAME Sr No row in the paired test guide, if that
+ *   - Confirmation Detail = the old "Detail" column: exact evidence backing the claim.
+ *   - Confirmation Notes = the old "Test Guide Notes" column (renamed - "Test Guide" read as
+ *     internal jargon): the "Notes" cell from the SAME Sr No row in the paired test guide, if that
  *     guide's table shape has a Notes column at all (some don't — left blank there, not fabricated).
- *   - Physical Test Required = "No" when that claim's own "## Confidence" tier (parsed straight out of
- *     the research doc's prose — see parseConfidenceTiers/tierSkipsPhysicalTest) is Doc-Verified or
- *     hands-on Tested, i.e. settled just by reading the cited page again. "Yes" for every other tier
- *     (Search-corroborated, Cross-referenced, Absence-check, Partially Confirmed, Press-reported, ...) —
- *     those genuinely need a live-tenant check or a direct vendor question, not just a re-read.
+ *   - Check Required (renamed from "Physical Test Required") = "Yes" by default for every claim,
+ *     even Doc-Verified ones — see needsPhysicalTest() below for the full rule and why Doc-Verified
+ *     alone no longer implies "No" (revised 2026-09-14: a doc saying a feature works doesn't prove
+ *     it works in this tenant).
  *
  * Field order: this section's Overview.md's own "Field N: <name>" list, for whichever of those names
  * still exist as a V2 file — then any V2 files NOT mentioned in Overview.md are appended afterward
@@ -64,19 +67,42 @@ const SECTIONS = [
 ];
 
 /**
- * Which claims need a real physical/tenant test, vs. which are settled just by
- * reading the cited doc. Driven by each claim's own "## Confidence" tier,
- * parsed out of the research doc's prose (see parseConfidenceTiers below) —
- * not hardcoded per field. A tier counts as "already settled, no physical test
- * needed" when its bolded name contains "doc-verified" or "tested"
- * (case-insensitive) — everything else (Search-corroborated, Cross-referenced,
- * Absence-check, Press-reported, Partially Confirmed, Unverifiable, ...) still
- * needs a live-tenant check or a direct vendor question.
+ * Which claims need a real physical/tenant test, vs. which are genuinely
+ * settled by the doc alone with nothing to go run in app.glean for.
+ *
+ * Rule (revised 2026-09-14 per client-facing feedback): "Doc-Verified" on its
+ * own is NOT enough to skip physical test. A doc saying a feature works
+ * doesn't prove it works in Perimeter's own tenant - e.g. an agent-automation
+ * claim needs an actual portal run before confidence is real, even though the
+ * underlying research is Doc-Verified. So the default is now YES (physical
+ * test required), for every tier.
+ *
+ * "No" is reserved for two narrow cases where there is nothing to physically
+ * test in app.glean:
+ *   1. Tier is hands-on "Tested" already - the physical test already happened.
+ *   2. Tier is "Doc-Verified" AND the claim itself is a static, non-behavioral
+ *      fact with no in-tenant action to run: a published certification/badge
+ *      (SOC 2, ISO, HIPAA, GDPR, TX-RAMP, VPAT/ACR), a published pricing/cost
+ *      figure, a partner/legal registration-status fact, a third-party/
+ *      non-Glean market-context note, or a claim explicitly flagged in this
+ *      project's own research as an unverified vendor marketing statement
+ *      (nothing to run in a tenant to confirm someone else's benchmark).
+ *
+ * Everything else - every functional/behavioral claim, no matter how solid
+ * the doc sourcing is - defaults to YES, because building real client
+ * confidence on this phase means watching it happen in the tenant.
  */
-function tierSkipsPhysicalTest(tier) {
-  if (!tier) return false; // unknown tier -> stay safe, default to "Yes"
-  const t = tier.toLowerCase();
-  return t.includes('doc-verified') || t.includes('tested');
+const STATIC_FACT_PATTERN =
+  /\bSOC\s*2\b|\bISO\s*27001\b|\bISO\s*42001\b|\bTX-RAMP\b|\bVPAT\b|Accessibility Conformance Report|\bACR\b|HIPAA.*badge|GDPR.*badge|badge shown on public security page|\$[\d,]+\s*(per|\/)|pricing page|list price|cost per\s*1M|Partner Agreement|Registration Status|non-Glean source|Third-party.*(competitor|market analysis)|unverified.*vendor marketing|flagged.*unverified|methodology-undisclosed|self-reported benchmark/i;
+
+function needsPhysicalTest(tier, rawClaim, rawSource, rawDetail) {
+  const t = (tier || '').toLowerCase();
+  if (t.includes('tested')) return false; // already physically done
+  if (t.includes('doc-verified')) {
+    const combined = `${rawClaim} ${rawSource} ${rawDetail}`;
+    if (STATIC_FACT_PATTERN.test(combined)) return false; // static fact, nothing to run in-tenant
+  }
+  return true; // default: yes, needs a real portal run to build confidence
 }
 
 // --- markdown table parsing --------------------------------------------------
@@ -209,6 +235,34 @@ function mdToRichText(s) {
 }
 
 /**
+ * Same cleanup as mdToRichText, but when the source text contains a real
+ * markdown link ([text](https://...)) the cell becomes an actual clickable
+ * ExcelJS hyperlink instead of "text (url)" as inert display text. xlsx only
+ * supports one hyperlink target per cell, so if a cell cites multiple links,
+ * the first is the clickable target and every link's text+url still appears
+ * in the visible cell text (nothing is hidden, only the first is clickable).
+ * Bold emphasis is not preserved on a hyperlink cell (ExcelJS hyperlink
+ * values can't carry rich-text runs) - link cells are rare enough alongside
+ * bold emphasis that this tradeoff is acceptable.
+ */
+function mdToHyperlinkCell(s) {
+  if (!s) return '';
+  const linkRe = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+  const links = [...s.matchAll(linkRe)];
+  if (links.length === 0) return mdToRichText(s);
+
+  const displayText = s
+    .replace(linkRe, '$1 ($2)')
+    .replace(/`([^`]+)`/g, '$1')
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/\*([^*]+)\*/g, '$1')
+    .replace(/^>\s?/, '')
+    .trim();
+
+  return { text: displayText, hyperlink: links[0][2] };
+}
+
+/**
  * @returns {{ label: string, rows: Array<{srNo:number, claim, source, detail, tier:string|null, physicalTestRequired:boolean}> }}
  */
 function parseResearchDoc(filePath) {
@@ -227,13 +281,16 @@ function parseResearchDoc(filePath) {
       const srNo = parseInt(cells[0], 10);
       if (!Number.isFinite(srNo)) continue; // separator/malformed row, skip
       const tier = perClaim.get(srNo) ?? fallbackTier ?? null;
+      const rawClaim = cells[1] ?? '';
+      const rawSource = sourceIdx >= 0 ? cells[sourceIdx] ?? '' : '';
+      const rawDetail = detailIdx >= 0 ? cells[detailIdx] ?? '' : '';
       rows.push({
         srNo,
-        claim: mdToRichText(cells[1] ?? ''),
-        source: mdToRichText(sourceIdx >= 0 ? cells[sourceIdx] ?? '' : ''),
-        detail: mdToRichText(detailIdx >= 0 ? cells[detailIdx] ?? '' : ''),
+        claim: mdToHyperlinkCell(rawClaim),
+        source: mdToHyperlinkCell(rawSource),
+        detail: mdToHyperlinkCell(rawDetail),
         tier,
-        physicalTestRequired: !tierSkipsPhysicalTest(tier),
+        physicalTestRequired: needsPhysicalTest(tier, rawClaim, rawSource, rawDetail),
       });
     }
   }
@@ -255,7 +312,7 @@ function parseTestGuideNotes(filePath) {
     for (const cells of rows) {
       const srNo = parseInt(cells[0], 10);
       if (!Number.isFinite(srNo)) continue;
-      const val = mdToRichText(cells[notesIdx] ?? '');
+      const val = mdToHyperlinkCell(cells[notesIdx] ?? '');
       if (val) notes.set(srNo, val);
     }
   }
@@ -331,7 +388,17 @@ const FONT_FIELD = { bold: true, size: 11, color: { argb: 'FF1F3864' } };
 const FONT_HEADER = { bold: true, size: 10, color: { argb: 'FFFFFFFF' } };
 const FONT_DATA = { size: 9 };
 
-const COL_WIDTHS = [7, 36, 30, 60, 36, 16]; // Sr No | label | Source | Detail | Test Guide Notes | Physical Test Required
+const COL_WIDTHS = [7, 36, 30, 55, 36, 14]; // Sr No | label | Source | Confirmation Detail | Confirmation Notes | Check Required
+
+// One short description per header, shown as an Excel cell comment (hover) on every field's header row.
+const HEADER_NOTES = {
+  'Sr No': 'Row number - matches the same claim in the companion test guide.',
+  label: 'The specific capability, feature, or finding being evaluated in this row.',
+  Source: 'Where this was verified. Click the cell to open the cited Glean page.',
+  'Confirmation Detail': 'Exact evidence (quotes, figures) backing the claim, as found in Glean\'s own documentation.',
+  'Confirmation Notes': 'How to verify this in a live Glean tenant - step-by-step guidance from the test guide.',
+  'Check Required': 'Yes = must be confirmed with a live portal run before client-facing use. No = already settled by documentation alone (certification, published pricing, etc.) - nothing to physically test.',
+};
 
 // --- workbook assembly --------------------------------------------------------
 
@@ -373,7 +440,7 @@ function buildSectionSheet(workbook, sectionName) {
 
     // column header row
     const headerRowNum = fieldRowNum + 1;
-    const headerLabels = ['Sr No', label, 'Source', 'Detail', 'Test Guide Notes', 'Physical Test Required'];
+    const headerLabels = ['Sr No', label, 'Source', 'Confirmation Detail', 'Confirmation Notes', 'Check Required'];
     const headerRow = sheet.getRow(headerRowNum);
     headerLabels.forEach((text, i) => {
       const cell = headerRow.getCell(i + 1);
@@ -381,6 +448,8 @@ function buildSectionSheet(workbook, sectionName) {
       cell.fill = FILL_HEADER;
       cell.font = FONT_HEADER;
       cell.alignment = { horizontal: 'center', vertical: 'middle', wrapText: true };
+      const noteText = HEADER_NOTES[text] ?? HEADER_NOTES[i === 1 ? 'label' : text];
+      if (noteText) cell.note = noteText;
     });
 
     // data rows
@@ -395,7 +464,12 @@ function buildSectionSheet(workbook, sectionName) {
         // font — setting cell.font on top of that would clobber the bold runs,
         // so only apply the plain data font to genuinely plain-string/number cells.
         const isRichText = val && typeof val === 'object' && Array.isArray(val.richText);
-        if (!isRichText) cell.font = FONT_DATA;
+        const isHyperlink = val && typeof val === 'object' && typeof val.hyperlink === 'string';
+        if (isHyperlink) {
+          cell.font = { size: 9, color: { argb: 'FF0563C1' }, underline: true };
+        } else if (!isRichText) {
+          cell.font = FONT_DATA;
+        }
         cell.alignment = {
           vertical: 'top',
           wrapText: true,
@@ -423,19 +497,24 @@ function buildReadmeSheet(workbook, stats) {
     ['underlying research doc and its paired hands-on test guide (Glean/Combined/<section>/V2/', false],
     ['and test/Glean/<section>/V2/ in the source project).', false],
     [''],
-    ['Column 2\'s header (Claim / Feature / Finding / etc.) is whatever that specific field', false],
-    ['calls its own second column — it is not the same word in every table on purpose.', false],
+    ['Column headers, left to right:', true],
+    ['  Sr No               row number, same Sr No in the paired test guide', false],
+    ['  Claim / Feature / Finding   whatever that specific field calls its own second column —', false],
+    ['                       not the same word in every table on purpose', false],
+    ['  Source              click to open the cited Glean page directly (real hyperlink, not text)', false],
+    ['  Confirmation Detail  exact evidence (quotes, figures) backing the claim, from Glean\'s own docs', false],
+    ['  Confirmation Notes   how to verify this in a live tenant — guidance copied from the matching', false],
+    ['                       Sr No row in that field\'s test guide; left blank where the guide has no', false],
+    ['                       Notes column for that row — never invented', false],
+    ['  Check Required       Yes/No — see rule below', false],
     [''],
-    ['Test Guide Notes = guidance copied from the matching Sr No row in that field\'s test', false],
-    ['guide. Left blank where that guide\'s table has no Notes column for a given row —', false],
-    ['never invented.', false],
-    [''],
-['Physical Test Required = No when that specific claim\'s own Confidence tier is Doc-Verified or', false],
-    ['already hands-on Tested — settled just by re-reading the cited page, no tenant needed. Yes for', false],
-    ['every other tier (Search-corroborated, Cross-referenced, Absence-check, Partially Confirmed, ...)', false],
-    [`— those genuinely need a live-tenant check or a direct vendor question. ${stats.noTestNeededCount} of`, false],
-    [`${stats.totalRows} rows are currently No; the rest are Yes and are exactly what the paired test`, false],
-    ['guides (test/Glean/<section>/V2/) walk through step by step.', false],
+    ['Check Required rule: defaults to Yes for every claim, even Doc-Verified ones — a doc saying', false],
+    ['a feature works does not prove it works in this tenant (e.g. agent automation needs an actual', false],
+    ['portal run before real confidence exists). No is reserved for claims with nothing to run in', false],
+    ['app.glean at all: already hands-on Tested, or a static Doc-Verified fact (certification/badge,', false],
+    ['published pricing figure, partner/legal status, third-party market context, or a claim this', false],
+    [`project itself flags as unverified vendor marketing). ${stats.noTestNeededCount} of ${stats.totalRows}`, false],
+    ['rows are currently No; the rest are Yes and are exactly what the paired test guides (test/Glean/<section>/V2/) walk through step by step.', false],
     [''],
     ['Color key:', true],
     ['  Dark blue bar   = SOW section title (sheet-level, appears once at top)', false],
