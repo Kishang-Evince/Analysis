@@ -1,0 +1,1527 @@
+[
+  {
+    "url": "https://docs.glean.com/user-guide/about/end-user-quick-start-guide",
+    "title": "Start using Glean",
+    "description": "Start using Glean, your enterprise-aware AI coworker. Complete your first task, connect your apps, and bring Glean into the tools where you already work."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/about/what-is-glean",
+    "title": "What is Glean?",
+    "description": "Your enterprise AI coworker for company knowledge, answers with citations, and getting work done across the tools you already use"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/advanced/advanced-search-filter",
+    "title": "Advanced search filters in Glean",
+    "description": "Learn filter syntax, examples, and best practices to get precise results in Glean Search and when building Agents."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/advanced/configuring-dark-mode",
+    "title": "Configuring dark mode",
+    "description": "How to set up Glean's dark mode preferences to meet your needs"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/advanced/customizing-home-page",
+    "title": "Customizing Your Glean Home Page",
+    "description": "Make the Glean home page your own"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/advanced/keyboard-shortcuts",
+    "title": "Keyboard Shortcuts",
+    "description": "Search faster from anywhere"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/advanced/pets",
+    "title": "Pets",
+    "description": "Unlock interactive pets by using different Glean features."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/advanced/searching-from-address-bar",
+    "title": "Searching from the address bar",
+    "description": "Use gl or add Glean as a smart keyword"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/apps/chat-first-experience",
+    "title": "Use Desktop Quick Chat",
+    "description": "Search or chat with Glean without leaving the app you're working in."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/apps/extension-sidebar",
+    "title": "Extension Sidebar",
+    "description": "Start searching faster, not harder"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/apps/glean-companion",
+    "title": "Glean companion",
+    "description": "Access Glean's knowledge wherever you work"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/apps/glean-extension-via-company-push",
+    "title": "Glean Extension via Company Push",
+    "description": "What to expect when your company installs the Glean browser extension, and how to change your homepage settings"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/apps/why-does-the-chrome-extension-ask-for-those-permissions",
+    "title": "Why does the Glean browser extension ask for these permissions?",
+    "description": "Understand why the Glean browser extension requests permissions and how it uses them."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/ai-answers",
+    "title": "AI Answers",
+    "description": "Get a direct, cited answer at the top of your search results, based on documents you can access."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/assistant-library",
+    "title": "Library",
+    "description": "Browse the content you create in Glean and discover the ones your teammates have shared."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/best-practices",
+    "title": "Best Practices",
+    "description": "Tips for getting better answers and results from Glean"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/chat-sharing",
+    "title": "Share chats",
+    "description": "Share entire Glean conversations with specific people, teams, or your whole organization."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/code-generation",
+    "title": "Code Generation",
+    "description": "Enhance software development workflows with Glean's intelligent code generation capabilities"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/code-search",
+    "title": "Code Search",
+    "description": "Learn about Glean's capability to search code through the repositories."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/contextual-images",
+    "title": "Contextual Images",
+    "description": "Display relevant visuals directly alongside your answers"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/file-upload",
+    "title": "Upload files in Assistant",
+    "description": "Upload and analyze local files in Glean - documents, spreadsheets, presentations, code files, images, and archives."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/glean-chat/canvas",
+    "title": "Canvas",
+    "description": "Draft, iterate, and refine content with Glean using Canvas"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/glean-chat/plan",
+    "title": "Plan",
+    "description": "When Glean receives a complex query, it can generate a visible, interactive plan before and during execution. This gives users transparency into what Glean is doing, why it is doing it, and how far along it is."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/glean-chat/search-and-autocomplete",
+    "title": "Search and autocomplete in chat",
+    "description": "As you type in Glean, get inline document suggestions and high-confidence search results without leaving the chat."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/how-glean-accesses-info",
+    "title": "How Glean accesses information",
+    "description": "Learn how Glean accesses information and generates responses"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/html-artifacts",
+    "title": "Interactive artifacts",
+    "description": "Create and share interactive artifacts with your teammates."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/image-generation",
+    "title": "Image Generation in Glean",
+    "description": "Create custom visuals from natural-language prompts directly in Glean"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/meeting-notes",
+    "title": "Meeting notes",
+    "description": "Capture meeting transcripts, notes, summaries, decisions, and action items in Glean without adding a meeting bot to the call."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/memory-personalization",
+    "title": "Memory and personalization",
+    "description": "Use memory to personalize responses based on your preferences, role, and work context"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/podcast-artifacts",
+    "title": "Create podcast artifacts",
+    "description": "Create playable audio briefings from your company's knowledge in Glean."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/query-bigquery-data-in-glean-assistant",
+    "title": "Query BigQuery data in Glean",
+    "description": "Ask natural-language questions or run SQL against your BigQuery data directly in Glean."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/query-databricks-data-in-glean-assistant",
+    "title": "Query Databricks data in Glean Assistant",
+    "description": "Ask natural-language questions about your Databricks data in Assistant - Glean routes to the best Genie space and returns results in Assistant."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/query-snowflake-data-in-glean-assistant",
+    "title": "Query Snowflake data in Glean Assistant",
+    "description": "Query your Snowflake warehouse with natural language or SQL in Assistant-governed, self-serve analysis without leaving chat."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/real-time-voice",
+    "title": "Use real-time voice",
+    "description": "Have natural, hands-free voice conversations with Glean on web, desktop, and mobile."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/slide-generation",
+    "title": "Slide Generation in Glean",
+    "description": "Create branded presentations from natural-language prompts using Glean and Canvas"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/spreadsheet-generation",
+    "title": "Spreadsheet Generation in Glean",
+    "description": "Create spreadsheets from natural-language prompts in Glean Canvas and export to Excel, Google Sheets, or CSV"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/assistant/update-salesforce-opportunities",
+    "title": "Update Salesforce opportunities in Glean",
+    "description": "Update Salesforce opportunity fields directly from Glean using natural language."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/embedded-integrations",
+    "title": "Embedded integrations",
+    "description": "Use Glean directly inside the apps you already work in - Slack, Microsoft Teams, and more."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/embedded-integrations/slack/ask-questions-channels",
+    "title": "Ask questions and get answers in channels",
+    "description": "How Glean automatically detects and answers questions in Slack channels."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/embedded-integrations/slack/getting-started-user",
+    "title": "Get started as a user",
+    "description": "Learn how to start using Glean in Slack as an end user."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/embedded-integrations/slack",
+    "title": "Glean in Slack",
+    "description": "Search, ask questions, run agents, and subscribe to a daily digest from inside Slack."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/embedded-integrations/slack/search-with-glean",
+    "title": "Search with /glean command",
+    "description": "Search across all your company's connectors from any Slack channel."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/embedded-integrations/slack/subscribe-daily-digest",
+    "title": "Subscribe to daily digest",
+    "description": "Set up your personalized daily digest of Slack channels and topics."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/embedded-integrations/slack/understand-public-mode",
+    "title": "Understand Public Mode responses",
+    "description": "How Public Mode works and what it means for you as a user."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/embedded-integrations/slack/use-code-writer",
+    "title": "Use Code Writer for code suggestions",
+    "description": "Turn Slack conversations into draft pull requests with Code Writer."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/embedded-integrations/slack/use-slack-sidebar",
+    "title": "Use Glean in the Slack sidebar",
+    "description": "Use the Glean sidebar in Slack to chat with Assistant and run supported agents."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/glean-notification/notification",
+    "title": "Browser and email notifications",
+    "description": "Get alerts when an agent needs your input or when Deep Research completes, so you can act without manually checking chats."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/announcements/how-announcements-work",
+    "title": "How announcements work",
+    "description": "Share team or company-wide updates on the Glean home page"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/answers/how-to-write-effective-answers",
+    "title": "How To Write Effective Answers",
+    "description": "What answers to write and how to help users find what they need."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/collections/how-collections-work",
+    "title": "How Collections work",
+    "description": "Organize documents from across all your apps into a Collection to help your team stay on the same page."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/collections/organizing-collections-using-headers",
+    "title": "Organize Collections using headers",
+    "description": "How to use Headers to create subsections in Collections"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/collections/providing-informational-hierarchy-using-subcollections",
+    "title": "Provide informational hierarchy using subcollections",
+    "description": "Nest Collections inside a Collection to organize large sets of documents by topic, team, or audience"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/collections/updating-permissions-on-collections",
+    "title": "Update permissions on Collections",
+    "description": "How to control who has access to edit contents within a Collection"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/go-links/create-variable-go-links",
+    "title": "Create Variable Go Links",
+    "description": "Create Go Links with variable URL segments for search queries, tickets, and other dynamic destinations."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/go-links/how-to-make-the-most-of-go-links",
+    "title": "How to make the most of Go Links",
+    "description": "Learn more about Go Links capabilities."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/go-links/troubleshooting",
+    "title": "Troubleshooting Go Links",
+    "description": "Go Link didn't work? Here's how to fix it"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/go-links/unlisted-go-links",
+    "title": "Unlisted Go Links",
+    "description": "Create Go Links that only you and Glean admins can discover on the Go Links dashboard."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/home-page/celebrations-widget",
+    "title": "Celebrations Widget",
+    "description": "FAQ on the celebrations widget on home page"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/home-page/mentions",
+    "title": "Mentions",
+    "description": "See where you were tagged or assigned across your work apps from Glean Home."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/home-page/shortcuts",
+    "title": "Shortcuts",
+    "description": "Manage shortcuts from your Glean Home Page"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/meetings-and-calendar/zoom-meeting-transcripts",
+    "title": "Use Zoom meeting transcripts in Search, Chat, and Home",
+    "description": "Learn how to use Zoom meeting transcript and recordings in Glean"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/pins/how-pins-work",
+    "title": "How Pinned Results Work",
+    "description": "Customize what appears as the top result for specific queries to help people in your organization find the best resource"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/projects/how-projects-work",
+    "title": "Organize content with Projects",
+    "description": "Organize chats, documents, and artifacts into a project to keep related work together in one place."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/verification/what-does-verification-mean",
+    "title": "What Does Verification Mean?",
+    "description": "Your stamp of approval on the accuracy of a document you own"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/knowledge/verification/which-documents-should-i-verify",
+    "title": "Which Documents Should I Verify?",
+    "description": "Verify your most viewed documents"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/mcp/data-analytics",
+    "title": "MCP for Data Analytics",
+    "description": "Query data, identify trends, and generate insights with Glean's MCP server"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/mcp/end-user-configuration",
+    "title": "Configure the Glean MCP server",
+    "description": "For organizations where your Glean administrator has enabled the Glean MCP server, you can configure your own connection to the Glean MCP server in most MCP host applications."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/mcp/engineering",
+    "title": "MCP for Engineering",
+    "description": "Debug errors, review code, and understand your codebase with Glean's MCP server"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/mcp/glean-plugin-claude-code",
+    "title": "Set up the Glean plug-in in Claude Code",
+    "description": "Install the Glean plug-in for yourself or everyone working in a Claude Code repository."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/mcp/glean-plugin-codex",
+    "title": "Set up the Glean plug-in in Codex",
+    "description": "Install the Glean plug-in and connect Codex to your Glean MCP server."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/mcp/glean-plugin-cursor",
+    "title": "Set up the Glean plug-in in Cursor",
+    "description": "Install and verify the Glean plug-in in Cursor."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/mcp/glean-plugin",
+    "title": "Use the Glean plug-in",
+    "description": "Use Glean Skills and tools from Cursor, Claude Code, or Codex."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/mcp/operations",
+    "title": "MCP for Operations",
+    "description": "IT support, HR policies, meeting prep, and incident response with Glean's MCP server"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/mcp/overview",
+    "title": "MCP examples by role",
+    "description": "Real-world examples of using Glean's MCP server across different job functions"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/mcp/product-management",
+    "title": "MCP for Product Management",
+    "description": "Draft PRDs, track features, and research markets with Glean's MCP server"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/mcp/sales",
+    "title": "MCP for Sales",
+    "description": "Research accounts, prepare for calls, and close deals faster with Glean's MCP server"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/mcp/troubleshoot-glean-plugin",
+    "title": "Troubleshoot the Glean plug-in",
+    "description": "Resolve installation, authentication, approval, and tool availability problems with the Glean plug-in."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/mcp/usage",
+    "title": "Using the Glean MCP Server",
+    "description": "Connect supported MCP host applications to Glean and use Glean tools from your AI apps."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/people/customizing-your-glean-profile",
+    "title": "Customizing your Glean profile",
+    "description": "Here's how to make your Glean profile your own."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/people/teams/how-to-use-team-pages",
+    "title": "How to use Team Pages",
+    "description": "Here's how to get the most out of your team's page"
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/people/teams/setting-up-team-pages",
+    "title": "Setting up Team Pages",
+    "description": "Create and manage team pages in Glean's Directory so employees can find who's on each team and how to reach them."
+  },
+  {
+    "url": "https://docs.glean.com/user-guide/search/browser-history-apps",
+    "title": "Browser History Results",
+    "description": "Get search results from company apps you have visited previously in your browser"
+  },
+  {
+    "url": "https://docs.glean.com/administration/about",
+    "title": "About the Admin Console",
+    "description": "The Admin Console is where all enterprise-wide configuration for the Glean platform occurs."
+  },
+  {
+    "url": "https://docs.glean.com/administration/actions/setup-actions/choose-central-or-custom-oauth",
+    "title": "OAuth options for tools",
+    "description": "Choose between central OAuth and custom OAuth for OAuth-based tools, review connector support, and understand default token lifetimes."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/atlassian",
+    "title": "Set up Atlassian service credential",
+    "description": "Configure an Atlassian service-account API key so Glean agents can interact with Jira and Confluence through Atlassian's hosted MCP server under a non-human identity."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/aws-cloudwatch",
+    "title": "Set up AWS CloudWatch Logs service credential",
+    "description": "Configure cross-account IAM role assumption with Workload Identity Federation so Glean agents can read AWS CloudWatch Logs."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/coda",
+    "title": "Set up Coda service credential",
+    "description": "Configure a dedicated Coda identity and MCP-restricted API token so Glean agents can work with approved Coda content."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/datadog",
+    "title": "Set up Datadog service credential",
+    "description": "Configure Datadog API and Application keys so Glean agents can query logs, metrics, traces, monitors, and dashboards through Datadog's remote MCP server under a service account."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/gcp-bigquery",
+    "title": "Set up GCP BigQuery service credential",
+    "description": "Configure GCP service account impersonation so Glean agents can query BigQuery datasets."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/gcp-service-account",
+    "title": "Set up GCP cloud logging service credential",
+    "description": "Configure GCP service account impersonation and register it as a service credential in Glean so agents can call GCP APIs."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/gcp-storage",
+    "title": "Set up GCP Storage service credential",
+    "description": "Configure GCP service account impersonation so Glean agents can read Cloud Storage buckets and objects."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/github-app",
+    "title": "Set up GitHub service credential",
+    "description": "Let Glean agents read GitHub repository data using a GitHub app."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/gong",
+    "title": "Set up Gong service credential",
+    "description": "Let Glean agents read Gong calls, transcripts, users, and stats using a workspace API key."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/grafana",
+    "title": "Set up Grafana service credential",
+    "description": "Configure a Grafana Cloud service account API key so Glean agents can query dashboards, alerts, traces, and metrics through Grafana's MCP server under a non-human identity."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/intercom",
+    "title": "Set up Intercom service credential",
+    "description": "Configure an Intercom workspace Access Token so Glean agents can manage conversations, contacts, and tickets through Intercom's hosted MCP server under a non-human identity."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/linear",
+    "title": "Set up Linear service credential",
+    "description": "Configure Linear OAuth app client credentials so Glean agents can use Linear under a non-human identity."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/outlook",
+    "title": "Set up Microsoft Outlook service credential",
+    "description": "Configure a Microsoft Entra application so Glean agents can access approved Outlook data through Microsoft Graph."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/sentry",
+    "title": "Set up Sentry service credential",
+    "description": "Configure a Sentry Internal Integration auth token so Glean agents can read issues, events, and releases from Sentry under a non-human identity."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/servicenow",
+    "title": "Set up ServiceNow service credential",
+    "description": "Let Glean agents call the ServiceNow REST API using a shared service account with the OAuth 2.0 password grant."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/slack-app",
+    "title": "Set up Slack service credential",
+    "description": "Create a Slack app and register it as a service credential in Glean so agents can read and post in Slack channels."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/snowflake",
+    "title": "Set up Snowflake service credential",
+    "description": "Let Glean agents run read-only SQL against Snowflake using a service user with key-pair authentication."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/teams",
+    "title": "Set up Microsoft Teams service credential",
+    "description": "Let Glean agents access Microsoft Teams data using an application identity."
+  },
+  {
+    "url": "https://docs.glean.com/administration/agent-identity/zendesk",
+    "title": "Set up Zendesk MCP service credential",
+    "description": "Configure a Zendesk OAuth client so Glean agents can use Zendesk MCP read tools under a shared service identity."
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/configuration/content-restrictions",
+    "title": "Restrict LLM access to content",
+    "description": "Exclude specific content from Glean Assistant and Agents responses while keeping it available in search results."
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/configuration/deep-research",
+    "title": "Deep Research",
+    "description": "Learn how to enable and disable Deep Research in Glean."
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/configuration/live-or-federated-fetch",
+    "title": "Live or federated fetch",
+    "description": "Allow users to access and interact with linked files in Glean without indexing them."
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/data-analysis/about-data-analysis",
+    "title": "Data analysis overview",
+    "description": "Learn how to analyze structured data, including CSV, XLSX, and JSON files, using Glean's data analysis capabilities in Assistant"
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/data-analysis/file-security",
+    "title": "File security",
+    "description": "Learn about the secure, isolated environment used for executing code in Glean's Data Analysis feature"
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/data-analysis/technical-overview",
+    "title": "Technical overview",
+    "description": "Technical architecture and implementation details of the Data Analysis capability in Assistant"
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/features/chat-api-agentic-engine",
+    "title": "Agentic engine in the Chat API",
+    "description": "Enable Glean's agentic engine for Chat API requests and confirm it's active in responses."
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/features/code-writer",
+    "title": "Code Writer",
+    "description": "Learn about Glean's capability to write code and open draft pull requests in GitHub."
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/features/contextual-images",
+    "title": "Image Rendering in Glean: Admin Configuration Guide",
+    "description": "Display relevant visuals directly alongside your answers"
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/features/engine-pricing",
+    "title": "Agentic Engine V2 Token Consumption",
+    "description": "Learn about Agentic Engine V2's impact on token consumption and pricing"
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/features/file-upload",
+    "title": "File upload",
+    "description": "Enable file upload so users can upload and analyze local files in Glean Assistant."
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/features/inline-artifacts",
+    "title": "Inline artifacts",
+    "description": "Control whether Glean renders charts and diagrams inline in chat responses."
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/features/notifications",
+    "title": "Notifications",
+    "description": "Configure user notifications for agents and Deep Research"
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/features/real-time-content-retrieval",
+    "title": "Real-time content retrieval",
+    "description": "for GDrive and Box"
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/features/real-time-voice",
+    "title": "Real-time voice",
+    "description": "Configure real-time voice conversations for your organization"
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/features/slide-deck-generation",
+    "title": "Slide deck generation",
+    "description": "Configure slide deck generation so users can create on-brand presentations from Glean."
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/warehouse-data/connect-bigquery-to-glean-assistant",
+    "title": "Connect BigQuery to Glean",
+    "description": "Set up Google Cloud OAuth and Google Cloud Identity and Access Management (IAM) roles so Glean can query your BigQuery data through the BigQuery MCP server."
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/warehouse-data/connect-databricks-genie-to-glean-assistant",
+    "title": "Connect Databricks Genie to Glean Assistant",
+    "description": "Set up the Databricks connector and tools so Glean Assistant can route natural-language questions to your Databricks Genie spaces."
+  },
+  {
+    "url": "https://docs.glean.com/administration/assistant/warehouse-data/connect-snowflake-to-glean-assistant",
+    "title": "Connect Snowflake to Glean",
+    "description": "Set up Snowflake OAuth, roles, and the Snowflake tools so Glean can run read-only queries against your warehouse."
+  },
+  {
+    "url": "https://docs.glean.com/administration/customization/branding",
+    "title": "branding",
+    "description": ""
+  },
+  {
+    "url": "https://docs.glean.com/administration/developer/api-tokens",
+    "title": "API Tokens",
+    "description": "API tokens authorize programmatic access to Glean's REST APIs:"
+  },
+  {
+    "url": "https://docs.glean.com/administration/feature-rollouts",
+    "title": "Self-serve beta features and managed rollouts",
+    "description": "Learn how to enable, manage access to, and disable beta features and managed rollouts, including lifecycle stages and enrollment options."
+  },
+  {
+    "url": "https://docs.glean.com/administration/gce-logs/data-dictionary-detailed",
+    "title": "Event schemas",
+    "description": "Each record in the log contains several fields that are added by default by the Google Logging API and are not useful for Glean usage analysis."
+  },
+  {
+    "url": "https://docs.glean.com/administration/gce-logs/insights-production-queries",
+    "title": "Insights Production Queries",
+    "description": "These are self-contained BigQuery SQL queries that you can run directly against your"
+  },
+  {
+    "url": "https://docs.glean.com/administration/gce-logs/migrating-to-workflowrun-logs",
+    "title": "WorkflowRun event log",
+    "description": "Reference for the WorkflowRun event type in Glean Customer Event Logs and how to use it in your analytics."
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/people-data/attribute-mapping",
+    "title": "People data attribute mapping",
+    "description": "Map attributes from your people connector to Glean attributes so identity information appears correctly across search, profile pages, and ranking signals."
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/people-data/configuration/okta-tokenless",
+    "title": "Okta People Data Tokenless Setup",
+    "description": "Configure Okta as your People Data provider for Glean without use of an API Token"
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/people-data/configuration/people-data-entra-id",
+    "title": "Sync people data from Entra ID",
+    "description": "Configure Microsoft Entra ID as your people connector for Glean"
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/people-data/configuration/people-data-google-drive",
+    "title": "Sync people data from Google Drive",
+    "description": "Configure Google Drive as your people connector."
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/people-data/configuration/people-data-okta",
+    "title": "Sync people data from Okta",
+    "description": "Configure Okta as your people connector for Glean"
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/people-data/configuration/people-data-workday",
+    "title": "Sync people data from Workday",
+    "description": "Configure Workday as your people connector."
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/people-data/troubleshooting/sso-vs-people-data",
+    "title": "Difference between SSO and People Data in Glean",
+    "description": "Understand what SSO controls, what people data controls, and how they work together in Glean."
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/people-data/user-aliases",
+    "title": "User aliases and identity stitching",
+    "description": "Learn how Glean derives user aliases from identity provider directory attributes to stitch identities across tenants and connectors"
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/roles/about",
+    "title": "About Role Based Access Control (RBAC)",
+    "description": "Glean offers a robust Role-Based Access Control (RBAC) system that allows for management of user and administrator permissions within the platform"
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/roles/admin-roles",
+    "title": "Administrator Roles",
+    "description": "A comprehensive overview of Glean's administrator roles and their associated permissions"
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/roles/faq",
+    "title": "RBAC FAQ",
+    "description": "Super Admin"
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/roles/manage-users",
+    "title": "Managing Users",
+    "description": "The User roles page in the Admin Console allows you to manage users of Glean and their associated roles."
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/roles/user-roles",
+    "title": "User Roles",
+    "description": "An overview of the Member and Moderator roles for Glean platform users, their access rights, and customizable privileges"
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/sso/configuration/generic-saml",
+    "title": "Generic SAML",
+    "description": "Step-by-step guide for configuring any SAML 2.0 identity provider as the SSO provider for Glean."
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/sso/configuration/keycloak-credentials",
+    "title": "Rotate Keycloak credentials",
+    "description": "Keycloak is an identity provider (IdP) used for single sign-on (SSO). This page explains how to update or rotate the credentials of an existing Keycloak SSO integration. Once Keycloak authentication is configured during initial setup, it can't be edited from the standard UI, so credential changes are made from the advanced apps settings page."
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/sso/configuration/okta-oidc-tokenless",
+    "title": "Okta OIDC SSO tokenless setup",
+    "description": "Configure Okta as your SSO provider for Glean without using an API Token"
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/sso/configuration/okta-oidc",
+    "title": "Okta (OIDC)",
+    "description": "Step-by-step guide to configuring Okta as the SSO provider for Glean using OIDC - with an automated API token setup or the Glean OIN integration."
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/sso/supported-sso-providers",
+    "title": "supported-sso-providers",
+    "description": ""
+  },
+  {
+    "url": "https://docs.glean.com/administration/identity/sso/troubleshooting/troubleshoot-azure-sso",
+    "title": "Troubleshoot Azure SSO",
+    "description": "Resolve common Azure Single Sign-On (SSO) authentication issues in Glean"
+  },
+  {
+    "url": "https://docs.glean.com/administration/insights/agents",
+    "title": "Agents insights",
+    "description": "Learn how to use Agents insights to monitor agent adoption, quality, and usage across your organization"
+  },
+  {
+    "url": "https://docs.glean.com/administration/insights/announcements",
+    "title": "Announcements",
+    "description": "Enable announcement authoring, grant users access to create announcements, and troubleshoot Announcement Insights"
+  },
+  {
+    "url": "https://docs.glean.com/administration/insights/glean-in-support-applications",
+    "title": "Embedded integrations",
+    "description": "Understand how your organization uses Glean in Zendesk, ServiceNow, and Service Cloud through the embedded integrations insights report."
+  },
+  {
+    "url": "https://docs.glean.com/administration/insights/insights-chat",
+    "title": "Insights chat",
+    "description": "Natural language query interface for Glean platform usage analytics"
+  },
+  {
+    "url": "https://docs.glean.com/administration/insights/mcp-insights",
+    "title": "MCP insights",
+    "description": "Track MCP server usage and adoption across your organization."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/alerts/admin-alerts",
+    "title": "About admin alerts",
+    "description": "Configure and manage alerts for critical events in your Glean instance to maintain optimal performance"
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/alerts/connector-failure-alerts",
+    "title": "Connector failure alerts",
+    "description": "Understand connector failure alerts, the connectors they cover, and how to resolve and manage them"
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/alerts/llm-provider-alerts",
+    "title": "LLM provider alerts",
+    "description": "Understand LLM provider alert emails - what triggers them and how to resolve the underlying errors"
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/appearance/branding",
+    "title": "Company branding",
+    "description": "Customize the Glean portal to use your company logo and colors."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/appearance/delight-features",
+    "title": "Delight features",
+    "description": "Learn what delight features are and how admins can disable them."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/appearance/home-page",
+    "title": "Home page",
+    "description": "Customize the layout of the Glean Home Page, including background images, cards, and quick actions."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/features/browser/about",
+    "title": "About the browser extension",
+    "description": "The best way to drive Glean adoption at your company is by deploying the browser extension to their managed devices."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/features/browser/deployment",
+    "title": "Deploy the browser extension to managed devices",
+    "description": "The Glean browser extension can either be manually installed by your users or pushed to managed devices by your IT admin."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/features/browser/featured-agents",
+    "title": "Configure featured agents",
+    "description": "Configure which agents appear first when users open the browser extension on supported Zendesk, ServiceNow, or Service Cloud pages."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/features/desktop/macos-deployment",
+    "title": "Deploy Glean for Desktop for macOS",
+    "description": "Deploy Glean for Desktop to managed Mac computers with a mobile device management solution."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/features/desktop/windows-deployment",
+    "title": "Deploy Glean for Desktop for Windows",
+    "description": "Deploy Glean for Desktop to managed Windows devices with Microsoft Intune or another software-management solution."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/features/dns-go-links",
+    "title": "DNS-based Go Links",
+    "description": "Enable Glean Go Links on any browser or device using go.glean.com or a custom domain, without the browser extension."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/features/glean-for-desktop",
+    "title": "Glean for Desktop",
+    "description": "Glean for Desktop gives your users a spotlight-like search and chat experience on macOS and Windows, available from anywhere on their machine."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/features/glean-language-support",
+    "title": "Glean Language Support",
+    "description": "Use Glean in your preferred language."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/features/mobile-intune-mam",
+    "title": "Configure Microsoft Intune MAM for the Glean mobile app",
+    "description": "Set up Microsoft Intune Mobile Application Management (MAM) for the Glean mobile app, including App Protection Policies, Microsoft Edge sign-in, and Conditional Access."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/features/mobile",
+    "title": "iOS and Android",
+    "description": "Deploy and configure the Glean mobile apps for iOS and Android, including Microsoft Intune App Protection and Conditional Access setup."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/maintenance-windows",
+    "title": "Maintenance Window Policy",
+    "description": "As a managed SaaS service, Glean automatically updates our services to ensure that the underlying infrastructure is reliable, performant, secure, and up-to-date. Most of these updates are performed while your Glean services are up and running. However, certain software updates like Elasticsearch require a brief service interruption to be completed. These updates are called maintenance."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/models/provider-setup/azure-openai-setup",
+    "title": "Use GPT models on Azure OpenAI",
+    "description": "Learn how to configure Glean to use GPT models on Azure OpenAI for direct billing of LLM usage through your Azure account."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/models/provider-setup/gemini-setup",
+    "title": "Use Gemini models on Google Vertex AI",
+    "description": "Configure Glean to use Gemini models through Google Vertex AI with customer-managed billing and authentication."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/models/provider-setup/troubleshoot-llm-provider-errors",
+    "title": "Troubleshoot LLM provider errors",
+    "description": "Resolve common errors when connecting Glean to your LLM provider, including invalid API keys, deployment mismatches, and rate limits."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/notifications/admin-notifications-dashboard",
+    "title": "Notifications dashboard",
+    "description": "Monitor connector health and system status with real-time, actionable notifications on the Admin console dashboard."
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/people-and-teams/org-chart/org-chart-export",
+    "title": "Export Org Chart data",
+    "description": "Learn how to export organizational chart data to CSV files in Glean's admin interface"
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/people-and-teams/profiles/visibility-controls",
+    "title": "Visibility controls",
+    "description": "Learn how to modify user profile attributes and social profile visibility"
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/people-and-teams/teams/configure-teams",
+    "title": "Configure Teams",
+    "description": "Enable team collaboration and discovery by configuring team pages in Glean"
+  },
+  {
+    "url": "https://docs.glean.com/administration/management/user-generated-content",
+    "title": "User-generated content",
+    "description": "Manage the Answers, Announcements, Collections, Go Links, and Pins that people create across your organization from one place in the Admin console."
+  },
+  {
+    "url": "https://docs.glean.com/administration/managing-agents/agent-access",
+    "title": "Manage agent access",
+    "description": "Control how users share agents and what level of access each audience receives, and assign agent roles that govern agent deployment."
+  },
+  {
+    "url": "https://docs.glean.com/administration/managing-agents/agent-group-sharing",
+    "title": "Share agents with identity provider groups",
+    "description": "Share agents with Google Groups or Azure Active Directory/Entra ID groups so the right teams get access without adding people individually."
+  },
+  {
+    "url": "https://docs.glean.com/administration/managing-agents/agent-routing",
+    "title": "Route requests to agents",
+    "description": "Learn how to configure Glean to automatically route user questions to specialized, custom-built agents for faster and more accurate answers."
+  },
+  {
+    "url": "https://docs.glean.com/administration/managing-agents/deleting-and-restoring-agents",
+    "title": "Delete and restore agents",
+    "description": "Describes what happens when you delete an agent, how to delete inactive agents in bulk, the 60-day soft delete window, and how admins can restore or permanently remove agents."
+  },
+  {
+    "url": "https://docs.glean.com/administration/managing-agents/featured-agents",
+    "title": "Manage featured agents in the Agent Library",
+    "description": "Learn how to manage featured agents in the Agent Library"
+  },
+  {
+    "url": "https://docs.glean.com/administration/managing-agents/how-an-app-is-translated-to-an-agent",
+    "title": "How an app migrates to an agent",
+    "description": "Learn how each component of an AI app maps to its agent equivalent when you migrate from apps to agents."
+  },
+  {
+    "url": "https://docs.glean.com/administration/managing-agents/managing-agent-library",
+    "title": "Manage agent library",
+    "description": "Learn to design a Library that avoids agent sprawl and makes high-quality agents easy to discover."
+  },
+  {
+    "url": "https://docs.glean.com/administration/managing-skills/share-skills",
+    "title": "Share Skills",
+    "description": "Share Skills with departments, organizations, or specific groups and control who can access them."
+  },
+  {
+    "url": "https://docs.glean.com/administration/managing-skills/skills-roles",
+    "title": "Set up Skills and manage access",
+    "description": "How to set up Skills and manage Skills access."
+  },
+  {
+    "url": "https://docs.glean.com/administration/oauth/authorization-server",
+    "title": "Glean OAuth Authorization Server",
+    "description": "Glean can act as an OAuth 2.1 Authorization Server (issuing access tokens) and as the Resource Server (validating them), while delegating user authentication to your configured Single Sign-On (SSO) Identity Provider (IdP) using OpenID Connect (OIDC) or Security Assertion Markup Language (SAML)."
+  },
+  {
+    "url": "https://docs.glean.com/administration/oauth/dynamic-client-registration",
+    "title": "Dynamic Client Registration",
+    "description": "Control which MCP host applications can dynamically register with the Glean OAuth authorization server"
+  },
+  {
+    "url": "https://docs.glean.com/administration/oauth/headless-connector-auth",
+    "title": "User Connector Authentication for Headless Integrations",
+    "description": "When you use Glean in a headless way (custom UI, Web SDK, or API-only), users still need to authorize certain connectors (for example, Slack RTS, GitHub) so Glean can access their private data on their behalf."
+  },
+  {
+    "url": "https://docs.glean.com/administration/oauth/oauth-idp",
+    "title": "OAuth with IdP-issued tokens",
+    "description": "Customers can register an OAuth 2.1 (OAuth) application in their enterprise Identity Provider (IdP) and enable Glean to accept those IdP-issued access tokens for Client API calls. Glean validates and enforces permissions for user-scoped tokens; token lifecycle (issuance, expiry, refresh) is governed by your IdP."
+  },
+  {
+    "url": "https://docs.glean.com/administration/oauth/oauth-overview",
+    "title": "OAuth Overview",
+    "description": "Glean supports OAuth 2.1 for authenticating requests to the Client API and for connecting Model Context Protocol (MCP) host applications to Glean's Remote MCP Servers."
+  },
+  {
+    "url": "https://docs.glean.com/administration/oauth/static-client-registration",
+    "title": "Static OAuth clients",
+    "description": "Create and manage static OAuth clients in the Admin Console"
+  },
+  {
+    "url": "https://docs.glean.com/administration/oauth/static-client-token-example",
+    "title": "Get tokens with a static OAuth client",
+    "description": "Complete the authorization code flow with PKCE by using a static OAuth client"
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/a2a-host",
+    "title": "Glean A2A host",
+    "description": "Learn how Glean Auto mode agents call registered third-party agents over the Agent2Agent protocol."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/a2a-server",
+    "title": "Glean A2A server",
+    "description": "The Glean A2A server lets external AI platforms invoke Glean Assistant as a remote agent using the open Agent2Agent (A2A) protocol. Once an administrator turns it on, A2A-capable platforms such as Google Gemini Enterprise and Microsoft Copilot Studio can discover Glean Assistant and send it questions on behalf of your users - so people can ask Glean from whichever AI surface their organization standardizes on."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/configure-a2a-host",
+    "title": "Configure the Glean A2A host",
+    "description": "Register a third-party A2A server and add its agent to a Glean Auto mode agent."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/configure-a2a",
+    "title": "Configure the Glean A2A server",
+    "description": "Turn on the Glean A2A server to connect Glean Assistant to an external AI platform such as Google Gemini Enterprise or Microsoft Copilot Studio. For how the A2A server works and how requests are authenticated, see Glean A2A server."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/github-copilot-extension-install",
+    "title": "Configure Glean in GitHub Copilot",
+    "description": "Learn how to configure Glean in GitHub Copilot."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/glean-in-augment-code",
+    "title": "Configure Glean in Augment Code",
+    "description": "How to configure and set up Glean in Augment Code as an embedded integration."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/glean-in-gemini-chat/get-started-user",
+    "title": "Use Glean in Gemini chat",
+    "description": "Authorize Glean in Gemini chat and ask work questions using company knowledge from Glean."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/glean-in-gemini-chat",
+    "title": "Glean in Gemini chat",
+    "description": "Connect Glean to Google Gemini Enterprise so users can ask questions grounded in company knowledge from Glean."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/glean-in-gemini-chat/installation-guide",
+    "title": "Set up Glean in Gemini chat",
+    "description": "Connect Glean to Google Gemini Enterprise as a custom MCP server so users can ask work questions in Gemini chat using company knowledge from Glean."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/glean-in-gemini-chat/prerequisites",
+    "title": "Prerequisites for Glean in Gemini chat",
+    "description": "Gather the access, values, and platform requirements you need before you set up Glean in Gemini chat."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/glean-in-miro",
+    "title": "Configure Glean in Miro",
+    "description": "How to configure and set up Glean in Miro as an embedded integration."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/glean-in-service-cloud",
+    "title": "Configure Glean in Service Cloud",
+    "description": "How to configure and set up Glean in Service Cloud for your team."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/glean-in-service-now",
+    "title": "Configure Glean in ServiceNow",
+    "description": "How to configure and set up Glean in ServiceNow for your team."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/glean-in-teams/glean-agents-ms-teams",
+    "title": "Glean Agents in Microsoft Teams",
+    "description": "Deploy Glean Agents in Microsoft Teams so users can run specialized agents and actions from Teams chat."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/glean-in-teams/glean-in-microsoft-teams--admin-guide",
+    "title": "Glean in Microsoft Teams: Admin guide",
+    "description": "Set up and deploy the Glean app in Microsoft Teams for your organization."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/glean-in-teams/migrate-bot-to-azure-bot-service",
+    "title": "Migrate the Teams bot to Azure Bot Service",
+    "description": "Move an existing Glean Teams bot from the Bot Framework Portal to Azure Bot Service to enable Single tenant configuration."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/glean-in-webex",
+    "title": "Configure Glean in Webex",
+    "description": "Learn how to configure and set up Glean in Cisco Webex as an embedded integration."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/glean-in-zendesk",
+    "title": "Configure Glean in Zendesk",
+    "description": "How to configure and set up Glean in Zendesk for your team."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations",
+    "title": "Embedded integrations Home",
+    "description": "How to configure and set up Embedded integrations for your team."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/admin-guide/configure-bot-responses",
+    "title": "Configure bot responses in channels",
+    "description": "Configure how Glean responds to questions in Slack channels."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/admin-guide/configure-code-writer",
+    "title": "Configure Code Writer",
+    "description": "Enable and configure Code Writer so users can propose code changes from Slack."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/admin-guide/cost-usage-monitoring",
+    "title": "Cost and usage monitoring",
+    "description": "Understand costs and monitor usage of Glean in Slack."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/admin-guide/customize-question-detection",
+    "title": "Customize question detection for agents in Slack",
+    "description": "Control when a published agent proactively replies in Slack using custom question detection."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/admin-guide/enable-announcements",
+    "title": "Enable announcements from Slack",
+    "description": "Configure Gleanbot to allow employees to create announcements in Glean directly from Slack messages"
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/admin-guide/enable-daily-digest",
+    "title": "Enable and configure daily digest",
+    "description": "Enable and configure the daily digest feature for your organization."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/admin-guide/enable-public-mode",
+    "title": "Enable Public Mode",
+    "description": "Share Glean's answers with everyone in a Slack channel thread."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/admin-guide/manage-permissions-security",
+    "title": "Manage permissions and security",
+    "description": "Understand and manage permissions and security for Glean in Slack."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/admin-guide/setup-slack-sidebar",
+    "title": "Set up Slack sidebar integration",
+    "description": "Configure the Glean sidebar in Slack for your organization."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/faq",
+    "title": "Frequently asked questions",
+    "description": "Quick answers to common questions about Glean in Slack."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/getting-started/configuration-checklist",
+    "title": "Initial configuration checklist",
+    "description": "Essential post-installation configuration steps for Glean in Slack."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/getting-started/installation-guide",
+    "title": "Installation guide",
+    "description": "Step-by-step instructions to install Glean in Slack."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/getting-started/prerequisites",
+    "title": "Prerequisites and requirements",
+    "description": "What you need before installing Glean in Slack."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/getting-started/upgrading-to-slack-rts",
+    "title": "Upgrade to Slack RTS",
+    "description": "Upgrade your Glean in Slack integration to use Slack Real-Time Search."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/glean-in-slack--proactive-thread-summarize",
+    "title": "Glean in Slack: Proactive Thread Summarize",
+    "description": "Quickly get up to speed on lengthy conversations."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot",
+    "title": "Glean in Slack overview",
+    "description": "Install, configure, and manage Glean in Slack for your organization."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/reference",
+    "title": "Technical reference",
+    "description": "Technical reference for Glean in Slack including architecture, permissions, and glossary."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/slackbot/troubleshooting",
+    "title": "Troubleshooting Glean in Slack",
+    "description": "Common issues and solutions for Glean in Slack."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/embedded-integrations/zoom-ai-companion",
+    "title": "Configure Glean in Zoom",
+    "description": "Learn how to configure Glean in Zoom."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/expose-agents-over-a2a",
+    "title": "Expose Glean agents over A2A",
+    "description": "In addition to exposing Glean Assistant as a remote agent, you can publish an individual Glean agent over the open Agent2Agent (A2A) protocol. Each eligible agent gets its own agent card and endpoint, so an external A2A client can discover and run that specific agent directly."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/agents-as-tools",
+    "title": "Use agents as MCP tools",
+    "description": "Glean Agents can be exposed as tools through Glean MCP server, allowing them to be invoked directly from MCP host applications like Claude Desktop, Cursor, VS Code, and other compatible tools. This enables powerful workflows where specialized agents become callable tools in your preferred development environment, or anywhere else that you'd run MCP tools."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/analytics",
+    "title": "MCP usage tracking and analytics",
+    "description": "How to monitor and measure MCP server usage, current tracking capabilities, and limitations"
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/best-practices",
+    "title": "MCP server best practices",
+    "description": "Use this guide to design MCP servers that are easy for users to understand and easy for AI hosts to use well. For step-by-step setup instructions, see Create MCP servers."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/create-mcp-servers",
+    "title": "Create MCP servers",
+    "description": "Once you've enabled Glean MCP server, you can create custom MCP servers tailored to specific use cases. Each server has its own URL and can be configured with a specific set of tools."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/enable-mcp-servers",
+    "title": "Set up Glean MCP server",
+    "description": "The Glean MCP server is fully managed and built into your Glean instance. Glean enables the Glean MCP server for customers by default with OAuth, so users can access Glean in supported AI tools without an admin enabling the server manually."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/external-gateway-tools",
+    "title": "Set up external tools with MCP Gateway",
+    "description": "The Glean MCP Gateway lets you securely expose external tools connected to Glean-custom tools, external MCP servers, and external connector tools-to AI clients like Cursor, Claude Code, ChatGPT, Claude Desktop, and more."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/glean-plugin-claude-code",
+    "title": "Deploy the Glean plug-in in Claude Code",
+    "description": "Add the Glean marketplace and plug-in to a repository for Claude Code users."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/glean-plugin-codex",
+    "title": "Deploy the Glean plug-in in Codex",
+    "description": "Prepare Glean for Codex users and validate the per-user plug-in installation."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/glean-plugin-cursor",
+    "title": "Deploy the Glean plug-in in Cursor",
+    "description": "Prepare Glean access and validate the per-user Cursor plug-in installation before rollout."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/glean-plugin",
+    "title": "Glean plug-in for coding hosts",
+    "description": "Evaluate and prepare the Glean plug-in for Cursor, Claude Code, and Codex."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/host-apps",
+    "title": "Host apps",
+    "description": "The Host apps tab in Admin console → Platform → Glean MCP server gives you a single place to see every supported AI assistant and coding tool, understand which ones your users are already connected from, and push setup to devices so users don't have to configure anything manually."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/host-guides/chatgpt",
+    "title": "ChatGPT",
+    "description": "This guide is for administrators to configure ChatGPT to connect to your company's Glean MCP server."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/host-guides/claude-desktop",
+    "title": "Claude Desktop (Teams/Enterprise)",
+    "description": "This guide is for administrators to configure Anthropic's Claude Desktop (with Teams/Enterprise plans) to connect to your company's Glean MCP server."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/host-guides/copilot-studio",
+    "title": "Microsoft Copilot Studio",
+    "description": "This guide is for administrators to configure Microsoft Copilot Studio to connect to your company's Glean MCP server."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/host-guides/gemini-agents",
+    "title": "Gemini Agents",
+    "description": "Connect Glean Assistant to Gemini Enterprise as a remote agent through the Agent2Agent protocol."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/host-guides/gemini-enterprise-mcp",
+    "title": "Gemini Enterprise MCP",
+    "description": "Connect the Glean MCP server to Gemini Enterprise so users can ask questions grounded in company knowledge from Glean."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/host-guides/librechat",
+    "title": "LibreChat",
+    "description": "This guide is for administrators to configure LibreChat to connect to your company's Glean MCP server."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/host-guides/what-is-a-host",
+    "title": "What is an MCP Host?",
+    "description": "An MCP host is the application that runs an MCP client. It is where the user interacts with an assistant, and it is responsible for connecting to MCP servers (like Glean MCP server) and exposing those servers' tools to the model."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/manage-glean-plugin",
+    "title": "Manage Glean plug-in access and security",
+    "description": "Control tool and Skills access, write-action approvals, MCP coexistence, and monitoring for the Glean plug-in."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/mcp-gateway",
+    "title": "Glean MCP Gateway",
+    "description": "The Glean MCP Gateway brings tools from outside Glean's own platform into your Glean MCP servers. The gateway supports three types of external tools:"
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/mdm-mcp",
+    "title": "Deploy MCP server with MDM (Mobile Device Management)",
+    "description": "Deploy your Glean MCP remote server to devices using your organization's MDM server."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/troubleshoot-glean-plugin",
+    "title": "Troubleshoot Glean plug-in deployment",
+    "description": "Resolve installation, authentication, permission, and tool availability problems with the Glean plug-in."
+  },
+  {
+    "url": "https://docs.glean.com/administration/platform/mcp/troubleshooting",
+    "title": "Troubleshoot MCP Connectivity",
+    "description": "This guide provides troubleshooting steps for known issues when connecting to Glean MCP server."
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/ai-security/agent-access-policies-testing",
+    "title": "Test a policy",
+    "description": "Validate an agent access policy rule against a sample tool call before enforcing it."
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/ai-security/agent-access-policies-tool-schema",
+    "title": "Find a tool's schema",
+    "description": "Discover the input and output attributes a tool exposes so you can write accurate agent access policy conditions."
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/ai-security/configuring-panw",
+    "title": "Configuring Palo Alto Networks (PANW) AI Runtime Security",
+    "description": ""
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/ai-security/findings-dashboard",
+    "title": "Findings Dashboard",
+    "description": ""
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/ai-security",
+    "title": "AI Security",
+    "description": ""
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/ai-security/investigating-violations",
+    "title": "Investigating Violations",
+    "description": ""
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/ai-security/restricted-topics",
+    "title": "Restricted topics",
+    "description": ""
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/ai-security/sensitive-content-user-prompt",
+    "title": "Sensitive content in user prompt",
+    "description": ""
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/ai-security/untrusted-url-monitoring",
+    "title": "Untrusted URL monitoring",
+    "description": "Detect and redact untrusted or fabricated URLs in AI responses to prevent phishing and data exfiltration."
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/notifications",
+    "title": "Configure Protect notifications",
+    "description": "Configure recurring email summaries of Sensitive Findings and AI Security activity for Super Admins and Sensitive Content Moderators."
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/sensitive-findings/aws-infotype",
+    "title": "Configure AWS for Infotype Scanning",
+    "description": "Follow these steps to configure AWS for infotype scanning."
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/sensitive-findings/guide",
+    "title": "Guide to sensitive findings",
+    "description": "This document outlines best practices for sensitive findings in Glean."
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/sensitive-findings/manage-policies",
+    "title": "Manage policies",
+    "description": ""
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/sensitive-findings/manage-reports",
+    "title": "Manage reports",
+    "description": ""
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/sensitive-findings/restrict-content-via-sensitivity-labels",
+    "title": "Restrict O365 content via sensitivity labels",
+    "description": ""
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/sensitive-findings/sensitive-data-search",
+    "title": "Content lookup",
+    "description": "Locate sensitive information across indexed content, independent of standard document permissions."
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/sensitive-findings/supported-info-types",
+    "title": "Supported info types",
+    "description": ""
+  },
+  {
+    "url": "https://docs.glean.com/administration/protect/sensitive-findings/view-policy-findings",
+    "title": "View sensitive findings flagged by policies",
+    "description": "Learn how to view and manage sensitive findings identified by your policies."
+  },
+  {
+    "url": "https://docs.glean.com/administration/search/about",
+    "title": "About Glean Search",
+    "description": "Glean Search is a powerful tool designed to help you find the information you need quickly and efficiently across your organization's content."
+  },
+  {
+    "url": "https://docs.glean.com/administration/search/access-verification",
+    "title": "Access verification",
+    "description": "How to check if a document is visible in Glean and whether a user can access it."
+  },
+  {
+    "url": "https://docs.glean.com/administration/search/faq",
+    "title": "Search FAQ",
+    "description": "Answers to common questions about Glean Search, Knowledge Graph, and Connectors"
+  },
+  {
+    "url": "https://docs.glean.com/administration/search/hiding-content",
+    "title": "Content hiding",
+    "description": "Control what appears in Glean search results at both the connector and document level"
+  },
+  {
+    "url": "https://docs.glean.com/administration/search/troubleshooting",
+    "title": "Troubleshooting Search",
+    "description": "A comprehensive guide to understanding and resolving search-related issues in Glean's enterprise search functionality"
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/connect-remote-mcp-servers-to-glean",
+    "title": "Connect remote MCP servers to Glean",
+    "description": "Learn how to connect MCP servers to Glean Assistant and Glean Agents"
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools",
+    "title": "Tools overview",
+    "description": "Configure and manage tools in the Admin console so Glean Assistant and agents can perform read and write operations in connected connectors."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/managing-tools/allowing-in-line-execution-of-write-tools",
+    "title": "Allowing in-line execution of write tools",
+    "description": "By enabling in-line execution for write tools, you can remove confirmation steps in interactive agents, accelerating common flows while preserving your configured safety controls."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/managing-tools/jira-extension-tools-adf",
+    "title": "Jira tools: Extension or legacy?",
+    "description": "Compare the ADF-based Jira Extension Tools with the plain-text legacy Jira Tools for Jira Cloud."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/managing-tools/managing-role-based-access-tools",
+    "title": "Managing tool access",
+    "description": "Admins can restrict which agent creators can add or configure specific tools by user or department while preserving end-user execution in shared agents."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/managing-tools/per-tool-enable-disable",
+    "title": "Enabling or disabling individual tools",
+    "description": "Control which specific operations are available to Assistant, agents, and Glean MCP servers by enabling or disabling individual tools."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/managing-tools/run-without-user-confirmation",
+    "title": "Run tools without user confirmation",
+    "description": "Allow background and scheduled agents to execute write tools without requiring user approval"
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/managing-tools/tool-visibility-scoping",
+    "title": "Manage tool access",
+    "description": "Restrict which users, departments, or groups can invoke tools in Chat, Agents, and Glean MCP servers using visibility scoping."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/managing-tools/tools-chat-vs-agents",
+    "title": "Enable tools for Glean Assistant, Agents, and the Glean MCP server",
+    "description": "Learn when and how to enable tools for Glean Assistant, Agents, and the Glean MCP server from the Admin console."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/mcp-custom-headers",
+    "title": "Custom HTTP headers for remote MCP servers",
+    "description": "Learn when and how to use custom HTTP headers when Glean connects to third-party MCP servers"
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/setup-tools/calendar-search-tools-setup",
+    "title": "Calendar Search Tools Setup",
+    "description": "You can set up a Calendar Search Tool in Glean to integrate calendar data with multiple Glean features, such as:"
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/setup-tools/code-writer-tools-setup",
+    "title": "Code Writer tool setup",
+    "description": "Enable the Code Writer tool and configure GitHub or Bitbucket Cloud authentication in Glean."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/setup-tools/confluence-tools-setup",
+    "title": "Confluence tools setup",
+    "description": "Use Confluence tools to let Glean Assistant and Glean Agents search, create, and update content in Confluence Cloud including spaces, pages, and blog posts without leaving Glean."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/setup-tools/databricks-tools-setup",
+    "title": "Databricks tools setup",
+    "description": "Enable Databricks tools and configure OAuth authentication in Glean."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/setup-tools/disable-microsoft-tools",
+    "title": "Delete Microsoft tools in Glean",
+    "description": "You can delete the Microsoft tool pack or control where individual Microsoft tools are available."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/setup-tools/github-tools-setup",
+    "title": "GitHub tools setup",
+    "description": "Set up GitHub tools in Glean, including GitHub App authentication and required permissions."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/setup-tools/google-tools-setup",
+    "title": "Google tools setup",
+    "description": "Use Google tools to let Glean Assistant and Glean Agents export responses to Google Docs, Google Sheets, or as a draft in Gmail. With these tools, users can create documents and sheets with formatting preserved, or open a draft email in Gmail."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/setup-tools",
+    "title": "Set up tools",
+    "description": "Browse tool setup guides so Glean Assistant and agents can work in your connected apps. Search by name or filter by category."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/setup-tools/jira-tools-setup",
+    "title": "Jira tools and extension tools setup",
+    "description": "Enable Jira Tools and Jira Extension Tools and configure OAuth authentication in Glean."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/setup-tools/m365-tools-setup",
+    "title": "Microsoft 365 tools and extension tools setup",
+    "description": "Set up Microsoft 365 tools and Microsoft extension tools in Glean, including Entra ID OAuth, scopes, verification, and admin consent."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/setup-tools/redirect-tools",
+    "title": "Set up redirect tools",
+    "description": "Create redirect tools in Glean using the Redirect URL Builder template."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/setup-tools/salesforce-tools-setup",
+    "title": "Salesforce Tools and Extension Tools setup",
+    "description": "Enable Salesforce Tools and Extension Tools, and configure OAuth authentication in Glean."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/setup-tools/snowflake-tools-setup",
+    "title": "Snowflake tools setup",
+    "description": "The Snowflake tools contain the following tools:"
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/setup-tools/web-search-tools-setup",
+    "title": "Web Search tools setup",
+    "description": "Set up web search tools in Glean for Assistant and Agents using OpenAI, Brave, or Google Gemini."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/setup-tools/zendesk-tools-setup",
+    "title": "Zendesk tools setup",
+    "description": "Enable Zendesk tools and configure OAuth authentication in Glean."
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/supported-mcp-servers",
+    "title": "Supported remote MCP servers",
+    "description": "Catalog of supported remote MCP servers"
+  },
+  {
+    "url": "https://docs.glean.com/administration/tools/tools-oauth-reference",
+    "title": "Tools OAuth reference",
+    "description": "Compare central and custom OAuth options, and review expected token lifetimes for each connector."
+  }
+]
