@@ -64,6 +64,7 @@ const SECTIONS = [
   '4.9.9 Competitive Positioning',
   '4.9.10 Use Case Library',
   '4.9.11 Client-Facing Explainability',
+  '4.9.12 Vendor Maturity & Trajectory',
 ];
 
 /**

@@ -117,3 +117,18 @@ All Tier 1 and Tier 2 findings, plus most Tier 3, are now integrated into the ac
 
 - `scrap/._audit1.mjs`, `scrap/._audit2.mjs` -- diff scripts (safe to delete once this memory file is trusted as the record)
 - `scrap/._uncited.json`, `scrap/._uncited_all.json` -- raw diff output (kept for now in case deeper re-triage of `docs.glean.com/tools` or `/agents` is wanted later)
+
+
+## SOW-alignment pass (2026-09-14)
+
+Direct comparison of the 87-field V2 corpus against the actual contracted `Exhibit_A_SOW_Stratos AI-Radar_Research_Database_Evince_04_16_2026 1.pdf` (pages 26-41, "Tier 3: Advanced Evaluation") found the corpus had drifted from the contract: one entire section missing, 20 fields missing inside existing sections, ~9 fields renamed/scope-drifted from their SOW names. Fixed via 5 parallel agents (one further fanned into 7 sub-agents):
+
+- **New section 4.9.12 Vendor Maturity & Trajectory** (5 fields: Product Release Velocity, Roadmap Visibility, Customer Retention Signals, Platform vs. Point Solution, Dependency Risk) — built from scratch, 36 claims total.
+- **15 new fields in existing sections**: 4.9.3 Training Data Handling (1); 4.9.4 Validated Customer References, Custom Integration Effort, Integration Licensing, Data Flow Architecture, Deployment Complexity Assessment, Scalability Architecture (6); 4.9.5 Financial Services Readiness, FedRAMP Status, Third-Party Sub-Processors (3); 4.9.6 Adoption Measurement Capabilities, Change Management Support (2); 4.9.7 Training & Enablement Cost, Ongoing Maintenance Cost, Cost Comparison Position (3).
+- **9 fields renamed to match SOW exactly**, with a re-analysis pass checking the SOW's own description (not just old title) was actually answered — 5 needed only a rename (Model Hosting Validated, Model Selection - Flexibility, RAG Implementation, Actual Pricing Details, Total Cost Projection), 4 needed new claims added to close a real sub-question the old scope missed (Custom Agent Development +4 claims, Model Update & Versioning +1, Private LLM-SLM Availability +2, Training & Enablement Infrastructure +5).
+
+Result: 87 → **107 fields**, 11 → **12 sections**, 692 → **851 claim rows**. Every new/renamed file followed the established Sr No/Claims/Confidence/Summary + paired-test-guide shape. Several fields produced genuine absence-check findings (FedRAMP: not authorized; PCI-DSS/FINRA: not addressed; public roadmap: does not exist; NPS/churn: never published) — reported honestly as gaps needing direct vendor engagement, not fabricated.
+
+**Known residual issue**: agents ran inside a git worktree; brand-new files (the 15+5 new fields) initially landed only in the worktree copy and had to be synced to the main checkout afterward via a direct file-copy pass — confirmed all 41 new files + 5 Overview.md updates landed correctly in the main checkout. The 9 renames landed directly in the main checkout without needing a sync (no worktree-conflict triggered since those paths had no pre-existing worktree copy).
+
+Plan reference: `/home/kishan-gajipara/.claude/plans/validated-fluttering-clarke.md`.

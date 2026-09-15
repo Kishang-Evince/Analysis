@@ -18,8 +18,8 @@
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 1 | Company Search caps at 500 results per step | Run a Company Search step against a broad query likely to exceed 500 hits and confirm the cap. | Confirmed. | | | ~20 min, Easy |
-| 2 | "As many as possible" can overload context and cause truncation | Set a tool's result count to the maximum/"as many as possible" setting on a broad query, and compare output quality/completeness against a batched, narrower-query approach. | You confirm the counter-intuitive risk directly. | | This is the field's most valuable test | ~30 min, Easy |
+| 1 | Company Search caps at 500 results per step | Run a Company Search step against a broad query likely to exceed 500 hits and confirm the cap. | Confirmed. | | | ~20 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 2 | "As many as possible" can overload context and cause truncation | Set a tool's result count to the maximum/"as many as possible" setting on a broad query, and compare output quality/completeness against a batched, narrower-query approach. | You confirm the counter-intuitive risk directly. | | This is the field's most valuable test | ~30 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ## Section 2 — Confirming batching guidance and the cross-referenced limits — Sr No 3-5
 

@@ -18,16 +18,16 @@
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 1 | Answers support markdown/links/audience targeting | Create a test Answer with markdown formatting and department targeting, and confirm it renders correctly. | Confirmed. | | | ~15 min, Easy |
-| 2 | Featured vs. blended surfacing works as described | Seed a high-confidence Answer and a lower-confidence one; confirm the former appears at top, the latter blends into ranked results. | Confirmed. | | | ~15 min, Easy |
-| 3 | Slack `/glean` surface (context only, not tenant-stack) | If your organization has Slack, note whether this surface is relevant; otherwise mark N/A. | N/A or confirmed. | | | ~5 min, Easy |
-| 4 | The accessibility ACR and WCAG conformance claims are real | 1. Request the actual Accessibility Conformance Report from Glean (via a11y@glean.com or your account team).<br>2. Do a spot-check keyboard-only navigation test in the Assistant UI. | You get the real ACR document and confirm basic keyboard navigation works. | | Elevate this into any accessibility-compliance conversation for a healthcare client | ~30 min, Easy |
+| 1 | Answers support markdown/links/audience targeting | Create a test Answer with markdown formatting and department targeting, and confirm it renders correctly. | Confirmed. | | | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 2 | Featured vs. blended surfacing works as described | Seed a high-confidence Answer and a lower-confidence one; confirm the former appears at top, the latter blends into ranked results. | Confirmed. | | | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 3 | Slack `/glean` surface (context only, not tenant-stack) | If your organization has Slack, note whether this surface is relevant; otherwise mark N/A. | N/A or confirmed. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 4 | The accessibility ACR and WCAG conformance claims are real | 1. Request the actual Accessibility Conformance Report from Glean (via a11y@glean.com or your account team).<br>2. Do a spot-check keyboard-only navigation test in the Assistant UI. | You get the real ACR document and confirm basic keyboard navigation works. | | Elevate this into any accessibility-compliance conversation for a healthcare client | ~30 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ## Section 2 — Running the standard clarity exercise — Sr No 5
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 5 | Known friction points (token limits, OAuth errors) still apply | Reuse or re-run the User B clarity exercise from the base test guide, and specifically watch for these two error types. | Confirmed. | | | ~30 min, Easy |
+| 5 | Known friction points (token limits, OAuth errors) still apply | Reuse or re-run the User B clarity exercise from the base test guide, and specifically watch for these two error types. | Confirmed. | | | ~30 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ---
 

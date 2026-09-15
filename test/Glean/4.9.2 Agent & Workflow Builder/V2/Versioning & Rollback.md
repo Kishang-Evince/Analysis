@@ -18,15 +18,15 @@
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 1 | 30 published versions retained, restore-as-draft works | Publish v1, edit and publish v2, then restore v1 and confirm it becomes a new draft. | Confirmed. | | | ~20 min, Easy |
-| 2 | The "Can share and publish agents" toggle controls the moderator gate | Find this exact setting in Admin Console and confirm its effect. | Confirmed. | | | ~15 min, Easy |
-| 4 | Moderator review covers inputs/actions/triggers, not just prompt text | If your tenant has a scheduled agent pending moderator approval, check what the moderator's review screen actually shows them. | Confirmed. | | | ~15 min, Easy |
+| 1 | 30 published versions retained, restore-as-draft works | Publish v1, edit and publish v2, then restore v1 and confirm it becomes a new draft. | Confirmed. | | | ~20 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 2 | The "Can share and publish agents" toggle controls the moderator gate | Find this exact setting in Admin Console and confirm its effect. | Confirmed. | | | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 4 | Moderator review covers inputs/actions/triggers, not just prompt text | If your tenant has a scheduled agent pending moderator approval, check what the moderator's review screen actually shows them. | Confirmed. | | | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ## Section 2 — Testing the permissions-versioning question directly — Sr No 3
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 3 | Permissions/sharing-scope changes are excluded from version diffs | Change an agent's sharing scope, then check the version-history diff view to see whether that change appears. | You get a real, direct answer research couldn't confirm from documentation alone. | | This closes research's flagged gap | ~15 min, Easy |
+| 3 | Permissions/sharing-scope changes are excluded from version diffs | Change an agent's sharing scope, then check the version-history diff view to see whether that change appears. | You get a real, direct answer research couldn't confirm from documentation alone. | | This closes research's flagged gap | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ---
 

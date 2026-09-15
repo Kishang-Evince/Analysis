@@ -18,11 +18,11 @@
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 1 | The "AI automation use cases" article is generic, not Glean-specific | Read the article and confirm it contains no Glean-product-specific claims. | Confirmed, and remove this citation from the field's source list. | | | ~10 min, Easy |
-| 2 | Life sciences use cases match research | Open the industry page and confirm the four named use cases. | Confirmed. | | | ~10 min, Easy |
-| 3 | No customer is named on the life sciences page | Read the full page for any customer/case-study mention. | Confirmed absent. | | | ~5 min, Easy |
-| 4 | UC-02/UC-08 sourcing should be corrected to the healthcare page + 4.9.9 research | Update the field's internal citation list accordingly. | Corrected. | | | ~10 min, Easy |
-| 5 | Cold-chain excursion use case is out of scope for Perimeter's likely profile | Confirm with internal discovery whether Perimeter Healthcare has any pharma-supply-chain/cold-chain component. | Confirmed out of scope (or flagged if relevant). | | | ~10 min, Easy |
+| 1 | The "AI automation use cases" article is generic, not Glean-specific | Read the article and confirm it contains no Glean-product-specific claims. | Confirmed, and remove this citation from the field's source list. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 2 | Life sciences use cases match research | Open the industry page and confirm the four named use cases. | Confirmed. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 3 | No customer is named on the life sciences page | Read the full page for any customer/case-study mention. | Confirmed absent. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 4 | UC-02/UC-08 sourcing should be corrected to the healthcare page + 4.9.9 research | Update the field's internal citation list accordingly. | Corrected. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 5 | Cold-chain excursion use case is out of scope for Perimeter's likely profile | Confirm with internal discovery whether Perimeter Healthcare has any pharma-supply-chain/cold-chain component. | Confirmed out of scope (or flagged if relevant). | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ---
 

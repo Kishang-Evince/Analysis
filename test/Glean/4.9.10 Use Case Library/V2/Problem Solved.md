@@ -18,10 +18,10 @@
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 1 | The IDC page doesn't contain the "20%" statistic | Open the cited page and search for the figure. | Confirmed absent. | | | ~5 min, Easy |
-| 2 | The statistic traces to McKinsey Global Institute | Search for the original McKinsey research and confirm. | Confirmed, and update the citation. | | | ~15 min, Easy |
-| 3 | "10+ systems daily" remains Vendor-Stated only | Confirm no independent source exists for this specific figure. | Confirmed. | | | ~10 min, Easy |
-| 4 | Confluent case study is cross-referenced correctly for UC-07 | Confirm the figures match the Department/Function field's findings. | Confirmed. | | | ~5 min, Easy |
+| 1 | The IDC page doesn't contain the "20%" statistic | Open the cited page and search for the figure. | Confirmed absent. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 2 | The statistic traces to McKinsey Global Institute | Search for the original McKinsey research and confirm. | Confirmed, and update the citation. | | | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 3 | "10+ systems daily" remains Vendor-Stated only | Confirm no independent source exists for this specific figure. | Confirmed. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 4 | Confluent case study is cross-referenced correctly for UC-07 | Confirm the figures match the Department/Function field's findings. | Confirmed. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ---
 

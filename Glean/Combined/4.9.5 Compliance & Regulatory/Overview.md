@@ -7,7 +7,7 @@
 **Evaluator:** Stratos Engineering  
 **Visibility Tier:** GUARDED *(Can inform advisory matching but not for raw client-facing delivery without prior advisor review)*  
 **Evaluation Date:** September 3, 2026  
-**Overall Section Status:** All 9 fields drafted (Doc-Verified baseline) · Contract artifacts Pending (Trust Portal, BAA, DPA PDFs, SOC 2 scope)  
+**Overall Section Status:** All 12 fields drafted (Doc-Verified baseline) · Contract artifacts Pending (Trust Portal, BAA, DPA PDFs, SOC 2 scope). Fields 10-12 added 2026-09-14 to close gaps against the contracted SOW — see scrap/GLEAN_RESEARCH_MEMORY.md.  
 
 **Tenant test stack (in scope):** Notion, Microsoft Teams, Outlook, OneDrive, Gmail, Google Drive, Google Docs, Google Sheets.  
 **Companion runbook:** [test/Glean/4.9.5 Compliance & Regulatory/Pre-Flight.md](../../../test/Glean/4.9.5%20Compliance%20&%20Regulatory/Pre-Flight.md)
@@ -25,3 +25,6 @@
 - [Field 7: Incident Response & Notification](Incident Response & Notification.md)
 - [Field 8: Data Processing Agreements](Data Processing Agreements.md)
 - [Field 9: AI-Specific Governance](AI-Specific Governance.md)
+- [Field 10: Financial Services Readiness](V2/Financial%20Services%20Readiness.md) *(V2 gap-closure field, added 2026-09-14 — no base file, SOW-required)*
+- [Field 11: FedRAMP Status](V2/FedRAMP%20Status.md) *(V2 gap-closure field, added 2026-09-14 — no base file, SOW-required)*
+- [Field 12: Third-Party Sub-Processors](V2/Third-Party%20Sub-Processors.md) *(V2 gap-closure field, added 2026-09-14 — no base file, SOW-required)*

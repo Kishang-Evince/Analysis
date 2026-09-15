@@ -1,0 +1,47 @@
+**Glean Tier 3 Advanced Evaluation**
+**Change Management Support - Independent Fresh Research (V2)**
+
+*Independent research, sources picked and read fresh this pass, dated 2026-09-14. Field definition: "Does the vendor offer resources beyond technical implementation? Evaluate change management playbooks, rollout templates, executive communication guides, or organizational readiness assessments. Distinguish between vendors who define success as go-live versus those who define it as sustained adoption and behavior change." Base file: none exists yet - this is a new field added to close a gap against the contracted SOW (see scrap/GLEAN_RESEARCH_MEMORY.md).*
+
+**Sr No mapping:** rows 1-6 below map 1:1 to the same Sr No in the companion test guide [test/V2/Change Management Support.md](../../../../test/Glean/4.9.6%20Adoption%20&%20Readiness/V2/Change%20Management%20Support.md) - same number, same claim, doc-sourced here / tenant-tested there.
+
+---
+
+## Headline
+
+Glean's own documentation (`docs.glean.com/get-started/golive/launch-preparation`) genuinely goes beyond pure technical setup: it includes a staggered-rollout strategy, a ready-to-use executive-communication email template, guidance on a CIO/executive kickoff message, and post-launch sustained-engagement mechanisms (office hours, feedback channels). This is real, Glean-authored change management content, not just implementation documentation - a positive finding. Separately, at least one third-party systems integrator (WWT) markets dedicated "Glean Adoption Services," suggesting an ecosystem of paid change-management help exists beyond Glean's own free documentation, though that page could not be directly read this pass (bot-detection page shown instead of content).
+
+## Claims (Sr No 1-6, mapped to test guide)
+
+| Sr No | Claim | Source | Detail |
+|---|---|---|---|
+| 1 | Glean's official go-live documentation explicitly separates "strategic rollout" guidance from technical/admin-console setup steps | [docs.glean.com/get-started/golive/launch-preparation](https://docs.glean.com/get-started/golive/launch-preparation) (directly fetched) | The page was confirmed to explicitly frame itself as covering "the strategic side of a rollout" as a distinct concern from the operational admin-console checklist - a structural signal that Glean treats change management as its own documented discipline, not an afterthought folded into setup steps. |
+| 2 | A staggered/phased rollout approach is explicitly recommended, with a specific initial cohort size | [docs.glean.com/get-started/golive/launch-preparation](https://docs.glean.com/get-started/golive/launch-preparation) (directly fetched) | Verbatim: recommends starting with "an initial group of approximately 100-300 users" to "closely monitor system performance and gather valuable feedback in a controlled setting" - a concrete, actionable readiness-assessment-style recommendation rather than generic advice. |
+| 3 | An executive-communication guide/template is provided, including a suggested CIO-level kickoff message and a full company-wide announcement email template | [docs.glean.com/get-started/golive/launch-preparation](https://docs.glean.com/get-started/golive/launch-preparation) (directly fetched) | Confirmed: the kickoff session guidance recommends beginning with "a pre-recorded message from your CIO or another key executive" addressing "the impact of Generative AI on the business and the importance of Glean as a strategic tool," plus "a complete email template...for company-wide announcements, framing Glean as productivity enhancement." This directly matches the field's "executive communication guides" sub-question with a concrete, reusable artifact. |
+| 4 | Post-launch guidance frames success around sustained engagement, not just go-live completion - ongoing feedback channels and recurring office hours are part of the documented plan | [docs.glean.com/get-started/golive/launch-preparation](https://docs.glean.com/get-started/golive/launch-preparation), [docs.glean.com/get-started/start/post-launch-tasks](https://docs.glean.com/get-started/start/post-launch-tasks) (search-corroborated title/summary) | Verbatim: the guidance calls for "robust and accessible channels for user feedback" (e.g., Slack) plus "weekly office hours" as an ongoing mechanism, and separately a Post-Launch Tasks & Checklist page exists recommending expansion "to additional waves of users" and "additional business units" once initial feedback is positive. This is a meaningful answer to the field's go-live-vs-sustained-adoption distinction: Glean's own materials explicitly plan past go-live, not just up to it. |
+| 5 | A pre-launch readiness checklist exists covering non-technical readiness factors - user identification, surveys, feedback channels, training materials, and content population - not just system configuration | [docs.glean.com/get-started/golive/launch-preparation](https://docs.glean.com/get-started/golive/launch-preparation), [docs.glean.com/get-started/prepare/items-to-prepare](https://docs.glean.com/get-started/prepare/items-to-prepare) (search-corroborated title) | The pre-launch checklist was confirmed to track "user identification, surveys, feedback channels, training materials, and populated content" - a genuine organizational-readiness-assessment-style checklist, matching the field's "organizational readiness assessments" sub-question, though it stops short of a formal scored assessment instrument (e.g., no maturity-model scoring found). |
+| 6 | At least one third-party systems integrator (WWT) markets dedicated paid "Glean Adoption Services," implying an ecosystem beyond Glean's own free documentation exists - but this could not be independently read in full this pass | [wwt.com/blog/why-wwt-for-glean-adoption-services](https://www.wwt.com/blog/why-wwt-for-glean-adoption-services) (title/search-snippet only; direct fetch blocked by bot-detection interstitial) | Search snippet content indicated the service includes "delivering tailored, role-based training and playbooks" and "investing in change management through enabling champions, tailoring communications, and spotlighting early wins" - but a direct fetch attempt returned only a "Checking your browser" interstitial with no article content, so this claim is sourced from search-engine summary text only, not independently verified against the actual page. Flagged explicitly as needing a manual browser visit to confirm (the companion test guide includes this). |
+
+## Independent read
+
+- This is a genuinely positive finding worth reporting with confidence - unlike the FedRAMP/PCI-DSS/subprocessor-notification absences elsewhere in this pass, Glean's own free documentation demonstrably contains real change-management content (templates, phased rollout sizing, executive messaging guidance), not just technical setup steps. That directly and favorably answers the field's core "beyond technical implementation" question.
+- The go-live-vs-sustained-adoption distinction (claim 4) is the most important nuance for this field, and Glean's own materials land clearly on the "sustained adoption" side of that line - the post-launch wave-expansion and recurring office-hours guidance are structurally about behavior change over time, not a one-time launch event.
+- Claim 6 is honestly the weakest-sourced finding in this doc and should not be over-claimed: it suggests a paid partner ecosystem exists for deeper change-management support, but the actual content of what WWT (or any partner) delivers was not independently confirmed this pass due to a bot-detection wall. This is flagged rather than asserted as fact.
+- What's notably absent: no evidence was found of a formal, scored "organizational readiness assessment" instrument (e.g., a maturity-model survey with a numeric output) - the readiness checklist (claim 5) is real but is a task checklist, not an assessment tool with scoring. That distinction matters if the client specifically wants a scored readiness diagnostic.
+
+## Confidence
+
+**Doc-Verified**, directly fetched, for claims 1-4 (the launch-preparation page, confirmed verbatim). **Search-corroborated (title/summary only, not independently re-fetched in full)** for claim 5 (items-to-prepare page) and for the post-launch-tasks page cited in claim 4. **Search-snippet only, direct fetch blocked by bot-detection** for claim 6 - explicitly the weakest-sourced claim in this doc, flagged for tenant/manual follow-up rather than treated as confirmed. Validation date 2026-09-14, primary source (launch-preparation) independently fetched and quoted directly; secondary sources corroborated via search but not all re-fetched in full this pass.
+
+---
+
+## Summary
+
+| Item | Finding | Sr No |
+|---|---|---|
+| Change management playbooks | Yes - staggered rollout, cohort sizing, feedback channel guidance | 1, 2 |
+| Rollout templates | Yes - company-wide announcement email template | 3 |
+| Executive communication guides | Yes - CIO kickoff message guidance + email template | 3 |
+| Organizational readiness assessments | Partial - task checklist exists, no scored/formal assessment instrument found | 5 |
+| Go-live vs. sustained adoption | Sustained adoption - explicit wave-expansion and recurring office-hours guidance post-launch | 4 |
+| Paid partner ecosystem (e.g., WWT) | Suggested by search snippet, not independently confirmed - direct fetch blocked | 6 |

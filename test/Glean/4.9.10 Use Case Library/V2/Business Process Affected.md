@@ -20,22 +20,22 @@
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 1 | Deep Research is web-app-only and admin-gated | Check Admin Console for the Deep Research enablement toggle, and confirm it's absent from Teams/desktop/mobile clients. | You confirm both constraints. | | | ~15 min, Easy |
-| 2 | Report generation takes 5-30 minutes | If enabled, run one real Deep Research query and time it. | You confirm the real timeline. | | | ~30 min, Easy |
-| 3 | Web search uses Brave exclusively | Confirm this in the docs or via a query that surfaces web citations. | You confirm. | | | ~10 min, Easy |
-| 5 | Track/Learn/Analyze patterns are real, reusable templates | Try reframing one pattern (e.g. "Track") using tenant-stack sources (Notion/Drive/Teams) instead of the documented examples. | You confirm the pattern generalizes. | | | ~20 min, Easy |
+| 1 | Deep Research is web-app-only and admin-gated | Check Admin Console for the Deep Research enablement toggle, and confirm it's absent from Teams/desktop/mobile clients. | You confirm both constraints. | | | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 2 | Report generation takes 5-30 minutes | If enabled, run one real Deep Research query and time it. | You confirm the real timeline. | | | ~30 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 3 | Web search uses Brave exclusively | Confirm this in the docs or via a query that surfaces web citations. | You confirm. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 5 | Track/Learn/Analyze patterns are real, reusable templates | Try reframing one pattern (e.g. "Track") using tenant-stack sources (Notion/Drive/Teams) instead of the documented examples. | You confirm the pattern generalizes. | | | ~20 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ## Section 2 — Testing the MCP ticket-triage correction directly — Sr No 4
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 4 | MCP-based ticket-triage-style assistance is achievable without ServiceNow/Zendesk, using tenant-stack sources instead | Via an MCP-compatible client, try a query analogous to "find similar past issues and recommended resolution" using Notion/Teams/Drive as the knowledge source instead of a ticketing system. | You get a real answer on whether this pattern works reasonably well without a dedicated ticketing connector. | | This directly tests research's key correction | ~30 min, Hard |
+| 4 | MCP-based ticket-triage-style assistance is achievable without ServiceNow/Zendesk, using tenant-stack sources instead | Via an MCP-compatible client, try a query analogous to "find similar past issues and recommended resolution" using Notion/Teams/Drive as the knowledge source instead of a ticketing system. | You get a real answer on whether this pattern works reasonably well without a dedicated ticketing connector. | | This directly tests research's key correction | ~30 min, Hard [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ## Section 3 — Reconfirming the core 8 use-case mappings — Sr No 6
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 6 | The 8 baseline-to-automated mappings remain accurate | Spot-check 2-3 of the 8 mappings against your own recent sandbox experience. | You confirm no changes needed. | | | ~15 min, Easy |
+| 6 | The 8 baseline-to-automated mappings remain accurate | Spot-check 2-3 of the 8 mappings against your own recent sandbox experience. | You confirm no changes needed. | | | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ---
 

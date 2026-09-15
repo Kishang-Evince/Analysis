@@ -22,28 +22,28 @@
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 1 | The 5% commission scope (net-new, private-sector, closed-won) matches the live page | Open `glean.com/partners/referral` and confirm the exact wording. | You confirm the scope language matches research. | | | ~5 min, Easy |
-| 2 | The three eligibility exclusions (not an existing customer, no active opportunity, no recent sales engagement) are real and would apply to any specific referral Stratos might make | 1. Confirm the exclusion language on the live page.<br>2. If Stratos has a specific referral target in mind, ask your Glean contact directly whether that account would pass all three exclusion checks BEFORE making the introduction. | You confirm the language, and — if applicable — get a real, pre-checked answer for your actual referral target. | | Checking before making the intro avoids wasted effort on a disqualified referral | ~10 min + optional pre-check, Easy |
-| 3 | Clawback is pro-rated, not all-or-nothing | Confirm the exact clawback language on the live page. | You confirm the pro-rated mechanic. | | | ~5 min, Easy |
+| 1 | The 5% commission scope (net-new, private-sector, closed-won) matches the live page | Open `glean.com/partners/referral` and confirm the exact wording. | You confirm the scope language matches research. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 2 | The three eligibility exclusions (not an existing customer, no active opportunity, no recent sales engagement) are real and would apply to any specific referral Stratos might make | 1. Confirm the exclusion language on the live page.<br>2. If Stratos has a specific referral target in mind, ask your Glean contact directly whether that account would pass all three exclusion checks BEFORE making the introduction. | You confirm the language, and — if applicable — get a real, pre-checked answer for your actual referral target. | | Checking before making the intro avoids wasted effort on a disqualified referral | ~10 min + optional pre-check, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 3 | Clawback is pro-rated, not all-or-nothing | Confirm the exact clawback language on the live page. | You confirm the pro-rated mechanic. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ## Section 2 — Reading the actual referral 1-pager — Sr No 4
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 4 | The referral 1-pager PDF contains real content beyond what's on the webpage | 1. Open the Google Drive link from `glean.com/partners/referral` in a real browser.<br>2. Download and read the actual PDF.<br>3. Note anything in it not already captured from the webpage itself. | You get the real document content, closing research's one flagged "confirmed real but unreadable" gap. | | | ~15 min, Easy |
+| 4 | The referral 1-pager PDF contains real content beyond what's on the webpage | 1. Open the Google Drive link from `glean.com/partners/referral` in a real browser.<br>2. Download and read the actual PDF.<br>3. Note anything in it not already captured from the webpage itself. | You get the real document content, closing research's one flagged "confirmed real but unreadable" gap. | | | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ## Section 3 — Getting the real Commercial/VAR margin — Sr No 5-6
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 5 | The Commercial/VAR reseller margin percentage is genuinely unpublished and requires direct partner-manager contact | Once you have partner-portal access (or a partner-manager contact), ask directly: *"What is the actual reseller margin percentage for the Commercial/VAR track, and does it vary by deal size or tier?"* | You get a real number, closing this field's most consequential gap. | | This is the field's central deliverable | ~15 min active + wait for reply, Hard |
+| 5 | The Commercial/VAR reseller margin percentage is genuinely unpublished and requires direct partner-manager contact | Once you have partner-portal access (or a partner-manager contact), ask directly: *"What is the actual reseller margin percentage for the Commercial/VAR track, and does it vary by deal size or tier?"* | You get a real number, closing this field's most consequential gap. | | This is the field's central deliverable | ~15 min active + wait for reply, Hard [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 | 6 | No multi-year renewal commission exists for any track — confirm this directly rather than assuming | In the same conversation, ask: *"Is there any commission on Year 2/3 renewals for a referred or resold customer, for any track?"* | You get a clear, direct answer — either confirming the absence or revealing a previously-undocumented renewal mechanic. | | | ~0 min extra (same conversation), Easy |
 
 ## Section 4 — Sanity-checking the Glean.ai sourcing caution — Sr No 7
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 7 | Glean.ai's partner program is a completely separate program with its own, unrelated commission terms | If anyone on the team is researching commission figures independently, have them briefly check `glean.ai/partner` and confirm it's clearly a different company/program before citing any numbers from it. | You confirm the two are unrelated, preventing a real dollar-figure mix-up. | | Sanity-check row, not a capability test | ~5 min, Easy |
+| 7 | Glean.ai's partner program is a completely separate program with its own, unrelated commission terms | If anyone on the team is researching commission figures independently, have them briefly check `glean.ai/partner` and confirm it's clearly a different company/program before citing any numbers from it. | You confirm the two are unrelated, preventing a real dollar-figure mix-up. | | Sanity-check row, not a capability test | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ---
 

@@ -18,10 +18,10 @@
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 1 | People/HR page use cases match research | Open the page and confirm the three named categories. | Confirmed. | | | ~10 min, Easy |
-| 2 | ITSM page use cases match research | Open the page and confirm the four named categories. | Confirmed. | | | ~10 min, Easy |
-| 3 | Confluent case study is real and should be reused across this library | Confirm the exact figures on the Customer Service page, and flag this case for inclusion in the Field 8 (Expected Outcome) write-up for UC-07. | Confirmed, and cross-referenced into Field 8. | | This closes the loop with Field 8 | ~10 min, Easy |
-| 4 | Customer Service three-category framework matches research | Confirm the exact quotes. | Confirmed. | | | ~5 min, Easy |
+| 1 | People/HR page use cases match research | Open the page and confirm the three named categories. | Confirmed. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 2 | ITSM page use cases match research | Open the page and confirm the four named categories. | Confirmed. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 3 | Confluent case study is real and should be reused across this library | Confirm the exact figures on the Customer Service page, and flag this case for inclusion in the Field 8 (Expected Outcome) write-up for UC-07. | Confirmed, and cross-referenced into Field 8. | | This closes the loop with Field 8 | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 4 | Customer Service three-category framework matches research | Confirm the exact quotes. | Confirmed. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ---
 

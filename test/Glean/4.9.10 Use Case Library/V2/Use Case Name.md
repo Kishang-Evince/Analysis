@@ -20,15 +20,15 @@
 
 | Sr No | Use Case | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 1 | UC-01 Cross-App Search | Confirm the exact quote on `glean.com/solutions/knowledge-management`. | Matches research. | | | ~5 min, Easy |
-| 2 | UC-02 Cited Policy/SOP Q&A | Confirm this is a composite label, not literal Glean naming, by checking both solutions pages. | Confirmed as composite. | | | ~5 min, Easy |
-| 3 | UC-03 New Hire Onboarding | Confirm "Onboard new hires quickly" is a headline use case on the all-teams page. | Confirmed, and note its prominence. | | | ~5 min, Easy |
-| 4 | UC-04 Teams-Embedded Lookup | Confirm this is a composite label sourced from hands-on testing, not marketing naming. | Confirmed as composite. | | | ~5 min, Easy |
-| 5 | UC-05 Auto Agent Summarization | Confirm the exact quote on the knowledge-management page. | Matches research. | | | ~5 min, Easy |
-| 6 | UC-06 Go Links + Answers Deflection | Confirm this is a composite label. | Confirmed as composite. | | | ~5 min, Easy |
-| 7 | UC-07 Email & Meeting Context Prep | Confirm the Sales-specific "meeting prep" quote and that the broader framing is Stratos's own generalization. | Confirmed partial match. | | | ~5 min, Easy |
-| 8 | UC-08 Credentialing & Compliance Retrieval | Confirm the healthcare page's "compliance management" use case is the correct source to cite for this use case, not a generic page. | Confirmed. | | | ~5 min, Easy |
-| 9 | Six named departments | Confirm the six departments named on the all-teams page. | Confirmed. | | | ~5 min, Easy |
+| 1 | UC-01 Cross-App Search | Confirm the exact quote on `glean.com/solutions/knowledge-management`. | Matches research. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 2 | UC-02 Cited Policy/SOP Q&A | Confirm this is a composite label, not literal Glean naming, by checking both solutions pages. | Confirmed as composite. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 3 | UC-03 New Hire Onboarding | Confirm "Onboard new hires quickly" is a headline use case on the all-teams page. | Confirmed, and note its prominence. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 4 | UC-04 Teams-Embedded Lookup | Confirm this is a composite label sourced from hands-on testing, not marketing naming. | Confirmed as composite. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 5 | UC-05 Auto Agent Summarization | Confirm the exact quote on the knowledge-management page. | Matches research. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 6 | UC-06 Go Links + Answers Deflection | Confirm this is a composite label. | Confirmed as composite. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 7 | UC-07 Email & Meeting Context Prep | Confirm the Sales-specific "meeting prep" quote and that the broader framing is Stratos's own generalization. | Confirmed partial match. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 8 | UC-08 Credentialing & Compliance Retrieval | Confirm the healthcare page's "compliance management" use case is the correct source to cite for this use case, not a generic page. | Confirmed. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 9 | Six named departments | Confirm the six departments named on the all-teams page. | Confirmed. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ---
 

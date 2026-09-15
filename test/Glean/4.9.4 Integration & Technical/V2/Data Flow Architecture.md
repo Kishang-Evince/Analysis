@@ -1,0 +1,58 @@
+# 4.9.4 Data Flow Architecture - Independent Research Test Guide
+
+**Purpose:** Hands-on verification of every claim in the companion research doc [V2/Data Flow Architecture.md](../../../../Glean/Combined/4.9.4%20Integration%20&%20Technical/V2/Data%20Flow%20Architecture.md). The core finding there is that Glean documents its data flow in three stages (ingestion, processing, query) but discloses real implementation internals (chunking/embedding/vector index) only for code search, not the general document pipeline - and that permission/group changes propagate asynchronously with an unquantified delay. This guide's job is to confirm ingestion behavior, time the permission-propagation delay for real, and confirm (or rule out) whether the output/query path actually works the way the docs imply. Written so someone with no prior context on this project can pick it up and run it.
+
+**Tenant entry:** Admin Console → Platform → Connectors; Admin Console → Audit Logs; a test document/group in a connected source system (e.g. Google Drive, SharePoint, Slack).
+**Companion research doc:** [V2/Data Flow Architecture.md](../../../../Glean/Combined/4.9.4%20Integration%20&%20Technical/V2/Data%20Flow%20Architecture.md)
+**Related test guides (avoid duplicate testing):** [V2/Native Connectors.md](../../../../test/Glean/4.9.4%20Integration%20&%20Technical/V2/Native%20Connectors.md), [V2/Tenancy Model.md](../../../../test/Glean/4.9.4%20Integration%20&%20Technical/V2/Tenancy%20Model.md), [V2/Data Residency Validation.md](../../../../test/Glean/4.9.4%20Integration%20&%20Technical/V2/Data%20Residency%20Validation.md), [V2/Infrastructure Requirements.md](../../../../test/Glean/4.9.4%20Integration%20&%20Technical/V2/Infrastructure%20Requirements.md)
+
+**Prerequisites (what you need before starting):**
+- Admin access to the Glean Admin Console, including Audit Logs.
+- Admin/edit access to at least one connected source system (Google Drive, SharePoint, or Slack are good choices) so you can create a test document and change its permissions.
+- Ability to add/remove a test user from a group in that source system (for the permission-propagation timing test).
+- A stopwatch or phone timer.
+- A code repository connected to Glean (e.g. GitHub/GitLab), if this tenant has code search enabled, to check Sr No 6.
+
+**Sr No mapping:** Sr No 1-9 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Data Flow Architecture.md](../../../../Glean/Combined/4.9.4%20Integration%20&%20Technical/V2/Data%20Flow%20Architecture.md#claims-sr-no-1-9-mapped-to-test-guide) - same number, same claim, doc-sourced there / tenant-tested here.
+
+**How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes on exactly what you observed. "Pass" means you personally saw it happen - not that the docs say so.
+
+**Effort column:** each row lists an estimated time to complete plus a difficulty tag - `Easy` (routine console/log check, quick to judge), `Medium` (needs a real config change and observation), or `Hard` (needs a real timed test or waiting for a propagation/refresh cycle).
+
+---
+
+## Section 1 - Confirming the documented pipeline stages exist as described - Sr No 1-3
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 1 | Glean's documented 3-stage pipeline (ingestion, processing, query) is reflected in how the Admin Console actually organizes these concerns | 1. In Admin Console, locate the sections that correspond to each stage: Connectors/Datasources (ingestion), Index/Search Quality or similar (processing), and any Query/Search Analytics section (query serving).<br>2. Confirm each stage has its own distinct admin surface, not one combined screen. | The Admin Console's structure roughly mirrors the 3 documented stages - distinct sections for connector/ingestion config vs. index/processing vs. query/search analytics. | | | ~15 min, Easy |
+| 2 | Ingestion for an on-prem-style or firewalled source uses the documented VPN/Shared VPC path, not public HTTPS, if this tenant has any such connector | 1. If this tenant has any on-prem/private-network connector configured (check Infrastructure Requirements test guide results for VPN setup), confirm in Admin Console that it's routed through the documented VPN/Shared VPC path rather than a public endpoint.<br>2. If this tenant only uses SaaS connectors, note that Claim 2's on-prem path is not applicable and confirm the SaaS connectors instead use standard OAuth/HTTPS setup screens. | Either the on-prem VPN path is confirmed present and used, or (if not applicable) the SaaS-only HTTPS path is confirmed as the only pattern in use. | | Cross-check against Infrastructure Requirements Sr No 1-3 (VPN/TGW findings) rather than re-testing from scratch | ~15 min, Easy |
+| 3 | This tenant does not rely on Glean to ingest/index structured warehouse data (Snowflake, Databricks) - confirm no such connector is configured as a "search index" source, consistent with the documented exclusion | 1. In Admin Console → Connectors, check whether Snowflake or Databricks appear as configured datasources.<br>2. If present, confirm with your Glean admin/rep what capability they actually provide (e.g. action/tool access vs. document indexing) rather than assuming they feed the search index. | Either no such connector exists, or if one does, its actual scope is confirmed (not assumed) to be non-indexing, matching the documented exclusion. | | | ~10 min, Easy |
+
+## Section 2 - The core test: timing the permission-propagation delay for real - Sr No 4, 7-8
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 4 | Processing combines content with permission mappings and user/activity data, and the general processing internals (chunking/embedding/search tech) remain undisclosed - confirm no tenant-facing admin screen reveals these internals either | 1. Search Admin Console (Index Health, Search Quality, or similar) for any setting or diagnostic screen that names a chunking strategy, embedding model, or underlying search/vector engine for the general document index.<br>2. Note whether anything beyond what's in the public docs is exposed to admins. | No chunking/embedding/engine-level detail is exposed in the Admin Console beyond what's already in the public docs - confirming the absence-check in the research doc extends to the tenant admin experience, not just public docs. | | | ~15 min, Easy |
+| 7 | Crawlers pull content and its ACL together - test by restricting a test document's permissions in the source system and confirming Glean's record of that document reflects the new ACL, not just the content | 1. Create a test document in a connected source (e.g. Google Drive) visible only to you.<br>2. Confirm it is NOT returned in a search by a second test user who lacks access.<br>3. Widen the document's permissions in the source system to include the second test user.<br>4. Re-check search visibility for that second user after a reasonable wait. | The second user cannot see the document before the permission change, and can see it after - confirming ACL data flows alongside content, not independently or not at all. | | | ~30 min (incl. propagation wait), Medium |
+| 8 | Permission/group-membership changes propagate asynchronously with a real, measurable delay - get an actual number for this tenant, since the public docs only say "a small delay" | 1. Add a test user to (or remove from) a group in your identity provider or source system that Glean has indexed via `/indexgroup` / `/indexmembership`-equivalent sync (or the connector's native group sync).<br>2. Start a timer immediately after making the change.<br>3. Repeatedly check (every few minutes) whether the test user's search results reflect the new group-based access.<br>4. Stop the timer when the change takes effect. | You get a real, concrete propagation-time number (e.g. "group membership change took 8 minutes to reflect in search") - filling the gap left by the undocumented "small delay" language. | | This directly closes the field's clearest quantification gap (Claim 8) | ~20-60 min active + wait time, Hard |
+
+## Section 3 - Confirming the output/query-serving path and the code-search vector pipeline - Sr No 5-6, 9
+
+| Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
+|---|---|---|---|---|---|---|
+| 5 | Storage stays inside this tenant's own project boundary - cross-check against, don't re-derive, the Tenancy Model test guide's own isolation verification | 1. Review the Result Rollup from the companion `Tenancy Model.md` test guide for its tenant-isolation findings.<br>2. If that guide's relevant rows are already completed, copy the finding here rather than re-testing. If not yet completed, flag it as a shared dependency. | Confirmed consistent with (or flagged as pending alongside) the Tenancy Model guide's own isolation test results - no duplicate independent test needed. | | Cross-reference only - do not duplicate effort already tracked in Tenancy Model's guide | ~5 min, Easy |
+| 6 | If this tenant has code search enabled, a code query surfaces semantically related code even when the exact function/class name isn't in the query text - confirming the documented embedding/ANN behavior is real, not just a docs claim | 1. Confirm code search is enabled for this tenant (a connected GitHub/GitLab/Bitbucket repo).<br>2. Run a natural-language code query that does NOT contain an exact symbol name (e.g. "how is authentication handled" instead of naming a specific class).<br>3. Confirm the results surface relevant code chunks/functions even without exact keyword matches. | Code search returns semantically relevant results without requiring exact keyword/symbol matches, consistent with the documented embedding-based retrieval. | | Mark `Blocked (code search not enabled in this tenant)` if not applicable | ~15 min, Medium |
+| 9 | The output/query-serving path works end-to-end as the docs partially describe (auth → tenant routing → search), and confirm directly what the docs don't disclose: whether/when an LLM call happens versus pure retrieval | 1. Log out and log back into Glean, observing the SSO redirect and session-check behavior described in the docs.<br>2. Run a plain keyword search (should be pure retrieval, no LLM) versus an Assistant/AI Answers query (should involve an LLM call) and note any visible latency or behavior difference between the two.<br>3. Check the network/browser dev tools (if permitted) or ask your Glean admin whether the query hits the documented `<tenant_id>-be.glean.com/api/v1/search` pattern. | You confirm the auth/routing behavior matches the docs, and you get a real, observed answer (not assumed) to when retrieval-only vs. retrieval+LLM is used for different query types. | | This closes the field's other major disclosed gap (Claim 9) | ~20 min, Medium |
+
+---
+
+## Result Rollup
+
+Once every row above has a Result filled in, copy the Pass/Fail/Partial/Blocked counts back into the companion research doc [V2/Data Flow Architecture.md](../../../../Glean/Combined/4.9.4%20Integration%20&%20Technical/V2/Data%20Flow%20Architecture.md), and specifically add the real permission-propagation timing number from Sr No 8 - that closes the field's most explicitly-requested quantification gap.
+
+| Section | Items | Pass | Fail | Partial | Blocked |
+|---|---|---|---|---|---|
+| 1. Documented pipeline stages | 3 | | | | |
+| 2. Permission propagation timing | 3 | | | | |
+| 3. Output/query path and code search | 3 | | | | |

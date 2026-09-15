@@ -18,9 +18,9 @@
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 1 | The 4-week survey checkpoint and its administration mechanics match research | Confirm the exact quotes on the post-launch-tasks page. | Confirmed. | | | ~10 min, Easy |
-| 2 | A Delivery Excellence Manager is assigned to your account | Ask your Glean account team directly whether a DEM is assigned, and get their contact info. | You have a real, named ongoing-support contact. | | | ~10 min active + wait for reply, Easy |
-| 3 | Cohort expansion is genuinely gated on feedback, not a fixed calendar | Confirm this is how your own pilot is actually being planned. | Confirmed. | | | ~10 min, Easy |
+| 1 | The 4-week survey checkpoint and its administration mechanics match research | Confirm the exact quotes on the post-launch-tasks page. | Confirmed. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 2 | A Delivery Excellence Manager is assigned to your account | Ask your Glean account team directly whether a DEM is assigned, and get their contact info. | You have a real, named ongoing-support contact. | | | ~10 min active + wait for reply, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 3 | Cohort expansion is genuinely gated on feedback, not a fixed calendar | Confirm this is how your own pilot is actually being planned. | Confirmed. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 | 4 | Per-UC timeline estimates remain accurate | Spot-check 2-3 against actual pilot progress once underway. | Confirmed. | | | Ongoing during pilot |
 
 ---

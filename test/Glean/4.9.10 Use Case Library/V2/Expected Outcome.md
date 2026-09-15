@@ -18,16 +18,16 @@
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 1 | The GCE data-dictionary-examples page loads fine in a real browser | Open the page directly in your browser. | The page loads normally, confirming the empty automated-fetch result was a rendering artifact. | | | ~5 min, Easy |
-| 2 | The Voting feedback chart and its three sub-metrics are real and visible in Insights | Open Admin Console → Insights → Assistant Insights and confirm the Voting feedback chart and its metrics. | Confirmed. | | | ~10 min, Easy |
-| 3 | GCE export delivers one unified, unfiltered stream | Check your GCE export configuration and confirm there's no event-type/connector/user filter available at the export step itself. | Confirmed, and plan a downstream filtering approach accordingly. | | This directly tests research's most practical finding | ~20 min, Easy |
+| 1 | The GCE data-dictionary-examples page loads fine in a real browser | Open the page directly in your browser. | The page loads normally, confirming the empty automated-fetch result was a rendering artifact. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 2 | The Voting feedback chart and its three sub-metrics are real and visible in Insights | Open Admin Console → Insights → Assistant Insights and confirm the Voting feedback chart and its metrics. | Confirmed. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 3 | GCE export delivers one unified, unfiltered stream | Check your GCE export configuration and confirm there's no event-type/connector/user filter available at the export step itself. | Confirmed, and plan a downstream filtering approach accordingly. | | This directly tests research's most practical finding | ~20 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ## Section 2 — Attaching the Confluent evidence and the Agent Lifecycle framework — Sr No 4-5
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 4 | The Confluent case study is correctly attached to UC-07's Expected Outcome write-up | Confirm the Confluent figures are cited in the UC-07 row, distinct from the generic Vendor-Stated targets used elsewhere. | Confirmed. | | | ~5 min, Easy |
-| 5 | The Agent Development Lifecycle's "Monitor and Improve" stage is a real, usable reference for UC-05's outcome tracking | Read Glean's own agent-lifecycle documentation and confirm this stage's guidance is applicable to UC-05's measurement plan. | Confirmed. | | | ~15 min, Easy |
+| 4 | The Confluent case study is correctly attached to UC-07's Expected Outcome write-up | Confirm the Confluent figures are cited in the UC-07 row, distinct from the generic Vendor-Stated targets used elsewhere. | Confirmed. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 5 | The Agent Development Lifecycle's "Monitor and Improve" stage is a real, usable reference for UC-05's outcome tracking | Read Glean's own agent-lifecycle documentation and confirm this stage's guidance is applicable to UC-05's measurement plan. | Confirmed. | | | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ---
 

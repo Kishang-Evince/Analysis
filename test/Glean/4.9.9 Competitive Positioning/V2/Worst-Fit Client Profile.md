@@ -20,21 +20,21 @@
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 1 | Glean's own comparison page states the figures matching research | Open the comparison page directly and confirm the $50+$15 Glean figure, the $30 Copilot figure, and the $600K-$780K vs $360K annual projection. | You independently confirm all figures. | | | ~10 min, Easy |
-| 2 | Copilot's $30/seat is genuinely an add-on price requiring a base M365 license, not an all-in cost | Check Microsoft's own official Copilot pricing page directly and confirm the base-license requirement and the resulting true all-in cost range. | You independently confirm the add-on structure and the $42-$90 all-in range. | | | ~15 min, Easy |
+| 1 | Glean's own comparison page states the figures matching research | Open the comparison page directly and confirm the $50+$15 Glean figure, the $30 Copilot figure, and the $600K-$780K vs $360K annual projection. | You independently confirm all figures. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 2 | Copilot's $30/seat is genuinely an add-on price requiring a base M365 license, not an all-in cost | Check Microsoft's own official Copilot pricing page directly and confirm the base-license requirement and the resulting true all-in cost range. | You independently confirm the add-on structure and the $42-$90 all-in range. | | | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ## Section 2 — Confirming the fairness caveat and the clarified framing — Sr No 3-4
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 3 | Glean's page includes the efficiency-offset counter-argument | Confirm this specific language appears on the comparison page. | You confirm it, and make sure it's included alongside the raw dollar figures in any client material. | | | ~5 min, Easy |
-| 4 | The clarified framing (incremental AI cost, not total product cost) should be the version used in Stratos's own walk-away criteria for M365-only prospects | Update any internal discovery/qualification script to state the pricing rationale as "incremental AI-add-on cost for shops already on a qualifying M365 tier," not a flat "$65 vs $30" comparison. | Stratos's own materials reflect the more accurate, defensible framing. | | | ~15 min, Easy |
+| 3 | Glean's page includes the efficiency-offset counter-argument | Confirm this specific language appears on the comparison page. | You confirm it, and make sure it's included alongside the raw dollar figures in any client material. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 4 | The clarified framing (incremental AI cost, not total product cost) should be the version used in Stratos's own walk-away criteria for M365-only prospects | Update any internal discovery/qualification script to state the pricing rationale as "incremental AI-add-on cost for shops already on a qualifying M365 tier," not a flat "$65 vs $30" comparison. | Stratos's own materials reflect the more accurate, defensible framing. | | | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ## Section 3 — Spot-checking the remaining worst-fit signals — Sr No 5
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 5 | The remaining worst-fit signals are still accurate | Pick 2-3 of the remaining signals (e.g. Notion oversharing, air-gap unavailability) and quickly re-confirm each against this project's own prior V2 findings. | You confirm nothing has changed. | | | ~15 min, Easy |
+| 5 | The remaining worst-fit signals are still accurate | Pick 2-3 of the remaining signals (e.g. Notion oversharing, air-gap unavailability) and quickly re-confirm each against this project's own prior V2 findings. | You confirm nothing has changed. | | | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ---
 

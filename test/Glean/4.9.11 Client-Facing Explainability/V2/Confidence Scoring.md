@@ -18,15 +18,15 @@
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 1 | No confidence/score/similarity field exists in the Chat API response | Call `client.chat.create()` on a real query and inspect the raw JSON response for any of these fields. | Confirmed absent. | | | ~15 min, Easy |
-| 2 | Test whether Protect+'s internal confidence score is actually visible to an admin anywhere | 1. Trigger a test injection/jailbreak attempt (if Protect+ licensed).<br>2. Check the Guardrails Insights dashboard and any Finding detail view for a raw numeric confidence score, not just a block/flag outcome. | You get a direct, definitive answer on admin visibility, resolving research's flagged correction. | | This is the single most important row in this guide | ~20 min, Easy (if licensed) |
+| 1 | No confidence/score/similarity field exists in the Chat API response | Call `client.chat.create()` on a real query and inspect the raw JSON response for any of these fields. | Confirmed absent. | | | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 2 | Test whether Protect+'s internal confidence score is actually visible to an admin anywhere | 1. Trigger a test injection/jailbreak attempt (if Protect+ licensed).<br>2. Check the Guardrails Insights dashboard and any Finding detail view for a raw numeric confidence score, not just a block/flag outcome. | You get a direct, definitive answer on admin visibility, resolving research's flagged correction. | | This is the single most important row in this guide | ~20 min, Easy (if licensed) [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ## Section 2 — Reconfirming the qualitative signals — Sr No 3-4
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 3 | Answer ranking / badges / thumbs up-down remain qualitative only | Confirm no numeric score appears anywhere in the Assistant UI for these signals. | Confirmed. | | | ~10 min, Easy |
-| 4 | The overall gap is real for regulated buyers | Document this finding explicitly for any Perimeter-Healthcare-facing gap analysis. | Documented. | | | ~10 min, Easy |
+| 3 | Answer ranking / badges / thumbs up-down remain qualitative only | Confirm no numeric score appears anywhere in the Assistant UI for these signals. | Confirmed. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 4 | The overall gap is real for regulated buyers | Document this finding explicitly for any Perimeter-Healthcare-facing gap analysis. | Documented. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ---
 

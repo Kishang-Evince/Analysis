@@ -18,16 +18,16 @@
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 1 | The in-product picker shows 8 templates in 2 categories | Open Agent Builder → Create → Templates and screenshot the full category/template list. | Confirmed. | | | ~10 min, Easy |
+| 1 | The in-product picker shows 8 templates in 2 categories | Open Agent Builder → Create → Templates and screenshot the full category/template list. | Confirmed. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 | 3 | "Weekly work report" is a real template | Confirm its presence in the picker. | Confirmed. | | | ~0 min extra, Easy |
-| 4 | Resolve whether "Plan my day" is one template with a calendar-provider choice, or two separate named templates | Click into "Plan my day" and check whether it prompts for Outlook vs. Google Calendar, or whether two separately-named versions exist. | You get a definitive, hands-on answer. | | This closes research's flagged detail | ~10 min, Easy |
+| 4 | Resolve whether "Plan my day" is one template with a calendar-provider choice, or two separate named templates | Click into "Plan my day" and check whether it prompts for Outlook vs. Google Calendar, or whether two separately-named versions exist. | You get a definitive, hands-on answer. | | This closes research's flagged detail | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ## Section 2 — Confirming the category-framework correction and the full library list — Sr No 2, 5
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 2 | The 7-category framework belongs to the public Agent Library, not the in-product page | Compare the in-product picker's categories against `glean.com/agent-library/`'s categories directly. | Confirmed. | | | ~10 min, Easy |
-| 5 | The 33-example public library list is accurate | Spot-check the count and a few named examples on the live page. | Confirmed. | | | ~10 min, Easy |
+| 2 | The 7-category framework belongs to the public Agent Library, not the in-product page | Compare the in-product picker's categories against `glean.com/agent-library/`'s categories directly. | Confirmed. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 5 | The 33-example public library list is accurate | Spot-check the count and a few named examples on the live page. | Confirmed. | | | ~10 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ---
 

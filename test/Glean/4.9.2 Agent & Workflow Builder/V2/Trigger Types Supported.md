@@ -18,16 +18,16 @@
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 1 | Scheduled triggers are off by default and need an explicit admin enable | Check Admin Console → Platform → Agents → Scheduled triggers and confirm the current on/off state for your tenant, and whether it needed to be turned on. | You confirm the actual current state and, if off, turn it on before any scheduled-trigger pilot test. | | This is the single most important row in this guide | ~15 min, Easy |
+| 1 | Scheduled triggers are off by default and need an explicit admin enable | Check Admin Console → Platform → Agents → Scheduled triggers and confirm the current on/off state for your tenant, and whether it needed to be turned on. | You confirm the actual current state and, if off, turn it on before any scheduled-trigger pilot test. | | This is the single most important row in this guide | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ## Section 2 — Confirming timing, scope, and the truncation mitigation — Sr No 2-5
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
-| 2 | ~30-minute scheduled-run ceiling | Run a long scheduled agent and confirm it terminates around 30 minutes if not finished. | Confirmed. | | | ~30 min, Easy |
-| 3 | Scheduled-run timing varies with contention | Schedule several agents at the same time and note whether they all fire at the exact scheduled minute or with some variance. | Confirmed. | | | ~20 min, Easy |
-| 4 | The triggers concept page's scope is narrower than the full inventory | Confirm this directly by reading the page. | Confirmed. | | | ~5 min, Easy |
-| 5 | Truncated tool results include a download link | Trigger a large-Sheet/Doc retrieval that exceeds the size cap and confirm a download link appears rather than silent data loss. | Confirmed. | | | ~15 min, Easy |
+| 2 | ~30-minute scheduled-run ceiling | Run a long scheduled agent and confirm it terminates around 30 minutes if not finished. | Confirmed. | | | ~30 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 3 | Scheduled-run timing varies with contention | Schedule several agents at the same time and note whether they all fire at the exact scheduled minute or with some variance. | Confirmed. | | | ~20 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 4 | The triggers concept page's scope is narrower than the full inventory | Confirm this directly by reading the page. | Confirmed. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
+| 5 | Truncated tool results include a download link | Trigger a large-Sheet/Doc retrieval that exceeds the size cap and confirm a download link appears rather than silent data loss. | Confirmed. | | | ~15 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
 ---
 
