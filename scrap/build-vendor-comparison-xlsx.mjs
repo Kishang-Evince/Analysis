@@ -6,31 +6,31 @@
  * Reads:
  *   Glean/Combined/<section>/V2/<field>.md          research doc (Sr No | <label> | Source | Detail)
  *   test/Glean/<section>/V2/<field>.md              paired test guide (has a "Notes" column somewhere)
- *   Glean/Combined/<section>/Overview.md            field order per section (may be stale — see below)
+ *   Glean/Combined/<section>/Overview.md            field order per section (may be stale - see below)
  *
  * Writes:
  *   Glean/Combined/_Comparison Sheets/<Tool>.xlsx
  *
  * Layout mirrors Tier3_Vendor_Comparison_FORMAT_V3.xlsx (colors/fonts copied
- * from that file's styles.xml) minus the "Tool" column — this workbook is
+ * from that file's styles.xml) minus the "Tool" column - this workbook is
  * single-tool, so the tool name lives in the filename instead of a column.
  *
  * Per field table columns (renamed 2026-09-14 for client clarity, each header also carries an
- * Excel cell-comment description on hover — see HEADER_NOTES below):
+ * Excel cell-comment description on hover - see HEADER_NOTES below):
  *   Sr No | <label> | Source | Confirmation Detail | Confirmation Notes | Check Required
- *   - <label> is whatever that field's own doc calls column 2 (Claim/Feature/Finding/etc.) — read
+ *   - <label> is whatever that field's own doc calls column 2 (Claim/Feature/Finding/etc.) - read
  *     dynamically per file, not assumed.
  *   - Confirmation Detail = the old "Detail" column: exact evidence backing the claim.
  *   - Confirmation Notes = the old "Test Guide Notes" column (renamed - "Test Guide" read as
  *     internal jargon): the "Notes" cell from the SAME Sr No row in the paired test guide, if that
- *     guide's table shape has a Notes column at all (some don't — left blank there, not fabricated).
+ *     guide's table shape has a Notes column at all (some don't - left blank there, not fabricated).
  *   - Check Required (renamed from "Physical Test Required") = "Yes" by default for every claim,
- *     even Doc-Verified ones — see needsPhysicalTest() below for the full rule and why Doc-Verified
+ *     even Doc-Verified ones - see needsPhysicalTest() below for the full rule and why Doc-Verified
  *     alone no longer implies "No" (revised 2026-09-14: a doc saying a feature works doesn't prove
  *     it works in this tenant).
  *
  * Field order: this section's Overview.md's own "Field N: <name>" list, for whichever of those names
- * still exist as a V2 file — then any V2 files NOT mentioned in Overview.md are appended afterward
+ * still exist as a V2 file - then any V2 files NOT mentioned in Overview.md are appended afterward
  * (alphabetically). This makes stale Overview.md files (4.9.1 currently lists 3 of its 8 real V2 fields)
  * safe by construction: nothing gets silently dropped, the listed ones just keep priority ordering.
  *
@@ -203,7 +203,7 @@ function parseConfidenceTiers(text) {
 /**
  * Converts this corpus's markdown into either a plain string (no emphasis found)
  * or an ExcelJS rich-text value ({ richText: [...] }) with **bold** and *italic*
- * spans rendered as actual bold runs — never left as literal asterisk characters
+ * spans rendered as actual bold runs - never left as literal asterisk characters
  * in the cell, which is what a plain mdToRichText()-style pass used to do.
  */
 function mdToRichText(s) {
@@ -226,7 +226,7 @@ function mdToRichText(s) {
   if (last < flattened.length) runs.push({ text: flattened.slice(last), bold: false });
 
   if (runs.length === 0) return '';
-  if (runs.length === 1 && !runs[0].bold) return runs[0].text; // no emphasis at all — plain string is fine
+  if (runs.length === 1 && !runs[0].bold) return runs[0].text; // no emphasis at all - plain string is fine
 
   return {
     richText: runs
@@ -309,7 +309,7 @@ function parseTestGuideNotes(filePath) {
 
   for (const { header, rows } of tables) {
     const notesIdx = findColumn(header, /^notes$/i);
-    if (notesIdx < 0) continue; // this table's shape has no Notes column — leave those Sr Nos blank
+    if (notesIdx < 0) continue; // this table's shape has no Notes column - leave those Sr Nos blank
     for (const cells of rows) {
       const srNo = parseInt(cells[0], 10);
       if (!Number.isFinite(srNo)) continue;
@@ -368,7 +368,7 @@ function fieldOrder(sectionName) {
       ordered.push(match);
       used.add(match);
     } else {
-      log(`  (Overview.md lists "${oName}" but no matching V2 file found — skipping)`);
+      log(`  (Overview.md lists "${oName}" but no matching V2 file found - skipping)`);
     }
   }
 
@@ -428,7 +428,7 @@ function buildSectionSheet(workbook, sectionName) {
 
     const { label, rows } = parseResearchDoc(researchPath);
     const notes = parseTestGuideNotes(testGuidePath);
-    log(`  Field ${fieldNum}: ${fieldName} — ${rows.length} row(s)${notes.size ? `, ${notes.size} with test-guide notes` : ''}`);
+    log(`  Field ${fieldNum}: ${fieldName} - ${rows.length} row(s)${notes.size ? `, ${notes.size} with test-guide notes` : ''}`);
 
     // field name bar
     const fieldRowNum = sheet.lastRow.number + 1;
@@ -462,7 +462,7 @@ function buildSectionSheet(workbook, sectionName) {
         const colNum = idx + 1;
         const cell = dataRow.getCell(colNum);
         // Rich-text cells (bold runs from **/*emphasis*) carry their own per-run
-        // font — setting cell.font on top of that would clobber the bold runs,
+        // font - setting cell.font on top of that would clobber the bold runs,
         // so only apply the plain data font to genuinely plain-string/number cells.
         const isRichText = val && typeof val === 'object' && Array.isArray(val.richText);
         const isHyperlink = val && typeof val === 'object' && typeof val.hyperlink === 'string';
@@ -489,9 +489,9 @@ function buildReadmeSheet(workbook, stats) {
   sheet.getColumn(1).width = 100;
 
   const lines = [
-    ['Tier 3 Vendor Comparison — Glean', true, 14],
+    ['Tier 3 Vendor Comparison - Glean', true, 14],
     [''],
-    ['One sheet per SOW section (4.9.1, 4.9.2, ...). This workbook covers Glean only —', false],
+    ['One sheet per SOW section (4.9.1, 4.9.2, ...). This workbook covers Glean only -', false],
     ['a separate workbook is built per tool, so there is no "Tool" column here.', false],
     [''],
     ['Each field = one table. First column = Sr No, matching the Sr No used in both the', false],
@@ -500,16 +500,16 @@ function buildReadmeSheet(workbook, stats) {
     [''],
     ['Column headers, left to right:', true],
     ['  Sr No               row number, same Sr No in the paired test guide', false],
-    ['  Claim / Feature / Finding   whatever that specific field calls its own second column —', false],
+    ['  Claim / Feature / Finding   whatever that specific field calls its own second column -', false],
     ['                       not the same word in every table on purpose', false],
     ['  Source              click to open the cited Glean page directly (real hyperlink, not text)', false],
     ['  Confirmation Detail  exact evidence (quotes, figures) backing the claim, from Glean\'s own docs', false],
-    ['  Confirmation Notes   how to verify this in a live tenant — guidance copied from the matching', false],
+    ['  Confirmation Notes   how to verify this in a live tenant - guidance copied from the matching', false],
     ['                       Sr No row in that field\'s test guide; left blank where the guide has no', false],
-    ['                       Notes column for that row — never invented', false],
-    ['  Check Required       Yes/No — see rule below', false],
+    ['                       Notes column for that row - never invented', false],
+    ['  Check Required       Yes/No - see rule below', false],
     [''],
-    ['Check Required rule: defaults to Yes for every claim, even Doc-Verified ones — a doc saying', false],
+    ['Check Required rule: defaults to Yes for every claim, even Doc-Verified ones - a doc saying', false],
     ['a feature works does not prove it works in this tenant (e.g. agent automation needs an actual', false],
     ['portal run before real confidence exists). No is reserved for claims with nothing to run in', false],
     ['app.glean at all: already hands-on Tested, or a static Doc-Verified fact (certification/badge,', false],
@@ -554,7 +554,7 @@ async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
   const workbook = new ExcelJS.Workbook();
-  workbook.creator = 'Stratos Engineering — Tier 3 Vendor Evaluation';
+  workbook.creator = 'Stratos Engineering - Tier 3 Vendor Evaluation';
   workbook.created = new Date();
 
   let totalRows = 0;

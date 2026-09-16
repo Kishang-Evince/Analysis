@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
- * Glean — Three REST API Surfaces prober
+ * Glean - Three REST API Surfaces prober
  * Evidence probe for 4.9.1 Features Confirmed item #27 ("Three REST APIs":
- * Client API, Platform API, Indexing API — no GraphQL/gRPC/SOAP).
+ * Client API, Platform API, Indexing API - no GraphQL/gRPC/SOAP).
  *
  * The claim is that Glean ships three SEPARATE REST surfaces. This script
  * proves it by hitting all three and printing a matrix of path prefix, auth
@@ -17,7 +17,7 @@
  * different path prefixes:
  *   /rest/api/v1/agents/search   vs   /api/agents/search
  * Same capability, two surfaces. --compare-agents calls both and diffs the
- * status codes. If both answer, that is not a duplicate endpoint by accident —
+ * status codes. If both answer, that is not a duplicate endpoint by accident -
  * it is two genuinely distinct API surfaces mid-migration, which is exactly
  * what item #27 asserts and what the Undocumented Features doc flagged as
  * "Platform API as a distinct third surface... overlaps, unexplained."
@@ -32,7 +32,7 @@
  * Glean-issued indexing (service) tokens. So calling it with your Client API
  * token SHOULD return 401. That 401 is the proof: it demonstrates the surface
  * exists AND that it sits in a separate auth domain from the other two. A 404
- * would be the bad result — that would mean no such surface. The summary table
+ * would be the bad result - that would mean no such surface. The summary table
  * scores it accordingly.
  * ---------------------------------------------------------------------------
  *
@@ -47,7 +47,7 @@
  *   POST /api/index/v1/checkdocumentaccess        Indexing API, read-only
  *   POST /api/index/v1/getdocumentstatus          Indexing API, DEPRECATED
  *                                                 2026-02-03, removal after
- *                                                 2026-10-15 — use
+ *                                                 2026-10-15 - use
  *                                                 /debug/{datasource}/document
  *
  * Deliberately NOT probed: POST /api/index/v1/indexdocuments. That one WRITES
@@ -58,7 +58,7 @@
  * USAGE
  *   cd scrap
  *
- *   # No credentials needed — prints the exact calls it would make
+ *   # No credentials needed - prints the exact calls it would make
  *   node glean-three-api-surfaces.mjs --dry-run
  *
  *   # Real run
@@ -87,7 +87,7 @@ import dotenv from 'dotenv';
 //   --env <path>        CLI flag
 //   GLEAN_ENV_FILE      shell env var
 //   <script dir>/.env   default
-// Real shell env vars beat .env values — dotenv does not override by default,
+// Real shell env vars beat .env values - dotenv does not override by default,
 // so `GLEAN_API_TOKEN=xxx node script.mjs` still wins over the file.
 const rawArgs = process.argv.slice(2);
 // NOTE: the flag is --env, NOT --env-file. Node 20.6+ reserves --env-file as a
@@ -188,7 +188,7 @@ async function callGleanApi({ surface, path, body, method = 'POST', token = TOKE
     try {
       json = JSON.parse(text);
     } catch {
-      /* non-JSON body is fine — status is what we came for */
+      /* non-JSON body is fine - status is what we came for */
     }
     return { surface, path, status: res.status, ok: res.ok, json, text };
   } catch (e) {
@@ -203,7 +203,7 @@ function report(r, { expect401IsPass = false } = {}) {
   const verdict = r.ok
     ? 'OK'
     : expect401IsPass && r.status === 401
-      ? 'OK (401 expected — separate auth domain)'
+      ? 'OK (401 expected - separate auth domain)'
       : r.status === 404
         ? 'SURFACE MISSING (404)'
         : `HTTP ${r.status}`;
@@ -215,7 +215,7 @@ function report(r, { expect401IsPass = false } = {}) {
 // --- 1. Client API ----------------------------------------------------------
 
 async function probeClientApiSearch(query) {
-  section(`1. Client API — POST /rest/api/v1/search   (query: "${query}")`);
+  section(`1. Client API - POST /rest/api/v1/search   (query: "${query}")`);
   const r = await callGleanApi({
     surface: 'Client API',
     path: '/rest/api/v1/search',
@@ -232,7 +232,7 @@ async function probeClientApiSearch(query) {
       log(`    - ${title}${url ? `  ${url}` : ''}`);
     }
     if (!results.length) {
-      log('    (none — check the doc is indexed and visible to this token\'s user)');
+      log('    (none - check the doc is indexed and visible to this token\'s user)');
     }
   }
   return r;
@@ -241,7 +241,7 @@ async function probeClientApiSearch(query) {
 // --- 2. Platform API --------------------------------------------------------
 
 async function probePlatformApiAgents() {
-  section('2. Platform API — POST /api/agents/search');
+  section('2. Platform API - POST /api/agents/search');
   log('  Note the prefix: /api/... not /rest/api/v1/... That prefix difference');
   log('  is the surface boundary.\n');
 
@@ -265,9 +265,9 @@ async function probePlatformApiAgents() {
 // --- 3. Indexing API --------------------------------------------------------
 
 async function probeIndexingApi() {
-  section('3. Indexing API — POST /api/index/v1/checkdocumentaccess');
+  section('3. Indexing API - POST /api/index/v1/checkdocumentaccess');
   log('  Read-only probe, chosen deliberately over indexdocuments (a write).');
-  log('  With a user-scoped token this SHOULD 401 — that is the pass condition.');
+  log('  With a user-scoped token this SHOULD 401 - that is the pass condition.');
   log('  Set GLEAN_INDEXING_TOKEN to turn it into a real 200.\n');
 
   const r = await callGleanApi({
@@ -290,7 +290,7 @@ async function probeIndexingApi() {
 // --- bonus: same capability, two surfaces -----------------------------------
 
 async function compareAgentSurfaces() {
-  section('BONUS — "agents" on two surfaces at once');
+  section('BONUS - "agents" on two surfaces at once');
   log('  Client API:   POST /rest/api/v1/agents/search');
   log('  Platform API: POST /api/agents/search');
   log('  Both answering = two distinct surfaces, not one aliased path.\n');
@@ -309,9 +309,9 @@ async function compareAgentSurfaces() {
   if (clientSide.status === platformSide.status && clientSide.ok) {
     log('  Both surfaces answered. Two REST surfaces confirmed hands-on.');
   } else if (clientSide.ok && !platformSide.ok) {
-    log('  Only the Client API answered — Platform API agents may not be live here.');
+    log('  Only the Client API answered - Platform API agents may not be live here.');
   } else if (!clientSide.ok && platformSide.ok) {
-    log('  Only the Platform API answered — consistent with the Client API run');
+    log('  Only the Platform API answered - consistent with the Client API run');
     log('  endpoints being deprecated (2026-08-25) in favour of /api/agents/*.');
   } else {
     log(`  Neither answered cleanly (client ${clientSide.status}, platform ${platformSide.status}).`);
@@ -322,7 +322,7 @@ async function compareAgentSurfaces() {
 // --- summary ---------------------------------------------------------------
 
 function summarize(rows) {
-  section('SUMMARY — three REST surfaces');
+  section('SUMMARY - three REST surfaces');
   log('  surface        prefix              status   verdict');
   rule('·');
   for (const r of rows) {
@@ -335,7 +335,7 @@ function summarize(rows) {
     log(`  ${r.surface.padEnd(14)} ${r.prefix.padEnd(19)} ${String(r.status).padEnd(8)} ${verdict}`);
   }
   rule('·');
-  log('  No GraphQL, gRPC, or SOAP surface is documented — REST only.');
+  log('  No GraphQL, gRPC, or SOAP surface is documented - REST only.');
   log('  Copy this table into the item #27 test-guide row.');
 }
 
@@ -355,7 +355,7 @@ async function main() {
 
   log(`Base URL : ${BASE_URL || 'https://<instance>-be.glean.com  (placeholder)'}`);
   log(`Token    : ${TOKEN ? 'set' : 'not set'}`);
-  log(`Indexing : ${INDEXING_TOKEN ? 'separate token set' : 'none — expecting 401'}`);
+  log(`Indexing : ${INDEXING_TOKEN ? 'separate token set' : 'none - expecting 401'}`);
   log(`Env file : ${ENV_FILE}  (${ENV_STATUS})`);
   log(`Mode     : ${OPTS.dryRun ? 'DRY RUN' : 'live'}`);
 

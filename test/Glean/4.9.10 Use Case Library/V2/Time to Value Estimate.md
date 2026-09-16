@@ -1,4 +1,4 @@
-# 4.9.10 Time to Value Estimate — Independent Research Test Guide
+# 4.9.10 Time to Value Estimate - Independent Research Test Guide
 
 **Purpose:** Verification of every claim in the companion research doc [V2/Time to Value Estimate.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Time%20to%20Value%20Estimate.md). The key finding is a named ongoing-support role (Delivery Excellence Manager) and confirmation that Glean explicitly gates cohort expansion on positive feedback, not a fixed calendar. This guide's job is to confirm both, and get the DEM contact assigned early. Written so someone with no prior context on this project can pick it up and run it.
 
@@ -8,13 +8,13 @@
 
 **Prerequisites (what you need before starting):** None special.
 
-**Sr No mapping:** Sr No 1-4 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Time to Value Estimate.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Time%20to%20Value%20Estimate.md#claims-sr-no-1-4-mapped-to-test-guide) — same number, same claim, doc-sourced there / tenant-tested here.
+**Sr No mapping:** Sr No 1-4 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Time to Value Estimate.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Time%20to%20Value%20Estimate.md#claims-sr-no-1-4-mapped-to-test-guide) - same number, same claim, doc-sourced there / tenant-tested here.
 
 **How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes.
 
 ---
 
-## Section 1 — Confirming the process details and getting the DEM assigned — Sr No 1-4
+## Section 1 - Confirming the process details and getting the DEM assigned - Sr No 1-4
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|

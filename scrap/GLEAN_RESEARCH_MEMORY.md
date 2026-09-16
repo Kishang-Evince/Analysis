@@ -1,16 +1,16 @@
-# Glean Research Memory — Full-Corpus Coverage Audit
+# Glean Research Memory - Full-Corpus Coverage Audit
 
 *Built 2026-09-14, in response to a user-flagged gap (Glean Chat sub-tree missing from `4.9.1/UI-UX Quality.md`). Purpose: a durable, standalone record of what has and hasn't been checked against the full local Glean documentation crawl, so future work doesn't have to re-derive this diff, and so confirmed gaps aren't lost before they're integrated into the 87-field research corpus.*
 
 ## Why this exists
 
-Every one of the 87 V2 fields in `Glean/Combined/<section>/V2/<field>.md` was researched **claim-driven**: each field fetched only the specific pages its own pre-defined question needed. No field ever did a completeness sweep of Glean's full documentation surface. Meanwhile this project also holds a **sitemap crawl** at `scrap/glean/` (three domains, ~3572 Markdown files, `fetched_at: "2026-09-01"`) that was never used as a research source — only as raw material sitting on disk.
+Every one of the 87 V2 fields in `Glean/Combined/<section>/V2/<field>.md` was researched **claim-driven**: each field fetched only the specific pages its own pre-defined question needed. No field ever did a completeness sweep of Glean's full documentation surface. Meanwhile this project also holds a **sitemap crawl** at `scrap/glean/` (three domains, ~3572 Markdown files, `fetched_at: "2026-09-01"`) that was never used as a research source - only as raw material sitting on disk.
 
 Diffing "every URL cited across all 87 field docs" (307 unique) against "every URL in the crawl" (3572 total) found **3325 uncited pages**. Exhaustive row-by-row triage of all 3325 was judged disproportionate; instead this audit prioritized the highest-density, most feature-relevant subtrees plus a live-web spot-check for anything newer than the crawl's Sept 1 cutoff.
 
 ## Methodology
 
-1. Extracted every crawled page's `url` frontmatter (`scrap/._audit1.mjs`, `scrap/._audit2.mjs` — temporary scripts, outputs at `scrap/._uncited.json` / `scrap/._uncited_all.json`).
+1. Extracted every crawled page's `url` frontmatter (`scrap/._audit1.mjs`, `scrap/._audit2.mjs` - temporary scripts, outputs at `scrap/._uncited.json` / `scrap/._uncited_all.json`).
 2. Extracted every unique URL cited anywhere in the 87 V2 docs (regex over all `Combined/*/V2/*.md`).
 3. Diffed (loose-matched, ignoring `www.` / trailing slash) to get the uncited-page candidate list per subfolder.
 4. Prioritized by folder size × feature-density: `docs.glean.com/user-guide` (102 files), `docs.glean.com/administration` (268 files), plus small high-signal folders `www.glean.com/platform` (11 files) and `www.glean.com/product-drop` (8 files).
@@ -123,12 +123,12 @@ All Tier 1 and Tier 2 findings, plus most Tier 3, are now integrated into the ac
 
 Direct comparison of the 87-field V2 corpus against the actual contracted `Exhibit_A_SOW_Stratos AI-Radar_Research_Database_Evince_04_16_2026 1.pdf` (pages 26-41, "Tier 3: Advanced Evaluation") found the corpus had drifted from the contract: one entire section missing, 20 fields missing inside existing sections, ~9 fields renamed/scope-drifted from their SOW names. Fixed via 5 parallel agents (one further fanned into 7 sub-agents):
 
-- **New section 4.9.12 Vendor Maturity & Trajectory** (5 fields: Product Release Velocity, Roadmap Visibility, Customer Retention Signals, Platform vs. Point Solution, Dependency Risk) — built from scratch, 36 claims total.
+- **New section 4.9.12 Vendor Maturity & Trajectory** (5 fields: Product Release Velocity, Roadmap Visibility, Customer Retention Signals, Platform vs. Point Solution, Dependency Risk) - built from scratch, 36 claims total.
 - **15 new fields in existing sections**: 4.9.3 Training Data Handling (1); 4.9.4 Validated Customer References, Custom Integration Effort, Integration Licensing, Data Flow Architecture, Deployment Complexity Assessment, Scalability Architecture (6); 4.9.5 Financial Services Readiness, FedRAMP Status, Third-Party Sub-Processors (3); 4.9.6 Adoption Measurement Capabilities, Change Management Support (2); 4.9.7 Training & Enablement Cost, Ongoing Maintenance Cost, Cost Comparison Position (3).
-- **9 fields renamed to match SOW exactly**, with a re-analysis pass checking the SOW's own description (not just old title) was actually answered — 5 needed only a rename (Model Hosting Validated, Model Selection - Flexibility, RAG Implementation, Actual Pricing Details, Total Cost Projection), 4 needed new claims added to close a real sub-question the old scope missed (Custom Agent Development +4 claims, Model Update & Versioning +1, Private LLM-SLM Availability +2, Training & Enablement Infrastructure +5).
+- **9 fields renamed to match SOW exactly**, with a re-analysis pass checking the SOW's own description (not just old title) was actually answered - 5 needed only a rename (Model Hosting Validated, Model Selection - Flexibility, RAG Implementation, Actual Pricing Details, Total Cost Projection), 4 needed new claims added to close a real sub-question the old scope missed (Custom Agent Development +4 claims, Model Update & Versioning +1, Private LLM-SLM Availability +2, Training & Enablement Infrastructure +5).
 
-Result: 87 → **107 fields**, 11 → **12 sections**, 692 → **851 claim rows**. Every new/renamed file followed the established Sr No/Claims/Confidence/Summary + paired-test-guide shape. Several fields produced genuine absence-check findings (FedRAMP: not authorized; PCI-DSS/FINRA: not addressed; public roadmap: does not exist; NPS/churn: never published) — reported honestly as gaps needing direct vendor engagement, not fabricated.
+Result: 87 → **107 fields**, 11 → **12 sections**, 692 → **851 claim rows**. Every new/renamed file followed the established Sr No/Claims/Confidence/Summary + paired-test-guide shape. Several fields produced genuine absence-check findings (FedRAMP: not authorized; PCI-DSS/FINRA: not addressed; public roadmap: does not exist; NPS/churn: never published) - reported honestly as gaps needing direct vendor engagement, not fabricated.
 
-**Known residual issue**: agents ran inside a git worktree; brand-new files (the 15+5 new fields) initially landed only in the worktree copy and had to be synced to the main checkout afterward via a direct file-copy pass — confirmed all 41 new files + 5 Overview.md updates landed correctly in the main checkout. The 9 renames landed directly in the main checkout without needing a sync (no worktree-conflict triggered since those paths had no pre-existing worktree copy).
+**Known residual issue**: agents ran inside a git worktree; brand-new files (the 15+5 new fields) initially landed only in the worktree copy and had to be synced to the main checkout afterward via a direct file-copy pass - confirmed all 41 new files + 5 Overview.md updates landed correctly in the main checkout. The 9 renames landed directly in the main checkout without needing a sync (no worktree-conflict triggered since those paths had no pre-existing worktree copy).
 
 Plan reference: `/home/kishan-gajipara/.claude/plans/validated-fluttering-clarke.md`.

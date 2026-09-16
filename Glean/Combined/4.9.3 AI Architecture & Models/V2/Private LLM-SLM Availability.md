@@ -1,9 +1,9 @@
 **Glean Tier 3 Advanced Evaluation**
-**Private LLM/SLM Availability — Independent Fresh Research (V2)**
+**Private LLM/SLM Availability - Independent Fresh Research (V2)**
 
-*Independent research, sources picked and read fresh this pass, cross-checked 2026-09-09 against `docs.glean.com` and `developers.glean.com`. Field definition (per SOW): "Can the customer deploy the tool with a private, dedicated, or self-hosted model? What are the requirements, cost implications, and capability trade-offs versus the default shared model?" This broadens the section's original "Private - Local Instance Support" framing (feasibility only) — the original deployment-path findings are retained below (claims 1-6) and two new claims (7-8) close the previously-uncovered "cost implications" and "capability trade-offs versus default" halves of the SOW question. Base file at [`../Private - Local Instance Support.md`](../Private%20-%20Local%20Instance%20Support.md) left untouched — this is a standalone V2 doc, not an edit of it.*
+*Independent research, sources picked and read fresh this pass, cross-checked 2026-09-09 against `docs.glean.com` and `developers.glean.com`. Field definition (per SOW): "Can the customer deploy the tool with a private, dedicated, or self-hosted model? What are the requirements, cost implications, and capability trade-offs versus the default shared model?" This broadens the section's original "Private - Local Instance Support" framing (feasibility only) - the original deployment-path findings are retained below (claims 1-6) and two new claims (7-8) close the previously-uncovered "cost implications" and "capability trade-offs versus default" halves of the SOW question. Base file at [`../Private - Local Instance Support.md`](../Private%20-%20Local%20Instance%20Support.md) left untouched - this is a standalone V2 doc, not an edit of it.*
 
-**Sr No mapping:** rows 1-8 below map 1:1 to the same Sr No in the companion test guide [test/V2/Private LLM-SLM Availability.md](../../../../test/Glean/4.9.3%20AI%20Architecture%20&%20Models/V2/Private%20LLM-SLM%20Availability.md) — same number, same claim, doc-sourced here / tenant-tested there.
+**Sr No mapping:** rows 1-8 below map 1:1 to the same Sr No in the companion test guide [test/V2/Private LLM-SLM Availability.md](../../../../test/Glean/4.9.3%20AI%20Architecture%20&%20Models/V2/Private%20LLM-SLM%20Availability.md) - same number, same claim, doc-sourced here / tenant-tested there.
 
 ---
 

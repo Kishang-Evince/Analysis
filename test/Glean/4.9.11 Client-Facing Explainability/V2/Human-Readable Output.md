@@ -1,4 +1,4 @@
-# 4.9.11 Human-Readable Output — Independent Research Test Guide
+# 4.9.11 Human-Readable Output - Independent Research Test Guide
 
 **Purpose:** Verification of every claim in the companion research doc [V2/Human-Readable Output.md](../../../../Glean/Combined/4.9.11%20Client-Facing%20Explainability/V2/Human-Readable%20Output.md). The key upgrade is accessibility: Glean maintains a formal ACR covering WCAG 2.0/2.1/2.2 Levels A and AA, not just a vague statement. This guide's job is to spot-check the accessibility claim directly and run the standard User B clarity exercise. Written so someone with no prior context on this project can pick it up and run it.
 
@@ -8,13 +8,13 @@
 
 **Prerequisites (what you need before starting):** A non-technical "User B" tester; optionally, a screen reader or keyboard-only test setup.
 
-**Sr No mapping:** Sr No 1-5 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Human-Readable Output.md](../../../../Glean/Combined/4.9.11%20Client-Facing%20Explainability/V2/Human-Readable%20Output.md#claims-sr-no-1-5-mapped-to-test-guide) — same number, same claim, doc-sourced there / tenant-tested here.
+**Sr No mapping:** Sr No 1-5 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Human-Readable Output.md](../../../../Glean/Combined/4.9.11%20Client-Facing%20Explainability/V2/Human-Readable%20Output.md#claims-sr-no-1-5-mapped-to-test-guide) - same number, same claim, doc-sourced there / tenant-tested here.
 
 **How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes.
 
 ---
 
-## Section 1 — Confirming Answers behavior and the accessibility upgrade — Sr No 1-4
+## Section 1 - Confirming Answers behavior and the accessibility upgrade - Sr No 1-4
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|
@@ -23,7 +23,7 @@
 | 3 | Slack `/glean` surface (context only, not tenant-stack) | If your organization has Slack, note whether this surface is relevant; otherwise mark N/A. | N/A or confirmed. | | | ~5 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 | 4 | The accessibility ACR and WCAG conformance claims are real | 1. Request the actual Accessibility Conformance Report from Glean (via a11y@glean.com or your account team).<br>2. Do a spot-check keyboard-only navigation test in the Assistant UI. | You get the real ACR document and confirm basic keyboard navigation works. | | Elevate this into any accessibility-compliance conversation for a healthcare client | ~30 min, Easy [OPTIONAL - deprioritized 2026-09-14, see scrap/GLEAN_RESEARCH_MEMORY.md] |
 
-## Section 2 — Running the standard clarity exercise — Sr No 5
+## Section 2 - Running the standard clarity exercise - Sr No 5
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|

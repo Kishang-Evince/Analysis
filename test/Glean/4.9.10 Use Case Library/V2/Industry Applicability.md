@@ -1,4 +1,4 @@
-# 4.9.10 Industry Applicability — Independent Research Test Guide
+# 4.9.10 Industry Applicability - Independent Research Test Guide
 
 **Purpose:** Verification of every claim in the companion research doc [V2/Industry Applicability.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Industry%20Applicability.md). The key finding is a sourcing error: the "AI automation use cases" article cited for this field is generic industry content, not about Glean specifically, and should be removed from the citation list. This guide's job is to confirm that correction and verify the life-sciences use cases directly. Written so someone with no prior context on this project can pick it up and run it.
 
@@ -8,13 +8,13 @@
 
 **Prerequisites (what you need before starting):** None special.
 
-**Sr No mapping:** Sr No 1-5 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Industry Applicability.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Industry%20Applicability.md#claims-sr-no-1-5-mapped-to-test-guide) — same number, same claim, doc-sourced there / tenant-tested here.
+**Sr No mapping:** Sr No 1-5 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Industry Applicability.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Industry%20Applicability.md#claims-sr-no-1-5-mapped-to-test-guide) - same number, same claim, doc-sourced there / tenant-tested here.
 
 **How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes.
 
 ---
 
-## Section 1 — Confirming the sourcing error and the life-sciences content — Sr No 1-5
+## Section 1 - Confirming the sourcing error and the life-sciences content - Sr No 1-5
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|

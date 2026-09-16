@@ -3,7 +3,7 @@
 
 *Independent research, sources picked and read fresh this pass, cross-checked 2026-09-09 against `docs.glean.com`. Field definition: "Support for SAML, OIDC, SCIM directory syncs, and multi-factor authentication." Base file at [`../Identity & SSO Integrations.md`](../Identity%20&%20SSO%20Integrations.md) left untouched - this is a standalone V2 doc, not an edit of it.*
 
-**Sr No mapping:** rows 1-9 below map 1:1 to the same Sr No in the companion test guide [test/V2/Identity & SSO Integrations.md](../../../../test/Glean/4.9.4%20Integration%20&%20Technical/V2/Identity%20&%20SSO%20Integrations.md) - same number, same claim, doc-sourced here / tenant-tested there. Rows 8-9 added 2026-09-14 — found via a full-corpus sweep of this project's local Glean documentation crawl, never cited by this field's original research pass (see scrap/GLEAN_RESEARCH_MEMORY.md).
+**Sr No mapping:** rows 1-9 below map 1:1 to the same Sr No in the companion test guide [test/V2/Identity & SSO Integrations.md](../../../../test/Glean/4.9.4%20Integration%20&%20Technical/V2/Identity%20&%20SSO%20Integrations.md) - same number, same claim, doc-sourced here / tenant-tested there. Rows 8-9 added 2026-09-14 - found via a full-corpus sweep of this project's local Glean documentation crawl, never cited by this field's original research pass (see scrap/GLEAN_RESEARCH_MEMORY.md).
 
 ---
 

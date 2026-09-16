@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Quick demo: parse 4.9.1 — Functional Capabilities, Field 16 "Features Confirmed"
+ * Quick demo: parse 4.9.1 - Functional Capabilities, Field 16 "Features Confirmed"
  * from Glean's tier3-analysis-report.md + features-Confirmed.docx.md
  */
 
@@ -31,7 +31,7 @@ function parseFieldFromReport(text, targetSection, targetCategory, targetNumber)
   for (const raw of lines) {
     const line = raw.trim();
 
-    const sectionMatch = line.match(/^##\s+(\d+\.\d+\.\d+)\s+[—–-]\s+(.+)$/);
+    const sectionMatch = line.match(/^##\s+(\d+\.\d+\.\d+)\s+[-–-]\s+(.+)$/);
     if (sectionMatch) {
       currentSection = sectionMatch[1];
       currentCategory = sectionMatch[2].trim();
@@ -176,7 +176,7 @@ async function buildFieldRecord() {
 // ---------------------------------------------------------------------------
 async function main() {
   try {
-    console.log('Building field record for 4.9.1 — Functional Capabilities / Field 1...\n');
+    console.log('Building field record for 4.9.1 - Functional Capabilities / Field 1...\n');
     const record = await buildFieldRecord();
 
     console.log('=== RECORD ===');

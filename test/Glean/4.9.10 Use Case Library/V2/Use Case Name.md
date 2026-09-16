@@ -1,6 +1,6 @@
-# 4.9.10 Use Case Name — Independent Research Test Guide
+# 4.9.10 Use Case Name - Independent Research Test Guide
 
-**Purpose:** Verification of every claim in the companion research doc [V2/Use Case Name.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Use%20Case%20Name.md). The core finding there is a precision correction: only UC-01, UC-03, and UC-05 map to literally Glean-named use cases (UC-03 is actually a headline example); the rest are accurate but Stratos-composed labels. This guide's job is to confirm each use case name still maps to a real, available product surface. Written so someone with no prior context on this project can pick it up and run it — mostly a quick sandbox click-through per use case.
+**Purpose:** Verification of every claim in the companion research doc [V2/Use Case Name.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Use%20Case%20Name.md). The core finding there is a precision correction: only UC-01, UC-03, and UC-05 map to literally Glean-named use cases (UC-03 is actually a headline example); the rest are accurate but Stratos-composed labels. This guide's job is to confirm each use case name still maps to a real, available product surface. Written so someone with no prior context on this project can pick it up and run it - mostly a quick sandbox click-through per use case.
 
 **Tenant entry:** Glean Assistant/Search sandbox · `glean.com/solutions/*` pages
 **Companion research doc:** [V2/Use Case Name.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Use%20Case%20Name.md)
@@ -8,15 +8,15 @@
 
 **Prerequisites (what you need before starting):** Sandbox access.
 
-**Sr No mapping:** Sr No 1-9 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Use Case Name.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Use%20Case%20Name.md#claims-sr-no-1-9-mapped-to-test-guide) — same number, same claim, doc-sourced there / tenant-tested here.
+**Sr No mapping:** Sr No 1-9 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Use Case Name.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Use%20Case%20Name.md#claims-sr-no-1-9-mapped-to-test-guide) - same number, same claim, doc-sourced there / tenant-tested here.
 
 **How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes. "Pass" means you personally confirmed the use case maps to a real, available surface.
 
-**Effort column:** each row lists an estimated time (`Easy`, a few minutes each) — this field's checks are all quick confirmations.
+**Effort column:** each row lists an estimated time (`Easy`, a few minutes each) - this field's checks are all quick confirmations.
 
 ---
 
-## Section 1 — Confirming naming status for each use case — Sr No 1-9
+## Section 1 - Confirming naming status for each use case - Sr No 1-9
 
 | Sr No | Use Case | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|

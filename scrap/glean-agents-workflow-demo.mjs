@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Glean Agents API — Workflow Engine demo
+ * Glean Agents API - Workflow Engine demo
  * Evidence probe for 4.9.1 Features Confirmed item #16 ("Workflow engine, agent-side").
  *
  * What it proves, in order:
@@ -27,7 +27,7 @@
  * Glean's own deprecation notice says: "Use POST /api/agents/{agent_id}/runs
  * instead." The replacement's request schema was NOT published on a fetchable
  * page as of this writing, so runAgent() below tries the replacement first and
- * falls back to the deprecated path on 404/405. That fallback is deliberate —
+ * falls back to the deprecated path on 404/405. That fallback is deliberate -
  * it makes the deprecation observable instead of guessed. Watch which path the
  * log reports; that answer is itself a finding worth recording.
  * ---------------------------------------------------------------------------
@@ -35,7 +35,7 @@
  * USAGE
  *   cd scrap
  *
- *   # 1. Dry run — no credentials needed, prints the exact calls it would make
+ *   # 1. Dry run - no credentials needed, prints the exact calls it would make
  *   node glean-agents-workflow-demo.mjs --dry-run
  *
  *   # 2. Real run
@@ -58,7 +58,7 @@
  *
  * GOTCHA that will bite you: if the agent uses an input-form trigger, `input`
  * must carry EVERY form field, including the optional ones, or the run 400s.
- * Text values only — the API takes no file/binary inputs. Run with --schemas-only
+ * Text values only - the API takes no file/binary inputs. Run with --schemas-only
  * first and copy the field names straight out of the printed schema.
  */
 
@@ -72,7 +72,7 @@ import dotenv from 'dotenv';
 //   --env <path>        CLI flag
 //   GLEAN_ENV_FILE      shell env var
 //   <script dir>/.env   default
-// Real shell env vars beat .env values — dotenv does not override by default,
+// Real shell env vars beat .env values - dotenv does not override by default,
 // so `GLEAN_API_TOKEN=xxx node script.mjs` still wins over the file.
 const rawArgs = process.argv.slice(2);
 // NOTE: the flag is --env, NOT --env-file. Node 20.6+ reserves --env-file as a
@@ -198,11 +198,11 @@ async function searchAgents(query) {
 // --- 2 + 3. the actual #16 evidence ----------------------------------------
 
 async function inspectAgent(agentId) {
-  section(`2. Agent metadata — ${agentId}`);
+  section(`2. Agent metadata - ${agentId}`);
   const agent = await call('GET', `/rest/api/v1/agents/${encodeURIComponent(agentId)}`);
   if (!agent.__dryRun) log(JSON.stringify(agent, null, 2));
 
-  section(`3. Declared schemas — ${agentId}`);
+  section(`3. Declared schemas - ${agentId}`);
   log('This is the item #16 payload: the agent exposes a structured input/output');
   log('contract, which is what "workflow engine, agent-side" actually means at the');
   log('API layer. Ordered steps live server-side; the schema is the public surface.\n');
@@ -218,7 +218,7 @@ async function inspectAgent(agentId) {
     if (fields) {
       log('\nInput fields to supply in --input (include optional ones too):');
       for (const [k, v] of Object.entries(fields)) {
-        log(`  ${k}: ${v.type ?? 'unknown'}${v.description ? ` — ${v.description}` : ''}`);
+        log(`  ${k}: ${v.type ?? 'unknown'}${v.description ? ` - ${v.description}` : ''}`);
       }
     }
   }
@@ -228,7 +228,7 @@ async function inspectAgent(agentId) {
 // --- 4. run and wait -------------------------------------------------------
 
 async function runAgent(agentId, input) {
-  section(`4. Run agent (wait for final result) — ${agentId}`);
+  section(`4. Run agent (wait for final result) - ${agentId}`);
 
   // Replacement endpoint first, per the 2026-08-25 deprecation notice.
   try {
@@ -251,7 +251,7 @@ async function runAgent(agentId, input) {
 // --- 5. run and stream -----------------------------------------------------
 
 async function streamAgent(agentId, input) {
-  section(`5. Run agent (SSE stream) — ${agentId}`);
+  section(`5. Run agent (SSE stream) - ${agentId}`);
 
   const res = await call('POST', '/rest/api/v1/agents/runs/stream', { agentId, input }, { raw: true });
   if (res?.__dryRun) return;
@@ -288,7 +288,7 @@ async function streamAgent(agentId, input) {
 
 function preflight() {
   if (OPTS.dryRun) {
-    if (!BASE_URL) log('[dry-run] No GLEAN_INSTANCE/GLEAN_BASE_URL set — using a placeholder host.\n');
+    if (!BASE_URL) log('[dry-run] No GLEAN_INSTANCE/GLEAN_BASE_URL set - using a placeholder host.\n');
     return;
   }
   const missing = [];
@@ -342,7 +342,7 @@ async function main() {
   //     process.exit(1);
   //   }
   // } else {
-  //   log('\nNo --input given; sending {}. An input-form agent will 400 — that is expected.');
+  //   log('\nNo --input given; sending {}. An input-form agent will 400 - that is expected.');
   // }
 
   // if (OPTS.stream) {
@@ -358,8 +358,8 @@ async function main() {
 
 main().catch((e) => {
   console.error(`\nFAILED: ${e.message}`);
-  if (e.status === 401) console.error('401 — bad token, or X-Glean-ActAs sent with a user-scoped token.');
-  if (e.status === 403) console.error('403 — token lacks scope, or the agent is not shared with this user.');
-  if (e.status === 429) console.error('429 — rate limited (~30 qpm). Back off and retry.');
+  if (e.status === 401) console.error('401 - bad token, or X-Glean-ActAs sent with a user-scoped token.');
+  if (e.status === 403) console.error('403 - token lacks scope, or the agent is not shared with this user.');
+  if (e.status === 429) console.error('429 - rate limited (~30 qpm). Back off and retry.');
   process.exit(1);
 });

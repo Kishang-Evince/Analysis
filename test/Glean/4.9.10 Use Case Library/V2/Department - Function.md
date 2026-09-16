@@ -1,6 +1,6 @@
-# 4.9.10 Department / Function — Independent Research Test Guide
+# 4.9.10 Department / Function - Independent Research Test Guide
 
-**Purpose:** Verification of every claim in the companion research doc [V2/Department - Function.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Department%20-%20Function.md). The key finding is a real, named, quantified customer proof point (Confluent) for UC-07's Customer Service/Sales mapping — a stronger evidence tier than generic department-page language. This guide's job is to confirm the department pages and flag the Confluent case study for reuse elsewhere in this library. Written so someone with no prior context on this project can pick it up and run it.
+**Purpose:** Verification of every claim in the companion research doc [V2/Department - Function.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Department%20-%20Function.md). The key finding is a real, named, quantified customer proof point (Confluent) for UC-07's Customer Service/Sales mapping - a stronger evidence tier than generic department-page language. This guide's job is to confirm the department pages and flag the Confluent case study for reuse elsewhere in this library. Written so someone with no prior context on this project can pick it up and run it.
 
 **Tenant entry:** `glean.com/solutions/departments/*` pages
 **Companion research doc:** [V2/Department - Function.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Department%20-%20Function.md)
@@ -8,13 +8,13 @@
 
 **Prerequisites (what you need before starting):** None special.
 
-**Sr No mapping:** Sr No 1-4 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Department - Function.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Department%20-%20Function.md#claims-sr-no-1-4-mapped-to-test-guide) — same number, same claim, doc-sourced there / tenant-tested here.
+**Sr No mapping:** Sr No 1-4 below map 1:1 to the same Sr No in the companion research doc's claims table [Combined/V2/Department - Function.md](../../../../Glean/Combined/4.9.10%20Use%20Case%20Library/V2/Department%20-%20Function.md#claims-sr-no-1-4-mapped-to-test-guide) - same number, same claim, doc-sourced there / tenant-tested here.
 
 **How to record a result:** For each row, write `Pass`, `Fail`, `Partial`, or `Blocked` in the Result column, plus one line in Notes.
 
 ---
 
-## Section 1 — Confirming department pages and the Confluent case study — Sr No 1-4
+## Section 1 - Confirming department pages and the Confluent case study - Sr No 1-4
 
 | Sr No | Claim | Step-by-step test | Expected result (= Pass) | Result | Notes | Effort |
 |---|---|---|---|---|---|---|

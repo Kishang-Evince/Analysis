@@ -1,9 +1,9 @@
 **Glean Tier 3 Advanced Evaluation**
-**RAG Implementation — Independent Fresh Research (V2)**
+**RAG Implementation - Independent Fresh Research (V2)**
 
-*Independent research, sources picked and read fresh this pass, cross-checked 2026-09-09 against `docs.glean.com` and `developers.glean.com`. Field definition (per SOW): "Does the tool use Retrieval-Augmented Generation? How is the knowledge base managed? What formats are supported?" This broadens the section's original "RAG Implementation Quality" framing (retrieval architecture, chunking, citation precision) — the original findings are retained below (claims 1-8) as they directly answer "does the tool use RAG" and touch chunking, and two new claims (9-10) close the previously-uncovered "how is the knowledge base managed" and "what formats are supported" halves of the SOW question. Base file at [`../RAG Implementation Quality.md`](../RAG%20Implementation%20Quality.md) left untouched — this is a standalone V2 doc, not an edit of it.*
+*Independent research, sources picked and read fresh this pass, cross-checked 2026-09-09 against `docs.glean.com` and `developers.glean.com`. Field definition (per SOW): "Does the tool use Retrieval-Augmented Generation? How is the knowledge base managed? What formats are supported?" This broadens the section's original "RAG Implementation Quality" framing (retrieval architecture, chunking, citation precision) - the original findings are retained below (claims 1-8) as they directly answer "does the tool use RAG" and touch chunking, and two new claims (9-10) close the previously-uncovered "how is the knowledge base managed" and "what formats are supported" halves of the SOW question. Base file at [`../RAG Implementation Quality.md`](../RAG%20Implementation%20Quality.md) left untouched - this is a standalone V2 doc, not an edit of it.*
 
-**Sr No mapping:** rows 1-10 below map 1:1 to the same Sr No in the companion test guide [test/V2/RAG Implementation.md](../../../../test/Glean/4.9.3%20AI%20Architecture%20&%20Models/V2/RAG%20Implementation.md) — same number, same claim, doc-sourced here / tenant-tested there.
+**Sr No mapping:** rows 1-10 below map 1:1 to the same Sr No in the companion test guide [test/V2/RAG Implementation.md](../../../../test/Glean/4.9.3%20AI%20Architecture%20&%20Models/V2/RAG%20Implementation.md) - same number, same claim, doc-sourced here / tenant-tested there.
 
 ---
 
