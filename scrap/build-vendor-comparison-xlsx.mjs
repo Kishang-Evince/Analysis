@@ -67,6 +67,22 @@ const SECTIONS = [
   '4.9.12 Vendor Maturity & Trajectory',
 ];
 
+/** Same value for every row within a sheet, per the client's own visibility-tagging instructions. */
+const SECTION_VISIBILITY = {
+  '4.9.1 Functional Capabilities': 'Guarded',
+  '4.9.2 Agent & Workflow Builder': 'Guarded',
+  '4.9.3 AI Architecture & Models': 'Guarded',
+  '4.9.4 Integration & Technical': 'Guarded',
+  '4.9.5 Compliance & Regulatory': 'Guarded',
+  '4.9.6 Adoption & Readiness': 'Guarded',
+  '4.9.7 Pricing & TCO': 'Guarded',
+  '4.9.8 Partner & Channel Program': 'Internal Only',
+  '4.9.9 Competitive Positioning': 'Guarded',
+  '4.9.10 Use Case Library': 'Open',
+  '4.9.11 Client-Facing Explainability': 'Open',
+  '4.9.12 Vendor Maturity & Trajectory': 'Guarded',
+};
+
 /**
  * Which claims need a real physical/tenant test, vs. which are genuinely
  * settled by the doc alone with nothing to go run in app.glean for.
@@ -201,6 +217,48 @@ function parseConfidenceTiers(text) {
 }
 
 /**
+ * Maps this corpus's many Confidence tiers down to the client-facing 3-value
+ * scheme added 2026-09-16: Tested | Vendor-Stated (Unverified) | Estimated.
+ * Rule (from the client's own instructions): only a genuine hands-on/SDK/live-
+ * tenant tier counts as "Tested"; only an explicit no-source/inference tier
+ * counts as "Estimated"; everything else (Doc-Verified, Search-corroborated,
+ * Cross-referenced, Absence-check, third-party, ...) is "Vendor-Stated
+ * (Unverified)" - true even for docs.glean.com/developers.glean.com sources,
+ * since reading the vendor's own docs is not independent verification.
+ */
+function confidenceLevel(tier) {
+  const t = (tier || '').toLowerCase();
+  if (t.includes('tested') || t.includes('hands-on')) return 'Tested';
+  if (t.includes('estimat')) return 'Estimated';
+  return 'Vendor-Stated (Unverified)';
+}
+
+/** Sr No -> explicit "added/dated YYYY-MM-DD" override found anywhere in the doc text. */
+function parseDateOverrides(text) {
+  const overrides = new Map();
+  const re = /(?:Rows?|Claims?|Sr\s*No)\s+(\d+)(?:\s*-\s*(\d+))?\s+added\s+(\d{4}-\d{2}-\d{2})/gi;
+  let m;
+  while ((m = re.exec(text))) {
+    const a = Number(m[1]);
+    const b = m[2] ? Number(m[2]) : a;
+    for (let n = a; n <= b; n++) overrides.set(n, m[3]);
+  }
+  return overrides;
+}
+
+/** The doc's own primary/earliest validation date, else 2026-09-14 as last resort. */
+function parsePrimaryDate(text) {
+  const confSection = extractSection(text, /^##\s*Confidence\b/);
+  let m = /validation date\s+(\d{4}-\d{2}-\d{2})/i.exec(confSection);
+  if (m) return m[1];
+  m = /(\d{4}-\d{2}-\d{2})/.exec(confSection);
+  if (m) return m[1];
+  m = /(\d{4}-\d{2}-\d{2})/.exec(text);
+  return m ? m[1] : '2026-09-14';
+}
+
+
+/**
  * Converts this corpus's markdown into either a plain string (no emphasis found)
  * or an ExcelJS rich-text value ({ richText: [...] }) with **bold** and *italic*
  * spans rendered as actual bold runs - never left as literal asterisk characters
@@ -270,6 +328,8 @@ function parseResearchDoc(filePath) {
   const text = fs.readFileSync(filePath, 'utf8');
   const tables = findSrNoTables(text);
   const { perClaim, fallbackTier } = parseConfidenceTiers(text);
+  const dateOverrides = parseDateOverrides(text);
+  const primaryDate = parsePrimaryDate(text);
   let label = 'Claim';
   const rows = [];
 
@@ -292,6 +352,8 @@ function parseResearchDoc(filePath) {
         detail: mdToHyperlinkCell(rawDetail),
         tier,
         physicalTestRequired: needsPhysicalTest(tier, rawClaim, rawSource, rawDetail),
+        confidenceLevel: confidenceLevel(tier),
+        asOfDate: dateOverrides.get(srNo) ?? primaryDate,
       });
     }
   }
@@ -389,7 +451,7 @@ const FONT_FIELD = { bold: true, size: 11, color: { argb: 'FF1F3864' } };
 const FONT_HEADER = { bold: true, size: 10, color: { argb: 'FFFFFFFF' } };
 const FONT_DATA = { size: 9 };
 
-const COL_WIDTHS = [7, 36, 30, 55, 36, 14]; // Sr No | label | Source | Confirmation Detail | Confirmation Notes | Check Required
+const COL_WIDTHS = [7, 36, 30, 55, 36, 14, 20, 12, 14]; // Sr No | label | Source | Confirmation Detail | Confirmation Notes | Check Required | Confidence Level | As-Of Date | Visibility
 
 // One short description per header, shown as an Excel cell comment (hover) on every field's header row.
 const HEADER_NOTES = {
@@ -399,6 +461,9 @@ const HEADER_NOTES = {
   'Confirmation Detail': 'Exact evidence (quotes, figures) backing the claim, as found in Glean\'s own documentation.',
   'Confirmation Notes': 'How to verify this in a live Glean tenant - step-by-step guidance from the test guide.',
   'Check Required': 'Yes = must be confirmed with a live portal run before client-facing use. No = already settled by documentation alone (certification, published pricing, etc.) - nothing to physically test.',
+  'Confidence Level': 'Tested = independently run/observed. Vendor-Stated (Unverified) = from any source (vendor docs, third-party) but not independently confirmed. Estimated = no source, inferred from industry norms.',
+  'As-Of Date': 'The date this row was last validated or fetched (YYYY-MM-DD).',
+  Visibility: 'Guarded / Internal Only / Open - same value for every row in this sheet, set by the client.',
 };
 
 // --- workbook assembly --------------------------------------------------------
@@ -409,7 +474,7 @@ function buildSectionSheet(workbook, sectionName) {
   COL_WIDTHS.forEach((w, i) => (sheet.getColumn(i + 1).width = w));
 
   // section title bar
-  sheet.mergeCells(1, 1, 1, 6);
+  sheet.mergeCells(1, 1, 1, 9);
   const titleCell = sheet.getCell(1, 1);
   titleCell.value = sectionName;
   titleCell.fill = FILL_SECTION;
@@ -432,7 +497,7 @@ function buildSectionSheet(workbook, sectionName) {
 
     // field name bar
     const fieldRowNum = sheet.lastRow.number + 1;
-    sheet.mergeCells(fieldRowNum, 1, fieldRowNum, 6);
+    sheet.mergeCells(fieldRowNum, 1, fieldRowNum, 9);
     const fieldCell = sheet.getCell(fieldRowNum, 1);
     fieldCell.value = `Field ${fieldNum}: ${fieldName}`;
     fieldCell.fill = FILL_FIELD;
@@ -441,7 +506,7 @@ function buildSectionSheet(workbook, sectionName) {
 
     // column header row
     const headerRowNum = fieldRowNum + 1;
-    const headerLabels = ['Sr No', label, 'Source', 'Confirmation Detail', 'Confirmation Notes', 'Check Required'];
+    const headerLabels = ['Sr No', label, 'Source', 'Confirmation Detail', 'Confirmation Notes', 'Check Required', 'Confidence Level', 'As-Of Date', 'Visibility'];
     const headerRow = sheet.getRow(headerRowNum);
     headerLabels.forEach((text, i) => {
       const cell = headerRow.getCell(i + 1);
@@ -456,7 +521,8 @@ function buildSectionSheet(workbook, sectionName) {
     // data rows
     for (const r of rows) {
       const physicalTestRequired = r.physicalTestRequired ? 'Yes' : 'No';
-      const values = [r.srNo, r.claim, r.source, r.detail, notes.get(r.srNo) ?? '', physicalTestRequired];
+      const visibility = SECTION_VISIBILITY[sectionName] ?? 'Guarded';
+      const values = [r.srNo, r.claim, r.source, r.detail, notes.get(r.srNo) ?? '', physicalTestRequired, r.confidenceLevel, r.asOfDate, visibility];
       const dataRow = sheet.addRow(values);
       values.forEach((val, idx) => {
         const colNum = idx + 1;
@@ -474,7 +540,7 @@ function buildSectionSheet(workbook, sectionName) {
         cell.alignment = {
           vertical: 'top',
           wrapText: true,
-          horizontal: colNum === 1 || colNum === 6 ? 'center' : 'left',
+          horizontal: [1, 6, 7, 8, 9].includes(colNum) ? 'center' : 'left',
         };
       });
       totalRows++;
@@ -508,6 +574,9 @@ function buildReadmeSheet(workbook, stats) {
     ['                       Sr No row in that field\'s test guide; left blank where the guide has no', false],
     ['                       Notes column for that row - never invented', false],
     ['  Check Required       Yes/No - see rule below', false],
+    ['  Confidence Level     Tested / Vendor-Stated (Unverified) / Estimated - see rule below', false],
+    ['  As-Of Date           date this row was last validated or fetched (YYYY-MM-DD)', false],
+    ['  Visibility           Guarded / Internal Only / Open - fixed per sheet, set by the client', false],
     [''],
     ['Check Required rule: defaults to Yes for every claim, even Doc-Verified ones - a doc saying', false],
     ['a feature works does not prove it works in this tenant (e.g. agent automation needs an actual', false],

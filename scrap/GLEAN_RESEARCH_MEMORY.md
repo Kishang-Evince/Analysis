@@ -132,3 +132,25 @@ Result: 87 → **107 fields**, 11 → **12 sections**, 692 → **851 claim rows*
 **Known residual issue**: agents ran inside a git worktree; brand-new files (the 15+5 new fields) initially landed only in the worktree copy and had to be synced to the main checkout afterward via a direct file-copy pass - confirmed all 41 new files + 5 Overview.md updates landed correctly in the main checkout. The 9 renames landed directly in the main checkout without needing a sync (no worktree-conflict triggered since those paths had no pre-existing worktree copy).
 
 Plan reference: `/home/kishan-gajipara/.claude/plans/validated-fluttering-clarke.md`.
+
+
+## Client-added xlsx columns (2026-09-16)
+
+Client added 3 new columns to the workbook schema (seen first in their own edited copy `Glean_Analysis_Draft_3.xlsx`): **Confidence Level** (Tested / Vendor-Stated (Unverified) / Estimated), **As-Of Date** (YYYY-MM-DD), **Visibility** (Guarded / Internal Only / Open, fixed per sheet). Implemented in `scrap/build-vendor-comparison-xlsx.mjs`:
+
+- `confidenceLevel(tier)` — maps this corpus's existing Confidence tiers down to the 3-value scheme. Only "Tested"/"hands-on" tiers count as Tested; only "estimat*" tiers count as Estimated; everything else (Doc-Verified, Search-corroborated, Cross-referenced, Absence-check, third-party, ...) is Vendor-Stated (Unverified) — including docs.glean.com sources, since reading vendor docs isn't independent verification. Result: 850 of 851 rows Vendor-Stated, 1 Tested, 0 Estimated — matches the client's own "~830 expected" ballpark.
+- `parseDateOverrides`/`parsePrimaryDate` — pulls each doc's own validation date from its `## Confidence` section as the per-field default, with per-Sr-No overrides where a doc explicitly says "Rows/Claims X-Y added YYYY-MM-DD" (a pattern this project's own edits already used consistently). Produced 4 distinct real dates across the corpus (2026-09-08/09/10/14), not one fake blanket date.
+- `SECTION_VISIBILITY` — hardcoded per-sheet map exactly matching the client's table (4.9.8 Internal Only, 4.9.10/4.9.11 Open, rest Guarded).
+
+Workbook is now 9 columns: Sr No | Claim/Feature/Finding | Source | Confirmation Detail | Confirmation Notes | Check Required | Confidence Level | As-Of Date | Visibility.
+
+
+## Confidence Level + Confirmation Notes fill pass (2026-09-16)
+
+Filled Confidence Level + rewrote Confirmation Notes for all 792 `Check Required: No` rows in `Client Drafts/Glean_Analysis_Draft_3.xlsx` (the client's live working copy, project root now `/home/kishan-gajipara/Kishan/Files/Stratos AI/Analysis`). `Check Required: Yes` rows (59) left untouched per client's explicit scope.
+
+Method: piloted on 10 rows first (got client sign-off on tone), then dispatched 7 parallel agents by section, each doing pure classification+writing (no xlsx access) — output JSON only, to avoid concurrent writes corrupting the shared file. Merged all 7 outputs myself in one script with cross-validation against each sheet's original rowNum set (caught that "rowNum" is per-sheet not global — two agent outputs combined multiple sheets, required positional-split-with-validation during merge, not a naive rowNum lookup).
+
+Confidence Level distribution: 781 Vendor-Stated (Unverified), 6 Tested, 9 Estimated (of 786 newly filled + 6 from the pilot). Confirmation Notes: one unique, human-written sentence per row, first-person-plural, referencing the actual source/claim specifics — explicitly must NOT contain the literal phrase "Vendor-Stated (Unverified)" or "Confidence Level" (verified: zero occurrences of the real tier-name phrases; natural English use of words like "unverified" in a sentence is fine and expected).
+
+Client feedback incorporated: notes don't follow one template (varied per-row), and never restate the Confidence Level value inside the note text.
