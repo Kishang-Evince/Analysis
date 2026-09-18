@@ -1,0 +1,26 @@
+{
+  "name": "api-verification-tests",
+  "version": "1.0.0",
+  "description": "API verification tests for Glean and other providers",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test:glean:rate-limit": "ts-node glean/rate-limit.ts",
+    "test:glean:rest-api": "ts-node glean/rest-api-surfaces.ts",
+    "test:glean:error-handling": "ts-node glean/error-handling.ts",
+    "test:glean:retry": "ts-node glean/retry-guidance.ts",
+    "test:glean:rate-quota": "ts-node glean/rate-limit-quota.ts",
+    "test:glean:openapi": "ts-node glean/openapi-specs.ts",
+    "test:glean:indexing-crud": "ts-node glean/indexing-crud.ts",
+    "test:glean:permission-latency": "ts-node glean/permission-latency.ts"
+  },
+  "dependencies": {
+    "@gleanwork/api-client": "^0.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "dotenv": "^16.6.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.0.0"
+  }
+}

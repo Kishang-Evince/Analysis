@@ -1,2 +1,5 @@
-scrap/node_modules
 scrap/.env
+scrap/node_modules
+
+scrap/api-verification-tests/.env
+scrap/api-verification-tests/node_modules
