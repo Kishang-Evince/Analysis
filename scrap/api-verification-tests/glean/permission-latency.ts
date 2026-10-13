@@ -88,7 +88,7 @@ async function testPermissionLatency(): Promise<PermissionLatencyTestResult> {
     try {
       // In real scenario, this would be actual Glean search as the test user
       // For now, simulate polling with timing
-      const response = await fetch(`${serverUrl}/api/client/search`, {
+      const response = await fetch(`${serverUrl}/rest/api/v1/search`, {
         method: "POST",
         headers,
         body: JSON.stringify({

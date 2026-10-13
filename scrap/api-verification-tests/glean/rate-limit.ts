@@ -8,8 +8,6 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-import { Glean } from "@gleanwork/api-client";
-
 interface RateLimitTestResult {
   totalRequests: number;
   successfulRequests: number;
@@ -20,10 +18,17 @@ interface RateLimitTestResult {
 }
 
 async function testRateLimitHandling(): Promise<RateLimitTestResult> {
-  const glean = new Glean({
-    apiToken: process.env["GLEAN_API_TOKEN"] ?? "",
-    serverURL: process.env["GLEAN_SERVER_URL"] ?? "",
-  });
+  const serverUrl = process.env["GLEAN_SERVER_URL"] || "";
+  const apiToken = process.env["GLEAN_API_TOKEN"] || "";
+
+  if (!serverUrl || !apiToken) {
+    throw new Error("GLEAN_SERVER_URL and GLEAN_API_TOKEN required");
+  }
+
+  const headers = {
+    Authorization: `Bearer ${apiToken}`,
+    "Content-Type": "application/json",
+  };
 
   const result: RateLimitTestResult = {
     totalRequests: 0,
@@ -36,47 +41,44 @@ async function testRateLimitHandling(): Promise<RateLimitTestResult> {
   const responseTimes: number[] = [];
   const burstSize = 50; // Rapid burst to trigger rate limits
 
-  console.log(`Starting rate-limit test with ${burstSize} rapid requests...`);
+  console.log(`Starting rate-limit test with ${burstSize} rapid requests against /rest/api/v1/search...`);
 
   for (let i = 0; i < burstSize; i++) {
     result.totalRequests++;
     const startTime = Date.now();
 
     try {
-      const response = await glean.client.search.queryAsAdmin({
-        trackingToken: `test-${i}`,
-        pageSize: 10,
-        query: `test query ${i}`,
+      const response = await fetch(`${serverUrl}/rest/api/v1/search`, {
+        method: "POST",
+        headers,
+        body: JSON.stringify({
+          trackingToken: `test-${i}`,
+          pageSize: 10,
+          query: `test query ${i}`,
+        }),
       });
-      console.warn("response", response);
       const elapsed = Date.now() - startTime;
       responseTimes.push(elapsed);
-      result.successfulRequests++;
 
-      if (elapsed < 1000) {
-        result.subSecondResponses++;
+      if (response.status === 429) {
+        result.rateLimitHits++;
+        const body = await response.text();
+        console.log(`Request ${i + 1}: 429 Rate Limited (${elapsed}ms)`);
+        console.log(`  Body: ${body}`);
+        result.errorDetails = { status: 429, body };
+        break; // Stop after hitting first rate limit
+      } else if (response.ok) {
+        result.successfulRequests++;
+        if (elapsed < 1000) result.subSecondResponses++;
+        console.log(`Request ${i + 1}: ${elapsed}ms - OK (${response.status})`);
+      } else {
+        const body = await response.text();
+        console.log(`Request ${i + 1}: Error ${response.status} - ${body.slice(0, 100)}`);
       }
-
-      console.log(`Request ${i + 1}: ${elapsed}ms - OK`);
     } catch (error: any) {
       const elapsed = Date.now() - startTime;
       responseTimes.push(elapsed);
-
-      if (error.status === 429) {
-        result.rateLimitHits++;
-        console.log(`Request ${i + 1}: 429 Rate Limited (${elapsed}ms)`);
-        console.log(`  Error structure:`, {
-          status: error.status,
-          statusCode: error.statusCode,
-          body: error.body,
-        });
-        result.errorDetails = error.body;
-        break; // Stop after hitting first rate limit
-      } else {
-        console.log(
-          `Request ${i + 1}: Error ${error.status} - ${error.message}`
-        );
-      }
+      console.log(`Request ${i + 1}: Exception - ${error.message}`);
     }
   }
 

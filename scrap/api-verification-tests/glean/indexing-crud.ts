@@ -26,9 +26,10 @@ interface IndexingCRUDTestResult {
 async function testIndexingCRUD(): Promise<IndexingCRUDTestResult> {
   const serverUrl = process.env["GLEAN_SERVER_URL"] || "";
   const apiToken = process.env["GLEAN_INDEXING_TOKEN"] || "";
+  const testDatasource = process.env["GLEAN_DATASOURCE"] || "";
 
-  if (!serverUrl || !apiToken) {
-    throw new Error("GLEAN_SERVER_URL and GLEAN_API_TOKEN required");
+  if (!serverUrl || !apiToken || !testDatasource) {
+    throw new Error("GLEAN_SERVER_URL, GLEAN_INDEXING_TOKEN, GLEAN_DATASOURCE required");
   }
 
   const result: IndexingCRUDTestResult = {
@@ -45,7 +46,6 @@ async function testIndexingCRUD(): Promise<IndexingCRUDTestResult> {
     "Content-Type": "application/json",
   };
 
-  const testDatasource = "testdatasource";
   const testObjectType = "Document";
 
   // 1. CREATE - Index a test document
@@ -64,10 +64,13 @@ async function testIndexingCRUD(): Promise<IndexingCRUDTestResult> {
               datasource: testDatasource,
               objectType: testObjectType,
               title: "Test Document for CRUD Verification",
-              viewURL: `${serverUrl}/doc/${result.testDocId}`,
+              viewURL: `https://example-test-datasource.local/doc/${result.testDocId}`,
               body: {
                 mimeType: "text/plain",
-              textContent: "This is a test document used to verify CRUD operations on the Indexing API.",
+                textContent: "This is a test document used to verify CRUD operations on the Indexing API.",
+              },
+              permissions: {
+                allowAnonymousAccess: true,
               },
             },
           ],
@@ -104,10 +107,13 @@ async function testIndexingCRUD(): Promise<IndexingCRUDTestResult> {
               datasource: testDatasource,
               objectType: testObjectType,
               title: "Test Document - UPDATED",
-              viewURL: `${serverUrl}/doc/${result.testDocId}`,
+              viewURL: `https://example-test-datasource.local/doc/${result.testDocId}`,
               body: {
                 mimeType: "text/plain",
-              textContent: "This document has been updated as part of CRUD verification.",
+                textContent: "This document has been updated as part of CRUD verification.",
+              },
+              permissions: {
+                allowAnonymousAccess: true,
               },
             },
           ],

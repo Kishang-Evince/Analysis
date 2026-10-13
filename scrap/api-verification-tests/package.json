@@ -12,6 +12,8 @@
     "test:glean:rate-quota": "ts-node glean/rate-limit-quota.ts",
     "test:glean:openapi": "ts-node glean/openapi-specs.ts",
     "test:glean:indexing-crud": "ts-node glean/indexing-crud.ts",
+    "test:glean:indexing-retrieve": "ts-node glean/indexing-retrieve.ts",
+    "test:glean:indexing-doccount": "ts-node glean/indexing-getdocumentcount.ts",
     "test:glean:permission-latency": "ts-node glean/permission-latency.ts"
   },
   "dependencies": {

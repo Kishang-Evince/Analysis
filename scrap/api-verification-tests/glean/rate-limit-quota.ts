@@ -42,7 +42,7 @@ async function testRateLimitQuota(): Promise<QuotaTestResult> {
   console.log("Testing rate-limit quota by firing requests until throttled...\n");
 
   // Fire requests rapidly (no sleep between) until we hit 429
-  for (let i = 0; i < 1000; i++) {
+  for (let i = 0; i < 300; i++) {
     result.requestsFired++;
 
     try {

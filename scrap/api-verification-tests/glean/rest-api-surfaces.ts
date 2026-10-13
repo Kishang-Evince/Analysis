@@ -59,9 +59,10 @@ async function testRESTAPISurfaces(): Promise<APITestResult> {
   // Test Client API
   try {
     console.log("Testing Client API endpoint...");
-    const response = await fetch(`${serverUrl}/api/client/search`, {
-      method: "GET",
+    const response = await fetch(`${serverUrl}/rest/api/v1/search`, {
+      method: "POST",
       headers,
+      body: JSON.stringify({ query: "test" }),
     });
     result.clientApi.statusCode = response.status;
     result.clientApi.available = response.status < 500;
@@ -93,13 +94,18 @@ async function testRESTAPISurfaces(): Promise<APITestResult> {
     const response = await fetch(`${serverUrl}/api/index/v1/indexdocuments`, {
       method: "POST",
       headers,
-      body: JSON.stringify([
-        {
-          docId: "test-doc",
-          datasource: "test",
-          title: "Test",
-        },
-      ]),
+      body: JSON.stringify({
+        datasource: "testdatasource",
+        documents: [
+          {
+            id: "test-doc",
+            datasource: "testdatasource",
+            objectType: "Document",
+            title: "Test",
+            viewURL: `${serverUrl}/doc/test-doc`,
+          },
+        ],
+      }),
     });
     result.indexingApi.statusCode = response.status;
     result.indexingApi.available = response.status < 500;
