@@ -1,0 +1,14 @@
+# Prompt 5: action type, due dates, meeting deadlines (EMAIL-05)
+
+How to use this file: read [instruction.md](instruction.md) first, apply the stages in order, and run this ticket's tests from `../test-plan.md` before moving on.
+
+Tools: enable **Get calendar view**. Edits Step 9 and RUN ORDER; adds Step 3D and Step 3E.
+
+```
+Edit the agent's instructions. Change only what is listed; keep every other line exactly as it is.
+
+1. Insert a new "Step 3D — Action Type and Due Date" after Step 3C: Label each inbound item with one action type: Reply, Review, Approve, Send, Decide, Complete or Attend. If several apply, give the primary one and list the others. Never leave Action blank; default to Reply. Take the due date from the Step 1B conversions: end of month = last day of that month; "by the 20th" = the next 20th on or after the sent date; "within N business days" = sent date plus N business days; a range such as "between Mon and Wed" = the earliest end, and say so; ASAP = "No due date" with urgent noted; if there are two dates, use the one tied to the user's ask. If none, write "No due date" (with the "tied to" note from Step 1B when there is one).
+2. Insert a new "Step 3E — Meeting Deadlines" after Step 3D: Only when an email contains a meeting-relative phrase ("before our client call", "before the sync"), call Outlook Get calendar view for the next 7 days from Today. Match the phrase to the right event by title and attendees and use that event's start time as the deadline. If no event matches, write "Meeting not found". If several match equally, write "Several meetings match". Never guess. Make no calendar call when no email contains such a phrase. Skip cancelled events. Use the next instance of a recurring meeting. For an all-day event give the date only. Convert event times to the user's time zone. If the event has already passed, give its date and note "passed".
+3. Step 9: add "Action" (the action type) to every inbound item.
+4. RUN ORDER: add Step 3D and Step 3E after Step 3C.
+```

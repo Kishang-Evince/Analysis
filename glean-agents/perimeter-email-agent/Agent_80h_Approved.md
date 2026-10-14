@@ -1,4 +1,4 @@
-# Email Triage Agent — Approved Estimate (80 Hours)
+# Agent: Approved Estimate (80 Hours)
 
 One unified agent. All 27 features. **80 hours total.**
 
@@ -32,6 +32,8 @@ One unified agent. All 27 features. **80 hours total.**
 | 26 | VIP & Topics Lists | 9 |
 | 27 | Calendar Summary | 11 |
 | | **TOTAL** | **80 hours** |
+
+Tickets rebalance features 25, 26 and 27 (9 + 9 + 11 = 29 h) as EMAIL-08 8 h, EMAIL-09 8 h, EMAIL-10 6.5 h and EMAIL-11 6.5 h (= 29 h). The total stays 80 h across 11 tickets of 6–8 h each.
 
 ## Timeline (approx. 2 weeks, 1–2 engineers)
 
