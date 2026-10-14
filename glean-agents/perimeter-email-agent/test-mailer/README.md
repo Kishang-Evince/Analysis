@@ -1,6 +1,6 @@
-# Test mailer: seed a test mailbox from Gmail
+# Test mailer: seed a test mailbox through an SMTP relay (Brevo)
 
-`send-test-emails.mjs` sends scripted emails from Gmail to the Outlook mailbox the agent runs on, so you do not compose test mail by hand. It has 174 catalog entries taken from `../test-plan.md`; each email lists the test ids it supports.
+`send-test-emails.mjs` sends scripted emails through an SMTP relay (Brevo by default) to the Outlook mailbox the agent runs on, so you do not compose test mail by hand. It has 174 catalog entries taken from `../test-plan.md`; each email lists the test ids it supports.
 
 ## Where the emails live
 Inside `send-test-emails.mjs`, between `// BEGIN CATALOG` and `// END CATALOG`, as plain JSON arrays:
@@ -16,8 +16,8 @@ Add or edit an email by changing the JSON in its constant. Select one enhancemen
 
 ## Setup (once)
 1. In the `test-mailer` folder run `npm install` (Node 22.9 or newer).
-2. Create a Google App Password for the sending Gmail account (2-Step Verification must be on).
-3. Copy `.env.example` to `.env` and fill in `TEST_RECEIVER`, `GMAIL_USER`, `GMAIL_APP_PASSWORD`. Set `ALLOWED_RECIPIENT_DOMAINS` to your company domain so the script can never mail anyone else. `.env` is git-ignored.
+2. In Brevo (SMTP & API, SMTP tab) note the SMTP login and create an SMTP key. Verify the sender address (or domain) you will send from under Senders, Domains and Dedicated IPs.
+3. Copy `.env.example` to `.env` and fill in `TEST_RECEIVER`, `SMTP_USER` (the SMTP login), `SMTP_PASS` (the SMTP key) and `SMTP_FROM` (the verified sender). The relay defaults to `smtp-relay.brevo.com` port 587 with STARTTLS; `SMTP_HOST`, `SMTP_PORT` and `SMTP_SECURE` change it. Set `ALLOWED_RECIPIENT_DOMAINS` to your company domain so the script can never mail anyone else. `.env` is git-ignored.
 
 ## Use
 ```bash
@@ -47,18 +47,20 @@ Every seed script sends to `TEST_RECEIVER`, ends with `--yes`, and takes `-- --d
 `--ticket EMAIL-nn` does the same as the ticket scripts for any combination: `node send-test-emails.mjs --ticket EMAIL-01,EMAIL-02 --dry-run`.
 
 ## Limits to know
-- **One Gmail account means one sender address.** Personas differ by display name only. Use `GMAIL_ACCOUNTS` to give personas their own Gmail accounts. Tests that depend on a real no-reply address, a company domain or a second address for the same person cannot be fully simulated.
+- **One sender address by default.** Personas differ by display name only. Use `SMTP_ACCOUNTS` to give personas their own verified sender addresses (they share the login and key unless a persona gives its own). Tests that depend on a real no-reply address, a company domain or a second address for the same person cannot be fully simulated.
 - **No backdating.** Mail arrives now. Simulate age with the chat message "as of YYYY-MM-DD" (today plus N days) or "LOOKBACK_DAYS N" in Preview or a manual chat run, or edit `AS_OF_DATE` and the day values in the agent's saved SETTINGS block for a scheduled run (Run now). See the test plan conventions.
 - **Scheduled runs ignore chat.** A scheduled run has no chat message and uses the SETTINGS block as saved (`MODE` and `INCLUDE_CALENDAR` are Settings values too); chat overrides work only in Preview and manual chat runs. Test the scheduled path with Run now from the Active agents table and read the result under Chats, Automations.
-- **Outlook state is manual.** Flags, read state, folders, and anything in your Sent Items (replies, sent requests) cannot be created from Gmail. About a third of the scenarios carry manual steps.
-- **Threading is best effort.** Replies set In-Reply-To and References. If `smtp.gmail.com` rewrites Message-ID, Outlook may not thread them. Send one two-step scenario (for example `--scenario A2-07-orig` then its follow-up) and confirm they share a `conversationId` before relying on thread tests.
-- Gmail allows about 500 emails per day. The script stops on login or daily-limit errors instead of retrying.
+- **Outlook state is manual.** Flags, read state, folders, and anything in your Sent Items (replies, sent requests) cannot be created by the mailer. About a third of the scenarios carry manual steps.
+- **Threading is best effort.** Replies set In-Reply-To and References. If the relay rewrites Message-ID, Outlook may not thread them. Send one two-step scenario (for example `--scenario A2-07-orig` then its follow-up) and confirm they share a `conversationId` before relying on thread tests.
+- Brevo limits sends per day by plan (the free plan is about 300; check yours). The script stops on login or daily-limit errors instead of retrying.
+- **Never send human personas from a no-reply address.** The agent drops mail from a no-reply sender as noise (Step 3), so the seeded asks would vanish. The script prints a `WARN:` line for this and refuses a real send until you fix `SMTP_FROM` (`--allow-no-reply`, or `ALLOW_NO_REPLY=true` in `.env`, overrides it; a dry run only warns). Give the `system` and `newsletter` personas a no-reply sender through `SMTP_ACCOUNTS` and keep `SMTP_FROM` normal-looking.
+- **Check once after switching to Brevo:** send `E19-01` and open the received message's source in Outlook. The `Auto-Submitted` and `X-Test-Scenario` headers must be there; if the relay strips them, the header-based automatic-reply tests are not valid. Also confirm the body arrives without an added footer.
 - Several scenarios use absolute dates because the plan requires them (A4-08, E11-10, E11-11); update them if you test far from October 2026.
 
 ## Safety
 - Credentials come from environment variables only and are never printed.
-- Recipient is one configured mailbox, checked against `ALLOWED_RECIPIENT_DOMAINS` when set. The email pattern rejects commas, brackets and quotes. SMTP host is fixed to `smtp.gmail.com`.
+- Recipient is one configured mailbox, checked against `ALLOWED_RECIPIENT_DOMAINS` when set. The email pattern rejects commas, brackets and quotes. SMTP host comes from `SMTP_HOST` (default `smtp-relay.brevo.com`) and must be a relay you control.
 - Injection scenarios use the fake address `attacker@example.com`.
 
 ## Tests
-`npm test`, or `npm run coverage` (fails below 80% lines, 70% branches, 80% functions). Current: 95 tests, about 99% lines.
+`npm test`, or `npm run coverage` (fails below 80% lines, 70% branches, 80% functions). Current: 118 tests, about 99% lines.

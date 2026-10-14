@@ -40,15 +40,15 @@ cd test-mailer && npm install
 cp .env.example .env    # then fill in the values below
 npm test                # 66 tests, all must pass
 ```
-- `TEST_RECEIVER` must be the **Outlook mailbox the agent reads** (the signed-in Glean user). `GMAIL_USER` and `GMAIL_APP_PASSWORD` are the sending Gmail account and its App Password. Set `ALLOWED_RECIPIENT_DOMAINS` to the Outlook mailbox's domain.
-- Optional: `GMAIL_ACCOUNTS` gives alice, bob, carol, dana, system, newsletter and vendor their own Gmail accounts so senders differ (needed for E17-04, E17-05 and anything that depends on a second real sender).
+- `TEST_RECEIVER` must be the **Outlook mailbox the agent reads** (the signed-in Glean user). `SMTP_USER` and `SMTP_PASS` are the Brevo SMTP login and SMTP key, and `SMTP_FROM` is a sender verified in Brevo. Set `ALLOWED_RECIPIENT_DOMAINS` to the Outlook mailbox's domain.
+- Optional: `SMTP_ACCOUNTS` gives alice, bob, carol, dana, system, newsletter and vendor their own verified sender addresses so senders differ (needed for E17-04, E17-05 and anything that depends on a second real sender).
 - Send one two-step thread first and confirm Outlook threads it: `npm run send -- --scenario A2-07-orig`, then `npm run send -- --scenario A2-07`, and check both messages share a conversation in Outlook. If they do not, thread tests need the replies sent from Outlook.
 - Every seed script ends with `--yes`; add `-- --dry-run` to preview instead (for example `npm run seed:e13 -- --dry-run`). `npm run seed:email-01` sends all seven EMAIL-01 groups at once; the per-group scripts are `seed:e13`, `seed:e11`, `seed:e05`, `seed:e06`, `seed:e17`, `seed:e19`, `seed:e20`.
 
 ## 3. Spike (1 h, scratch agent, not the real one)
 1. Create a scratch Auto mode agent with the Outlook pack and keep List messages and Get email message on its Tools tab (remove the other tools).
 2. Seed more than 50 unread emails: `npm run seed:e13-bulk80` (80 sends; the unread query limit is 50). Delete those emails from the mailbox when the spike is done.
-3. **Question 1, paging:** ask the scratch agent to call List messages with `folder` inbox, `is_read` false, `top` 50 and report the result count and which paging input it takes (the tool description names offset and opaque continuation tokens). Record the parameter name.
+3. **Question 1, paging:** ask the scratch agent to call List messages with `folder` inbox, `is_read` false, `top` 50 and report the result count and which input takes the `next_page_token` back (the response already carries `next_page_token`, null when there is no next page). Record the parameter name.
 4. **Question 2, full body:** ask it to Get email message for one email id and report whether the full body text comes back. Record yes or no.
 5. Question 3 (headers): ask it to call List messages with `internetMessageHeaders` in `select` and report whether headers such as `Auto-Submitted` come back. The mailer already sets them on the E19 and E20 seeds. If yes, apply the optional header edit below after Prompt 1. Write the answers in the ticket. If paging is not possible, Prompt 1 already tells the agent to write `Mailbox window truncated; older items may be missing.` above the summary line (E13-07 expects either outcome).
 
@@ -160,7 +160,7 @@ Manual steps and notes:
 - **E11-04** note: For E11-08 send this on a Friday.
 - **E11-10** note: Absolute dates by design; send on a day before Oct 20.
 - **E11-11** note: Absolute date by design; expected year rolls to next year when sent in October.
-- **E11-12** (Late-night sent time zone): Send this email manually at about 11:30 pm Pacific (Gmail schedule send) so the sent date differs between time zones
+- **E11-12** (Late-night sent time zone): Send this email manually at about 11:30 pm Pacific (run the seed script at that time) so the sent date differs between time zones
 
 How to run:
 - `as of 2026-10-14` (the seeds are sent today). For E11-02 re-run with `as of 2026-10-17` so the resolved date shows as passed.
@@ -324,7 +324,7 @@ Run these after the EMAIL-01 groups, with the expectations that change at Prompt
 4. Admin signs off the prerequisites checklist.
 
 ## Known limits of this test setup
-- One Gmail account means one sender address unless `GMAIL_ACCOUNTS` is set; reply-from-second-address (E17-05) cannot be simulated.
+- One sender address unless `SMTP_ACCOUNTS` is set; reply-from-second-address (E17-05) cannot be simulated.
 - Mail cannot be backdated; age is simulated with `as of` in Preview and manual runs, or AS_OF_DATE in SETTINGS for Run now.
 - Anything in Sent Items (the requests, replies and forwards) and read state, flags and folders are created by hand in Outlook.
 - Whether Outlook threads mailer messages into one conversation must be confirmed first (section 2).

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import * as mailer from './send-test-emails.mjs';
 import {
   PERSONAS, SCENARIOS, USAGE, isEmail, validateCatalog, parseArgs, selectScenarios, loadConfig,
-  resolveAccount, buildMessage, formatList, collectManualSteps, runScenarios, main, isFatalSendError,
+  resolveAccount, buildMessage, buildTransportOptions, noReplyWarnings, formatList, collectManualSteps, runScenarios, main, isFatalSendError,
 } from './send-test-emails.mjs';
 
 const scenario = (over = {}) => ({
@@ -19,7 +19,7 @@ const CATALOG = [
   scenario({ id: 'T-05', group: 'G3', recipients: 'to-multi' }),
 ];
 
-const ENV = { TEST_RECEIVER: 'user@company.test', GMAIL_USER: 'sender@gmail.test', GMAIL_APP_PASSWORD: 'abcd efgh ijkl mnop' };
+const ENV = { TEST_RECEIVER: 'user@company.test', SMTP_USER: 'login@smtp.test', SMTP_PASS: 'smtp-key-123', SMTP_FROM: 'sender@company.test' };
 const opts = (over = {}) => ({ ...parseArgs([]), ...over });
 const quiet = () => {
   const lines = [];
@@ -146,11 +146,25 @@ describe('selectScenarios', () => {
 });
 
 describe('loadConfig', () => {
-  test('reads receiver and default account, stripping spaces from the app password', () => {
+  test('reads receiver, default account (login, key, verified sender) and the Brevo relay defaults', () => {
     const c = loadConfig(ENV);
     assert.equal(c.receiver, 'user@company.test');
-    assert.deepEqual(c.defaultAccount, { user: 'sender@gmail.test', pass: 'abcdefghijklmnop' });
+    assert.deepEqual(c.defaultAccount, { user: 'login@smtp.test', pass: 'smtp-key-123', from: 'sender@company.test' });
+    assert.deepEqual(c.smtp, { host: 'smtp-relay.brevo.com', port: 587, secure: false });
     assert.equal(c.otherRecipient, null);
+  });
+
+  test('SMTP_HOST, SMTP_PORT and SMTP_SECURE override the relay; port 465 means a secure connection unless told otherwise', () => {
+    assert.deepEqual(loadConfig({ ...ENV, SMTP_HOST: 'smtp.example.test', SMTP_PORT: '2525' }).smtp, { host: 'smtp.example.test', port: 2525, secure: false });
+    assert.equal(loadConfig({ ...ENV, SMTP_PORT: '465' }).smtp.secure, true);
+    assert.equal(loadConfig({ ...ENV, SMTP_PORT: '465', SMTP_SECURE: 'false' }).smtp.secure, false);
+    assert.equal(loadConfig({ ...ENV, SMTP_SECURE: 'true' }).smtp.secure, true);
+  });
+
+  test('a bad SMTP_PORT or SMTP_SECURE is rejected by name', () => {
+    assert.throws(() => loadConfig({ ...ENV, SMTP_PORT: 'abc' }), /SMTP_PORT/);
+    assert.throws(() => loadConfig({ ...ENV, SMTP_PORT: '70000' }), /SMTP_PORT/);
+    assert.throws(() => loadConfig({ ...ENV, SMTP_SECURE: 'maybe' }), /SMTP_SECURE/);
   });
 
   test('--to and --other override the environment', () => {
@@ -161,18 +175,29 @@ describe('loadConfig', () => {
   });
 
   test('fails clearly when settings are missing or malformed', () => {
-    assert.throws(() => loadConfig({ GMAIL_USER: 'a@b.co', GMAIL_APP_PASSWORD: 'p' }), /TEST_RECEIVER/);
-    assert.throws(() => loadConfig({ TEST_RECEIVER: 'u@x.co' }), /GMAIL_USER and GMAIL_APP_PASSWORD/);
+    assert.throws(() => loadConfig({ SMTP_USER: 'a', SMTP_PASS: 'p', SMTP_FROM: 'a@b.co' }), /TEST_RECEIVER/);
+    assert.throws(() => loadConfig({ TEST_RECEIVER: 'u@x.co' }), /SMTP_USER, SMTP_PASS and SMTP_FROM/);
     assert.throws(() => loadConfig({ ...ENV, OTHER_RECIPIENT: 'bad' }), /OTHER_RECIPIENT/);
-    assert.throws(() => loadConfig({ ...ENV, GMAIL_ACCOUNTS: '{oops' }), /not valid JSON/);
-    assert.throws(() => loadConfig({ ...ENV, GMAIL_ACCOUNTS: '{"zed":{"user":"a","pass":"b"}}' }), /unknown persona zed/);
-    assert.throws(() => loadConfig({ ...ENV, GMAIL_ACCOUNTS: '{"alice":{"user":"a"}}' }), /alice needs user and pass/);
+    assert.throws(() => loadConfig({ ...ENV, SMTP_ACCOUNTS: '{oops' }), /not valid JSON/);
+    assert.throws(() => loadConfig({ ...ENV, SMTP_ACCOUNTS: '{"zed":{"from":"z@x.co"}}' }), /unknown persona zed/);
+    assert.throws(() => loadConfig({ ...ENV, SMTP_ACCOUNTS: '{"alice":{"user":"a","pass":"b"}}' }), /alice needs from/);
+  });
+
+  test('the Brevo login is not a sender: SMTP_FROM is required and must be an email address', () => {
+    assert.throws(() => loadConfig({ TEST_RECEIVER: 'u@x.co', SMTP_USER: 'login@smtp.test', SMTP_PASS: 'k' }), /SMTP_FROM/);
+    assert.throws(() => loadConfig({ ...ENV, SMTP_FROM: 'not an address' }), /SMTP_FROM/);
   });
 
   test('accepts per-persona accounts and no default account', () => {
-    const c = loadConfig({ TEST_RECEIVER: 'u@x.co', GMAIL_ACCOUNTS: '{"alice":{"user":" a@g.co ","pass":"p p"}}' });
-    assert.deepEqual(c.accounts.alice, { user: 'a@g.co', pass: 'pp' });
+    const c = loadConfig({ TEST_RECEIVER: 'u@x.co', SMTP_ACCOUNTS: '{"alice":{"user":" a@g.co ","pass":"pp","from":" a@verified.co "}}' });
+    assert.deepEqual(c.accounts.alice, { user: 'a@g.co', pass: 'pp', from: 'a@verified.co' });
     assert.equal(c.defaultAccount, null);
+  });
+
+  test('a persona without its own login or key shares the default one and only changes the sender', () => {
+    const c = loadConfig({ ...ENV, SMTP_ACCOUNTS: '{"alice":{"from":"alice@company.test"}}' });
+    assert.deepEqual(c.accounts.alice, { user: 'login@smtp.test', pass: 'smtp-key-123', from: 'alice@company.test' });
+    assert.throws(() => loadConfig({ TEST_RECEIVER: 'u@x.co', SMTP_ACCOUNTS: '{"alice":{"from":"a@x.co"}}' }), /alice needs user and pass/);
   });
 
   test('dry-run tolerates missing credentials and receiver', () => {
@@ -184,23 +209,24 @@ describe('loadConfig', () => {
 
 describe('resolveAccount', () => {
   test('prefers the persona account, falls back to default, then fails or fakes in dry-run', () => {
-    const config = { accounts: { alice: { user: 'a@g.co', pass: 'p' } }, defaultAccount: { user: 'd@g.co', pass: 'q' } };
+    const config = { accounts: { alice: { user: 'a@g.co', pass: 'p', from: 'a@v.co' } }, defaultAccount: { user: 'd@g.co', pass: 'q', from: 'd@v.co' } };
     assert.equal(resolveAccount(config, 'alice').user, 'a@g.co');
     assert.equal(resolveAccount(config, 'bob').user, 'd@g.co');
     const bare = { accounts: {}, defaultAccount: null };
-    assert.throws(() => resolveAccount(bare, 'bob'), /No Gmail account configured for persona bob/);
-    assert.equal(resolveAccount(bare, 'bob', true).user, 'sender@example.invalid');
+    assert.throws(() => resolveAccount(bare, 'bob'), /No SMTP account configured for persona bob/);
+    assert.equal(resolveAccount(bare, 'bob', true).from, 'sender@example.invalid');
   });
 });
 
 describe('buildMessage', () => {
-  const account = { user: 'sender@gmail.test', pass: 'x' };
+  const account = { user: 'login@smtp.test', pass: 'x', from: 'sender@company.test' };
   const config = { receiver: 'user@company.test', otherRecipient: null };
   const build = (s, extra = {}) => buildMessage(s, { account, config, runId: 'r1', ...extra });
 
   test('To mode: persona name, receiver in To, safe defaults', () => {
     const m = build(scenario());
-    assert.deepEqual(m.from, { name: PERSONAS.alice.name, address: 'sender@gmail.test' });
+    assert.deepEqual(m.from, { name: PERSONAS.alice.name, address: 'sender@company.test' });
+    assert.notEqual(m.from.address, account.user, 'the SMTP login must never be used as the From address');
     assert.deepEqual(m.to, ['user@company.test']);
     assert.equal(m.cc, undefined);
     assert.equal(m.priority, 'normal');
@@ -210,15 +236,15 @@ describe('buildMessage', () => {
 
   test('Cc, Bcc and multi-recipient modes place the receiver correctly', () => {
     const cc = build(scenario({ recipients: 'cc' }));
-    assert.deepEqual(cc.to, ['sender@gmail.test']);
+    assert.deepEqual(cc.to, ['sender@company.test']);
     assert.deepEqual(cc.cc, ['user@company.test']);
     const bcc = build(scenario({ recipients: 'bcc' }), { config: { ...config, otherRecipient: 'o@x.co' } });
     assert.deepEqual(bcc.to, ['o@x.co']);
     assert.deepEqual(bcc.bcc, ['user@company.test']);
     const multi = build(scenario({ recipients: 'to-multi' }), { config: { ...config, otherRecipient: 'o@x.co' } });
-    assert.deepEqual(multi.to, ['user@company.test', 'o@x.co', 'sender@gmail.test']);
+    assert.deepEqual(multi.to, ['user@company.test', 'o@x.co', 'sender@company.test']);
     const multiSelf = build(scenario({ recipients: 'to-multi' }));
-    assert.deepEqual(multiSelf.to, ['user@company.test', 'sender@gmail.test']);
+    assert.deepEqual(multiSelf.to, ['user@company.test', 'sender@company.test']);
   });
 
   test('importance, custom headers and subject tag are applied', () => {
@@ -288,9 +314,9 @@ describe('runScenarios', () => {
   });
 
   test('uses the transport-reported message id for threading', async () => {
-    const transport = fakeTransport({ sendMail: async () => ({ messageId: '<gmail-assigned@mail.gmail.com>' }) });
+    const transport = fakeTransport({ sendMail: async () => ({ messageId: '<smtp-assigned@relay.test>' }) });
     await runScenarios(CATALOG.slice(0, 2), config, opts({ delayMs: 0 }), { log: () => {}, createTransport: () => transport, runId: 'r' });
-    assert.equal(transport.sendMail.mock.calls[1].arguments[0].inReplyTo, '<gmail-assigned@mail.gmail.com>');
+    assert.equal(transport.sendMail.mock.calls[1].arguments[0].inReplyTo, '<smtp-assigned@relay.test>');
   });
 
   test('a send failure is recorded and the rest continue', async () => {
@@ -307,7 +333,7 @@ describe('runScenarios', () => {
     const transport = fakeTransport({ verify: async () => { throw new Error('535 bad credentials'); } });
     await assert.rejects(
       runScenarios(CATALOG.slice(0, 1), config, opts(), { log: () => {}, createTransport: () => transport }),
-      /Gmail login failed for sender@gmail.test: 535 bad credentials/,
+      /SMTP login failed for login@smtp.test: 535 bad credentials/,
     );
     assert.equal(transport.sendMail.mock.callCount(), 0);
   });
@@ -320,7 +346,7 @@ describe('runScenarios', () => {
   });
 
   test('uses one transport per sender account', async () => {
-    const cfg = loadConfig({ ...ENV, GMAIL_ACCOUNTS: '{"dana":{"user":"dana@gmail.test","pass":"p"}}' });
+    const cfg = loadConfig({ ...ENV, SMTP_ACCOUNTS: '{"dana":{"user":"dana-login@smtp.test","pass":"p","from":"dana@company.test"}}' });
     const create = mock.fn(() => fakeTransport());
     await runScenarios([CATALOG[0], CATALOG[2], CATALOG[4]], cfg, opts({ delayMs: 0 }), { log: () => {}, createTransport: create });
     assert.equal(create.mock.callCount(), 2);
@@ -421,7 +447,7 @@ describe('main', () => {
     const transport = fakeTransport({ verify: async () => { throw new Error('535'); } });
     const { code, out } = await run(['--scenario', 'T-01'], ENV, { transport });
     assert.equal(code, 2);
-    assert.match(out.errors[0], /Gmail login failed/);
+    assert.match(out.errors[0], /SMTP login failed/);
     assert.equal(transport.sendMail.mock.callCount(), 0);
   });
 
@@ -468,9 +494,9 @@ describe('hardening', () => {
     assert.throws(() => parseArgs(['--all=1']), /does not take a value/);
   });
 
-  test('GMAIL_ACCOUNTS must be a JSON object', () => {
-    assert.throws(() => loadConfig({ ...ENV, GMAIL_ACCOUNTS: 'null' }), /must be a JSON object/);
-    assert.throws(() => loadConfig({ ...ENV, GMAIL_ACCOUNTS: '[]' }), /must be a JSON object/);
+  test('SMTP_ACCOUNTS must be a JSON object', () => {
+    assert.throws(() => loadConfig({ ...ENV, SMTP_ACCOUNTS: 'null' }), /must be a JSON object/);
+    assert.throws(() => loadConfig({ ...ENV, SMTP_ACCOUNTS: '[]' }), /must be a JSON object/);
   });
 
   test('validateCatalog flags colliding ids, non-string tests and bad manual lists', () => {
@@ -521,11 +547,11 @@ describe('failure handling in runScenarios', () => {
   });
 
   test('a missing sender account fails before any email is sent, even with --no-verify', async () => {
-    const cfg = loadConfig({ TEST_RECEIVER: 'u@x.co', GMAIL_ACCOUNTS: '{"alice":{"user":"a@g.test","pass":"p"}}' });
+    const cfg = loadConfig({ TEST_RECEIVER: 'u@x.co', SMTP_ACCOUNTS: '{"alice":{"user":"a@g.test","pass":"p","from":"a@company.test"}}' });
     const transport = transportWithClose();
     await assert.rejects(
       runScenarios([CATALOG[0], CATALOG[2]], cfg, opts({ verify: false }), { log: () => {}, createTransport: () => transport }),
-      /No Gmail account configured for persona dana/,
+      /No SMTP account configured for persona dana/,
     );
     assert.equal(transport.sendMail.mock.callCount(), 0);
   });
@@ -564,7 +590,7 @@ describe('per-enhancement constants', () => {
     }
   });
 
-  test('outbound-only enhancements are exactly the ones that cannot be seeded from Gmail', () => {
+  test('outbound-only enhancements are exactly the ones that cannot be seeded from SMTP', () => {
     const outbound = mailer.ENHANCEMENTS.filter((e) => e.outboundOnly).map((e) => e.enhancement).sort((a, b) => a - b);
     assert.deepEqual(outbound, [2, 22, 23, 25]);
   });
@@ -641,5 +667,152 @@ describe('--ticket', () => {
   test('--ticket on its own counts as a selection, and the usage text mentions it', () => {
     assert.doesNotThrow(() => selectScenarios(mailer.SCENARIOS, opts({ tickets: ['EMAIL-03'] })));
     assert.match(USAGE, /--ticket/);
+  });
+});
+
+describe('SMTP transport (Brevo relay)', () => {
+  const smtp = { host: 'smtp-relay.brevo.com', port: 587, secure: false };
+  const account = { user: 'login@smtp.test', pass: 'k', from: 'sender@company.test' };
+
+  test('port 587 uses STARTTLS and refuses to fall back to plain text', () => {
+    assert.deepEqual(buildTransportOptions(account, smtp), {
+      host: 'smtp-relay.brevo.com', port: 587, secure: false, requireTLS: true, pool: true, maxConnections: 1,
+      auth: { user: 'login@smtp.test', pass: 'k' },
+    });
+  });
+
+  test('a secure connection (port 465) needs no requireTLS', () => {
+    const options = buildTransportOptions(account, { host: 'h', port: 465, secure: true });
+    assert.equal(options.secure, true);
+    assert.equal('requireTLS' in options, false);
+  });
+
+  test('runScenarios hands the relay settings to the transport factory', async () => {
+    const cfg = loadConfig(ENV);
+    const create = mock.fn(() => fakeTransport());
+    await runScenarios([CATALOG[0]], cfg, opts({ delayMs: 0 }), { log: () => {}, createTransport: create });
+    assert.deepEqual(create.mock.calls[0].arguments[1], cfg.smtp);
+  });
+
+  test('provider limit and quota errors stop the run', () => {
+    assert.equal(isFatalSendError(new Error('Daily limit reached for this account')), true);
+    assert.equal(isFatalSendError(new Error('quota exceeded')), true);
+    assert.equal(isFatalSendError(new Error('socket hang up')), false);
+  });
+});
+
+describe('--list with --ticket', () => {
+  test('lists only that ticket\'s emails', async () => {
+    const out = quiet();
+    const code = await main(['--list', '--ticket', 'EMAIL-01'], {}, { log: out.log, errorLog: out.errorLog });
+    assert.equal(code, 0);
+    assert.match(out.lines.join('\n'), /E13-01/);
+    assert.doesNotMatch(out.lines.join('\n'), /E01-01/);
+  });
+});
+
+describe('no-reply sender guard', () => {
+  const config = (from, accounts = {}) => ({ accounts, defaultAccount: { user: 'u', pass: 'p', from } });
+  const NO_REPLY = 'no-reply-closedtitle@company.test';
+  const alice = scenario({ id: 'W-1', from: 'alice' });
+  const system = scenario({ id: 'W-2', from: 'system' });
+
+  test('warns when a human persona would send from a no-reply address, because the agent drops such mail as noise', () => {
+    const [warning, ...rest] = noReplyWarnings(config(NO_REPLY), [alice]);
+    assert.equal(rest.length, 0);
+    assert.match(warning, /alice/);
+    assert.match(warning, /no-reply-closedtitle@company\.test/);
+    assert.match(warning, /SMTP_FROM/);
+  });
+
+  test('catches noreply and do-not-reply spellings too', () => {
+    for (const from of ['noreply@company.test', 'do-not-reply@company.test', 'No_Reply@company.test']) {
+      assert.equal(noReplyWarnings(config(from), [alice]).length, 1, from);
+    }
+  });
+
+  test('system and newsletter personas are meant to look automated, so they never warn', () => {
+    assert.deepEqual(noReplyWarnings(config(NO_REPLY), [system, scenario({ id: 'W-3', from: 'newsletter' })]), []);
+  });
+
+  test('no warning for a normal-looking address, or when the persona has its own normal address', () => {
+    assert.deepEqual(noReplyWarnings(config('tester@company.test'), [alice]), []);
+    assert.deepEqual(noReplyWarnings(config(NO_REPLY, { alice: { user: 'u', pass: 'p', from: 'alice@company.test' } }), [alice]), []);
+  });
+
+  test('one warning per persona, however many of its emails are selected', () => {
+    assert.equal(noReplyWarnings(config(NO_REPLY), [alice, scenario({ id: 'W-4', from: 'alice' })]).length, 1);
+  });
+
+  test('main prints the warning before sending, including in a dry run', async () => {
+    const out = quiet();
+    const env = { ...ENV, SMTP_FROM: NO_REPLY };
+    const code = await main(['--scenario', 'T-01', '--dry-run'], env, { log: out.log, errorLog: out.errorLog, catalog: CATALOG, sleep: async () => {} });
+    assert.equal(code, 0);
+    const text = out.lines.join('\n');
+    assert.match(text, /WARN: alice/);
+    assert.ok(text.indexOf('WARN') < text.indexOf('DRY'), 'warning comes before the first email');
+  });
+});
+
+describe('log lines show the sender address', () => {
+  test('DRY, SENT and FAIL lines name the From address, so a wrong sender is visible before anyone checks Outlook', async () => {
+    const cfg = loadConfig({ ...ENV, SMTP_FROM: 'tester@company.test' });
+    const out = quiet();
+    await runScenarios([CATALOG[0]], cfg, opts({ dryRun: true, delayMs: 0 }), { log: out.log, runId: 'r' });
+    assert.match(out.lines[0], /^DRY\s+T-01 \(alice <tester@company\.test> to user@company\.test\)/);
+    const sent = quiet();
+    await runScenarios([CATALOG[0]], cfg, opts({ delayMs: 0 }), { log: sent.log, createTransport: () => fakeTransport(), runId: 'r' });
+    assert.match(sent.lines[0], /^SENT\s+T-01 \(alice <tester@company\.test> to /);
+  });
+});
+
+describe('refusing to send human personas from a no-reply address', () => {
+  const NO_REPLY_ENV = { ...ENV, SMTP_FROM: 'no-reply@company.test' };
+  const run = async (argv, env) => {
+    const out = quiet();
+    const transport = fakeTransport();
+    const code = await main(argv, env, { log: out.log, errorLog: out.errorLog, catalog: CATALOG, createTransport: () => transport, sleep: async () => {} });
+    return { code, out, transport };
+  };
+
+  test('a real send exits 2 with the fix, and nothing is sent', async () => {
+    const { code, out, transport } = await run(['--scenario', 'T-01'], NO_REPLY_ENV);
+    assert.equal(code, 2);
+    assert.match(out.errors.join('\n'), /SMTP_FROM/);
+    assert.match(out.errors.join('\n'), /--allow-no-reply/);
+    assert.equal(transport.sendMail.mock.callCount(), 0);
+  });
+
+  test('--allow-no-reply sends anyway', async () => {
+    const { code, transport } = await run(['--scenario', 'T-01', '--allow-no-reply', '--delay', '0'], NO_REPLY_ENV);
+    assert.equal(code, 0);
+    assert.equal(transport.sendMail.mock.callCount(), 1);
+  });
+
+  test('ALLOW_NO_REPLY=true in the environment allows it without the flag, and the warning is still printed', async () => {
+    const { code, out, transport } = await run(['--scenario', 'T-01', '--delay', '0'], { ...NO_REPLY_ENV, ALLOW_NO_REPLY: 'true' });
+    assert.equal(code, 0);
+    assert.equal(transport.sendMail.mock.callCount(), 1);
+    assert.match(out.lines.join('\n'), /WARN: alice/);
+  });
+
+  test('any other ALLOW_NO_REPLY value does not allow it', async () => {
+    const { code, transport } = await run(['--scenario', 'T-01'], { ...NO_REPLY_ENV, ALLOW_NO_REPLY: 'nope' });
+    assert.equal(code, 2);
+    assert.equal(transport.sendMail.mock.callCount(), 0);
+  });
+
+  test('a dry run still warns but does not fail, so you can preview before fixing the sender', async () => {
+    const { code, out } = await run(['--scenario', 'T-01', '--dry-run'], NO_REPLY_ENV);
+    assert.equal(code, 0);
+    assert.match(out.lines.join('\n'), /WARN: alice/);
+  });
+
+  test('parseArgs reads --allow-no-reply and the usage text names it', () => {
+    assert.equal(parseArgs(['--allow-no-reply']).allowNoReply, true);
+    assert.equal(parseArgs([]).allowNoReply, false);
+    assert.match(USAGE, /--allow-no-reply/);
+    assert.throws(() => parseArgs(['--allow-no-reply=1']), /does not take a value/);
   });
 });

@@ -47,6 +47,12 @@ describe('stage 0 (parity with Prompt 0)', () => {
     assert.equal(checkSpec(0, noisy, { expected: stage0() }).ok, true);
   });
 
+  test('list numbers and horizontal rules dropped by a rich editor do not matter', () => {
+    const stripped = stage0().replace(/^\d+\.\s+/gm, '').replace(/^---$/gm, '');
+    assert.notEqual(stripped, stage0());
+    assert.equal(checkSpec(0, stripped, { expected: stage0() }).ok, true);
+  });
+
   test('a changed line is reported as missing and the new line as extra', () => {
     const changed = stage0().replace('UNREAD_DAYS: 5', 'UNREAD_DAYS: 7');
     const r = checkSpec(0, changed, { expected: stage0() });
@@ -147,5 +153,6 @@ describe('main', () => {
     const missing = await run(['1', 'nope.md']);
     assert.equal(missing.code, 2);
     assert.match(missing.err, /nope\.md/);
+    assert.match(missing.err, /Copy the Instructions tab text into it/);
   });
 });

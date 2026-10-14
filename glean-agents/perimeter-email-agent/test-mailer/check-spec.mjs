@@ -12,7 +12,8 @@ const PROMPT_0 = new URL('../prompts/EMAIL-01-prompt-0-parity.md', HERE);
 export const normalize = (text) =>
   text.replace(/\\/g, '').replace(/[*`#>]/g, '').replace(/[–—]/g, '-').replace(/\s+/g, ' ').trim().toLowerCase();
 
-const normalizeLine = (line) => normalize(line.replace(/^\s*[-•]\s+/, ''));
+// Also drop list numbers and horizontal rules, which a rich editor renders instead of keeping as text.
+const normalizeLine = (line) => normalize(line.replace(/^\s*[-•]\s+/, '').replace(/^\s*\d+[.)]\s+/, '')).replace(/^[-_]{3,}$/, '');
 
 export function extractInstructions(promptMarkdown) {
   const lines = promptMarkdown.split('\n');
@@ -64,7 +65,7 @@ export async function main(argv, deps = {}) {
   if (!Number.isInteger(stage) || stage < 0 || stage > 10) { errorLog(usage); return 2; }
   const file = argv[1] ?? defaultSpecPath(stage);
   let spec;
-  try { spec = readFile(file); } catch { errorLog(`Cannot read ${file}\n${usage}`); return 2; }
+  try { spec = readFile(file); } catch { errorLog(`Cannot read ${file}. Copy the Instructions tab text into it first.\n${usage}`); return 2; }
   const result = checkSpec(stage, spec, { expected: expected ?? (stage === 0 ? extractInstructions(readFileSync(PROMPT_0, 'utf8')) : undefined) });
   if (result.ok) { log(`PASS stage ${stage}: ${file}`); return 0; }
   log(`FAIL stage ${stage}: ${file}`);

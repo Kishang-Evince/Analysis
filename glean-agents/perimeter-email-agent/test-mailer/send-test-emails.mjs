@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Seeds a test mailbox: sends scripted emails from Gmail to the receiver mailbox.
+// Seeds a test mailbox: sends scripted emails through an SMTP relay (Brevo by default) to the receiver mailbox.
 // Usage: node send-test-emails.mjs --help
 
 import { pathToFileURL } from 'node:url';
@@ -262,7 +262,7 @@ export const PARITY_SENT_AWAITING_EMAILS = [
     "manual": [
       "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
     ],
-    "notes": "Gmail cannot thread onto an Outlook message; the matching Re: subject is used."
+    "notes": "The mailer cannot thread onto an Outlook message; the matching Re: subject is used."
   },
   {
     "id": "A3-02",
@@ -1213,7 +1213,7 @@ export const ENH_13_LOOKBACK_EMAILS = [
     "count": 220,
     "optIn": true,
     "threadWith": null,
-    "notes": "Sends 220 more emails on top of E13-07 (80 plus 220 is 300): npm run send -- --scenario E13-08 --delay 500 --limit 220. Gmail allows about 500 sends a day. Then Run now from the Active agents table and record the duration."
+    "notes": "Sends 220 more emails on top of E13-07 (80 plus 220 is 300): npm run send -- --scenario E13-08 --delay 500 --limit 220. Check your Brevo plan's daily sending limit (the free plan allows about 300 a day). Then Run now from the Active agents table and record the duration."
   }
 ];
 
@@ -1343,7 +1343,7 @@ export const ENH_11_ABSOLUTE_DATE_EMAILS = [
     "body": "Kishan, please confirm the schedule by tomorrow.\nAlice",
     "threadWith": null,
     "manual": [
-      "Send this email manually at about 11:30 pm Pacific (Gmail schedule send) so the sent date differs between time zones"
+      "Send this email manually at about 11:30 pm Pacific (run the seed script at that time) so the sent date differs between time zones"
     ]
   }
 ];
@@ -2981,11 +2981,11 @@ export function validateCatalog(catalog = SCENARIOS) {
 }
 
 const csv = (value) => value.split(',').map((v) => v.trim()).filter(Boolean);
-const BOOLEAN_FLAGS = new Set(['--help', '-h', '--list', '--all', '--dry-run', '--yes', '-y', '--no-verify']);
+const BOOLEAN_FLAGS = new Set(['--help', '-h', '--list', '--all', '--dry-run', '--yes', '-y', '--no-verify', '--allow-no-reply']);
 
 export function parseArgs(argv) {
   const opts = {
-    list: false, all: false, dryRun: false, yes: false, help: false, verify: true,
+    list: false, all: false, dryRun: false, yes: false, help: false, verify: true, allowNoReply: false,
     delayMs: DEFAULT_DELAY_MS, limit: DEFAULT_LIMIT, scenarios: [], groups: [], tests: [], tickets: [],
     to: null, other: null, tag: '',
   };
@@ -3009,6 +3009,7 @@ export function parseArgs(argv) {
       case '--dry-run': opts.dryRun = true; break;
       case '--yes': case '-y': opts.yes = true; break;
       case '--no-verify': opts.verify = false; break;
+      case '--allow-no-reply': opts.allowNoReply = true; break;
       case '--scenario': opts.scenarios.push(...csv(take(flag, inline))); break;
       case '--group': opts.groups.push(...csv(take(flag, inline))); break;
       case '--test': opts.tests.push(...csv(take(flag, inline))); break;
@@ -3092,6 +3093,20 @@ function expandCount(s) {
   }));
 }
 
+// Brevo's relay by default: STARTTLS on 587. Port 465 means an implicit TLS connection unless SMTP_SECURE says otherwise.
+function loadSmtpSettings(env) {
+  const portRaw = (env.SMTP_PORT ?? '').trim();
+  const port = portRaw === '' ? 587 : Number(portRaw);
+  if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error('SMTP_PORT must be a port number from 1 to 65535.');
+  const secureRaw = (env.SMTP_SECURE ?? '').trim().toLowerCase();
+  if (secureRaw && !['true', 'false'].includes(secureRaw)) throw new Error('SMTP_SECURE must be true or false.');
+  return {
+    host: (env.SMTP_HOST ?? '').trim() || 'smtp-relay.brevo.com',
+    port,
+    secure: secureRaw ? secureRaw === 'true' : port === 465,
+  };
+}
+
 export function loadConfig(env, opts = {}) {
   const dry = Boolean(opts.dryRun);
   const receiver = (opts.to ?? env.TEST_RECEIVER ?? '').trim();
@@ -3111,41 +3126,69 @@ export function loadConfig(env, opts = {}) {
     }
   }
 
+  const smtp = loadSmtpSettings(env);
+  const missingCredentials = 'Set SMTP_USER, SMTP_PASS and SMTP_FROM (the Brevo SMTP login, an SMTP key, and a sender address verified in Brevo).';
+  const user = (env.SMTP_USER ?? '').trim();
+  const pass = (env.SMTP_PASS ?? '').trim();
+  const from = (env.SMTP_FROM ?? '').trim();
   let defaultAccount = null;
-  if (env.GMAIL_USER && env.GMAIL_APP_PASSWORD) {
-    defaultAccount = { user: env.GMAIL_USER.trim(), pass: env.GMAIL_APP_PASSWORD.replace(/\s+/g, '') };
+  if (user && pass && from) {
+    if (!isEmail(from)) throw new Error('SMTP_FROM is not a valid email address.');
+    defaultAccount = { user, pass, from };
+  } else if ((user || pass || from) && !dry) {
+    throw new Error(missingCredentials);
   }
   let accounts = {};
-  if (env.GMAIL_ACCOUNTS) {
+  if (env.SMTP_ACCOUNTS) {
     try {
-      accounts = JSON.parse(env.GMAIL_ACCOUNTS);
+      accounts = JSON.parse(env.SMTP_ACCOUNTS);
     } catch {
-      throw new Error('GMAIL_ACCOUNTS is not valid JSON.');
+      throw new Error('SMTP_ACCOUNTS is not valid JSON.');
     }
-    if (!accounts || typeof accounts !== 'object' || Array.isArray(accounts)) throw new Error('GMAIL_ACCOUNTS must be a JSON object.');
+    if (!accounts || typeof accounts !== 'object' || Array.isArray(accounts)) throw new Error('SMTP_ACCOUNTS must be a JSON object.');
     for (const [persona, acc] of Object.entries(accounts)) {
-      if (!PERSONAS[persona]) throw new Error(`GMAIL_ACCOUNTS: unknown persona ${persona}`);
-      if (!acc?.user || !acc?.pass) throw new Error(`GMAIL_ACCOUNTS: ${persona} needs user and pass`);
-      accounts[persona] = { user: acc.user.trim(), pass: String(acc.pass).replace(/\s+/g, '') };
+      if (!PERSONAS[persona]) throw new Error(`SMTP_ACCOUNTS: unknown persona ${persona}`);
+      const personaFrom = String(acc?.from ?? '').trim();
+      if (!isEmail(personaFrom)) throw new Error(`SMTP_ACCOUNTS: ${persona} needs from (a sender address verified in Brevo)`);
+      // A persona may change only the sender and share the default login and key.
+      const personaUser = acc.user ? String(acc.user).trim() : defaultAccount?.user;
+      const personaPass = acc.pass ? String(acc.pass).trim() : defaultAccount?.pass;
+      if (!personaUser || !personaPass) throw new Error(`SMTP_ACCOUNTS: ${persona} needs user and pass (or set SMTP_USER and SMTP_PASS)`);
+      accounts[persona] = { user: personaUser, pass: personaPass, from: personaFrom };
     }
   }
-  if (!defaultAccount && !Object.keys(accounts).length && !dry) {
-    throw new Error('Set GMAIL_USER and GMAIL_APP_PASSWORD (an App Password, not your normal password).');
-  }
+  if (!defaultAccount && !Object.keys(accounts).length && !dry) throw new Error(missingCredentials);
   return {
     receiver: isEmail(receiver) ? receiver : 'receiver@example.invalid',
     receiverConfigured: isEmail(receiver),
     otherRecipient: otherRaw || null,
     defaultAccount,
     accounts,
+    smtp,
   };
 }
 
 export function resolveAccount(config, persona, dry = false) {
   const account = config.accounts[persona] ?? config.defaultAccount;
   if (account) return account;
-  if (dry) return { user: 'sender@example.invalid', pass: '' };
-  throw new Error(`No Gmail account configured for persona ${persona}.`);
+  if (dry) return { user: '', pass: '', from: 'sender@example.invalid' };
+  throw new Error(`No SMTP account configured for persona ${persona}.`);
+}
+
+// The agent drops mail from a no-reply sender as noise (Step 3), so a human persona must not send from one.
+const NO_REPLY_RE = /no[-_.]?reply|do[-_.]?not[-_.]?reply/i;
+const AUTOMATED_PERSONAS = new Set(['system', 'newsletter']);
+
+export function noReplyWarnings(config, list) {
+  const warnings = [];
+  for (const persona of new Set(list.map((s) => s.from))) {
+    if (AUTOMATED_PERSONAS.has(persona)) continue;
+    const from = (config.accounts[persona] ?? config.defaultAccount)?.from;
+    if (from && NO_REPLY_RE.test(from)) {
+      warnings.push(`WARN: ${persona} would send from ${from}, which the agent treats as an automated no-reply sender and drops as noise. Set SMTP_FROM (or SMTP_ACCOUNTS for ${persona}) to a normal-looking address verified in Brevo.`);
+    }
+  }
+  return warnings;
 }
 
 const slug = (id) => id.toLowerCase().replace(/[^a-z0-9]+/g, '-');
@@ -3153,14 +3196,14 @@ const slug = (id) => id.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 export function buildMessage(scenario, ctx) {
   const { account, config, runId, tag = '', refs = new Map() } = ctx;
   const persona = PERSONAS[scenario.from];
-  const other = config.otherRecipient || account.user;
+  const other = config.otherRecipient || account.from;
   const receiver = config.receiver;
   const unique = (list) => [...new Set(list)];
   const recipients = {
     to: { to: [receiver] },
     cc: { to: [other], cc: [receiver] },
     bcc: { to: [other], bcc: [receiver] },
-    'to-multi': { to: unique([receiver, other, account.user]) },
+    'to-multi': { to: unique([receiver, other, account.from]) },
   }[scenario.recipients];
 
   const messageId = `<${runId}.${slug(scenario.id)}@mailer.test>`;
@@ -3170,7 +3213,7 @@ export function buildMessage(scenario, ctx) {
     'X-Test-Ids': scenario.tests.join(','),
   };
   const message = {
-    from: { name: scenario.displayName ?? persona.name, address: account.user },
+    from: { name: scenario.displayName ?? persona.name, address: account.from },
     ...recipients,
     subject: `${tag ? `${tag} ` : ''}${scenario.subject}`,
     text: scenario.body,
@@ -3198,7 +3241,7 @@ export function collectManualSteps(list, results) {
     .map((s) => ({ id: s.id, title: s.title, steps: s.manual }));
 }
 
-export const USAGE = `Seed a test mailbox from Gmail.
+export const USAGE = `Seed a test mailbox through an SMTP relay (Brevo by default).
 
 Select scenarios (combine freely):
   --scenario ID[,ID]   send specific scenarios
@@ -3216,11 +3259,12 @@ Options:
   --tag TEXT           prefix every subject, e.g. "[run1]"
   --delay MS           pause between sends (default ${DEFAULT_DELAY_MS})
   --limit N            refuse to send more than N emails (default ${DEFAULT_LIMIT})
-  --no-verify          skip the Gmail login check
+  --no-verify          skip the SMTP login check
+  --allow-no-reply     send even when a human persona would send from a no-reply address (the agent drops such mail)
   --help, -h           this text
 
-Credentials come from the environment (see .env.example): TEST_RECEIVER, GMAIL_USER, GMAIL_APP_PASSWORD,
-optional GMAIL_ACCOUNTS and OTHER_RECIPIENT.
+Settings come from the environment (see .env.example): TEST_RECEIVER, SMTP_USER, SMTP_PASS, SMTP_FROM,
+optional SMTP_HOST, SMTP_PORT, SMTP_SECURE, SMTP_ACCOUNTS and OTHER_RECIPIENT.
 
 Examples:
   node send-test-emails.mjs --list --group A5
@@ -3228,15 +3272,24 @@ Examples:
   node send-test-emails.mjs --group A5 --tag "[run1]"
 `;
 
-const defaultCreateTransport = (account) =>
-  nodemailer.createTransport({ host: 'smtp.gmail.com', port: 465, secure: true, pool: true, maxConnections: 1, auth: { user: account.user, pass: account.pass } });
+export const buildTransportOptions = (account, smtp) => ({
+  host: smtp.host,
+  port: smtp.port,
+  secure: smtp.secure,
+  pool: true,
+  maxConnections: 1,
+  auth: { user: account.user, pass: account.pass },
+  ...(smtp.secure ? {} : { requireTLS: true }),
+});
+
+const defaultCreateTransport = (account, smtp) => nodemailer.createTransport(buildTransportOptions(account, smtp));
 
 const defaultSleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export function isFatalSendError(error) {
   return error?.code === 'EAUTH'
     || [421, 454].includes(error?.responseCode)
-    || /daily (user )?sending limit|sending limit exceeded/i.test(error?.message ?? '');
+    || /daily (user )?sending limit|sending limit exceeded|daily limit|quota exceeded/i.test(error?.message ?? '');
 }
 
 export async function runScenarios(list, config, opts, deps = {}) {
@@ -3250,7 +3303,7 @@ export async function runScenarios(list, config, opts, deps = {}) {
   const transports = new Map();
 
   const transportFor = (account) => {
-    if (!transports.has(account.user)) transports.set(account.user, createTransport(account));
+    if (!transports.has(account.user)) transports.set(account.user, createTransport(account, config.smtp));
     return transports.get(account.user);
   };
 
@@ -3261,7 +3314,7 @@ export async function runScenarios(list, config, opts, deps = {}) {
         try {
           await transportFor(account).verify();
         } catch (error) {
-          throw new Error(`Gmail login failed for ${account.user}: ${error.message}. Use an App Password and keep 2-Step Verification on.`);
+          throw new Error(`SMTP login failed for ${account.user}: ${error.message}. Check SMTP_USER and SMTP_PASS (for Brevo: the SMTP login and an SMTP key, not the account password).`);
         }
       }
     }
@@ -3283,7 +3336,7 @@ export async function runScenarios(list, config, opts, deps = {}) {
       }
       const account = accountFor.get(scenario.id);
       const message = buildMessage(scenario, { account, config, runId, tag: opts.tag, refs });
-      const label = `${scenario.id} (${scenario.from} to ${message.to.join(', ')}${message.cc ? `, cc ${message.cc.join(', ')}` : ''}${message.bcc ? `, bcc ${message.bcc.join(', ')}` : ''})`;
+      const label = `${scenario.id} (${scenario.from} <${message.from.address}> to ${message.to.join(', ')}${message.cc ? `, cc ${message.cc.join(', ')}` : ''}${message.bcc ? `, bcc ${message.bcc.join(', ')}` : ''})`;
       if (dry) {
         log(`DRY  ${label}: ${message.subject}`);
         refs.set(scenario.id, { messageId: message.messageId, references: message.references ?? [] });
@@ -3302,7 +3355,7 @@ export async function runScenarios(list, config, opts, deps = {}) {
         log(`FAIL ${label}: ${error.message}`);
         if (isFatalSendError(error)) {
           aborted = true;
-          log('STOP: Gmail rejected the login or the sending limit was reached; not attempting the remaining emails.');
+          log('STOP: the SMTP server rejected the login or the sending limit was reached; not attempting the remaining emails.');
         }
       }
       if (!aborted && index < list.length - 1 && opts.delayMs > 0) await sleep(opts.delayMs);
@@ -3329,7 +3382,7 @@ export async function main(argv, env = {}, deps = {}) {
   const catalogErrors = validateCatalog(catalog);
   if (catalogErrors.length) { errorLog(`Catalog is invalid:\n${catalogErrors.join('\n')}`); return 2; }
 
-  const hasFilter = opts.scenarios.length || opts.groups.length || opts.tests.length;
+  const hasFilter = opts.scenarios.length || opts.groups.length || opts.tests.length || opts.tickets.length;
   try {
     if (opts.list) {
       const shown = hasFilter ? selectScenarios(catalog, opts).list : catalog;
@@ -3342,6 +3395,12 @@ export async function main(argv, env = {}, deps = {}) {
       throw new Error(`${list.length} emails selected. Re-run with --yes to confirm, or --dry-run to preview.`);
     }
     const config = loadConfig(env, opts);
+    const warnings = noReplyWarnings(config, list);
+    for (const warning of warnings) log(warning);
+    const allowNoReply = opts.allowNoReply || ['true', '1', 'yes'].includes((env.ALLOW_NO_REPLY ?? '').trim().toLowerCase());
+    if (warnings.length && !opts.dryRun && !allowNoReply) {
+      throw new Error('Not sending: the agent drops mail from a no-reply sender as noise, so these tests would show nothing. Fix SMTP_FROM, or pass --allow-no-reply (or set ALLOW_NO_REPLY=true in .env) to send anyway.');
+    }
     if (addedDependencies.length) log(`Also sending earlier thread parents: ${addedDependencies.join(', ')}`);
     const receiverNote = config.receiverConfigured ? '' : ' (TEST_RECEIVER not set; set it before sending)';
     log(`${opts.dryRun ? 'Previewing' : 'Sending'} ${list.length} email(s) to ${config.receiver}${receiverNote}`);
