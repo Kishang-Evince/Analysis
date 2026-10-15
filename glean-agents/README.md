@@ -18,8 +18,9 @@ Enhancement of the existing Glean agent (Outlook). 27 features, one Auto-mode ag
 | `perimeter-email-agent/test-plan.md` | Test cases: Part A existing behaviour, Part B each enhancement in ticket order, cross-cutting checks, regression pack, spec gaps |
 | `perimeter-email-agent/EMAIL-01-runbook.md` | Execution order for EMAIL-01: admin checklist, mailer setup, spike, create agent from Prompt 0 with parity diff, Part A, Prompt 1, the EMAIL-01 test groups with seed commands and manual steps, scheduled path, sign-off |
 | `perimeter-email-agent/prompt-review-findings.md` | Findings from the dry-run of all ten prompts and the test walkthroughs; Prompt 0 and Prompt 1 findings are fixed, the rest are applied ticket by ticket from EMAIL-02 |
+| `perimeter-email-agent/test-gaps.md` | Output-based tests only: which are blocked or not yet run, per stage, and why; stage 1 items 1 to 6 explained step by step; the 26 tests excluded because they are decided from the trace or schedule; what would unblock the rest |
 | `perimeter-email-agent/Current Perimeter Email Agent (Glean).md` | The existing agent's prompt, kept as provided; source for parity |
-| `perimeter-email-agent/test-mailer/` | Node script that sends the test plan's inbound emails through an SMTP relay (Brevo) to the test mailbox (174 entries, one JSON constant per enhancement, 118 unit tests). See its README |
+| `perimeter-email-agent/test-mailer/` | Node script that sends the test plan's inbound emails through an SMTP relay (Brevo) to the test mailbox (174 entries, one JSON constant per enhancement, 124 unit tests). See its README |
 | `perimeter-email-agent/agent-build-spec.md` | Auto-mode build blueprint: agent settings, SETTINGS block, stage map (steps and tool per stage), admin prerequisites, build rules, test-plan pointers, first-day spikes. The prompts are in `prompts/` |
 
 Superseded earlier estimates (480 h, 420 h, 252 h) are intentionally not kept here.

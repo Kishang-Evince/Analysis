@@ -44,6 +44,8 @@ Every seed script sends to `TEST_RECEIVER`, ends with `--yes`, and takes `-- --d
 | `seed:c` | the cross-cutting checks |
 | `check:0` to `check:10` | check the instruction document of that stage, saved as `../specs/stage-N.md` (or pass another path: `npm run check:1 -- path`) |
 
+`--checklist` prints the setup in order and sends nothing: STEP 1 the requests you send from Outlook first (to yopmail addresses, each with its own unique subject such as `Sign-off request [E17-02]`), STEP 2 the mail itself, STEP 3 the Outlook steps after it arrives (for example `npm run seed:email-01 -- --checklist`).
+
 `--ticket EMAIL-nn` does the same as the ticket scripts for any combination: `node send-test-emails.mjs --ticket EMAIL-01,EMAIL-02 --dry-run`.
 
 ## Limits to know
@@ -63,4 +65,4 @@ Every seed script sends to `TEST_RECEIVER`, ends with `--yes`, and takes `-- --d
 - Injection scenarios use the fake address `attacker@example.com`.
 
 ## Tests
-`npm test`, or `npm run coverage` (fails below 80% lines, 70% branches, 80% functions). Current: 118 tests, about 99% lines.
+`npm test`, or `npm run coverage` (fails below 80% lines, 70% branches, 80% functions). Current: 124 tests, about 99% lines.

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import * as mailer from './send-test-emails.mjs';
 import {
   PERSONAS, SCENARIOS, USAGE, isEmail, validateCatalog, parseArgs, selectScenarios, loadConfig,
-  resolveAccount, buildMessage, buildTransportOptions, noReplyWarnings, formatList, collectManualSteps, runScenarios, main, isFatalSendError,
+  resolveAccount, buildMessage, buildTransportOptions, noReplyWarnings, formatList, formatChecklist, collectManualSteps, runScenarios, main, isFatalSendError,
 } from './send-test-emails.mjs';
 
 const scenario = (over = {}) => ({
@@ -814,5 +814,109 @@ describe('refusing to send human personas from a no-reply address', () => {
     assert.equal(parseArgs([]).allowNoReply, false);
     assert.match(USAGE, /--allow-no-reply/);
     assert.throws(() => parseArgs(['--allow-no-reply=1']), /does not take a value/);
+  });
+});
+
+describe('Outlook-sent requests in the catalog', () => {
+  const requests = () => mailer.SCENARIOS.flatMap((s) => (s.manual ?? [])
+    .map((m) => ({ id: s.id, step: m, subject: m.match(/Subject "([^"]+)"/)?.[1] }))
+    .filter((r) => r.subject && /^Send (this|a) request/.test(r.step)));
+
+  test('every request subject is unique, so two tests never share one conversation', () => {
+    const seen = new Map();
+    for (const r of requests()) {
+      assert.ok(!seen.has(r.subject), `${r.id} and ${seen.get(r.subject)} both send "${r.subject}"`);
+      seen.set(r.subject, r.id);
+    }
+  });
+
+  test('requests go to yopmail addresses, never to a test account name or another domain', () => {
+    for (const r of requests()) {
+      assert.match(r.step, /@yopmail\.com/, `${r.id} must name a yopmail address`);
+      assert.doesNotMatch(r.step, /test account|example\.invalid/, `${r.id} must not use a test account name or example.invalid`);
+    }
+  });
+
+  test('every reply, auto-reply or notice names the request it answers', () => {
+    const subjects = new Set(requests().map((r) => r.subject));
+    const PREFIX = /^(Re: |Automatic reply: |Automatische Antwort: |Réponse automatique : |Undeliverable: |Fwd: )/;
+    const checked = ['E13-10', 'E17-02', 'E17-02-b', 'E17-03', 'E17-04', 'E19-01', 'E19-02', 'E19-03', 'E19-06', 'E19-06-b', 'E19-07', 'E20-01', 'E20-02', 'E20-03', 'E20-07'];
+    for (const id of checked) {
+      const s = mailer.SCENARIOS.find((x) => x.id === id);
+      assert.ok(PREFIX.test(s.subject), `${id} subject "${s.subject}" has no reply prefix`);
+      assert.ok(subjects.has(s.subject.replace(PREFIX, '')), `${id} subject "${s.subject}" matches no request subject`);
+    }
+  });
+});
+
+describe('--checklist', () => {
+  const list = [
+    scenario({ id: 'C-1', manual: ['Send this request from Outlook first (To a@yopmail.com): Subject "S [C-1]", body "B"', 'Mark this message as read'] }),
+    scenario({ id: 'C-2', title: 'Plain' }),
+  ];
+
+  test('splits the manual steps into: send from Outlook first, send the mail, then do the rest', () => {
+    const text = formatChecklist(list);
+    const a = text.indexOf('STEP 1'), b = text.indexOf('STEP 2'), c = text.indexOf('STEP 3');
+    assert.ok(a >= 0 && a < b && b < c, 'steps appear in order');
+    assert.match(text.slice(a, b), /C-1.*Send this request from Outlook first/s);
+    assert.match(text.slice(b, c), /2 email\(s\)/);
+    assert.match(text.slice(c), /Mark this message as read/);
+    assert.doesNotMatch(text.slice(c), /Send this request/);
+  });
+
+  test('says so when a step has nothing to do', () => {
+    assert.match(formatChecklist([scenario({ id: 'C-3' })]), /STEP 1[^\n]*\n\s*nothing to send first/);
+  });
+
+  test('parseArgs reads --checklist and the usage names it; main prints it, sends nothing, needs no credentials', async () => {
+    assert.equal(parseArgs(['--checklist']).checklist, true);
+    assert.match(USAGE, /--checklist/);
+    const out = quiet();
+    const transport = fakeTransport();
+    const code = await main(['--scenario', 'T-02', '--checklist'], {}, { log: out.log, errorLog: out.errorLog, catalog: CATALOG, createTransport: () => transport });
+    assert.equal(code, 0);
+    assert.match(out.lines.join('\n'), /STEP 1/);
+    assert.equal(transport.sendMail.mock.callCount(), 0);
+  });
+});
+
+describe('threading onto Outlook-sent requests (request-ids.json)', () => {
+  const ids = { 'Sign-off request [E17-02]': 'abc123@host.test' };
+  const account = { user: 'u', pass: 'p', from: 'alice@company.test' };
+  const config = { receiver: 'user@company.test', otherRecipient: null };
+  const build = (s, extra = {}) => buildMessage(s, { account, config, runId: 'r', requestIds: ids, ...extra });
+
+  test('a reply whose subject names a known request gets In-Reply-To and References for that request', () => {
+    const m = build(scenario({ subject: 'Re: Sign-off request [E17-02]' }));
+    assert.equal(m.inReplyTo, '<abc123@host.test>');
+    assert.deepEqual(m.references, ['<abc123@host.test>']);
+  });
+
+  test('every reply prefix is understood, including automatic reply and undeliverable notices', () => {
+    for (const prefix of ['Automatic reply: ', 'Automatische Antwort: ', 'Réponse automatique : ', 'Undeliverable: ']) {
+      assert.equal(build(scenario({ subject: `${prefix}Sign-off request [E17-02]` })).inReplyTo, '<abc123@host.test>', prefix);
+    }
+  });
+
+  test('an unknown subject, a plain subject, or no id file leaves the message unthreaded', () => {
+    assert.equal(build(scenario({ subject: 'Re: Something else' })).inReplyTo, undefined);
+    assert.equal(build(scenario({ subject: 'Sign-off request [E17-02]' })).inReplyTo, undefined);
+    assert.equal(buildMessage(scenario({ subject: 'Re: Sign-off request [E17-02]' }), { account, config, runId: 'r' }).inReplyTo, undefined);
+  });
+
+  test('a message that already replies to a mailer message keeps that parent (its references carry the request)', () => {
+    const refs = new Map([['T-00', { messageId: '<parent@mailer.test>', references: ['<abc123@host.test>'] }]]);
+    const m = build(scenario({ subject: 'Re: Sign-off request [E17-02]', replyTo: 'T-00' }), { refs });
+    assert.equal(m.inReplyTo, '<parent@mailer.test>');
+    assert.deepEqual(m.references, ['<abc123@host.test>', '<parent@mailer.test>']);
+  });
+
+  test('main loads request-ids.json through deps and passes it to the messages', async () => {
+    const out = quiet();
+    const transport = fakeTransport();
+    const catalog = [scenario({ id: 'T-9', subject: 'Re: Sign-off request [E17-02]' })];
+    await main(['--scenario', 'T-9', '--delay', '0'], ENV, { log: out.log, errorLog: out.errorLog, catalog, createTransport: () => transport, sleep: async () => {}, readRequestIds: () => ids });
+    assert.equal(transport.sendMail.mock.calls[0].arguments[0].inReplyTo, '<abc123@host.test>');
   });
 });

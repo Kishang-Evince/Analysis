@@ -39,6 +39,8 @@ Run these in `test-mailer/` after `npm install` and filling `.env` (see its READ
 | 9 (EMAIL-09) | EMAIL-09-prompt-9-vip-topics.md | `npm run seed:email-09` | `npm run check:9` |
 | 10 (EMAIL-10, EMAIL-11) | EMAIL-10-11-prompt-10-meeting-prep.md | `npm run seed:email-10` (same seeds for EMAIL-11) | `npm run check:10` |
 
+Gaps: which tests cannot run yet, and what blocks them, is recorded per stage in [../test-gaps.md](../test-gaps.md).
+
 The loop for each stage:
 1. Save a checkpoint, then set the Tools tab as the table above says.
 2. Paste the prompt into Builder Assistant (or make its edits by hand).

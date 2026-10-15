@@ -2,6 +2,7 @@
 // Seeds a test mailbox: sends scripted emails through an SMTP relay (Brevo by default) to the receiver mailbox.
 // Usage: node send-test-emails.mjs --help
 
+import { readFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 import nodemailer from 'nodemailer';
 
@@ -256,11 +257,11 @@ export const PARITY_SENT_AWAITING_EMAILS = [
     "title": "Reply to sent request",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Delivery confirmation request",
+    "subject": "Re: Delivery confirmation request [A3-01]",
     "body": "Hi Kishan,\nDelivery is next Tuesday.\nThanks, Alice",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery confirmation request [A3-01]\", body \"Can you confirm the delivery date?\""
     ],
     "notes": "The mailer cannot thread onto an Outlook message; the matching Re: subject is used."
   },
@@ -292,11 +293,11 @@ export const PARITY_SENT_AWAITING_EMAILS = [
     "title": "One of three recipients replied",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Workshop agenda",
+    "subject": "Re: Workshop agenda [A3-04]",
     "body": "Hi Kishan,\nThe agenda works for me.\nAlice",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice, bob and carol test account): Subject \"Workshop agenda\", body \"Can you confirm the agenda works for you?\" (all three in To)"
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com, bob.singh.test@yopmail.com, carol.reyes.test@yopmail.com): Subject \"Workshop agenda [A3-04]\", body \"Can you confirm the agenda works for you?\" (all three in To)"
     ]
   },
   {
@@ -309,11 +310,11 @@ export const PARITY_SENT_AWAITING_EMAILS = [
     "title": "Reply from non-recipient",
     "from": "dana",
     "recipients": "to",
-    "subject": "Re: Launch date confirmation",
+    "subject": "Re: Launch date confirmation [A3-05]",
     "body": "Hi Kishan,\nDana here. I can confirm the launch date is next Thursday.\nDana",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Launch date confirmation\", body \"Can you confirm the launch date?\" (alice only, not Dana)"
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Launch date confirmation [A3-05]\", body \"Can you confirm the launch date?\" (alice only, not Dana)"
     ]
   }
 ];
@@ -1157,11 +1158,11 @@ export const ENH_13_LOOKBACK_EMAILS = [
     "title": "Read reply older than the read window",
     "from": "bob",
     "recipients": "to",
-    "subject": "Re: Q3 forecast inputs",
+    "subject": "Re: Q3 forecast inputs [E13-10]",
     "body": "Hi Kishan,\nHere are the forecast inputs you asked for. Attached to the shared folder.\nBob",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the bob test account): Subject \"Q3 forecast inputs\", body \"Can you send me the Q3 forecast inputs?\"",
+      "Send this request from Outlook first (To bob.singh.test@yopmail.com): Subject \"Q3 forecast inputs [E13-10]\", body \"Can you send me the Q3 forecast inputs?\"",
       "Mark this reply as read",
       "Simulate age: the request and this reply are sent on the same day, so set chat \"as of\" to the real today plus 8 (or AS_OF_DATE in the saved Settings block for Run now); both are then 8 days old, older than READ_DAYS 3 and inside LOOKBACK_DAYS 14"
     ]
@@ -1470,11 +1471,11 @@ export const ENH_17_PER_RECIPIENT_EMAILS = [
     "title": "All To recipients replied (1 of 2)",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Sign-off request",
+    "subject": "Re: Sign-off request [E17-02]",
     "body": "Hi Kishan,\nSigned off from my side.\nAlice",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice and bob test account): Subject \"Sign-off request\", body \"Please sign off on the release notes.\" (both in To)"
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com, bob.singh.test@yopmail.com): Subject \"Sign-off request [E17-02]\", body \"Please sign off on the release notes.\" (both in To)"
     ]
   },
   {
@@ -1487,7 +1488,7 @@ export const ENH_17_PER_RECIPIENT_EMAILS = [
     "title": "All To recipients replied (2 of 2)",
     "from": "bob",
     "recipients": "to",
-    "subject": "Re: Sign-off request",
+    "subject": "Re: Sign-off request [E17-02]",
     "body": "Hi Kishan,\nLooks good, signed off.\nBob",
     "threadWith": null
   },
@@ -1500,11 +1501,11 @@ export const ENH_17_PER_RECIPIENT_EMAILS = [
     "title": "Cc person replies only",
     "from": "bob",
     "recipients": "to",
-    "subject": "Re: Sign-off request",
+    "subject": "Re: Sign-off request [E17-03]",
     "body": "Hi Kishan,\nLooks good to me.\nBob",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice (To) with bob in Cc test account): Subject \"Sign-off request\", body \"Please sign off on the release notes.\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com, Cc bob.singh.test@yopmail.com): Subject \"Sign-off request [E17-03]\", body \"Please sign off on the release notes.\""
     ]
   },
   {
@@ -1516,11 +1517,11 @@ export const ENH_17_PER_RECIPIENT_EMAILS = [
     "title": "Reply-all from one recipient",
     "from": "bob",
     "recipients": "to-multi",
-    "subject": "Re: Workshop agenda",
+    "subject": "Re: Workshop agenda [E17-04]",
     "body": "Hi all,\nThe agenda works for me.\nBob",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the bob, alice and carol test account): Subject \"Workshop agenda\", body \"Can you confirm the agenda works for you?\" (all three in To)"
+      "Send this request from Outlook first (To bob.singh.test@yopmail.com, alice.morgan.test@yopmail.com, carol.reyes.test@yopmail.com): Subject \"Workshop agenda [E17-04]\", body \"Can you confirm the agenda works for you?\" (all three in To)"
     ],
     "notes": "Send as reply-all so other recipients are also in To."
   }
@@ -1538,7 +1539,7 @@ export const ENH_19_OUT_OF_OFFICE_EMAILS = [
     "title": "OOO with return date and delegate",
     "from": "alice",
     "recipients": "to",
-    "subject": "Automatic reply: Delivery confirmation request",
+    "subject": "Automatic reply: Delivery confirmation request [E19-01]",
     "body": "I am out of the office until next Monday. For urgent matters please contact Bob.",
     "headers": {
       "Auto-Submitted": "auto-replied",
@@ -1546,7 +1547,7 @@ export const ENH_19_OUT_OF_OFFICE_EMAILS = [
     },
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery confirmation request [E19-01]\", body \"Can you confirm the delivery date?\""
     ]
   },
   {
@@ -1559,7 +1560,7 @@ export const ENH_19_OUT_OF_OFFICE_EMAILS = [
     "title": "OOO without return date",
     "from": "bob",
     "recipients": "to",
-    "subject": "Automatic reply: Budget question",
+    "subject": "Automatic reply: Budget question [E19-02]",
     "body": "I am out of the office and have limited access to email.",
     "headers": {
       "Auto-Submitted": "auto-replied",
@@ -1567,7 +1568,7 @@ export const ENH_19_OUT_OF_OFFICE_EMAILS = [
     },
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the bob test account): Subject \"Budget question\", body \"Can you confirm the budget approval?\""
+      "Send this request from Outlook first (To bob.singh.test@yopmail.com): Subject \"Budget question [E19-02]\", body \"Can you confirm the budget approval?\""
     ]
   },
   {
@@ -1579,7 +1580,7 @@ export const ENH_19_OUT_OF_OFFICE_EMAILS = [
     "title": "Real reply after OOO",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Delivery confirmation request",
+    "subject": "Re: Delivery confirmation request [E19-01]",
     "body": "Back in the office. Delivery is next Tuesday.\nAlice",
     "replyTo": "E19-01",
     "threadWith": null
@@ -1593,7 +1594,7 @@ export const ENH_19_OUT_OF_OFFICE_EMAILS = [
     "title": "German automatic reply",
     "from": "alice",
     "recipients": "to",
-    "subject": "Automatische Antwort: Delivery confirmation request",
+    "subject": "Automatische Antwort: Delivery confirmation request [E19-06]",
     "body": "Ich bin bis naechsten Montag nicht im Buero und lese meine E-Mails nur eingeschraenkt.",
     "headers": {
       "Auto-Submitted": "auto-replied",
@@ -1601,7 +1602,7 @@ export const ENH_19_OUT_OF_OFFICE_EMAILS = [
     },
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery confirmation request [E19-06]\", body \"Can you confirm the delivery date?\""
     ]
   },
   {
@@ -1614,7 +1615,7 @@ export const ENH_19_OUT_OF_OFFICE_EMAILS = [
     "title": "French automatic reply",
     "from": "bob",
     "recipients": "to",
-    "subject": "Réponse automatique : Budget question",
+    "subject": "Réponse automatique : Budget question [E19-06-b]",
     "body": "Je suis absent jusqu'à lundi prochain et je consulte peu mes e-mails.",
     "headers": {
       "Auto-Submitted": "auto-replied",
@@ -1622,7 +1623,7 @@ export const ENH_19_OUT_OF_OFFICE_EMAILS = [
     },
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the bob test account): Subject \"Budget question\", body \"Can you confirm the budget approval?\""
+      "Send this request from Outlook first (To bob.singh.test@yopmail.com): Subject \"Budget question [E19-06-b]\", body \"Can you confirm the budget approval?\""
     ]
   },
   {
@@ -1634,11 +1635,11 @@ export const ENH_19_OUT_OF_OFFICE_EMAILS = [
     "title": "Human reply mentions being out",
     "from": "bob",
     "recipients": "to",
-    "subject": "Re: Budget question",
+    "subject": "Re: Budget question [E19-07]",
     "body": "Approved. I am out next week so please plan around that.\nBob",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the bob test account): Subject \"Budget question\", body \"Can you confirm the budget approval?\""
+      "Send this request from Outlook first (To bob.singh.test@yopmail.com): Subject \"Budget question [E19-07]\", body \"Can you confirm the budget approval?\""
     ]
   }
 ];
@@ -1654,7 +1655,7 @@ export const ENH_20_AUTO_REPLY_EMAILS = [
     "title": "Ticket acknowledgment",
     "from": "system",
     "recipients": "to",
-    "subject": "We received your request #123",
+    "subject": "Re: Access issue [E20-01]",
     "body": "Thank you for contacting support. We have received your request #123 and will respond within 2 business days.",
     "headers": {
       "Auto-Submitted": "auto-generated",
@@ -1663,7 +1664,7 @@ export const ENH_20_AUTO_REPLY_EMAILS = [
     },
     "threadWith": null,
     "manual": [
-      "Send a request from Outlook first to the vendor test account: Subject \"Access issue\", body \"Can you reset my access?\""
+      "Send a request from Outlook first to vendor.sales.test@yopmail.com: Subject \"Access issue [E20-01]\", body \"Can you reset my access?\""
     ]
   },
   {
@@ -1675,7 +1676,7 @@ export const ENH_20_AUTO_REPLY_EMAILS = [
     "title": "Security gateway quarantine notice",
     "from": "system",
     "recipients": "to",
-    "subject": "Message held by email security gateway",
+    "subject": "Re: Delivery confirmation request [E20-02]",
     "body": "A message you sent was quarantined by the security gateway and was not delivered. No action is needed.",
     "headers": {
       "Auto-Submitted": "auto-generated",
@@ -1684,7 +1685,7 @@ export const ENH_20_AUTO_REPLY_EMAILS = [
     },
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery confirmation request [E20-02]\", body \"Can you confirm the delivery date?\""
     ]
   },
   {
@@ -1696,7 +1697,7 @@ export const ENH_20_AUTO_REPLY_EMAILS = [
     "title": "Delivery failure (NDR)",
     "from": "system",
     "recipients": "to",
-    "subject": "Undeliverable: Delivery confirmation request",
+    "subject": "Undeliverable: Delivery confirmation request [E20-03]",
     "body": "Delivery has failed to these recipients: nobody@example.invalid. The address could not be found.",
     "headers": {
       "Auto-Submitted": "auto-generated",
@@ -1705,7 +1706,7 @@ export const ENH_20_AUTO_REPLY_EMAILS = [
     },
     "threadWith": null,
     "manual": [
-      "Send a request from Outlook first to a non-existent address such as nobody@example.invalid: Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
+      "Send a request from Outlook first to nobody.test@yopmail.com (yopmail never bounces, so the mailer simulates the delivery-failure notice): Subject \"Delivery confirmation request [E20-03]\", body \"Can you confirm the delivery date?\""
     ]
   },
   {
@@ -1717,11 +1718,11 @@ export const ENH_20_AUTO_REPLY_EMAILS = [
     "title": "Short real reply: ok",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Delivery confirmation request",
+    "subject": "Re: Delivery confirmation request [E20-07]",
     "body": "ok",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery confirmation request [E20-07]\", body \"Can you confirm the delivery date?\""
     ]
   }
 ];
@@ -2129,11 +2130,11 @@ export const ENH_18_SUBSTANTIVE_REPLY_EMAILS = [
     "title": "Reply: thanks / noted",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Delivery confirmation request",
+    "subject": "Re: Delivery confirmation request [E18-01]",
     "body": "Thanks, noted.\nAlice",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery confirmation request [E18-01]\", body \"Can you confirm the delivery date?\""
     ]
   },
   {
@@ -2145,11 +2146,11 @@ export const ENH_18_SUBSTANTIVE_REPLY_EMAILS = [
     "title": "Reply: emoji only",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Delivery confirmation request",
+    "subject": "Re: Delivery confirmation request [E18-03]",
     "body": "👍",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery confirmation request [E18-03]\", body \"Can you confirm the delivery date?\""
     ],
     "notes": "Emoji-only reply is the test; also try \"+1\" as the body."
   },
@@ -2162,11 +2163,11 @@ export const ENH_18_SUBSTANTIVE_REPLY_EMAILS = [
     "title": "Reply: substantive date",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Delivery confirmation request",
+    "subject": "Re: Delivery confirmation request [E18-04]",
     "body": "Delivery is next Tuesday.\nAlice",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery confirmation request [E18-04]\", body \"Can you confirm the delivery date?\""
     ]
   },
   {
@@ -2178,11 +2179,11 @@ export const ENH_18_SUBSTANTIVE_REPLY_EMAILS = [
     "title": "Reply: file attached",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Delivery confirmation request",
+    "subject": "Re: Delivery confirmation request [E18-05]",
     "body": "Here is the file.\nAlice",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\"",
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery confirmation request [E18-05]\", body \"Can you confirm the delivery date?\"",
       "Attach any small file when sending this reply"
     ]
   },
@@ -2195,11 +2196,11 @@ export const ENH_18_SUBSTANTIVE_REPLY_EMAILS = [
     "title": "Reply answers different question",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Delivery confirmation request",
+    "subject": "Re: Delivery confirmation request [E18-06]",
     "body": "The budget sheet is ready. I will send it later today.\nAlice",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery confirmation request [E18-06]\", body \"Can you confirm the delivery date?\""
     ]
   },
   {
@@ -2211,11 +2212,11 @@ export const ENH_18_SUBSTANTIVE_REPLY_EMAILS = [
     "title": "Reply from a third person",
     "from": "carol",
     "recipients": "to",
-    "subject": "Re: Delivery confirmation request",
+    "subject": "Re: Delivery confirmation request [E18-07]",
     "body": "Hi Kishan,\nAlice asked me to reply: delivery is next Tuesday.\nCarol",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery confirmation request [E18-07]\", body \"Can you confirm the delivery date?\""
     ]
   },
   {
@@ -2227,11 +2228,11 @@ export const ENH_18_SUBSTANTIVE_REPLY_EMAILS = [
     "title": "Partial answer",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Delivery date and shipping cost",
+    "subject": "Re: Delivery date and shipping cost [E18-08]",
     "body": "Delivery is next Tuesday.\nAlice",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery date and shipping cost\", body \"Can you confirm the delivery date and the shipping cost?\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery date and shipping cost [E18-08]\", body \"Can you confirm the delivery date and the shipping cost?\""
     ]
   }
 ];
@@ -2249,11 +2250,11 @@ export const ENH_21_ACK_VS_ANSWER_EMAILS = [
     "title": "Acknowledgement: received / on it / will check",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Delivery confirmation request",
+    "subject": "Re: Delivery confirmation request [E21-01]",
     "body": "Received, I'll look at it. On it, will check.\nAlice",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery confirmation request [E21-01]\", body \"Can you confirm the delivery date?\""
     ]
   },
   {
@@ -2265,11 +2266,11 @@ export const ENH_21_ACK_VS_ANSWER_EMAILS = [
     "title": "Acknowledgement with commitment",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Delivery confirmation request",
+    "subject": "Re: Delivery confirmation request [E21-03]",
     "body": "Looking into it, will revert Friday.\nAlice",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery confirmation request [E21-03]\", body \"Can you confirm the delivery date?\""
     ]
   },
   {
@@ -2281,11 +2282,11 @@ export const ENH_21_ACK_VS_ANSWER_EMAILS = [
     "title": "Answer: approved",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Delivery confirmation request",
+    "subject": "Re: Delivery confirmation request [E21-04]",
     "body": "Approved.\nAlice",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery confirmation request [E21-04]\", body \"Can you confirm the delivery date?\""
     ]
   },
   {
@@ -2297,11 +2298,11 @@ export const ENH_21_ACK_VS_ANSWER_EMAILS = [
     "title": "Answer: done",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Delivery confirmation request",
+    "subject": "Re: Delivery confirmation request [E21-05]",
     "body": "Done.\nAlice",
     "threadWith": null,
     "manual": [
-      "Send this request from Outlook first (to the alice test account): Subject \"Delivery confirmation request\", body \"Can you confirm the delivery date?\""
+      "Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject \"Delivery confirmation request [E21-05]\", body \"Can you confirm the delivery date?\""
     ]
   },
   {
@@ -2313,7 +2314,7 @@ export const ENH_21_ACK_VS_ANSWER_EMAILS = [
     "title": "Answer after acknowledgement",
     "from": "alice",
     "recipients": "to",
-    "subject": "Re: Delivery confirmation request",
+    "subject": "Re: Delivery confirmation request [E21-01]",
     "body": "Delivery is next Tuesday.\nAlice",
     "replyTo": "E21-01",
     "threadWith": null
@@ -2981,11 +2982,11 @@ export function validateCatalog(catalog = SCENARIOS) {
 }
 
 const csv = (value) => value.split(',').map((v) => v.trim()).filter(Boolean);
-const BOOLEAN_FLAGS = new Set(['--help', '-h', '--list', '--all', '--dry-run', '--yes', '-y', '--no-verify', '--allow-no-reply']);
+const BOOLEAN_FLAGS = new Set(['--help', '-h', '--list', '--all', '--dry-run', '--yes', '-y', '--no-verify', '--allow-no-reply', '--checklist']);
 
 export function parseArgs(argv) {
   const opts = {
-    list: false, all: false, dryRun: false, yes: false, help: false, verify: true, allowNoReply: false,
+    list: false, all: false, dryRun: false, yes: false, help: false, verify: true, allowNoReply: false, checklist: false,
     delayMs: DEFAULT_DELAY_MS, limit: DEFAULT_LIMIT, scenarios: [], groups: [], tests: [], tickets: [],
     to: null, other: null, tag: '',
   };
@@ -3010,6 +3011,7 @@ export function parseArgs(argv) {
       case '--yes': case '-y': opts.yes = true; break;
       case '--no-verify': opts.verify = false; break;
       case '--allow-no-reply': opts.allowNoReply = true; break;
+      case '--checklist': opts.checklist = true; break;
       case '--scenario': opts.scenarios.push(...csv(take(flag, inline))); break;
       case '--group': opts.groups.push(...csv(take(flag, inline))); break;
       case '--test': opts.tests.push(...csv(take(flag, inline))); break;
@@ -3193,8 +3195,10 @@ export function noReplyWarnings(config, list) {
 
 const slug = (id) => id.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
+const REPLY_PREFIX = /^(Re: |Automatic reply: |Automatische Antwort: |Réponse automatique : |Undeliverable: |Fwd: )/;
+
 export function buildMessage(scenario, ctx) {
-  const { account, config, runId, tag = '', refs = new Map() } = ctx;
+  const { account, config, runId, tag = '', refs = new Map(), requestIds = {} } = ctx;
   const persona = PERSONAS[scenario.from];
   const other = config.otherRecipient || account.from;
   const receiver = config.receiver;
@@ -3225,8 +3229,30 @@ export function buildMessage(scenario, ctx) {
   if (parent) {
     message.inReplyTo = parent.messageId;
     message.references = [...parent.references, parent.messageId];
+  } else if (requestIds[scenario.subject.replace(REPLY_PREFIX, '')] && REPLY_PREFIX.test(scenario.subject)) {
+    // A reply to a request sent from Outlook: name that request's Message-ID so Exchange puts both in one conversation.
+    const id = `<${requestIds[scenario.subject.replace(REPLY_PREFIX, '')]}>`;
+    message.inReplyTo = id;
+    message.references = [id];
   }
   return message;
+}
+
+// Order matters: a request must exist in Sent Items before the mailer sends its reply.
+export function formatChecklist(list) {
+  const steps = collectManualSteps(list, list.map((s) => ({ id: s.id, status: 'dry-run' })));
+  const isRequest = (t) => /^Send (this|a) request/.test(t);
+  const before = steps.flatMap((i) => i.steps.filter(isRequest).map((t) => `- [ ] ${i.id}: ${t}`));
+  const after = steps.flatMap((i) => i.steps.filter((t) => !isRequest(t)).map((t) => `- [ ] ${i.id}: ${t}`));
+  return [
+    'STEP 1: in Outlook, send these requests first (recipients are yopmail addresses; use the persona name as the display name):',
+    ...(before.length ? before : ['  nothing to send first']),
+    '',
+    `STEP 2: send the test mail: run the same command again without --checklist (${list.length} email(s)).`,
+    '',
+    'STEP 3: once the mail has arrived, in Outlook:',
+    ...(after.length ? after : ['  nothing else to do']),
+  ].join('\n');
 }
 
 export function formatList(catalog) {
@@ -3260,6 +3286,7 @@ Options:
   --delay MS           pause between sends (default ${DEFAULT_DELAY_MS})
   --limit N            refuse to send more than N emails (default ${DEFAULT_LIMIT})
   --no-verify          skip the SMTP login check
+  --checklist          print the setup in order (Outlook sends first, then the mail, then the rest); sends nothing
   --allow-no-reply     send even when a human persona would send from a no-reply address (the agent drops such mail)
   --help, -h           this text
 
@@ -3283,6 +3310,15 @@ export const buildTransportOptions = (account, smtp) => ({
 });
 
 const defaultCreateTransport = (account, smtp) => nodemailer.createTransport(buildTransportOptions(account, smtp));
+
+// Message-IDs of the requests sent from Outlook, keyed by their subject (request-ids.json next to this script, optional).
+const defaultReadRequestIds = () => {
+  try {
+    return JSON.parse(readFileSync(new URL('./request-ids.json', import.meta.url), 'utf8'));
+  } catch {
+    return {};
+  }
+};
 
 const defaultSleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -3335,7 +3371,7 @@ export async function runScenarios(list, config, opts, deps = {}) {
         continue;
       }
       const account = accountFor.get(scenario.id);
-      const message = buildMessage(scenario, { account, config, runId, tag: opts.tag, refs });
+      const message = buildMessage(scenario, { account, config, runId, tag: opts.tag, refs, requestIds: config.requestIds });
       const label = `${scenario.id} (${scenario.from} <${message.from.address}> to ${message.to.join(', ')}${message.cc ? `, cc ${message.cc.join(', ')}` : ''}${message.bcc ? `, bcc ${message.bcc.join(', ')}` : ''})`;
       if (dry) {
         log(`DRY  ${label}: ${message.subject}`);
@@ -3390,11 +3426,13 @@ export async function main(argv, env = {}, deps = {}) {
       return 0;
     }
     const { list, addedDependencies } = selectScenarios(catalog, opts);
+    if (opts.checklist) { log(formatChecklist(list)); return 0; }
     if (list.length > opts.limit) throw new Error(`${list.length} emails exceeds --limit ${opts.limit}.`);
     if (!opts.dryRun && list.length > MAX_UNCONFIRMED && !opts.yes) {
       throw new Error(`${list.length} emails selected. Re-run with --yes to confirm, or --dry-run to preview.`);
     }
     const config = loadConfig(env, opts);
+    config.requestIds = (deps.readRequestIds ?? defaultReadRequestIds)();
     const warnings = noReplyWarnings(config, list);
     for (const warning of warnings) log(warning);
     const allowNoReply = opts.allowNoReply || ['true', '1', 'yes'].includes((env.ALLOW_NO_REPLY ?? '').trim().toLowerCase());
