@@ -54,11 +54,31 @@ export function checkSpec(stage, spec, { expected, stages = STAGES } = {}) {
   return { stage, ok: problems.length === 0, problems };
 }
 
+// Sub-agents: a stage entry may carry subs: { name: { present, absent } }. Markers accumulate per sub-agent over the stages.
+export const subNames = (stage, stages = STAGES) => Object.keys(stages[stage]?.subs ?? {});
+
+export function checkSub(stage, name, spec, { stages = STAGES } = {}) {
+  const text = normalize(spec);
+  const { present, absent } = textMarkers(stage, stages.map((s) => s.subs?.[name] ?? { present: [], absent: [] }));
+  const problems = [];
+  for (const p of present) if (!text.includes(normalize(p))) problems.push(`missing: ${p}`);
+  for (const a of absent) if (text.includes(normalize(a))) problems.push(`old text still there: ${a}`);
+  return { stage, name, ok: problems.length === 0, problems };
+}
+
+// The text inside the index-th fenced code block of a prompt file (the fence lines are dropped).
+export const editBlock = (promptMarkdown, index = 0) => {
+  const block = [...promptMarkdown.matchAll(/^```[^\n]*\n([\s\S]*?)^```/gm)][index];
+  if (!block) throw new Error(`No code block ${index}`);
+  return block[1].replace(/\n$/, '');
+};
+
 export async function main(argv, deps = {}) {
   const {
     readFile = (p) => readFileSync(p, 'utf8'), log = console.log, errorLog = console.error,
     defaultSpecPath = (n) => fileURLToPath(new URL(`../specs/stage-${n}.md`, HERE)),
-    expected,
+    defaultSubSpecPath = (n, name) => fileURLToPath(new URL(`../specs/stage-${n}-${name}.md`, HERE)),
+    expected, stages = STAGES,
   } = deps;
   const usage = 'Usage: node check-spec.mjs <stage 0-10> [file]';
   const stage = Number(argv[0]);
@@ -66,11 +86,31 @@ export async function main(argv, deps = {}) {
   const file = argv[1] ?? defaultSpecPath(stage);
   let spec;
   try { spec = readFile(file); } catch { errorLog(`Cannot read ${file}. Copy the Instructions tab text into it first.\n${usage}`); return 2; }
-  const result = checkSpec(stage, spec, { expected: expected ?? (stage === 0 ? extractInstructions(readFileSync(PROMPT_0, 'utf8')) : undefined) });
-  if (result.ok) { log(`PASS stage ${stage}: ${file}`); return 0; }
-  log(`FAIL stage ${stage}: ${file}`);
-  for (const p of result.problems) log(`  ${p}`);
-  return 1;
+  const result = checkSpec(stage, spec, { expected: expected ?? (stage === 0 ? extractInstructions(readFileSync(PROMPT_0, 'utf8')) : undefined), stages });
+  let code = 0;
+  if (result.ok) log(`PASS stage ${stage}: ${file}`);
+  else {
+    code = 1;
+    log(`FAIL stage ${stage}: ${file}`);
+    for (const p of result.problems) log(`  ${p}`);
+  }
+  for (const name of subNames(stage, stages)) {
+    const subFile = defaultSubSpecPath(stage, name);
+    let subSpec;
+    try { subSpec = readFile(subFile); } catch {
+      errorLog(`Cannot read ${subFile}. Copy the sub-agent's Instructions text into it first.\n${usage}`);
+      code = Math.max(code, 2);
+      continue;
+    }
+    const sub = checkSub(stage, name, subSpec, { stages });
+    if (sub.ok) log(`PASS stage ${stage} sub ${name}: ${subFile}`);
+    else {
+      code = Math.max(code, 1);
+      log(`FAIL stage ${stage} sub ${name}: ${subFile}`);
+      for (const p of sub.problems) log(`  ${p}`);
+    }
+  }
+  return code;
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) process.exitCode = await main(process.argv.slice(2));

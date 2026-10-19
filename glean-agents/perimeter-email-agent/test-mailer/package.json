@@ -51,7 +51,8 @@
     "check:7": "node check-spec.mjs 7",
     "check:8": "node check-spec.mjs 8",
     "check:9": "node check-spec.mjs 9",
-    "check:10": "node check-spec.mjs 10"
+    "check:10": "node check-spec.mjs 10",
+    "hash": "node spec-hash.mjs"
   },
   "dependencies": {
     "nodemailer": "^10.1.0"
