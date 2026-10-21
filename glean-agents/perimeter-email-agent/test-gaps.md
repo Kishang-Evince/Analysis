@@ -955,3 +955,18 @@ User report: the emailed end-of-day brief showed `**Highlights:**` with literal 
 | Board run, brief read in Sent Items | PASS: `<p><strong>Highlights:</strong> VIP · Topic: budget approval</p>` and bold labels on the cards. One sample only |
 
 Also seen: a human reply "Hi Alice, Sure give me some time , I'll fix it by 23rd of Oct 2026." in Sent Items at 5:34 PM to alice.morgan.test, written by the user after the seed arrived (typing style and a promised date show it is not the agent).
+
+## draft-writer rules (prompt 18, 2026-10-21)
+
+Reason: in the board runs after prompt 16 draft-writer created a second draft for a thread that already had one (bob, Q3 forecast inputs), wrote one draft that still began with a bracketed "made by an agent" tag, and made the subject "Re: Re: Delivery date". Changes in the draft-writer text only: never start a draft with a bracketed tag or any line saying an agent wrote it, repeated "Re:" prefixes are ignored when comparing subjects, answer skipped-existing when it cannot tell whether a draft exists, a follow-up subject gets at most one "Re:". Checkpoint version `v20-before-draft-rules`. Live now: draft-writer 62f00c09 (5,271 characters, read back after a reload), main 67603dec and notes-keeper 165fb0e4 unchanged. `npm run check:18` passes, `npm test` 176/176.
+
+Editing note: a replacement that ended at the end of list item 1 of the draft-writer text merged it with item 2 and lost a line break (hash 3c3dbedb instead of 62f00c09). I cancelled the unsaved dialog and redid the replacements so each one ends in the middle of a paragraph, which gave the exact hash.
+
+Re-test after prompt 18 (two board runs on the same mailbox, two fresh urgent seeds added, draft text read from the Glean debug trace because Outlook web refused the browser session with "You cannot access this right now"):
+
+| Run | draft-writer calls | Drafts created | Result |
+|---|---|---|---|
+| 1 | List drive files, Get range (style), Create email draft | 1 follow-up: subject "Re: Budget question [E19-06-b]" to bob, body "Following up on my October 14 email about the budget approval. Please confirm the approval status. Kishan" | PASS: no bracketed tag, one "Re:", saved style (short, no greeting, signed Kishan). All other items skipped as already drafted |
+| 2 | List drive files, Get range (style), Create a draft reply | 1 reply: comment "My comments on the vendor quote are below: [fill in] Kishan" | PASS: no bracketed tag, "[fill in]" placeholder, saved style. No second draft for any thread that run 1 or earlier runs had drafted |
+
+Limits of this evidence: two runs, one sample each, the drafts were not listed in Outlook (web access blocked), so "no duplicate" rests on the trace showing only one create call per run. The Dharmesh draft with the old tag and "Re: Re: Delivery date" from before prompt 18 is still in Drafts. Not tested: a follow-up to a subject that already starts with "Re:" after the change.

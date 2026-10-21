@@ -1,4 +1,4 @@
-// What the instruction document must hold after each stage (0 to 17), cumulative.
+// What the instruction document must hold after each stage (0 to 18), cumulative.
 // present: text that must be there. absent: old text that must be gone (a string, or a RegExp on the normalised text).
 // A phrase listed in present at one stage and absent at a later one is forbidden from the later stage on.
 // Stage 0 is compared line by line with Prompt 0 instead. Every string marker must appear in the prompt files up to its stage
@@ -226,5 +226,19 @@ export const STAGES = [
     present: ['including the Highlights label, so no asterisk stays in the body'],
     // Stage 17: the emailed brief showed the Highlights label as raw markdown, so Step 10 names it in the bold rule.
     absent: [],
+  },
+  {
+    present: [],
+    // Stage 18 tightens draft-writer: no bracketed tag, repeated "Re:" prefixes ignored, skipped-existing when unsure, one "Re:" in a follow-up subject.
+    absent: [],
+    subs: {
+      'draft-writer': {
+        present: [
+          'never start a draft with a bracketed tag', 'ignoring case and any repeated "Re: " prefix', 'or you cannot tell whether one exists',
+          'none added when it already starts with "Re:"',
+        ],
+        absent: ['ignoring case, is "Re: " plus the item\'s subject', 'with the subject "Re: " plus the original subject'],
+      },
+    },
   },
 ];
