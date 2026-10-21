@@ -50,7 +50,7 @@ describe('package.json seed scripts', () => {
 });
 
 describe('package.json check scripts', () => {
-  test('check:0 to check:10 run the spec checker for their stage', () => {
-    for (let n = 0; n <= 10; n += 1) assert.match(scripts[`check:${n}`] ?? '', new RegExp(`check-spec\\.mjs ${n}$`), `check:${n}`);
+  test('check:0 to check:13 run the spec checker for their stage', () => {
+    for (let n = 0; n <= 13; n += 1) assert.match(scripts[`check:${n}`] ?? '', new RegExp(`check-spec\\.mjs ${n}$`), `check:${n}`);
   });
 });

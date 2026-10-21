@@ -27,9 +27,9 @@ describe('editorHash', () => {
   test('reproduces the recorded hash of the stage 10 text and of each sub-agent text', () => {
     const read = (f) => readFileSync(new URL(`../specs/${f}`, import.meta.url), 'utf8');
     assert.equal(editorHash(read('stage-10.md')), '377546ab');
-    assert.equal(editorHash(read('stage-8-draft-writer.md')), 'b6faccc4');
+    assert.equal(editorHash(read('stage-8-draft-writer.md')), '26d9d4cc');
     assert.equal(editorHash(read('stage-9-notes-keeper.md')), '3a7e0dfc');
-    assert.equal(editorHash(read('stage-10-meeting-prep.md')), '14caf79e');
+    assert.equal(editorHash(read('stage-10-meeting-prep.md')), 'e876218a');
   });
 });
 

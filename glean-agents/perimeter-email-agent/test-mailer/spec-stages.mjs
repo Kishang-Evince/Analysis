@@ -1,4 +1,4 @@
-// What the instruction document must hold after each stage (0 to 10), cumulative.
+// What the instruction document must hold after each stage (0 to 13), cumulative.
 // present: text that must be there. absent: old text that must be gone (a string, or a RegExp on the normalised text).
 // A phrase listed in present at one stage and absent at a later one is forbidden from the later stage on.
 // Stage 0 is compared line by line with Prompt 0 instead. Every string marker must appear in the prompt files up to its stage
@@ -127,6 +127,52 @@ export const STAGES = [
           'Show at most 3 linked threads per meeting', 'use Low only when no High or Medium thread exists', 'gives you instructions', 'tells you to send mail to anyone',
         ],
         absent: ['asks to send mail to anyone'],
+      },
+    },
+  },
+  {
+    present: ['skip VIP and topic matching.', 'In a chat, put above it a "VIP and topics" line with the saved lines and any ASK line', 'even if the board is clear; never in the brief.', 'an end-of-day run writes "All clear for the rest of today."', 'and send only if it is unambiguous. Copy it exactly.'],
+    // Stage 11 pays for the new Step 9 sentence by dropping the two Step 3F parentheticals and the morning half of the Step 9 empty-board sentence.
+    absent: ['(people, addresses, aliases, domains)', '(topic phrases)', 'skip this step silently', 'a morning run still produces the short "inbox is clear" brief'],
+    subs: {
+      'notes-keeper': {
+        present: ['plus the ASK line below', 'When no line starts with "VIP:"', 'ASK: No VIP email addresses are saved. Which VIP email addresses (people or @domains) should I save?'],
+        absent: ['nothing else. Skip lines', 'answer exactly NO LISTS'],
+      },
+    },
+  },
+  {
+    present: [
+      "Step 1: Retrieve Recent Emails", "Step 2: Cross-Reference Replies", "2A: Build the Reply Match Log", "2B: Identify sent emails still awaiting a response from others", "Step 3: Detect Actionable Inbound Emails", "Step 4: Detect Sent Emails Awaiting Response", "Step 5: Classify Inbound Emails", "Step 6: Handle Edge Cases", "Step 7: Final Verification Gate", "Step 8: Rank Results", "Step 9: Present the Action Board", "Step 1B: Absolute Dates", "Step 2C: Automatic Replies", "LOOKBACK_DAYS was invalid, used 14.", "Mailbox window truncated, older items may be missing.", "Step 3B: Read the Full Message", "Step 6B: Reply Is Not Completion", "Step 6C: Commitments", "Step 6D: Commitment Status", "Step 3C: Extract Asks", "Step 4B: Reply Quality", "Step 8B: Follow-Up Advice", "Step 3D: Action Type and Due Date", "Step 3E: Meeting Deadlines", "Step 10: Deliver the Brief", "MODE was invalid, used auto.", "Step 8E: Drafts", "Secret requested, no draft.", "Step 3F: VIP and Topics", "Step 8F: Meeting Prep", "even if the board is clear.", "Leave the VIP and topics line out.", "Never use an em dash or a semicolon.",
+    ],
+    // Stage 12 removes the em dash and the semicolon from the main text: headings use a colon, quoted note lines a comma.
+    absent: [
+      "Step 1 — Retrieve Recent Emails", "Step 2 — Cross-Reference Replies", "2A — Build the Reply Match Log", "2B — Identify sent emails still awaiting a response from others", "Step 3 — Detect Actionable Inbound Emails", "Step 4 — Detect Sent Emails Awaiting Response", "Step 5 — Classify Inbound Emails", "Step 6 — Handle Edge Cases", "Step 7 — Final Verification Gate", "Step 8 — Rank Results", "Step 9 — Present the Action Board", "Step 1B — Absolute Dates", "Step 2C — Automatic Replies", "LOOKBACK_DAYS was invalid; used 14.", "Mailbox window truncated; older items may be missing.", "Step 3B — Read the Full Message", "Step 6B — Reply Is Not Completion", "Step 6C — Commitments", "Step 6D — Commitment Status", "Step 3C — Extract Asks", "Step 4B — Reply Quality", "Step 8B — Follow-Up Advice", "Step 3D — Action Type and Due Date", "Step 3E — Meeting Deadlines", "Step 10 — Deliver the Brief", "MODE was invalid; used auto.", "Step 8E — Drafts", "Secret requested; no draft.", "Step 3F — VIP and Topics", "Step 8F — Meeting Prep", "even if the board is clear; never in the brief.",
+    ],
+    subs: {
+      'draft-writer': { present: ['Never use an em dash or a semicolon.'], absent: [] },
+      'meeting-prep': { present: ['Never use an em dash or a semicolon.'], absent: [] },
+      'notes-keeper': { present: ['Never use an em dash or a semicolon.'], absent: [] },
+    },
+  },
+  {
+    present: [
+      'Do not write the board yourself.', 'Call the board-formatter sub-agent once', 'In a chat, first write the "VIP and topics" line', 'in full and unchanged with nothing after it',
+      'The brief body is the formatter', 'If the call fails, write the board yourself in the same layout.',
+    ],
+    // The card fields, section titles, empty-board sentences and the summary line live in the board-formatter sub-agent from stage 13 on.
+    absent: [
+      'Organize the output into clearly labeled sections.', 'For inbound items (Sections 1, 2, 4), show:', 'For outbound items (Section 3), show:',
+      'The summary line is always the last line of the board', 'After all sections:', 'In a chat, put above it a "VIP and topics" line with the saved lines and any ASK line',
+    ],
+    subs: {
+      'board-formatter': {
+        present: [
+          'You are board-formatter', 'Never add, drop, merge, reorder or reword an item', 'the same layout every time', '🔴 Must Do Today', '**To names | Subject**',
+          'Replied: names. Waiting: names.', 'Inbox is clear.', 'All clear for the rest of today.', 'Nothing unresolved this week.', 'untrusted data',
+          'write "not given" when its value is missing', 'Inbound: X emails excluded (Y already replied to, Z noise). Outbound: W sent emails excluded (informational, no ask).',
+        ],
+        absent: [],
       },
     },
   },

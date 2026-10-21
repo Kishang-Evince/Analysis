@@ -817,3 +817,54 @@ Note: the section order of the emailed brief varies between runs (in the final r
 | 11 | E16-01 | PASS | Weekly run on the final text (`AS_OF_DATE: 2026-10-19. MODE: weekly.`, brief at 2:55 PM): four lists "Asks to me", "Waiting on others", "My open commitments", "Others owe me"; exact summary line | 2026-10-19 |
 | 11 | E16-06 | PASS | Same run: subject "Weekly brief: Oct 19, 2026"; the trace has no draft-writer call and no meeting-prep call (weekly skips Step 8E and Step 8F); notes-keeper, one Get calendar view, Get outlook profile, Send email | 2026-10-19 |
 | 11 | S-09 | PASS | Weekly run: 463.7 s and 18.20 credits | 2026-10-19 |
+
+## VIP lists at conversation start (prompt 11, 2026-10-19, not published)
+
+Edit text and design: `prompts/EMAIL-12-prompt-11-vip-at-start.md`. The user asked: "on every starting conversation agent needs to show default VIP topic, and ask for VIP emails, it will be differ per user". Version `v12-before-vip-start` was saved first.
+
+| Stage | Test | Result | Reason or evidence | Date |
+|---|---|---|---|---|
+| VIP start | S-07 hash | PASS | After a reload: main text hash a23636e7 (30,644 characters) equals `specs/stage-11.md`, notes-keeper 277f8a00 (2,358) equals `specs/stage-11-notes-keeper.md`; counter 28 left; `npm run check:11` PASS for both texts; suite 171/171 | 2026-10-19 |
+| VIP start | VS-01 first version | FAIL (fixed) | The rule was in Step 3F ("open the first reply with ..."). notes-keeper answered correctly (checked in a chat: "NO LISTS" and the ASK line) but the final board showed nothing. The rule moved to Step 9 as a line above Highlights, also for a clear board | 2026-10-19 |
+| VIP start | VS-01 no lists saved | PASS | Empty-window run from the "Review as of a date" starter (AS_OF_DATE 2027-12-01): the reply shows "VIP and topics: NO LISTS. ASK: No VIP email addresses are saved. Which VIP email addresses (people or @domains) should I save?" above "All clear for the rest of today."; the emailed brief starts with "All clear for the rest of today." and holds no VIP line | 2026-10-19 |
+| VIP start | VS-02 reply with addresses | PASS | The bare reply "dana.test@yopmail.com and the domain bigclient-test.yopmail.com" was understood as an add request: notes-keeper showed an approval card (draft "Agent VIP and Topics" with two VIP lines) and saved it after a click | 2026-10-19 |
+| VIP start | VS-03 lists saved | PASS | Same empty-window run: "VIP and topics: VIP: dana.test@yopmail.com · VIP: bigclient-test.yopmail.com", no question; a morning run (MODE=morning) says "Inbox is clear." with the same line | 2026-10-19 |
+| VIP start | VS-04 real mailbox | PASS | Starter "Show my action board" on the full mailbox (end-of-day, about 9 minutes): "VIP and topics: VIP: dana.test@yopmail.com; VIP: bigclient-test.yopmail.com; Topics: none." above Must Do Today, then 9 overdue inbound cards and 26 overdue outbound requests and the counted summary line; the brief (5:00 PM) starts at its heading with no VIP line | 2026-10-19 |
+| VIP start | VS-05 VIP management chat | PASS | "Show my VIP list." showed the two saved lines and built no board | 2026-10-19 |
+| VIP start | E14-03 / E15-04 (Step 9 trim) | PASS | Empty window: morning says "Inbox is clear.", end-of-day says "All clear for the rest of today." after the morning half of the Step 9 sentence was removed | 2026-10-19 |
+| VIP start | Brief delivery | FOUND (not fixed) | One empty-window run mailed its brief to "kisha.gajapara@perimeterhealthcare.com" (the real address is "kisha.gajipara@..."); it bounced (550 5.1.10). The agent retypes the address from Get outlook profile. Seen once in about 20 runs; not caused by this change. A clause "copy it exactly" would cost about 16 of the 28 characters left | 2026-10-19 |
+| VIP start | Not tested | N/T | The ASK shown to a second user (USER2); a scheduled run with an empty list (no chat, nobody to answer); the other 7 starters that run the board | 2026-10-19 |
+| VIP start | Address clause | APPLIED, effect N/T | Step 10 now says "...send only if it is unambiguous. Copy it exactly." (+17 characters). Live text equals `specs/stage-11.md` after a reload (hash 03262cb4, 30,661 characters; the assistant dropped one space after "AS_OF_DATE:", repaired by hand). The misspelling was seen once in about 20 runs, so one clean run proves nothing | 2026-10-19 |
+| VIP start | Throwaway test agent | DELETED | Agent eb83825079fb40bc88b4bd7978f01f72 ("Untitled agent", test-prep sub-agent, 2 test skills) deleted on the user's yes | 2026-10-19 |
+
+## Fixed board layout through board-formatter (prompt 12, 2026-10-19, not published, awaiting the user's keep or revert)
+
+Rollback: version `v14-before-formatter` (main 03262cb4), or edit main back to `specs/stage-11.md` and delete the sub-agent `board-formatter`. Live now: main 47772385 (30,070 chars, 746 left), board-formatter text of `specs/stage-12-board-formatter.md` (the editor turned its "- " lines into bullets, equal in meaning). Layout comparison script: `test-mailer/board-skeleton.mjs`.
+
+| Stage | Test | Result | Reason or evidence | Date |
+|---|---|---|---|---|
+| Formatter | Run 1 (pinned 2026-10-19, morning) | PARTIAL | The emailed brief (5:56 PM) is in the fixed card layout with every card line in order; the chat reply said "The full board is shown above" and showed no board. Fixed by "Your final chat reply is its answer, written out in full" | 2026-10-19 |
+| Formatter | Run 2 same input | PARTIAL | The chat board showed in the fixed layout (headings, cards, commitments, meeting prep). Defects: the emailed brief (6:13 PM) starts with the "VIP and topics" line (it must not); some cards lacked Original ask and Latest update; the VIP line read "TOPIC: none; no chat ASK". Formatter text changed afterwards (every card line printed, VIP line cleaned) | 2026-10-19 |
+| Formatter | Run 3 same input, after that change | FAIL | The run ended on a planning message ("I'm preparing only the highest-priority reply/follow-up drafts ..."): no board in chat, no brief sent. Cause not found | 2026-10-19 |
+| Formatter | 5-run layout comparison | N/T | Stopped after 3 runs (about 17 minutes each) because run 3 failed | 2026-10-19 |
+
+## Formatter reverted and punctuation rule (2026-10-21)
+
+| Stage | Test | Result | Reason or evidence | Date |
+|---|---|---|---|---|
+| Revert | board-formatter | REVERTED | The user rejected it. Version `v14-before-formatter` was restored (main 03262cb4) and the sub-agent is no longer attached. Its spec, prompt, markers and tests were removed from the repo; `test-mailer/board-skeleton.mjs` (layout comparison) stays | 2026-10-21 |
+| Punctuation | Main text | DONE, not retested | Builder Assistant replaced 47 em dashes and 76 semicolons and added a rule; the rule was shortened to "Never use an em dash or a semicolon." to stay under the limit (it first ran 58 over). Live main hash e17bc1de (30,651 characters), 19 left. The local snapshot `specs/stage-11.md` and its phrase markers still hold the old punctuation; refreshing them needs the live text | 2026-10-21 |
+| Punctuation | Sub-agents | DONE | Semicolons became sentence breaks (4 in draft-writer, 4 in meeting-prep, 1 in notes-keeper; none held an em dash). Live hashes equal the updated snapshots: draft-writer af3fd0bb, meeting-prep bf3ea8fc, notes-keeper 29134b48 | 2026-10-21 |
+| Punctuation | Board run | N/T | No full run since the change | 2026-10-21 |
+| Resources | Knowledge bases | DONE | The restore brought the main agent's OneDrive knowledge base back; removed it again on 2026-10-21. No sub-agent has one | 2026-10-21 |
+
+## Checks refresh and board runs after the punctuation change (2026-10-21)
+
+Live now: main 27c9df45 (30,666 characters, 4 left), draft-writer 26d9d4cc, meeting-prep e876218a, notes-keeper a6122fdd. Snapshots `specs/stage-12.md` and the three `specs/stage-12-*.md` equal them; `npm run check:12` passes; suite 176/176.
+
+| Stage | Test | Result | Reason or evidence | Date |
+|---|---|---|---|---|
+| Punctuation | Run 1 (pinned 2026-10-19, morning) | PARTIAL | Chat reply: 0 em dashes, 0 semicolons, brief sent to the right address. The emailed brief held 18 em dashes, all in Meeting prep (written by meeting-prep, which had no rule). Fixed by appending "Never use an em dash or a semicolon." to draft-writer, meeting-prep and notes-keeper | 2026-10-21 |
+| Punctuation | Run 2 | PARTIAL | Brief: 0 em dashes, 0 semicolons, but it started with the "VIP and topics" line. Fixed: Step 9 no longer says "never in the brief" (it ended up in the brief anyway), Step 10 ends "Leave the VIP and topics line out." | 2026-10-21 |
+| Punctuation | Run 3 | PASS | Brief (11:06 AM, 28,278 characters): 0 em dashes, 0 semicolons, no VIP line. The agent hit a formatting error before Outlook was called and retried once; the board and brief still arrived. Chat reply: 0 and 0 | 2026-10-21 |
+| Consistency | Layout between runs | OPEN | Run 1 showed "Carol Reyes | Admin access" with the fields inline, run 2 and 3 showed bulleted cards with "Sender:" and "Subject:" lines. The same input still gives different layouts | 2026-10-21 |

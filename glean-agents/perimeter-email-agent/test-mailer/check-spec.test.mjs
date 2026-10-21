@@ -9,7 +9,7 @@ const PROMPT_FILES = [
   'EMAIL-01-prompt-0-parity.md', 'EMAIL-01-prompt-1-lookback-dates-replies.md', 'EMAIL-02-prompt-2-commitments.md',
   'EMAIL-03-prompt-3-asks.md', 'EMAIL-04-prompt-4-reply-quality.md', 'EMAIL-05-prompt-5-due-dates.md',
   'EMAIL-06-prompt-6-brief-delivery.md', 'EMAIL-07-prompt-7-drafts.md', 'EMAIL-08-prompt-8-writing-style.md',
-  'EMAIL-09-prompt-9-vip-topics.md', 'EMAIL-10-11-prompt-10-meeting-prep.md',
+  'EMAIL-09-prompt-9-vip-topics.md', 'EMAIL-10-11-prompt-10-meeting-prep.md', 'EMAIL-12-prompt-11-vip-at-start.md', 'EMAIL-13-prompt-12-punctuation.md', 'EMAIL-14-prompt-13-board-format-2.md',
 ];
 const promptText = (n) => readFileSync(new URL(PROMPT_FILES[n], PROMPTS), 'utf8');
 const stage0 = () => extractInstructions(promptText(0));
@@ -105,8 +105,8 @@ describe('later stages (markers)', () => {
 });
 
 describe('stage data stays tied to the prompt files', () => {
-  test('there is one entry per stage, 0 to 10', () => {
-    assert.equal(STAGES.length, 11);
+  test('there is one entry per stage, 0 to 13', () => {
+    assert.equal(STAGES.length, 14);
     for (const s of STAGES) assert.ok(Array.isArray(s.present) && Array.isArray(s.absent));
   });
 
@@ -315,6 +315,36 @@ describe('stage 10 edit text quotes only text that exists', () => {
     const sub = editBlock(promptText(10), 1);
     assert.match(sub, /List messages/);
     assert.match(sub, /Get outlook profile/);
+  });
+});
+
+describe('stage 11 edit text (VIP lists at conversation start)', () => {
+  const stage10 = readFileSync(new URL('../specs/stage-10.md', import.meta.url), 'utf8');
+  const stage9Sub = readFileSync(new URL('../specs/stage-9-notes-keeper.md', import.meta.url), 'utf8');
+  const block0 = () => editBlock(promptText(11), 0);
+  const block1 = () => editBlock(promptText(11), 1);
+
+  test('block 0 is at most 1100 characters and block 1 is the full notes-keeper text', () => {
+    assert.ok(block0().length <= 1100, `block 0 is ${block0().length} characters`);
+    assert.match(block1(), /^You are notes-keeper/);
+    assert.ok(block1().length <= 4000, `block 1 is ${block1().length} characters`);
+  });
+
+  test('every old text that block 0 replaces is in the stage 10 text exactly once and is quoted in block 0', () => {
+    for (const anchor of ['"VIP:" (people, addresses, aliases, domains) and "TOPIC:" (topic phrases), or NO LISTS.', 'skip this step silently.', 'a morning run still produces the short "inbox is clear" brief and an end-of-day run writes', 'omit it when there are none.', 'and send only if it is unambiguous.']) {
+      assert.equal(stage10.split(anchor).length - 1, 1, `stage 10 text must hold "${anchor}" once`);
+      assert.ok(block0().includes(anchor), `block 0 must quote "${anchor}"`);
+    }
+  });
+
+  test('block 1 changes only the READ paragraph of the stage 9 notes-keeper text', () => {
+    const lines = (s) => s.split('\n');
+    const old = lines(stage9Sub);
+    const next = lines(block1());
+    const changed = next.filter((l) => !old.includes(l));
+    assert.equal(changed.length, 1, `changed lines: ${changed.join(' | ')}`);
+    assert.match(changed[0], /^READ:/);
+    assert.match(changed[0], /ASK: /);
   });
 });
 

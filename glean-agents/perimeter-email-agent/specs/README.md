@@ -4,5 +4,7 @@ After each stage, copy the Instructions tab text of the agent into `stage-N.md` 
 
 - Design for the targeted sub-agent rework: `subagent-rework-design.md` (draft, awaiting review). Supersedes the option table in `budget-plan-stages-7-10.md`.
 - Implementation plan for that design: `subagent-rework-plan.md` (11 tasks, awaiting review).
+- Conversation starters (10, grouped from the 27 enhancements): `conversation-starters.md`.
+- VIP lists at conversation start (prompt 11, 2026-10-19): main text `stage-11.md` (hash a23636e7) and sub-agent text `stage-11-notes-keeper.md` (277f8a00); edit text in `../prompts/EMAIL-12-prompt-11-vip-at-start.md`; `npm run check:11` in `../test-mailer/`.
 - Budget plan for stages 9 and 10: `budget-plan-stages-9-10.md` (33 verified text trims, no commitments sub-agent; replaces `budget-plan-stages-7-10.md` and `trim-proposal-stage6.md` for those stages).
 - Sub-agent texts live next to the main snapshot of their stage: `stage-7-draft-writer.md`, `stage-8-draft-writer.md`, `stage-9-notes-keeper.md` and `stage-10-meeting-prep.md`. `npm run check:N` compares both the main text (`stage-N.md`) and every sub-agent text of that stage.

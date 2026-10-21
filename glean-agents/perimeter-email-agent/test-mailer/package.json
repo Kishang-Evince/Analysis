@@ -52,6 +52,9 @@
     "check:8": "node check-spec.mjs 8",
     "check:9": "node check-spec.mjs 9",
     "check:10": "node check-spec.mjs 10",
+    "check:11": "node check-spec.mjs 11",
+    "check:12": "node check-spec.mjs 12",
+    "check:13": "node check-spec.mjs 13",
     "hash": "node spec-hash.mjs"
   },
   "dependencies": {
