@@ -868,3 +868,68 @@ Live now: main 27c9df45 (30,666 characters, 4 left), draft-writer 26d9d4cc, meet
 | Punctuation | Run 2 | PARTIAL | Brief: 0 em dashes, 0 semicolons, but it started with the "VIP and topics" line. Fixed: Step 9 no longer says "never in the brief" (it ended up in the brief anyway), Step 10 ends "Leave the VIP and topics line out." | 2026-10-21 |
 | Punctuation | Run 3 | PASS | Brief (11:06 AM, 28,278 characters): 0 em dashes, 0 semicolons, no VIP line. The agent hit a formatting error before Outlook was called and retried once; the board and brief still arrived. Chat reply: 0 and 0 | 2026-10-21 |
 | Consistency | Layout between runs | OPEN | Run 1 showed "Carol Reyes | Admin access" with the fields inline, run 2 and 3 showed bulleted cards with "Sender:" and "Subject:" lines. The same input still gives different layouts | 2026-10-21 |
+
+## Formatter, second attempt (prompt 13, 2026-10-21, not published, awaiting the user's keep or revert)
+
+Rollback: version `v15-before-formatter-2` (main 27c9df45); delete the sub-agent `board-formatter`. Live now: main 80372b5d (30,017 characters, 797 left), board-formatter 649a6b23 (3,189). Snapshots `specs/stage-13.md` and `specs/stage-13-board-formatter.md`; `npm run check:13` passes; suite 176/176.
+
+| Stage | Test | Result | Reason or evidence | Date |
+|---|---|---|---|---|
+| Formatter 2 | Run 1 (pinned 2026-10-19, morning) | FAIL (platform) | The whole agent run ended with "Error executing this step" after 368 s, at the draft step, before the formatter was reached. No board, no brief. The same stop happened once in the first attempt | 2026-10-21 |
+| Formatter 2 | Run 2 emailed brief | PASS | Brief (11:43 AM): the formatter layout (title "Outlook Action Board: Morning, as of ...", cards with Ask, Action, Why included lines), 0 em dashes, 0 semicolons, no VIP line | 2026-10-21 |
+| Formatter 2 | Run 2 chat reply | FAIL | The chat did not show the formatter's answer: main wrote its own compact board ("Admin access: Reply ... Overdue.") with a different summary line ("Inbound: 61 emails in window ...") and the VIP line read "TOPIC: none; no chat ASK." (6 semicolons in the chat text). The brief and the chat differ | 2026-10-21 |
+| Formatter 2 | 5-run layout comparison | N/T | Stopped after 2 runs because the chat relay failed again | 2026-10-21 |
+
+## Fixed board layout in a skill (prompt 13, 2026-10-21, not published, in test)
+
+Why a skill: Glean docs say the parent agent writes the final response from sub-agent results, so chat rendering cannot move into a sub-agent. The layout now lives in the skill `board-layout` (`specs/stage-13-board-layout-skill.md`), main reads it and writes both the chat board and the brief. Version `v15-before-formatter-2` (main 27c9df45) restored first, formatter sub-agent no longer attached. Live main 4ee40d78 (29,392 characters, 1,422 left). `npm run check:13` passes.
+
+| Stage | Test | Result | Reason or evidence | Date |
+|---|---|---|---|---|
+| Skill | Run 1 chat (pinned 2026-10-19, morning) | PASS | Chat reply follows the layout: clean "VIP and topics" line, title "Outlook Action Board: Morning, as of ...", Highlights line, the six section headings in order, card lines with Ask, Action, Why included, Due, Confidence, Ownership, Original ask, Latest update, Messages, then note lines and the exact summary line last; 0 em dashes, 0 semicolons. Extra note lines "Drafts: ..." and "Calendar: ..." sit above the summary line | 2026-10-21 |
+| Skill | Run 2 chat | PASS | Same headings in the same order and the same card line sequences as run 1 (layout signature equal); 0 em dashes, 0 semicolons; the VIP line is clean | 2026-10-21 |
+| Skill | Emailed briefs of runs 1 and 2 | PASS | Both start with the title "Outlook Action Board: Morning, as of Oct 19, 2026 (Mon)", 0 em dashes, 0 semicolons, no VIP line (23,572 and 24,367 characters). The Highlights line was in run 1 and not in run 2 (content driven) | 2026-10-21 |
+| Skill | Third run and 5-run comparison | N/T | Stopped after 2 runs | 2026-10-21 |
+| Skill | Run 3 chat | PASS | Same eight headings in the same order as runs 1 and 2 (title, six sections, summary line); card line sequences as defined (outbound cards also carried the Responses line where it applied); 0 em dashes, 0 semicolons; clean VIP line | 2026-10-21 |
+| Skill | Run 3 emailed brief | PASS | Brief (12:32 PM, 26,541 characters): title "Outlook Action Board: Morning, as of Oct 19, 2026 (Mon)", the four sections that held items, 0 em dashes, 0 semicolons, no VIP line | 2026-10-21 |
+| Skill | Three-run conclusion | PASS (3 of 3, small sample) | The layout of the chat and of the brief was the same in all three runs. Not yet tested: end-of-day, weekly and empty-board runs with the skill, and runs for a second user | 2026-10-21 |
+
+## Excel store for VIP, topic and writing style entries (prompt 14, 2026-10-21)
+
+Built in the draft (not published). Checkpoint version `v16-before-excel-store` (main 4ee40d78). Live now: main 2504db26 (29,513 characters, 1,301 left), notes-keeper 8107c7fe, draft-writer 226e4f96, meeting-prep unchanged, skill board-layout unchanged. Every text matched its snapshot by hash after a page reload. `npm run check:14` passes for main and both changed sub-agents, `npm test` 176/176.
+
+Preview results (the user's own OneDrive, test entries on yopmail addresses):
+
+| Test | Result |
+|---|---|
+| Show lists with no workbook | PASS: "NO LISTS" and the ASK question |
+| Save 2 VIP and 1 TOPIC | PASS: approval card showed the full cell text, workbook created, Saved |
+| Read back in a fresh chat | PASS: "2 VIP, 1 TOPIC and 0 STYLE entries" and the lines |
+| Save a writing style | PASS: Update range card kept the VIP and TOPIC entries and added STYLE. The agent raised a second identical Update range card (redundant, left unapproved, no harm) |
+| Show lists, STYLE included | PASS: all four entries |
+| Board run 1 (21 A4 seeds added) | PASS: "VIP and topics" line in chat from the cell, topic match shown in Highlights, brief delivered. draft-writer trace: List drive files, Get range (STYLE), Create email draft. Two new drafts read "Following up on my October 16 note ... Please send the Q3 forecast inputs when you can. Thanks, Kishan": no greeting, signed Kishan, no "[Draft by agent]" line, matching the saved style. One secret request got no draft. Existing drafts reused |
+| Board run 2 (same mailbox) | PASS: no new draft created, so the new "draft already exists" rule holds. VIP line shown again, brief delivered |
+
+Open points:
+- Run 1 reported 3 failed draft items. The trace shows no tool error in draft-writer, so they are probably items whose threads are no longer in the mailbox (old seeds were removed). Not verified.
+- Old "[Draft by agent]" drafts and the two old "Agent VIP and Topics" drafts are still in the Drafts folder. The old VIP drafts are no longer read. Deleting them needs the user's yes.
+- Not tested: a second user (isolation comes from each user's own OneDrive), the neutral style path (no STYLE entry and fewer than 5 sent mails), a blind test of the style with the user, board layout skeleton check on these two runs (the layout looked intact: title, highlights, sections, summary line).
+- The test workbook "Glean Personal Agent Data.xlsx" in the user's OneDrive now holds test entries (jane.vip@yopmail.com, boss.vip@yopmail.com, budget approval, a style line).
+
+## Three labelled rows (prompt 15, 2026-10-21)
+
+Built in the draft (not published). Checkpoint version `v17-before-excel-rows` (main 2504db26, notes-keeper 8107c7fe, draft-writer 226e4f96). Live now: main 6416d48b (29,514 characters, 1,300 left), notes-keeper 2e785e9f, draft-writer 2860aa0f, meeting-prep and the skill board-layout unchanged. Texts matched their snapshots by hash after a page reload (main) and in each dialog. `npm run check:15` passes for main and both changed sub-agents, `npm test` 176/176.
+
+| Test | Result |
+|---|---|
+| Show lists while the old single-cell sheet is in OneDrive | PASS: treated as empty, "NO LISTS" (main folded the ASK question into its own wording this time) |
+| Save 2 VIP and 2 TOPIC | PASS: card showed the grid (A1 VIP, A2 TOPIC, A3 STYLE, entries from column B), one Update range call, Saved |
+| Add one VIP, remove one VIP, save a style (one message) | First run FAIL (not approved): the card carried an extra header row "Label, Entry 1, Entry 2", which would have moved VIP to row 2. Fix: notes-keeper now says "exactly three rows of 26 cells (VIP, TOPIC, STYLE) ... and no header row" (marker added to the stage 15 checks first, red then green). Second run PASS: exactly three rows, boss removed with the gap closed, ceo added, style in B3 |
+| Read back in a fresh chat | PASS: VIP jane and ceo, topics budget approval and renewal, writing style text (22 s, 0.41 credits) |
+| Board run | PASS: "VIP and topics" line from the rows (jane, ceo, budget approval, renewal), brief sent once (one Send email in the trace). draft-writer ran List drive files and Get range (A3:B3) once. No new drafts and no duplicates (all items already drafted) |
+
+Open points:
+- The first Update range card had a header row on one run out of three. The fix is in the text, but one clean run is thin evidence: watch the next card for a header row, and the approval card stays the safety net.
+- The ASK question after "NO LISTS" was folded into main's own sentence in one test, as in earlier runs it was verbatim. Not fixed.
+- The trace of a run now shows many Shell steps next to the Excel and Outlook calls. They are not part of the instructions and did not change the result, cost not measured.
+- Still not tested: a second user, the neutral-style path (no style row and fewer than 5 sent mails), a blind style test, the old "[Draft by agent]" drafts and the two "Agent VIP and Topics" drafts still in Drafts, the workbook in OneDrive holds the test entries.

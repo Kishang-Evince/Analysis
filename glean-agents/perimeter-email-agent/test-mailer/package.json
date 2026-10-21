@@ -55,6 +55,8 @@
     "check:11": "node check-spec.mjs 11",
     "check:12": "node check-spec.mjs 12",
     "check:13": "node check-spec.mjs 13",
+    "check:14": "node check-spec.mjs 14",
+    "check:15": "node check-spec.mjs 15",
     "hash": "node spec-hash.mjs"
   },
   "dependencies": {

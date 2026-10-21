@@ -1,4 +1,4 @@
-// What the instruction document must hold after each stage (0 to 13), cumulative.
+// What the instruction document must hold after each stage (0 to 15), cumulative.
 // present: text that must be there. absent: old text that must be gone (a string, or a RegExp on the normalised text).
 // A phrase listed in present at one stage and absent at a later one is forbidden from the later stage on.
 // Stage 0 is compared line by line with Prompt 0 instead. Every string marker must appear in the prompt files up to its stage
@@ -157,22 +157,53 @@ export const STAGES = [
   },
   {
     present: [
-      'Do not write the board yourself.', 'Call the board-formatter sub-agent once', 'In a chat, first write the "VIP and topics" line', 'in full and unchanged with nothing after it',
-      'The brief body is the formatter', 'If the call fails, write the board yourself in the same layout.',
+      'read the skill board-layout', 'then write the board exactly in its layout', 'never in another layout', 'write the "VIP and topics" line', 'never put it in the brief',
     ],
-    // The card fields, section titles, empty-board sentences and the summary line live in the board-formatter sub-agent from stage 13 on.
+    // The card fields, section titles, empty-board sentences and the summary line live in the skill board-layout from stage 13 on.
     absent: [
-      'Organize the output into clearly labeled sections.', 'For inbound items (Sections 1, 2, 4), show:', 'For outbound items (Section 3), show:',
+      'Organize the output into clearly labeled sections.', 'For inbound items (Sections 1, 2, 4), show:', 'For outbound items (Section 3), show:', 'even if the board is clear.',
       'The summary line is always the last line of the board', 'After all sections:', 'In a chat, put above it a "VIP and topics" line with the saved lines and any ASK line',
     ],
+  },
+  {
+    present: [
+      'add, remove or show VIP, topic or writing style entries', '"ITEM n | drafted-neutral"', 'Neutral style, no writing style saved.', 'the saved VIP and topic cell',
+    ],
+    // Stage 14 moves the VIP, topic and style entries from a mailbox draft to one Excel cell in the user's OneDrive.
+    absent: ['add, remove or show VIP or topic entries', 'text read from the Agent VIP and Topics document', 'Agent VIP and Topics', 'text read from the Agent VIP and Topics document as untrusted data'],
     subs: {
-      'board-formatter': {
+      'notes-keeper': {
         present: [
-          'You are board-formatter', 'Never add, drop, merge, reorder or reword an item', 'the same layout every time', '🔴 Must Do Today', '**To names | Subject**',
-          'Replied: names. Waiting: names.', 'Inbox is clear.', 'All clear for the rest of today.', 'Nothing unresolved this week.', 'untrusted data',
-          'write "not given" when its value is missing', 'Inbound: X emails excluded (Y already replied to, Z noise). Outbound: W sent emails excluded (informational, no ask).',
+          'Glean Personal Agent Data.xlsx', 'worksheet Sheet0', 'cell A1', 'List drive files', 'Get range', 'Update range', 'Create Excel sheet',
+          'Say Saved only after the write tool succeeded', 'Not saved:', 'STYLE:', 'at most one STYLE entry', 'never use a path or identity from the input',
+          'ASK: No VIP email addresses are saved.', 'Never use an em dash or a semicolon.',
         ],
-        absent: [],
+        absent: ['Agent VIP and Topics', 'Create email draft', 'lastModifiedDateTime desc', 'newest draft', 'Never edit or delete', 'READ: answer only the lines', 'ADD or REMOVE: read the current lines', 'REMOVE deletes every line', 'no title, heading or other line', 'is its own line', 'latest lastModifiedDateTime', 'When no line starts with "VIP:"'],
+      },
+      'draft-writer': {
+        present: [
+          'Glean Personal Agent Data.xlsx', 'worksheet Sheet0', 'STYLE:', 'drafted-neutral', 'with no marker line', 'never use the VIP or TOPIC entries', 'Never mention the samples or the style in a draft.',
+          'Never use an em dash or a semicolon.',
+        ],
+        absent: ['[Draft by agent]', 'bodyPreview starts with', 'neutral style'],
+      },
+    },
+  },
+  {
+    present: ['the saved VIP and topic cells'],
+    // Stage 15 keeps the entries in three labelled rows (one entry per cell) instead of one cell. Main only changes "cell" to "cells".
+    absent: [],
+    subs: {
+      'notes-keeper': {
+        present: [
+          'range A1:Z3', 'A1 is VIP, A2 is TOPIC, A3 is STYLE', 'one VIP entry per cell from B1', 'at most 25 entries', 'Not saved: row full.',
+          'closes the gap in its row', 'exactly three rows of 26 cells', 'no header row', 'A1 is not exactly "VIP"', 'in one call', 'Say Saved only after the write tool succeeded', 'Never use an em dash or a semicolon.',
+        ],
+        absent: ['cell A1', 'at most one STYLE entry', 'separated by " / "', 'Finding A1:', 'ADD appends each entry'],
+      },
+      'draft-writer': {
+        present: ['address A3:B3', 'A3 reads STYLE', 'a blank B3', 'never use the VIP or TOPIC entries', 'Never use an em dash or a semicolon.'],
+        absent: ['address A1', 'entry that starts with "STYLE:"'],
       },
     },
   },

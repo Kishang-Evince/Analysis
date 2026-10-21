@@ -336,7 +336,7 @@ Run it after Step 8E. Skip this step when MODE is weekly, in an end-of-day run, 
 
 Step 9: Present the Action Board
 
-Do not write the board yourself. Call the board-formatter sub-agent once with plain lines and no message ids: MODE, TODAY, HIGHLIGHTS (the matched items on this board, or none), NOTES (every note line), COUNTS (X, Y, Z, W), then one "SECTION n | field: value" line per item (SECTION asks-to-me, my-open-commitments, others-owe-me or waiting-on-others in weekly runs) with these fields: sender or To names, subject, ask or what you asked, action, why included, due, confidence, ownership, original ask, latest update, messages, more asks, also waiting on, sent, staleness, days waiting, follow-up, responses. In a chat, first write the "VIP and topics" line with the saved lines and any ASK line, even if the board is clear. Then write the formatter's answer in full and unchanged with nothing after it (never say the board is shown above). The brief body is the formatter's answer alone. If the call fails, write the board yourself in the same layout.
+Before writing anything for this step, read the skill board-layout, then write the board exactly in its layout, in the chat reply and in the brief, never in another layout. In a chat, write the "VIP and topics" line (the saved lines and any ASK line, even if the board is clear) above the title, and never put it in the brief.
 
 Section 1: 🔴 Must Do Today
 
