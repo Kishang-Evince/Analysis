@@ -933,3 +933,25 @@ Open points:
 - The ASK question after "NO LISTS" was folded into main's own sentence in one test, as in earlier runs it was verbatim. Not fixed.
 - The trace of a run now shows many Shell steps next to the Excel and Outlook calls. They are not part of the instructions and did not change the result, cost not measured.
 - Still not tested: a second user, the neutral-style path (no style row and fewer than 5 sent mails), a blind style test, the old "[Draft by agent]" drafts and the two "Agent VIP and Topics" drafts still in Drafts, the workbook in OneDrive holds the test entries.
+
+## Row labels VIP Contacts, VIP Topics, Writing Styles (prompt 16, 2026-10-21)
+
+Built in the draft (not published). Checkpoint version `v18-before-row-labels`. Live now: main 6416d48b (unchanged), notes-keeper 165fb0e4, draft-writer 0d0483e2, all three read back from the saved state after a page reload. `npm run check:16` passes, `npm test` 176/176.
+
+Found while doing this: the draft-writer text for the three-row layout (prompt 15, hash 2860aa0f) had never been saved. After that edit I only reloaded and checked main, and the save of the draft-writer dialog did not persist. So the board run of prompt 15 still ran the older draft-writer, which read cell A1 for a "STYLE:" entry. That run created no new draft, so nothing showed the problem. Lesson: after every sub-agent edit, reload and read the dialog hash back (done for all three texts in this change).
+
+| Test | Result |
+|---|---|
+| Save contacts, topics and a style in one message, old labels in the sheet | PASS: old sheet counted as empty, one Update range card with A1 "VIP Contacts", A2 "VIP Topics", A3 "Writing Styles", no header row, Saved |
+| Board run after the labels (one fresh urgent seed added) | PASS: the new drafts read "Following up on my October 16 message about the Q3 forecast inputs. Please send the Q3 forecast inputs. Kishan" (no greeting, plain words, signed Kishan, no "Thanks"), so draft-writer reads B3 under "Writing Styles". Two new drafts (bob Q3 forecast, alice delivery confirmation) |
+| Duplicate draft | FAIL, not fixed: a second draft "Re: Q3 forecast inputs [E23-01]" to bob was created at 5:37 PM while one for the same thread already existed (the older one had been opened and re-saved in Outlook at 5:18 PM). The earlier two-run test showed no duplicates, so this looks like model variance in the existing-draft check. Needs a yes before deleting either draft |
+
+## Highlights label in the emailed brief (prompt 17, 2026-10-21)
+
+User report: the emailed end-of-day brief showed `**Highlights:**` with literal asterisks, the rest rendered fine. Step 10 said "bold text to <strong>" and the model skipped the label. Fix in Step 10: "bold text to <strong> (every pair of asterisks, including the Highlights label, so no asterisk stays in the body)". Checkpoint version `v19-before-brief-bold`, main now 67603dec (29,606 characters, 1,208 left), read back after a reload. Marker added to the stage 17 checks first (red, then green), `npm test` 176/176.
+
+| Test | Result |
+|---|---|
+| Board run, brief read in Sent Items | PASS: `<p><strong>Highlights:</strong> VIP · Topic: budget approval</p>` and bold labels on the cards. One sample only |
+
+Also seen: a human reply "Hi Alice, Sure give me some time , I'll fix it by 23rd of Oct 2026." in Sent Items at 5:34 PM to alice.morgan.test, written by the user after the seed arrived (typing style and a promised date show it is not the agent).

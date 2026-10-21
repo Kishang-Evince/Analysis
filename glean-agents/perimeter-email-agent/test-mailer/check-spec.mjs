@@ -1,5 +1,5 @@
 // Check an instruction document pasted from the Glean agent against what a given stage must contain.
-// Usage: node check-spec.mjs <stage 0-15> [file]   (default file: ../specs/stage-<stage>.md)
+// Usage: node check-spec.mjs <stage 0-17> [file]   (default file: ../specs/stage-<stage>.md)
 // Stage 0 compares line by line with Prompt 0 (ignoring markdown formatting); later stages check the markers in spec-stages.mjs.
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -80,9 +80,9 @@ export async function main(argv, deps = {}) {
     defaultSubSpecPath = (n, name) => fileURLToPath(new URL(`../specs/stage-${n}-${name}.md`, HERE)),
     expected, stages = STAGES,
   } = deps;
-  const usage = 'Usage: node check-spec.mjs <stage 0-15> [file]';
+  const usage = 'Usage: node check-spec.mjs <stage 0-17> [file]';
   const stage = Number(argv[0]);
-  if (!Number.isInteger(stage) || stage < 0 || stage > 15) { errorLog(usage); return 2; }
+  if (!Number.isInteger(stage) || stage < 0 || stage > 17) { errorLog(usage); return 2; }
   const file = argv[1] ?? defaultSpecPath(stage);
   let spec;
   try { spec = readFile(file); } catch { errorLog(`Cannot read ${file}. Copy the Instructions tab text into it first.\n${usage}`); return 2; }

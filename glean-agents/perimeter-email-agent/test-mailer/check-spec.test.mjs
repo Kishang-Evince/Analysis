@@ -9,7 +9,7 @@ const PROMPT_FILES = [
   'EMAIL-01-prompt-0-parity.md', 'EMAIL-01-prompt-1-lookback-dates-replies.md', 'EMAIL-02-prompt-2-commitments.md',
   'EMAIL-03-prompt-3-asks.md', 'EMAIL-04-prompt-4-reply-quality.md', 'EMAIL-05-prompt-5-due-dates.md',
   'EMAIL-06-prompt-6-brief-delivery.md', 'EMAIL-07-prompt-7-drafts.md', 'EMAIL-08-prompt-8-writing-style.md',
-  'EMAIL-09-prompt-9-vip-topics.md', 'EMAIL-10-11-prompt-10-meeting-prep.md', 'EMAIL-12-prompt-11-vip-at-start.md', 'EMAIL-13-prompt-12-punctuation.md', 'EMAIL-14-prompt-13-board-format-2.md', 'EMAIL-15-prompt-14-excel-store.md', 'EMAIL-16-prompt-15-excel-rows.md',
+  'EMAIL-09-prompt-9-vip-topics.md', 'EMAIL-10-11-prompt-10-meeting-prep.md', 'EMAIL-12-prompt-11-vip-at-start.md', 'EMAIL-13-prompt-12-punctuation.md', 'EMAIL-14-prompt-13-board-format-2.md', 'EMAIL-15-prompt-14-excel-store.md', 'EMAIL-16-prompt-15-excel-rows.md', 'EMAIL-17-prompt-16-row-labels.md', 'EMAIL-18-prompt-17-brief-bold.md',
 ];
 const promptText = (n) => readFileSync(new URL(PROMPT_FILES[n], PROMPTS), 'utf8');
 const stage0 = () => extractInstructions(promptText(0));
@@ -105,8 +105,8 @@ describe('later stages (markers)', () => {
 });
 
 describe('stage data stays tied to the prompt files', () => {
-  test('there is one entry per stage, 0 to 15', () => {
-    assert.equal(STAGES.length, 16);
+  test('there is one entry per stage, 0 to 17', () => {
+    assert.equal(STAGES.length, 18);
     for (const s of STAGES) assert.ok(Array.isArray(s.present) && Array.isArray(s.absent));
   });
 

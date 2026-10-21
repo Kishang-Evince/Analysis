@@ -1,4 +1,4 @@
-// What the instruction document must hold after each stage (0 to 15), cumulative.
+// What the instruction document must hold after each stage (0 to 17), cumulative.
 // present: text that must be there. absent: old text that must be gone (a string, or a RegExp on the normalised text).
 // A phrase listed in present at one stage and absent at a later one is forbidden from the later stage on.
 // Stage 0 is compared line by line with Prompt 0 instead. Every string marker must appear in the prompt files up to its stage
@@ -206,5 +206,25 @@ export const STAGES = [
         absent: ['address A1', 'entry that starts with "STYLE:"'],
       },
     },
+  },
+  {
+    present: [],
+    // Stage 16 renames the row labels in the sheet. The main text is unchanged from stage 15.
+    absent: [],
+    subs: {
+      'notes-keeper': {
+        present: ['A1 is VIP Contacts, A2 is VIP Topics, A3 is Writing Styles', 'A1 is not exactly "VIP Contacts"', '"Writing Styles: " plus the style', '(VIP Contacts, VIP Topics, Writing Styles)'],
+        absent: ['STYLE:', 'A1 is VIP, A2 is TOPIC, A3 is STYLE', 'A1 is not exactly "VIP"', '"STYLE: " plus the style', '(VIP, TOPIC, STYLE)'],
+      },
+      'draft-writer': {
+        present: ['A3 reads Writing Styles'],
+        absent: ['A3 reads STYLE'],
+      },
+    },
+  },
+  {
+    present: ['including the Highlights label, so no asterisk stays in the body'],
+    // Stage 17: the emailed brief showed the Highlights label as raw markdown, so Step 10 names it in the bold rule.
+    absent: [],
   },
 ];
