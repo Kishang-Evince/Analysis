@@ -60,6 +60,16 @@
     "check:16": "node check-spec.mjs 16",
     "check:17": "node check-spec.mjs 17",
     "check:18": "node check-spec.mjs 18",
+    "check:19": "node check-spec.mjs 19",
+    "check:20": "node check-spec.mjs 20",
+    "check:21": "node check-spec.mjs 21",
+    "check:22": "node check-spec.mjs 22",
+    "check:23": "node check-spec.mjs 23",
+    "check:24": "node check-spec.mjs 24",
+    "check:25": "node check-spec.mjs 25",
+    "check:26": "node check-spec.mjs 26",
+    "check:27": "node check-spec.mjs 27",
+    "check:28": "node check-spec.mjs 28",
     "hash": "node spec-hash.mjs"
   },
   "dependencies": {

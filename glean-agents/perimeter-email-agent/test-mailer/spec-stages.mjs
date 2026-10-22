@@ -1,4 +1,4 @@
-// What the instruction document must hold after each stage (0 to 18), cumulative.
+// What the instruction document must hold after each stage (0 to 19), cumulative.
 // present: text that must be there. absent: old text that must be gone (a string, or a RegExp on the normalised text).
 // A phrase listed in present at one stage and absent at a later one is forbidden from the later stage on.
 // Stage 0 is compared line by line with Prompt 0 instead. Every string marker must appear in the prompt files up to its stage
@@ -238,6 +238,173 @@ export const STAGES = [
           'none added when it already starts with "Re:"',
         ],
         absent: ['ignoring case, is "Re: " plus the item\'s subject', 'with the subject "Re: " plus the original subject'],
+      },
+    },
+  },
+  {
+    present: [],
+    // Stage 19 adds the sub-agent style-profiler. The main text and the other sub-agents are unchanged from stage 18.
+    absent: [],
+    subs: {
+      'style-profiler': {
+        present: [
+          'You are style-profiler', 'CONSENT: yes', 'ASK: May I read your recent sent mails', 'Reply yes to start', 'EDIT: a request to change one thing',
+          'AD1:AE60', 'Columns AA to AC stay empty', 'exactly 60 rows of 2 cells', 'NO WORKBOOK', 'AMBIGUOUS WORKBOOK', 'NO PROFILE', 'NOT ENOUGH MAIL',
+          'first match wins', 'at least 10 usable mails', 'at least a quarter of the mails of that group', 'rule.ignore_sent_from', 'Keep running notes as counts',
+          'baseline.greeting', 'baseline.dates', 'meta.version', 'Never create a rule row', 'ASK: Does this sound like you?', 'Never send email.', 'Never write a draft.',
+          'untrusted data', 'Never use an em dash or a semicolon.',
+        ],
+        absent: [],
+      },
+    },
+  },
+  {
+    present: [],
+    // Stage 20 fixes style-profiler after the first spike: sensitivity is not a select field, a missing label is no reason to skip, and a short answer lists the skip counts.
+    // The main text and the other sub-agents are unchanged from stage 19.
+    absent: [],
+    subs: {
+      'style-profiler': {
+        present: [
+          'include_sensitivity_label true', 'is not skipped for that', 'a count for each skip reason that applied', 'You are style-profiler', 'CONSENT: yes',
+          'AD1:AE60', 'exactly 60 rows of 2 cells', 'NOT ENOUGH MAIL', 'Never use an em dash or a semicolon.',
+        ],
+        absent: ['"importance", "sensitivity", "body"', 'when its sensitivity is not normal', 'write nothing),'],
+      },
+    },
+  },
+  {
+    present: [],
+    // Stage 21: style-profiler lists ids and subjects first, drops briefs and mails to oneself, reads only candidate bodies and counts usable mails toward TARGET.
+    // The main text and the other sub-agents are unchanged from stage 20.
+    absent: [],
+    subs: {
+      'style-profiler': {
+        present: [
+          'BUILD, step 2, the list pass', 'in the page_token input', 'at least 100, have been listed', 'Set aside the N newest candidates', 'BUILD, step 3, the candidates',
+          'Get email message, using the id from step 2', 'could not be read', 'After each round, update', 'TARGET is the number of usable mails wanted',
+          'include_sensitivity_label true', 'is not skipped for that', 'a count for each skip reason that applied', 'You are style-profiler', 'CONSENT: yes',
+          'AD1:AE60', 'exactly 60 rows of 2 cells', 'NOT ENOUGH MAIL', 'Never use an em dash or a semicolon.',
+        ],
+        absent: [
+          'BUILD, step 2, the tallies', 'BUILD, step 3, one page at a time', 'Finish all of the following for one page', 'TARGET is the number of mails named',
+          'After each page, update', 'include_sensitivity_label true (sensitivity is not a select field). The signed-in user',
+        ],
+      },
+    },
+  },
+  {
+    present: [],
+    // Stage 22: style-profiler counts each skipped mail once, and a missing or unknown sensitivity label is never a reason to skip.
+    // The main text and the other sub-agents are unchanged from stage 21.
+    absent: [],
+    subs: {
+      'style-profiler': {
+        present: [
+          'is never a reason to skip', 'under the first reason that applied', 'each mail counted once under the first reason', 'BUILD, step 2, the list pass',
+          'BUILD, step 3, the candidates', 'a count for each skip reason that applied', 'You are style-profiler', 'CONSENT: yes', 'AD1:AE60',
+          'exactly 60 rows of 2 cells', 'NOT ENOUGH MAIL', 'Never use an em dash or a semicolon.',
+        ],
+        absent: ['and count each skip by reason.', 'a count for each skip reason that applied, in plain words'],
+      },
+    },
+  },
+  {
+    present: [],
+    // Stage 23: style-profiler uses one "too few mails" text for all cells, defines meta.date_range, and reads the sheet back after the write.
+    // The main text and the other sub-agents are unchanged from stage 22.
+    absent: [],
+    subs: {
+      'style-profiler': {
+        present: [
+          'the same text for all five cells', 'the dates of the oldest and newest usable mail', 'once more and check that AD1 holds baseline.greeting',
+          'the sheet does not match the table', 'the write tool succeeded and the check passed', 'is never a reason to skip', 'BUILD, step 3, the candidates',
+          'You are style-profiler', 'CONSENT: yes', 'AD1:AE60', 'exactly 60 rows of 2 cells', 'NOT ENOUGH MAIL', 'Never use an em dash or a semicolon.',
+        ],
+        absent: ['for thanks or urgent the key', 'use the peer cell, then the baseline', 'only after the write tool succeeded.'],
+      },
+    },
+  },
+  {
+    present: [],
+    // Stage 24: style-profiler applies the rule.ignore_sent_from date in the list pass, and those mails do not count toward the listing cap.
+    // The main text and the other sub-agents are unchanged from stage 23.
+    absent: [],
+    subs: {
+      'style-profiler': {
+        present: [
+          'or that was sent on or after the date in the rule row rule.ignore_sent_from', 'do not count toward the 5 times TARGET', 'the sheet does not match the table',
+          'the same text for all five cells', 'is never a reason to skip', 'BUILD, step 3, the candidates', 'You are style-profiler', 'CONSENT: yes', 'AD1:AE60',
+          'exactly 60 rows of 2 cells', 'NOT ENOUGH MAIL', 'Never use an em dash or a semicolon.',
+        ],
+        absent: ['(a missing or unknown label is never a reason to skip), and count each mail once'],
+      },
+    },
+  },
+  {
+    present: [],
+    // Stage 25: style-profiler no longer asks for or uses a sensitivity label, because the mail tools return none and the model skipped every mail as "unknown label".
+    // The main text and the other sub-agents are unchanged from stage 24.
+    absent: [],
+    subs: {
+      'style-profiler': {
+        present: [
+          'when it carries a confidential or privileged marker in its text', 'or that was sent on or after the date in the rule row rule.ignore_sent_from',
+          'do not count toward the 5 times TARGET', 'count each mail once, under the first reason that applied', 'the sheet does not match the table',
+          'BUILD, step 3, the candidates', 'You are style-profiler', 'CONSENT: yes', 'AD1:AE60', 'exactly 60 rows of 2 cells', 'NOT ENOUGH MAIL',
+          'Never use an em dash or a semicolon.',
+        ],
+        absent: ['include_sensitivity_label', 'include_sensitivity_label true', 'sensitivity label', 'is not skipped for that', 'is never a reason to skip', 'sensitivity is not a select field'],
+      },
+    },
+  },
+  {
+    present: [],
+    // Stage 26: style-profiler writes a date value as "on yyyy-mm-dd" (Excel turns a bare date into a number) and compares every written cell on the read-back.
+    // The main text and the other sub-agents are unchanged from stage 25.
+    absent: [],
+    subs: {
+      'style-profiler': {
+        present: [
+          'never as a bare date, because Excel turns a bare date into a number', 'or as an Excel date number', 'comes back unchanged (compare as text)',
+          'counted in a script and not by eye', 'the sheet does not match the table', 'the write tool succeeded and the check passed',
+          'when it carries a confidential or privileged marker in its text', 'BUILD, step 3, the candidates', 'You are style-profiler', 'CONSENT: yes',
+          'AD1:AE60', 'exactly 60 rows of 2 cells', 'NOT ENOUGH MAIL', 'Never use an em dash or a semicolon.',
+        ],
+        absent: ['once more and check that AD1 holds baseline.greeting', 'Write the whole table back as in the saving step. Answer'],
+      },
+    },
+  },
+  {
+    present: [],
+    // Stage 27: style-profiler skips a mail only for a reason named in item a, and never because it is unsure (run 8 dropped 65 of 82 candidates as "could not be safely read").
+    // The main text and the other sub-agents are unchanged from stage 26.
+    absent: [],
+    subs: {
+      'style-profiler': {
+        present: [
+          'The reasons in item a are the only reasons to skip a mail', 'Never skip a mail because you are unsure or cannot confirm that it is safe',
+          'because the notes hold counts and never message text', 'never as a bare date, because Excel turns a bare date into a number',
+          'comes back unchanged (compare as text)', 'the sheet does not match the table', 'BUILD, step 3, the candidates', 'You are style-profiler',
+          'CONSENT: yes', 'AD1:AE60', 'exactly 60 rows of 2 cells', 'NOT ENOUGH MAIL', 'Never use an em dash or a semicolon.',
+        ],
+        absent: [],
+      },
+    },
+  },
+  {
+    present: [],
+    // Stage 28: style-profiler refuses a whole EDIT value that holds a link, an address or an instruction, and saves no cleaned up part of it.
+    // The main text and the other sub-agents are unchanged from stage 27.
+    absent: [],
+    subs: {
+      'style-profiler': {
+        present: [
+          'refuse the whole value, and never save a cleaned up part of it, when any part of it holds a link', 'that value is not a style note',
+          'The reasons in item a are the only reasons to skip a mail', 'comes back unchanged (compare as text)', 'You are style-profiler', 'CONSENT: yes',
+          'AD1:AE60', 'exactly 60 rows of 2 cells', 'NOT ENOUGH MAIL', 'Never use an em dash or a semicolon.',
+        ],
+        absent: ['refuse a value that holds a link'],
       },
     },
   },

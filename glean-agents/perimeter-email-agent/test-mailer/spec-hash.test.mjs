@@ -24,6 +24,17 @@ describe('editorHash', () => {
     assert.equal(editorHash('1. one\n\n  two  \n3) three'), editorHash('one\ntwo\nthree'));
   });
 
+  test('drops letter list markers too, because the editor turns "a. " lines into a lower-alpha list', () => {
+    assert.equal(editorHash('a. one\n b) two\nc.three'), editorHash('one\ntwo\nc.three'));
+    assert.equal(editorText('e.g. one\nA mail'), 'e.g. one\nA mail');
+  });
+
+  test('reproduces the hash read back from the saved style-profiler sub-agent', () => {
+    const text = readFileSync(new URL('../specs/stage-19-style-profiler.md', import.meta.url), 'utf8');
+    assert.equal(editorHash(text), 'c0dcc095');
+    assert.equal(editorText(text).length, 14190);
+  });
+
   test('reproduces the recorded hash of the stage 10 text and of each sub-agent text', () => {
     const read = (f) => readFileSync(new URL(`../specs/${f}`, import.meta.url), 'utf8');
     assert.equal(editorHash(read('stage-10.md')), '377546ab');

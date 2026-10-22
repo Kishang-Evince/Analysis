@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 
 export const specHash = (text) => createHash('sha256').update(text.trim(), 'utf8').digest('hex').slice(0, 8);
 
-export const editorText = (text) => text.split('\n').map((l) => l.trim().replace(/^\d+[.)]\s*/, '')).filter(Boolean).join('\n');
+export const editorText = (text) => text.split('\n').map((l) => l.trim().replace(/^(?:\d+[.)]\s*|[a-z][.)]\s+)/, '')).filter(Boolean).join('\n');
 export const editorHash = (text) => specHash(editorText(text));
 
 export async function main(argv, deps = {}) {

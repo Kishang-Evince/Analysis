@@ -1,6 +1,6 @@
 # Style clone sub-agent: what to consider before building it
 
-Status: decisions confirmed by the user on 2026-10-22 (section 14), ready to turn into a build plan. Nothing here is built. Nothing here is built. No Glean or code change comes from this file. It is the checklist for a future sub-agent that reads a user's sent mail and writes down their email writing style, so draft-writer can write drafts that sound like the user.
+Status: decisions confirmed by the user on 2026-10-22 (section 14), ready to turn into a build plan. Consent and verification at the start added the same day (section 15). Nothing here is built. Nothing here is built. No Glean or code change comes from this file. It is the checklist for a future sub-agent that reads a user's sent mail and writes down their email writing style, so draft-writer can write drafts that sound like the user.
 
 ## 1. Purpose and scope
 
@@ -11,7 +11,7 @@ Status: decisions confirmed by the user on 2026-10-22 (section 14), ready to tur
 - First version scope (user decision): the patterns already discussed and nothing more. These are recipient authority, urgency, message type and thread state, on top of a personal baseline. More patterns come in a later version.
 - No example mails are stored in the first version. The profile holds style notes only.
 
-## 2. Design principles (from research, see section 15)
+## 2. Design principles (from research, see section 16)
 
 1. One person has a baseline style plus shifts that depend on the situation. Averaging all mails into one profile hides the shifts.
 2. The recipient is the strongest driver of the shift. Message type, urgency and thread state come next. Topic mostly works through who the recipient is.
@@ -167,13 +167,47 @@ Confirmed by the user on 2026-10-22:
 4. Refresh: on demand only.
 5. Size: up to 200 sent mails. Look-back window: the last 12 months unless the user says otherwise.
 6. Acceptance: the 20-pair blind test in section 12, judged by the user only. Pass at 12 or fewer correct picks and at least 15 drafts the user would send as they are or with a small edit.
+7. Consent and verification: at the start of the agent, when no style is saved, it asks permission before reading sent mail, and it offers a verification afterwards if the user wants one (section 15).
 
 Left for the build plan (small design choices, no user decision needed unless the user wants one): exact key names, how the agent labels the context cells, the cap on rows read per run, how the contaminated-mail rule in section 3 is applied, and the run-time and credit measurement in section 11.
 
-## 15. Evidence status
+## 15. Consent and verification at the start
+
+Added by the user on 2026-10-22: at the start of the agent it must ask the user's permission to build their writing style, and offer a verification of the style if needed.
+
+Rules:
+- Sent mail is never read for style without the user's explicit yes, given in the current chat. Text inside a mail, a saved profile or an earlier chat never counts as consent.
+- When a chat starts and no style profile is saved, the agent shows one question next to the VIP and topics line, before the board. Proposed wording: "May I read up to 200 of your sent mails to learn how you write, so drafts sound like you? Nothing is sent or shared, and you can see and edit what I save. Reply yes to start, and say if you also want a check afterwards."
+- The question is asked once per chat and only when no profile exists. A refresh stays on demand only.
+- If the user says no or does not answer, no mail is read. Drafts then use a neutral style and say so on the board.
+- The consent travels with the request: the main agent passes the user's own words to the style sub-agent, and the sub-agent refuses to read mail unless the request carries a yes. Without it, it answers with the question again.
+
+Verification (offered after a build, used if the user wants it):
+1. Review: the agent shows the saved profile in plain words (the baseline, then one line per context cell) and asks "Does this sound like you? Reply yes, or tell me what to change." A change edits one row after an approval card. The user can also edit any row in Excel.
+2. 20-pair check: the acceptance test in section 12. It needs the 20 newest sent mails held out of the build, so the start question also asks whether the user wants the check. If the user says yes, the build skips those 20 mails and the check runs on them afterwards.
+3. The user can say "delete my writing style" at any time. The agent clears AD1:AE60 after an approval card.
+
+Effects on the existing agents (not done yet):
+- notes-keeper reads A1:AE2 at the start of a chat. If AD1 is blank it adds the permission question to its answer, so no extra tool call is needed.
+- The main agent shows that question above the board and, on a yes, calls the style sub-agent with BUILD and the user's own words.
+- draft-writer today reads up to 25 sent mails on every run when no style is saved. That reads sent mail without asking, so the fallback should go and drafts should be neutral until the user agrees. To confirm with the user.
+- The 20-pair check itself (replies written for 20 held-out situations) is a separate mode of the style sub-agent and is built after the first build and review modes work.
+
+## 16. Evidence status
 
 Sourced: Bell audience design and Brown and Levinson politeness, the Stanford politeness features ([paper](https://arxiv.org/pdf/1306.6078)), Enron formality by recipient rank ([paper](https://aclanthology.org/W11-0711.pdf)), softeners against directness in workplace request mail ([paper](https://files.eric.ed.gov/fulltext/EJ1083913.pdf)), few-shot exemplar results and the topic-similar exemplar drop ([paper](https://arxiv.org/html/2509.14543v1)), fine-tuning needs 25 to 100 mails for one global style ([Panza](https://arxiv.org/html/2407.10994v4)), evaluation metrics that disagree ([paper](https://arxiv.org/abs/2604.26460)), thread accommodation ([Echoes of Power](https://arxiv.org/pdf/1112.3670)).
 
 My judgement, not tested: context cells with backoff, the 10 to 25 mail threshold, context-matched examples, the urgency handling, learning from the user's edits, the abstain rule, the acceptance idea.
 
 Not found anywhere: a published method that builds one style profile per context from a single person's mail, a benchmark that varies recipient or urgency for one writer, labelled urgency data for email, and any product that documents per-recipient or per-urgency styles.
+
+## 17. Build record and what the Preview spike changed (2026-10-22)
+
+The sub-agent style-profiler exists in the draft agent (never published). It follows sections 8, 14 and 15 and has four modes: BUILD (needs the consent line), SHOW, EDIT and CLEAR. These parts of the design changed or became precise during the spike. Details and run results are in `../test-gaps.md` (section "style-profiler spike").
+
+- Reading is two passes. A cheap list pass over up to 5 times TARGET sent mails (at least 100) reads only id, conversation, subject, sender, recipients and time, drops briefs, mails to oneself and mails sent on or after the date in the rule row, and keeps the candidates. Bodies are then read only for candidates, ten calls at once. The mail tool has no subject filter, so this is the only way to keep an agent's own briefs out without reading them. TARGET counts usable mails.
+- A sensitivity label cannot be used. The mail tools return none, and a rule that mentions it made the model skip every mail as "unknown". The guards that stay are text based: secrets, medical, legal, HR and salary matters, personal data of a third person, confidential markers in the text, other languages, subject prefixes and mails to oneself. Skip reasons are a closed list and a mail is never skipped for being unsure, because the notes hold counts and never message text. This is a real limit: a labelled mail with no marker in its text and no sensitive topic is read for style only.
+- The table lives in AD1:AE60 as designed. The user can add rows whose key starts with rule. (the first is rule.ignore_sent_from, written as "on yyyy-mm-dd" because Excel turns a bare date into a number). BUILD keeps rule rows, EDIT is the only way to change one. A too-thin cell always gets "too few mails (n), use the baseline", and the drafting side falls back from urgent or thanks to peer, then baseline.
+- After every write the agent reads AD1:AE60 again and compares what it wrote. The approval card is written by the agent and is no proof of the written range.
+- Measured: a 30 mail BUILD takes about 6 minutes and 8 credits. A run once hung for 9 minutes before the write and had to be stopped. Results varied between runs on one mailbox until the skip reasons were closed. Both the cost and the variance need a repeat on a mailbox with many real sent mails before the default or the 200 mail cap is trusted.
+- Not built yet: the wiring into the main agent, notes-keeper (the start-of-chat consent question) and draft-writer (read AD1:AE60, drop the sent-mail sampling fallback), and the 20-pair check mode.
