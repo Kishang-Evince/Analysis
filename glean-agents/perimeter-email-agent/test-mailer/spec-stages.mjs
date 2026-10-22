@@ -408,4 +408,156 @@ export const STAGES = [
       },
     },
   },
+  {
+    present: [],
+    // Stage 29 (wiring step 1): notes-keeper keeps only the two lists, reads AD1 to ask the permission question and never lists style cells as entries.
+    // style-profiler asks a truthful question and says what to do after NO WORKBOOK and NO PROFILE. The main text is unchanged from stage 28.
+    absent: [],
+    subs: {
+      'notes-keeper': {
+        present: [
+          'range A1:Z2 only for the lists', 'A1 is VIP Contacts and A2 is VIP Topics', 'never list or count a cell there as a VIP or topic entry',
+          'You only test whether AD1 reads baseline.greeting', 'only style-profiler writes it', 'address A1:AE2', 'never call Create Excel sheet',
+          'Not saved: cannot read the workbook', 'from B1:Z1 and B2:Z2', 'plus the ASK lines below', 'I use up to 30 and may open more to find 30 I can use',
+          'Reply yes to start.', 'exactly two rows of 26 cells', 'Saved: n VIP and m TOPIC entries', 'never write anywhere but A1:Z2 of this workbook',
+          'Never use an em dash or a semicolon.',
+        ],
+        absent: [
+          'range A1:Z3', 'A1:Z3', 'exactly three rows of 26 cells', 'A1 is VIP Contacts, A2 is VIP Topics, A3 is Writing Styles', '"Writing Styles: " plus the style',
+          '(VIP Contacts, VIP Topics, Writing Styles)', 'Skip blank cells and the style', 'and s STYLE entries', 'and a new style replaces the old one',
+          'and B3 holds the one style description', 'plus the ASK line below',
+        ],
+      },
+      'style-profiler': {
+        present: [
+          'I use up to TARGET and may open more to find TARGET I can use', 'NO WORKBOOK: save one VIP or topic first', 'NO PROFILE: say learn my writing style to build one',
+          'A habit named without a cell means the baseline key', 'ASK: May I read your recent sent mails', 'Reply yes to start', 'CONSENT: yes',
+          'refuse the whole value, and never save a cleaned up part of it', 'Never use an em dash or a semicolon.',
+        ],
+        absent: ['(up to TARGET of them)', 'say if you also want a check afterwards', 'answer NO WORKBOOK and stop', 'If the range is empty, answer NO PROFILE.'],
+      },
+    },
+  },
+  {
+    // Stage 30 (wiring step 2): main routes writing style requests to style-profiler, names what is not consent and shows the ASK once per chat. Sub-agents unchanged from stage 29.
+    present: [
+      'add, remove or show VIP or topic entries', 'call the style-profiler sub-agent with the mode (BUILD, SHOW, EDIT or CLEAR)',
+      'Add the line CONSENT: yes to a BUILD request only when that message says yes or go ahead to that ASK line', 'is not consent',
+      'Never call style-profiler in a run with no chat message', 'but the ASK about reading sent mails only once per chat and never after the user said no or deleted the style',
+    ],
+    absent: ['add, remove or show VIP, topic or writing style entries', 'any ASK line, even if the board is clear)'],
+  },
+  {
+    // Stage 31 (wiring step 3): main passes a VIP field and draft-writer reads the style table instead of sampling sent mail. Other sub-agents unchanged from stage 29.
+    present: ['| VIP (yes when the sender of a reply or a recipient still waiting matches a VIP entry of Step 3F, else no)'],
+    absent: ['recipients still waiting (follow-ups only)". The subject'],
+    subs: {
+      'draft-writer': {
+        present: [
+          'address AD1:AE60', 'the VIP field of the item line is yes', "never read the user's sent mail to find a style", 'A cell is thin when it has no rows',
+          'A test you cannot decide does not match', 'make no other mail call for it', "take the user's own first name for a sign-off from the thread",
+          'instead of "ITEM n | drafted"', 'VIP (yes or no)', 'in the saved style, or neutral when there is none', 'even when the thread shows one',
+          'drafted-neutral', 'with no marker line', 'Never use an em dash or a semicolon.',
+        ],
+        absent: [
+          'Work out the style', 'fewer than 5 sent emails', 'Never mention the samples', 'Drop every email whose subject starts with', 'address A3:B3', 'a blank B3',
+          'A3 reads Writing Styles', 'even when a sample email', 'Write each draft as the user would', 'Daily brief:', 'Weekly brief:',
+          'Never mention the samples or the style in a draft.',
+        ],
+      },
+    },
+  },
+  {
+    present: [],
+    // Stage 32: style-profiler builds from fewer than TARGET usable mails when there are 5 or more (the first wiring test answered NOT ENOUGH MAIL with 17 usable).
+    // The main text and the other sub-agents are unchanged from stage 31.
+    absent: [],
+    subs: {
+      'style-profiler': {
+        present: [
+          'build from what you have as long as there are 5 or more', 'never because fewer than TARGET remain', 'The reasons in item a are the only reasons to skip a mail',
+          'I use up to TARGET and may open more to find TARGET I can use', 'comes back unchanged (compare as text)', 'You are style-profiler', 'CONSENT: yes',
+          'AD1:AE60', 'NOT ENOUGH MAIL', 'Never use an em dash or a semicolon.',
+        ],
+        absent: ['Stop when TARGET usable mails are kept or no candidate is left.', '(when fewer than 5 usable mails remain, write nothing to the workbook)'],
+      },
+    },
+  },
+  {
+    present: [],
+    // Stage 33: style-profiler checks the written sheet in a script, as trimmed text, and names the first differing row (the wiring test gave a false "does not match" without a reason).
+    // The main text and the other sub-agents are unchanged from stage 32.
+    absent: [],
+    subs: {
+      'style-profiler': {
+        present: [
+          'in a script and not by eye, that every key and value you wrote comes back unchanged (compare as trimmed text)', 'the sheet does not match the table at row n',
+          'with n the first row that differs', 'build from what you have as long as there are 5 or more', 'You are style-profiler', 'CONSENT: yes', 'AD1:AE60',
+          'NOT ENOUGH MAIL', 'Never use an em dash or a semicolon.',
+        ],
+        absent: ['comes back unchanged (compare as text)', 'counted in a script and not by eye', 'answer "Not saved: the sheet does not match the table" and stop.'],
+      },
+    },
+  },
+  {
+    present: [],
+    // Stage 34: notes-keeper reads the style cell AD1 on its own with a one-cell Get range (the wiring test asked for a style that was saved, after misjudging AD1 in a 2 by 31 grid).
+    // The main text and the other sub-agents are unchanged from stage 33.
+    absent: [],
+    subs: {
+      'notes-keeper': {
+        present: [
+          'In READ only, also call Get range with worksheet Sheet0 and address AD1 alone, which tells whether a style is saved', 'Use only whether the AD1 cell reads baseline.greeting',
+          'address A1:Z2', 'You only test whether AD1 reads baseline.greeting', 'Not saved: cannot read the workbook', 'from B1:Z1 and B2:Z2',
+          'I use up to 30 and may open more to find 30 I can use', 'exactly two rows of 26 cells', 'Never use an em dash or a semicolon.',
+        ],
+        absent: ['address A1:AE2', 'the second to last cell of row 1', 'never the other text in AD1:AE2'],
+      },
+    },
+  },
+  {
+    present: [],
+    // Stage 35: draft-writer leaves any commitment of the user as "[fill in]" (the styled test drafts promised dates the user never stated).
+    // The main text and the other sub-agents are unchanged from stage 34.
+    absent: [],
+    subs: {
+      'draft-writer': {
+        present: [
+          'when the reply would commit the user to do something or to a date, write that part as "[fill in]"', 'for example "I will send it by [fill in]"',
+          'address AD1:AE60', 'the VIP field of the item line is yes', "never read the user's sent mail to find a style", 'with no marker line',
+          'Never use an em dash or a semicolon.',
+        ],
+        absent: [],
+      },
+    },
+  },
+  {
+    present: [],
+    // Stage 36: VIP Contacts and VIP Topics are comma separated values in one cell (B1 and B2), entries that hold a comma are quoted, no entry cap, B only is read.
+    // The main text and the other sub-agents are unchanged from stage 35.
+    absent: [],
+    subs: {
+      'notes-keeper': {
+        present: [
+          'range A1:B2 only for the lists', 'B1 holds all VIP entries', 'separated by a comma and a space', 'wrapped in double quotes', 'A cell holds at most 32,000 characters',
+          'Row 3 and every column from C on belong to other agents', 'split at the commas outside double quotes', 'exactly two rows of 2 cells',
+          'never write anywhere but A1:B2 of this workbook', 'If a row would pass 32,000 characters', 'Not saved: row full.', 'Not saved: cannot read the workbook',
+          'In READ only, also call Get range with worksheet Sheet0 and address AD1 alone', 'I use up to 30 and may open more to find 30 I can use',
+          'Saved: n VIP and m TOPIC entries', 'ADD appends each entry', 'Never use an em dash or a semicolon.',
+        ],
+        absent: [
+          'A1:Z2', 'one VIP entry per cell', 'Never put several entries in one cell', 'at most 25 entries', 'B to Z', 'exactly two rows of 26 cells', 'closes the gap in its row',
+          'from B1:Z1 and B2:Z2', 'columns from AA on', 'next free cell', 'Skip blank cells.', 'If a row would pass 25 entries', 'one VIP entry per cell from B1',
+          'range A1:Z2 only for the lists', 'never write anywhere but A1:Z2 of this workbook', 'address A1:Z2',
+        ],
+      },
+      'style-profiler': {
+        present: [
+          'read only A1:B1 and AD1:AE60 of Sheet0', 'the comma separated entries in B1', 'an entry in double quotes may hold a comma', 'and B1 is not blank',
+          'You are style-profiler', 'CONSENT: yes', 'AD1:AE60', 'NOT ENOUGH MAIL', 'Never use an em dash or a semicolon.',
+        ],
+        absent: ['read only A1:Z1', 'The VIP Contacts are B1 to Z1', 'B1:Z1 is not blank', 'A1:Z1'],
+      },
+    },
+  },
 ];

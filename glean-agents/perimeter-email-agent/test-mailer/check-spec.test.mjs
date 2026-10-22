@@ -9,7 +9,7 @@ const PROMPT_FILES = [
   'EMAIL-01-prompt-0-parity.md', 'EMAIL-01-prompt-1-lookback-dates-replies.md', 'EMAIL-02-prompt-2-commitments.md',
   'EMAIL-03-prompt-3-asks.md', 'EMAIL-04-prompt-4-reply-quality.md', 'EMAIL-05-prompt-5-due-dates.md',
   'EMAIL-06-prompt-6-brief-delivery.md', 'EMAIL-07-prompt-7-drafts.md', 'EMAIL-08-prompt-8-writing-style.md',
-  'EMAIL-09-prompt-9-vip-topics.md', 'EMAIL-10-11-prompt-10-meeting-prep.md', 'EMAIL-12-prompt-11-vip-at-start.md', 'EMAIL-13-prompt-12-punctuation.md', 'EMAIL-14-prompt-13-board-format-2.md', 'EMAIL-15-prompt-14-excel-store.md', 'EMAIL-16-prompt-15-excel-rows.md', 'EMAIL-17-prompt-16-row-labels.md', 'EMAIL-18-prompt-17-brief-bold.md', 'EMAIL-19-prompt-18-draft-rules.md', 'EMAIL-20-prompt-19-style-profiler.md', 'EMAIL-21-prompt-20-spike-fixes.md', 'EMAIL-22-prompt-21-candidate-pass.md', 'EMAIL-23-prompt-22-skip-counts.md', 'EMAIL-24-prompt-23-write-check.md', 'EMAIL-25-prompt-24-ignore-date.md', 'EMAIL-26-prompt-25-no-label.md', 'EMAIL-27-prompt-26-date-text.md', 'EMAIL-28-prompt-27-keep-when-unsure.md', 'EMAIL-29-prompt-28-edit-refusal.md',
+  'EMAIL-09-prompt-9-vip-topics.md', 'EMAIL-10-11-prompt-10-meeting-prep.md', 'EMAIL-12-prompt-11-vip-at-start.md', 'EMAIL-13-prompt-12-punctuation.md', 'EMAIL-14-prompt-13-board-format-2.md', 'EMAIL-15-prompt-14-excel-store.md', 'EMAIL-16-prompt-15-excel-rows.md', 'EMAIL-17-prompt-16-row-labels.md', 'EMAIL-18-prompt-17-brief-bold.md', 'EMAIL-19-prompt-18-draft-rules.md', 'EMAIL-20-prompt-19-style-profiler.md', 'EMAIL-21-prompt-20-spike-fixes.md', 'EMAIL-22-prompt-21-candidate-pass.md', 'EMAIL-23-prompt-22-skip-counts.md', 'EMAIL-24-prompt-23-write-check.md', 'EMAIL-25-prompt-24-ignore-date.md', 'EMAIL-26-prompt-25-no-label.md', 'EMAIL-27-prompt-26-date-text.md', 'EMAIL-28-prompt-27-keep-when-unsure.md', 'EMAIL-29-prompt-28-edit-refusal.md', 'EMAIL-30-prompt-29-notes-keeper-ask.md', 'EMAIL-31-prompt-30-main-routing.md', 'EMAIL-32-prompt-31-draft-writer-style.md', 'EMAIL-33-prompt-32-build-with-fewer.md', 'EMAIL-34-prompt-33-readback-script.md', 'EMAIL-35-prompt-34-style-cell-read.md', 'EMAIL-36-prompt-35-no-commitment.md', 'EMAIL-37-prompt-36-comma-lists.md',
 ];
 const promptText = (n) => readFileSync(new URL(PROMPT_FILES[n], PROMPTS), 'utf8');
 const stage0 = () => extractInstructions(promptText(0));
@@ -106,7 +106,7 @@ describe('later stages (markers)', () => {
 
 describe('stage data stays tied to the prompt files', () => {
   test('there is one entry per stage, 0 to 19', () => {
-    assert.equal(STAGES.length, 29);
+    assert.equal(STAGES.length, 37);
     for (const s of STAGES) assert.ok(Array.isArray(s.present) && Array.isArray(s.absent));
   });
 

@@ -1015,3 +1015,52 @@ Continuation of the table (same day, after stage 27 and stage 28):
 Final state after the spike: the style table in the workbook is cleared (the profile built during the tests came from a consent line I typed in the test request, not from the user). The rule row went with it. Checkpoint versions in the draft agent: v22 (sub-agent created), v23 (stage 23) and v24 (stage 28, style-profiler b54c4ea6). Local checks: all stage checks pass and the suite is 178 of 178.
 
 Still not tested: NO WORKBOOK and AMBIGUOUS WORKBOOK (need a missing or duplicated workbook), a prompt injection inside a sent mail, a 200 mail run, the 20 pair blind check, a real mailbox with many sent mails, a second user, and the wiring into main, notes-keeper and draft-writer (not built yet).
+
+## Wiring the style table into main, notes-keeper and draft-writer (prompts 29 to 35, 2026-10-22)
+
+Before the live edits a four-lens read-only review (mechanics and budget, behaviour, safety and consent, drafting quality) checked the planned replacements. It found these defects, all fixed in the texts before any live edit: a "yes" to "Does this sound like you?" or to the VIP question could be read as consent to read sent mail, notes-keeper would list style table cells (AD1:AE2) as VIP and topic entries, draft-writer picked the context cell in a different order and with weaker urgency tests than the profiler, the ASK line offered a check that does not exist, a failed workbook read could fall through to Create Excel sheet or to sent-mail sampling, and the once-per-chat rule belonged in Step 9 and the board-layout skill. Stages: 29 (notes-keeper, style-profiler), 30 (main, skill, one starter reworded), 31 (main item line, draft-writer), then four fixes found by the tests: 32 to 35. Main grew by 1,046 characters (162 left).
+
+| Test (Preview) | Result |
+|---|---|
+| Board run, no style saved | PASS: the "VIP and topics" line holds the VIP and topic lines (no style cells) and the question "May I read your recent sent mails (I use up to 30 and may open more to find 30 I can use) ... Reply yes to start." Drafts carried the neutral note |
+| Plain "yes" in the same chat | PASS for routing: main said it would build the profile and called style-profiler with the consent line. FAIL for the sub-agent: it answered NOT ENOUGH MAIL with 17 usable mails. Stage 32 fixed that wording |
+| "yes, go ahead" after stage 32 | PASS: approval card with the table (16 usable mails), then "Not saved: the sheet does not match the table" although SHOW afterwards read the saved table. The check had been done by the model without a script and gave no reason. Stage 33 moves it into a script and names the first differing row. Not re-run yet |
+| Show my writing style | PASS: plain lines and the ASK "Does this sound like you?" line |
+| Add a VIP (notes-keeper) | PASS: two row write A1:Z2 only, style rows untouched |
+| Board run with the style saved | PARTIAL: the question appeared although a style was saved, because notes-keeper misjudged AD1 inside a 2 by 31 grid. Draft-writer found the style (Get range AD1:AE60, no neutral note) but every item already had a draft (skipped-existing), so no new draft was made. Stage 34 reads AD1 on its own with a one-cell Get range |
+| READ direct after stage 34 | PASS: VIP and topic lines only, no question |
+| draft-writer direct, two fresh threads, one VIP | PASS for style: "Hey Alice, I'll send the steering deck by COB tomorrow. Thx, K" and "Hey Dana, I'll send the revised proposal by Friday. Thx, K" (saved style: hey plus first name, thx plus initial). FAIL for the rule: both promised a date. Stage 35 says a commitment is written as [fill in] |
+| draft-writer direct, two more fresh threads | PASS: "hey Carol, The Q4 headcount is [fill in]. thx, K" and "hey Bob, Got it. I'll send the draft proposal by [fill in]. thx, Kishan" |
+| Item line main to draft-writer | PASS: nine fields, "none" for a reply's recipients, "VIP no" or "VIP yes" last |
+| Delete my writing style | PASS: delete card with 60 blank rows, "Writing style deleted." |
+
+Notes: the reviewers' risk "once per chat is only model judgement" is tested in the next entry. Extra tabs opened by the Glean page during long runs (an Outlook sign-in page and a web search) were closed without entering anything. A test VIP (dana.whitfield) was added to the VIP row during the tests and is removed at the end. Drafts made by the tests stay in the mailbox (no delete tool): replies to the seeded test threads, never sent. The "[w1]" and "[w2]" seed mails stay in the inbox.
+
+Final checks after stage 35 (same day):
+
+| Test (Preview) | Result |
+|---|---|
+| Consented BUILD again (30 target, 28 usable) after stage 33 | PASS: the card showed all 60 rows (21 filled) and the answer was "Saved: 28 mails read, 21 rows, 0 rule rows kept." The read-back check passed and the row count is right. One run only |
+| Delete my writing style | PASS: "Saved: profile deleted." (the card says "Delete all saved style rows from Sheet0 AD1:AE60") |
+| Remove the test VIP | PASS: two row write A1:Z2, "Saved: 3 VIP and 2 TOPIC entries." |
+| Question shown once per chat (Step 9 and skill rule) | NOT TESTED: it needs two board runs in one chat (about 13 minutes and 10 credits each, each mails a brief to the user). A board run was started and stopped. The rule is a model judgement over the chat history, so treat it as unverified |
+
+Final state: the style table is cleared, so the first real chat shows the permission question. The profile built in the last test came from a consent line typed in the test request, not from the user. Live texts: main 138f55f7 (162 characters left), notes-keeper ac34ce3d, style-profiler 655ffb1c, draft-writer 5f4f21dc, meeting-prep e876218a, skill board-layout edited (line 1), starter "Drafts in my voice" reworded. Checkpoint versions v22 to v27 in the draft agent. Nothing is published.
+
+Open style items: the 20 pair blind check mode, a build on a mailbox with many real sent mails (this mailbox is thin), the question-once-per-chat test, and a second user.
+
+## VIP Contacts and VIP Topics as comma separated values (prompt 36, 2026-10-22)
+
+User request: each list in one cell, VIP Contacts in A1 with its entries in B1 separated by commas, VIP Topics in A2 with its entries in B2. The user said no to a 50 entry cap and no to dropping a comma from an entry, so there is no entry cap (only the 32,000 character cell limit) and an entry that holds a comma is wrapped in double quotes. The user then asked to delete the old workbook and have the agent create a new one in this format. Stage 36: notes-keeper reads and writes A1:B2 only (the old one value per cell layout is no longer read), style-profiler reads A1:B1 and splits B1 at the commas. Main, draft-writer and meeting-prep are unchanged.
+
+| Step | Result |
+|---|---|
+| Old workbook deleted in OneDrive on the user's request | Done: "Deleted 1 item", in the recycle bin (recoverable). One file only matched the name, the other files in the folder were not touched |
+| New workbook created by notes-keeper (ADD of the three addresses and two topics, no file present) | PASS: card "Create Excel sheet" with `VIP Contacts | jane.vip@yopmail.com, ceo.vip@yopmail.com, dharmesh.patt@perimeterhealthcare.com` and `VIP Topics | budget approval, renewal`. The sheet Sheet0 shows exactly that in A1:B2 |
+| READ direct | PASS: three VIP lines, two TOPIC lines, then the style question (no style saved, so the one-cell read of AD1 was blank) |
+| ADD "Smith, John" and "@acme.example" | PASS: the card wrote `..., "Smith, John", @acme.example` into B1 (quoted, and the @ entry not first). "Saved: 5 VIP and 2 TOPIC entries." |
+| READ after that | PASS: "VIP: Smith, John" as one entry without the quotes, and "VIP: @acme.example" |
+| REMOVE both | PASS: B1 back to the three addresses, "Saved: 3 VIP and 2 TOPIC entries." |
+
+Not tested: a hand typed cell without spaces after the commas or without quotes around a name that holds a comma, a row near the 32,000 character limit, an entry that starts with a double quote. The Excel web page opened the new workbook in the browser tab when the create card was approved. Checkpoint v28.
+

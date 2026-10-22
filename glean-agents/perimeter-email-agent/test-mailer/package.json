@@ -70,6 +70,14 @@
     "check:26": "node check-spec.mjs 26",
     "check:27": "node check-spec.mjs 27",
     "check:28": "node check-spec.mjs 28",
+    "check:29": "node check-spec.mjs 29",
+    "check:30": "node check-spec.mjs 30",
+    "check:31": "node check-spec.mjs 31",
+    "check:32": "node check-spec.mjs 32",
+    "check:33": "node check-spec.mjs 33",
+    "check:34": "node check-spec.mjs 34",
+    "check:35": "node check-spec.mjs 35",
+    "check:36": "node check-spec.mjs 36",
     "hash": "node spec-hash.mjs"
   },
   "dependencies": {
