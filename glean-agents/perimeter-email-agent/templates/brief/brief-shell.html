@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="x-apple-disable-message-reformatting">
+<title>Outlook Action Board: {{MODE}}, as of {{AS_OF}}</title>
+<style>
+@media only screen and (max-width:600px){
+  .k,.v{display:block!important;width:100%!important}
+  .k{padding:5px 0 0 0!important;border-top:0!important}
+  .v{padding:0 0 4px 0!important}
+  .krow,.kpi{display:block!important;width:100%!important}
+  .gap{display:none!important}
+  .kpi{padding:0 0 8px 0!important}
+  .inner{padding:18px!important}
+}
+</style>
+</head>
+<body style="margin:0;padding:0;background:#F5F4FB">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#F5F4FB" style="background:#F5F4FB"><tr><td align="center" style="padding:20px 8px">
+<table role="presentation" width="640" cellpadding="0" cellspacing="0" style="width:100%;max-width:640px;background:#FFFFFF;border:1px solid #E2DEF4">
+
+<tr><td class="inner" bgcolor="#EFEAFF" style="background:#EFEAFF;padding:30px;text-align:center;font-family:Arial,Helvetica,sans-serif;color:#1A1633;border-bottom:1px solid #E2DEF4">
+<table role="presentation" align="center" cellpadding="0" cellspacing="0"><tr><td style="background:#FFF5DA;border:1px solid #E9CF7A;padding:6px 14px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;font-weight:bold;letter-spacing:2px;color:#9A7A12;text-transform:uppercase">Outlook Action Board</td></tr></table>
+<p style="margin:16px 0 6px 0;font-size:28px;line-height:34px;font-weight:bold;color:#1A1633">{{MODE}} brief, {{AS_OF}}</p>
+<p style="margin:0 0 18px 0;font-size:14px;line-height:20px;color:#5F5A80">{{MUST_COUNT}} need you today. {{WAIT_COUNT}} are waiting on others. Start with the first card.</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+{{KPI_ROWS}}
+</table>
+</td></tr>
+
+<tr><td class="inner" style="padding:16px 24px 4px 24px;font-family:Arial,Helvetica,sans-serif;">
+<p style="margin:0 0 12px 0;font-size:11px;line-height:16px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;color:#5F5A80;text-align:center">Who holds your items</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+{{CHART_ROWS}}
+</table>
+</td></tr>
+
+<tr><td class="inner" style="padding:0 24px 4px 24px;font-family:Arial,Helvetica,sans-serif;">
+{{MUST_SECTION}}
+{{MUST_CARDS}}
+{{WAIT_SECTION}}
+{{WAIT_CARDS}}
+</td></tr>
+
+<tr><td class="inner" style="padding:14px 24px 26px 24px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;color:#5F5A80;border-top:1px solid #E2DEF4;background:#F5F4FB">
+{{NOTES}}
+{{SUMMARY}}
+</td></tr>
+
+</table>
+</td></tr></table>
+</body>
+</html>

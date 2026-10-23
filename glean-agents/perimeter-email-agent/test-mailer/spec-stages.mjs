@@ -560,4 +560,27 @@ export const STAGES = [
       },
     },
   },
+  {
+    // Stage 37: Step 10 hands the board to the new brief-builder sub-agent, which builds the designed HTML brief and sends it.
+    // The HTML, subject and own-mailbox rules moved into the sub-agent text. Main drops Send email and Get outlook profile.
+    present: [
+      'Call the sub-agent brief-builder with three parts', 'BOARD, the full board exactly as written in Step 9', 'Brief not delivered.',
+      'It builds the HTML brief and mails it to the signed-in user\'s own mailbox only', 'If its answer does not start with SENT',
+    ],
+    absent: [
+      'Send the board by email using Outlook Send email', 'Use Outlook Get outlook profile for me to determine the connected mailbox address',
+      'For Outlook Send email, pass the complete brief as an HTML string in body', 'Convert section titles to <h2>',
+      'is_html to true', 'including the Highlights label, so no asterisk stays in the body', 'and nobody else',
+      'and send only if it is unambiguous. Copy it exactly.', 'Leave the VIP and topics line out.',
+    ],
+    subs: {
+      'brief-builder': {
+        present: [
+          'You are brief-builder', 'NOT SENT: incomplete', 'NOT SENT: no address', 'is_html set to true', 'Never retry to another address',
+          'Never use an em dash or a semicolon', 'Weekly: write plain HTML', 'Call Get outlook profile', 'Daily brief: morning', 'Weekly brief:',
+        ],
+        absent: [],
+      },
+    },
+  },
 ];

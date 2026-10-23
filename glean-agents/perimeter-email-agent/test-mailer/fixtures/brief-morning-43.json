@@ -1,0 +1,471 @@
+{
+ "mode": "morning",
+ "asOf": "Oct 22, 2026",
+ "must": [
+  {
+   "person": "Carol Reyes",
+   "subject": "Q3 \"final\" numbers",
+   "days": 6,
+   "ask": "Confirm the Q3 numbers.",
+   "action": "Reply",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 1,
+   "why": "Direct confirmation request with a passed deadline. Draft ready in Outlook.",
+   "due": "Oct 16, 2026 (Fri), passed",
+   "original": "Oct 16, 2026 (Fri), Carol Reyes (Manager)",
+   "latest": "Oct 16, 2026 (Fri), Carol Reyes (Manager)",
+   "topic": "budget approval"
+  },
+  {
+   "person": "Carol Reyes",
+   "subject": "Admin access",
+   "days": 6,
+   "ask": "Reply about shared admin account access through an approved secure channel without sending the password by email.",
+   "action": "Reply",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 1,
+   "why": "Direct manager request with a passed same-day deadline. Secret requested, no draft.",
+   "due": "Oct 16, 2026 (Fri), passed",
+   "original": "Oct 16, 2026 (Fri), Carol Reyes (Manager)",
+   "latest": "Oct 16, 2026 (Fri), Carol Reyes (Manager)"
+  },
+  {
+   "person": "Bob Singh",
+   "subject": "Vendor quote comments",
+   "days": 6,
+   "ask": "Send comments on the vendor quote.",
+   "action": "Send",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 1,
+   "why": "Direct request with a passed EOD deadline. Draft ready in Outlook.",
+   "due": "Oct 16, 2026 (Fri), passed",
+   "original": "Oct 16, 2026 (Fri), Bob Singh",
+   "latest": "Oct 16, 2026 (Fri), Bob Singh"
+  },
+  {
+   "person": "Alice Morgan",
+   "subject": "Quarterly report",
+   "days": 6,
+   "ask": "Send the quarterly report.",
+   "action": "Send",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 1,
+   "why": "Direct request with a passed deadline.",
+   "due": "Oct 16, 2026 (Fri), passed",
+   "original": "Oct 21, 2026 (Wed), Alice Morgan",
+   "latest": "Oct 21, 2026 (Wed), Alice Morgan"
+  },
+  {
+   "person": "Carol Reyes",
+   "subject": "Board slides",
+   "days": 6,
+   "ask": "Send the board slides.",
+   "action": "Send",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 1,
+   "why": "Direct request with a passed EOD deadline.",
+   "due": "Oct 16, 2026 (Fri), passed",
+   "original": "Oct 16, 2026 (Fri), Carol Reyes (Manager)",
+   "latest": "Oct 16, 2026 (Fri), Carol Reyes (Manager)"
+  },
+  {
+   "person": "Bob Singh",
+   "subject": "Invoice summary",
+   "days": 6,
+   "ask": "Send the invoice summary.",
+   "action": "Send",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 1,
+   "why": "Direct request with a passed deadline.",
+   "due": "Oct 16, 2026 (Fri), passed",
+   "original": "Oct 16, 2026 (Fri), Bob Singh",
+   "latest": "Oct 16, 2026 (Fri), Bob Singh"
+  },
+  {
+   "person": "Bob Singh",
+   "subject": "Security questionnaire",
+   "days": 6,
+   "ask": "Provide your answers to the security questionnaire.",
+   "action": "Reply",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 1,
+   "why": "Direct request with a passed deadline.",
+   "due": "Oct 16, 2026 (Fri), passed",
+   "original": "Oct 16, 2026 (Fri), Bob Singh",
+   "latest": "Oct 16, 2026 (Fri), Bob Singh"
+  },
+  {
+   "person": "Alice Morgan",
+   "subject": "Quarterly report",
+   "days": 6,
+   "ask": "Send the quarterly report.",
+   "action": "Send",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 1,
+   "why": "Direct request with a passed deadline.",
+   "due": "Oct 16, 2026 (Fri), passed",
+   "original": "Oct 16, 2026 (Fri), Alice Morgan",
+   "latest": "Oct 16, 2026 (Fri), Alice Morgan"
+  },
+  {
+   "person": "Alice Morgan",
+   "subject": "Signed NDA draft",
+   "days": 5,
+   "ask": "Send the counter-signed copy.",
+   "action": "Send",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 2,
+   "why": "Direct follow-up with a passed deadline.",
+   "due": "Oct 17, 2026 (Sat), passed",
+   "original": "Oct 16, 2026 (Fri), Alice Morgan",
+   "latest": "Oct 16, 2026 (Fri), Alice Morgan",
+   "more": "Send the signed NDA draft."
+  },
+  {
+   "person": "Bob Singh",
+   "subject": "Lunch order sheet",
+   "days": 3,
+   "ask": "Drop the lunch order sheet in the team folder.",
+   "action": "Send",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 1,
+   "why": "Direct request with a passed same-day deadline.",
+   "due": "Oct 19, 2026 (Mon), passed",
+   "original": "Oct 19, 2026 (Mon), Bob Singh",
+   "latest": "Oct 19, 2026 (Mon), Bob Singh"
+  },
+  {
+   "person": "Carol Reyes",
+   "subject": "Q4 staffing plan",
+   "days": 2,
+   "ask": "Send the Q4 staffing plan.",
+   "action": "Send",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 1,
+   "why": "Direct request with a passed deadline.",
+   "due": "Oct 20, 2026 (Tue), passed",
+   "original": "Oct 19, 2026 (Mon), Carol Reyes (Manager)",
+   "latest": "Oct 19, 2026 (Mon), Carol Reyes (Manager)"
+  },
+  {
+   "person": "Carol Reyes",
+   "subject": "Board slides",
+   "days": 1,
+   "ask": "Send the board slides.",
+   "action": "Send",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 1,
+   "why": "Direct request with a passed EOD deadline. Draft ready in Outlook.",
+   "due": "Oct 21, 2026 (Wed), passed",
+   "original": "Oct 21, 2026 (Wed), Carol Reyes (Manager)",
+   "latest": "Oct 21, 2026 (Wed), Carol Reyes (Manager)"
+  },
+  {
+   "person": "Bob Singh",
+   "subject": "Invoice summary",
+   "days": 1,
+   "ask": "Send the invoice summary.",
+   "action": "Send",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 1,
+   "why": "Direct request with a passed deadline. Draft ready in Outlook.",
+   "due": "Oct 21, 2026 (Wed), passed",
+   "original": "Oct 21, 2026 (Wed), Bob Singh",
+   "latest": "Oct 21, 2026 (Wed), Bob Singh"
+  }
+ ],
+ "waiting": [
+  {
+   "recipients": "Dharmesh Patt",
+   "subject": "Delivery date",
+   "daysWaiting": 8,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 14, 2026 (Wed)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply). Draft ready in Outlook.",
+   "vip": true
+  },
+  {
+   "recipients": "Bob Singh",
+   "subject": "Budget question [E19-02]",
+   "daysWaiting": 8,
+   "asked": "Confirm the budget approval.",
+   "sent": "Oct 14, 2026 (Wed)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply). Draft ready in Outlook.",
+   "topic": "budget approval"
+  },
+  {
+   "recipients": "Bob Singh",
+   "subject": "Budget question [E19-06-b]",
+   "daysWaiting": 8,
+   "asked": "Confirm the budget approval.",
+   "sent": "Oct 14, 2026 (Wed)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply). Draft ready in Outlook.",
+   "topic": "budget approval"
+  },
+  {
+   "recipients": "Bob Singh",
+   "subject": "Budget question [E19-07]",
+   "daysWaiting": 8,
+   "asked": "Confirm the budget approval.",
+   "sent": "Oct 14, 2026 (Wed)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply).",
+   "topic": "budget approval"
+  },
+  {
+   "recipients": "Bob Singh",
+   "subject": "Q3 forecast inputs [E13-10]",
+   "daysWaiting": 8,
+   "asked": "Send me the Q3 forecast inputs.",
+   "sent": "Oct 14, 2026 (Wed)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan, Bob Singh",
+   "subject": "Sign-off request [E17-02]",
+   "daysWaiting": 8,
+   "asked": "Sign off on the release notes.",
+   "sent": "Oct 14, 2026 (Wed)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Sign-off request [E17-03]",
+   "daysWaiting": 8,
+   "asked": "Sign off on the release notes.",
+   "sent": "Oct 14, 2026 (Wed)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Bob Singh, Alice Morgan, Carol Reyes",
+   "subject": "Workshop agenda [E17-04]",
+   "daysWaiting": 8,
+   "asked": "Confirm the agenda works for you.",
+   "sent": "Oct 14, 2026 (Wed)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery confirmation request [E19-01]",
+   "daysWaiting": 8,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 14, 2026 (Wed)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery confirmation request [E19-06]",
+   "daysWaiting": 8,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 14, 2026 (Wed)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Vendor Sales",
+   "subject": "Access issue [E20-01]",
+   "daysWaiting": 8,
+   "asked": "Reset my access.",
+   "sent": "Oct 14, 2026 (Wed)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery confirmation request [E20-02]",
+   "daysWaiting": 8,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 14, 2026 (Wed)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Nobody",
+   "subject": "Delivery confirmation request [E20-03]",
+   "daysWaiting": 8,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 14, 2026 (Wed)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply). Recipient looks like a placeholder. Check the address before following up."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery confirmation request [E20-07]",
+   "daysWaiting": 8,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 14, 2026 (Wed)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Dana Whitfield",
+   "subject": "Fw: Contract status",
+   "daysWaiting": 7,
+   "asked": "Take this.",
+   "sent": "Oct 15, 2026 (Thu)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery confirmation request [E18-01]",
+   "daysWaiting": 7,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 15, 2026 (Thu)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery confirmation request [E18-03]",
+   "daysWaiting": 7,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 15, 2026 (Thu)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery confirmation request [E18-04]",
+   "daysWaiting": 7,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 15, 2026 (Thu)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery confirmation request [E18-05]",
+   "daysWaiting": 7,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 15, 2026 (Thu)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery confirmation request [E18-06]",
+   "daysWaiting": 7,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 15, 2026 (Thu)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery confirmation request [E18-07]",
+   "daysWaiting": 7,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 15, 2026 (Thu)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery date and shipping cost [E18-08]",
+   "daysWaiting": 7,
+   "asked": "Confirm the delivery date and the shipping cost.",
+   "sent": "Oct 15, 2026 (Thu)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery confirmation request [E21-01]",
+   "daysWaiting": 7,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 15, 2026 (Thu)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery confirmation request [E21-03]",
+   "daysWaiting": 7,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 15, 2026 (Thu)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery confirmation request [E21-04]",
+   "daysWaiting": 7,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 15, 2026 (Thu)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery confirmation request [E21-05]",
+   "daysWaiting": 7,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 15, 2026 (Thu)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan",
+   "subject": "Delivery confirmation request [A3-01]",
+   "daysWaiting": 6,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 16, 2026 (Fri)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Bob Singh",
+   "subject": "Q3 forecast inputs [E23-01]",
+   "daysWaiting": 6,
+   "asked": "Send me the Q3 forecast inputs.",
+   "sent": "Oct 16, 2026 (Fri)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Alice Morgan, Bob Singh",
+   "subject": "Sign-off request [E23-02]",
+   "daysWaiting": 6,
+   "asked": "Sign off on the release notes.",
+   "sent": "Oct 16, 2026 (Fri)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  },
+  {
+   "recipients": "Carol Reyes",
+   "subject": "Delivery date [E23-03]",
+   "daysWaiting": 6,
+   "asked": "Confirm the delivery date.",
+   "sent": "Oct 16, 2026 (Fri)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply)."
+  }
+ ],
+ "notes": [
+  "Possible duplicates: Board slides, Invoice summary and Quarterly report each appear twice with different due dates. Both entries are kept so nothing is hidden.",
+  "Drafts: existing drafts found for 7 items. Admin access was not drafted because it requests a secret."
+ ],
+ "summary": "Inbound: 90 emails excluded (2 already replied to, 88 noise). Outbound: 55 sent emails excluded (informational, no ask)."
+}

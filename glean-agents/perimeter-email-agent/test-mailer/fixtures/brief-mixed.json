@@ -1,0 +1,157 @@
+{
+ "mode": "morning",
+ "asOf": "Oct 23, 2026",
+ "highlights": "VIP: Dana Whitfield, 2 items. Topic renewal: 1 item.",
+ "must": [
+  {
+   "person": "Dana Whitfield",
+   "vip": true,
+   "topic": "renewal",
+   "subject": "R&D <budget> \"final\"",
+   "days": 2,
+   "ask": "Approve the R&D budget by noon.",
+   "action": "Approve",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 3,
+   "why": "VIP sender with a passed deadline.",
+   "due": "Oct 21, 2026 (Wed), passed",
+   "original": "Oct 20, 2026 (Tue), Dana Whitfield",
+   "latest": "Oct 22, 2026 (Thu), Dana Whitfield",
+   "more": "Send the revised forecast. Confirm the vendor list.",
+   "also": "Ravi Shah, Meena Iyer"
+  },
+  {
+   "person": "Ravi Shah",
+   "subject": "Contract signature",
+   "days": 0,
+   "ask": "Sign the contract today.",
+   "action": "Complete",
+   "confidence": "Medium",
+   "ownership": "Ambiguous",
+   "messages": 1,
+   "why": "Due today.",
+   "due": "Oct 23, 2026 (Fri)",
+   "original": "Oct 23, 2026 (Fri), Ravi Shah",
+   "latest": "Oct 23, 2026 (Fri), Ravi Shah"
+  }
+ ],
+ "waitingYou": [
+  {
+   "person": "Meena Iyer",
+   "subject": "Planning notes",
+   "days": 0,
+   "ask": "Share your comments on the planning notes.",
+   "action": "Review",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 2,
+   "why": "Direct request, not due yet.",
+   "due": "Oct 28, 2026 (Wed)",
+   "original": "Oct 22, 2026 (Thu), Meena Iyer",
+   "latest": "Oct 22, 2026 (Thu), Meena Iyer"
+  },
+  {
+   "person": "Tom Becker",
+   "subject": "Offsite dates",
+   "days": 0,
+   "ask": "Pick a date for the offsite.",
+   "action": "Decide",
+   "confidence": "High",
+   "ownership": "Owned",
+   "messages": 1,
+   "why": "Direct question with no deadline.",
+   "due": "not given",
+   "original": "Oct 22, 2026 (Thu), Tom Becker",
+   "latest": "Oct 22, 2026 (Thu), Tom Becker"
+  }
+ ],
+ "waiting": [
+  {
+   "recipients": "Dana Whitfield",
+   "vip": true,
+   "topic": "renewal",
+   "subject": "Renewal terms",
+   "daysWaiting": 9,
+   "asked": "Confirm the renewal terms.",
+   "sent": "Oct 14, 2026 (Wed)",
+   "staleness": "Overdue",
+   "followUp": "Follow up today (no reply). Draft ready in Outlook.",
+   "responses": "Replied: none. Waiting: Dana Whitfield."
+  },
+  {
+   "recipients": "Ravi Shah, Meena Iyer, Tom Becker",
+   "subject": "Workshop agenda",
+   "daysWaiting": 4,
+   "asked": "Confirm the agenda works for you.",
+   "sent": "Oct 19, 2026 (Mon)",
+   "staleness": "Overdue",
+   "followUp": "Follow up this week (partial reply).",
+   "responses": "Replied: Ravi Shah. Waiting: Meena Iyer, Tom Becker."
+  },
+  {
+   "recipients": "Lena Ortiz",
+   "subject": "Invoice check",
+   "daysWaiting": 1,
+   "asked": "Check invoice 4471.",
+   "sent": "Oct 22, 2026 (Thu)",
+   "staleness": "Recent",
+   "followUp": "Not yet."
+  }
+ ],
+ "review": [
+  {
+   "person": "Newsletter Desk",
+   "subject": "Weekly digest",
+   "days": 0,
+   "ask": "Read the digest if time allows.",
+   "action": "Review",
+   "confidence": "Low",
+   "ownership": "Ambiguous",
+   "messages": 1,
+   "why": "Low confidence ask.",
+   "due": "not given",
+   "original": "Oct 22, 2026 (Thu), Newsletter Desk",
+   "latest": "Oct 22, 2026 (Thu), Newsletter Desk"
+  }
+ ],
+ "commitments": {
+  "mine": [
+   {
+    "who": "Dana Whitfield",
+    "what": "Send the revised forecast",
+    "due": "Oct 21, 2026 (Wed)",
+    "status": "Open",
+    "overdue": true
+   },
+   {
+    "who": "Ravi Shah",
+    "what": "Share the signed contract",
+    "due": "Oct 30, 2026 (Fri)",
+    "status": "Open"
+   }
+  ],
+  "others": [
+   {
+    "who": "Meena Iyer",
+    "what": "Send the planning notes",
+    "due": "Oct 24, 2026 (Sat)",
+    "status": "Waiting"
+   }
+  ]
+ },
+ "meetings": {
+  "entries": [
+   "Design review, 9:00 AM\nThread: Planning notes. Meena Iyer sent notes on Oct 22 and waits for your comments.\nThread: R&D budget. Approval is still open.",
+   "Vendor call, 2:00 PM\nThread: Renewal terms. No reply yet from Dana Whitfield."
+  ],
+  "unsummarized": [
+   "Team sync, 4:00 PM"
+  ]
+ },
+ "notes": [
+  "Drafts: existing drafts found for 1 item.",
+  "Calendar: 3 meetings today."
+ ],
+ "summary": "Inbound: 40 emails excluded (2 already replied to, 38 noise). Outbound: 12 sent emails excluded (informational, no ask)."
+}

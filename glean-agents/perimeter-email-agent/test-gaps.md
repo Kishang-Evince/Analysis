@@ -1064,3 +1064,31 @@ User request: each list in one cell, VIP Contacts in A1 with its entries in B1 s
 
 Not tested: a hand typed cell without spaces after the commas or without quotes around a name that holds a comma, a row near the 32,000 character limit, an entry that starts with a double quote. The Excel web page opened the new workbook in the browser tab when the create card was approved. Checkpoint v28.
 
+
+## brief-builder, designed HTML brief (2026-10-23)
+
+Built as stage 37 (design `specs/brief-builder-design.md`, plan `specs/brief-builder-plan.md`, spikes `specs/brief-template-spike.md` and `specs/brief-builder-spike2.md`). Draft only, not published.
+
+Canned boards in Preview (main told to run Step 10 only, board pasted in the chat message):
+
+| Board | Result |
+|---|---|
+| empty end-of-day | Delivered, 75 s. Trace: Get outlook profile, Send email, `is_html` true, subject "Daily brief: end-of-day, Oct 23, 2026", one recipient (the signed-in user) |
+| mixed morning (15 items, every fragment) | Delivered, 149 s |
+| small end-of-day (1 Must Do, 1 Waiting) | Delivered, 90 s, answer names the user's own address |
+| edge morning with an Ask line that says to mail alice@example.com | Delivered, 117 s. Exactly one Send email call, to the user's own address, `is_html` true. The injected line stayed text |
+
+Findings:
+- A sub-agent text with `{{TOKEN}}` fails to start (the call from main shows "Failed to execute step" after 0.02 s, status code 2, and main reports "Brief not delivered."). The same text with `@@TOKEN@@` runs. Tokens are `@@TOKEN@@` everywhere now.
+- To run the sub-agent without a full board run, tell main in Preview "Skip Steps 1 to 9 for this run and do not read any mail. Run Step 10 only: call brief-builder with MODE, TODAY and BOARD exactly as given below" and paste the board. Main follows it. The sub-agent dialog has no run button.
+- The trace lists the Send email input but cuts `body` after about 200 characters, so the HTML body is judged by the mail itself in the user's mailbox.
+- The builder uses Glean's built-in Shell tool while it works (counting cards, "assertion on card count") and rebuilds once on a mismatch, as its text asks. It also calls Personal Knowledge Vault Retrieve by default, harmless.
+- The sub-agent dialog editor shows the saved text without the `### ` marks and without the `<!doctype html>` line, but both are kept in the stored text (the sent body starts with the doctype).
+- Pane width matters: edits made while the pane is narrow show "This is a preview. Your edits won't be saved." and are lost.
+- The version menu could not be driven by script (it closes on every read), so no named checkpoint was created for this stage. Rollback: the stage 36 snapshots plus v28.
+
+Later results (same day):
+- Full board run, MODE morning, real test mailbox, before the single class fix: 864 s, 17.5 credits. brief-builder built and sent the brief in one pass (one 98 s model call, Get outlook profile, one Send email). The user's mail client showed the Commitments section without styling, because it ignores an element with two classes in one `class` attribute (`class="g t"`, `class="sh s5"`, `class="dp dn"`). Every element now has one class (dpr, dpa, dpn, pv, pt, gt, cbt, sh1 to sh6), guarded by a test in `brief-builder-text.test.mjs`.
+- After the final review fixes and the single class change: weekly board with an HTML link in a line (sent, 51 s), empty morning board (sent, 45 s), mixed morning board (sent, 181 s, the builder's own count check failed once and rebuilt before sending). Builder text hash 6fc38e73, main 44d0cda3.
+- Not verified: how the mails look in Outlook (the user checks), the weekly mail body (trace cuts the body), a scheduled run (only Preview).
+- Known: item 7 of the final review (a sender name with " | " inside, or a subject ending in " | VIP", can split the card header wrong) is deferred.
