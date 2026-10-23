@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Email Wireframes</title>
+<style>
+:root{--ink:#222;--muted:#777;--line:#999;--fill:#f4f4f4;--glass:linear-gradient(135deg,#c7b8ff 0%,#a5f3fc 55%,#fbcfe8 100%)}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font:13px/1.4 ui-monospace,Menlo,Consolas,monospace;padding:24px}
+h1{font-size:18px;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 24px}
+.wrap{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.board{width:100%;max-width:640px;border:1px dashed var(--line);padding:12px;margin:0 auto}
+.screen-label{font-weight:bold;margin-bottom:8px}
+.box{border:1px solid var(--line);background:#fff;padding:8px;margin:0 0 8px}
+.box.fill{background:var(--fill)}
+.box.glass{background:var(--glass)}
+.box.card-glass{background:rgba(255,255,255,.55);border:1px dashed #fff}
+.label{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+.bar{height:8px;background:#ccc;margin:6px 0}
+.bar.short{width:45%}
+.bar.mid{width:70%}
+.grid4{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.row{display:grid;grid-template-columns:1.2fr 1.6fr 1.4fr .8fr .8fr .8fr;gap:6px;border-top:1px solid #ddd;padding:6px 0;font-size:11px}
+.row.head{border-top:0;color:var(--muted);text-transform:uppercase;font-size:10px}
+.chip{display:inline-block;border:1px solid var(--line);padding:0 6px;margin-right:4px;font-size:11px}
+.more{color:var(--muted);font-size:11px;padding:4px 0}
+.note{color:var(--muted);font-size:11px;margin-top:8px}
+.tile{border:1px solid var(--line);padding:8px;background:#fff}
+.tile b{display:block;font-size:20px}
+.tile.card-glass{background:rgba(255,255,255,.55);border:1px dashed #fff}
+</style>
+</head>
+<body>
+
+<h1>Email wireframes</h1>
+<p class="sub">Layout only. Grey blocks are content slots, not real text. Desktop width 640px.</p>
+
+<div class="wrap">
+
+  <section>
+    <div class="screen-label">1. board-digest.html</div>
+    <div class="board">
+      <div class="box">
+        <div class="label">kicker: End of day, as of Oct 22, 2026</div>
+        <div style="font-size:18px;font-weight:bold">Outlook Action Board</div>
+      </div>
+
+      <div class="grid4">
+        <div class="tile"><div class="label">Must do today</div><b>[13]</b><div class="bar short"></div></div>
+        <div class="tile"><div class="label">Waiting on others</div><b>[30]</b><div class="bar short"></div></div>
+        <div class="tile"><div class="label">Drafts ready</div><b>[7]</b><div class="bar short"></div></div>
+        <div class="tile"><div class="label">Check first</div><b>[2]</b><div class="bar short"></div></div>
+      </div>
+
+      <div class="box fill">
+        <div class="label">Start here</div>
+        <div>1. [Admin access] <span class="label">secret, no draft</span></div>
+        <div>2. [Q3 numbers] <span class="label">draft ready</span></div>
+        <div>3. [VIP delivery date] <span class="label">8 days</span></div>
+        <div>4. [Budget thread] <span class="label">3 items</span></div>
+      </div>
+
+      <div class="label" style="margin:12px 0 4px">Must do today (13, oldest due first)</div>
+      <div class="box"><div class="bar mid"></div><div class="bar short"></div><span class="chip">due, days overdue</span><span class="chip">draft / no draft</span></div>
+      <div class="box"><div class="bar mid"></div><div class="bar short"></div><span class="chip">due, days overdue</span><span class="chip">no draft</span></div>
+      <div class="box"><div class="bar mid"></div><div class="bar short"></div><span class="chip">due, days overdue</span><span class="chip">draft ready</span></div>
+      <div class="more">+ 10 more cards</div>
+
+      <div class="label" style="margin:12px 0 4px">Waiting on others (30, longest wait first)</div>
+      <div class="box">
+        <div class="row head"><div>To</div><div>Subject</div><div>You asked</div><div>Sent</div><div>Waiting</div><div>Draft</div></div>
+        <div class="row"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+        <div class="row"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+        <div class="row"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+      </div>
+      <div class="more">+ 27 more rows</div>
+
+      <div class="label" style="margin:12px 0 4px">Chase by recipient</div>
+      <div class="box"><span class="chip">recipient</span><span class="chip">count</span> <span class="more">one row per address</span></div>
+
+      <div class="note">Footer: duplicates, drafts, inbound/outbound exclusions, thresholds</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="screen-label">2. waiting-followups.html</div>
+    <div class="board">
+      <div class="box">
+        <div class="label">kicker: End of day, as of Oct 22, 2026</div>
+        <div style="font-size:18px;font-weight:bold">Waiting on others</div>
+        <div class="bar mid"></div>
+      </div>
+
+      <div class="label" style="margin:12px 0 4px">Waiting on others (30, longest wait first)</div>
+      <div class="box">
+        <div class="row head"><div>To</div><div>Subject</div><div>You asked</div><div>Sent</div><div>Waiting</div><div>Draft</div></div>
+        <div class="row"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+        <div class="row"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+        <div class="row"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+      </div>
+      <div class="more">+ 27 more rows</div>
+
+      <div class="label" style="margin:12px 0 4px">Chase by recipient</div>
+      <div class="box"><span class="chip">recipient</span><span class="chip">count</span></div>
+
+      <div class="note">Footer: duplicates, drafts, inbound/outbound exclusions, thresholds</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="screen-label">3. board-digest-glass.html</div>
+    <div class="board box glass" style="border:0;padding:12px">
+      <div class="box card-glass">
+        <div class="label">kicker: End of day, as of Oct 22, 2026</div>
+        <div style="font-size:18px;font-weight:bold">Outlook Action Board</div>
+      </div>
+
+      <div class="grid4">
+        <div class="tile card-glass"><div class="label">Must do today</div><b>[13]</b><div class="bar short"></div></div>
+        <div class="tile card-glass"><div class="label">Waiting on others</div><b>[30]</b><div class="bar short"></div></div>
+        <div class="tile card-glass"><div class="label">Drafts ready</div><b>[7]</b><div class="bar short"></div></div>
+        <div class="tile card-glass"><div class="label">Check first</div><b>[2]</b><div class="bar short"></div></div>
+      </div>
+
+      <div class="box card-glass">
+        <div class="label">Start here</div>
+        <div>1. [Admin access] <span class="label">secret, no draft</span></div>
+        <div>2. [Q3 numbers] <span class="label">draft ready</span></div>
+        <div>3. [VIP delivery date] <span class="label">8 days</span></div>
+        <div>4. [Budget thread] <span class="label">3 items</span></div>
+      </div>
+
+      <div class="label" style="margin:12px 0 4px">Must do today (13)</div>
+      <div class="box card-glass"><div class="bar mid"></div><div class="bar short"></div></div>
+      <div class="box card-glass"><div class="bar mid"></div><div class="bar short"></div></div>
+      <div class="more">+ 11 more cards</div>
+
+      <div class="label" style="margin:12px 0 4px">Waiting on others (30)</div>
+      <div class="box card-glass">
+        <div class="row head"><div>To</div><div>Subject</div><div>You asked</div><div>Sent</div><div>Waiting</div><div>Draft</div></div>
+        <div class="row"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+      </div>
+      <div class="more">+ 29 more rows</div>
+    </div>
+    <div class="note">Gradient page and translucent cards. Outlook desktop shows solid or transparent fallbacks.</div>
+  </section>
+
+</div>
+</body>
+</html>

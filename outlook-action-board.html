@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outlook Action Board</title>
+<style>
+:root{--bg:#fafafa;--surface:#ffffff;--ink:#171717;--muted:#6b7280;--line:#e5e7eb;--chip:#f2f4f7;--hover:#f7f7f8;--red:#b42318;--red-soft:#fef3f2;--amber:#b54708;--amber-soft:#fffaeb;--green:#067647;--green-soft:#ecfdf3;--blue:#175cd3;--blue-soft:#eff8ff;--focus:#175cd3}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-bottom:48px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+
+/* Header */
+.hero{background:var(--surface);border-bottom:1px solid var(--line);padding:32px 0 28px;margin-bottom:28px}
+.hero .wrap{display:grid;gap:14px}
+.kicker{margin:0;font-size:13px;color:var(--muted)}
+.hero h1{margin:0;font-size:28px;line-height:1.2;font-weight:600;letter-spacing:-.01em}
+.hero-nums{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:14px;color:var(--muted)}
+.hero-nums b{font-size:20px;font-weight:600;color:var(--ink);margin-right:6px}
+.progress{max-width:360px;margin-top:6px}
+.progress-text{font-size:13px;color:var(--muted);margin-bottom:8px}
+.bar{height:4px;background:var(--line);border-radius:4px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--ink);transition:width .3s}
+
+/* Stat tiles */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:0 0 28px}
+@media (min-width:800px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.stat::before{content:"";display:block;width:8px;height:8px;border-radius:50%;background:var(--c);margin-bottom:12px}
+.stat strong{display:block;font-size:13px;font-weight:500;color:var(--muted)}
+.stat b{display:block;font-size:28px;line-height:1.2;font-weight:600;margin:2px 0}
+.stat small{display:block;font-size:12px;color:var(--muted)}
+
+/* Start here */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:28px}
+.panel h2{margin:0 0 10px;font-size:16px;font-weight:600}
+.panel ol{margin:0;padding-left:20px}
+.panel li{margin:10px 0}
+.panel a{color:var(--ink);font-weight:500;text-decoration:none;border-bottom:1px solid var(--line)}
+.panel a:hover{border-bottom-color:var(--ink)}
+.muted{color:var(--muted);font-size:13px}
+
+/* Toolbar */
+.toolbar{position:sticky;top:0;z-index:5;background:var(--bg);padding:14px 0;display:flex;gap:12px;flex-wrap:wrap;align-items:center;border-bottom:1px solid var(--line);margin-bottom:4px}
+.seg{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:2px}
+.seg button{border:0;background:none;padding:6px 12px;border-radius:6px;font:inherit;font-size:14px;color:var(--muted);cursor:pointer}
+.seg button:hover{color:var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--chip);color:var(--ink);font-weight:500}
+.search{flex:1;min-width:200px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit;font-size:14px}
+.search:focus{outline:none;border-color:var(--muted)}
+.check{display:inline-flex;gap:6px;align-items:center;color:var(--muted);font-size:14px;cursor:pointer}
+.check input{accent-color:var(--ink)}
+
+/* Sections */
+h2.section{font-size:16px;font-weight:600;margin:32px 0 12px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--c);display:inline-block}
+.count{font-size:13px;font-weight:400;color:var(--muted)}
+
+/* Must do cards */
+.cards{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:820px){.cards{grid-template-columns:1fr 1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--c,var(--red));border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.card.done{opacity:.5}
+.card-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.who{font-weight:600}
+.subject{color:var(--muted);font-size:14px;margin-top:2px}
+.ask{margin:0;font-size:14px}
+.ask b{font-weight:600}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-size:12px;line-height:18px;padding:2px 8px;border-radius:999px;background:var(--chip);color:var(--muted);white-space:nowrap}
+.tag.red{background:var(--red-soft);color:var(--red)}
+.tag.amber{background:var(--amber-soft);color:var(--amber)}
+.tag.green{background:var(--green-soft);color:var(--green)}
+.tag.blue{background:var(--blue-soft);color:var(--blue)}
+.action{font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);white-space:nowrap;padding-top:2px}
+.alert{background:var(--red-soft);color:var(--red);border-radius:6px;padding:8px 10px;font-size:13px}
+.warn-line{color:var(--amber);font-size:13px;margin-top:4px}
+details{font-size:13px;color:var(--muted)}
+details summary{cursor:pointer}
+details summary:hover{color:var(--ink)}
+dl{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:8px 0 0}
+dt{color:var(--muted)}
+dd{margin:0;color:var(--ink)}
+.done-toggle{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);cursor:pointer;margin-top:auto;padding-top:8px;border-top:1px solid var(--line)}
+.done-toggle input{accent-color:var(--ink)}
+
+/* Chase chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.chips button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:4px 12px;font:inherit;font-size:13px;cursor:pointer}
+.chips button:hover{border-color:var(--muted)}
+.chips button b{color:var(--muted);font-weight:500;margin-left:6px}
+
+/* Waiting table */
+.table-wrap{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;background:var(--bg);color:var(--muted);font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.05em;padding:10px 14px}
+td{padding:12px 14px;border-top:1px solid var(--line);vertical-align:top}
+tbody tr:hover td{background:var(--hover)}
+tbody tr.done td{opacity:.5}
+td input[type="checkbox"]{accent-color:var(--ink)}
+.days{font-weight:500;white-space:nowrap}
+.days.hot{color:var(--red)}
+.days.warm{color:var(--amber)}
+td.empty{text-align:center;color:var(--muted);padding:24px}
+@media (max-width:760px){
+  thead{display:none}
+  tbody tr{display:grid;gap:6px;padding:14px;border-top:1px solid var(--line)}
+  tbody tr:first-child{border-top:0}
+  td{border:0;padding:0}
+  td::before{content:attr(data-label);display:block;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+  td[data-label="Done"]::before{display:none}
+  td.empty::before{display:none}
+}
+
+.notes{font-size:12px;color:var(--muted);margin-top:32px}
+.notes p{margin:4px 0}
+
+@media (prefers-reduced-motion: reduce){
+  *{transition:none!important;animation:none!important}
+}
+@media (max-width:760px){.toolbar{position:static}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">End of day · as of Oct 22, 2026</p>
+    <h1>Outlook Action Board</h1>
+    <div class="progress">
+      <div class="progress-text" id="progressText"></div>
+      <div class="bar"><i id="progressBar"></i></div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+
+  <section class="stats" id="stats" aria-label="Summary"></section>
+
+  <section class="panel" aria-labelledby="startTitle">
+    <h2 id="startTitle">Start here</h2>
+    <ol id="startHere"></ol>
+  </section>
+
+  <div class="toolbar" role="toolbar" aria-label="Filters">
+    <div class="seg" role="group" aria-label="Show">
+      <button type="button" data-view="all" aria-pressed="true">All</button>
+      <button type="button" data-view="must" aria-pressed="false">Must do today</button>
+      <button type="button" data-view="wait" aria-pressed="false">Waiting</button>
+    </div>
+    <input class="search" id="search" type="search" placeholder="Search person, subject, ask or recipient" aria-label="Search">
+    <label class="check"><input type="checkbox" id="draftOnly"> Draft ready only</label>
+    <label class="check"><input type="checkbox" id="hideDone"> Hide done</label>
+  </div>
+
+  <section id="mustSec" aria-labelledby="mustTitle">
+    <h2 class="section" id="mustTitle"><span class="dot" style="--c:var(--red)"></span> Must do today <span class="count" id="mustCount"></span></h2>
+    <div class="cards" id="mustList"></div>
+  </section>
+
+  <section id="waitSec" aria-labelledby="waitTitle">
+    <h2 class="section" id="waitTitle"><span class="dot" style="--c:var(--amber)"></span> Waiting on others <span class="count" id="waitCount"></span></h2>
+    <p class="muted" style="margin:0 0 8px">Bottleneck: items waiting per recipient. One item can count for several people.</p>
+    <div class="chips" id="chips" aria-label="Chase by recipient"></div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Done</th>
+            <th scope="col">To</th>
+            <th scope="col">Subject</th>
+            <th scope="col">You asked</th>
+            <th scope="col">Sent</th>
+            <th scope="col">Waiting</th>
+            <th scope="col">Follow-up</th>
+          </tr>
+        </thead>
+        <tbody id="waitBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="notes">
+    <p>Possible duplicates: Board slides, Invoice summary and Quarterly report each appear twice with different due dates. Both entries are kept so nothing is hidden.</p>
+    <p>Drafts: existing drafts found for 7 items. Admin access was not drafted because it requests a secret.</p>
+    <p>Thresholds: must do turns red at 5+ days overdue. Waiting turns red at 8+ days. Changes since last run are not tracked (no previous snapshot).</p>
+    <p>Inbound: 90 emails excluded (2 already replied to, 88 noise). Outbound: 55 sent emails excluded (informational, no ask).</p>
+  </footer>
+
+</main>
+
+<script>
+const AS_OF = Date.UTC(2026, 9, 22);
+const DAY = 864e5;
+const KEY = "outlookActionBoard.done";
+
+const MUST = [
+  {person:"Carol Reyes", role:"Manager", topic:"Budget", subject:'Q3 "final" numbers', thread:"Topic: budget approval", ask:"Confirm the Q3 numbers.", action:"Reply", why:"Direct confirmation request with a passed deadline. Draft ready in Outlook.", due:"2026-10-16", draft:true, originalAsk:"Oct 16, 2026 (Fri), Carol Reyes (Manager)", latest:"Oct 16, 2026 (Fri), Carol Reyes (Manager)", messages:1},
+  {person:"Carol Reyes", role:"Manager", subject:"Admin access", ask:"Reply about shared admin account access through an approved secure channel without sending the password by email.", action:"Reply", why:"Direct manager request with a passed same-day deadline. Secret requested, no draft.", due:"2026-10-16", draft:false, secret:true, originalAsk:"Oct 16, 2026 (Fri), Carol Reyes (Manager)", latest:"Oct 16, 2026 (Fri), Carol Reyes (Manager)", messages:1},
+  {person:"Bob Singh", subject:"Vendor quote comments", ask:"Send comments on the vendor quote.", action:"Send", why:"Direct request with a passed EOD deadline. Draft ready in Outlook.", due:"2026-10-16", draft:true, originalAsk:"Oct 16, 2026 (Fri), Bob Singh", latest:"Oct 16, 2026 (Fri), Bob Singh", messages:1},
+  {person:"Carol Reyes", role:"Manager", subject:"Board slides", ask:"Send the board slides.", action:"Send", why:"Direct request with a passed EOD deadline. Draft ready in Outlook.", due:"2026-10-21", draft:true, dup:"m7", originalAsk:"Oct 21, 2026 (Wed), Carol Reyes (Manager)", latest:"Oct 21, 2026 (Wed), Carol Reyes (Manager)", messages:1},
+  {person:"Bob Singh", subject:"Invoice summary", ask:"Send the invoice summary.", action:"Send", why:"Direct request with a passed deadline. Draft ready in Outlook.", due:"2026-10-21", draft:true, dup:"m8", originalAsk:"Oct 21, 2026 (Wed), Bob Singh", latest:"Oct 21, 2026 (Wed), Bob Singh", messages:1},
+  {person:"Alice Morgan", subject:"Quarterly report", ask:"Send the quarterly report.", action:"Send", why:"Direct request with a passed deadline.", due:"2026-10-16", draft:false, dup:"m13", originalAsk:"Oct 21, 2026 (Wed), Alice Morgan", latest:"Oct 21, 2026 (Wed), Alice Morgan", messages:1},
+  {person:"Carol Reyes", role:"Manager", subject:"Board slides", ask:"Send the board slides.", action:"Send", why:"Direct request with a passed EOD deadline.", due:"2026-10-16", draft:false, dup:"m4", originalAsk:"Oct 16, 2026 (Fri), Carol Reyes (Manager)", latest:"Oct 16, 2026 (Fri), Carol Reyes (Manager)", messages:1},
+  {person:"Bob Singh", subject:"Invoice summary", ask:"Send the invoice summary.", action:"Send", why:"Direct request with a passed deadline.", due:"2026-10-16", draft:false, dup:"m5", originalAsk:"Oct 16, 2026 (Fri), Bob Singh", latest:"Oct 16, 2026 (Fri), Bob Singh", messages:1},
+  {person:"Bob Singh", subject:"Security questionnaire", ask:"Provide your answers to the security questionnaire.", action:"Reply", why:"Direct request with a passed deadline.", due:"2026-10-16", draft:false, originalAsk:"Oct 16, 2026 (Fri), Bob Singh", latest:"Oct 16, 2026 (Fri), Bob Singh", messages:1},
+  {person:"Alice Morgan", subject:"Signed NDA draft", ask:"Send the counter-signed copy.", action:"Send", why:"Direct follow-up with a passed deadline.", due:"2026-10-17", draft:false, moreAsks:"Send the signed NDA draft.", originalAsk:"Oct 16, 2026 (Fri), Alice Morgan", latest:"Oct 16, 2026 (Fri), Alice Morgan", messages:2},
+  {person:"Carol Reyes", role:"Manager", subject:"Q4 staffing plan", ask:"Send the Q4 staffing plan.", action:"Send", why:"Direct request with a passed deadline.", due:"2026-10-20", draft:false, originalAsk:"Oct 19, 2026 (Mon), Carol Reyes (Manager)", latest:"Oct 19, 2026 (Mon), Carol Reyes (Manager)", messages:1},
+  {person:"Bob Singh", subject:"Lunch order sheet", ask:"Drop the lunch order sheet in the team folder.", action:"Send", why:"Direct request with a passed same-day deadline.", due:"2026-10-19", draft:false, originalAsk:"Oct 19, 2026 (Mon), Bob Singh", latest:"Oct 19, 2026 (Mon), Bob Singh", messages:1},
+  {person:"Alice Morgan", subject:"Quarterly report", ask:"Send the quarterly report.", action:"Send", why:"Direct request with a passed deadline.", due:"2026-10-16", draft:false, dup:"m6", originalAsk:"Oct 16, 2026 (Fri), Alice Morgan", latest:"Oct 16, 2026 (Fri), Alice Morgan", messages:1}
+].map((m, i) => ({id:"m" + (i + 1), confidence:"High", ownership:"Owned", ...m}));
+
+const A = "alice.morgan.test@yopmail.com";
+const B = "bob.singh.test@yopmail.com";
+const C = "carol.reyes.test@yopmail.com";
+const dc = (code, sent, to = A) => ({to, subject:"Delivery confirmation request [" + code + "]", asked:"Confirm the delivery date.", sent, draft:false});
+
+const WAIT = [
+  {to:"Dharmesh Patt", vip:true, subject:"Delivery date", asked:"Confirm the delivery date.", sent:"2026-10-14", draft:true},
+  {to:B, subject:"Budget question [E19-02]", tag:"Topic: budget approval", asked:"Confirm the budget approval.", sent:"2026-10-14", draft:true},
+  {to:B, subject:"Budget question [E19-06-b]", tag:"Topic: budget approval", asked:"Confirm the budget approval.", sent:"2026-10-14", draft:true},
+  {to:B, subject:"Budget question [E19-07]", tag:"Topic: budget approval", asked:"Confirm the budget approval.", sent:"2026-10-14", draft:false},
+  {to:B, subject:"Q3 forecast inputs [E13-10]", asked:"Send me the Q3 forecast inputs.", sent:"2026-10-14", draft:false},
+  {to:A + ", " + B, subject:"Sign-off request [E17-02]", asked:"Sign off on the release notes.", sent:"2026-10-14", draft:false},
+  {to:A, subject:"Sign-off request [E17-03]", asked:"Sign off on the release notes.", sent:"2026-10-14", draft:false},
+  {to:B + ", " + A + ", " + C, subject:"Workshop agenda [E17-04]", asked:"Confirm the agenda works for you.", sent:"2026-10-14", draft:false},
+  dc("E19-01", "2026-10-14"),
+  dc("E19-06", "2026-10-14"),
+  {to:"vendor.sales.test@yopmail.com", subject:"Access issue [E20-01]", asked:"Reset my access.", sent:"2026-10-14", draft:false},
+  dc("E20-02", "2026-10-14"),
+  {to:"nobody.test@yopmail.com", subject:"Delivery confirmation request [E20-03]", asked:"Confirm the delivery date.", sent:"2026-10-14", draft:false, flag:"Recipient looks like a placeholder. Check the address before following up."},
+  dc("E20-07", "2026-10-14"),
+  {to:"dana.whitfield.test@yopmail.com", subject:"Fw: Contract status", asked:"Take this.", sent:"2026-10-15", draft:false},
+  dc("E18-01", "2026-10-15"),
+  dc("E18-03", "2026-10-15"),
+  dc("E18-04", "2026-10-15"),
+  dc("E18-05", "2026-10-15"),
+  dc("E18-06", "2026-10-15"),
+  dc("E18-07", "2026-10-15"),
+  {to:A, subject:"Delivery date and shipping cost [E18-08]", asked:"Confirm the delivery date and the shipping cost.", sent:"2026-10-15", draft:false},
+  dc("E21-01", "2026-10-15"),
+  dc("E21-03", "2026-10-15"),
+  dc("E21-04", "2026-10-15"),
+  dc("E21-05", "2026-10-15"),
+  dc("A3-01", "2026-10-16"),
+  {to:B, subject:"Q3 forecast inputs [E23-01]", asked:"Send me the Q3 forecast inputs.", sent:"2026-10-16", draft:false},
+  {to:A + ", " + B, subject:"Sign-off request [E23-02]", asked:"Sign off on the release notes.", sent:"2026-10-16", draft:false},
+  {to:C, subject:"Delivery date [E23-03]", asked:"Confirm the delivery date.", sent:"2026-10-16", draft:false}
+].map((w, i) => ({id:"w" + (i + 1), ...w}));
+
+const ITEMS = {};
+[...MUST, ...WAIT].forEach(i => { ITEMS[i.id] = i; });
+const TOTAL = MUST.length + WAIT.length;
+
+const START = [
+  {id:"m2", title:"Admin access (Carol Reyes)", body:"Secret requested. Reply through an approved secure channel, never by email. No draft."},
+  {id:"m1", title:'Q3 "final" numbers (Carol Reyes)', body:"Confirm the Q3 numbers. Draft ready."},
+  {id:"w1", title:"Dharmesh Patt (VIP)", body:"Delivery date. Sent 8 days ago with no reply. Draft ready."},
+  {id:"w2", title:"Budget approval thread", body:"Three budget questions sent 8 days ago with no reply. Drafts ready for two of them."}
+];
+
+function daysBetween(iso) { return Math.round((AS_OF - Date.parse(iso)) / DAY); }
+function dayLabel(iso) { return new Date(iso + "T00:00:00Z").toLocaleDateString("en-US", {weekday:"short", month:"short", day:"numeric", timeZone:"UTC"}); }
+function plural(n, word) { return n + " " + word + (n === 1 ? "" : "s"); }
+function esc(s) { return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"})[c]); }
+function searchText(i) { return [i.person, i.subject, i.topic, i.thread, i.ask, i.to, i.asked, i.tag].filter(Boolean).join(" ").toLowerCase(); }
+
+let done = new Set();
+try { done = new Set(JSON.parse(localStorage.getItem(KEY) || "[]")); } catch (e) {}
+function saveDone() { try { localStorage.setItem(KEY, JSON.stringify([...done])); } catch (e) {} }
+
+let view = "all";
+let query = "";
+let draftOnly = false;
+let hideDone = false;
+
+function passes(i) {
+  return (!draftOnly || i.draft) && (!hideDone || !done.has(i.id)) && (!query || searchText(i).includes(query));
+}
+
+function mustCard(m) {
+  const days = daysBetween(m.due);
+  const isDone = done.has(m.id);
+  const dup = m.dup ? ITEMS[m.dup] : null;
+  const hot = days >= 5;
+  return `<article class="card${isDone ? " done" : ""}" id="${m.id}" style="--c:${hot ? "var(--red)" : "var(--amber)"}">
+    <div class="card-head">
+      <div>
+        <div class="who">${esc(m.person)} ${m.role ? `<span class="tag">${esc(m.role)}</span>` : ""}</div>
+        <div class="subject">${esc(m.subject)}</div>
+      </div>
+      <span class="action">${esc(m.action)}</span>
+    </div>
+    ${m.topic || m.thread ? `<div class="meta">${m.topic ? `<span class="tag blue">${esc(m.topic)}</span>` : ""}${m.thread ? `<span class="tag blue">${esc(m.thread)}</span>` : ""}</div>` : ""}
+    <p class="ask"><b>Ask:</b> ${esc(m.ask)}</p>
+    ${m.secret ? `<div class="alert">Secret requested. Reply through an approved secure channel. Do not send the password by email.</div>` : ""}
+    <div class="meta">
+      <span class="tag ${hot ? "red" : "amber"}">Due ${dayLabel(m.due)} · ${plural(days, "day")} overdue</span>
+      ${m.draft ? `<span class="tag green">Draft ready in Outlook</span>` : `<span class="tag">No draft</span>`}
+      ${dup ? `<span class="tag amber">Possible duplicate of the ${dayLabel(dup.due)} entry</span>` : ""}
+    </div>
+    <details>
+      <summary>Details</summary>
+      <dl>
+        <dt>Why included</dt><dd>${esc(m.why)}</dd>
+        <dt>Confidence</dt><dd>${esc(m.confidence)}</dd>
+        <dt>Ownership</dt><dd>${esc(m.ownership)}</dd>
+        <dt>Original ask</dt><dd>${esc(m.originalAsk)}</dd>
+        <dt>Latest update</dt><dd>${esc(m.latest)}</dd>
+        <dt>Messages</dt><dd>${m.messages}</dd>
+        ${m.moreAsks ? `<dt>More asks</dt><dd>${esc(m.moreAsks)}</dd>` : ""}
+      </dl>
+    </details>
+    <label class="done-toggle"><input type="checkbox" data-done="${m.id}" ${isDone ? "checked" : ""}> Done</label>
+  </article>`;
+}
+
+function waitRow(w) {
+  const days = daysBetween(w.sent);
+  const isDone = done.has(w.id);
+  return `<tr id="${w.id}" class="${isDone ? "done" : ""}">
+    <td data-label="Done"><input type="checkbox" data-done="${w.id}" ${isDone ? "checked" : ""} aria-label="Mark done: ${esc(w.subject)}"></td>
+    <td data-label="To">${esc(w.to)}${w.vip ? ` <span class="tag amber">VIP</span>` : ""}${w.flag ? `<div class="warn-line">${esc(w.flag)}</div>` : ""}</td>
+    <td data-label="Subject"><b>${esc(w.subject)}</b>${w.tag ? `<div class="muted">${esc(w.tag)}</div>` : ""}</td>
+    <td data-label="You asked">${esc(w.asked)}</td>
+    <td data-label="Sent">${dayLabel(w.sent)}</td>
+    <td data-label="Waiting"><span class="days ${days >= 8 ? "hot" : "warm"}">${plural(days, "day")}</span></td>
+    <td data-label="Follow-up">Follow up today (no reply)${w.draft ? `<br><span class="tag green">Draft ready</span>` : ""}</td>
+  </tr>`;
+}
+
+function renderStatic() {
+  const oldestMust = Math.max(...MUST.map(m => daysBetween(m.due)));
+  const oldestWait = Math.max(...WAIT.map(w => daysBetween(w.sent)));
+  const drafts = [...MUST, ...WAIT].filter(i => i.draft).length;
+  const flagged = MUST.filter(m => m.secret).length + WAIT.filter(w => w.flag).length;
+  document.getElementById("stats").innerHTML = `
+    <div class="stat" style="--c:var(--red)"><strong>Must do today</strong><b>${MUST.length}</b><small>Oldest ${plural(oldestMust, "day")} overdue</small></div>
+    <div class="stat" style="--c:var(--amber)"><strong>Waiting on others</strong><b>${WAIT.length}</b><small>All overdue, oldest ${plural(oldestWait, "day")}</small></div>
+    <div class="stat" style="--c:var(--green)"><strong>Drafts ready</strong><b>${drafts}</b><small>Ready to send in Outlook</small></div>
+    <div class="stat" style="--c:var(--blue)"><strong>Check first</strong><b>${flagged}</b><small>Secret request and a placeholder address</small></div>`;
+
+  document.getElementById("startHere").innerHTML = START.map(s =>
+    `<li><a href="#${s.id}" data-jump="${s.id}">${esc(s.title)}</a><div class="muted">${esc(s.body)}</div></li>`).join("");
+
+  const counts = {};
+  WAIT.forEach(w => w.to.split(",").map(s => s.trim()).filter(s => s.includes("@")).forEach(e => { counts[e] = (counts[e] || 0) + 1; }));
+  document.getElementById("chips").innerHTML = Object.entries(counts)
+    .sort((a, b) => b[1] - a[1])
+    .map(([e, n]) => `<button type="button" data-chase="${esc(e)}">${esc(e.split("@")[0])}<b>${n}</b></button>`).join("");
+}
+
+function renderProgress() {
+  const n = [...done].filter(id => ITEMS[id]).length;
+  document.getElementById("progressText").textContent = `${n} of ${TOTAL} done`;
+  document.getElementById("progressBar").style.width = (n / TOTAL * 100) + "%";
+}
+
+function render() {
+  const must = MUST.filter(m => passes(m)).sort((a, b) => Date.parse(a.due) - Date.parse(b.due));
+  const wait = WAIT.filter(w => passes(w)).sort((a, b) => Date.parse(a.sent) - Date.parse(b.sent));
+
+  document.getElementById("mustSec").hidden = view === "wait";
+  document.getElementById("waitSec").hidden = view === "must";
+  document.getElementById("mustList").innerHTML = must.length ? must.map(mustCard).join("") : `<p class="muted">No must do items match these filters.</p>`;
+  document.getElementById("waitBody").innerHTML = wait.length ? wait.map(waitRow).join("") : `<tr><td class="empty" colspan="7">No waiting items match these filters.</td></tr>`;
+  document.getElementById("mustCount").textContent = `${must.length} of ${MUST.length}`;
+  document.getElementById("waitCount").textContent = `${wait.length} of ${WAIT.length}`;
+  document.querySelectorAll("[data-view]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.view === view)));
+  renderProgress();
+}
+
+function jump(id) {
+  view = "all";
+  query = "";
+  draftOnly = false;
+  hideDone = false;
+  document.getElementById("search").value = "";
+  document.getElementById("draftOnly").checked = false;
+  document.getElementById("hideDone").checked = false;
+  render();
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({behavior:"smooth", block:"center"});
+}
+
+renderStatic();
+render();
+
+document.querySelectorAll("[data-view]").forEach(b => b.addEventListener("click", () => { view = b.dataset.view; render(); }));
+document.getElementById("search").addEventListener("input", e => { query = e.target.value.trim().toLowerCase(); render(); });
+document.getElementById("draftOnly").addEventListener("change", e => { draftOnly = e.target.checked; render(); });
+document.getElementById("hideDone").addEventListener("change", e => { hideDone = e.target.checked; render(); });
+
+document.addEventListener("change", e => {
+  const id = e.target.dataset && e.target.dataset.done;
+  if (!id) return;
+  if (e.target.checked) done.add(id); else done.delete(id);
+  saveDone();
+  if (hideDone) { render(); return; }
+  const row = e.target.closest(".card, tr");
+  if (row) row.classList.toggle("done", done.has(id));
+  renderProgress();
+});
+
+document.addEventListener("click", e => {
+  const chase = e.target.closest("[data-chase]");
+  if (chase) {
+    view = "wait";
+    query = chase.dataset.chase.toLowerCase();
+    document.getElementById("search").value = chase.dataset.chase;
+    render();
+    return;
+  }
+  const link = e.target.closest("[data-jump]");
+  if (link) {
+    e.preventDefault();
+    jump(link.dataset.jump);
+  }
+});
+</script>
+</body>
+</html>

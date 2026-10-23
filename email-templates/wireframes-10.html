@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Email Wireframes, 10 Designs</title>
+<style>
+:root{--ink:#222;--muted:#777;--line:#999;--fill:#f4f4f4}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font:12px/1.4 ui-monospace,Menlo,Consolas,monospace;padding:24px}
+h1{font-size:18px;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 24px;max-width:640px}
+.wrap{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.screen{border:1px dashed var(--line);padding:12px;width:100%;max-width:640px}
+.name{font-weight:bold;margin-bottom:4px}
+.rule{color:var(--muted);font-size:10px;margin-bottom:8px}
+.box{border:1px solid var(--line);background:#fff;padding:6px;margin:0 0 6px}
+.fill{background:var(--fill)}
+.label{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.05em}
+.bar{height:7px;background:#ccc;margin:5px 0}
+.short{width:45%}.mid{width:70%}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:6px}
+.g4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:4px;margin-bottom:6px}
+.more{color:var(--muted);font-size:10px;padding:2px 0}
+.phone{margin-top:8px;border-top:1px dotted var(--line);padding-top:6px;color:var(--muted);font-size:10px}
+</style>
+</head>
+<body>
+
+<h1>Email wireframes, 10 designs</h1>
+<p class="sub">Email-safe layouts only: single column of 640px, table-style blocks, no tabs, no tap-to-filter, no sticky bars, no scripts. Grey blocks are content slots. Same data in all ten: 13 must do, 30 waiting, 7 drafts, 2 check first.</p>
+
+<div class="wrap">
+
+  <section class="screen">
+    <div class="name">01. Stacked cards</div>
+    <div class="rule">Single column. Each item is one full-width card.</div>
+    <div class="box"><div class="label">Kicker / Title / as-of</div></div>
+    <div class="g4"><div class="box">[13]</div><div class="box">[30]</div><div class="box">[7]</div><div class="box">[2]</div></div>
+    <div class="box fill"><div class="label">Start here, 4 rows</div><div class="bar"></div><div class="bar mid"></div></div>
+    <div class="label">Must do (13)</div>
+    <div class="box"><div class="bar mid"></div><div class="bar short"></div></div>
+    <div class="box"><div class="bar mid"></div><div class="bar short"></div></div>
+    <div class="more">+ 11 more cards</div>
+    <div class="label">Waiting (30)</div>
+    <div class="box"><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+    <div class="phone">Phone: same stack, full width.</div>
+  </section>
+
+  <section class="screen">
+    <div class="name">02. Tile header + stacked sections</div>
+    <div class="rule">Four counts in one table row, then sections in order.</div>
+    <div class="box"><div class="label">Kicker / Title</div></div>
+    <div class="g4"><div class="box"><div class="label">Must do</div>[13]</div><div class="box"><div class="label">Waiting</div>[30]</div><div class="box"><div class="label">Drafts</div>[7]</div><div class="box"><div class="label">Check</div>[2]</div></div>
+    <div class="label">Section 1: Must do</div>
+    <div class="box"><div class="bar mid"></div></div>
+    <div class="label">Section 2: Waiting</div>
+    <div class="box"><div class="bar mid"></div></div>
+    <div class="phone">Phone: the 4 counts stack 2 by 2.</div>
+  </section>
+
+  <section class="screen">
+    <div class="name">03. Dense table</div>
+    <div class="rule">One table, one row per item, sorted by urgency. Best for scanning.</div>
+    <div class="box"><div class="label">Kicker / Title / counts line</div></div>
+    <div class="box">
+      <div class="g4"><div class="label">Who</div><div class="label">Item</div><div class="label">Due</div><div class="label">Act</div></div>
+      <div class="g4"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+      <div class="g4"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+      <div class="g4"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+    </div>
+    <div class="more">+ 43 rows</div>
+    <div class="phone">Phone: each row stacks into a block with labels.</div>
+  </section>
+
+  <section class="screen">
+    <div class="name">04. Stacked sections with counts in headings</div>
+    <div class="rule">Replaces tabs. Both sections visible, counts in headings.</div>
+    <div class="box"><div class="label">Kicker / Title</div></div>
+    <div class="label">Must do today, 13</div>
+    <div class="box"><div class="bar mid"></div><div class="bar short"></div></div>
+    <div class="label">Waiting on others, 30</div>
+    <div class="box"><div class="bar mid"></div><div class="bar short"></div></div>
+    <div class="phone">Phone: same order, full width.</div>
+  </section>
+
+  <section class="screen">
+    <div class="name">05. Timeline by due date</div>
+    <div class="rule">Rows grouped by days overdue. Date in a left column.</div>
+    <div class="box"><div class="label">Kicker / Title</div></div>
+    <div class="g2"><div class="label">6 days (Oct 16)</div><div class="box"><div class="bar mid"></div></div></div>
+    <div class="g2"><div class="label">5 days (Oct 17)</div><div class="box"><div class="bar mid"></div></div></div>
+    <div class="g2"><div class="label">3 days (Oct 19)</div><div class="box"><div class="bar mid"></div></div></div>
+    <div class="g2"><div class="label">1 to 2 days</div><div class="box"><div class="bar mid"></div></div></div>
+    <div class="phone">Phone: date label goes above each block.</div>
+  </section>
+
+  <section class="screen">
+    <div class="name">06. Grouped by person</div>
+    <div class="rule">Heading per person, their items under it.</div>
+    <div class="box"><div class="label">Kicker / Title</div></div>
+    <div class="label">Carol Reyes, 4 items</div>
+    <div class="box"><div class="bar mid"></div></div>
+    <div class="label">Bob Singh, 5 items</div>
+    <div class="box"><div class="bar mid"></div></div>
+    <div class="label">Alice Morgan, 4 items</div>
+    <div class="box"><div class="bar mid"></div></div>
+    <div class="more">+ other people</div>
+  </section>
+
+  <section class="screen">
+    <div class="name">07. Three action blocks</div>
+    <div class="rule">Reply, Send, Follow up as three stacked blocks. Columns only on desktop.</div>
+    <div class="box"><div class="label">Kicker / Title</div></div>
+    <div class="box"><div class="label">Reply (3)</div><div class="bar"></div></div>
+    <div class="box"><div class="label">Send (10)</div><div class="bar"></div></div>
+    <div class="box"><div class="label">Follow up (30)</div><div class="bar"></div></div>
+    <div class="phone">Phone: blocks stay stacked. Desktop: 3 table columns.</div>
+  </section>
+
+  <section class="screen">
+    <div class="name">08. Focus: one priority first</div>
+    <div class="rule">Top item large, the rest as short lines.</div>
+    <div class="box"><div class="label">Kicker / Title</div></div>
+    <div class="box fill">
+      <div class="label">Do first</div>
+      <div class="bar mid"></div><div class="bar"></div><div class="bar short"></div>
+    </div>
+    <div class="label">Then: 12 more must do, 30 waiting</div>
+    <div class="box"><div class="bar short"></div></div>
+    <div class="box"><div class="bar short"></div></div>
+  </section>
+
+  <section class="screen">
+    <div class="name">09. Two columns on desktop</div>
+    <div class="rule">Must do left, Waiting right. Stacks to one column on phones.</div>
+    <div class="box"><div class="label">Kicker / Title</div></div>
+    <div class="g2">
+      <div class="box"><div class="label">Must do (13)</div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+      <div class="box"><div class="label">Waiting (30)</div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+    </div>
+    <div class="phone">Phone: Must do block, then Waiting block.</div>
+  </section>
+
+  <section class="screen">
+    <div class="name">10. Recipient table</div>
+    <div class="rule">Static table of who holds the most items. No tap, no filter.</div>
+    <div class="box"><div class="label">Kicker / Title</div></div>
+    <div class="box">
+      <div class="g2"><div class="label">Recipient</div><div class="label">Waiting items</div></div>
+      <div class="g2"><div class="bar"></div><div class="bar"></div></div>
+      <div class="g2"><div class="bar"></div><div class="bar"></div></div>
+      <div class="g2"><div class="bar"></div><div class="bar"></div></div>
+    </div>
+    <div class="more">+ other recipients</div>
+  </section>
+
+</div>
+</body>
+</html>

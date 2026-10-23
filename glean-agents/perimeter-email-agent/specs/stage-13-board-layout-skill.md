@@ -28,3 +28,7 @@ Meeting prep: write each entry returned by Step 8F unchanged, then one bullet li
 Weekly runs: no sections 1 to 6. Use instead the headings "## Asks to me", "## My open commitments", "## Others owe me", "## Waiting on others" in that order, each a list of bullet lines "sender or thread | summary | date", left out when empty. When all four are empty write "Nothing unresolved this week."
 
 Empty board: when sections 1 to 5 have no items, write "Inbox is clear." for morning or "All clear for the rest of today." for end-of-day, directly under the title line. A Meeting prep section still follows.
+
+## Brief HTML templates
+
+The emailed brief HTML is built from the files in templates/brief/. Read templates/brief/README.md before writing any brief. Fill the tokens in brief-shell.html, repeat the card and row snippets once per item, and send the result. Do not write brief HTML from scratch. The chat reply keeps the layout above.
