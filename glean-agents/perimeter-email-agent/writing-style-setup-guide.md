@@ -23,7 +23,8 @@ Name: `Glean Personal Agent Data.xlsx` in the user's own OneDrive. Sheet: `Sheet
 |---|---|
 | A1 / B1 | `VIP Contacts` / entries separated by a comma and a space |
 | A2 / B2 | `VIP Topics` / entries separated by a comma and a space |
-| AD1:AE60 | Writing style table, key in AD, value in AE, written by style-profiler only |
+| A1:B100 | Reserved for list values such as `VIP Contacts` and `VIP Topics`. notes-keeper writes only A1:B2 today |
+| D1:E60 | Writing style table, key in D, value in E, written by style-profiler only. Column C stays empty |
 
 Example:
 
@@ -66,10 +67,10 @@ Remove every other tool from the packs. Turn off "Use all company knowledge". Ad
 
 | Agent | File in `specs/` | Hash |
 |---|---|---|
-| Main | `stage-38.md` (same text as `stage-37.md`) | 44d0cda3 |
-| notes-keeper | `stage-36-notes-keeper.md` | 0a5c32e3 |
-| style-profiler | `stage-36-style-profiler.md` | 0254ef97 |
-| draft-writer | `stage-35-draft-writer.md` | 5f4f21dc |
+| Main | `stage-39.md` (same text as `stage-37.md`) | 44d0cda3 |
+| notes-keeper | `stage-39-notes-keeper.md` | 0ed5c62a |
+| style-profiler | `stage-39-style-profiler.md` | 3cfa363a |
+| draft-writer | `stage-39-draft-writer.md` | 8bcb17d4 |
 | meeting-prep | `stage-12-meeting-prep.md` | e876218a |
 | brief-builder | `stage-38-brief-builder.md` | c24cd107 (4331 characters when typed in, the editor shows the bullet lines as a list after a reload and then reads f34f3376 with 4241 characters, the words are the same) |
 | Skill brief-render | `skills/brief-render.zip`, built by `python3 skills/build_zip.py` from `skills/brief-render/` | upload from the brief-builder dialog, Skills, plus, Upload a skill |
@@ -79,7 +80,7 @@ Limits: main text 32,000 characters (about 1,070 left by the editor counter), ea
 
 ## 6. How the question works
 
-- notes-keeper reads the cell AD1 on its own. If it does not read `baseline.greeting`, there is no style.
+- notes-keeper reads the cell D1 on its own. If it does not read `baseline.greeting`, there is no style.
 - Main shows the question once per chat, and never after a no or a delete.
 - Main sends the consent line to style-profiler only when the user says yes to that question. A request to learn the style, a question, or a yes to another question is no consent.
 - The question text:

@@ -1124,3 +1124,14 @@ Findings:
 - Moving a 19 KB zip into the page by typing its base64 by hand truncated it. A local page that sets `window.name` (with a UTF-8 meta tag and `<` written as `\u003c`) carried it without loss.
 
 Follow-up, Commitments and Meeting prep cards (2026-10-23, user request): both sections now use the same card design as Review Quickly. A commitment is a card with an initials circle (purple for Mine, orange for Others owe me), the name with "You owe" or "Owes you", the status pill and the red Overdue pill, a tinted Commitment box and a Due panel. A meeting is a numbered card with the title, the time, a tinted Prep box for the thread lines and a Not summarized pill. Only the fragments and the two renderers changed (21 fragments now, `meeting-notes.html` is new), no shell CSS. Local tests 232 of 232 and 21 Python tests pass. The skill zip was uploaded again in the draft agent, the builder text is unchanged. Not run in Preview, the user checks the look in Outlook.
+
+## Style table moved to D1:E60 (2026-10-23, stage 39)
+
+The user cut and pasted the table from AD1:AE60 to D1:E60. The style-profiler, notes-keeper and draft-writer texts carry the new addresses (stage 39, hashes 3cfa363a, 0ed5c62a, 8bcb17d4), main is unchanged. Preview on the real workbook, read only:
+
+| Check | Result |
+|---|---|
+| "Show my writing style" through main | style-profiler ran List drive files and one Get range with address `D1:E60`, the answer lists the baseline rows and ends with the ASK line, 29 s, 0.56 credits |
+| notes-keeper READ called directly | List drive files, Get range `A1:B2` and Get range `D1`, the answer lists the VIP and topic entries and no "no style saved" ASK line, 30 s, 0.27 credits |
+
+Not run: a style BUILD or EDIT (they write the table) and draft-writer on a real board run.

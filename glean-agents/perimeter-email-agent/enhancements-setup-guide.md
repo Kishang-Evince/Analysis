@@ -197,7 +197,7 @@ All text lives in the main agent text `specs/stage-31.md` and the sub-agent text
 ### 25. Tone & Voice Profile
 - **Does:** drafts sound like the user.
 - **Where:** style-profiler, notes-keeper question, draft-writer, main routing in Step 3F.
-- **Config:** workbook cells AD1:AE60, tools and texts in `writing-style-setup-guide.md`.
+- **Config:** workbook cells D1:E60 (the lists stay in A1:B2, A1:B100 is reserved for list values), tools and texts in `writing-style-setup-guide.md`.
 - **Steps:** first chat shows the question, the user says yes, review the saved table, say what to change.
 - **Check:** drafts use the saved greeting and sign-off. No style saved means a neutral draft and a note on the board.
 

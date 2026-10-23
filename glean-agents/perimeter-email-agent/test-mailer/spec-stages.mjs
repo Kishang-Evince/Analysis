@@ -600,4 +600,29 @@ export const STAGES = [
       },
     },
   },
+  {
+    // Stage 39: the Tone & Voice table moves from AD1:AE60 to D1:E60. Main and the other sub-agents never named the range.
+    present: [],
+    absent: [],
+    subs: {
+      'style-profiler': {
+        present: ['D1:E60', 'Column C stays empty', 'read only A1:B1 and D1:E60 of Sheet0', 'Column D holds a key and column E holds its value'],
+        absent: ['AD1:AE60', 'Columns AA to AC stay empty', 'read only A1:B1 and AD1:AE60 of Sheet0', 'Column AD holds a key'],
+      },
+      'notes-keeper': {
+        present: [
+          'You only test whether D1 reads baseline.greeting', 'In READ only, also call Get range with worksheet Sheet0 and address D1 alone, which tells whether a style is saved',
+          'Use only whether the D1 cell reads baseline.greeting', 'In READ only, also call Get range with worksheet Sheet0 and address D1 alone',
+        ],
+        absent: [
+          'You only test whether AD1 reads baseline.greeting', 'In READ only, also call Get range with worksheet Sheet0 and address AD1 alone, which tells whether a style is saved',
+          'Use only whether the AD1 cell reads baseline.greeting', 'In READ only, also call Get range with worksheet Sheet0 and address AD1 alone',
+        ],
+      },
+      'draft-writer': {
+        present: ['address D1:E60', 'Column D holds keys and column E holds values'],
+        absent: ['address AD1:AE60', 'Column AD holds keys'],
+      },
+    },
+  },
 ];
