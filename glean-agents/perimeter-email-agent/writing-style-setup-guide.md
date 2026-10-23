@@ -2,7 +2,7 @@
 
 Goal: the Outlook Action Board agent learns how the user writes, asks first, and writes drafts in that style.
 
-Short version: one workbook in the user's OneDrive, four sub-agents, one skill, one consent question.
+Short version: one workbook in the user's OneDrive, four sub-agents for the style feature (a fifth, brief-builder, builds the emailed brief), one skill for the board layout, one consent question.
 
 ## 1. What you get
 
@@ -12,7 +12,7 @@ Short version: one workbook in the user's OneDrive, four sub-agents, one skill, 
 | notes-keeper | Keeps VIP Contacts and VIP Topics, tells main when no style is saved |
 | style-profiler | Reads sent mail after a yes, saves the style table, shows, edits, deletes it |
 | draft-writer | Reads the style table and writes drafts in it |
-| meeting-prep | Unchanged, gets VIP entries from main |
+| meeting-prep | Unchanged, reads mail only, gets the meeting and the VIP entries from main |
 | Skill board-layout | Fixed board layout, also holds the rule for the question line |
 
 ## 2. The workbook
@@ -43,7 +43,7 @@ Rules: an entry with a comma goes in double quotes (`"Smith, John"`). No entry c
 4. Check the texts.
    - Save, reload the page, open the text again.
    - Run `node spec-hash.mjs ../specs/<file>` in `test-mailer/` and compare with the hash in section 5.
-   - Run `npm run check:37` in `test-mailer/` for the whole stage.
+   - Run `npm run check:39` in `test-mailer/` for the whole stage.
 5. First chat. Ask for the board. The question line appears above the board.
 6. Say yes. The agent reads up to 30 sent mails (about 6 minutes, about 8 credits).
 7. Review the table on the approval card. Approve to save it.
@@ -52,14 +52,16 @@ Rules: an entry with a comma goes in double quotes (`"Smith, John"`). No entry c
 
 ## 4. Tool configuration
 
-| Agent | Tools | Write approval |
+| Agent | Tools | Box "Allow agent to use write tools without approval" |
 |---|---|---|
-| Main | Outlook pack (calendar view, email read, profile, Send email) | Leave as set |
-| notes-keeper | Excel: Get range, List drive files, Update range. Microsoft 365: Create Excel sheet | On |
-| style-profiler | Outlook Email: List messages, Get email message. Excel: Get range, List drive files, Update range | Off, so the card shows the whole table |
-| draft-writer | Outlook: List messages, Get email message, Create a draft reply, Create email draft. Excel: List drive files, Get range | Leave as set |
-| meeting-prep | Calendar read tools | Unchanged |
+| Main | Outlook: List messages, Get email message, Get calendar view. No write tool | None to set |
+| notes-keeper | Excel: Get range, List drive files, Update range. Microsoft 365: Create Excel sheet | Unticked, so an approval card shows before it writes the lists |
+| style-profiler | Outlook Email: List messages, Get email message. Excel: Get range, List drive files, Update range | Unticked, so an approval card shows the whole table before it is saved |
+| draft-writer | Outlook: List messages, Get email message, Create a draft reply, Create email draft. Excel: List drive files, Get range | Ticked, so drafts need no click |
+| meeting-prep | Outlook: List messages, Get email message, Get outlook profile. No write tool, no calendar tool (main reads the calendar and passes the meeting) | None to set |
 | brief-builder | Outlook Extension Actions: Get outlook profile and Send email only. Skill `brief-render` (linked here only, never on main) | Ticked, so a scheduled run can send. No knowledge base |
+
+State checked in the draft agent on 2026-10-23.
 
 Remove every other tool from the packs. Turn off "Use all company knowledge". Add no knowledge base to style-profiler.
 
@@ -97,7 +99,7 @@ May I read your recent sent mails (I use up to 30 and may open more to find 30 I
 | show my writing style | Plain summary |
 | change my greeting to ... | One row changed after you approve the card |
 | delete my writing style | Table cleared after you approve the card |
-| add X to my VIP list / remove X | notes-keeper updates B1 |
+| add X to my VIP list / remove X | notes-keeper updates B1 after you approve the card |
 
 ## 8. Quick checks
 

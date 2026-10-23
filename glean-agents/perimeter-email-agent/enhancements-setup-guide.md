@@ -2,26 +2,26 @@
 
 One short section per enhancement: what it does, where it lives, what to configure, how to switch it on, how to check it.
 
-All text lives in the main agent text `specs/stage-31.md` and the sub-agent texts listed in `writing-style-setup-guide.md` section 5. Steps are named like `Step 3C`. Find them by that name in the main text.
+All text lives in main agent text, stage 39 (hash 44d0cda3, same text as stage 37), and sub-agent texts listed in the writing style guide, section 5. Steps named like `Step 3C`. Find by name in main text.
 
 ## A. Shared setup (do once)
 
 1. Open the Outlook Action Board agent in the Glean builder (Auto mode). Work in the draft and save a version before each edit.
 2. Settings block at the top of the main text. Chat can override a value for one Preview or manual run.
 
-| Setting | Value | Used by |
-|---|---|---|
-| AS_OF_DATE | blank or YYYY-MM-DD | 11 and every date test |
-| LOOKBACK_DAYS | 14 | 13 |
-| READ_DAYS | 3 | 13, 16 |
-| MODE | auto, morning, end-of-day, weekly | 14, 15, 16 |
-| INCLUDE_CALENDAR | yes or no | 12, 27 |
+| Setting | Value | Default | Used by |
+|---|---|---|---|
+| AS_OF_DATE | blank or YYYY-MM-DD | blank | 11 and every date test |
+| LOOKBACK_DAYS | days | 14 | 13 |
+| READ_DAYS | days, max LOOKBACK_DAYS | 3 | 13, 16 |
+| MODE | auto, morning, end-of-day, weekly | auto | 14, 15, 16 |
+| INCLUDE_CALENDAR | yes or no | yes | 12, 27 |
 
 3. Tools on the main agent: Outlook List messages, Get email message and Get calendar view. Main holds no write tool, so it needs no approval box. Send email and Get outlook profile belong to the sub-agent brief-builder, which renders the brief with the skill brief-render.
-4. Sub-agents: draft-writer, meeting-prep, notes-keeper, style-profiler, brief-builder. Tools per sub-agent are in `writing-style-setup-guide.md` section 4.
+4. Sub-agents: draft-writer, meeting-prep, notes-keeper, style-profiler, brief-builder. Tools per sub-agent are in the writing style guide, section 4. Write approval box "Allow agent to use write tools without approval" (checked 2026-10-23): unticked on notes-keeper and style-profiler, so approval card shows before workbook write. Ticked on draft-writer and brief-builder, no click. meeting-prep has no write tool.
 5. Trigger: schedule weekdays at 8:00 am in the user's time zone, plus chat.
 6. Test mail: in `test-mailer/` run `npm run send -- --group E01 --tag "[run1]"` (change E01 to the enhancement number, two digits). Preview first with `npm run dry-run -- --group E01`.
-7. Seeds for enhancements 2, 22, 23 and 25 are mail the user sends from Outlook first. The seed list prints the steps.
+7. Enhancements 2, 22, 23, 25 have no script mail (outbound only). `Unknown: group E22` and 0 mail preview for E02 are normal. Group name only names test plan. User sends mail from Outlook first. Other groups print manual Outlook steps like "Reply from Outlook" (E01, E12, E17 to E21). `npm run dry-run -- --group E01` shows them.
 8. Run the board in Preview. Open Debug and confirm the step ran. Publish only when you decide.
 
 ## B. Per enhancement
@@ -37,7 +37,7 @@ All text lives in the main agent text `specs/stage-31.md` and the sub-agent text
 - **Does:** finds what the user promised in sent mail.
 - **Where:** Step 6C, Commitments section in Step 9.
 - **Config:** Get email message.
-- **Steps:** send the promise mails from Outlook first (group E02), then run the board.
+- **Steps:** send promise mails from Outlook first (test plan E02, no script mail), then run board.
 - **Check:** each commitment shows the right owner and status.
 
 ### 3. Commitments by Others
@@ -99,7 +99,7 @@ All text lives in the main agent text `specs/stage-31.md` and the sub-agent text
 ### 11. Convert Relative Dates
 - **Does:** turns "tomorrow" or "Friday" into a date from the day the mail was sent.
 - **Where:** Step 1B.
-- **Config:** AS_OF_DATE for tests, or type "as of YYYY-MM-DD" in chat.
+- **Config:** AS_OF_DATE for tests, or put AS_OF_DATE and a date in chat. Chat overrides a setting for one run.
 - **Steps:** seed group E11, run with a fixed date.
 - **Check:** the date matches the sent date plus the phrase.
 
@@ -177,14 +177,14 @@ All text lives in the main agent text `specs/stage-31.md` and the sub-agent text
 - **Does:** advice for each sent ask: Follow up today, Follow up this week or Not yet.
 - **Where:** Step 8B.
 - **Config:** none.
-- **Steps:** send the asks from Outlook first (group E22), run the board.
+- **Steps:** send asks from Outlook first (test plan E22, no script mail), run board.
 - **Check:** an overdue sent ask shows "Follow up today".
 
 ### 23. Draft Follow-Up
 - **Does:** writes a follow-up draft to the recipients still waiting.
 - **Where:** Step 8E and the draft-writer sub-agent (tool Create email draft, subject with one "Re:").
-- **Config:** draft-writer tools as in the writing style guide. Drafts only, never sent.
-- **Steps:** send the asks from Outlook first (group E23), run the board.
+- **Config:** draft-writer tools as in the writing style guide. Write approval ticked, no click. Drafts only, never sent. Max 5 items plus 3 follow-ups per run get a draft.
+- **Steps:** send asks from Outlook first (test plan E23, no script mail), run board.
 - **Check:** a draft appears in Outlook Drafts. A thread that already has a draft is skipped.
 
 ### 24. Draft Reply
@@ -198,7 +198,7 @@ All text lives in the main agent text `specs/stage-31.md` and the sub-agent text
 - **Does:** drafts sound like the user.
 - **Where:** style-profiler, notes-keeper question, draft-writer, main routing in Step 3F.
 - **Config:** workbook cells D1:E60 (the lists stay in A1:B2, A1:B100 is reserved for list values), tools and texts in `writing-style-setup-guide.md`.
-- **Steps:** first chat shows the question, the user says yes, review the saved table, say what to change.
+- **Steps:** seed about 15 varied sent mails from Outlook first (test plan E25, no script mail). First chat shows question, user says yes, approve card to save table, then say what to change.
 - **Check:** drafts use the saved greeting and sign-off. No style saved means a neutral draft and a note on the board.
 
 ### 26. VIP & Topics Lists
@@ -211,12 +211,12 @@ All text lives in the main agent text `specs/stage-31.md` and the sub-agent text
 ### 27. Calendar Summary (Meeting Prep)
 - **Does:** for today and the next business day, a short status of the threads linked to each meeting.
 - **Where:** Step 8F and the meeting-prep sub-agent.
-- **Config:** tool Get calendar view. INCLUDE_CALENDAR yes. At most 5 meetings per run. Skipped in weekly and end-of-day runs.
+- **Config:** main reads calendar with tool Get calendar view (today and next business day). meeting-prep has no calendar tool, reads mail only (Get outlook profile, List messages, Get email message, max 3 threads). INCLUDE_CALENDAR yes. Max 5 meetings per run, rest listed with title and time only. Skipped in weekly and end-of-day runs.
 - **Steps:** seed group E27 with a meeting that shares attendees, run a morning board.
 - **Check:** the Meeting prep section lists each meeting with linked threads. With INCLUDE_CALENDAR no the section is gone.
 
 ## C. Limits
 
-- A scheduled run is cut off after about 30 minutes. Caps in the text: 15 full-message reads, 5 meetings.
+- A scheduled run is cut off after about 30 minutes. Caps in text: 15 full-message reads, 5 meetings, 5 drafted items plus 3 follow-ups.
 - Snoozed and Delegated commitments need stored state and are not built.
 - Tests that pass in Preview can differ in a scheduled run, because a scheduled run uses the saved settings and no chat message.
