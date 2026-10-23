@@ -17,7 +17,7 @@ All text lives in the main agent text `specs/stage-31.md` and the sub-agent text
 | MODE | auto, morning, end-of-day, weekly | 14, 15, 16 |
 | INCLUDE_CALENDAR | yes or no | 12, 27 |
 
-3. Tools on the main agent: Outlook List messages, Get email message and Get calendar view. Main holds no write tool, so it needs no approval box. Send email and Get outlook profile belong to the sub-agent brief-builder.
+3. Tools on the main agent: Outlook List messages, Get email message and Get calendar view. Main holds no write tool, so it needs no approval box. Send email and Get outlook profile belong to the sub-agent brief-builder, which renders the brief with the skill brief-render.
 4. Sub-agents: draft-writer, meeting-prep, notes-keeper, style-profiler, brief-builder. Tools per sub-agent are in `writing-style-setup-guide.md` section 4.
 5. Trigger: schedule weekdays at 8:00 am in the user's time zone, plus chat.
 6. Test mail: in `test-mailer/` run `npm run send -- --group E01 --tag "[run1]"` (change E01 to the enhancement number, two digits). Preview first with `npm run dry-run -- --group E01`.
@@ -120,7 +120,7 @@ All text lives in the main agent text `specs/stage-31.md` and the sub-agent text
 ### 14. Morning Briefing
 - **Does:** before 12:00 the run is a morning brief, emailed to the user.
 - **Where:** MODE, Step 9, Step 10 and the brief-builder sub-agent.
-- **Config:** MODE auto or morning. Sub-agent brief-builder: tools Get outlook profile and Send email only, "Allow agent to use write tools without approval" ticked, no knowledge, text `specs/stage-37-brief-builder.md`, templates in `templates/brief/compact/`. Schedule weekdays 8:00 am.
+- **Config:** MODE auto or morning. Sub-agent brief-builder: tools Get outlook profile and Send email only, "Allow agent to use write tools without approval" ticked, no knowledge, text `specs/stage-38-brief-builder.md`, skill `brief-render` linked to brief-builder only (folder `skills/brief-render/`, zip `skills/brief-render.zip`, the fragments are in its `assets/`). The model writes a JSON file and the skill script makes the HTML. Schedule weekdays 8:00 am.
 - **Steps:** set the schedule, run now once, read the result.
 - **Check:** one brief arrives in the user's own inbox and nobody else gets mail.
 

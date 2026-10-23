@@ -4,7 +4,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { join, dirname } from 'node:path';
 
-const DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'templates', 'brief', 'compact');
+const DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'skills', 'brief-render', 'assets');
 const frag = (name) => readFileSync(join(DIR, `${name}.html`), 'utf8').replace(/\n$/, '');
 
 export const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -19,11 +19,24 @@ const pills = (c) => ({ VIP_PILL: c.vip ? pill('pv', 'VIP') : '', TOPIC_PILL: c.
 const rowText = (label, text) => (text ? fill('row-text', { LABEL: label, TEXT: esc(text) }) : '');
 const rowKv = (label, text) => (text ? fill('row-kv', { LABEL: label, TEXT: esc(text) }) : '');
 
+const MONTHS = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5, Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11 };
+const dateOf = (text) => {
+  const m = /([A-Z][a-z]{2}) (\d{1,2}), (\d{4})/.exec(String(text ?? ''));
+  return m && m[1] in MONTHS ? Date.UTC(Number(m[3]), MONTHS[m[1]], Number(m[2])) : NaN;
+};
+// Whole days between the first date in the due text and asOf, only when the due text ends with "passed", else 0.
+export const daysFromDue = (due, asOf) => {
+  if (!/passed\s*$/.test(String(due ?? ''))) return 0;
+  const days = Math.round((dateOf(asOf) - dateOf(due)) / 86400000);
+  return Number.isFinite(days) && days > 0 ? days : 0;
+};
+const daysOf = (c, asOf) => (c.days === undefined ? daysFromDue(c.due, asOf) : c.days);
+
 export const inboundDays = (n) => (n > 0 ? [plural(n, 'day'), n >= 5 ? 'dpr' : 'dpa'] : ['Not overdue', 'dpn']);
 export const waitingDays = (n) => [plural(n, 'day'), n >= 8 ? 'dpr' : n >= 4 ? 'dpa' : 'dpn'];
 
-function inboundCard(c, rank) {
-  const [days, dclass] = inboundDays(c.days);
+function inboundCard(c, rank, asOf) {
+  const [days, dclass] = inboundDays(daysOf(c, asOf));
   return fill('card-inbound', {
     RANK: rank, PERSON: esc(c.person), ...pills(c), SUBJECT: esc(c.subject), DCLASS: dclass, DAYS: days,
     ASK: esc(c.ask), ACTION: esc(c.action), CONFIDENCE: esc(c.confidence), OWNERSHIP: esc(c.ownership), MESSAGES: c.messages,
@@ -42,24 +55,37 @@ function waitingCard(c) {
 }
 
 const SECTIONS = [
-  ['must', 'Must Do Today', 'sh1', (items) => items.map((c, i) => inboundCard(c, i + 1))],
-  ['waitingYou', 'Waiting on Your Response', 'sh2', (items) => items.map((c, i) => inboundCard(c, i + 1))],
+  ['must', 'Must Do Today', 'sh1', (items, asOf) => items.map((c, i) => inboundCard(c, i + 1, asOf))],
+  ['waitingYou', 'Waiting on Your Response', 'sh2', (items, asOf) => items.map((c, i) => inboundCard(c, i + 1, asOf))],
   ['waiting', 'Waiting on Others', 'sh3', (items) => items.map(waitingCard)],
-  ['review', 'Review Quickly', 'sh4', (items) => items.map((c, i) => inboundCard(c, i + 1))],
+  ['review', 'Review Quickly', 'sh4', (items, asOf) => items.map((c, i) => inboundCard(c, i + 1, asOf))],
 ];
 
 function commitments(c) {
-  const list = (label, rows) => (rows?.length ? fill('commit-list', {
+  const list = (label, rows, rclass, role) => (rows?.length ? fill('commit-list', {
     LABEL: label,
-    ROWS: rows.map((r) => fill('commit-row', { WHO: esc(r.who), WHAT: esc(r.what), DUE: esc(r.due), STATUS: esc(r.status), OVERDUE: r.overdue ? frag('overdue-pill') : '' })).join(''),
+    ROWS: rows.map((r) => fill('commit-row', {
+      RCLASS: rclass, BADGE: esc(initials(String(r.who ?? ''))), WHO: esc(r.who), ROLE: role, STATUS: esc(r.status), OVERDUE: r.overdue ? frag('overdue-pill') : '',
+      WHAT: esc(r.what), DUE: esc(r.due),
+    })).join(''),
   }) : '');
-  return list('Mine', c.mine) + list('Others owe me', c.others);
+  return list('Mine', c.mine, 'rk', 'You owe') + list('Others owe me', c.others, 'rw', 'Owes you');
+}
+
+// One meeting: the first line is "title, time", the lines after it are the prep notes. The time is what follows the last comma.
+function meetingCard(text, rank, unsummarized) {
+  const [first, ...rest] = String(text).split('\n');
+  const cut = first.lastIndexOf(', ');
+  const [title, time] = cut === -1 ? [first, ''] : [first.slice(0, cut), first.slice(cut + 2)];
+  return fill('meeting-card', {
+    RCLASS: 'rk', BADGE: rank, TITLE: esc(title), TIME: esc(time), PILL: unsummarized ? pill('dpa', 'Not summarized') : '',
+    NOTES_ROW: rest.length ? fill('meeting-notes', { DETAILS: rest.map(esc).join('<br>') }) : '',
+  });
 }
 
 function meetings(m) {
-  const entries = (m.entries ?? []).map((e) => fill('meeting-card', { ENTRY: esc(e).replace(/\n/g, '<br>') }));
-  const rest = (m.unsummarized ?? []).map((u) => fill('meeting-card', { ENTRY: `${esc(u)}: not summarized` }));
-  return entries.concat(rest);
+  const entries = m.entries ?? [], rest = m.unsummarized ?? [];
+  return entries.map((e, i) => meetingCard(e, i + 1, false)).concat(rest.map((u, i) => meetingCard(u, entries.length + i + 1, true)));
 }
 
 const duplicatePairs = (cards) => {
@@ -79,7 +105,7 @@ export function stats(d) {
   const drafts = [...all, ...waiting].filter((c) => /Draft ready in Outlook/.test(`${c.why ?? ''} ${c.followUp ?? ''}`)).length;
   return {
     open: all.length + waiting.length, must: must.length, waiting: waiting.length, review: review.length, drafts,
-    oldestOverdue: Math.max(0, ...must.map((c) => c.days)), longestWait: Math.max(0, ...waiting.map((c) => c.daysWaiting)),
+    oldestOverdue: Math.max(0, ...must.map((c) => daysOf(c, d.asOf))), longestWait: Math.max(0, ...waiting.map((c) => c.daysWaiting)),
     recipients: rows.length, duplicates: duplicatePairs(all), rows,
   };
 }
@@ -108,7 +134,7 @@ export function renderBrief(d) {
   const body = [];
   for (const [key, title, sclass, build] of SECTIONS) {
     const items = d[key] ?? [];
-    if (items.length) body.push(fill('section-head', { SCLASS: sclass, TITLE: title, COUNT: items.length }), ...build(items));
+    if (items.length) body.push(fill('section-head', { SCLASS: sclass, TITLE: title, COUNT: items.length }), ...build(items, d.asOf));
   }
   const commit = commitments(d.commitments ?? {});
   if (commit) body.push(fill('section-head', { SCLASS: 'sh5', TITLE: 'Commitments', COUNT: (d.commitments.mine?.length ?? 0) + (d.commitments.others?.length ?? 0) }), commit);

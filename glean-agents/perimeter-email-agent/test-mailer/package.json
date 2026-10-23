@@ -79,6 +79,7 @@
     "check:35": "node check-spec.mjs 35",
     "check:36": "node check-spec.mjs 36",
     "check:37": "node check-spec.mjs 37",
+    "check:38": "node check-spec.mjs 38",
     "hash": "node spec-hash.mjs"
   },
   "dependencies": {

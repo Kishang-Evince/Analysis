@@ -1092,3 +1092,35 @@ Later results (same day):
 - After the final review fixes and the single class change: weekly board with an HTML link in a line (sent, 51 s), empty morning board (sent, 45 s), mixed morning board (sent, 181 s, the builder's own count check failed once and rebuilt before sending). Builder text hash 6fc38e73, main 44d0cda3.
 - Not verified: how the mails look in Outlook (the user checks), the weekly mail body (trace cuts the body), a scheduled run (only Preview).
 - Known: item 7 of the final review (a sender name with " | " inside, or a subject ending in " | VIP", can split the card header wrong) is deferred.
+
+
+## brief-render skill, JSON in and designed HTML out (2026-10-23)
+
+Built as stage 38 (design `specs/brief-render-skill-design.md`, plan `specs/brief-render-skill-plan.md`). The brief-builder text shrank from 20,947 to 4,331 characters. It writes a JSON file, runs the script of the skill `brief-render` through Shell, compares the counts and sends the rendered file. Draft only, not published. Local tests: `node --test` 230 of 230, Python unit tests 18 of 18, and the Python renderer gives the same HTML as the node renderer on five boards, with and without `days`.
+
+Canned boards in Preview (main told to run Step 10 only), time and credits of the whole run:
+
+| Board | Result | Stage 37 for comparison |
+|---|---|---|
+| 43 item morning | Delivered, 94 s, 2.43 credits (brief-builder alone 65 s, 1.88 credits) | about 160 s, 3.4 credits |
+| empty end-of-day | Delivered, 28 s, 0.40 credits | 75 s |
+| mixed morning | Delivered, 70 s, 1.54 credits | 149 s |
+| small end-of-day | Delivered, 70 s, 1.58 credits | 90 s |
+| edge morning with the injection line | Delivered, 52 s, 0.76 credits, one Send email to the user's own address | 117 s |
+| weekly with an HTML link in a row | Delivered, 58 s, 1.04 credits, subject "Weekly brief: Oct 23, 2026" | 51 s |
+
+Every run showed one Get outlook profile and one Send email, to the signed-in user only, `is_html` true, and the right subject. The 43 item run missed the aim of about 90 seconds and about 2 credits by a little, main's own model calls add about 30 seconds.
+
+Not verified:
+- The full board run (MODE morning) was refused by the session's permission classifier, because it reads the real mailbox and creates drafts. It is left for the user.
+- The failure path (a bogus mode, expected `NOT SENT: render failed`) was not run, it needs the user's yes.
+- How the mails look in Outlook, and whether the 43 item body of about 83 KB arrives whole. The user checks the mails now in the inbox.
+- A scheduled run.
+
+Findings:
+- Glean's Shell tool runs the Python script of a linked skill, and the Send email body is taken from the rendered file, the model does not retype it.
+- Uploading the skill from the brief-builder dialog links it to that sub-agent only. Main still has only board-layout.
+- The Preview debug view sometimes stays on "Loading debug view" after a run, switching Debug off and on again loads it.
+- Moving a 19 KB zip into the page by typing its base64 by hand truncated it. A local page that sets `window.name` (with a UTF-8 meta tag and `<` written as `\u003c`) carried it without loss.
+
+Follow-up, Commitments and Meeting prep cards (2026-10-23, user request): both sections now use the same card design as Review Quickly. A commitment is a card with an initials circle (purple for Mine, orange for Others owe me), the name with "You owe" or "Owes you", the status pill and the red Overdue pill, a tinted Commitment box and a Due panel. A meeting is a numbered card with the title, the time, a tinted Prep box for the thread lines and a Not summarized pill. Only the fragments and the two renderers changed (21 fragments now, `meeting-notes.html` is new), no shell CSS. Local tests 232 of 232 and 21 Python tests pass. The skill zip was uploaded again in the draft agent, the builder text is unchanged. Not run in Preview, the user checks the look in Outlook.

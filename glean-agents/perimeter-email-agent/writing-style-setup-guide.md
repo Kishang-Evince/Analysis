@@ -58,7 +58,7 @@ Rules: an entry with a comma goes in double quotes (`"Smith, John"`). No entry c
 | style-profiler | Outlook Email: List messages, Get email message. Excel: Get range, List drive files, Update range | Off, so the card shows the whole table |
 | draft-writer | Outlook: List messages, Get email message, Create a draft reply, Create email draft. Excel: List drive files, Get range | Leave as set |
 | meeting-prep | Calendar read tools | Unchanged |
-| brief-builder | Outlook Extension Actions: Get outlook profile and Send email only | Ticked, so a scheduled run can send. No knowledge base |
+| brief-builder | Outlook Extension Actions: Get outlook profile and Send email only. Skill `brief-render` (linked here only, never on main) | Ticked, so a scheduled run can send. No knowledge base |
 
 Remove every other tool from the packs. Turn off "Use all company knowledge". Add no knowledge base to style-profiler.
 
@@ -66,12 +66,13 @@ Remove every other tool from the packs. Turn off "Use all company knowledge". Ad
 
 | Agent | File in `specs/` | Hash |
 |---|---|---|
-| Main | `stage-37.md` | 44d0cda3 |
+| Main | `stage-38.md` (same text as `stage-37.md`) | 44d0cda3 |
 | notes-keeper | `stage-36-notes-keeper.md` | 0a5c32e3 |
 | style-profiler | `stage-36-style-profiler.md` | 0254ef97 |
 | draft-writer | `stage-35-draft-writer.md` | 5f4f21dc |
 | meeting-prep | `stage-12-meeting-prep.md` | e876218a |
-| brief-builder | `stage-37-brief-builder.md` | 6fc38e73 (the editor hides the `### ` marks and the doctype line, so read the hash before saving) |
+| brief-builder | `stage-38-brief-builder.md` | c24cd107 (4331 characters when typed in, the editor shows the bullet lines as a list after a reload and then reads f34f3376 with 4241 characters, the words are the same) |
+| Skill brief-render | `skills/brief-render.zip`, built by `python3 skills/build_zip.py` from `skills/brief-render/` | upload from the brief-builder dialog, Skills, plus, Upload a skill |
 | Skill board-layout | `stage-37-board-layout-skill.md` | text only, no hash check |
 
 Limits: main text 32,000 characters (about 1,070 left by the editor counter), each sub-agent 32,000. The editor turns lines that start with `a.` to `e.` into a list, the hash method already allows for that.

@@ -1,6 +1,6 @@
 # Brief builder: designed HTML brief by sub-agent
 
-Status: built and tested in Preview 2026-10-23, not published. Plan: `brief-builder-plan.md`. The placeholder marker is `@@TOKEN@@` (see `brief-builder-spike2.md`). Spike evidence: `brief-template-spike.md`.
+Status: built and tested in Preview 2026-10-23, not published. Sections 4 to 8 are replaced by `brief-render-skill-design.md` (built as stage 38, the fragments now live in the skill). Plan: `brief-builder-plan.md`. The placeholder marker is `@@TOKEN@@` (see `brief-builder-spike2.md`). Spike evidence: `brief-template-spike.md`.
 
 ## 1. Goal
 

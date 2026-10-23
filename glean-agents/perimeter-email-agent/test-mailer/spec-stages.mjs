@@ -583,4 +583,21 @@ export const STAGES = [
       },
     },
   },
+  {
+    // Stage 38: brief-builder writes a JSON file and the skill brief-render makes the HTML. Main unchanged from stage 37.
+    present: [],
+    absent: [],
+    subs: {
+      'brief-builder': {
+        present: [
+          'You are brief-builder', 'Never write HTML yourself', 'Step 2, render', 'NOT SENT: render failed', 'NOT SENT: incomplete', 'NOT SENT: no address',
+          'NOT SENT: send failed', 'skill brief-render', 'is_html set to true', 'Never retry to another address', 'Never use an em dash or a semicolon',
+        ],
+        absent: [
+          'Replace every @@TOKEN@@ with its value', 'Copy the style block of the shell exactly', 'Weekly: write plain HTML',
+          'Count each value by going through the cards one by one', 'FRAGMENTS',
+        ],
+      },
+    },
+  },
 ];
