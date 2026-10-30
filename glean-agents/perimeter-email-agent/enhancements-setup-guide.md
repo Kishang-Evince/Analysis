@@ -2,7 +2,7 @@
 
 One short section per enhancement: what it does, where it lives, what to configure, how to switch it on, how to check it.
 
-All text lives in main agent text, stage 39 (hash 44d0cda3, same text as stage 37), and sub-agent texts listed in the writing style guide, section 5. Steps named like `Step 3C`. Find by name in main text.
+All text lives in main agent text, stage 40 (hash 1ae4b9a9), and sub-agent texts listed in the writing style guide, section 5. Steps named like `Step 3C`. Find by name in main text.
 
 ## A. Shared setup (do once)
 
@@ -18,7 +18,7 @@ All text lives in main agent text, stage 39 (hash 44d0cda3, same text as stage 3
 | INCLUDE_CALENDAR | yes or no | yes | 12, 27 |
 
 3. Tools on the main agent: Outlook List messages, Get email message and Get calendar view. Main holds no write tool, so it needs no approval box. Send email and Get outlook profile belong to the sub-agent brief-builder, which renders the brief with the skill brief-render.
-4. Sub-agents: draft-writer, meeting-prep, notes-keeper, style-profiler, brief-builder. Tools per sub-agent are in the writing style guide, section 4. Write approval box "Allow agent to use write tools without approval" (checked 2026-10-23): unticked on notes-keeper and style-profiler, so approval card shows before workbook write. Ticked on draft-writer and brief-builder, no click. meeting-prep has no write tool.
+4. Sub-agents: draft-writer, meeting-prep, notes-keeper, style-profiler, brief-builder. Tools per sub-agent are in the writing style guide, section 4. Write approval box "Allow agent to use write tools without approval" (style-profiler checked 2026-10-27, the others 2026-10-23): unticked on notes-keeper, so approval card shows before the lists are written. Ticked on style-profiler (so a scheduled first run can save the style), draft-writer and brief-builder, no click. meeting-prep has no write tool.
 5. Trigger: schedule weekdays at 8:00 am in the user's time zone, plus chat.
 6. Test mail: in `test-mailer/` run `npm run send -- --group E01 --tag "[run1]"` (change E01 to the enhancement number, two digits). Preview first with `npm run dry-run -- --group E01`.
 7. Enhancements 2, 22, 23, 25 have no script mail (outbound only). `Unknown: group E22` and 0 mail preview for E02 are normal. Group name only names test plan. User sends mail from Outlook first. Other groups print manual Outlook steps like "Reply from Outlook" (E01, E12, E17 to E21). `npm run dry-run -- --group E01` shows them.
@@ -196,9 +196,9 @@ All text lives in main agent text, stage 39 (hash 44d0cda3, same text as stage 3
 
 ### 25. Tone & Voice Profile
 - **Does:** drafts sound like the user.
-- **Where:** style-profiler, notes-keeper question, draft-writer, main routing in Step 3F.
+- **Where:** style-profiler (mode AUTO), notes-keeper style signal, draft-writer, main Step 3F and the draft step.
 - **Config:** workbook cells D1:E60 (the lists stay in A1:B2, A1:B100 is reserved for list values), tools and texts in `writing-style-setup-guide.md`.
-- **Steps:** seed about 15 varied sent mails from Outlook first (test plan E25, no script mail). First chat shows question, user says yes, approve card to save table, then say what to change.
+- **Steps:** seed about 15 varied sent mails from Outlook first (test plan E25, no script mail). The first run builds the style by itself, then say `show my writing style` and what to change.
 - **Check:** drafts use the saved greeting and sign-off. No style saved means a neutral draft and a note on the board.
 
 ### 26. VIP & Topics Lists

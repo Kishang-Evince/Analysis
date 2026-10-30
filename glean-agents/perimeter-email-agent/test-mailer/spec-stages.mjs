@@ -625,4 +625,24 @@ export const STAGES = [
       },
     },
   },
+  {
+    // Stage 40: the first run builds the writing style by itself. notes-keeper reports STYLE: saved, none or cleared, main calls style-profiler in mode AUTO before the first draft when none.
+    present: ['call style-profiler once with the mode AUTO', 'Call style-profiler without a chat message only in mode AUTO', 'STYLE: none'],
+    absent: [
+      'or says yes to the ASK line about reading sent mails', 'Add the line CONSENT: yes to a BUILD request',
+      'Never call style-profiler in a run with no chat message', 'the ASK about reading sent mails only once per chat',
+      'Add the line CONSENT: yes to a BUILD request only when that message says yes or go ahead to that ASK line', 'is not consent',
+      'but the ASK about reading sent mails only once per chat and never after the user said no or deleted the style',
+    ],
+    subs: {
+      'style-profiler': {
+        present: ['mode AUTO', 'Created workbook.', 'Already saved.', 'Cleared by the user.', 'meta.cleared', 'Create Excel sheet'],
+        absent: ['Never run on a schedule', 'must carry the line CONSENT: yes', 'CONSENT: yes', 'ASK: May I read your recent sent mails', 'Reply yes to start', 'I use up to TARGET and may open more to find TARGET I can use', 'NO WORKBOOK', 'NO WORKBOOK: save one VIP or topic first'],
+      },
+      'notes-keeper': {
+        present: ['STYLE:', 'STYLE: saved', 'STYLE: none', 'STYLE: cleared', 'meta.cleared'],
+        absent: ['ASK: May I read your recent s', 'plus the ASK lines below', 'I use up to 30 and may open more to find 30 I can use', 'Reply yes to start.'],
+      },
+    },
+  },
 ];

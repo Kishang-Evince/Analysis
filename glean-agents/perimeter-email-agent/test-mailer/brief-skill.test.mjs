@@ -17,6 +17,16 @@ const KEYS = [
   'mine', 'others', 'entries', 'unsummarized', 'asksToMe', 'openCommitments', 'othersOwe', 'waitingOnOthers', 'date',
 ];
 
+test('the VIP and topic badges use the gold background D4B66C with blackish grey text', () => {
+  const shell = readFileSync(new URL('assets/shell.html', SKILL), 'utf8');
+  for (const cls of ['pv', 'pt']) {
+    const rule = shell.split('\n').find((l) => l.startsWith(`.${cls}{`));
+    assert.ok(rule, `.${cls} rule exists`);
+    assert.match(rule, /background:#D4B66C(;|\})/, `${cls} background`);
+    assert.match(rule, /color:#333333(;|\})/, `${cls} text colour`);
+  }
+});
+
 test('skill folder holds the files of the spec', () => {
   for (const f of ['SKILL.md', 'scripts/render_brief.py', 'references/data_schema.md', 'assets/week-row.html']) assert.ok(existsSync(new URL(f, SKILL)), f);
   const md = readFileSync(new URL('SKILL.md', SKILL), 'utf8');

@@ -1135,3 +1135,33 @@ The user cut and pasted the table from AD1:AE60 to D1:E60. The style-profiler, n
 | notes-keeper READ called directly | List drive files, Get range `A1:B2` and Get range `D1`, the answer lists the VIP and topic entries and no "no style saved" ASK line, 30 s, 0.27 credits |
 
 Not run: a style BUILD or EDIT (they write the table) and draft-writer on a real board run.
+
+## Automatic style learning, stage 40 (2026-10-27)
+
+Texts in the draft agent (never published), each checked by hash after a page reload: main 1ae4b9a9 (29,803 characters, 1,036 left), notes-keeper 0038cb98, style-profiler a72aa2cd (changed to 6a121dcd after the review fixes, see the next paragraph), board-layout skill text re-read. style-profiler now has the Microsoft 365 pack trimmed to Create Excel sheet and both write boxes ticked (the dialog shows one box per tool pack). Local stage checks: `npm run check:40` passes for main and both sub-agents, the whole suite passes.
+
+| Check | Result |
+|---|---|
+| "show my writing style" through main | routed to style-profiler SHOW, no consent question, the saved baseline and cell rows come back and end with the ASK line "Does this sound like you?" |
+| "show my VIP and topic lists" through main | the VIP and TOPIC lines come back, no style line leaks into the answer |
+
+Not run, because each needs a change to the real workbook or a full board run:
+
+| Check | Why not run | What to look for |
+|---|---|---|
+| AUTO with no workbook | needs the real workbook renamed or deleted | the file is created, D1:E60 is saved, answer holds "Created workbook." |
+| AUTO with a workbook and an empty D1:E60 | needs the saved style cleared first | the table is saved |
+| AUTO with a saved table | the real workbook already holds a style, so this is safe, but main only calls AUTO in the draft step | "Already saved." and no write |
+| CLEAR then AUTO then SHOW | CLEAR deletes the real style | "Cleared by the user." then "NO PROFILE" |
+| AUTO with fewer than 5 usable mails | needs another mailbox | NOT ENOUGH MAIL and D1 unchanged |
+| Two files with the same name | needs a second workbook | AMBIGUOUS WORKBOOK |
+| Main calls AUTO once before the drafts | a full board run, 13 minutes, mails a brief | one style-profiler call before draft-writer when notes-keeper answers STYLE: none |
+| Scheduled run with no style, Run now | full board run | duration against the 30 minute cut-off, table saved with no click |
+
+Unverified assumption: the Create Excel sheet call is built as 60 rows of 5 cells with the first three cells empty so the table lands in D1:E60. Check the shape of the created file in test 1.
+
+Review fixes (2026-10-27, whole-change review by a fresh reviewer): style-profiler text 6a121dcd (18,334 characters). AUTO never creates a file after a failed listing, lists the drive again right before the create, skips the VIP read when there is no file, and writes nothing when the fresh read before the write shows a saved or deleted style. Task 5 needed no draft-writer change, its text already treats a D1 that is not baseline.greeting as no style.
+
+First live finding (2026-10-27, new user with no workbook): a typed "learn my writing style" answered NO WORKBOOK. Fixed: BUILD creates the workbook like AUTO, SHOW, EDIT and CLEAR answer NO PROFILE with no file. style-profiler text 888ec658 (18,251 characters). To check in the account with no workbook: say `learn my writing style`, expect about 6 minutes, "Saved: ..." and "Created workbook."
+
+Live test of the typed build with the workbook missing (2026-10-27, Preview, style-profiler 888ec658): `learn my writing style` asked no consent question, listed the drive, treated the workbook as missing, read the sent mail and saved. About 10 minutes later `show my writing style` returned a new profile (baseline "usually no greeting or sign-off", authority and peer cells "too few mails (0)"), and `show my VIP and topic lists` answered "no saved VIP entries and no saved topic entries", so a new workbook was created and the old VIP and topic lists were not in it. One file only, no AMBIGUOUS answer. The Create Excel sheet call with 60 rows of 5 cells therefore worked (D1:E60 reads back). Not checked: the exact final answer line ("Saved: ..." and "Created workbook."), because the main reply was cut when the Stop button was clicked while the sub-agent kept running. The old workbook (if it still exists under another name) was not touched.
