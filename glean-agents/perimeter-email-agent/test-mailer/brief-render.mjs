@@ -12,6 +12,9 @@ const fill = (name, map) => frag(name).replace(/@@(\w+)@@/g, (_, k) => {
   if (!(k in map)) throw new Error(`fragment ${name}: no value for ${k}`);
   return map[k];
 });
+// Link of the button "Open the live board in Glean", the same constant as LIVE_LINK in render_brief.py. Morning and end-of-day only, never an empty board.
+export const LIVE_LINK = 'https://app.glean.com/chat/agents/9953ac0a90ab49c9b72298bfd3b89815?qe=https%3A%2F%2Fperimeterhealthcare-be.glean.com';
+const liveRow = (empty) => (empty || !/^https:\/\//i.test(LIVE_LINK.trim()) ? '' : fill('live-link', { URL: esc(LIVE_LINK.trim()) }));
 const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`;
 const initials = (name) => name.split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0].toUpperCase()).join('');
 const pill = (cls, text) => fill('pill', { PCLASS: cls, TEXT: esc(text) });
@@ -151,6 +154,7 @@ export function renderBrief(d) {
     : `Needs you today: ${s.must}. Waiting on others: ${s.waiting}. Start with the first card.`;
   return fill('shell', {
     MODE: mode, AS_OF: esc(d.asOf), HEADLINE: headline, KPI_ROWS: empty ? '' : kpiRows(tiles),
+    LIVE_ROW: liveRow(empty),
     HIGHLIGHTS_ROW: d.highlights ? fill('highlights-row', { TEXT: esc(d.highlights) }) : '',
     CHART_ROW: s.rows.length ? fill('chart-block', { CHART_ROWS: chart(s) }) : '',
     BODY: body.join(''), NOTES: (d.notes ?? []).map((n) => `<p style="margin:0 0 6px 0">${esc(n)}</p>`).join(''), SUMMARY: esc(d.summary ?? ''),

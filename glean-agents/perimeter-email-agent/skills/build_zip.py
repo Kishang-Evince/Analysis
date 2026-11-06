@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Builds skills/brief-render.zip with SKILL.md at the zip root, without tests or caches."""
+"""Builds skills/<name>.zip with SKILL.md at the zip root, without tests or caches. Usage: build_zip.py [brief-render|board-widget]"""
+import sys
 import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-SRC = ROOT / "brief-render"
-OUT = ROOT / "brief-render.zip"
+NAME = sys.argv[1] if len(sys.argv) > 1 else "brief-render"
+SRC = ROOT / NAME
+OUT = ROOT / f"{NAME}.zip"
 
 with zipfile.ZipFile(OUT, "w", zipfile.ZIP_DEFLATED) as z:
     for p in sorted(SRC.rglob("*")):

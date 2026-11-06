@@ -19,6 +19,7 @@ The script makes the HTML. You write only the JSON.
 
 - Never write, edit or shorten the HTML. Never add JavaScript, forms, iframes or external files.
 - Never work out days, classes, tiles, ranks or counts. The script does it.
+- The script adds the button "Open the live board in Glean" to a morning and an end-of-day brief that has items. Never add, change or remove a link yourself.
 - Escaping is done by the script. Put plain text values in the JSON.
 - A missing value is written as "not given" by the script. Never put a secret in a value.
 

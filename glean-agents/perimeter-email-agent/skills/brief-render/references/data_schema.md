@@ -21,6 +21,8 @@ waitingCard  recipients, subject, vip (true), topic, daysWaiting, asked, sent, s
 row          who, what, due, status, overdue (true)
 ```
 
+The button "Open the live board in Glean" is not a key. The script adds it under the header of a morning or end-of-day brief that is not empty, with the link held in LIVE_LINK at the top of scripts/render_brief.py (weekly briefs have none).
+
 Days overdue: when due ends with "passed", the whole days between the first date in due (like "Oct 16, 2026") and asOf, otherwise 0.
 
 Summary line printed by the script, for example:

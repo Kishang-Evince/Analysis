@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { renderBrief, stats, inboundDays, waitingDays, daysFromDue } from './brief-render.mjs';
+import { renderBrief, stats, inboundDays, waitingDays, daysFromDue, LIVE_LINK } from './brief-render.mjs';
 import { checkBrief } from './brief-check.mjs';
 
 const big = JSON.parse(readFileSync(new URL('./fixtures/brief-morning-43.json', import.meta.url), 'utf8'));
@@ -129,4 +129,14 @@ test('a meeting is a numbered card with a time, a prep box and a not summarized 
   assert.ok(html.includes('<b class="nm">Vendor call</b><br><span class="sb">2:00 PM</span>'));
   assert.equal((html.match(/Not summarized/g) ?? []).length, 1);
   assert.equal((html.match(/<span class="al">Prep<\/span>/g) ?? []).length, 1);
+});
+
+test('the live board button is in a morning and an end-of-day brief, not in an empty one', () => {
+  for (const mode of ['morning', 'end-of-day']) {
+    const html = renderBrief({ ...big, mode });
+    assert.match(html, /Open the live board in Glean/, mode);
+    assert.ok(html.includes(`href="${LIVE_LINK.replace(/&/g, '&amp;')}"`), mode);
+    assert.equal(html.split('<a ').length - 1, 1, `${mode}: one link only`);
+    assert.doesNotMatch(renderBrief({ mode, asOf: 'Oct 23, 2026' }), /Open the live board in Glean/, `${mode} empty`);
+  }
 });

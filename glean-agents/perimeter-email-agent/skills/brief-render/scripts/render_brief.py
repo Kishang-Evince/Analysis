@@ -18,6 +18,9 @@ ASSETS = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'assets'
 MODES = ('morning', 'end-of-day', 'weekly')
 WEEK_LISTS = (('asksToMe', 'Asks to me', 'sh1'), ('openCommitments', 'My open commitments', 'sh2'), ('othersOwe', 'Others owe me', 'sh3'), ('waitingOnOthers', 'Waiting on others', 'sh4'))
 PURPLE, RED = '#5B62D6', '#B42318'
+# Link of the button "Open the live board in Glean" (morning and end-of-day, not weekly, not an empty board). It opens the agent run page.
+# shortcut: the agent id is fixed here, set it to the published agent when V2 is published and build the zip again.
+LIVE_LINK = 'https://app.glean.com/chat/agents/9953ac0a90ab49c9b72298bfd3b89815?qe=https%3A%2F%2Fperimeterhealthcare-be.glean.com'
 MONTHS = {m: i + 1 for i, m in enumerate(('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'))}
 
 
@@ -63,6 +66,14 @@ def fragment(name):
 def fill(name, mapping):
     """Replaces @@KEY@@ in one pass, so a value that contains @@KEY@@ is never expanded. Raises KeyError for a missing key."""
     return re.sub(r'@@(\w+)@@', lambda m: text(mapping[m.group(1)]), fragment(name), flags=re.ASCII)
+
+
+def live_row(empty):
+    """The button row, or nothing when the board is empty or LIVE_LINK is not an https address."""
+    link = text(LIVE_LINK).strip()
+    if empty or not link.lower().startswith('https://'):
+        return ''
+    return fill('live-link', {'URL': escape(link)})
 
 
 def plural(n, word):
@@ -294,7 +305,7 @@ def render_weekly(data):
         body.append(fill('empty', {'TEXT': 'Nothing unresolved this week.'}))
     html = fill('shell', {
         'MODE': 'Weekly', 'AS_OF': esc(data.get('asOf')), 'HEADLINE': f'Unresolved this week: {total}.' if total else 'Nothing unresolved this week.',
-        'KPI_ROWS': '', 'HIGHLIGHTS_ROW': '', 'CHART_ROW': '', 'BODY': ''.join(body),
+        'KPI_ROWS': '', 'LIVE_ROW': '', 'HIGHLIGHTS_ROW': '', 'CHART_ROW': '', 'BODY': ''.join(body),
         'NOTES': ''.join(f'<p style="margin:0 0 6px 0">{escape(n)}</p>' for n in object_notes(data)), 'SUMMARY': escape(data.get('summary')),
     })
     summary = {'mode': 'weekly', 'cards': total, 'weekly': {k: len(v) for k, v in lists.items()}, 'commitment_rows': 0, 'meeting_cards': 0,
@@ -350,6 +361,7 @@ def render(data):
     chart_html, chart_rows = chart(s['rows']) if s['rows'] else ('', 0)
     html = fill('shell', {
         'MODE': 'End-of-day' if eod else 'Morning', 'AS_OF': esc(as_of), 'HEADLINE': headline, 'KPI_ROWS': '' if empty else kpi_rows(tiles),
+        'LIVE_ROW': live_row(empty),
         'HIGHLIGHTS_ROW': fill('highlights-row', {'TEXT': esc(data['highlights'])}) if text(data.get('highlights')).strip() else '',
         'CHART_ROW': fill('chart-block', {'CHART_ROWS': chart_html}) if s['rows'] else '',
         'BODY': ''.join(body), 'NOTES': ''.join(f'<p style="margin:0 0 6px 0">{escape(n)}</p>' for n in notes), 'SUMMARY': escape(data.get('summary')),

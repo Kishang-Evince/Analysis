@@ -32,7 +32,7 @@ test('skill folder holds the files of the spec', () => {
   const md = readFileSync(new URL('SKILL.md', SKILL), 'utf8');
   assert.ok(md.startsWith('---\n') && /^name: brief-render$/m.test(md) && /^description: .{40,}/m.test(md));
   const assets = readdirSync(new URL('assets/', SKILL)).filter((f) => f.endsWith('.html'));
-  assert.equal(assets.length, 21);
+  assert.equal(assets.length, 22);
   for (const f of assets) {
     const t = readFileSync(new URL(`assets/${f}`, SKILL), 'utf8');
     assert.ok(!/\{\{|\}\}/.test(t), `${f} has a double brace`);
@@ -45,7 +45,7 @@ test('zip has SKILL.md at the root and no tests', () => {
   const zip = path(new URL('brief-render.zip', SKILLS));
   const names = execFileSync('python3', ['-m', 'zipfile', '-l', zip], { encoding: 'utf8' }).split('\n').map((l) => l.split(/\s+/)[0]).filter(Boolean);
   for (const n of ['SKILL.md', 'scripts/render_brief.py', 'references/data_schema.md']) assert.ok(names.includes(n), n);
-  assert.ok(names.filter((n) => n.startsWith('assets/')).length >= 21);
+  assert.ok(names.filter((n) => n.startsWith('assets/')).length >= 22);
   assert.ok(!names.some((n) => n.startsWith('tests/') || n.includes('__pycache__')));
 });
 

@@ -166,6 +166,59 @@ def row(who='Ann', what='Send it', date='Oct 24, 2026'):
     return {'who': who, 'what': what, 'date': date}
 
 
+class LiveLinkTests(unittest.TestCase):
+    BUTTON = 'Open the live board in Glean'
+
+    def test_morning_and_end_of_day_have_the_button_with_the_constant_link(self):
+        for mode in ('morning', 'end-of-day'):
+            html, _ = rb.render(board(mode=mode))
+            self.assertIn(self.BUTTON, html, mode)
+            self.assertIn(f'href="{rb.escape(rb.LIVE_LINK)}"', html, mode)
+            self.assertIn('Run agent', html, mode)
+
+    def test_the_constant_is_an_https_agent_link(self):
+        self.assertTrue(rb.LIVE_LINK.startswith('https://app.glean.com/chat/agents/'), rb.LIVE_LINK)
+
+    def test_weekly_has_no_button(self):
+        html, _ = rb.render({'mode': 'weekly', 'asOf': 'Oct 23, 2026', 'weekly': {'asksToMe': [{'who': 'A', 'what': 'B', 'date': 'C'}]}})
+        self.assertNotIn(self.BUTTON, html)
+
+    def test_an_empty_board_has_no_button(self):
+        for mode in ('morning', 'end-of-day'):
+            html, _ = rb.render({'mode': mode, 'asOf': 'Oct 23, 2026'})
+            self.assertNotIn(self.BUTTON, html, mode)
+
+    def test_only_an_https_link_makes_a_button(self):
+        original = rb.LIVE_LINK
+        try:
+            for bad in ('http://app.glean.com/x', 'javascript:alert(1)', 'HTTPS//x', '', '  ', 'ftp://x'):
+                rb.LIVE_LINK = bad
+                html, _ = rb.render(board())
+                self.assertNotIn(self.BUTTON, html, repr(bad))
+                self.assertNotIn('javascript:', html)
+        finally:
+            rb.LIVE_LINK = original
+
+    def test_the_link_is_escaped(self):
+        original = rb.LIVE_LINK
+        try:
+            rb.LIVE_LINK = 'https://app.glean.com/a?x=1&y="2"<b>'
+            html, _ = rb.render(board())
+            self.assertIn('href="https://app.glean.com/a?x=1&amp;y=&quot;2&quot;&lt;b&gt;"', html)
+            self.assertNotIn('y="2"<b>', html)
+        finally:
+            rb.LIVE_LINK = original
+
+    def test_the_button_sits_between_the_header_and_the_highlights(self):
+        html, _ = rb.render(board(highlights='Carol has asks.'))
+        self.assertLess(html.index('Start with the first card.'), html.index(self.BUTTON))
+        self.assertLess(html.index(self.BUTTON), html.index('Carol has asks.'))
+
+    def test_the_button_is_the_only_link_added(self):
+        with_button, _ = rb.render(board())
+        self.assertEqual(with_button.count('<a '), 1)
+
+
 class WeeklyTests(unittest.TestCase):
     def test_weekly_lists_and_counts(self):
         html, _ = rb.render(week(asksToMe=[row(), row()], openCommitments=[row()], othersOwe=[], waitingOnOthers=[row()]))
