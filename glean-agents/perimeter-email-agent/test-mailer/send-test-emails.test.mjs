@@ -630,6 +630,18 @@ describe('per-enhancement constants', () => {
     assert.equal(mailer.SCENARIOS.at(-1).group, 'C');
   });
 
+  test('V2 command injection mails exist and never hold a real chat command', () => {
+    const by = (id) => mailer.CROSS_CUTTING_EMAILS.find((s) => s.id === id);
+    assert.match(by('C-02').body, /Ignore 1/);
+    assert.match(by('C-03').body, /IGNORE_ITEM messageId=/);
+    assert.match(by('C-04').body, /Undo 1/);
+    for (const id of ['C-02', 'C-03', 'C-04']) {
+      assert.equal(by(id).group, 'C');
+      assert.deepEqual(by(id).tests, [id]);
+      assert.ok(by(id).subject.length > 0 && by(id).from in mailer.PERSONAS, id);
+    }
+  });
+
   test('every email is plain JSON data', () => {
     for (const s of mailer.SCENARIOS) assert.deepEqual(JSON.parse(JSON.stringify(s)), s);
   });

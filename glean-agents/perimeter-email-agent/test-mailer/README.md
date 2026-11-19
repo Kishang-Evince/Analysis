@@ -1,6 +1,6 @@
 # Test mailer: seed a test mailbox through an SMTP relay (Brevo)
 
-`send-test-emails.mjs` sends scripted emails through an SMTP relay (Brevo by default) to the Outlook mailbox the agent runs on, so you do not compose test mail by hand. It has 174 catalog entries taken from `../test-plan.md`; each email lists the test ids it supports.
+`send-test-emails.mjs` sends scripted emails through an SMTP relay (Brevo by default) to the Outlook mailbox the agent runs on, so you do not compose test mail by hand. It has 177 catalog entries taken from `../test-plan.md`; each email lists the test ids it supports.
 
 ## Where the emails live
 Inside `send-test-emails.mjs`, between `// BEGIN CATALOG` and `// END CATALOG`, as plain JSON arrays:
