@@ -54,6 +54,17 @@ class ClassifyTests(unittest.TestCase):
         out = f.classify([msg('A', '2026-11-04T10:00:00Z', [IGN]), msg('B', '2026-11-04T10:00:00Z', []), msg('B', '2026-11-04T11:00:00Z', [IGN])])
         self.assertEqual([x['cid'] for x in out['hidden']], ['A', 'B'])
 
+    def test_unmarked_duplicate_of_a_hidden_item_is_hidden_too(self):
+        out = f.classify([msg('A', '2026-11-19T06:00:21Z', [IGN], subject='Audit evidence'),
+                          msg('B', '2026-11-19T06:00:18Z', [], subject='Audit evidence')])
+        self.assertEqual([x['cid'] for x in out['hidden']], ['A', 'B'])
+
+    def test_same_subject_on_another_day_or_sender_is_not_a_duplicate(self):
+        out = f.classify([msg('A', '2026-11-19T06:00:21Z', [IGN], subject='Audit evidence'),
+                          msg('B', '2026-11-18T06:00:18Z', [], subject='Audit evidence'),
+                          msg('C', '2026-11-19T06:00:18Z', [], subject='Audit evidence', sender='z@x.com')])
+        self.assertEqual([x['cid'] for x in out['hidden']], ['A'])
+
     def test_output_is_sorted_by_cid_for_a_stable_answer(self):
         out = f.classify([msg('Z', '2026-11-04T10:00:00Z', [IGN]), msg('M', '2026-11-04T10:00:00Z', [IGN])])
         self.assertEqual([x['cid'] for x in out['hidden']], ['M', 'Z'])

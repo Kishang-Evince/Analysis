@@ -9,6 +9,7 @@ The table holds facts only. It never decides that a request was answered, the mo
 Nothing is written or sent.
 """
 import glob
+import datetime
 import json
 import os
 import re
@@ -16,6 +17,14 @@ import sys
 
 MAIL_GLOB = '/home/user/tool_output/OUTLOOK_LIST_MESSAGES_*/OUTLOOK_LIST_MESSAGES_*.json'
 BRIEF_PREFIXES = ('daily brief:', 'weekly brief:')
+AUTO_SENDER = re.compile(r'no[-_.]?reply|do[-_.]?not[-_.]?reply|mailer-daemon|postmaster|notifications?@|newsletter|updates?(@|$)|[a-z]updates@')
+AUTO_SUBJECT = ('automatic reply', 'automatic response', 'autoreply', 'out of office', 'undeliverable', 'delivery status notification')
+
+
+def is_automated(sender, subject):
+    """Mail no person wrote for the owner: a no-reply or newsletter sender, or an automatic reply.
+    shortcut: names only, a person who writes from a robot address is missed, extend the pattern when that happens."""
+    return bool(AUTO_SENDER.search(str(sender or '').lower())) or str(subject or '').strip().lower().startswith(AUTO_SUBJECT)
 
 
 def find_messages(obj, out):
@@ -94,7 +103,16 @@ def own_brief(m, me):
     return address(m.get('from')) in addresses(m, 'toRecipients')
 
 
-def triage(mail):
+def age_days(newest, today):
+    """Whole days between the date of the newest message (the date part of its ISO time) and today (a date or YYYY-MM-DD, default today in UTC)."""
+    day = datetime.date.fromisoformat(str(today)) if today else datetime.datetime.now(datetime.timezone.utc).date()
+    try:
+        return (day - datetime.date.fromisoformat(newest[:10])).days
+    except ValueError:
+        return 0
+
+
+def triage(mail, today=None, read_days=3):
     me = owner(mail)
     mail = [m for m in mail if not own_brief(m, me)]
     inbound, sent = {}, {}
@@ -115,7 +133,10 @@ def triage(mail):
             'importance': str(newest.get('importance') or 'normal'),
             'flag': (newest.get('flag') or {}).get('flagStatus') == 'flagged',
             'sentAfter': any(s > when(newest) for s in sent_times),
+            'auto': is_automated(address(newest.get('from')), newest.get('subject')),
         })
+        rows[-1]['ageDays'] = age_days(when(newest), today)
+        rows[-1]['old'] = not rows[-1]['unread'] and rows[-1]['ageDays'] > read_days
     rows.sort(key=lambda r: (r['newest'], r['cid']), reverse=True)
     for r in rows:
         key = norm_subject(r['subject'])
@@ -150,7 +171,7 @@ def render(result, files):
         lines.append('|'.join([
             f'I{i}', r['newest'], 'unread' if r['unread'] else 'read', r['from'] or '-', clean(r['subject']),
             f"msgs {r['count']}", r['importance'], 'flag' if r['flag'] else 'noflag',
-            'sentafter' if r['sentAfter'] else 'nosent', f'cats {clean(cats)}', f'same {same}', f"cid {r['cid']}"]))
+            'sentafter' if r['sentAfter'] else 'nosent', f'cats {clean(cats)}', f'same {same}', 'auto' if r['auto'] else 'human', f"age {r['ageDays']}d", 'old' if r['old'] else 'new', f"cid {r['cid']}"]))
     for i, r in enumerate(awaiting, 1):
         replies = ','.join(f"{x['from'] or '-'}@{x['received']}" for x in r['repliesAfter']) or '-'
         lines.append('|'.join([
@@ -159,13 +180,23 @@ def render(result, files):
     return lines
 
 
+def option(args, name, default):
+    return args[args.index(name) + 1] if name in args and args.index(name) + 1 < len(args) else default
+
+
 def main():
     pattern = os.environ.get('TRIAGE_MAIL_GLOB', MAIL_GLOB)
     files = len(glob.glob(pattern))
     if files == 0:
         print('files 0')
         return 0
-    print('\n'.join(render(triage(load_mail(pattern)), files)))
+    args = sys.argv[1:]
+    try:
+        today, read_days = option(args, '--today', None), int(option(args, '--read-days', 3))
+        print('\n'.join(render(triage(load_mail(pattern), today=today, read_days=read_days), files)))
+    except ValueError as e:
+        print(f'error: --today needs YYYY-MM-DD and --read-days a whole number ({e})')
+        return 2
     return 0
 
 

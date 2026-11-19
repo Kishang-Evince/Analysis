@@ -110,3 +110,22 @@ The three mails are still in the test mailbox (inbox, today). Delete them with t
 ## T14 real scheduled run (2026-11-19): blocked on the draft
 
 On the run page of the V2 draft agent the button "Set schedule" is disabled (it carries aria-disabled and nothing opens when clicked, also with the form set to morning and delivery chat and email). The page only shows the information "Recommended schedule: Every weekday at 8:00am". No schedule was created and nothing was mailed. A real scheduled run can only be tested on a published agent, so T14 stays open until the publish step. After publishing: set the schedule with delivery chat and email and MODE morning (or auto), then wait up to an hour for the brief.
+
+## T4, T6, T7 and T11 (2026-11-19)
+
+Test mailbox state: two "Audit evidence" mails of the same day, one carrying the category "Brief: Ignored". Test mails C-02 to C-04 and the other leftovers are still in the inbox.
+
+**T4 typed Ignore with duplicates: fail, then fixed and passed.**
+- Typed `Ignore 1` on "Audit evidence". The approval card held one update, only the newest copy was marked, the agent answered `Ignored "Audit evidence".` The second copy kept showing on the next board (the same model behaviour as 2026-11-05: it did not page through the folder to find the twin).
+- Cause: the duplicate rule depended on the model searching the mailbox again. Fix: the script of the ignore filter now treats an unmarked mail with the same subject, sender and day as a marked one as hidden too (two new unit tests, 12 tests pass). It works on the saved mail list, so it needs no extra mailbox call.
+- Re-run after the fix (uploaded to V2): the agent wrote "two ignored Audit evidence duplicates, which I'm hiding", the board had neither copy and the hidden count was 2.
+- Not checked: typed `Undo` for a duplicate pair from a later chat (the mark is on one mail only, so Undo restores that one, the twin returns on its own once the mark is gone).
+- Typed `Ignore 4` on "Board deck inputs" failed with the Outlook message-not-found error even after the agent looked the mail up again (approved twice). Cause not found, the same mail shows normally as a card. Open.
+
+**T6 ignored mail in later runs: pass.**
+- Chat only morning run, then chat and email end-of-day run, then chat and email weekly run, all after the marks. In every run both Audit evidence copies were left out and the run said so.
+- Chat and email end-of-day run: 8 cards on the board (end-of-day shows overdue items only), the gate printed ok 48 of 48, brief mailed. The board data held no Audit evidence, the mail is built from that data. The mailed text itself was not opened (the Outlook connector of this session belongs to another account).
+
+**T7 new reply since ignored: not run live.** It needs a real reply inside the ignored thread. The seed mailer cannot join an existing thread, so the reply has to be written in Outlook by hand. The rule is covered by unit tests (older mail marked, newest not marked gives "New reply since ignored"). To run it: reply to the ignored "Audit evidence" mail in Outlook, then run a board and look for the card with the note.
+
+**T11 weekly run: pass.** Chat and email, 30 days (weekly overrides to 7). The answer was the written weekly lists (no interactive board, no widget): three asks (Carol, Bob and Alice test mails), empty commitments and waiting lists, ignored duplicates left out, gate ok 13 of 13, "Brief sent to your mailbox." Not checked: whether the mailed weekly brief has the live board button (weekly has no widget, so none is expected).

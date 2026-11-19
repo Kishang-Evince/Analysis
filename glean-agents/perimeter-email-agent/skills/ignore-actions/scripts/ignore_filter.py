@@ -4,7 +4,7 @@
 Usage: python3 ignore_filter.py
 Reads the List messages results that the run saved (the files of the agent sandbox, newest file wins for a message) and prints one line of JSON:
 {"hidden": [...], "newReply": [...], "files": N}
-hidden:   conversations whose newest message carries the category Brief: Ignored (their items are left out of the board)
+hidden:   conversations whose newest message carries the category Brief: Ignored, plus unmarked duplicates of them (same subject, sender and day). Their items are left out of the board
 newReply: conversations where an older message carries it and the newest does not (their items get " New reply since ignored." in Why included)
 Each entry is {"cid": conversationId, "subject": subject of the newest message, "from": its sender address}. Nothing is written or sent.
 """
@@ -63,15 +63,24 @@ def classify(mail):
     by_cid = {}
     for m in mail:
         by_cid.setdefault(str(m.get('conversationId')), []).append(m)
-    hidden, new_reply = [], []
+    hidden, new_reply, rest = [], [], []
     for cid in sorted(by_cid):
         msgs = by_cid[cid]
         newest = max(msgs, key=when)
         entry = {'cid': cid, 'subject': str(newest.get('subject') or ''), 'from': address(newest)}
+        entry['_twin'] = (str(newest.get('subject') or '').strip().lower(), entry['from'], when(newest)[:10])
         if marked(newest):
             hidden.append(entry)
         elif any(marked(m) for m in msgs if m is not newest):
             new_reply.append(entry)
+        else:
+            rest.append(entry)
+    # An unmarked duplicate (same subject, sender and day) of a hidden item is the same ask: hide it too.
+    twins = {e['_twin'] for e in hidden}
+    hidden += [e for e in rest if e['_twin'] in twins]
+    hidden.sort(key=lambda e: e['cid'])
+    for e in hidden + new_reply:
+        e.pop('_twin', None)
     return {'hidden': hidden, 'newReply': new_reply}
 
 

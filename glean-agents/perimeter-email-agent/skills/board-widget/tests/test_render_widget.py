@@ -539,6 +539,46 @@ class MailMarkTests(unittest.TestCase):
                 self.assertEqual(json.load(f)['must'][0]['why'], 'Still open. New reply since ignored.')
 
 
+    def test_cli_refuses_to_draw_when_the_gate_fails(self):
+        with tempfile.TemporaryDirectory() as d:
+            src, out, gate = os.path.join(d, 'board.json'), os.path.join(d, 'w.html'), os.path.join(d, 'gate.py')
+            with open(src, 'w', encoding='utf-8') as f:
+                json.dump(board(must=[card(cid='C1')]), f)
+            with open(gate, 'w') as f:
+                f.write("import os, sys\nprint('missing 1 of 2 rows ' + os.environ['BOARD_GATE_BOARD'])\nsys.exit(1)\n")
+            env = dict(os.environ, BOARD_WIDGET_GATE=gate, BOARD_WIDGET_MAIL_GLOB=os.path.join(d, 'none_*.json'))
+            proc = subprocess.run([sys.executable, '-I', os.path.join(SCRIPTS, 'render_widget.py'), src, out], capture_output=True, text=True, env=env)
+            self.assertEqual(proc.returncode, 3, proc.stderr)
+            self.assertIn('missing 1 of 2 rows ' + src, proc.stdout)
+            self.assertIn('board was not drawn', proc.stdout)
+            self.assertFalse(os.path.exists(out))
+
+    def test_cli_draws_when_the_gate_passes_or_is_absent(self):
+        with tempfile.TemporaryDirectory() as d:
+            src, out, gate = os.path.join(d, 'board.json'), os.path.join(d, 'w.html'), os.path.join(d, 'gate.py')
+            with open(src, 'w', encoding='utf-8') as f:
+                json.dump(board(must=[card(cid='C1')]), f)
+            with open(gate, 'w') as f:
+                f.write("print('ok 2 of 2 rows accounted')\n")
+            for gate_path in (gate, os.path.join(d, 'no_such_gate.py')):
+                env = dict(os.environ, BOARD_WIDGET_GATE=gate_path, BOARD_WIDGET_MAIL_GLOB=os.path.join(d, 'none_*.json'))
+                proc = subprocess.run([sys.executable, '-I', os.path.join(SCRIPTS, 'render_widget.py'), src, out], capture_output=True, text=True, env=env)
+                self.assertEqual(proc.returncode, 0, proc.stderr)
+                self.assertTrue(os.path.exists(out))
+                os.remove(out)
+
+    def test_ignore_and_undo_do_not_run_the_gate(self):
+        with tempfile.TemporaryDirectory() as d:
+            src, out, gate = os.path.join(d, 'board.json'), os.path.join(d, 'w.html'), os.path.join(d, 'gate.py')
+            with open(src, 'w', encoding='utf-8') as f:
+                json.dump(board(must=[card(cid='C1')]), f)
+            with open(gate, 'w') as f:
+                f.write("import sys\nprint('missing 1 of 2 rows')\nsys.exit(1)\n")
+            env = dict(os.environ, BOARD_WIDGET_GATE=gate, BOARD_WIDGET_MAIL_GLOB=os.path.join(d, 'none_*.json'))
+            proc = subprocess.run([sys.executable, '-I', os.path.join(SCRIPTS, 'render_widget.py'), src, out, '--ignore', '1'], capture_output=True, text=True, env=env)
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+
+
 def frm(address):
     return {'from': {'emailAddress': {'address': address}}}
 

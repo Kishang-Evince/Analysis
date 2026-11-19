@@ -130,6 +130,46 @@ class LoadTests(unittest.TestCase):
             self.assertTrue(mail[0]['isRead'])
 
 
+class AgeTests(unittest.TestCase):
+    TODAY = '2026-11-19'
+
+    def rows(self, **kw):
+        mail = [inbound('A', '2026-11-06T05:55:22Z', read=True, subject='Old read'),
+                inbound('B', '2026-11-06T05:55:22Z', read=False, subject='Old unread'),
+                inbound('C', '2026-11-18T05:55:22Z', read=True, subject='New read')]
+        return {r['subject']: r for r in t.triage(mail, **kw)['conversations']}
+
+    def test_read_mail_older_than_read_days_is_old(self):
+        r = self.rows(today=self.TODAY)
+        self.assertEqual((r['Old read']['ageDays'], r['Old read']['old']), (13, True))
+
+    def test_unread_mail_is_never_old(self):
+        self.assertFalse(self.rows(today=self.TODAY)['Old unread']['old'])
+
+    def test_read_mail_inside_read_days_is_not_old(self):
+        self.assertFalse(self.rows(today=self.TODAY)['New read']['old'])
+
+    def test_read_days_changes_the_verdict(self):
+        self.assertFalse(self.rows(today=self.TODAY, read_days=14)['Old read']['old'])
+        self.assertTrue(self.rows(today=self.TODAY, read_days=0)['New read']['old'])
+
+    def test_table_line_shows_age_and_old(self):
+        lines = t.render(t.triage([inbound('A', '2026-11-06T05:55:22Z', read=True)], today=self.TODAY), 1)
+        self.assertIn('|age 13d|old|', lines[1])
+        lines = t.render(t.triage([inbound('A', '2026-11-18T05:55:22Z', read=True)], today=self.TODAY), 1)
+        self.assertIn('|age 1d|new|', lines[1])
+
+    def test_cli_takes_today_and_read_days(self):
+        with tempfile.TemporaryDirectory() as d:
+            mail_file(d, 'OUTLOOK_LIST_MESSAGES_a.json', [inbound('A', '2026-11-06T05:55:22Z', read=True)])
+            env = dict(os.environ, TRIAGE_MAIL_GLOB=os.path.join(d, 'OUTLOOK_LIST_MESSAGES_*.json'))
+            script = os.path.join(SCRIPTS, 'triage.py')
+            out = subprocess.run([sys.executable, '-I', script, '--today', '2026-11-19', '--read-days', '14'], capture_output=True, text=True, env=env).stdout
+            self.assertIn('|age 13d|new|', out)
+            out = subprocess.run([sys.executable, '-I', script, '--today', '2026-11-06'], capture_output=True, text=True, env=env).stdout
+            self.assertIn('|age 0d|new|', out)
+
+
 class CliTests(unittest.TestCase):
     def run_cli(self, glob_pattern):
         env = dict(os.environ, TRIAGE_MAIL_GLOB=glob_pattern)

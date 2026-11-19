@@ -11,7 +11,7 @@ Key message: for an inbound card, the newest inbox message of the conversation t
 
 ## Filter (every run, scheduled or manual, read only)
 
-1. Run python3 /home/user/skills/ignore-actions/scripts/ignore_filter.py with exactly this full path, a short path fails. It reads the Step 1 results that the run saved and prints one line of JSON with two lists of conversations: hidden (the newest message has the category Brief: Ignored) and newReply (an older message has it and the newest does not). Every entry has cid, subject and from. When it fails or prints files 0, read the categories in the Step 1 results yourself and build the two lists the same way.
+1. Run python3 /home/user/skills/ignore-actions/scripts/ignore_filter.py with exactly this full path, a short path fails. It reads the Step 1 results that the run saved and prints one line of JSON with two lists of conversations: hidden (the newest message has the category Brief: Ignored, or it is an unmarked duplicate of such a mail with the same subject, sender and day) and newReply (an older message has it and the newest does not). Every entry has cid, subject and from. When it fails or prints files 0, read the categories in the Step 1 results yourself and build the two lists the same way.
 2. Remove every item whose conversationId is in hidden. Count each removed item once. The count is N.
 3. For every item that stays and whose conversationId is in newReply, add " New reply since ignored." at the end of the "Why included" value of its card, in the chat and in the board text you give to brief-builder.
 4. Ignored items are not counted in the Inbound or Outbound numbers of the summary line. Commitments and Meeting prep are not filtered.

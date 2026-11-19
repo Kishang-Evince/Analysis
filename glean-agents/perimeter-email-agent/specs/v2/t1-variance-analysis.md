@@ -108,3 +108,35 @@ Same setup as round 4 (morning mode, test date November 6, 2026, chat only, FOCU
 Run 3 left out Training plan sign-off, Weekly report and Late-night schedule request, and the gate still passed, so the model had written a reason for each of them. The gate finds rows nobody looked at, it cannot tell that a reason is wrong.
 
 Cards in the last four runs after the changes: 19, 18, 18 and 15 (anchors 6, 6, 6 and 5 of 6). Before the changes: 18, 12, 17, 11 and 15. The worst run is 15 instead of 11 and three of four runs hold every anchor. It is better, and it is not yet steady.
+
+## Round 6: four more fixes and six runs (2026-11-19)
+
+Same form every time: morning, 30 days, chat only, no AS_OF_DATE (today is Nov 19). The mailbox now also holds the test mails C-02 to C-04 and the Audit evidence pair, so these counts are not comparable with rounds 2 to 5.
+
+What was built (all in scripts, tested, uploaded to V2):
+1. Automated mail flag. The triage table marks a row `auto` (no-reply or newsletter sender, automatic reply, undeliverable). The gate counts such a row as handled and refuses a card for it.
+2. Duplicate twin of an ignored mail is hidden too (same subject, sender and day).
+3. The gate runs inside the render step. The board page is not drawn while the gate refuses, the script prints the missing rows and exits with code 3. Run 3 showed why: the model ran the gate before the board file existed, ignored "no board.json found" and drew the board anyway.
+4. Reason codes. A reason for a row without a card must start with ACK, INFO, DUP, REPLIED or LATER. The script checks DUP (the row has a same-subject twin), REPLIED (a sent message is newer), refuses an ACK or INFO reason that names a request or an ask, and allows LATER only on a board that hides sections on purpose.
+5. Age fact. The table shows `age Nd` and `old` or `new` (read and older than READ_DAYS). Run 5 had kept read mail from Nov 6 that the Step 1 rule says is handled.
+
+Runs:
+
+| Run | Version | Cards | Gate |
+|---|---|---|---|
+| 1 | automated flag, duplicate hide, free reasons | 22 | ok 48 of 48 first time |
+| 2 | same | 19 | ok 48 of 48 (it ran before the board existed) |
+| 3 | codes, gate still before the board | 16 | gate bypassed, "no board.json" |
+| 4 | gate inside render | 18 | refused 1 card, then missing 18, 2, 1, then ok |
+| 5 | same | 21 | ok at the first try |
+| 6 | age fact added | 11 | missing 7, then ok |
+
+Result: the gate now bites (run 4 and run 6 show it listing rows and the model fixing them), automated mail never becomes a card, and the ignored twin stays out. The card count is still not steady (11 to 22). Findings:
+- Run 5 against run 4: the extra cards were old read mail (Training plan sign-off, Late-night schedule request, Weekly report). The age fact removes that cause.
+- Run 6 went the other way. Under the gate the model reworded its reasons until the script accepted them and dropped real unread asks (Quick ask: confirm headcount, Draft proposal, Compliance attestation, Partner agreement review) with "DUP" and "INFO" reasons. DUP was refused first (no twin), then the model switched to INFO without the word request. The script cannot judge whether a human mail holds an ask, that stays a model judgment.
+- So the spread from the choice of cards that need judgment is not fixed, and tighter gate rules push the model to bend its wording, not to look again.
+
+Options for the remaining spread (user decision):
+1. Accept 11 to 21 and show the full list of what was left out and why in a collapsed "Left out" section, so a missing card can be seen at once (cheap, honest).
+2. Make the script decide the clear class: every unread, human, new mail with no sent message after it is a card, the model may only exclude it with REPLIED (checked) or ACK, and a second model pass reviews each exclusion (costs one more pass, about 20 s and 0.3 credits).
+3. Wait for the model benchmark (a model that follows rules more steadily).

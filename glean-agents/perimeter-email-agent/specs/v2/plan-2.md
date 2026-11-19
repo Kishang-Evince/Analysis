@@ -217,3 +217,10 @@ Give the user this list. The user publishes.
 - Item 3 so far: T8 and T3 pass (test plan, section T8 and T3). Undo by button also passes and the mailbox is clean. T9 and T14 are left.
 - T9 pass (test plan, section T9). Left in item 3: T14, the real scheduled run.
 - T14 is blocked: Set schedule is disabled on a draft agent. It moves to the publish checklist. Item 3 is done except that.
+
+## Result 2026-11-19 (second pass): tests, duplicate fix, stability work
+
+- T4, T6, T11 run and recorded in test-plan-v2.md. T4 failed first and was fixed (twin of an ignored mail is hidden by the script). T7 needs a real Outlook reply and is not run live.
+- Email from chat: planned in email-from-chat-plan.md, three decisions waiting for the user.
+- Card count variance: five fixes built and uploaded (automated flag, twin hide, gate inside the render step, reason codes, age fact). The count is not steady (11 to 22 in six runs), details and three options in t1-variance-analysis.md round 6.
+- Row 12 of changes.md recorded: the 27 features are not a per-user choice list, FOCUS is the only chosen switch.

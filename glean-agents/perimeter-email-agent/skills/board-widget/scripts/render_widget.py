@@ -17,6 +17,7 @@ import glob
 import json
 import os
 import re
+import subprocess
 import sys
 
 MODES = {'morning': 'Morning', 'end-of-day': 'End-of-day'}
@@ -444,11 +445,33 @@ def parse_numbers(value, label, single=False):
     return ns
 
 
+GATE = '/home/user/skills/triage-board/scripts/board_gate.py'
+
+
+def gate_refusal(board_path):
+    """The text of the completeness gate when it refuses the board (exit code 1), else ''. A missing gate or any other result lets the board be drawn.
+    shortcut: the gate lives in another skill of the agent, when that skill is absent nothing is checked."""
+    gate = os.environ.get('BOARD_WIDGET_GATE', GATE)
+    if not os.path.isfile(gate):
+        return ''
+    try:
+        proc = subprocess.run([sys.executable, gate], capture_output=True, text=True, timeout=60, env=dict(os.environ, BOARD_GATE_BOARD=board_path))
+    except (OSError, subprocess.SubprocessError):
+        return ''
+    return proc.stdout.strip() if proc.returncode == 1 else ''
+
+
 def main(argv):
     args = argv[1:]
     if len(args) not in (2, 4) or (len(args) == 4 and args[2] not in ('--ignore', '--undo')):
         print('error: usage: render_widget.py <board.json> <widget.html> [--ignore N[,N] | --undo N]', file=sys.stderr)
         return 2
+    if len(args) == 2:
+        refusal = gate_refusal(args[0])
+        if refusal:
+            print(refusal)
+            print('The board was not drawn. Fix the rows above in board.json and classified.json, then run this command again.')
+            return 3
     try:
         with open(args[0], encoding='utf-8') as f:
             data = json.load(f)

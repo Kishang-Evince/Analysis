@@ -100,3 +100,12 @@ Choose the brief "weekly" on the form. It shows the written lists for the past 7
 1. Upload the new `triage-board` and `board-widget` skills and the edited `board-layout-v2` to the published agent and link them, and add the FOCUS input with the same four options.
 2. Apply the Step 1C and UTC wording to the published instructions.
 3. T3, T8 and T9 passed on 2026-11-19. Left to run after publishing: T14 (real scheduled run), because Set schedule is disabled on a draft agent. Set it with delivery chat and email and wait up to an hour for the brief.
+
+## Part 5: duplicates, automated mail and a stricter gate (2026-11-19)
+
+- **Ignore and duplicates.** When the same ask arrived twice (same subject, sender and day) and one copy is marked Ignored, the other copy stays out of later boards too. Before, the second copy came back on the next run.
+- **Automated mail.** No-reply senders, newsletters and automatic replies never become cards.
+- **Stricter completeness check.** The board page is only drawn after the check passes. Every mail that gets no card needs a short coded reason (ACK, INFO, DUP, REPLIED or LATER) and the script checks DUP and REPLIED against the facts.
+- **Age of read mail.** The triage table shows how old a mail is and marks read mail that is older than READ_DAYS as handled.
+- **Known limit.** The number of cards still changes from run to run (11 to 22 in six runs on the same form). Whether a human mail holds an ask is still the model's call. Options are in the variance notes.
+- **Also tested.** Ignored mail stays out of later runs (chat, chat and email, weekly), and the weekly run answers as a written list with the mail sent. The new reply in an ignored thread has not been run live.

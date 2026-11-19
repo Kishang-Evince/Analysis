@@ -13,6 +13,7 @@ commitments  { mine: [row], others: [row] }, optional
 meetings     { entries: [text], unsummarized: [text] }, optional
 notes        [text], optional. Note lines such as "Mailbox window truncated, older items may be missing.", shown above the summary
 hidden       whole number, optional. How many cards the ignore filter left out. Shown as the note "Ignored items hidden: N" directly above the summary
+partial      true, optional. Write it only when the board leaves sections out on purpose: a FOCUS other than full board or a SHOW_ setting of no (end-of-day needs no flag). The gate then accepts the reason code LATER for the rows left out
 summary      text, the last line of the board
 ignored      [{ n, subject, cards }], optional. The items ignored in this chat, n from 1 in the order ignored.
              The script writes it for --ignore and --undo (with the removed cards in cards). Do not write it yourself

@@ -13,7 +13,7 @@ The script makes the HTML. You write only the JSON, once per run. The file board
 2. Run: python3 scripts/render_widget.py /home/user/output/board.json /home/user/output/action-board.html. It writes the page and prints one line of JSON: cards, sections, ignored, hidden, buttons, bytes and numbers (the number, subject and section of every card). On a structural error it prints "error: PATH: MESSAGE" and exits with code 2.
 3. Compare the line with the JSON: cards equals the cards of must, waitingYou, waiting and review together. The numbers list is the numbering of the board for Ignore N and Undo N.
 4. Open the page with the tool Open File In Canvas and show it as the board. Do not copy or retype its HTML and do not write the markdown board in the reply.
-5. When the script exits with code 2 or the page cannot be opened, show the board in markdown as board-layout-v2 says, and say nothing about the script.
+5. When the script exits with code 3 it printed the rows that the completeness gate refused and did not draw the page. Look at each listed row again, add its card to board.json or a valid reason (a code, a colon and the words) to classified.json, and run the same command again. Never write the markdown board to get around it. When the script exits with code 2 or the page cannot be opened, show the board in markdown as board-layout-v2 says, and say nothing about the script.
 
 ## After Ignore N or Undo N
 
