@@ -80,3 +80,23 @@ Choose the brief "weekly" on the form. It shows the written lists for the past 7
 3. Run the untested items above, at least a real scheduled run and the wrong id check.
 4. Clear the test leftovers in Outlook: three test mails still carry "Brief: Ignored" (two "Late-night schedule request" mails and an older "Board deck inputs" message), and several test brief mails and drafts are in the mailbox.
 5. Publish V2 yourself when ready.
+
+## Part 4. Changes since the first release note (2026-11-18)
+
+**9. KPI tiles on the chat board.** A static row of tiles sits under the board title: Open items, Must do today (Must do overdue at end of day), Waiting on you, Waiting on others, Review quickly, Drafts ready and Longest wait in days. A tile is not clickable. A section with no cards has no tile, so a section hidden by a Show setting has none. Drafts ready appears only when a card has a draft.
+
+**10. Hover text on the action labels.** The words Reply, Review, Approve, Send, Decide, Complete, Attend (mail you must handle) and Recent, Aging, Overdue (mail you sent) are labels, not buttons. Each one now has a short hover text and the pointer shows a help cursor. Only Ignore and Undo are buttons.
+
+**11. FOCUS on the run form.** One more choice on the form replaces the hidden conversation starters: full board (default), commitments only, waiting on others only, meeting prep only. The layout skill reads it from the run inputs, because the main instructions had no room for another field reference. A blank or unknown value shows the full board. The VIP list is not an option, ask for it in the chat as before. All three display options were tested once.
+
+**12. A steadier board (partly).** Step 1C names the exact command of the new triage-board skill, which prints one table of all conversations. A completeness gate in the same skill checks that every table row is a card, is already ignored, or has its own written reason (at least 3 words and 15 characters, the same words for at most 3 rows). Step 1 timestamps now say UTC after one run returned an empty mailbox because of a +05:30 time.
+
+**Limits that remain**
+- The number of cards still differs between runs (11 to 19 in the last runs, the best run found all of them). The model does not always run the triage script, and the gate only catches rows nobody looked at.
+- Not tested yet: T2 to T14 of the test plan, the tiles with a hidden section, the hover texts in the browser, a real scheduled run.
+- The main instructions have 17 characters left. Any new setting must go into a skill.
+
+**Before publishing, added to the list above**
+1. Upload the new `triage-board` and `board-widget` skills and the edited `board-layout-v2` to the published agent and link them, and add the FOCUS input with the same four options.
+2. Apply the Step 1C and UTC wording to the published instructions.
+3. T3, T8 and T9 passed on 2026-11-19. Left to run after publishing: T14 (real scheduled run), because Set schedule is disabled on a draft agent. Set it with delivery chat and email and wait up to an hour for the brief.

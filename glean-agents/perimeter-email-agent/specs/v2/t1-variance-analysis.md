@@ -36,3 +36,75 @@ What it should have done (main text steps): classify every unread inbox message 
 4. Prompt wording changes only (for example "never use cat on the saved results"). Cheapest, but the earlier fixes in this project show that wording alone does not hold, so I do not recommend relying on it.
 
 Recommended: options 1 and 3 first, then option 2 if drops still happen. Each is a skill with a script and unit tests, the same pattern as the ignore filter.
+
+## Round 2: triage script, morning mode (2026-11-18)
+
+Same mailbox, chat only, form defaults except MODE morning and the test date November 6, 2026. The seed mail is 12 days old, so with today's date the read seed mails would fall outside READ_DAYS and the anchors could not appear for a reason that has nothing to do with variance.
+
+| | R1 | R2 | R3 |
+|---|---|---|---|
+| Time, credits | 81 s, 2.29 | 92 s, 3.17 | 116 s, 2.53 |
+| Cards | 18 | 12 | 17 |
+| Must do / waiting on you / waiting on others / review | 4 / 13 / 1 / 0 | 2 / 6 / 1 / 3 | 4 / 12 / 1 / 0 |
+| Anchors | 6 of 6 | 5 of 6, Vendor onboarding checklist only as a Re: card in Review quickly | 6 of 6 |
+| Triage script | ran first, 38 conversations, 1 awaiting | printed the script source, then ran it, same table | skill read, script never run, the model wrote its own parsing |
+| Full body reads | 15 | 15 and 2 more | 10 and 2 more |
+| Failed steps | none | none | one Get email message error |
+
+Left out by R2: Weekly report, Late-night schedule request, Compliance attestation, Security training evidence, Launch checklist, Partner agreement review. Left out by R3 compared with R1: Compliance attestation. R3 shows Launch plan v1 where R1 shows Re: Launch plan v1.
+
+Cards that moved section: Weekly report (must in R1, waiting on you in R3, absent in R2), Deck for the steering call (waiting on you in R1 and R2, must in R3), Quick ask: confirm headcount (waiting on you in R1 and R2, must in R3), Training plan sign-off (must in R1 and R2, waiting on you in R3), Re: Launch plan v1 (waiting on you in R1, review in R2).
+
+Result: FAIL, variance remains. The table helps only when the model runs it (R1 and R2), and R2 ran it and still dropped six cards. R3 skipped the script after reading its skill, so the Step 1C line is too weak to force the call.
+
+## Round 3: stronger Step 1C and the completeness gate (2026-11-18)
+
+Same setup as round 2 (morning mode, test date November 6, 2026, chat only), two runs after the Step 1C line became "Run the script of the skill triage-board and bucket every row it prints." and the gate was added to the skill.
+
+| | A | B |
+|---|---|---|
+| Time, credits | 109 s, 2.14 | 98 s, 2.72 |
+| Cards | 11 | 15 |
+| Must do / waiting on you / waiting on others / review | 2 / 8 / 1 / 0 | 4 / 10 / 1 / 0 |
+| Anchors | 5 of 6, Training plan sign-off missing | 6 of 6 |
+| Triage script run | no, the model printed its source with sed and went on | no, the model wrote its own parsing |
+| Gate run | no | yes, printed ok 39 of 39 rows accounted |
+
+In run B the gate passed for the wrong reason. The model wrote classified.json with one generic reason ("not actionable or surfaced as a card") for all 38 inbound rows and a second one for the sent row, so every row counted as accounted for. Run A never called the gate.
+
+Across the five morning runs since the triage skill exists (18, 12, 17, 11 and 15 cards) the spread is the same as before it (18, 10 and 18). Reading a skill does not make the model run its script, and a gate that accepts any non-blank reason can be passed without looking at a row.
+
+Options: put the exact command in the Step 1C line (the 47 character body would become about 62, 42 characters are free), make the gate refuse repeated or very short reasons, or move the classification out of the single long run (a sub-agent that classifies the table in batches). None is built.
+
+## Round 4: command in Step 1C, stricter gate, KPI tiles and FOCUS (2026-11-18)
+
+Changes before this round: the Step 1C line names the exact command, the gate refuses a reason shorter than 15 characters or 3 words and a reason shared by more than 3 rows, the two Step 1 timestamps say UTC, the board shows KPI tiles and hover texts, and the run form has a FOCUS input (4 options, default full board). Same setup as before (morning mode, test date November 6, 2026, chat only).
+
+| | Run 1 (flaky) | Run 2 | Run 3 (FOCUS commitments only) |
+|---|---|---|---|
+| Time, credits | 56 s, 0.91 | 111 s, 2.51 | not read |
+| Result | empty board, "Inbox is clear" | 19 cards (3 / 14 / 1 / 1), 6 of 6 anchors | commitments only board, Others owe me: Alice Morgan, Open, no own commitments |
+| Triage script run | yes, `files 3 conversations 0` | yes, 32 conversations and 1 awaiting | not read |
+| Gate | not reached | ran 3 times: missing 20 of 39, missing 3 of 33, then ok 33 of 33 | not read |
+
+Run 1 was a query problem and not a sorting problem. The model sent `received_date_time_ge='2026-10-23T00:00:00+05:30'` and all three mail queries came back empty, so the board was empty. This is the first time in about 15 runs. The two timestamp lines now say UTC to make the model use a Z time.
+
+Run 2 is the first run where the gate did real work. It listed 20 conversations nobody had looked at, then 3, and the model wrote a specific reason for each (for example "Substantive approval response closes the budget request"). The board has 19 cards, the highest count so far, and all 6 anchors. The Vendor onboarding checklist thread is still shown twice (original and Re:), and Launch plan v1 sits in Review quickly.
+
+One good run does not prove the spread is gone. Earlier rounds gave 18, 12, 17, 11 and 15 cards. Run it a few more times before calling the board stable.
+
+## Round 5: three more morning runs (2026-11-19)
+
+Same setup as round 4 (morning mode, test date November 6, 2026, chat only, FOCUS full board, no changes to the agent between runs).
+
+| | Run 1 | Run 2 | Run 3 |
+|---|---|---|---|
+| Time, credits | 115 s, 2.40 | 132 s, 2.86 | 114 s, 2.88 |
+| Cards | 18 | 18 | 15 |
+| Must do / waiting on you / waiting on others / review | 3 / 14 / 1 / 0 | 4 / 13 / 1 / 0 | not read |
+| Anchors | 6 of 6 | 6 of 6 | 5 of 6, Training plan sign-off missing |
+| Gate | missing 23 of 41, then ok 41 of 41 | ok 41 of 41 | ok 33 of 33 |
+
+Run 3 left out Training plan sign-off, Weekly report and Late-night schedule request, and the gate still passed, so the model had written a reason for each of them. The gate finds rows nobody looked at, it cannot tell that a reason is wrong.
+
+Cards in the last four runs after the changes: 19, 18, 18 and 15 (anchors 6, 6, 6 and 5 of 6). Before the changes: 18, 12, 17, 11 and 15. The worst run is 15 instead of 11 and three of four runs hold every anchor. It is better, and it is not yet steady.
