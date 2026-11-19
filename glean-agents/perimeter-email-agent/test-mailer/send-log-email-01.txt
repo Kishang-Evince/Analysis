@@ -1,0 +1,77 @@
+Sending 35 email(s) to kisha.gajipara@perimeterhealthcare.com
+SENT E13-01 (alice <alice.morgan@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Partner agreement review
+SENT E13-06 (bob <bob.singh@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Compliance attestation
+SENT E13-10 (bob <bob.singh@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Re: Q3 forecast inputs [E13-10]
+SENT E13-11 (alice <alice.morgan@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Security training evidence
+SENT E11-01 (alice <alice.morgan@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Deck for the steering call
+SENT E11-03 (bob <bob.singh@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Draft proposal
+SENT E11-04 (carol <carol.reyes@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Training plan sign-off
+SENT E11-06 (alice <alice.morgan@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Weekly report
+SENT E11-07 (bob <bob.singh@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Sample data
+SENT E11-09 (carol <carol.reyes@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Launch checklist
+SENT E11-10 (alice <alice.morgan@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Audit evidence
+SENT E11-11 (bob <bob.singh@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Annual planning inputs
+SENT E11-12 (alice <alice.morgan@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Late-night schedule request
+SENT E05-04 (alice <alice.morgan@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Fwd: Vendor pricing comparison
+SENT E06-01-orig (alice <alice.morgan@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Vendor onboarding checklist
+SENT E06-01 (alice <alice.morgan@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Re: Vendor onboarding checklist
+SENT E06-02-orig (bob <bob.singh@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Launch plan v1
+SENT E06-02 (bob <bob.singh@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Re: Launch plan v1
+SENT E06-03 (carol <carol.reyes@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Quick ask: confirm headcount
+SENT E06-04-orig (dana <dana.whitfield@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Board deck inputs
+SENT E06-04 (dana <dana.whitfield@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Re: Board deck inputs
+SENT E17-02 (alice <alice.morgan@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Re: Sign-off request [E17-02]
+SENT E17-02-b (bob <bob.singh@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Re: Sign-off request [E17-02]
+SENT E17-03 (bob <bob.singh@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Re: Sign-off request [E17-03]
+SENT E17-04 (bob <bob.singh@evincedev.in> to kisha.gajipara@perimeterhealthcare.com, bob.singh@evincedev.in): Re: Workshop agenda [E17-04]
+SENT E19-01 (alice <alice.morgan@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Automatic reply: Delivery confirmation request [E19-01]
+SENT E19-02 (bob <bob.singh@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Automatic reply: Budget question [E19-02]
+SENT E19-03 (alice <alice.morgan@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Re: Delivery confirmation request [E19-01]
+SENT E19-06 (alice <alice.morgan@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Automatische Antwort: Delivery confirmation request [E19-06]
+SENT E19-06-b (bob <bob.singh@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Réponse automatique : Budget question [E19-06-b]
+SENT E19-07 (bob <bob.singh@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Re: Budget question [E19-07]
+SENT E20-01 (system <no-reply-closedtitle@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Re: Access issue [E20-01]
+SENT E20-02 (system <no-reply-closedtitle@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Re: Delivery confirmation request [E20-02]
+SENT E20-03 (system <no-reply-closedtitle@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Undeliverable: Delivery confirmation request [E20-03]
+SENT E20-07 (alice <alice.morgan@evincedev.in> to kisha.gajipara@perimeterhealthcare.com): Re: Delivery confirmation request [E20-07]
+
+Done: 35 sent, 0 failed, 0 skipped, 0 not attempted, 0 previewed.
+
+Manual steps in Outlook before running the agent:
+- E13-06 Old ask, user replied inside window
+    [ ] Reply to this message in Outlook and send it (for E13-06 shift the date so ask is D-13 and reply D-12: chat "as of YYYY-MM-DD" in Preview or a manual run, or AS_OF_DATE in the saved Settings block for a scheduled run)
+- E13-10 Read reply older than the read window
+    [ ] Send this request from Outlook first (To bob.singh.test@yopmail.com): Subject "Q3 forecast inputs [E13-10]", body "Can you send me the Q3 forecast inputs?"
+    [ ] Mark this reply as read
+    [ ] Simulate age: the request and this reply are sent on the same day, so set chat "as of" to the real today plus 8 (or AS_OF_DATE in the saved Settings block for Run now); both are then 8 days old, older than READ_DAYS 3 and inside LOOKBACK_DAYS 14
+- E13-11 Read ask older than the read window
+    [ ] Mark this message as read
+    [ ] Simulate age D-6 (chat "as of" with the real today plus 6, or AS_OF_DATE in the saved Settings block for Run now); READ_DAYS stays 3, LOOKBACK_DAYS stays 14
+- E11-12 Late-night sent time zone
+    [ ] Send this email manually at about 11:30 pm Pacific (run the seed script at that time) so the sent date differs between time zones
+- E06-04-orig Original ask that will fall outside the window
+    [ ] Run the agent with the date shifted so this message is older than LOOKBACK_DAYS (chat "as of YYYY-MM-DD" in Preview or a manual run, or AS_OF_DATE in the saved Settings block for a scheduled run), after sending the follow-up below
+- E17-02 All To recipients replied (1 of 2)
+    [ ] Send this request from Outlook first (To alice.morgan.test@yopmail.com, bob.singh.test@yopmail.com): Subject "Sign-off request [E17-02]", body "Please sign off on the release notes." (both in To)
+- E17-03 Cc person replies only
+    [ ] Send this request from Outlook first (To alice.morgan.test@yopmail.com, Cc bob.singh.test@yopmail.com): Subject "Sign-off request [E17-03]", body "Please sign off on the release notes."
+- E17-04 Reply-all from one recipient
+    [ ] Send this request from Outlook first (To bob.singh.test@yopmail.com, alice.morgan.test@yopmail.com, carol.reyes.test@yopmail.com): Subject "Workshop agenda [E17-04]", body "Can you confirm the agenda works for you?" (all three in To)
+- E19-01 OOO with return date and delegate
+    [ ] Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject "Delivery confirmation request [E19-01]", body "Can you confirm the delivery date?"
+- E19-02 OOO without return date
+    [ ] Send this request from Outlook first (To bob.singh.test@yopmail.com): Subject "Budget question [E19-02]", body "Can you confirm the budget approval?"
+- E19-06 German automatic reply
+    [ ] Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject "Delivery confirmation request [E19-06]", body "Can you confirm the delivery date?"
+- E19-06-b French automatic reply
+    [ ] Send this request from Outlook first (To bob.singh.test@yopmail.com): Subject "Budget question [E19-06-b]", body "Can you confirm the budget approval?"
+- E19-07 Human reply mentions being out
+    [ ] Send this request from Outlook first (To bob.singh.test@yopmail.com): Subject "Budget question [E19-07]", body "Can you confirm the budget approval?"
+- E20-01 Ticket acknowledgment
+    [ ] Send a request from Outlook first to vendor.sales.test@yopmail.com: Subject "Access issue [E20-01]", body "Can you reset my access?"
+- E20-02 Security gateway quarantine notice
+    [ ] Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject "Delivery confirmation request [E20-02]", body "Can you confirm the delivery date?"
+- E20-03 Delivery failure (NDR)
+    [ ] Send a request from Outlook first to nobody.test@yopmail.com (yopmail never bounces, so the mailer simulates the delivery-failure notice): Subject "Delivery confirmation request [E20-03]", body "Can you confirm the delivery date?"
+- E20-07 Short real reply: ok
+    [ ] Send this request from Outlook first (To alice.morgan.test@yopmail.com): Subject "Delivery confirmation request [E20-07]", body "Can you confirm the delivery date?"

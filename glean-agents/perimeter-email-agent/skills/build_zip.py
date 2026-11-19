@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Builds skills/<name>.zip with SKILL.md at the zip root, without tests or caches. Usage: build_zip.py [brief-render|board-widget]"""
+"""Builds skills/<name>.zip with SKILL.md at the zip root, without tests or caches. Usage: build_zip.py [brief-render|board-widget|triage-board]"""
 import sys
 import zipfile
 from pathlib import Path

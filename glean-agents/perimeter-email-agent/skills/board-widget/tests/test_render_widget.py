@@ -381,6 +381,86 @@ def mail_file(directory, name, messages, mtime=None):
 IGN = 'Brief: Ignored'
 
 
+def kpi_block(html):
+    m = re.search(r'<div class="kpis">.*?</div></div>', html)
+    return m.group(0) if m else ''
+
+
+def tiles(html):
+    return re.findall(r'<div class="kpi"[^>]*><b>([^<]*)</b><span>([^<]*)</span></div>', kpi_block(html))
+
+
+class FocusPageTests(unittest.TestCase):
+    def test_meeting_prep_alone_is_not_called_an_empty_inbox(self):
+        html, _ = rw.render(board(must=[], meetings={'entries': ['09:00 Standup, prep: none'], 'unsummarized': []}))
+        self.assertIn('Meeting prep', html)
+        self.assertNotIn('Inbox is clear.', html)
+
+    def test_commitments_alone_are_not_called_an_empty_inbox(self):
+        html, _ = rw.render(board(must=[], commitments={'mine': [{'who': 'Me', 'what': 'Send the plan', 'due': 'Nov 9', 'status': 'Open'}], 'others': []}))
+        self.assertNotIn('Inbox is clear.', html)
+
+
+class KpiTests(unittest.TestCase):
+    def test_tiles_show_the_counts_of_the_sections_that_have_cards(self):
+        html, _ = rw.render(board(must=[card(), card(subject='B')], waitingYou=[card(subject='C')], waiting=[waiting()], review=[]))
+        self.assertEqual(tiles(html), [('4', 'Open items'), ('2', 'Must do today'), ('1', 'Waiting on you'), ('1', 'Waiting on others'), ('3', 'Longest wait (days)')])
+
+    def test_a_hidden_or_empty_section_has_no_tile(self):
+        html, _ = rw.render(board(must=[card()], waitingYou=[], waiting=[], review=[card(subject='R')]))
+        labels = [label for _, label in tiles(html)]
+        self.assertEqual(labels, ['Open items', 'Must do today', 'Review quickly'])
+
+    def test_drafts_tile_only_when_a_card_has_a_draft(self):
+        html, _ = rw.render(board(must=[card(draft='Draft ready in Outlook')]))
+        self.assertIn(('1', 'Drafts ready'), tiles(html))
+        html, _ = rw.render(board(must=[card()]))
+        self.assertNotIn('Drafts ready', kpi_block(html))
+
+    def test_longest_wait_is_the_largest_days_waiting(self):
+        html, _ = rw.render(board(must=[], waiting=[waiting(daysWaiting=2), waiting(subject='B', daysWaiting=9), waiting(subject='C', daysWaiting='not a number')]))
+        self.assertIn(('9', 'Longest wait (days)'), tiles(html))
+
+    def test_end_of_day_wording(self):
+        html, _ = rw.render(board(mode='end-of-day', must=[card()]))
+        self.assertIn(('1', 'Must do overdue'), tiles(html))
+
+    def test_no_tiles_on_an_empty_board(self):
+        html, _ = rw.render(board(must=[]))
+        self.assertEqual(kpi_block(html), '')
+
+    def test_tiles_are_static_and_sit_between_the_title_and_the_first_section(self):
+        html, _ = rw.render(board(highlights='Focus on Carol.'))
+        self.assertNotIn('<button', kpi_block(html))
+        self.assertLess(html.index('<h1>'), html.index('class="kpis"'))
+        self.assertLess(html.index('class="kpis"'), html.index('<section>'))
+        self.assertEqual(len(buttons(html)), 1)
+
+
+class PillHelpTests(unittest.TestCase):
+    def test_every_action_pill_has_a_plain_title(self):
+        for action in ('Reply', 'Review', 'Approve', 'Send', 'Decide', 'Complete', 'Attend'):
+            html, _ = rw.render(board(must=[card(action=action)]))
+            m = re.search(r'<span class="pill act" title="([^"]+)">' + action + '</span>', html)
+            self.assertIsNotNone(m, action)
+            self.assertGreater(len(m.group(1)), 10)
+
+    def test_staleness_pill_has_a_title(self):
+        for tier, words in (('Recent', '0 to 1'), ('Aging', '2 to 3'), ('Overdue', '4 or more')):
+            html, _ = rw.render(board(must=[], waiting=[waiting(staleness=tier)]))
+            m = re.search(r'<span class="pill act" title="([^"]+)">' + tier + '</span>', html)
+            self.assertIsNotNone(m, tier)
+            self.assertIn(words, m.group(1))
+
+    def test_unknown_value_has_no_title_and_the_pill_is_not_a_button(self):
+        html, _ = rw.render(board(must=[card(action='Escalate')]))
+        self.assertIn('<span class="pill act">Escalate</span>', html)
+        self.assertNotIn('class="pill act"', ''.join(buttons(html)))
+
+    def test_pills_with_a_title_get_the_help_cursor(self):
+        self.assertIn('.pill.act[title]{cursor:help}', rw.CSS)
+
+
 class MailMarkTests(unittest.TestCase):
     def render_cards(self, cards, mail, **kw):
         return rw.render(board(must=cards, **kw), mail=mail)

@@ -42,7 +42,9 @@ p{margin:6px 0}.mut{color:var(--mut)}.note{color:var(--mut);font-size:13px}.summ
 .from{color:var(--mut);font-size:12px;margin:2px 0 0 34px;overflow-wrap:anywhere}
 .ask{margin:6px 0 2px;font-weight:500}.preview{color:var(--mut);font-size:13px;border-left:3px solid var(--line);padding-left:8px;margin:4px 0;overflow-wrap:anywhere}.meta{margin:4px 0;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:0 8px;font-size:12px;margin-left:4px}
-.pill.act{margin:0;border-color:var(--acc);color:var(--acc)}.due.late{color:var(--red);font-weight:600}
+.pill.act{margin:0;border-color:var(--acc);color:var(--acc)}.pill.act[title]{cursor:help}.due.late{color:var(--red);font-weight:600}
+.kpis{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 12px;min-width:92px}
+.kpi b{display:block;font-size:20px;line-height:1.2}.kpi span{color:var(--mut);font-size:12px}
 mark{background:var(--mark);color:inherit;padding:0 2px;border-radius:3px}
 a{color:var(--acc)}details{margin-top:6px}summary{cursor:pointer;color:var(--mut);font-size:13px}
 dl{display:grid;grid-template-columns:max-content 1fr;gap:2px 12px;margin:6px 0 0;font-size:13px}dt{color:var(--mut)}dd{margin:0}
@@ -92,6 +94,35 @@ def flag(value):
     if isinstance(value, str):
         return value.strip().lower() not in ('', 'false', 'no', 'none', 'not given')
     return bool(value)
+
+
+PILL_HELP = (('reply', 'Reply: you need to answer this email.'), ('review', 'Review: read what was sent, then respond.'),
+             ('approve', 'Approve: say yes or no to this request.'), ('send', 'Send: send what the sender asked for.'),
+             ('decide', 'Decide: make the decision the sender is waiting for.'), ('complete', 'Complete: finish the task the sender asked for.'),
+             ('attend', 'Attend: join the meeting or event named in this email.'), ('recent', 'Recent: sent 0 to 1 days ago, no reply yet.'),
+             ('aging', 'Aging: sent 2 to 3 days ago, no reply yet.'), ('overdue', 'Overdue: sent 4 or more days ago, no reply yet.'))
+
+
+def act_pill(value):
+    """The action or staleness label of a card. It is a label and no button. A known word gets a plain hover text, an unknown one gets none."""
+    word = text(value).strip().lower()
+    tip = next((t for key, t in PILL_HELP if word.startswith(key)), None)
+    return f'<span class="pill act"{f" title={chr(34)}{escape(tip)}{chr(34)}" if tip else ""}>{esc(value)}</span>'
+
+
+def kpi_html(data, mode, n, sections):
+    """Static tiles under the title. A section with no cards (hidden by a Show setting or empty) has no tile, drafts and longest wait only when there is something to count."""
+    if n == 0:
+        return ''
+    must = 'Must do overdue' if mode == 'end-of-day' else 'Must do today'
+    tiles = [(n, 'Open items')] + [(sections[key], label) for key, label in (('must', must), ('waitingYou', 'Waiting on you'), ('waiting', 'Waiting on others'), ('review', 'Review quickly')) if sections.get(key)]
+    drafts = sum(1 for key, _, _ in SECTIONS for c in items(data, key) if has(c.get('draft')))
+    if drafts:
+        tiles.append((drafts, 'Drafts ready'))
+    days = [int(text(c.get('daysWaiting')).strip()) for c in items(data, 'waiting') if text(c.get('daysWaiting')).strip().isdigit()]
+    if days:
+        tiles.append((max(days), 'Longest wait (days)'))
+    return '<div class="kpis">' + ''.join(f'<div class="kpi"><b>{v}</b><span>{label}</span></div>' for v, label in tiles) + '</div>'
 
 
 def pills(c):
@@ -145,7 +176,7 @@ def inbound_card(n, c):
     return (f'<div class="card" data-n="{n}"><div class="top"><span class="num">{n}</span>'
             f'<div class="title"><b>{esc(c.get("person"))} | {esc(c.get("subject"))}</b>{pills(c)}</div>{button("ignore", n, c.get("subject"), "Ignore")}</div>'
             f'{from_line(c, "From")}<div class="ask">{esc(c.get("ask"))}</div>{preview(c)}'
-            f'<div class="meta"><span class="pill act">{esc(c.get("action"))}</span>{due(c)}</div>'
+            f'<div class="meta">{act_pill(c.get("action"))}{due(c)}</div>'
             f'<div>{why(c)}</div><div>{link(c.get("link"))}</div>'
             f'<details><summary>Details</summary>{detail}</details></div>')
 
@@ -155,7 +186,7 @@ def waiting_card(n, c):
     return (f'<div class="card" data-n="{n}"><div class="top"><span class="num">{n}</span>'
             f'<div class="title"><b>{esc(c.get("recipients"))} | {esc(c.get("subject"))}</b>{pills(c)}</div>{button("ignore", n, c.get("subject"), "Ignore")}</div>'
             f'{from_line(c, "To", received=False)}<div class="ask">{esc(c.get("asked"))}</div>{preview(c)}'
-            f'<div class="meta"><span class="pill act">{esc(c.get("staleness"))}</span><span>Days waiting: {esc(c.get("daysWaiting"))}</span></div>'
+            f'<div class="meta">{act_pill(c.get("staleness"))}<span>Days waiting: {esc(c.get("daysWaiting"))}</span></div>'
             f'<div>{esc(c.get("followUp"))}</div>' + (f'<div>{why(c)}</div>' if has(c.get('why')) else '') + f'<div>{link(c.get("link"))}</div>'
             f'<details><summary>Details</summary>{detail}</details></div>')
 
@@ -388,7 +419,7 @@ def render(data, mail=None):
     lists = commitment_lists(data)
     commit = commitments_html(lists)
     empty = ''
-    if n == 0 and not commit:
+    if n == 0 and not commit and not meetings_html(data):
         empty = '<p>' + ('Inbox is clear.' if mode == 'morning' else 'All clear for the rest of today.') + '</p>'
     ignored, count = ignored_html(data)
     hidden = hidden_count(data)
@@ -397,7 +428,7 @@ def render(data, mail=None):
         (f'<p><b>Highlights:</b> {esc(data.get("highlights"))}</p>' if has(data.get('highlights')) else '')
     tail = ''.join(f'<p class="note">{esc(x)}</p>' for x in notes) + (f'<p class="note">Ignored items hidden: {hidden}</p>' if hidden else '') + (f'<p class="summary">{esc(data.get("summary"))}</p>' if has(data.get('summary')) else '')
     html = ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<title>Outlook Action Board</title><style>{CSS}</style></head><body>{head}{empty}{body}{commit}{meetings_html(data)}{tail}{ignored}'
+            f'<title>Outlook Action Board</title><style>{CSS}</style></head><body>{head}{kpi_html(data, mode, n, sections)}{empty}{body}{commit}{meetings_html(data)}{tail}{ignored}'
             f'<p id="nobridge" class="note" hidden>{NO_BRIDGE}</p><script>{JS}</script></body></html>')
     summary = {'mode': mode, 'cards': n, 'sections': sections, 'ignored': count, 'hidden': hidden, 'labeled': labeled, 'dropped': dropped, 'buttons': n + count, 'numbers': numbers, 'bytes': len(html.encode('utf-8'))}
     return html, summary

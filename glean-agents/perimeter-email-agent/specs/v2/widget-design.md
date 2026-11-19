@@ -286,3 +286,15 @@ Upload: brief-render zip (16525 bytes, SKILL.md hash e4b69810 in the repo, rende
 Live check, Preview with the form defaults (chat and email, drafts no): the brief mail at 10:44 AM in Outlook shows the purple button under the KPI tiles with the hint "Opens the agent in Glean. Choose delivery chat only, then Run agent, to get the interactive board in about 2 minutes." The link points to the agent (Outlook wraps it in a safelinks address that carries the Glean URL).
 
 Open: publish time must change LIVE_LINK to the published agent and rebuild and upload the zip. The link opens the run form with DELIVERY chat and email by default, so a reader who forgets to pick chat only sends one more brief (the hint says what to choose). Whether the schedule can carry its own DELIVERY value so the form default could become chat only was not checked.
+
+## 26. Delivery default chat only (2026-11-06): pass, with one consequence
+
+Change: the run form input DELIVERY now defaults to chat only (it was chat and email). Set on the Triggers tab, read back after a reload (all ten defaults: MODE auto, LOOKBACK_DAYS 14, READ_DAYS 3, INCLUDE_CALENDAR yes, CREATE_DRAFTS no, four SHOW yes, DELIVERY chat only), main text unchanged (hash 050a705c). Version saved as "Delivery default chat only". The main text was not edited, its bracket text "(chat and email, or chat only)" names the two values and gives no default.
+
+Tests, Preview with the untouched form (Debug on):
+- The form opened with DELIVERY chat only.
+- Run 1 (52 s, 1.3 credits) did not produce a board: the agent reported inconsistent Outlook thread data. Unrelated to delivery. No brief-builder run, no Send email, no drafts.
+- Run 2 (113 s, 2.0 credits) opened the board in the chat (9 must do, 15 waiting on you, 1 waiting on others). No brief-builder run, no Send email, no draft-writer run. Only the main agent and notes-keeper ran.
+- The run page (opened read only in another tab) shows DELIVERY chat only, and its Set schedule window carries its own copy of the form, also starting on chat only with chat and email selectable. Nothing was saved there.
+
+Consequence: the suggested schedule "every weekday at 8:00am" takes the form values, so it now sends no email unless Delivery is switched to chat and email in the Set schedule window. The docs say the form values chosen when a user sets a schedule become that schedule's inputs, this was read from the docs for the workflow style agents and was not verified for this agent type, and no schedule was created. The button hint in the brief still says to choose delivery chat only, it stays correct and is now already the default.
