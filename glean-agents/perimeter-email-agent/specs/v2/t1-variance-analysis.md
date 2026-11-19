@@ -140,3 +140,27 @@ Options for the remaining spread (user decision):
 1. Accept 11 to 21 and show the full list of what was left out and why in a collapsed "Left out" section, so a missing card can be seen at once (cheap, honest).
 2. Make the script decide the clear class: every unread, human, new mail with no sent message after it is a card, the model may only exclude it with REPLIED (checked) or ACK, and a second model pass reviews each exclusion (costs one more pass, about 20 s and 0.3 credits).
 3. Wait for the model benchmark (a model that follows rules more steadily).
+
+## Round 7: model Gemini 4 Neon (2026-11-19)
+
+The user asked to test the model Gemini 4 Neon to see if it is faster without losing thinking. The V2 draft model setting was changed from the default (GPT-5.6 Luna) to Gemini 4 Neon, Reasoning mode Thinking (the other choice is Fast). Same form every run: morning, 30 days, chat only, drafts off. Same mailbox and the same five skills as round 6 (automated flag, twin hide, gate inside render, reason codes, age fact).
+
+| Run | Model and mode | Time | Cards | Gate |
+|---|---|---|---|---|
+| 1 | Gemini 4 Neon, Thinking | 275.9 s | 16 (5 / 9 / 2 / 0) | ok |
+| 2 | Gemini 4 Neon, Fast | 199.7 s | 16 (5 / 9 / 2 / 0) | ok |
+| 3 | Gemini 4 Neon, Fast | 252.6 s | 16 (5 / 9 / 2 / 0) | ok |
+| Earlier | GPT-5.6 Luna (round 6) | 94 to 132 s | 11, 16, 18, 19, 21, 22 | ok after retries |
+
+The 16 cards are the same 16 conversations in all three runs (only the order of two cards swapped once): Deck for the steering call, Reminder from Carol [C-04], Quick ask: confirm headcount, Sample data, Draft proposal, Re: Board deck inputs, Board housekeeping [C-03], Annual planning inputs, Re: Vendor onboarding checklist, Quick note about the plan [C-02], Fwd: Vendor pricing comparison, Partner agreement review, Launch checklist, Compliance attestation, Re:Delivery date, Agent Delivery Date Update. Old read mail (older than READ_DAYS) was left out as the rule says. Hidden items were 2 in run 1 and 3 in runs 2 and 3 (the count of ignored mail marks changed between the runs because of the test mails, not the model).
+
+Findings:
+- **Steadiness: yes.** Three runs, one card set. The earlier model gave 11 to 22 cards on the same form. For the card count this is the first fix that held across runs.
+- **Speed: no.** Gemini 4 Neon was 2 to 2.7 times slower than the default model (200 to 276 s against about 100 to 130 s). Fast mode was faster than Thinking (200 and 253 s against 276 s) but still slower than the default model. Credits were not read.
+- **Thinking against Fast:** the card list was the same, so on this task Thinking showed no gain in accuracy, it only cost time (one run each way, not enough to be sure).
+- **Not checked on Gemini:** Ignore and Undo, the weekly run, the email run, the drafts run and FOCUS. Anchors for the older Nov 6 mails cannot be judged on today's date.
+
+Options (user decision):
+1. Keep Gemini 4 Neon for a steady board and accept a run of about 3.5 to 4.5 minutes.
+2. Go back to the default model for speed (about 2 minutes) and accept 11 to 22 cards.
+3. Look for another model setting that is both fast and steady (the model list of the account has more entries, the question to Glean support still applies).

@@ -1,5 +1,7 @@
 # Plan: email from chat (changes.md row 6)
 
+Status 2026-11-19: CLOSED by decision. The agent does not need to send email from chat, nothing will be built. Kept for reference only.
+
 Date: 2026-11-19. Status: plan only, nothing built, nothing added to the V2 draft. Needs the decisions at the end before work starts.
 
 ## The ask

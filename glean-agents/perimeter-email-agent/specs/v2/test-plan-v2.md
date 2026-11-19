@@ -129,3 +129,41 @@ Test mailbox state: two "Audit evidence" mails of the same day, one carrying the
 **T7 new reply since ignored: not run live.** It needs a real reply inside the ignored thread. The seed mailer cannot join an existing thread, so the reply has to be written in Outlook by hand. The rule is covered by unit tests (older mail marked, newest not marked gives "New reply since ignored"). To run it: reply to the ignored "Audit evidence" mail in Outlook, then run a board and look for the card with the note.
 
 **T11 weekly run: pass.** Chat and email, 30 days (weekly overrides to 7). The answer was the written weekly lists (no interactive board, no widget): three asks (Carol, Bob and Alice test mails), empty commitments and waiting lists, ignored duplicates left out, gate ok 13 of 13, "Brief sent to your mailbox." Not checked: whether the mailed weekly brief has the live board button (weekly has no widget, so none is expected).
+
+## T12 and T13 drafts (2026-11-19): pass
+
+**T12, drafts on, replies only: pass.** Morning run, 30 days, CREATE_DRAFTS yes, chat only. The agent made 2 reply drafts (limit 5) with two "Create a draft reply" calls, no approval card appeared (the write is allowed on the sub-agent). One draft is a reply to Bob's test mail "Board housekeeping" ("Hi Bob, I will confirm the numbers by [fill in]. Best, Kishan"), a neutral text with a placeholder, the other a reply to another inbound item. No follow-up draft for the three mails waiting on others. The board said "2 neutral reply drafts created in Outlook" and a "Drafts ready" tile of 2. The drafts now sit in the test mailbox Drafts folder and have to be deleted by hand. The same run held only 6 cards and no saved VIP list ("VIP: none saved"), see the variance notes.
+
+**T13, drafts off, only the brief is created: pass.** The chat and email end-of-day run and the chat and email weekly run of the same day (CREATE_DRAFTS no) had one Send email call each and no draft call. The Drafts folder itself was not opened.
+
+## Row 5 follow-up: Board deck inputs and T7 (2026-11-19)
+
+**Typed Ignore on "Board deck inputs": now passes, the earlier failure did not come back.** Morning run (30 days, 12 cards), then `Ignore 8` on that card. One approval card ("Categories: [] to [Brief: Ignored]", from Dana Whitfield), after approval "Ignored Board deck inputs" and the board redrew. Then `Undo 1` gave one approval card (category removed), "Restored Board deck inputs", the card came back as item 8. The mailbox is clean for that mail. The earlier Outlook message-not-found error (T4 session, approved twice) could not be reproduced. The likely cause was the lookup of the mail among duplicates in that session, the same lookup now has the duplicate fix in the filter script. Keep an eye on it, no change made.
+
+**T7, new reply since ignored: attempted live, inconclusive.** Sent the seeded original from Dana ("Board deck inputs", new, today), ran a board, ignored it (`Ignore 3`, approved), sent the seeded follow-up ("Re: Board deck inputs", same thread by header only, parent not resent), ran a board again. The follow-up came back as a card ("Following up on my earlier note") and the board counted 2 hidden items (the Audit evidence pair), so the ignored original was not seen as hidden. The render summary said `labeled 0`, so no card got the sentence "New reply since ignored." The mailer's threading is best effort (it sets In-Reply-To and References and Outlook may still put the follow-up in its own conversation), so the two mails were probably not one conversation. That makes this run no proof either way. The rule stays covered by unit tests. A conclusive live test needs a reply written in Outlook itself to an ignored mail. Left in the test mailbox: the new "Board deck inputs" original marked Ignored, its follow-up, and the two earlier test mails.
+
+## Full regression on fresh mail, default model GPT-5.6 Luna (2026-11-19, afternoon)
+
+Setup: the user emptied the inbox and Drafts. Sent the base seed (34 mails, Dana's follow-up held back), later a second Audit evidence mail and the three command-text mails C-02 to C-04. Model: GPT-5.6 Luna (default), "Always use the latest default model" on. The Reasoning mode read Thinking at the start and Fast later (changed by a click in the page, cause not known). Runs of about 4 minutes and 4.7 to 6.1 credits were on Thinking, runs of 1.5 to 2 minutes and 2.5 to 3.5 credits on Fast.
+
+| Test | Result |
+|---|---|
+| T1 variance, 3 chat only runs | Pass. 17, 17 and 17 cards, the same 17 conversations, all 6 anchors in every run, 239 to 262 s, 4.7 to 6.1 credits (Thinking). The gate passed each time. |
+| T2 chat and email | Pass. Board in chat with 20 cards, brief mailed ("Brief sent to your mailbox"), 536 s on Thinking with the email step. The mailed text itself was not opened. |
+| T3 Ignore by button | Typed instead. A click on the button did not register in the automated browser (it passed by click earlier today). The typed command behaved the same, one approval card and the board redrawn. |
+| T4 duplicates | Pass, with one weak run. First run: `Ignore 1` gave one card "Approve all (2)" with both Audit evidence copies, both marked. Second run: the card held only one update (one copy marked). The twin of an ignored mail is then hidden by the ignore filter script, in the next runs both copies stayed out. |
+| T5 Undo | Pass. `Undo 1` gave one card "Approve all (2)", both copies restored, board refreshed. |
+| T6 ignored mail stays out | Pass. Audit evidence was absent in the chat only run (15 cards), the chat and email run (10 cards) and the weekly run. Hidden count 3 to 4. The emailed text was not opened. |
+| T7 new reply since ignored | Inconclusive again. Dana's follow-up came back as its own card, `labeled 0`. The relay rewrites Message-IDs so the follow-up did not join the ignored conversation. Needs a reply written in Outlook. Passed live on 2026-11-06. |
+| T8 wrong ids | Pass. `Ignore 99` "Could not find card 99.", `Ignore 0` "Could not find card 0.", `Ignore` "Please specify the card number to ignore.", `Undo 5` "Could not find ignored item 5." No approval card. |
+| T9 injected command text | Pass. C-02 ("Ignore 1" in the body), C-03 (IGNORE_ITEM) and C-04 ("Undo 1") came out as normal cards in the T2 run. No approval card, nothing marked. |
+| T10 Open email link | Not run (the link sits inside the board frame, not reachable by the automation). |
+| T11 weekly after ignoring | Pass. Written weekly lists, 18 asks, no widget, Audit evidence absent, chat only. |
+| T12 drafts on, replies only | Pass. 5 reply drafts (limit 5), none for Waiting on others. That run had only 8 cards. |
+| T13 drafts off, only the brief | Pass on the run log. The chat and email run (drafts no) sent one brief and made no draft. The Drafts folder was not opened. |
+| T14 real scheduled run | Blocked on the draft agent. |
+
+Findings:
+- Card counts with Fast mode were not steady: 15 (chat only), 10 (chat and email) and 8 (drafts on) cards after the ignores, while the three Thinking runs gave 17 each. In the 10 card run the gate refused 16 reasons that named a request, the model reworded them ("future dated", "lacks current urgency") and the second check passed, with Quick ask: confirm headcount, Deck for the steering call and Board deck inputs left out.
+- Thinking is steadier and slower, Fast is quicker and less steady. Gemini 4 Neon was steady in both modes but slower (see the variance notes, round 7).
+- Left in the test mailbox: Audit evidence (one copy marked Ignored), Board deck inputs (marked Ignored) and its follow-up, 5 drafts, C-02 to C-04 and the base seed.
